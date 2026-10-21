@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-21T05:13:21.754506+00:00",
- "artikler_i_alt": 122,
+ "opdateret": "2026-10-21T14:05:01.175685+00:00",
+ "artikler_i_alt": 125,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -69,9 +69,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 3,
+   "i_listen": 4,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Mistral og NVIDIA bygger benchmarks til ingeniør-AI",
+     "dato": "2026-10-21T12:00:20",
+     "foerst_set": "2026-10-21T14:05:01",
+     "link": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
+     "side": "artikel/9bde5caa0375c81d.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Mistral bygger taleagent i én pipeline",
      "dato": "2026-10-20T12:00:22",
@@ -285,7 +294,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 7,
+   "i_listen": 8,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -296,6 +305,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Mistral Large 4 klarer opgaver andre afviser"
+    },
+    {
+     "rubrik": "Simon Willisons AI-kodede strategispil blev faktisk sjovt",
+     "dato": "2026-10-20T19:34:19",
+     "foerst_set": "2026-10-20T20:06:38",
+     "link": "https://simonwillison.net/2026/Oct/20/battledrones/",
+     "side": "artikel/144d05732de3bf7d.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Simon Willison: LLM'er tager puslespillet fra programmører",
@@ -378,7 +396,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 52,
+   "i_listen": 53,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -434,6 +452,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "YouTube mærker AI-sange i afspilleren"
+    },
+    {
+     "rubrik": "Nielsen-undersøgelse: Chefer kan ikke skille AI fra arbejde",
+     "dato": "2026-10-21T14:00:00",
+     "foerst_set": "2026-10-21T14:05:01",
+     "link": "https://techcrunch.com/2026/10/21/ai-promises-productivity-but-for-managers-its-mostly-a-headache-for-now-says-new-survey/",
+     "side": "artikel/1d707ef9b9de000a.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "SpaceX AI udgør nu 52 procent af indtægterne",
@@ -531,15 +558,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-20T13:48:46",
      "link": "https://techcrunch.com/2026/10/20/yelp-can-now-call-on-your-behalf-to-check-wait-times-at-a-restaurant/",
      "side": "artikel/06aafb86abeb1480.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Otter.ai henter 320 millioner dollarer uden aktiesalg",
-     "dato": "2026-10-20T11:00:00",
-     "foerst_set": "2026-10-20T13:48:46",
-     "link": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/",
-     "side": "artikel/85e233d0b1664751.html",
      "hvor": "forside",
      "under": ""
     }
@@ -704,7 +722,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Demokrater bruger AI som valgkampsvåben mod Trump",
-     "dato": "2026-10-19T08:00:00",
+     "dato": "2026-10-19T12:00:00",
      "foerst_set": "2026-10-19T15:50:01",
      "link": "https://www.theverge.com/policy/1013113/democrats-ai-midterms",
      "side": "artikel/1d7aa9cfab7ec3cc.html",
@@ -788,9 +806,9 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 12,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 12,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 503: Service Temporarily Unavailable",
+   "hentet": 0,
    "i_listen": 11,
    "som_ekstra": 4,
    "seneste": [

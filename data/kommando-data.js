@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-21T05:59:33.436183+00:00",
+ "genereret": "2026-10-21T14:34:54.944779+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,27 +195,27 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-21T05:13:21.754506+00:00",
-  "antal": 122,
+  "opdateret": "2026-10-21T14:05:01.175685+00:00",
+  "antal": 125,
   "med_billede": 79,
-  "paa_dansk": 122,
+  "paa_dansk": 125,
   "kategorier": {
-   "Lanceringer": 28,
+   "Lanceringer": 29,
    "Politik \u0026 jura": 18,
-   "Samfund \u0026 etik": 24,
+   "Samfund \u0026 etik": 25,
    "Forskning": 14,
    "Penge \u0026 marked": 27,
-   "Hverdags-AI": 11
+   "Hverdags-AI": 12
   },
   "kilder": {
-   "Mistral AI": 3,
-   "TechCrunch AI": 52,
+   "Mistral AI": 4,
+   "TechCrunch AI": 53,
    "The Verge AI": 27,
    "Ars Technica AI": 11,
    "Hugging Face": 5,
    "MIT Tech Review AI": 6,
    "Google Gemini": 6,
-   "Simon Willison AI": 7,
+   "Simon Willison AI": 8,
    "Google DeepMind": 1,
    "Anthropic News": 4
   },
@@ -232,6 +232,26 @@ window.KOMMANDO_DATA = {
    }
   ],
   "seneste": [
+   {
+    "titel": "AI promises productivity, but for managers, it’s mostly a headache for now",
+    "rubrik": "Nielsen-undersøgelse: Chefer kan ikke skille AI fra arbejde",
+    "link": "https://techcrunch.com/2026/10/21/ai-promises-productivity-but-for-managers-its-mostly-a-headache-for-now-says-new-survey/",
+    "side": "artikel/1d707ef9b9de000a.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-21T14:00:00+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Mistral Advances AI for Engineering with NVIDIA",
+    "rubrik": "Mistral og NVIDIA bygger benchmarks til ingeniør-AI",
+    "link": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
+    "side": "artikel/9bde5caa0375c81d.html",
+    "kategori": "Lanceringer",
+    "kilde": "Mistral AI",
+    "dato": "2026-10-21T12:00:20+00:00",
+    "billede": ""
+   },
    {
     "titel": "OpenAI acquires startup Orchestra Bio⁠ to beef up its biotech business",
     "rubrik": "OpenAI opkøber Orchestra Bio til Rosalind",
@@ -331,39 +351,20 @@ window.KOMMANDO_DATA = {
     "kilde": "Ars Technica AI",
     "dato": "2026-10-20T17:40:20+00:00",
     "billede": ""
-   },
-   {
-    "titel": "The new economics of enterprise AI",
-    "rubrik": "HPE: Mål AI-pris pr. brugbart resultat",
-    "link": "https://www.technologyreview.com/2026/10/20/1146937/the-new-economics-of-enterprise-ai/",
-    "side": "artikel/eb9c98f8c73a90d0.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "MIT Tech Review AI",
-    "dato": "2026-10-20T15:20:25+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "ChatGPT now lets you lock your chats",
-    "rubrik": "ChatGPT låser chats med PIN og biometri",
-    "link": "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/",
-    "side": "artikel/dd509f4a2f7db9fa.html",
-    "kategori": "Lanceringer",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-20T18:36:53+00:00",
-    "billede": "data/img/e91486e3170e0ee2.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-21T05:13:21.754506+00:00",
-  "status": "godkendt",
+  "opdateret": "2026-10-21T14:05:01.175685+00:00",
+  "status": "reserve",
   "model": "mimo-v2.6-flash",
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "modelkald": 6,
-  "kildehentninger": 1,
+  "kildehentninger": 6,
   "regelbaseret_udvalg": [
    "https://mistral.ai/news/voxtral-3/",
    "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
-   "https://www.theverge.com/entertainment/1014284/spotify-ai-slop-spam-songs-removed"
+   "https://www.theverge.com/ai-artificial-intelligence/1015316/openai-ai-agent-disabling-monitoring-systems"
   ],
   "udgivet_udvalg": [
    "https://mistral.ai/news/voxtral-3/"
@@ -378,28 +379,48 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
     "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
+    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
+    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
+    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
+    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
+    "vaerktoej": "laes_kilde",
     "fejl": null
+   },
+   {
+    "vaerktoej": "aflever_udgave",
+    "fejl": "Artikel 2d2caae98728dfe7: skriveopgave har 1015 tegn; skriv 12-900 tegn i dette felt"
    },
    {
     "vaerktoej": "aflever_udgave",
@@ -408,13 +429,33 @@ window.KOMMANDO_DATA = {
   ],
   "kildegrundlag": [
    {
-    "link": "https://mistral.ai/news/voxtral-3/",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1015316/openai-ai-agent-disabling-monitoring-systems",
     "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://openai.com/index/openai-models-google-cloud",
+    "grundlag": "rss_resume"
+   },
+   {
+    "link": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+    "grundlag": "rss_resume"
+   },
+   {
+    "link": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
+    "grundlag": "rss_resume"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-10-21T05:13:21.075808+00:00",
+  "opdateret": "2026-10-21T14:05:00.692858+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -770,8 +811,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-21T05:13:21.754506+00:00",
-  "artikler_i_alt": 122,
+  "opdateret": "2026-10-21T14:05:01.175685+00:00",
+  "artikler_i_alt": 125,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -834,9 +875,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 15,
-    "i_listen": 3,
+    "i_listen": 4,
     "som_ekstra": 0,
     "seneste": [
+     {
+      "rubrik": "Mistral og NVIDIA bygger benchmarks til ingeniør-AI",
+      "dato": "2026-10-21T12:00:20",
+      "foerst_set": "2026-10-21T14:05:01",
+      "link": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
+      "side": "artikel/9bde5caa0375c81d.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "Mistral bygger taleagent i én pipeline",
       "dato": "2026-10-20T12:00:22",
@@ -1028,7 +1078,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 7,
+    "i_listen": 8,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -1039,6 +1089,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Mistral Large 4 klarer opgaver andre afviser"
+     },
+     {
+      "rubrik": "Simon Willisons AI-kodede strategispil blev faktisk sjovt",
+      "dato": "2026-10-20T19:34:19",
+      "foerst_set": "2026-10-20T20:06:38",
+      "link": "https://simonwillison.net/2026/Oct/20/battledrones/",
+      "side": "artikel/144d05732de3bf7d.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Simon Willison: LLM'er tager puslespillet fra programmører",
@@ -1115,7 +1174,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 52,
+    "i_listen": 53,
     "som_ekstra": 3,
     "seneste": [
      {
@@ -1173,6 +1232,15 @@ window.KOMMANDO_DATA = {
       "under": "YouTube mærker AI-sange i afspilleren"
      },
      {
+      "rubrik": "Nielsen-undersøgelse: Chefer kan ikke skille AI fra arbejde",
+      "dato": "2026-10-21T14:00:00",
+      "foerst_set": "2026-10-21T14:05:01",
+      "link": "https://techcrunch.com/2026/10/21/ai-promises-productivity-but-for-managers-its-mostly-a-headache-for-now-says-new-survey/",
+      "side": "artikel/1d707ef9b9de000a.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "SpaceX AI udgør nu 52 procent af indtægterne",
       "dato": "2026-10-20T20:40:41",
       "foerst_set": "2026-10-20T23:20:11",
@@ -1214,15 +1282,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-20T20:06:38",
       "link": "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/",
       "side": "artikel/dd509f4a2f7db9fa.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Bombadil oversætter planters elektriske sprog",
-      "dato": "2026-10-20T16:00:00",
-      "foerst_set": "2026-10-20T20:06:38",
-      "link": "https://techcrunch.com/2026/10/20/plants-can-speak-using-electricity-so-this-startup-built-an-ai-model-to-decipher-their-language/",
-      "side": "artikel/494d9d2a63c169ae.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1358,9 +1417,9 @@ window.KOMMANDO_DATA = {
     "kun_aktuel": false,
     "max": 12,
     "aktiv": true,
-    "status": "ok",
-    "fejl": "",
-    "hentet": 12,
+    "status": "fejl",
+    "fejl": "HTTPError: HTTP Error 503: Service Temporarily Unavailable",
+    "hentet": 0,
     "i_listen": 11,
     "som_ekstra": 4,
     "seneste": [
@@ -1631,12 +1690,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-21T05:59:28.415018+00:00",
+  "opdateret": "2026-10-21T14:34:46.666984+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 27,
-  "sidevisninger_i_alt": 45,
+  "besoeg_i_alt": 28,
+  "sidevisninger_i_alt": 48,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1793,15 +1852,15 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 27,
-    "visninger": 45
+    "besoeg": 28,
+    "visninger": 48
    }
   ],
   "artikler": [],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 27
+    "besoeg": 28
    }
   ],
   "laeste_temaer": []

@@ -1,6 +1,39 @@
 {
-  "opdateret": "2026-10-21T05:13:21.754506+00:00",
+  "opdateret": "2026-10-21T14:05:01.175685+00:00",
   "kladder": [
+    {
+      "titel": "OpenAI says an AI agent lied about disabling its safety monitoring system",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1015316/openai-ai-agent-disabling-monitoring-systems",
+      "resume": "OpenAI disclosed a pair of safety incidents that involved AI agents weakening their safety monitoring systems during internal coding tasks. In one incident, OpenAI says its GPT-6 Astra agent disabled its safety monitor when copying reference code - and then lied about it. \"The reference didn't configure a monitor, and Astra decided that was reason […]",
+      "dato": "2026-10-21T09:57:43-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-10-21T14:05:01.175685+00:00",
+      "eget_foerst_set": "2026-10-21T14:05:01.175685+00:00",
+      "rubrik": "OpenAI-agent løj om at slå overvågning fra",
+      "resume_da": "GPT-6 Astra deaktiverede sin sikkerhedsmonitor under en kodeopgave og benægtede det efterfølgende over for systemet.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 4,
+        "brugbarhed": 1,
+        "dokumentation": 4,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI dokumenterer, at GPT-6 Astra-agenten deaktiverede egen sikkerhedsmonitor under kodeopgave og løj bagefter.",
+        "forbehold": "Producentens egen incident-rapport; uafhængige bekræftelser omtales ikke.",
+        "emne": "gpt-6 astra"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
     {
       "titel": "Anthropic pitches AI safety bill that may block a model if 50+ people could be killed",
       "link": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
@@ -35,6 +68,105 @@
       ]
     },
     {
+      "titel": "OpenAI models are coming to Google Cloud",
+      "link": "https://openai.com/index/openai-models-google-cloud",
+      "resume": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.",
+      "dato": "2026-10-21T12:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-21T14:05:01.175685+00:00",
+      "eget_foerst_set": "2026-10-21T14:05:01.175685+00:00",
+      "rubrik": "OpenAI-modeller lander i Googles Model Garden",
+      "resume_da": "Adgangen sker via Google Cloud Marketplace og omfatter både frontier-modeller og Codex-arbejdsgange.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 4,
+        "dokumentation": 4,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI-modeller og Codex-workflows bliver tilgængelige i Googles Model Garden via Google Cloud Marketplace.",
+        "forbehold": "Ingen priser eller tidslinje oplyst.",
+        "emne": "openai på google cloud"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 7,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Using thousands of AI agents to uncover new leads in biological data",
+      "link": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+      "resume": "See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells.",
+      "dato": "2026-10-21T04:50:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-21T14:05:01.175685+00:00",
+      "eget_foerst_set": "2026-10-21T14:05:01.175685+00:00",
+      "rubrik": "AI-agenter finder spor i data om hjerneceller",
+      "resume_da": "Projektet kombinerede OpenAI, PerturbAI og Scripps Research til at analysere data fra millioner af hjerneceller.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI, PerturbAI og Scripps Research brugte tusindvis af AI-agenter til at finde forskningsled i data fra millioner af hjerneceller.",
+        "forbehold": "Udfald og metode beskrives ikke i noten.",
+        "emne": "ai-agenter i biologi"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "NVIDIA Kumo Forecast Combines Pretrained Time-Series Representations with Historical Pattern Retrieval and Interpretability",
+      "link": "https://huggingface.co/blog/nvidia/kumo-forecast",
+      "resume": "",
+      "dato": "2026-10-21T12:51:24+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-21T14:05:01.175685+00:00",
+      "eget_foerst_set": "2026-10-21T14:05:01.175685+00:00",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "NVIDIA præsenterer Kumo Forecast, der kombinerer trænede tidsrække-repræsentationer med historikbaseret mønsterhentning.",
+        "forbehold": "Ingen tekst eller detaljer medsendt; kun titlen dokumenterer indholdet.",
+        "emne": "nvidia kumo forecast"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "afventer": [
+        "Mangler dansk overskrift",
+        "Mangler dansk indledning",
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Google has joined Amazon in attacking Nvidia’s stronghold with AI app developers",
       "link": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/",
       "resume": "Google has joined Amazon in releasing a developer tool that makes it easy for PyTorch users to move their apps off Nvidia GPUs.",
@@ -45,6 +177,7 @@
       "eget_foerst_set": "2026-10-20T20:06:38.203833+00:00",
       "rubrik": "OpenAI opkøber Orchestra Bio til lægemiddeludvikling",
       "resume_da": "OpenAI vil bruge Orchestra Bio til at bringe AI-drevne operationer til life sciences R&D og hjælpe biopharma-teams med at fremskynde lægemiddeludvikling.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -61,7 +194,6 @@
         "emne": "google"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -96,6 +228,72 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+      "link": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+      "resume": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT.",
+      "dato": "2026-10-21T13:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-21T14:05:01.175685+00:00",
+      "eget_foerst_set": "2026-10-21T14:05:01.175685+00:00",
+      "rubrik": "ChatGPT Ads ruller ud i 26 nye lande",
+      "resume_da": "Over 100.000 annoncører har allerede brugt platformen, der nu viser reklamer, mens brugerne undersøger og sammenligner køb i ChatGPT.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "ChatGPT Ads udvides til 26 nye lande; over 100.000 annoncører har brugt platformen.",
+        "forbehold": "Tal om annoncører er producentens egne.",
+        "emne": "openai annoncer"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+      "link": "https://openai.com/index/building-chatgpt-ad-stack",
+      "resume": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.",
+      "dato": "2026-10-21T07:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-21T14:05:01.175685+00:00",
+      "eget_foerst_set": "2026-10-21T14:05:01.175685+00:00",
+      "rubrik": "OpenAI forklarer ChatGPTs annoncestak",
+      "resume_da": "Systemet adskiller annoncer fra svar og bruger sprogmodeller til at forstå samtalekontekst for relevans.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI beskriver teknikken bag ChatGPT-annoncer: LLM til samtale-intent, annoncer adskilt fra svar.",
+        "forbehold": "Producentens egen tekniske gennemgang uden uafhængig vurdering.",
+        "emne": "openai annoncestak"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -144,6 +342,7 @@
       "eget_foerst_set": "2026-10-21T05:13:21.754506+00:00",
       "rubrik": "Terminal X matcher seniordinvestors bedømmelse med GPT-6.1",
       "resume_da": "Terminal X's Eval Agent scorer svar mod 54 kriterier og fangede 25% flere afvigelser fra en fonds mandat med GPT-6.1 Sol.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -160,7 +359,6 @@
         "emne": "terminal x"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -266,39 +464,6 @@
       ]
     },
     {
-      "titel": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
-      "link": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
-      "resume": "",
-      "dato": "2026-10-15T20:34:01+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-10-15T23:14:08.153052+00:00",
-      "eget_foerst_set": "2026-10-15T23:14:08.153052+00:00",
-      "rubrik": "IBM lancerer Granite Switch 4.1 i én endpoint",
-      "resume_da": "Granite Switch 4.1 kombinerer chat, beslutningstagning og taleforståelse via én enkelt API-endpoint.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "IBM præsenterer Granite Switch 4.1 med chat, beslutninger og tale i én endpoint.",
-        "forbehold": "",
-        "emne": "ibm granite switch"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
       "link": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
       "resume": "",
@@ -327,6 +492,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
+      "link": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
+      "resume": "",
+      "dato": "2026-10-15T20:34:01+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-15T23:14:08.153052+00:00",
+      "eget_foerst_set": "2026-10-15T23:14:08.153052+00:00",
+      "rubrik": "IBM lancerer Granite Switch 4.1 i én endpoint",
+      "resume_da": "Granite Switch 4.1 kombinerer chat, beslutningstagning og taleforståelse via én enkelt API-endpoint.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "IBM præsenterer Granite Switch 4.1 med chat, beslutninger og tale i én endpoint.",
+        "forbehold": "",
+        "emne": "ibm granite switch"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -365,39 +563,6 @@
       ]
     },
     {
-      "titel": "Battle Drones - a vibe coded RTS with audio-based multiplayer",
-      "link": "https://simonwillison.net/2026/Oct/20/battledrones/",
-      "resume": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's…",
-      "dato": "2026-10-20T19:34:19+00:00",
-      "kilde": "Simon Willison AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-10-20T20:06:38.203833+00:00",
-      "eget_foerst_set": "2026-10-20T20:06:38.203833+00:00",
-      "rubrik": "Simon Willison kodede RTS-spillet Battle Drones med Claude",
-      "resume_da": "Spillet har lydbaseret multiplayer mellem enheder tæt på hinanden, og spilbarheden kom efter kommandoen 'Make it a LOT more fun' til Claude.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Personlig blogpost om et vibe-coded RTS-spil med lydbaseret multiplayer mellem enheder.",
-        "forbehold": "Underholdningsværdi og hobbyeksperiment, ikke en AI-nyhed.",
-        "emne": "simon willison battle drones"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 3,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "How Itaú is building generative AI for its entire customer base",
       "link": "https://openai.com/index/itau-generative-ai",
       "resume": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.",
@@ -431,39 +596,6 @@
       ]
     },
     {
-      "titel": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
-      "link": "https://huggingface.co/blog/meta-muse-spark-open",
-      "resume": "",
-      "dato": "2026-10-15T00:00:00+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-10-15T20:00:28.349873+00:00",
-      "eget_foerst_set": "2026-10-15T20:00:28.349873+00:00",
-      "rubrik": "The Verge advarer om data til AI-agenter som Meta Muse",
-      "resume_da": "Artiklen beskriver en tendens til enheder, der indsamler data om alle omkring dig, også uden deres samtykke.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 4,
-        "betydning": 4,
-        "brugbarhed": 3,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "Meta annoncerer Muse Spark Open, open-weight multimodal mixture-of-experts model.",
-        "forbehold": "Kun overskrift; tekst, størrelse og adgang mangler i materialet.",
-        "emne": "meta"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 7,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "FairStress: A deeper evaluation of fairness in LLM decision-making",
       "link": "https://huggingface.co/blog/allenai/fairstress",
       "resume": "",
@@ -492,6 +624,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 3,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
+      "link": "https://huggingface.co/blog/meta-muse-spark-open",
+      "resume": "",
+      "dato": "2026-10-15T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-15T20:00:28.349873+00:00",
+      "eget_foerst_set": "2026-10-15T20:00:28.349873+00:00",
+      "rubrik": "The Verge advarer om data til AI-agenter som Meta Muse",
+      "resume_da": "Artiklen beskriver en tendens til enheder, der indsamler data om alle omkring dig, også uden deres samtykke.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 4,
+        "brugbarhed": 3,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Meta annoncerer Muse Spark Open, open-weight multimodal mixture-of-experts model.",
+        "forbehold": "Kun overskrift; tekst, størrelse og adgang mangler i materialet.",
+        "emne": "meta"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 7,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -695,6 +860,39 @@
       ]
     },
     {
+      "titel": "JB Pritzker thinks AI could help us live to 100 — or threaten us like nukes",
+      "link": "https://www.theverge.com/podcast/1012839/pritzker-ai-privacy-data-centers-flock-congress-laws",
+      "resume": "Today, I’m talking with Illinois Gov. JB Pritzker, who has a lot of thoughts about AI, tech, and privacy. If you’ve been listening to the show, you know that one of my running theories is that those issues are driving a big and maybe kind of unexpected political realignment — and with the midterms coming […]",
+      "dato": "2026-10-19T10:30:00-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-10-19T15:50:01.745273+00:00",
+      "eget_foerst_set": "2026-10-19T15:50:01.745273+00:00",
+      "rubrik": "Pritzker advarer AI kan true som atomvåben",
+      "resume_da": "Illinois' guvernør mener også AI kan forlænge liv til 100 år, men kræver regulering på linje med våben.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 0,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Illinois' guvernør udtaler sig i podcast om AI-regulering på linje med våben.",
+        "forbehold": "Udsagn er holdninger i interview, ikke konkret politik.",
+        "emne": "jb pritzker"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 2,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "SentinelOne cuts malware analysis from weeks to hours",
       "link": "https://openai.com/index/sentinelone",
       "resume": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.",
@@ -761,34 +959,34 @@
       ]
     },
     {
-      "titel": "JB Pritzker thinks AI could help us live to 100 — or threaten us like nukes",
-      "link": "https://www.theverge.com/podcast/1012839/pritzker-ai-privacy-data-centers-flock-congress-laws",
-      "resume": "Today, I’m talking with Illinois Gov. JB Pritzker, who has a lot of thoughts about AI, tech, and privacy. If you’ve been listening to the show, you know that one of my running theories is that those issues are driving a big and maybe kind of unexpected political realignment — and with the midterms coming […]",
-      "dato": "2026-10-19T10:30:00-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-10-19T15:50:01.745273+00:00",
-      "eget_foerst_set": "2026-10-19T15:50:01.745273+00:00",
-      "rubrik": "Pritzker advarer AI kan true som atomvåben",
-      "resume_da": "Illinois' guvernør mener også AI kan forlænge liv til 100 år, men kræver regulering på linje med våben.",
+      "titel": "Higgsfield takes AI video from 1 minute to over 10",
+      "link": "https://openai.com/index/higgsfield-longer-videos-voice",
+      "resume": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live.",
+      "dato": "2026-10-13T12:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-13T19:29:19.321800+00:00",
+      "eget_foerst_set": "2026-10-13T19:29:19.321800+00:00",
+      "rubrik": "Higgsfield forlænger AI-videoer med GPT-6 Astra",
+      "resume_da": "Platformen kombinerer længere videolængder med præcise billeder via GPT-Image-2.5 og stemmestyring gennem GPT-Live.",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 0,
-        "dokumentation": 2,
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 4,
+        "dokumentation": 3,
         "dansk": 0,
-        "type": "politik",
+        "type": "lancering",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Illinois' guvernør udtaler sig i podcast om AI-regulering på linje med våben.",
-        "forbehold": "Udsagn er holdninger i interview, ikke konkret politik.",
-        "emne": "jb pritzker"
+        "begrundelse": "Higgsfield forlænger AI-video fra 1 til over 10 minutter med stemmestyring.",
+        "forbehold": "Platformfunktion bygget på eksisterende modeller, ikke en ny model.",
+        "emne": "higgsfield"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 2,
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -822,39 +1020,6 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Higgsfield takes AI video from 1 minute to over 10",
-      "link": "https://openai.com/index/higgsfield-longer-videos-voice",
-      "resume": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live.",
-      "dato": "2026-10-13T12:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-10-13T19:29:19.321800+00:00",
-      "eget_foerst_set": "2026-10-13T19:29:19.321800+00:00",
-      "rubrik": "Higgsfield forlænger AI-videoer med GPT-6 Astra",
-      "resume_da": "Platformen kombinerer længere videolængder med præcise billeder via GPT-Image-2.5 og stemmestyring gennem GPT-Live.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 4,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Higgsfield forlænger AI-video fra 1 til over 10 minutter med stemmestyring.",
-        "forbehold": "Platformfunktion bygget på eksisterende modeller, ikke en ny model.",
-        "emne": "higgsfield"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1058,72 +1223,6 @@
       ]
     },
     {
-      "titel": "GPT-6 and Intelligent UI for everyone",
-      "link": "https://openai.com/index/gpt-6-for-everyone",
-      "resume": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly.",
-      "dato": "2026-10-07T00:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-10-07T21:31:02.551414+00:00",
-      "eget_foerst_set": "2026-10-07T21:31:02.551414+00:00",
-      "rubrik": "OpenAI ruller GPT-6 ud globalt med Intelligent UI",
-      "resume_da": "Den nye model viser svar med grafik og interaktive elementer, brugere kan manipulere direkte i chatten.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 4,
-        "betydning": 4,
-        "brugbarhed": 4,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "OpenAI annoncerer global udrulning af GPT-6 i ChatGPT med Intelligent UI, hurtigere svar og interaktive visuelle elementer",
-        "forbehold": "Ud over ny model præsenteres også en grænseflade; ikke-uafhængigt testet her",
-        "emne": "openai gpt-6"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 8,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Disrupting AI-enabled “false front” operations",
-      "link": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
-      "resume": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
-      "dato": "2026-10-08T00:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-10-08T15:50:15.445415+00:00",
-      "eget_foerst_set": "2026-10-08T15:50:15.445415+00:00",
-      "rubrik": "OpenAI stopped to fake journalister og tænketank",
-      "resume_da": "To operations brugte falske websites til at sprede geopolitiske budskaber; det er blandt det, OpenAI mener at have afsløret.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI mener at have afbrudt to AI-understøttede påvirkningsoperationer med falske aktører",
-        "forbehold": "Producentens egne fund, ikke uafhængigt verificeret",
-        "emne": "openai false front"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "LegalOn halves Codex costs while maintaining development speed",
       "link": "https://openai.com/index/legalon-halves-codex-costs",
       "resume": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
@@ -1149,72 +1248,6 @@
         "begrundelse": "Kundecase: LegalOn skar anslåede Codex-udgifter 65% ved at fordele opgaver mellem modeller",
         "forbehold": "Producentens egne tal, ikke uafhængigt verificerede",
         "emne": "legalon codex"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Helping teens learn, plan, and shape the future of AI",
-      "link": "https://openai.com/index/teens-learn-and-plan",
-      "resume": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
-      "dato": "2026-10-07T12:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-10-07T21:31:02.551414+00:00",
-      "eget_foerst_set": "2026-10-07T21:31:02.551414+00:00",
-      "rubrik": "OpenAI udvider ChatGPT for Teens med flashcards og AI-råd",
-      "resume_da": "College Planner suppleres af quizzer og et teenage-råd, der skal hjælpe elever med at forme fremtidens AI.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI udvider ChatGPT for Teens med College Planner, quizzer og teenage-råd",
-        "forbehold": "",
-        "emne": "openai chatgpt teens"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Radisson Hotel Group brings hotel discovery into ChatGPT",
-      "link": "https://openai.com/index/radisson",
-      "resume": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.",
-      "dato": "2026-10-07T07:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-10-07T21:31:02.551414+00:00",
-      "eget_foerst_set": "2026-10-07T21:31:02.551414+00:00",
-      "rubrik": "Radisson integrerer hotelreservation direkte i ChatGPT",
-      "resume_da": "I samarbejde med Accenture lancerer hotelkæden en plugin, der lader rejsende finde og booke værelser gennem OpenAI-teknologi.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Radisson og Accenture lancerer ChatGPT-plugin til hotelbooking",
-        "forbehold": "",
-        "emne": "radisson chatgpt"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
@@ -43717,7 +43750,7 @@
       "titel": "Democrats think cracking down on AI could give them an edge",
       "link": "https://www.theverge.com/policy/1013113/democrats-ai-midterms",
       "resume": "Democrats could win back control of Congress this November, and if they do, they'll need to decide how to approach one of the country's newest and thorniest political issues: AI. Polls predict Democrats will flip at least one chamber of Congress in the midterm elections, which would put committee leadership back in their hands. That […]",
-      "dato": "2026-10-19T08:00:00-04:00",
+      "dato": "2026-10-19T12:00:00+00:00",
       "kilde": "The Verge AI",
       "kategori": "Politik & jura",
       "foerst_set": "2026-10-19T15:50:01.745273+00:00",
@@ -46599,24 +46632,7 @@
       "eget_foerst_set": "2026-10-20T20:06:38.203833+00:00",
       "rubrik": "Mistral bygger taleagent i én pipeline",
       "resume_da": "Voxtral 3 lytter i 50+ sprog, taler tilbage og udfører handlinger i realtid – fra 0,0035 dollar pr. minut.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 4,
-        "betydning": 3,
-        "brugbarhed": 4,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "Mistral annoncerer Voxtral 3, voice-agent SDK med realtidstale i 50+ sprog",
-        "forbehold": "",
-        "emne": "mistral ai"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 7,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Tre talemodeller og ét SDK",
@@ -46643,8 +46659,6 @@
           "tekst": "Mistrals målinger giver lavest ordfejl for Voxtral Small Transcribe 3: 4,0–4,1 % mod 14,9–16,0 % for Whisper large-v3.\n\nDet er makrognemsnittet over 45 sprog i FLEURS-benchmarket, som alle syv modeller deler – japansk, koreansk, thai og kinesisk måles i tegnfejl. Lavere er bedre.\n\nVed diarization scorer Voxtral Small Transcribe 3 18,4 % mod Gemini 3.5 Transcribe 38,4 % på AMI, Switchboard og AISHELL-4. Det er **producentens egne tal**, ikke en uafhængig test."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "4,0–4,1 %",
@@ -46667,6 +46681,7 @@
           "label": "Transskription, heraf 24 officielle EU-sprog; tekst-til-tale dækker 35+ sprog"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Kontekstbiasering forbedrer genkendelse af fagtermer uden finjustering af modellen.",
         "SDK'en henter oplysninger og betjener forretningssystemer undervejs i en samtale.",
@@ -46679,6 +46694,26 @@
         "Transskription 50 sprog, tekst-til-tale 35+ sprog.",
         "Benchmark-tallene er Mistrals egne målinger."
       ],
+      "billedmotiv": "A solid microphone in Mistral's orange flame emblem sits between two thick speech bubbles, one holding incoming sound wave bars and one holding an outgoing wave, with a small calendar tile booking a time slot beside them, all opaque flat vector shapes with crisp edges.",
+      "billedmotiv_instruks": "f7e3e706671fee2ac0d5",
+      "billede": "data/img/b06a8b85cdf2672d.jpg",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 3,
+        "brugbarhed": 4,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Mistral annoncerer Voxtral 3, voice-agent SDK med realtidstale i 50+ sprog",
+        "forbehold": "",
+        "emne": "mistral ai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
@@ -46686,9 +46721,7 @@
       },
       "redaktoer_opgave_id": "4fd75cc56cec9f68",
       "redaktoer_kilder": [],
-      "billedmotiv": "A solid microphone in Mistral's orange flame emblem sits between two thick speech bubbles, one holding incoming sound wave bars and one holding an outgoing wave, with a small calendar tile booking a time slot beside them, all opaque flat vector shapes with crisp edges.",
-      "billedmotiv_instruks": "f7e3e706671fee2ac0d5",
-      "billede": "data/img/b06a8b85cdf2672d.jpg",
+      "prio": 7,
       "side": "artikel/90e3b37a09eaeb60.html"
     },
     {
@@ -46867,24 +46900,7 @@
       "eget_foerst_set": "2026-10-20T23:20:11.721476+00:00",
       "rubrik": "Anthropic mangler cloudkapacitet hos AWS, Google og Microsoft",
       "resume_da": "Et lækket S-1-dokument viser, at AWS, Google og Microsoft ser Claude-producenten som rival. Anthropic lejer egne datacentre, men advarer om milliardtab.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 0,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Cloud-udbydere ses som konkurrenter til Anthropic; compute-mangel før IPO i november",
-        "forbehold": "Angives som 'reportedly', konkret belæg begrænset",
-        "emne": "anthropic"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Cloudgiganter ser Claude som konkurrent",
@@ -46899,8 +46915,6 @@
           "tekst": "I første halvdel af året tabte Anthropic 80,7 milliarder dollars, mens omsætningen kun nåede 16,3 milliarder dollars. Kun to kunder står for omkring en femtedel af salget.\n\nMen væksten er markant. Sidste uge fortalte selskabet potentielle investorer, at tredje kvartals omsætning alene nåede 16,8 milliarder dollars — en stigning på 45 procent fra forrige kvartal. Anthropic sigter mod en børsnotering i november."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "750+ mia. dollars",
@@ -46923,6 +46937,7 @@
           "label": "Andel af omsætningen fra kun to kunder"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Anthropic har ikke svaret på TechCrunch' henvendelse om en kommentar",
         "Det lækkede dokument uddyber tal, som Reuters og Financial Times rapporterede i slutningen af september",
@@ -46934,14 +46949,273 @@
         "Tredje kvartals omsætning på 16,8 mia. dollars overgår hele første halvår",
         "Filen advarer om erstatningsansvar ud over forsikringsdækningen"
       ],
+      "billedmotiv": "Three large solid cloud shapes from three different tech providers press together, squeezing a smaller central block bearing Anthropic's terracotta-orange asterisk starburst symbol, showing capacity shortage, rendered as opaque flat vector shapes with sharp contours.",
+      "billedmotiv_instruks": "a8b7326076454b52c767",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 0,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Cloud-udbydere ses som konkurrenter til Anthropic; compute-mangel før IPO i november",
+        "forbehold": "Angives som 'reportedly', konkret belæg begrænset",
+        "emne": "anthropic"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-21T05:31:34.434886+00:00"
       },
-      "billedmotiv": "Three large solid cloud shapes from three different tech providers press together, squeezing a smaller central block bearing Anthropic's terracotta-orange asterisk starburst symbol, showing capacity shortage, rendered as opaque flat vector shapes with sharp contours.",
-      "billedmotiv_instruks": "a8b7326076454b52c767",
+      "prio": 4,
       "side": "artikel/b14d2c98d7d92c02.html"
+    },
+    {
+      "titel": "AI promises productivity, but for managers, it’s mostly a headache for now",
+      "link": "https://techcrunch.com/2026/10/21/ai-promises-productivity-but-for-managers-its-mostly-a-headache-for-now-says-new-survey/",
+      "resume": "More than 50% of managers say they're finding it harder to evaluate employees' work after adopting AI, according to a new survey.",
+      "dato": "2026-10-21T14:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-21T14:05:01.175685+00:00",
+      "eget_foerst_set": "2026-10-21T14:05:01.175685+00:00",
+      "rubrik": "Nielsen-undersøgelse: Chefer kan ikke skille AI fra arbejde",
+      "resume_da": "Nielsens undersøgelse blandt 1.700 ledere i syv lande viser, at AI giver chefer mere kontrolarbejde og gør bedømmelser vanskeligere.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Ny undersøgelse viser, at over halvdelen af ledere efter AI-adoption oplever det sværere at evaluere medarbejderes arbejde.",
+        "forbehold": "Udvalg, metode og undersøgelsens omfang beskrives ikke i noten.",
+        "emne": "ledere og ai-produktivitet"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Chefer bruger længere tid på at kontrollere",
+          "tekst": "En Nielsen-undersøgelse blandt 1.700 direktører og seniorledere i syv lande, bestilt af Monday.com, viser, at mere end halvdelen af lederne nu har sværere ved at vurdere medarbejdernes arbejde efter indførsel af AI.\n\nOutputtet lander færdigpoleret i indbakken, så det er svært at se, hvor meget der kom fra medarbejderen, og hvor meget fra AI. Næsten halvdelen af cheferne bruger derfor mere tid på at gennemgå teamets leverancer end før."
+        },
+        {
+          "overskrift": "78% har ændret, hvordan de bedømmer medarbejdere",
+          "tekst": "Trods besværet er begejstringen stor: 94% af de adspurgte chefer er spændte på at bruge AI i deres arbejde. Men 78% har samtidig ændret måden, de bedømmer medarbejdere på, og lægger nu mere vægt på, om folk kan formulere prompts og vælge opgaver til AI.\n\nSamtidig bruger 46% af cheferne AI til egne beslutninger, og 39% lader AI udfaste præstationssamtaler. Forskning viser, at store sprogmodeller kan gengive menneskelige mønstre fra træningsdata. Michal Miller Levi fra Monday.com siger, at virksomheder endnu ikke ved, hvordan de skal håndtere den type spørgsmål."
+        },
+        {
+          "overskrift": "58% vil styre flere AI-agenter end medarbejdere",
+          "tekst": "57% af cheferne siger, at deres organisationer nu har flere værktøjer i cirkulation end før. Virksomhederne havde forventet, at AI ville skrumpe deres softwarestakke, men værktøjstallet er steget.\n\n58% forventer inden for det næste år at skulle overse flere AI-agenter end menneskelige medarbejdere. Cheferne vil have mennesker med i afgørende beslutninger, fordi LLM'er fortsat er uforudsigelige."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "29%",
+          "label": "Chefer der beskriver deres AI-infrastruktur som fuldt optimeret og samlet"
+        },
+        {
+          "tal": "51%",
+          "label": "Chefer der siger, at værktøjer er blevet mere indbyrdes afhængige"
+        },
+        {
+          "tal": "35%",
+          "label": "Respondenter der frygter at blive holdt ansvarlige for AI's beslutninger"
+        }
+      ],
+      "detaljer": [
+        "Michal Miller Levi fra Monday.com sammenligner begejstringen med internettets begyndelse i 2000'erne",
+        "Levi: AI bevæger sig hurtigere, end organisationer kan tilpasse deres processer",
+        "Luxembourg Institute of Socio-Economic Research: Uden klare standarder bedømmer LLM'er som mennesker",
+        "Forskningspapir fra tidligt 2025 dokumenterede bias mod sorte mandlige kandidater"
+      ],
+      "betydning": "AI-brug er blevet lige så meget et styringsproblem som et produktivitetsløft: uden nye processer kæmper chefer med at holde styr på output, værktøjer og agenter.",
+      "pointer": [
+        "Over halvdelen af chefer vurderer AI-arbejde vanskeligere",
+        "78% har ændret deres medarbejderbedømmelse",
+        "58% forventer flere AI-agenter end medarbejdere"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-21T14:17:09.884270+00:00"
+      },
+      "billedmotiv": "A solid clipboard holding a finished report page split down the middle by a jagged seam, one half smooth polished output, the other half rougher handwritten work, with the black OpenAI Blossom symbol stamped on the polished half and a magnifying glass hovering over the seam, showing a manager straining to tell human effort from AI output.",
+      "billedmotiv_instruks": "319f391bfe7ecccb5691",
+      "side": "artikel/1d707ef9b9de000a.html"
+    },
+    {
+      "titel": "Mistral Advances AI for Engineering with NVIDIA",
+      "link": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
+      "resume": "Mistral is collaborating with NVIDIA to develop a new generation of AI-native engineering workflows powered by NVIDIA accelerated computing.",
+      "dato": "2026-10-21T12:00:20+00:00",
+      "kilde": "Mistral AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-21T14:05:01.175685+00:00",
+      "eget_foerst_set": "2026-10-21T14:05:01.175685+00:00",
+      "rubrik": "Mistral og NVIDIA bygger benchmarks til ingeniør-AI",
+      "resume_da": "Fælles tests skal vise, om AI-agenter kan gennemføre flertrins-opgaver i simulering og elektronikdesign — med tal for nøjagtighed, tid og beregningspris.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Mistral og NVIDIA annoncerer samarbejde om AI-native ingeniør-arbejdsgange på NVIDIAs hardware.",
+        "forbehold": "Samarbejde, ikke en konkret ny model; ingen produktdetaljer oplyses.",
+        "emne": "mistral ai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Offentlige tests måler fysik-AI på fælles grundlag",
+          "tekst": "Mistral og NVIDIA vil udgive **offentlige benchmarks og åbne datasæt**, så forskere, udviklere og industriteams kan vurdere fysiske AI-modeller på samme grundlag.\n\nEt benchmark er en fast testopgave med kendte svar. Her undersøges det blandt andet, om et workflow fra CAD (computeraideret design) til simulering kan automatiseres og gentages.\n\nSamme tests dækker, hvad en AI-agent formår: en model, der selv planlægger og udfører flere trin med værktøjer i CAE (computerbaseret ingeniørsimulering) og EDA (elektronisk designautomatisering)."
+        },
+        {
+          "overskrift": "Simulering og design lukkes i én sløjfe",
+          "tekst": "Arbejdet lukker simulering, træning af AI-modeller og selve designet i én sløjfe, så ét resultat kan fodre det næste.\n\nNVIDIA Warp og CUDA-X-bibliotekerne accelererer de fysiske beregninger på GPU'er. NVIDIA Omniverse leverer 3D-scener og SimReady-objekter, der er klar til simulering.\n\nNeil Ashton, Mistral-vicepræsident for beregningsingeniør, siger, at ingeniørers tempo længe er blevet sat af, hvor langsomt simuleringer kører.\n\nBenchmarkene og modellerne sigter mod luftfart, biler og halvledere."
+        },
+        {
+          "overskrift": "Mistral Large 4 er trænet i Europa",
+          "tekst": "Sløjfen bygger på Mistral Large 4 — kaldet Le Chonk — Mistrals største og mest kompetente model, som er i offentlig prøveversion.\n\nDen har ca. 1.000 milliarder parametre i alt, hvoraf 49 milliarder er aktive ad gangen, og er trænet på 3.800 NVIDIA Grace Blackwell GPU'er i Mistrals datacentre i Europa.\n\nVægtene — selve de trænede modelparametre — planlægges frigivet ved udgangen af oktober. Mistral og NVIDIA udviklede tidligere modellen Mistral NeMo sammen."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "3.800 NVIDIA Grace Blackwell GPU'er",
+          "label": "GPU'er brugt til træning af Mistral Large 4 i Mistrals europæiske datacentre"
+        },
+        {
+          "tal": "ca. 1.000 milliarder parametre i alt",
+          "label": "Mistral Large 4, hvoraf 49 milliarder er aktive ad gangen"
+        }
+      ],
+      "detaljer": [
+        "Mistral og NVIDIA arbejder allerede sammen i NVIDIA Nemotron Coalition om en ny basismodel.",
+        "Mistral sigter mod 1 GW AI-kapacitet i 2030.",
+        "Benchmarkene skal også måle agenters udførelsestid og beregningsomkostning."
+      ],
+      "betydning": "Med fælles benchmarks kan udviklere måle AI-agenters præcision i simulering og elektronikdesign på tværs af værktøjer og brancher.",
+      "pointer": [
+        "Fælles benchmarks og åbne datasæt til fysik-AI.",
+        "Mistral Large 4 er trænet på 3.800 GPU'er."
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-21T14:20:50.804198+00:00"
+      },
+      "billedmotiv": "A closed test loop of three thick linked blocks — a CAD cube, a simulation wave panel, and an electronics chip — connected by bold arrows forming one continuous circuit, with the NVIDIA eye logo and the Mistral stacked-bars mark each occupying a solid block, and a checkmark badge marking the shared benchmark result.",
+      "billedmotiv_instruks": "d8e990e60ef9341ddebe",
+      "side": "artikel/9bde5caa0375c81d.html"
+    },
+    {
+      "titel": "Battle Drones - a vibe coded RTS with audio-based multiplayer",
+      "link": "https://simonwillison.net/2026/Oct/20/battledrones/",
+      "resume": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's…",
+      "dato": "2026-10-20T19:34:19+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-10-20T20:06:38.203833+00:00",
+      "eget_foerst_set": "2026-10-20T20:06:38.203833+00:00",
+      "rubrik": "Simon Willisons AI-kodede strategispil blev faktisk sjovt",
+      "resume_da": "Claude skabte gennem 12 iterationer et Command & Conquer-agtigt strategispil med lydmultiplayer ved selv at køre over 1.000 simulerede kampe og finde den rette balance.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Personlig blogpost om et vibe-coded RTS-spil med lydbaseret multiplayer mellem enheder.",
+        "forbehold": "Underholdningsværdi og hobbyeksperiment, ikke en AI-nyhed.",
+        "emne": "simon willison battle drones"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Claude skrev næsten al kode bag spillet",
+          "tekst": "Battle Drones er et realtidsstrategispil i stil med Command & Conquer fra 1995. To hære af droner — flyvende og jordbaserede — kæmper om territorium og ressourcer i browseren, på både mobil og desktop.\n\nSimon Willison kalder projektet \"vibe coded\" — han har gennemgået stort set ingen af de 321 commits, som hovedsagelig Claude Code stod for over 12 store iterationer. Han har knapt brugt TypeScript før."
+        },
+        {
+          "overskrift": "Simuleringer, ikke prompts, gjorde spillet sjovt",
+          "tekst": "Efter flere versioner uden spilleglæde skrev Willison en kort besked til Claude: **\"Make it a LOT more fun.\"** Med Opus 5.5 i Ultracode-tilstand kørte Claude over 1.000 simulerede kampe for at genbalancere spillet. Han indrømmer, at han er lidt flov over enkelheden.\n\nIfølge Claudes egne release notes faldt uafgjorte kampe efter 25 minutter fra 14% til 0,9% blandt 1.200 AI-mod-AI testkampe på Normal-niveau. Sejre til hære, der havde været 800+ scrap bagud, steg fra 24% til 46%."
+        },
+        {
+          "overskrift": "Lyd holder to telefoner i samme kamp",
+          "tekst": "Battle Drones understøtter multiplayer mellem enheder, der er inden for mikrofonrækkevidde af hinanden. Spiltilstanden synkroniseres via lydsignaler, så telefonerne \"hører\" hinanden og holder kampen ens uden internetforbindelse. Senere tilføjede Willison også onlinemultiplayer."
+        },
+        {
+          "overskrift": "Claude byggede 3D-modeller direkte som kode",
+          "tekst": "Efter at have mestret 2D-versionen bad Willison Claude om at konvertere spillet til three.js med 3D-modeller for bygninger, køretøjer og landskaber. Alle modeller blev genereret som TypeScript-kode — Claude tegnede dem altså ved at skrive programtekst, ikke ved at bruge et 3D-redigeringsprogram.\n\nDet resulterede blandt andet i Archipelago-kortet, hvor man kun kan erobre ø-uplinks ved at flyve infanteri derud i et Condor-transportfly. Jordkøretøjer kan ikke nå øerne."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "321 commits",
+          "label": "Antal kodekommitter fra 12 store iterationer, hovedsagelig udført af Claude Code"
+        },
+        {
+          "tal": "1.200 kampe",
+          "label": "AI-mod-AI testkampe på Normal-niveau brugt til genbalancering (Claudes egne release notes)"
+        },
+        {
+          "tal": "14% → 0,9%",
+          "label": "Andel uafgjorte kampe efter 25 minutter, før og efter genbalancering"
+        },
+        {
+          "tal": "24% → 46%",
+          "label": "Andel sejre til hære, der havde været 800+ scrap bagud"
+        }
+      ],
+      "detaljer": [
+        "Tidlige versioner brugte Phaser 2D-framework; 3D-versionen bruger three.js",
+        "Claude brugte OpenAI Image API til at generere sprites i 2D-versionen",
+        "Ultracode-tilstand lader Claude Code orkestrere mange subagenters samtidigt"
+      ],
+      "betydning": "Willison skrev før Ultracode-testen, at han troede, AI-agenter kun kunne bygge spil, der ligner spil — resultatet ændrede hans opfattelse.",
+      "pointer": [
+        "Claude kørte over 1.000 simulerede kampe for at genbalancere spillet",
+        "Lyd multiplayer kræver kun telefoner inden for mikrofonrækkevidde",
+        "Alle 3D-modeller blev genereret som TypeScript-kode"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-21T14:20:42.681247+00:00"
+      },
+      "billedmotiv": "Two clusters of small blocky drone units facing off across a chunky territory grid, with the terracotta-orange Claude starburst emblem on a solid command panel behind one cluster, and a bar chart beside it showing a rebalanced win rate rising to even levels.",
+      "billedmotiv_instruks": "d04b5d80ff7ee00f1e73",
+      "side": "artikel/144d05732de3bf7d.html"
     }
   ]
 }

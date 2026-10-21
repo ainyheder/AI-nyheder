@@ -1,32 +1,34 @@
 {
-  "opdateret": "2026-10-21T05:13:21.754506+00:00",
-  "status": "godkendt",
+  "opdateret": "2026-10-21T14:05:01.175685+00:00",
+  "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
     "https://mistral.ai/news/voxtral-3/",
     "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
-    "https://www.theverge.com/entertainment/1014284/spotify-ai-slop-spam-songs-removed"
+    "https://www.theverge.com/ai-artificial-intelligence/1015316/openai-ai-agent-disabling-monitoring-systems"
   ],
-  "input_fingerprint": "01e6d3b47622ff58",
-  "redaktionsnote": "Kun Voxtral 3 kunne underbygges med en læst kilde inden for researchbudgettet; find_kilder fandt ingen læsbare kilder til Nvidia Nemotron/Bolt, DeepSeek-ordren og Anthropic-sikkerhedslovsforslaget, så de udelades. Resterende kandidater afventer færdige artikler.",
-  "beslutninger": [
-    {
-      "id": "cb0bf0e1617ea810",
-      "begrundelse": "Mistral udgiver Voxtral 3: en hel familie af talemodeller (speech-to-text, TTS) og en voice agent-SDK i ét realtids-flow. Det er en reel modeludgivelse med dokumenterede tal for priser, sprog og benchmarks – ny taleevne på forsiden.",
-      "nyt_siden_sidst": "Nyhed fra 20. oktober: Mistral lancerer Voxtral 3-familien, som ikke er set på tidligere forsider. Den officielle kilde er læst med konkrete modellenavne, priser og benchmark-tal.",
-      "skriveopgave": "Overskrift med det konkrete nyhedsvinkel: Mistral bygger en taleagent i én pipeline. Forklar kort hvad en voice agent er (lytter, forstår, taler og udfører handlinger i realtid). Afsnit: 1) Hvad er nyt – Voxtral Small Transcribe 3, Voxtral Mini TTS 3 og SDK'en samlet; 2) Hvad kan den – 50+ sprog, 35+ TTS-sprog, diarization, kontekstbiasering, Pro Voice med 30 minutters audio; 3) Pris og adgang – Mini Transcribe 3 er 4B parametre til $0,0035 pr. minut, EU-hostet API eller selvhostet; 4) Forbehold – benchmark-tallene er Mistrals egne (producentens påstand, ikke uafhængig test), og sammenligningen med Whisper, Scribe v2 og Gemini 3.5 Transcribe er målt på 45 sprog i FLEURS. Brug en faktaboks med modelnavne, sprog og enhedspris.",
-      "kilder": [
-        "cb0bf0e1617ea810"
-      ],
-      "samme_historie": [],
-      "link": "https://mistral.ai/news/voxtral-3/",
-      "rubrik": "Mistral bygger taleagent i én pipeline"
-    }
-  ],
+  "input_fingerprint": "e1232c869dca308e",
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "modelkald": 6,
-  "kildehentninger": 1,
+  "kildehentninger": 6,
   "vaerktoejer": [
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
     {
       "vaerktoej": "find_kilder",
       "fejl": null
@@ -40,24 +42,28 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
+    },
+    {
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Artikel 2d2caae98728dfe7: skriveopgave har 1015 tegn; skriv 12-900 tegn i dette felt"
     },
     {
       "vaerktoej": "aflever_udgave",
@@ -66,12 +72,32 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://mistral.ai/news/voxtral-3/",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1015316/openai-ai-agent-disabling-monitoring-systems",
       "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://openai.com/index/openai-models-google-cloud",
+      "grundlag": "rss_resume"
+    },
+    {
+      "link": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+      "grundlag": "rss_resume"
+    },
+    {
+      "link": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
+      "grundlag": "rss_resume"
     }
   ],
   "udgivet_udvalg": [
     "https://mistral.ai/news/voxtral-3/"
   ],
-  "afventer_artikler": 50
+  "afventer_artikler": 51
 }
