@@ -1,10 +1,10 @@
 {
- "rubrik": "Åbne modeller, egne chips og aflåste agenter",
- "indledning": "Ugens tydeligste skift er ikke en enkelt ny model, men hvor og på hvem den kører: tre store lanceringer satser på åbne vægte, du selv kan drive – og både chipkamp og retssager følger med.",
+ "rubrik": "Åbne modeller og retslig modvind præger AI-ugen",
+ "indledning": "Ugen bød på fire markante modeludgivelser og to store juridiske og politiske indgreb. Tilsammen viser de, at AI-kampen både handler om, hvem der kan køre de stærkeste modeller lokalt, og hvem der må bestemme over dem.",
  "historier": [
   {
-   "overskrift": "Meta lancerer Muse Spark Open, der skal køre lokalt på Mac",
-   "tekst": "Meta har lanceret Muse Spark Open, som selskabet kalder den mest kapable åbne vægtmodel i USA. De 816 milliarder parametre og 1 million tokens kontekst skal kunne køre lokalt på Mac frem for i en sky, men kravet er mindst 1 TB RAM – bedst på en Mac Studio med M5 Ultra. Ydeevnetallene er Metas egne.",
+   "overskrift": "Meta sender 816-milliarders model ud med åbne vægte",
+   "tekst": "Meta har lanceret Muse Spark Open med 816 mia. parametre og 1 mio. tokens kontekst. Ifølge Meta kan den køre lokalt på Mac, men kræver mindst 1 TB RAM og fungerer bedst på en Mac Studio med M5 Ultra. Modellen er også tilgængelig via API'er. Meta kalder den den mest kapable åbne vægtmodel i USA.",
    "link": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
    "kategori": "Lanceringer",
    "billede": "data/img/a0bac78f25175e89.jpg",
@@ -25,8 +25,8 @@
    "artikel_signatur": "b0e56418e7c092fc454e425d5e6d648cb751ae3ed6a2a4fe10c7740abf8ca758"
   },
   {
-   "overskrift": "Reflection åbner 501-milliarders modellen Beam for alle",
-   "tekst": "Det nye amerikanske laboratorium Reflection udgiver sin første model, Beam, med åbne vægte under Apache 2.0, som tillader kommerciel brug og omdistribution. Beam har 501 milliarder parametre fordelt på 256 eksperter, men vælger kun de 8 bedste pr. token – ca. 23 milliarder aktive. Den læser 1 million tokens og kræver ifølge Reflection fire B200-GPU’er.",
+   "overskrift": "Reflection åbner 501-milliarders Beam under Apache 2.0",
+   "tekst": "Reflection har frigivet sin første model, Beam, med åbne vægte og Apache 2.0-licens. Den har 501 mia. parametre fordelt på 256 eksperter, men aktiverer kun ca. 23 mia. pr. token. Kontekstvinduet er 1 mio. tokens. Et BF16-checkpoint fylder ca. 1 TB, og Reflection anbefaler fire B200-GPU'er. Ydeevnepåstande kommer fra Reflection selv.",
    "link": "https://huggingface.co/blog/reflection-beam",
    "kategori": "Lanceringer",
    "billede": "data/img/d74542ebe9e4cb36.jpg",
@@ -38,8 +38,8 @@
    "artikel_signatur": "0394a0f52e3c658de7fc485e75cb47f089d62d6f5726c69a82630c7a697f3c69"
   },
   {
-   "overskrift": "Nvidia lancerer åbne modeller til agenter og AI-PC’er",
-   "tekst": "Nvidia lancerer Nemotron 3.5 Super VL med 120 milliarder parametre og åbne vægte til virksomheders AI-agenter, så de kan eftertrænes på egne data og køres på egen infrastruktur. To mindre Bolt-modeller er beregnet til AI-PC’er og arbejdsstationer. Nvidia hævder, at Super VL efter eftertræning slår konkurrerende lukkede modeller; påstanden er selskabets egen.",
+   "overskrift": "Nvidia vil have agenter i virksomheder og på AI-PC'er",
+   "tekst": "Nvidia har lanceret Nemotron 3.5 Super VL med 120 mia. parametre til virksomheders AI-agenter. Vægtene er åbne, så kunder kan eftertræne og køre modellen på egen infrastruktur. To mindre Bolt-modeller skal køre lokalt på AI-PC'er; den mindste kommer senere i oktober. Nvidia hævder, at Super VL slår rivaler på bestemte agentopgaver.",
    "link": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
    "kategori": "Lanceringer",
    "billede": "data/img/054eea01842aae5e.jpg",
@@ -51,21 +51,21 @@
    "artikel_signatur": "78b3839bcd2ceea08d128e5f3144286e1ee39fe5d71f1d47b574171e4fc8aa4d"
   },
   {
-   "overskrift": "Amazon vil løsne Nvidias greb om AI-udviklere",
-   "tekst": "AWS har udgivet TorchNeuron, der lader udviklere flytte AI-apps til Amazons egen chip Trainium ved at ændre én linje konfiguration. Cirka 85 procent af AI-apps er skrevet i PyTorch, som er tæt koblet til Nvidias CUDA. Amazon planlægger også at bidrage hardwareuafhængig kode til PyTorch-hovedprojektet – en plan, ikke en gennemført ændring.",
-   "link": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
+   "overskrift": "Mistral samler taleagenter i én realtidspipeline",
+   "tekst": "Mistral har lanceret Voxtral 3: tre talemodeller og et SDK, der samler lytning, ræsonnement, værktøjskald og tale i én pipeline. Transskriberingsmodellerne dækker 50 sprog, og TTS-modellen får stemmer med følelse og tempo. Mini Transcribe 3 koster 0,0035 dollar pr. minut. Mistrals egne målinger viser lavere ordfejl end Whisper large-v3.",
+   "link": "https://mistral.ai/news/voxtral-3/",
    "kategori": "Lanceringer",
-   "billede": "",
-   "dato": "2026-10-19T20:09:24+00:00",
+   "billede": "data/img/b06a8b85cdf2672d.jpg",
+   "dato": "2026-10-20T12:00:22+00:00",
    "andre": [],
-   "titel": "Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool",
-   "rubrik": "Amazon vil løsne Nvidias greb om AI-udviklere",
-   "resume_da": "Nyt væktøj TorchNeuron flytter AI-apps til Amazons egen chip Trainium med én ændret linje kode.",
-   "artikel_signatur": "d3c35a96f8c5506df24861fbae4a904d160fca2be746b2d8e5c87a3115a6eafd"
+   "titel": "Voxtral 3",
+   "rubrik": "Mistral bygger taleagent i én pipeline",
+   "resume_da": "Voxtral 3 lytter i 50+ sprog, taler tilbage og udfører handlinger i realtid – fra 0,0035 dollar pr. minut.",
+   "artikel_signatur": "65edf7efc0466613163f9f626e728a185823abd691716c06feb5fb14f4593fef"
   },
   {
-   "overskrift": "Otte amerikanske stater sagsøger OpenAI for usikker ChatGPT",
-   "tekst": "Otte amerikanske stater, deriblandt Iowa, Kansas og Arizona, har hver især sagsøgt OpenAI. Staterne mener, at virksomheden vildledte offentligheden om ChatGPT’s sikkerhed og indsamlede data fra mindreårige uden tilstrækkeligt samtykke, og kræver bøder og ophør med vildledningen. OpenAIs talsperson afviser beskyldningerne og peger på aldersspecifikke beskyttelsesforanstaltninger.",
+   "overskrift": "Otte amerikanske stater sagsøger OpenAI",
+   "tekst": "Iowa, Kansas, Nebraska, West Virginia, Arkansas, Arizona, Idaho og Montana har hver især sagsøgt OpenAI. Staterne mener, at selskabet vildledte om ChatGPTs sikkerhed og indsamlede data om mindreårige uden tilstrækkeligt samtykke. De kræver bøder og ændret adfærd. OpenAI afviser og peger på aldersspecifikke beskyttelser, forældrekontrol og pauspåmindelser.",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
    "kategori": "Politik & jura",
    "billede": "data/img/e8aa395624e3b171.jpg",
@@ -77,22 +77,22 @@
    "artikel_signatur": "3136823f60d122811b049a1249b618a0e5d809817960d2214e098b5045cc3e8e"
   },
   {
-   "overskrift": "Amazon og banker lukker døren for AI-agenter – Shopify åbner",
-   "tekst": "AI-agenter fra Meta Muse, xAIs Grok og OpenAI Dots bliver afvist på Yelp, Delta Air Lines, JPMorgan Chase og Charles Schwab. Shopify tager imod med egne kasser, der springer sider bygget for mennesker over. Meta har valgt forhandlinger og aftaler med Walmart, Gap, Sephora og Best Buy frem for Amazons retssag mod Perplexity.",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-   "kategori": "Samfund & etik",
-   "billede": "data/img/fa14a42ef22d1449.jpg",
-   "dato": "2026-10-17T13:00:00+00:00",
+   "overskrift": "USA fjerner DeepSeek fra føderale civile systemer",
+   "tekst": "Den amerikanske regering har beordret føderale civile myndigheder til at stoppe med at købe DeepSeek-produkter og fjerne dem fra deres systemer. Forbuddet omfatter også tredjepartsprodukter bygget på DeepSeek-teknologi, men myndighederne kan søge om undtagelser. Sikkerhedsministeriet frygter, at følsomme data kan nå kinesiske myndigheder. Kina afviser kritikken.",
+   "link": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/",
+   "kategori": "Politik & jura",
+   "billede": "",
+   "dato": "2026-10-20T13:07:24+00:00",
    "andre": [],
-   "titel": "Websites are closing their doors to AI agents",
-   "rubrik": "Amazon og banker lukker døren for AI-agenter",
-   "resume_da": "Meta Muse, xAIs Grok og OpenAI Dots afvises på Yelp, Delta og finanssider, mens Meta satser på aftaler.",
-   "artikel_signatur": "85d5e89026f214ffa5920b38470ab8088469726cab83723c9164a160cf1bfde2"
+   "titel": "US orders federal agencies to remove China’s DeepSeek AI from their systems",
+   "rubrik": "USA beordrer DeepSeek fjernet fra føderale systemer",
+   "resume_da": "Ordren omfatter også tredjepartsprodukter bygget på DeepSeek-teknologi, og myndighederne kan søge om undtagelser. DHS frygter, at data kan nå kinesiske myndigheder.",
+   "artikel_signatur": "e44efce9777e43c51f984556636c7c817ad6044adf19adf7f5c84e6a32473197"
   }
  ],
  "overblik": [
   {
-   "tekst": "Tre af ugens største lanceringer peger samme vej: åbne vægte, man selv kan finjustere og køre. Meta vil have Muse Spark Open til at køre lokalt på Mac – med mindst 1 TB RAM og bedst på en Mac Studio med M5 Ultra. Reflections Beam har 501 milliarder parametre, men aktiverer kun 8 af 256 eksperter pr. token og frigives under Apache 2.0. Nvidia retter Nemotron 3.5 Super VL mod virksomheders agenter og sender de mindre Bolt-modeller til AI-PC’er. Fælles er ønsket om at eje drift og data; forskellen er hardwarekravet, og ydeevnetallene er foreløbig producenternes egne.",
+   "tekst": "Ugens modelnyheder trækker i samme retning: store modeller med åbne vægte, som kan hentes og køres lokalt eller på egen infrastruktur. Metas Muse Spark Open har 816 mia. parametre og 1 mio. tokens kontekst, men kræver mindst 1 TB RAM for at køre på Mac. Reflection vælger en anden balance: Beam har 501 mia. parametre, Apache 2.0-licens og en serverorienteret profil med anbefaling om fire B200-GPU'er. Nvidia fører den åbne logik videre til virksomheders agenter og AI-PC'er med Nemotron 3.5 Super VL og de mindre Bolt-modeller. Fælles er ønsket om kontrol over data og drift; forskellen er, om modellen skal ligge på en Mac, i et datacenter eller på en PC.",
    "links": [
     "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
     "https://huggingface.co/blog/reflection-beam",
@@ -100,25 +100,25 @@
    ]
   },
   {
-   "tekst": "Ejerskabet rækker ned i chipniveauet. AWS har udgivet TorchNeuron, så AI-apps kan flyttes til Amazons egen Trainium-chip med én ændret linje i stedet for at være bundet til Nvidias CUDA. Cirka 85 procent af AI-apps er skrevet i PyTorch, som er tæt koblet til CUDA. Amazon vil også bidrage hardwareuafhængig kode til selve PyTorch – men det er en plan endnu.",
+   "tekst": "Mistral Voxtral 3 peger et andet sted hen: fra tekst til realtidssamtaler. Tre talemodeller og et SDK samler lytning, ræsonnement, værktøjskald og tale i én pipeline, så agenten kan forstå, svare og handle i samme kald. Det er en anden slags udgivelse end de store åbne tekstmodeller: ikke en ny 500-milliarders model, men et specialiseret system til kundeservice og stemmebaserede arbejdsgange. Mistrals egne tal viser lavere ordfejl end Whisper large-v3, men de er ikke uafhængigt testet.",
    "links": [
-    "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/"
+    "https://mistral.ai/news/voxtral-3/"
    ]
   },
   {
-   "tekst": "Reglerne for, hvad en agent må, forhandles samtidig på nettet og i retssalene. Shopify giver agenter egne kasser, der springer sider bygget for mennesker over, mens Amazon, Yelp, Delta, JPMorgan Chase og Charles Schwab spærrer dem ude – og Meta forhandler i stedet aftaler med Walmart, Gap, Sephora og Best Buy. Otte amerikanske stater sagsøger OpenAI for at have vildledt offentligheden om ChatGPT’s sikkerhed og indsamlet data om mindreårige; OpenAI afviser beskyldningerne. Spørgsmålet er det samme begge steder: hvem bestemmer, hvad en agent må.",
+   "tekst": "Samme uge blev rammerne skærpet fra to sider. Otte amerikanske stater sagsøger OpenAI med krav om bøder og ændret sikkerhedsadfærd, især over for mindreårige. Den føderale regering beordrede samtidig DeepSeek fjernet fra civile myndigheders systemer med henvisning til national sikkerhed. Det ene indgreb handler om forbrugerbeskyttelse og børn, det andet om data og geopolitik. Mens modellerne bliver lettere at køre lokalt, og agenter kan handle på vegne af brugere, bliver spørgsmålet om ansvar og kontrol sværere at holde adskilt fra teknologien.",
    "links": [
-    "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-    "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
+    "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
+    "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/"
    ]
   }
  ],
- "tendens": "Meta fjernede 17. oktober den formulering i sine erhvervsvilkår, som jurister mente kunne give selskabet ret til at hente kunders hjemmesideindhold til AI-træning. Det står uafklaret, om vilkårene overhovedet kunne have været håndhævet, og Meta fastholder, at sletningen ikke ændrer på, hvordan selskabets crawlers bruges.",
+ "tendens": "Om de åbne modeller lever op til producenternes ydeevnepåstande, er uafklaret. Meta, Reflection, Nvidia og Mistral henviser til egne målinger; uafhængige tests af Muse Spark Open, Beam, Nemotron 3.5 og Voxtral 3 mangler.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "87a02f4810e6bd60743e0d80b220204b70539798a9054102770d5d6e31540b7f",
- "dato": "2026-10-20T23:52:58.937992+00:00",
- "opdateret": "2026-10-21T14:30:20.787144+00:00",
+ "basis_signatur": "6da8b456de1eb639e5eaca3b220160925758f258c1dec1513cdc8ee3858e5a72",
+ "dato": "2026-10-21T20:43:09.664747+00:00",
+ "opdateret": "2026-10-21T20:43:09.664747+00:00",
  "periode_fra": "2026-10-13T22:00:00+00:00",
  "periode_til": "2026-10-20T22:00:00+00:00",
  "stats": {

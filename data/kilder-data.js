@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-21T14:05:01.175685+00:00",
- "artikler_i_alt": 125,
+ "opdateret": "2026-10-21T20:20:24.508912+00:00",
+ "artikler_i_alt": 133,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -127,7 +127,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 6,
-   "som_ekstra": 1,
+   "som_ekstra": 2,
    "seneste": [
     {
      "rubrik": "Google Universal Cart samler flere butikker",
@@ -137,6 +137,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google Universal Cart samler indkøb fra flere butikker"
+    },
+    {
+     "rubrik": "Google Gemini 3.8 skaber stemmer fra bunden",
+     "dato": "",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 3.8 TTS styres replik for replik"
     },
     {
      "rubrik": "Gemini får samlet værktøjsside til små virksomheder",
@@ -200,7 +209,7 @@ window.KILDER_STATUS = {
     ],
     [
      "Google DeepMind",
-     1
+     2
     ],
     [
      "Ars Technica AI",
@@ -233,9 +242,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 5,
+   "i_listen": 7,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "NVIDIA Kumo Relational forudsiger uden træning",
+     "dato": "2026-10-21T18:26:30",
+     "foerst_set": "2026-10-21T20:20:24",
+     "link": "https://huggingface.co/blog/nvidia/kumo-relational",
+     "side": "artikel/f9255f6920089cd5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "VocabX skærer inferensregningen med 77 procent",
+     "dato": "2026-10-21T17:35:36",
+     "foerst_set": "2026-10-21T20:20:24",
+     "link": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+     "side": "artikel/47ba5de6cc845501.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Hugging Face gør TPU til almindelig PyTorch-enhed",
      "dato": "2026-10-20T00:00:00",
@@ -282,7 +309,12 @@ window.KILDER_STATUS = {
      "under": ""
     }
    ],
-   "overlap": []
+   "overlap": [
+    [
+     "TechCrunch AI",
+     1
+    ]
+   ]
   },
   {
    "navn": "Simon Willison AI",
@@ -396,9 +428,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 53,
-   "som_ekstra": 3,
+   "i_listen": 55,
+   "som_ekstra": 4,
    "seneste": [
+    {
+     "rubrik": "Google slipper TorchTPU løs til sine TPU-chips",
+     "dato": "",
+     "foerst_set": "2026-10-20T20:06:38",
+     "link": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/",
+     "side": "",
+     "hvor": "under",
+     "under": "Hugging Face gør TPU til almindelig PyTorch-enhed"
+    },
     {
      "rubrik": "Anthropic afsætter fem procent af aktier til fond",
      "dato": "",
@@ -454,11 +495,29 @@ window.KILDER_STATUS = {
      "under": "YouTube mærker AI-sange i afspilleren"
     },
     {
+     "rubrik": "Walmart åbner for AI-agenter med Agent Gateway",
+     "dato": "2026-10-21T19:30:00",
+     "foerst_set": "2026-10-21T20:20:24",
+     "link": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
+     "side": "artikel/e6b6d4852fc92c0f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Nielsen-undersøgelse: Chefer kan ikke skille AI fra arbejde",
      "dato": "2026-10-21T14:00:00",
      "foerst_set": "2026-10-21T14:05:01",
      "link": "https://techcrunch.com/2026/10/21/ai-promises-productivity-but-for-managers-its-mostly-a-headache-for-now-says-new-survey/",
      "side": "artikel/1d707ef9b9de000a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic foreslår at blokere modeller ved 50 dødsfald",
+     "dato": "2026-10-20T23:01:23",
+     "foerst_set": "2026-10-20T23:20:11",
+     "link": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+     "side": "artikel/d1819ab5c66e067a.html",
      "hvor": "forside",
      "under": ""
     },
@@ -542,30 +601,16 @@ window.KILDER_STATUS = {
      "side": "artikel/4ef62f095ce74263.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "USA beordrer DeepSeek fjernet fra føderale systemer",
-     "dato": "2026-10-20T13:07:24",
-     "foerst_set": "2026-10-20T13:48:46",
-     "link": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/",
-     "side": "artikel/baab9c27d2ea33a2.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Yelp ringer restauranten for dig efter ventetid",
-     "dato": "2026-10-20T11:00:00",
-     "foerst_set": "2026-10-20T13:48:46",
-     "link": "https://techcrunch.com/2026/10/20/yelp-can-now-call-on-your-behalf-to-check-wait-times-at-a-restaurant/",
-     "side": "artikel/06aafb86abeb1480.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     6
+     7
+    ],
+    [
+     "Hugging Face",
+     1
     ],
     [
      "OpenAI Blog",
@@ -591,9 +636,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 27,
-   "som_ekstra": 9,
+   "i_listen": 28,
+   "som_ekstra": 10,
    "seneste": [
+    {
+     "rubrik": "Walmart lancerer AI-agentkøb næste måned",
+     "dato": "",
+     "foerst_set": "2026-10-21T20:20:24",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1015715/walmart-ai-shopping-agents",
+     "side": "",
+     "hvor": "under",
+     "under": "Walmart åbner for AI-agenter med Agent Gateway"
+    },
     {
      "rubrik": "Gemini i bilen bruger nu dine Google-apps",
      "dato": "",
@@ -676,6 +730,15 @@ window.KILDER_STATUS = {
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
     },
     {
+     "rubrik": "Gemini i Google Maps lander på CarPlay",
+     "dato": "2026-10-21T11:00:00",
+     "foerst_set": "2026-10-21T20:20:24",
+     "link": "https://www.theverge.com/transportation/1015281/gemini-ai-apple-carplay-voice-google-maps",
+     "side": "artikel/e5aa837170862d9c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Spotify skjuler 50 millioner AI-slopsange",
      "dato": "2026-10-20T10:18:37",
      "foerst_set": "2026-10-20T20:06:38",
@@ -695,7 +758,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "CoreWeaves gæld presser hele AI-industrien",
-     "dato": "2026-10-19T17:28:20",
+     "dato": "2026-10-19T21:28:20",
      "foerst_set": "2026-10-20T05:10:40",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1014045/coreweave-stock-debt-sector-ai",
      "side": "artikel/d5284706e5723232.html",
@@ -713,7 +776,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "AI-agenter angreb John Deere og SharkNinja",
-     "dato": "2026-10-19T09:58:41",
+     "dato": "2026-10-19T13:58:41",
      "foerst_set": "2026-10-19T15:50:01",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
      "side": "artikel/50e8daf7735ed4b1.html",
@@ -773,21 +836,12 @@ window.KILDER_STATUS = {
      "side": "artikel/179bf541be9616a0.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Meta Muse gemmer profiler om dine venner",
-     "dato": "2026-10-15T16:21:45",
-     "foerst_set": "2026-10-15T20:00:28",
-     "link": "https://www.theverge.com/tech/1011938/muse-ai-data-friends-consent",
-     "side": "artikel/253eb4f225982c81.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     6
+     7
     ],
     [
      "Ars Technica AI",
@@ -806,10 +860,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 12,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 503: Service Temporarily Unavailable",
-   "hentet": 0,
-   "i_listen": 11,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 12,
+   "i_listen": 12,
    "som_ekstra": 4,
    "seneste": [
     {
@@ -847,6 +901,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+    },
+    {
+     "rubrik": "GPT 6.1 kommer til Google Cloud",
+     "dato": "2026-10-21T18:51:42",
+     "foerst_set": "2026-10-21T14:05:01",
+     "link": "https://arstechnica.com/ai/2026/10/openais-latest-ai-models-are-coming-to-google-cloud-and-antigravity/",
+     "side": "artikel/f70b954b2a129f01.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Gemini trænger ind i bilens kabine",
@@ -954,6 +1017,10 @@ window.KILDER_STATUS = {
      5
     ],
     [
+     "OpenAI Blog",
+     1
+    ],
+    [
      "TechCrunch AI",
      1
     ],
@@ -1044,8 +1111,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 25,
    "i_listen": 0,
-   "som_ekstra": 1,
+   "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "OpenAI-modeller lander i Googles Model Garden",
+     "dato": "",
+     "foerst_set": "2026-10-21T14:05:01",
+     "link": "https://openai.com/index/openai-models-google-cloud",
+     "side": "",
+     "hvor": "under",
+     "under": "GPT 6.1 kommer til Google Cloud"
+    },
     {
      "rubrik": "OpenAI opkøber Orchestra Bio for life sciences",
      "dato": "",
@@ -1057,6 +1133,10 @@ window.KILDER_STATUS = {
     }
    ],
    "overlap": [
+    [
+     "Ars Technica AI",
+     1
+    ],
     [
      "TechCrunch AI",
      1
@@ -1070,10 +1150,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-   "hentet": 0,
-   "i_listen": 1,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 15,
+   "i_listen": 3,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -1093,12 +1173,30 @@ window.KILDER_STATUS = {
      "side": "artikel/ba028f76ed47c779.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "EmbeddingGemma 2 finder videoklip ud fra tale",
+     "dato": "2026-10-06T19:57:04",
+     "foerst_set": "2026-10-07T15:44:28",
+     "link": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+     "side": "artikel/bf211d23154acfab.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Gemini 3.8 TTS styres replik for replik",
+     "dato": "2026-09-23T15:25:14",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
+     "side": "artikel/31ef9b5263a38be6.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "Google Gemini",
-     1
+     2
     ]
    ]
   },

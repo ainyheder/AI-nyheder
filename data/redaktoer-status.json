@@ -1,17 +1,17 @@
 {
-  "opdateret": "2026-10-21T14:05:01.175685+00:00",
+  "opdateret": "2026-10-21T20:20:24.508912+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
     "https://mistral.ai/news/voxtral-3/",
-    "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
-    "https://www.theverge.com/ai-artificial-intelligence/1015316/openai-ai-agent-disabling-monitoring-systems"
+    "https://huggingface.co/blog/nvidia/kumo-relational",
+    "https://huggingface.co/blog/ibm-granite/granite-speech-5"
   ],
-  "input_fingerprint": "e1232c869dca308e",
+  "input_fingerprint": "9dc6a40adcfeb38f",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 6,
-  "kildehentninger": 6,
+  "modelkald": 5,
+  "kildehentninger": 5,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -26,6 +26,14 @@
       "fejl": null
     },
     {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
       "vaerktoej": "find_kilder",
       "fejl": null
     },
@@ -38,7 +46,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -52,18 +60,6 @@
     {
       "vaerktoej": "laes_kilde",
       "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel 2d2caae98728dfe7: skriveopgave har 1015 tegn; skriv 12-900 tegn i dette felt"
     },
     {
       "vaerktoej": "aflever_udgave",
@@ -72,32 +68,28 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1015316/openai-ai-agent-disabling-monitoring-systems",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://openai.com/index/openai-models-google-cloud",
-      "grundlag": "rss_resume"
-    },
-    {
-      "link": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
-      "grundlag": "rss_resume"
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1015316/openai-ai-agent-disabling-monitoring-systems",
+      "grundlag": "kildetekst"
     },
     {
       "link": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+      "link": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
+      "link": "https://openai.com/index/openai-models-google-cloud",
       "grundlag": "rss_resume"
     }
   ],
   "udgivet_udvalg": [
     "https://mistral.ai/news/voxtral-3/"
   ],
-  "afventer_artikler": 51
+  "afventer_artikler": 56
 }
