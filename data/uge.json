@@ -1,10 +1,10 @@
 {
- "rubrik": "Åbne modeller og retslig modvind præger AI-ugen",
- "indledning": "Ugen bød på fire markante modeludgivelser og to store juridiske og politiske indgreb. Tilsammen viser de, at AI-kampen både handler om, hvem der kan køre de stærkeste modeller lokalt, og hvem der må bestemme over dem.",
+ "rubrik": "Åbne modeller rykker tættere på hverdagen – og ind i politik",
+ "indledning": "Ugen viser, hvordan åbne vægtmodeller og stemmeagenter bliver mere praktiske – og mere politisk følsomme.",
  "historier": [
   {
-   "overskrift": "Meta sender 816-milliarders model ud med åbne vægte",
-   "tekst": "Meta har lanceret Muse Spark Open med 816 mia. parametre og 1 mio. tokens kontekst. Ifølge Meta kan den køre lokalt på Mac, men kræver mindst 1 TB RAM og fungerer bedst på en Mac Studio med M5 Ultra. Modellen er også tilgængelig via API'er. Meta kalder den den mest kapable åbne vægtmodel i USA.",
+   "overskrift": "Meta lancerer Muse Spark Open til lokal Mac-kørsel",
+   "tekst": "Meta har lanceret Muse Spark Open, en åben vægtmodel med 816 milliarder parametre og 1 million tokens kontekst. Ifølge Meta kan den køre lokalt på en Mac, men kræver mindst 1 TB RAM og fungerer bedst på en Mac Studio med M5 Ultra. Meta har også offentliggjort evalueringer, som selskabet selv fremhæver.",
    "link": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
    "kategori": "Lanceringer",
    "billede": "data/img/a0bac78f25175e89.jpg",
@@ -25,8 +25,8 @@
    "artikel_signatur": "b0e56418e7c092fc454e425d5e6d648cb751ae3ed6a2a4fe10c7740abf8ca758"
   },
   {
-   "overskrift": "Reflection åbner 501-milliarders Beam under Apache 2.0",
-   "tekst": "Reflection har frigivet sin første model, Beam, med åbne vægte og Apache 2.0-licens. Den har 501 mia. parametre fordelt på 256 eksperter, men aktiverer kun ca. 23 mia. pr. token. Kontekstvinduet er 1 mio. tokens. Et BF16-checkpoint fylder ca. 1 TB, og Reflection anbefaler fire B200-GPU'er. Ydeevnepåstande kommer fra Reflection selv.",
+   "overskrift": "Reflection åbner 501-milliardersmodellen Beam",
+   "tekst": "Reflection har frigivet Beam med åbne vægte under Apache 2.0. Modellen har 501 milliarder parametre, men aktiverer kun cirka 23 milliarder pr. token, og kontekstvinduet er 1 million tokens. Reflection anbefaler fire B200-GPU'er og oplyser selv benchmarkresultater; uafhængige tests er ikke læst.",
    "link": "https://huggingface.co/blog/reflection-beam",
    "kategori": "Lanceringer",
    "billede": "data/img/d74542ebe9e4cb36.jpg",
@@ -38,8 +38,8 @@
    "artikel_signatur": "0394a0f52e3c658de7fc485e75cb47f089d62d6f5726c69a82630c7a697f3c69"
   },
   {
-   "overskrift": "Nvidia vil have agenter i virksomheder og på AI-PC'er",
-   "tekst": "Nvidia har lanceret Nemotron 3.5 Super VL med 120 mia. parametre til virksomheders AI-agenter. Vægtene er åbne, så kunder kan eftertræne og køre modellen på egen infrastruktur. To mindre Bolt-modeller skal køre lokalt på AI-PC'er; den mindste kommer senere i oktober. Nvidia hævder, at Super VL slår rivaler på bestemte agentopgaver.",
+   "overskrift": "Nvidia lancerer åbne agentmodeller til virksomheder og PC'er",
+   "tekst": "Nvidia har sendt Nemotron 3.5 Super VL på markedet: en åben model med 120 milliarder parametre til virksomheders agenter. To Bolt-modeller skal køre lokalt på AI-PC'er med RTX Spark. Nvidia hævder bedre ydelse end lukkede konkurrenter på bestemte agentopgaver; selskabet henviser til egne tests.",
    "link": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
    "kategori": "Lanceringer",
    "billede": "data/img/054eea01842aae5e.jpg",
@@ -52,7 +52,7 @@
   },
   {
    "overskrift": "Mistral samler taleagenter i én realtidspipeline",
-   "tekst": "Mistral har lanceret Voxtral 3: tre talemodeller og et SDK, der samler lytning, ræsonnement, værktøjskald og tale i én pipeline. Transskriberingsmodellerne dækker 50 sprog, og TTS-modellen får stemmer med følelse og tempo. Mini Transcribe 3 koster 0,0035 dollar pr. minut. Mistrals egne målinger viser lavere ordfejl end Whisper large-v3.",
+   "tekst": "Mistral har lanceret Voxtral 3: to transskriberingsmodeller og en tekst-til-tale-model samt et SDK, der samler lytning, ræsonnement, værktøjskald og tale i én realtidspipeline. Den understøtter 50 sprog og kan køre via EU-hostet API eller egen infrastruktur. Mini Transcribe 3 koster 0,0035 dollar pr. minut lyd.",
    "link": "https://mistral.ai/news/voxtral-3/",
    "kategori": "Lanceringer",
    "billede": "data/img/b06a8b85cdf2672d.jpg",
@@ -64,21 +64,21 @@
    "artikel_signatur": "65edf7efc0466613163f9f626e728a185823abd691716c06feb5fb14f4593fef"
   },
   {
-   "overskrift": "Otte amerikanske stater sagsøger OpenAI",
-   "tekst": "Iowa, Kansas, Nebraska, West Virginia, Arkansas, Arizona, Idaho og Montana har hver især sagsøgt OpenAI. Staterne mener, at selskabet vildledte om ChatGPTs sikkerhed og indsamlede data om mindreårige uden tilstrækkeligt samtykke. De kræver bøder og ændret adfærd. OpenAI afviser og peger på aldersspecifikke beskyttelser, forældrekontrol og pauspåmindelser.",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
-   "kategori": "Politik & jura",
-   "billede": "data/img/e8aa395624e3b171.jpg",
-   "dato": "2026-10-14T21:11:28+00:00",
+   "overskrift": "Recursive udgiver Flint til kodning på en laptop",
+   "tekst": "Recursive har udgivet Flint, en gratis kodemodel på 40 milliarder parametre, der kan køre offline på en laptop. Ifølge Recursive har selskabets forskningssystem Eureka Machine hjulpet med næsten hele udviklingen. Modellen er under Apache 2.0 og bruger kun 2,5 milliarder parametre ad gangen.",
+   "link": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
+   "kategori": "Lanceringer",
+   "billede": "",
+   "dato": "2026-10-21T20:27:41+00:00",
    "andre": [],
-   "titel": "Eight states sue OpenAI, saying ChatGPT isn’t safe for kids",
-   "rubrik": "Otte amerikanske stater sagsøger OpenAI for usikker ChatGPT",
-   "resume_da": "Staterne mener, OpenAI vildledte offentligheden om chatbottens sikkerhed og samlede data op på mindreårige uden tilstrækkeligt samtykke.",
-   "artikel_signatur": "3136823f60d122811b049a1249b618a0e5d809817960d2214e098b5045cc3e8e"
+   "titel": "Recursive launches Flint, a laptop coding model it says was largely built by AI",
+   "rubrik": "Recursive udgiver Flint: AI byggede næsten hele modellen",
+   "resume_da": "Gratis kodemodel på 40 milliarder parametre kører offline på en laptop og er bygget af Recursives eget forskningssystem, Eureka Machine.",
+   "artikel_signatur": "5aae4d5489fe8477dc4f5bb9141ca5c6deefbc7d809a0986fd641cbe07cb2b64"
   },
   {
-   "overskrift": "USA fjerner DeepSeek fra føderale civile systemer",
-   "tekst": "Den amerikanske regering har beordret føderale civile myndigheder til at stoppe med at købe DeepSeek-produkter og fjerne dem fra deres systemer. Forbuddet omfatter også tredjepartsprodukter bygget på DeepSeek-teknologi, men myndighederne kan søge om undtagelser. Sikkerhedsministeriet frygter, at følsomme data kan nå kinesiske myndigheder. Kina afviser kritikken.",
+   "overskrift": "USA forbyder DeepSeek i føderale civile systemer",
+   "tekst": "USA har beordret føderale civile myndigheder til at fjerne DeepSeek-produkter og tredjepartsprodukter bygget på DeepSeek fra deres systemer. Myndighederne kan søge undtagelser. Sikkerhedsministeriet frygter, at følsomme data kan nå kinesiske myndigheder; Kina afviser kritikken og kalder det en politisering af teknologi.",
    "link": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/",
    "kategori": "Politik & jura",
    "billede": "",
@@ -92,7 +92,7 @@
  ],
  "overblik": [
   {
-   "tekst": "Ugens modelnyheder trækker i samme retning: store modeller med åbne vægte, som kan hentes og køres lokalt eller på egen infrastruktur. Metas Muse Spark Open har 816 mia. parametre og 1 mio. tokens kontekst, men kræver mindst 1 TB RAM for at køre på Mac. Reflection vælger en anden balance: Beam har 501 mia. parametre, Apache 2.0-licens og en serverorienteret profil med anbefaling om fire B200-GPU'er. Nvidia fører den åbne logik videre til virksomheders agenter og AI-PC'er med Nemotron 3.5 Super VL og de mindre Bolt-modeller. Fælles er ønsket om kontrol over data og drift; forskellen er, om modellen skal ligge på en Mac, i et datacenter eller på en PC.",
+   "tekst": "Den vigtigste forandring i perioden er, at åbne vægtmodeller rykker fra specialservere til flere slags infrastruktur og bliver mere agentorienterede. Meta viser den tunge ende med Muse Spark Open: 816 milliarder parametre og 1 million tokens kontekst, men mindst 1 TB RAM for lokal kørsel. Reflection går samme vej med Beam, en 501-milliarders model under Apache 2.0; den aktiverer kun cirka 23 milliarder parametre pr. token, men kræver store GPU-maskiner. Nvidia dækker mellemlaget med Nemotron 3.5 Super VL til virksomheders agenter og Bolt-modeller til AI-PC'er. Fælles er ønsket om at eje model og data frem for at sende alt til en cloud.",
    "links": [
     "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
     "https://huggingface.co/blog/reflection-beam",
@@ -100,29 +100,29 @@
    ]
   },
   {
-   "tekst": "Mistral Voxtral 3 peger et andet sted hen: fra tekst til realtidssamtaler. Tre talemodeller og et SDK samler lytning, ræsonnement, værktøjskald og tale i én pipeline, så agenten kan forstå, svare og handle i samme kald. Det er en anden slags udgivelse end de store åbne tekstmodeller: ikke en ny 500-milliarders model, men et specialiseret system til kundeservice og stemmebaserede arbejdsgange. Mistrals egne tal viser lavere ordfejl end Whisper large-v3, men de er ikke uafhængigt testet.",
+   "tekst": "Recursive Flint viser den modsatte ende af skalaen: en 40-milliarders kodemodel, der kan køre offline på en laptop, og som ifølge Recursive i høj grad er udviklet af selskabets eget forskningssystem. Bevægelsen bliver synlig på tre niveauer: Meta og Reflection på tunge servere, Nvidia på arbejdsstationer og PC'er, Recursive på en bærbar. Mistrals Voxtral 3 peger på en anden udvidelse: tale bliver en samlet agentpipeline med transskribering, ræsonnement og værktøjskald, ikke bare lyd til tekst. Det gør stemmeagenter mere anvendelige i kontaktcentre.",
    "links": [
+    "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
     "https://mistral.ai/news/voxtral-3/"
    ]
   },
   {
-   "tekst": "Samme uge blev rammerne skærpet fra to sider. Otte amerikanske stater sagsøger OpenAI med krav om bøder og ændret sikkerhedsadfærd, især over for mindreårige. Den føderale regering beordrede samtidig DeepSeek fjernet fra civile myndigheders systemer med henvisning til national sikkerhed. Det ene indgreb handler om forbrugerbeskyttelse og børn, det andet om data og geopolitik. Mens modellerne bliver lettere at køre lokalt, og agenter kan handle på vegne af brugere, bliver spørgsmålet om ansvar og kontrol sværere at holde adskilt fra teknologien.",
+   "tekst": "Samtidig viser DeepSeek-ordren, at åbne vægte ikke gør spørgsmålet om kontrol mindre politisk. USA forbyder føderale civile myndigheder at bruge DeepSeek og tredjepartsprodukter bygget på teknologien, med mulighed for undtagelser. Det står i kontrast til den kommercielle åbning i de øvrige historier: Modellerne kan hentes og køres lokalt, men hvor de må bruges, afgøres af myndigheder og indkøbsregler.",
    "links": [
-    "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
     "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/"
    ]
   }
  ],
- "tendens": "Om de åbne modeller lever op til producenternes ydeevnepåstande, er uafklaret. Meta, Reflection, Nvidia og Mistral henviser til egne målinger; uafhængige tests af Muse Spark Open, Beam, Nemotron 3.5 og Voxtral 3 mangler.",
+ "tendens": "Uafklaret: Flere af ugens modelpåstande hviler på producenternes egne benchmarks. Reflection skriver, at uafhængige tests ikke er læst; Meta og Nvidia henviser til egne evalueringer. Det er endnu ikke dokumenteret, hvordan modellerne klarer sig i bred, uafhængig brug.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "6da8b456de1eb639e5eaca3b220160925758f258c1dec1513cdc8ee3858e5a72",
- "dato": "2026-10-21T20:43:09.664747+00:00",
- "opdateret": "2026-10-21T20:43:09.664747+00:00",
- "periode_fra": "2026-10-13T22:00:00+00:00",
- "periode_til": "2026-10-20T22:00:00+00:00",
+ "basis_signatur": "bcc9cf48cc9af70ba992110cb5501dc900a6f441d103bb5322de9ae1aa35fa21",
+ "dato": "2026-10-21T23:52:31.382112+00:00",
+ "opdateret": "2026-10-21T23:52:31.382112+00:00",
+ "periode_fra": "2026-10-14T22:00:00+00:00",
+ "periode_til": "2026-10-21T22:00:00+00:00",
  "stats": {
-  "historier": 103,
-  "kilder": 10
+  "historier": 94,
+  "kilder": 9
  }
 }

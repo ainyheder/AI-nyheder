@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-21T20:20:24.508912+00:00",
- "artikler_i_alt": 133,
+ "opdateret": "2026-10-21T23:34:19.581822+00:00",
+ "artikler_i_alt": 115,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -12,7 +12,7 @@ window.KILDER_STATUS = {
    "status": "fejl",
    "fejl": "ValueError: Kilden gav ingen læsbare artikler; kontrollér adresse og sideformat",
    "hentet": 0,
-   "i_listen": 4,
+   "i_listen": 2,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -30,24 +30,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-15T20:00:28",
      "link": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
      "side": "artikel/eb77f6484e453b05.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Claude viser valgdata og stemmested",
-     "dato": "2026-10-14T00:00:00",
-     "foerst_set": "2026-10-14T20:18:45",
-     "link": "https://www.anthropic.com/news/2026-us-midterms",
-     "side": "artikel/a326a9536354e596.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Anthropic åbner femte Asien-kontor i Singapore med regeringssamarbejde",
-     "dato": "2026-10-14T00:00:00",
-     "foerst_set": "2026-10-14T13:58:43",
-     "link": "https://www.anthropic.com/news/singapore-office-opening",
-     "side": "artikel/2922d5d8f3c24cb9.html",
      "hvor": "forside",
      "under": ""
     }
@@ -126,7 +108,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 6,
+   "i_listen": 5,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -162,15 +144,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-19T21:12:53",
      "link": "https://blog.google/products-and-platforms/products/gemini/stylist-outfit-tips-gemini/",
      "side": "artikel/30b662fbd20996b9.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Gemini 4 Argon skriver en million tokens ud",
-     "dato": "2026-10-02T15:00:00",
-     "foerst_set": "2026-10-02T20:55:07",
-     "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
-     "side": "artikel/bfe2b156957ee716.html",
      "hvor": "forside",
      "under": ""
     },
@@ -326,7 +299,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 8,
+   "i_listen": 7,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -400,15 +373,6 @@ window.KILDER_STATUS = {
      "side": "artikel/bddfd6e5b0debcf2.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Anthropic dropper Git: 30.000 ændringer om dagen",
-     "dato": "2026-10-13T23:00:06",
-     "foerst_set": "2026-10-13T23:50:16",
-     "link": "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/",
-     "side": "artikel/01892a7693f14e4f.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -428,8 +392,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 55,
-   "som_ekstra": 4,
+   "i_listen": 48,
+   "som_ekstra": 3,
    "seneste": [
     {
      "rubrik": "Google slipper TorchTPU løs til sine TPU-chips",
@@ -486,13 +450,31 @@ window.KILDER_STATUS = {
      "under": "Google Universal Cart samler indkøb fra flere butikker"
     },
     {
-     "rubrik": "YouTube Music mærker AI-genererede sange",
-     "dato": "",
-     "foerst_set": "2026-10-14T20:18:45",
-     "link": "https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms/",
-     "side": "",
-     "hvor": "under",
-     "under": "YouTube mærker AI-sange i afspilleren"
+     "rubrik": "Recursive udgiver Flint: AI byggede næsten hele modellen",
+     "dato": "2026-10-21T20:27:41",
+     "foerst_set": "2026-10-21T23:34:19",
+     "link": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
+     "side": "artikel/12af459ff8f6cdb2.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI og Wiz fandt 22 år gamle PHP-huller",
+     "dato": "2026-10-21T17:59:12",
+     "foerst_set": "2026-10-21T23:34:19",
+     "link": "https://techcrunch.com/2026/10/21/php-armageddon-openai-googles-wiz-find-ancient-holes-panicking-the-internet/",
+     "side": "artikel/c344635e541c5f19.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Blacksmith rammer milliardværdi med Sequoia i spidsen",
+     "dato": "2026-10-21T17:18:27",
+     "foerst_set": "2026-10-21T23:34:19",
+     "link": "https://techcrunch.com/2026/10/21/blacksmith-hits-unicorn-valuation-after-sequoia-leads-series-c/",
+     "side": "artikel/f3f4777e99135a35.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Walmart åbner for AI-agenter med Agent Gateway",
@@ -574,39 +556,12 @@ window.KILDER_STATUS = {
      "side": "artikel/494d9d2a63c169ae.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Meta Muse rammer 10 mio. downloads på 40 dage",
-     "dato": "2026-10-20T17:12:48",
-     "foerst_set": "2026-10-20T20:06:38",
-     "link": "https://techcrunch.com/2026/10/20/metas-muse-hits-10m-u-s-downloads-in-40-days-a-milestone-reached-by-only-11-other-apps/",
-     "side": "artikel/e272af73262f2476.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Figma udvider MCP trods Dylan Fields tvivl",
-     "dato": "2026-10-20T14:13:32",
-     "foerst_set": "2026-10-20T20:06:38",
-     "link": "https://techcrunch.com/2026/10/20/figma-co-founder-dylan-field-thinks-mcp-is-not-a-perfect-protocol/",
-     "side": "artikel/131888a4cac3af2c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Schmidt ejer halvt så meget Anthropic som Amodei",
-     "dato": "2026-10-20T17:55:12",
-     "foerst_set": "2026-10-20T20:06:38",
-     "link": "https://techcrunch.com/2026/10/20/eric-schmidt-reportedly-owns-about-half-as-much-of-anthropic-as-ceo-dario-amodei/",
-     "side": "artikel/4ef62f095ce74263.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     7
+     6
     ],
     [
      "Hugging Face",
@@ -636,7 +591,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 28,
+   "i_listen": 22,
    "som_ekstra": 10,
    "seneste": [
     {
@@ -730,11 +685,47 @@ window.KILDER_STATUS = {
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
     },
     {
+     "rubrik": "HARC varsler kraftig luftforurening i Texas",
+     "dato": "2026-10-21T18:33:44",
+     "foerst_set": "2026-10-21T23:34:19",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report",
+     "side": "artikel/4139c746625dd892.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Meta opretter ny aktieklasse til AI-investeringer",
+     "dato": "2026-10-21T17:30:02",
+     "foerst_set": "2026-10-21T23:34:19",
+     "link": "https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings",
+     "side": "artikel/06c91270ad1ba21d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Claude Duet sender morgenbrief fra dine apps",
+     "dato": "2026-10-21T15:53:20",
+     "foerst_set": "2026-10-21T20:20:24",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent",
+     "side": "artikel/b9590634267c7406.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Gemini i Google Maps lander på CarPlay",
      "dato": "2026-10-21T11:00:00",
      "foerst_set": "2026-10-21T20:20:24",
      "link": "https://www.theverge.com/transportation/1015281/gemini-ai-apple-carplay-voice-google-maps",
      "side": "artikel/e5aa837170862d9c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI: GPT-6 Astra fjernede overvågning og løj",
+     "dato": "2026-10-21T09:57:43",
+     "foerst_set": "2026-10-21T14:05:01",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1015316/openai-ai-agent-disabling-monitoring-systems",
+     "side": "artikel/5afba8050415bca9.html",
      "hvor": "forside",
      "under": ""
     },
@@ -749,7 +740,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Lightroom åbner lukkede øjne med ét tap",
-     "dato": "2026-10-20T09:06:44",
+     "dato": "2026-10-20T13:06:44",
      "foerst_set": "2026-10-20T13:48:46",
      "link": "https://www.theverge.com/tech/1014246/adobe-lightroom-mobile-ai-quick-action-open-eyes-closed-blink-repair",
      "side": "artikel/07b0468a851267a3.html",
@@ -767,7 +758,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Gasplaner vokser 45 procent under Trump",
-     "dato": "2026-10-19T17:48:01",
+     "dato": "2026-10-19T21:48:01",
      "foerst_set": "2026-10-20T05:10:40",
      "link": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report",
      "side": "artikel/b750360bd4ac8e84.html",
@@ -800,52 +791,16 @@ window.KILDER_STATUS = {
      "side": "artikel/657279cf248cf6ba.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "ChatGPT aflæser dine åbne Chrome-faneblade",
-     "dato": "2026-10-15T22:43:23",
-     "foerst_set": "2026-10-15T23:14:08",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
-     "side": "artikel/953a262ff105c232.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Trump deler AI-redigeret foto af hvidmalet søjle",
-     "dato": "2026-10-15T21:09:33",
-     "foerst_set": "2026-10-15T23:14:08",
-     "link": "https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
-     "side": "artikel/287b7f7f97fe92d1.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Kritiske film om Musk og Altman rammer biograferne",
-     "dato": "2026-10-15T21:39:52",
-     "foerst_set": "2026-10-15T23:14:08",
-     "link": "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial",
-     "side": "artikel/37d075d48fefe06a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Sega trækker Total War: Shogun 2-remaster tilbage",
-     "dato": "2026-10-15T22:35:55",
-     "foerst_set": "2026-10-15T23:14:08",
-     "link": "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled",
-     "side": "artikel/179bf541be9616a0.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     7
+     6
     ],
     [
      "Ars Technica AI",
-     5
+     3
     ],
     [
      "Google Gemini",
@@ -863,8 +818,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 12,
-   "som_ekstra": 4,
+   "i_listen": 11,
+   "som_ekstra": 2,
    "seneste": [
     {
      "rubrik": "Meta fjerner train fra kommercielle vilkår",
@@ -876,24 +831,6 @@ window.KILDER_STATUS = {
      "under": "Meta fjerner vilkår om AI-træning af websites"
     },
     {
-     "rubrik": "YouTube Music mærker sange lavet med AI",
-     "dato": "",
-     "foerst_set": "2026-10-15T20:00:28",
-     "link": "https://arstechnica.com/ai/2026/10/youtube-music-begins-labeling-ai-songs/",
-     "side": "",
-     "hvor": "under",
-     "under": "YouTube mærker AI-sange i afspilleren"
-    },
-    {
-     "rubrik": "Anthropic advarer: Små AI-modeller kan snart sprede sig",
-     "dato": "",
-     "foerst_set": "2026-10-14T13:58:43",
-     "link": "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic advarer om selvreplikerende AI-orme"
-    },
-    {
      "rubrik": "Google Gemini 4 Argon springer over 3.5 Pro",
      "dato": "",
      "foerst_set": "2026-10-02T12:20:39",
@@ -901,6 +838,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+    },
+    {
+     "rubrik": "Apple Music-brand skabt i rystende mineralolie",
+     "dato": "2026-10-21T19:44:40",
+     "foerst_set": "2026-10-21T23:34:19",
+     "link": "https://arstechnica.com/culture/2026/10/the-new-human-crafted-apple-music-brand-matters-in-an-ai-world/",
+     "side": "artikel/1a80887cf13ccfa1.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Dommer: EPA må ikke droppe SpaceXAI-sag",
+     "dato": "2026-10-21T18:20:40",
+     "foerst_set": "2026-10-21T20:20:24",
+     "link": "https://arstechnica.com/tech-policy/2026/10/judge-rejects-trumps-wild-claim-epa-can-dismiss-data-center-pollution-lawsuits/",
+     "side": "artikel/d60220e54ec52993.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "GPT 6.1 kommer til Google Cloud",
@@ -982,39 +937,12 @@ window.KILDER_STATUS = {
      "side": "artikel/f50c5ed4ecd63b19.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Epic Games Launcher: vibe-codet og hurtigere end Steam",
-     "dato": "2026-10-14T21:15:56",
-     "foerst_set": "2026-10-14T23:23:45",
-     "link": "https://arstechnica.com/gaming/2026/10/programming-is-hard-epic-games-leans-on-vibe-coding-for-its-new-launcher-app/",
-     "side": "artikel/435c65b4f2bd74b9.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "RFdiffusion2 designer proteaser der klipper sygdomsproteiner",
-     "dato": "2026-10-14T17:10:15",
-     "foerst_set": "2026-10-14T20:18:45",
-     "link": "https://arstechnica.com/science/2026/10/researchers-use-ai-to-design-proteins-that-cut-up-other-proteins/",
-     "side": "artikel/db8a4bfb05e23ecb.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "White Circle: Nye AI-modeller brydes lettere",
-     "dato": "2026-10-14T11:00:30",
-     "foerst_set": "2026-10-14T13:58:43",
-     "link": "https://arstechnica.com/tech-policy/2026/10/openai-google-pushing-new-ai-models-easily-tricked-into-making-nudes-researchers-say/",
-     "side": "artikel/40993dd7517604bf.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     5
+     3
     ],
     [
      "OpenAI Blog",

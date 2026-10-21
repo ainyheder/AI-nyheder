@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-10-21T20:44:01.055287+00:00",
+ "opdateret": "2026-10-21T23:53:48.068951+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -68,7 +68,7 @@ window.LAESERTAL = {
      0,
      4,
      8,
-     3
+     5
     ]
    },
    {
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      1,
      5,
      9,
-     1
+     3
     ]
    },
    {
@@ -138,7 +138,42 @@ window.LAESERTAL = {
      0,
      4,
      3,
-     1
+     4
+    ]
+   },
+   {
+    "navn": "Politik & jura",
+    "tal": [
+     1,
+     2,
+     1,
+     4,
+     0,
+     1,
+     0,
+     1,
+     3,
+     2,
+     4,
+     0,
+     1,
+     4,
+     1,
+     0,
+     5,
+     2,
+     2,
+     0,
+     1,
+     1,
+     4,
+     4,
+     2,
+     2,
+     0,
+     5,
+     5,
+     2
     ]
    },
    {
@@ -174,41 +209,6 @@ window.LAESERTAL = {
      1,
      2,
      1
-    ]
-   },
-   {
-    "navn": "Politik & jura",
-    "tal": [
-     1,
-     2,
-     1,
-     4,
-     0,
-     1,
-     0,
-     1,
-     3,
-     2,
-     4,
-     0,
-     1,
-     4,
-     1,
-     0,
-     5,
-     2,
-     2,
-     0,
-     1,
-     1,
-     4,
-     4,
-     2,
-     2,
-     0,
-     5,
-     5,
-     0
     ]
    },
    {
@@ -319,20 +319,20 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 29,
- "sidevisninger_i_alt": 49,
+ "besoeg_i_alt": 28,
+ "sidevisninger_i_alt": 48,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 29,
-   "visninger": 49
+   "besoeg": 28,
+   "visninger": 48
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 29
+   "besoeg": 28
   }
  ],
  "ai_chats": [],
@@ -340,8 +340,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 29,
-    "visninger": 29
+    "besoeg": 28,
+    "visninger": 28
    },
    {
     "fra": "herfra selv",
