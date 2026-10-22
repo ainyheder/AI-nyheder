@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-10-22T05:30:11.335630+00:00",
+ "opdateret": "2026-10-22T14:26:33.642309+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      5,
      9,
      4,
-     0
+     3
     ]
    },
    {
@@ -138,7 +138,42 @@ window.LAESERTAL = {
      4,
      3,
      4,
-     0
+     1
+    ]
+   },
+   {
+    "navn": "Hverdags-AI",
+    "tal": [
+     7,
+     3,
+     3,
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     3,
+     0,
+     7,
+     4,
+     2,
+     3,
+     1,
+     0,
+     1,
+     2,
+     8,
+     7,
+     1,
+     0,
+     0,
+     0,
+     1,
+     2,
+     1,
+     3
     ]
    },
    {
@@ -177,41 +212,6 @@ window.LAESERTAL = {
     ]
    },
    {
-    "navn": "Hverdags-AI",
-    "tal": [
-     7,
-     3,
-     3,
-     1,
-     1,
-     1,
-     0,
-     0,
-     0,
-     0,
-     3,
-     0,
-     7,
-     4,
-     2,
-     3,
-     1,
-     0,
-     1,
-     2,
-     8,
-     7,
-     1,
-     0,
-     0,
-     0,
-     1,
-     2,
-     1,
-     0
-    ]
-   },
-   {
     "navn": "Forskning",
     "tal": [
      3,
@@ -243,7 +243,7 @@ window.LAESERTAL = {
      4,
      2,
      1,
-     0
+     1
     ]
    },
    {
@@ -319,20 +319,20 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 28,
- "sidevisninger_i_alt": 46,
+ "besoeg_i_alt": 27,
+ "sidevisninger_i_alt": 45,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 28,
-   "visninger": 46
+   "besoeg": 27,
+   "visninger": 45
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 28
+   "besoeg": 27
   }
  ],
  "ai_chats": [],
@@ -340,8 +340,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 28,
-    "visninger": 28
+    "besoeg": 27,
+    "visninger": 27
    },
    {
     "fra": "herfra selv",
