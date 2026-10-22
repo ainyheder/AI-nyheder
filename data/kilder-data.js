@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-21T23:34:19.581822+00:00",
- "artikler_i_alt": 115,
+ "opdateret": "2026-10-22T05:16:25.880387+00:00",
+ "artikler_i_alt": 119,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -108,8 +108,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 5,
-   "som_ekstra": 2,
+   "i_listen": 7,
+   "som_ekstra": 3,
    "seneste": [
     {
      "rubrik": "Google Universal Cart samler flere butikker",
@@ -119,6 +119,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google Universal Cart samler indkøb fra flere butikker"
+    },
+    {
+     "rubrik": "Google ruller Gemini 4 Argon bredt ud",
+     "dato": "",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
     },
     {
      "rubrik": "Google Gemini 3.8 skaber stemmer fra bunden",
@@ -144,6 +153,24 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-19T21:12:53",
      "link": "https://blog.google/products-and-platforms/products/gemini/stylist-outfit-tips-gemini/",
      "side": "artikel/30b662fbd20996b9.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Gemini 4 Argon lanceres globalt i dag",
+     "dato": "2026-10-13T16:00:00",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+     "side": "artikel/aff2c9dc3dc0fb59.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Gemini 4 Argon skriver en million tokens ud",
+     "dato": "2026-10-02T15:00:00",
+     "foerst_set": "2026-10-02T20:55:07",
+     "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+     "side": "artikel/bfe2b156957ee716.html",
      "hvor": "forside",
      "under": ""
     },
@@ -177,12 +204,12 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "The Verge AI",
-     3
+     "Google DeepMind",
+     4
     ],
     [
-     "Google DeepMind",
-     2
+     "The Verge AI",
+     3
     ],
     [
      "Ars Technica AI",
@@ -393,8 +420,26 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 48,
-   "som_ekstra": 3,
+   "som_ekstra": 4,
    "seneste": [
+    {
+     "rubrik": "Metas Muse har passeret 10 millioner brugere",
+     "dato": "",
+     "foerst_set": "2026-10-21T23:34:19.581822+00:00",
+     "link": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta Muse rammer 10 mio. downloads på 40 dage"
+    },
+    {
+     "rubrik": "Blackstone ser ikke AI-gæld som ny 2008-krise",
+     "dato": "",
+     "foerst_set": "2026-10-21T23:34:19",
+     "link": "https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/",
+     "side": "",
+     "hvor": "under",
+     "under": "CoreWeaves gæld presser hele AI-industrien"
+    },
     {
      "rubrik": "Google slipper TorchTPU løs til sine TPU-chips",
      "dato": "",
@@ -561,7 +606,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     6
+     7
     ],
     [
      "Hugging Face",
@@ -595,7 +640,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 10,
    "seneste": [
     {
-     "rubrik": "Walmart lancerer AI-agentkøb næste måned",
+     "rubrik": "Walmart lukker AI-agenter ind i sin butik",
      "dato": "",
      "foerst_set": "2026-10-21T20:20:24",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1015715/walmart-ai-shopping-agents",
@@ -796,7 +841,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     6
+     7
     ],
     [
      "Ars Technica AI",
@@ -818,7 +863,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 11,
+   "i_listen": 12,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -854,6 +899,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-21T20:20:24",
      "link": "https://arstechnica.com/tech-policy/2026/10/judge-rejects-trumps-wild-claim-epa-can-dismiss-data-center-pollution-lawsuits/",
      "side": "artikel/d60220e54ec52993.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Næsten to tredjedele af amerikanske læger bruger OpenEvidence",
+     "dato": "2026-10-21T15:14:07",
+     "foerst_set": "2026-10-21T20:20:24",
+     "link": "https://arstechnica.com/ai/2026/10/the-15-billion-ad-powered-ai-startup-your-doctor-may-already-be-using/",
+     "side": "artikel/50a7bf7b3e60bd04.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1081,9 +1135,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 3,
-   "som_ekstra": 1,
+   "i_listen": 4,
+   "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "Google DeepMind annoncerer Gemini 4 Argon",
+     "dato": "",
+     "foerst_set": "2026-10-13T23:50:16",
+     "link": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 4 Argon lanceres globalt i dag"
+    },
     {
      "rubrik": "Gemini 4 Argon udrulles forsigtigt til cybersikkerhedshold",
      "dato": "",
@@ -1099,6 +1162,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-16T04:53:41",
      "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
      "side": "artikel/ba028f76ed47c779.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
+     "dato": "2026-10-13T19:43:07",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+     "side": "artikel/42f1c245f492d3d1.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1124,7 +1196,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google Gemini",
-     2
+     4
     ]
    ]
   },
