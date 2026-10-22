@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-10-22T14:26:33.642309+00:00",
+ "opdateret": "2026-10-22T20:47:44.259280+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -102,8 +102,8 @@ window.LAESERTAL = {
      1,
      5,
      9,
-     4,
-     3
+     5,
+     5
     ]
    },
    {
@@ -138,7 +138,7 @@ window.LAESERTAL = {
      4,
      3,
      4,
-     1
+     4
     ]
    },
    {
@@ -208,7 +208,7 @@ window.LAESERTAL = {
      5,
      5,
      2,
-     0
+     1
     ]
    },
    {
@@ -278,7 +278,7 @@ window.LAESERTAL = {
      0,
      0,
      0,
-     0
+     4
     ]
    },
    {
@@ -313,7 +313,7 @@ window.LAESERTAL = {
      0,
      0,
      0,
-     0
+     1
     ]
    }
   ]
