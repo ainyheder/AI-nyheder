@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-22T23:32:06.190739+00:00",
+ "opdateret": "2026-10-23T05:15:35.312333+00:00",
  "artikler_i_alt": 124,
  "kilder": [
   {
@@ -392,9 +392,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 50,
-   "som_ekstra": 3,
+   "i_listen": 51,
+   "som_ekstra": 5,
    "seneste": [
+    {
+     "rubrik": "Eko-agenter legede sig til bedre opgaveløsning",
+     "dato": "",
+     "foerst_set": "2026-10-23T05:15:35",
+     "link": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
+     "side": "",
+     "hvor": "under",
+     "under": "Claude opfandt spil og lærte af leg"
+    },
+    {
+     "rubrik": "Microsofts MAI-DxO overgår læger i simuleret test",
+     "dato": "",
+     "foerst_set": "2026-10-22T20:16:04",
+     "link": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+     "side": "",
+     "hvor": "under",
+     "under": "Microsofts AI rammer 83 procent af testdiagnoserne"
+    },
     {
      "rubrik": "Claude Duet arbejder videre i baggrunden",
      "dato": "",
@@ -450,6 +468,15 @@ window.KILDER_STATUS = {
      "under": "Nvidia-veteran kalder robotik sin Lego-periode"
     },
     {
+     "rubrik": "inDrive tester robotaxi i Astana i 2027",
+     "dato": "2026-10-23T04:00:00",
+     "foerst_set": "2026-10-23T05:15:35",
+     "link": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
+     "side": "artikel/3bfe5c41c86a24ab.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI forhandler om 30 mia. dollar før børs",
      "dato": "2026-10-22T22:08:24",
      "foerst_set": "2026-10-22T23:32:06",
@@ -495,20 +522,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "DeepSeek rejser 15 milliarder dollar efter amerikansk forbud",
-     "dato": "2026-10-22T13:11:13",
-     "foerst_set": "2026-10-22T14:02:49",
-     "link": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
-     "side": "artikel/c80a6608f1d2299f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "1Password lukker AI-agenter ind uden adgangskode",
      "dato": "2026-10-22T19:07:09",
      "foerst_set": "2026-10-22T14:02:49",
      "link": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
      "side": "artikel/c1230fd4012baae4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "DeepSeek rejser 15 milliarder dollar efter amerikansk forbud",
+     "dato": "2026-10-22T13:11:13",
+     "foerst_set": "2026-10-22T14:02:49",
+     "link": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
+     "side": "artikel/c80a6608f1d2299f.html",
      "hvor": "forside",
      "under": ""
     },
@@ -547,21 +574,12 @@ window.KILDER_STATUS = {
      "side": "artikel/f3f4777e99135a35.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Blackstone: AI-gæld ligner ikke 2008",
-     "dato": "2026-10-21T22:51:22",
-     "foerst_set": "2026-10-21T23:34:19",
-     "link": "https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/",
-     "side": "artikel/c6715b01bd7e0768.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     4
+     5
     ],
     [
      "Hugging Face",
@@ -569,6 +587,10 @@ window.KILDER_STATUS = {
     ],
     [
      "OpenAI Blog",
+     1
+    ],
+    [
+     "MIT Tech Review AI",
      1
     ],
     [
@@ -591,9 +613,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 26,
-   "som_ekstra": 8,
+   "i_listen": 25,
+   "som_ekstra": 9,
    "seneste": [
+    {
+     "rubrik": "Meta slår deling af Muse-links til igen",
+     "dato": "",
+     "foerst_set": "2026-10-22T23:32:06",
+     "link": "https://www.theverge.com/tech/1017066/meta-muse-sharing-back-on-artifiacts",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta Muse suspenderer deling af links"
+    },
     {
      "rubrik": "1Password lader AI-agenter logge ind uden adgangskoder",
      "dato": "",
@@ -685,20 +716,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Meta slår deling af Muse-links til igen",
-     "dato": "2026-10-22T16:24:04",
-     "foerst_set": "2026-10-22T23:32:06",
-     "link": "https://www.theverge.com/tech/1017066/meta-muse-sharing-back-on-artifiacts",
-     "side": "artikel/d7dcc58ca817ba78.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI, Anthropic og Nvidia slår lobbyrekord",
-     "dato": "2026-10-22T11:50:30",
+     "rubrik": "Microsofts AI rammer 83 procent af testdiagnoserne",
+     "dato": "2026-10-22T14:00:00",
      "foerst_set": "2026-10-22T20:16:04",
-     "link": "https://www.theverge.com/policy/1016585/openai-anthropic-nvidia-lobbying-records",
-     "side": "artikel/0ee4f2fe9f9c0844.html",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
+     "side": "artikel/21c961dc17bfe29a.html",
      "hvor": "forside",
      "under": ""
     },
@@ -712,11 +734,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Microsofts AI rammer 83 procent af testdiagnoserne",
-     "dato": "2026-10-22T14:00:00",
+     "rubrik": "OpenAI, Anthropic og Nvidia slår lobbyrekord",
+     "dato": "2026-10-22T11:50:30",
      "foerst_set": "2026-10-22T20:16:04",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
-     "side": "artikel/21c961dc17bfe29a.html",
+     "link": "https://www.theverge.com/policy/1016585/openai-anthropic-nvidia-lobbying-records",
+     "side": "artikel/0ee4f2fe9f9c0844.html",
      "hvor": "forside",
      "under": ""
     },
@@ -773,16 +795,25 @@ window.KILDER_STATUS = {
      "side": "artikel/a37d473cbfb4d17e.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "HARC varsler kraftig luftforurening i Texas",
+     "dato": "2026-10-21T22:33:44",
+     "foerst_set": "2026-10-21T23:34:19",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report",
+     "side": "artikel/4139c746625dd892.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     4
+     5
     ],
     [
      "Ars Technica AI",
-     3
+     4
     ],
     [
      "Google Gemini",
@@ -924,7 +955,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     3
+     4
     ],
     [
      "OpenAI Blog",
@@ -1026,7 +1057,12 @@ window.KILDER_STATUS = {
      "under": ""
     }
    ],
-   "overlap": []
+   "overlap": [
+    [
+     "TechCrunch AI",
+     1
+    ]
+   ]
   },
   {
    "navn": "OpenAI Blog",

@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-22T23:51:39.422728+00:00",
+ "genereret": "2026-10-23T05:30:15.071108+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,29 +195,27 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-22T23:32:06.190739+00:00",
+  "opdateret": "2026-10-23T05:15:35.312333+00:00",
   "antal": 124,
-  "med_billede": 82,
+  "med_billede": 83,
   "paa_dansk": 124,
   "kategorier": {
    "Lanceringer": 31,
-   "Penge \u0026 marked": 33,
-   "Politik \u0026 jura": 16,
-   "Samfund \u0026 etik": 21,
-   "Hverdags-AI": 8,
-   "Forskning": 11,
-   "Nyheder": 3,
-   "Dybde": 1
+   "Forskning": 12,
+   "Penge \u0026 marked": 35,
+   "Politik \u0026 jura": 17,
+   "Hverdags-AI": 9,
+   "Samfund \u0026 etik": 20
   },
   "kilder": {
-   "The Verge AI": 26,
-   "TechCrunch AI": 50,
-   "Mistral AI": 4,
+   "The Verge AI": 25,
+   "TechCrunch AI": 51,
    "Hugging Face": 7,
+   "Mistral AI": 4,
+   "Simon Willison AI": 6,
    "Ars Technica AI": 11,
    "MIT Tech Review AI": 8,
    "Google Gemini": 7,
-   "Simon Willison AI": 6,
    "Google DeepMind": 4,
    "Anthropic News": 1
   },
@@ -255,6 +253,16 @@ window.KOMMANDO_DATA = {
   ],
   "seneste": [
    {
+    "titel": "Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony.ai and Nvidia",
+    "rubrik": "inDrive tester robotaxi i Astana i 2027",
+    "link": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
+    "side": "artikel/3bfe5c41c86a24ab.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-23T04:00:00+00:00",
+    "billede": "data/img/d575bdd564264f56.jpg"
+   },
+   {
     "titel": "Canva’s first AI image model plans designs before generating them",
     "rubrik": "Canva Craft planlægger billedet først",
     "link": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
@@ -272,7 +280,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Penge \u0026 marked",
     "kilde": "TechCrunch AI",
     "dato": "2026-10-22T22:08:24+00:00",
-    "billede": ""
+    "billede": "data/img/bb148d65c45ef21b.webp"
    },
    {
     "titel": "Meta’s AI could still scrape news sites, legal experts say",
@@ -285,14 +293,34 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/a82f5a9fa93d1084.webp"
    },
    {
-    "titel": "Meta turns Muse sharing back on",
-    "rubrik": "Meta slår deling af Muse-links til igen",
-    "link": "https://www.theverge.com/tech/1017066/meta-muse-sharing-back-on-artifiacts",
-    "side": "artikel/d7dcc58ca817ba78.html",
-    "kategori": "Samfund \u0026 etik",
+    "titel": "Microsoft says its AI tool is better than doctors at diagnosing conditions",
+    "rubrik": "Microsofts AI rammer 83 procent af testdiagnoserne",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
+    "side": "artikel/21c961dc17bfe29a.html",
+    "kategori": "Forskning",
     "kilde": "The Verge AI",
-    "dato": "2026-10-22T16:24:04-04:00",
-    "billede": "data/img/9e94cd921c32fd06.webp"
+    "dato": "2026-10-22T14:00:00-04:00",
+    "billede": ""
+   },
+   {
+    "titel": "1Password launches a way for AI agents to log in on your behalf without seeing your password",
+    "rubrik": "1Password lukker AI-agenter ind uden adgangskode",
+    "link": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+    "side": "artikel/c1230fd4012baae4.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-22T19:07:09+00:00",
+    "billede": "data/img/9ec83662fcab215b.jpg"
+   },
+   {
+    "titel": "Donating Agent Skills to the Agentic AI Foundation",
+    "rubrik": "Anthropic donerer Agent Skills til åben fond",
+    "link": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
+    "side": "artikel/4b2657f99d2ef063.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-10-22T18:09:56+00:00",
+    "billede": "data/img/9a3749f47e8ad9f0.webp"
    },
    {
     "titel": "OpenAI makes its Jev competitor widely available as decision model competition heats up",
@@ -303,6 +331,16 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-10-22T19:00:00+00:00",
     "billede": "data/img/b886ea9b287308c7.webp"
+   },
+   {
+    "titel": "In Meta’s version of the future, I’ll have my Muse call your Muse",
+    "rubrik": "Zuckerberg: Muse skal handle for milliarder",
+    "link": "https://www.theverge.com/tech/1016905/meta-earnings-fall-2026-muse-network",
+    "side": "artikel/551e38fbbb7de005.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-22T14:15:00-04:00",
+    "billede": ""
    },
    {
     "titel": "Chinese hackers spied on thousands of companies after breaching IT giant ConnectWise",
@@ -333,51 +371,11 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-10-22T11:50:30-04:00",
     "billede": "data/img/f7641c12989db1d8.webp"
-   },
-   {
-    "titel": "In Meta’s version of the future, I’ll have my Muse call your Muse",
-    "rubrik": "Zuckerberg: Muse skal handle for milliarder",
-    "link": "https://www.theverge.com/tech/1016905/meta-earnings-fall-2026-muse-network",
-    "side": "artikel/551e38fbbb7de005.html",
-    "kategori": "Nyheder",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-22T14:15:00-04:00",
-    "billede": ""
-   },
-   {
-    "titel": "Donating Agent Skills to the Agentic AI Foundation",
-    "rubrik": "Anthropic donerer Agent Skills til åben fond",
-    "link": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
-    "side": "artikel/4b2657f99d2ef063.html",
-    "kategori": "Dybde",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-10-22T18:09:56+00:00",
-    "billede": "data/img/9a3749f47e8ad9f0.webp"
-   },
-   {
-    "titel": "Microsoft says its AI tool is better than doctors at diagnosing conditions",
-    "rubrik": "Microsofts AI rammer 83 procent af testdiagnoserne",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
-    "side": "artikel/21c961dc17bfe29a.html",
-    "kategori": "Nyheder",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-22T14:00:00-04:00",
-    "billede": ""
-   },
-   {
-    "titel": "Spotify’s current AI bet is about being the music service that agents choose",
-    "rubrik": "Spotify vil bygge løbeplaylister via AI-agenter",
-    "link": "https://techcrunch.com/2026/10/22/spotifys-current-ai-bet-is-about-being-the-music-service-that-agents-choose/",
-    "side": "artikel/abd23a18317ea679.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-22T15:03:58+00:00",
-    "billede": ""
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-22T23:32:06.190739+00:00",
+  "opdateret": "2026-10-23T05:15:35.312333+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -397,7 +395,7 @@ window.KOMMANDO_DATA = {
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-10-22T23:32:04.446094+00:00",
+  "opdateret": "2026-10-23T05:15:34.598712+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -753,7 +751,7 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-22T23:32:06.190739+00:00",
+  "opdateret": "2026-10-23T05:15:35.312333+00:00",
   "artikler_i_alt": 124,
   "kilder": [
    {
@@ -1107,9 +1105,27 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 50,
-    "som_ekstra": 3,
+    "i_listen": 51,
+    "som_ekstra": 5,
     "seneste": [
+     {
+      "rubrik": "Eko-agenter legede sig til bedre opgaveløsning",
+      "dato": "",
+      "foerst_set": "2026-10-23T05:15:35",
+      "link": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
+      "side": "",
+      "hvor": "under",
+      "under": "Claude opfandt spil og lærte af leg"
+     },
+     {
+      "rubrik": "Microsofts MAI-DxO overgår læger i simuleret test",
+      "dato": "",
+      "foerst_set": "2026-10-22T20:16:04",
+      "link": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+      "side": "",
+      "hvor": "under",
+      "under": "Microsofts AI rammer 83 procent af testdiagnoserne"
+     },
      {
       "rubrik": "Claude Duet arbejder videre i baggrunden",
       "dato": "",
@@ -1165,6 +1181,15 @@ window.KOMMANDO_DATA = {
       "under": "Nvidia-veteran kalder robotik sin Lego-periode"
      },
      {
+      "rubrik": "inDrive tester robotaxi i Astana i 2027",
+      "dato": "2026-10-23T04:00:00",
+      "foerst_set": "2026-10-23T05:15:35",
+      "link": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
+      "side": "artikel/3bfe5c41c86a24ab.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "OpenAI forhandler om 30 mia. dollar før børs",
       "dato": "2026-10-22T22:08:24",
       "foerst_set": "2026-10-22T23:32:06",
@@ -1190,33 +1215,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/5126e80c6df37e6b.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Uber sætter 30.000 ansatte på ChatGPT Work",
-      "dato": "2026-10-22T16:00:00",
-      "foerst_set": "2026-10-22T20:16:04",
-      "link": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/",
-      "side": "artikel/73f5f9254af13193.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Spotify vil bygge løbeplaylister via AI-agenter",
-      "dato": "2026-10-22T15:03:58",
-      "foerst_set": "2026-10-22T20:16:04",
-      "link": "https://techcrunch.com/2026/10/22/spotifys-current-ai-bet-is-about-being-the-music-service-that-agents-choose/",
-      "side": "artikel/abd23a18317ea679.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "DeepSeek rejser 15 milliarder dollar efter amerikansk forbud",
-      "dato": "2026-10-22T13:11:13",
-      "foerst_set": "2026-10-22T14:02:49",
-      "link": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
-      "side": "artikel/c80a6608f1d2299f.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1230,9 +1228,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 26,
-    "som_ekstra": 8,
+    "i_listen": 25,
+    "som_ekstra": 9,
     "seneste": [
+     {
+      "rubrik": "Meta slår deling af Muse-links til igen",
+      "dato": "",
+      "foerst_set": "2026-10-22T23:32:06",
+      "link": "https://www.theverge.com/tech/1017066/meta-muse-sharing-back-on-artifiacts",
+      "side": "",
+      "hvor": "under",
+      "under": "Meta Muse suspenderer deling af links"
+     },
      {
       "rubrik": "1Password lader AI-agenter logge ind uden adgangskoder",
       "dato": "",
@@ -1324,20 +1331,11 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "Meta slår deling af Muse-links til igen",
-      "dato": "2026-10-22T16:24:04",
-      "foerst_set": "2026-10-22T23:32:06",
-      "link": "https://www.theverge.com/tech/1017066/meta-muse-sharing-back-on-artifiacts",
-      "side": "artikel/d7dcc58ca817ba78.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "OpenAI, Anthropic og Nvidia slår lobbyrekord",
-      "dato": "2026-10-22T11:50:30",
+      "rubrik": "Microsofts AI rammer 83 procent af testdiagnoserne",
+      "dato": "2026-10-22T14:00:00",
       "foerst_set": "2026-10-22T20:16:04",
-      "link": "https://www.theverge.com/policy/1016585/openai-anthropic-nvidia-lobbying-records",
-      "side": "artikel/0ee4f2fe9f9c0844.html",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
+      "side": "artikel/21c961dc17bfe29a.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1686,19 +1684,14 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-22T23:51:32.099238+00:00",
+  "opdateret": "2026-10-23T05:30:07.613313+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 26,
-  "sidevisninger_i_alt": 44,
+  "besoeg_i_alt": 28,
+  "sidevisninger_i_alt": 46,
   "ai_chat_besoeg": 0,
   "serie": [
-   {
-    "dato": "2026-09-23",
-    "besoeg": 0,
-    "visninger": 10
-   },
    {
     "dato": "2026-09-24",
     "besoeg": 0,
@@ -1843,20 +1836,25 @@ window.KOMMANDO_DATA = {
     "dato": "2026-10-22",
     "besoeg": 0,
     "visninger": 10
+   },
+   {
+    "dato": "2026-10-23",
+    "besoeg": 0,
+    "visninger": 0
    }
   ],
   "sider": [
    {
     "sti": "/",
-    "besoeg": 26,
-    "visninger": 44
+    "besoeg": 28,
+    "visninger": 46
    }
   ],
   "artikler": [],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 26
+    "besoeg": 28
    }
   ],
   "laeste_temaer": []
