@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-23T20:03:23.140200+00:00",
- "artikler_i_alt": 128,
+ "opdateret": "2026-10-23T23:24:11.533126+00:00",
+ "artikler_i_alt": 118,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -224,7 +224,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 8,
+   "i_listen": 7,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -289,15 +289,6 @@ window.KILDER_STATUS = {
      "side": "artikel/9fba733ce125d2be.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Reflection åbner 501-milliarders model Beam for alle",
-     "dato": "2026-10-16T00:00:00",
-     "foerst_set": "2026-10-16T13:29:30",
-     "link": "https://huggingface.co/blog/reflection-beam",
-     "side": "artikel/752ec58d0f63cb7e.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -317,7 +308,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 6,
+   "i_listen": 7,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -344,6 +335,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-22T20:16:04",
      "link": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
      "side": "artikel/4b2657f99d2ef063.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Claude Code byggede SPARQL-motor i SQLite",
+     "dato": "2026-10-16T01:58:00",
+     "foerst_set": "2026-10-21T20:20:24",
+     "link": "https://simonwillison.net/2026/Oct/16/sqlite-sparql-rust/",
+     "side": "artikel/a3e3977c74450eb8.html",
      "hvor": "forside",
      "under": ""
     },
@@ -401,17 +401,17 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 51,
+   "i_listen": 44,
    "som_ekstra": 6,
    "seneste": [
     {
-     "rubrik": "Eko-agenter klarede opgaven efter 30 timers leg",
+     "rubrik": "OpenAI træner nu uden adgang til internettet",
      "dato": "",
-     "foerst_set": "2026-10-23T05:15:35",
-     "link": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
+     "foerst_set": "2026-10-23T23:24:11",
+     "link": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
      "side": "",
      "hvor": "under",
-     "under": "Claude opfandt spil og lærte af leg"
+     "under": "OpenAI træner nu sine stærkeste AI-modeller uden net"
     },
     {
      "rubrik": "Canva Craft laver billeder med læsbar tekst",
@@ -466,24 +466,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Anthropic afsætter fem procent af aktierne til fond"
-    },
-    {
-     "rubrik": "Replit dropper Anthropic for ChatGPT",
-     "dato": "",
-     "foerst_set": "2026-10-16T22:59:01.441154+00:00",
-     "link": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
-     "side": "",
-     "hvor": "under",
-     "under": "Replit-chef Masad kalder firmaet selvstyrende med AI-agenter"
-    },
-    {
-     "rubrik": "Nvidia-veteran siger robotter er i Lego-æra",
-     "dato": "",
-     "foerst_set": "2026-10-16T19:40:12.067536+00:00",
-     "link": "https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/",
-     "side": "",
-     "hvor": "under",
-     "under": "Nvidia-veteran kalder robotik sin Lego-periode"
     },
     {
      "rubrik": "inDrive tester robotaxi i Astana i 2027",
@@ -597,7 +579,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     6
+     7
     ],
     [
      "Hugging Face",
@@ -605,10 +587,6 @@ window.KILDER_STATUS = {
     ],
     [
      "OpenAI Blog",
-     1
-    ],
-    [
-     "MIT Tech Review AI",
      1
     ],
     [
@@ -632,7 +610,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 27,
-   "som_ekstra": 9,
+   "som_ekstra": 8,
    "seneste": [
     {
      "rubrik": "Meta slår deling af Muse-links til igen",
@@ -689,15 +667,6 @@ window.KILDER_STATUS = {
      "under": "Meta fjerner vilkår om AI-træning af websites"
     },
     {
-     "rubrik": "Meta vil træne AI på virksomheders sider",
-     "dato": "",
-     "foerst_set": "2026-10-16T19:40:12",
-     "link": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
-     "side": "",
-     "hvor": "under",
-     "under": "Meta vil træne AI på firmernes egne hjemmesider"
-    },
-    {
      "rubrik": "Google lancerer Guided Vision i Gemini Live",
      "dato": "",
      "foerst_set": "2026-10-02T12:20:39",
@@ -714,6 +683,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+    },
+    {
+     "rubrik": "OpenAI træner nu sine stærkeste AI-modeller uden net",
+     "dato": "2026-10-23T17:11:07",
+     "foerst_set": "2026-10-23T23:24:11",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
+     "side": "artikel/78c968c7120787cb.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Blocks Dessa har kun hørt mennesker tale",
+     "dato": "2026-10-23T15:32:39",
+     "foerst_set": "2026-10-23T20:03:23",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
+     "side": "artikel/9266223ed6f43cf1.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Google: Gmail-data kan nu bruges til annoncer",
@@ -798,28 +785,10 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Discord viser Markdown-filer uden symboler",
-     "dato": "2026-10-22T14:58:19",
+     "dato": "2026-10-22T18:58:19",
      "foerst_set": "2026-10-22T20:16:04",
      "link": "https://www.theverge.com/news/1017012/discord-markdown-previews-organize-servers-channels",
      "side": "artikel/6c4c325e4c950cc1.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Eiliko lover sikkerhedstjek trods åbne data",
-     "dato": "2026-10-22T11:00:00",
-     "foerst_set": "2026-10-22T14:02:49",
-     "link": "https://www.theverge.com/news/1015824/eiliko-energize-lab-statement-on-robot-hack-breach",
-     "side": "artikel/b75ce5ffab485728.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Amazon blokerer Metas indkøbsagent Muse",
-     "dato": "2026-10-22T12:30:00",
-     "foerst_set": "2026-10-22T14:02:49",
-     "link": "https://www.theverge.com/report/1015811/ai-shopping-agents-blocked-amazon-the-realreal-target-meta-muse",
-     "side": "artikel/cf5771b0b4c0ec16.html",
      "hvor": "forside",
      "under": ""
     }
@@ -827,7 +796,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     6
+     7
     ],
     [
      "Ars Technica AI",
@@ -849,9 +818,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 11,
-   "som_ekstra": 2,
+   "i_listen": 9,
+   "som_ekstra": 3,
    "seneste": [
+    {
+     "rubrik": "Google opdaterer politik: Gmail kan bruges til annoncer",
+     "dato": "",
+     "foerst_set": "2026-10-23T23:24:11",
+     "link": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
+     "side": "",
+     "hvor": "under",
+     "under": "Google: Gmail-data kan nu bruges til annoncer"
+    },
     {
      "rubrik": "Meta fjerner train fra kommercielle vilkår",
      "dato": "",
@@ -950,24 +928,6 @@ window.KILDER_STATUS = {
      "side": "artikel/90334b7b4586a269.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "New Jersey-viceadvokat Fitzgerald sigtet for AI-CSAM",
-     "dato": "2026-10-16T20:20:07",
-     "foerst_set": "2026-10-16T22:59:01",
-     "link": "https://arstechnica.com/tech-policy/2026/10/thegentlemanpervert-producing-ai-csam-is-a-nj-prosecutor-say-cops/",
-     "side": "artikel/d28099c5d4fb369e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Meta vil træne AI på firmernes egne hjemmesider",
-     "dato": "2026-10-16T15:41:00",
-     "foerst_set": "2026-10-16T19:40:12",
-     "link": "https://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees/",
-     "side": "artikel/284333ed2818a37c.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -999,7 +959,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 9,
+   "i_listen": 8,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -1073,23 +1033,9 @@ window.KILDER_STATUS = {
      "side": "artikel/372db7fd0c185c92.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Samuel King lod AI foreslå virusgener",
-     "dato": "2026-10-16T18:00:00",
-     "foerst_set": "2026-10-16T19:40:12",
-     "link": "https://www.technologyreview.com/2026/10/16/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
-     "side": "artikel/57c41972947ec5cd.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
-   "overlap": [
-    [
-     "TechCrunch AI",
-     1
-    ]
-   ]
+   "overlap": []
   },
   {
    "navn": "OpenAI Blog",
