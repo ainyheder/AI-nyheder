@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-10-23T13:45:47.400241+00:00",
+  "opdateret": "2026-10-23T20:03:23.140200+00:00",
   "kladder": [
     {
       "titel": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
@@ -35,6 +35,39 @@
       ]
     },
     {
+      "titel": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
+      "resume": "Jack Dorsey's Block announced an AI model called Dessa that's trained \"from scratch on nothing but human conversation,\" and to show off the model, Block shared chats it has had with humans that can occasionally be a little awkward and uncanny. Take this one, for example, shared by Dessa lead Ragavan Thurairatnam. The conversation between […]",
+      "dato": "2026-10-23T15:32:39-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "eget_foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "rubrik": "Jack Dorseys Block lancerer modellen Dessa",
+      "resume_da": "Dessa er trænet fra bunden udelukkende på menneskelige samtaler, og de viste eksempler kan ifølge The Verge virke småakavede.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Block har annonceret tale-modellen Dessa, trænet fra bunden udelukkende på menneskelige samtaler.",
+        "forbehold": "Kun korte eksempelsamtaler fremvist; ingen adgang, priser eller uafhængige tests.",
+        "emne": "block dessa"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
       "link": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
       "resume": "",
@@ -63,6 +96,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Securing our frontier model training environment",
+      "link": "https://openai.com/index/securing-our-frontier-model-training-environment",
+      "resume": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming.",
+      "dato": "2026-10-23T10:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "eget_foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "rubrik": "OpenAI strammer sikkerheden om modeltræning",
+      "resume_da": "Træning og evaluering af frontier-modeller foregår nu i isolerede offline-miljøer, og sikkerheden afprøves med ressourcekrævende red-teaming, oplyser OpenAI selv.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI beskriver skærpet indeslutning af træningsmiljøer for frontier-modeller med offline-miljøer og ressourcekrævende red-teaming.",
+        "forbehold": "OpenAI beskriver egne tiltag; ingen uafhængig granskning.",
+        "emne": "openai træningssikkerhed"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -299,6 +365,39 @@
       ]
     },
     {
+      "titel": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+      "link": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "resume": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.",
+      "dato": "2026-10-23T17:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "eget_foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "rubrik": "OpenAI bygger lagring til 1 milliard ChatGPT-brugere",
+      "resume_da": "Ifølge OpenAI giver Habitat-lagringen nu 12 gange hurtigere læsninger ved hjælp af multi-tenancy, global caching og Azure Cosmos DB.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI beskriver, hvordan lagringslaget Habitat er skaleret med multi-tenancy og caching til 12 gange hurtigere læsninger i ChatGPT.",
+        "forbehold": "Producentens egne tal; ingen uafhængig verifikation.",
+        "emne": "openai habitat-lagring"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Broad access through consistent standards",
       "link": "https://openai.com/index/broad-access-through-consistent-standards",
       "resume": "How OpenAI works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in our Usage Policies.",
@@ -324,39 +423,6 @@
         "begrundelse": "OpenAI forklarer, hvordan distributionspartnere skal håndhæve sikkerhedskrav og brugsvilkår.",
         "forbehold": "Et principindlæg uden konkrete nye forpligtelser eller navngivne partnere.",
         "emne": "openai distributionspartnere"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Designing an AI serving harness built to last",
-      "link": "https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/",
-      "resume": "The next competitive advantage in enterprise AI has less to do with which model you choose than with what you build around it. That’s an important shift. For the past several years, much of the AI conversation has centered on model capability: bigger models, better reasoning, larger context windows, higher benchmark scores. Those advances have…",
-      "dato": "2026-10-22T21:17:29+00:00",
-      "kilde": "MIT Tech Review AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-10-22T23:32:06.190739+00:00",
-      "eget_foerst_set": "2026-10-22T23:32:06.190739+00:00",
-      "rubrik": "MIT Tech Review: serveringslag bliver næste fordel",
-      "resume_da": "Ifølge analysen betyder valget af model mindre end det, man bygger omkring den – et skift væk fra jagten på større modeller og højere benchmarks.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Analyse: virksomheders AI-fordel ligger i infrastrukturen omkring modellen snarere end i valget af model.",
-        "forbehold": "Meningsbaseret analyse uden konkrete data eller cases i uddraget.",
-        "emne": "ai-infrastruktur i virksomheder"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
@@ -398,39 +464,6 @@
       ]
     },
     {
-      "titel": "Advancing coding in low‑resource programming languages",
-      "link": "https://openai.com/index/low-resource-programming-languages",
-      "resume": "Learn how OpenAI is improving ChatGPT across low-resource programming languages, with new evaluations for software engineering, SQLite, and COBOL migration.",
-      "dato": "2026-10-19T12:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Forskning",
-      "foerst_set": "2026-10-20T05:10:40.089605+00:00",
-      "eget_foerst_set": "2026-10-20T05:10:40.089605+00:00",
-      "rubrik": "OpenAI forbedrer ChatGPT på COBOL og SQLite",
-      "resume_da": "Nye evalueringer dækker softwareudvikling og migrering af COBOL-kode i sprog med få træningsdata.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI præsenterer nye evalueringer for kodning på COBOL, SQLite og andre sprog med få træningsdata.",
-        "forbehold": "",
-        "emne": "openai"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "OpenAI and Poland’s NASK partner to advance AI safety and security",
       "link": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
       "resume": "OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient digital ecosystem.",
@@ -441,6 +474,7 @@
       "eget_foerst_set": "2026-10-23T13:45:47.400241+00:00",
       "rubrik": "OpenAI indgår sikkerhedspartnerskab med polske NASK",
       "resume_da": "Partnerskabet dækker AI-sikkerhed, sikkerhed og teknisk forskning for at styrke beskyttelse og et mere robust digitalt miljø. Omfanget er ikke beskrevet.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -457,7 +491,6 @@
         "emne": "openai og nask"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -497,34 +530,67 @@
       ]
     },
     {
-      "titel": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
-      "link": "https://openai.com/index/terminal-x",
-      "resume": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.",
-      "dato": "2026-10-20T07:00:00+00:00",
+      "titel": "Advancing coding in low‑resource programming languages",
+      "link": "https://openai.com/index/low-resource-programming-languages",
+      "resume": "Learn how OpenAI is improving ChatGPT across low-resource programming languages, with new evaluations for software engineering, SQLite, and COBOL migration.",
+      "dato": "2026-10-19T12:00:00+00:00",
       "kilde": "OpenAI Blog",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-10-21T05:13:21.754506+00:00",
-      "eget_foerst_set": "2026-10-21T05:13:21.754506+00:00",
-      "rubrik": "Terminal X matcher seniordinvestors bedømmelse med GPT-6.1",
-      "resume_da": "Terminal X's Eval Agent scorer svar mod 54 kriterier og fangede 25% flere afvigelser fra en fonds mandat med GPT-6.1 Sol.",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-20T05:10:40.089605+00:00",
+      "eget_foerst_set": "2026-10-20T05:10:40.089605+00:00",
+      "rubrik": "OpenAI forbedrer ChatGPT på COBOL og SQLite",
+      "resume_da": "Nye evalueringer dækker softwareudvikling og migrering af COBOL-kode i sprog med få træningsdata.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI præsenterer nye evalueringer for kodning på COBOL, SQLite og andre sprog med få træningsdata.",
+        "forbehold": "",
+        "emne": "openai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
+      "link": "https://openai.com/index/empowering-cyber-defenders",
+      "resume": "OpenAI outlines a blueprint for empowering cyber defenders with frontier AI, stronger safeguards, modernized cybersecurity, and more resilient public institutions.",
+      "dato": "2026-10-21T00:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-10-21T20:20:24.508912+00:00",
+      "eget_foerst_set": "2026-10-21T20:20:24.508912+00:00",
+      "rubrik": "OpenAI fremlægger plan for at styrke cyberforsvaret",
+      "resume_da": "Blueprinten foreslår at bruge frontier AI til forsvar, skærpe sikkerhedsforanstaltninger og gøre offentlige institutioner mere modstandsdygtige over for digitale angreb.",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
         "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
         "dokumentation": 3,
         "dansk": 0,
-        "type": "lancering",
+        "type": "politik",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Terminal X Eval Agent bruger GPT-6.1 Sol til at score investeringsafgang mod 54 kriterier.",
-        "forbehold": "Hovednyheden er en finans-app bygget på eksisterende model, ikke en ny modeludgivelse.",
-        "emne": "terminal x"
+        "begrundelse": "OpenAI præsenterer en blueprint for at bruge frontier AI til cyberforsvar og mere modstandsdygtige offentlige institutioner.",
+        "forbehold": "En blueprint er en anbefaling, ikke en politisk beslutning.",
+        "emne": "openai cyberforsvar"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -564,34 +630,34 @@
       ]
     },
     {
-      "titel": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
-      "link": "https://openai.com/index/empowering-cyber-defenders",
-      "resume": "OpenAI outlines a blueprint for empowering cyber defenders with frontier AI, stronger safeguards, modernized cybersecurity, and more resilient public institutions.",
-      "dato": "2026-10-21T00:00:00+00:00",
+      "titel": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+      "link": "https://openai.com/index/terminal-x",
+      "resume": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.",
+      "dato": "2026-10-20T07:00:00+00:00",
       "kilde": "OpenAI Blog",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-10-21T20:20:24.508912+00:00",
-      "eget_foerst_set": "2026-10-21T20:20:24.508912+00:00",
-      "rubrik": "OpenAI fremlægger plan for at styrke cyberforsvaret",
-      "resume_da": "Blueprinten foreslår at bruge frontier AI til forsvar, skærpe sikkerhedsforanstaltninger og gøre offentlige institutioner mere modstandsdygtige over for digitale angreb.",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-21T05:13:21.754506+00:00",
+      "eget_foerst_set": "2026-10-21T05:13:21.754506+00:00",
+      "rubrik": "Terminal X matcher seniordinvestors bedømmelse med GPT-6.1",
+      "resume_da": "Terminal X's Eval Agent scorer svar mod 54 kriterier og fangede 25% flere afvigelser fra en fonds mandat med GPT-6.1 Sol.",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
         "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 1,
+        "betydning": 2,
+        "brugbarhed": 3,
         "dokumentation": 3,
         "dansk": 0,
-        "type": "politik",
+        "type": "lancering",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "OpenAI præsenterer en blueprint for at bruge frontier AI til cyberforsvar og mere modstandsdygtige offentlige institutioner.",
-        "forbehold": "En blueprint er en anbefaling, ikke en politisk beslutning.",
-        "emne": "openai cyberforsvar"
+        "begrundelse": "Terminal X Eval Agent bruger GPT-6.1 Sol til at score investeringsafgang mod 54 kriterier.",
+        "forbehold": "Hovednyheden er en finans-app bygget på eksisterende model, ikke en ny modeludgivelse.",
+        "emne": "terminal x"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
+      "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -630,39 +696,6 @@
       ]
     },
     {
-      "titel": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
-      "link": "https://openai.com/index/ted-taylor-restaurant",
-      "resume": "An independent Schlotzsky’s and Cinnabon franchisee cut menu repricing time by 95% and built a workflow that could free up $100K in cash flow.",
-      "dato": "2026-10-20T10:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-10-20T20:06:38.203833+00:00",
-      "eget_foerst_set": "2026-10-20T20:06:38.203833+00:00",
-      "rubrik": "Franchisee reducerer afstemningstid med 94 procent",
-      "resume_da": "En uafhængig Schlotzsky's- og Cinnabon-franchisee byggede med ChatGPT Work en workflow, der kan frigive 100.000 dollars i likviditet.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "guide",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Kundecase: franchisee skærer afstemningstid med 94% via ChatGPT Work",
-        "forbehold": "Producentens egne tal i egen kundecase",
-        "emne": "openai"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Cloudflare links vulnerability discovery to defense with OpenAI",
       "link": "https://openai.com/index/cloudflare-cyber",
       "resume": "Cloudflare uses OpenAI Daybreak to investigate vulnerabilities and propose fixes for review. Its developers use Codex to build faster and improve code quality.",
@@ -688,6 +721,39 @@
         "begrundelse": "Kundecase: Cloudflare bruger OpenAI Daybreak til at finde sårbarheder og Codex i udviklingen.",
         "forbehold": "Leverandøromtale uden målte resultater eller uafhængig verifikation.",
         "emne": "cloudflare openai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
+      "link": "https://openai.com/index/ted-taylor-restaurant",
+      "resume": "An independent Schlotzsky’s and Cinnabon franchisee cut menu repricing time by 95% and built a workflow that could free up $100K in cash flow.",
+      "dato": "2026-10-20T10:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-10-20T20:06:38.203833+00:00",
+      "eget_foerst_set": "2026-10-20T20:06:38.203833+00:00",
+      "rubrik": "Franchisee reducerer afstemningstid med 94 procent",
+      "resume_da": "En uafhængig Schlotzsky's- og Cinnabon-franchisee byggede med ChatGPT Work en workflow, der kan frigive 100.000 dollars i likviditet.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "guide",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Kundecase: franchisee skærer afstemningstid med 94% via ChatGPT Work",
+        "forbehold": "Producentens egne tal i egen kundecase",
+        "emne": "openai"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
@@ -739,6 +805,7 @@
       "eget_foerst_set": "2026-10-23T13:45:47.400241+00:00",
       "rubrik": "Hugging Face gør Trainium-support opslageligt",
       "resume_da": "Artiklen har ingen brødtekst, så det fremgår kun af titlen, at man kan slå op, om en model kører på AWS Trainium.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -755,7 +822,6 @@
         "emne": "aws trainium modelopslag"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 3,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -795,39 +861,6 @@
       ]
     },
     {
-      "titel": "FairStress: A deeper evaluation of fairness in LLM decision-making",
-      "link": "https://huggingface.co/blog/allenai/fairstress",
-      "resume": "",
-      "dato": "2026-10-20T16:09:19+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Forskning",
-      "foerst_set": "2026-10-20T20:06:38.203833+00:00",
-      "eget_foerst_set": "2026-10-20T20:06:38.203833+00:00",
-      "rubrik": "FairStress måler fairness i LLM-beslutninger",
-      "resume_da": "Projektet evaluatorer retfærdighed i sprogmodellers beslutninger, men det medsendte materiale beskriver hverken metode eller resultater.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "AllenAI præsenterer FairStress om retfærdighed i LLM-beslutninger.",
-        "forbehold": "Medsendt materiale er tomt; hverken metode eller resultater er dokumenteret.",
-        "emne": "allenai fairstress"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 3,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
       "link": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
       "resume": "",
@@ -853,6 +886,39 @@
         "begrundelse": "Amazon-blog om systemniveau-profilering af TorchNeuron på AWS Trainium",
         "forbehold": "Del 1 af serie; benchmarks ifølge resumé endnu ikke offentliggjort",
         "emne": "torchneuron aws trainium"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 3,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "FairStress: A deeper evaluation of fairness in LLM decision-making",
+      "link": "https://huggingface.co/blog/allenai/fairstress",
+      "resume": "",
+      "dato": "2026-10-20T16:09:19+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-20T20:06:38.203833+00:00",
+      "eget_foerst_set": "2026-10-20T20:06:38.203833+00:00",
+      "rubrik": "FairStress måler fairness i LLM-beslutninger",
+      "resume_da": "Projektet evaluatorer retfærdighed i sprogmodellers beslutninger, men det medsendte materiale beskriver hverken metode eller resultater.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "AllenAI præsenterer FairStress om retfærdighed i LLM-beslutninger.",
+        "forbehold": "Medsendt materiale er tomt; hverken metode eller resultater er dokumenteret.",
+        "emne": "allenai fairstress"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 3,
@@ -1026,39 +1092,6 @@
       ]
     },
     {
-      "titel": "Amp puts AI agents to work beyond code with OpenAI models",
-      "link": "https://openai.com/index/amp-beyond-coding",
-      "resume": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.",
-      "dato": "2026-10-14T12:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-10-14T20:18:45.914469+00:00",
-      "eget_foerst_set": "2026-10-14T20:18:45.914469+00:00",
-      "rubrik": "TechCrunch Disrupt 2026 afholder AI-fokuseret dag to",
-      "resume_da": "Programmet inkluderer en investor-session og rundborde, og tilmelding giver 50% rabat på konferencepasset.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 4,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Amp bruger GPT-6 Astra, Ultrafast og GPT-Live-1 til agenter uden for kode",
-        "forbehold": "Handler om Amps brug af modellerne, ikke en ny modeludgivelse",
-        "emne": "amp / openai"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "JB Pritzker thinks AI could help us live to 100 — or threaten us like nukes",
       "link": "https://www.theverge.com/podcast/1012839/pritzker-ai-privacy-data-centers-flock-congress-laws",
       "resume": "Today, I’m talking with Illinois Gov. JB Pritzker, who has a lot of thoughts about AI, tech, and privacy. If you’ve been listening to the show, you know that one of my running theories is that those issues are driving a big and maybe kind of unexpected political realignment — and with the midterms coming […]",
@@ -1087,39 +1120,6 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 2,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "SentinelOne cuts malware analysis from weeks to hours",
-      "link": "https://openai.com/index/sentinelone",
-      "resume": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.",
-      "dato": "2026-10-14T12:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-10-14T20:18:45.914469+00:00",
-      "eget_foerst_set": "2026-10-14T20:18:45.914469+00:00",
-      "rubrik": "SentinelOne skærer malware-analyse ned til timer",
-      "resume_da": "Med OpenAI Daybreak forkorter SentinelOne analyse af ondsindet kode fra uger til timer og får kapacitet til at undersøge flere trusler.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 4,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "SentinelOne bruger OpenAI Daybreak til at cutte malware-analyse fra uger til timer",
-        "forbehold": "Producent-case; talene er OpenAI/SentinelOnes egne, ikke uafhængigt testet",
-        "emne": "sentinelone"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1389,6 +1389,105 @@
       ]
     },
     {
+      "titel": "From Toast to Bessemer: Who founders will hear from at TechCrunch Founder Summit 2026",
+      "link": "https://techcrunch.com/2026/10/23/from-toast-to-bessemer-who-founders-will-hear-from-at-techcrunch-founder-summit-2026/",
+      "resume": "Hosted by TechCrunch in partnership with Fidelity Private Shares, the full-day event goes beyond fundraising and AI to explore the realities of finding customers, building teams, sharpening a pitch, developing founder leadership, and scaling companies both inside and outside traditional startup hubs.",
+      "dato": "2026-10-23T19:06:23+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "eget_foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "rubrik": "TechCrunch samler stiftere til Founder Summit 2026",
+      "resume_da": "Heldagsarrangementet laves med Fidelity Private Shares og handler om kunder, teams, pitch og skalering – ikke kun fundraising og AI.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 0,
+        "betydning": 0,
+        "brugbarhed": 0,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "reklame",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Programomtale for TechCrunch Founder Summit; AI nævnes kun som et af flere emner.",
+        "forbehold": "",
+        "emne": "techcrunch founder summit"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Intel gets waiver after worries fuzzy US ban on foreign-made robots may hit fabs",
+      "link": "https://arstechnica.com/ai/2026/10/intel-gets-waiver-after-worries-fuzzy-us-ban-on-foreign-made-robots-may-hit-fabs/",
+      "resume": "Company says foreign-made robotic vehicles are crucial to US chip production.",
+      "dato": "2026-10-23T17:18:31+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "eget_foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "rubrik": "Intel får dispensation for udenlandske robotter",
+      "resume_da": "Intel siger, at udenlandske robotkøretøjer er afgørende for amerikansk chipproduktion, og har fået lempelse i et uklart amerikansk forbud.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Intel har fået lempelse i et uklart amerikansk forbud mod udenlandske robotkøretøjer, som selskabet kalder afgørende for chipproduktion.",
+        "forbehold": "",
+        "emne": "intel robotforbud"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "The iPhone Duo should have been an iPad",
+      "link": "https://www.theverge.com/podcast/1017447/iphone-duo-ipad-review-score-vergecast",
+      "resume": "We gave the iPhone Duo a 7 /10. But that wasn't always the score we planned, and it might not be the right score forever. Such are the challenges of reviewing - and assessing - a big, new idea about the most popular smartphone in history. On this episode of The Vergecast, David and Nilay […]",
+      "dato": "2026-10-23T13:00:18-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "eget_foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "rubrik": "Vergecast vender anmeldelsen af iPhone Duo",
+      "resume_da": "Telefonen fik 7 ud af 10, men karakteren var ikke planlagt fra start og er måske ikke den endelige, siger værterne.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 0,
+        "betydning": 0,
+        "brugbarhed": 0,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Podcast om The Verges anmeldelse af iPhone Duo; ingen AI-nyhed.",
+        "forbehold": "",
+        "emne": "iphone duo anmeldelse"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Sure, let’s smoosh SpaceX and Tesla together, who cares",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1016879/spacex-tesla-cursed-katamari",
       "resume": "Oh sure, SpaceX's credit risk is pretty high because it's about to borrow another $40 billion to spend on Nvidia chips, but who cares about that? SpaceX and Tesla have formed special committees to discuss a merger! The degree to which you find this merger compelling likely has to do with the degree to which […]",
@@ -1491,7 +1590,7 @@
       "titel": "Wildwood’s director says AI is ‘antithetical to everything that we are at this studio’",
       "link": "https://www.theverge.com/entertainment/1016647/wildwood-travis-knight-interview-ai-laika-stop-motion",
       "resume": "Wildwood is the most ambitious film yet from Laika, the stop-motion studio best known for the likes of Coraline and ParaNorman. It's a sprawling fantasy adventure that took five years to complete. The process involved more 230 puppets - including 36 of the main character Prue alone - which were brought to life by a […]",
-      "dato": "2026-10-22T12:16:15-04:00",
+      "dato": "2026-10-22T16:16:15+00:00",
       "kilde": "The Verge AI",
       "kategori": "Samfund & etik",
       "foerst_set": "2026-10-22T20:16:04.203492+00:00",
@@ -1810,39 +1909,6 @@
         "begrundelse": "Veritas udvider chip til ægthedsverifikation til smykker og parfume; AI ikke hovedtema",
         "forbehold": "",
         "emne": "veritas"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "See what 4 builders are making with Gemini 3.8 Flash",
-      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-flash-developers/",
-      "resume": "See what developers have built with Gemini 3.8 Flash, our most intelligent workhorse model, launched in early September.",
-      "dato": "2026-09-28T16:00:00+00:00",
-      "kilde": "Google Gemini",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-10-02T12:20:39.330113+00:00",
-      "eget_foerst_set": "2026-10-02T12:20:39.330113+00:00",
-      "rubrik": "Google fremviser fire udviklere på Gemini 3.8 Flash",
-      "resume_da": "Gemini 3.8 Flash blev lanceret i begyndelsen af september og beskrives som Googles mest intelligente arbejdshestemodel.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "reklame",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Google viser fire udviklercases bygget på Gemini 3.8 Flash, lanceret i begyndelsen af september.",
-        "forbehold": "Kundecases om eksisterende model, ikke ny udgivelse; ingen tal eller metode i resumeet.",
-        "emne": "google/gemini-3.8-flash"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 1,
@@ -37713,6 +37779,14 @@
           "resume_da": "Googles nye AI-model er designet til flertrinsopgaver som kode-migrationer og forskning, og tilgængelig via betalt API.",
           "dato": "2026-10-13T16:00:00+00:00",
           "foerst_set": "2026-10-13T19:29:19.321800+00:00"
+        },
+        {
+          "kilde": "Google Gemini",
+          "link": "https://blog.google/products-and-platforms/products/gemini/gemini-4-argon-builders/",
+          "rubrik": "Gemini 4 Argon gør flade billeder til 3D",
+          "resume_da": "Google har frigivet Gemini 4 Argon; fem eksempler viser en 3D-globus, en jetmotor og et multiplayerspil.",
+          "dato": "2026-10-23T16:00:00+00:00",
+          "foerst_set": "2026-10-23T20:03:23.140200+00:00"
         }
       ]
     },
@@ -43279,8 +43353,8 @@
         {
           "kilde": "TechCrunch AI",
           "link": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
-          "rubrik": "Claude-agenter legede sig klogere på en øde ø",
-          "resume_da": "Agenter på Claude Opus 4.7 fandt selv på lege på en simuleret ø — og bagefter løste de stillede opgaver bedre end agenter uden ophold på øen.",
+          "rubrik": "Eko-agenter klarede opgaven efter 30 timers leg",
+          "resume_da": "13 agenter på Claude Opus 4.7 legede 30 timer på en simuleret ø uden mål. Bagefter løste de konkrete opgaver bedre end agenter, der aldrig havde været på øen.",
           "dato": "2026-10-23T00:45:37+00:00",
           "foerst_set": "2026-10-23T05:15:35.312333+00:00"
         }
@@ -49730,7 +49804,7 @@
       "titel": "In Meta’s version of the future, I’ll have my Muse call your Muse",
       "link": "https://www.theverge.com/tech/1016905/meta-earnings-fall-2026-muse-network",
       "resume": "Mark Zuckerberg is barrelling toward a future in which an autonomous network of AI agents will run our lives - shopping for us, working for us, talking to other people's AI agents for us. Are humans ready for this very specific and unrelenting vision of a life in which we communicate primarily through bot proxies? […]",
-      "dato": "2026-10-22T14:15:00-04:00",
+      "dato": "2026-10-22T18:15:00+00:00",
       "kilde": "The Verge AI",
       "kategori": "Penge & marked",
       "foerst_set": "2026-10-22T20:16:04.203492+00:00",
@@ -49884,7 +49958,7 @@
       "titel": "Microsoft says its AI tool is better than doctors at diagnosing conditions",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
       "resume": "For years, AI leaders have touted healthcare as one of the clearest examples of where their technology will improve lives. Now \"it is finally here,\" Microsoft AI CEO Mustafa Suleyman tells The Verge. The company claims to have developed an AI-powered tool it says can diagnose conditions up to four times more accurately than human […]",
-      "dato": "2026-10-22T14:00:00-04:00",
+      "dato": "2026-10-22T18:00:00+00:00",
       "kilde": "The Verge AI",
       "kategori": "Forskning",
       "foerst_set": "2026-10-22T20:16:04.203492+00:00",
@@ -50053,7 +50127,7 @@
       "titel": "Someone hacked the Switch 2 by using an old game and AI",
       "link": "https://www.theverge.com/games/1016862/nintendo-switch-2-jailbreak-ai",
       "resume": "The Nintendo Switch 2 has apparently been jailbroken, and a modder has already shown the console running a custom version of Mario Kart World featuring new playable characters like Cinnamoroll, the red Angry Bird, Peter Griffin, and Steve from Minecraft. OpenAI's Codex helped make this \"ns2jb\" jailbreak, according to Sammy Hajhamid, aka \"pepsipu.\" It's a […]",
-      "dato": "2026-10-22T13:21:31-04:00",
+      "dato": "2026-10-22T17:21:31+00:00",
       "kilde": "The Verge AI",
       "kategori": "Samfund & etik",
       "foerst_set": "2026-10-22T20:16:04.203492+00:00",
@@ -50188,7 +50262,8 @@
       },
       "side": "artikel/158d6dc645d8c42d.html",
       "billedmotiv": "A thick matte AI model cube with a hinged safety-filter panel sliding aside, exposing a sharp biohazard symbol and a jagged cyber-bug icon on its face; the detached filter remains a solid opaque slab beside it. The cube stands alone without a brand mark.",
-      "billedmotiv_instruks": "ea04c86451814419238f"
+      "billedmotiv_instruks": "ea04c86451814419238f",
+      "billede": "data/img/04e4e34a1800c2b6.webp"
     },
     {
       "titel": "Blackstone’s Jas Khaira says fears over AI-buildout debt are overblown",
@@ -50327,6 +50402,16 @@
         }
       ],
       "figurer": [],
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+          "rubrik": "Canva Craft laver billeder med læsbar tekst",
+          "resume_da": "Designplatformen sender sin egen model ud til alle brugere fra fanen Dream Lab og lover skarpe detaljer, læsbar tekst og redigering, der ikke rører resten af billedet.",
+          "dato": "2026-10-22T19:00:00+00:00",
+          "foerst_set": "2026-10-22T20:16:04.203492+00:00"
+        }
+      ],
       "detaljer": [
         "The Verge beskriver Craft som en direkte konkurrent til modeller fra OpenAI, Microsoft og Google.",
         "I april fik Canva promptbaseret redigering, hvor man beskriver ændringer i et design.",
@@ -50364,18 +50449,8 @@
         "status": "godkendt",
         "kontrolleret": "2026-10-22T23:36:31.160490+00:00"
       },
-      "prio": 7,
       "historie_dato": "2026-10-22T19:00:00+00:00",
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
-          "rubrik": "Canva Craft laver billeder med læsbar tekst",
-          "resume_da": "Designplatformen sender sin egen model ud til alle brugere fra fanen Dream Lab og lover skarpe detaljer, læsbar tekst og redigering, der ikke rører resten af billedet.",
-          "dato": "2026-10-22T19:00:00+00:00",
-          "foerst_set": "2026-10-22T20:16:04.203492+00:00"
-        }
-      ],
+      "prio": 7,
       "side": "artikel/73f803029b01cb70.html"
     },
     {
@@ -50616,9 +50691,9 @@
       "side": "artikel/af7e7277bac39aa5.html"
     },
     {
-      "titel": "Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony.ai and Nvidia",
+      "titel": "Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony AI and Nvidia",
       "link": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
-      "resume": "inDrive plans to begin testing Pony.ai's robotaxis in Kazakhstan's capital in the first half of 2027.",
+      "resume": "The company plans to begin testing Pony.ai's robotaxis in Kazakhstan's capital in the first half of 2027.",
       "dato": "2026-10-23T04:00:00+00:00",
       "kilde": "TechCrunch AI",
       "kategori": "Penge & marked",
@@ -50715,6 +50790,41 @@
       "eget_foerst_set": "2026-10-23T13:45:47.400241+00:00",
       "rubrik": "AI-port af Zelda splitter retro-miljø",
       "resume_da": "Nye AI-værktøjer gør det hurtigt at porte gamle spil, men et fællesskabswebsted er lukket, og bevaringsfolk advarer.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Zelda på mobil efter få uger",
+          "tekst": "I sommer fik AI-konsulenten Chris Sotraidis øje på en port af Command & Conquer: Generals Zero Hour til iPhone og iPad. Det satte gang i en stribe egne ports, blandt andet The Legend of Zelda: Ocarina of Time til mobil via en eksisterende decomp.\n\nInden for få uger arbejdede han på et dusin projekter. Uden AI ville tempoet være ekstremt langsomt, siger han.\n\nDecomps og recomps – forkortelser for decompile og recompile – er reverse engineering, hvor man skiller et spil ad og genopbygger det til hardware, det ikke var beregnet til. Manuelt er det langsomt og møjsommeligt.\n\nEn gruppe brugte år på at decompilere original Animal Crossing på GameCube. AI-kodningsværktøjer har skåret tiden markant ned."
+        },
+        {
+          "overskrift": "Websted lukkede efter AI-bølge",
+          "tekst": "Den hurtige bølge har overvældet DIY-scenen. Sidste uge lukkede et community-fokuseret websted, der sporer decomp-projekter, pludseligt. Ejeren, der kalder sig Encounter, skrev, at AI nu kan fremskynde decompilation markant, men at fællesskabet er brudt.\n\nProblemet er ifølge Encounter, at nogen tager eksisterende projekter og “færdiggør” dem med AI eller skynder sig at porte andres arbejde uden at bidrage. Sådanne “hostile forks” river fællesskabet fra hinanden, skrev ejeren. Bevaringsfolk advarer om, at AI kan gøre det sværere at forstå, hvordan spillene oprindeligt blev bygget."
+        },
+        {
+          "overskrift": "Epic og Xbox ser AI-muligheder",
+          "tekst": "Striden står ikke isoleret. Fortnite-udvikleren Epic Games har lanceret en “vibe-coded” version af sin PC-spilbutik og skiftet til “AI-accelerated development” i et kommende samarbejde med Disney, skriver The Verge. Epics CEO Tim Sweeney mener, at AI-værktøjer kan føre til “en ny guldalder for spil”. Xbox CEO Asha Sharma har oprettet Xbox Labs for at udforske området.\n\nChris Sotraidis anerkender kritikken. Han mener, at meget af det, der i dag afvises som “slop”, kan blive bedre, efterhånden som værktøjerne forbedres – men bedre værktøjer løser ikke automatisk kredit eller omgang med hinanden."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "Mere end 90 %",
+          "label": "af klassiske spil vurderes som kritisk truede"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Halo er set køre i en browser, Wind Waker på iPhone og Super Smash Bros. i mixed reality."
+      ],
+      "betydning": "Hvis AI-porte fortsætter uden at bevare viden om spillenes opbygning, kan det svække evnen til at genskabe klassiske spil trofast.",
+      "pointer": [
+        "AI gør decomps og ports markant hurtigere.",
+        "Et fællesskabswebsted lukkede på grund af AI.",
+        "Bevaringsfolk frygter tab af viden."
+      ],
+      "billedmotiv": "A classic green game cartridge bearing a golden Triforce emblem splits cleanly into two identical cartridges, and one half slides into a blank dark smartphone slab. Beside them, a small grey community-server cube snaps shut under a solid padlock, with sharp edges and clearly separated opaque contours.",
+      "billedmotiv_instruks": "d151bcc23a2326fa63ab",
+      "billede": "data/img/3abaa901cd4745ae.jpg",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -50731,48 +50841,377 @@
         "emne": "retrospil og ai-porte"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-23T13:48:59.593208+00:00"
+      },
       "prio": 4,
+      "side": "artikel/c8d9d8b98c2a12b6.html"
+    },
+    {
+      "titel": "Introducing Kimi K3.1 Pro",
+      "link": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+      "resume": "Introducing Kimi K3.1 Pro Kimi K3.1 Pro landed on the Kimi API today - it's not yet open weights, but Moonshot promise \"Full model weights will be released by Nov 4, 2026\". They're also offering a \"Highspeed\" version that's 2-3x faster, at twice the price (except for input token cache hits, which are priced the same). The US dollar pricing is $2.00/million tokens for input and $10/million for…",
+      "dato": "2026-10-23T19:40:54+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "eget_foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "rubrik": "Kimi K3.1 Pro når fronten til halv pris",
+      "resume_da": "Moonshot sender Kimi K3.1 Pro på API med score 55 mod Opus 5.5's 58 og løfte om fulde vægte senest 4. november 2026.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Kimi K3.1 Pro er frigivet på Kimi API med konkrete priser og en hurtigere Highspeed-udgave; åbne vægte er lovet senere.",
+        "forbehold": "Vægte er ikke åbne endnu, og der foreligger ingen uafhængige tests af evnerne.",
+        "emne": "kimi k3.1 pro"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
       "sektioner": [
         {
-          "overskrift": "Zelda på mobil efter få uger",
-          "tekst": "I sommer fik AI-konsulenten Chris Sotraidis øje på en port af Command & Conquer: Generals Zero Hour til iPhone og iPad. Det satte gang i en stribe egne ports, blandt andet The Legend of Zelda: Ocarina of Time til mobil via en eksisterende decomp.\n\nInden for få uger arbejdede han på et dusin projekter. Uden AI ville tempoet være ekstremt langsomt, siger han.\n\nDecomps og recomps – forkortelser for decompile og recompile – er reverse engineering, hvor man skiller et spil ad og genopbygger det til hardware, det ikke var beregnet til. Manuelt er det langsomt og møjsommeligt.\n\nEn gruppe brugte år på at decompilere original Animal Crossing på GameCube. AI-kodningsværktøjer har skåret tiden markant ned."
+          "overskrift": "Kimi K3.1 Pro er landet på API'et",
+          "tekst": "Moonshot har lagt Kimi K3.1 Pro på sin Kimi API, hvor udviklere kan kalde modellen som en tjeneste. Vægtene — de filer, der gør det muligt at køre modellen på egne maskiner — er ikke frigivet endnu. Moonshot lover, at de fulde vægte kommer senest 4. november 2026.\n\nVed siden af den almindelige model tilbyder Moonshot en **Highspeed-version**, som ifølge selskabet er 2-3 gange hurtigere. Den koster det dobbelte, bortset fra cache-hits på input-tokens, der har samme pris.\n\nPrisen er 2,00 USD pr. million input-tokens og 10 USD pr. million output-tokens. Det er samme pris som GPT-6.1 Sol og halvdelen af Claude Opus 5.5."
         },
         {
-          "overskrift": "Websted lukkede efter AI-bølge",
-          "tekst": "Den hurtige bølge har overvældet DIY-scenen. Sidste uge lukkede et community-fokuseret websted, der sporer decomp-projekter, pludseligt. Ejeren, der kalder sig Encounter, skrev, at AI nu kan fremskynde decompilation markant, men at fællesskabet er brudt.\n\nProblemet er ifølge Encounter, at nogen tager eksisterende projekter og “færdiggør” dem med AI eller skynder sig at porte andres arbejde uden at bidrage. Sådanne “hostile forks” river fællesskabet fra hinanden, skrev ejeren. Bevaringsfolk advarer om, at AI kan gøre det sværere at forstå, hvordan spillene oprindeligt blev bygget."
+          "overskrift": "Testscore 55 point — to efter Opus 5.5",
+          "tekst": "Analysefirmaet Artificial Analysis giver Kimi K3.1 Pro 55 point. Det placerer modellen foran Claude Fable 5.1, GPT-6 Astra og Gemini 4 Argon, der alle får 53, og kun bag Claude Opus 5.5 med 58.\n\nIfølge Simon Willison er det første gang, en model, der snart får åbne vægte, scorer så højt mod fronten.\n\nMoonshots egne benchmarks viser Kimi K3.1 Pro cirka på niveau med Opus 5.5 og GPT-6 Astra: den slår dem på enkelte tests og ligger tæt på i andre."
         },
         {
-          "overskrift": "Epic og Xbox ser AI-muligheder",
-          "tekst": "Striden står ikke isoleret. Fortnite-udvikleren Epic Games har lanceret en “vibe-coded” version af sin PC-spilbutik og skiftet til “AI-accelerated development” i et kommende samarbejde med Disney, skriver The Verge. Epics CEO Tim Sweeney mener, at AI-værktøjer kan føre til “en ny guldalder for spil”. Xbox CEO Asha Sharma har oprettet Xbox Labs for at udforske området.\n\nChris Sotraidis anerkender kritikken. Han mener, at meget af det, der i dag afvises som “slop”, kan blive bedre, efterhånden som værktøjerne forbedres – men bedre værktøjer løser ikke automatisk kredit eller omgang med hinanden."
+          "overskrift": "Pelikan på cykel i tre niveauer",
+          "tekst": "Willison har ikke kun læst benchmarks. Han kørte modellen gennem Moonshots API med kommandoen llm openai endpoint, som han tilføjede til værktøjet LLM 0.32 i august, og bad den generere en SVG-tegning af en pelikan på en cykel.\n\nHan testede de tre reasoning-niveauer, modellen understøtter — low, medium og max — og kørte tilsvarende pelikaner mod Kimi K3 for at sammenligne. Indlægget er et link-opslag fra 23. oktober 2026."
         }
       ],
       "brief": "",
       "figurer": [],
       "noegletal": [
         {
-          "tal": "Mere end 90 %",
-          "label": "af klassiske spil vurderes som kritisk truede"
+          "tal": "2,00 USD pr. million input-tokens",
+          "label": "Moonshots pris; samme som GPT-6.1 Sol, halvdelen af Claude Opus 5.5"
+        },
+        {
+          "tal": "10 USD pr. million output-tokens",
+          "label": "Moonshots pris for genereret tekst"
+        },
+        {
+          "tal": "55 point",
+          "label": "Artificial Analysis' score; Opus 5.5 fik 58, Claude Fable 5.1, GPT-6 Astra og Gemini 4 Argon fik 53"
+        },
+        {
+          "tal": "2-3 gange hurtigere",
+          "label": "Highspeed-version ifølge Moonshot, til dobbelt pris undtagen cache-hits"
         }
       ],
       "detaljer": [
-        "Halo er set køre i en browser, Wind Waker på iPhone og Super Smash Bros. i mixed reality."
+        "Willison kørte samme pelikan-opgave mod forgængeren Kimi K3 for at sammenligne.",
+        "Kommandoen llm openai endpoint kom til LLM 0.32 i august.",
+        "Moonshot offentliggør selv benchmarks, hvor Kimi K3.1 Pro ligger på niveau med Opus 5.5 og GPT-6 Astra."
       ],
-      "betydning": "Hvis AI-porte fortsætter uden at bevare viden om spillenes opbygning, kan det svække evnen til at genskabe klassiske spil trofast.",
+      "betydning": "Kommer vægtene 4. november, kan en model på frontniveau køres uden om Moonshots API — det har ikke været tilfældet for åbne modeller før.",
       "pointer": [
-        "AI gør decomps og ports markant hurtigere.",
-        "Et fællesskabswebsted lukkede på grund af AI.",
-        "Bevaringsfolk frygter tab af viden."
+        "Kimi K3.1 Pro er på API, ikke som åbne vægte endnu",
+        "Pris: 2 USD input og 10 USD output pr. million tokens",
+        "Score 55 mod Opus 5.5's 58"
       ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
-        "kontrolleret": "2026-10-23T13:48:59.593208+00:00"
+        "kontrolleret": "2026-10-23T20:06:07.668264+00:00"
       },
-      "billedmotiv": "A classic green game cartridge bearing a golden Triforce emblem splits cleanly into two identical cartridges, and one half slides into a blank dark smartphone slab. Beside them, a small grey community-server cube snaps shut under a solid padlock, with sharp edges and clearly separated opaque contours.",
-      "billedmotiv_instruks": "d151bcc23a2326fa63ab",
-      "billede": "data/img/3abaa901cd4745ae.jpg",
-      "side": "artikel/c8d9d8b98c2a12b6.html"
+      "billedmotiv": "A simple flat pelican riding a bicycle, built from bold solid shapes, stands on a square card with two more square cards behind it, each showing the same bird-and-bike slightly more detailed than the last. Beside the cards, one thick solid price tag is split cleanly in half.",
+      "billedmotiv_instruks": "f66cc5548de2c321757d",
+      "billede": "data/img/6268a306ed8c3a40.jpg",
+      "side": "artikel/6b4083129b1f5169.html"
+    },
+    {
+      "titel": "Now Google says it might use your Gmail and Google Photos data to target ads",
+      "link": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+      "resume": "Google has updated its privacy policy in a way that could mean you'll start seeing targeted ads based on your personal data if you're using personalized AI features. The update, spotted by Android Authority, adds an exception to its promise about not using your Drive, Gmail, or Google Photos for personalized ads. While the previous […]",
+      "dato": "2026-10-23T12:52:55-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "eget_foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "rubrik": "Google: Gmail-data kan nu bruges til annoncer",
+      "resume_da": "Opdateret privatlivspolitik giver Google mulighed for at bruge indhold fra Gmail, Drive og Photos til personlige annoncer, hvis du bruger AI-funktioner.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google har ændret privatlivspolitikken, så personlige AI-funktioner kan give grundlag for målrettede annoncer med Gmail- og Fotos-data.",
+        "forbehold": "Ændringen er beskrevet via Android Authority; detaljeret omfang fremgår ikke.",
+        "emne": "google privatlivspolitik"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Google ændrer løfte om Gmail-data",
+          "tekst": "Den 16. oktober opdaterede Google sin privatlivspolitik. Tidligere lovede selskabet ikke at bruge data fra Drive, Gmail og Google Photos til personlige annoncer.\n\nNu er der tilføjet en undtagelse: Det gælder ikke, hvis du vælger at gøre data fra disse tjenester tilgængelige for andre Google-tjenester, der understøtter personlige annoncer. Ændringen blev opdaget af Android Authority."
+        },
+        {
+          "overskrift": "Sådan hænger AI og annoncer sammen",
+          "tekst": "Undtagelsen rammer brugere, der har forbundet deres Gmail, Drive eller Google Photos til AI Mode og andre søgeværktøjer via Googles Personal Intelligence-funktion.\n\nDen funktion lader værktøjerne give bedre svar ved at kende mere til dig. Ifølge de nye vilkår kan data, du deler for at få bedre AI-anbefalinger, nu også åbne for mere personlige annoncer."
+        },
+        {
+          "overskrift": "Annoncører får ikke rå data",
+          "tekst": "Google understreger, at annoncører ikke får adgang til dine data i Drive, Gmail og Photos. De får heller ikke personligt identificerende oplysninger som navn eller e-mailadresse.\n\nGoogle lover også, at annoncer ikke målrettes efter følsomme kategorier som race, seksuel orientering, religion eller helbred."
+        },
+        {
+          "overskrift": "Sådan slår du funktionen fra",
+          "tekst": "Vil du undgå, at dine data bruges til målrettede annoncer, kan du afbryde de apps, du har forbundet til Search's Personal Intelligence-funktioner. Du kan også helt slå Personlige anbefalinger fra via siden Search Services Personalization."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [],
+      "betydning": "Brugere, der vil undgå målrettede annoncer, må nu aktivt afbryde Googles AI-funktioner fra deres Gmail, Drive og Photos.",
+      "pointer": [
+        "Gælder kun brugere af personlige AI-funktioner",
+        "Du kan afbryde apps eller slå personalisering fra"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-23T20:06:05.859892+00:00"
+      },
+      "billedmotiv": "An open solid envelope, a photo frame and a document sheet rise behind it, and one thick arrow joins them to a boxy advertising billboard whose front face carries Google's four-colour G, the letterform kept intact. Billboard and envelope are flat, opaque and sharply outlined.",
+      "billedmotiv_instruks": "b8a4a81ac9b415eb1272",
+      "side": "artikel/a08e7d50b12c6e1e.html"
+    },
+    {
+      "titel": "Meta delays new business terms after publisher pushback on AI scraping",
+      "link": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
+      "resume": "Meta is delaying the enforcement of its new business terms after publishers raised concerns that they could allow the company to scrape news sites for AI training, as reported earlier by Fast Company. In a statement to The Verge, Meta spokesperson Daniel Roberts says the terms will go into effect on November 20th \"to allow […]",
+      "dato": "2026-10-23T10:47:41-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "eget_foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "rubrik": "Meta udskyder nye vilkår efter pres fra medier",
+      "resume_da": "Vilkårene skulle have været gældende 30. oktober, men træder først i kraft 20. november efter kritik fra udgivere i flere lande.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Meta udskyder håndhævelsen af nye forretningsvilkår til 20. november efter kritik af mulig scraping af nyhedssider til AI-træning.",
+        "forbehold": "",
+        "emne": "meta forretningsvilkår"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Fra 30. oktober til 20. november",
+          "tekst": "Meta ville have ladet sine nye forretningsvilkår gælde fra 30. oktober. Nu sker det først 20. november. Det bekræfter Metas talsperson Daniel Roberts over for The Verge.\n\nIfølge Roberts skal de ekstra uger bruges på at forklare partnere og interessenter, hvad der ændrer sig, og hvad der ikke gør."
+        },
+        {
+          "overskrift": "Ord fjernet, risiko ikke udelukket",
+          "tekst": "Vilkårene så ud til at give Meta lov til frit at indsamle indhold fra nyhedssites, der bruger Metas platforme, og bruge materialet til AI-træning. Meta fjernede ganske vist ordet »training« fra teksten, men juridiske eksperter vurderede, at ændringen ikke udelukkede muligheden.\n\nPresseorganisationen News/Media Alliance sendte torsdag et brev til Metas topchef Mark Zuckerberg med krav om at revidere vilkårene, fordi de efter organisationens vurdering kan volde udgivere »alvorlig skade«. Også annoncører og udgivere i EU og Storbritannien har opfordret tilsynsmyndigheder til at tvinge Meta til at stoppe."
+        },
+        {
+          "overskrift": "Robots.txt er fortsat Metas svar",
+          "tekst": "Roberts siger, at udskydelsen også skal bruges til at forklare, hvordan Meta bruger webcrawlere, og at indholdsejere fortsat kan bruge robots.txt til at signalere deres ønsker. Robots.txt er en lille fil på et website, som fortæller automatiske robotter, om de må gennemgå siderne."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "20. november",
+          "label": "Ny dato for hvornår Metas forretningsvilkår træder i kraft"
+        },
+        {
+          "tal": "30. oktober",
+          "label": "Oprindeligt planlagt ikrafttrædelsesdato, som nu er udskudt"
+        }
+      ],
+      "detaljer": [
+        "Meta fjernede ordet »training« fra vilkårene, før udskydelsen blev annonceret.",
+        "Brev til Zuckerberg blev sendt torsdag af News/Media Alliance.",
+        "Udskydelsen er meldt ud af talsperson Daniel Roberts til The Verge."
+      ],
+      "betydning": "Udgivere får mere tid, men Meta har ikke meldt ud, at selve vilkårene ændres. Kritikernes bekymring om AI-træning på nyhedsindhold står dermed ubesvaret.",
+      "pointer": [
+        "Meta udskyder vilkår til 20. november",
+        "Fjernet »training«-ord overbeviste ikke eksperter",
+        "News/Media Alliance kræver revision",
+        "Robots.txt skal signalere indholdsejeres ønsker"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-23T20:06:51.504888+00:00"
+      },
+      "billedmotiv": "A heavy contract page bearing Meta's blue infinity-loop symbol is shoved backwards by a thick stack of folded newspapers leaning against it, and an empty square calendar block behind the page tips away, leaving a clear gap. All shapes solid, opaque, sharply outlined.",
+      "billedmotiv_instruks": "b3e7a82eb5ab4fafdea0",
+      "billede": "data/img/74949568eb575457.webp",
+      "side": "artikel/b8a6b67b5c401cbc.html"
+    },
+    {
+      "titel": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
+      "link": "https://huggingface.co/blog/allenai/litpivot",
+      "resume": "",
+      "dato": "2026-10-23T16:15:50+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "eget_foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "rubrik": "LitPivot foreslår rettelser med litteratur som belæg",
+      "resume_da": "Et nyt system fra Ai2 og University of Pennsylvania hjælper forskere med at justere tidlige forskningsidéer, når litteraturen udfordrer dem. I et studie blev idéerne vurderet bedre forankret.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "AI2 præsenterer værktøjet LitPivot, der kontekstualiserer forskningsidéer i litteraturen.",
+        "forbehold": "Materialet giver ingen detaljer om metode, adgang eller test.",
+        "emne": "litpivot"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "LitPivot deler idéen op i tre dele",
+          "tekst": "LitPivot er et system til at udvikle tidlige forskningsidéer. Forskeren skriver et kort forslag og slår en funktion til, som Ai2 kalder facetfremhævning. Den deler forslaget i et problem, et bidrag og en evalueringsplan. Klikker forskeren på en del, grupperer en panel de hentede artikler efter netop den del.\n\nForskeren vælger selv, hvilke artikler systemet skal bruge, og beder om en vurdering. LitPivot svarer med en kritik, uddrag fra de valgte artikler og et forslag til en revideret formulering. Forskeren kan acceptere, redigere eller afvise forslaget."
+        },
+        {
+          "overskrift": "Problem, bidrag og evaluering får hver sin vurdering",
+          "tekst": "De tre dele bliver vurderet forskelligt. For et problem leder den efter belæg for, at problemet findes, og hvorfor det betyder noget. For et bidrag sammenligner den, hvad de valgte artikler har løst, med deres begrænsninger og fremtidige arbejde for at finde huller.\n\nFor en evalueringsplan tjekker det, om testene svarer på forskningsspørgsmålet, og hvordan lignende arbejde er evalueret. Systemet markerer også afsnit, der kan være forældede, når en anden del ændres – for eksempel en evalueringsplan, der ikke længere passer til et revideret bidrag."
+        },
+        {
+          "overskrift": "Bedre forankret i et lille studie",
+          "tekst": "I et laboratoriestudie udviklede 17 forskere hver én idé med LitPivot og en anden med et tekstredigeringsprogram og et AI-værktøj til at stille spørgsmål til udvalgte artikler. Begge brugte samme artikelsamling. To faglige eksperter, som ikke vidste, hvilket system der var brugt, vurderede, hvor godt forslagene brugte relevant litteratur til at understøtte idéen. LitPivot-forslagene fik højere vurderinger.\n\nDeltagerne rapporterede selv større forståelse for litteraturen og større forbedringer af deres idés nyhedsværdi og anvendelighed. Det er selvrapporterede mål, ikke eksperternes vurdering.\n\nEt eksempel: En deltager ville generere konsistente, faktuelle syntetiske medicinske notater. LitPivot pegede på konsistens på tværs af flere hospitalsbesøg som et muligt hul. Deltageren fjernede artikler om enkeltbesøg og indsnævrede idéen til at opdage modsætninger mellem notater fra flere besøg."
+        },
+        {
+          "overskrift": "Tidlig fase, ikke færdig artikel",
+          "tekst": "LitPivot er ifølge Ai2 tiltænkt tidlig forskningsidéudvikling. Forskerne bag antyder, at det muligvis kan udvides til længere skriveopgaver som en artikels indledning. Systemet er en forskningsprototype og præsenteres på UIST 2026 i Detroit."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "LitPivot bruger artikler hentet gennem Asta Paper Finder.",
+        "I en analyse af mødenoter fra fire forskningsprojekter fandt forskerne 21 litteraturudløste pivoteringer.",
+        "Projektet bag LitPivot gik selv gennem to pivoteringer."
+      ],
+      "betydning": "For forskere kan det give en mere eksplicit måde at bruge litteraturen, når en tidlig idé skal justeres.",
+      "pointer": [
+        "LitPivot grupperer litteratur efter problem, bidrag og evalueringsplan.",
+        "Forskeren vælger selv de artikler, der bruges som belæg.",
+        "I studiet vurderede eksperter idéerne som bedre forankret."
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-23T20:08:08.423276+00:00"
+      },
+      "billedmotiv": "A research draft sheet is split into three thick solid blocks standing in a row, beside a fanned stack of small article cards. A thick arrow from the cards points to a second, revised sheet where the middle block has been replaced by a differently shaped block.",
+      "billedmotiv_instruks": "138a552cc5c9b15f0b11",
+      "billede": "data/img/6fed1976197fdcf2.webp",
+      "side": "artikel/c8f212640f722e47.html"
+    },
+    {
+      "titel": "Designing an AI serving harness built to last",
+      "link": "https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/",
+      "resume": "The next competitive advantage in enterprise AI has less to do with which model you choose than with what you build around it. That’s an important shift. For the past several years, much of the AI conversation has centered on model capability: bigger models, better reasoning, larger context windows, higher benchmark scores. Those advances have…",
+      "dato": "2026-10-22T21:17:29+00:00",
+      "kilde": "MIT Tech Review AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-10-22T23:32:06.190739+00:00",
+      "eget_foerst_set": "2026-10-22T23:32:06.190739+00:00",
+      "rubrik": "EXL: AI'ens flaskehals ligger uden om modellen",
+      "resume_da": "Virksomheden EXL peger på »serving harness«, systemet rundt om modellen, som det sted hvor AI bliver stabil og økonomisk i drift.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Analyse: virksomheders AI-fordel ligger i infrastrukturen omkring modellen snarere end i valget af model.",
+        "forbehold": "Meningsbaseret analyse uden konkrete data eller cases i uddraget.",
+        "emne": "ai-infrastruktur i virksomheder"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Modellen er ikke hele systemet",
+          "tekst": "Når en AI-model skal bruges i drift og ikke bare i en demonstration, afgør systemet omkring den, om svarene kan leveres stabilt, billigt og i stort omfang. Det system kalder EXL for en serving harness: arkitektur, hukommelsesstyring, planlægning af opgaver og optimeringer, som tilsammen gør modellens intelligens til en produktionsevne.\n\nIfølge EXL findes der ikke én universelt bedst model. Behovet bestemmer rammerne. En kundevendt assistent, der skal svare hurtigt, stiller andre krav end en dokumentbehandling, der kan køre om natten. I drift dukker begrænsninger op, som få testbrugere skjuler: svartid, samtidige forespørgsler, hukommelsespres og udgifter til GPU-kraft.\n\nEXL påpeger, at en model med lidt bedre svar ikke nødvendigvis er det bedre produktionsvalg, hvis den fordobler udgiften til inferens, altså selve afviklingen af modellen."
+        },
+        {
+          "overskrift": "GPU-hukommelsen løber tør før regnekraften",
+          "tekst": "Hukommelsen på grafikkortet er et konkret eksempel. Under inferens står modellens vægte fast, mens en såkaldt KV-cache vokser med antallet af aktive forespørgsler og kontekstens længde. Øget samtidighed kan derfor tømme den brugbare GPU-hukommelse, selv om der stadig er regnekraft tilbage — og mere regnekraft løser ikke den flaskehals.\n\nEXLs råd er at måle, før man optimerer: find den begrænsning, der betyder mest, fjern den, mål resultatet og se, om en ny flaskehals har overtaget. Teknikker som kvantisering, spekulativ dekodning og optimerede attention-mekanismer giver først værdi, når de rammer den rigtige begrænsning. EXL advarer mod at samle på dem som Pokémon-kort."
+        },
+        {
+          "overskrift": "Et modelskifte skal ikke kræve ny platform",
+          "tekst": "Dagens førende model er næppe morgendagens, og både hardware og optimeringsteknikker udvikler sig. EXL argumenterer for, at arkitekturen skal gøre det lettere at optage den slags skift, så et modelskifte bliver en vurdering og en konfigurationsændring i stedet for en større ombygning.\n\nIfølge EXL har virksomheder i stigende grad adgang til de samme modeller. Forskellen ligger i, hvor effektivt man omsætter dem til resultater. Argumenterne er fremlagt i EXLs serie »Engineering the Harness«."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Kilden er sponsoreret indhold produceret af EXL, ikke MIT Technology Reviews redaktion.",
+        "EXL nævner kvantisering, spekulativ dekodning og optimerede attention-mekanismer som eksempler på optimeringer.",
+        "KV-cachen vokser med aktive forespørgsler og kontekstlængde under inferens."
+      ],
+      "betydning": "For en virksomhed flytter spørgsmålet sig fra, hvilken model der er bedst, til hvad infrastrukturen omkring den koster i drift — og det kan gøre næste modelskifte billigere.",
+      "pointer": [
+        "Systemet omkring modellen afgør driften",
+        "Mål flaskehalsen, før du optimerer",
+        "Modelskift bør ikke kræve ny arkitektur"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-23T20:08:58.808310+00:00"
+      },
+      "billedmotiv": "A solid cube sits inside a rigid open frame, while a queue of small identical blocks grows toward a thick vertical wall and presses flat against it. A wide empty lane runs alongside the wall, staying clear. Everything flat, opaque and sharply outlined.",
+      "billedmotiv_instruks": "d358e60c336386e1e420",
+      "billede": "data/img/e94fe4c0f234a0e8.webp",
+      "side": "artikel/c4f2e7d5237a4ccb.html"
     }
   ]
 }

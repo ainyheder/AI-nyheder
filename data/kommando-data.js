@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-23T13:59:20.738445+00:00",
+ "genereret": "2026-10-23T20:22:14.839807+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,31 +195,41 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-23T13:45:47.400241+00:00",
-  "antal": 124,
-  "med_billede": 85,
-  "paa_dansk": 124,
+  "opdateret": "2026-10-23T20:03:23.140200+00:00",
+  "antal": 128,
+  "med_billede": 89,
+  "paa_dansk": 128,
   "kategorier": {
-   "Lanceringer": 31,
-   "Forskning": 12,
-   "Penge \u0026 marked": 35,
-   "Politik \u0026 jura": 16,
-   "Hverdags-AI": 9,
+   "Lanceringer": 32,
+   "Forskning": 13,
+   "Politik \u0026 jura": 18,
+   "Penge \u0026 marked": 34,
+   "Hverdags-AI": 10,
    "Samfund \u0026 etik": 21
   },
   "kilder": {
-   "The Verge AI": 25,
-   "TechCrunch AI": 51,
-   "Hugging Face": 7,
-   "Mistral AI": 4,
    "Simon Willison AI": 6,
+   "The Verge AI": 27,
+   "TechCrunch AI": 51,
+   "Hugging Face": 8,
+   "Mistral AI": 4,
    "Ars Technica AI": 11,
-   "MIT Tech Review AI": 8,
+   "MIT Tech Review AI": 9,
    "Google Gemini": 7,
    "Google DeepMind": 4,
    "Anthropic News": 1
   },
   "udvalgte": [
+   {
+    "titel": "Introducing Kimi K3.1 Pro",
+    "rubrik": "Kimi K3.1 Pro når fronten til halv pris",
+    "link": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+    "side": "artikel/6b4083129b1f5169.html",
+    "kategori": "Lanceringer",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-10-23T19:40:54+00:00",
+    "billede": "data/img/6268a306ed8c3a40.jpg"
+   },
    {
     "titel": "Canva’s first AI image model plans designs before generating them",
     "rubrik": "Canva Craft planlægger billedet først",
@@ -239,19 +249,49 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-10-21T20:27:41+00:00",
     "billede": "data/img/c1f1995ef36d7cce.jpg"
-   },
-   {
-    "titel": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
-    "rubrik": "NVIDIA Kumo Relational forudsiger uden træning",
-    "link": "https://huggingface.co/blog/nvidia/kumo-relational",
-    "side": "artikel/f9255f6920089cd5.html",
-    "kategori": "Lanceringer",
-    "kilde": "Hugging Face",
-    "dato": "2026-10-21T18:26:30+00:00",
-    "billede": "data/img/454c0ef850996dfa.webp"
    }
   ],
   "seneste": [
+   {
+    "titel": "Introducing Kimi K3.1 Pro",
+    "rubrik": "Kimi K3.1 Pro når fronten til halv pris",
+    "link": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+    "side": "artikel/6b4083129b1f5169.html",
+    "kategori": "Lanceringer",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-10-23T19:40:54+00:00",
+    "billede": "data/img/6268a306ed8c3a40.jpg"
+   },
+   {
+    "titel": "Now Google says it might use your Gmail and Google Photos data to target ads",
+    "rubrik": "Google: Gmail-data kan nu bruges til annoncer",
+    "link": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+    "side": "artikel/a08e7d50b12c6e1e.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-23T12:52:55-04:00",
+    "billede": ""
+   },
+   {
+    "titel": "Meta delays new business terms after publisher pushback on AI scraping",
+    "rubrik": "Meta udskyder nye vilkår efter pres fra medier",
+    "link": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
+    "side": "artikel/b8a6b67b5c401cbc.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-23T10:47:41-04:00",
+    "billede": "data/img/74949568eb575457.webp"
+   },
+   {
+    "titel": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
+    "rubrik": "LitPivot foreslår rettelser med litteratur som belæg",
+    "link": "https://huggingface.co/blog/allenai/litpivot",
+    "side": "artikel/c8f212640f722e47.html",
+    "kategori": "Forskning",
+    "kilde": "Hugging Face",
+    "dato": "2026-10-23T16:15:50+00:00",
+    "billede": "data/img/6fed1976197fdcf2.webp"
+   },
    {
     "titel": "Retro gaming is being overrun with AI",
     "rubrik": "AI-port af Zelda splitter retro-miljø",
@@ -263,7 +303,7 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/3abaa901cd4745ae.jpg"
    },
    {
-    "titel": "Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony.ai and Nvidia",
+    "titel": "Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony AI and Nvidia",
     "rubrik": "inDrive tester robotaxi i Astana i 2027",
     "link": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
     "side": "artikel/3bfe5c41c86a24ab.html",
@@ -293,13 +333,23 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/bb148d65c45ef21b.webp"
    },
    {
+    "titel": "Designing an AI serving harness built to last",
+    "rubrik": "EXL: AI'ens flaskehals ligger uden om modellen",
+    "link": "https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/",
+    "side": "artikel/c4f2e7d5237a4ccb.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "MIT Tech Review AI",
+    "dato": "2026-10-22T21:17:29+00:00",
+    "billede": "data/img/e94fe4c0f234a0e8.webp"
+   },
+   {
     "titel": "Microsoft says its AI tool is better than doctors at diagnosing conditions",
     "rubrik": "Microsofts AI rammer 83 procent af testdiagnoserne",
     "link": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
     "side": "artikel/21c961dc17bfe29a.html",
     "kategori": "Forskning",
     "kilde": "The Verge AI",
-    "dato": "2026-10-22T14:00:00-04:00",
+    "dato": "2026-10-22T18:00:00+00:00",
     "billede": "data/img/54a6194e65f89769.webp"
    },
    {
@@ -321,81 +371,31 @@ window.KOMMANDO_DATA = {
     "kilde": "Simon Willison AI",
     "dato": "2026-10-22T18:09:56+00:00",
     "billede": "data/img/9a3749f47e8ad9f0.webp"
-   },
-   {
-    "titel": "OpenAI makes its Jev competitor widely available as decision model competition heats up",
-    "rubrik": "OpenAI åbner Decisions API for alle kunder",
-    "link": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
-    "side": "artikel/8e6cfc22204fb217.html",
-    "kategori": "Lanceringer",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-22T19:00:00+00:00",
-    "billede": "data/img/b886ea9b287308c7.webp"
-   },
-   {
-    "titel": "In Meta’s version of the future, I’ll have my Muse call your Muse",
-    "rubrik": "Zuckerberg: Muse skal handle for milliarder",
-    "link": "https://www.theverge.com/tech/1016905/meta-earnings-fall-2026-muse-network",
-    "side": "artikel/551e38fbbb7de005.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-22T14:15:00-04:00",
-    "billede": "data/img/854df02d59993bc3.webp"
-   },
-   {
-    "titel": "Chinese hackers spied on thousands of companies after breaching IT giant ConnectWise",
-    "rubrik": "ConnectWise-brud: AI-agenter hackede 2.250 selskaber",
-    "link": "https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/",
-    "side": "artikel/5126e80c6df37e6b.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-22T16:47:17+00:00",
-    "billede": "data/img/07c3c1c5025b4691.webp"
-   },
-   {
-    "titel": "Uber puts all 30,000 employees on ChatGPT Work",
-    "rubrik": "Uber sætter 30.000 ansatte på ChatGPT Work",
-    "link": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/",
-    "side": "artikel/73f5f9254af13193.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-22T16:00:00+00:00",
-    "billede": "data/img/58d8f6edd68660b4.webp"
-   },
-   {
-    "titel": "OpenAI, Anthropic, and Nvidia had record lobbying quarters",
-    "rubrik": "OpenAI, Anthropic og Nvidia slår lobbyrekord",
-    "link": "https://www.theverge.com/policy/1016585/openai-anthropic-nvidia-lobbying-records",
-    "side": "artikel/0ee4f2fe9f9c0844.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-22T15:50:30+00:00",
-    "billede": "data/img/f7641c12989db1d8.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-23T13:45:47.400241+00:00",
+  "opdateret": "2026-10-23T20:03:23.140200+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
   "modelkald": 1,
   "kildehentninger": 0,
   "regelbaseret_udvalg": [
+   "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
    "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
-   "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
-   "https://huggingface.co/blog/allenai/olmoearth-v1-3"
+   "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/"
   ],
   "udgivet_udvalg": [
+   "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
    "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
-   "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
-   "https://huggingface.co/blog/nvidia/kumo-relational"
+   "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/"
   ],
   "vaerktoejer": [],
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-10-23T13:45:46.522832+00:00",
+  "opdateret": "2026-10-23T20:03:22.435377+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -751,8 +751,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-23T13:45:47.400241+00:00",
-  "artikler_i_alt": 124,
+  "opdateret": "2026-10-23T20:03:23.140200+00:00",
+  "artikler_i_alt": 128,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -949,9 +949,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 7,
+    "i_listen": 8,
     "som_ekstra": 0,
     "seneste": [
+     {
+      "rubrik": "LitPivot foreslår rettelser med litteratur som belæg",
+      "dato": "2026-10-23T16:15:50",
+      "foerst_set": "2026-10-23T20:03:23",
+      "link": "https://huggingface.co/blog/allenai/litpivot",
+      "side": "artikel/c8f212640f722e47.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "NVIDIA Kumo Relational forudsiger uden træning",
       "dato": "2026-10-21T18:26:30",
@@ -1040,6 +1049,15 @@ window.KOMMANDO_DATA = {
       "under": "Mistral Large 4 klarer opgaver andre afviser"
      },
      {
+      "rubrik": "Kimi K3.1 Pro når fronten til halv pris",
+      "dato": "2026-10-23T19:40:54",
+      "foerst_set": "2026-10-23T20:03:23",
+      "link": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+      "side": "artikel/6b4083129b1f5169.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Anthropic donerer Agent Skills til åben fond",
       "dato": "2026-10-22T18:09:56",
       "foerst_set": "2026-10-22T20:16:04",
@@ -1083,15 +1101,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/f5b798307b7f141a.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Anthropic hæver omsætningen næsten 50 pct. før børsnotering",
-      "dato": "2026-10-15T13:04:03",
-      "foerst_set": "2026-10-15T13:39:48",
-      "link": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/",
-      "side": "artikel/dcec1526c02c2dfa.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1109,7 +1118,7 @@ window.KOMMANDO_DATA = {
     "som_ekstra": 6,
     "seneste": [
      {
-      "rubrik": "Claude-agenter legede sig klogere på en øde ø",
+      "rubrik": "Eko-agenter klarede opgaven efter 30 timers leg",
       "dato": "",
       "foerst_set": "2026-10-23T05:15:35",
       "link": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
@@ -1228,7 +1237,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 25,
+    "i_listen": 27,
     "som_ekstra": 9,
     "seneste": [
      {
@@ -1313,29 +1322,29 @@ window.KOMMANDO_DATA = {
       "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
      },
      {
+      "rubrik": "Google: Gmail-data kan nu bruges til annoncer",
+      "dato": "2026-10-23T12:52:55",
+      "foerst_set": "2026-10-23T20:03:23",
+      "link": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+      "side": "artikel/a08e7d50b12c6e1e.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Meta udskyder nye vilkår efter pres fra medier",
+      "dato": "2026-10-23T10:47:41",
+      "foerst_set": "2026-10-23T20:03:23",
+      "link": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
+      "side": "artikel/b8a6b67b5c401cbc.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "AI-port af Zelda splitter retro-miljø",
       "dato": "2026-10-23T08:00:00",
       "foerst_set": "2026-10-23T13:45:47",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port",
       "side": "artikel/c8d9d8b98c2a12b6.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Canva Craft planlægger billedet først",
-      "dato": "2026-10-22T17:51:25",
-      "foerst_set": "2026-10-22T20:16:04",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
-      "side": "artikel/73f803029b01cb70.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Microsofts AI rammer 83 procent af testdiagnoserne",
-      "dato": "2026-10-22T14:00:00",
-      "foerst_set": "2026-10-22T20:16:04",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
-      "side": "artikel/21c961dc17bfe29a.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1474,9 +1483,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 6,
-    "i_listen": 8,
+    "i_listen": 9,
     "som_ekstra": 0,
     "seneste": [
+     {
+      "rubrik": "EXL: AI'ens flaskehals ligger uden om modellen",
+      "dato": "2026-10-22T21:17:29",
+      "foerst_set": "2026-10-22T23:32:06",
+      "link": "https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/",
+      "side": "artikel/c4f2e7d5237a4ccb.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "WD: AI-video på otte sekunder efterlader 500 MB",
       "dato": "2026-10-22T08:41:18",
@@ -1684,12 +1702,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-23T13:59:15.689934+00:00",
+  "opdateret": "2026-10-23T20:22:07.370212+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 27,
-  "sidevisninger_i_alt": 37,
+  "besoeg_i_alt": 26,
+  "sidevisninger_i_alt": 36,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1846,15 +1864,15 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 27,
-    "visninger": 37
+    "besoeg": 26,
+    "visninger": 36
    }
   ],
   "artikler": [],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 27
+    "besoeg": 26
    }
   ],
   "laeste_temaer": []
