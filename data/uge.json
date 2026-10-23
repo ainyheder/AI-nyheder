@@ -1,10 +1,10 @@
 {
- "rubrik": "Modeller bliver agenter: tale, kode, lokalt og i klinikken",
- "indledning": "I ugen 15.-22. oktober 2026 rykker AI fra tekstsvar til handling: nye tale-, kode- og agentmodeller kan køre lokalt eller i realtid, mens et medicinsk agentsystem viser både potentiale og behovet for validering.",
+ "rubrik": "Nye modeller gør AI mere lokal – og mere politisk",
+ "indledning": "I ugen 15.-22. oktober kom flere nye modeller og systemer, der flytter AI tættere på brugerne: taleagenter, åbne vægte og kodemodeller på laptop. Samtidig skærpede USA kursen mod kinesiske DeepSeek.",
  "historier": [
   {
-   "overskrift": "Mistral samler tale og handling i Voxtral 3",
-   "tekst": "Mistral lancerede Voxtral 3: to transskriberingsmodeller og en tekst-tale-model plus et SDK, der samler lytting, ræsonnement, værktøjskald og tale i én realtidspipeline til udviklere. Selskabet oplyser 50+ sprog og 0,0035 dollar pr. minut for Mini Transcribe. Benchmarktal er Mistrals egne.",
+   "overskrift": "Mistral samler tale, ræsonnement og handling i én pipeline",
+   "tekst": "Mistral lancerede Voxtral 3 med to transskriberingsmodeller og en tekst-tale-model samt et SDK til realtidsagenter. De dækker 50+ sprog, kan skelne talere og udføre værktøjskald. Ifølge Mistral koster Mini Transcribe 3 0,0035 dollar pr. minut, og API'et kan køre EU-hostet eller selvudrulles.",
    "link": "https://mistral.ai/news/voxtral-3/",
    "kategori": "Lanceringer",
    "billede": "data/img/b06a8b85cdf2672d.jpg",
@@ -16,34 +16,8 @@
    "artikel_signatur": "65edf7efc0466613163f9f626e728a185823abd691716c06feb5fb14f4593fef"
   },
   {
-   "overskrift": "Reflection åbner 501-milliarders modellen Beam",
-   "tekst": "Reflection frigav Beam med åbne vægte under Apache 2.0: 501 milliarder parametre, hvor ca. 23 milliarder er aktive pr. token, og 1 million tokens kontekst. Modellen kræver tung hardware, men kan finjusteres og køres på egen infrastruktur. Ydeevnepåstande kommer fra Reflection og er ikke uafhængigt testet.",
-   "link": "https://huggingface.co/blog/reflection-beam",
-   "kategori": "Lanceringer",
-   "billede": "data/img/d74542ebe9e4cb36.jpg",
-   "dato": "2026-10-16T00:00:00+00:00",
-   "andre": [],
-   "titel": "Welcome Beam: a 501B open model you can own, customize, and scale",
-   "rubrik": "Reflection åbner 501-milliarders model Beam for alle",
-   "resume_da": "Beam kan køre på egen hardware, læse 1 million tokens ad gangen og aktiverer kun ca. 23 mia. parametre pr. token.",
-   "artikel_signatur": "0394a0f52e3c658de7fc485e75cb47f089d62d6f5726c69a82630c7a697f3c69"
-  },
-  {
-   "overskrift": "Recursive udgiver Flint bygget af AI-system",
-   "tekst": "Recursive udgav Flint, en gratis kodemodel under Apache 2.0 med 40 milliarder parametre, hvor kun ca. 2,5 milliarder er aktive, så den kan køre på en laptop. Selskabet siger, at dets Eureka Machine stod bag næsten hele udviklingen. Flint er en tidlig offentlig test af rekursiv selvforbedring.",
-   "link": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
-   "kategori": "Lanceringer",
-   "billede": "data/img/c1f1995ef36d7cce.jpg",
-   "dato": "2026-10-21T20:27:41+00:00",
-   "andre": [],
-   "titel": "Recursive launches Flint, a laptop coding model it says was largely built by AI",
-   "rubrik": "Recursive udgiver Flint: AI byggede næsten hele modellen",
-   "resume_da": "Gratis kodemodel på 40 milliarder parametre kører offline på en laptop og er bygget af Recursives eget forskningssystem, Eureka Machine.",
-   "artikel_signatur": "5aae4d5489fe8477dc4f5bb9141ca5c6deefbc7d809a0986fd641cbe07cb2b64"
-  },
-  {
-   "overskrift": "Nvidia sender åbne agentmodeller på markedet",
-   "tekst": "Nvidia lancerede Nemotron 3.5 Super VL med 120 milliarder parametre og åbne vægte til virksomheders agenter. To Bolt-modeller skal køre lokalt på AI-PC'er og arbejdsstationer med Nvidia-chips. Nvidia hævder, at Super VL løser agentopgaver hurtigere end konkurrerende modeller; det er producentens påstand.",
+   "overskrift": "Nvidia åbner 120-milliarders model til agenter og AI-PC'er",
+   "tekst": "Nvidia udgav Nemotron 3.5 Super VL med 120 milliarder parametre og åbne vægte til virksomheders agenter. To små Bolt-modeller skal køre lokalt på RTX Spark og DGX Spark. Nvidia hævder, at Super VL løser agentopgaver hurtigere end konkurrerende modeller, men henviser til egne tests og kunder.",
    "link": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
    "kategori": "Lanceringer",
    "billede": "data/img/054eea01842aae5e.jpg",
@@ -55,11 +29,37 @@
    "artikel_signatur": "78b3839bcd2ceea08d128e5f3144286e1ee39fe5d71f1d47b574171e4fc8aa4d"
   },
   {
-   "overskrift": "Microsofts agentpanel rammer 83 procent af testdiagnoser",
-   "tekst": "Microsofts Diagnostic Orchestrator bruger flere AI-agenter og GPT-5 til at stille diagnoser. Ifølge Microsoft og Science-studiet ramte systemet 83 procent af testdiagnoserne mod 36 procent for almene læger. Det er kun afprøvet på historiske sager; hospitalsforsøg er planlagt, men uden fast dato.",
+   "overskrift": "Reflection frigiver 501-milliarders model med åbne vægte",
+   "tekst": "Reflection lancerede Beam, en åben model med 501 milliarder parametre og 1 million tokens kontekst. Den aktiverer cirka 23 milliarder parametre pr. token og kan finjusteres på egen hardware under Apache 2.0. Et BF16-checkpoint fylder cirka 1 TB, mens et NVFP4-checkpoint til Blackwell fylder cirka 280 GB.",
+   "link": "https://huggingface.co/blog/reflection-beam",
+   "kategori": "Lanceringer",
+   "billede": "data/img/d74542ebe9e4cb36.jpg",
+   "dato": "2026-10-16T00:00:00+00:00",
+   "andre": [],
+   "titel": "Welcome Beam: a 501B open model you can own, customize, and scale",
+   "rubrik": "Reflection åbner 501-milliarders model Beam for alle",
+   "resume_da": "Beam kan køre på egen hardware, læse 1 million tokens ad gangen og aktiverer kun ca. 23 mia. parametre pr. token.",
+   "artikel_signatur": "0394a0f52e3c658de7fc485e75cb47f089d62d6f5726c69a82630c7a697f3c69"
+  },
+  {
+   "overskrift": "Recursive lader AI bygge gratis kodemodel til laptop",
+   "tekst": "Recursive udgav Flint, en gratis kodemodel på 40 milliarder parametre, hvor kun 2,5 milliarder aktiveres ad gangen. Den kan hentes under Apache 2.0 og køre offline på en MacBook. Recursives forskningssystem Eureka Machine stod ifølge selskabet bag næsten hele udviklingen på under fire måneder.",
+   "link": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
+   "kategori": "Lanceringer",
+   "billede": "data/img/c1f1995ef36d7cce.jpg",
+   "dato": "2026-10-21T20:27:41+00:00",
+   "andre": [],
+   "titel": "Recursive launches Flint, a laptop coding model it says was largely built by AI",
+   "rubrik": "Recursive udgiver Flint: AI byggede næsten hele modellen",
+   "resume_da": "Gratis kodemodel på 40 milliarder parametre kører offline på en laptop og er bygget af Recursives eget forskningssystem, Eureka Machine.",
+   "artikel_signatur": "5aae4d5489fe8477dc4f5bb9141ca5c6deefbc7d809a0986fd641cbe07cb2b64"
+  },
+  {
+   "overskrift": "Microsofts agent-panel rammer 83 procent af testdiagnoser",
+   "tekst": "Microsoft offentliggjorde i Science resultater, hvor Diagnostic Orchestrator med flere AI-agenter fandt 83 procent af testdiagnoserne mod omkring 36 procent for læger med opslagsværker. Systemet er bygget på GPT-5 og skal nu afprøves på hospitaler. Microsoft vil ikke love en dato for klinisk brug.",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
    "kategori": "Forskning",
-   "billede": "",
+   "billede": "data/img/54a6194e65f89769.webp",
    "dato": "2026-10-22T14:00:00-04:00",
    "andre": [
     {
@@ -75,40 +75,54 @@
    "rubrik": "Microsofts AI rammer 83 procent af testdiagnoserne",
    "resume_da": "Systemet bruger flere AI-agenter og skal afprøves på hospitaler; Microsoft vil ikke binde sig til en tidsplan.",
    "artikel_signatur": "443ef1b30a4ad5c8327526146dade75762a2a584ff079c7318a5b71bd20181c4"
+  },
+  {
+   "overskrift": "USA fjerner DeepSeek fra føderale civile systemer",
+   "tekst": "Den amerikanske regering beordrede føderale civile myndigheder til at fjerne DeepSeek-produkter og tredjepartsprodukter bygget på DeepSeek-teknologi. Myndighederne kan søge om undtagelser. Sikkerhedsministeriet frygter, at følsomme data kan nå kinesiske myndigheder. Kina kalder kritikken en politisering af teknologi.",
+   "link": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/",
+   "kategori": "Politik & jura",
+   "billede": "",
+   "dato": "2026-10-20T13:07:24+00:00",
+   "andre": [],
+   "titel": "US orders federal agencies to remove China’s DeepSeek AI from their systems",
+   "rubrik": "USA beordrer DeepSeek fjernet fra føderale systemer",
+   "resume_da": "Ordren omfatter også tredjepartsprodukter bygget på DeepSeek-teknologi, og myndighederne kan søge om undtagelser. DHS frygter, at data kan nå kinesiske myndigheder.",
+   "artikel_signatur": "e44efce9777e43c51f984556636c7c817ad6044adf19adf7f5c84e6a32473197"
   }
  ],
  "overblik": [
   {
-   "tekst": "Periodens tydeligste linje er, at AI ikke længere kun er en tekstmodel, man spørger. Mistral sender Voxtral 3 på banen som en realtidspipeline, hvor transskribering, tale og værktøjskald samles, så en stemmeagent kan lytte, svare og booke i samme kald. Nvidia går samme vej for virksomheder og AI-PC'er med Nemotron 3.5 Super VL og Bolt: åbne vægte, som kunderne kan eftertræne og køre lokalt. Begge handler om at gøre agenten til grænsefladen, ikke bare modellen.",
+   "tekst": "Ugen samlede flere kræfter i at flytte AI ud af cloudens sorte boks: modellerne skulle kunne tale, kode og diagnosticere – og flere af dem kunne hentes og køres lokalt. Mistral samlede tale i én realtidspipeline med Voxtral 3, mens Nvidia og Reflection frigav store åbne modeller. Nvidia målrettede Nemotron 3.5 mod agenter og AI-PC'er, og Reflection gjorde Beam med 501 milliarder parametre tilgængelig under Apache 2.0.",
    "links": [
     "https://mistral.ai/news/voxtral-3/",
-    "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/"
+    "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
+    "https://huggingface.co/blog/reflection-beam"
    ]
   },
   {
-   "tekst": "Samtidig bliver adgangen til at køre modellerne selv et selvstændigt tema. Reflection frigiver Beam med 501 mia. parametre under Apache 2.0 og 1 mio. tokens kontekst, men kræver tung hardware. Recursive går den modsatte vej med Flint: en 40 mia.-model, hvor kun ca. 2,5 mia. parametre er aktive, så den kan køre på en laptop. Recursive siger selv, at Eureka Machine stod bag næsten hele udviklingen – det er en tidlig test af AI, der bygger AI, ikke en dokumenteret selvforbedring.",
+   "tekst": "Recursive gik et skridt videre med Flint: en gratis kodemodel, som ifølge selskabet næsten er bygget af dets eget forskningssystem og kan køre offline på en laptop. Det viser en anden form for åbenhed end de store cloudmodeller: ikke bare åbne vægte, men også en udviklingsproces, hvor AI selv foreslår og tester. Samtidig viste Microsofts Diagnostic Orchestrator, at flere agenter sammen kan løfte præstationen i medicinske testcases – 83 procent mod 36 procent for læger med opslagsværker.",
    "links": [
-    "https://huggingface.co/blog/reflection-beam",
-    "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/"
-   ]
-  },
-  {
-   "tekst": "Den samme bevægelse mod flere samarbejdende agenter ses i medicin. Microsofts Diagnostic Orchestrator lader flere AI-agenter gennemgå symptomer, prøver og diagnose og nåede ifølge selskabet 83 % af testdiagnoserne mod 36 % for almene læger. Men systemet er kun testet på historiske sager, og hospitalsforsøgene mangler en dato. Det viser både potentialet og forbeholdet: agenter kan samarbejde om komplekse opgaver, men er endnu ikke valideret i virkelige klinikker.",
-   "links": [
+    "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
     "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence"
+   ]
+  },
+  {
+   "tekst": "Modsat de åbne modelinitiativer skærpede USA kursen mod kinesiske DeepSeek. Føderale civile myndigheder skal fjerne både DeepSeeks produkter og tredjepartsprodukter bygget på teknologien. Det viser, at adgangen til modeller også er blevet et spørgsmål om national sikkerhed og dataplacering. Tilsammen peger ugen på, at AI ikke bare bliver dygtigere; den bliver også mere forskelligartet i, hvor og hvordan den kører.",
+   "links": [
+    "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/"
    ]
   }
  ],
- "tendens": "Microsoft vil ikke sætte en dato for hospitalsforsøgene med Beth Israel Deaconess Medical Center. Om Diagnostic Orchestrator holder i virkelige kliniske miljøer, er derfor stadig uafklaret; selskabet understreger selv, at systemet kun er testet på historiske sager.",
+ "tendens": "Recursive kalder Flint en tidlig offentlig test af rekursiv selvforbedring: idéen om, at AI kan bygge bedre AI. Det er uafklaret, om Eureka Machine kan gentage metoden på større modeller, og om Flint kan følge med de store kodeassistenter uden mere vejledning. Selskabet anbefaler selv at dele store opgaver op i mindre trin.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "282bdbb7dfcfa897414890da8accbfef69f13b27ae39fdcbfcc231670f3ddf1d",
- "dato": "2026-10-23T05:28:47.637238+00:00",
- "opdateret": "2026-10-23T05:28:47.637238+00:00",
+ "basis_signatur": "432c70232497394dbcb17491a6c739467867bd4489973a4c9c7f9a875bc901b2",
+ "dato": "2026-10-23T13:57:21.786049+00:00",
+ "opdateret": "2026-10-23T13:57:21.786049+00:00",
  "periode_fra": "2026-10-15T22:00:00+00:00",
  "periode_til": "2026-10-22T22:00:00+00:00",
  "stats": {
-  "historier": 99,
+  "historier": 98,
   "kilder": 8
  }
 }
