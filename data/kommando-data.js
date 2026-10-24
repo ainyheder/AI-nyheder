@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-24T05:05:54.240796+00:00",
+ "genereret": "2026-10-24T13:02:08.566339+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,21 +195,21 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-24T04:57:13.055708+00:00",
-  "antal": 114,
-  "med_billede": 75,
-  "paa_dansk": 114,
+  "opdateret": "2026-10-24T12:53:59.466454+00:00",
+  "antal": 113,
+  "med_billede": 74,
+  "paa_dansk": 113,
   "kategorier": {
    "Lanceringer": 27,
    "Forskning": 12,
    "Politik \u0026 jura": 16,
+   "Penge \u0026 marked": 30,
    "Samfund \u0026 etik": 19,
-   "Penge \u0026 marked": 31,
    "Hverdags-AI": 9
   },
   "kilder": {
    "Simon Willison AI": 7,
-   "The Verge AI": 27,
+   "The Verge AI": 26,
    "TechCrunch AI": 44,
    "Hugging Face": 7,
    "Mistral AI": 4,
@@ -374,7 +374,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-24T04:57:13.055708+00:00",
+  "opdateret": "2026-10-24T12:53:59.466454+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -394,7 +394,7 @@ window.KOMMANDO_DATA = {
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-10-24T04:57:12.765710+00:00",
+  "opdateret": "2026-10-24T12:53:58.670237+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -750,8 +750,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-24T04:57:13.055708+00:00",
-  "artikler_i_alt": 114,
+  "opdateret": "2026-10-24T12:53:59.466454+00:00",
+  "artikler_i_alt": 113,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1099,7 +1099,7 @@ window.KOMMANDO_DATA = {
     "som_ekstra": 7,
     "seneste": [
      {
-      "rubrik": "OpenAI træner nu uden adgang til internettet",
+      "rubrik": "OpenAI stopper træning på det levende internet",
       "dato": "",
       "foerst_set": "2026-10-23T23:24:11",
       "link": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
@@ -1108,7 +1108,7 @@ window.KOMMANDO_DATA = {
       "under": "OpenAI træner nu sine stærkeste AI-modeller uden net"
      },
      {
-      "rubrik": "Claude-agenter legede sig klogere på øde ø",
+      "rubrik": "Eko-agenter begyndte at lege på øde ø",
       "dato": "",
       "foerst_set": "2026-10-23T05:15:35",
       "link": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
@@ -1218,8 +1218,8 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 27,
-    "som_ekstra": 8,
+    "i_listen": 26,
+    "som_ekstra": 9,
     "seneste": [
      {
       "rubrik": "Meta slår deling af Muse-links til igen",
@@ -1229,6 +1229,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Meta Muse suspenderer deling af links"
+     },
+     {
+      "rubrik": "Zuckerberg: Muse skal handle for milliarder",
+      "dato": "",
+      "foerst_set": "2026-10-22T20:16:04",
+      "link": "https://www.theverge.com/tech/1016905/meta-earnings-fall-2026-muse-network",
+      "side": "",
+      "hvor": "under",
+      "under": "Meta Muse rammer 10 mio. downloads på 40 dage"
      },
      {
       "rubrik": "1Password lader AI-agenter logge ind uden adgangskoder",
@@ -1317,15 +1326,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-23T20:03:23",
       "link": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
       "side": "artikel/a08e7d50b12c6e1e.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Meta udskyder nye vilkår efter pres fra medier",
-      "dato": "2026-10-23T10:47:41",
-      "foerst_set": "2026-10-23T20:03:23",
-      "link": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
-      "side": "artikel/b8a6b67b5c401cbc.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1638,7 +1638,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-24T05:05:49.943460+00:00",
+  "opdateret": "2026-10-24T13:02:00.600064+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
