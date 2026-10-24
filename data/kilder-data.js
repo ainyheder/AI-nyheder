@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-23T23:24:11.533126+00:00",
- "artikler_i_alt": 118,
+ "opdateret": "2026-10-24T04:57:13.055708+00:00",
+ "artikler_i_alt": 114,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -100,26 +100,8 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 7,
-   "som_ekstra": 2,
+   "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "Google ruller Gemini 4 Argon bredt ud",
-     "dato": "",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
-    },
-    {
-     "rubrik": "Google Gemini 3.8 skaber stemmer fra bunden",
-     "dato": "",
-     "foerst_set": "2026-09-23T19:47:07",
-     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 3.8 TTS styres replik for replik"
-    },
     {
      "rubrik": "Gemini får samlet værktøjsside til små virksomheder",
      "dato": "2026-10-20T16:00:00",
@@ -187,7 +169,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google DeepMind",
-     4
+     2
     ],
     [
      "The Verge AI",
@@ -402,7 +384,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 44,
-   "som_ekstra": 6,
+   "som_ekstra": 7,
    "seneste": [
     {
      "rubrik": "OpenAI træner nu uden adgang til internettet",
@@ -412,6 +394,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI træner nu sine stærkeste AI-modeller uden net"
+    },
+    {
+     "rubrik": "Claude-agenter legede sig klogere på øde ø",
+     "dato": "",
+     "foerst_set": "2026-10-23T05:15:35",
+     "link": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
+     "side": "",
+     "hvor": "under",
+     "under": "Claude opfandt spil og lærte af leg"
     },
     {
      "rubrik": "Canva Craft laver billeder med læsbar tekst",
@@ -587,6 +578,10 @@ window.KILDER_STATUS = {
     ],
     [
      "OpenAI Blog",
+     1
+    ],
+    [
+     "MIT Tech Review AI",
      1
     ],
     [
@@ -1035,7 +1030,12 @@ window.KILDER_STATUS = {
      "under": ""
     }
    ],
-   "overlap": []
+   "overlap": [
+    [
+     "TechCrunch AI",
+     1
+    ]
+   ]
   },
   {
    "navn": "OpenAI Blog",
@@ -1087,10 +1087,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 15,
-   "i_listen": 4,
+   "status": "fejl",
+   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -1110,48 +1110,12 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
-    },
-    {
-     "rubrik": "Google Antigravity finder ny peptidkandidat",
-     "dato": "2026-10-15T16:08:03",
-     "foerst_set": "2026-10-16T04:53:41",
-     "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-     "side": "artikel/ba028f76ed47c779.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
-     "dato": "2026-10-13T19:43:07",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-     "side": "artikel/42f1c245f492d3d1.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "EmbeddingGemma 2 finder videoklip ud fra tale",
-     "dato": "2026-10-06T19:57:04",
-     "foerst_set": "2026-10-07T15:44:28",
-     "link": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
-     "side": "artikel/bf211d23154acfab.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Gemini 3.8 TTS styres replik for replik",
-     "dato": "2026-09-23T15:25:14",
-     "foerst_set": "2026-09-23T19:47:07",
-     "link": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
-     "side": "artikel/31ef9b5263a38be6.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "Google Gemini",
-     4
+     2
     ]
    ]
   },
