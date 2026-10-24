@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-10-24T18:56:58.254854+00:00",
+  "opdateret": "2026-10-24T22:42:03.097074+00:00",
   "kladder": [
     {
       "titel": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
@@ -78,6 +78,7 @@
       "eget_foerst_set": "2026-10-24T18:56:58.254854+00:00",
       "rubrik": "Studie: Grok og GPT anbefaler hver sit parti",
       "resume_da": "Ifølge TechCrunchs omtale af studiet var de to modeller uenige i over 90 pct. af knap 500 valgkampe.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -94,8 +95,40 @@
         "emne": "grok/openai"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "The AI graveyard: a running list of projects and startups that didn’t make it",
+      "link": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+      "resume": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+      "dato": "2026-10-24T19:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-24T22:42:03.097074+00:00",
+      "eget_foerst_set": "2026-10-24T22:42:03.097074+00:00",
+      "rubrik": "TechCrunch fører liste over fejlslagne AI-projekter",
+      "resume_da": "Den løbende liste samler eksempler som Apples gentagne Siri-forsinkelser og OpenAIs rodede lancering af en \"super app\".",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Løbende liste over AI-projekter og startups der er lukket eller skuffede, med eksempler som Siri-forsinkelser og OpenAIs super app.",
+        "forbehold": "Opsummerende liste; enkeltpåstande er ikke selvstændigt verificeret i uddraget.",
+        "emne": "ai-projekter der fejlede"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1219,6 +1252,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Blue Planet III is keeping the rough edges in the age of AI",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai",
+      "resume": "BBC's Blue Planet III is looking to prove its authenticity by leaving in the less-than-perfect shots. Previous incarnations of the nature series were defined by their gorgeous, crystal-clear footage that seemed almost too good to be real. But one dead giveaway of AI is when things look too polished and seamless. To counter that, Blue […]",
+      "dato": "2026-10-24T17:29:12-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-24T22:42:03.097074+00:00",
+      "eget_foerst_set": "2026-10-24T22:42:03.097074+00:00",
+      "rubrik": "Blue Planet III beholder uperfekte optagelser",
+      "resume_da": "BBC-serien lader bevidst mindre perfekte klip blive i for at bevise ægthed, fordi AI ofte afsløres ved at virke for poleret.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "BBC-serien vælger bevidst mindre polerede klip for at signalere ægthed over for AI-genereret indhold; AI er kun perifer omtale.",
+        "forbehold": "Kun kort uddrag; seriens konkrete ændringer er ikke dokumenteret.",
+        "emne": "blue planet iii"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -42718,6 +42784,14 @@
           "resume_da": "Eksperter siger, at ordet udvikle står tilbage i vilkårene og stadig dækker AI-træning af forretningsprodukter.",
           "dato": "2026-10-20T20:07:58+00:00",
           "foerst_set": "2026-10-20T23:20:11.721476+00:00"
+        },
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns",
+          "rubrik": "Meta fjerner 'train' fra vilkår",
+          "resume_da": "Efter kritik har Meta slettet ordet 'train'; eksperter siger, at vilkårene stadig kan retfærdiggøre AI-træning på automatisk indsamlet indhold.",
+          "dato": "2026-10-22T16:32:05-04:00",
+          "foerst_set": "2026-10-22T23:32:06.190739+00:00"
         }
       ]
     },
@@ -43155,8 +43229,8 @@
         {
           "kilde": "TechCrunch AI",
           "link": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
-          "rubrik": "Eko-agenter legede sig klogere på øde ø",
-          "resume_da": "Agenter på Claude Opus 4.7 fik ingen opgaver i 30 timer og slog bagefter agenter, der aldrig havde været på øen, i at stable objekter på en klippetop.",
+          "rubrik": "Claude-agenter legede på ø og løste opgaver bedre",
+          "resume_da": "13 agenter på Claude Opus 4.7 fik ingen opgave på en simuleret ø. Efter 30 timers fri leg klarede de efterfølgende udfordringer bedre end agenter uden ophold.",
           "dato": "2026-10-23T00:45:37+00:00",
           "foerst_set": "2026-10-23T05:15:35.312333+00:00"
         }
@@ -50348,71 +50422,6 @@
       "side": "artikel/8e6cfc22204fb217.html"
     },
     {
-      "titel": "Meta’s AI could still scrape news sites, legal experts say",
-      "link": "https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns",
-      "resume": "Meta has tweaked its business terms to remove language suggesting that it could freely train its AI models on news sites, like The Verge - but legal experts say these changes aren't enough to address their concerns. \"This does nothing to restrict the 'associated with your products or services' [language] that would let Meta scrape […]",
-      "dato": "2026-10-22T16:32:05-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-10-22T23:32:06.190739+00:00",
-      "eget_foerst_set": "2026-10-22T23:32:06.190739+00:00",
-      "rubrik": "Meta fjerner 'train' fra vilkår",
-      "resume_da": "Efter kritik har Meta slettet ordet 'train'; eksperter siger, at vilkårene stadig kan retfærdiggøre AI-træning på automatisk indsamlet indhold.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Meta slettede ordet efter kritik",
-          "tekst": "Meta har fjernet ordet 'train' fra sine nye forretningsvilkår, der træder i kraft 30. oktober. I den første version stod, at Meta kunne bruge 'ethvert indhold' fra websteder knyttet til en forretningskonto til at 'udvikle, forske i' og 'træne' Metas produkter. Ændringen kom efter hård kritik fra udgivere."
-        },
-        {
-          "overskrift": "Eksperter ser hul i 'develop'",
-          "tekst": "James Grimmelmann, professor i digital og informationsret ved Cornell Law School, siger til Nieman Lab, at ændringen ikke begrænser formuleringen om indhold 'knyttet til dine produkter eller tjenester'. Efter hans vurdering kan den stadig lade Meta scrape – automatisk hente – hele websteder.\n\nMatt Topic, advokat i medie- og immaterialret hos Loevy & Loevy, peger på, at vilkårene stadig tillader brug af indsamlet indhold til at udvikle et 'business product' – et kommercielt produkt. Han mener, at 'develop' er bredt nok til at omfatte 'train', og at 'business product' ikke er defineret."
-        },
-        {
-          "overskrift": "Meta henviser til robots.txt",
-          "tekst": "Tidligere har eksperter over for Nieman Lab peget på, at de oprindelige vilkår kunne give Meta et argument for, at selskabets kommercielle betingelser overtrumfer blokeringsinstrukser som robots.txt. Meta fastholder nu, at opdateringen ikke handler om at scrape nyhedssider gratis.\n\nTalsmand Daniel Roberts siger til The Verge, at indholdsejere kan bruge robots.txt til at signalere deres ønsker. Det er en fil, som websteder bruger til at fortælle automatiske crawlere – programmer, der gennemgår websteder – hvad de må tilgå. Han siger også, at opdateringen ikke giver Meta nye rettigheder, der overtrumfer disse ønsker."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Robots.txt har historisk også været brugt af søgemaskiner som Google."
-      ],
-      "betydning": "For medier betyder sagen, at et slettet ord i vilkårene ikke nødvendigvis fjerner spørgsmålet om, hvorvidt Meta kan bruge deres indhold til AI-træning.",
-      "pointer": [
-        "Meta har fjernet ordet 'train'.",
-        "Eksperter: 'develop' kan dække træning.",
-        "Meta: robots.txt gælder stadig."
-      ],
-      "billedmotiv": "Meta's blue infinity-loop mark is pressed into a thick opaque contract sheet; a rectangular word-block is lifted out, leaving a clean slot, while a broad arrow continues through the remaining clause. The lifted block and continuing arrow show the deleted term and the broad wording that remains.",
-      "billedmotiv_instruks": "a5060d8fa56e4e9acc96",
-      "billede": "data/img/a82f5a9fa93d1084.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Meta har ændret forretningsbetingelser om AI-træning, men jurister siger, at nyhedssiders indhold fortsat kan blive skrabet.",
-        "forbehold": "Eksperternes vurdering gengives kort; de præcise betingelser er ikke gengivet.",
-        "emne": "meta ai-træning og ophavsret"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-10-22T23:38:58.952444+00:00"
-      },
-      "prio": 5,
-      "side": "artikel/af7e7277bac39aa5.html"
-    },
-    {
       "titel": "Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony AI and Nvidia",
       "link": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
       "resume": "The company plans to begin testing Pony.ai's robotaxis in Kazakhstan's capital in the first half of 2027.",
@@ -51188,24 +51197,7 @@
       "eget_foerst_set": "2026-10-24T18:56:58.254854+00:00",
       "rubrik": "Block viser Dessa: stemme med latter og gråd",
       "resume_da": "Blocks nye talemodel kører lokalt og kan tale og lytte samtidig. Den er trænet kun på menneskestemmer, ikke tekst.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "Block har præsenteret en ny stemmemodel, som ifølge selskabet kan køre lokalt på en MacBook M4 Max.",
-        "forbehold": "Modellens navn, tilgængelighed, pris og uafhængige tests fremgår ikke.",
-        "emne": "block"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Latter og gråd uden tekst undervejs",
@@ -51228,14 +51220,13 @@
           "tekst": "Block lever af finansielle løsninger til små virksomheder, og Square bruger allerede tale-AI til at tage imod bestillinger. En egen model, der kører på enheden, kan ifølge TechCrunch drive flere forretnings- og forbrugeroplevelser til lavere pris."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "1 NVIDIA GPU-rack",
           "label": "Det hardwaregrundlag, Block siger Dessa er trænet på"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Block er Jack Dorseys selskab, ifølge TechCrunch.",
         "Eksemplerne viser stemmer, der lyder trætte eller næsten grædefærdige.",
@@ -51247,14 +51238,32 @@
         "Trænet kun på tale, ikke tekst",
         "Ingen offentlig adgang endnu"
       ],
+      "billedmotiv": "A solid studio microphone carrying the black Block square emblem on its body, flanked by two thick opaque speech bubbles: the left bubble contains a laughing open mouth, the right a single tear. The microphone and bubbles overlap slightly, showing Dessa's voice model expressing laughter and crying.",
+      "billedmotiv_instruks": "65bbd0eda063c1f207a1",
+      "billede": "data/img/bd97522fb4db8c13.jpg",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Block har præsenteret en ny stemmemodel, som ifølge selskabet kan køre lokalt på en MacBook M4 Max.",
+        "forbehold": "Modellens navn, tilgængelighed, pris og uafhængige tests fremgår ikke.",
+        "emne": "block"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-24T18:59:12.644468+00:00"
       },
-      "billedmotiv": "A solid studio microphone carrying the black Block square emblem on its body, flanked by two thick opaque speech bubbles: the left bubble contains a laughing open mouth, the right a single tear. The microphone and bubbles overlap slightly, showing Dessa's voice model expressing laughter and crying.",
-      "billedmotiv_instruks": "65bbd0eda063c1f207a1",
-      "billede": "data/img/bd97522fb4db8c13.jpg",
+      "prio": 5,
       "side": "artikel/07faf6f38097c01b.html"
     },
     {
@@ -51268,6 +51277,37 @@
       "eget_foerst_set": "2026-10-24T18:56:58.254854+00:00",
       "rubrik": "Pennsylvania kræver mærkat på AI-annoncer",
       "resume_da": "Guvernør Josh Shapiro har underskrevet en lov, der kræver, at reklamer med AI-genereret indhold mærkes i samme format som annoncen selv.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Mærkat i samme format som annoncen",
+          "tekst": "Guvernør Josh Shapiro underskrev torsdag loven Artificial Intelligence Deceptive Advertising Act. Den kræver, at annoncer, der »i væsentlig grad er ændret eller genereret af AI«, bærer en mærkning. Kravet gælder, uanset om annoncen består af et billede, en video, lyd eller tekst.\n\nMærkningen skal leveres i samme format som annoncen selv. En tv-reklame skal altså have oplysningen med i selve reklamen, ikke gemt i en note et andet sted. Loven rammer både milliardstore selskabers tv-spots og restauranters overfyldte flyers om ugens wings."
+        },
+        {
+          "overskrift": "Mærkningen følger annoncen over grænsen",
+          "tekst": "Kravet gælder, uanset hvor annoncen er lavet. Derfor kan mærkningen dukke op i reklamer, der også skal sendes i Pennsylvania, selv om de er produceret i en anden delstat. Ifølge The Verge er Pennsylvania blandt de første delstater, der stiller et sådant krav."
+        },
+        {
+          "overskrift": "Huller: hvad er væsentligt ændret?",
+          "tekst": "Loven har flere smuthuller. Det er en subjektiv vurdering, hvornår noget er »i væsentlig grad ændret« af AI. Der er også undtagelser for parodi, satire, kommentar og kritik samt for indhold, der »åbenlyst er fiktivt« – og det er uklart, hvad den formulering dækker.\n\nOrdlyden antyder desuden, at kun indhold, der »bruger syntetisk materiale på en måde, der skaber en falsk forbrugeropfattelse« af et produkt eller en tjeneste, kræver mærkning. Dermed står det åbent, hvad der tæller som »falsk«, og hvem der afgør det."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Forslaget blev stillet af senator Nick Pisciottano, hvis kontor ikke umiddelbart svarede på en henvendelse.",
+        "Undtagelsen for »åbenlyst fiktivt« indhold er ikke defineret i teksten."
+      ],
+      "betydning": "Fordi kravet følger annoncen og ikke producenten, kan seere i andre delstater begynde at se mærkninger i reklamer, der også skal vises i Pennsylvania.",
+      "pointer": [
+        "Shapiro underskrev loven torsdag",
+        "Mærkning kræves i annoncens eget format",
+        "Undtagelser for parodi og satire er uklare"
+      ],
+      "billedmotiv": "A solid television set displaying a simple product advert, with a thick rectangular label fused directly into the screen's lower corner; a judge's gavel leans against the television. The label is visibly part of the broadcast advert, not a separate note, showing Pennsylvania's mandatory AI-ad disclosure.",
+      "billedmotiv_instruks": "66306a6697cdfc136d1c",
+      "billede": "data/img/6fe228bbe5a95697.webp",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -51284,43 +51324,12 @@
         "emne": "pennsylvania"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
-      "sektioner": [
-        {
-          "overskrift": "Mærkat i samme format som annoncen",
-          "tekst": "Guvernør Josh Shapiro underskrev torsdag loven Artificial Intelligence Deceptive Advertising Act. Den kræver, at annoncer, der »i væsentlig grad er ændret eller genereret af AI«, bærer en mærkning. Kravet gælder, uanset om annoncen består af et billede, en video, lyd eller tekst.\n\nMærkningen skal leveres i samme format som annoncen selv. En tv-reklame skal altså have oplysningen med i selve reklamen, ikke gemt i en note et andet sted. Loven rammer både milliardstore selskabers tv-spots og restauranters overfyldte flyers om ugens wings."
-        },
-        {
-          "overskrift": "Mærkningen følger annoncen over grænsen",
-          "tekst": "Kravet gælder, uanset hvor annoncen er lavet. Derfor kan mærkningen dukke op i reklamer, der også skal sendes i Pennsylvania, selv om de er produceret i en anden delstat. Ifølge The Verge er Pennsylvania blandt de første delstater, der stiller et sådant krav."
-        },
-        {
-          "overskrift": "Huller: hvad er væsentligt ændret?",
-          "tekst": "Loven har flere smuthuller. Det er en subjektiv vurdering, hvornår noget er »i væsentlig grad ændret« af AI. Der er også undtagelser for parodi, satire, kommentar og kritik samt for indhold, der »åbenlyst er fiktivt« – og det er uklart, hvad den formulering dækker.\n\nOrdlyden antyder desuden, at kun indhold, der »bruger syntetisk materiale på en måde, der skaber en falsk forbrugeropfattelse« af et produkt eller en tjeneste, kræver mærkning. Dermed står det åbent, hvad der tæller som »falsk«, og hvem der afgør det."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [
-        "Forslaget blev stillet af senator Nick Pisciottano, hvis kontor ikke umiddelbart svarede på en henvendelse.",
-        "Undtagelsen for »åbenlyst fiktivt« indhold er ikke defineret i teksten."
-      ],
-      "betydning": "Fordi kravet følger annoncen og ikke producenten, kan seere i andre delstater begynde at se mærkninger i reklamer, der også skal vises i Pennsylvania.",
-      "pointer": [
-        "Shapiro underskrev loven torsdag",
-        "Mærkning kræves i annoncens eget format",
-        "Undtagelser for parodi og satire er uklare"
-      ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-24T18:58:48.907283+00:00"
       },
-      "billedmotiv": "A solid television set displaying a simple product advert, with a thick rectangular label fused directly into the screen's lower corner; a judge's gavel leans against the television. The label is visibly part of the broadcast advert, not a separate note, showing Pennsylvania's mandatory AI-ad disclosure.",
-      "billedmotiv_instruks": "66306a6697cdfc136d1c",
-      "billede": "data/img/6fe228bbe5a95697.webp",
+      "prio": 6,
       "side": "artikel/0c58159611d9d12f.html"
     },
     {
@@ -51334,24 +51343,7 @@
       "eget_foerst_set": "2026-10-24T18:56:58.254854+00:00",
       "rubrik": "Instinct og Caddy flytter ind i beskedtråden",
       "resume_da": "De kan huske sammenhæng, koble sig til kalender og e-mail og udføre opgaver som bookinger og påmindelser. Her er flere af de mest omtalte – og priserne.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "guide",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Liste over AI-agenter i SMS'er, fra generelle assistenter til agenter til familier, rejser og arbejde.",
-        "forbehold": "Oversigtsartikel uden nye modeloplysninger eller test af agenterne.",
-        "emne": "ai-agenter"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Sms-tråden bliver en agent",
@@ -51370,8 +51362,6 @@
           "tekst": "Ask Proxy er en personlig assistent, der ifølge selskabet \"tænker som en kvinde\" og prøver at forudse behov. Den tekstes via SMS og kan fx give gaveidéer, planlægge en begivenhed, lægge datoer i kalenderen og række ud, når den opdager noget, man måske glemmer.\n\nMartin er en alsidig personlig assistent, som ifølge kilden kan nås via SMS, telefon, WhatsApp, e-mail og Slack. Ask Proxy fås både som personlig version og arbejdsversion."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "1 dollar pr. dag",
@@ -51390,6 +51380,7 @@
           "label": "Folk Pro for ubegrænsede baggrundsopgaver"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Comma arbejder på tværs af browser, computer og filer og kan nås via Signal, Telegram og WeChat.",
         "Folk kører på sin egen private cloud-computer og kan udføre kode og flertrinsopgaver.",
@@ -51402,14 +51393,32 @@
         "Instincts assistenter har egne e-mailadresser",
         "Fambot sender aftenoverblik"
       ],
+      "billedmotiv": "A thick opaque message thread of two rounded speech bubbles facing each other; the agent's bubble contains a calendar page with a check mark and a small envelope, while the human bubble stays blank. The thread sits inside a solid phone-shaped frame, showing an AI contact acting on the user's behalf in chat.",
+      "billedmotiv_instruks": "81ae991a88b64b4beb05",
+      "billede": "data/img/565fa4dd3c676f0f.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "guide",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Liste over AI-agenter i SMS'er, fra generelle assistenter til agenter til familier, rejser og arbejde.",
+        "forbehold": "Oversigtsartikel uden nye modeloplysninger eller test af agenterne.",
+        "emne": "ai-agenter"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-24T19:02:42.798759+00:00"
       },
-      "billedmotiv": "A thick opaque message thread of two rounded speech bubbles facing each other; the agent's bubble contains a calendar page with a check mark and a small envelope, while the human bubble stays blank. The thread sits inside a solid phone-shaped frame, showing an AI contact acting on the user's behalf in chat.",
-      "billedmotiv_instruks": "81ae991a88b64b4beb05",
-      "billede": "data/img/565fa4dd3c676f0f.webp",
+      "prio": 3,
       "side": "artikel/b2f0cf19fa7c113c.html"
     }
   ]
