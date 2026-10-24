@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-24T13:02:08.566339+00:00",
+ "genereret": "2026-10-24T19:11:20.481666+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,22 +195,22 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-24T12:53:59.466454+00:00",
-  "antal": 113,
-  "med_billede": 74,
-  "paa_dansk": 113,
+  "opdateret": "2026-10-24T18:56:58.254854+00:00",
+  "antal": 116,
+  "med_billede": 77,
+  "paa_dansk": 116,
   "kategorier": {
-   "Lanceringer": 27,
+   "Lanceringer": 28,
    "Forskning": 12,
-   "Politik \u0026 jura": 16,
+   "Politik \u0026 jura": 17,
    "Penge \u0026 marked": 30,
    "Samfund \u0026 etik": 19,
-   "Hverdags-AI": 9
+   "Hverdags-AI": 10
   },
   "kilder": {
    "Simon Willison AI": 7,
-   "The Verge AI": 26,
-   "TechCrunch AI": 44,
+   "The Verge AI": 27,
+   "TechCrunch AI": 46,
    "Hugging Face": 7,
    "Mistral AI": 4,
    "Ars Technica AI": 9,
@@ -240,17 +240,47 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/7f16df291f423c60.jpg"
    },
    {
-    "titel": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
-    "rubrik": "Blocks Dessa har kun hørt mennesker tale",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
-    "side": "artikel/9266223ed6f43cf1.html",
+    "titel": "Block’s new voice model sounds eerily human",
+    "rubrik": "Block viser Dessa: stemme med latter og gråd",
+    "link": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+    "side": "artikel/07faf6f38097c01b.html",
     "kategori": "Lanceringer",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-23T15:32:39-04:00",
-    "billede": "data/img/ba2c9f7463b440cf.jpg"
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-24T16:00:00+00:00",
+    "billede": "data/img/bd97522fb4db8c13.jpg"
    }
   ],
   "seneste": [
+   {
+    "titel": "Block’s new voice model sounds eerily human",
+    "rubrik": "Block viser Dessa: stemme med latter og gråd",
+    "link": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+    "side": "artikel/07faf6f38097c01b.html",
+    "kategori": "Lanceringer",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-24T16:00:00+00:00",
+    "billede": "data/img/bd97522fb4db8c13.jpg"
+   },
+   {
+    "titel": "Pennsylvania will require labels on AI-generated ads",
+    "rubrik": "Pennsylvania kræver mærkat på AI-annoncer",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+    "side": "artikel/0c58159611d9d12f.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-24T14:32:21-04:00",
+    "billede": "data/img/6fe228bbe5a95697.webp"
+   },
+   {
+    "titel": "Here are the top AI agents that can live in your text messages",
+    "rubrik": "Instinct og Caddy flytter ind i beskedtråden",
+    "link": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
+    "side": "artikel/b2f0cf19fa7c113c.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-24T14:00:00+00:00",
+    "billede": "data/img/565fa4dd3c676f0f.webp"
+   },
    {
     "titel": "OpenAI now trains its frontier AI models with no internet access",
     "rubrik": "OpenAI træner nu sine stærkeste AI-modeller uden net",
@@ -340,41 +370,11 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-10-22T17:51:25-04:00",
     "billede": "data/img/7f16df291f423c60.jpg"
-   },
-   {
-    "titel": "OpenAI working on new $30B raise at $1.25T valuation ahead of IPO",
-    "rubrik": "OpenAI forhandler om 30 mia. dollar før børs",
-    "link": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
-    "side": "artikel/c4c762c6b7472ecc.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-22T22:08:24+00:00",
-    "billede": "data/img/bb148d65c45ef21b.webp"
-   },
-   {
-    "titel": "Designing an AI serving harness built to last",
-    "rubrik": "EXL: AI'ens flaskehals ligger uden om modellen",
-    "link": "https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/",
-    "side": "artikel/c4f2e7d5237a4ccb.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "MIT Tech Review AI",
-    "dato": "2026-10-22T21:17:29+00:00",
-    "billede": "data/img/e94fe4c0f234a0e8.webp"
-   },
-   {
-    "titel": "Microsoft says its AI tool is better than doctors at diagnosing conditions",
-    "rubrik": "Microsofts AI rammer 83 procent af testdiagnoserne",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
-    "side": "artikel/21c961dc17bfe29a.html",
-    "kategori": "Forskning",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-22T18:00:00+00:00",
-    "billede": "data/img/54a6194e65f89769.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-24T12:53:59.466454+00:00",
+  "opdateret": "2026-10-24T18:56:58.254854+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -383,18 +383,18 @@ window.KOMMANDO_DATA = {
   "regelbaseret_udvalg": [
    "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
    "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
-   "https://huggingface.co/blog/allenai/olmoearth-v1-3"
+   "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/"
   ],
   "udgivet_udvalg": [
    "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
    "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
-   "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
+   "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/"
   ],
   "vaerktoejer": [],
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-10-24T12:53:58.670237+00:00",
+  "opdateret": "2026-10-24T18:56:57.917426+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -750,8 +750,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-24T12:53:59.466454+00:00",
-  "artikler_i_alt": 113,
+  "opdateret": "2026-10-24T18:56:58.254854+00:00",
+  "artikler_i_alt": 116,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1095,7 +1095,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 44,
+    "i_listen": 46,
     "som_ekstra": 7,
     "seneste": [
      {
@@ -1108,7 +1108,7 @@ window.KOMMANDO_DATA = {
       "under": "OpenAI træner nu sine stærkeste AI-modeller uden net"
      },
      {
-      "rubrik": "Eko-agenter begyndte at lege på øde ø",
+      "rubrik": "Eko-agenter legede sig klogere på øde ø",
       "dato": "",
       "foerst_set": "2026-10-23T05:15:35",
       "link": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
@@ -1171,6 +1171,24 @@ window.KOMMANDO_DATA = {
       "under": "Anthropic afsætter fem procent af aktierne til fond"
      },
      {
+      "rubrik": "Block viser Dessa: stemme med latter og gråd",
+      "dato": "2026-10-24T16:00:00",
+      "foerst_set": "2026-10-24T18:56:58",
+      "link": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+      "side": "artikel/07faf6f38097c01b.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Instinct og Caddy flytter ind i beskedtråden",
+      "dato": "2026-10-24T14:00:00",
+      "foerst_set": "2026-10-24T18:56:58",
+      "link": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "side": "artikel/b2f0cf19fa7c113c.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "inDrive tester robotaxi i Astana i 2027",
       "dato": "2026-10-23T04:00:00",
       "foerst_set": "2026-10-23T05:15:35",
@@ -1187,24 +1205,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/c4c762c6b7472ecc.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "OpenAI åbner Decisions API for alle kunder",
-      "dato": "2026-10-22T19:00:00",
-      "foerst_set": "2026-10-22T20:16:04",
-      "link": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
-      "side": "artikel/8e6cfc22204fb217.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "ConnectWise-brud: AI-agenter hackede 2.250 selskaber",
-      "dato": "2026-10-22T16:47:17",
-      "foerst_set": "2026-10-22T20:16:04",
-      "link": "https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/",
-      "side": "artikel/5126e80c6df37e6b.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1218,7 +1218,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 26,
+    "i_listen": 27,
     "som_ekstra": 9,
     "seneste": [
      {
@@ -1303,6 +1303,15 @@ window.KOMMANDO_DATA = {
       "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
      },
      {
+      "rubrik": "Pennsylvania kræver mærkat på AI-annoncer",
+      "dato": "2026-10-24T14:32:21",
+      "foerst_set": "2026-10-24T18:56:58",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+      "side": "artikel/0c58159611d9d12f.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "OpenAI træner nu sine stærkeste AI-modeller uden net",
       "dato": "2026-10-23T17:11:07",
       "foerst_set": "2026-10-23T23:24:11",
@@ -1317,15 +1326,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-23T20:03:23",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
       "side": "artikel/9266223ed6f43cf1.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Google: Gmail-data kan nu bruges til annoncer",
-      "dato": "2026-10-23T12:52:55",
-      "foerst_set": "2026-10-23T20:03:23",
-      "link": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
-      "side": "artikel/a08e7d50b12c6e1e.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1638,12 +1638,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-24T13:02:00.600064+00:00",
+  "opdateret": "2026-10-24T19:11:14.608838+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 24,
-  "sidevisninger_i_alt": 32,
+  "besoeg_i_alt": 26,
+  "sidevisninger_i_alt": 34,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1800,15 +1800,15 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 24,
-    "visninger": 32
+    "besoeg": 26,
+    "visninger": 34
    }
   ],
   "artikler": [],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 24
+    "besoeg": 26
    }
   ],
   "laeste_temaer": []

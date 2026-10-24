@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-24T12:53:59.466454+00:00",
- "artikler_i_alt": 113,
+ "opdateret": "2026-10-24T18:56:58.254854+00:00",
+ "artikler_i_alt": 116,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -383,7 +383,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 44,
+   "i_listen": 46,
    "som_ekstra": 7,
    "seneste": [
     {
@@ -396,7 +396,7 @@ window.KILDER_STATUS = {
      "under": "OpenAI træner nu sine stærkeste AI-modeller uden net"
     },
     {
-     "rubrik": "Eko-agenter begyndte at lege på øde ø",
+     "rubrik": "Eko-agenter legede sig klogere på øde ø",
      "dato": "",
      "foerst_set": "2026-10-23T05:15:35",
      "link": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
@@ -457,6 +457,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Anthropic afsætter fem procent af aktierne til fond"
+    },
+    {
+     "rubrik": "Block viser Dessa: stemme med latter og gråd",
+     "dato": "2026-10-24T16:00:00",
+     "foerst_set": "2026-10-24T18:56:58",
+     "link": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+     "side": "artikel/07faf6f38097c01b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Instinct og Caddy flytter ind i beskedtråden",
+     "dato": "2026-10-24T14:00:00",
+     "foerst_set": "2026-10-24T18:56:58",
+     "link": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
+     "side": "artikel/b2f0cf19fa7c113c.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "inDrive tester robotaxi i Astana i 2027",
@@ -547,24 +565,6 @@ window.KILDER_STATUS = {
      "side": "artikel/12af459ff8f6cdb2.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI og Wiz fandt 22 år gamle PHP-huller",
-     "dato": "2026-10-21T17:59:12",
-     "foerst_set": "2026-10-21T23:34:19",
-     "link": "https://techcrunch.com/2026/10/21/php-armageddon-openai-googles-wiz-find-ancient-holes-panicking-the-internet/",
-     "side": "artikel/c344635e541c5f19.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Blacksmith rammer milliardværdi med Sequoia i spidsen",
-     "dato": "2026-10-21T17:18:27",
-     "foerst_set": "2026-10-21T23:34:19",
-     "link": "https://techcrunch.com/2026/10/21/blacksmith-hits-unicorn-valuation-after-sequoia-leads-series-c/",
-     "side": "artikel/f3f4777e99135a35.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -604,7 +604,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 26,
+   "i_listen": 27,
    "som_ekstra": 9,
    "seneste": [
     {
@@ -687,6 +687,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+    },
+    {
+     "rubrik": "Pennsylvania kræver mærkat på AI-annoncer",
+     "dato": "2026-10-24T14:32:21",
+     "foerst_set": "2026-10-24T18:56:58",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+     "side": "artikel/0c58159611d9d12f.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI træner nu sine stærkeste AI-modeller uden net",
@@ -784,15 +793,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-22T20:16:04",
      "link": "https://www.theverge.com/news/1017012/discord-markdown-previews-organize-servers-channels",
      "side": "artikel/6c4c325e4c950cc1.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Eiliko lover sikkerhedstjek trods åbne data",
-     "dato": "2026-10-22T11:00:00",
-     "foerst_set": "2026-10-22T14:02:49",
-     "link": "https://www.theverge.com/news/1015824/eiliko-energize-lab-statement-on-robot-hack-breach",
-     "side": "artikel/b75ce5ffab485728.html",
      "hvor": "forside",
      "under": ""
     }

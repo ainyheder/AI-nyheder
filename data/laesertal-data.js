@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-10-24T13:02:00.600064+00:00",
+ "opdateret": "2026-10-24T19:11:14.608838+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -68,7 +68,7 @@ window.LAESERTAL = {
      5,
      2,
      2,
-     0
+     1
     ]
    },
    {
@@ -173,7 +173,7 @@ window.LAESERTAL = {
      2,
      3,
      2,
-     0
+     1
     ]
    },
    {
@@ -208,7 +208,7 @@ window.LAESERTAL = {
      1,
      6,
      0,
-     0
+     1
     ]
    },
    {
@@ -319,20 +319,20 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 24,
- "sidevisninger_i_alt": 32,
+ "besoeg_i_alt": 26,
+ "sidevisninger_i_alt": 34,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 24,
-   "visninger": 32
+   "besoeg": 26,
+   "visninger": 34
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 24
+   "besoeg": 26
   }
  ],
  "ai_chats": [],
@@ -340,8 +340,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 24,
-    "visninger": 24
+    "besoeg": 26,
+    "visninger": 26
    },
    {
     "fra": "herfra selv",

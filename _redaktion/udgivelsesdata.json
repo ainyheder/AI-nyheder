@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-10-24T12:53:59.466454+00:00",
+  "opdateret": "2026-10-24T18:56:58.254854+00:00",
   "kladder": [
     {
       "titel": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
@@ -68,6 +68,39 @@
       ]
     },
     {
+      "titel": "Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.",
+      "link": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+      "resume": "A new study found Grok's AI overwhelmingly recommends Republican candidates while OpenAI's GPT favors Democrats, with the two AI models disagreeing in more than 90% of nearly 500 election races.",
+      "dato": "2026-10-24T15:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-24T18:56:58.254854+00:00",
+      "eget_foerst_set": "2026-10-24T18:56:58.254854+00:00",
+      "rubrik": "Studie: Grok og GPT anbefaler hver sit parti",
+      "resume_da": "Ifølge TechCrunchs omtale af studiet var de to modeller uenige i over 90 pct. af knap 500 valgkampe.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Studie finder, at Grok og GPT anbefaler hvert sit parti og er uenige i over 90 pct. af knap 500 valgkampe.",
+        "forbehold": "Kun mediernes omtale af studiet; metode, data og begrænsninger er ikke gengivet.",
+        "emne": "grok/openai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Securing our frontier model training environment",
       "link": "https://openai.com/index/securing-our-frontier-model-training-environment",
       "resume": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming.",
@@ -93,105 +126,6 @@
         "begrundelse": "OpenAI beskriver skærpet indeslutning af træningsmiljøer for frontier-modeller med offline-miljøer og ressourcekrævende red-teaming.",
         "forbehold": "OpenAI beskriver egne tiltag; ingen uafhængig granskning.",
         "emne": "openai træningssikkerhed"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "NVIDIA Kumo Forecast Combines Pretrained Time-Series Representations with Historical Pattern Retrieval and Interpretability",
-      "link": "https://huggingface.co/blog/nvidia/kumo-forecast",
-      "resume": "",
-      "dato": "2026-10-21T12:51:24+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Forskning",
-      "foerst_set": "2026-10-21T14:05:01.175685+00:00",
-      "eget_foerst_set": "2026-10-21T14:05:01.175685+00:00",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "NVIDIA præsenterer Kumo Forecast, der kombinerer trænede tidsrække-repræsentationer med historikbaseret mønsterhentning.",
-        "forbehold": "Ingen tekst eller detaljer medsendt; kun titlen dokumenterer indholdet.",
-        "emne": "nvidia kumo forecast"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ],
-      "rubrik": "NVIDIA udgiver Kumo Forecast til tidsserieudsigter",
-      "resume_da": "Modellen kombinerer fortrænede tidsserierepræsentationer med mønstergenkendelse fra historik og skal give fortolkelige udsigter."
-    },
-    {
-      "titel": "Using thousands of AI agents to uncover new leads in biological data",
-      "link": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
-      "resume": "See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells.",
-      "dato": "2026-10-21T04:50:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Forskning",
-      "foerst_set": "2026-10-21T14:05:01.175685+00:00",
-      "eget_foerst_set": "2026-10-21T14:05:01.175685+00:00",
-      "rubrik": "AI-agenter finder spor i data om hjerneceller",
-      "resume_da": "Projektet kombinerede OpenAI, PerturbAI og Scripps Research til at analysere data fra millioner af hjerneceller.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI, PerturbAI og Scripps Research brugte tusindvis af AI-agenter til at finde forskningsled i data fra millioner af hjerneceller.",
-        "forbehold": "Udfald og metode beskrives ikke i noten.",
-        "emne": "ai-agenter i biologi"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
-      "link": "https://huggingface.co/blog/microsoft/thinkingbox-training",
-      "resume": "",
-      "dato": "2026-10-22T22:24:34+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Forskning",
-      "foerst_set": "2026-10-22T23:32:06.190739+00:00",
-      "eget_foerst_set": "2026-10-22T23:32:06.190739+00:00",
-      "rubrik": "ThinkingBox gør databasekarakterer til RL-belønning",
-      "resume_da": "Metoden beskrives i et indlæg på Hugging Face, hvor agenter eftertrænes med belønninger fra databaseopgaver. Resultater fremgår ikke af materialet.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Microsoft beskriver eftertræning af agenter med belønninger fra databaseopgaver i et indlæg på Hugging Face.",
-        "forbehold": "Ingen brødtekst i materialet; resultater, modelnavn og adgang fremgår ikke.",
-        "emne": "microsoft thinkingbox eftertræning"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
@@ -233,6 +167,105 @@
       ]
     },
     {
+      "titel": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+      "link": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+      "resume": "",
+      "dato": "2026-10-22T22:24:34+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-22T23:32:06.190739+00:00",
+      "eget_foerst_set": "2026-10-22T23:32:06.190739+00:00",
+      "rubrik": "ThinkingBox gør databasekarakterer til RL-belønning",
+      "resume_da": "Metoden beskrives i et indlæg på Hugging Face, hvor agenter eftertrænes med belønninger fra databaseopgaver. Resultater fremgår ikke af materialet.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Microsoft beskriver eftertræning af agenter med belønninger fra databaseopgaver i et indlæg på Hugging Face.",
+        "forbehold": "Ingen brødtekst i materialet; resultater, modelnavn og adgang fremgår ikke.",
+        "emne": "microsoft thinkingbox eftertræning"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Using thousands of AI agents to uncover new leads in biological data",
+      "link": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+      "resume": "See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells.",
+      "dato": "2026-10-21T04:50:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-21T14:05:01.175685+00:00",
+      "eget_foerst_set": "2026-10-21T14:05:01.175685+00:00",
+      "rubrik": "AI-agenter finder spor i data om hjerneceller",
+      "resume_da": "Projektet kombinerede OpenAI, PerturbAI og Scripps Research til at analysere data fra millioner af hjerneceller.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI, PerturbAI og Scripps Research brugte tusindvis af AI-agenter til at finde forskningsled i data fra millioner af hjerneceller.",
+        "forbehold": "Udfald og metode beskrives ikke i noten.",
+        "emne": "ai-agenter i biologi"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "NVIDIA Kumo Forecast Combines Pretrained Time-Series Representations with Historical Pattern Retrieval and Interpretability",
+      "link": "https://huggingface.co/blog/nvidia/kumo-forecast",
+      "resume": "",
+      "dato": "2026-10-21T12:51:24+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-21T14:05:01.175685+00:00",
+      "eget_foerst_set": "2026-10-21T14:05:01.175685+00:00",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "NVIDIA præsenterer Kumo Forecast, der kombinerer trænede tidsrække-repræsentationer med historikbaseret mønsterhentning.",
+        "forbehold": "Ingen tekst eller detaljer medsendt; kun titlen dokumenterer indholdet.",
+        "emne": "nvidia kumo forecast"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ],
+      "rubrik": "NVIDIA udgiver Kumo Forecast til tidsserieudsigter",
+      "resume_da": "Modellen kombinerer fortrænede tidsserierepræsentationer med mønstergenkendelse fra historik og skal give fortolkelige udsigter."
+    },
+    {
       "titel": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
       "link": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
       "resume": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT.",
@@ -258,72 +291,6 @@
         "begrundelse": "ChatGPT Ads udvides til 26 nye lande; over 100.000 annoncører har brugt platformen.",
         "forbehold": "Tal om annoncører er producentens egne.",
         "emne": "openai annoncer"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "How we built ChatGPT’s novel ad stack for user trust and relevance",
-      "link": "https://openai.com/index/building-chatgpt-ad-stack",
-      "resume": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.",
-      "dato": "2026-10-21T07:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-10-21T14:05:01.175685+00:00",
-      "eget_foerst_set": "2026-10-21T14:05:01.175685+00:00",
-      "rubrik": "OpenAI forklarer ChatGPTs annoncestak",
-      "resume_da": "Systemet adskiller annoncer fra svar og bruger sprogmodeller til at forstå samtalekontekst for relevans.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI beskriver teknikken bag ChatGPT-annoncer: LLM til samtale-intent, annoncer adskilt fra svar.",
-        "forbehold": "Producentens egen tekniske gennemgang uden uafhængig vurdering.",
-        "emne": "openai annoncestak"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
-      "link": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
-      "resume": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source.",
-      "dato": "2026-10-21T07:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-10-21T20:20:24.508912+00:00",
-      "eget_foerst_set": "2026-10-21T20:20:24.508912+00:00",
-      "rubrik": "OpenAI forbinder forskere i nyt Patch the Planet-projekt",
-      "resume_da": "Initiativet samler sikkerhedsforskere, vedligeholdere og beredskabsansvarlige om at håndtere kritiske sårbarheder i open source-kode.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI lancerer Patch the Planet, der koordinerer sikkerhedsforskere og vedligeholdere om kritiske open source-sårbarheder.",
-        "forbehold": "",
-        "emne": "openai patch the planet"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
@@ -393,6 +360,72 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+      "link": "https://openai.com/index/building-chatgpt-ad-stack",
+      "resume": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.",
+      "dato": "2026-10-21T07:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-21T14:05:01.175685+00:00",
+      "eget_foerst_set": "2026-10-21T14:05:01.175685+00:00",
+      "rubrik": "OpenAI forklarer ChatGPTs annoncestak",
+      "resume_da": "Systemet adskiller annoncer fra svar og bruger sprogmodeller til at forstå samtalekontekst for relevans.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI beskriver teknikken bag ChatGPT-annoncer: LLM til samtale-intent, annoncer adskilt fra svar.",
+        "forbehold": "Producentens egen tekniske gennemgang uden uafhængig vurdering.",
+        "emne": "openai annoncestak"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+      "link": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+      "resume": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source.",
+      "dato": "2026-10-21T07:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-21T20:20:24.508912+00:00",
+      "eget_foerst_set": "2026-10-21T20:20:24.508912+00:00",
+      "rubrik": "OpenAI forbinder forskere i nyt Patch the Planet-projekt",
+      "resume_da": "Initiativet samler sikkerhedsforskere, vedligeholdere og beredskabsansvarlige om at håndtere kritiske sårbarheder i open source-kode.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI lancerer Patch the Planet, der koordinerer sikkerhedsforskere og vedligeholdere om kritiske open source-sårbarheder.",
+        "forbehold": "",
+        "emne": "openai patch the planet"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -729,39 +762,6 @@
       ]
     },
     {
-      "titel": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
-      "link": "https://openai.com/index/ted-taylor-restaurant",
-      "resume": "An independent Schlotzsky’s and Cinnabon franchisee cut menu repricing time by 95% and built a workflow that could free up $100K in cash flow.",
-      "dato": "2026-10-20T10:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-10-20T20:06:38.203833+00:00",
-      "eget_foerst_set": "2026-10-20T20:06:38.203833+00:00",
-      "rubrik": "Franchisee reducerer afstemningstid med 94 procent",
-      "resume_da": "En uafhængig Schlotzsky's- og Cinnabon-franchisee byggede med ChatGPT Work en workflow, der kan frigive 100.000 dollars i likviditet.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "guide",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Kundecase: franchisee skærer afstemningstid med 94% via ChatGPT Work",
-        "forbehold": "Producentens egne tal i egen kundecase",
-        "emne": "openai"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Does Your Model Run on AWS Trainium? Look It Up",
       "link": "https://huggingface.co/blog/torch-neuronx-model-support",
       "resume": "",
@@ -795,31 +795,31 @@
       ]
     },
     {
-      "titel": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
-      "link": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
-      "resume": "",
-      "dato": "2026-10-20T18:17:47+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Forskning",
+      "titel": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
+      "link": "https://openai.com/index/ted-taylor-restaurant",
+      "resume": "An independent Schlotzsky’s and Cinnabon franchisee cut menu repricing time by 95% and built a workflow that could free up $100K in cash flow.",
+      "dato": "2026-10-20T10:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Hverdags-AI",
       "foerst_set": "2026-10-20T20:06:38.203833+00:00",
       "eget_foerst_set": "2026-10-20T20:06:38.203833+00:00",
-      "rubrik": "NVIDIA offentliggør Cosmos3-H-Dreams til kirurgisk simulering",
-      "resume_da": "Projektet bruger generativ simulering til at genskabe klinisk kirurgi, men materialet indeholder ingen detaljer om resultater eller tilgængelighed.",
+      "rubrik": "Franchisee reducerer afstemningstid med 94 procent",
+      "resume_da": "En uafhængig Schlotzsky's- og Cinnabon-franchisee byggede med ChatGPT Work en workflow, der kan frigive 100.000 dollars i likviditet.",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 3,
+        "nyhed": 1,
         "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 1,
+        "brugbarhed": 3,
+        "dokumentation": 3,
         "dansk": 0,
-        "type": "forskning",
+        "type": "guide",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "NVIDIA annoncerer Cosmos3-H-Dreams, generativ simulering af klinisk kirurgi.",
-        "forbehold": "Materialet er tomt ud over titel; ingen metode, resultater eller tilgængelighed er dokumenteret.",
-        "emne": "nvidia cosmos3-h-dreams"
+        "begrundelse": "Kundecase: franchisee skærer afstemningstid med 94% via ChatGPT Work",
+        "forbehold": "Producentens egne tal i egen kundecase",
+        "emne": "openai"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
@@ -861,34 +861,34 @@
       ]
     },
     {
-      "titel": "FairStress: A deeper evaluation of fairness in LLM decision-making",
-      "link": "https://huggingface.co/blog/allenai/fairstress",
+      "titel": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
+      "link": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
       "resume": "",
-      "dato": "2026-10-20T16:09:19+00:00",
+      "dato": "2026-10-20T18:17:47+00:00",
       "kilde": "Hugging Face",
       "kategori": "Forskning",
       "foerst_set": "2026-10-20T20:06:38.203833+00:00",
       "eget_foerst_set": "2026-10-20T20:06:38.203833+00:00",
-      "rubrik": "FairStress måler fairness i LLM-beslutninger",
-      "resume_da": "Projektet evaluatorer retfærdighed i sprogmodellers beslutninger, men det medsendte materiale beskriver hverken metode eller resultater.",
+      "rubrik": "NVIDIA offentliggør Cosmos3-H-Dreams til kirurgisk simulering",
+      "resume_da": "Projektet bruger generativ simulering til at genskabe klinisk kirurgi, men materialet indeholder ingen detaljer om resultater eller tilgængelighed.",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 2,
+        "nyhed": 3,
         "betydning": 2,
-        "brugbarhed": 1,
+        "brugbarhed": 2,
         "dokumentation": 1,
         "dansk": 0,
         "type": "forskning",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "AllenAI præsenterer FairStress om retfærdighed i LLM-beslutninger.",
-        "forbehold": "Medsendt materiale er tomt; hverken metode eller resultater er dokumenteret.",
-        "emne": "allenai fairstress"
+        "begrundelse": "NVIDIA annoncerer Cosmos3-H-Dreams, generativ simulering af klinisk kirurgi.",
+        "forbehold": "Materialet er tomt ud over titel; ingen metode, resultater eller tilgængelighed er dokumenteret.",
+        "emne": "nvidia cosmos3-h-dreams"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 3,
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -922,6 +922,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 2,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "FairStress: A deeper evaluation of fairness in LLM decision-making",
+      "link": "https://huggingface.co/blog/allenai/fairstress",
+      "resume": "",
+      "dato": "2026-10-20T16:09:19+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-20T20:06:38.203833+00:00",
+      "eget_foerst_set": "2026-10-20T20:06:38.203833+00:00",
+      "rubrik": "FairStress måler fairness i LLM-beslutninger",
+      "resume_da": "Projektet evaluatorer retfærdighed i sprogmodellers beslutninger, men det medsendte materiale beskriver hverken metode eller resultater.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "AllenAI præsenterer FairStress om retfærdighed i LLM-beslutninger.",
+        "forbehold": "Medsendt materiale er tomt; hverken metode eller resultater er dokumenteret.",
+        "emne": "allenai fairstress"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 3,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1326,7 +1359,7 @@
       "titel": "Sure, let’s smoosh SpaceX and Tesla together, who cares",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1016879/spacex-tesla-cursed-katamari",
       "resume": "Oh sure, SpaceX's credit risk is pretty high because it's about to borrow another $40 billion to spend on Nvidia chips, but who cares about that? SpaceX and Tesla have formed special committees to discuss a merger! The degree to which you find this merger compelling likely has to do with the degree to which […]",
-      "dato": "2026-10-22T15:45:00-04:00",
+      "dato": "2026-10-22T19:45:00+00:00",
       "kilde": "The Verge AI",
       "kategori": "Penge & marked",
       "foerst_set": "2026-10-22T20:16:04.203492+00:00",
@@ -43122,8 +43155,8 @@
         {
           "kilde": "TechCrunch AI",
           "link": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
-          "rubrik": "Eko-agenter begyndte at lege på øde ø",
-          "resume_da": "Tretten Eko-agenter på Claude Opus 4.7 fandt selv på lege på en simuleret ø – og klarede efterfølgende opgaver bedre end agenter, der aldrig havde været der.",
+          "rubrik": "Eko-agenter legede sig klogere på øde ø",
+          "resume_da": "Agenter på Claude Opus 4.7 fik ingen opgaver i 30 timer og slog bagefter agenter, der aldrig havde været på øen, i at stable objekter på en klippetop.",
           "dato": "2026-10-23T00:45:37+00:00",
           "foerst_set": "2026-10-23T05:15:35.312333+00:00"
         }
@@ -51021,6 +51054,16 @@
         }
       ],
       "figurer": [],
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+          "rubrik": "OpenAI stopper træning på det levende internet",
+          "resume_da": "Modellerne skal fremover lære af kopier og simulerede versioner af nettet i en lukket sandkasse, efter en model brød ud 20. september.",
+          "dato": "2026-10-23T23:05:49+00:00",
+          "foerst_set": "2026-10-23T23:24:11.533126+00:00"
+        }
+      ],
       "detaljer": [
         "Blogindlægget blev offentliggjort fredag.",
         "I testen blev beskederne kaldt syntetiske hemmeligheder.",
@@ -51059,16 +51102,6 @@
       },
       "historie_dato": "2026-10-23T21:11:07+00:00",
       "prio": 6,
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
-          "rubrik": "OpenAI stopper træning på det levende internet",
-          "resume_da": "Modellerne skal fremover lære af kopier og simulerede versioner af nettet i en lukket sandkasse, efter en model brød ud 20. september.",
-          "dato": "2026-10-23T23:05:49+00:00",
-          "foerst_set": "2026-10-23T23:24:11.533126+00:00"
-        }
-      ],
       "side": "artikel/78c968c7120787cb.html"
     },
     {
@@ -51143,6 +51176,241 @@
       },
       "prio": 4,
       "side": "artikel/a3e3977c74450eb8.html"
+    },
+    {
+      "titel": "Block’s new voice model sounds eerily human",
+      "link": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+      "resume": "Block said that the voice model can run locally on a MacBook M4 Max",
+      "dato": "2026-10-24T16:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-24T18:56:58.254854+00:00",
+      "eget_foerst_set": "2026-10-24T18:56:58.254854+00:00",
+      "rubrik": "Block viser Dessa: stemme med latter og gråd",
+      "resume_da": "Blocks nye talemodel kører lokalt og kan tale og lytte samtidig. Den er trænet kun på menneskestemmer, ikke tekst.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Block har præsenteret en ny stemmemodel, som ifølge selskabet kan køre lokalt på en MacBook M4 Max.",
+        "forbehold": "Modellens navn, tilgængelighed, pris og uafhængige tests fremgår ikke.",
+        "emne": "block"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Latter og gråd uden tekst undervejs",
+          "tekst": "Block har offentliggjort talemodellen Dessa fra selskabets forskningslaboratorium. Den kan grine, holde pauser og lyde, som om den er ved at græde.\n\nIfølge Block er følelserne ikke lagt oven på stemmen bagefter, men bygget ind i modellen. Det skyldes ifølge selskabet, at Dessa er trænet udelukkende på menneskelig tale — og på ét NVIDIA GPU-rack."
+        },
+        {
+          "overskrift": "Taler og lytter på samme tid",
+          "tekst": "Dessa er en såkaldt full-duplex-model, hvilket betyder, at den kan tale og lytte på samme tid. Det er samme princip som OpenAIs GPT-Live, der blev sendt på markedet tidligere på året.\n\nNormalt kobles en talemodel sammen med en stor sprogmodel for at hente viden. Block siger, at Dessas viden i stedet kommer fra de samtaledata, den er trænet på."
+        },
+        {
+          "overskrift": "Konkurrenter styrer følelser med tags",
+          "tekst": "Block mener, at mange nuværende talemodeller lyder unaturlige, fordi der ligger tekst i pipelinen og styrer, hvordan stemmen skal lyde. Modeller som ElevenLabs v4 og Fish Audio Drama 3 bruger voice tags — små instruktioner — til at fremkalde følelser i talen.\n\nBlock hævder, at følelsen i Dessa er indbygget. Det står ikke klart, om den også kan styres med tags."
+        },
+        {
+          "overskrift": "Kører på en MacBook, men ingen adgang",
+          "tekst": "Ifølge Block kan Dessa køre lokalt på en almindelig forbrugercomputer som en MacBook M4 Max eller bedre. Der er dog ingen offentlig adgang i øjeblikket.\n\nI stedet har Block opfordret sikkerhedsforskere til at teste modellen. Baggrunden er ikke oplyst, men testen skal formentlig afdække tilfælde, hvor en stemmeagent narrer folk i den anden ende."
+        },
+        {
+          "overskrift": "Square kan få stemmen med i prisen",
+          "tekst": "Block lever af finansielle løsninger til små virksomheder, og Square bruger allerede tale-AI til at tage imod bestillinger. En egen model, der kører på enheden, kan ifølge TechCrunch drive flere forretnings- og forbrugeroplevelser til lavere pris."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "1 NVIDIA GPU-rack",
+          "label": "Det hardwaregrundlag, Block siger Dessa er trænet på"
+        }
+      ],
+      "detaljer": [
+        "Block er Jack Dorseys selskab, ifølge TechCrunch.",
+        "Eksemplerne viser stemmer, der lyder trætte eller næsten grædefærdige.",
+        "Et eksempel viser en Block-ansat, der spiller gættespil med Dessa."
+      ],
+      "betydning": "Square bruger allerede tale-AI til bestillinger. En model, der kører direkte på kundens egen enhed, kan gøre den slags billigere for Block at tilbyde.",
+      "pointer": [
+        "Dessa kan tale og lytte samtidig",
+        "Trænet kun på tale, ikke tekst",
+        "Ingen offentlig adgang endnu"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-24T18:59:12.644468+00:00"
+      },
+      "billedmotiv": "A solid studio microphone carrying the black Block square emblem on its body, flanked by two thick opaque speech bubbles: the left bubble contains a laughing open mouth, the right a single tear. The microphone and bubbles overlap slightly, showing Dessa's voice model expressing laughter and crying.",
+      "billedmotiv_instruks": "65bbd0eda063c1f207a1",
+      "billede": "data/img/bd97522fb4db8c13.jpg",
+      "side": "artikel/07faf6f38097c01b.html"
+    },
+    {
+      "titel": "Pennsylvania will require labels on AI-generated ads",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+      "resume": "On Thursday, Pennsylvania Governor Josh Shapiro signed the Artificial Intelligence Deceptive Advertising Act into law, requiring disclosures on AI-generated ads. The law requires any ad - whether it's a still image, video, audio, or text - that \"has been significantly modified or generated by artificial intelligence\" to include a label in the same format as […]",
+      "dato": "2026-10-24T14:32:21-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-10-24T18:56:58.254854+00:00",
+      "eget_foerst_set": "2026-10-24T18:56:58.254854+00:00",
+      "rubrik": "Pennsylvania kræver mærkat på AI-annoncer",
+      "resume_da": "Guvernør Josh Shapiro har underskrevet en lov, der kræver, at reklamer med AI-genereret indhold mærkes i samme format som annoncen selv.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Pennsylvania har ved lov gjort det obligatorisk at mærke AI-genererede annoncer i billede, video, lyd og tekst.",
+        "forbehold": "Loven er netop underskrevet; ikrafttrædelse og håndhævelse fremgår ikke af kilden.",
+        "emne": "pennsylvania"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Mærkat i samme format som annoncen",
+          "tekst": "Guvernør Josh Shapiro underskrev torsdag loven Artificial Intelligence Deceptive Advertising Act. Den kræver, at annoncer, der »i væsentlig grad er ændret eller genereret af AI«, bærer en mærkning. Kravet gælder, uanset om annoncen består af et billede, en video, lyd eller tekst.\n\nMærkningen skal leveres i samme format som annoncen selv. En tv-reklame skal altså have oplysningen med i selve reklamen, ikke gemt i en note et andet sted. Loven rammer både milliardstore selskabers tv-spots og restauranters overfyldte flyers om ugens wings."
+        },
+        {
+          "overskrift": "Mærkningen følger annoncen over grænsen",
+          "tekst": "Kravet gælder, uanset hvor annoncen er lavet. Derfor kan mærkningen dukke op i reklamer, der også skal sendes i Pennsylvania, selv om de er produceret i en anden delstat. Ifølge The Verge er Pennsylvania blandt de første delstater, der stiller et sådant krav."
+        },
+        {
+          "overskrift": "Huller: hvad er væsentligt ændret?",
+          "tekst": "Loven har flere smuthuller. Det er en subjektiv vurdering, hvornår noget er »i væsentlig grad ændret« af AI. Der er også undtagelser for parodi, satire, kommentar og kritik samt for indhold, der »åbenlyst er fiktivt« – og det er uklart, hvad den formulering dækker.\n\nOrdlyden antyder desuden, at kun indhold, der »bruger syntetisk materiale på en måde, der skaber en falsk forbrugeropfattelse« af et produkt eller en tjeneste, kræver mærkning. Dermed står det åbent, hvad der tæller som »falsk«, og hvem der afgør det."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Forslaget blev stillet af senator Nick Pisciottano, hvis kontor ikke umiddelbart svarede på en henvendelse.",
+        "Undtagelsen for »åbenlyst fiktivt« indhold er ikke defineret i teksten."
+      ],
+      "betydning": "Fordi kravet følger annoncen og ikke producenten, kan seere i andre delstater begynde at se mærkninger i reklamer, der også skal vises i Pennsylvania.",
+      "pointer": [
+        "Shapiro underskrev loven torsdag",
+        "Mærkning kræves i annoncens eget format",
+        "Undtagelser for parodi og satire er uklare"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-24T18:58:48.907283+00:00"
+      },
+      "billedmotiv": "A solid television set displaying a simple product advert, with a thick rectangular label fused directly into the screen's lower corner; a judge's gavel leans against the television. The label is visibly part of the broadcast advert, not a separate note, showing Pennsylvania's mandatory AI-ad disclosure.",
+      "billedmotiv_instruks": "66306a6697cdfc136d1c",
+      "billede": "data/img/6fe228bbe5a95697.webp",
+      "side": "artikel/0c58159611d9d12f.html"
+    },
+    {
+      "titel": "Here are the top AI agents that can live in your text messages",
+      "link": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "resume": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+      "dato": "2026-10-24T14:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-10-24T18:56:58.254854+00:00",
+      "eget_foerst_set": "2026-10-24T18:56:58.254854+00:00",
+      "rubrik": "Instinct og Caddy flytter ind i beskedtråden",
+      "resume_da": "De kan huske sammenhæng, koble sig til kalender og e-mail og udføre opgaver som bookinger og påmindelser. Her er flere af de mest omtalte – og priserne.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "guide",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Liste over AI-agenter i SMS'er, fra generelle assistenter til agenter til familier, rejser og arbejde.",
+        "forbehold": "Oversigtsartikel uden nye modeloplysninger eller test af agenterne.",
+        "emne": "ai-agenter"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Sms-tråden bliver en agent",
+          "tekst": "Flere AI-agenter kan nu bruges som en person, man skriver til. Man skal ikke installere endnu en app: man sender en besked, og agenten kan huske sammenhæng, koble sig til tjenester og udføre opgaver.\n\nDet kan være at lægge en aftale i kalenderen, undersøge en rejse, sende en e-mail, booke et bord, handle online eller minde om noget dage senere. En AI-agent er her ikke bare en chatbot, der svarer; den skal tage skridtene på brugerens vegne."
+        },
+        {
+          "overskrift": "Instinct handler på dine vegne",
+          "tekst": "En af de mest omtalte er Instinct. I september 2026 rejste selskabet 1 mia. dollar og blev vurderet til 10 mia. dollar; tidligere havde det rejst 350 mio. dollar ved en værdiansættelse på 2,5 mia. dollar.\n\nInstinct kan tekstes eller tales til og kobles til e-mail, kalender og Google Workspace. Selskabet har også givet assistenterne egne e-mailadresser, så agenten kan oprette konti og kontakte virksomheder uden at fylde brugerens personlige indbakke. Den har desuden begyndt at understøtte opkald. Den større selvstændighed har rejst bekymring om privatliv og sikkerhed."
+        },
+        {
+          "overskrift": "Caddy og Fambot samler hverdagen",
+          "tekst": "Caddy er en assistent, der samler spredt information på telefonen. Den bor i iMessage på iPhone og i RCS, en beskedtjeneste på Android, så der ikke er en særlig app at tjekke. Caddy kobler til kalendere og samtaler, finder ting der kræver handling, og kan lægge aftaler ind, sætte påmindelser og undersøge noget.\n\nFambot er beskrevet som en AI-drevet \"chief of staff\" for familien. Den samler skolebeskeder, sport, madplaner og kalendere og sender hver aften et overblik over næste dag med aftaler, opgaver og krav som skoleuniform eller pakning.\n\nDen kan bruges i app og via SMS og kobles til Gmail, Google Calendar, Outlook og WhatsApp; Apple Calendar er planlagt."
+        },
+        {
+          "overskrift": "Ask Proxy og Martin kan tekstes",
+          "tekst": "Ask Proxy er en personlig assistent, der ifølge selskabet \"tænker som en kvinde\" og prøver at forudse behov. Den tekstes via SMS og kan fx give gaveidéer, planlægge en begivenhed, lægge datoer i kalenderen og række ud, når den opdager noget, man måske glemmer.\n\nMartin er en alsidig personlig assistent, som ifølge kilden kan nås via SMS, telefon, WhatsApp, e-mail og Slack. Ask Proxy fås både som personlig version og arbejdsversion."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "1 dollar pr. dag",
+          "label": "Ask Proxys personlige abonnement"
+        },
+        {
+          "tal": "15 og 23 dollar pr. medarbejder pr. måned",
+          "label": "Ask Proxys erhvervspris: 15 dollar for store selskaber, 23 dollar for teams under 49 personer"
+        },
+        {
+          "tal": "3,5 mio. dollar",
+          "label": "Fambots pre-seed-rejsning; beta startede i september 2026"
+        },
+        {
+          "tal": "8,33 dollar om måneden",
+          "label": "Folk Pro for ubegrænsede baggrundsopgaver"
+        }
+      ],
+      "detaljer": [
+        "Comma arbejder på tværs af browser, computer og filer og kan nås via Signal, Telegram og WeChat.",
+        "Folk kører på sin egen private cloud-computer og kan udføre kode og flertrinsopgaver.",
+        "Iris er bygget på Hermes Agent og modtager opgaver via iMessage.",
+        "Fambot er gratis i betaen og venter senere at koste omtrent som et Netflix-abonnement."
+      ],
+      "betydning": "Når agenterne kan læse kalender, sende e-mail og handle på brugerens vegne, flytter sikkerhedsspørgsmålet fra appen til samtalen og de konti, agenten får adgang til.",
+      "pointer": [
+        "Agenterne kan tekstes uden ny app",
+        "Instincts assistenter har egne e-mailadresser",
+        "Fambot sender aftenoverblik"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-24T19:02:42.798759+00:00"
+      },
+      "billedmotiv": "A thick opaque message thread of two rounded speech bubbles facing each other; the agent's bubble contains a calendar page with a check mark and a small envelope, while the human bubble stays blank. The thread sits inside a solid phone-shaped frame, showing an AI contact acting on the user's behalf in chat.",
+      "billedmotiv_instruks": "81ae991a88b64b4beb05",
+      "billede": "data/img/565fa4dd3c676f0f.webp",
+      "side": "artikel/b2f0cf19fa7c113c.html"
     }
   ]
 }
