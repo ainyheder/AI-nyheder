@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-10-25T05:18:16.136854+00:00",
+ "opdateret": "2026-10-25T13:34:07.600484+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -102,7 +102,7 @@ window.LAESERTAL = {
      5,
      7,
      1,
-     0,
+     1,
      0
     ]
    },
@@ -138,7 +138,7 @@ window.LAESERTAL = {
      5,
      2,
      0,
-     0
+     1
     ]
    },
    {
@@ -167,7 +167,7 @@ window.LAESERTAL = {
      2,
      2,
      0,
-     5,
+     6,
      5,
      2,
      3,
@@ -242,7 +242,7 @@ window.LAESERTAL = {
      1,
      2,
      1,
-     0,
+     1,
      0
     ]
    },
@@ -319,20 +319,20 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 26,
- "sidevisninger_i_alt": 34,
+ "besoeg_i_alt": 27,
+ "sidevisninger_i_alt": 35,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 26,
-   "visninger": 34
+   "besoeg": 27,
+   "visninger": 35
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 26
+   "besoeg": 27
   }
  ],
  "ai_chats": [],
@@ -340,8 +340,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 26,
-    "visninger": 26
+    "besoeg": 27,
+    "visninger": 27
    },
    {
     "fra": "herfra selv",
@@ -365,8 +365,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-09-27",
-   "besoeg": 100,
-   "visninger": 100
+   "besoeg": 10,
+   "visninger": 10
   },
   {
    "dato": "2026-09-28",
@@ -385,13 +385,13 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-10-01",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 10
   },
   {
    "dato": "2026-10-02",
    "besoeg": 0,
-   "visninger": 0
+   "visninger": 10
   },
   {
    "dato": "2026-10-03",
@@ -416,7 +416,7 @@ window.LAESERTAL = {
   {
    "dato": "2026-10-07",
    "besoeg": 0,
-   "visninger": 0
+   "visninger": 10
   },
   {
    "dato": "2026-10-08",
@@ -465,8 +465,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-10-17",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 20
   },
   {
    "dato": "2026-10-18",
@@ -480,8 +480,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-10-20",
-   "besoeg": 100,
-   "visninger": 100
+   "besoeg": 10,
+   "visninger": 20
   },
   {
    "dato": "2026-10-21",
@@ -491,7 +491,7 @@ window.LAESERTAL = {
   {
    "dato": "2026-10-22",
    "besoeg": 0,
-   "visninger": 100
+   "visninger": 10
   },
   {
    "dato": "2026-10-23",
@@ -505,8 +505,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-10-25",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 10
   }
  ],
  "artikler": [],

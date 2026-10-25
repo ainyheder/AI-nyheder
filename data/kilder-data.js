@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-25T05:10:12.311183+00:00",
- "artikler_i_alt": 112,
+ "opdateret": "2026-10-25T13:20:07.268078+00:00",
+ "artikler_i_alt": 119,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -100,8 +100,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 7,
-   "som_ekstra": 0,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "Google ruller Gemini 4 Argon bredt ud",
+     "dato": "",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
+    },
     {
      "rubrik": "Gemini får samlet værktøjsside til små virksomheder",
      "dato": "2026-10-20T16:00:00",
@@ -169,7 +178,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google DeepMind",
-     2
+     3
     ],
     [
      "The Verge AI",
@@ -383,8 +392,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 43,
-   "som_ekstra": 7,
+   "i_listen": 45,
+   "som_ekstra": 6,
    "seneste": [
     {
      "rubrik": "OpenAI stopper træning på det levende internet",
@@ -394,15 +403,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI træner nu sine stærkeste AI-modeller uden net"
-    },
-    {
-     "rubrik": "Claude Opus 4.7 legede sig til bedre resultater",
-     "dato": "",
-     "foerst_set": "2026-10-23T05:15:35",
-     "link": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
-     "side": "",
-     "hvor": "under",
-     "under": "Claude opfandt spil og lærte af leg"
     },
     {
      "rubrik": "Canva Craft laver billeder med læsbar tekst",
@@ -459,11 +459,29 @@ window.KILDER_STATUS = {
      "under": "Anthropic afsætter fem procent af aktierne til fond"
     },
     {
+     "rubrik": "S&P: 42 procent af AI-initiativer opgives",
+     "dato": "2026-10-24T19:00:00",
+     "foerst_set": "2026-10-24T22:42:03",
+     "link": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+     "side": "artikel/41208e707565c1ca.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Block viser Dessa: stemme med latter og gråd",
      "dato": "2026-10-24T16:00:00",
      "foerst_set": "2026-10-24T18:56:58",
      "link": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
      "side": "artikel/07faf6f38097c01b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Grok 4.7 vælger republikanerne i 92 procent",
+     "dato": "2026-10-24T15:00:00",
+     "foerst_set": "2026-10-24T18:56:58",
+     "link": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+     "side": "artikel/b8554dad591ac482.html",
      "hvor": "forside",
      "under": ""
     },
@@ -547,24 +565,6 @@ window.KILDER_STATUS = {
      "side": "artikel/c80a6608f1d2299f.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Nirva får 33 mio. dollar til lytte-smykke",
-     "dato": "2026-10-22T13:26:52",
-     "foerst_set": "2026-10-22T14:02:49",
-     "link": "https://techcrunch.com/2026/10/22/nirva-raises-33m-for-a-pendant-that-only-listens-to-you/",
-     "side": "artikel/b1c3b0ce40d1e82c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Recursive udgiver Flint: AI byggede næsten hele modellen",
-     "dato": "2026-10-21T20:27:41",
-     "foerst_set": "2026-10-21T23:34:19",
-     "link": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
-     "side": "artikel/12af459ff8f6cdb2.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -578,10 +578,6 @@ window.KILDER_STATUS = {
     ],
     [
      "OpenAI Blog",
-     1
-    ],
-    [
-     "MIT Tech Review AI",
      1
     ],
     [
@@ -600,7 +596,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 26,
+   "i_listen": 28,
    "som_ekstra": 8,
    "seneste": [
     {
@@ -674,6 +670,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+    },
+    {
+     "rubrik": "Google-AI tager klik fra onlineudgivere",
+     "dato": "2026-10-25T08:00:00",
+     "foerst_set": "2026-10-25T13:20:07",
+     "link": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
+     "side": "artikel/ec4100b5e401e0ad.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Pennsylvania kræver mærkat på AI-annoncer",
@@ -771,15 +776,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-22T20:16:04",
      "link": "https://www.theverge.com/podcast/1015408/bill-gates-ai-interview-microsoft-openai-anthropic-risk-policy-regulation",
      "side": "artikel/158d6dc645d8c42d.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Discord viser Markdown-filer uden symboler",
-     "dato": "2026-10-22T18:58:19",
-     "foerst_set": "2026-10-22T20:16:04",
-     "link": "https://www.theverge.com/news/1017012/discord-markdown-previews-organize-servers-channels",
-     "side": "artikel/6c4c325e4c950cc1.html",
      "hvor": "forside",
      "under": ""
     }
@@ -1013,12 +1009,7 @@ window.KILDER_STATUS = {
      "under": ""
     }
    ],
-   "overlap": [
-    [
-     "TechCrunch AI",
-     1
-    ]
-   ]
+   "overlap": []
   },
   {
    "navn": "OpenAI Blog",
@@ -1070,10 +1061,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 15,
+   "i_listen": 3,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -1093,12 +1084,39 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+    },
+    {
+     "rubrik": "Google Antigravity finder ny peptidkandidat",
+     "dato": "2026-10-15T16:08:03",
+     "foerst_set": "2026-10-16T04:53:41",
+     "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+     "side": "artikel/ba028f76ed47c779.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
+     "dato": "2026-10-13T19:43:07",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+     "side": "artikel/42f1c245f492d3d1.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "EmbeddingGemma 2 finder videoklip ud fra tale",
+     "dato": "2026-10-06T19:57:04",
+     "foerst_set": "2026-10-07T15:44:28",
+     "link": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+     "side": "artikel/bf211d23154acfab.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "Google Gemini",
-     2
+     3
     ]
    ]
   },
