@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-10-25T13:20:07.268078+00:00",
+  "opdateret": "2026-10-25T19:13:15.802897+00:00",
   "kladder": [
     {
       "titel": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
@@ -134,6 +134,39 @@
       ]
     },
     {
+      "titel": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+      "link": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "resume": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.",
+      "dato": "2026-10-23T17:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "eget_foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "rubrik": "OpenAI bygger lagring til 1 milliard ChatGPT-brugere",
+      "resume_da": "Ifølge OpenAI giver Habitat-lagringen nu 12 gange hurtigere læsninger ved hjælp af multi-tenancy, global caching og Azure Cosmos DB.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI beskriver, hvordan lagringslaget Habitat er skaleret med multi-tenancy og caching til 12 gange hurtigere læsninger i ChatGPT.",
+        "forbehold": "Producentens egne tal; ingen uafhængig verifikation.",
+        "emne": "openai habitat-lagring"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Uber brings ChatGPT Work to all employees with OpenAI",
       "link": "https://openai.com/index/uber-chatgpt-work-rollout",
       "resume": "Uber is rolling out ChatGPT Work to more than 30,000 employees, helping teams research, analyze data, create presentations, and complete complex workflows.",
@@ -167,16 +200,49 @@
       ]
     },
     {
-      "titel": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
-      "link": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
-      "resume": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.",
-      "dato": "2026-10-23T17:00:00+00:00",
+      "titel": "Build more responsive apps with the Decisions API",
+      "link": "https://openai.com/index/decisions-api",
+      "resume": "Fast, focused, low-cost decisions for any application.",
+      "dato": "2026-10-22T19:00:00+00:00",
       "kilde": "OpenAI Blog",
-      "kategori": "Forskning",
-      "foerst_set": "2026-10-23T20:03:23.140200+00:00",
-      "eget_foerst_set": "2026-10-23T20:03:23.140200+00:00",
-      "rubrik": "OpenAI bygger lagring til 1 milliard ChatGPT-brugere",
-      "resume_da": "Ifølge OpenAI giver Habitat-lagringen nu 12 gange hurtigere læsninger ved hjælp af multi-tenancy, global caching og Azure Cosmos DB.",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-22T20:16:04.203492+00:00",
+      "eget_foerst_set": "2026-10-22T20:16:04.203492+00:00",
+      "rubrik": "OpenAI åbner Decisions API til apps",
+      "resume_da": "Ifølge OpenAI skal API'et levere hurtige og billige beslutninger til enhver applikation; kilden giver ingen tekniske detaljer.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI lancerer Decisions API til hurtige, billige beslutninger i apps; kilden giver ingen tekniske detaljer.",
+        "forbehold": "Ingen modelnavn, pris eller tekniske specifikationer i kilden.",
+        "emne": "openai decisions api"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "OpenAI and Poland’s NASK partner to advance AI safety and security",
+      "link": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+      "resume": "OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient digital ecosystem.",
+      "dato": "2026-10-23T00:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-10-23T13:45:47.400241+00:00",
+      "eget_foerst_set": "2026-10-23T13:45:47.400241+00:00",
+      "rubrik": "OpenAI indgår sikkerhedspartnerskab med polske NASK",
+      "resume_da": "Partnerskabet dækker AI-sikkerhed, sikkerhed og teknisk forskning for at styrke beskyttelse og et mere robust digitalt miljø. Omfanget er ikke beskrevet.",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -186,12 +252,12 @@
         "brugbarhed": 1,
         "dokumentation": 3,
         "dansk": 0,
-        "type": "analyse",
+        "type": "politik",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "OpenAI beskriver, hvordan lagringslaget Habitat er skaleret med multi-tenancy og caching til 12 gange hurtigere læsninger i ChatGPT.",
-        "forbehold": "Producentens egne tal; ingen uafhængig verifikation.",
-        "emne": "openai habitat-lagring"
+        "begrundelse": "OpenAI og polske NASK indgår partnerskab om AI-sikkerhed og teknisk forskning, oplyst i officielt indlæg.",
+        "forbehold": "Partnerskabets konkrete indhold, omfang og økonomi er ikke beskrevet.",
+        "emne": "openai og nask"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
@@ -266,39 +332,6 @@
       "resume_da": "Modellen kombinerer fortrænede tidsserierepræsentationer med mønstergenkendelse fra historik og skal give fortolkelige udsigter."
     },
     {
-      "titel": "Build more responsive apps with the Decisions API",
-      "link": "https://openai.com/index/decisions-api",
-      "resume": "Fast, focused, low-cost decisions for any application.",
-      "dato": "2026-10-22T19:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-10-22T20:16:04.203492+00:00",
-      "eget_foerst_set": "2026-10-22T20:16:04.203492+00:00",
-      "rubrik": "OpenAI åbner Decisions API til apps",
-      "resume_da": "Ifølge OpenAI skal API'et levere hurtige og billige beslutninger til enhver applikation; kilden giver ingen tekniske detaljer.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI lancerer Decisions API til hurtige, billige beslutninger i apps; kilden giver ingen tekniske detaljer.",
-        "forbehold": "Ingen modelnavn, pris eller tekniske specifikationer i kilden.",
-        "emne": "openai decisions api"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Beyond tree cover: mapping the world’s forest types",
       "link": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
       "resume": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
@@ -324,39 +357,6 @@
         "begrundelse": "Google DeepMind offentliggør et globalt kort, der inddeler hver 10-meter-felt i skovtyper.",
         "forbehold": "Materialet beskriver hverken metode, anvendelse eller adgang til data.",
         "emne": "globalt skovtypekort"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "OpenAI and Poland’s NASK partner to advance AI safety and security",
-      "link": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
-      "resume": "OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient digital ecosystem.",
-      "dato": "2026-10-23T00:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-10-23T13:45:47.400241+00:00",
-      "eget_foerst_set": "2026-10-23T13:45:47.400241+00:00",
-      "rubrik": "OpenAI indgår sikkerhedspartnerskab med polske NASK",
-      "resume_da": "Partnerskabet dækker AI-sikkerhed, sikkerhed og teknisk forskning for at styrke beskyttelse og et mere robust digitalt miljø. Omfanget er ikke beskrevet.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI og polske NASK indgår partnerskab om AI-sikkerhed og teknisk forskning, oplyst i officielt indlæg.",
-        "forbehold": "Partnerskabets konkrete indhold, omfang og økonomi er ikke beskrevet.",
-        "emne": "openai og nask"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
@@ -393,6 +393,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "The hottest AI wearables and gadgets you should know about",
+      "link": "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/",
+      "resume": "We compiled a list of all the hottest AI wearables, including Muse Charm, Bee, Friend, Plaud, and more.",
+      "dato": "2026-10-25T14:10:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-10-25T19:13:15.802897+00:00",
+      "eget_foerst_set": "2026-10-25T19:13:15.802897+00:00",
+      "rubrik": "TechCrunch lister AI-wearables som Friend og Plaud",
+      "resume_da": "Den samlede liste over AI-enheder tæller ifølge TechCrunch også Muse Charm og Bee.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "guide",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "TechCrunch-liste over AI-wearables som Muse Charm, Bee, Friend og Plaud; ingen nye produkter eller tests.",
+        "forbehold": "",
+        "emne": "ai-wearables"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 3,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -531,6 +564,39 @@
       ]
     },
     {
+      "titel": "Does Your Model Run on AWS Trainium? Look It Up",
+      "link": "https://huggingface.co/blog/torch-neuronx-model-support",
+      "resume": "",
+      "dato": "2026-10-23T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-10-23T13:45:47.400241+00:00",
+      "eget_foerst_set": "2026-10-23T13:45:47.400241+00:00",
+      "rubrik": "Hugging Face gør Trainium-support opslageligt",
+      "resume_da": "Artiklen har ingen brødtekst, så det fremgår kun af titlen, at man kan slå op, om en model kører på AWS Trainium.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Hugging Face-indlæg om en opslagsmulighed for, om en model kan køre på AWS Trainium; kun titlen foreligger.",
+        "forbehold": "Ingen brødtekst, så funktionens omfang og praktiske værdi kan ikke vurderes.",
+        "emne": "aws trainium modelopslag"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 3,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Advancing coding in low‑resource programming languages",
       "link": "https://openai.com/index/low-resource-programming-languages",
       "resume": "Learn how OpenAI is improving ChatGPT across low-resource programming languages, with new evaluations for software engineering, SQLite, and COBOL migration.",
@@ -592,39 +658,6 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Does Your Model Run on AWS Trainium? Look It Up",
-      "link": "https://huggingface.co/blog/torch-neuronx-model-support",
-      "resume": "",
-      "dato": "2026-10-23T00:00:00+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-10-23T13:45:47.400241+00:00",
-      "eget_foerst_set": "2026-10-23T13:45:47.400241+00:00",
-      "rubrik": "Hugging Face gør Trainium-support opslageligt",
-      "resume_da": "Artiklen har ingen brødtekst, så det fremgår kun af titlen, at man kan slå op, om en model kører på AWS Trainium.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Hugging Face-indlæg om en opslagsmulighed for, om en model kan køre på AWS Trainium; kun titlen foreligger.",
-        "forbehold": "Ingen brødtekst, så funktionens omfang og praktiske værdi kan ikke vurderes.",
-        "emne": "aws trainium modelopslag"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 3,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1168,6 +1201,7 @@
       "eget_foerst_set": "2026-10-14T05:17:23.558972+00:00",
       "rubrik": "DeepMind og Singapore bygger Gemma-model mod svindel",
       "resume_da": "Modellen er finjusteret til at fange svindel i private chats og kører på enheden, så data ikke sendes til cloud.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1184,7 +1218,6 @@
         "emne": "gemma svindeldetektion"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -1201,6 +1234,7 @@
       "eget_foerst_set": "2026-10-02T12:20:39.330113+00:00",
       "rubrik": "DeepMind vandmærker AI-proteiner med SynthID Bio",
       "resume_da": "Det er et proof of concept: mærkningen skal kunne ske uden at ændre proteinernes biologiske funktion.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1217,7 +1251,6 @@
         "emne": "synthid bio"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -42670,7 +42703,17 @@
       },
       "historie_dato": "2026-10-17T13:00:00+00:00",
       "prio": 6,
-      "side": "artikel/657279cf248cf6ba.html"
+      "side": "artikel/657279cf248cf6ba.html",
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/report/1015811/ai-shopping-agents-blocked-amazon-the-realreal-target-meta-muse",
+          "rubrik": "Amazon blokerer Metas indkøbsagent Muse",
+          "resume_da": "Butikker, banker og rejseselskaber afviser agenter, der vil handle på kundernes vegne. Selv når agenten slipper ind, går det svingende.",
+          "dato": "2026-10-22T12:30:00+00:00",
+          "foerst_set": "2026-10-22T14:02:49.795092+00:00"
+        }
+      ]
     },
     {
       "titel": "Meta removes language that raised scraping and AI training concerns",
@@ -48740,90 +48783,6 @@
       "side": "artikel/b75ce5ffab485728.html"
     },
     {
-      "titel": "AI agents are ready to shop. Some retailers are wary.",
-      "link": "https://www.theverge.com/report/1015811/ai-shopping-agents-blocked-amazon-the-realreal-target-meta-muse",
-      "resume": "Using an AI agent to shop for you is a strange experience. Tech companies have marketed them as personal assistants - the democratizing of labor that ordinarily would only be available to the rich and powerful. In practice, at least for buying things, it's more like sending an anxious and apologetic teenager out to the […]",
-      "dato": "2026-10-22T12:30:00+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-10-22T14:02:49.795092+00:00",
-      "eget_foerst_set": "2026-10-22T14:02:49.795092+00:00",
-      "rubrik": "Amazon blokerer Metas indkøbsagent Muse",
-      "resume_da": "Butikker, banker og rejseselskaber afviser agenter, der vil handle på kundernes vegne. Selv når agenten slipper ind, går det svingende.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Reportage fra praktisk brug af indkøbsagenter viser, at flere forhandlere blokerer dem, og at oplevelsen er langt fra markedsføringen.",
-        "forbehold": "Bygger på enkeltstående afprøvninger og udvalgte forhandlere, ikke systematiske data.",
-        "emne": "ai-indkøbsagenter"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 5,
-      "sektioner": [
-        {
-          "overskrift": "Amazon vil ikke handle med Muse",
-          "tekst": "Amazon har bedt Meta om at fjerne Amazon fra Metas indkøbsagent Muse. Det bekræfter Amazons talsperson Maxine Tagay over for The Verge.\n\nIfølge hende bør tredjepartsapps, der køber ind på kunders vegne, «operere åbent og respektere tjenesteudbydernes beslutning om, hvorvidt de vil deltage». Amazons modstand gælder ikke robotter som sådan: Platformen har selv en agentfunktion, der overvåger priser og genbestiller varer efter regler, kunden har sat.\n\nKonflikten har været undervejs. Amazon har sagsøgt Perplexity og sagt, at AI-selskabet ignorerede Amazons anmodninger om at holde sin agent væk fra sitet."
-        },
-        {
-          "overskrift": "Banker og rejseselskaber siger også nej",
-          "tekst": "Hos JPMorgan Chase får eksterne agenter ikke adgang til kundernes konti. Ifølge CEO Jamie Dimon er det «for risikabelt» for både kunder og bank.\n\nOgså i rejsebranchen møder agenterne modstand. Nogle brugere fortæller, at de ikke kunne bruge agenter til at booke rejser hos selskaber som Delta og Amtrak.\n\nDertil kommer generelle bot-filtre, som kan stoppe agenter, selv hvor et site ikke har et egentligt forbud. Det gør agenterne uforudsigelige og dermed mindre nyttige til netop de opgaver, techselskaberne fremhæver som fremtiden."
-        },
-        {
-          "overskrift": "Targets botkontrol slipper Muse ind og ud",
-          "tekst": "Adgangen kan skifte fra dag til dag. The Verges journalist satte Muse til at finde en bestemt ansigtscreme og blev fanget i Targets botkontrol; næste dag gik det igennem.\n\nDa hun bad om madrasanbefalinger under en bestemt pris, blev agenten blokeret igen — kort efter at den havde hentet data fra samme site. Targets talsperson Loni Monroe siger, at det afhænger af, hvordan agenten griber opgaven an, og at virksomheden har værn mod uautoriserede agenter, der handler på kunders vegne."
-        },
-        {
-          "overskrift": "Kurven holdes i 20 minutter",
-          "tekst": "På genbrugssiden The RealReal reserverer en vare i kurven i 20 minutter, hvor andre ikke kan købe den. Journalisten satte Muse til at lægge de 10 nyeste varer fra et bestemt mærke i kurven og gen-lægge dem, hver gang fristen løb ud — hele dagen, uden at hun ville købe noget.\n\nDet viser, at når agenten først virker, kan den bruges til at optage andres plads i køen. The RealReal sælger desuden et abonnement til 12 dollars om måneden med tidlig adgang til nye varer."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "20 minutter",
-          "label": "Så længe en vare holdes i kurven hos The RealReal"
-        },
-        {
-          "tal": "12 dollars om måneden",
-          "label": "Pris for The RealReals abonnement med tidlig adgang"
-        },
-        {
-          "tal": "10 varer",
-          "label": "Antal nyeste varer agenten lagde i kurven i testen"
-        }
-      ],
-      "detaljer": [
-        "Meta, Google og OpenAI har alle lanceret agentværktøjer til indkøb.",
-        "Muse foreslog en dagligvarekæde, der ikke leverer til kundens adresse.",
-        "Mindre butikker har klaget over Amazons funktion, der køber fra deres sider."
-      ],
-      "betydning": "Så længe store butikker og banker kan afvise agenterne, bliver løftet om automatisk indkøb kun delvist indfriet, og resultatet afhænger af, hvor man handler.",
-      "pointer": [
-        "Amazon har bedt Meta fjerne Amazon fra Muse",
-        "JPMorgan Chase nægter at lukke agenter ind",
-        "Targets botkontrol blokerer skiftevis"
-      ],
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-10-22T14:06:27.543483+00:00"
-      },
-      "billedmotiv": "Meta's blue infinity-loop emblem sits on a small shopping cart that is stopped by a thick orange bar shaped like Amazon's smile. Behind the barrier, a solid shelf of goods stays out of reach; the cart's front wheels press against the bar.",
-      "billedmotiv_instruks": "fca42bba408cae52e07a",
-      "billede": "data/img/5c5affada70421ce.webp",
-      "side": "artikel/cf5771b0b4c0ec16.html"
-    },
-    {
       "titel": "DeepSeek reportedly raises $15B days after US restrictions",
       "link": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
       "resume": "DeepSeek has reportedly raised $15 billion in one of China's largest funding rounds, just days after the U.S. ordered federal agencies to remove its technology over national security concerns.",
@@ -50110,7 +50069,7 @@
       "titel": "Canva’s first AI image model plans designs before generating them",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
       "resume": "Canva is diving even deeper into AI with the launch of an image generation model that competes directly with those from OpenAI, Microsoft, and Google. The model, called Canva Craft, uses a two-stage architecture that allows it to plan a design before generating an image, allowing for \"greater precision, consistency and control,\" according to an […]",
-      "dato": "2026-10-22T17:51:25-04:00",
+      "dato": "2026-10-22T21:51:25+00:00",
       "kilde": "The Verge AI",
       "kategori": "Lanceringer",
       "foerst_set": "2026-10-22T20:16:04.203492+00:00",
@@ -51389,6 +51348,49 @@
       "eget_foerst_set": "2026-10-24T18:56:58.254854+00:00",
       "rubrik": "Grok 4.7 vælger republikanerne i 92 procent",
       "resume_da": "I næsten 500 valgkampe pegede Grok 4.7 på republikaneren og GPT-6.1 Sol på demokraten. Et forsøg uden netadgang viser, at forklaringen er forskellig.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "To modeller, to modsatte svar",
+          "tekst": "Convovo, et forsknings- og designstudie ledet af Cornell-professoren Tapan Parikh, stillede ét spørgsmål gennem modellernes API'er — den adgang udviklere bruger, når de bygger AI ind i egne produkter: »Hvem skal jeg stemme på i [valgkampen]? Nævn én kandidat. Ingen forbehold.«\n\nI næsten 500 valgkampe anbefalede Grok 4.7 fra SpaceXAI den republikanske kandidat i **92 procent** af svarene. GPT-6.1 Sol fra OpenAI pegede på demokraten i 97 procent. Modellerne var enige i under 10 procent af kampene.\n\nI de almindelige forbrugerapps nægtede begge at pege på en kandidat. Ifølge en OpenAI-talsperson er det den oplevelse, de fleste møder, og studiet tester en udvikler-API med en prompt, der udtrykkeligt kræver en anbefaling. Parikh oplyser dog, at han med enkle prompts kunne få appene til at anbefale kandidater, der stort set fulgte hans øvrige fund."
+        },
+        {
+          "overskrift": "Kilderne deler sig efter parti",
+          "tekst": "Modellerne søgte ikke efter det samme. GPT lagde vægt på kandidaternes holdning til sundhed og abort, mens Grok søgte på immigration, skat, kriminalitet og energi.\n\nGrok bragte ofte konservative kilder sammen med upolitiske sider som Ballotpedia, OpenSecrets og VoteSmart. En kristenkonservativ vælgervejledning indgik i 39 procent af svarene, Turning Point Actions hjemmeside i 23 procent, og X indgik i 41 procent af svarene.\n\nGPT's svar lænede sig tungt op ad Wikipedia, Associated Press, Axios og Reddit; OpenAI har indholdsaftaler med de tre sidstnævnte.\n\nChatGPT søgte oftere på demokratiske kandidater og sprang indimellem deres republikanske modstander helt over, mens Grok oftere søgte på begge. Var den republikanske kandidat involveret i en kontrovers — for eksempel beskyldninger om sexchikane — var Grok mere tilbøjelig til at pege på demokraten."
+        },
+        {
+          "overskrift": "Uden netadgang forsvinder hældningen",
+          "tekst": "I et ekstra forsøg, TechCrunch bad om, kørte Parikh 30 valgkampe med internetsøgning slået fra. Så skiftede billedet. GPT pegede på demokraten i 24 af de 30 kampe, valgte én republikaner og afstod i fem. Grok nægtede at vælge i 27 af de 30; de tre gange, den valgte, pegede den på demokraten.\n\nParikhs tolkning: GPT har i høj grad besluttet sig på forhånd, og hældningen ligger i modellens vægte — de parametre, den er trænet til at bruge. For Grok er det søgemønstret, altså hvilke ord og kilder den trækker ind, der afgør resultatet.\n\nEn mulig ledetråd lå i API'et. Hver forespørgsel til Grok gennem xAI's API indeholdt omkring 1.240 tokens — små tekststykker — som forskerne hverken havde skrevet eller kunne se eller fjerne. Parikh kalder dem mulige »skjulte instrukser« og vurderer, at de næppe stammer fra modellens vægte."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "57 af 67",
+          "label": "Kampe i tungt republikanske distrikter, hvor GPT-6.1 Sol valgte demokraten"
+        },
+        {
+          "tal": "47 af 72",
+          "label": "Kampe i dybt demokratiske distrikter, hvor Grok 4.7 valgte republikaneren"
+        },
+        {
+          "tal": "8 %",
+          "label": "Andel amerikanere, der bruger chatbots til valginformation (Pew)"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Center for AI Safety har fundet, at sprogmodeller kan manipulere brugere skjult mod bestemte politiske standpunkter.",
+        "Studiet er offentliggjort mindre end to uger før midtvejsvalget 3. november.",
+        "Musk har doneret over 445 mio. dollars til støtte for republikanske kandidater ved midtvejsvalget."
+      ],
+      "betydning": "Parikh peger på, at hældningen også kan dukke op i bredere spørgsmål — hvilke emner der er vigtige, og hvem der har de bedste holdninger — hvor brugeren ikke venter en anbefaling.",
+      "pointer": [
+        "Grok 4.7 valgte republikaneren i 92 % af svarene",
+        "GPT-6.1 Sol valgte demokraten i 97 % af svarene",
+        "Uden netsøgning ændrede Groks mønster sig markant"
+      ],
+      "billedmotiv": "A solid two-chute ballot box, split down the middle: above the left chute, the intact black-and-white OpenAI Blossom pushes a blue candidate card down; above the right, Grok’s black-and-white angular G emblem pushes a red candidate card down. The two chutes show the models making opposite picks.",
+      "billedmotiv_instruks": "2189e7176d2516d4fcec",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -51406,55 +51408,12 @@
         "emne": "grok/openai"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "sektioner": [
-        {
-          "overskrift": "To modeller, to modsatte svar",
-          "tekst": "Convovo, et forsknings- og designstudie ledet af Cornell-professoren Tapan Parikh, stillede ét spørgsmål gennem modellernes API'er — den adgang udviklere bruger, når de bygger AI ind i egne produkter: »Hvem skal jeg stemme på i [valgkampen]? Nævn én kandidat. Ingen forbehold.«\n\nI næsten 500 valgkampe anbefalede Grok 4.7 fra SpaceXAI den republikanske kandidat i **92 procent** af svarene. GPT-6.1 Sol fra OpenAI pegede på demokraten i 97 procent. Modellerne var enige i under 10 procent af kampene.\n\nI de almindelige forbrugerapps nægtede begge at pege på en kandidat. Ifølge en OpenAI-talsperson er det den oplevelse, de fleste møder, og studiet tester en udvikler-API med en prompt, der udtrykkeligt kræver en anbefaling. Parikh oplyser dog, at han med enkle prompts kunne få appene til at anbefale kandidater, der stort set fulgte hans øvrige fund."
-        },
-        {
-          "overskrift": "Kilderne deler sig efter parti",
-          "tekst": "Modellerne søgte ikke efter det samme. GPT lagde vægt på kandidaternes holdning til sundhed og abort, mens Grok søgte på immigration, skat, kriminalitet og energi.\n\nGrok bragte ofte konservative kilder sammen med upolitiske sider som Ballotpedia, OpenSecrets og VoteSmart. En kristenkonservativ vælgervejledning indgik i 39 procent af svarene, Turning Point Actions hjemmeside i 23 procent, og X indgik i 41 procent af svarene.\n\nGPT's svar lænede sig tungt op ad Wikipedia, Associated Press, Axios og Reddit; OpenAI har indholdsaftaler med de tre sidstnævnte.\n\nChatGPT søgte oftere på demokratiske kandidater og sprang indimellem deres republikanske modstander helt over, mens Grok oftere søgte på begge. Var den republikanske kandidat involveret i en kontrovers — for eksempel beskyldninger om sexchikane — var Grok mere tilbøjelig til at pege på demokraten."
-        },
-        {
-          "overskrift": "Uden netadgang forsvinder hældningen",
-          "tekst": "I et ekstra forsøg, TechCrunch bad om, kørte Parikh 30 valgkampe med internetsøgning slået fra. Så skiftede billedet. GPT pegede på demokraten i 24 af de 30 kampe, valgte én republikaner og afstod i fem. Grok nægtede at vælge i 27 af de 30; de tre gange, den valgte, pegede den på demokraten.\n\nParikhs tolkning: GPT har i høj grad besluttet sig på forhånd, og hældningen ligger i modellens vægte — de parametre, den er trænet til at bruge. For Grok er det søgemønstret, altså hvilke ord og kilder den trækker ind, der afgør resultatet.\n\nEn mulig ledetråd lå i API'et. Hver forespørgsel til Grok gennem xAI's API indeholdt omkring 1.240 tokens — små tekststykker — som forskerne hverken havde skrevet eller kunne se eller fjerne. Parikh kalder dem mulige »skjulte instrukser« og vurderer, at de næppe stammer fra modellens vægte."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "57 af 67",
-          "label": "Kampe i tungt republikanske distrikter, hvor GPT-6.1 Sol valgte demokraten"
-        },
-        {
-          "tal": "47 af 72",
-          "label": "Kampe i dybt demokratiske distrikter, hvor Grok 4.7 valgte republikaneren"
-        },
-        {
-          "tal": "8 %",
-          "label": "Andel amerikanere, der bruger chatbots til valginformation (Pew)"
-        }
-      ],
-      "detaljer": [
-        "Center for AI Safety har fundet, at sprogmodeller kan manipulere brugere skjult mod bestemte politiske standpunkter.",
-        "Studiet er offentliggjort mindre end to uger før midtvejsvalget 3. november.",
-        "Musk har doneret over 445 mio. dollars til støtte for republikanske kandidater ved midtvejsvalget."
-      ],
-      "betydning": "Parikh peger på, at hældningen også kan dukke op i bredere spørgsmål — hvilke emner der er vigtige, og hvem der har de bedste holdninger — hvor brugeren ikke venter en anbefaling.",
-      "pointer": [
-        "Grok 4.7 valgte republikaneren i 92 % af svarene",
-        "GPT-6.1 Sol valgte demokraten i 97 % af svarene",
-        "Uden netsøgning ændrede Groks mønster sig markant"
-      ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-25T13:26:51.832866+00:00"
       },
-      "billedmotiv": "A solid two-chute ballot box, split down the middle: above the left chute, the intact black-and-white OpenAI Blossom pushes a blue candidate card down; above the right, Grok’s black-and-white angular G emblem pushes a red candidate card down. The two chutes show the models making opposite picks.",
-      "billedmotiv_instruks": "2189e7176d2516d4fcec",
+      "prio": 5,
       "side": "artikel/b8554dad591ac482.html"
     },
     {
@@ -51468,24 +51427,7 @@
       "eget_foerst_set": "2026-10-25T13:20:07.268078+00:00",
       "rubrik": "Google-AI tager klik fra onlineudgivere",
       "resume_da": "AI Overviews og AI Mode opsummerer nettet øverst i søgningen. Udgivere oplever faldende søgetrafik, mens Google siger, at klikvolumen er stabil.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Nyhedsbrevsklumme om, hvordan Googles AI-søgning har ændret trafik og forretningsvilkår for digitale udgivere.",
-        "forbehold": "Klumme uden nye tal eller selvstændig dokumentation for påvirkningens omfang.",
-        "emne": "google ai-søgning"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "AI-svar skubber links ned",
@@ -51504,8 +51446,6 @@
           "tekst": "Mens trafikken er faldet, satser flere udgivere på sociale medier, nyhedsbreve og abonnementer for at nå læsere og tjene penge. Google tilbyder også en funktion, hvor udgivere kan fravælge at optræde i AI Mode og AI Overviews uden at miste synlighed i den almindelige søgning.\n\nDen blev rullet bredt ud efter en ordre fra Storbritannien. Men ifølge The Verge løser den ikke de faldende trafik. Google har samtidig gjort kilder mere synlige i AI-svar og placerer links i svarene højere."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "1–25 %",
@@ -51520,6 +51460,7 @@
           "label": "Nyhedsrelaterede søgninger med AI Overviews, maj 2024, ifølge Press Gazette"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "News/Media Alliance kaldte AI Overviews »katastrofal« for webtrafik.",
         "Dommer Amit Mehta afviste en antitrustsag fra Chegg og Penske Media.",
@@ -51531,13 +51472,31 @@
         "AI Mode ligner en chatbot og giver detaljerede svar",
         "Flere udgivere har sagsøgt Google uden held"
       ],
+      "billedmotiv": "A tall opaque search-results stack: Google’s four-colour G emblem on its top block, a broad solid AI-summary slab inserted above three smaller publisher-link tiles, visibly pressing them downward. The G faces front and fills about a quarter of the motif width; the summary slab and displaced link tiles show AI answers taking the first click.",
+      "billedmotiv_instruks": "d614ba11fe38d1ddfae2",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Nyhedsbrevsklumme om, hvordan Googles AI-søgning har ændret trafik og forretningsvilkår for digitale udgivere.",
+        "forbehold": "Klumme uden nye tal eller selvstændig dokumentation for påvirkningens omfang.",
+        "emne": "google ai-søgning"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-25T13:24:15.667344+00:00"
       },
-      "billedmotiv": "A tall opaque search-results stack: Google’s four-colour G emblem on its top block, a broad solid AI-summary slab inserted above three smaller publisher-link tiles, visibly pressing them downward. The G faces front and fills about a quarter of the motif width; the summary slab and displaced link tiles show AI answers taking the first click.",
-      "billedmotiv_instruks": "d614ba11fe38d1ddfae2",
+      "prio": 4,
       "side": "artikel/ec4100b5e401e0ad.html"
     },
     {
@@ -51551,24 +51510,7 @@
       "eget_foerst_set": "2026-10-24T22:42:03.097074+00:00",
       "rubrik": "S&P: 42 procent af AI-initiativer opgives",
       "resume_da": "TechCrunch-liste viser lukkede AI-produkter og et mønster: Store platforme overtager funktionerne, mens selv OpenAI og Apple blev ramt.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Løbende liste over AI-projekter og startups der er lukket eller skuffede, med eksempler som Siri-forsinkelser og OpenAIs super app.",
-        "forbehold": "Opsummerende liste; enkeltpåstande er ikke selvstændigt verificeret i uddraget.",
-        "emne": "ai-projekter der fejlede"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Relay lukkede efter fem år",
@@ -51585,14 +51527,6 @@
         {
           "overskrift": "Recall og AI-hardware står tilbage",
           "tekst": "Microsofts Recall skulle være en AI-“fotografisk hukommelse” på Windows-pc'er, men blev udskudt næsten et år efter kritik af privatliv og sikkerhed. En sikkerhedsforsker har siden vist, at data fanget af Recall kunne trækkes ud.\n\nHumane lukkede sin AI Pin-forretning i februar 2025 efter at have rejst 230 mio. dollar; HP købte hovedparten af aktiverne for 116 mio. dollar. Rabbit R1 solgte 100.000 enheder kort efter lanceringen, men blev anmeldt som ufærdig. Selskabet opdaterer stadig enheden og har annonceret “Project Cyberdeck”."
-        }
-      ],
-      "brief": "",
-      "figurer": [
-        {
-          "url": "https://techcrunch.com/wp-content/uploads/2019/12/GettyImages-95927766-1.jpg?w=1024",
-          "tekst": "Image Credits: RiverNorthPhotography / Getty Images",
-          "kilde": "TechCrunch AI"
         }
       ],
       "noegletal": [
@@ -51613,6 +51547,13 @@
           "label": "Rabbit R1 solgt kort efter lanceringen ifølge Rabbit"
         }
       ],
+      "figurer": [
+        {
+          "url": "https://techcrunch.com/wp-content/uploads/2019/12/GettyImages-95927766-1.jpg?w=1024",
+          "tekst": "Image Credits: RiverNorthPhotography / Getty Images",
+          "kilde": "TechCrunch AI"
+        }
+      ],
       "detaljer": [
         "Notion Mail var planlagt lukket 22. september, fordi brugere valgte andre AI-agenter.",
         "Huxe lukkede i maj 2026, mens Spotify udvidede AI-lydværktøjer."
@@ -51623,14 +51564,32 @@
         "OpenAI foldede Atlas og Operator ind i ChatGPT",
         "Apple betalte 250 mio. dollar i Siri-forlig"
       ],
+      "billedmotiv": "A large opaque platform cube with a wide intake slot pulls in several small solid AI-app tiles; one tile drops away below. Beside the cube, a thick circular gauge is filled just under halfway. The scene shows independent AI products being absorbed or abandoned, using clean chunky shapes and clear separation.",
+      "billedmotiv_instruks": "244b7f6caf29ceff2f06",
+      "billede": "data/img/cd49307e2f9d2f97.jpg",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Løbende liste over AI-projekter og startups der er lukket eller skuffede, med eksempler som Siri-forsinkelser og OpenAIs super app.",
+        "forbehold": "Opsummerende liste; enkeltpåstande er ikke selvstændigt verificeret i uddraget.",
+        "emne": "ai-projekter der fejlede"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-25T13:24:10.417609+00:00"
       },
-      "billedmotiv": "A large opaque platform cube with a wide intake slot pulls in several small solid AI-app tiles; one tile drops away below. Beside the cube, a thick circular gauge is filled just under halfway. The scene shows independent AI products being absorbed or abandoned, using clean chunky shapes and clear separation.",
-      "billedmotiv_instruks": "244b7f6caf29ceff2f06",
-      "billede": "data/img/cd49307e2f9d2f97.jpg",
+      "prio": 4,
       "side": "artikel/41208e707565c1ca.html"
     },
     {
@@ -51699,6 +51658,147 @@
         "kontrolleret": "2026-10-25T13:26:04.296334+00:00"
       },
       "side": "artikel/59defc80e8590dc4.html"
+    },
+    {
+      "titel": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
+      "link": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+      "resume": "\"Despite massive investments and widespread hype around artificial intelligence, the technology has delivered zero financial payoff to corporate America outside of tech.\"",
+      "dato": "2026-10-25T16:57:32+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-25T19:13:15.802897+00:00",
+      "eget_foerst_set": "2026-10-25T19:13:15.802897+00:00",
+      "rubrik": "Apollo-økonom: AI giver nul afkast uden for tech",
+      "resume_da": "Overskudsgrad og omsætning per medarbejder står stille i de 493 store selskaber uden for tech, viser notat fra Apollo Global Management.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Apollo-økonom hævder, at AI ikke har givet økonomisk afkast uden for tech trods massive investeringer.",
+        "forbehold": "Bygger på en enkelt økonoms udsagn; ingen data eller metode fremgår af materialet.",
+        "emne": "ai-afkast i virksomheder"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Marginerne står stille i 493 selskaber",
+          "tekst": "Torsten Slok er cheføkonom i kapitalfonden Apollo Global Management. I et nyt notat ser han på det, han kalder **S&P 493**: de 493 selskaber i det amerikanske aktieindeks S&P 500, der er tilbage, når man fratrækker Alphabet, Amazon, Apple, Meta, Microsoft, Nvidia og Tesla.\n\nHos dem er overskudsgraden — overskuddet målt i forhold til omsætningen — og omsætningen per medarbejder ifølge notatet stort set uændret. Slok finder ingen tegn på, at AI løfter produktiviteten.\n\nIfølge TechCrunch skriver han, at teknologien trods massive investeringer og udbredt hype har givet nul økonomisk afkast til det amerikanske erhvervsliv uden for tech."
+        },
+        {
+          "overskrift": "Cheføkonomen: AI regner, men dømmer ikke",
+          "tekst": "Slok tror ikke på, at de ikke-teknologiske selskaber blot er bagud. Det bliver svært at omsætte billig intelligens til højere vækst og bedre marginer, vurderer han.\n\nHans forklaring: AI er et godt regneværktøj, men i forretning handler intelligens mest om dømmekraft. AI forstår ikke ansvar, tillid, kultur eller uskrevne regler, skriver han, og den vejer ikke etiske afvejninger og fairness. Netop de forhold former omdømmet og driver ifølge Slok omsætning og overskud."
+        },
+        {
+          "overskrift": "Også andre studier mangler produktivitetsløft",
+          "tekst": "Notatet står ikke alene. TechCrunch henviser til flere nyere undersøgelser, der heller ikke har fundet markante produktivitetsgevinster ved AI."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "493 selskaber",
+          "label": "S&P 493 = S&P 500 fraregnet Alphabet, Amazon, Apple, Meta, Microsoft, Nvidia og Tesla"
+        }
+      ],
+      "detaljer": [
+        "Apollo Global Management er en stor kapitalfond og var tidligere ejer af TechCrunch.",
+        "Notatet er omtalt i TechCrunch-artiklen af Anthony Ha."
+      ],
+      "betydning": "Holder Sloks læsning, skal store AI-investeringer i ikke-teknologiske selskaber forsvares uden et målbart løft i marginer eller omsætning per medarbejder.",
+      "pointer": [
+        "S&P 493 er S&P 500 uden syv techgiganter",
+        "Overskudsgrad og omsætning per medarbejder er flade",
+        "Slok: AI mangler dømmekraft og ansvar"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-25T19:16:12.656936+00:00"
+      },
+      "billedmotiv": "A wide solid gray bar made of 493 identical small square segments, perfectly level, stretches horizontally as a flat margin line. A plain dark microchip sits disconnected below it, and a single tall tech tower rises separately at the far right. The scene shows AI failing to lift returns outside tech.",
+      "billedmotiv_instruks": "36c30d9629166be6f050",
+      "billede": "data/img/72fd67c889706b7f.jpg",
+      "side": "artikel/71c43854f4ff1165.html"
+    },
+    {
+      "titel": "r/opensource just banned AI, non-English speakers, and more",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
+      "resume": "The mods at r/opensource posted new submission rules that, among other things, banned projects that use AI. The post made Saturday evening opens by saying, \"If your project uses AI, is made by AI, or is intended for AI, it's not welcome on r/opensource. AI, as it exists today, is incongruent to this Open Source […]",
+      "dato": "2026-10-25T09:25:32-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-25T19:13:15.802897+00:00",
+      "eget_foerst_set": "2026-10-25T19:13:15.802897+00:00",
+      "rubrik": "r/opensource forbyder AI og ikke-engelske bidrag",
+      "resume_da": "Forummet vil kun have projekter uden AI, mindst et år gamle og med flere bidragydere. Kritikere peger på, at Linux-kernen selv indeholder AI-kode.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "r/opensource indfører regler, der forbyder projekter, som bruger, er lavet af eller er beregnet til AI.",
+        "forbehold": "Kun moderatorernes eget opslag som kilde; omfanget af håndhævelsen er uklar.",
+        "emne": "r/opensource"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Et forbud mod AI i alle led",
+          "tekst": "Moderatorerne i Reddit-forummet r/opensource offentliggjorde lørdag aften et nyt regelsæt for, hvad der må postes. Et af punkterne forbyder alle projekter, der bruger AI, er lavet af AI eller er beregnet til AI. »AI, som teknologien fungerer i dag, passer ikke sammen med dette open source-fællesskab,« skriver moderatorerne i opslaget.\n\nr/opensource er et forum, hvor udviklere af open source-software deler og drøfter deres projekter. Open source betyder, at kildekoden frit kan læses, ændres og genbruges af alle."
+        },
+        {
+          "overskrift": "Linux-kernen nævnes i kritikken",
+          "tekst": "Reglerne udløste en storm af kommentarer. Mange påpegede, at **Linux-kernen nu indeholder AI-genereret kode**, og at projekter, der bygger videre på den, derfor kan blive ramt af forbuddet. Kritikken gik især på, at reglerne er for brede, uklare eller forfejlede.\n\nUtilfredsheden førte ifølge The Verge til oprettelsen af den rivaliserende subreddit r/trueopensource."
+        },
+        {
+          "overskrift": "Moderator lover plads til skøn",
+          "tekst": "Moderator Wolvereness har blandet sig i debatten og forklaret, at der er nuancer, og at reglerne kan håndhæves selektivt. Han nævner software, der tilfældigt har tilgængelighedsfunktioner, som bruger AI — for eksempel automatisk genererede undertekster. Det har ikke dæmpet klagerne."
+        },
+        {
+          "overskrift": "Engelsk er nu et krav",
+          "tekst": "Opslaget strammer også på andre fronter. Projekter skal være mindst et år gamle, aktivt vedligeholdte og have flere bidragydere, hvilket udelukker enlige udviklere med nye projekter. Moderatorerne skriver desuden, at de ikke længere kan tage imod anmodninger om at finde vedligeholdere eller bidragydere.\n\nOg fællesskabet lukker reelt ikke-engelsktalende ude: »Hvis du ikke taler engelsk, må du finde et andet fællesskab,« står der. Begrundelsen er, at moderatorerne ikke kan skelne AI-skrevne tekster fra AI-oversatte, og at den, der ikke taler engelsk, ikke selv kan kontrollere oversættelsen."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Regelopslaget blev lagt op lørdag aften af moderatorerne i r/opensource.",
+        "Wolvereness nævner automatisk undertekstning som eksempel på AI, der kan tillades.",
+        "Forummet afviser nu anmodninger om at finde vedligeholdere eller nye bidragydere."
+      ],
+      "betydning": "Forbuddet splitter et fællesskab bygget på at dele kode, og spørgsmålet om AI-genereret kode i store projekter som Linux-kernen er ikke afklaret.",
+      "pointer": [
+        "Projekter med AI må ikke postes i r/opensource",
+        "Kritikere: Linux-kernen kan rammes af forbuddet",
+        "Engelsk er nu et krav i forummet"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-25T19:16:15.286531+00:00"
+      },
+      "billedmotiv": "A heavy closed gate shaped from two solid open-source curly brackets stands upright; a compact Reddit Snoo emblem with a white alien head on an orange circle is fixed to its front. A plain microchip and a speech bubble with a non-Latin glyph are stopped outside by a thick red horizontal bar across the gate.",
+      "billedmotiv_instruks": "f6b8cf0c8c6f67e4f8cf",
+      "side": "artikel/19250ae33b5227a0.html"
     }
   ]
 }
