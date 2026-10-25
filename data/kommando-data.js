@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-24T22:50:32.149008+00:00",
+ "genereret": "2026-10-25T05:18:28.095590+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,7 +195,7 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-24T22:42:03.097074+00:00",
+  "opdateret": "2026-10-25T05:10:12.311183+00:00",
   "antal": 112,
   "med_billede": 73,
   "paa_dansk": 112,
@@ -374,7 +374,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-24T22:42:03.097074+00:00",
+  "opdateret": "2026-10-25T05:10:12.311183+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -394,7 +394,7 @@ window.KOMMANDO_DATA = {
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-10-24T22:42:02.543477+00:00",
+  "opdateret": "2026-10-25T05:10:11.958519+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -750,7 +750,7 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-24T22:42:03.097074+00:00",
+  "opdateret": "2026-10-25T05:10:12.311183+00:00",
   "artikler_i_alt": 112,
   "kilder": [
    {
@@ -1108,7 +1108,7 @@ window.KOMMANDO_DATA = {
       "under": "OpenAI træner nu sine stærkeste AI-modeller uden net"
      },
      {
-      "rubrik": "Claude-agenter legede på ø og løste opgaver bedre",
+      "rubrik": "Claude Opus 4.7 legede sig til bedre resultater",
       "dato": "",
       "foerst_set": "2026-10-23T05:15:35",
       "link": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
@@ -1629,19 +1629,14 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-24T22:50:28.551067+00:00",
+  "opdateret": "2026-10-25T05:18:16.136854+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 25,
-  "sidevisninger_i_alt": 33,
+  "besoeg_i_alt": 26,
+  "sidevisninger_i_alt": 34,
   "ai_chat_besoeg": 0,
   "serie": [
-   {
-    "dato": "2026-09-25",
-    "besoeg": 0,
-    "visninger": 0
-   },
    {
     "dato": "2026-09-26",
     "besoeg": 0,
@@ -1649,8 +1644,8 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-09-27",
-    "besoeg": 10,
-    "visninger": 10
+    "besoeg": 100,
+    "visninger": 100
    },
    {
     "dato": "2026-09-28",
@@ -1669,13 +1664,13 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-10-01",
-    "besoeg": 10,
-    "visninger": 10
+    "besoeg": 0,
+    "visninger": 0
    },
    {
     "dato": "2026-10-02",
     "besoeg": 0,
-    "visninger": 10
+    "visninger": 0
    },
    {
     "dato": "2026-10-03",
@@ -1700,7 +1695,7 @@ window.KOMMANDO_DATA = {
    {
     "dato": "2026-10-07",
     "besoeg": 0,
-    "visninger": 10
+    "visninger": 0
    },
    {
     "dato": "2026-10-08",
@@ -1749,8 +1744,8 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-10-17",
-    "besoeg": 10,
-    "visninger": 20
+    "besoeg": 0,
+    "visninger": 0
    },
    {
     "dato": "2026-10-18",
@@ -1764,8 +1759,8 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-10-20",
-    "besoeg": 10,
-    "visninger": 20
+    "besoeg": 100,
+    "visninger": 100
    },
    {
     "dato": "2026-10-21",
@@ -1775,7 +1770,7 @@ window.KOMMANDO_DATA = {
    {
     "dato": "2026-10-22",
     "besoeg": 0,
-    "visninger": 10
+    "visninger": 100
    },
    {
     "dato": "2026-10-23",
@@ -1786,20 +1781,25 @@ window.KOMMANDO_DATA = {
     "dato": "2026-10-24",
     "besoeg": 0,
     "visninger": 0
+   },
+   {
+    "dato": "2026-10-25",
+    "besoeg": 0,
+    "visninger": 0
    }
   ],
   "sider": [
    {
     "sti": "/",
-    "besoeg": 25,
-    "visninger": 33
+    "besoeg": 26,
+    "visninger": 34
    }
   ],
   "artikler": [],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 25
+    "besoeg": 26
    }
   ],
   "laeste_temaer": []
