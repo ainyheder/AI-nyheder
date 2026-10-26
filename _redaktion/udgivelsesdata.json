@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-10-26T05:12:20.522265+00:00",
+  "opdateret": "2026-10-26T15:25:50.532473+00:00",
   "kladder": [
     {
       "titel": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
@@ -30,6 +30,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "How Fanatics and OpenAI streamline the fan experience",
+      "link": "https://openai.com/index/fanatics-streamline-fan-experience",
+      "resume": "Fanatics uses OpenAI to help fans complete their game-day outfits with Shop the Look. Testing across roughly 30,000 MLB products showed 10% higher engagement.",
+      "dato": "2026-10-26T07:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-10-26T15:25:50.532473+00:00",
+      "eget_foerst_set": "2026-10-26T15:25:50.532473+00:00",
+      "rubrik": "OpenAI-værktøj gav Fanatics 10 procent mere engagement",
+      "resume_da": "Værktøjet Shop the Look hjælper fans med at finde kampdagens outfit; testen dækkede omkring 30.000 MLB-produkter, oplyser OpenAI.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Kundecase: Fanatics bruger OpenAI til Shop the Look og målte 10 procent højere engagement over ca. 30.000 MLB-produkter.",
+        "forbehold": "Resultatet er leveret af OpenAI selv uden nærmere metode eller kontrolgruppe.",
+        "emne": "fanatics openai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -398,35 +431,34 @@
       ]
     },
     {
-      "titel": "Ensemble forecasting with IBM Granite time-series models",
-      "link": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
-      "resume": "",
-      "dato": "2026-10-22T07:51:31+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Forskning",
-      "foerst_set": "2026-10-22T14:02:49.795092+00:00",
-      "eget_foerst_set": "2026-10-22T14:02:49.795092+00:00",
-      "rubrik": "IBM viser ensemble-forecasting med Granite-modeller",
-      "resume_da": "Indlæg på Hugging Face om IBM's Granite-modeller til tidsserier. Materialet har ingen brødtekst, så resultater og adgang er ikke oplyst.",
-      "kat_ai": true,
+      "titel": "Kevin Roose is AGI-pilled. Why aren’t you?",
+      "link": "https://www.theverge.com/podcast/1018264/kevin-roose-the-agi-chronicles-machine-gods-podcast-youtube-openai-anthropic",
+      "resume": "Today, I’m talking to Kevin Roose, journalist and author of the new book The AGI Chronicles, which details the recent and explosive transformation of the AI industry. Kevin was a longtime New York Times reporter and host of the popular podcast Hard Fork, but he and friend of the show Casey Newton just left the […]",
+      "dato": "2026-10-26T10:00:00-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-10-26T15:25:50.532473+00:00",
+      "eget_foerst_set": "2026-10-26T15:25:50.532473+00:00",
+      "rubrik": "Kevin Roose udgiver bogen The AGI Chronicles",
+      "resume_da": "Journalisten forlod The New York Times og podcasten Hard Fork og taler nu om AI-industriens nylige, eksplosive forandring.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 1,
         "dokumentation": 2,
         "dansk": 0,
-        "type": "forskning",
+        "type": "analyse",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Indlæg om ensemble-forecasting med IBM's eksisterende Granite-modeller til tidsserier.",
-        "forbehold": "Materialet har ingen brødtekst; hverken nye modelversioner, resultater eller adgang er oplyst.",
-        "emne": "ibm granite tidsserier"
+        "begrundelse": "Podcastinterview med journalist Kevin Roose om hans bog om AI-industriens udvikling; ingen nye modeloplysninger.",
+        "forbehold": "Kun kort introduktionstekst til podcasten er gengivet.",
+        "emne": "kevin roose agi-bog"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "historie_dato": "2026-10-22T07:51:31+00:00",
-      "prio": 4,
+      "kat_ai": true,
+      "prio": 2,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -459,6 +491,40 @@
         "emne": "openai distributionspartnere"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Ensemble forecasting with IBM Granite time-series models",
+      "link": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
+      "resume": "",
+      "dato": "2026-10-22T07:51:31+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-22T14:02:49.795092+00:00",
+      "eget_foerst_set": "2026-10-22T14:02:49.795092+00:00",
+      "rubrik": "IBM viser ensemble-forecasting med Granite-modeller",
+      "resume_da": "Indlæg på Hugging Face om IBM's Granite-modeller til tidsserier. Materialet har ingen brødtekst, så resultater og adgang er ikke oplyst.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Indlæg om ensemble-forecasting med IBM's eksisterende Granite-modeller til tidsserier.",
+        "forbehold": "Materialet har ingen brødtekst; hverken nye modelversioner, resultater eller adgang er oplyst.",
+        "emne": "ibm granite tidsserier"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "historie_dato": "2026-10-22T07:51:31+00:00",
       "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -960,39 +1026,6 @@
       ]
     },
     {
-      "titel": "Quoting Armin Ronacher",
-      "link": "https://simonwillison.net/2026/Oct/22/armin-ronacher/",
-      "resume": "As fun as AI is, we built so much bad software over the last 30 years, and now the universe is punishing us for our sins. — Armin Ronacher Tags: armin-ronacher , security , ai , generative-ai , llms , ai-security-research",
-      "dato": "2026-10-22T15:34:13+00:00",
-      "kilde": "Simon Willison AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-10-22T20:16:04.203492+00:00",
-      "eget_foerst_set": "2026-10-22T20:16:04.203492+00:00",
-      "rubrik": "Ronacher: 30 års dårlig software hævner sig nu",
-      "resume_da": "Citat bragt af Simon Willison: Ifølge Armin Ronacher har branchen bygget dårlig software i tre årtier, og nu \"straffer universet os\".",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 0,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Kort citat fra Armin Ronacher om dårlig software og AI-sikkerhed uden ny konkret oplysning.",
-        "forbehold": "",
-        "emne": "citater om ai og softwaresikkerhed"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 2,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Stack Overflow for Agents triples signups with ChatGPT plugin",
       "link": "https://openai.com/index/stack-overflow-chatgpt-plugin",
       "resume": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
@@ -1021,6 +1054,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Quoting Armin Ronacher",
+      "link": "https://simonwillison.net/2026/Oct/22/armin-ronacher/",
+      "resume": "As fun as AI is, we built so much bad software over the last 30 years, and now the universe is punishing us for our sins. — Armin Ronacher Tags: armin-ronacher , security , ai , generative-ai , llms , ai-security-research",
+      "dato": "2026-10-22T15:34:13+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-22T20:16:04.203492+00:00",
+      "eget_foerst_set": "2026-10-22T20:16:04.203492+00:00",
+      "rubrik": "Ronacher: 30 års dårlig software hævner sig nu",
+      "resume_da": "Citat bragt af Simon Willison: Ifølge Armin Ronacher har branchen bygget dårlig software i tre årtier, og nu \"straffer universet os\".",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 0,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Kort citat fra Armin Ronacher om dårlig software og AI-sikkerhed uden ny konkret oplysning.",
+        "forbehold": "",
+        "emne": "citater om ai og softwaresikkerhed"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 2,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1092,39 +1158,6 @@
       ]
     },
     {
-      "titel": "Sullivan & Cromwell brings legal expertise into agreement review",
-      "link": "https://openai.com/index/sullivan-cromwell",
-      "resume": "In collaboration with OpenAI, Sullivan & Cromwell developed Agreement Analyzer, an AI tool for identifying issues in a draft agreement.",
-      "dato": "2026-10-15T00:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-10-16T04:53:41.312812+00:00",
-      "eget_foerst_set": "2026-10-16T04:53:41.312812+00:00",
-      "rubrik": "OpenAI laver kontraktværktøj med Sullivan & Cromwell",
-      "resume_da": "Advokatfirmaet Sullivan & Cromwell har sammen med OpenAI udviklet Agreement Analyzer, et AI-værktøj, der finder problemer i udkast til aftaler.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "guide",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Sullivan & Cromwell udvikler med OpenAI Agreement Analyzer til aftalegennemgang.",
-        "forbehold": "",
-        "emne": "sullivan cromwell openai"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Teaching students to think and learn through questions",
       "link": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
       "resume": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning.",
@@ -1153,6 +1186,72 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+      "link": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "resume": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+      "dato": "2026-10-14T02:00:14+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-14T05:17:23.558972+00:00",
+      "eget_foerst_set": "2026-10-14T05:17:23.558972+00:00",
+      "rubrik": "DeepMind finjusterer Gemma til at fange svindel",
+      "resume_da": "Sammen med GovTech Singapore bygger Google DeepMind en model, der kører på enheden i private chats, så ingen data sendes til skyen.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google DeepMind og GovTech Singapore bygger en finjusteret Gemma-model til svindeldetektion på enheden uden skydata.",
+        "forbehold": "Ingen oplysninger om effekt, udrulning eller testresultater.",
+        "emne": "google deepmind singapore"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Introducing SynthID Bio",
+      "link": "https://deepmind.google/blog/introducing-synthid-bio/",
+      "resume": "Proof of concept for watermarking AI-generated proteins while preserving biological function.",
+      "dato": "2026-09-30T15:03:07+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-02T12:20:39.330113+00:00",
+      "eget_foerst_set": "2026-10-02T12:20:39.330113+00:00",
+      "rubrik": "SynthID Bio kan vandmærke AI-genererede proteiner",
+      "resume_da": "Google DeepMind kalder det et proof of concept, hvor vandmærket skal kunne indbygges, uden at proteinets biologiske funktion ændres.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "DeepMind viser et proof of concept for vandmærkning af AI-genererede proteiner uden at ændre biologisk funktion.",
+        "forbehold": "Kun proof of concept; hverken metode eller resultater fremgår af materialet.",
+        "emne": "synthid bio"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -50306,7 +50405,7 @@
       "titel": "Retro gaming is being overrun with AI",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port",
       "resume": "Retro video games are everywhere lately - especially in places where they aren't supposed to be. Halo in a web browser, Wind Waker on the iPhone, Super Smash Bros. in mixed reality. Over the past month or so, these kinds of unexpected projects have gone viral with incredible frequency thanks to new AI tools, as […]",
-      "dato": "2026-10-23T08:00:00-04:00",
+      "dato": "2026-10-23T12:00:00+00:00",
       "kilde": "The Verge AI",
       "kategori": "Samfund & etik",
       "foerst_set": "2026-10-23T13:45:47.400241+00:00",
@@ -50460,7 +50559,7 @@
       "titel": "Now Google says it might use your Gmail and Google Photos data to target ads",
       "link": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
       "resume": "Google has updated its privacy policy in a way that could mean you'll start seeing targeted ads based on your personal data if you're using personalized AI features. The update, spotted by Android Authority, adds an exception to its promise about not using your Drive, Gmail, or Google Photos for personalized ads. While the previous […]",
-      "dato": "2026-10-23T12:52:55-04:00",
+      "dato": "2026-10-23T16:52:55+00:00",
       "kilde": "The Verge AI",
       "kategori": "Politik & jura",
       "foerst_set": "2026-10-23T20:03:23.140200+00:00",
@@ -50536,7 +50635,7 @@
       "titel": "Meta delays new business terms after publisher pushback on AI scraping",
       "link": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
       "resume": "Meta is delaying the enforcement of its new business terms after publishers raised concerns that they could allow the company to scrape news sites for AI training, as reported earlier by Fast Company. In a statement to The Verge, Meta spokesperson Daniel Roberts says the terms will go into effect on November 20th \"to allow […]",
-      "dato": "2026-10-23T10:47:41-04:00",
+      "dato": "2026-10-23T14:47:41+00:00",
       "kilde": "The Verge AI",
       "kategori": "Politik & jura",
       "foerst_set": "2026-10-23T20:03:23.140200+00:00",
@@ -51756,6 +51855,367 @@
       },
       "prio": 4,
       "side": "artikel/9e4fbbe069370a1f.html"
+    },
+    {
+      "titel": "Anthropic’s IPO filing lays out a plan to ‘revolutionize every area of human endeavor’ with AI",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
+      "resume": "Anthropic has filed its S-1 prospectus with the Securities and Exchange Commission, preparing the company behind Claude to beat OpenAI to the punch with an IPO. In a filing with the SEC, Anthropic said it plans to list on the Nasdaq exchange under the ticker symbol \"ANT.\" The AI company confidentially filed with the SEC […]",
+      "dato": "2026-10-26T09:32:49-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-26T15:25:50.532473+00:00",
+      "eget_foerst_set": "2026-10-26T15:25:50.532473+00:00",
+      "rubrik": "Anthropic vil på Nasdaq med ticker ANT",
+      "resume_da": "Anthropic har indsendt sin børsprospekt og vil noteres på Nasdaq som ANT. Bag planen ligger et underskud på 80,7 milliarder dollar og milliardaftaler om regnekraft.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 4,
+        "brugbarhed": 2,
+        "dokumentation": 4,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Anthropics S-1 viser plan om Nasdaq-notering under ticker ANT og ambition om at revolutionere alle områder med AI.",
+        "forbehold": "Noteringsdato og værdiansættelse er ikke oplyst i uddraget.",
+        "emne": "anthropic børsnotering"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Anthropic vil slå OpenAI til børsen",
+          "tekst": "Anthropic har indsendt sit S-1-skema til de amerikanske børstilsyn SEC. Selskabet bag AI-modellen Claude planlægger at blive noteret på Nasdaq under ticker-symbolet \"ANT\", og kan dermed komme før konkurrenten OpenAI til børsen.\n\nEt S-1 er den ansøgning, en virksomhed sender til SEC, før den kan sælge aktier til offentligheden. Anthropic indsendte en fortrolig udgave i juni, men den offentlige version giver nu flere detaljer — og selskabets egne ord om, hvad pengene skal bruges til."
+        },
+        {
+          "overskrift": "Et tab på 80,7 milliarder dollar",
+          "tekst": "I årets første halvår havde Anthropic et nettoresultat på minus **80,7 milliarder dollar** på en omsætning på 16,3 milliarder dollar. Det viser prospektet.\n\nStørstedelen af underskuddet kommer fra regnskabsmæssige omkostninger ved de gældsbeviser, selskabet har udstedt for at rejse kapital. Tallene har tidligere været beskrevet af The Wall Street Journal på baggrund af lækkede udgaver af dokumentet."
+        },
+        {
+          "overskrift": "Regnekraft aftalt for op til 120,5 milliarder",
+          "tekst": "Anthropic har samtidig forpligtet sig til at købe store mængder regnekraft — de maskiner, der træner og driver AI-modeller. Den største aftale er med SpaceX: omkring 3,1 milliarder dollar om måneden for adgang til Nvidia-GPU'er, når den planlagte kapacitet er leveret.\n\nSamlet løber SpaceX-forpligtelsen op i 120,5 milliarder dollar frem mod 2029. Dertil kommer 44,9 milliarder dollar til Microsoft frem til 2033, mindst 114,5 milliarder dollar til Google frem til 2033 og 110 milliarder dollar til Amazon over de næste ti år."
+        },
+        {
+          "overskrift": "Selskabet vil undgå dets egne risici",
+          "tekst": "I dokumentet skriver Anthropic, at AI kan accelerere videnskabelig innovation, øge den økonomiske vækst og bringe kurer mod store sygdomme inden for rækkevidde. Selskabet vil ifølge sig selv indfri de gevinster og samtidig forebygge risiciene.\n\nInvestorerne skal forstå fire ting, hedder det: AI's potentiale, risiciene, Anthropics måde at drive selskab på — og at selskabets adfærd kan afvige fra en rent profutmaksimerende virksomhed."
+        },
+        {
+          "overskrift": "Risikoliste fra bevidsthed til AI-skat",
+          "tekst": "Anthropic oplister en lang række risikofaktorer, der kan ramme forretningen. Blandt dem er, at selskabets modeller udvikler \"former for bevidsthed\", såkaldte AI-specifikke skatter og ugunstige udfald af de mange ophavsretssager om, hvordan modellerne er trænet.\n\nSelskabet advarer også om \"katastrofale\" AI-hændelser og vurderer, at det er sandsynligt, at ingen enkelt forsikringsvirksomhed — og måske ikke forsikringsbranchen samlet — kan dække en sådan risiko."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "80,7 mia. dollar",
+          "label": "Nettoresultat i årets første halvår; omsætningen var 16,3 mia. dollar"
+        },
+        {
+          "tal": "3,1 mia. dollar om måneden",
+          "label": "Betaling til SpaceX for Nvidia-GPU'er, når den planlagte kapacitet er leveret"
+        },
+        {
+          "tal": "120,5 mia. dollar",
+          "label": "Samlet SpaceX-forpligtelse frem mod 2029"
+        }
+      ],
+      "detaljer": [
+        "Anthropic indsendte en fortrolig S-1 til SEC i juni",
+        "Microsoft: 44,9 mia. dollar frem til 2033",
+        "Google: mindst 114,5 mia. dollar frem til 2033",
+        "Amazon: 110 mia. dollar over de næste ti år",
+        "Topchef Dario Amodei fik næsten 18 mio. dollar i 2025, mest i aktier og optioner",
+        "Præsident Daniela Amodei var næstbedst betalt med 16,4 mio. dollar i 2025"
+      ],
+      "betydning": "Med noteringen vil Anthropic være før OpenAI på børsen, men selskabet binder samtidig op mod hundreder af milliarder dollar i regnekraftaftaler frem mod 2033.",
+      "pointer": [
+        "S-1 indsendt til SEC; notering planlagt på Nasdaq",
+        "Underskud på 80,7 mia. dollar i første halvår",
+        "Regnekraftaftaler for op til 120,5 mia. dollar"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-26T15:29:30.744926+00:00"
+      },
+      "historie_dato": "2026-10-26T13:32:49+00:00",
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
+          "rubrik": "Anthropic vil på børsen efter 13-doblet omsætning",
+          "resume_da": "AI-selskabet Anthropic har indsendt sine børsnoteringspapirer og vil noteres som ANT. Omsætningen er 13 gange større end sidste år, men nettotabet lød på 80,7 milliarder dollar.",
+          "dato": "2026-10-26T14:35:22+00:00",
+          "foerst_set": "2026-10-26T15:25:50.532473+00:00"
+        }
+      ],
+      "billedmotiv": "A solid polished stock-exchange bell, its front face bearing Claude's warm terracotta many-rayed asterisk emblem, standing beside a thick solid upward-pointing arrow, the bell's clapper caught mid-swing.",
+      "billedmotiv_instruks": "4587f08a4f0afd5de17e",
+      "billede": "data/img/0d5a5d0b470f75ea.jpg",
+      "side": "artikel/4aa5c31773e48136.html"
+    },
+    {
+      "titel": "Can AI help solve the COBOL code crisis?",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1018434/cobol-migration-legacy-code-openai-anthropic",
+      "resume": "What do the IRS, banks, airlines, and government infrastructure around the world have in common? They're all running on systems propped up by antique computer code that nobody dares touch, lest everything come crashing down. OpenAI thinks it may have a solution. On October 19th, the company touted \"substantial improvements\" in its latest AI models' […]",
+      "dato": "2026-10-26T09:15:00-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-10-26T15:25:50.532473+00:00",
+      "eget_foerst_set": "2026-10-26T15:25:50.532473+00:00",
+      "rubrik": "OpenAI: GPT-6.1 Sol når 98 procent i COBOL-test",
+      "resume_da": "OpenAI hævder, at modellen kan oversætte gammel COBOL-kode til moderne sprog uden at ændre systemets adfærd. Eksperter advarer om, at det langt fra er nok.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Analyse af AI til modernisering af COBOL-systemer; OpenAI fremhævede 19. oktober forbedringer i sine nyeste modeller.",
+        "forbehold": "Bygger på et tidligere opslag fra OpenAI; ingen selvstændig test af migrationsevnen.",
+        "emne": "cobol ai-migrering"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "OpenAI måler adfærd i test",
+          "tekst": "OpenAI offentliggjorde 19. oktober en blog, hvor de hævder “substantial improvements” i deres nyeste AI-modellers evne til at migrere ældre kode. I deres egen test opnåede GPT-6.1 Sol 87 procents adfærdsbevarelse ved lav reasoning effort (hvor mange beregningstrin modellen bruger) og 98 procent ved højere reasoning.\n\nDet betyder, at den oversatte kode opførte sig som originalen i testene. OpenAI understreger, at en migrering kun er vellykket, hvis alle tests består."
+        },
+        {
+          "overskrift": "COBOL driver stadig bank og myndigheder",
+          "tekst": "COBOL står for common business-oriented language og blev skabt i 1959. Ifølge IBM står det bag 80 procent af fysiske kreditkorttransaktioner og en stor del af online bank-systemer og ATM-transaktioner. Det bruges også i mange offentlige systemer som Social Security og IRS.\n\nEn grov estimat sætter den årlige omkostning ved COBOL-ineffektivitet til ca. 105 milliarder dollars for US GDP. Men at udskifte det er svært, fordi systemerne er for vigtige til at risikere at bryde, og mange programmører, der forstår dem, er pensioneret eller døde."
+        },
+        {
+          "overskrift": "Eksperter: testene er langt fra virkeligheden",
+          "tekst": "Vadim Zaytsev, lektor i software evolution ved University of Twente, siger, at “rewriting code is not the same as replacing a system”. Han har set et system med 250 millioner linjer COBOL, og koden er kun en del af problemet; data, integrationer og forventninger spiller også ind.\n\nArie van Deursen, professor i software engineering ved Delft University of Technology, kalder OpenAI’s blog “superficial” og mener, at testene er “lightyears” fra egentlig modernisering. OpenAI’s talsmand Oscar Haines erkender, at legacy code “is still far from a solved problem”."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "86 %",
+          "label": "GPT-6 Astra's adfærdsbevarelse ved lav reasoning effort i OpenAI's test"
+        },
+        {
+          "tal": "21 %",
+          "label": "GPT-6 Sol's adfærdsbevarelse ved lav reasoning effort"
+        },
+        {
+          "tal": "5 %",
+          "label": "GPT-5.6 Sol's adfærdsbevarelse ved lav reasoning effort"
+        },
+        {
+          "tal": "40 %",
+          "label": "af online bank-systemer bygger på COBOL ifølge IBM"
+        },
+        {
+          "tal": "95 %",
+          "label": "af ATM-transaktioner håndteres af COBOL ifølge IBM"
+        }
+      ],
+      "detaljer": [
+        "OpenAI's test omfattede også C++, Java, Kotlin, Python og Rust.",
+        "Anthropic udgav i februar en 'code modernization playbook' uden benchmarks.",
+        "Anthropic fremhæver Claude Code til at migrere COBOL til Java eller Python.",
+        "IBM-aktier faldt efter Anthropics annoncering."
+      ],
+      "betydning": "For banker og offentlige institutioner kan AI gøre det billigere at vedligeholde gammel kode, men eksperterne mener ikke, at teknologien kan erstatte kritiske systemer endnu.",
+      "pointer": [
+        "OpenAI testede GPT-6.1 Sol på COBOL-migrering",
+        "Modellen nåede 98 procent ved højere reasoning",
+        "Eksperter: kode er ikke det samme som system"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-26T15:30:03.815705+00:00"
+      },
+      "billedmotiv": "A solid square conversion frame carrying the intact interwoven six-loop black OpenAI Blossom on its face; a thick strip of stacked punched cards feeds into the left side and emerges on the right as clean uniform solid code bars in a neat grid.",
+      "billedmotiv_instruks": "bb083fc066836a407a04",
+      "side": "artikel/21f9a9af9d145710.html"
+    },
+    {
+      "titel": "Tesla gave up the EV crown. Now it wants to win the autonomy race",
+      "link": "https://arstechnica.com/cars/2026/10/tesla-wants-ai-and-software-to-be-its-next-profit-engine/",
+      "resume": "Tesla hopes autonomy subscriptions can deliver the margins car sales cannot.",
+      "dato": "2026-10-26T14:30:27+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-26T15:25:50.532473+00:00",
+      "eget_foerst_set": "2026-10-26T15:25:50.532473+00:00",
+      "rubrik": "Tesla vil vinde autonomi-kapløbet med FSD",
+      "resume_da": "1,7 mio. aktive FSD-abonnementer og 75 pct. af nye Teslaer i Nordamerika med overvåget FSD skal bære væksten.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Tesla vil gøre autonomi-abonnementer til selskabets næste indtjeningsmotor efter tabet af EV-førerpositionen.",
+        "forbehold": "Ingen konkrete abonnementspriser, kundetal eller frigivelsesdatoer nævnes.",
+        "emne": "tesla autonomi"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "1,7 millioner betaler for FSD",
+          "tekst": "Tesla har nu 1,7 mio. aktive FSD-abonnementer globalt, 67 pct. flere end året før. FSD står for Full Self-Driving, Teslas software til avanceret køreassistance; den overvågede version kræver stadig, at en person sidder bag rattet og følger med.\n\nI Nordamerika blev mere end 75 pct. af nye Teslaer solgt med den overvågede version af FSD. I USA koster abonnementet 99 dollars om måneden, men Tesla har ikke oplyst, hvor stor den tilbagevendende indtægt fra FSD er."
+        },
+        {
+          "overskrift": "Bilen er stadig Teslas pengemaskine",
+          "tekst": "Selv om Tesla satser på software, kommer 75 pct. af selskabets samlede indtægter fortsat fra bilforretningen. Den skal finansiere de store AI-investeringer, Tesla skal lave for at konkurrere med større teknologiselskaber.\n\nTesla mistede sidste år pladsen som verdens største elbilproducent til BYD. Musk har samtidig nedtonet målet om at sælge 20 mio. biler årligt i 2030 til 5 mio.; sidste år leverede Tesla 1,6 mio. biler. Analytiker Dan Ives vurderer, at FSD allerede er det segment med højest margin, og at en større abonnementsbase kan transformere hele den finansielle model."
+        },
+        {
+          "overskrift": "Fuld autonomi mangler godkendelse",
+          "tekst": "Tesla har endnu ikke fået godkendelse til en fuldt autonom version af FSD. Den overvågede version er godkendt i Holland og flere andre europæiske lande, men Tesla søger bred opbakning i EU. En afstemning blandt medlemslande er udskudt til december.\n\nKonkurrenten Xpeng arbejder med tyske myndigheder og sigter mod EU-godkendelse af sin FSD-rival XNGP, efter at EU vedtager regler for avanceret køreassistance og autonom kørsel. Reglerne ventes tidligt næste år."
+        },
+        {
+          "overskrift": "Fusion med SpaceX kan ændre kapløbet",
+          "tekst": "Fem dage efter en opsigtvækkende opvisning med en flyvende Roadster oplyste Musk, at Tesla og SpaceX undersøger en fusion. En sammenslutning kan fremskynde forskning i materialer, AI og produktion og forbedre adgangen til kritiske dele som chips.\n\nIfølge William Blair-analytiker Jed Dorsheimer kan en fusion, hvis aktionærer og myndigheder godkender den, give Musk kontrol over 50 pct. eller mere af den sammensluttede virksomhed. Max Willson advarer om, at en fusion også kan øge risikoen for, at AI-problemer spreder sig til hele gruppen."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "1,7 mio.",
+          "label": "Aktive FSD-abonnementer globalt, 67 pct. flere end året før"
+        },
+        {
+          "tal": "Mere end 75 pct.",
+          "label": "Nye Teslaer solgt i Nordamerika med overvåget FSD"
+        },
+        {
+          "tal": "99 dollars",
+          "label": "Månedspris for FSD i USA; prisen varierer efter marked"
+        },
+        {
+          "tal": "75 pct.",
+          "label": "Bilforretningens andel af Teslas samlede indtægter"
+        },
+        {
+          "tal": "5 mio.",
+          "label": "Teslas nedtonede årsmål for 2030; 1,6 mio. biler leveret sidste år"
+        }
+      ],
+      "detaljer": [
+        "Musk hævder, at der ikke findes nogen konkurrent til FSD i biler, man kan købe i dag.",
+        "En Tesla-aktionær blandt de 15 største støtter ifølge kilden en fusion med SpaceX.",
+        "Ferraris CEO Benedetto Vigna sagde, at den flyvende Roadster viser, at der er meget at gøre i bilverdenen."
+      ],
+      "betydning": "Tesla forsøger at gøre softwareabonnementer til en større del af forretningen, men uden godkendelse af fuld autonomi afhænger væksten af regulatoriske beslutninger i EU og andre markeder.",
+      "pointer": [
+        "FSD-abonnementer vokser 67 pct. til 1,7 mio.",
+        "Fuld autonom FSD mangler stadig godkendelse",
+        "EU-afstemning om FSD er udskudt til december"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-26T15:33:15.670022+00:00"
+      },
+      "billedmotiv": "A thick solid steering wheel standing upright, with Tesla's chrome T emblem centred on its hub, beside a rising column of three solid metallic subscription tokens stacked in a step.",
+      "billedmotiv_instruks": "afb896de582dbd60201a",
+      "side": "artikel/083958a57723973f.html"
+    },
+    {
+      "titel": "The focus on AI safety disasters ignores everyday harms",
+      "link": "https://www.technologyreview.com/2026/10/26/1147645/the-focus-on-ai-safety-disasters-ignores-everyday-harms/",
+      "resume": "Consider what passes for success in technology policy. An AI company promises that its chatbot will not encourage suicide. A social media platform makes it more difficult for children to buy fentanyl. These are important protections, and they should have existed all along. But companies can clear these low bars while continuing to make products…",
+      "dato": "2026-10-26T09:01:00+00:00",
+      "kilde": "MIT Tech Review AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-26T15:25:50.532473+00:00",
+      "eget_foerst_set": "2026-10-26T15:25:50.532473+00:00",
+      "rubrik": "Google støttede AI-love med brede smuthuller",
+      "resume_da": "Debatindlæg i MIT Technology Review: Sikkerhedslove tager kun de værste sager, mens afhængighed og svækket tænkning får lov at brede sig.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Debatindlæg: fokus på katastrofale AI-sikkerhedshændelser overser løbende, hverdagslige skader på brugere.",
+        "forbehold": "Argumenterende tekst uden nye data eller undersøgelser.",
+        "emne": "ai-sikkerhed hverdagsskader"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Lovene dækker de værste sager",
+          "tekst": "I år støttede Google lovforslag i flere amerikanske stater, der skulle regulere AI-chatbots. Det skriver Sam Hiner og Emma Leiken i et debatindlæg i MIT Technology Review.\n\nLovene krævede beskyttelse mod seksuelt indhold og opfordringer til selvskade — grundlæggende krav, som virksomhederne burde have opfyldt for længe siden. Til gengæld indeholdt de brede undtagelser, som ifølge forfatterne kan friholde nogle af de mest brugte tjenester.\n\nIfølge forfatterne gentog mønstret sig i Nebraska, hvor en lov stærkt præget af industrien blev vedtaget på bekostning af skrappere forslag."
+        },
+        {
+          "overskrift": "En tredjedel taler med AI om alvorlige ting",
+          "tekst": "Ved siden af katastroferne ligger det, forfatterne kalder hverdagsskaderne. De ender sjældent i en retssag eller på en avisforside.\n\n**En tredjedel af teenagere** vælger nu at drøfte alvorlige ting med en AI-ledsager i stedet for med mennesker, lyder det i indlægget. Samtidig fandt MIT-forskere, at unge, der brugte ChatGPT til at skrive stile, havde svagere forbindelser i hjernen under opgaven, og at en såkaldt kognitiv gæld holdt ved, efter opgaven var slut. Hvad det betyder på lang sigt, ved forskerne endnu ikke.\n\nForfatterne peger også på sociale medier, hvor internetbrugere globalt nu bruger i gennemsnit mere end to timer om dagen."
+        },
+        {
+          "overskrift": "Forfatterne kræver dokumenteret læring",
+          "tekst": "De to forfattere mener ikke, at sikkerhed er nok. Skoler og virksomheder bør skulle dokumentere, at AI faktisk forbedrer læring og kritisk tænkning, før teknologien bliver fast inventar i klasselokalerne.\n\nDe vil også forbyde ledagere, der lader som om de er bevidste eller erklærer kærlighed til brugeren, og kræver uafhængig granskning af, hvordan systemerne påvirker relationer og evnen til at tænke selv."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "Mere end 2 timer dagligt",
+          "label": "Gennemsnitlig tid på sociale medier blandt internetbrugere globalt"
+        },
+        {
+          "tal": "1 af 3 teenagere",
+          "label": "Vælger AI-ledsager frem for mennesker ved alvorlige samtaler"
+        },
+        {
+          "tal": "8 stater",
+          "label": "Har vedtaget love om AI-ledsagere, ifølge medforfatter Sam Hiner"
+        }
+      ],
+      "detaljer": [
+        "Forfatterne er Sam Hiner, Young People's Alliance, og Emma Leiken, Hopelab.",
+        "Californiens SB1119 nævnes som eksempel på en lov om AI-ledsagere.",
+        "Meta har ifølge forfatterne fået kritik for indhold i Myanmar, Sri Lanka og Etiopien.",
+        "Emma Leiken har tidligere været ansvarlig for unges sikkerhed og trivsel hos TikTok."
+      ],
+      "betydning": "Hvis kritikken holder, kan skoler og forældre få svært ved at se, om et AI-værktøj styrker eller svækker børns tænkning, når kravene kun handler om sikkerhed.",
+      "pointer": [
+        "Lovene kræver beskyttelse mod selvskade og seksuelt indhold",
+        "Undtagelser kan friholde populære tjenester",
+        "Forfatterne vil have krav om dokumenteret læring"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-26T15:31:24.974620+00:00"
+      },
+      "billedmotiv": "A thick solid white shield bearing Google's four-colour G on its face, with a wide rectangular gap cut clean through its right edge; a small solid speech bubble slips through that gap, leaving most of the shield's protected area hollow.",
+      "billedmotiv_instruks": "c3a4c25192ed3b5ba8ac",
+      "side": "artikel/1992a716e85df44e.html"
     }
   ]
 }
