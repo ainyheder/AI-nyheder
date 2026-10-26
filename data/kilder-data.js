@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-26T15:25:50.532473+00:00",
- "artikler_i_alt": 124,
+ "opdateret": "2026-10-26T21:09:48.052336+00:00",
+ "artikler_i_alt": 127,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -84,7 +84,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 7,
+   "i_listen": 6,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -147,15 +147,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-02T12:20:39",
      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
      "side": "artikel/445ecd27631acaed.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google Gemini afløser Gems med skills",
-     "dato": "2026-09-30T16:00:00",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://blog.google/products-and-platforms/products/gemini/automate-tasks-with-skills/",
-     "side": "artikel/11d10b87b5eb0f3a.html",
      "hvor": "forside",
      "under": ""
     }
@@ -297,6 +288,15 @@ window.KILDER_STATUS = {
      "under": "Mistral Large 4 klarer opgaver andre afviser"
     },
     {
+     "rubrik": "ChatGPT sender supportproblemer til 404 Media",
+     "dato": "2026-10-26T19:00:25",
+     "foerst_set": "2026-10-26T21:09:48",
+     "link": "https://simonwillison.net/2026/Oct/26/jason-koebler/",
+     "side": "artikel/bf9f3a9c276f7c9d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Kimi K3.1 Pro når fronten til halv pris",
      "dato": "2026-10-23T19:40:54",
      "foerst_set": "2026-10-23T20:03:23",
@@ -349,15 +349,6 @@ window.KILDER_STATUS = {
      "side": "artikel/3b2978d86ab4604d.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Simon Willison sender spildata som lydfløjt",
-     "dato": "2026-10-15T19:47:52",
-     "foerst_set": "2026-10-15T20:00:28",
-     "link": "https://simonwillison.net/2026/Oct/15/chirp-pong/",
-     "side": "artikel/f5b798307b7f141a.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -377,11 +368,20 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 47,
-   "som_ekstra": 6,
+   "i_listen": 48,
+   "som_ekstra": 7,
    "seneste": [
     {
-     "rubrik": "Anthropic vil på børsen efter 13-doblet omsætning",
+     "rubrik": "Flertal af store Anthropic-kunder bruger Claude-apps",
+     "dato": "",
+     "foerst_set": "2026-10-26T21:09:48",
+     "link": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic vil på Nasdaq med ticker ANT"
+    },
+    {
+     "rubrik": "Anthropic indgiver børsprospekt: omsætning på 16,3 mia. dollar",
      "dato": "",
      "foerst_set": "2026-10-26T15:25:50",
      "link": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
@@ -442,6 +442,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Hugging Face gør TPU til almindelig PyTorch-enhed"
+    },
+    {
+     "rubrik": "SpaceX sikrer 40 milliarder dollar til AI-chips",
+     "dato": "2026-10-26T16:46:36",
+     "foerst_set": "2026-10-26T21:09:48",
+     "link": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
+     "side": "artikel/2b01b79f74d7a719.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Grok udgiver syv minutter af AI-genereret Odysseen",
@@ -541,21 +550,12 @@ window.KILDER_STATUS = {
      "side": "artikel/73f5f9254af13193.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Spotify vil bygge løbeplaylister via AI-agenter",
-     "dato": "2026-10-22T15:03:58",
-     "foerst_set": "2026-10-22T20:16:04",
-     "link": "https://techcrunch.com/2026/10/22/spotifys-current-ai-bet-is-about-being-the-music-service-that-agents-choose/",
-     "side": "artikel/abd23a18317ea679.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     8
+     9
     ],
     [
      "Hugging Face",
@@ -577,9 +577,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 30,
+   "i_listen": 32,
    "som_ekstra": 8,
    "seneste": [
+    {
+     "rubrik": "Anthropic-stiftere beholder magten efter børsnotering",
+     "dato": "",
+     "foerst_set": "2026-10-26T21:09:48.052336+00:00",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1018738/anthropic-ipo-s1-filing-weird-details",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic vil på Nasdaq med ticker ANT"
+    },
     {
      "rubrik": "Meta slår deling af Muse-links til igen",
      "dato": "",
@@ -653,6 +662,15 @@ window.KILDER_STATUS = {
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
     },
     {
+     "rubrik": "The RealReal strammer botværn mod Muse",
+     "dato": "2026-10-26T13:30:55",
+     "foerst_set": "2026-10-26T21:09:48",
+     "link": "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal",
+     "side": "artikel/c51f3946ef3c8d71.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Anthropic vil på Nasdaq med ticker ANT",
      "dato": "2026-10-26T09:32:49",
      "foerst_set": "2026-10-26T15:25:50",
@@ -667,6 +685,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-26T15:25:50",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1018434/cobol-migration-legacy-code-openai-anthropic",
      "side": "artikel/21f9a9af9d145710.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Kevin Roose lancerer podcasten Machine Gods",
+     "dato": "2026-10-26T10:00:00",
+     "foerst_set": "2026-10-26T15:25:50",
+     "link": "https://www.theverge.com/podcast/1018264/kevin-roose-the-agi-chronicles-machine-gods-podcast-youtube-openai-anthropic",
+     "side": "artikel/5b0aa4d216294cfc.html",
      "hvor": "forside",
      "under": ""
     },
@@ -699,7 +726,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "OpenAI træner nu sine stærkeste AI-modeller uden net",
-     "dato": "2026-10-23T17:11:07",
+     "dato": "2026-10-23T21:11:07",
      "foerst_set": "2026-10-23T23:24:11",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
      "side": "artikel/78c968c7120787cb.html",
@@ -708,7 +735,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Blocks Dessa har kun hørt mennesker tale",
-     "dato": "2026-10-23T15:32:39",
+     "dato": "2026-10-23T19:32:39",
      "foerst_set": "2026-10-23T20:03:23",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
      "side": "artikel/9266223ed6f43cf1.html",
@@ -741,30 +768,12 @@ window.KILDER_STATUS = {
      "side": "artikel/c8d9d8b98c2a12b6.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Canva Craft planlægger billedet først",
-     "dato": "2026-10-22T21:51:25",
-     "foerst_set": "2026-10-22T20:16:04",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
-     "side": "artikel/73f803029b01cb70.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Microsofts AI rammer 83 procent af testdiagnoserne",
-     "dato": "2026-10-22T18:00:00",
-     "foerst_set": "2026-10-22T20:16:04",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
-     "side": "artikel/21c961dc17bfe29a.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     8
+     9
     ],
     [
      "Ars Technica AI",
@@ -773,6 +782,10 @@ window.KILDER_STATUS = {
     [
      "Google Gemini",
      2
+    ],
+    [
+     "MIT Tech Review AI",
+     1
     ]
    ]
   },
@@ -786,7 +799,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 10,
+   "i_listen": 11,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -806,6 +819,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+    },
+    {
+     "rubrik": "Siri AI husker samtaler i iOS 27.2",
+     "dato": "2026-10-26T20:04:16",
+     "foerst_set": "2026-10-26T21:09:48",
+     "link": "https://arstechnica.com/apple/2026/10/apple-releases-ios-and-macos-27-2-with-new-siri-ai-features-new-music-logo/",
+     "side": "artikel/25b40a661f74cd01.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Tesla vil vinde autonomi-kapløbet med FSD",
@@ -924,8 +946,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 6,
    "i_listen": 9,
-   "som_ekstra": 0,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "Anthropics IPO afslører troen på singulariteten",
+     "dato": "",
+     "foerst_set": "2026-10-26T21:09:48",
+     "link": "https://www.technologyreview.com/2026/10/26/1147672/will-the-real-anthropic-please-stand-up/",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic vil på Nasdaq med ticker ANT"
+    },
     {
      "rubrik": "Google støttede AI-love med brede smuthuller",
      "dato": "2026-10-26T09:01:00",
@@ -1008,7 +1039,12 @@ window.KILDER_STATUS = {
      "under": ""
     }
    ],
-   "overlap": []
+   "overlap": [
+    [
+     "The Verge AI",
+     1
+    ]
+   ]
   },
   {
    "navn": "OpenAI Blog",

@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-26T15:39:29.601275+00:00",
+ "genereret": "2026-10-26T21:25:24.622169+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,40 +195,30 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-26T15:25:50.532473+00:00",
-  "antal": 124,
-  "med_billede": 78,
-  "paa_dansk": 124,
+  "opdateret": "2026-10-26T21:09:48.052336+00:00",
+  "antal": 127,
+  "med_billede": 77,
+  "paa_dansk": 127,
   "kategorier": {
    "Lanceringer": 30,
-   "Penge \u0026 marked": 31,
-   "Hverdags-AI": 11,
-   "Samfund \u0026 etik": 21,
+   "Penge \u0026 marked": 32,
+   "Hverdags-AI": 13,
+   "Samfund \u0026 etik": 22,
    "Politik \u0026 jura": 17,
-   "Forskning": 14
+   "Forskning": 13
   },
   "kilder": {
    "Simon Willison AI": 7,
-   "TechCrunch AI": 47,
-   "The Verge AI": 30,
-   "Ars Technica AI": 10,
+   "TechCrunch AI": 48,
+   "The Verge AI": 32,
+   "Ars Technica AI": 11,
    "MIT Tech Review AI": 9,
    "Hugging Face": 7,
    "Mistral AI": 4,
-   "Google Gemini": 7,
+   "Google Gemini": 6,
    "Google DeepMind": 3
   },
   "udvalgte": [
-   {
-    "titel": "Block’s new voice model sounds eerily human",
-    "rubrik": "Block viser Dessa: stemme med latter og gråd",
-    "link": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
-    "side": "artikel/07faf6f38097c01b.html",
-    "kategori": "Lanceringer",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-24T16:00:00+00:00",
-    "billede": "data/img/bd97522fb4db8c13.jpg"
-   },
    {
     "titel": "Anthropic’s IPO filing lays out a plan to ‘revolutionize every area of human endeavor’ with AI",
     "rubrik": "Anthropic vil på Nasdaq med ticker ANT",
@@ -238,6 +228,16 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-10-26T09:32:49-04:00",
     "billede": "data/img/0d5a5d0b470f75ea.jpg"
+   },
+   {
+    "titel": "Apple releases iOS and macOS 27.2 with new Siri AI features, new Music logo",
+    "rubrik": "Siri AI husker samtaler i iOS 27.2",
+    "link": "https://arstechnica.com/apple/2026/10/apple-releases-ios-and-macos-27-2-with-new-siri-ai-features-new-music-logo/",
+    "side": "artikel/25b40a661f74cd01.html",
+    "kategori": "Lanceringer",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-10-26T20:04:16+00:00",
+    "billede": ""
    },
    {
     "titel": "The focus on AI safety disasters ignores everyday harms",
@@ -251,6 +251,46 @@ window.KOMMANDO_DATA = {
    }
   ],
   "seneste": [
+   {
+    "titel": "Apple releases iOS and macOS 27.2 with new Siri AI features, new Music logo",
+    "rubrik": "Siri AI husker samtaler i iOS 27.2",
+    "link": "https://arstechnica.com/apple/2026/10/apple-releases-ios-and-macos-27-2-with-new-siri-ai-features-new-music-logo/",
+    "side": "artikel/25b40a661f74cd01.html",
+    "kategori": "Lanceringer",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-10-26T20:04:16+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "SpaceX locks in $40B GPU financing deal with Apollo",
+    "rubrik": "SpaceX sikrer 40 milliarder dollar til AI-chips",
+    "link": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
+    "side": "artikel/2b01b79f74d7a719.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-26T16:46:36+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "The RealReal won’t let AI agents hog designer clothing",
+    "rubrik": "The RealReal strammer botværn mod Muse",
+    "link": "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal",
+    "side": "artikel/c51f3946ef3c8d71.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-26T13:30:55-04:00",
+    "billede": ""
+   },
+   {
+    "titel": "Quoting Jason Koebler",
+    "rubrik": "ChatGPT sender supportproblemer til 404 Media",
+    "link": "https://simonwillison.net/2026/Oct/26/jason-koebler/",
+    "side": "artikel/bf9f3a9c276f7c9d.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-10-26T19:00:25+00:00",
+    "billede": ""
+   },
    {
     "titel": "Anthropic’s IPO filing lays out a plan to ‘revolutionize every area of human endeavor’ with AI",
     "rubrik": "Anthropic vil på Nasdaq med ticker ANT",
@@ -272,7 +312,7 @@ window.KOMMANDO_DATA = {
     "billede": ""
    },
    {
-    "titel": "Tesla gave up the EV crown. Now it wants to win the autonomy race",
+    "titel": "Tesla gave up the EV crown. Now it wants to win the autonomy race.",
     "rubrik": "Tesla vil vinde autonomi-kapløbet med FSD",
     "link": "https://arstechnica.com/cars/2026/10/tesla-wants-ai-and-software-to-be-its-next-profit-engine/",
     "side": "artikel/083958a57723973f.html",
@@ -289,6 +329,16 @@ window.KOMMANDO_DATA = {
     "kategori": "Samfund \u0026 etik",
     "kilde": "MIT Tech Review AI",
     "dato": "2026-10-26T09:01:00+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Kevin Roose is AGI-pilled. Why aren’t you?",
+    "rubrik": "Kevin Roose lancerer podcasten Machine Gods",
+    "link": "https://www.theverge.com/podcast/1018264/kevin-roose-the-agi-chronicles-machine-gods-podcast-youtube-openai-anthropic",
+    "side": "artikel/5b0aa4d216294cfc.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-26T10:00:00-04:00",
     "billede": ""
    },
    {
@@ -320,81 +370,31 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-10-25T09:25:32-04:00",
     "billede": "data/img/1d80fc2512690703.webp"
-   },
-   {
-    "titel": "Google’s AI search changes upended online publishing",
-    "rubrik": "Google-AI tager klik fra onlineudgivere",
-    "link": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
-    "side": "artikel/ec4100b5e401e0ad.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-25T08:00:00-04:00",
-    "billede": ""
-   },
-   {
-    "titel": "The AI graveyard: a running list of projects and startups that didn’t make it",
-    "rubrik": "S\u0026P: 42 procent af AI-initiativer opgives",
-    "link": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
-    "side": "artikel/41208e707565c1ca.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-24T19:00:00+00:00",
-    "billede": "data/img/cd49307e2f9d2f97.jpg"
-   },
-   {
-    "titel": "Block’s new voice model sounds eerily human",
-    "rubrik": "Block viser Dessa: stemme med latter og gråd",
-    "link": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
-    "side": "artikel/07faf6f38097c01b.html",
-    "kategori": "Lanceringer",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-24T16:00:00+00:00",
-    "billede": "data/img/bd97522fb4db8c13.jpg"
-   },
-   {
-    "titel": "Pennsylvania will require labels on AI-generated ads",
-    "rubrik": "Pennsylvania kræver mærkat på AI-annoncer",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
-    "side": "artikel/0c58159611d9d12f.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-24T14:32:21-04:00",
-    "billede": "data/img/6fe228bbe5a95697.webp"
-   },
-   {
-    "titel": "Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.",
-    "rubrik": "Grok 4.7 vælger republikanerne i 92 procent",
-    "link": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
-    "side": "artikel/b8554dad591ac482.html",
-    "kategori": "Forskning",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-24T15:00:00+00:00",
-    "billede": ""
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-26T15:25:50.532473+00:00",
+  "opdateret": "2026-10-26T21:09:48.052336+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
   "modelkald": 1,
   "kildehentninger": 0,
   "regelbaseret_udvalg": [
-   "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
-   "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
-   "https://www.technologyreview.com/2026/10/26/1147645/the-focus-on-ai-safety-disasters-ignores-everyday-harms/"
+   "https://openai.com/index/introducing-gpt-6-1-terra",
+   "https://www.technologyreview.com/2026/10/26/1147672/will-the-real-anthropic-please-stand-up/",
+   "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/"
   ],
   "udgivet_udvalg": [
-   "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
    "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
+   "https://arstechnica.com/apple/2026/10/apple-releases-ios-and-macos-27-2-with-new-siri-ai-features-new-music-logo/",
    "https://www.technologyreview.com/2026/10/26/1147645/the-focus-on-ai-safety-disasters-ignores-everyday-harms/"
   ],
   "vaerktoejer": [],
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-10-26T15:25:49.942675+00:00",
+  "opdateret": "2026-10-26T21:09:47.340947+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -750,8 +750,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-26T15:25:50.532473+00:00",
-  "artikler_i_alt": 124,
+  "opdateret": "2026-10-26T21:09:48.052336+00:00",
+  "artikler_i_alt": 127,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -828,7 +828,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 7,
+    "i_listen": 6,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -891,15 +891,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-02T12:20:39",
       "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
       "side": "artikel/445ecd27631acaed.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Google Gemini afløser Gems med skills",
-      "dato": "2026-09-30T16:00:00",
-      "foerst_set": "2026-10-02T12:20:39",
-      "link": "https://blog.google/products-and-platforms/products/gemini/automate-tasks-with-skills/",
-      "side": "artikel/11d10b87b5eb0f3a.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1020,6 +1011,15 @@ window.KOMMANDO_DATA = {
       "under": "Mistral Large 4 klarer opgaver andre afviser"
      },
      {
+      "rubrik": "ChatGPT sender supportproblemer til 404 Media",
+      "dato": "2026-10-26T19:00:25",
+      "foerst_set": "2026-10-26T21:09:48",
+      "link": "https://simonwillison.net/2026/Oct/26/jason-koebler/",
+      "side": "artikel/bf9f3a9c276f7c9d.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Kimi K3.1 Pro når fronten til halv pris",
       "dato": "2026-10-23T19:40:54",
       "foerst_set": "2026-10-23T20:03:23",
@@ -1072,15 +1072,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/3b2978d86ab4604d.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Simon Willison sender spildata som lydfløjt",
-      "dato": "2026-10-15T19:47:52",
-      "foerst_set": "2026-10-15T20:00:28",
-      "link": "https://simonwillison.net/2026/Oct/15/chirp-pong/",
-      "side": "artikel/f5b798307b7f141a.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1094,11 +1085,20 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 47,
-    "som_ekstra": 6,
+    "i_listen": 48,
+    "som_ekstra": 7,
     "seneste": [
      {
-      "rubrik": "Anthropic vil på børsen efter 13-doblet omsætning",
+      "rubrik": "Flertal af store Anthropic-kunder bruger Claude-apps",
+      "dato": "",
+      "foerst_set": "2026-10-26T21:09:48",
+      "link": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
+      "side": "",
+      "hvor": "under",
+      "under": "Anthropic vil på Nasdaq med ticker ANT"
+     },
+     {
+      "rubrik": "Anthropic indgiver børsprospekt: omsætning på 16,3 mia. dollar",
       "dato": "",
       "foerst_set": "2026-10-26T15:25:50",
       "link": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
@@ -1161,6 +1161,15 @@ window.KOMMANDO_DATA = {
       "under": "Hugging Face gør TPU til almindelig PyTorch-enhed"
      },
      {
+      "rubrik": "SpaceX sikrer 40 milliarder dollar til AI-chips",
+      "dato": "2026-10-26T16:46:36",
+      "foerst_set": "2026-10-26T21:09:48",
+      "link": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
+      "side": "artikel/2b01b79f74d7a719.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Grok udgiver syv minutter af AI-genereret Odysseen",
       "dato": "2026-10-25T21:31:16",
       "foerst_set": "2026-10-25T22:46:31",
@@ -1186,24 +1195,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/41208e707565c1ca.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Block viser Dessa: stemme med latter og gråd",
-      "dato": "2026-10-24T16:00:00",
-      "foerst_set": "2026-10-24T18:56:58",
-      "link": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
-      "side": "artikel/07faf6f38097c01b.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Grok 4.7 vælger republikanerne i 92 procent",
-      "dato": "2026-10-24T15:00:00",
-      "foerst_set": "2026-10-24T18:56:58",
-      "link": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
-      "side": "artikel/b8554dad591ac482.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1217,9 +1208,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 30,
+    "i_listen": 32,
     "som_ekstra": 8,
     "seneste": [
+     {
+      "rubrik": "Anthropic-stiftere beholder magten efter børsnotering",
+      "dato": "",
+      "foerst_set": "2026-10-26T21:09:48.052336+00:00",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1018738/anthropic-ipo-s1-filing-weird-details",
+      "side": "",
+      "hvor": "under",
+      "under": "Anthropic vil på Nasdaq med ticker ANT"
+     },
      {
       "rubrik": "Meta slår deling af Muse-links til igen",
       "dato": "",
@@ -1293,6 +1293,15 @@ window.KOMMANDO_DATA = {
       "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
      },
      {
+      "rubrik": "The RealReal strammer botværn mod Muse",
+      "dato": "2026-10-26T13:30:55",
+      "foerst_set": "2026-10-26T21:09:48",
+      "link": "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal",
+      "side": "artikel/c51f3946ef3c8d71.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Anthropic vil på Nasdaq med ticker ANT",
       "dato": "2026-10-26T09:32:49",
       "foerst_set": "2026-10-26T15:25:50",
@@ -1309,24 +1318,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/21f9a9af9d145710.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "r/opensource forbyder AI og ikke-engelske bidrag",
-      "dato": "2026-10-25T09:25:32",
-      "foerst_set": "2026-10-25T19:13:15",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
-      "side": "artikel/19250ae33b5227a0.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Google-AI tager klik fra onlineudgivere",
-      "dato": "2026-10-25T08:00:00",
-      "foerst_set": "2026-10-25T13:20:07",
-      "link": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
-      "side": "artikel/ec4100b5e401e0ad.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1340,7 +1331,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 10,
+    "i_listen": 11,
     "som_ekstra": 2,
     "seneste": [
      {
@@ -1360,6 +1351,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+     },
+     {
+      "rubrik": "Siri AI husker samtaler i iOS 27.2",
+      "dato": "2026-10-26T20:04:16",
+      "foerst_set": "2026-10-26T21:09:48",
+      "link": "https://arstechnica.com/apple/2026/10/apple-releases-ios-and-macos-27-2-with-new-siri-ai-features-new-music-logo/",
+      "side": "artikel/25b40a661f74cd01.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Tesla vil vinde autonomi-kapløbet med FSD",
@@ -1441,15 +1441,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/eca196ee49f4c675.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Alliance Arts udskyder demo af frygt for AI-kopier",
-      "dato": "2026-10-19T16:59:22",
-      "foerst_set": "2026-10-19T21:12:53",
-      "link": "https://arstechnica.com/gaming/2026/10/ai-game-clones-are-making-indie-developers-afraid-to-show-their-work/",
-      "side": "artikel/90334b7b4586a269.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1464,8 +1455,17 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 6,
     "i_listen": 9,
-    "som_ekstra": 0,
+    "som_ekstra": 1,
     "seneste": [
+     {
+      "rubrik": "Anthropics IPO afslører troen på singulariteten",
+      "dato": "",
+      "foerst_set": "2026-10-26T21:09:48",
+      "link": "https://www.technologyreview.com/2026/10/26/1147672/will-the-real-anthropic-please-stand-up/",
+      "side": "",
+      "hvor": "under",
+      "under": "Anthropic vil på Nasdaq med ticker ANT"
+     },
      {
       "rubrik": "Google støttede AI-love med brede smuthuller",
       "dato": "2026-10-26T09:01:00",
@@ -1673,12 +1673,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-26T15:39:22.236759+00:00",
+  "opdateret": "2026-10-26T21:25:18.095679+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 25,
-  "sidevisninger_i_alt": 31,
+  "besoeg_i_alt": 22,
+  "sidevisninger_i_alt": 28,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1835,15 +1835,15 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 25,
-    "visninger": 31
+    "besoeg": 22,
+    "visninger": 28
    }
   ],
   "artikler": [],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 25
+    "besoeg": 22
    }
   ],
   "laeste_temaer": []
