@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-25T22:46:31.514482+00:00",
- "artikler_i_alt": 119,
+ "opdateret": "2026-10-26T05:12:20.522265+00:00",
+ "artikler_i_alt": 117,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -12,25 +12,10 @@ window.KILDER_STATUS = {
    "status": "fejl",
    "fejl": "ValueError: Kilden gav ingen læsbare artikler; kontrollér adresse og sideformat",
    "hentet": 0,
-   "i_listen": 1,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "Anthropic afsætter fem procent af aktierne til fond",
-     "dato": "2026-10-18T00:00:00",
-     "foerst_set": "2026-10-18T18:50:54",
-     "link": "https://www.anthropic.com/news/public-benefit-fund",
-     "side": "artikel/b3a8add260a90d26.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
-   "overlap": [
-    [
-     "TechCrunch AI",
-     1
-    ]
-   ]
+   "seneste": [],
+   "overlap": []
   },
   {
    "navn": "Mistral AI",
@@ -383,8 +368,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 48,
-   "som_ekstra": 6,
+   "i_listen": 47,
+   "som_ekstra": 5,
    "seneste": [
     {
      "rubrik": "OpenAI stopper træning på det levende internet",
@@ -441,15 +426,6 @@ window.KILDER_STATUS = {
      "under": "Hugging Face gør TPU til almindelig PyTorch-enhed"
     },
     {
-     "rubrik": "Anthropic afsætter fem procent af aktier til fond",
-     "dato": "",
-     "foerst_set": "2026-10-18T22:33:18",
-     "link": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic afsætter fem procent af aktierne til fond"
-    },
-    {
      "rubrik": "Grok udgiver syv minutter af AI-genereret Odysseen",
      "dato": "2026-10-25T21:31:16",
      "foerst_set": "2026-10-25T22:46:31",
@@ -464,15 +440,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-25T19:13:15",
      "link": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
      "side": "artikel/71c43854f4ff1165.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Amazon har lanceret Bee Frontier og Eclipse",
-     "dato": "2026-10-25T14:10:00",
-     "foerst_set": "2026-10-25T19:13:15",
-     "link": "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/",
-     "side": "artikel/aab16b771856fabf.html",
      "hvor": "forside",
      "under": ""
     },
@@ -556,6 +523,15 @@ window.KILDER_STATUS = {
      "side": "artikel/73f5f9254af13193.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Spotify vil bygge løbeplaylister via AI-agenter",
+     "dato": "2026-10-22T15:03:58",
+     "foerst_set": "2026-10-22T20:16:04",
+     "link": "https://techcrunch.com/2026/10/22/spotifys-current-ai-bet-is-about-being-the-music-service-that-agents-choose/",
+     "side": "artikel/abd23a18317ea679.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
@@ -569,10 +545,6 @@ window.KILDER_STATUS = {
     ],
     [
      "OpenAI Blog",
-     1
-    ],
-    [
-     "Anthropic News",
      1
     ]
    ]
