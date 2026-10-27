@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-27T14:52:12.182558+00:00",
- "artikler_i_alt": 123,
+ "opdateret": "2026-10-27T20:55:19.965914+00:00",
+ "artikler_i_alt": 128,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -84,7 +84,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 6,
+   "i_listen": 5,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -140,28 +140,15 @@ window.KILDER_STATUS = {
      "side": "artikel/f6b1aa53f7c239e8.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Gemini 4 Argon finder sårbarhed andre modeller missede",
-     "dato": "2026-09-30T20:00:00",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
-     "side": "artikel/445ecd27631acaed.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "Google DeepMind",
-     3
-    ],
-    [
-     "The Verge AI",
      2
     ],
     [
-     "Ars Technica AI",
+     "The Verge AI",
      1
     ]
    ]
@@ -191,7 +178,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 7,
+   "i_listen": 6,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -247,15 +234,6 @@ window.KILDER_STATUS = {
      "side": "artikel/2e40320aeb5e29e9.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Hugging Face-modeller kører nu direkte på AWS Trainium",
-     "dato": "2026-10-19T00:00:00",
-     "foerst_set": "2026-10-19T21:12:53",
-     "link": "https://huggingface.co/blog/hf-torchneuron",
-     "side": "artikel/9fba733ce125d2be.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -275,7 +253,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 7,
+   "i_listen": 6,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -340,15 +318,6 @@ window.KILDER_STATUS = {
      "side": "artikel/0e01cc7ca3c09d2b.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Claude retter de fleste kodeændringer før mennesker",
-     "dato": "2026-10-16T22:06:37",
-     "foerst_set": "2026-10-16T22:59:01",
-     "link": "https://simonwillison.net/2026/Oct/16/code-review/",
-     "side": "artikel/3b2978d86ab4604d.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -368,7 +337,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 47,
+   "i_listen": 50,
    "som_ekstra": 6,
    "seneste": [
     {
@@ -442,6 +411,33 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Hugging Face gør TPU til almindelig PyTorch-enhed"
+    },
+    {
+     "rubrik": "Genie 4 kan ændre scenen midt i simulationen",
+     "dato": "2026-10-27T16:30:57",
+     "foerst_set": "2026-10-27T20:55:19",
+     "link": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
+     "side": "artikel/3ddb9b3e3bda7311.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI hævder modeller har modbevist ETH",
+     "dato": "2026-10-27T17:08:08",
+     "foerst_set": "2026-10-27T20:55:19",
+     "link": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
+     "side": "artikel/636498a83af93057.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Rohit Patel forlader Meta og starter Ndoc",
+     "dato": "2026-10-27T14:59:09",
+     "foerst_set": "2026-10-27T20:55:19",
+     "link": "https://techcrunch.com/2026/10/27/meta-ai-director-rohit-patel-leaves-to-take-on-microsoft-office-and-google-workspace/",
+     "side": "artikel/afdc5264df2f96c5.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Nvidia støtter Simplismart: AI med færre GPU'er",
@@ -523,39 +519,16 @@ window.KILDER_STATUS = {
      "side": "artikel/9e4fbbe069370a1f.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Apollo-økonom: AI giver nul afkast uden for tech",
-     "dato": "2026-10-25T16:57:32",
-     "foerst_set": "2026-10-25T19:13:15",
-     "link": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
-     "side": "artikel/71c43854f4ff1165.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "S&P: 42 procent af AI-initiativer opgives",
-     "dato": "2026-10-24T19:00:00",
-     "foerst_set": "2026-10-24T22:42:03",
-     "link": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
-     "side": "artikel/41208e707565c1ca.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Block viser Dessa: stemme med latter og gråd",
-     "dato": "2026-10-24T16:00:00",
-     "foerst_set": "2026-10-24T18:56:58",
-     "link": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
-     "side": "artikel/07faf6f38097c01b.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     8
+     9
+    ],
+    [
+     "Google DeepMind",
+     1
     ],
     [
      "Hugging Face",
@@ -577,9 +550,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 31,
+   "i_listen": 34,
    "som_ekstra": 8,
    "seneste": [
+    {
+     "rubrik": "OpenAI tilbageholder fysikresultat og vækker kritik",
+     "dato": "",
+     "foerst_set": "2026-10-27T20:55:19.965914+00:00",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI lader forskere granske tre nye beviser"
+    },
+    {
+     "rubrik": "Genie 4 fordobler verdener til to minutter",
+     "dato": "",
+     "foerst_set": "2026-10-27T20:55:19",
+     "link": "https://www.theverge.com/tech/1019076/google-genie-4-ai-model",
+     "side": "",
+     "hvor": "under",
+     "under": "Genie 4 kan ændre scenen midt i simulationen"
+    },
     {
      "rubrik": "Meta slår deling af Muse-links til igen",
      "dato": "",
@@ -644,13 +635,22 @@ window.KILDER_STATUS = {
      "under": "Gemini Live beskriver verden for blinde"
     },
     {
-     "rubrik": "Google lancerer Gemini 4 Argon med snæver adgang",
-     "dato": "",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://www.theverge.com/tech/1002980/google-gemini-4-argon",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+     "rubrik": "Firefox lader AI udfylde formularer fra dine faner",
+     "dato": "2026-10-27T12:14:18",
+     "foerst_set": "2026-10-27T20:55:19",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms",
+     "side": "artikel/e046e2cf55c147ca.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic vil børsnoteres med låst bestyrelse",
+     "dato": "2026-10-27T12:51:22",
+     "foerst_set": "2026-10-27T20:55:19",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety",
+     "side": "artikel/34fc514719d0a7a5.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Apple giver Pages og Numbers en AI-assistent",
@@ -658,6 +658,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-27T14:52:12",
      "link": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
      "side": "artikel/bd2c3c22ddbe56d5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Paxton og Talarico vil tøjle data centre",
+     "dato": "2026-10-27T06:00:00",
+     "foerst_set": "2026-10-27T14:52:12",
+     "link": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections",
+     "side": "artikel/a0f36022fc6a06c4.html",
      "hvor": "forside",
      "under": ""
     },
@@ -681,7 +690,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Anthropic-stiftere beholder magten med 50,1 procent",
-     "dato": "2026-10-26T13:10:23",
+     "dato": "2026-10-26T17:10:23",
      "foerst_set": "2026-10-26T21:09:48",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1018738/anthropic-ipo-s1-filing-weird-details",
      "side": "artikel/f243688bda14b7af.html",
@@ -699,7 +708,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Anthropic vil på Nasdaq med ticker ANT",
-     "dato": "2026-10-26T09:32:49",
+     "dato": "2026-10-26T13:32:49",
      "foerst_set": "2026-10-26T15:25:50",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
      "side": "artikel/4aa5c31773e48136.html",
@@ -708,7 +717,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "OpenAI: GPT-6.1 Sol når 98 procent i COBOL-test",
-     "dato": "2026-10-26T09:15:00",
+     "dato": "2026-10-26T13:15:00",
      "foerst_set": "2026-10-26T15:25:50",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1018434/cobol-migration-legacy-code-openai-anthropic",
      "side": "artikel/21f9a9af9d145710.html",
@@ -717,7 +726,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Kevin Roose lancerer podcasten Machine Gods",
-     "dato": "2026-10-26T10:00:00",
+     "dato": "2026-10-26T14:00:00",
      "foerst_set": "2026-10-26T15:25:50",
      "link": "https://www.theverge.com/podcast/1018264/kevin-roose-the-agi-chronicles-machine-gods-podcast-youtube-openai-anthropic",
      "side": "artikel/5b0aa4d216294cfc.html",
@@ -732,39 +741,12 @@ window.KILDER_STATUS = {
      "side": "artikel/19250ae33b5227a0.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Google-AI tager klik fra onlineudgivere",
-     "dato": "2026-10-25T12:00:00",
-     "foerst_set": "2026-10-25T13:20:07",
-     "link": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
-     "side": "artikel/ec4100b5e401e0ad.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Pennsylvania kræver mærkat på AI-annoncer",
-     "dato": "2026-10-24T18:32:21",
-     "foerst_set": "2026-10-24T18:56:58",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
-     "side": "artikel/0c58159611d9d12f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI træner nu sine stærkeste AI-modeller uden net",
-     "dato": "2026-10-23T21:11:07",
-     "foerst_set": "2026-10-23T23:24:11",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
-     "side": "artikel/78c968c7120787cb.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     8
+     9
     ],
     [
      "Ars Technica AI",
@@ -772,7 +754,7 @@ window.KILDER_STATUS = {
     ],
     [
      "Google Gemini",
-     2
+     1
     ]
    ]
   },
@@ -786,8 +768,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 9,
-   "som_ekstra": 2,
+   "i_listen": 11,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "Google opdaterer politik: Gmail kan bruges til annoncer",
@@ -799,13 +781,22 @@ window.KILDER_STATUS = {
      "under": "Google: Gmail-data kan nu bruges til annoncer"
     },
     {
-     "rubrik": "Google Gemini 4 Argon springer over 3.5 Pro",
-     "dato": "",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://arstechnica.com/google/2026/09/google-announces-gemini-4-argon-ai-model-but-you-cant-use-it-yet/",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+     "rubrik": "Genie 4 får tale og mere realistisk fysik",
+     "dato": "2026-10-27T16:00:22",
+     "foerst_set": "2026-10-27T20:55:19",
+     "link": "https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations/",
+     "side": "artikel/199801d5e60e45d1.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Pinal designer proteiner med naturligt sprog",
+     "dato": "2026-10-27T18:49:08",
+     "foerst_set": "2026-10-27T20:55:19",
+     "link": "https://arstechnica.com/science/2026/10/vibe-genes-naturalish-language-comes-to-protein-genome-design-software/",
+     "side": "artikel/691ccc79422d9dd0.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Siri AI husker samtaler i iOS 27.2",
@@ -896,10 +887,6 @@ window.KILDER_STATUS = {
     ],
     [
      "OpenAI Blog",
-     1
-    ],
-    [
-     "Google Gemini",
      1
     ]
    ]
@@ -1058,6 +1045,15 @@ window.KILDER_STATUS = {
    "som_ekstra": 2,
    "seneste": [
     {
+     "rubrik": "DeepMind løfter sløret for Genie 4",
+     "dato": "",
+     "foerst_set": "2026-10-27T20:55:19",
+     "link": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+     "side": "",
+     "hvor": "under",
+     "under": "Genie 4 kan ændre scenen midt i simulationen"
+    },
+    {
      "rubrik": "Google DeepMind annoncerer Gemini 4 Argon",
      "dato": "",
      "foerst_set": "2026-10-13T23:50:16",
@@ -1065,15 +1061,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Argon lanceres globalt i dag"
-    },
-    {
-     "rubrik": "Gemini 4 Argon udrulles forsigtigt til cybersikkerhedshold",
-     "dato": "",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
     },
     {
      "rubrik": "Google Antigravity finder ny peptidkandidat",
@@ -1106,7 +1093,11 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google Gemini",
-     3
+     2
+    ],
+    [
+     "TechCrunch AI",
+     1
     ]
    ]
   },
