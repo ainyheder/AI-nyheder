@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-10-27T05:46:45.361732+00:00",
+ "opdateret": "2026-10-27T15:14:34.735946+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -37,6 +37,41 @@ window.LAESERTAL = {
   ],
   "serier": [
    {
+    "navn": "Penge & marked",
+    "tal": [
+     6,
+     2,
+     1,
+     5,
+     4,
+     0,
+     0,
+     4,
+     4,
+     8,
+     4,
+     2,
+     3,
+     0,
+     3,
+     5,
+     6,
+     2,
+     4,
+     2,
+     1,
+     5,
+     9,
+     5,
+     7,
+     1,
+     1,
+     1,
+     7,
+     2
+    ]
+   },
+   {
     "navn": "Lanceringer",
     "tal": [
      2,
@@ -68,42 +103,7 @@ window.LAESERTAL = {
      1,
      0,
      2,
-     0
-    ]
-   },
-   {
-    "navn": "Penge & marked",
-    "tal": [
-     6,
-     2,
-     1,
-     5,
-     4,
-     0,
-     0,
-     4,
-     4,
-     8,
-     4,
-     2,
-     3,
-     0,
-     3,
-     5,
-     6,
-     2,
-     4,
-     2,
-     1,
-     5,
-     9,
-     5,
-     7,
-     1,
-     1,
-     1,
-     5,
-     0
+     1
     ]
    },
    {
@@ -138,7 +138,7 @@ window.LAESERTAL = {
      0,
      2,
      2,
-     0
+     1
     ]
    },
    {
@@ -208,7 +208,7 @@ window.LAESERTAL = {
      1,
      2,
      3,
-     1
+     2
     ]
    },
    {
@@ -278,7 +278,7 @@ window.LAESERTAL = {
      0,
      0,
      0,
-     0
+     1
     ]
    },
    {
@@ -313,26 +313,26 @@ window.LAESERTAL = {
      0,
      0,
      0,
-     0
+     1
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 20,
- "sidevisninger_i_alt": 26,
+ "besoeg_i_alt": 17,
+ "sidevisninger_i_alt": 25,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 20,
-   "visninger": 26
+   "besoeg": 17,
+   "visninger": 25
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 20
+   "besoeg": 17
   }
  ],
  "ai_chats": [],
@@ -340,13 +340,13 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 20,
-    "visninger": 20
+    "besoeg": 17,
+    "visninger": 17
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 6
+    "visninger": 8
    }
   ]
  },

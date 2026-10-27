@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-27T05:29:27.063150+00:00",
- "artikler_i_alt": 114,
+ "opdateret": "2026-10-27T14:52:12.182558+00:00",
+ "artikler_i_alt": 123,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -368,9 +368,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 41,
+   "i_listen": 47,
    "som_ekstra": 6,
    "seneste": [
+    {
+     "rubrik": "OpenAI-forskere fandt årtier gammel PHP-fejl",
+     "dato": "",
+     "foerst_set": "2026-10-26T21:09:48.052336+00:00",
+     "link": "https://techcrunch.com/2026/10/24/will-ai-expose-the-rickety-infrastructure-of-the-internet/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI og Wiz fandt 22 år gamle PHP-huller"
+    },
     {
      "rubrik": "Flertal af store Anthropic-kunder bruger Claude-apps",
      "dato": "",
@@ -435,6 +444,51 @@ window.KILDER_STATUS = {
      "under": "Hugging Face gør TPU til almindelig PyTorch-enhed"
     },
     {
+     "rubrik": "Nvidia støtter Simplismart: AI med færre GPU'er",
+     "dato": "2026-10-27T11:00:00",
+     "foerst_set": "2026-10-27T14:52:12",
+     "link": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/",
+     "side": "artikel/867c05e1e13c4aa5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Opera lancerer WebAI: AI lokalt i browseren",
+     "dato": "2026-10-27T13:00:00",
+     "foerst_set": "2026-10-27T14:52:12",
+     "link": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/",
+     "side": "artikel/2b97ba8c9771053d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "General Compute rejser 100 mio. dollar",
+     "dato": "2026-10-27T13:00:00",
+     "foerst_set": "2026-10-27T14:52:12",
+     "link": "https://techcrunch.com/2026/10/27/general-compute-raises-100-million-series-a-countering-the-neocloud-disaster-narrative/",
+     "side": "artikel/d0d46f2666065419.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Hackere offentliggør data fra GMO-kunder",
+     "dato": "2026-10-27T13:32:57",
+     "foerst_set": "2026-10-27T14:52:12",
+     "link": "https://techcrunch.com/2026/10/27/japan-internet-giant-gmo-says-hackers-posted-stolen-customer-data/",
+     "side": "artikel/96e811b7a717108d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Qwen3.8-Flash-Next forsøgte at sende fil til Beijing",
+     "dato": "2026-10-27T01:12:21",
+     "foerst_set": "2026-10-27T05:29:27",
+     "link": "https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/",
+     "side": "artikel/8cbd8d09602ba622.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI gør Codex til assistenten dots",
      "dato": "2026-10-27T02:00:00",
      "foerst_set": "2026-10-27T05:29:27",
@@ -449,6 +503,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-26T21:09:48",
      "link": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
      "side": "artikel/2b01b79f74d7a719.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic søger børsnotering med stifterne ved magten",
+     "dato": "2026-10-26T14:35:22",
+     "foerst_set": "2026-10-26T15:25:50",
+     "link": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
+     "side": "artikel/bb06af6daa7407fb.html",
      "hvor": "forside",
      "under": ""
     },
@@ -487,60 +550,6 @@ window.KILDER_STATUS = {
      "side": "artikel/07faf6f38097c01b.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Grok 4.7 vælger republikanerne i 92 procent",
-     "dato": "2026-10-24T15:00:00",
-     "foerst_set": "2026-10-24T18:56:58",
-     "link": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
-     "side": "artikel/b8554dad591ac482.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Instinct og Caddy flytter ind i beskedtråden",
-     "dato": "2026-10-24T14:00:00",
-     "foerst_set": "2026-10-24T18:56:58",
-     "link": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
-     "side": "artikel/b2f0cf19fa7c113c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "inDrive tester robotaxi i Astana i 2027",
-     "dato": "2026-10-23T04:00:00",
-     "foerst_set": "2026-10-23T05:15:35",
-     "link": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
-     "side": "artikel/3bfe5c41c86a24ab.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI forhandler om 30 mia. dollar før børs",
-     "dato": "2026-10-22T22:08:24",
-     "foerst_set": "2026-10-22T23:32:06",
-     "link": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
-     "side": "artikel/c4c762c6b7472ecc.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI åbner Decisions API for alle kunder",
-     "dato": "2026-10-22T19:00:00",
-     "foerst_set": "2026-10-22T20:16:04",
-     "link": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
-     "side": "artikel/8e6cfc22204fb217.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "ConnectWise-brud: AI-agenter hackede 2.250 selskaber",
-     "dato": "2026-10-22T16:47:17",
-     "foerst_set": "2026-10-22T20:16:04",
-     "link": "https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/",
-     "side": "artikel/5126e80c6df37e6b.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -568,18 +577,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 29,
+   "i_listen": 31,
    "som_ekstra": 8,
    "seneste": [
-    {
-     "rubrik": "Anthropic-stiftere beholder magten efter børsnotering",
-     "dato": "",
-     "foerst_set": "2026-10-26T21:09:48.052336+00:00",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1018738/anthropic-ipo-s1-filing-weird-details",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic vil på Nasdaq med ticker ANT"
-    },
     {
      "rubrik": "Meta slår deling af Muse-links til igen",
      "dato": "",
@@ -653,6 +653,15 @@ window.KILDER_STATUS = {
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
     },
     {
+     "rubrik": "Apple giver Pages og Numbers en AI-assistent",
+     "dato": "2026-10-27T09:50:51",
+     "foerst_set": "2026-10-27T14:52:12",
+     "link": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
+     "side": "artikel/bd2c3c22ddbe56d5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI lader forskere granske tre nye beviser",
      "dato": "2026-10-26T19:34:58",
      "foerst_set": "2026-10-27T05:29:27",
@@ -667,6 +676,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-27T05:29:27",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk",
      "side": "artikel/dace5288fc19ee9c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic-stiftere beholder magten med 50,1 procent",
+     "dato": "2026-10-26T13:10:23",
+     "foerst_set": "2026-10-26T21:09:48",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1018738/anthropic-ipo-s1-filing-weird-details",
+     "side": "artikel/f243688bda14b7af.html",
      "hvor": "forside",
      "under": ""
     },
@@ -708,7 +726,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "r/opensource forbyder AI og ikke-engelske bidrag",
-     "dato": "2026-10-25T09:25:32",
+     "dato": "2026-10-25T13:25:32",
      "foerst_set": "2026-10-25T19:13:15",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
      "side": "artikel/19250ae33b5227a0.html",
@@ -717,7 +735,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Google-AI tager klik fra onlineudgivere",
-     "dato": "2026-10-25T08:00:00",
+     "dato": "2026-10-25T12:00:00",
      "foerst_set": "2026-10-25T13:20:07",
      "link": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
      "side": "artikel/ec4100b5e401e0ad.html",
@@ -739,24 +757,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-23T23:24:11",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
      "side": "artikel/78c968c7120787cb.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Blocks Dessa har kun hørt mennesker tale",
-     "dato": "2026-10-23T19:32:39",
-     "foerst_set": "2026-10-23T20:03:23",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
-     "side": "artikel/9266223ed6f43cf1.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google: Gmail-data kan nu bruges til annoncer",
-     "dato": "2026-10-23T16:52:55",
-     "foerst_set": "2026-10-23T20:03:23",
-     "link": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
-     "side": "artikel/a08e7d50b12c6e1e.html",
      "hvor": "forside",
      "under": ""
     }
@@ -914,9 +914,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 8,
+   "i_listen": 9,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Rockwell Automation skærer oplæring til tre måneder",
+     "dato": "2026-10-27T11:19:18",
+     "foerst_set": "2026-10-27T14:52:12",
+     "link": "https://www.technologyreview.com/2026/10/27/1147142/industrial-intelligence-the-next-growth-opportunity-for-manufacturing/",
+     "side": "artikel/e3353615c610f4d0.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Anthropic sælger sin historie på vej mod børsen",
      "dato": "2026-10-26T17:45:43",
