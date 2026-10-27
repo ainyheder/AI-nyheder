@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-26T21:25:24.622169+00:00",
+ "genereret": "2026-10-27T05:46:49.297346+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,30 +195,40 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-26T21:09:48.052336+00:00",
-  "antal": 127,
-  "med_billede": 77,
-  "paa_dansk": 127,
+  "opdateret": "2026-10-27T05:29:27.063150+00:00",
+  "antal": 114,
+  "med_billede": 68,
+  "paa_dansk": 114,
   "kategorier": {
-   "Lanceringer": 30,
-   "Penge \u0026 marked": 32,
+   "Lanceringer": 28,
+   "Penge \u0026 marked": 30,
+   "Forskning": 10,
    "Hverdags-AI": 13,
-   "Samfund \u0026 etik": 22,
-   "Politik \u0026 jura": 17,
-   "Forskning": 13
+   "Samfund \u0026 etik": 20,
+   "Politik \u0026 jura": 13
   },
   "kilder": {
    "Simon Willison AI": 7,
-   "TechCrunch AI": 48,
-   "The Verge AI": 32,
-   "Ars Technica AI": 11,
-   "MIT Tech Review AI": 9,
+   "TechCrunch AI": 41,
+   "The Verge AI": 29,
+   "Ars Technica AI": 9,
+   "MIT Tech Review AI": 8,
    "Hugging Face": 7,
    "Mistral AI": 4,
    "Google Gemini": 6,
    "Google DeepMind": 3
   },
   "udvalgte": [
+   {
+    "titel": "GPT-6.1 Terra",
+    "rubrik": "GPT-6.1 Terra kan se og bruge computeren",
+    "link": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
+    "side": "artikel/5e4a51fd299e58b3.html",
+    "kategori": "Lanceringer",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-10-26T23:53:07+00:00",
+    "billede": "data/img/ef6d64be6cb0ecf1.jpg"
+   },
    {
     "titel": "Anthropic’s IPO filing lays out a plan to ‘revolutionize every area of human endeavor’ with AI",
     "rubrik": "Anthropic vil på Nasdaq med ticker ANT",
@@ -228,16 +238,6 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-10-26T09:32:49-04:00",
     "billede": "data/img/0d5a5d0b470f75ea.jpg"
-   },
-   {
-    "titel": "Apple releases iOS and macOS 27.2 with new Siri AI features, new Music logo",
-    "rubrik": "Siri AI husker samtaler i iOS 27.2",
-    "link": "https://arstechnica.com/apple/2026/10/apple-releases-ios-and-macos-27-2-with-new-siri-ai-features-new-music-logo/",
-    "side": "artikel/25b40a661f74cd01.html",
-    "kategori": "Lanceringer",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-10-26T20:04:16+00:00",
-    "billede": ""
    },
    {
     "titel": "The focus on AI safety disasters ignores everyday harms",
@@ -251,6 +251,46 @@ window.KOMMANDO_DATA = {
    }
   ],
   "seneste": [
+   {
+    "titel": "GPT-6.1 Terra",
+    "rubrik": "GPT-6.1 Terra kan se og bruge computeren",
+    "link": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
+    "side": "artikel/5e4a51fd299e58b3.html",
+    "kategori": "Lanceringer",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-10-26T23:53:07+00:00",
+    "billede": "data/img/ef6d64be6cb0ecf1.jpg"
+   },
+   {
+    "titel": "OpenAI announces three big science discoveries and a new way to work with academics",
+    "rubrik": "OpenAI lader forskere granske tre nye beviser",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
+    "side": "artikel/636dd8e40f57df25.html",
+    "kategori": "Forskning",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-26T19:34:58-04:00",
+    "billede": ""
+   },
+   {
+    "titel": "Anthropic is burning gas to feed the AI boom",
+    "rubrik": "Anthropic erkender: Data centre kører på gas",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk",
+    "side": "artikel/dace5288fc19ee9c.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-26T17:45:31-04:00",
+    "billede": ""
+   },
+   {
+    "titel": "How OpenAI turned its coding tools into dots, an always-on personal assistant",
+    "rubrik": "OpenAI gør Codex til assistenten dots",
+    "link": "https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant/",
+    "side": "artikel/cb685d5b4cbcc16a.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-27T02:00:00+00:00",
+    "billede": ""
+   },
    {
     "titel": "Apple releases iOS and macOS 27.2 with new Siri AI features, new Music logo",
     "rubrik": "Siri AI husker samtaler i iOS 27.2",
@@ -269,6 +309,16 @@ window.KOMMANDO_DATA = {
     "kategori": "Penge \u0026 marked",
     "kilde": "TechCrunch AI",
     "dato": "2026-10-26T16:46:36+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Will the real Anthropic please stand up",
+    "rubrik": "Anthropic sælger sin historie på vej mod børsen",
+    "link": "https://www.technologyreview.com/2026/10/26/1147672/will-the-real-anthropic-please-stand-up/",
+    "side": "artikel/57916c9fe91871f6.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "MIT Tech Review AI",
+    "dato": "2026-10-26T17:45:43+00:00",
     "billede": ""
    },
    {
@@ -320,81 +370,31 @@ window.KOMMANDO_DATA = {
     "kilde": "Ars Technica AI",
     "dato": "2026-10-26T14:30:27+00:00",
     "billede": ""
-   },
-   {
-    "titel": "The focus on AI safety disasters ignores everyday harms",
-    "rubrik": "Google støttede AI-love med brede smuthuller",
-    "link": "https://www.technologyreview.com/2026/10/26/1147645/the-focus-on-ai-safety-disasters-ignores-everyday-harms/",
-    "side": "artikel/1992a716e85df44e.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "MIT Tech Review AI",
-    "dato": "2026-10-26T09:01:00+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Kevin Roose is AGI-pilled. Why aren’t you?",
-    "rubrik": "Kevin Roose lancerer podcasten Machine Gods",
-    "link": "https://www.theverge.com/podcast/1018264/kevin-roose-the-agi-chronicles-machine-gods-podcast-youtube-openai-anthropic",
-    "side": "artikel/5b0aa4d216294cfc.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-26T10:00:00-04:00",
-    "billede": ""
-   },
-   {
-    "titel": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’",
-    "rubrik": "Grok udgiver syv minutter af AI-genereret Odysseen",
-    "link": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
-    "side": "artikel/9e4fbbe069370a1f.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-25T21:31:16+00:00",
-    "billede": "data/img/6427fe55ffb6a2fa.jpg"
-   },
-   {
-    "titel": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
-    "rubrik": "Apollo-økonom: AI giver nul afkast uden for tech",
-    "link": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
-    "side": "artikel/71c43854f4ff1165.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-25T16:57:32+00:00",
-    "billede": "data/img/72fd67c889706b7f.jpg"
-   },
-   {
-    "titel": "r/opensource just banned AI, non-English speakers, and more",
-    "rubrik": "r/opensource forbyder AI og ikke-engelske bidrag",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
-    "side": "artikel/19250ae33b5227a0.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-25T09:25:32-04:00",
-    "billede": "data/img/1d80fc2512690703.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-26T21:09:48.052336+00:00",
+  "opdateret": "2026-10-27T05:29:27.063150+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
   "modelkald": 1,
   "kildehentninger": 0,
   "regelbaseret_udvalg": [
+   "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
    "https://openai.com/index/introducing-gpt-6-1-terra",
-   "https://www.technologyreview.com/2026/10/26/1147672/will-the-real-anthropic-please-stand-up/",
-   "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/"
+   "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/"
   ],
   "udgivet_udvalg": [
+   "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
    "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
-   "https://arstechnica.com/apple/2026/10/apple-releases-ios-and-macos-27-2-with-new-siri-ai-features-new-music-logo/",
    "https://www.technologyreview.com/2026/10/26/1147645/the-focus-on-ai-safety-disasters-ignores-everyday-harms/"
   ],
   "vaerktoejer": [],
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-10-26T21:09:47.340947+00:00",
+  "opdateret": "2026-10-27T05:29:26.659255+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -750,8 +750,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-26T21:09:48.052336+00:00",
-  "artikler_i_alt": 127,
+  "opdateret": "2026-10-27T05:29:27.063150+00:00",
+  "artikler_i_alt": 114,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1011,6 +1011,15 @@ window.KOMMANDO_DATA = {
       "under": "Mistral Large 4 klarer opgaver andre afviser"
      },
      {
+      "rubrik": "GPT-6.1 Terra kan se og bruge computeren",
+      "dato": "2026-10-26T23:53:07",
+      "foerst_set": "2026-10-27T05:29:27",
+      "link": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
+      "side": "artikel/5e4a51fd299e58b3.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "ChatGPT sender supportproblemer til 404 Media",
       "dato": "2026-10-26T19:00:25",
       "foerst_set": "2026-10-26T21:09:48",
@@ -1034,15 +1043,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-22T20:16:04",
       "link": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
       "side": "artikel/4b2657f99d2ef063.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Claude Code byggede SPARQL-motor i SQLite",
-      "dato": "2026-10-16T01:58:00",
-      "foerst_set": "2026-10-21T20:20:24",
-      "link": "https://simonwillison.net/2026/Oct/16/sqlite-sparql-rust/",
-      "side": "artikel/a3e3977c74450eb8.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1085,23 +1085,14 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 48,
-    "som_ekstra": 7,
+    "i_listen": 41,
+    "som_ekstra": 6,
     "seneste": [
      {
       "rubrik": "Flertal af store Anthropic-kunder bruger Claude-apps",
       "dato": "",
       "foerst_set": "2026-10-26T21:09:48",
       "link": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
-      "side": "",
-      "hvor": "under",
-      "under": "Anthropic vil på Nasdaq med ticker ANT"
-     },
-     {
-      "rubrik": "Anthropic indgiver børsprospekt: omsætning på 16,3 mia. dollar",
-      "dato": "",
-      "foerst_set": "2026-10-26T15:25:50",
-      "link": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
       "side": "",
       "hvor": "under",
       "under": "Anthropic vil på Nasdaq med ticker ANT"
@@ -1161,6 +1152,15 @@ window.KOMMANDO_DATA = {
       "under": "Hugging Face gør TPU til almindelig PyTorch-enhed"
      },
      {
+      "rubrik": "OpenAI gør Codex til assistenten dots",
+      "dato": "2026-10-27T02:00:00",
+      "foerst_set": "2026-10-27T05:29:27",
+      "link": "https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant/",
+      "side": "artikel/cb685d5b4cbcc16a.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "SpaceX sikrer 40 milliarder dollar til AI-chips",
       "dato": "2026-10-26T16:46:36",
       "foerst_set": "2026-10-26T21:09:48",
@@ -1208,7 +1208,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 32,
+    "i_listen": 29,
     "som_ekstra": 8,
     "seneste": [
      {
@@ -1293,29 +1293,29 @@ window.KOMMANDO_DATA = {
       "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
      },
      {
+      "rubrik": "OpenAI lader forskere granske tre nye beviser",
+      "dato": "2026-10-26T19:34:58",
+      "foerst_set": "2026-10-27T05:29:27",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
+      "side": "artikel/636dd8e40f57df25.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Anthropic erkender: Data centre kører på gas",
+      "dato": "2026-10-26T17:45:31",
+      "foerst_set": "2026-10-27T05:29:27",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk",
+      "side": "artikel/dace5288fc19ee9c.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "The RealReal strammer botværn mod Muse",
       "dato": "2026-10-26T13:30:55",
       "foerst_set": "2026-10-26T21:09:48",
       "link": "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal",
       "side": "artikel/c51f3946ef3c8d71.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Anthropic vil på Nasdaq med ticker ANT",
-      "dato": "2026-10-26T09:32:49",
-      "foerst_set": "2026-10-26T15:25:50",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
-      "side": "artikel/4aa5c31773e48136.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "OpenAI: GPT-6.1 Sol når 98 procent i COBOL-test",
-      "dato": "2026-10-26T09:15:00",
-      "foerst_set": "2026-10-26T15:25:50",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1018434/cobol-migration-legacy-code-openai-anthropic",
-      "side": "artikel/21f9a9af9d145710.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1331,7 +1331,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 11,
+    "i_listen": 9,
     "som_ekstra": 2,
     "seneste": [
      {
@@ -1432,15 +1432,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/c33d864d12a61280.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Dommer holder OpenAI-ingeniør fængslet i spionagesag",
-      "dato": "2026-10-19T20:21:53",
-      "foerst_set": "2026-10-19T21:12:53",
-      "link": "https://arstechnica.com/tech-policy/2026/10/accused-openai-spy-had-folder-called-saudi-gov-docs-fbi-says/",
-      "side": "artikel/eca196ee49f4c675.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1454,17 +1445,17 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 6,
-    "i_listen": 9,
-    "som_ekstra": 1,
+    "i_listen": 8,
+    "som_ekstra": 0,
     "seneste": [
      {
-      "rubrik": "Anthropics IPO afslører troen på singulariteten",
-      "dato": "",
+      "rubrik": "Anthropic sælger sin historie på vej mod børsen",
+      "dato": "2026-10-26T17:45:43",
       "foerst_set": "2026-10-26T21:09:48",
       "link": "https://www.technologyreview.com/2026/10/26/1147672/will-the-real-anthropic-please-stand-up/",
-      "side": "",
-      "hvor": "under",
-      "under": "Anthropic vil på Nasdaq med ticker ANT"
+      "side": "artikel/57916c9fe91871f6.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Google støttede AI-love med brede smuthuller",
@@ -1526,24 +1517,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-20T13:48:46",
       "link": "https://www.technologyreview.com/2026/10/20/1145423/ai-adoption-by-industry-shows-what-other-sectors-can-learn/",
       "side": "artikel/254f1995dd63a083.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Cammarata: Neurale netværk er måske læselige",
-      "dato": "2026-10-19T17:45:55",
-      "foerst_set": "2026-10-19T21:12:53",
-      "link": "https://www.technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world/",
-      "side": "artikel/e7a08d8bbd49f19c.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Claude opfandt spil og lærte af leg",
-      "dato": "2026-10-19T09:08:05",
-      "foerst_set": "2026-10-19T15:50:01",
-      "link": "https://www.technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play/",
-      "side": "artikel/372db7fd0c185c92.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1673,19 +1646,14 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-26T21:25:18.095679+00:00",
+  "opdateret": "2026-10-27T05:46:45.361732+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 22,
-  "sidevisninger_i_alt": 28,
+  "besoeg_i_alt": 20,
+  "sidevisninger_i_alt": 26,
   "ai_chat_besoeg": 0,
   "serie": [
-   {
-    "dato": "2026-09-27",
-    "besoeg": 10,
-    "visninger": 10
-   },
    {
     "dato": "2026-09-28",
     "besoeg": 0,
@@ -1830,20 +1798,25 @@ window.KOMMANDO_DATA = {
     "dato": "2026-10-26",
     "besoeg": 0,
     "visninger": 0
+   },
+   {
+    "dato": "2026-10-27",
+    "besoeg": 0,
+    "visninger": 0
    }
   ],
   "sider": [
    {
     "sti": "/",
-    "besoeg": 22,
-    "visninger": 28
+    "besoeg": 20,
+    "visninger": 26
    }
   ],
   "artikler": [],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 22
+    "besoeg": 20
    }
   ],
   "laeste_temaer": []
