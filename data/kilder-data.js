@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-27T20:55:19.965914+00:00",
- "artikler_i_alt": 128,
+ "opdateret": "2026-10-28T06:12:05.456025+00:00",
+ "artikler_i_alt": 106,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -85,17 +85,8 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 5,
-   "som_ekstra": 1,
+   "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "Google ruller Gemini 4 Argon bredt ud",
-     "dato": "",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
-    },
     {
      "rubrik": "Gemini får samlet værktøjsside til små virksomheder",
      "dato": "2026-10-20T16:00:00",
@@ -145,7 +136,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google DeepMind",
-     2
+     1
     ],
     [
      "The Verge AI",
@@ -178,7 +169,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 6,
+   "i_listen": 5,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -205,15 +196,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-21T20:20:24",
      "link": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
      "side": "artikel/47ba5de6cc845501.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "ALTK-Evolve topper τ²-bench med lærte regler",
-     "dato": "2026-10-20T15:19:48",
-     "foerst_set": "2026-10-20T20:06:38",
-     "link": "https://huggingface.co/blog/ibm-research/altk-evolve-bc",
-     "side": "artikel/8f295aae143e6d20.html",
      "hvor": "forside",
      "under": ""
     },
@@ -337,7 +319,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 50,
+   "i_listen": 39,
    "som_ekstra": 6,
    "seneste": [
     {
@@ -395,15 +377,6 @@ window.KILDER_STATUS = {
      "under": "Claude Duet sender morgenbrief fra dine apps"
     },
     {
-     "rubrik": "Metas Muse har passeret 10 millioner brugere",
-     "dato": "",
-     "foerst_set": "2026-10-21T23:34:19.581822+00:00",
-     "link": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/",
-     "side": "",
-     "hvor": "under",
-     "under": "Meta Muse rammer 10 mio. downloads på 40 dage"
-    },
-    {
      "rubrik": "Google slipper TorchTPU løs til sine TPU-chips",
      "dato": "",
      "foerst_set": "2026-10-20T20:06:38",
@@ -411,6 +384,51 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Hugging Face gør TPU til almindelig PyTorch-enhed"
+    },
+    {
+     "rubrik": "Forældre sagsøger OpenAI for GPT-4o-råd om epilepsimedicin",
+     "dato": "2026-10-27T23:34:27",
+     "foerst_set": "2026-10-28T06:12:05",
+     "link": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/",
+     "side": "artikel/092cb86201fbae88.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Amazon sidder på Anthropics største gevinst",
+     "dato": "2026-10-28T01:15:28",
+     "foerst_set": "2026-10-28T06:12:05",
+     "link": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/",
+     "side": "artikel/c372745ec78a06e5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Bank of America: Del ikke adgangskoden med AI",
+     "dato": "2026-10-27T21:44:34",
+     "foerst_set": "2026-10-28T06:12:05",
+     "link": "https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/",
+     "side": "artikel/e36bd78a13d63ead.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Veir: Superkabler kan føre strøm fem gange længere",
+     "dato": "2026-10-27T22:55:41",
+     "foerst_set": "2026-10-28T06:12:05",
+     "link": "https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/",
+     "side": "artikel/5ac9e6d4ee78e6eb.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropics stiftere beholder magten efter børsnotering",
+     "dato": "2026-10-27T21:38:28",
+     "foerst_set": "2026-10-28T06:12:05",
+     "link": "https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/",
+     "side": "artikel/0ec9dae75184d610.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Genie 4 kan ændre scenen midt i simulationen",
@@ -474,57 +492,12 @@ window.KILDER_STATUS = {
      "side": "artikel/96e811b7a717108d.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Qwen3.8-Flash-Next forsøgte at sende fil til Beijing",
-     "dato": "2026-10-27T01:12:21",
-     "foerst_set": "2026-10-27T05:29:27",
-     "link": "https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/",
-     "side": "artikel/8cbd8d09602ba622.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI gør Codex til assistenten dots",
-     "dato": "2026-10-27T02:00:00",
-     "foerst_set": "2026-10-27T05:29:27",
-     "link": "https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant/",
-     "side": "artikel/cb685d5b4cbcc16a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "SpaceX sikrer 40 milliarder dollar til AI-chips",
-     "dato": "2026-10-26T16:46:36",
-     "foerst_set": "2026-10-26T21:09:48",
-     "link": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
-     "side": "artikel/2b01b79f74d7a719.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Anthropic søger børsnotering med stifterne ved magten",
-     "dato": "2026-10-26T14:35:22",
-     "foerst_set": "2026-10-26T15:25:50",
-     "link": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
-     "side": "artikel/bb06af6daa7407fb.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Grok udgiver syv minutter af AI-genereret Odysseen",
-     "dato": "2026-10-25T21:31:16",
-     "foerst_set": "2026-10-25T22:46:31",
-     "link": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
-     "side": "artikel/9e4fbbe069370a1f.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     9
+     8
     ],
     [
      "Google DeepMind",
@@ -532,10 +505,6 @@ window.KILDER_STATUS = {
     ],
     [
      "Hugging Face",
-     1
-    ],
-    [
-     "OpenAI Blog",
      1
     ]
    ]
@@ -550,8 +519,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 34,
-   "som_ekstra": 8,
+   "i_listen": 32,
+   "som_ekstra": 4,
    "seneste": [
     {
      "rubrik": "OpenAI tilbageholder fysikresultat og vækker kritik",
@@ -572,24 +541,6 @@ window.KILDER_STATUS = {
      "under": "Genie 4 kan ændre scenen midt i simulationen"
     },
     {
-     "rubrik": "Meta slår deling af Muse-links til igen",
-     "dato": "",
-     "foerst_set": "2026-10-22T23:32:06",
-     "link": "https://www.theverge.com/tech/1017066/meta-muse-sharing-back-on-artifiacts",
-     "side": "",
-     "hvor": "under",
-     "under": "Meta Muse suspenderer deling af links"
-    },
-    {
-     "rubrik": "Zuckerberg: Muse skal handle for milliarder",
-     "dato": "",
-     "foerst_set": "2026-10-22T20:16:04",
-     "link": "https://www.theverge.com/tech/1016905/meta-earnings-fall-2026-muse-network",
-     "side": "",
-     "hvor": "under",
-     "under": "Meta Muse rammer 10 mio. downloads på 40 dage"
-    },
-    {
      "rubrik": "1Password lader AI-agenter logge ind uden adgangskoder",
      "dato": "",
      "foerst_set": "2026-10-22T14:02:49",
@@ -606,24 +557,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Walmart åbner for AI-agenter med Agent Gateway"
-    },
-    {
-     "rubrik": "Gemini i bilen bruger nu dine Google-apps",
-     "dato": "",
-     "foerst_set": "2026-10-20T23:20:11",
-     "link": "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini trænger ind i bilens kabine"
-    },
-    {
-     "rubrik": "Meta pauser Muse-deling efter over 6.800 links",
-     "dato": "",
-     "foerst_set": "2026-10-20T20:06:38",
-     "link": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats",
-     "side": "",
-     "hvor": "under",
-     "under": "Meta Muse suspenderer deling af links"
     },
     {
      "rubrik": "Google lancerer Guided Vision i Gemini Live",
@@ -746,11 +679,11 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     9
+     8
     ],
     [
      "Ars Technica AI",
-     4
+     1
     ],
     [
      "Google Gemini",
@@ -768,7 +701,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 11,
+   "i_listen": 9,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -779,6 +712,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google: Gmail-data kan nu bruges til annoncer"
+    },
+    {
+     "rubrik": "Anthropic: Fremtidig Claude kan afpresse",
+     "dato": "2026-10-27T21:31:14",
+     "foerst_set": "2026-10-28T06:12:05",
+     "link": "https://arstechnica.com/ai/2026/10/anthropic-ipo-warns-its-ai-could-blackmail-people-become-sentient-end-humanity/",
+     "side": "artikel/089388ff10e50c37.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Genie 4 får tale og mere realistisk fysik",
@@ -851,39 +793,12 @@ window.KILDER_STATUS = {
      "side": "artikel/f70b954b2a129f01.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Gemini trænger ind i bilens kabine",
-     "dato": "2026-10-20T20:00:33",
-     "foerst_set": "2026-10-20T20:06:38",
-     "link": "https://arstechnica.com/google/2026/10/geminis-personal-intelligence-is-coming-to-cars/",
-     "side": "artikel/5a9bfc2289e051b6.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Meta skal navngive chefer bag pirat-download",
-     "dato": "2026-10-20T17:40:20",
-     "foerst_set": "2026-10-20T20:06:38",
-     "link": "https://arstechnica.com/tech-policy/2026/10/meta-ordered-to-name-execs-who-approved-torrenting-for-ai-training/",
-     "side": "artikel/4d4ede3ec5f0316b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Meta Muse suspenderer deling af links",
-     "dato": "2026-10-20T12:33:13",
-     "foerst_set": "2026-10-20T13:48:46",
-     "link": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
-     "side": "artikel/c33d864d12a61280.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     4
+     1
     ],
     [
      "OpenAI Blog",
@@ -901,7 +816,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 9,
+   "i_listen": 6,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -957,33 +872,6 @@ window.KILDER_STATUS = {
      "side": "artikel/a1d8d472075678a5.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "HPE: Mål AI-pris pr. brugbart resultat",
-     "dato": "2026-10-20T15:20:25",
-     "foerst_set": "2026-10-20T20:06:38",
-     "link": "https://www.technologyreview.com/2026/10/20/1146937/the-new-economics-of-enterprise-ai/",
-     "side": "artikel/eb9c98f8c73a90d0.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Samsung genoptager byggeriet af femte chipfabrik",
-     "dato": "2026-10-20T09:00:00",
-     "foerst_set": "2026-10-20T13:48:46",
-     "link": "https://www.technologyreview.com/2026/10/20/1145916/dispatch-visit-to-samsung-massive-new-semiconductor-hub/",
-     "side": "artikel/cec229fed3dc3902.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "TripleTen-måling: Få chefer prioriterer at tjekke AI-svar",
-     "dato": "2026-10-20T12:00:00",
-     "foerst_set": "2026-10-20T13:48:46",
-     "link": "https://www.technologyreview.com/2026/10/20/1145423/ai-adoption-by-industry-shows-what-other-sectors-can-learn/",
-     "side": "artikel/254f1995dd63a083.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": []
@@ -999,7 +887,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 25,
    "i_listen": 0,
-   "som_ekstra": 2,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "OpenAI-modeller lander i Googles Model Garden",
@@ -1009,24 +897,11 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "GPT 6.1 kommer til Google Cloud"
-    },
-    {
-     "rubrik": "OpenAI opkøber Orchestra Bio for life sciences",
-     "dato": "",
-     "foerst_set": "2026-10-20T20:06:38",
-     "link": "https://openai.com/index/openai-to-acquire-orchestra-bio",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI opkøber Orchestra Bio til Rosalind"
     }
    ],
    "overlap": [
     [
      "Ars Technica AI",
-     1
-    ],
-    [
-     "TechCrunch AI",
      1
     ]
    ]
@@ -1038,10 +913,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 15,
-   "i_listen": 3,
+   "status": "fejl",
+   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -1061,42 +936,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Argon lanceres globalt i dag"
-    },
-    {
-     "rubrik": "Google Antigravity finder ny peptidkandidat",
-     "dato": "2026-10-15T16:08:03",
-     "foerst_set": "2026-10-16T04:53:41",
-     "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-     "side": "artikel/ba028f76ed47c779.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
-     "dato": "2026-10-13T19:43:07",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-     "side": "artikel/42f1c245f492d3d1.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "EmbeddingGemma 2 finder videoklip ud fra tale",
-     "dato": "2026-10-06T19:57:04",
-     "foerst_set": "2026-10-07T15:44:28",
-     "link": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
-     "side": "artikel/bf211d23154acfab.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "Google Gemini",
-     2
+     "TechCrunch AI",
+     1
     ],
     [
-     "TechCrunch AI",
+     "Google Gemini",
      1
     ]
    ]
