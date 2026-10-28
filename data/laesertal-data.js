@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-10-28T15:35:34.814409+00:00",
+ "opdateret": "2026-10-28T21:39:11.667153+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -68,7 +68,7 @@ window.LAESERTAL = {
      1,
      7,
      7,
-     1
+     3
     ]
    },
    {
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      0,
      2,
      3,
-     1
+     3
     ]
    },
    {
@@ -138,7 +138,7 @@ window.LAESERTAL = {
      2,
      2,
      2,
-     2
+     3
     ]
    },
    {
@@ -173,7 +173,7 @@ window.LAESERTAL = {
      2,
      3,
      5,
-     3
+     4
     ]
    },
    {
@@ -207,7 +207,7 @@ window.LAESERTAL = {
      1,
      0,
      0,
-     2,
+     3,
      1
     ]
    },
@@ -278,7 +278,42 @@ window.LAESERTAL = {
      0,
      0,
      0,
-     0
+     4
+    ]
+   },
+   {
+    "navn": "Labs",
+    "tal": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
     ]
    },
    {
@@ -319,14 +354,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 18,
- "sidevisninger_i_alt": 26,
+ "besoeg_i_alt": 10,
+ "sidevisninger_i_alt": 20,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 18,
-   "visninger": 26
+   "besoeg": 10,
+   "visninger": 20
   }
  ],
  "henvisere": [
