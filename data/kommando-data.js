@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-28T06:24:37.415738+00:00",
+ "genereret": "2026-10-28T15:35:43.328917+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,38 +195,38 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-28T06:12:05.456025+00:00",
-  "antal": 106,
-  "med_billede": 60,
-  "paa_dansk": 106,
+  "opdateret": "2026-10-28T15:23:12.851168+00:00",
+  "antal": 111,
+  "med_billede": 59,
+  "paa_dansk": 111,
   "kategorier": {
-   "Lanceringer": 24,
-   "Politik \u0026 jura": 10,
-   "Hverdags-AI": 16,
+   "Lanceringer": 25,
+   "Politik \u0026 jura": 11,
+   "Hverdags-AI": 18,
    "Penge \u0026 marked": 30,
-   "Samfund \u0026 etik": 18,
+   "Samfund \u0026 etik": 19,
    "Forskning": 8
   },
   "kilder": {
-   "TechCrunch AI": 39,
+   "TechCrunch AI": 40,
    "Ars Technica AI": 9,
    "Simon Willison AI": 6,
-   "The Verge AI": 32,
-   "MIT Tech Review AI": 6,
+   "The Verge AI": 35,
+   "MIT Tech Review AI": 7,
    "Hugging Face": 5,
    "Mistral AI": 4,
    "Google Gemini": 5
   },
   "udvalgte": [
    {
-    "titel": "Google’s Genie 4 world model adds audio, more realistic worlds, and real-time steering",
-    "rubrik": "Genie 4 kan ændre scenen midt i simulationen",
-    "link": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
-    "side": "artikel/3ddb9b3e3bda7311.html",
+    "titel": "Voice AI in vogue: Nvidia releases new open transcription model",
+    "rubrik": "Nvidia frigiver Nemotron 3.5 til 40 sprog",
+    "link": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
+    "side": "artikel/4de33f2bccf585e4.html",
     "kategori": "Lanceringer",
     "kilde": "TechCrunch AI",
-    "dato": "2026-10-27T16:30:57+00:00",
-    "billede": "data/img/aa4a541db90e5f66.jpg"
+    "dato": "2026-10-28T15:00:00+00:00",
+    "billede": ""
    },
    {
     "titel": "DeepMind unveils Genie 4 world model promising more realistic physics and humans",
@@ -250,6 +250,76 @@ window.KOMMANDO_DATA = {
    }
   ],
   "seneste": [
+   {
+    "titel": "Voice AI in vogue: Nvidia releases new open transcription model",
+    "rubrik": "Nvidia frigiver Nemotron 3.5 til 40 sprog",
+    "link": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
+    "side": "artikel/4de33f2bccf585e4.html",
+    "kategori": "Lanceringer",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-28T15:00:00+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Voters in Texas agree: They hate data centers",
+    "rubrik": "Abbott i modvind: texanerne afviser data-centre",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1018676/data-center-midterm-election-energy-water-texas",
+    "side": "artikel/a03c4a51a28af232.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-28T08:00:00-04:00",
+    "billede": ""
+   },
+   {
+    "titel": "Meta quietly launched an ‘AI pet journal’ app",
+    "rubrik": "Meta lancerer Waddle World som dagbog",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1020410/meta-launched-ai-pet-journal-app-waddle-world",
+    "side": "artikel/6a00cf459c47b5db.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-28T07:27:30-04:00",
+    "billede": ""
+   },
+   {
+    "titel": "xAI is buying out homeowners who promise not to sue over data center noise",
+    "rubrik": "xAI vil købe huse for at undgå søgsmål",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1020596/xai-mississippi-neighborhood-data-center-lawsuit",
+    "side": "artikel/74376878bbbbb39c.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-28T10:44:00-04:00",
+    "billede": ""
+   },
+   {
+    "titel": "The October inflection point for vibe game development",
+    "rubrik": "Claude Opus 5.5 gør spil sjove at spille",
+    "link": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
+    "side": "artikel/2fcae8853da5c178.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-10-28T13:55:15+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Pairing industrial AI autonomy and human control",
+    "rubrik": "AVEVA: Levende digitale tvillinger griber ind",
+    "link": "https://www.technologyreview.com/2026/10/28/1147637/pairing-industrial-ai-autonomy-and-human-control/",
+    "side": "artikel/2b0a5d044d7f5155.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "MIT Tech Review AI",
+    "dato": "2026-10-28T12:00:00+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Quoting Terk Terkowitz",
+    "rubrik": "Amazon til ansatte: Fortæl hvor AI ikke hjælper",
+    "link": "https://simonwillison.net/2026/Oct/28/terk-terkowitz/",
+    "side": "artikel/2aeb712eb62f14b7.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-10-28T10:09:07+00:00",
+    "billede": ""
+   },
    {
     "titel": "Parents sue OpenAI, alleging GPT-4o coached their daughter off seizure medication",
     "rubrik": "Forældre sagsøger OpenAI for GPT-4o-råd om epilepsimedicin",
@@ -299,93 +369,23 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-10-27T22:55:41+00:00",
     "billede": ""
-   },
-   {
-    "titel": "Who’s really in charge at Anthropic after the IPO?",
-    "rubrik": "Anthropics stiftere beholder magten efter børsnotering",
-    "link": "https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/",
-    "side": "artikel/0ec9dae75184d610.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-27T21:38:28+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Google’s Genie 4 world model adds audio, more realistic worlds, and real-time steering",
-    "rubrik": "Genie 4 kan ændre scenen midt i simulationen",
-    "link": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
-    "side": "artikel/3ddb9b3e3bda7311.html",
-    "kategori": "Lanceringer",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-27T16:30:57+00:00",
-    "billede": "data/img/aa4a541db90e5f66.jpg"
-   },
-   {
-    "titel": "DeepMind unveils Genie 4 world model promising more realistic physics and humans",
-    "rubrik": "Genie 4 får tale og mere realistisk fysik",
-    "link": "https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations/",
-    "side": "artikel/199801d5e60e45d1.html",
-    "kategori": "Lanceringer",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-10-27T16:00:22+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Firefox’s Smart Window adds AI form filling and webpage monitoring",
-    "rubrik": "Firefox lader AI udfylde formularer fra dine faner",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms",
-    "side": "artikel/e046e2cf55c147ca.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-27T12:14:18-04:00",
-    "billede": ""
-   },
-   {
-    "titel": "Frontier AI labs say their models refuted the Exponential Time Hypothesis. What does that mean?",
-    "rubrik": "OpenAI hævder modeller har modbevist ETH",
-    "link": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
-    "side": "artikel/636498a83af93057.html",
-    "kategori": "Forskning",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-27T17:08:08+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Anthropic’s elaborate plan to keep Wall Street at bay",
-    "rubrik": "Anthropic vil børsnoteres med låst bestyrelse",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety",
-    "side": "artikel/34fc514719d0a7a5.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-27T12:51:22-04:00",
-    "billede": ""
-   },
-   {
-    "titel": "Vibe genes? Natural(ish) language comes to protein, genome design software",
-    "rubrik": "Pinal designer proteiner med naturligt sprog",
-    "link": "https://arstechnica.com/science/2026/10/vibe-genes-naturalish-language-comes-to-protein-genome-design-software/",
-    "side": "artikel/691ccc79422d9dd0.html",
-    "kategori": "Forskning",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-10-27T18:49:08+00:00",
-    "billede": ""
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-28T06:12:05.456025+00:00",
+  "opdateret": "2026-10-28T15:23:12.851168+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
   "modelkald": 1,
   "kildehentninger": 0,
   "regelbaseret_udvalg": [
-   "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
+   "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
    "https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations/",
    "https://simonwillison.net/2026/Oct/26/gpt-61-terra/"
   ],
   "udgivet_udvalg": [
-   "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
+   "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
    "https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations/",
    "https://simonwillison.net/2026/Oct/26/gpt-61-terra/"
   ],
@@ -393,7 +393,7 @@ window.KOMMANDO_DATA = {
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-10-28T06:12:04.894344+00:00",
+  "opdateret": "2026-10-28T15:23:12.182839+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -749,8 +749,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-28T06:12:05.456025+00:00",
-  "artikler_i_alt": 106,
+  "opdateret": "2026-10-28T15:23:12.851168+00:00",
+  "artikler_i_alt": 111,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -974,6 +974,24 @@ window.KOMMANDO_DATA = {
       "under": "Mistral Large 4 klarer opgaver andre afviser"
      },
      {
+      "rubrik": "Claude Opus 5.5 gør spil sjove at spille",
+      "dato": "2026-10-28T13:55:15",
+      "foerst_set": "2026-10-28T15:23:12",
+      "link": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
+      "side": "artikel/2fcae8853da5c178.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Amazon til ansatte: Fortæl hvor AI ikke hjælper",
+      "dato": "2026-10-28T10:09:07",
+      "foerst_set": "2026-10-28T15:23:12",
+      "link": "https://simonwillison.net/2026/Oct/28/terk-terkowitz/",
+      "side": "artikel/2aeb712eb62f14b7.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "GPT-6.1 Terra kan se og bruge computeren",
       "dato": "2026-10-26T23:53:07",
       "foerst_set": "2026-10-27T05:29:27",
@@ -1008,24 +1026,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/4b2657f99d2ef063.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Simon Willisons AI-kodede strategispil blev faktisk sjovt",
-      "dato": "2026-10-20T19:34:19",
-      "foerst_set": "2026-10-20T20:06:38",
-      "link": "https://simonwillison.net/2026/Oct/20/battledrones/",
-      "side": "artikel/144d05732de3bf7d.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Simon Willison: LLM'er tager puslespillet fra programmører",
-      "dato": "2026-10-19T23:58:25",
-      "foerst_set": "2026-10-20T05:10:40",
-      "link": "https://simonwillison.net/2026/Oct/19/my-obituary-for-programming/",
-      "side": "artikel/0e01cc7ca3c09d2b.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1039,7 +1039,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 39,
+    "i_listen": 40,
     "som_ekstra": 6,
     "seneste": [
      {
@@ -1106,6 +1106,15 @@ window.KOMMANDO_DATA = {
       "under": "Hugging Face gør TPU til almindelig PyTorch-enhed"
      },
      {
+      "rubrik": "Nvidia frigiver Nemotron 3.5 til 40 sprog",
+      "dato": "2026-10-28T15:00:00",
+      "foerst_set": "2026-10-28T15:23:12",
+      "link": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
+      "side": "artikel/4de33f2bccf585e4.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Forældre sagsøger OpenAI for GPT-4o-råd om epilepsimedicin",
       "dato": "2026-10-27T23:34:27",
       "foerst_set": "2026-10-28T06:12:05",
@@ -1140,15 +1149,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/5ac9e6d4ee78e6eb.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Anthropics stiftere beholder magten efter børsnotering",
-      "dato": "2026-10-27T21:38:28",
-      "foerst_set": "2026-10-28T06:12:05",
-      "link": "https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/",
-      "side": "artikel/0ec9dae75184d610.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1162,7 +1162,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 32,
+    "i_listen": 35,
     "som_ekstra": 4,
     "seneste": [
      {
@@ -1211,6 +1211,33 @@ window.KOMMANDO_DATA = {
       "under": "Gemini Live beskriver verden for blinde"
      },
      {
+      "rubrik": "Abbott i modvind: texanerne afviser data-centre",
+      "dato": "2026-10-28T08:00:00",
+      "foerst_set": "2026-10-28T15:23:12",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1018676/data-center-midterm-election-energy-water-texas",
+      "side": "artikel/a03c4a51a28af232.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Meta lancerer Waddle World som dagbog",
+      "dato": "2026-10-28T07:27:30",
+      "foerst_set": "2026-10-28T15:23:12",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1020410/meta-launched-ai-pet-journal-app-waddle-world",
+      "side": "artikel/6a00cf459c47b5db.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "xAI vil købe huse for at undgå søgsmål",
+      "dato": "2026-10-28T10:44:00",
+      "foerst_set": "2026-10-28T15:23:12",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1020596/xai-mississippi-neighborhood-data-center-lawsuit",
+      "side": "artikel/74376878bbbbb39c.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Firefox lader AI udfylde formularer fra dine faner",
       "dato": "2026-10-27T12:14:18",
       "foerst_set": "2026-10-27T20:55:19",
@@ -1243,33 +1270,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-27T14:52:12",
       "link": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections",
       "side": "artikel/a0f36022fc6a06c4.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "OpenAI lader forskere granske tre nye beviser",
-      "dato": "2026-10-26T19:34:58",
-      "foerst_set": "2026-10-27T05:29:27",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
-      "side": "artikel/636dd8e40f57df25.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Anthropic erkender: Data centre kører på gas",
-      "dato": "2026-10-26T17:45:31",
-      "foerst_set": "2026-10-27T05:29:27",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk",
-      "side": "artikel/dace5288fc19ee9c.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Anthropic-stiftere beholder magten med 50,1 procent",
-      "dato": "2026-10-26T17:10:23",
-      "foerst_set": "2026-10-26T21:09:48",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1018738/anthropic-ipo-s1-filing-weird-details",
-      "side": "artikel/f243688bda14b7af.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1390,9 +1390,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 6,
-    "i_listen": 6,
+    "i_listen": 7,
     "som_ekstra": 0,
     "seneste": [
+     {
+      "rubrik": "AVEVA: Levende digitale tvillinger griber ind",
+      "dato": "2026-10-28T12:00:00",
+      "foerst_set": "2026-10-28T15:23:12",
+      "link": "https://www.technologyreview.com/2026/10/28/1147637/pairing-industrial-ai-autonomy-and-human-control/",
+      "side": "artikel/2b0a5d044d7f5155.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "Rockwell Automation skærer oplæring til tre måneder",
       "dato": "2026-10-27T11:19:18",
@@ -1537,7 +1546,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-28T06:24:33.331156+00:00",
+  "opdateret": "2026-10-28T15:35:34.814409+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",

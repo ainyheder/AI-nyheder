@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-28T06:12:05.456025+00:00",
- "artikler_i_alt": 106,
+ "opdateret": "2026-10-28T15:23:12.851168+00:00",
+ "artikler_i_alt": 111,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -248,6 +248,24 @@ window.KILDER_STATUS = {
      "under": "Mistral Large 4 klarer opgaver andre afviser"
     },
     {
+     "rubrik": "Claude Opus 5.5 gør spil sjove at spille",
+     "dato": "2026-10-28T13:55:15",
+     "foerst_set": "2026-10-28T15:23:12",
+     "link": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
+     "side": "artikel/2fcae8853da5c178.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Amazon til ansatte: Fortæl hvor AI ikke hjælper",
+     "dato": "2026-10-28T10:09:07",
+     "foerst_set": "2026-10-28T15:23:12",
+     "link": "https://simonwillison.net/2026/Oct/28/terk-terkowitz/",
+     "side": "artikel/2aeb712eb62f14b7.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "GPT-6.1 Terra kan se og bruge computeren",
      "dato": "2026-10-26T23:53:07",
      "foerst_set": "2026-10-27T05:29:27",
@@ -282,24 +300,6 @@ window.KILDER_STATUS = {
      "side": "artikel/4b2657f99d2ef063.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Simon Willisons AI-kodede strategispil blev faktisk sjovt",
-     "dato": "2026-10-20T19:34:19",
-     "foerst_set": "2026-10-20T20:06:38",
-     "link": "https://simonwillison.net/2026/Oct/20/battledrones/",
-     "side": "artikel/144d05732de3bf7d.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Simon Willison: LLM'er tager puslespillet fra programmører",
-     "dato": "2026-10-19T23:58:25",
-     "foerst_set": "2026-10-20T05:10:40",
-     "link": "https://simonwillison.net/2026/Oct/19/my-obituary-for-programming/",
-     "side": "artikel/0e01cc7ca3c09d2b.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -319,7 +319,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 39,
+   "i_listen": 40,
    "som_ekstra": 6,
    "seneste": [
     {
@@ -384,6 +384,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Hugging Face gør TPU til almindelig PyTorch-enhed"
+    },
+    {
+     "rubrik": "Nvidia frigiver Nemotron 3.5 til 40 sprog",
+     "dato": "2026-10-28T15:00:00",
+     "foerst_set": "2026-10-28T15:23:12",
+     "link": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
+     "side": "artikel/4de33f2bccf585e4.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Forældre sagsøger OpenAI for GPT-4o-råd om epilepsimedicin",
@@ -483,15 +492,6 @@ window.KILDER_STATUS = {
      "side": "artikel/d0d46f2666065419.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Hackere offentliggør data fra GMO-kunder",
-     "dato": "2026-10-27T13:32:57",
-     "foerst_set": "2026-10-27T14:52:12",
-     "link": "https://techcrunch.com/2026/10/27/japan-internet-giant-gmo-says-hackers-posted-stolen-customer-data/",
-     "side": "artikel/96e811b7a717108d.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -519,7 +519,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 32,
+   "i_listen": 35,
    "som_ekstra": 4,
    "seneste": [
     {
@@ -568,6 +568,33 @@ window.KILDER_STATUS = {
      "under": "Gemini Live beskriver verden for blinde"
     },
     {
+     "rubrik": "Abbott i modvind: texanerne afviser data-centre",
+     "dato": "2026-10-28T08:00:00",
+     "foerst_set": "2026-10-28T15:23:12",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1018676/data-center-midterm-election-energy-water-texas",
+     "side": "artikel/a03c4a51a28af232.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Meta lancerer Waddle World som dagbog",
+     "dato": "2026-10-28T07:27:30",
+     "foerst_set": "2026-10-28T15:23:12",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1020410/meta-launched-ai-pet-journal-app-waddle-world",
+     "side": "artikel/6a00cf459c47b5db.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "xAI vil købe huse for at undgå søgsmål",
+     "dato": "2026-10-28T10:44:00",
+     "foerst_set": "2026-10-28T15:23:12",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1020596/xai-mississippi-neighborhood-data-center-lawsuit",
+     "side": "artikel/74376878bbbbb39c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Firefox lader AI udfylde formularer fra dine faner",
      "dato": "2026-10-27T12:14:18",
      "foerst_set": "2026-10-27T20:55:19",
@@ -605,7 +632,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "OpenAI lader forskere granske tre nye beviser",
-     "dato": "2026-10-26T19:34:58",
+     "dato": "2026-10-26T23:34:58",
      "foerst_set": "2026-10-27T05:29:27",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
      "side": "artikel/636dd8e40f57df25.html",
@@ -614,7 +641,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Anthropic erkender: Data centre kører på gas",
-     "dato": "2026-10-26T17:45:31",
+     "dato": "2026-10-26T21:45:31",
      "foerst_set": "2026-10-27T05:29:27",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk",
      "side": "artikel/dace5288fc19ee9c.html",
@@ -632,7 +659,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "The RealReal strammer botværn mod Muse",
-     "dato": "2026-10-26T13:30:55",
+     "dato": "2026-10-26T17:30:55",
      "foerst_set": "2026-10-26T21:09:48",
      "link": "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal",
      "side": "artikel/c51f3946ef3c8d71.html",
@@ -645,33 +672,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-26T15:25:50",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
      "side": "artikel/4aa5c31773e48136.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI: GPT-6.1 Sol når 98 procent i COBOL-test",
-     "dato": "2026-10-26T13:15:00",
-     "foerst_set": "2026-10-26T15:25:50",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1018434/cobol-migration-legacy-code-openai-anthropic",
-     "side": "artikel/21f9a9af9d145710.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Kevin Roose lancerer podcasten Machine Gods",
-     "dato": "2026-10-26T14:00:00",
-     "foerst_set": "2026-10-26T15:25:50",
-     "link": "https://www.theverge.com/podcast/1018264/kevin-roose-the-agi-chronicles-machine-gods-podcast-youtube-openai-anthropic",
-     "side": "artikel/5b0aa4d216294cfc.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "r/opensource forbyder AI og ikke-engelske bidrag",
-     "dato": "2026-10-25T13:25:32",
-     "foerst_set": "2026-10-25T19:13:15",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
-     "side": "artikel/19250ae33b5227a0.html",
      "hvor": "forside",
      "under": ""
     }
@@ -816,9 +816,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 6,
+   "i_listen": 7,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "AVEVA: Levende digitale tvillinger griber ind",
+     "dato": "2026-10-28T12:00:00",
+     "foerst_set": "2026-10-28T15:23:12",
+     "link": "https://www.technologyreview.com/2026/10/28/1147637/pairing-industrial-ai-autonomy-and-human-control/",
+     "side": "artikel/2b0a5d044d7f5155.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Rockwell Automation skærer oplæring til tre måneder",
      "dato": "2026-10-27T11:19:18",
