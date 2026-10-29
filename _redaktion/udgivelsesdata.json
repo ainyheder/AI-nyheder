@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-10-28T21:16:14.888910+00:00",
+  "opdateret": "2026-10-29T06:21:31.042587+00:00",
   "kladder": [
     {
       "titel": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
@@ -78,6 +78,7 @@
       "eget_foerst_set": "2026-10-28T21:16:14.888910+00:00",
       "rubrik": "OpenAI og ServiceNow udvider partnerskab om arbejdsgange",
       "resume_da": "OpenAI-modeller og -agenter skal ind i ServiceNow, mens ServiceNow-workflows skal kunne bruges i ChatGPT og Codex.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -94,7 +95,6 @@
         "emne": "openai servicenow"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -134,16 +134,67 @@
       ]
     },
     {
-      "titel": "Wiz’s CTO on PHP2Shell and the coming ‘vulnpocalypse’",
-      "link": "https://techcrunch.com/video/wizs-cto-on-php2shell-and-the-coming-vulnpocalypse/",
-      "resume": "The PHP scare may have faded from your feed, but the cleanup is far from over. Last week, two critical bugs in the open source language behind roughly 70% of websites left organizations scrambling to fix their systems, with some taking sites offline until the vulnerabilities could be patched. According to researchers who found the […]",
-      "dato": "2026-10-28T19:05:46+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Nyheder",
-      "foerst_set": "2026-10-28T21:16:14.888910+00:00",
-      "eget_foerst_set": "2026-10-28T21:16:14.888910+00:00",
-      "rubrik": "Wiz-topchef: To PHP-fejl ramte 70 procent af websteder",
-      "resume_da": "To kritiske fejl i PHP fik nogle organisationer til at tage sider offline, mens fejlene blev patchet, siger Wiz' CTO.",
+      "titel": "Adam Mosseri says negativity around AI is ‘going to get worse’",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity",
+      "resume": "Asked about AI and the trend of college students booing tech CEOs at graduation ceremonies, Instagram head Adam Mosseri acknowledged in an interview that a lot of people really don't like AI, and it's not just young people and creatives. Appearing on the Colin and Samir podcast to talk about the launch of widescreen and […]",
+      "dato": "2026-10-28T19:05:39-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-29T06:21:31.042587+00:00",
+      "eget_foerst_set": "2026-10-29T06:21:31.042587+00:00",
+      "rubrik": "Adam Mosseri: AI-negativitet bliver værre",
+      "resume_da": "Instagram-chefen siger, at modstanden ikke kun kommer fra unge og kreative.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Instagram-chef Adam Mosseri siger i interview, at modstanden mod AI ikke kun kommer fra unge og kreative, og at den bliver værre.",
+        "forbehold": "Udvalgt citat fra podcastinterview uden tal eller undersøgelser.",
+        "emne": "meta og ai-modstand"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+      "link": "https://openai.com/index/oracle-apps-in-chatgpt",
+      "resume": "OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.",
+      "dato": "2026-10-27T07:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-27T20:55:19.965914+00:00",
+      "eget_foerst_set": "2026-10-27T20:55:19.965914+00:00",
+      "rubrik": "OpenAI og Oracle bringer forretningsapps ind i ChatGPT",
+      "resume_da": "Aftalen skal også give nye Oracle-tilbud og AI-agenter; hvilke produkter der kommer, og hvornår, oplyses ikke.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI og Oracle udvider partnerskabet for at bringe forretningsapplikationer og AI-agenter ind i ChatGPT samt nye Oracle-tilbud.",
+        "forbehold": "Ingen produkter, priser eller tidslinje oplyst; ingen ny model.",
+        "emne": "openai oracle"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -193,39 +244,6 @@
       ]
     },
     {
-      "titel": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
-      "link": "https://openai.com/index/oracle-apps-in-chatgpt",
-      "resume": "OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.",
-      "dato": "2026-10-27T07:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-10-27T20:55:19.965914+00:00",
-      "eget_foerst_set": "2026-10-27T20:55:19.965914+00:00",
-      "rubrik": "OpenAI og Oracle bringer forretningsapps ind i ChatGPT",
-      "resume_da": "Aftalen skal også give nye Oracle-tilbud og AI-agenter; hvilke produkter der kommer, og hvornår, oplyses ikke.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI og Oracle udvider partnerskabet for at bringe forretningsapplikationer og AI-agenter ind i ChatGPT samt nye Oracle-tilbud.",
-        "forbehold": "Ingen produkter, priser eller tidslinje oplyst; ingen ny model.",
-        "emne": "openai oracle"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "ChatGPT’s expanding world of work",
       "link": "https://openai.com/index/chatgpt-expanding-world-of-work",
       "resume": "Explore OpenAI Signals data on 165 work activities across nearly 100 countries, revealing how people use ChatGPT for work and how usage changes over time.",
@@ -251,39 +269,6 @@
         "begrundelse": "OpenAI offentliggør egen brugsstatistik for arbejdsopgaver i knap 100 lande og viser ændringer over tid.",
         "forbehold": "Tallene er OpenAIs egne og ikke en uafhængig undersøgelse.",
         "emne": "chatgpt arbejdsbrug"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Retell uses OpenAI models to help power 100M monthly calls",
-      "link": "https://openai.com/index/retell-ai",
-      "resume": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee.",
-      "dato": "2026-10-27T15:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-10-28T06:12:05.456025+00:00",
-      "eget_foerst_set": "2026-10-28T06:12:05.456025+00:00",
-      "rubrik": "Retell bruger OpenAI-modeller til 100 millioner opkald",
-      "resume_da": "Ifølge OpenAI topper GPT-6 Astra Retells benchmark for taleagenter, og Codex hjælper selskabet til en årlig omsætningstakt på 1,6 mio. dollar pr. medarbejder.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI-blog: taleagentkunden Retell bruger OpenAI-modeller og topper egen benchmark med GPT-6 Astra.",
-        "forbehold": "Kundecase fra OpenAI selv; benchmark er leverandørens egen.",
-        "emne": "openai, retell"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
@@ -325,33 +310,33 @@
       ]
     },
     {
-      "titel": "South Korea’s financial industry hit by fresh wave of cyberattacks",
-      "link": "https://techcrunch.com/2026/10/28/south-koreas-financial-industry-hit-by-fresh-wave-of-cyberattacks/",
-      "resume": "South Korea’s financial institutions have been hit by another wave of cyberattacks, highlighting the growing risk of AI-driven hacking in Asia.",
-      "dato": "2026-10-28T15:41:18+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-10-28T21:16:14.888910+00:00",
-      "eget_foerst_set": "2026-10-28T21:16:14.888910+00:00",
-      "rubrik": "Sydkoreanske finansinstitutioner ramt af nye cyberangreb",
-      "resume_da": "Det er endnu en bølge mod landets finanssektor, og TechCrunch ser den som tegn på stigende risiko for AI-drevet hacking i Asien.",
+      "titel": "Retell uses OpenAI models to help power 100M monthly calls",
+      "link": "https://openai.com/index/retell-ai",
+      "resume": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee.",
+      "dato": "2026-10-27T15:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-28T06:12:05.456025+00:00",
+      "eget_foerst_set": "2026-10-28T06:12:05.456025+00:00",
+      "rubrik": "Retell bruger OpenAI-modeller til 100 millioner opkald",
+      "resume_da": "Ifølge OpenAI topper GPT-6 Astra Retells benchmark for taleagenter, og Codex hjælper selskabet til en årlig omsætningstakt på 1,6 mio. dollar pr. medarbejder.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
         "nyhed": 2,
         "betydning": 2,
-        "brugbarhed": 1,
+        "brugbarhed": 2,
         "dokumentation": 2,
         "dansk": 0,
-        "type": "sikkerhed",
+        "type": "forretning",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Ny bølge af cyberangreb mod sydkoreanske finansinstitutioner, som TechCrunch kobler til AI-drevet hacking.",
-        "forbehold": "AI-vinklen er løst underbygget; ingen konkrete beviser for AI-værktøjer i angrebene.",
-        "emne": "sydkorea cyberangreb"
+        "begrundelse": "OpenAI-blog: taleagentkunden Retell bruger OpenAI-modeller og topper egen benchmark med GPT-6 Astra.",
+        "forbehold": "Kundecase fra OpenAI selv; benchmark er leverandørens egen.",
+        "emne": "openai, retell"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -386,6 +371,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Quoting Ted Sanders",
+      "link": "https://simonwillison.net/2026/Oct/28/ted-sanders/",
+      "resume": "In general, LLM performance is incredibly multidimensional. There's no guarantee of a fixed ordering where the model that is best at math is also the model that's best at jokes. Despite that complexity, much of the variation in performance is explained by just a single variable: model size. In general, models that are bigger will (a) be more performant / reliable, (b) cost more per token, and (c)…",
+      "dato": "2026-10-28T23:23:21+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-29T06:21:31.042587+00:00",
+      "eget_foerst_set": "2026-10-29T06:21:31.042587+00:00",
+      "rubrik": "Ted Sanders: modelstørrelse forklarer meget LLM-variation",
+      "resume_da": "Han siger, at ydeevne er flerdimensionel: bedst til matematik er ikke nødvendigvis bedst til vittigheder.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Ted Sanders fremhæver, at LLM-ydeevne er flerdimensionel, men at modelstørrelse forklarer meget af variationen i ydeevne, pris og robusthed.",
+        "forbehold": "Kort citatuddrag uden metode eller data bag påstandene.",
+        "emne": "llm-ydeevne og modelstørrelse"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 3,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -556,39 +574,6 @@
       ]
     },
     {
-      "titel": "Securing our frontier model training environment",
-      "link": "https://openai.com/index/securing-our-frontier-model-training-environment",
-      "resume": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming.",
-      "dato": "2026-10-23T10:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-10-23T20:03:23.140200+00:00",
-      "eget_foerst_set": "2026-10-23T20:03:23.140200+00:00",
-      "rubrik": "OpenAI strammer sikkerheden om modeltræning",
-      "resume_da": "Træning og evaluering af frontier-modeller foregår nu i isolerede offline-miljøer, og sikkerheden afprøves med ressourcekrævende red-teaming, oplyser OpenAI selv.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI beskriver skærpet indeslutning af træningsmiljøer for frontier-modeller med offline-miljøer og ressourcekrævende red-teaming.",
-        "forbehold": "OpenAI beskriver egne tiltag; ingen uafhængig granskning.",
-        "emne": "openai træningssikkerhed"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Can we trust LLMs to judge whether a research idea is novel?",
       "link": "https://huggingface.co/blog/allenai/novelty-bench",
       "resume": "",
@@ -617,6 +602,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 2,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Securing our frontier model training environment",
+      "link": "https://openai.com/index/securing-our-frontier-model-training-environment",
+      "resume": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming.",
+      "dato": "2026-10-23T10:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "eget_foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "rubrik": "OpenAI strammer sikkerheden om modeltræning",
+      "resume_da": "Træning og evaluering af frontier-modeller foregår nu i isolerede offline-miljøer, og sikkerheden afprøves med ressourcekrævende red-teaming, oplyser OpenAI selv.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI beskriver skærpet indeslutning af træningsmiljøer for frontier-modeller med offline-miljøer og ressourcekrævende red-teaming.",
+        "forbehold": "OpenAI beskriver egne tiltag; ingen uafhængig granskning.",
+        "emne": "openai træningssikkerhed"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -688,6 +706,39 @@
       ]
     },
     {
+      "titel": "The future of the firm",
+      "link": "https://openai.com/index/the-future-of-the-firm",
+      "resume": "How AI might enter the org chart—beneath, beside, and between us.",
+      "dato": "2026-10-28T10:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-28T21:16:14.888910+00:00",
+      "eget_foerst_set": "2026-10-28T21:16:14.888910+00:00",
+      "rubrik": "OpenAI-blog: AI kan få plads i organisationsdiagrammet",
+      "resume_da": "Indlægget forestiller sig AI placeret under, ved siden af og mellem medarbejdere. Det er et scenarieindlæg uden konkrete produkter eller testresultater.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 0,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI-scenarieindlæg om, hvordan AI kan placeres under, ved siden af og mellem medarbejdere.",
+        "forbehold": "Ingen konkrete produkter, data eller testresultater.",
+        "emne": "ai i organisationen"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 2,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
       "link": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
       "resume": "",
@@ -716,39 +767,6 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "The future of the firm",
-      "link": "https://openai.com/index/the-future-of-the-firm",
-      "resume": "How AI might enter the org chart—beneath, beside, and between us.",
-      "dato": "2026-10-28T10:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-10-28T21:16:14.888910+00:00",
-      "eget_foerst_set": "2026-10-28T21:16:14.888910+00:00",
-      "rubrik": "OpenAI-blog: AI kan få plads i organisationsdiagrammet",
-      "resume_da": "Indlægget forestiller sig AI placeret under, ved siden af og mellem medarbejdere. Det er et scenarieindlæg uden konkrete produkter eller testresultater.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 0,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI-scenarieindlæg om, hvordan AI kan placeres under, ved siden af og mellem medarbejdere.",
-        "forbehold": "Ingen konkrete produkter, data eller testresultater.",
-        "emne": "ai i organisationen"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 2,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -820,39 +838,6 @@
       ]
     },
     {
-      "titel": "Using thousands of AI agents to uncover new leads in biological data",
-      "link": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
-      "resume": "See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells.",
-      "dato": "2026-10-21T04:50:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Forskning",
-      "foerst_set": "2026-10-21T14:05:01.175685+00:00",
-      "eget_foerst_set": "2026-10-21T14:05:01.175685+00:00",
-      "rubrik": "AI-agenter finder spor i data om hjerneceller",
-      "resume_da": "Projektet kombinerede OpenAI, PerturbAI og Scripps Research til at analysere data fra millioner af hjerneceller.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI, PerturbAI og Scripps Research brugte tusindvis af AI-agenter til at finde forskningsled i data fra millioner af hjerneceller.",
-        "forbehold": "Udfald og metode beskrives ikke i noten.",
-        "emne": "ai-agenter i biologi"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "OpenAI and Poland’s NASK partner to advance AI safety and security",
       "link": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
       "resume": "OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient digital ecosystem.",
@@ -884,39 +869,6 @@
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
-    },
-    {
-      "titel": "NVIDIA Kumo Forecast Combines Pretrained Time-Series Representations with Historical Pattern Retrieval and Interpretability",
-      "link": "https://huggingface.co/blog/nvidia/kumo-forecast",
-      "resume": "",
-      "dato": "2026-10-21T12:51:24+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Forskning",
-      "foerst_set": "2026-10-21T14:05:01.175685+00:00",
-      "eget_foerst_set": "2026-10-21T14:05:01.175685+00:00",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "NVIDIA præsenterer Kumo Forecast, der kombinerer trænede tidsrække-repræsentationer med historikbaseret mønsterhentning.",
-        "forbehold": "Ingen tekst eller detaljer medsendt; kun titlen dokumenterer indholdet.",
-        "emne": "nvidia kumo forecast"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ],
-      "rubrik": "NVIDIA udgiver Kumo Forecast til tidsserieudsigter",
-      "resume_da": "Modellen kombinerer fortrænede tidsserierepræsentationer med mønstergenkendelse fra historik og skal give fortolkelige udsigter."
     },
     {
       "titel": "Build more responsive apps with the Decisions API",
@@ -1051,39 +1003,6 @@
       ]
     },
     {
-      "titel": "How we built ChatGPT’s novel ad stack for user trust and relevance",
-      "link": "https://openai.com/index/building-chatgpt-ad-stack",
-      "resume": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.",
-      "dato": "2026-10-21T07:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-10-21T14:05:01.175685+00:00",
-      "eget_foerst_set": "2026-10-21T14:05:01.175685+00:00",
-      "rubrik": "OpenAI forklarer ChatGPTs annoncestak",
-      "resume_da": "Systemet adskiller annoncer fra svar og bruger sprogmodeller til at forstå samtalekontekst for relevans.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI beskriver teknikken bag ChatGPT-annoncer: LLM til samtale-intent, annoncer adskilt fra svar.",
-        "forbehold": "Producentens egen tekniske gennemgang uden uafhængig vurdering.",
-        "emne": "openai annoncestak"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
       "link": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
       "resume": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source.",
@@ -1151,39 +1070,6 @@
       ]
     },
     {
-      "titel": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
-      "link": "https://openai.com/index/empowering-cyber-defenders",
-      "resume": "OpenAI outlines a blueprint for empowering cyber defenders with frontier AI, stronger safeguards, modernized cybersecurity, and more resilient public institutions.",
-      "dato": "2026-10-21T00:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-10-21T20:20:24.508912+00:00",
-      "eget_foerst_set": "2026-10-21T20:20:24.508912+00:00",
-      "rubrik": "OpenAI fremlægger plan for at styrke cyberforsvaret",
-      "resume_da": "Blueprinten foreslår at bruge frontier AI til forsvar, skærpe sikkerhedsforanstaltninger og gøre offentlige institutioner mere modstandsdygtige over for digitale angreb.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI præsenterer en blueprint for at bruge frontier AI til cyberforsvar og mere modstandsdygtige offentlige institutioner.",
-        "forbehold": "En blueprint er en anbefaling, ikke en politisk beslutning.",
-        "emne": "openai cyberforsvar"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Does Your Model Run on AWS Trainium? Look It Up",
       "link": "https://huggingface.co/blog/torch-neuronx-model-support",
       "resume": "",
@@ -1245,39 +1131,6 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Cloudflare links vulnerability discovery to defense with OpenAI",
-      "link": "https://openai.com/index/cloudflare-cyber",
-      "resume": "Cloudflare uses OpenAI Daybreak to investigate vulnerabilities and propose fixes for review. Its developers use Codex to build faster and improve code quality.",
-      "dato": "2026-10-21T00:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-10-22T05:16:25.880387+00:00",
-      "eget_foerst_set": "2026-10-22T05:16:25.880387+00:00",
-      "rubrik": "Cloudflare bruger OpenAI Daybreak til at finde sårbarheder",
-      "resume_da": "Værktøjet foreslår rettelser, som Cloudflares udviklere selv gennemgår, og Codex skal gøre koden hurtigere at skrive.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Kundecase: Cloudflare bruger OpenAI Daybreak til at finde sårbarheder og Codex i udviklingen.",
-        "forbehold": "Leverandøromtale uden målte resultater eller uafhængig verifikation.",
-        "emne": "cloudflare openai"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1425,6 +1278,7 @@
       "eget_foerst_set": "2026-10-14T05:17:23.558972+00:00",
       "rubrik": "DeepMind og Singapore bygger Gemma-model mod svindel",
       "resume_da": "Modellen er finjusteret og kører lokalt på enheden, så private chats analyseres uden at data sendes til cloud.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1441,7 +1295,6 @@
         "emne": "scam detection gemma"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -1458,6 +1311,7 @@
       "eget_foerst_set": "2026-10-02T12:20:39.330113+00:00",
       "rubrik": "DeepMind vandmærker AI-genererede proteiner med SynthID Bio",
       "resume_da": "Teknikken er et proof of concept og skal vandmærke proteiner uden at ødelægge deres biologiske funktion.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1474,8 +1328,84 @@
         "emne": "synthid bio"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Akai is embracing vibe-coded mods with an open-source MPC",
+      "link": "https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key",
+      "resume": "The MPC Sample Key isn't even formally announced yet, but Akai is already showing off what the modding community is cooking up through vibe coding. Akai has decided to embrace the explosion of hackers and custom firmware developers by giving them early access to the device, which will have open-source firmware. It will likely run […]",
+      "dato": "2026-10-28T17:34:04-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-10-29T06:21:31.042587+00:00",
+      "eget_foerst_set": "2026-10-29T06:21:31.042587+00:00",
+      "rubrik": "Akai giver tidlig adgang til open-source-MPC",
+      "resume_da": "MPC Sample Key er ikke formelt annonceret; modding-miljøet får tidlig adgang og kan lave mods med open-source-firmware.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Akai giver modding-miljøet tidlig adgang til MPC Sample Key med open-source-firmware, hvor der eksperimenteres med vibe coding.",
+        "forbehold": "Enheden er ikke formelt annonceret, og AI er kun perifer i historien.",
+        "emne": "akai mpc sample key"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Wiz’s CTO on PHP2Shell and the coming ‘vulnpocalypse’",
+      "link": "https://techcrunch.com/video/wizs-cto-on-php2shell-and-the-coming-vulnpocalypse/",
+      "resume": "The PHP scare may have faded from your feed, but the cleanup is far from over. Last week, two critical bugs in the open source language behind roughly 70% of websites left organizations scrambling to fix their systems, with some taking sites offline until the vulnerabilities could be patched. According to researchers who found the […]",
+      "dato": "2026-10-28T19:05:46+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-28T21:16:14.888910+00:00",
+      "eget_foerst_set": "2026-10-28T21:16:14.888910+00:00",
+      "rubrik": "Wiz-topchef: To PHP-fejl ramte 70 procent af websteder",
+      "resume_da": "To kritiske fejl i PHP fik nogle organisationer til at tage sider offline, mens fejlene blev patchet, siger Wiz' CTO.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Wiz' CTO fortæller, at oprydningen efter to kritiske PHP-fejl langtfra er slut, og varsler flere sårbarheder i gammel kode.",
+        "forbehold": "Interview og podcast uden konkrete data; AI er ikke hovedemnet.",
+        "emne": "php-sårbarheder"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
+      "historie_dato": "2026-10-28T18:50:39+00:00",
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/podcast/the-vulnpocalypse-is-coming-for-the-internets-aging-code-says-wizs-cto/",
+          "rubrik": "Wiz-CTO: PHP-fejl ramte kode bag 70 % websites",
+          "resume_da": "To kritiske PHP-fejl fik nogle til at tage sider offline; oprydningen er ikke slut.",
+          "dato": "2026-10-28 18:50:39+00:00",
+          "foerst_set": "2026-10-28T21:16:14.888910+00:00"
+        }
+      ],
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1583,7 +1513,7 @@
       "titel": "VisionQuest is what happens when AI really goes rogue",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai",
       "resume": "In Marvel's VisionQuest, a superpowered robot tries to better understand humanity by getting lost in elaborate, digital daydreams in which he and other artificial intelligence-powered beings live together in a home. The series is deeply fantastical, yet it plays with some of the ideas that have come to dominate the conversation about real-world generative artificial […]",
-      "dato": "2026-10-27T13:30:00-04:00",
+      "dato": "2026-10-27T17:30:00+00:00",
       "kilde": "The Verge AI",
       "kategori": "Hverdags-AI",
       "foerst_set": "2026-10-27T20:55:19.965914+00:00",
@@ -2102,105 +2032,6 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "kat_ai": true,
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "TechCrunch Founder Summit 2026: Everything you need to know",
-      "link": "https://techcrunch.com/2026/10/21/techcrunch-founder-summit-2026-everything-you-need-to-know/",
-      "resume": "TechCrunch Founder Summit is a full-day gathering in Boston on November 4 where founders across all stages connect with top VCs and experienced entrepreneurs to gain tactical insights on building and scaling their companies.",
-      "dato": "2026-10-21T21:16:20+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-10-21T23:34:19.581822+00:00",
-      "eget_foerst_set": "2026-10-21T23:34:19.581822+00:00",
-      "rubrik": "TechCrunch samler stiftere i Boston 4. november",
-      "resume_da": "Endagsmødet 2026 er for grundlæggere på alle stadier, der vil hente råd hos investorer og erfarne iværksættere om at bygge og skalere.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "reklame",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Omtale af TechCrunch Founder Summit i Boston er en eventpåmindelse uden AI-fagligt indhold.",
-        "forbehold": "",
-        "emne": "techcrunch founder summit"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Today's PHP Security Release, and How We're Strengthening PHP Security",
-      "link": "https://simonwillison.net/2026/Oct/21/php-security-release/",
-      "resume": "Today's PHP Security Release, and How We're Strengthening PHP Security If you're running anything on PHP it's vital you upgrade - today's updates (across the entire PHP 8.x line) address two remote code execution holes, and there have been exploits circulating since last night, thanks to a leak in the coordinated disclosure process. This post from the PHP Foundation explain what went so wrong: On…",
-      "dato": "2026-10-21T18:41:53+00:00",
-      "kilde": "Simon Willison AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-10-21T20:20:24.508912+00:00",
-      "eget_foerst_set": "2026-10-21T20:20:24.508912+00:00",
-      "rubrik": "PHP-opdatering lukker to alvorlige sikkerhedshuller",
-      "resume_da": "To fjernkørselshuller i hele PHP 8.x-linjen er lappet, efter at exploits cirkulerede fra natten før på grund af et lækket disclosureskema; opgradering påkrævet.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "PHP-lapper to fjernkørselshuller i hele 8.x efter lækket disclosure og cirkulerende exploits",
-        "forbehold": "",
-        "emne": "php foundation"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Judge dismisses Sam Altman’s sister’s sexual abuse lawsuit",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1014976/sam-altman-ann-altman-lawsuit-dismissed",
-      "resume": "On Tuesday, US District Judge Zachary Bluestone dismissed the lawsuit Ann Altman filed last year alleging that her brother, OpenAI CEO Sam Altman, had sexually abused her throughout her childhood. As reported earlier by The Guardian, the judge wrote that over the past year, Ann had failed to appear for an independent medical examination or […]",
-      "dato": "2026-10-20T23:04:19+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-10-20T23:20:11.721476+00:00",
-      "eget_foerst_set": "2026-10-20T23:20:11.721476+00:00",
-      "rubrik": "Dommer afviser søgsmål mod Sam Altman",
-      "resume_da": "Zachary Bluestone afviste søgsmålet, fordi Ann Altman ikke mødte op til en uafhængig lægeundersøgelse i løbet af det seneste år.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 0,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Dommer afviser søgsmål mod Sam Altman; Ann Altman udeblev fra lægeundersøgelse",
-        "forbehold": "Sagen er afvist på procesgrundlag, ikke en prøvelse af anklagerne",
-        "emne": "ann altman-søgsmål"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -40751,7 +40582,18 @@
         "kontrolleret": "2026-10-15T14:07:17.066546+00:00"
       },
       "prio": 2,
-      "side": "artikel/0c100d2e0ef8e493.html"
+      "side": "artikel/0c100d2e0ef8e493.html",
+      "historie_dato": "2026-10-14T21:23:01+00:00",
+      "andre": [
+        {
+          "kilde": "Simon Willison AI",
+          "link": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
+          "rubrik": "Claude Opus 5.5 gør spil sjove at spille",
+          "resume_da": "Fire spil bygget uden at læse koden: et træpuslespil i første forsøg og et strategispil med 2–4 spillere og syv kort.",
+          "dato": "2026-10-28T13:55:15+00:00",
+          "foerst_set": "2026-10-28T15:23:12.851168+00:00"
+        }
+      ]
     },
     {
       "titel": "Your secrets aren’t safe with this cute robot toy — they’re on Chinese servers ready to be hacked",
@@ -54591,7 +54433,7 @@
       "titel": "Anthropic’s elaborate plan to keep Wall Street at bay",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety",
       "resume": "Anthropic wants to have it both ways. With its impending IPO, it wants to tap the vast riches of the public markets and insists it doesn't want to compromise its core mission of developing AI safely and for the benefit of humanity. But greater model capabilities bring greater risks, and shareholders eager for returns may […]",
-      "dato": "2026-10-27T12:51:22-04:00",
+      "dato": "2026-10-27T16:51:22+00:00",
       "kilde": "The Verge AI",
       "kategori": "Penge & marked",
       "foerst_set": "2026-10-27T20:55:19.965914+00:00",
@@ -55634,94 +55476,6 @@
       "side": "artikel/74376878bbbbb39c.html"
     },
     {
-      "titel": "The October inflection point for vibe game development",
-      "link": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
-      "resume": "I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective coding agents became reliable daily drivers for software engineers. I think we've reached a new inflection point in October 2026, and this time it's for vibe coding computer games . Tree Appreciator Emberwick Battle Drones…",
-      "dato": "2026-10-28T13:55:15+00:00",
-      "kilde": "Simon Willison AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-10-28T15:23:12.851168+00:00",
-      "eget_foerst_set": "2026-10-28T15:23:12.851168+00:00",
-      "rubrik": "Claude Opus 5.5 gør spil sjove at spille",
-      "resume_da": "Fire spil bygget uden at læse koden: et træpuslespil i første forsøg og et strategispil med 2–4 spillere og syv kort.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Fra at ligne et spil til at være sjovt",
-          "tekst": "Modeller har længe kunnet bygge noget, der ligner et spil. Det svære har været at gøre det sjovt at spille. Simon Willison, der skriver om AI-værktøjer, troede ikke, at modellerne kunne klare den del — spilldesign er et håndværk, hvor sværhedsgrad og læringskurve skal passe sammen.\n\nSå bad han Claude Opus 5.5 om at gøre spillet »a LOT more fun«. **Det virkede.** Siden har han vibe-codet fire spil, som han selv har moret sig med at spille — i klassisk forstand: uden at kigge på koden."
-        },
-        {
-          "overskrift": "Et træspil i første forsøg",
-          "tekst": "Det mindste af spillene, Tree Appreciator, blev bygget i almindelig Claude-chat — ikke i kodeværktøjet Claude Code — og krævede hverken iteration eller opfølgning bagefter.\n\nPrompten bad om et three.js-spil, et JavaScript-bibliotek til 3D i browseren, hvor man sammenligner to algoritmisk genererede træer og samler dem i et herbarium.\n\nDen største mundfuld var en fantasy-RPG set ovenfra, som krævede flere runder med afprøvning. Problemerne handlede især om gameplay: figurer, der var flyttet, så en opgave ikke kunne fullføres. Det færdige spil tager omkring 15 minutter at spille igennem."
-        },
-        {
-          "overskrift": "Battle Drones var den største succes",
-          "tekst": "Battle Drones er et strategispil i stil med Command & Conquer, hvor to robotarmeer bygger enheder, indsamler skrot og kæmper om territorium. Den første version blev bygget i juli med Claude Fable 5, men den spillede ikke godt.\n\nOpus 5.5 fik beskeden om at gøre det »a LOT more fun« og senere om at portere spillet til three.js. I dag har det multiplayer til 2–4 spillere, syv kort, medaljer, genafspilninger og en tilstand, hvor forskellige sprogmodeller spiller mod hinanden."
-        },
-        {
-          "overskrift": "GPT-6 kan bygge, men rammer ikke sjov",
-          "tekst": "Willison kalder sit indtryk foreløbigt og ikke et udtømmende studie: GPT-6 Astra kan absolut bygge et spil, men sansen for sjov matcher ikke Opus 5.5.\n\nHan kørte samme række prompts gennem GPT-6 Pro. Resultatet ser flot ud, men spiller efter hans vurdering ikke lige så godt. Han forventer, at OpenAI indhenter det inden årets udgang."
-        },
-        {
-          "overskrift": "Idéen er den nye flaskehals",
-          "tekst": "På Foo Camp i Berkeley mødte Willison flere med samme erfaring: At bygge spil, der spiller godt, er overraskende let nu. Den nye udfordring er at finde på koncepter, som er nye og charmerende, og som ikke ville findes uden AI."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "4 spil",
-          "label": "Antal spil Willison har vibe-codet og selv nydt at spille"
-        },
-        {
-          "tal": "15 minutter",
-          "label": "Spilletid for fantasy-RPG'en fra start til slut"
-        },
-        {
-          "tal": "2–4 spillere",
-          "label": "Multiplayer i Battle Drones via en server bygget på samme måde"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Tree Appreciator blev bygget i én prompt uden opfølgning.",
-        "Battle Drones startede i juli med Claude Fable 5.",
-        "Fantasy-RPG'en har en eksperimentel level editor til egne huse og landskaber.",
-        "Battle Drones kan lade forskellige sprogmodeller spille mod hinanden."
-      ],
-      "betydning": "Hvis Willisons indtryk holder, flytter den sværeste del af spiludvikling sig fra koden til idéen om, hvad der er sjovt at spille.",
-      "pointer": [
-        "Opus 5.5 gjorde fire spil sjove at spille",
-        "GPT-6 kan bygge spil, men rammer ikke sjov",
-        "Den næste flaskehals er at finde på idéerne"
-      ],
-      "billedmotiv": "A solid game controller with Claude's terracotta-orange, many-rayed asterisk badge on its center, placed beside a top-down battlefield board: seven map tiles, four player tokens and a small scrap pile. One map tile is lifted and swapped in, showing the model tuning play for fun rather than just building a game.",
-      "billedmotiv_instruks": "22293d036b160741762e",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Willison hævder, at oktober 2026 er et vendepunkt for AI-genererede computerspil efter tidligere kodningsagenters modenhed.",
-        "forbehold": "Enkeltpersoners vurdering uden metode eller systematiske data.",
-        "emne": "vibe coding af spil"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-10-28T15:28:06.775107+00:00"
-      },
-      "prio": 4,
-      "side": "artikel/2fcae8853da5c178.html"
-    },
-    {
       "titel": "Pairing industrial AI autonomy and human control",
       "link": "https://www.technologyreview.com/2026/10/28/1147637/pairing-industrial-ai-autonomy-and-human-control/",
       "resume": "",
@@ -55879,25 +55633,54 @@
       "eget_foerst_set": "2026-10-28T21:16:14.888910+00:00",
       "rubrik": "Gemini 4 Carbon fører testene i sårbarhedsjagt",
       "resume_da": "Google annoncerer Gemini 4 Carbon, der især skal finde og lukke sårbarheder i kode. Foreløbig får kun udvalgte cyberforsvarere adgang.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 4,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "Google annoncerer officielt Gemini 4 Carbon som sin stærkeste model med cyberforsvar og langtidsevner.",
-        "forbehold": "Kun én sætning fra Google; ingen pris, adgang, benchmarks eller uafhængige test.",
-        "emne": "gemini 4 carbon"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
-      "historie_dato": "2026-10-28T17:00:00+00:00",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Finder sårbarheder i 88,2 procent af testene",
+          "tekst": "To uger efter Gemini 4 Argon løfter Google sløret for endnu en model: Gemini 4 Carbon. Selskabet kalder den sin stærkeste til dato og fremhæver især cyberforsvar og opgaver, der strækker sig over lang tid.\n\nCarbon indtager førstepladsen på Artificial Analysis Intelligence Index med en score på 59, ifølge Google. Indekset er et samlet mål for, hvordan en model klarer en række forskellige opgaver.\n\nPå sikkerhedsområdet får Carbon 88,2 procent i SEC-bench Pro, hvor opgaven er at finde sårbarheder, 54,8 procent i ExploitGym for at udnytte dem og 71,0 procent i CWE-bench for at lappe fejl. Google oplyser, at testene er kørt uden guardrails."
+        },
+        {
+          "overskrift": "Chrome-teamet melder om ti gange bedre rettelser",
+          "tekst": "Google måler også Carbon på interne tests. Her får modellen mere end dobbelt så høj succesrate som Argon, når den skal skrive kode uden sårbarheder.\n\nChrome-teamet rapporterer ifølge Google, at Carbon lavede højkvalitetsrettelser mere end ti gange bedre end et andet laboratoriums store frontiermodel. Sikkerhedsplatformen Wiz ser samtidig Carbon føre på benchmarks for web-penetrationstest.\n\nPå WebDev Arena, hvor modeller måles på at bygge websider, rykker Carbon 89 elo-point op og lander på en fjerdeplads med 1768 point."
+        },
+        {
+          "overskrift": "Kun udvalgte cyberforsvarere får adgang nu",
+          "tekst": "Carbon er ikke tilgængelig for alle. Google begynder i denne uge med at give en mindre gruppe cyberforsvarere adgang og udvider derefter gradvist gennem sit Fairwind Program.\n\nSelskabet deltager samtidig i den amerikanske regerings frivillige ordning for test af modeller, før de udgives. Google skriver, at Carbon kommer til udviklere, virksomheder og forbrugere »så hurtigt som muligt«, men giver ingen dato.\n\nPrisen bliver den samme introduktionspris som Argon: 2 dollar pr. million input-tokens og 10 dollar pr. million output-tokens. Input-tokens, der ligger i cache, koster 95 procent mindre."
+        },
+        {
+          "overskrift": "Carbon afviste alle forsøg på prompt-injektion",
+          "tekst": "Sikkerhed handler også om at modstå manipulation. I testen Grey Swan afviste Carbon hvert eneste forsøg på prompt-injektion, hvor nogen forsøger at lokke modellen til at følge skjulte instruktioner. Det giver 0 procent mod Argon 0,7 procent.\n\nGoogle beskriver Carbons værn som bygget oven på Argons: træning, løbende forsvar mod misbrug, modstandsdygtighed over for prompt-injektion og overvågning af modellens mellemregninger."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "59",
+          "label": "Artificial Analysis Intelligence Index (ifølge Google)"
+        },
+        {
+          "tal": "88,2 %",
+          "label": "SEC-bench Pro, andel fundne sårbarheder"
+        },
+        {
+          "tal": "54,8 %",
+          "label": "ExploitGym, udnyttelse af sårbarheder"
+        },
+        {
+          "tal": "1768 point",
+          "label": "WebDev Arena, fjerdeplads efter 89 elo-points fremgang"
+        },
+        {
+          "tal": "2 og 10 dollar",
+          "label": "pr. million input- og output-tokens, samme introduktionspris som Argon"
+        }
+      ],
+      "figurer": [
+        {
+          "url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/gemini_4_carbon__evals-table.original.png",
+          "tekst": "Credit: Google",
+          "kilde": "Ars Technica AI"
+        }
+      ],
       "andre": [
         {
           "kilde": "Ars Technica AI",
@@ -55924,54 +55707,6 @@
           "foerst_set": "2026-10-28T21:16:14.888910+00:00"
         }
       ],
-      "sektioner": [
-        {
-          "overskrift": "Finder sårbarheder i 88,2 procent af testene",
-          "tekst": "To uger efter Gemini 4 Argon løfter Google sløret for endnu en model: Gemini 4 Carbon. Selskabet kalder den sin stærkeste til dato og fremhæver især cyberforsvar og opgaver, der strækker sig over lang tid.\n\nCarbon indtager førstepladsen på Artificial Analysis Intelligence Index med en score på 59, ifølge Google. Indekset er et samlet mål for, hvordan en model klarer en række forskellige opgaver.\n\nPå sikkerhedsområdet får Carbon 88,2 procent i SEC-bench Pro, hvor opgaven er at finde sårbarheder, 54,8 procent i ExploitGym for at udnytte dem og 71,0 procent i CWE-bench for at lappe fejl. Google oplyser, at testene er kørt uden guardrails."
-        },
-        {
-          "overskrift": "Chrome-teamet melder om ti gange bedre rettelser",
-          "tekst": "Google måler også Carbon på interne tests. Her får modellen mere end dobbelt så høj succesrate som Argon, når den skal skrive kode uden sårbarheder.\n\nChrome-teamet rapporterer ifølge Google, at Carbon lavede højkvalitetsrettelser mere end ti gange bedre end et andet laboratoriums store frontiermodel. Sikkerhedsplatformen Wiz ser samtidig Carbon føre på benchmarks for web-penetrationstest.\n\nPå WebDev Arena, hvor modeller måles på at bygge websider, rykker Carbon 89 elo-point op og lander på en fjerdeplads med 1768 point."
-        },
-        {
-          "overskrift": "Kun udvalgte cyberforsvarere får adgang nu",
-          "tekst": "Carbon er ikke tilgængelig for alle. Google begynder i denne uge med at give en mindre gruppe cyberforsvarere adgang og udvider derefter gradvist gennem sit Fairwind Program.\n\nSelskabet deltager samtidig i den amerikanske regerings frivillige ordning for test af modeller, før de udgives. Google skriver, at Carbon kommer til udviklere, virksomheder og forbrugere »så hurtigt som muligt«, men giver ingen dato.\n\nPrisen bliver den samme introduktionspris som Argon: 2 dollar pr. million input-tokens og 10 dollar pr. million output-tokens. Input-tokens, der ligger i cache, koster 95 procent mindre."
-        },
-        {
-          "overskrift": "Carbon afviste alle forsøg på prompt-injektion",
-          "tekst": "Sikkerhed handler også om at modstå manipulation. I testen Grey Swan afviste Carbon hvert eneste forsøg på prompt-injektion, hvor nogen forsøger at lokke modellen til at følge skjulte instruktioner. Det giver 0 procent mod Argon 0,7 procent.\n\nGoogle beskriver Carbons værn som bygget oven på Argons: træning, løbende forsvar mod misbrug, modstandsdygtighed over for prompt-injektion og overvågning af modellens mellemregninger."
-        }
-      ],
-      "brief": "",
-      "figurer": [
-        {
-          "url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/gemini_4_carbon__evals-table.original.png",
-          "tekst": "Credit: Google",
-          "kilde": "Ars Technica AI"
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "59",
-          "label": "Artificial Analysis Intelligence Index (ifølge Google)"
-        },
-        {
-          "tal": "88,2 %",
-          "label": "SEC-bench Pro, andel fundne sårbarheder"
-        },
-        {
-          "tal": "54,8 %",
-          "label": "ExploitGym, udnyttelse af sårbarheder"
-        },
-        {
-          "tal": "1768 point",
-          "label": "WebDev Arena, fjerdeplads efter 89 elo-points fremgang"
-        },
-        {
-          "tal": "2 og 10 dollar",
-          "label": "pr. million input- og output-tokens, samme introduktionspris som Argon"
-        }
-      ],
       "detaljer": [
         "Carbon blev annonceret to uger efter forgængeren Gemini 4 Argon.",
         "Grey Swan: Carbon 0 procent, Argon 0,7 procent, Opus 5.5 1 procent, GPT-6 Astra 8,5 procent.",
@@ -55984,14 +55719,33 @@
         "Kun cyberforsvarere får adgang i første omgang",
         "Pris som Argon: 2 og 10 dollar pr. million tokens"
       ],
+      "billedmotiv": "A solid cybersecurity shield carries the concave four-point Gemini spark in blue, red, yellow and green across its face; the spark points at a chunky code block where a visible crack is being closed by a compact padlock. A small latch snaps the padlock shut beside the repaired code.",
+      "billedmotiv_instruks": "2e33a7cb2b56378eac59",
+      "billede": "data/img/4b3d4e5d0a140c8a.jpg",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Google annoncerer officielt Gemini 4 Carbon som sin stærkeste model med cyberforsvar og langtidsevner.",
+        "forbehold": "Kun én sætning fra Google; ingen pris, adgang, benchmarks eller uafhængige test.",
+        "emne": "gemini 4 carbon"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-28T21:22:08.580817+00:00"
       },
-      "billedmotiv": "A solid cybersecurity shield carries the concave four-point Gemini spark in blue, red, yellow and green across its face; the spark points at a chunky code block where a visible crack is being closed by a compact padlock. A small latch snaps the padlock shut beside the repaired code.",
-      "billedmotiv_instruks": "2e33a7cb2b56378eac59",
-      "billede": "data/img/4b3d4e5d0a140c8a.jpg",
+      "historie_dato": "2026-10-28T17:00:00+00:00",
+      "prio": 6,
       "side": "artikel/dff358d382967d76.html"
     },
     {
@@ -56000,11 +55754,12 @@
       "resume": "The frontier lab is lifting the curtain on how users spend money on its models ahead of a planned IPO.",
       "dato": "2026-10-28T19:19:58+00:00",
       "kilde": "TechCrunch AI",
-      "kategori": "Nyheder",
+      "kategori": "Penge & marked",
       "foerst_set": "2026-10-28T21:16:14.888910+00:00",
       "eget_foerst_set": "2026-10-28T21:16:14.888910+00:00",
       "rubrik": "Anthropic måler arbejde og pris for Claude Code",
       "resume_da": "Nye rapporter viser teams arbejde, forbrug og flaskehalse, mens Anthropic forsøger at bevise værdien af Claude Code over for store kunder.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Anthropic måler Claude Code-arbejde og pris",
@@ -56023,8 +55778,6 @@
           "tekst": "Anthropic fører blandt virksomhedskunder. Ifølge TechCrunch så OpenAIs Astra-model fra i sommer ud som en mulig trussel, men har indtil nu ikke bremset Anthropics udbredelse.\n\nJellyfishs AI-produktchef Nikolas Albarran siger, at det tog lang tid, før OpenAIs Codex begyndte at dukke op i deres data, og at det er kommet med Astra. Ifølge ham handler Anthropics fremgang om stærke virksomhedsprocesser og standardiserede arbejdsgange.\n\nAlbarran siger, at skifteomkostningen ikke er nul, fordi virksomhederne har brugt tid på at tilpasse arbejdsgange. TechCrunch beskriver de nye rapporter som en lettere version af den hjælp, såkaldte forward-deployed engineering-teams yder hos kunderne."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "900 %",
@@ -56043,6 +55796,7 @@
           "label": "Kunder i Jellyfish-rapporten om agentiske kodningsværktøjer"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Rapporterne kan vælges for et datointerval og viser også, hvor arbejdsgange brød sammen.",
         "Anthropic oplyser, at data fra rapporterne som udgangspunkt ikke bruges til modeltræning.",
@@ -56054,14 +55808,32 @@
         "Claude Code er mest brugt i Jellyfishs undersøgelse",
         "Forbruget på Anthropic-værktøjer er ti-doblet siden årets start"
       ],
+      "billedmotiv": "A solid report panel bears a large terracotta Claude starburst; on one side, a chunky token meter clamps two team sections into one shared budget, and on the other, a stack of coins meets a cost dial.",
+      "billedmotiv_instruks": "82b1b66b65c2265f1e34",
+      "billede": "data/img/460f8db94d74350c.webp",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-28T21:24:07.107676+00:00"
       },
-      "billedmotiv": "A solid report panel bears a large terracotta Claude starburst; on one side, a chunky token meter clamps two team sections into one shared budget, and on the other, a stack of coins meets a cost dial.",
-      "billedmotiv_instruks": "82b1b66b65c2265f1e34",
-      "billede": "data/img/460f8db94d74350c.webp",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Anthropic lancerer rapporter, der viser teams' forbrug, arbejde og flaskehalse i Claude Code, op til en planlagt børsnotering.",
+        "forbehold": "Ingen uafhængig dokumentation for nytten af rapporterne.",
+        "emne": "anthropic forbrugsværktøjer"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
       "side": "artikel/b2173123b9bf5b7b.html"
     },
     {
@@ -56075,24 +55847,7 @@
       "eget_foerst_set": "2026-10-28T06:12:05.456025+00:00",
       "rubrik": "Delaware vil lade AI-agenter drive selskaber",
       "resume_da": "Et udkast vil give AI-styrede selskaber juridisk identitet og en 30-måneders sandkasse. Formanden for Repræsentanternes Hus' kontrolkomité kræver dokumenter og frygter, at ejerne slipper for ansvar.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 4,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Delaware-plan vil lade AI-agenter drive hele virksomheder og begrænse ejernes ansvar.",
-        "forbehold": "Forslag, ikke vedtaget; ansvarsforholdet er omstridt.",
-        "emne": "delaware, ai-agenter"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Comer kræver dokumenter fra Delaware",
@@ -56115,8 +55870,6 @@
           "tekst": "Loven er ikke vedtaget. Udkastet beskytter medlemmet mod AIC'ens gæld og siger, at medlemmet ikke hæfter for handlinger eller undladelser, som AIC'en foretager. Undtagelserne er svig, forsætlig lovovertrædelse, manglende kapitalisering og drift uden for formålet, hvis medlemmet vidste eller burde vide det.\n\nComer vil også have dokumenter om mulige AI-sikkerhedsrisici. Hans undersøgelse kan få betydning for, om Delaware kan gennemføre den 30 måneder lange sandkasse, og om delstaten kan få en selskabsform, hvor ingen person står ved roret."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "30 måneder",
@@ -56131,6 +55884,7 @@
           "label": "Andel af Fortune 500-selskaber registreret i Delaware"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "John Nay er grundlægger og topchef i Norm Ai.",
         "Norm Ai laver ifølge egen beskrivelse juridiske AI-agenter til virksomheder.",
@@ -56144,11 +55898,29 @@
         "Udkastet vil give AI-agenter en juridisk rolle i 30 måneder",
         "Omkring to tredjedele af Fortune 500 er registreret i Delaware"
       ],
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 4,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Delaware-plan vil lade AI-agenter drive hele virksomheder og begrænse ejernes ansvar.",
+        "forbehold": "Forslag, ikke vedtaget; ansvarsforholdet er omstridt.",
+        "emne": "delaware, ai-agenter"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-28T21:24:40.876276+00:00"
       },
+      "prio": 6,
       "side": "artikel/fb9dd3b3d1e671b9.html"
     },
     {
@@ -56162,6 +55934,48 @@
       "eget_foerst_set": "2026-10-28T21:16:14.888910+00:00",
       "rubrik": "GitHub: Merged pull requests tredoblet på et år",
       "resume_da": "Octoverse-rapporten viser 220 mio. merged pull requests om måneden og 7,38 mia. commits – med størstedelen af stigningen i årets anden halvdel.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Merged pull requests tredoblet på et år",
+          "tekst": "På GitHub Universe præsenterede Jay Parikh, EVP i GitHub, selskabets årlige Octoverse-rapport. Det mest iøjnefaldende tal var **220 mio. merged pull requests om måneden** – ændringsforslag til kode, som er accepteret og lagt ind i et projekt. Det er en tredobling på under et år.\n\nCommits, altså de enkelte registrerede kodeændringer, mere end tredobledes til 7,38 mia. om måneden. Størstedelen af den stigning faldt i årets anden halvdel.\n\nSimon Willison, der selv var til stede, kalder i sit referat tallene et tydeligt billede af, hvordan agentic engineering – når AI-agenter selv udfører dele af programmeringsarbejdet – har påvirket GitHub."
+        },
+        {
+          "overskrift": "Nye projekter fordoblet til 30,3 millioner",
+          "tekst": "Også tilvæksten af nye repositories – de enkelte kodeopbevaringssteder på GitHub – steg markant. Ratten blev fordoblet i 2026 til 30,3 mio. om måneden.\n\nAlle tre tal er GitHubs egne aktivitetsdata fra platformen, og de måler volumen, ikke hvad koden bruges til."
+        },
+        {
+          "overskrift": "Sådan har GitHub lavet opgørelserne",
+          "tekst": "Rapportens metodedel beskriver flere nye opgørelser. For at rangere lande efter pushes til offentlige repositories brugte GitHub en LLM-klassificering til at udtrække landekoder fra brugernes profiler og dermed korrigere for VPN-brug.\n\nOffentlige repositories oprettet 2022–2026 blev sorteret i brancher efter NAICS-systemet med en finjusteret flersproglig embedding-model, der læste navn, beskrivelse, emneord og README ud fra stikprøver.\n\nEt tredje nyt mål tæller repositories, hvis tekst nævner interoperabilitet eller reverse engineering – for eksempel clean room-implementeringer, drop-in-erstatninger eller genimplementering af protokoller."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "220 mio.",
+          "label": "Merged pull requests om måneden, tredoblet på under et år"
+        },
+        {
+          "tal": "7,38 mia.",
+          "label": "Commits om måneden, mere end tredoblet; størstedelen af stigningen i årets anden halvdel"
+        },
+        {
+          "tal": "30,3 mio.",
+          "label": "Nye repositories om måneden, fordoblet i 2026"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "GitHub gav Simon Willison en gratis billet gennem sit »GitHub Stars«-program",
+        "Oplægget fandt sted på GitHub Universe; Willisons referat er dateret 28. oktober 2026",
+        "Industritallene bygger på stikprøver af offentlige repositories fra 2022 til 2026"
+      ],
+      "betydning": "Rapporten gør det nu muligt at følge udviklingen per branche og blandt repositories om interoperabilitet og reverse engineering – to nye mål, som de samlede aktivitetstal ikke fanger.",
+      "pointer": [
+        "Merged pull requests: 220 mio. om måneden",
+        "Commits: 7,38 mia. om måneden",
+        "Nye repositories: 30,3 mio. om måneden"
+      ],
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -56178,54 +55992,12 @@
         "emne": "github octoverse"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
-      "sektioner": [
-        {
-          "overskrift": "Merged pull requests tredoblet på et år",
-          "tekst": "På GitHub Universe præsenterede Jay Parikh, EVP i GitHub, selskabets årlige Octoverse-rapport. Det mest iøjnefaldende tal var **220 mio. merged pull requests om måneden** – ændringsforslag til kode, som er accepteret og lagt ind i et projekt. Det er en tredobling på under et år.\n\nCommits, altså de enkelte registrerede kodeændringer, mere end tredobledes til 7,38 mia. om måneden. Størstedelen af den stigning faldt i årets anden halvdel.\n\nSimon Willison, der selv var til stede, kalder i sit referat tallene et tydeligt billede af, hvordan agentic engineering – når AI-agenter selv udfører dele af programmeringsarbejdet – har påvirket GitHub."
-        },
-        {
-          "overskrift": "Nye projekter fordoblet til 30,3 millioner",
-          "tekst": "Også tilvæksten af nye repositories – de enkelte kodeopbevaringssteder på GitHub – steg markant. Ratten blev fordoblet i 2026 til 30,3 mio. om måneden.\n\nAlle tre tal er GitHubs egne aktivitetsdata fra platformen, og de måler volumen, ikke hvad koden bruges til."
-        },
-        {
-          "overskrift": "Sådan har GitHub lavet opgørelserne",
-          "tekst": "Rapportens metodedel beskriver flere nye opgørelser. For at rangere lande efter pushes til offentlige repositories brugte GitHub en LLM-klassificering til at udtrække landekoder fra brugernes profiler og dermed korrigere for VPN-brug.\n\nOffentlige repositories oprettet 2022–2026 blev sorteret i brancher efter NAICS-systemet med en finjusteret flersproglig embedding-model, der læste navn, beskrivelse, emneord og README ud fra stikprøver.\n\nEt tredje nyt mål tæller repositories, hvis tekst nævner interoperabilitet eller reverse engineering – for eksempel clean room-implementeringer, drop-in-erstatninger eller genimplementering af protokoller."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "220 mio.",
-          "label": "Merged pull requests om måneden, tredoblet på under et år"
-        },
-        {
-          "tal": "7,38 mia.",
-          "label": "Commits om måneden, mere end tredoblet; størstedelen af stigningen i årets anden halvdel"
-        },
-        {
-          "tal": "30,3 mio.",
-          "label": "Nye repositories om måneden, fordoblet i 2026"
-        }
-      ],
-      "detaljer": [
-        "GitHub gav Simon Willison en gratis billet gennem sit »GitHub Stars«-program",
-        "Oplægget fandt sted på GitHub Universe; Willisons referat er dateret 28. oktober 2026",
-        "Industritallene bygger på stikprøver af offentlige repositories fra 2022 til 2026"
-      ],
-      "betydning": "Rapporten gør det nu muligt at følge udviklingen per branche og blandt repositories om interoperabilitet og reverse engineering – to nye mål, som de samlede aktivitetstal ikke fanger.",
-      "pointer": [
-        "Merged pull requests: 220 mio. om måneden",
-        "Commits: 7,38 mia. om måneden",
-        "Nye repositories: 30,3 mio. om måneden"
-      ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-28T21:24:12.872845+00:00"
       },
+      "prio": 6,
       "side": "artikel/9aab3021d0d2d658.html"
     },
     {
@@ -56239,35 +56011,7 @@
       "eget_foerst_set": "2026-10-28T21:16:14.888910+00:00",
       "rubrik": "Gemini i Chrome udfylder formularer med Gmail-data",
       "resume_da": "Chromes udvidede autofill bruger nu Gemini til at finde ordrenumre, sporingsnumre og rejsebookinger i Gmail og foreslå dem direkte i formularer.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Chrome udvider autofill, så Gemini med Personal Intelligence foreslår data fra Gmail i formularer.",
-        "forbehold": "Ingen oplysninger om udrulning, lande eller hvordan Gmail-data beskyttes.",
-        "emne": "chrome autofill gemini"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 5,
-      "historie_dato": "2026-10-28T17:00:00+00:00",
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/",
-          "rubrik": "Chrome-Autofill henter nu oplysninger i Gmail",
-          "resume_da": "Den AI-drevne Autofill kan med tilladelse trække flybekræftelser, ordredetaljer og sporingsinfo fra Gmail til formularer.",
-          "dato": "2026-10-28 17:00:00+00:00",
-          "foerst_set": "2026-10-28T21:16:14.888910+00:00"
-        }
-      ],
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Ordrenumre og billetkoder dukker op selv",
@@ -56286,14 +56030,13 @@
           "tekst": "Udrulningen begynder i dag i USA. Den gælder desktopversionen af Chrome og appene til Android og iOS, men kun for brugere, der har Personal Intelligence slået til i Gemini i Chrome.\n\nTechCrunch ser udvidelsen som endnu et bånd mellem Chrome og Googles AI-økosystem: Jo flere opgaver browseren klarer af sig selv, desto mindre grund er der til at skifte."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "3 platformsversioner",
           "label": "Desktop, Android og iOS — alle kræver Personal Intelligence slået til"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Tidligere udvidelser af autofill hentede navn, pasnummer, e-mail og adresser fra Google-konti og Google Wallet.",
         "Personal Intelligence lader Gemini trække detaljer ud af forbundne Google-tjenester til at besvare spørgsmål.",
@@ -56305,11 +56048,30 @@
         "Kræver Personal Intelligence slået til i Gemini",
         "Kan slås fra i Chromes indstillinger"
       ],
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Chrome udvider autofill, så Gemini med Personal Intelligence foreslår data fra Gmail i formularer.",
+        "forbehold": "Ingen oplysninger om udrulning, lande eller hvordan Gmail-data beskyttes.",
+        "emne": "chrome autofill gemini"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-28T21:25:11.703968+00:00"
       },
+      "historie_dato": "2026-10-28T17:00:00+00:00",
+      "prio": 5,
       "side": "artikel/4ec46b596fc84ced.html"
     },
     {
@@ -56323,24 +56085,7 @@
       "eget_foerst_set": "2026-10-28T21:16:14.888910+00:00",
       "rubrik": "XREAL AURA projicerer apps i synsfeltet",
       "resume_da": "Googles og XREALs nye briller kan vise apps, film og spil i transparente linser og bruge Gemini til at hjælpe med det, du ser.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Google annoncerer XR-briller med Android XR og indbygget Gemini til arbejde, film og spil.",
-        "forbehold": "Pris og lanceringstidspunkt fremgår ikke; kun producentens beskrivelse.",
-        "emne": "xreal aura"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Transparente linser og 70 graders syn",
@@ -56355,8 +56100,6 @@
           "tekst": "Ordrer åbner i dag i USA, Canada og Korea. I Japan starter ordrer 2. november. Startprisen er 1.099 USD gennem året, og levering begynder i midten af november i USA. Køb kræver, at brugeren er 18 år.\n\nGoogle nævner over 150 apps lavet til XR og nye spil som Fallout Factions og Project Hail Mary: Journey Among the Stars. Nye XR-film ved lanceringen inkluderer \"Nevatars\" og \"Galapagos: the Last Eden\"."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "70 grader",
@@ -56375,6 +56118,7 @@
           "label": "Apps lavet til XR på Google Play"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Snapdragon Reality Elite fra Qualcomm debuterer på AURA ifølge Google.",
         "Wired Mirroring kræver et USB-C-kabel med videooutput og ingen software.",
@@ -56386,11 +56130,31 @@
         "Gemini kan fremhæve ting i dit syn",
         "Pris fra 1.099 USD i USA"
       ],
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google annoncerer XR-briller med Android XR og indbygget Gemini til arbejde, film og spil.",
+        "forbehold": "Pris og lanceringstidspunkt fremgår ikke; kun producentens beskrivelse.",
+        "emne": "xreal aura"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-28T21:26:02.367435+00:00"
       },
+      "prio": 4,
+      "billedmotiv": "Opaque XR glasses with two solid dark lens panels dominate, a small Gemini spark emblem fixed to one temple. Two bright app panels hover in front of the lenses, and a compact puck trails behind on a thick cable. The arrangement shows apps projected into view and the separate processing unit for Google’s Android XR glasses.",
+      "billedmotiv_instruks": "ee8f6274455440a07c4e",
       "side": "artikel/3a389809e57a68f3.html"
     },
     {
@@ -56399,11 +56163,12 @@
       "resume": "Nearly two years after LG and Samsung announced at CES 2025 that their latest smart TVs would include access to Microsoft's Copilot, the company is ending support for the AI assistant's functionality on all TVs this year, according to a report by Windows Central. The news comes not from an official announcement from LG, Samsung, […]",
       "dato": "2026-10-28T14:36:26-04:00",
       "kilde": "The Verge AI",
-      "kategori": "Nyheder",
+      "kategori": "Hverdags-AI",
       "foerst_set": "2026-10-28T21:16:14.888910+00:00",
       "eget_foerst_set": "2026-10-28T21:16:14.888910+00:00",
       "rubrik": "Microsoft lukker Copilot på LG- og Samsung-TV",
       "resume_da": "En besked på LG-fjernsyn varsler, at Copilot-funktionen på alle TV udfases. Microsoft har ikke selv annonceret det, og der er ingen fast dato.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Besked dukkede op på LG-skærmen",
@@ -56418,14 +56183,13 @@
           "tekst": "Beskeden siger, at funktionen er »planlagt til at blive udfaset i løbet af 2026«, men at den præcise dato afhænger af Microsofts tidsplan. Selskabet har ikke selv bekræftet forløbet.\n\nTidligere i år lancerede Microsoft en ny Copilot-»superapp«, der samler chat, agenter og kodning i én grænseflade. Det trækker Copilot i retning af at være et værktøj til arbejde og produktivitet frem for en digital følgesvend."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "2026",
           "label": "År hvor Copilot på TV ifølge skærmbeskeden er planlagt udfaset"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Copilot på TV kunne anbefale film og serier og svare på spørgsmål om skærmen.",
         "Efter brugerklager tillod LG at slette den Copilot-genvej, en opdatering havde tilføjet.",
@@ -56437,13 +56201,31 @@
         "Ingen officiel annoncering eller fast dato",
         "Copilot samles i ny superapp til arbejde"
       ],
+      "billedmotiv": "A solid television frame holds a square app tile marked with Microsoft’s four-colour square and a simple speech bubble; the tile slides out of the screen along a short rail, leaving an empty rounded socket. A chunky release bracket clicks open at the frame edge.",
+      "billedmotiv_instruks": "e2f7d3a8b865cf1b5cd7",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-28T21:27:55.085481+00:00"
       },
-      "billedmotiv": "A solid television frame holds a square app tile marked with Microsoft’s four-colour square and a simple speech bubble; the tile slides out of the screen along a short rail, leaving an empty rounded socket. A chunky release bracket clicks open at the frame edge.",
-      "billedmotiv_instruks": "e2f7d3a8b865cf1b5cd7",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Copilot-funktionen på LG- og Samsung-TV udfases ifølge rapport, men uden officiel annoncering og fast dato.",
+        "forbehold": "Bygger på Windows Central og en TV-besked, ikke officiel meddelelse fra Microsoft.",
+        "emne": "microsoft copilot på tv"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
       "side": "artikel/3a6e219abc13c7e9.html"
     },
     {
@@ -56452,11 +56234,12 @@
       "resume": "Today, we are rolling out immersive explorations in the new Gemini student hub.",
       "dato": "2026-10-28T18:00:00+00:00",
       "kilde": "Google Gemini",
-      "kategori": "Labs",
+      "kategori": "Hverdags-AI",
       "foerst_set": "2026-10-28T21:16:14.888910+00:00",
       "eget_foerst_set": "2026-10-28T21:16:14.888910+00:00",
       "rubrik": "Gemini åbner lagvise emner fra atomer til rummet",
       "resume_da": "Gemini-appen får et bibliotek af interaktive temaforløb, hvor man kan trykke på etiketter og bevæge sig fra planetniveau ned til atomer.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Et bibliotek i studenterhubben",
@@ -56471,9 +56254,8 @@
           "tekst": "Forløbene er tilgængelige for alle brugere på engelsk, indonesisk, hindi, brasiliansk portugisisk, fransk og forenklet kinesisk. Bruger man et andet sprog, får man en engelsk version, indtil flere sprog kommer til."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forløbene kan vise handelsruter på Silkevejen.",
         "Man kan se indersiden af en jetmotor og studere lynets fysik.",
@@ -56486,14 +56268,32 @@
         "Et tryk på en etiket går et lag dybere",
         "Seks sprog, alle andre får engelsk"
       ],
+      "billedmotiv": "A thick planet disc with a visible layered edge carries the concave four-point Gemini spark in blue, red, yellow and green; a chunky pointer pulls a smaller atom disc from beneath, exposing a middle layer with a jet engine and a lightning bolt.",
+      "billedmotiv_instruks": "efaa278336669d314997",
+      "billede": "data/img/fb4ed7f38c231a96.webp",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-28T21:28:17.976382+00:00"
       },
-      "billedmotiv": "A thick planet disc with a visible layered edge carries the concave four-point Gemini spark in blue, red, yellow and green; a chunky pointer pulls a smaller atom disc from beneath, exposing a middle layer with a jet engine and a lightning bolt.",
-      "billedmotiv_instruks": "efaa278336669d314997",
-      "billede": "data/img/fb4ed7f38c231a96.webp",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Gemini-appen får interaktive temaforløb i et nyt student hub-bibliotek.",
+        "forbehold": "",
+        "emne": "gemini app immersive explorations"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
       "side": "artikel/8dd837b04080fbe9.html"
     },
     {
@@ -56502,11 +56302,12 @@
       "resume": "But the AI responses get more forthright when asked outside the US.",
       "dato": "2026-10-28T17:46:32+00:00",
       "kilde": "Ars Technica AI",
-      "kategori": "Nyheder",
+      "kategori": "Politik & jura",
       "foerst_set": "2026-10-28T21:16:14.888910+00:00",
       "eget_foerst_set": "2026-10-28T21:16:14.888910+00:00",
       "rubrik": "Google AI Mode undviger nogle valgspørgsmål",
       "resume_da": "Ved spørgsmål om valgene i 2020 og 2024 henviste AI Mode til FEC i stedet for at svare; Google siger, at 2020-fejlen rettes.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Et omvejssvar om valget i 2020",
@@ -56521,9 +56322,8 @@
           "tekst": "Googles talsperson henviste først til et Bluesky-opslag, hvor der stod, at Gemini-appen svarer mere fyldestgørende, men at svaret i Google-søgningen ikke er det mest hjælpsomme, og at Google undersøger sagen og arbejder på at løse den.\n\nSenere sagde samme talsperson, at Google retter problemet med 2020-valgforespørgsler i AI Mode. Systemerne verificerer valgsvar med nyhedsartikler eller data fra nyhedsbureauet AP for nyere valg og historiske optegnelser for ældre, og der var et teknisk hul med 2020. Det samme gælder Senatsvalgene i 2022, som de arbejder på i samme opdatering.\n\nUden om AI Mode kunne Googles Gemini-model og chatbots som OpenAIs ChatGPT, Anthropics Claude og den statslige model på America.gov ifølge Ars Technica give direkte svar."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Google fremhæver på sin Election Public Policy-side, at selskabet vil vise officielle valgkilder.",
         "I 2023 ophævede YouTube et forbud mod falske påstande om 2020-valget."
@@ -56534,13 +56334,31 @@
         "Uden for USA kom der direkte svar",
         "Google kalder 2020 et teknisk hul"
       ],
+      "billedmotiv": "A solid search-answer panel bearing Google’s four-colour G turns away from a ballot box and aims a chunky arrow at a sealed official record; a small barrier covers the direct-answer slot. The record sits beyond the arrow, while the ballot box stays behind the panel.",
+      "billedmotiv_instruks": "afeb75b438d8a00e64d9",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-28T21:31:27.498053+00:00"
       },
-      "billedmotiv": "A solid search-answer panel bearing Google’s four-colour G turns away from a ballot box and aims a chunky arrow at a sealed official record; a small barrier covers the direct-answer slot. The record sits beyond the arrow, while the ballot box stays behind the panel.",
-      "billedmotiv_instruks": "afeb75b438d8a00e64d9",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Googles AI Mode undveg at svare på, hvem der vandt valget i 2020, og henviste til FEC; Google siger fejlen rettes.",
+        "forbehold": "Google bekræfter fejl for 2020, men omfang og rettelse er ikke dokumenteret i detaljer.",
+        "emne": "google ai valgspørgsmål"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
       "side": "artikel/fb4a5a6acb5ff8a1.html"
     },
     {
@@ -56549,11 +56367,12 @@
       "resume": "A new developer platform will let businesses bring their services to Google's AI experiences, potentially changing how consumers discover and use apps.",
       "dato": "2026-10-28T17:00:00+00:00",
       "kilde": "TechCrunch AI",
-      "kategori": "Nyheder",
+      "kategori": "Hverdags-AI",
       "foerst_set": "2026-10-28T21:16:14.888910+00:00",
       "eget_foerst_set": "2026-10-28T21:16:14.888910+00:00",
       "rubrik": "Google åbner Gemini for alle udvikleres apps",
       "resume_da": "Offentlig beta i USA: udviklere kan selv indsende apps til Search og Gemini og følge trafik og fejlrate.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Canva-flyer og playlister gennem AI'en",
@@ -56572,12 +56391,21 @@
           "tekst": "Google vil ikke sige, hvornår platformen bliver mere bredt tilgængelig. Lige nu er adgangen forbeholdt udviklere i USA, der tilmelder sig ventelisten."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "Over 50 tilsluttede apps",
           "label": "Antal apps i Gemini ved lanceringen af betaen; Search har færre integrationer"
+        }
+      ],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "Google Gemini",
+          "link": "https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/",
+          "rubrik": "Google åbner Connected Apps-platform i preview",
+          "resume_da": "Udviklere kan bygge én gang og nå både Search og Gemini; Adobe, Calm og Peloton er blandt de nye partnere.",
+          "dato": "2026-10-28T17:00:00+00:00",
+          "foerst_set": "2026-10-28T21:16:14.888910+00:00"
         }
       ],
       "detaljer": [
@@ -56597,16 +56425,26 @@
         "kontrolleret": "2026-10-28T21:28:42.191098+00:00"
       },
       "historie_dato": "2026-10-28T17:00:00+00:00",
-      "andre": [
-        {
-          "kilde": "Google Gemini",
-          "link": "https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/",
-          "rubrik": "Google åbner Connected Apps-platform i preview",
-          "resume_da": "Udviklere kan bygge én gang og nå både Search og Gemini; Adobe, Calm og Peloton er blandt de nye partnere.",
-          "dato": "2026-10-28T17:00:00+00:00",
-          "foerst_set": "2026-10-28T21:16:14.888910+00:00"
-        }
-      ],
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google åbner offentlig beta i USA for, at udviklere kan indsende apps til Search og Gemini.",
+        "forbehold": "Betaen er ifølge kilden begrænset til USA.",
+        "emne": "google connected apps platform"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "billedmotiv": "A large opaque Gemini answer card carries the concave four-point Gemini spark in Google’s blue, red, yellow and green gradient. Two solid app tiles plug into its side through a thick MCP connector bridge, their shapes locked into matching slots. The card stands alone as a bold, flat object with crisp edges, showing third-party apps becoming available inside Gemini.",
+      "billedmotiv_instruks": "5b641a5b41b83db3435b",
       "side": "artikel/7fbbcf0aac9e9142.html"
     },
     {
@@ -56620,24 +56458,7 @@
       "eget_foerst_set": "2026-10-28T21:16:14.888910+00:00",
       "rubrik": "Atlan: AI mangler virksomhedens egen kontekst",
       "resume_da": "Ny undersøgelse: kun 16 procent henter transformerende værdi af AI. Atlan-medstifter Prukalpa Sankar peger på et manglende kontekstlag.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Omtale af at manglende fælles virksomhedskontekst giver fejl i AI-systemer; ingen ny model eller konkrete resultater.",
-        "forbehold": "Kort uddrag, muligvis annoncesamarbejde; ingen data eller cases fremgår.",
-        "emne": "virksomhedskontekst i ai-systemer"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Kun 16 procent henter stor værdi",
@@ -56650,14 +56471,6 @@
         {
           "overskrift": "Kontekstlaget skal kende forretningen",
           "tekst": "Prukalpa Sankar, medstifter af virksomheden Atlan, peger på et manglende lag mellem virksomhedens forretningssystemer og dens AI-platforme. Hun kalder det et kontekstlag: infrastruktur, der oversætter virksomhedens data og viden til styret kontekst, som AI-modeller og agenter kan bruge.\n\nUden det lag ligner det ifølge Sankar at ansætte verdens klogeste praktikant med bind for øjnene. \"Der er et stort gab mellem, hvad modellerne kan, og hvor nyttige de faktisk er inde i organisationerne,\" siger hun.\n\nTeksten er produceret af MIT Technology Review Insights, bladets annonceafdeling, og ikke af den redaktionelle stab."
-        }
-      ],
-      "brief": "",
-      "figurer": [
-        {
-          "url": "https://wp.technologyreview.com/wp-content/uploads/2026/10/MITTR2026_FigureSocials3.png",
-          "tekst": "Figur fra artiklen",
-          "kilde": "MIT Tech Review AI"
         }
       ],
       "noegletal": [
@@ -56678,6 +56491,13 @@
           "label": "Bruger AI til at udføre størstedelen af arbejdet i centrale processer"
         }
       ],
+      "figurer": [
+        {
+          "url": "https://wp.technologyreview.com/wp-content/uploads/2026/10/MITTR2026_FigureSocials3.png",
+          "tekst": "Figur fra artiklen",
+          "kilde": "MIT Tech Review AI"
+        }
+      ],
       "detaljer": [
         "38 procent af virksomhederne afprøver mest AI-anvendelser, mens 35 procent bruger copiloter eller chatassistenter",
         "21 procent rapporterer meningsfulde gevinster, og 23 procent ser minimal eller ingen værdi",
@@ -56689,14 +56509,32 @@
         "Kontekstlag forbinder forretningssystemer og AI-platforme",
         "12 procent har AI-agenter i produktion"
       ],
+      "billedmotiv": "A heavy database cylinder and a simple AI cube face each other across a gap; a bridge of thick interlocking context blocks connects the database to the cube, but a wide section is missing. One small token crosses the single connected strand while other tokens stop at the brink.",
+      "billedmotiv_instruks": "8b9659f0c0170b79dbbf",
+      "billede": "data/img/04f38b178e69eae0.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Omtale af at manglende fælles virksomhedskontekst giver fejl i AI-systemer; ingen ny model eller konkrete resultater.",
+        "forbehold": "Kort uddrag, muligvis annoncesamarbejde; ingen data eller cases fremgår.",
+        "emne": "virksomhedskontekst i ai-systemer"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-28T21:29:14.089513+00:00"
       },
-      "billedmotiv": "A heavy database cylinder and a simple AI cube face each other across a gap; a bridge of thick interlocking context blocks connects the database to the cube, but a wide section is missing. One small token crosses the single connected strand while other tokens stop at the brink.",
-      "billedmotiv_instruks": "8b9659f0c0170b79dbbf",
-      "billede": "data/img/04f38b178e69eae0.webp",
+      "prio": 3,
       "side": "artikel/52fa9eb7caabe739.html"
     },
     {
@@ -56710,6 +56548,43 @@
       "eget_foerst_set": "2026-10-28T21:16:14.888910+00:00",
       "rubrik": "Marissa Mayer vil lade Dazzle planlægge familielivet",
       "resume_da": "I et interview fremhæver hun, at AI-assistenten kan lette familiens mentale byrde. Kritikere ser et tech-miljø langt fra almindelige mennesker.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Dazzle hjalp med tre bullet points",
+          "tekst": "Marissa Mayer, tidligere Yahoo-topchef og tidlig Google-ingeniør, har en ny app, Dazzle. Det er en AI-assistent, der lærer fra brugerens kamerarulle. I et interview fremhævede hun, at den hjalp hende med tre bullet points om hendes 10-årige datter til en fødselsdagspræsentation i skolen.\n\nDatteren blev beskrevet som empatisk, kreativ og dyreven. TechCrunch kalder beskrivelsen bred og sammenligner den med et generisk horoskop, fordi den kunne passe på mange 10-årige.\n\nEfter kritikken forklarede Mayer på X, at hun testede sin prototype. Den fandt glemte børnehaveprojekter frem og illustrerede datterens kreativitet og omsorg for dyr, skrev hun."
+        },
+        {
+          "overskrift": "AI skal lette den mentale byrde",
+          "tekst": "I samme interview siger Mayer, at folk også kan bruge Dazzle til at uddelegere den mentale byrde med at finde temaet til barnets fødselsdag. Hun fortæller, at hun har brugt appen til at planlægge en legeaftale, booke familieaktiviteter på ferie og vælge Halloween-kostume.\n\nHun foreslår også, at hendes AI-assistent kan koordinere planer med hendes mands AI-assistent. Da journalisten spørger, om det er deprimerende at forestille sig en friktionsfri fremtid planlagt af AI, svarer Mayer, at hun ikke rigtig har tænkt det igennem."
+        },
+        {
+          "overskrift": "Pew: Halvdelen frygter svagere relationer",
+          "tekst": "Kritikken står ikke alene. I en undersøgelse fra Pew Research Center svarer 50 procent af amerikanske voksne, at AI vil svække folks evne til at danne meningsfulde relationer. Kun 5 procent mener, at AI vil gøre det lettere.\n\nTechCrunch nævner også Sam Altman, der på tv sagde, at han ikke kunne forestille sig at opdrage en nyfødt uden ChatGPT, og Mark Zuckerberg, der forudser, at AI-terapeuter og AI-kærester bliver mere socialt acceptable."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "50 %",
+          "label": "Pew Research Center: andel af amerikanske voksne, der mener, at AI vil svække evnen til at danne meningsfulde relationer"
+        },
+        {
+          "tal": "5 %",
+          "label": "Pew Research Center: andel, der mener, at AI vil gøre det lettere at danne meningsfulde relationer"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Mayer var tidligere topchef i Yahoo og tidlig Google-ingeniør.",
+        "Dazzle er en AI-assistent, der ifølge TechCrunch lærer fra kamerarullen."
+      ],
+      "betydning": "Kritikken handler ikke om en teknisk fejl, men om hvad en AI-assistent bør overtage i familielivet, og hvem der kan vurdere det.",
+      "pointer": [
+        "Mayer brugte Dazzle til bullet points om sin datter",
+        "Hun vil lade AI lette familiens mentale byrde",
+        "Pew: 50 procent frygter svagere relationer"
+      ],
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -56726,50 +56601,355 @@
         "emne": "ai-ledere"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-28T21:30:11.109141+00:00"
+      },
       "prio": 2,
+      "side": "artikel/b01917f8b2b42f5c.html"
+    },
+    {
+      "titel": "Chrome’s AI-powered Autofill can now dig through your Gmail to fill out forms",
+      "link": "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/",
+      "resume": "The autofill update lets Chrome pull flight confirmations, tracking info, order details, and other information from your inbox, with your permission.",
+      "dato": "2026-10-28T17:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-10-28T21:16:14.888910+00:00",
+      "eget_foerst_set": "2026-10-28T21:16:14.888910+00:00",
+      "rubrik": "Chrome henter formularsvar i din Gmail",
+      "resume_da": "Googles browser kan nu foreslå flynumre, ordrenumre og kortoplysninger ud fra dine mails. Funktionen er valgfri og starter i USA.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Chrome Autofill kan med tilladelse hente ordre- og rejseoplysninger fra Gmail til formularer.",
+        "forbehold": "",
+        "emne": "chrome autofill gmail"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
       "sektioner": [
         {
-          "overskrift": "Dazzle hjalp med tre bullet points",
-          "tekst": "Marissa Mayer, tidligere Yahoo-topchef og tidlig Google-ingeniør, har en ny app, Dazzle. Det er en AI-assistent, der lærer fra brugerens kamerarulle. I et interview fremhævede hun, at den hjalp hende med tre bullet points om hendes 10-årige datter til en fødselsdagspræsentation i skolen.\n\nDatteren blev beskrevet som empatisk, kreativ og dyreven. TechCrunch kalder beskrivelsen bred og sammenligner den med et generisk horoskop, fordi den kunne passe på mange 10-årige.\n\nEfter kritikken forklarede Mayer på X, at hun testede sin prototype. Den fandt glemte børnehaveprojekter frem og illustrerede datterens kreativitet og omsorg for dyr, skrev hun."
+          "overskrift": "Chrome finder flynummeret i din Gmail",
+          "tekst": "Google opdaterer Chrome, så browseren kan udfylde flere felter i online formularer af sig selv. Den nye version af autofill — den funktion, der automatisk udfylder felter som navn og adresse — henter nu sine forslag fra brugerens Gmail.\n\nChrome kan eksempelvis foreslå et flybekræftelsesnummer, et medlems-ID, en sporingsinformation, et ordrenummer, en adresse, et telefonnummer eller et kreditkortnummer, oplyser Google."
         },
         {
-          "overskrift": "AI skal lette den mentale byrde",
-          "tekst": "I samme interview siger Mayer, at folk også kan bruge Dazzle til at uddelegere den mentale byrde med at finde temaet til barnets fødselsdag. Hun fortæller, at hun har brugt appen til at planlægge en legeaftale, booke familieaktiviteter på ferie og vælge Halloween-kostume.\n\nHun foreslår også, at hendes AI-assistent kan koordinere planer med hendes mands AI-assistent. Da journalisten spørger, om det er deprimerende at forestille sig en friktionsfri fremtid planlagt af AI, svarer Mayer, at hun ikke rigtig har tænkt det igennem."
+          "overskrift": "Bygger på Gemini-forbindelsen",
+          "tekst": "Bag funktionen ligger Googles Personal Intelligence, der i forvejen lader brugere koble deres Google-apps til AI-assistenten Gemini og hente detaljer derfra for at besvare spørgsmål.\n\nDet er brugeren selv, der bestemmer, om den forbedrede autofill skal slås til. Indstillingen findes i Chromes indstillinger, og følsomme data er krypteret, noterer Google."
         },
         {
-          "overskrift": "Pew: Halvdelen frygter svagere relationer",
-          "tekst": "Kritikken står ikke alene. I en undersøgelse fra Pew Research Center svarer 50 procent af amerikanske voksne, at AI vil svække folks evne til at danne meningsfulde relationer. Kun 5 procent mener, at AI vil gøre det lettere.\n\nTechCrunch nævner også Sam Altman, der på tv sagde, at han ikke kunne forestille sig at opdrage en nyfødt uden ChatGPT, og Mark Zuckerberg, der forudser, at AI-terapeuter og AI-kærester bliver mere socialt acceptable."
+          "overskrift": "Starter i USA på desktop og mobil",
+          "tekst": "Funktionen ruller først ud til brugere i USA på desktop og i appene til iOS og Android for Gemini in Chrome.\n\nTechCrunch sammenligner den med Apples funktion, hvor verifikationskoder fra sms vises automatisk over tastaturet, så de kan indtastes med et enkelt tryk."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Opdateringen blev annonceret onsdag ifølge TechCrunch.",
+        "Forslagene hentes fra brugerens egen mailboks, ikke fra nettet."
+      ],
+      "betydning": "Hvis funktionen virker efter hensigten, kan den gøre Chrome lettere at bruge i hverdagen og styrke brugernes binding til Googles AI-økosystem.",
+      "pointer": [
+        "Chrome udfylder formularer ud fra Gmail",
+        "Brugeren kan selv slå funktionen til",
+        "Ruller ud i USA først"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-29T06:24:39.513209+00:00"
+      },
+      "billedmotiv": "Chrome’s circular red-yellow-green ring with a blue centre sits on an opaque browser form panel. A solid envelope-shaped mail card feeds a short boarding-pass strip into an empty form slot on the panel, making autofill from Gmail visible. The panel, mail card and strip use bold flat shapes with sharp contours and no readable text.",
+      "billedmotiv_instruks": "c410c45822ff04a4acaa",
+      "side": "artikel/7a28b9ee4e283bb2.html"
+    },
+    {
+      "titel": "Google expands AI Search ads globally as core ad growth slows",
+      "link": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
+      "resume": "The announcement came alongside parent company Alphabet's third-quarter earnings report, which saw revenue grow 25% year over year to $127.6 billion.",
+      "dato": "2026-10-28T21:48:37+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-29T06:21:31.042587+00:00",
+      "eget_foerst_set": "2026-10-29T06:21:31.042587+00:00",
+      "rubrik": "Google sælger nu annoncer i AI Mode globalt",
+      "resume_da": "Annoncer i Googles AI-svar går verden over, mens væksten i søgeannoncer falder til 12 procent og aktien dykkede 8 procent.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google udruller annoncer i AI-søgning globalt sammen med Alphabets Q3-regnskab, hvor omsætningen steg 25 % til 127,6 mia. dollar.",
+        "forbehold": "Ingen tal for, hvor meget AI-annoncerne indbringer.",
+        "emne": "google ai-søgning og annoncer"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Annoncer i AI Mode går på verdensmarked",
+          "tekst": "Google tager nu annoncerne i sine AI-drevne søgeoplevelser ud af USA. Annoncerne vises i AI Overviews og i AI Mode — Googles søgefunktion, hvor en AI-model selv formulerer svaret — og de er nu også på vej til internationale markeder.\n\nDet oplyste selskabet på Alphabets regnskabsdag onsdag. Samme dag meldte Google om multi-turn-annoncer, altså annoncer der kan indgå i en samtale, der strækker sig over flere spørgsmål. Ifølge Googles forretningschef Philipp Schindler skalerer selskabet nu annoncer i AI Mode til flere brugere og forespørgsler."
+        },
+        {
+          "overskrift": "Klikraten ligner de organiske svar",
+          "tekst": "Google vurderer selv, at formaterne virker. Schindler sagde, at klikraten for sponsorerede produktlister i AI Mode allerede er **sammenlignelig** med klikraten for de organiske resultater. Selskabets egen brugerundersøgelse peger også på, at folk finder annoncerne relevante.\n\nDet er Googles egne tal og egne undersøgelser. Materialet indeholder ingen uafhængig dokumentation for, hvordan annoncerne opleves af brugerne."
+        },
+        {
+          "overskrift": "Samtaleannoncer blev lanceret i maj",
+          "tekst": "Udvidelsen bygger på Googles annoncelancering i maj, hvor selskabet præsenterede nye annonceformater drevet af Gemini, Googles familie af AI-modeller. Blandt dem var samtaleannoncer, der svarer på brugernes spørgsmål, og sponsorerede anbefalinger, som flettes ind i AI-genererede svar.\n\nDengang var formaterne nye; nu er spørgsmålet, om de kan bære omsætning i stor skala."
+        },
+        {
+          "overskrift": "Søgeannoncerne vokser langsommere",
+          "tekst": "Behovet for nye indtægter er tydeligt i regnskabet. Googles søgeannonceindtægter voksede **12 procent** i tredje kvartal mod 17 procent i andet kvartal og 19 procent i første kvartal. Efter offentliggørelsen faldt Alphabet-aktien 8 procent.\n\nTil gengæld bruger folk søgningen anderledes. Sundar Pichai, Googles topchef, sagde, at forespørgsler i AI Mode i gennemsnit er tre gange længere end traditionelle søgninger, og at hver femte AI Mode-søgning globalt involverer lyd, billeder eller dokumenter."
         }
       ],
       "brief": "",
       "figurer": [],
       "noegletal": [
         {
-          "tal": "50 %",
-          "label": "Pew Research Center: andel af amerikanske voksne, der mener, at AI vil svække evnen til at danne meningsfulde relationer"
+          "tal": "12 pct.",
+          "label": "Vækst i Googles søgeannonceindtægter i Q3, mod 17 pct. i Q2 og 19 pct. i Q1"
         },
         {
-          "tal": "5 %",
-          "label": "Pew Research Center: andel, der mener, at AI vil gøre det lettere at danne meningsfulde relationer"
+          "tal": "8 pct.",
+          "label": "Fald i Alphabet-aktien efter regnskabet"
+        },
+        {
+          "tal": "3 gange",
+          "label": "Gennemsnitlig længde på forespørgsler i AI Mode sammenlignet med traditionelle søgninger"
+        },
+        {
+          "tal": "1 af 5",
+          "label": "AI Mode-søgninger globalt der involverer lyd, billeder eller dokumenter"
+        },
+        {
+          "tal": "127,6 mia. dollar",
+          "label": "Alphabets samlede omsætning i Q3, op 25 pct. år for år"
         }
       ],
       "detaljer": [
-        "Mayer var tidligere topchef i Yahoo og tidlig Google-ingeniør.",
-        "Dazzle er en AI-assistent, der ifølge TechCrunch lærer fra kamerarullen."
+        "Alphabets Google Services omsatte for 96,3 mia. dollar, op 11 pct.",
+        "Google Cloud omsatte for 30,7 mia. dollar, op 103 pct.",
+        "Pichai: søgeforespørgsler voksede hurtigst i fem år, men vækstraten blev ikke oplyst",
+        "Google har passeret 50 mia. visuelle søgninger om måneden"
       ],
-      "betydning": "Kritikken handler ikke om en teknisk fejl, men om hvad en AI-assistent bør overtage i familielivet, og hvem der kan vurdere det.",
+      "betydning": "Holder klikraten i AI Mode, kan Google tjene på de længere AI-samtaler, netop som væksten i de klassiske søgeannoncer aftager.",
       "pointer": [
-        "Mayer brugte Dazzle til bullet points om sin datter",
-        "Hun vil lade AI lette familiens mentale byrde",
-        "Pew: 50 procent frygter svagere relationer"
+        "Annoncer i AI Mode er nu globale",
+        "Klikrate på niveau med organiske svar",
+        "Søgeannoncer voksede 12 pct. i Q3"
       ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
-        "kontrolleret": "2026-10-28T21:30:11.109141+00:00"
+        "kontrolleret": "2026-10-29T06:25:02.109171+00:00"
       },
-      "side": "artikel/b01917f8b2b42f5c.html"
+      "billedmotiv": "Google’s four-colour G emblem sits on a large opaque AI answer bubble, with two solid sponsored product tiles docked into its side like removable cartridges. The bubble dominates the scene, its lower edge fitted with a row of small global map pins that suggest the ads rolling out worldwide. Bold, flat shapes with sharp outlines.",
+      "billedmotiv_instruks": "4808dee877ed23400ac9",
+      "billede": "data/img/ab4a8432c0782991.jpg",
+      "side": "artikel/34b53368a5c19b91.html"
+    },
+    {
+      "titel": "Microsoft recorded $10 billion in revenue from OpenAI",
+      "link": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
+      "resume": "Microsoft said it made $10 billion in revenue from commercial arrangements with OpenAI, including revenue-sharing payments, in the quarter ending September 30. It underscores the still-enormous financial dependency of the partnership.",
+      "dato": "2026-10-28T21:34:30+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-29T06:21:31.042587+00:00",
+      "eget_foerst_set": "2026-10-29T06:21:31.042587+00:00",
+      "rubrik": "Microsoft henter 10 milliarder dollar på OpenAI",
+      "resume_da": "OpenAI-aftalerne giver næsten 11 procent af Microsofts kvartalsomsætning, mens de to selskaber konkurrerer om de samme kunder.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Microsoft oplyser 10 mia. dollar i indtægter fra kommercielle aftaler med OpenAI i kvartalet og viser den finansielle afhængighed.",
+        "forbehold": "Ingen oplysning om, hvordan beløbet fordeles mellem de enkelte aftaler.",
+        "emne": "microsoft og openai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Ti milliarder på et enkelt kvartal",
+          "tekst": "Microsofts kvartal, der sluttede 30. september 2026, gav 10 milliarder dollar i omsætning fra selskabets kommercielle aftaler med OpenAI, herunder betalinger fra deling af omsætning. Det fremgår af en indberetning til de amerikanske myndigheder.\n\nBeløbet svarer til næsten 11 procent af Microsofts samlede omsætning på 92,3 milliarder dollar i samme kvartal. For hele regnskabsåret 2026 landede omsætningen fra OpenAI på 24,1 milliarder dollar.\n\nFortsætter det seneste kvartals tempo, vil det give omkring 40 milliarder dollar på et år. Microsofts regnskabsår begynder i juli, så kvartalet er første kvartal i regnskabsåret 2027."
+        },
+        {
+          "overskrift": "Azure og delt omsætning blandes",
+          "tekst": "Microsoft oplyser ikke, hvor stor en del af beløbet der kommer fra Azure, selskabets cloudplatform, og hvor meget der er OpenAIs deling af omsætning, som betales tilbage til Microsoft.\n\nTechCrunch har tidligere citeret lækkede dokumenter for, at Microsoft fik **865,8 millioner dollar** i netto fra omsætningsdelingen i de første ni måneder af 2025. Ifølge TechCrunch deler OpenAI omkring 20 procent af sin omsætning med Microsoft, men ingen af selskaberne har offentligt bekræftet den procentsats.\n\nVed udgangen af september havde Microsoft 7,2 milliarder dollar i udestående tilgodehavender hos OpenAI, op fra 6 milliarder dollar ved udgangen af juni. Det er penge, OpenAI skylder for tidligere handler, ikke ny omsætning."
+        },
+        {
+          "overskrift": "Båndene er løsnet, pengene bliver",
+          "tekst": "I oktober 2025 gav Microsoft OpenAI frihed til at bruge andre cloududbydere, og OpenAI forpligtede sig samtidig til at købe Azure-tjenester for yderligere 250 milliarder dollar.\n\nEn aftale fra april 2026 betyder, at OpenAI fortsat deler omsætning med Microsoft til og med 2030, dog med et loft, samtidig med at OpenAI må arbejde med konkurrerende cloududbydere.\n\nMicrosofts ejerandel af OpenAI faldt fra cirka 25 procent i juni til 24 procent i september, efter cirka 27 procent ved omkapitaliseringen i oktober 2025. Selskabet oplyser ikke, hvad der har udvandet andelen."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "10 mia. dollar",
+          "label": "Microsofts omsætning fra OpenAI-aftaler i kvartalet, der sluttede 30. september 2026"
+        },
+        {
+          "tal": "92,3 mia. dollar",
+          "label": "Microsofts samlede omsætning i samme kvartal"
+        },
+        {
+          "tal": "Næsten 11 pct.",
+          "label": "OpenAI-relateret omsætning som andel af Microsofts kvartalsomsætning"
+        },
+        {
+          "tal": "24,1 mia. dollar",
+          "label": "OpenAI-relateret omsætning i Microsofts regnskabsår 2026"
+        },
+        {
+          "tal": "7,2 mia. dollar",
+          "label": "Udestående tilgodehavender hos OpenAI ved udgangen af september, op fra 6 mia. ved udgangen af juni"
+        }
+      ],
+      "detaljer": [
+        "OpenAI forpligtede sig i oktober 2025 til at købe Azure-tjenester for yderligere 250 mia. dollar.",
+        "Omsætningsdelingen med Microsoft løber ifølge aftalen til og med 2030, dog med et loft.",
+        "Microsofts ejerandel af OpenAI faldt fra ca. 25 pct. i juni til 24 pct. i september.",
+        "Microsoft har investeret mere end 13 mia. dollar i OpenAI ifølge TechCrunch."
+      ],
+      "betydning": "Microsoft tjener nu næsten 11 procent af sin omsætning på OpenAI-aftaler, mens selskaberne konkurrerer om de samme kunder. Hvor stor en del der kommer fra Azure, oplyser Microsoft ikke.",
+      "pointer": [
+        "10 mia. dollar fra OpenAI i kvartalet",
+        "Næsten 11 pct. af Microsofts omsætning",
+        "Omsætningsdeling løber til og med 2030"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-29T06:25:25.238971+00:00"
+      },
+      "historie_dato": "2026-10-28T21:25:30+00:00",
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
+          "rubrik": "Azure omsætter 33,2 mia. dollar i kvartalet",
+          "resume_da": "Microsoft offentliggjorde for første gang Azures kvartalsomsætning: 33,2 mia. dollar, op 48%. Det gør Azure direkte sammenlignelig med Google Cloud og AWS.",
+          "dato": "2026-10-28T21:58:32+00:00",
+          "foerst_set": "2026-10-29T06:21:31.042587+00:00"
+        },
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/",
+          "rubrik": "Microsofts cloud bærer tiende rekordkvartal",
+          "resume_da": "Omsætningen steg 19 procent til 92,3 mia. dollar, og nettoindkomsten voksede 32 procent. Azure og indtægter fra OpenAI trak cloud frem.",
+          "dato": "2026-10-28T21:25:30+00:00",
+          "foerst_set": "2026-10-29T06:21:31.042587+00:00"
+        }
+      ],
+      "billedmotiv": "OpenAI’s intact black-and-white interwoven six-loop Blossom mark covers a heavy revenue block; from it, ten thick coin discs cross a short gap into a large opaque cashbox marked with Microsoft’s four-colour four-square emblem. The coin stream and the two branded containers make the payment relationship visible, with no lettering or background.",
+      "billedmotiv_instruks": "50bbe9263270f5a4c0fc",
+      "side": "artikel/65911ac3f4f50838.html"
+    },
+    {
+      "titel": "South Korea’s financial industry hit by fresh wave of cyberattacks",
+      "link": "https://techcrunch.com/2026/10/28/south-koreas-financial-industry-hit-by-fresh-wave-of-cyberattacks/",
+      "resume": "South Korea’s financial institutions have been hit by another wave of cyberattacks, highlighting the growing risk of AI-driven hacking in Asia.",
+      "dato": "2026-10-28T15:41:18+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-28T21:16:14.888910+00:00",
+      "eget_foerst_set": "2026-10-28T21:16:14.888910+00:00",
+      "rubrik": "38.490 kunders data eksponeret hos Daishin Securities",
+      "resume_da": "Et cyberangreb har blotlagt navne, e-mails og mobilnumre på 38.490 kunder hos Daishin Securities. Flere sydkoreanske finansselskaber melder samtidig om sikkerhedshændelser.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Ny bølge af cyberangreb mod sydkoreanske finansinstitutioner, som TechCrunch kobler til AI-drevet hacking.",
+        "forbehold": "AI-vinklen er løst underbygget; ingen konkrete beviser for AI-værktøjer i angrebene.",
+        "emne": "sydkorea cyberangreb"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ],
+      "sektioner": [
+        {
+          "overskrift": "Kundeliste lå åben hos Daishin",
+          "tekst": "Daishin Securities oplyser, at et cyberangreb blottlagde personoplysninger om **38.490 kunder** – navne, e-mailadresser og mobilnumre.\n\nSelskabet har underrettet de berørte kunder, samarbejder med myndighederne i efterforskningen og vil kompensere for tab, som loven kræver."
+        },
+        {
+          "overskrift": "Mirae og Bithumb melder også hændelser",
+          "tekst": "Det sydkoreanske finansmarked er ramt igen, knap en måned efter en serie angreb mod landets finansinstitutioner i september.\n\nIfølge lokale medier rapporterede Mirae Asset Global Investments og kryptobørsen Bithumb også onsdag om separate sikkerhedshændelser. Ingen af de to har bekræftet, at der blev stjålet kundedata."
+        },
+        {
+          "overskrift": "AI-værktøjet Artex i septemberbølgen",
+          "tekst": "Sikkerhedsforskere har kædet septemberbølgen sammen med en formodet Kina-baseret hacker, som brugte et AI-værktøj til penetrationstest ved navn Artex. Penetrationstest er simulerede angreb, der bruges til at finde huller i systemer.\n\nOm de nye brud har samme ophav, er uafklaret. Myndighederne undersøger fortsat årsagen, og efterforskerne har ikke påvist nogen forbindelse mellem hændelserne."
+        },
+        {
+          "overskrift": "Regulator kræver strammere sikkerhed",
+          "tekst": "South Koreas Financial Services Commission (FSC) har opfordret til stærkere cybersikkerhed efter angrebene mod finansvirksomheder og offentlige myndigheder. Landet vil desuden gennemføre sikkerhedstjek af snesevis af it-systemer i den private sektor.\n\nDagen før blev en hændelse hos japanske GMO Internet rapporteret. FSC, Daishin Securities, Bithumb og Mirae Asset Global Investments svarede ikke umiddelbart på TechCrunchs henvendelser."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "38.490",
+          "label": "Kunder hos Daishin Securities, hvis navne, e-mails og mobilnumre blev eksponeret"
+        }
+      ],
+      "detaljer": [
+        "Mirae Asset Global Investments og Bithumb har ikke bekræftet, at kundedata blev taget.",
+        "Sydkorea planlægger sikkerhedstjek af snesevis af it-systemer i den private sektor.",
+        "Japan rapporterede en hændelse hos GMO Internet dagen før.",
+        "Efterforskerne har ikke påvist sammenhæng mellem angrebene i Asien."
+      ],
+      "betydning": "Myndighederne i Seoul kræver nu skærpet sikkerhed og planlægger tjek af snesevis af private it-systemer – uden at årsagen til den seneste bølge er fastslået.",
+      "pointer": [
+        "Daishin: 38.490 kunders personoplysninger eksponeret",
+        "Mirae og Bithumb melder hændelser uden bekræftet datatab",
+        "Årsagen til den nye bølge er ikke fastslået"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-29T06:27:08.821257+00:00"
+      },
+      "side": "artikel/a25dd0954befb28c.html"
     }
   ]
 }

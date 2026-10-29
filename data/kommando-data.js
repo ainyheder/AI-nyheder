@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-28T21:39:19.926946+00:00",
+ "genereret": "2026-10-29T06:32:49.790270+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,28 +195,26 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-28T21:16:14.888910+00:00",
-  "antal": 123,
-  "med_billede": 65,
-  "paa_dansk": 123,
+  "opdateret": "2026-10-29T06:21:31.042587+00:00",
+  "antal": 110,
+  "med_billede": 54,
+  "paa_dansk": 110,
   "kategorier": {
-   "Lanceringer": 26,
-   "Nyheder": 4,
-   "Politik \u0026 jura": 12,
-   "Penge \u0026 marked": 32,
-   "Hverdags-AI": 19,
-   "Samfund \u0026 etik": 20,
-   "Forskning": 9,
-   "Labs": 1
+   "Lanceringer": 22,
+   "Penge \u0026 marked": 31,
+   "Politik \u0026 jura": 10,
+   "Hverdags-AI": 21,
+   "Samfund \u0026 etik": 17,
+   "Forskning": 9
   },
   "kilder": {
    "Google Gemini": 5,
-   "TechCrunch AI": 43,
-   "Ars Technica AI": 11,
-   "Simon Willison AI": 7,
-   "The Verge AI": 37,
+   "TechCrunch AI": 40,
+   "Ars Technica AI": 7,
+   "Simon Willison AI": 6,
+   "The Verge AI": 33,
    "MIT Tech Review AI": 8,
-   "Hugging Face": 5,
+   "Hugging Face": 4,
    "Mistral AI": 4,
    "Google DeepMind": 3
   },
@@ -254,6 +252,26 @@ window.KOMMANDO_DATA = {
   ],
   "seneste": [
    {
+    "titel": "Google expands AI Search ads globally as core ad growth slows",
+    "rubrik": "Google sælger nu annoncer i AI Mode globalt",
+    "link": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
+    "side": "artikel/34b53368a5c19b91.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-28T21:48:37+00:00",
+    "billede": "data/img/ab4a8432c0782991.jpg"
+   },
+   {
+    "titel": "Microsoft recorded $10 billion in revenue from OpenAI",
+    "rubrik": "Microsoft henter 10 milliarder dollar på OpenAI",
+    "link": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
+    "side": "artikel/65911ac3f4f50838.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-28T21:34:30+00:00",
+    "billede": ""
+   },
+   {
     "titel": "Gemini 4 Carbon: our next frontier model",
     "rubrik": "Gemini 4 Carbon fører testene i sårbarhedsjagt",
     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
@@ -268,10 +286,40 @@ window.KOMMANDO_DATA = {
     "rubrik": "Anthropic måler arbejde og pris for Claude Code",
     "link": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/",
     "side": "artikel/b2173123b9bf5b7b.html",
-    "kategori": "Nyheder",
+    "kategori": "Penge \u0026 marked",
     "kilde": "TechCrunch AI",
     "dato": "2026-10-28T19:19:58+00:00",
     "billede": "data/img/460f8db94d74350c.webp"
+   },
+   {
+    "titel": "As AI agents reshape the web, Google opens Gemini and Search to more apps",
+    "rubrik": "Google åbner Gemini for alle udvikleres apps",
+    "link": "https://techcrunch.com/2026/10/28/as-ai-agents-reshape-the-web-google-opens-gemini-and-search-to-more-apps/",
+    "side": "artikel/7fbbcf0aac9e9142.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-28T17:00:00+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Chrome’s AI-powered Autofill can now dig through your Gmail to fill out forms",
+    "rubrik": "Chrome henter formularsvar i din Gmail",
+    "link": "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/",
+    "side": "artikel/7a28b9ee4e283bb2.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-28T17:00:00+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Google AI gets cagey when asked who won the 2020 elections",
+    "rubrik": "Google AI Mode undviger nogle valgspørgsmål",
+    "link": "https://arstechnica.com/ai/2026/10/google-ai-gets-cagey-when-asked-who-won-the-2020-elections/",
+    "side": "artikel/fb4a5a6acb5ff8a1.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-10-28T17:46:32+00:00",
+    "billede": ""
    },
    {
     "titel": "GitHub Octoverse 2026",
@@ -294,6 +342,16 @@ window.KOMMANDO_DATA = {
     "billede": ""
    },
    {
+    "titel": "Dive into new topics with immersive explorations in the Gemini app.",
+    "rubrik": "Gemini åbner lagvise emner fra atomer til rummet",
+    "link": "https://blog.google/innovation-and-ai/products/gemini-app/immersive-explorations-student-hub/",
+    "side": "artikel/8dd837b04080fbe9.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "Google Gemini",
+    "dato": "2026-10-28T18:00:00+00:00",
+    "billede": "data/img/fb4ed7f38c231a96.webp"
+   },
+   {
     "titel": "XREAL AURA: Wired XR glasses to watch, work, and play",
     "rubrik": "XREAL AURA projicerer apps i synsfeltet",
     "link": "https://blog.google/products-and-platforms/platforms/android/xreal-aura/",
@@ -308,75 +366,15 @@ window.KOMMANDO_DATA = {
     "rubrik": "Microsoft lukker Copilot på LG- og Samsung-TV",
     "link": "https://www.theverge.com/tech/1021143/microsoft-lg-samsung-copilot-ai-assistant-smart-tvs-ending",
     "side": "artikel/3a6e219abc13c7e9.html",
-    "kategori": "Nyheder",
+    "kategori": "Hverdags-AI",
     "kilde": "The Verge AI",
     "dato": "2026-10-28T14:36:26-04:00",
     "billede": ""
-   },
-   {
-    "titel": "Dive into new topics with immersive explorations in the Gemini app.",
-    "rubrik": "Gemini åbner lagvise emner fra atomer til rummet",
-    "link": "https://blog.google/innovation-and-ai/products/gemini-app/immersive-explorations-student-hub/",
-    "side": "artikel/8dd837b04080fbe9.html",
-    "kategori": "Labs",
-    "kilde": "Google Gemini",
-    "dato": "2026-10-28T18:00:00+00:00",
-    "billede": "data/img/fb4ed7f38c231a96.webp"
-   },
-   {
-    "titel": "Google AI gets cagey when asked who won the 2020 elections",
-    "rubrik": "Google AI Mode undviger nogle valgspørgsmål",
-    "link": "https://arstechnica.com/ai/2026/10/google-ai-gets-cagey-when-asked-who-won-the-2020-elections/",
-    "side": "artikel/fb4a5a6acb5ff8a1.html",
-    "kategori": "Nyheder",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-10-28T17:46:32+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "As AI agents reshape the web, Google opens Gemini and Search to more apps",
-    "rubrik": "Google åbner Gemini for alle udvikleres apps",
-    "link": "https://techcrunch.com/2026/10/28/as-ai-agents-reshape-the-web-google-opens-gemini-and-search-to-more-apps/",
-    "side": "artikel/7fbbcf0aac9e9142.html",
-    "kategori": "Nyheder",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-28T17:00:00+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Creating AI value with enterprise context",
-    "rubrik": "Atlan: AI mangler virksomhedens egen kontekst",
-    "link": "https://www.technologyreview.com/2026/10/28/1147709/creating-ai-value-with-enterprise-context/",
-    "side": "artikel/52fa9eb7caabe739.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "MIT Tech Review AI",
-    "dato": "2026-10-28T20:32:02+00:00",
-    "billede": "data/img/04f38b178e69eae0.webp"
-   },
-   {
-    "titel": "AI execs may be too out of touch to build for the general public",
-    "rubrik": "Marissa Mayer vil lade Dazzle planlægge familielivet",
-    "link": "https://techcrunch.com/2026/10/28/ai-execs-may-be-too-out-of-touch-to-build-for-the-general-public/",
-    "side": "artikel/b01917f8b2b42f5c.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-28T15:53:52+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Voice AI in vogue: Nvidia releases new open transcription model",
-    "rubrik": "Nvidia frigiver Nemotron 3.5 til 40 sprog",
-    "link": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
-    "side": "artikel/4de33f2bccf585e4.html",
-    "kategori": "Lanceringer",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-28T15:00:00+00:00",
-    "billede": "data/img/d4f8fb42050a7642.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-28T21:16:14.888910+00:00",
+  "opdateret": "2026-10-29T06:21:31.042587+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -396,7 +394,7 @@ window.KOMMANDO_DATA = {
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-10-28T21:16:14.145380+00:00",
+  "opdateret": "2026-10-29T06:21:30.586217+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -752,8 +750,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-28T21:16:14.888910+00:00",
-  "artikler_i_alt": 123,
+  "opdateret": "2026-10-29T06:21:31.042587+00:00",
+  "artikler_i_alt": 110,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -861,20 +859,20 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "XREAL AURA projicerer apps i synsfeltet",
-      "dato": "2026-10-28T17:00:00",
-      "foerst_set": "2026-10-28T21:16:14",
-      "link": "https://blog.google/products-and-platforms/platforms/android/xreal-aura/",
-      "side": "artikel/3a389809e57a68f3.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
       "rubrik": "Gemini åbner lagvise emner fra atomer til rummet",
       "dato": "2026-10-28T18:00:00",
       "foerst_set": "2026-10-28T21:16:14",
       "link": "https://blog.google/innovation-and-ai/products/gemini-app/immersive-explorations-student-hub/",
       "side": "artikel/8dd837b04080fbe9.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "XREAL AURA projicerer apps i synsfeltet",
+      "dato": "2026-10-28T17:00:00",
+      "foerst_set": "2026-10-28T21:16:14",
+      "link": "https://blog.google/products-and-platforms/platforms/android/xreal-aura/",
+      "side": "artikel/3a389809e57a68f3.html",
       "hvor": "forside",
       "under": ""
      },
@@ -922,7 +920,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 5,
+    "i_listen": 4,
     "som_ekstra": 0,
     "seneste": [
      {
@@ -931,15 +929,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-23T20:03:23",
       "link": "https://huggingface.co/blog/allenai/litpivot",
       "side": "artikel/c8f212640f722e47.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "NVIDIA Kumo Relational forudsiger uden træning",
-      "dato": "2026-10-21T18:26:30",
-      "foerst_set": "2026-10-21T20:20:24",
-      "link": "https://huggingface.co/blog/nvidia/kumo-relational",
-      "side": "artikel/f9255f6920089cd5.html",
       "hvor": "forside",
       "under": ""
      },
@@ -982,7 +971,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 7,
+    "i_listen": 6,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -1000,15 +989,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-28T21:16:14",
       "link": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/",
       "side": "artikel/9aab3021d0d2d658.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Claude Opus 5.5 gør spil sjove at spille",
-      "dato": "2026-10-28T13:55:15",
-      "foerst_set": "2026-10-28T15:23:12",
-      "link": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
-      "side": "artikel/2fcae8853da5c178.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1069,26 +1049,26 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 43,
-    "som_ekstra": 7,
+    "i_listen": 40,
+    "som_ekstra": 5,
     "seneste": [
      {
-      "rubrik": "Chrome-Autofill henter nu oplysninger i Gmail",
+      "rubrik": "Azure omsætter 33,2 mia. dollar i kvartalet",
       "dato": "",
-      "foerst_set": "2026-10-28T21:16:14",
-      "link": "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/",
+      "foerst_set": "2026-10-29T06:21:31.042587+00:00",
+      "link": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
       "side": "",
       "hvor": "under",
-      "under": "Gemini i Chrome udfylder formularer med Gmail-data"
+      "under": "Microsoft henter 10 milliarder dollar på OpenAI"
      },
      {
-      "rubrik": "OpenAI-forskere fandt årtier gammel PHP-fejl",
+      "rubrik": "Microsofts cloud bærer tiende rekordkvartal",
       "dato": "",
-      "foerst_set": "2026-10-26T21:09:48.052336+00:00",
-      "link": "https://techcrunch.com/2026/10/24/will-ai-expose-the-rickety-infrastructure-of-the-internet/",
+      "foerst_set": "2026-10-29T06:21:31.042587+00:00",
+      "link": "https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/",
       "side": "",
       "hvor": "under",
-      "under": "OpenAI og Wiz fandt 22 år gamle PHP-huller"
+      "under": "Microsoft henter 10 milliarder dollar på OpenAI"
      },
      {
       "rubrik": "Flertal af store Anthropic-kunder bruger Claude-apps",
@@ -1127,15 +1107,6 @@ window.KOMMANDO_DATA = {
       "under": "Microsofts AI rammer 83 procent af testdiagnoserne"
      },
      {
-      "rubrik": "Claude Duet arbejder videre i baggrunden",
-      "dato": "",
-      "foerst_set": "2026-10-22T14:02:49",
-      "link": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
-      "side": "",
-      "hvor": "under",
-      "under": "Claude Duet sender morgenbrief fra dine apps"
-     },
-     {
       "rubrik": "Google slipper TorchTPU løs til sine TPU-chips",
       "dato": "",
       "foerst_set": "2026-10-20T20:06:38",
@@ -1143,6 +1114,24 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Hugging Face gør TPU til almindelig PyTorch-enhed"
+     },
+     {
+      "rubrik": "Google sælger nu annoncer i AI Mode globalt",
+      "dato": "2026-10-28T21:48:37",
+      "foerst_set": "2026-10-29T06:21:31",
+      "link": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
+      "side": "artikel/34b53368a5c19b91.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Microsoft henter 10 milliarder dollar på OpenAI",
+      "dato": "2026-10-28T21:34:30",
+      "foerst_set": "2026-10-29T06:21:31",
+      "link": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
+      "side": "artikel/65911ac3f4f50838.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Anthropic måler arbejde og pris for Claude Code",
@@ -1163,20 +1152,11 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "Marissa Mayer vil lade Dazzle planlægge familielivet",
-      "dato": "2026-10-28T15:53:52",
+      "rubrik": "Chrome henter formularsvar i din Gmail",
+      "dato": "2026-10-28T17:00:00",
       "foerst_set": "2026-10-28T21:16:14",
-      "link": "https://techcrunch.com/2026/10/28/ai-execs-may-be-too-out-of-touch-to-build-for-the-general-public/",
-      "side": "artikel/b01917f8b2b42f5c.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Nvidia frigiver Nemotron 3.5 til 40 sprog",
-      "dato": "2026-10-28T15:00:00",
-      "foerst_set": "2026-10-28T15:23:12",
-      "link": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
-      "side": "artikel/4de33f2bccf585e4.html",
+      "link": "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/",
+      "side": "artikel/7a28b9ee4e283bb2.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1192,8 +1172,8 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 37,
-    "som_ekstra": 4,
+    "i_listen": 33,
+    "som_ekstra": 3,
     "seneste": [
      {
       "rubrik": "Meta kan udskyde forretningsvilkår igen",
@@ -1239,15 +1219,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "1Password lukker AI-agenter ind uden adgangskode"
-     },
-     {
-      "rubrik": "Walmart lukker AI-agenter ind i sin butik",
-      "dato": "",
-      "foerst_set": "2026-10-21T20:20:24",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1015715/walmart-ai-shopping-agents",
-      "side": "",
-      "hvor": "under",
-      "under": "Walmart åbner for AI-agenter med Agent Gateway"
      },
      {
       "rubrik": "Gemini i Chrome udfylder formularer med Gmail-data",
@@ -1302,6 +1273,15 @@ window.KOMMANDO_DATA = {
       "side": "artikel/e046e2cf55c147ca.html",
       "hvor": "forside",
       "under": ""
+     },
+     {
+      "rubrik": "Anthropic vil børsnoteres med låst bestyrelse",
+      "dato": "2026-10-27T16:51:22",
+      "foerst_set": "2026-10-27T20:55:19",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety",
+      "side": "artikel/34fc514719d0a7a5.html",
+      "hvor": "forside",
+      "under": ""
      }
     ]
    },
@@ -1315,7 +1295,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 11,
+    "i_listen": 7,
     "som_ekstra": 2,
     "seneste": [
      {
@@ -1396,33 +1376,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-26T15:25:50",
       "link": "https://arstechnica.com/cars/2026/10/tesla-wants-ai-and-software-to-be-its-next-profit-engine/",
       "side": "artikel/083958a57723973f.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Apple Music-brand skabt i rystende mineralolie",
-      "dato": "2026-10-21T19:44:40",
-      "foerst_set": "2026-10-21T23:34:19",
-      "link": "https://arstechnica.com/culture/2026/10/the-new-human-crafted-apple-music-brand-matters-in-an-ai-world/",
-      "side": "artikel/1a80887cf13ccfa1.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Dommer: EPA må ikke droppe SpaceXAI-sag",
-      "dato": "2026-10-21T18:20:40",
-      "foerst_set": "2026-10-21T20:20:24",
-      "link": "https://arstechnica.com/tech-policy/2026/10/judge-rejects-trumps-wild-claim-epa-can-dismiss-data-center-pollution-lawsuits/",
-      "side": "artikel/d60220e54ec52993.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Næsten to tredjedele af amerikanske læger bruger OpenEvidence",
-      "dato": "2026-10-21T15:14:07",
-      "foerst_set": "2026-10-21T20:20:24",
-      "link": "https://arstechnica.com/ai/2026/10/the-15-billion-ad-powered-ai-startup-your-doctor-may-already-be-using/",
-      "side": "artikel/50a7bf7b3e60bd04.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1526,18 +1479,8 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 25,
     "i_listen": 0,
-    "som_ekstra": 1,
-    "seneste": [
-     {
-      "rubrik": "OpenAI-modeller lander i Googles Model Garden",
-      "dato": "",
-      "foerst_set": "2026-10-21T14:05:01",
-      "link": "https://openai.com/index/openai-models-google-cloud",
-      "side": "",
-      "hvor": "under",
-      "under": "GPT 6.1 kommer til Google Cloud"
-     }
-    ]
+    "som_ekstra": 0,
+    "seneste": []
    },
    {
     "navn": "Google DeepMind",
@@ -1630,19 +1573,14 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-28T21:39:11.667153+00:00",
+  "opdateret": "2026-10-29T06:32:47.187102+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 10,
-  "sidevisninger_i_alt": 20,
+  "besoeg_i_alt": 19,
+  "sidevisninger_i_alt": 26,
   "ai_chat_besoeg": 0,
   "serie": [
-   {
-    "dato": "2026-09-29",
-    "besoeg": 0,
-    "visninger": 0
-   },
    {
     "dato": "2026-09-30",
     "besoeg": 0,
@@ -1787,20 +1725,25 @@ window.KOMMANDO_DATA = {
     "dato": "2026-10-28",
     "besoeg": 0,
     "visninger": 0
+   },
+   {
+    "dato": "2026-10-29",
+    "besoeg": 0,
+    "visninger": 0
    }
   ],
   "sider": [
    {
     "sti": "/",
-    "besoeg": 10,
-    "visninger": 20
+    "besoeg": 19,
+    "visninger": 26
    }
   ],
   "artikler": [],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 17
+    "besoeg": 18
    },
    {
     "fra": "www.bing.com",

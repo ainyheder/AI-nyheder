@@ -1,10 +1,48 @@
 {
- "rubrik": "Nye modeller presser fronten, mens kapital og sikkerhed vokser",
- "indledning": "Ugen byder på tre nye modeller og et børsprospekt, der viser, hvor kapitaltung AI er blevet. Samtidig fremlægger OpenAI matematiske beviser, og en sikkerhedshændelse viser bagsiden af autonome agenter.",
+ "rubrik": "Nye modeller, verdenssimulering og AI's kapitalbehov",
+ "indledning": "Ugen bød på nye frontmodeller og verdenssimuleringer, en nær-frontmodel med løfte om åbne vægte og et børsprospekt, der viser, hvor kapitaltung AI er blevet.",
  "historier": [
   {
-   "overskrift": "Genie 4 kan skifte scene midt i simulationen",
-   "tekst": "Google DeepMind har sendt verdensmodellen Genie 4 i forskningspreview. Den kan ændre vejr, kamera og figurer med en ny prompt undervejs, har fået realtidslyd og holder scenen sammen i op til to minutter – dobbelt så længe som Genie 3. Adgangen ruller ud til udvalgte testere og senere AI Ultra-abonnenter.",
+   "overskrift": "Gemini 4 Carbon topper sikkerhedstest – kun for få",
+   "tekst": "Google annoncerede 28. oktober Gemini 4 Carbon som sin stærkeste model til cyberforsvar og langvarige opgaver. Google oplyser 88,2 procent i SEC-bench Pro og førsteplads på Artificial Analysis Intelligence Index, men kun udvalgte cyberforsvarere får adgang foreløbig. Prisen er 2 og 10 dollar per million input- og output-tokens.",
+   "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+   "kategori": "Lanceringer",
+   "billede": "data/img/4b3d4e5d0a140c8a.jpg",
+   "dato": "2026-10-28T17:00:00+00:00",
+   "andre": [
+    {
+     "kilde": "Ars Technica AI",
+     "link": "https://arstechnica.com/ai/2026/10/google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-cant-use/",
+     "rubrik": "Google annoncerer Gemini 4 Carbon uden adgang",
+     "resume_da": "Modellen beskrives som en lidt bedre udgave af Argon, men Google gør den ikke tilgængelig for brugere.",
+     "dato": "2026-10-28 18:47:27+00:00",
+     "foerst_set": "2026-10-28T21:16:14.888910+00:00"
+    },
+    {
+     "kilde": "Google DeepMind",
+     "link": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+     "rubrik": "Google DeepMind annoncerer Gemini 4 Carbon",
+     "resume_da": "Google DeepMind præsenterer Gemini 4 Carbon som sin næste frontier-model, men uden oplysninger om adgang.",
+     "dato": "2026-10-28 17:00:58+00:00",
+     "foerst_set": "2026-10-28T21:16:14.888910+00:00"
+    },
+    {
+     "kilde": "The Verge AI",
+     "link": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
+     "rubrik": "Google sender Gemini 4 Carbon efter sikkerhedshuller",
+     "resume_da": "Modellen topper flere benchmarks og er foreløbig kun åben for udvalgte cyberforsvarsselskaber. Prisen er den samme som forgængeren Argon.",
+     "dato": "2026-10-28T16:03:00-04:00",
+     "foerst_set": "2026-10-28T21:16:14.888910+00:00"
+    }
+   ],
+   "titel": "Gemini 4 Carbon: our next frontier model",
+   "rubrik": "Gemini 4 Carbon fører testene i sårbarhedsjagt",
+   "resume_da": "Google annoncerer Gemini 4 Carbon, der især skal finde og lukke sårbarheder i kode. Foreløbig får kun udvalgte cyberforsvarere adgang.",
+   "artikel_signatur": "d86b4dd0b49420ad7bce6bdb6f852424fa8419965d8d3d1a95f3090d6c08f3cc"
+  },
+  {
+   "overskrift": "Genie 4 kan skifte scene og tilføje lyd i realtid",
+   "tekst": "Google DeepMind sendte 27. oktober verdensmodellen Genie 4 ud i forskningspreview. Den kan skifte scene midt i simulationen, tilføje realtidslyd og holde sammen i op til to minutter. DeepMind erkender, at detaljer driver, og at lyd og tekst endnu ikke er sikret. Adgangen starter hos udvalgte testere og AI Ultra-abonnenter.",
    "link": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
    "kategori": "Lanceringer",
    "billede": "data/img/aa4a541db90e5f66.jpg",
@@ -33,8 +71,8 @@
    "artikel_signatur": "70056d8a29890f4a98bf7d2647b86268b65a337d1d023f6ec0aadb73c9f53dfe"
   },
   {
-   "overskrift": "GPT-6.1 Terra satser på computerbrug",
-   "tekst": "OpenAI har introduceret GPT-6.1 Terra, en hurtig mellemklassemodel med fokus på visuel ræsonnering og computerbrug. Den koster 1 dollar per million input-tokens og 5 dollar per million output-tokens – cirka halvdelen af GPT-6.1 Sol. Ifølge OpenAI er Terra bedre end GPT-6 Astra og Sol til teknisk kommunikation, men lidt svagere på andre områder.",
+   "overskrift": "GPT-6.1 Terra satser på computerbrug til mellempris",
+   "tekst": "OpenAI lancerede 26. oktober GPT-6.1 Terra, en mellemklassemodel med fokus på visuel ræsonnering og computerbrug. Den koster 1 dollar per million input-tokens og 5 dollar per million output-tokens, omkring halvdelen af GPT-5.6 Terra og GPT-6.1 Sol. OpenAI kalder den et betydeligt skridt op, men abonnenter får ifølge Simon Willison ikke en bombe.",
    "link": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
    "kategori": "Lanceringer",
    "billede": "data/img/ef6d64be6cb0ecf1.jpg",
@@ -47,7 +85,7 @@
   },
   {
    "overskrift": "Kimi K3.1 Pro når fronten til halv pris",
-   "tekst": "Moonshot har lagt Kimi K3.1 Pro på sin API. Ifølge Artificial Analysis scorer modellen 55 point mod Claude Opus 5.5's 58, til en pris på 2 dollar per million input-tokens og 10 dollar per million output-tokens. Moonshot lover at frigive de fulde vægte senest 4. november 2026.",
+   "tekst": "Moonshot lagde 23. oktober Kimi K3.1 Pro på API. Artificial Analysis giver den 55 point mod Claude Opus 5.5's 58, og prisen er 2 og 10 dollar per million tokens. Moonshot lover at frigive de fulde vægte senest 4. november. Først da kan modellen køres uden om selskabets API.",
    "link": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
    "kategori": "Lanceringer",
    "billede": "data/img/6268a306ed8c3a40.jpg",
@@ -59,8 +97,8 @@
    "artikel_signatur": "f073887eb98965099c6700d160d2165b104306f7c846c98e41bca7d347eacab8"
   },
   {
-   "overskrift": "Anthropic indsender børsprospekt",
-   "tekst": "Anthropic har indsendt sit S-1 til SEC og vil noteres på Nasdaq under ticker ANT. Prospektet viser en omsætning på 16,3 milliarder dollar i første halvår 2026, men et nettoresultat på minus 80,7 milliarder dollar. Selskabet har samtidig forpligtet sig til regnekraft for hundreder af milliarder dollar frem mod 2033.",
+   "overskrift": "Anthropic går på Nasdaq med kæmpeunderskud",
+   "tekst": "Anthropic indgav 26. oktober sin S-1 til SEC og vil noteres på Nasdaq som ANT. Prospektet viser 16,3 milliarder dollar i omsætning i første halvår, et nettoresultat på minus 80,7 milliarder dollar og regnekraftaftaler for hundreder af milliarder frem mod 2033. Stifterne beholder 50,1 procent af stemmerne gennem Founder LLC.",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
    "kategori": "Penge & marked",
    "billede": "data/img/0d5a5d0b470f75ea.jpg",
@@ -79,76 +117,41 @@
    "rubrik": "Anthropic vil på Nasdaq med ticker ANT",
    "resume_da": "Anthropic har indsendt sin børsprospekt og vil noteres på Nasdaq som ANT. Bag planen ligger et underskud på 80,7 milliarder dollar og milliardaftaler om regnekraft.",
    "artikel_signatur": "422d1adac6586bcf7481fc0d059863eef8a88f28bb37579816eb52ae41a47c1d"
-  },
-  {
-   "overskrift": "OpenAI hævder at have modbevist ETH",
-   "tekst": "OpenAI siger, at selskabets model har bevist, at Exponential Time Hypothesis er falsk, og har fremlagt resultater i matematik, datalogi og fysik. Et Lean-bevis og AI-teksten er offentliggjort, mens en arbejdsgruppe skal granske resultatet. Fysikbeviset er endnu ikke offentliggjort i fuld længde.",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
-   "kategori": "Forskning",
-   "billede": "",
-   "dato": "2026-10-26T23:34:58+00:00",
-   "andre": [
-    {
-     "kilde": "The Verge AI",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
-     "rubrik": "OpenAI tilbageholder fysikresultat og vækker kritik",
-     "resume_da": "OpenAI har offentliggjort gennembrud i matematik og datalogi, men holder fysikresultatet tilbage. Forskere kræver åben adgang og kritiserer håndplukkede eksperter.",
-     "dato": "2026-10-27T16:48:58-04:00",
-     "foerst_set": "2026-10-27T20:55:19.965914+00:00"
-    }
-   ],
-   "titel": "OpenAI announces three big science discoveries and a new way to work with academics",
-   "rubrik": "OpenAI lader forskere granske tre nye beviser",
-   "resume_da": "Firmaet annoncerer resultater i matematik, datalogi og fysik. Fysikbeviset er endnu ikke offentliggjort i fuld længde.",
-   "artikel_signatur": "38094c7aecd36a2bfde80914930117078c1c11be93fcc82801272ec0f28a9088"
-  },
-  {
-   "overskrift": "AI-agenter bag angreb på 2.250 selskaber",
-   "tekst": "Ifølge Microsoft brød kinesiske hackere ind i ConnectWises cloud-backup og brugte AI-agenter til at ramme omkring 2.250 organisationer med næsten 3.000 loginforsøg i minuttet. Microsoft peger på AI-frameworket ARTEX. ConnectWise har sat adgangen til backup-systemet på pause og undersøger bruddet.",
-   "link": "https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/",
-   "kategori": "Samfund & etik",
-   "billede": "data/img/07c3c1c5025b4691.webp",
-   "dato": "2026-10-22T16:47:17+00:00",
-   "andre": [],
-   "titel": "Chinese hackers spied on thousands of companies after breaching IT giant ConnectWise",
-   "rubrik": "ConnectWise-brud: AI-agenter hackede 2.250 selskaber",
-   "resume_da": "Kinesiske hackere stjal adgangsoplysninger fra ConnectWise og brugte AI-agenter og ARTEX til at bryde ind hos omkring 2.250 organisationer, oplyser Microsoft.",
-   "artikel_signatur": "85852542d414b52df6970ab8c7b536809bf442f3bf873c2319593499249fc0ff"
   }
  ],
  "overblik": [
   {
-   "tekst": "Google har sendt verdensmodellen Genie 4 ud i forskningspreview. Den kan styres med nye prompts midt i simulationen, har fået realtidslyd og holder scenen sammen i op til to minutter – dobbelt så længe som Genie 3. Samtidig har OpenAI løftet sløret for GPT-6.1 Terra, en mellemklassemodel der ifølge selskabet er særligt stærk til visuel ræsonnering og computerbrug. Begge viser, hvordan modellerne bevæger sig ind i mere interaktive og praktiske opgaver.",
+   "tekst": "Frontier-modellerne flyttede sig på flere fronter på én uge. Google annoncerede Gemini 4 Carbon med 88,2 procent i SEC-bench Pro og førsteplads på Artificial Analysis Intelligence Index, men kun udvalgte cyberforsvarere får adgang. Samme selskab sendte Genie 4 i forskningspreview; den kan skifte scene midt i en simulation, tilføje realtidslyd og holde sammen i op til to minutter. OpenAI lagde GPT-6.1 Terra ud som en mellemklassemodel med vægt på visuel ræsonnering og computerbrug. Fælles er, at laboratorierne nu sælger specialiserede evner frem for én bredere chatbot: sikkerhed, simulation og computerbrug kræver hver sin model og adgang.",
    "links": [
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
     "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
     "https://simonwillison.net/2026/Oct/26/gpt-61-terra/"
    ]
   },
   {
-   "tekst": "Moonshots Kimi K3.1 Pro når ifølge Artificial Analysis 55 point mod Claude Opus 5.5's 58 – til halv pris og med løfte om åbne vægte senest 4. november. Det sætter pres på de lukkede modellers prissætning. Samme uge indsendte Anthropic sit børsprospekt til SEC med et nettoresultat på minus 80,7 milliarder dollar i første halvår og forpligtelser til regnekraft for hundreder af milliarder dollar frem mod 2033.",
+   "tekst": "Forskellen ligger især i pris og åbenhed. Terra koster 1 og 5 dollar per million input- og output-tokens, mens Moonshots Kimi K3.1 Pro scorer 55 mod Claude Opus 5.5's 58 og koster 2 og 10 dollar. Moonshot lover at frigive vægtene senest 4. november; først da kan modellen køres uden om API'et. For udviklere betyder det, at valget ikke længere kun står mellem bedst og næstbedst, men mellem lukket front og snart åben nær-front.",
    "links": [
-    "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
-    "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec"
+    "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
+    "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/"
    ]
   },
   {
-   "tekst": "OpenAI hævder samtidig, at selskabets model har bevist, at Exponential Time Hypothesis er falsk, og fremlagde resultater i matematik, datalogi og fysik. Forskere er nu i gang med at granske beviserne. Og Microsoft oplyser, at kinesiske hackere brugte AI-agenter til at bryde ind hos omkring 2.250 organisationer med næsten 3.000 loginforsøg i minuttet – et billede af, hvordan autonome værktøjer også kan bruges til masseangreb.",
+   "tekst": "Bag modeloffensiven ligger en kapitaltung udbygning. Anthropic indgav sin S-1 og vil på Nasdaq som ANT med 16,3 milliarder dollar i halvårsomsætning, et nettoresultat på minus 80,7 milliarder dollar og regnekraftaftaler for hundreder af milliarder frem mod 2033. Stifterne beholder 50,1 procent af stemmerne. Det viser, at selv et selskab med stærke modelresultater og store kunder må binde sig til dyr infrastruktur – og at børsnoteringen bliver en prøve på, om investorerne vil betale for den slags forpligtelser.",
    "links": [
-    "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
-    "https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/"
+    "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec"
    ]
   }
  ],
- "tendens": "Forskere skal nu granske OpenAIs og Anthropics matematiske beviser, herunder om modbeviset for ETH holder, og om det påvirker kryptosystemer. OpenAI har ifølge MIT-professor Ryan Williams tjekket kryptospørgsmålet og vurderer, at det ikke indebærer et brud, men resultatet er ikke endeligt verificeret.",
+ "tendens": "Følg, om Moonshot faktisk frigiver de fulde vægte til Kimi K3.1 Pro senest 4. november, og om Google åbner Gemini 4 Carbon for andre end udvalgte cyberforsvarere. Begge er annoncerede, men ikke bekræftede adgangsforhold.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "11cfd19d2ea42ddb01a4307dc626e1cbb51e8b605be11237efa6f79bf3c275b8",
- "dato": "2026-10-28T21:37:41.828129+00:00",
- "opdateret": "2026-10-28T21:37:41.828129+00:00",
- "periode_fra": "2026-10-20T22:00:00+00:00",
- "periode_til": "2026-10-27T23:00:00+00:00",
+ "basis_signatur": "24fdd7c42fac0f1686a7688b7fd006cd250aef29c58087573beef5cd72239248",
+ "dato": "2026-10-29T06:31:43.942752+00:00",
+ "opdateret": "2026-10-29T06:31:43.942752+00:00",
+ "periode_fra": "2026-10-21T22:00:00+00:00",
+ "periode_til": "2026-10-28T23:00:00+00:00",
  "stats": {
-  "historier": 86,
+  "historier": 90,
   "kilder": 7
  }
 }

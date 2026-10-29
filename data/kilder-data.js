@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-28T21:16:14.888910+00:00",
- "artikler_i_alt": 123,
+ "opdateret": "2026-10-29T06:21:31.042587+00:00",
+ "artikler_i_alt": 110,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -115,20 +115,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "XREAL AURA projicerer apps i synsfeltet",
-     "dato": "2026-10-28T17:00:00",
-     "foerst_set": "2026-10-28T21:16:14",
-     "link": "https://blog.google/products-and-platforms/platforms/android/xreal-aura/",
-     "side": "artikel/3a389809e57a68f3.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Gemini åbner lagvise emner fra atomer til rummet",
      "dato": "2026-10-28T18:00:00",
      "foerst_set": "2026-10-28T21:16:14",
      "link": "https://blog.google/innovation-and-ai/products/gemini-app/immersive-explorations-student-hub/",
      "side": "artikel/8dd837b04080fbe9.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "XREAL AURA projicerer apps i synsfeltet",
+     "dato": "2026-10-28T17:00:00",
+     "foerst_set": "2026-10-28T21:16:14",
+     "link": "https://blog.google/products-and-platforms/platforms/android/xreal-aura/",
+     "side": "artikel/3a389809e57a68f3.html",
      "hvor": "forside",
      "under": ""
     },
@@ -195,7 +195,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 5,
+   "i_listen": 4,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -204,15 +204,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-23T20:03:23",
      "link": "https://huggingface.co/blog/allenai/litpivot",
      "side": "artikel/c8f212640f722e47.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "NVIDIA Kumo Relational forudsiger uden træning",
-     "dato": "2026-10-21T18:26:30",
-     "foerst_set": "2026-10-21T20:20:24",
-     "link": "https://huggingface.co/blog/nvidia/kumo-relational",
-     "side": "artikel/f9255f6920089cd5.html",
      "hvor": "forside",
      "under": ""
     },
@@ -261,7 +252,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 7,
+   "i_listen": 6,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -279,15 +270,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-28T21:16:14",
      "link": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/",
      "side": "artikel/9aab3021d0d2d658.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Claude Opus 5.5 gør spil sjove at spille",
-     "dato": "2026-10-28T13:55:15",
-     "foerst_set": "2026-10-28T15:23:12",
-     "link": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
-     "side": "artikel/2fcae8853da5c178.html",
      "hvor": "forside",
      "under": ""
     },
@@ -354,26 +336,26 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 43,
-   "som_ekstra": 7,
+   "i_listen": 40,
+   "som_ekstra": 5,
    "seneste": [
     {
-     "rubrik": "Chrome-Autofill henter nu oplysninger i Gmail",
+     "rubrik": "Azure omsætter 33,2 mia. dollar i kvartalet",
      "dato": "",
-     "foerst_set": "2026-10-28T21:16:14",
-     "link": "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/",
+     "foerst_set": "2026-10-29T06:21:31.042587+00:00",
+     "link": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
      "side": "",
      "hvor": "under",
-     "under": "Gemini i Chrome udfylder formularer med Gmail-data"
+     "under": "Microsoft henter 10 milliarder dollar på OpenAI"
     },
     {
-     "rubrik": "OpenAI-forskere fandt årtier gammel PHP-fejl",
+     "rubrik": "Microsofts cloud bærer tiende rekordkvartal",
      "dato": "",
-     "foerst_set": "2026-10-26T21:09:48.052336+00:00",
-     "link": "https://techcrunch.com/2026/10/24/will-ai-expose-the-rickety-infrastructure-of-the-internet/",
+     "foerst_set": "2026-10-29T06:21:31.042587+00:00",
+     "link": "https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/",
      "side": "",
      "hvor": "under",
-     "under": "OpenAI og Wiz fandt 22 år gamle PHP-huller"
+     "under": "Microsoft henter 10 milliarder dollar på OpenAI"
     },
     {
      "rubrik": "Flertal af store Anthropic-kunder bruger Claude-apps",
@@ -412,15 +394,6 @@ window.KILDER_STATUS = {
      "under": "Microsofts AI rammer 83 procent af testdiagnoserne"
     },
     {
-     "rubrik": "Claude Duet arbejder videre i baggrunden",
-     "dato": "",
-     "foerst_set": "2026-10-22T14:02:49",
-     "link": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
-     "side": "",
-     "hvor": "under",
-     "under": "Claude Duet sender morgenbrief fra dine apps"
-    },
-    {
      "rubrik": "Google slipper TorchTPU løs til sine TPU-chips",
      "dato": "",
      "foerst_set": "2026-10-20T20:06:38",
@@ -428,6 +401,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Hugging Face gør TPU til almindelig PyTorch-enhed"
+    },
+    {
+     "rubrik": "Google sælger nu annoncer i AI Mode globalt",
+     "dato": "2026-10-28T21:48:37",
+     "foerst_set": "2026-10-29T06:21:31",
+     "link": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
+     "side": "artikel/34b53368a5c19b91.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Microsoft henter 10 milliarder dollar på OpenAI",
+     "dato": "2026-10-28T21:34:30",
+     "foerst_set": "2026-10-29T06:21:31",
+     "link": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
+     "side": "artikel/65911ac3f4f50838.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Anthropic måler arbejde og pris for Claude Code",
@@ -444,6 +435,24 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-28T21:16:14",
      "link": "https://techcrunch.com/2026/10/28/as-ai-agents-reshape-the-web-google-opens-gemini-and-search-to-more-apps/",
      "side": "artikel/7fbbcf0aac9e9142.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Chrome henter formularsvar i din Gmail",
+     "dato": "2026-10-28T17:00:00",
+     "foerst_set": "2026-10-28T21:16:14",
+     "link": "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/",
+     "side": "artikel/7a28b9ee4e283bb2.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "38.490 kunders data eksponeret hos Daishin Securities",
+     "dato": "2026-10-28T15:41:18",
+     "foerst_set": "2026-10-28T21:16:14",
+     "link": "https://techcrunch.com/2026/10/28/south-koreas-financial-industry-hit-by-fresh-wave-of-cyberattacks/",
+     "side": "artikel/a25dd0954befb28c.html",
      "hvor": "forside",
      "under": ""
     },
@@ -500,48 +509,12 @@ window.KILDER_STATUS = {
      "side": "artikel/5ac9e6d4ee78e6eb.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Anthropics stiftere beholder magten efter børsnotering",
-     "dato": "2026-10-27T21:38:28",
-     "foerst_set": "2026-10-28T06:12:05",
-     "link": "https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/",
-     "side": "artikel/0ec9dae75184d610.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Genie 4 kan ændre scenen midt i simulationen",
-     "dato": "2026-10-27T16:30:57",
-     "foerst_set": "2026-10-27T20:55:19",
-     "link": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
-     "side": "artikel/3ddb9b3e3bda7311.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI hævder modeller har modbevist ETH",
-     "dato": "2026-10-27T17:08:08",
-     "foerst_set": "2026-10-27T20:55:19",
-     "link": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
-     "side": "artikel/636498a83af93057.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Rohit Patel forlader Meta og starter Ndoc",
-     "dato": "2026-10-27T14:59:09",
-     "foerst_set": "2026-10-27T20:55:19",
-     "link": "https://techcrunch.com/2026/10/27/meta-ai-director-rohit-patel-leaves-to-take-on-microsoft-office-and-google-workspace/",
-     "side": "artikel/afdc5264df2f96c5.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     9
+     6
     ],
     [
      "Google DeepMind",
@@ -567,8 +540,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 37,
-   "som_ekstra": 4,
+   "i_listen": 33,
+   "som_ekstra": 3,
    "seneste": [
     {
      "rubrik": "Meta kan udskyde forretningsvilkår igen",
@@ -614,15 +587,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "1Password lukker AI-agenter ind uden adgangskode"
-    },
-    {
-     "rubrik": "Walmart lukker AI-agenter ind i sin butik",
-     "dato": "",
-     "foerst_set": "2026-10-21T20:20:24",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1015715/walmart-ai-shopping-agents",
-     "side": "",
-     "hvor": "under",
-     "under": "Walmart åbner for AI-agenter med Agent Gateway"
     },
     {
      "rubrik": "Gemini i Chrome udfylder formularer med Gmail-data",
@@ -680,7 +644,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Anthropic vil børsnoteres med låst bestyrelse",
-     "dato": "2026-10-27T12:51:22",
+     "dato": "2026-10-27T16:51:22",
      "foerst_set": "2026-10-27T20:55:19",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety",
      "side": "artikel/34fc514719d0a7a5.html",
@@ -736,7 +700,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     9
+     6
     ],
     [
      "Google Gemini",
@@ -758,7 +722,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 11,
+   "i_listen": 7,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -841,42 +805,6 @@ window.KILDER_STATUS = {
      "side": "artikel/083958a57723973f.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Apple Music-brand skabt i rystende mineralolie",
-     "dato": "2026-10-21T19:44:40",
-     "foerst_set": "2026-10-21T23:34:19",
-     "link": "https://arstechnica.com/culture/2026/10/the-new-human-crafted-apple-music-brand-matters-in-an-ai-world/",
-     "side": "artikel/1a80887cf13ccfa1.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Dommer: EPA må ikke droppe SpaceXAI-sag",
-     "dato": "2026-10-21T18:20:40",
-     "foerst_set": "2026-10-21T20:20:24",
-     "link": "https://arstechnica.com/tech-policy/2026/10/judge-rejects-trumps-wild-claim-epa-can-dismiss-data-center-pollution-lawsuits/",
-     "side": "artikel/d60220e54ec52993.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Næsten to tredjedele af amerikanske læger bruger OpenEvidence",
-     "dato": "2026-10-21T15:14:07",
-     "foerst_set": "2026-10-21T20:20:24",
-     "link": "https://arstechnica.com/ai/2026/10/the-15-billion-ad-powered-ai-startup-your-doctor-may-already-be-using/",
-     "side": "artikel/50a7bf7b3e60bd04.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "GPT 6.1 kommer til Google Cloud",
-     "dato": "2026-10-21T18:51:42",
-     "foerst_set": "2026-10-21T14:05:01",
-     "link": "https://arstechnica.com/ai/2026/10/openais-latest-ai-models-are-coming-to-google-cloud-and-antigravity/",
-     "side": "artikel/f70b954b2a129f01.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -886,10 +814,6 @@ window.KILDER_STATUS = {
     ],
     [
      "The Verge AI",
-     1
-    ],
-    [
-     "OpenAI Blog",
      1
     ]
    ]
@@ -993,24 +917,9 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 25,
    "i_listen": 0,
-   "som_ekstra": 1,
-   "seneste": [
-    {
-     "rubrik": "OpenAI-modeller lander i Googles Model Garden",
-     "dato": "",
-     "foerst_set": "2026-10-21T14:05:01",
-     "link": "https://openai.com/index/openai-models-google-cloud",
-     "side": "",
-     "hvor": "under",
-     "under": "GPT 6.1 kommer til Google Cloud"
-    }
-   ],
-   "overlap": [
-    [
-     "Ars Technica AI",
-     1
-    ]
-   ]
+   "som_ekstra": 0,
+   "seneste": [],
+   "overlap": []
   },
   {
    "navn": "Google DeepMind",
