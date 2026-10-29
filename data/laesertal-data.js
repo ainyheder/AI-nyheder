@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-10-29T06:32:47.187102+00:00",
+ "opdateret": "2026-10-29T15:47:10.339905+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -278,26 +278,96 @@ window.LAESERTAL = {
      0,
      0,
      0,
-     0
+     4
+    ]
+   },
+   {
+    "navn": "Dybde",
+    "tal": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   {
+    "navn": "Labs",
+    "tal": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 19,
- "sidevisninger_i_alt": 26,
+ "besoeg_i_alt": 18,
+ "sidevisninger_i_alt": 25,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 19,
-   "visninger": 26
+   "besoeg": 18,
+   "visninger": 25
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 18
+   "besoeg": 17
   },
   {
    "fra": "www.bing.com",
@@ -309,8 +379,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 18,
-    "visninger": 18
+    "besoeg": 17,
+    "visninger": 17
    },
    {
     "fra": "herfra selv",
