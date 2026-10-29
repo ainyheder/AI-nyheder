@@ -1,36 +1,10 @@
 {
- "rubrik": "Frontier-AI: lavere priser, snævrere adgang og nye arbejdsområder",
- "indledning": "Frontier-kapløbet handlede denne uge ikke kun om højere score, men også om pris, adgang og hvor modellerne kan bruges.",
+ "rubrik": "Modelkapløbet breder sig – og Anthropic går på børs",
+ "indledning": "De syv dage blev et bredt modelkapløb: Google og OpenAI skærpede fronten, Moonshot pressede prisen, og nye modeller tog fat på simulation og design. Samtidig blev kapitalbehovet bag AI synligt i Anthropics børsplan.",
  "historier": [
   {
-   "overskrift": "GPT-6.1 Terra kan se og bruge computeren",
-   "tekst": "OpenAI har sendt GPT-6.1 Terra ud som en mellemklassemodel med vægt på visuel ræsonnering og computerbrug. Den kan fortolke billeder og tekniske tegninger og udføre handlinger på en computer. Prisen er 1 dollar per million input-tokens og 5 dollar per million output-tokens, ifølge kilden. OpenAI beskriver den som et betydeligt skridt op fra GPT-5.6 Terra.",
-   "link": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
-   "kategori": "Lanceringer",
-   "billede": "data/img/ef6d64be6cb0ecf1.jpg",
-   "dato": "2026-10-26T23:53:07+00:00",
-   "andre": [],
-   "titel": "GPT-6.1 Terra",
-   "rubrik": "GPT-6.1 Terra kan se og bruge computeren",
-   "resume_da": "OpenAI lancerer GPT-6.1 Terra som en mellemklassemodel med fokus på visuel ræsonnering og computerbrug, prissat mellem GPT-6 Luna og GPT-6.1 Sol.",
-   "artikel_signatur": "09ca07dba964a4f0a8c263e94f4fcbf04ee20e23740e58473f0724eb9a435e2d"
-  },
-  {
-   "overskrift": "Kimi K3.1 Pro når fronten til halv pris",
-   "tekst": "Moonshot har lagt Kimi K3.1 Pro på API med en score på 55 i Artificial Analysis, mod 58 for Claude Opus 5.5. Prisen er 2 dollar per million input-tokens og 10 dollar per million output-tokens. Selskabet lover at frigive de fulde vægte senest 4. november 2026, men de er ikke offentliggjort endnu.",
-   "link": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
-   "kategori": "Lanceringer",
-   "billede": "data/img/6268a306ed8c3a40.jpg",
-   "dato": "2026-10-23T19:40:54+00:00",
-   "andre": [],
-   "titel": "Introducing Kimi K3.1 Pro",
-   "rubrik": "Kimi K3.1 Pro når fronten til halv pris",
-   "resume_da": "Moonshot sender Kimi K3.1 Pro på API med score 55 mod Opus 5.5's 58 og løfte om fulde vægte senest 4. november 2026.",
-   "artikel_signatur": "f073887eb98965099c6700d160d2165b104306f7c846c98e41bca7d347eacab8"
-  },
-  {
    "overskrift": "Gemini 4 Carbon fører testene i sårbarhedsjagt",
-   "tekst": "Google har annonceret Gemini 4 Carbon som sin stærkeste model til cyberforsvar og langvarige opgaver. Google oplyser en score på 59 i Artificial Analysis Intelligence Index og 88,2 procent i SEC-bench Pro. Modellen er foreløbig kun åben for en mindre gruppe cyberforsvarere, og Google giver ingen dato for bred udgivelse.",
+   "tekst": "Google annoncerede Gemini 4 Carbon som sin stærkeste model til dato. Den topper Artificial Analysis Intelligence Index med 59 og får 88,2 procent i SEC-bench Pro til at finde sårbarheder. Carbon er foreløbig kun åben for udvalgte cyberforsvarere gennem Fairwind Program; Google lover bred adgang »så hurtigt som muligt« uden dato.",
    "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
    "kategori": "Lanceringer",
    "billede": "data/img/4b3d4e5d0a140c8a.jpg",
@@ -67,8 +41,56 @@
    "artikel_signatur": "d86b4dd0b49420ad7bce6bdb6f852424fa8419965d8d3d1a95f3090d6c08f3cc"
   },
   {
+   "overskrift": "GPT-6.1 Terra kan se og bruge computeren",
+   "tekst": "OpenAI introducerede GPT-6.1 Terra som en hurtig mellemklassemodel med særligt fokus på visuel ræsonnering og computerbrug. Den koster 1 dollar per million input-tokens og 5 dollar per million output-tokens, cirka halvdelen af GPT-6.1 Sol. OpenAI kalder den et betydeligt skridt op fra GPT-5.6 Terra, men den er ikke bedre end Sol på alle områder.",
+   "link": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
+   "kategori": "Lanceringer",
+   "billede": "data/img/ef6d64be6cb0ecf1.jpg",
+   "dato": "2026-10-26T23:53:07+00:00",
+   "andre": [],
+   "titel": "GPT-6.1 Terra",
+   "rubrik": "GPT-6.1 Terra kan se og bruge computeren",
+   "resume_da": "OpenAI lancerer GPT-6.1 Terra som en mellemklassemodel med fokus på visuel ræsonnering og computerbrug, prissat mellem GPT-6 Luna og GPT-6.1 Sol.",
+   "artikel_signatur": "09ca07dba964a4f0a8c263e94f4fcbf04ee20e23740e58473f0724eb9a435e2d"
+  },
+  {
+   "overskrift": "Kimi K3.1 Pro når fronten til halv pris",
+   "tekst": "Moonshot lagde Kimi K3.1 Pro på API med en score på 55 i Artificial Analysis, kun bag Claude Opus 5.5 med 58. Prisen er 2 dollar per million input-tokens og 10 dollar per million output-tokens, halvdelen af Opus 5.5. Moonshot lover at frigive de fulde vægte senest 4. november 2026; de er ikke ude endnu.",
+   "link": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+   "kategori": "Lanceringer",
+   "billede": "data/img/6268a306ed8c3a40.jpg",
+   "dato": "2026-10-23T19:40:54+00:00",
+   "andre": [],
+   "titel": "Introducing Kimi K3.1 Pro",
+   "rubrik": "Kimi K3.1 Pro når fronten til halv pris",
+   "resume_da": "Moonshot sender Kimi K3.1 Pro på API med score 55 mod Opus 5.5's 58 og løfte om fulde vægte senest 4. november 2026.",
+   "artikel_signatur": "f073887eb98965099c6700d160d2165b104306f7c846c98e41bca7d347eacab8"
+  },
+  {
+   "overskrift": "Canva Craft planlægger billedet først",
+   "tekst": "Canva lancerede sin første egne billedmodel, Craft. Den lægger en plan for designet, før den genererer billedet, og skal især kunne lave læselig tekst og præcis placering i op til 2K og over 30 formater. Craft er tilgængelig nu for alle brugere via Dream Lab; hurtigere varianter er annonceret senere.",
+   "link": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+   "kategori": "Lanceringer",
+   "billede": "data/img/7f16df291f423c60.jpg",
+   "dato": "2026-10-22T21:51:25+00:00",
+   "andre": [
+    {
+     "kilde": "TechCrunch AI",
+     "link": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+     "rubrik": "Canva Craft laver billeder med læsbar tekst",
+     "resume_da": "Designplatformen sender sin egen model ud til alle brugere fra fanen Dream Lab og lover skarpe detaljer, læsbar tekst og redigering, der ikke rører resten af billedet.",
+     "dato": "2026-10-22T19:00:00+00:00",
+     "foerst_set": "2026-10-22T20:16:04.203492+00:00"
+    }
+   ],
+   "titel": "Canva’s first AI image model plans designs before generating them",
+   "rubrik": "Canva Craft planlægger billedet først",
+   "resume_da": "Den nye model tegner en plan, før den genererer, og skal kunne lave læselig tekst og præcis placering i op til 2K og over 30 formater.",
+   "artikel_signatur": "15cacb220f7e713dbfb6ff6b28f285d4a455a590f1c816fb4f312aaff3444f6b"
+  },
+  {
    "overskrift": "Genie 4 kan ændre scenen midt i simulationen",
-   "tekst": "Google DeepMind har sendt verdensmodellen Genie 4 i forskningspreview. Den kan bygge interaktive verdener fra tekst eller billeder, skifte scene midt i simulationen og tilføje realtidslyd. En simulation kan holde sammen i op til to minutter, dobbelt så længe som Genie 3. Adgangen er begrænset til udvalgte testbrugere og ruller senere ud til AI Ultra-abonnenter.",
+   "tekst": "Google DeepMind sendte verdensmodellen Genie 4 ud i forskningspreview. Den kan bygge interaktive verdener fra tekst eller billeder, skifte scene midt i simulationen og tilføje realtidslyd. En simulation holder nu sammen i op til to minutter, det dobbelte af Genie 3. Adgangen er foreløbig begrænset til udvalgte testbrugere.",
    "link": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
    "kategori": "Lanceringer",
    "billede": "data/img/aa4a541db90e5f66.jpg",
@@ -81,24 +103,16 @@
      "resume_da": "Googles verdensmodel kan nu opdatere simulationer med en sætning, tilføje lyd og køre dobbelt så længe. Først til udvalgte testere.",
      "dato": "2026-10-27T12:00:00-04:00",
      "foerst_set": "2026-10-27T20:55:19.965914+00:00"
-    },
-    {
-     "kilde": "Google DeepMind",
-     "link": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-     "rubrik": "DeepMind løfter sløret for Genie 4",
-     "resume_da": "DeepMind kalder Genie 4 en ny verdensmodel, der ifølge selskabet giver hidtil uset realisme i realtidssimulering.",
-     "dato": "2026-10-27 16:01:38+00:00",
-     "foerst_set": "2026-10-27T20:55:19.965914+00:00"
     }
    ],
    "titel": "Google’s Genie 4 world model adds audio, more realistic worlds, and real-time steering",
    "rubrik": "Genie 4 kan ændre scenen midt i simulationen",
    "resume_da": "Googles nye verdensmodel tilføjer realtidslyd, bedre fysik og dobbelt så lang sammenhæng; testbrugere afprøver filmprototyper.",
-   "artikel_signatur": "70056d8a29890f4a98bf7d2647b86268b65a337d1d023f6ec0aadb73c9f53dfe"
+   "artikel_signatur": "c6f963dbb08ab40c17e1cd09eb76fc8d0e20b8f76c3ae4850585b49b0e286831"
   },
   {
    "overskrift": "Anthropic vil på Nasdaq med ticker ANT",
-   "tekst": "Anthropic har indsendt sit børsprospekt til SEC og vil noteres på Nasdaq som ANT. Prospektet viser et nettoresultat på minus 80,7 milliarder dollar i første halvår og store regnekraftaftaler, blandt andet med SpaceX, Microsoft, Google og Amazon. Stifterne vil kontrollere 50,1 procent af stemmerne gennem en Founder LLC.",
+   "tekst": "Anthropic har indsendt sit S-1 til SEC og vil noteres på Nasdaq som ANT. I første halvår 2026 var omsætningen 16,3 mia. dollar, mens nettoresultatet var minus 80,7 mia. dollar, især på grund af regnskabsmæssige omkostninger ved konvertibel gæld. Stifterne vil kontrollere 50,1 procent af stemmerne gennem Founder LLC.",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
    "kategori": "Penge & marked",
    "billede": "data/img/0d5a5d0b470f75ea.jpg",
@@ -117,59 +131,37 @@
    "rubrik": "Anthropic vil på Nasdaq med ticker ANT",
    "resume_da": "Anthropic har indsendt sin børsprospekt og vil noteres på Nasdaq som ANT. Bag planen ligger et underskud på 80,7 milliarder dollar og milliardaftaler om regnekraft.",
    "artikel_signatur": "422d1adac6586bcf7481fc0d059863eef8a88f28bb37579816eb52ae41a47c1d"
-  },
-  {
-   "overskrift": "Microsofts AI rammer 83 procent af testdiagnoserne",
-   "tekst": "Microsofts Diagnostic Orchestrator ramte 83 procent af testdiagnoserne i et studie i Science, hvor almene læger med opslagsværker nåede omkring 36 procent. Systemet lader flere AI-agenter undersøge en sag sammen og er drevet af OpenAIs GPT-5. Microsoft planlægger hospitalsforsøg med Beth Israel Deaconess Medical Center, men vil ikke sætte en dato.",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
-   "kategori": "Forskning",
-   "billede": "data/img/54a6194e65f89769.webp",
-   "dato": "2026-10-22T18:00:00+00:00",
-   "andre": [
-    {
-     "kilde": "TechCrunch AI",
-     "link": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
-     "rubrik": "Microsofts MAI-DxO overgår læger i simuleret test",
-     "resume_da": "I et Science-studie fik systemet 83 % rigtige på svære sager mod 36 % for praktiserende læger og internister; kasusne håndteres normalt af specialister.",
-     "dato": "2026-10-22T18:43:53+00:00",
-     "foerst_set": "2026-10-22T20:16:04.203492+00:00"
-    }
-   ],
-   "titel": "Microsoft says its AI tool is better than doctors at diagnosing conditions",
-   "rubrik": "Microsofts AI rammer 83 procent af testdiagnoserne",
-   "resume_da": "Systemet bruger flere AI-agenter og skal afprøves på hospitaler; Microsoft vil ikke binde sig til en tidsplan.",
-   "artikel_signatur": "cbc25c967b8486a0769045cf118d4afb3c09a3bcec976f3d7c7a08b9c85cec0c"
   }
  ],
  "overblik": [
   {
-   "tekst": "OpenAI og Moonshot trak i hver sin retning af samme tema: mere intelligens for færre penge. GPT-6.1 Terra placeres mellem GPT-6 Luna og GPT-6.1 Sol og skal især være god til at læse billeder og arbejde på en computer; OpenAI sætter prisen til 1 dollar per million input-tokens og 5 dollar per million output-tokens. Kimi K3.1 Pro ligger tæt på Claude Opus 5.5 i Artificial Analysis og koster 2 og 10 dollar. Forskellen er adgangen: Terra er en lukket API-model, mens Moonshot lover åbne vægte senest 4. november. Det gør pris og kontrol til en del af konkurrencen, ikke bare evnerne.",
+   "tekst": "Fronten blev mere specialiseret: Google annoncerede Gemini 4 Carbon som sin stærkeste model med fokus på cyberforsvar, men kun udvalgte forsvarere får adgang. OpenAI placerede GPT-6.1 Terra mellem Luna og Sol med vægt på visuel ræsonnering og computerbrug; den er billigere end Sol, men ikke bedre på alle områder. Moonshot pressede samtidig prisen med Kimi K3.1 Pro, der scorer 55 mod Opus 5.5's 58 og koster halvdelen – vægtene er dog kun lovet senest 4. november.",
    "links": [
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
     "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
     "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/"
    ]
   },
   {
-   "tekst": "Google sendte to meget forskellige ting ud. Gemini 4 Carbon er en avanceret model målrettet cyberforsvar og kode, og Google oplyser, at den topper Artificial Analysis og får 88,2 procent i SEC-bench Pro; den er foreløbig kun åben for udvalgte cyberforsvarere. Genie 4 er en verdensmodel, der kan styres midt i en simulation, tilføje realtidslyd og holde sammen i op til to minutter, men kun i forskningspreview. Begge er annonceret med imponerende tal, og begge er svære at afprøve for almindelige brugere. Det viser, at Google prioriterer specialiserede evner og kontrolleret adgang.",
+   "tekst": "Canva viste en anden vej med Craft, sin første egne billedmodel, der lægger en plan før genereringen og er tilgængelig nu. Google DeepMind tog fat på simulation med Genie 4, der kan styres midt i forløbet, får realtidslyd og holder sammen i op til to minutter. Det er stadig et forskningspreview, og holdet erkender, at detaljer driver. Fælles er, at modellerne nu sælges på konkrete arbejdsopgaver: design, computerbrug, sikkerhed og simulation.",
    "links": [
-    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+    "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
     "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/"
    ]
   },
   {
-   "tekst": "Anthropics børsprospekt viser den anden side af kapløbet: Modellerne hviler på enorme regnekraftaftaler. Selskabet vil på Nasdaq som ANT og har forpligtet sig til køb hos SpaceX, Microsoft, Google og Amazon, mens stifterne beholder 50,1 procent af stemmerne. Microsofts Diagnostic Orchestrator peger på, hvad evnerne skal bruges til: I et Science-studie nåede systemet 83 procent af testdiagnoserne mod omkring 36 procent for almene læger med opslagsværker, men hospitalsforsøg mangler stadig. Tilsammen handler ugens AI ikke kun om nye modeller, men om hvem der kan betale, få adgang og validere dem.",
+   "tekst": "Bag lanceringerne ligger et voksende kapitalbehov. Anthropic har indsendt S-1 med ticker ANT, en omsætning på 16,3 mia. dollar i første halvår og et nettoresultat på minus 80,7 mia. dollar, især fra regnskabsmæssige omkostninger ved konvertibel gæld. Selskabet binder sig samtidig til store regnekraftsaftaler, og stifterne beholder 50,1 procent af stemmerne. Børsplanen viser, hvor dyr modelkapløbet er blevet.",
    "links": [
-    "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
-    "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence"
+    "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec"
    ]
   }
  ],
  "tendens": "",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "cb15ef315a6bbc7619ae3995f1327b145db0776bd30a23276cb88e23f2681348",
- "dato": "2026-10-29T15:46:03.765484+00:00",
- "opdateret": "2026-10-29T15:46:03.765484+00:00",
+ "basis_signatur": "7868bd02480e95c0d8f558a9e076b47a38a4c7f9041c669a2bce9a6e987dfe51",
+ "dato": "2026-10-29T21:38:04.412457+00:00",
+ "opdateret": "2026-10-29T21:38:04.412457+00:00",
  "periode_fra": "2026-10-21T22:00:00+00:00",
  "periode_til": "2026-10-28T23:00:00+00:00",
  "stats": {

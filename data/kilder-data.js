@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-29T15:28:58.929586+00:00",
- "artikler_i_alt": 114,
+ "opdateret": "2026-10-29T21:21:56.410708+00:00",
+ "artikler_i_alt": 122,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -27,7 +27,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 5,
+   "i_listen": 4,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -65,15 +65,6 @@ window.KILDER_STATUS = {
      "side": "artikel/44d50d6d0c38b855.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Mistral åbner München-hub for fysik-AI",
-     "dato": "2026-09-28T15:57:59",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://mistral.ai/news/hallo-deutschland/",
-     "side": "artikel/1e688dbfb03ab730.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -93,7 +84,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 5,
+   "i_listen": 6,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -113,6 +104,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
+    },
+    {
+     "rubrik": "Google Gemini redigerer filer i chatten",
+     "dato": "2026-10-29T16:15:00",
+     "foerst_set": "2026-10-29T21:21:56",
+     "link": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/",
+     "side": "artikel/7bc579d856eb19e4.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Gemini 4 Carbon fører testene i sårbarhedsjagt",
@@ -166,11 +166,11 @@ window.KILDER_STATUS = {
      2
     ],
     [
-     "Ars Technica AI",
-     1
+     "The Verge AI",
+     2
     ],
     [
-     "The Verge AI",
+     "Ars Technica AI",
      1
     ],
     [
@@ -238,7 +238,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 6,
+   "i_listen": 7,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -249,6 +249,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Mistral Large 4 klarer opgaver andre afviser"
+    },
+    {
+     "rubrik": "Spawn lader agenter skrive koden hver time",
+     "dato": "2026-10-29T17:00:26",
+     "foerst_set": "2026-10-29T21:21:56",
+     "link": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
+     "side": "artikel/a0c591335685a06d.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "GitHub: Merged pull requests tredoblet på et år",
@@ -322,7 +331,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 42,
+   "i_listen": 47,
    "som_ekstra": 4,
    "seneste": [
     {
@@ -362,6 +371,15 @@ window.KILDER_STATUS = {
      "under": "OpenAI træner nu sine stærkeste AI-modeller uden net"
     },
     {
+     "rubrik": "Microsofts MAI-DxO overgår læger i simuleret test",
+     "dato": "",
+     "foerst_set": "2026-10-22T20:16:04",
+     "link": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+     "side": "",
+     "hvor": "under",
+     "under": "Microsofts AI rammer 83 procent af testdiagnoserne"
+    },
+    {
      "rubrik": "Canva Craft laver billeder med læsbar tekst",
      "dato": "",
      "foerst_set": "2026-10-22T20:16:04",
@@ -371,13 +389,49 @@ window.KILDER_STATUS = {
      "under": "Canva Craft planlægger billedet først"
     },
     {
-     "rubrik": "Microsofts MAI-DxO overgår læger i simuleret test",
-     "dato": "",
-     "foerst_set": "2026-10-22T20:16:04",
-     "link": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
-     "side": "",
-     "hvor": "under",
-     "under": "Microsofts AI rammer 83 procent af testdiagnoserne"
+     "rubrik": "Thrive Holdings køber ADT for 7,6 milliarder dollar",
+     "dato": "2026-10-29T19:56:19",
+     "foerst_set": "2026-10-29T21:21:56",
+     "link": "https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/",
+     "side": "artikel/db83db5c214c0a39.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Dream vil lade AI tegne hele bygninger",
+     "dato": "2026-10-29T16:21:00",
+     "foerst_set": "2026-10-29T21:21:56",
+     "link": "https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/",
+     "side": "artikel/b2c76de6c6e17d8b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Reddit skifter til primært indlogget oplevelse",
+     "dato": "2026-10-29T20:08:31",
+     "foerst_set": "2026-10-29T21:21:56",
+     "link": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
+     "side": "artikel/60144b1613db26a4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Rivian licenserer AI-stemme til Volkswagen",
+     "dato": "2026-10-29T20:05:47",
+     "foerst_set": "2026-10-29T21:21:56",
+     "link": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/",
+     "side": "artikel/223b05929cb398d8.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Granola skriver nu dine ord i alle apps",
+     "dato": "2026-10-29T17:54:38",
+     "foerst_set": "2026-10-29T21:21:56",
+     "link": "https://techcrunch.com/2026/10/29/granola-crunches-up-a-dictation-feature-to-compete-with-wispr/",
+     "side": "artikel/72117db35823a11a.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Alexa får 100 nye shoppingfunktioner",
@@ -441,51 +495,6 @@ window.KILDER_STATUS = {
      "side": "artikel/7a28b9ee4e283bb2.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "38.490 kunders data eksponeret hos Daishin Securities",
-     "dato": "2026-10-28T15:41:18",
-     "foerst_set": "2026-10-28T21:16:14",
-     "link": "https://techcrunch.com/2026/10/28/south-koreas-financial-industry-hit-by-fresh-wave-of-cyberattacks/",
-     "side": "artikel/a25dd0954befb28c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Marissa Mayer vil lade Dazzle planlægge familielivet",
-     "dato": "2026-10-28T15:53:52",
-     "foerst_set": "2026-10-28T21:16:14",
-     "link": "https://techcrunch.com/2026/10/28/ai-execs-may-be-too-out-of-touch-to-build-for-the-general-public/",
-     "side": "artikel/b01917f8b2b42f5c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Nvidia frigiver Nemotron 3.5 til 40 sprog",
-     "dato": "2026-10-28T15:00:00",
-     "foerst_set": "2026-10-28T15:23:12",
-     "link": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
-     "side": "artikel/4de33f2bccf585e4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Forældre sagsøger OpenAI for GPT-4o-råd om epilepsimedicin",
-     "dato": "2026-10-27T23:34:27",
-     "foerst_set": "2026-10-28T06:12:05",
-     "link": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/",
-     "side": "artikel/092cb86201fbae88.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Amazon sidder på Anthropics største gevinst",
-     "dato": "2026-10-28T01:15:28",
-     "foerst_set": "2026-10-28T06:12:05",
-     "link": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/",
-     "side": "artikel/c372745ec78a06e5.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -494,11 +503,11 @@ window.KILDER_STATUS = {
      6
     ],
     [
-     "Google DeepMind",
+     "Google Gemini",
      1
     ],
     [
-     "Google Gemini",
+     "Ars Technica AI",
      1
     ]
    ]
@@ -513,9 +522,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 35,
-   "som_ekstra": 3,
+   "i_listen": 37,
+   "som_ekstra": 4,
    "seneste": [
+    {
+     "rubrik": "The Verge: Gemini redigerer nu Docs og regneark",
+     "dato": "",
+     "foerst_set": "2026-10-29T21:21:56",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
+     "side": "",
+     "hvor": "under",
+     "under": "Google Gemini redigerer filer i chatten"
+    },
     {
      "rubrik": "Meta kan udskyde forretningsvilkår igen",
      "dato": "",
@@ -562,11 +580,11 @@ window.KILDER_STATUS = {
      "under": "1Password lukker AI-agenter ind uden adgangskode"
     },
     {
-     "rubrik": "NYT Cooking tester AI-opskriftsændringer",
-     "dato": "2026-10-29T10:39:37",
-     "foerst_set": "2026-10-29T15:28:58",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1022193/nyt-cooking-app-ai-recipe-modification-tool",
-     "side": "artikel/d4f8aae48adc9cf3.html",
+     "rubrik": "Microsoft tilbyder 60.000 ansatte fratrædelse",
+     "dato": "2026-10-29T12:00:00",
+     "foerst_set": "2026-10-29T21:21:56",
+     "link": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad",
+     "side": "artikel/e27a14625bfef0d3.html",
      "hvor": "forside",
      "under": ""
     },
@@ -580,8 +598,26 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "NYT Cooking tester AI-opskriftsændringer",
+     "dato": "2026-10-29T10:39:37",
+     "foerst_set": "2026-10-29T15:28:58",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1022193/nyt-cooking-app-ai-recipe-modification-tool",
+     "side": "artikel/d4f8aae48adc9cf3.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Adam Mosseri: AI-frustrationen vil vokse",
+     "dato": "2026-10-28T19:05:39",
+     "foerst_set": "2026-10-29T06:21:31",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity",
+     "side": "artikel/5536851b9ba28ab5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Gemini i Chrome udfylder formularer med Gmail-data",
-     "dato": "2026-10-28T13:00:00",
+     "dato": "2026-10-28T17:00:00",
      "foerst_set": "2026-10-28T21:16:14",
      "link": "https://www.theverge.com/tech/1020626/chrome-enhanced-autofill-gmail-forms-gemini-personal-intelligence",
      "side": "artikel/4ec46b596fc84ced.html",
@@ -650,24 +686,6 @@ window.KILDER_STATUS = {
      "side": "artikel/bd2c3c22ddbe56d5.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Paxton og Talarico vil tøjle data centre",
-     "dato": "2026-10-27T10:00:00",
-     "foerst_set": "2026-10-27T14:52:12",
-     "link": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections",
-     "side": "artikel/a0f36022fc6a06c4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI lader forskere granske tre nye beviser",
-     "dato": "2026-10-26T23:34:58",
-     "foerst_set": "2026-10-27T05:29:27",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
-     "side": "artikel/636dd8e40f57df25.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -677,7 +695,7 @@ window.KILDER_STATUS = {
     ],
     [
      "Google Gemini",
-     1
+     2
     ],
     [
      "Ars Technica AI",
@@ -696,8 +714,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 7,
-   "som_ekstra": 2,
+   "som_ekstra": 3,
    "seneste": [
+    {
+     "rubrik": "Google erkender: AI-søgning indbringer mindre",
+     "dato": "",
+     "foerst_set": "2026-10-29T21:21:56",
+     "link": "https://arstechnica.com/gadgets/2026/10/google-admits-ai-search-makes-less-money-but-its-fixing-that-with-more-ads/",
+     "side": "",
+     "hvor": "under",
+     "under": "Google sælger nu annoncer i AI Mode globalt"
+    },
     {
      "rubrik": "Google annoncerer Gemini 4 Carbon uden adgang",
      "dato": "",
@@ -783,6 +810,10 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google Gemini",
+     1
+    ],
+    [
+     "TechCrunch AI",
      1
     ],
     [
@@ -914,7 +945,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 15,
    "i_listen": 3,
-   "som_ekstra": 2,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "Google DeepMind annoncerer Gemini 4 Carbon",
@@ -924,15 +955,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
-    },
-    {
-     "rubrik": "DeepMind løfter sløret for Genie 4",
-     "dato": "",
-     "foerst_set": "2026-10-27T20:55:19",
-     "link": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-     "side": "",
-     "hvor": "under",
-     "under": "Genie 4 kan ændre scenen midt i simulationen"
     },
     {
      "rubrik": "Google Antigravity finder ny peptidkandidat",
@@ -966,10 +988,6 @@ window.KILDER_STATUS = {
     [
      "Google Gemini",
      2
-    ],
-    [
-     "TechCrunch AI",
-     1
     ]
    ]
   },
