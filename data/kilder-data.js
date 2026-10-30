@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-30T15:15:27.943712+00:00",
- "artikler_i_alt": 111,
+ "opdateret": "2026-10-30T21:00:09.129763+00:00",
+ "artikler_i_alt": 122,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -89,7 +89,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 7,
-   "som_ekstra": 1,
+   "som_ekstra": 2,
    "seneste": [
     {
      "rubrik": "Google åbner Connected Apps-platform i preview",
@@ -99,6 +99,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google åbner Gemini for alle udvikleres apps"
+    },
+    {
+     "rubrik": "Google ruller Gemini 4 Argon bredt ud",
+     "dato": "",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
     },
     {
      "rubrik": "Google Gemini redigerer filer i chatten",
@@ -166,15 +175,15 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
+     "Google DeepMind",
+     2
+    ],
+    [
      "The Verge AI",
      2
     ],
     [
      "Ars Technica AI",
-     1
-    ],
-    [
-     "Google DeepMind",
      1
     ],
     [
@@ -344,9 +353,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 46,
-   "som_ekstra": 2,
+   "i_listen": 49,
+   "som_ekstra": 3,
    "seneste": [
+    {
+     "rubrik": "DoorDash: Kun få hundrede ordrer fra AI-agenter",
+     "dato": "",
+     "foerst_set": "2026-10-30T15:15:27",
+     "link": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/",
+     "side": "",
+     "hvor": "under",
+     "under": "DoorDash ser næsten ingen AI-agent-ordrer"
+    },
     {
      "rubrik": "Azure omsætter 33,2 mia. dollar i kvartalet",
      "dato": "",
@@ -384,11 +402,29 @@ window.KILDER_STATUS = {
      "under": "OpenAI træner nu sine stærkeste AI-modeller uden net"
     },
     {
-     "rubrik": "DoorDash: Kun få hundrede ordrer fra AI-agenter",
-     "dato": "2026-10-30T13:54:25",
-     "foerst_set": "2026-10-30T15:15:27",
-     "link": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/",
-     "side": "artikel/30b5f07a33cd2b6d.html",
+     "rubrik": "Zest-agent booker restaurantbord i SMS-tråden",
+     "dato": "2026-10-30T17:47:12",
+     "foerst_set": "2026-10-30T21:00:09",
+     "link": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/",
+     "side": "artikel/c9dcfb62ccca45b2.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Googles satellit digter med Gemma 4 i kredsløb",
+     "dato": "2026-10-30T17:00:00",
+     "foerst_set": "2026-10-30T21:00:09",
+     "link": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
+     "side": "artikel/d4c3a958104abce5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Tyler Shultz: AI gør svindel svær at gennemskue",
+     "dato": "2026-10-30T16:03:45",
+     "foerst_set": "2026-10-30T21:00:09",
+     "link": "https://techcrunch.com/2026/10/30/theranos-whistleblower-tyler-shultz-warns-that-the-ai-boom-is-a-great-opportunity-to-go-deceive-people/",
+     "side": "artikel/9baf1e5f5cebdc8d.html",
      "hvor": "forside",
      "under": ""
     },
@@ -398,6 +434,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-30T15:15:27",
      "link": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
      "side": "artikel/12c5b28f8540d0b9.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Jassy: AWS kan blive billionforretning",
+     "dato": "2026-10-29T23:42:22",
+     "foerst_set": "2026-10-30T06:19:58",
+     "link": "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/",
+     "side": "artikel/ee09513d3b256af4.html",
      "hvor": "forside",
      "under": ""
     },
@@ -463,39 +508,16 @@ window.KILDER_STATUS = {
      "side": "artikel/223b05929cb398d8.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Granola skriver nu dine ord i alle apps",
-     "dato": "2026-10-29T17:54:38",
-     "foerst_set": "2026-10-29T21:21:56",
-     "link": "https://techcrunch.com/2026/10/29/granola-crunches-up-a-dictation-feature-to-compete-with-wispr/",
-     "side": "artikel/72117db35823a11a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Mistral frigiver sin trillionmodel til download",
-     "dato": "2026-10-29T17:00:00",
-     "foerst_set": "2026-10-29T15:28:58",
-     "link": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
-     "side": "artikel/f4d2fa0b488ed855.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Alexa får 100 nye shoppingfunktioner",
-     "dato": "2026-10-29T13:00:00",
-     "foerst_set": "2026-10-29T15:28:58",
-     "link": "https://techcrunch.com/2026/10/29/amazon-updates-alexa-to-help-you-manage-shopping-lists-subscriptions-and-update-delivery-instructions/",
-     "side": "artikel/704fa4f310e27738.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     3
+     4
+    ],
+    [
+     "Ars Technica AI",
+     2
     ],
     [
      "Mistral AI",
@@ -503,10 +525,6 @@ window.KILDER_STATUS = {
     ],
     [
      "Google Gemini",
-     1
-    ],
-    [
-     "Ars Technica AI",
      1
     ]
    ]
@@ -521,9 +539,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 32,
-   "som_ekstra": 3,
+   "i_listen": 34,
+   "som_ekstra": 4,
    "seneste": [
+    {
+     "rubrik": "Gemma 4 svarede fra Googles satellit",
+     "dato": "",
+     "foerst_set": "2026-10-30T21:00:09",
+     "link": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
+     "side": "",
+     "hvor": "under",
+     "under": "Googles satellit digter med Gemma 4 i kredsløb"
+    },
     {
      "rubrik": "The Verge: Gemini redigerer nu Docs og regneark",
      "dato": "",
@@ -570,6 +597,24 @@ window.KILDER_STATUS = {
      "under": "Genie 4 kan ændre scenen midt i simulationen"
     },
     {
+     "rubrik": "Google og Microsoft bakker ny standard mod scraping",
+     "dato": "2026-10-30T16:26:10",
+     "foerst_set": "2026-10-30T21:00:09",
+     "link": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+     "side": "artikel/18ea57daed9dddc6.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Altman: RAM hører i datacenteret, ikke på skrivebordet",
+     "dato": "2026-10-30T16:48:43",
+     "foerst_set": "2026-10-30T21:00:09",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
+     "side": "artikel/22e8c569cc060b0a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Wikipedia vil have licens ved AI-gengivelse",
      "dato": "2026-10-30T05:00:00",
      "foerst_set": "2026-10-30T15:15:27",
@@ -607,7 +652,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Microsoft tilbyder 60.000 ansatte fratrædelse",
-     "dato": "2026-10-29T12:00:00",
+     "dato": "2026-10-29T16:00:00",
      "foerst_set": "2026-10-29T21:21:56",
      "link": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad",
      "side": "artikel/e27a14625bfef0d3.html",
@@ -625,7 +670,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "NYT Cooking tester AI-opskriftsændringer",
-     "dato": "2026-10-29T10:39:37",
+     "dato": "2026-10-29T14:39:37",
      "foerst_set": "2026-10-29T15:28:58",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1022193/nyt-cooking-app-ai-recipe-modification-tool",
      "side": "artikel/d4f8aae48adc9cf3.html",
@@ -658,30 +703,12 @@ window.KILDER_STATUS = {
      "side": "artikel/3a6e219abc13c7e9.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Abbott i modvind: texanerne afviser data-centre",
-     "dato": "2026-10-28T12:00:00",
-     "foerst_set": "2026-10-28T15:23:12",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1018676/data-center-midterm-election-energy-water-texas",
-     "side": "artikel/a03c4a51a28af232.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Meta lancerer Waddle World som dagbog",
-     "dato": "2026-10-28T11:27:30",
-     "foerst_set": "2026-10-28T15:23:12",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1020410/meta-launched-ai-pet-journal-app-waddle-world",
-     "side": "artikel/6a00cf459c47b5db.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     3
+     4
     ],
     [
      "Google Gemini",
@@ -703,7 +730,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 7,
+   "i_listen": 10,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -732,6 +759,33 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google: Gmail-data kan nu bruges til annoncer"
+    },
+    {
+     "rubrik": "USA's justitsministerium: Første store sag om spøgelsesstuderende",
+     "dato": "2026-10-30T16:53:49",
+     "foerst_set": "2026-10-30T21:00:09",
+     "link": "https://arstechnica.com/tech-policy/2026/10/doj-exposes-ghost-students-using-ai-to-complete-courses-steal-student-loans/",
+     "side": "artikel/45464663f5cb4135.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Fujifilm femdobler båndproduktion til AI-arkivering",
+     "dato": "2026-10-30T17:38:19",
+     "foerst_set": "2026-10-30T21:00:09",
+     "link": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
+     "side": "artikel/a4df15e2609a100e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "DoorDash ser næsten ingen AI-agent-ordrer",
+     "dato": "2026-10-30T19:30:52",
+     "foerst_set": "2026-10-30T15:15:27",
+     "link": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/",
+     "side": "artikel/655f823878f84966.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Google AI Mode undviger nogle valgspørgsmål",
@@ -799,11 +853,11 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "Google Gemini",
-     1
+     "TechCrunch AI",
+     2
     ],
     [
-     "TechCrunch AI",
+     "Google Gemini",
      1
     ],
     [
@@ -904,10 +958,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 15,
+   "i_listen": 3,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -918,12 +972,39 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
+    },
+    {
+     "rubrik": "Google Antigravity finder ny peptidkandidat",
+     "dato": "2026-10-15T16:08:03",
+     "foerst_set": "2026-10-16T04:53:41",
+     "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+     "side": "artikel/ba028f76ed47c779.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
+     "dato": "2026-10-13T19:43:07",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+     "side": "artikel/42f1c245f492d3d1.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "EmbeddingGemma 2 finder videoklip ud fra tale",
+     "dato": "2026-10-06T19:57:04",
+     "foerst_set": "2026-10-07T15:44:28",
+     "link": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+     "side": "artikel/bf211d23154acfab.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "Google Gemini",
-     1
+     2
     ]
    ]
   },

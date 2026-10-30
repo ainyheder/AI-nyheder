@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-10-30T15:15:27.943712+00:00",
+  "opdateret": "2026-10-30T21:00:09.129763+00:00",
   "kladder": [
     {
       "titel": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
@@ -111,6 +111,7 @@
       "eget_foerst_set": "2026-10-27T20:55:19.965914+00:00",
       "rubrik": "DeepMind lancerer verdensmodellen Genie 4",
       "resume_da": "Ifølge DeepMind løfter modellen realismen i realtidssimulering; materialet siger intet om adgang eller uafhængige tests.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -125,6 +126,38 @@
         "begrundelse": "DeepMind annoncerer Genie 4 som ny verdensmodel med mere realistisk realtidssimulering; intet om adgang eller test.",
         "forbehold": "Kun producentens påstand om realismen; materialet siger intet om adgang, benchmarks eller uafhængige tests.",
         "emne": "genie 4"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Making it easier for websites to express AI training preferences",
+      "link": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+      "resume": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers.",
+      "dato": "2026-10-30T09:30:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "eget_foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "rubrik": "OpenAI vil følge fælles robots.txt-signal",
+      "resume_da": "Signalet skal lade hjemmesider fortælle deltagende AI-udbydere om deres præferencer for træning. OpenAI siger, at selskabet vil respektere det.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI vil respektere et fælles robots.txt-signal for AI-træningspræferencer.",
+        "forbehold": "Få detaljer om hvilke udbydere der deltager, og hvordan signalet håndhæves.",
+        "emne": "openai robots.txt ai-træning"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "kat_ai": true,
@@ -144,6 +177,7 @@
       "eget_foerst_set": "2026-10-30T15:15:27.943712+00:00",
       "rubrik": "Maine-oprør mod AI-datacentre kan afgøre Senatet",
       "resume_da": "Under den sidste debat afbrød en tilhører senator Susan Collins med et råb om, at AI-datacentre ødelægger klimaet og forgifter vandet.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -160,24 +194,22 @@
         "emne": "maine, ai-datacentre, senatsvalg"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
     },
     {
-      "titel": "AWS will be a $1T business, Jassy says — but first, it will spend big",
-      "link": "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/",
-      "resume": "Amazon wants to be the king of AI cloud computing and become the first $1 trillion revenue business. But to do that it will have to continue on its capex spending spree, its CEO said Thursday.",
-      "dato": "2026-10-29T23:42:22+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-10-30T06:19:58.354533+00:00",
-      "eget_foerst_set": "2026-10-30T06:19:58.354533+00:00",
-      "rubrik": "Jassy: AWS bliver Amazons første billionforretning",
-      "resume_da": "Ifølge Amazon-chefen kræver det fortsat store kapitalinvesteringer at nå målet om 1 billion dollar i omsætning.",
-      "kat_ai": true,
+      "titel": "Community safety report and new protections for teens",
+      "link": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+      "resume": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting.",
+      "dato": "2026-10-30T09:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "eget_foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "rubrik": "OpenAI strammer ChatGPT mod vold og beskytter teenagere",
+      "resume_da": "ChatGPT får udvidede sikkerhedsforanstaltninger og skal gribe ind tidligere. OpenAI lover samtidig offentlig rapportering om sikkerhed.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -186,14 +218,15 @@
         "brugbarhed": 2,
         "dokumentation": 3,
         "dansk": 0,
-        "type": "forretning",
+        "type": "sikkerhed",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Amazon-chef lover 1 billion dollar i AWS-omsætning og fortsat store kapitalinvesteringer i AI-cloud, men uden nye tal for AI-forretningen.",
-        "forbehold": "Prognose fra CEO, ikke dokumenterede AI-indtægter.",
-        "emne": "aws ai-cloud investeringer"
+        "begrundelse": "ChatGPT får udvidede sikkerhedsforanstaltninger og løfte om offentlig sikkerhedsrapportering.",
+        "forbehold": "Effekten af de nye beskyttelser er ikke dokumenteret med data.",
+        "emne": "openai chatgpt teen-sikkerhed"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
       "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -332,6 +365,72 @@
       ]
     },
     {
+      "titel": "Dartmouth's provost warned us about AI cheating—but his own AI use cost him his job",
+      "link": "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/",
+      "resume": "People who love AI don't always love telling others they used it.",
+      "dato": "2026-10-30T20:40:13+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "eget_foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "rubrik": "Dartmouths provost mistede jobbet efter eget AI-brug",
+      "resume_da": "Han havde advaret om AI-snyd, men fortalte ikke selv om sin egen brug, skriver Ars Technica. Artiklen giver ingen detaljer om afskedigelsen.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Dartmouths provost advarede mod AI-snyd, men mistede selv jobbet efter egen AI-brug, ifølge Ars Technica.",
+        "forbehold": "Artiklen giver ingen detaljer om afskedigelsen eller dokumentation for brugen.",
+        "emne": "dartmouth, ai-brug"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Starbucks wants to use AI to show you a ‘personalized digital menu’ at the drive-thru",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
+      "resume": "Starbucks could eventually show you a personalized digital menu when you pull up to the drive-thru. During an earnings call on Thursday, Starbucks CEO Brian Niccol said the company is going to explore \"experiences that recognize participating customers as they arrive, present personalized digital menus, and make payment more effortless,\" as spotted earlier by More […]",
+      "dato": "2026-10-30T13:38:04-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "eget_foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "rubrik": "Starbucks vil vise personlig digital menu ved drive-thru",
+      "resume_da": "Ifølge CEO Brian Niccol vil kæden undersøge menuer, der genkender deltagende kunder ved ankomst, og gøre betalingen lettere. Intet er lanceret endnu.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Starbucks vil undersøge personlige digitale menuer ved drive-thru, der genkender kunder og letter betaling.",
+        "forbehold": "Kun undersøgelse annonceret på en regnskabs- samtale; intet er lanceret.",
+        "emne": "starbucks, personlig menu"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "How Ropes & Gray is developing AI for transactional diligence",
       "link": "https://openai.com/index/ropes-gray-ai-diligence",
       "resume": "Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients.",
@@ -359,6 +458,39 @@
         "emne": "ropes & gray ai-diligence"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
+      "link": "https://openai.com/index/credit-saison",
+      "resume": "Credit Saison’s ChatGPT Enterprise pilot delivered 954% ROI. See how leaders and employees helped turn the results into companywide adoption.",
+      "dato": "2026-10-29T00:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "eget_foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "rubrik": "Credit Saison får 954 procent i afkast med ChatGPT Enterprise",
+      "resume_da": "Ifølge OpenAI gav piloten et afkast på 954 procent, og resultatet fik ledere og medarbejdere til at rulle ChatGPT Enterprise ud i hele virksomheden.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI-case om Credit Saisons ChatGPT Enterprise-pilot med 954 pct. afkast.",
+        "forbehold": "Kundecase udarbejdet af OpenAI uden uafhængig metode eller validering.",
+        "emne": "credit saison chatgpt enterprise"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
       "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -541,39 +673,6 @@
       ]
     },
     {
-      "titel": "Greptile takes bug detection beyond code review with GPT-6 Astra",
-      "link": "https://openai.com/index/greptile-code-review-codex-astra",
-      "resume": "How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework.",
-      "dato": "2026-10-26T22:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-10-27T05:29:27.063150+00:00",
-      "eget_foerst_set": "2026-10-27T05:29:27.063150+00:00",
-      "rubrik": "Greptile bruger GPT-6 Astra til at teste arbejdsgange",
-      "resume_da": "Ifølge OpenAI-bloggen trækker Greptile også på Daybreak til sikkerhed og Codex til at reducere omarbejde.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI-bloggen viser, hvordan Greptiles sikkerhedsagent bruger GPT-6 Astra til at teste arbejdsgange og finde fejl.",
-        "forbehold": "Kundecase fra leverandøren selv uden uafhængige resultater eller metode.",
-        "emne": "greptile"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready",
       "link": "https://huggingface.co/blog/announcing-project-protostar",
       "resume": "",
@@ -602,6 +701,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 3,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Greptile takes bug detection beyond code review with GPT-6 Astra",
+      "link": "https://openai.com/index/greptile-code-review-codex-astra",
+      "resume": "How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework.",
+      "dato": "2026-10-26T22:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-10-27T05:29:27.063150+00:00",
+      "eget_foerst_set": "2026-10-27T05:29:27.063150+00:00",
+      "rubrik": "Greptile bruger GPT-6 Astra til at teste arbejdsgange",
+      "resume_da": "Ifølge OpenAI-bloggen trækker Greptile også på Daybreak til sikkerhed og Codex til at reducere omarbejde.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI-bloggen viser, hvordan Greptiles sikkerhedsagent bruger GPT-6 Astra til at teste arbejdsgange og finde fejl.",
+        "forbehold": "Kundecase fra leverandøren selv uden uafhængige resultater eller metode.",
+        "emne": "greptile"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -937,6 +1069,39 @@
       ]
     },
     {
+      "titel": "nemotron-halloween",
+      "link": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+      "resume": "",
+      "dato": "2026-10-30T17:57:24+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "eget_foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "rubrik": "Hugging Face viser 'nemotron-halloween' uden detaljer",
+      "resume_da": "Kun titlen er oplyst. Der følger ingen beskrivelse af modellen, dens data eller hvordan den kan tilgås.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 0,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Kun en titel fra Nvidia på Hugging Face uden beskrivelse af model, data eller adgang.",
+        "forbehold": "Intet indhold ud over titlen; kan ikke bekræftes som modeludgivelse.",
+        "emne": "nvidia, nemotron"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 2,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
       "link": "https://huggingface.co/blog/microsoft/thinkingbox-training",
       "resume": "",
@@ -998,39 +1163,6 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Uber brings ChatGPT Work to all employees with OpenAI",
-      "link": "https://openai.com/index/uber-chatgpt-work-rollout",
-      "resume": "Uber is rolling out ChatGPT Work to more than 30,000 employees, helping teams research, analyze data, create presentations, and complete complex workflows.",
-      "dato": "2026-10-22T00:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-10-22T20:16:04.203492+00:00",
-      "eget_foerst_set": "2026-10-22T20:16:04.203492+00:00",
-      "rubrik": "Uber giver over 30.000 ansatte ChatGPT Work",
-      "resume_da": "Udrulningen skal ifølge OpenAI hjælpe med research, dataanalyse, præsentationer og komplekse arbejdsgange.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI oplyser, at Uber udruller ChatGPT Work til over 30.000 ansatte til research, dataanalyse og præsentationer.",
-        "forbehold": "Producentens egen beskrivelse; ingen uafhængige erfaringer eller effektmålinger.",
-        "emne": "uber chatgpt work"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1135,39 +1267,6 @@
       ]
     },
     {
-      "titel": "Broad access through consistent standards",
-      "link": "https://openai.com/index/broad-access-through-consistent-standards",
-      "resume": "How OpenAI works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in our Usage Policies.",
-      "dato": "2026-10-21T21:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-10-21T23:34:19.581822+00:00",
-      "eget_foerst_set": "2026-10-21T23:34:19.581822+00:00",
-      "rubrik": "OpenAI vil sikre ens regler hos distributører",
-      "resume_da": "Blogindlægget forklarer, hvordan OpenAI arbejder med distributionspartnere om sikkerhedskrav og forventninger i selskabets Usage Policies.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI forklarer, hvordan distributionspartnere skal håndhæve sikkerhedskrav og brugsvilkår.",
-        "forbehold": "Et principindlæg uden konkrete nye forpligtelser eller navngivne partnere.",
-        "emne": "openai distributionspartnere"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Ensemble forecasting with IBM Granite time-series models",
       "link": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
       "resume": "",
@@ -1227,39 +1326,6 @@
         "begrundelse": "Hugging Face-indlæg om en opslagsmulighed for, om en model kan køre på AWS Trainium; kun titlen foreligger.",
         "forbehold": "Ingen brødtekst, så funktionens omfang og praktiske værdi kan ikke vurderes.",
         "emne": "aws trainium modelopslag"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 3,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "How AT&T is rethinking in-house legal work with OpenAI",
-      "link": "https://openai.com/index/att-legal",
-      "resume": "AT&T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment.",
-      "dato": "2026-10-21T17:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-10-21T20:20:24.508912+00:00",
-      "eget_foerst_set": "2026-10-21T20:20:24.508912+00:00",
-      "rubrik": "AT&T bruger OpenAI til juridisk sagsbehandling",
-      "resume_da": "AT&T's LegalEdge-team kobler OpenAI på sin juridiske indgang for at gøre viden lettere at finde og skalere vurdering af sager.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "guide",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "AT&T's LegalEdge bruger OpenAI til at skalere juridisk viden og sagsintake",
-        "forbehold": "Kundecase fra OpenAI's egen blog uden konkrete resultater eller tal",
-        "emne": "at&t openai legal"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 3,
@@ -1334,28 +1400,94 @@
       ]
     },
     {
-      "titel": "Skip the small talk: Make game-changing connections at TechCrunch Founder Summit with Braindate",
-      "link": "https://techcrunch.com/2026/10/30/skip-the-small-talk-make-game-changing-connections-at-techcrunch-founder-summit-with-braindate/",
-      "resume": "At TechCrunch Founder Summit 2026, happening November 4 at SoWa Power Station in Boston, networking powered by Braindate is designed to make those conversations easier to find, whether they are in 1:1 or small-group on-site meetings. Register before the event starts to save up to $100 on your pass, plus get a second for free.",
-      "dato": "2026-10-30T14:00:00+00:00",
+      "titel": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+      "link": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "resume": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+      "dato": "2026-10-14T02:00:14+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-14T05:17:23.558972+00:00",
+      "eget_foerst_set": "2026-10-14T05:17:23.558972+00:00",
+      "rubrik": "DeepMind bygger svindelmodel med Singapore",
+      "resume_da": "Finjusterede Gemma-modeller skal køre lokalt på enheden og opfange svindel i private chats, uden at data sendes til skyen.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "DeepMind og Singapore finjusterer Gemma-modeller til lokal svindeldetektion i private chats uden cloud-data.",
+        "forbehold": "Ingen oplysninger om effekt, udrulning eller fejlrate.",
+        "emne": "svindeldetektion"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Introducing SynthID Bio",
+      "link": "https://deepmind.google/blog/introducing-synthid-bio/",
+      "resume": "Proof of concept for watermarking AI-generated proteins while preserving biological function.",
+      "dato": "2026-09-30T15:03:07+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-02T12:20:39.330113+00:00",
+      "eget_foerst_set": "2026-10-02T12:20:39.330113+00:00",
+      "rubrik": "Google DeepMind vandmærker AI-genererede proteiner i forsøg",
+      "resume_da": "SynthID Bio er et proof of concept: vandmærket skal kunne følge AI-genererede proteiner uden at ødelægge deres biologiske funktion.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "SynthID Bio er proof of concept for vandmærkning af AI-genererede proteiner med bevaret biologisk funktion.",
+        "forbehold": "Kun proof of concept; ingen resultater eller begrænsninger oplyst.",
+        "emne": "synthid bio"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "5 days left: Your last chance to connect, scale, and save at TechCrunch Founder Summit 2026",
+      "link": "https://techcrunch.com/2026/10/30/5-days-left-your-last-chance-to-connect-scale-and-save-at-techcrunch-founder-summit-2026/",
+      "resume": "5 days to save up to $100, plus a second pass for free to TechCrunch Founder Summit 2026 in Boston on November 4. Register now.",
+      "dato": "2026-10-30T13:00:00+00:00",
       "kilde": "TechCrunch AI",
-      "kategori": "Hverdags-AI",
+      "kategori": "Penge & marked",
       "foerst_set": "2026-10-30T15:15:27.943712+00:00",
       "eget_foerst_set": "2026-10-30T15:15:27.943712+00:00",
-      "rubrik": "TechCrunch Founder Summit annoncerer rabat på billetter",
-      "resume_da": "Eventet holdes 4. november i Boston; tilmelding før start giver op til 100 dollars rabat og en ekstra gratis billet.",
+      "rubrik": "TechCrunch Founder Summit: fem dage til rabat",
+      "resume_da": "Konferencen holdes 4. november i Boston. Tilmeldte kan spare op til 100 dollars og få et ekstra adgangspas gratis, hvis de registrerer sig nu.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
         "nyhed": 0,
         "betydning": 0,
         "brugbarhed": 0,
-        "dokumentation": 1,
+        "dokumentation": 0,
         "dansk": 0,
         "type": "reklame",
         "ai_relevant": false,
         "model_lancering": false,
-        "begrundelse": "Reklame for TechCrunch Founder Summit med rabat på billetter; ingen AI-nyhed.",
+        "begrundelse": "Ren kampagnetilbud for TechCrunch-konference uden AI-indhold.",
         "forbehold": "",
         "emne": "techcrunch founder summit"
       },
@@ -1366,10 +1498,10 @@
       "andre": [
         {
           "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/10/30/5-days-left-your-last-chance-to-connect-scale-and-save-at-techcrunch-founder-summit-2026/",
-          "rubrik": "TechCrunch Founder Summit annoncerer rabat i fem dage",
-          "resume_da": "Tilmelding inden 4. november i Boston giver op til 100 dollars rabat og en ekstra gratis billet.",
-          "dato": "2026-10-30 13:00:00+00:00",
+          "link": "https://techcrunch.com/2026/10/30/skip-the-small-talk-make-game-changing-connections-at-techcrunch-founder-summit-with-braindate/",
+          "rubrik": "TechCrunch Founder Summit annoncerer rabat på billetter",
+          "resume_da": "Eventet holdes 4. november i Boston; tilmelding før start giver op til 100 dollars rabat og en ekstra gratis billet.",
+          "dato": "2026-10-30 14:00:00+00:00",
           "foerst_set": "2026-10-30T15:15:27.943712+00:00"
         }
       ],
@@ -1911,6 +2043,39 @@
         "emne": "iphone duo anmeldelse"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Beyond tree cover: mapping the world’s forest types",
+      "link": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+      "resume": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
+      "dato": "2026-10-22T14:30:24+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-22T20:16:04.203492+00:00",
+      "eget_foerst_set": "2026-10-22T20:16:04.203492+00:00",
+      "rubrik": "DeepMind kortlægger Jordens skovtyper",
+      "resume_da": "Et globalt kort inddeler hvert 10 meter felt af landjorden i forskellige skovtyper, oplyser Google DeepMind.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Globalt kort inddeler landjorden i skovtyper pr. 10 meter; materialet nævner ikke AI-metode eller model.",
+        "forbehold": "AI-rollen fremgår ikke af det medsendte materiale.",
+        "emne": "skovkortlægning"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -56856,7 +57021,7 @@
       "titel": "The NYT Cooking app is testing AI recipe modifications",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1022193/nyt-cooking-app-ai-recipe-modification-tool",
       "resume": "The New York Times is testing a new AI feature for its Cooking app that helps users to modify recipes, and it has sparked some drama among users. Last Friday, NYT Cooking senior editor Genevieve Ko announced the feature, which can be used to recommend substitutions for ingredients and cooking equipment, scale recipes to any […]",
-      "dato": "2026-10-29T10:39:37-04:00",
+      "dato": "2026-10-29T14:39:37+00:00",
       "kilde": "The Verge AI",
       "kategori": "Hverdags-AI",
       "foerst_set": "2026-10-29T15:28:58.929586+00:00",
@@ -57319,7 +57484,7 @@
       "titel": "Microsoft’s AI future has fewer jobs",
       "link": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad",
       "resume": "To anyone listening closely to what Microsoft CEO Satya Nadella has been saying over the past couple of years, this week felt like the clearest sign yet that AI is about to fundamentally change the size of Microsoft's workforce. Microsoft is now offering voluntary buyouts to around 60,000 employees across the US, UK, Canada, and […]",
-      "dato": "2026-10-29T12:00:00-04:00",
+      "dato": "2026-10-29T16:00:00+00:00",
       "kilde": "The Verge AI",
       "kategori": "Samfund & etik",
       "foerst_set": "2026-10-29T21:21:56.410708+00:00",
@@ -57619,6 +57784,7 @@
       ],
       "billedmotiv": "A solid red access gate bearing the recognizable Reddit Snoo mascot emblem front-facing and centered; the gate is closing. A large search magnifying glass outside it is stopped, while a neat stack of data cards inside carries a keyhole license tag. The gate and cards show Reddit moving to a logged-in experience while blocking AI scraping for licensed data.",
       "billedmotiv_instruks": "f0abbf70d7b4346ca12d",
+      "billede": "data/img/b4505174b7d5aae0.webp",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -57642,7 +57808,6 @@
         "kontrolleret": "2026-10-29T21:31:50.118911+00:00"
       },
       "prio": 5,
-      "billede": "data/img/b4505174b7d5aae0.webp",
       "side": "artikel/60144b1613db26a4.html"
     },
     {
@@ -58559,24 +58724,7 @@
       "eget_foerst_set": "2026-10-30T15:15:27.943712+00:00",
       "rubrik": "Wikipedia vil have licens ved AI-gengivelse",
       "resume_da": "Wikimedia Foundation blander sig i retssagen mod OpenAI og Microsoft med et forslag: Træning på beskyttet materiale bør være fair use, ordret gengivelse kræver licens.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Wikimedia Foundation går ind i ophavsretssager: træning bør beskyttes, mens chatbots ikke bør gengive værker.",
-        "forbehold": "Der er tale om et retligt indlæg, ikke en afgørelse.",
-        "emne": "wikimedia, ophavsret, ai-træning"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Træning må gerne, gengivelse kræver licens",
@@ -58595,9 +58743,8 @@
           "tekst": "»En afgørelse, der ikke anvender fair use-principperne omhyggeligt, kan true bæredygtigheden af fri viden,« siger Stephen LaPorte, juridisk chef i Wikimedia Foundation, i en udtalelse.\n\nCEO Bernadette Meehan siger, at øget adgang til viden gennem AI er et stærkt mål, men skal respektere de mennesker og fællesskaber, der gør pålidelig viden mulig."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "The New York Times mener, at OpenAI krænkede avisens ret ved at skrabe sitet til træningsdata.",
         "OpenAI har kaldt det »en sjælden fejl«, når modellen gengiver beskyttet tekst.",
@@ -58610,14 +58757,32 @@
         "Gengivelse til brugerne kræver licens",
         "Wikimedia støtter hverken udgivere eller OpenAI"
       ],
+      "billedmotiv": "A large Wikipedia puzzle-globe mark on a thick legal brief; from it, one open conveyor carries blank training-data blocks, while a closed turnstile stops a stack of copied article pages and holds a solid license tag. The scene shows Wikimedia's proposal: training is fair use, but verbatim AI reproduction needs a license.",
+      "billedmotiv_instruks": "154afed547e24eab8957",
+      "billede": "data/img/f1ac30d9e8e14c31.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Wikimedia Foundation går ind i ophavsretssager: træning bør beskyttes, mens chatbots ikke bør gengive værker.",
+        "forbehold": "Der er tale om et retligt indlæg, ikke en afgørelse.",
+        "emne": "wikimedia, ophavsret, ai-træning"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-30T15:17:48.731368+00:00"
       },
-      "billedmotiv": "A large Wikipedia puzzle-globe mark on a thick legal brief; from it, one open conveyor carries blank training-data blocks, while a closed turnstile stops a stack of copied article pages and holds a solid license tag. The scene shows Wikimedia's proposal: training is fair use, but verbatim AI reproduction needs a license.",
-      "billedmotiv_instruks": "154afed547e24eab8957",
-      "billede": "data/img/f1ac30d9e8e14c31.webp",
+      "prio": 6,
       "side": "artikel/27c634a128420a0e.html"
     },
     {
@@ -58631,6 +58796,37 @@
       "eget_foerst_set": "2026-10-30T15:15:27.943712+00:00",
       "rubrik": "Pave Leo XIV: Forbyd dødbringende AI-våben",
       "resume_da": "I en tale fredag opfordrer pave Leo XIV FN-landene til at forbyde autonome våben og advarer mod at give AI juridiske rettigheder.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Paven vil afvæbne AI-systemer",
+          "tekst": "I sin pavetale fredag sagde pave Leo XIV, at AI-systemer skal »afvæbnes«. Han opfordrede FN's medlemslande til at tage konkrete skridt mod at forbyde dødbringende autonome våben, når de mødes i Genève næste måned.\n\nIfølge paven har mennesker »ansvaret for at lede, ændre og om nødvendigt afvise« AI'ens anvendelser. Opfordringen er ikke et forbud i sig selv, men et krav om, at landene handler."
+        },
+        {
+          "overskrift": "Maskiner er redskaber, ikke personer",
+          "tekst": "Pave Leo XIV advarer samtidig mod at give AI-systemer rettigheder eller status som juridisk person. **»Maskiner er redskaber, ikke personer,«** sagde han i talen.\n\nHan understreger, at beslutninger om menneskers liv, frihed og brug af magt altid skal ligge under »effektiv, informeret og ansvarlig menneskelig kontrol«. Ingen maskine bør altså selv træffe beslutningen om at bruge magt."
+        },
+        {
+          "overskrift": "Navnet peger på industrialiseringen",
+          "tekst": "Talen følger op på pavens første større dokument i maj, der handlede om at beskytte mennesket i AI'ens tid. Pave Leo XIV har sagt, at han valgte sit navn, fordi han skal håndtere teknologien – ligesom pave Leo XIII stod i spidsen for kirken under industrialiseringen.\n\nTil sidst i talen opfordrede han internationale institutioner til at beskytte fælles goder mod AI-risici med fælles standarder, uafhængigt tilsyn og klare ansvarsmekanismer."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "I 2024 opfordrede pave Frans også til forbud mod autonome våben: »Ingen maskine bør vælge at tage et menneskeliv.«",
+        "Pavens dokument i maj handlede om at beskytte mennesket i AI'ens tid."
+      ],
+      "betydning": "Paven kan ikke selv forbyde våbnene. Opfordringen er rettet mod FN-landene forud for deres møde i Genève næste måned.",
+      "pointer": [
+        "Paven vil have AI afvæbnet og menneskelig kontrol bevaret.",
+        "Nej til juridiske rettigheder til AI-systemer.",
+        "FN-lande opfordres til forbud mod autonome våben."
+      ],
+      "billedmotiv": "A solid white papal mitre with gold trim stands in front of a blocky autonomous weapon turret, halting its barrel; beside it, a small blank legal-person ID badge is turned face-down. The mitre is the main form, the turret and badge are the two supports, showing a papal call to ban lethal autonomous weapons and reject machine personhood.",
+      "billedmotiv_instruks": "0945114e7f07d43b5317",
+      "billede": "data/img/17d5a1ab24b74f73.jpg",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -58647,121 +58843,13 @@
         "emne": "pave leo xiv, ai-våben"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 5,
-      "sektioner": [
-        {
-          "overskrift": "Paven vil afvæbne AI-systemer",
-          "tekst": "I sin pavetale fredag sagde pave Leo XIV, at AI-systemer skal »afvæbnes«. Han opfordrede FN's medlemslande til at tage konkrete skridt mod at forbyde dødbringende autonome våben, når de mødes i Genève næste måned.\n\nIfølge paven har mennesker »ansvaret for at lede, ændre og om nødvendigt afvise« AI'ens anvendelser. Opfordringen er ikke et forbud i sig selv, men et krav om, at landene handler."
-        },
-        {
-          "overskrift": "Maskiner er redskaber, ikke personer",
-          "tekst": "Pave Leo XIV advarer samtidig mod at give AI-systemer rettigheder eller status som juridisk person. **»Maskiner er redskaber, ikke personer,«** sagde han i talen.\n\nHan understreger, at beslutninger om menneskers liv, frihed og brug af magt altid skal ligge under »effektiv, informeret og ansvarlig menneskelig kontrol«. Ingen maskine bør altså selv træffe beslutningen om at bruge magt."
-        },
-        {
-          "overskrift": "Navnet peger på industrialiseringen",
-          "tekst": "Talen følger op på pavens første større dokument i maj, der handlede om at beskytte mennesket i AI'ens tid. Pave Leo XIV har sagt, at han valgte sit navn, fordi han skal håndtere teknologien – ligesom pave Leo XIII stod i spidsen for kirken under industrialiseringen.\n\nTil sidst i talen opfordrede han internationale institutioner til at beskytte fælles goder mod AI-risici med fælles standarder, uafhængigt tilsyn og klare ansvarsmekanismer."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [
-        "I 2024 opfordrede pave Frans også til forbud mod autonome våben: »Ingen maskine bør vælge at tage et menneskeliv.«",
-        "Pavens dokument i maj handlede om at beskytte mennesket i AI'ens tid."
-      ],
-      "betydning": "Paven kan ikke selv forbyde våbnene. Opfordringen er rettet mod FN-landene forud for deres møde i Genève næste måned.",
-      "pointer": [
-        "Paven vil have AI afvæbnet og menneskelig kontrol bevaret.",
-        "Nej til juridiske rettigheder til AI-systemer.",
-        "FN-lande opfordres til forbud mod autonome våben."
-      ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-30T15:17:34.744935+00:00"
       },
-      "billedmotiv": "A solid white papal mitre with gold trim stands in front of a blocky autonomous weapon turret, halting its barrel; beside it, a small blank legal-person ID badge is turned face-down. The mitre is the main form, the turret and badge are the two supports, showing a papal call to ban lethal autonomous weapons and reject machine personhood.",
-      "billedmotiv_instruks": "0945114e7f07d43b5317",
-      "billede": "data/img/17d5a1ab24b74f73.jpg",
-      "side": "artikel/cfe1c65d6cd5d12d.html"
-    },
-    {
-      "titel": "DoorDash said it’s only received ‘several hundred’ orders from AI agents",
-      "link": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/",
-      "resume": "DoorDash said that it is open to working with third-party agent makers",
-      "dato": "2026-10-30T13:54:25+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-10-30T15:15:27.943712+00:00",
-      "eget_foerst_set": "2026-10-30T15:15:27.943712+00:00",
-      "rubrik": "DoorDash: Kun få hundrede ordrer fra AI-agenter",
-      "resume_da": "Topchef Tony Xu siger på regnskabsopkaldet, at agent-ordrer stadig er en niche, mens selskabet selv bygger flere agenter og vil undgå at blokere udviklingen.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "DoorDash oplyser kun at have fået få hundrede ordrer fra AI-agenter og er åben for tredjepartsagenter.",
-        "forbehold": "Antallet er et virksomhedsudmelding uden nærmere metode eller vækstdata.",
-        "emne": "doordash, ai-agenter"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 5,
-      "sektioner": [
-        {
-          "overskrift": "Flere hundrede ordrer mod tre millioner",
-          "tekst": "På DoorDash' opkald om tredje kvartal fortalte CEO Tony Xu, at selskabet har set «flere hundrede» ordrer i alt fra tredjepartsagenter som Muse, Instinct og Fo.\n\nTil sammenligning skrev DoorDash i sin rapport fra 2025, at selskabet i gennemsnit gennemfører **3 millioner leveringer om dagen**. Tallene måler ikke det samme: det ene er et samlet antal agent-ordrer, det andet et dagligt gennemsnit for hele forretningen."
-        },
-        {
-          "overskrift": "Xu vil ikke kæmpe mod tyngdekraften",
-          "tekst": "– Man skal aldrig kæmpe imod tyngdekraften. Men man må heller ikke være virkelighedsfjern, sagde Tony Xu som svar på en analytikers spørgsmål om agenter.\n\nHan understregede, at kunderne fortsat overvejende bestiller gennem DoorDash' egen app. Selskabet vil lære mere om agenternes brug og opbygge et godt forhold til dem, der udvikler dem. På sigt ser Xu mulighed for at annoncere inde i agenterne."
-        },
-        {
-          "overskrift": "DoorDash bygger også selv agenter",
-          "tekst": "Selskabet er ikke kun modtager af andres agenter. I juni lancerede det chatboten Ask DoorDash, hvor man kan bestille via prompts og billeder. I juli kom en såkaldt CLI-agent, der styres fra en kommandolinje, og i september en agent, der laver ordrer ud fra tekst.\n\nDoorDash har også udgivet et MCP, en standard som andre chatbots kan bruge til at lægge virksomhedsordrer gennem tjenesten.\n\nBranchen er delt. Amazon blokerer personlige agenter, mens Walmart har budt dem velkommen for at vinde kunder fra konkurrenterne."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "3 mio. leveringer",
-          "label": "Gennemsnitligt antal leveringer om dagen ifølge DoorDash' rapport fra 2025"
-        },
-        {
-          "tal": "Flere hundrede ordrer",
-          "label": "Samlet antal ordrer fra tredjepartsagenter ifølge CEO Tony Xu på Q3-opkaldet"
-        }
-      ],
-      "detaljer": [
-        "Blandt de nævnte tredjepartsagenter er Muse, Instinct og Fo.",
-        "Chatboten Ask DoorDash blev lanceret i juni og tager imod prompts og billeder.",
-        "DoorDash' tekst-til-ordre-agent blev lanceret i september.",
-        "Et MCP gør det muligt at bestille gennem andre chatbots til virksomhedsordrer."
-      ],
-      "betydning": "Hvis agent-ordrer vokser, kan DoorDash ifølge Xu tjene på annoncering inde i agenterne. Indtil videre bestiller kunderne fortsat overvejende i DoorDash' egen app.",
-      "pointer": [
-        "Kun flere hundrede ordrer fra tredjepartsagenter",
-        "DoorDash vil samarbejde frem for at blokere",
-        "Amazon blokerer agenter, Walmart byder dem velkommen"
-      ],
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-10-30T15:18:08.593622+00:00"
-      },
-      "billedmotiv": "A large red DoorDash delivery bag bearing the red-and-white DoorDash D app icon splits a flow: a tiny row of three small agent tokens approaches one side, while a massive solid ribbon of food-order blocks fills the other. The size contrast shows agent orders as a niche against millions of daily deliveries.",
-      "billedmotiv_instruks": "757f4dedbda39d053c75",
-      "billede": "data/img/6d2c961277a49540.jpg",
-      "side": "artikel/30b5f07a33cd2b6d.html"
+      "side": "artikel/cfe1c65d6cd5d12d.html"
     },
     {
       "titel": "Can AI data centers be mass-produced like cars? This startup aims to find out",
@@ -58774,24 +58862,7 @@
       "eget_foerst_set": "2026-10-30T15:15:27.943712+00:00",
       "rubrik": "Runware vil producere AI-datacentre på samlebånd",
       "resume_da": "Ny fabrik i Rumænien åbner tidligt næste år og skal ramme 30 megawatt om dagen i 2028. Runware sigter mod installation på 48 timer, men masseproduktionen er uprøvet.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Runware bygger fabrik til præfabrikerede AI-datacentre på samlebånd; skalaen er endnu ubevist.",
-        "forbehold": "Det er uafklaret, om fabrikken kan levere den annoncerede skala.",
-        "emne": "runware, ai-datacentre"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Ny fabrik skal bygge AI-pod på en dag",
@@ -58806,8 +58877,6 @@
           "tekst": "Runware siger, at det har fået 1 milliard dollars i bindende interesse for Sonic-podsene, siden det begyndte at tilbyde dem til eksterne kunder for en måned siden. Det svarer til over 20 megawatt, som selskabet nu arbejder på at levere.\n\nOm planen holder, er et åbent spørgsmål. En fabrik kræver folk, lager, logistik og penge. Runware har rejst kapital og vil rejse en Serie B; indtil videre færdiggør det den nye fabrik med en Serie A fra sidste december.\n\nElbilstartupen Arrival kæmpede med at masseproducere biler økonomisk sammenlignet med traditionelle fabrikker. Runwares CEO, Flaviu Radulescu, siger, at selskabets omkostningsstruktur er en anden: fabrikspersonalet er omkostningseffektivt i forhold til værdien af at udrulle AI-computekraft, og selskabet designer selv systemer og køber bredt tilgængelige dele."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "397 MW",
@@ -58826,6 +58895,7 @@
           "label": "Runwares Serie A fra sidste december finansierer den nye fabrik"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Runware har hentet en erfaren fabrikschef fra bilindustrien.",
         "Pumper og ventilatorer kommer fra Tyskland; netværk afhænger af Nvidia.",
@@ -58838,13 +58908,32 @@
         "Mål: 30 MW om dagen i 2028",
         "48 timer er installation, ikke byggetid"
       ],
+      "billedmotiv": "A blocky modular AI datacenter pod with thick closed liquid-cooling pipes and server racks rolls along a factory conveyor, followed by two identical pods; a compact assembly-line stamp presses a finished roof panel onto the next pod. The scene shows Runware building AI datacenter capacity on a car-like production line.",
+      "billedmotiv_instruks": "e633836f34919e334c37",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Runware bygger fabrik til præfabrikerede AI-datacentre på samlebånd; skalaen er endnu ubevist.",
+        "forbehold": "Det er uafklaret, om fabrikken kan levere den annoncerede skala.",
+        "emne": "runware, ai-datacentre"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-30T15:20:48.108398+00:00"
       },
-      "billedmotiv": "A blocky modular AI datacenter pod with thick closed liquid-cooling pipes and server racks rolls along a factory conveyor, followed by two identical pods; a compact assembly-line stamp presses a finished roof panel onto the next pod. The scene shows Runware building AI datacenter capacity on a car-like production line.",
-      "billedmotiv_instruks": "e633836f34919e334c37",
+      "prio": 5,
+      "billede": "data/img/38575319048b4a8e.webp",
       "side": "artikel/12c5b28f8540d0b9.html"
     },
     {
@@ -58858,24 +58947,7 @@
       "eget_foerst_set": "2026-10-30T15:15:27.943712+00:00",
       "rubrik": "Anthropic lover mirakler og advarer om udslettelse",
       "resume_da": "S-1 på 335 sider blander løfter om fremskridt med 94 siders risici og en mission om at redde menneskeheden.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Kommentar til Anthropic-børsnoterings risikoafsnit, hvor AGI beskrives som både eksistentiel risiko og mirakel.",
-        "forbehold": "",
-        "emne": "anthropic, børsnotering"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "En aktie som adgang til noget større",
@@ -58894,8 +58966,6 @@
           "tekst": "Prospektet er ikke komplet. Resultater for tredje kvartal mangler, og det gør det sværere at vurdere, om Anthropic kan tjene penge. Selskabet havde eksplosiv vækst i omsætningen i andet kvartal og indsnævrede samtidig sit driftstab.\n\nAnthropic har ifølge S-1'en forpligtet sig til at betale hundreder af milliarder dollar for den regnekraft, selskabet siger, det skal bruge for at vokse."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "335 sider",
@@ -58918,6 +58988,7 @@
           "label": "Metas prospekt, som Ritter kalder et vendepunkt"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Anthropic skriver, at selskabet kan lave investeringer, der »virker uansvarligt store«.",
         "»Powerful AI« er Anthropics ord for fremtidig AI, der overgår menneskers samlede intelligens.",
@@ -58930,14 +59001,32 @@
         "Grundlæggerne kalder strategien anti-salg",
         "Tallene for tredje kvartal mangler"
       ],
+      "billedmotiv": "A thick S-1 document stack stands upright, its cover stamped with the warm terracotta-orange many-rayed Anthropic asterisk. A solid golden step rises from one side, while a heavy black extinction block presses into the middle pages. The contrast shows Anthropic's promise of miracles and its own existential-risk warning in one filing.",
+      "billedmotiv_instruks": "54fa9a1658bb667c45bd",
+      "billede": "data/img/39941439aeaf69ce.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Kommentar til Anthropic-børsnoterings risikoafsnit, hvor AGI beskrives som både eksistentiel risiko og mirakel.",
+        "forbehold": "",
+        "emne": "anthropic, børsnotering"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-30T15:19:21.535914+00:00"
       },
-      "billedmotiv": "A thick S-1 document stack stands upright, its cover stamped with the warm terracotta-orange many-rayed Anthropic asterisk. A solid golden step rises from one side, while a heavy black extinction block presses into the middle pages. The contrast shows Anthropic's promise of miracles and its own existential-risk warning in one filing.",
-      "billedmotiv_instruks": "54fa9a1658bb667c45bd",
-      "billede": "data/img/39941439aeaf69ce.webp",
+      "prio": 5,
       "side": "artikel/97cc063537e04ec4.html"
     },
     {
@@ -58951,6 +59040,37 @@
       "eget_foerst_set": "2026-10-30T15:15:27.943712+00:00",
       "rubrik": "Altman: OpenAI stopper ikke matematik-offensiv",
       "resume_da": "OpenAI har brugt hundreder af millioner dollar på matematik, og Altman siger, at der er flere fund. Matematikere kritiserer kommunikationen.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Altman vælger viden frem for ro",
+          "tekst": "OpenAIs topchef, Sam Altman, siger, at selskabet ikke vil holde igen med matematiske resultater. På podcasten Cheeky Pint, der blev offentliggjort torsdag, sagde han, at verden fortjener at forstå, hvordan universet hænger sammen, og at hensynet til ny fundamental viden vejer tungere end den uro, offentliggørelserne skaber. Han tilføjede, at han har empati med matematikernes metode.\n\nSamtidig erkender han, at OpenAI skal blive bedre til at formidle resultaterne. Matematikere, som The Verge har talt med, har kritiseret netop det: for lidt kontekst, utilstrækkelig kildeangivelse og for lidt verifikation."
+        },
+        {
+          "overskrift": "Yang-Mills-detaljer er ikke offentlige",
+          "tekst": "Kritikken handler ikke kun om tempo. Efter at have annonceret tre store gennembrud inden for matematik, fysik og datalogi møder OpenAI også anklager om at tilbageholde forskning. Detaljerne i et af resultaterne, som angiveligt drejer sig om Yang-Mills-teori — det matematiske grundlag for moderne partikelfysik — er ikke offentliggjort. OpenAI siger, at det skyldes anbefalinger fra en håndplukket gruppe eksperter, selskabet har rådført sig med om, hvordan resultatet bedst udgives.\n\nDet står i modstrid med råd fra en tidligere gruppe matematikere, som OpenAI havde konsulteret."
+        },
+        {
+          "overskrift": "Flere fund og hundreder af millioner dollar",
+          "tekst": "Altman antyder, at OpenAI ligger inde med langt flere matematiske fund, end selskabet har offentliggjort. Adspurgt, om der er mere end de hundreder af resultater, som allerede er ude, svarede han: \"Det har vi. Selvfølgelig.\"\n\nHan sagde også, at selskabets jagt på matematiske problemer i en kort periode \"gik over gevind\", men at det var bevidst og nødvendigt for at teste AI-modellernes grænser. Ifølge Altman har OpenAI brugt i størrelsesordenen hundreder af millioner dollar på matematik, hvoraf cirka 10 mio. dollar — \"måske lidt mere\" — gik til selskabets Navier-Stokes-løsning på et af matematikkens Millennium Prize-problemer."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "OpenAI offentliggjorde alene denne måned hundreder af matematiske resultater.",
+        "Altman beskrev en intern Slack-kanal kaldet \"Model Name-Hold My Beer\"."
+      ],
+      "betydning": "Forskere frygter, at store AI-labors udgifter kan presse akademiske miljøer ud af deres egne fag.",
+      "pointer": [
+        "Altman: Verden fortjener fundamental viden",
+        "Yang-Mills-detaljer er ikke offentliggjort",
+        "OpenAI har brugt hundreder af millioner dollar"
+      ],
+      "billedmotiv": "A large black interwoven six-loop OpenAI Blossom symbol stamped on a thick white proof tile, from which a dense row of angular geometry tiles extends; one separate tile is clamped shut by a heavy padlock. The scene shows OpenAI's public mathematics offensive and a withheld mathematical result.",
+      "billedmotiv_instruks": "a9fb44916f9c611bcbf3",
+      "billede": "data/img/1d67fbf6040d9752.webp",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -58967,44 +59087,744 @@
         "emne": "openai, matematik"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-30T15:23:15.951645+00:00"
+      },
       "prio": 4,
+      "side": "artikel/20dbf88916765687.html"
+    },
+    {
+      "titel": "The biggest names in AI are backing a new way to opt out of scraping",
+      "link": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+      "resume": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI, as reported earlier by Search Engine Roundtable. With this control, publishers can apply their AI training preferences across multiple AI companies, instead of setting them individually. The shared \"policy token\" signal […]",
+      "dato": "2026-10-30T16:26:10-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "eget_foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "rubrik": "Google og Microsoft bakker ny standard mod scraping",
+      "resume_da": "OpenAI, Google, Microsoft og Anthropic vil gøre det muligt for udgivere at afvise AI-træning via én fælles indstilling i robots.txt.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI, Google, Microsoft og Anthropic vil tage et fælles \"policy token\" i brug, så udgiveres opt-out gælder hos flere selskaber.",
+        "forbehold": "Kun annonceret tilslutning; ingen oplysninger om teknisk implementering eller kontrol.",
+        "emne": "ai-scraping, opt-out-standard"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
       "sektioner": [
         {
-          "overskrift": "Altman vælger viden frem for ro",
-          "tekst": "OpenAIs topchef, Sam Altman, siger, at selskabet ikke vil holde igen med matematiske resultater. På podcasten Cheeky Pint, der blev offentliggjort torsdag, sagde han, at verden fortjener at forstå, hvordan universet hænger sammen, og at hensynet til ny fundamental viden vejer tungere end den uro, offentliggørelserne skaber. Han tilføjede, at han har empati med matematikernes metode.\n\nSamtidig erkender han, at OpenAI skal blive bedre til at formidle resultaterne. Matematikere, som The Verge har talt med, har kritiseret netop det: for lidt kontekst, utilstrækkelig kildeangivelse og for lidt verifikation."
+          "overskrift": "Fire AI-selskaber bakker fælles nej",
+          "tekst": "OpenAI, Google, Microsoft og Anthropic vil alle adoptere en ny standard, der lader udgivere afvise AI-scraping på tværs af flere selskaber. Det betyder, at en udgiver kan sige nej til AI-træning én gang i stedet for at forhandle med hvert selskab."
         },
         {
-          "overskrift": "Yang-Mills-detaljer er ikke offentlige",
-          "tekst": "Kritikken handler ikke kun om tempo. Efter at have annonceret tre store gennembrud inden for matematik, fysik og datalogi møder OpenAI også anklager om at tilbageholde forskning. Detaljerne i et af resultaterne, som angiveligt drejer sig om Yang-Mills-teori — det matematiske grundlag for moderne partikelfysik — er ikke offentliggjort. OpenAI siger, at det skyldes anbefalinger fra en håndplukket gruppe eksperter, selskabet har rådført sig med om, hvordan resultatet bedst udgives.\n\nDet står i modstrid med råd fra en tidligere gruppe matematikere, som OpenAI havde konsulteret."
+          "overskrift": "Signalet gemmes i robots.txt",
+          "tekst": "Standarden er et såkaldt policy token, foreslået af Kevin Kelley, teknisk lead for standarder hos Anthropic, i standardiseringsorganisationen IETF. Det placeres i websiteets robots.txt-fil, som allerede bruges til at fortælle web-crawlere, om de må skrabe siden til søgning, arkivering eller AI-træning.\n\nI dag skal udgivere sende separate signaler til hver AI-virksomhed."
         },
         {
-          "overskrift": "Flere fund og hundreder af millioner dollar",
-          "tekst": "Altman antyder, at OpenAI ligger inde med langt flere matematiske fund, end selskabet har offentliggjort. Adspurgt, om der er mere end de hundreder af resultater, som allerede er ude, svarede han: \"Det har vi. Selvfølgelig.\"\n\nHan sagde også, at selskabets jagt på matematiske problemer i en kort periode \"gik over gevind\", men at det var bevidst og nødvendigt for at teste AI-modellernes grænser. Ifølge Altman har OpenAI brugt i størrelsesordenen hundreder af millioner dollar på matematik, hvoraf cirka 10 mio. dollar — \"måske lidt mere\" — gik til selskabets Navier-Stokes-løsning på et af matematikkens Millennium Prize-problemer."
+          "overskrift": "Microsoft vil give mere kontrol",
+          "tekst": "Microsoft vil tilbyde mere granulære kontroller, så udgivere kan fravælge AI-træning eller AI-grounding.\n\nSidstnævnte er processen med at pege en AI-model mod en verificeret informationskilde for at reducere hallucinationer, altså når en AI giver forkerte svar. Microsoft understreger, at websites stadig vil fremgå i Bing-søgeresultater uanset præferencer."
+        },
+        {
+          "overskrift": "Anthropic er allerede i gang",
+          "tekst": "Anthropic har allerede adopteret signalet. Google og Microsoft planlægger at supporte det næste år, mens OpenAI siger, at det vil implementere det i de kommende måneder.\n\nUdgivere har længe kæmpet med AI-crawlere, og andre tiltag som RSL-standarden og Cloudflares blokering af AI-crawlere er også i spil."
         }
       ],
       "brief": "",
       "figurer": [],
       "noegletal": [],
       "detaljer": [
-        "OpenAI offentliggjorde alene denne måned hundreder af matematiske resultater.",
-        "Altman beskrev en intern Slack-kanal kaldet \"Model Name-Hold My Beer\"."
+        "RSL-standarden lader udgivere kræve betaling for crawling.",
+        "Cloudflare blokerer AI-crawlere som standard."
       ],
-      "betydning": "Forskere frygter, at store AI-labors udgifter kan presse akademiske miljøer ud af deres egne fag.",
+      "betydning": "Hvis standarden bliver udbredt, kan udgivere lettere holde AI-modeller væk fra deres indhold uden at forhandle med hvert enkelt selskab.",
       "pointer": [
-        "Altman: Verden fortjener fundamental viden",
-        "Yang-Mills-detaljer er ikke offentliggjort",
-        "OpenAI har brugt hundreder af millioner dollar"
+        "OpenAI, Google, Microsoft og Anthropic bakker standarden.",
+        "Signalet lægges i robots.txt.",
+        "Anthropic har adopteret det allerede."
       ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
-        "kontrolleret": "2026-10-30T15:23:15.951645+00:00"
+        "kontrolleret": "2026-10-30T21:03:39.549764+00:00"
       },
-      "billedmotiv": "A large black interwoven six-loop OpenAI Blossom symbol stamped on a thick white proof tile, from which a dense row of angular geometry tiles extends; one separate tile is clamped shut by a heavy padlock. The scene shows OpenAI's public mathematics offensive and a withheld mathematical result.",
-      "billedmotiv_instruks": "a9fb44916f9c611bcbf3",
-      "billede": "data/img/1d67fbf6040d9752.webp",
-      "side": "artikel/20dbf88916765687.html"
+      "billedmotiv": "A large solid document sheet has a chunky policy-token key inserted into its centre; Google's four-colour G and Microsoft's four-colour window are embossed side by side on the sheet, both pointing to the token, showing one shared opt-out signal for AI training.",
+      "billedmotiv_instruks": "6da943f35a71cbbb6a0e",
+      "side": "artikel/18ea57daed9dddc6.html"
+    },
+    {
+      "titel": "Zest’s new AI agent finds restaurants and books reservations over text",
+      "link": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/",
+      "resume": "Can't agree on where to eat? Zest's AI concierge can combine everyone's tastes, put restaurant options to a vote, and make the reservation.",
+      "dato": "2026-10-30T17:47:12+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "eget_foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "rubrik": "Zest-agent booker restaurantbord i SMS-tråden",
+      "resume_da": "Restaurantappen Zest flytter anbefalinger og booking ind i SMS'en: en AI-agent finder steder ud fra din historik og booker bord via OpenTable, Resy og SevenRooms.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Zest lancerer en AI-agent, der samler gruppens restaurantønsker, lader alle stemme og gennemfører reservationen over tekst.",
+        "forbehold": "Ingen oplysninger om pris, tilgængelighed eller hvor robust reservationen fungerer.",
+        "emne": "zest, ai-agent"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Anbefaler ud fra dine kortkøb",
+          "tekst": "Zest blev grundlagt i november 2024 og forbinder sig til brugernes kreditkort via finansselskabet Plaid. På den måde ser appen, hvor man faktisk spiser henne — den kigger kun på transaktioner i kategorien mad og drikke — og kan bruge det til at gætte ens smag.\n\nDen nye agent gør det samme arbejde inde i en SMS-tråd. Man skriver til (212) 470-6067 og kan spørge ud fra køkken, lyst, anledning, kosthensyn eller bydel. Agenten kan også svare på, hvor travlt et sted er, om der er Wi-Fi, og sende menukortet."
+        },
+        {
+          "overskrift": "Gruppechat afgør med afstemning",
+          "tekst": "Zest kan også trækkes ind i en gruppechat, hvor den blander alles smag for at finde et sted, hele selskabet vil kunne lide. Er I uenige, kan den holde en afstemning i tråden og derefter booke bordet, uden at nogen forlader samtalen.\n\nI TechCrunchs test fungerede agenten ganske godt og gav forslag, der passede til tidspunkt, selskabsstørrelse og sted. At finde et ledigt bord har andre apps kunnet længe; det nye er, at man kan skrive frem og tilbage om mulighederne og få bookingtiderne serveret."
+        },
+        {
+          "overskrift": "Agenten er produktet, siger stifteren",
+          "tekst": "Lanceringen afspejler et bredere skift, hvor samtalende AI-agenter overtager opgaver, der før krævede en selvstændig app. \"Agenten er produktet nu,\" siger Zest-stifter og CEO Mario Gomez-Hall og forklarer, at agenten lærer ens smag hurtigere end en generel assistent, fordi den starter fra, hvor man faktisk har været.\n\nBooking og bestilling er de første indtægtskilder, oplyser han. Zest booker i dag via OpenTable eller Resy, og madbestilling er på vej. Selskabet testede agenten sidste måned og ventede med lanceringen, til booking-funktionen var med."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "1,8 mio. dollar",
+          "label": "Præ-seed-investering fra Alexis Ohanian (776) og Steve Jang (Kindred Ventures)"
+        }
+      ],
+      "detaljer": [
+        "Zest blev grundlagt i november 2024.",
+        "Selskabet overvejer at udvide agenten til forretninger og shopping.",
+        "Agenten ligner andre tekstbaserede AI-agenter som Instinct og Poke."
+      ],
+      "betydning": "Hvis Zest vokser fra app til SMS-tjeneste, kan booking og madbestilling blive en indtægtskanal — og vise, at agenter i tekstbeskeder kan erstatte selvstændige apps.",
+      "pointer": [
+        "Du skriver til Zest på (212) 470-6067.",
+        "Booker bord via OpenTable, Resy og SevenRooms."
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-30T21:03:14.343871+00:00"
+      },
+      "billedmotiv": "A solid phone-shaped block emits chunky speech bubbles; from one bubble, a small restaurant table with a plate and cutlery slides into a booking card, while a group-chat bubble shows a simple vote tick, representing Zest's SMS agent booking a table without leaving the conversation.",
+      "billedmotiv_instruks": "193b40be5141c2cf2875",
+      "billede": "data/img/579a51c4709816a4.jpg",
+      "side": "artikel/c9dcfb62ccca45b2.html"
+    },
+    {
+      "titel": "Google’s first data center satellite is online and writing poetry",
+      "link": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
+      "resume": "The first TPU in space is running a Google DeepMind Gemma 4 model and writing cheesy poetry.",
+      "dato": "2026-10-30T17:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "eget_foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "rubrik": "Googles satellit digter med Gemma 4 i kredsløb",
+      "resume_da": "Prototypen på Googles Suncatcher-koncept er online med fire AI-chips om bord, men strømforbruget tillader kun, at én kører ad gangen.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "gennembrud",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Det første TPU-system i kredsløb kører en Gemma 4-model fra Google DeepMind og har skrevet digte, skriver TechCrunch.",
+        "forbehold": "Samme hændelse som The Verge-artiklen; bygger på Googles blog og er ikke uafhængigt afprøvet.",
+        "emne": "google, ai-satellit"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Første opgave var et digt om rummet",
+          "tekst": "Googles prototype på et datacenter i rummet er online og kommunikerer med jorden, efter at den blev sendt op i oktober sammen med over 100 andre rumfartøjer på en Falcon 9-raket fra SpaceX.\n\nDa ingeniørerne sendte den første prompt, bad de modellen Gemma 4 fra Google DeepMind om at skrive en haiku om at være i rummet. Svaret lød: »Blue marble below. Data streams in silent grace. Starlight feeds my core.«\n\nGoogle oplyser, at satellitten også blev bedt om at rapportere om forholdene i kredsløbet, og at den kører normalt."
+        },
+        {
+          "overskrift": "Fire chips, men kun én ad gangen",
+          "tekst": "Om bord sidder fire Tensor Processing Units — Googles egne AI-chips — og satellitten producerer op til 1 kW strøm. Strømforbruget er så højt, at kun én chip kan være tændt ad gangen, og kun i cirka 20 minutter.\n\nDet gør det sværere at sende data frem og tilbage mellem satellit og jord, fordi arbejdet skal times med de korte vinduer, hvor chippen kører. Målet er på sigt at få flere satellitter til at flyve tæt sammen og dele større inferensopgaver — altså når en færdigtrænet model svarer på spørgsmål."
+        },
+        {
+          "overskrift": "Stråling kan forvanske data uden varsel",
+          "tekst": "Den næste test handler om stråling. I rummet kan en partikel vende et bit i hukommelsen — en såkaldt bit flip — så data bliver forvansket, uden at de sædvanlige overvågningsværktøjer opdager det. Google har testet chipsene i partikelacceleratorer på jorden, men vil nu se de virkelige effekter.\n\nJordforsøgene tydede på, at stråling betyder lidt for inferens, men mere for træning af en model. Holdet skal også måle, hvordan chippene klarer varmen."
+        },
+        {
+          "overskrift": "To nye satellitter skal flyve i 2027",
+          "tekst": "Holder prototypen, sender Google to satellitter mere op i 2027 med kraftigere chips, højere strømproduktion og optiske links mellem satellitterne.\n\nSuncatcher er ifølge TechCrunch alene om at satse på højhastighedslinks, så satellitter kan dele regnekraft. SpaceX vil også bruge laserlinks, men har satellitter for langt fra hinanden, mens Starcloud og Cowboy Space regner med at køre inferens på enkelte satellitter."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Alphabet har en betydelig investeringsandel i SpaceX ifølge TechCrunch.",
+        "Suncatcher er et Google-moonshot med blik på infrastruktur, der bliver økonomisk i 2030'erne.",
+        "En analyse anslog, at SpaceX skal flyve Starship 1.800 gange for at nå samme omkostningsfald som tidligere raketter.",
+        "Alphabets aktie faldt i ugen, efter at AI i søgning har svækket annonceomsætningen."
+      ],
+      "betydning": "Hvis chippene klarer strålingen, kan AI-svar på sigt leveres fra datacentre i kredsløb. Google regner selv med, at infrastrukturen først bliver økonomisk i 2030'erne.",
+      "pointer": [
+        "Gemma 4 skrev en haiku som første svar",
+        "Kun én chip kan køre ad gangen i cirka 20 minutter",
+        "To nye satellitter er planlagt til 2027"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-30T21:03:34.253154+00:00"
+      },
+      "historie_dato": "2026-10-30T17:00:00+00:00",
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
+          "rubrik": "Gemma 4 svarede fra Googles satellit",
+          "resume_da": "Google har startet TPU'erne om bord og fået et haikudigt retur. Project Suncatcher skal vise, om AI-chips kan arbejde i rummet.",
+          "dato": "2026-10-30T14:21:38-04:00",
+          "foerst_set": "2026-10-30T21:00:09.129763+00:00"
+        }
+      ],
+      "billedmotiv": "A solid satellite with Google's four-colour G on its side floats beside a small Earth globe; a chunky speech bubble carrying a simple poem page extends from the satellite toward Earth, while one of four square chip slots on the satellite is filled and the others are empty, showing one chip running Gemma 4 in orbit.",
+      "billedmotiv_instruks": "7670175b20a3183d79ca",
+      "side": "artikel/d4c3a958104abce5.html"
+    },
+    {
+      "titel": "Thousands of “ghost students” use AI to steal millions in student loans, DOJ says",
+      "link": "https://arstechnica.com/tech-policy/2026/10/doj-exposes-ghost-students-using-ai-to-complete-courses-steal-student-loans/",
+      "resume": "Applying for FAFSA may get messy as DOJ “ghost student” crackdown ramps up.",
+      "dato": "2026-10-30T16:53:49+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "eget_foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "rubrik": "USA's justitsministerium: Første store sag om spøgelsesstuderende",
+      "resume_da": "Fem er sigtet; ifølge det amerikanske justitsministerium (DOJ) brugte svindlere AI til at holde falske studerende aktive og hente millioner.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Ifølge DOJ har tusindvis af \"spøgelsesstuderende\" brugt AI til at gennemføre kurser og svindle sig til studielån.",
+        "forbehold": "Artiklen oplyser ikke sagernes omfang, domme eller nærmere metode.",
+        "emne": "doj, studielånssvindel"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Fem sigtet i sag om falske studerende",
+          "tekst": "Det amerikanske justitsministerium (DOJ) har sigtet fem personer i den første brede føderale kamp mod “spøgelsesstuderende”. Det er svindlere, der stjæler amerikanske borgeres identiteter og lader dem optræde som studerende for at hente føderal studiestøtte.\n\nIfølge DOJ begynder svindlen med, at svindlerne køber personligt identificerbare oplysninger (PII), oftest om amerikanere med en high school-uddannelse, som aldrig har gået på college. De udfylder den føderale ansøgning om økonomisk støtte til uddannelse (FAFSA) og søger optagelse på universiteter og community colleges.\n\nBliver de optaget, går støtten først til skolen til undervisning og gebyrer. Overskydende beløb går til bankkonti, som svindlerne kontrollerer, og DOJ siger, at dusinvis af amerikanere har åbnet konti som mellemled."
+        },
+        {
+          "overskrift": "AI holder den falske studerende aktiv",
+          "tekst": "For at holde pengene i gang bruger svindlerne AI til at udfylde ansøgninger, løse kursusarbejde og få det til at se ud, som om den studerende deltager i virtuelle sessioner. Det oplyste DOJ på et pressemøde.\n\n“Det ser ud, som om spøgelsesstuderende faktisk gennemfører klassen,” sagde Colin M. McDonald fra DOJ’s nationale afdeling for svindelbekæmpelse. Målet er at holde den falske studerende i skole semester efter semester."
+        },
+        {
+          "overskrift": "Over 830.000 konti er under mistanke",
+          "tekst": "Det amerikanske uddannelsesministerium (DOE) har identificeret over 830.000 potentielt svigagtige føderale studiestøttekonti, som er oprettet med amerikanske borgeres PII. Hvis alle viser sig at være spøgelsesstuderende, nærmer det samlede tab sig 130 mio. dollar, oplyser DOJ.\n\nI de konkrete sager har myndighederne identificeret mere end 32 mio. dollar i faktisk tab og mener, at det reelle tal er væsentligt højere. For ofrene kan svindlen være svær at opdage, indtil myndighederne år senere kræver lånene tilbage; imens kan deres kredit være skadet."
+        },
+        {
+          "overskrift": "Kryptovaluta og henvisninger til FBI",
+          "tekst": "DOJ har beslaglagt mere end 750.000 dollar i kryptovaluta fra et netværk med forbindelse til kenyanske statsborgere. Ifølge DOJ har dataanalyse peget på usædvanlige mønstre i FAFSA, og efterforskningen har ført til omkring 50 henvisninger til 26 FBI-feltskontorer.\n\nDOJ mener, at svindlen har stået på mindst siden 2021, og at den er blevet mere sofistikeret, efterhånden som AI har åbnet nye veje. DOE har ifølge egne oplysninger indført skærpede identitetskontroller i FAFSA, men fortalere advarer om, at automatiserede systemer kan give falske flag og forsinke støtte til rigtige studerende."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "5 personer",
+          "label": "Sigtet i den første brede føderale sag om spøgelsesstuderende"
+        },
+        {
+          "tal": "Over 830.000 konti",
+          "label": "Potentielt svigagtige studiestøttekonti identificeret af DOE"
+        },
+        {
+          "tal": "Nær 130 mio. dollar",
+          "label": "Muligt samlet tab, hvis alle de mistænkte konti er falske"
+        },
+        {
+          "tal": "Mere end 32 mio. dollar",
+          "label": "Identificeret faktisk tab i de konkrete sager; DOJ mener, det reelle tal er højere"
+        },
+        {
+          "tal": "Mere end 750.000 dollar",
+          "label": "Kryptovaluta beslaglagt fra netværk med forbindelse til kenyanske statsborgere"
+        }
+      ],
+      "detaljer": [
+        "Én sigtet fik ca. 1.439.548 dollar via over 700 svigagtige refusionsindbetalinger.",
+        "Ifølge Inside Higher Ed fik en anden over 1 mio. dollar knyttet til mere end 300 konti."
+      ],
+      "betydning": "Skærpede identitetskontroller kan stoppe nogle svindlere, men fortalere advarer om, at falske flag kan forsinke rigtige studerendes støtte.",
+      "pointer": [
+        "Fem personer er sigtet i sagen",
+        "AI brugt til ansøgninger og kursusarbejde",
+        "Over 830.000 konti under mistanke"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-30T21:07:34.531235+00:00"
+      },
+      "billedmotiv": "A solid university application form has an empty ID-photo frame; a chunky microchip holds a thick pencil and fills in the course answers, while a small stack of banknotes slides into a drop slot, showing AI keeping a fake student active to collect federal aid.",
+      "billedmotiv_instruks": "b4e88943490509818e97",
+      "billede": "data/img/72f506c783ad6882.webp",
+      "side": "artikel/45464663f5cb4135.html"
+    },
+    {
+      "titel": "AWS will be a $1T business, Jassy says — but first, it will spend big",
+      "link": "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/",
+      "resume": "Amazon wants to be the king of AI cloud computing and become the first $1 trillion revenue business. But to do that it will have to continue on its capex spending spree, its CEO said Thursday.",
+      "dato": "2026-10-29T23:42:22+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-30T06:19:58.354533+00:00",
+      "eget_foerst_set": "2026-10-30T06:19:58.354533+00:00",
+      "rubrik": "Jassy: AWS kan blive billionforretning",
+      "resume_da": "Amazon vil øge investeringerne markant for at indfri Andy Jassys mål om AWS som billionforretning. AWS voksede 39 procent, men aktien faldt efter regnskabet.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Amazon-chef lover 1 billion dollar i AWS-omsætning og fortsat store kapitalinvesteringer i AI-cloud, men uden nye tal for AI-forretningen.",
+        "forbehold": "Prognose fra CEO, ikke dokumenterede AI-indtægter.",
+        "emne": "aws ai-cloud investeringer"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "AWS vokser 39 procent og sigter mod 40",
+          "tekst": "AWS er Amazons cloudforretning. Den har en årlig omsætning på 184 milliarder dollars, hvis det seneste kvartals salg blev gentaget et helt år; det kaldes run-rate. Omsætningen var 39 procent højere end i samme kvartal året før.\n\nPå regnskabsopkaldet sagde topchef Andy Jassy, at AWS kan vokse med over 40 procent i både 2027 og 2028. Han venter også, at forretningen kan nå en omsætning på en billion dollars (1.000 milliarder) om fem til ti år."
+        },
+        {
+          "overskrift": "220 milliarder dollars skal bygge kapacitet",
+          "tekst": "Væksten kræver mere infrastruktur. Amazon venter at bruge omkring 220 milliarder dollars på investeringer i anlægsaktiver (capex) i 2026, og størstedelen går til AWS. I 2027 venter Jassy at bruge betydeligt mere.\n\nHan sagde, at selskabet har udsigt til at få afkast på investeringerne. Ifølge TechCrunch spurgte analytikere fra Wall Street gentagne gange, hvorfor udgifterne er så store, hvilke signaler der viser vækst, og hvor marginerne skal komme fra."
+        },
+        {
+          "overskrift": "Investorerne spørger, hvor pengene ender",
+          "tekst": "Jassy fremhævede, at virksomhedernes brug af AI stadig er i en meget tidlig fase. Han kaldte AI-bølgen en enestående mulighed og sagde, at Amazon vil investere for at fortsætte som førende. Han mener også, at selskabet kan finansiere planen.\n\nInvestorerne var ikke overbeviste. Amazons aktie faldt cirka 6 procent i handelen efter børslukning. Microsoft har samtidig rapporteret endnu en rekordhøj omsætningsvækst, især drevet af cloudforretningen, og har også brugt store beløb."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "184 milliarder dollars",
+          "label": "AWS' årlige omsætning, hvis det seneste kvartals salg gentages et helt år (run-rate)"
+        },
+        {
+          "tal": "39 procent",
+          "label": "AWS' omsætningsvækst i kvartalet sammenlignet med samme kvartal året før"
+        },
+        {
+          "tal": "Over 40 procent",
+          "label": "Jassys forventning til AWS' vækst i både 2027 og 2028"
+        },
+        {
+          "tal": "Ca. 220 milliarder dollars",
+          "label": "Amazons forventede investeringer i anlægsaktiver (capex) i 2026; størstedelen til AWS"
+        },
+        {
+          "tal": "1.000 milliarder dollars",
+          "label": "Jassys mål for AWS' årlige omsætning om fem til ti år (en billion dollars)"
+        }
+      ],
+      "detaljer": [
+        "AWS har haft stabil vækst i seks kvartaler i træk, ifølge TechCrunch.",
+        "Jassy har gentagne gange fremhævet målet om en billionforretning."
+      ],
+      "betydning": "Hvis Jassys prognose holder, skal AWS fra 184 milliarder dollars i årlig run-rate til en billion dollars i omsætning om fem til ti år. Jassy siger, at det vil ændre Amazons størrelse og omsætning.",
+      "pointer": [
+        "AWS voksede 39 pct. i kvartalet",
+        "Amazon-investeringer 2026: ca. 220 mia. dollars",
+        "Aktien faldt ca. 6 pct. efter regnskabet"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-30T21:07:28.869911+00:00"
+      },
+      "side": "artikel/ee09513d3b256af4.html"
+    },
+    {
+      "titel": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
+      "link": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
+      "resume": "Low costs and offline security mean magnetic tape still has a job.",
+      "dato": "2026-10-30T17:38:19+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "eget_foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "rubrik": "Fujifilm femdobler båndproduktion til AI-arkivering",
+      "resume_da": "Investeringen på cirka 63 millioner dollar skal især øge produktionen af den nyeste LTO Ultrium10-model, som cloud-operatører bruger til billig, offline backup.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Fujifilm femdobler produktionen af magnetbånd, fordi AI-drevet arkivering øger efterspørgslen.",
+        "forbehold": "Ingen tal for investeringens størrelse eller tidsplan i det medsendte materiale.",
+        "emne": "fujifilm, datalagring"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Fem gange mere bånd fra Odawara",
+          "tekst": "Fujifilm vil investere cirka 10 milliarder yen — omkring 63 millioner dollar — i at gøre fabrikken i Odawara i Kanagawa-præfekturet klar til fem gange så meget bånd som i regnskabsåret 2025. Selskabet kalder det sin største investering til dato i faciliteter dedikeret til LTO-bånd.\n\nPengene går til udvidelse af produktionen og til flere medarbejdere, og arbejdet løber gennem regnskabsårene 2026 til 2028. Det skal især bane vej for den nyeste generation, **FUJIFILM LTO Ultrium10**, som Fujifilm lancerede i 2025.\n\nLTO-bånd er magnetbånd til datalagring. For de fleste er båndet et medie fra fortiden, men store cloud-tjenester og datacentre bruger det stadig til backup af massive datamængder."
+        },
+        {
+          "overskrift": "Generativ AI puster til arkivbehovet",
+          "tekst": "Fujifilm begrunder udvidelsen med, at generativ AI får verdens databehov til at vokse »eksponentielt«. Det er ifølge selskabet netop efterspørgslen efter arkivering, der stiger.\n\nIfølge Fujifilm udvider »store cloud-tjenester og datacenteroperatører« brugen af magnetbånd, fordi mediet kan gemme store datamængder til en forholdsvis lav pris.\n\nEn ekstra pointe er sikkerhed: Et båndkassette kan tages ud af systemet og lægges i en skuffe, et pengeskab eller et andet lokale. Fujifilm fremhæver denne afkobling — air-gap — som en sidste forsvarslinje mod ransomware."
+        },
+        {
+          "overskrift": "Barium og strontium i samme bånd",
+          "tekst": "Fujifilm har arbejdet med magnetbånd som datalagringsmedie siden 1950'erne og udgav sit første LTO Ultrium-bånd i 2000. I 2011 var selskabet først til kommercielt at producere bånd med bariumferrit-partikler.\n\nMed LTO Ultrium10, den tiende generation, tog Fujifilm i 2025 et nyt materiale i brug: »fine hybrid magnetiske partikler«, hvor bariumferrit kombineres med strontiumferrit. Hver generation har ifølge Fujifilm givet mærkbart større lagerkapacitet, både komprimeret og ukomprimeret."
+        }
+      ],
+      "brief": "",
+      "figurer": [
+        {
+          "url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/LTO-Roadmap-2026-HiRes.jpg",
+          "tekst": "LTO capacity by generation. Gen 10 is the current tech; Gen 11-14 figures are consortium projections for the future. Credit: LTO.org",
+          "kilde": "Ars Technica AI"
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "5 gange",
+          "label": "Produktionskapacitet målt mod niveauet i regnskabsåret 2025"
+        },
+        {
+          "tal": "ca. 10 mia. yen (ca. 63 mio. dollar)",
+          "label": "Fujifilms investering i fabrikken i Odawara"
+        }
+      ],
+      "detaljer": [
+        "Udvidelsen løber i regnskabsårene 2026 til 2028.",
+        "Fujifilm har lavet magnetbånd til datalagring siden 1950'erne.",
+        "Det første LTO Ultrium-bånd fra Fujifilm kom i 2000.",
+        "I 2011 var Fujifilm først med kommercielle bånd af bariumferrit."
+      ],
+      "betydning": "Mere båndkapacitet kan blive en forudsætning for, at cloud-operatørerne kan gemme de voksende datamængder fra generativ AI billigt og adskilt fra nettet.",
+      "pointer": [
+        "Kapaciteten femdobles målt mod regnskabsåret 2025",
+        "Nyeste bånd: FUJIFILM LTO Ultrium10",
+        "Air-gap skal beskytte mod ransomware"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-30T21:09:36.584746+00:00"
+      },
+      "billedmotiv": "A large solid LTO Ultrium10 tape cartridge floats in front of a compact factory block; a server rack beside it has an empty tape slot, and the cartridge is much larger than the factory, showing expanded production for AI archives.",
+      "billedmotiv_instruks": "7286cb337c4c1e5fb7f9",
+      "billede": "data/img/19acfb4b4435561d.webp",
+      "side": "artikel/a4df15e2609a100e.html"
+    },
+    {
+      "titel": "Sam Altman says it’s better for RAM to be in a data center than on your desk",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
+      "resume": "Asked about supply chain shortages, like the ongoing RAM shortage, OpenAI CEO Sam Altman said in an interview that it's \"terrible\" to have RAM in personal PCs instead of data centers. During his appearance on the Cheeky Pint podcast, where he also commented on AI's impact on math, Altman said: \"A lot of people want […]",
+      "dato": "2026-10-30T16:48:43-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "eget_foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "rubrik": "Altman: RAM hører i datacenteret, ikke på skrivebordet",
+      "resume_da": "OpenAI-chefen kalder det »terrible«, at verdens knappe DRAM står i private computere. Samsung og SK Hynix har allerede bundet store dele af produktionen til cloud og Stargate.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI-chefen kalder det \"terrible\" at have RAM i pc'er frem for datacentre og peger dermed på knaphed i AI-infrastrukturen.",
+        "forbehold": "Kort podcastcitat gengivet via medie; ingen konkrete tal eller beslutninger.",
+        "emne": "openai, ram-knaphed"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Altman vil samle hukommelsen i skyen",
+          "tekst": "OpenAIs topchef, Sam Altman, mener, at verdens knappe hukommelse er bedre tjent med at stå i datacentre end på folks skriveborde. Det sagde han i et interview på podcasten Cheeky Pint.\n\nAnledningen er den globale mangel på RAM, den type hukommelse en computer bruger til at holde på data, mens den arbejder. Altman kalder det »quite terrible«, at en stor del af verdens begrænsede DRAM-lager står i private computere og kun bruges fem procent af tiden.\n\nHan afviser ikke, at folk gerne vil køre AI-modeller lokalt, altså på deres egen maskine i stedet for via en server. Men ifølge ham hviler den tanke på en antagelse om, at åbne modeller gør lokal kørsel til en løsning på pladsproblemet. Set fra et globalt fordelingssynspunkt er det modsatte tilfældet: Vil man have mest muligt ud af en knap ressource, skal den bruges i skyen."
+        },
+        {
+          "overskrift": "Samsung og SK Hynix har solgt årene frem",
+          "tekst": "Baggrunden er ifølge The Verge, at OpenAI køber så aggressivt ind, at det presser verdens forsyning af RAM. Hukommelsesproducenterne Samsung og SK Hynix har indgået langvarige aftaler med cloudoperatører og med projekter som OpenAIs Stargate, og de aftaler har reserveret en stor del af verdens RAM-produktion de næste par år.\n\nDet er de mange milliarder, selskaberne er villige til at betale for brikkerne, der lige nu gør laptops, telefoner og andet udstyr dyrere for forbrugerne."
+        },
+        {
+          "overskrift": "Uklart præcis hvilke maskiner han mener",
+          "tekst": "The Verge bemærker, at det ikke står klart, om Altman taler om almindelige gaming-pc'er eller om udviklere, der arbejder på særlige udviklingsmaskiner. Konsekvensen er den samme, skriver mediet.\n\nAltmans udsagn er et argument i en fordelingsdebat, ikke en beslutning om, hvordan hukommelsen faktisk skal fordeles."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "5 pct. af tiden",
+          "label": "Sam Altmans eget skøn i podcasten for, hvor ofte DRAM i private computere bruges"
+        }
+      ],
+      "detaljer": [
+        "Interviewet blev givet på podcasten Cheeky Pint.",
+        "OpenAIs Stargate-projekt nævnes som en af de aftagere, der har reserveret RAM.",
+        "Altman kommenterede i samme interview AI's betydning for matematik."
+      ],
+      "betydning": "Hvis synspunktet vinder frem, kan det styrke presset for at samle AI-kørsel i skyen og gøre lokal AI på egen maskine mindre oplagt, mens priserne på RAM-tunge enheder stiger.",
+      "pointer": [
+        "Altman: privat DRAM står ubrugt hen det meste af tiden",
+        "Samsung og SK Hynix har solgt store mængder på lang kontrakt",
+        "Dyrere RAM mærkes på laptops og telefoner"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-30T21:08:25.351550+00:00"
+      },
+      "billedmotiv": "A tall solid data-centre rack bears the interwoven black OpenAI Blossom; a chunky DRAM memory module slides into the rack, while a small closed laptop floats apart with an empty memory slot, showing memory moving from private computers into the cloud.",
+      "billedmotiv_instruks": "8796e2b10fbe61ffae03",
+      "billede": "data/img/92f6e595907519b8.jpg",
+      "side": "artikel/22e8c569cc060b0a.html"
+    },
+    {
+      "titel": "Basically no one is using AI agents for their DoorDash orders",
+      "link": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/",
+      "resume": "But it's still early days for the relatively new e-commerce use case.",
+      "dato": "2026-10-30T19:30:52+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-10-30T15:15:27.943712+00:00",
+      "eget_foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "rubrik": "DoorDash ser næsten ingen AI-agent-ordrer",
+      "resume_da": "DoorDashs CEO kalder eksterne AI-agenters ordrer en meget lille brugssag: kun flere hundrede mod lige under 1 milliard ordrer i alt.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "DoorDash oplyser, at eksterne AI-agenter hidtil kun har ført til få hundrede ordrer på platformen.",
+        "forbehold": "Kort artikel uden nærmere tal, periode eller metode.",
+        "emne": "doordash, ai-agenter"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Flere hundrede ordrer mod en milliard",
+          "tekst": "DoorDash har kun fået **flere hundrede ordrer** via eksterne AI-agenter, altså software, der kan handle på brugerens vegne, siden de begyndte at virke. Det oplyste CEO Tony Xu på selskabets regnskabsmøde torsdag.\n\nTil sammenligning håndterede DoorDash lige under 1 milliard ordrer i tredje kvartal alene. Xu kaldte selv AI-agent-ordrerne en meget lille brugssag for selskabet."
+        },
+        {
+          "overskrift": "Connector er kun åben for beta-partnere",
+          "tekst": "Den lave brug kommer, mens DoorDash stadig er tidligt ude. For under en måned siden rullede selskabet en connector baseret på Model Context Protocol (MCP) ud. Det er en fælles teknisk standard, som gør det lettere for tredjeparts-AI-værktøjer at bestille gennem DoorDash.\n\nConnector er kun åben for et lille antal “early beta-partnere” og bruges især til at strømline virksomheders frokostordrer. Uden den skal en AI-agent gå gennem en webgrænseflade og gøre mere arbejde for at bestille."
+        },
+        {
+          "overskrift": "Ask DoorDash tælles ikke med",
+          "tekst": "DoorDashs egne AI-funktioner indgår ikke i Xus tal for tredjepartsagenter. I sommer lancerede selskabet Ask DoorDash, som blandt andet kan bygge en indkøbskurv ud fra et foto af en opskrift eller foreslå en ordre ud fra en vag beskrivelse som “middag til en familie på fire”.\n\nDoorDash har ikke delt detaljerede tal for brugen. Selskabet oplyser dog, at Ask DoorDash-kurve bygges hurtigere, og at ordrerne i gennemsnit har højere kurvværdi og flere unikke varer end samme kunders traditionelle ordrer."
+        },
+        {
+          "overskrift": "Store valg er mere interessante end mad",
+          "tekst": "Xu ser ifølge Ars Technica større potentiale for AI-agenter ved køb, der kræver lang overvejelse, og ved store beslutninger, hvor agenten arbejder proaktivt i baggrunden på brugerens vegne. Ved en simpel opgave som at bestille mad ser han, at kunderne typisk går direkte til DoorDash.\n\nArs Technica kalder DoorDashs tidlige tal en mulig parallel til Pizza Hut, der begyndte at eksperimentere med onlinebestilling i 1994. I dag placeres mere end halvdelen af kædens ordrer online. Om AI-agent-bestilling følger samme kurve, er endnu ikke dokumenteret."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "5 gange hurtigere",
+          "label": "Ask DoorDash-kurve sammenlignet med kurve uden funktionen, ifølge DoorDash"
+        },
+        {
+          "tal": "Næsten 50 % højere",
+          "label": "Gennemsnitlig kurvværdi for Ask DoorDash-ordrer mod samme kunders traditionelle ordrer"
+        },
+        {
+          "tal": "Ca. 60 % flere",
+          "label": "Unikke varer i Ask DoorDash-ordrer mod samme kunders traditionelle ordrer"
+        },
+        {
+          "tal": "Næsten halvdelen",
+          "label": "Ask DoorDash-ordrer til lokale steder, kunden ikke har prøvet før"
+        }
+      ],
+      "detaljer": [],
+      "betydning": "DoorDash’ MCP-forbindelse kan gøre agentbestilling lettere, når den forlader beta; foreløbig er den kun åben for få partnere.",
+      "pointer": [
+        "Kun flere hundrede AI-agent-ordrer på DoorDash",
+        "MCP-connector er under en måned gammel og i beta",
+        "Ask DoorDash er intern og tælles ikke med"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-30T21:08:36.407797+00:00"
+      },
+      "historie_dato": "2026-10-30T13:54:25+00:00",
+      "billede": "data/img/6d2c961277a49540.jpg",
+      "billedmotiv": "A large red DoorDash delivery bag bearing the red-and-white DoorDash D app icon splits a flow: a tiny row of three small agent tokens approaches one side, while a massive solid ribbon of food-order blocks fills the other. The size contrast shows agent orders as a niche against millions of daily deliveries.",
+      "laant_billede": {
+        "fra": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/",
+        "billede": "data/img/6d2c961277a49540.jpg",
+        "motiv": "A large red DoorDash delivery bag bearing the red-and-white DoorDash D app icon splits a flow: a tiny row of three small agent tokens approaches one side, while a massive solid ribbon of food-order blocks fills the other. The size contrast shows agent orders as a niche against millions of daily deliveries."
+      },
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/",
+          "rubrik": "DoorDash: Kun få hundrede ordrer fra AI-agenter",
+          "resume_da": "Topchef Tony Xu siger på regnskabsopkaldet, at agent-ordrer stadig er en niche, mens selskabet selv bygger flere agenter og vil undgå at blokere udviklingen.",
+          "dato": "2026-10-30T13:54:25+00:00",
+          "foerst_set": "2026-10-30T15:15:27.943712+00:00"
+        }
+      ],
+      "side": "artikel/655f823878f84966.html"
+    },
+    {
+      "titel": "Theranos whistleblower Tyler Shultz warns that the AI boom is ‘a great opportunity to go deceive people’",
+      "link": "https://techcrunch.com/2026/10/30/theranos-whistleblower-tyler-shultz-warns-that-the-ai-boom-is-a-great-opportunity-to-go-deceive-people/",
+      "resume": "The cautionary Theranos tale takes on a new significance in the AI era, when companies that have never turned a profit are raising capital at trillion-dollar valuations.",
+      "dato": "2026-10-30T16:03:45+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "eget_foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "rubrik": "Tyler Shultz: AI gør svindel svær at gennemskue",
+      "resume_da": "Theranos-whistlebloweren advarer om, at investorer har svært ved at skelne ægte AI fra en ChatGPT-wrapper – og at det gør svindel lettere.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Theranos-varsleren Tyler Shultz advarer om, at AI-boomet er \"en stor mulighed for at narre folk\" ved høje værdiansættelser.",
+        "forbehold": "Generel advarsel uden konkrete sager eller belæg ud over interviewet.",
+        "emne": "ai-boom, theranos"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Theranos-whistlebloweren advarer mod AI-svindel",
+          "tekst": "I et interview med The San Francisco Standard advarer Theranos-whistlebloweren Tyler Shultz om, at AI-boomet giver en ny mulighed for at bedrage folk.\n\nHans første job efter college var hos Theranos, hvor han var med til at afsløre selskabets defekte blodtestapparater. De nåede ud i Walgreens-butikker og gav forkerte resultater til rigtige patienter. Theranos nåede en topvurdering på omkring 10 mia. dollar, selvom teknologien aldrig fungerede."
+        },
+        {
+          "overskrift": "Svært at skelne ægte AI fra wrapper",
+          "tekst": "Shultz' centrale pointe er, at det er svært at lave due diligence på AI – altså at undersøge, om teknologien og forretningen holder. 'Det er virkelig svært at se forskel på noget, der er ægte unikt og nyt, og så en ChatGPT-wrapper,' siger han.\n\nEn **ChatGPT-wrapper** er et produkt, der pakker en eksisterende chatbot ind og sælger den som en ny tjeneste. 'Hvis du vil bedrage folk, synes jeg, det her er en fantastisk mulighed for at bedrage folk,' siger Shultz."
+        },
+        {
+          "overskrift": "Investorer kan glemme Theranos-lektien",
+          "tekst": "Theranos rejste ofte kapital fra enkeltpersoner som DeVos- og Walton-familierne frem for venturefirmaer. Selskabet delte ikke videnskabelig information eller bevis for, at maskinerne virkede, med potentielle investorer og henviste til forretningshemmeligheder.\n\nDet afskrækkede mange førende venturekapitalister i Silicon Valley. Shultz advarer om, at investorer kan glemme den lektie, når AI-selskaber uden overskud rejser kapital til vurderinger i billionklassen."
+        },
+        {
+          "overskrift": "Shultz føler uro ved Holmes' anden akt",
+          "tekst": "Dokumentaren 'You Can See Everything' følger Elizabeth Holmes' sidste uger før fængsel og er blevet en af de højest indtjenende dokumentarer nogensinde. Shultz siger: 'Den eneste grund til, at vi taler om Elizabeth Holmes lige nu, er, at hun vil have, at vi taler om Elizabeth Holmes lige nu.'\n\nI filmen ses Holmes arbejde på diagnostikvirksomheden Haemanthus, som hun og partneren Billy Evans kalder 'Theranos 2.0'. Shultz siger, at han føler uro for, hvad der kan komme."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "Ca. 10 mia. dollar",
+          "label": "Theranos' topvurdering, før svindelen blev afsløret"
+        },
+        {
+          "tal": "Over 11 år",
+          "label": "Elizabeth Holmes' fængselsstraf"
+        }
+      ],
+      "detaljer": [
+        "Theranos brugte kun egne maskiner til en brøkdel af testene; resten blev outsourcet.",
+        "Dokumentaren er instrueret af Nathan Fielder og Lance Oppenheim.",
+        "Haemanthus har angiveligt rejst omkring 20 mio. dollar."
+      ],
+      "betydning": "Shultz' advarsel peger på en konkret udfordring for investorer: at lave due diligence på AI, før de sætter penge i selskaber, der endnu ikke har overskud.",
+      "pointer": [
+        "Shultz: AI gør det svært at tjekke teknologien.",
+        "Han frygter, at Theranos-lektien glemmes.",
+        "Holmes' nye selskab kaldes 'Theranos 2.0'."
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-30T21:12:13.610707+00:00"
+      },
+      "billedmotiv": "A solid product box with a hinged lid opens to reveal a simple chat bubble, while a detailed AI chip is mounted on the box's outer label; a second identical closed box beside it has no label, showing how a ChatGPT wrapper can look like genuine AI to an investor.",
+      "billedmotiv_instruks": "675fca5e382bd9687dbc",
+      "billede": "data/img/ec0dea949cd62678.webp",
+      "side": "artikel/9baf1e5f5cebdc8d.html"
     }
   ]
 }
