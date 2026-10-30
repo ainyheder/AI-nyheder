@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-30T06:19:58.354533+00:00",
- "artikler_i_alt": 105,
+ "opdateret": "2026-10-30T15:15:27.943712+00:00",
+ "artikler_i_alt": 111,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -27,17 +27,17 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 4,
-   "som_ekstra": 0,
+   "i_listen": 3,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "Mistral frigiver Le Chonk som åben model",
-     "dato": "2026-10-29T12:00:07",
+     "dato": "",
      "foerst_set": "2026-10-29T15:28:58",
      "link": "https://mistral.ai/news/mistral-large-4-oss/",
-     "side": "artikel/aa6b452fb675c833.html",
-     "hvor": "forside",
-     "under": ""
+     "side": "",
+     "hvor": "under",
+     "under": "Mistral frigiver sin trillionmodel til download"
     },
     {
      "rubrik": "Mistral og NVIDIA bygger benchmarks til ingeniør-AI",
@@ -68,6 +68,10 @@ window.KILDER_STATUS = {
     }
    ],
    "overlap": [
+    [
+     "TechCrunch AI",
+     1
+    ],
     [
      "Simon Willison AI",
      1
@@ -340,7 +344,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 43,
+   "i_listen": 46,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -378,6 +382,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI træner nu sine stærkeste AI-modeller uden net"
+    },
+    {
+     "rubrik": "DoorDash: Kun få hundrede ordrer fra AI-agenter",
+     "dato": "2026-10-30T13:54:25",
+     "foerst_set": "2026-10-30T15:15:27",
+     "link": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/",
+     "side": "artikel/30b5f07a33cd2b6d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Runware vil producere AI-datacentre på samlebånd",
+     "dato": "2026-10-30T13:00:00",
+     "foerst_set": "2026-10-30T15:15:27",
+     "link": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
+     "side": "artikel/12c5b28f8540d0b9.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "David Durman får AI-fritagelse på job",
@@ -452,38 +474,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Mistral frigiver sin trillionmodel til download",
+     "dato": "2026-10-29T17:00:00",
+     "foerst_set": "2026-10-29T15:28:58",
+     "link": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
+     "side": "artikel/f4d2fa0b488ed855.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Alexa får 100 nye shoppingfunktioner",
      "dato": "2026-10-29T13:00:00",
      "foerst_set": "2026-10-29T15:28:58",
      "link": "https://techcrunch.com/2026/10/29/amazon-updates-alexa-to-help-you-manage-shopping-lists-subscriptions-and-update-delivery-instructions/",
      "side": "artikel/704fa4f310e27738.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Deepgram køber Pipecat-skaberen Daily",
-     "dato": "2026-10-29T13:00:00",
-     "foerst_set": "2026-10-29T15:28:58",
-     "link": "https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/",
-     "side": "artikel/6364a0999f9b1556.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Wabi værdisættes til 1,25 mia. dollar efter skift",
-     "dato": "2026-10-29T14:35:26",
-     "foerst_set": "2026-10-29T15:28:58",
-     "link": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
-     "side": "artikel/cd84a165e5e6ca80.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google sælger nu annoncer i AI Mode globalt",
-     "dato": "2026-10-28T21:48:37",
-     "foerst_set": "2026-10-29T06:21:31",
-     "link": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
-     "side": "artikel/34b53368a5c19b91.html",
      "hvor": "forside",
      "under": ""
     }
@@ -492,6 +496,10 @@ window.KILDER_STATUS = {
     [
      "The Verge AI",
      3
+    ],
+    [
+     "Mistral AI",
+     1
     ],
     [
      "Google Gemini",
@@ -513,7 +521,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 28,
+   "i_listen": 32,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -562,6 +570,42 @@ window.KILDER_STATUS = {
      "under": "Genie 4 kan ændre scenen midt i simulationen"
     },
     {
+     "rubrik": "Wikipedia vil have licens ved AI-gengivelse",
+     "dato": "2026-10-30T05:00:00",
+     "foerst_set": "2026-10-30T15:15:27",
+     "link": "https://www.theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright",
+     "side": "artikel/27c634a128420a0e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Pave Leo XIV: Forbyd dødbringende AI-våben",
+     "dato": "2026-10-30T10:58:06",
+     "foerst_set": "2026-10-30T15:15:27",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai",
+     "side": "artikel/cfe1c65d6cd5d12d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic lover mirakler og advarer om udslettelse",
+     "dato": "2026-10-30T09:11:05",
+     "foerst_set": "2026-10-30T15:15:27",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles",
+     "side": "artikel/97cc063537e04ec4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Altman: OpenAI stopper ikke matematik-offensiv",
+     "dato": "2026-10-30T09:01:14",
+     "foerst_set": "2026-10-30T15:15:27",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1023054/altman-cheeky-pint-ai-math-interview",
+     "side": "artikel/20dbf88916765687.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Microsoft tilbyder 60.000 ansatte fratrædelse",
      "dato": "2026-10-29T12:00:00",
      "foerst_set": "2026-10-29T21:21:56",
@@ -572,7 +616,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "TSMC slipper, datahaller møder modstand",
-     "dato": "2026-10-29T06:00:04",
+     "dato": "2026-10-29T10:00:04",
      "foerst_set": "2026-10-29T15:28:58",
      "link": "https://www.theverge.com/cs/features/1016650/arizona-water-data-center-tsmc",
      "side": "artikel/d5e0e9e01a4703dc.html",
@@ -590,7 +634,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Adam Mosseri: AI-frustrationen vil vokse",
-     "dato": "2026-10-28T19:05:39",
+     "dato": "2026-10-28T23:05:39",
      "foerst_set": "2026-10-29T06:21:31",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity",
      "side": "artikel/5536851b9ba28ab5.html",
@@ -608,7 +652,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Microsoft lukker Copilot på LG- og Samsung-TV",
-     "dato": "2026-10-28T14:36:26",
+     "dato": "2026-10-28T18:36:26",
      "foerst_set": "2026-10-28T21:16:14",
      "link": "https://www.theverge.com/tech/1021143/microsoft-lg-samsung-copilot-ai-assistant-smart-tvs-ending",
      "side": "artikel/3a6e219abc13c7e9.html",
@@ -630,42 +674,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-28T15:23:12",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1020410/meta-launched-ai-pet-journal-app-waddle-world",
      "side": "artikel/6a00cf459c47b5db.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "xAI vil købe huse for at undgå søgsmål",
-     "dato": "2026-10-28T14:44:00",
-     "foerst_set": "2026-10-28T15:23:12",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1020596/xai-mississippi-neighborhood-data-center-lawsuit",
-     "side": "artikel/74376878bbbbb39c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Firefox lader AI udfylde formularer fra dine faner",
-     "dato": "2026-10-27T16:14:18",
-     "foerst_set": "2026-10-27T20:55:19",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms",
-     "side": "artikel/e046e2cf55c147ca.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Anthropic vil børsnoteres med låst bestyrelse",
-     "dato": "2026-10-27T16:51:22",
-     "foerst_set": "2026-10-27T20:55:19",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety",
-     "side": "artikel/34fc514719d0a7a5.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Apple giver Pages og Numbers en AI-assistent",
-     "dato": "2026-10-27T13:50:51",
-     "foerst_set": "2026-10-27T14:52:12",
-     "link": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
-     "side": "artikel/bd2c3c22ddbe56d5.html",
      "hvor": "forside",
      "under": ""
     }

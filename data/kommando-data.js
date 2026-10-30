@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-30T06:33:01.457003+00:00",
+ "genereret": "2026-10-30T15:32:02.508475+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,37 +195,37 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-30T06:19:58.354533+00:00",
-  "antal": 105,
-  "med_billede": 41,
-  "paa_dansk": 105,
+  "opdateret": "2026-10-30T15:15:27.943712+00:00",
+  "antal": 111,
+  "med_billede": 47,
+  "paa_dansk": 111,
   "kategorier": {
    "Lanceringer": 19,
    "Samfund \u0026 etik": 17,
-   "Politik \u0026 jura": 9,
-   "Penge \u0026 marked": 30,
+   "Politik \u0026 jura": 11,
+   "Penge \u0026 marked": 33,
    "Hverdags-AI": 22,
-   "Forskning": 8
+   "Forskning": 9
   },
   "kilder": {
-   "Mistral AI": 4,
+   "TechCrunch AI": 46,
    "Google Gemini": 7,
-   "TechCrunch AI": 43,
    "Ars Technica AI": 7,
-   "Simon Willison AI": 8,
    "MIT Tech Review AI": 6,
-   "The Verge AI": 28,
-   "Hugging Face": 2
+   "Simon Willison AI": 8,
+   "The Verge AI": 32,
+   "Hugging Face": 2,
+   "Mistral AI": 3
   },
   "udvalgte": [
    {
-    "titel": "Le Chonk: Built for Coders, Trusted by Defenders.",
-    "rubrik": "Mistral frigiver Le Chonk som åben model",
-    "link": "https://mistral.ai/news/mistral-large-4-oss/",
-    "side": "artikel/aa6b452fb675c833.html",
+    "titel": "Mistral releases weights for its trillion-parameter AI model, targeting cybersecurity",
+    "rubrik": "Mistral frigiver sin trillionmodel til download",
+    "link": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
+    "side": "artikel/f4d2fa0b488ed855.html",
     "kategori": "Lanceringer",
-    "kilde": "Mistral AI",
-    "dato": "2026-10-29T12:00:07+00:00",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-29T17:00:00+00:00",
     "billede": "data/img/f4fa4d14d5158e74.webp"
    },
    {
@@ -239,17 +239,77 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/4b3d4e5d0a140c8a.jpg"
    },
    {
-    "titel": "Voice AI in vogue: Nvidia releases new open transcription model",
-    "rubrik": "Nvidia frigiver Nemotron 3.5 til 40 sprog",
-    "link": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
-    "side": "artikel/4de33f2bccf585e4.html",
-    "kategori": "Lanceringer",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-28T15:00:00+00:00",
-    "billede": "data/img/d4f8fb42050a7642.webp"
+    "titel": "We urgently need to monitor AI agents’ actions in real time",
+    "rubrik": "OpenAI-agenter kan ikke spores i realtid",
+    "link": "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/",
+    "side": "artikel/468ea3c00c34a75a.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "MIT Tech Review AI",
+    "dato": "2026-10-29T10:11:12+00:00",
+    "billede": "data/img/418bdfd96044597d.webp"
    }
   ],
   "seneste": [
+   {
+    "titel": "Wikipedia’s operator says a bad AI copyright ruling could threaten the open web",
+    "rubrik": "Wikipedia vil have licens ved AI-gengivelse",
+    "link": "https://www.theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright",
+    "side": "artikel/27c634a128420a0e.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-30T05:00:00-04:00",
+    "billede": "data/img/f1ac30d9e8e14c31.webp"
+   },
+   {
+    "titel": "Pope Leo calls for the disarmament of AI: ‘Machines are tools, not persons’",
+    "rubrik": "Pave Leo XIV: Forbyd dødbringende AI-våben",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai",
+    "side": "artikel/cfe1c65d6cd5d12d.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-30T10:58:06-04:00",
+    "billede": "data/img/17d5a1ab24b74f73.jpg"
+   },
+   {
+    "titel": "DoorDash said it’s only received ‘several hundred’ orders from AI agents",
+    "rubrik": "DoorDash: Kun få hundrede ordrer fra AI-agenter",
+    "link": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/",
+    "side": "artikel/30b5f07a33cd2b6d.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-30T13:54:25+00:00",
+    "billede": "data/img/6d2c961277a49540.jpg"
+   },
+   {
+    "titel": "Can AI data centers be mass-produced like cars? This startup aims to find out",
+    "rubrik": "Runware vil producere AI-datacentre på samlebånd",
+    "link": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
+    "side": "artikel/12c5b28f8540d0b9.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-30T13:00:00+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Silicon Valley wants you to invest in miracles",
+    "rubrik": "Anthropic lover mirakler og advarer om udslettelse",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles",
+    "side": "artikel/97cc063537e04ec4.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-30T09:11:05-04:00",
+    "billede": "data/img/39941439aeaf69ce.webp"
+   },
+   {
+    "titel": "Sam Altman sympathizes with mathematicians, but says OpenAI’s math onslaught won’t stop",
+    "rubrik": "Altman: OpenAI stopper ikke matematik-offensiv",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1023054/altman-cheeky-pint-ai-math-interview",
+    "side": "artikel/20dbf88916765687.html",
+    "kategori": "Forskning",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-30T09:01:14-04:00",
+    "billede": "data/img/1d67fbf6040d9752.webp"
+   },
    {
     "titel": "API credits benefit for eligible ChatGPT subscriptions",
     "rubrik": "OpenAI lægger API-kreditter oveni ChatGPT-abonnementer",
@@ -269,6 +329,16 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-10-30T01:20:48+00:00",
     "billede": "data/img/ceb00c080093b420.jpg"
+   },
+   {
+    "titel": "Mistral releases weights for its trillion-parameter AI model, targeting cybersecurity",
+    "rubrik": "Mistral frigiver sin trillionmodel til download",
+    "link": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
+    "side": "artikel/f4d2fa0b488ed855.html",
+    "kategori": "Lanceringer",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-29T17:00:00+00:00",
+    "billede": "data/img/f4fa4d14d5158e74.webp"
    },
    {
     "titel": "You can now generate, preview, and edit documents, PDFs, presentations, spreadsheets, and more directly in Gemini.",
@@ -299,81 +369,11 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-10-29T19:56:19+00:00",
     "billede": ""
-   },
-   {
-    "titel": "Ex-Palantir execs launch Dream with $17M from a16z to build AI world models for construction",
-    "rubrik": "Dream vil lade AI tegne hele bygninger",
-    "link": "https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/",
-    "side": "artikel/b2c76de6c6e17d8b.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-29T16:21:00+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "As search traffic dries up, Reddit announces it’s shifting to a logged-in experience",
-    "rubrik": "Reddit skifter til primært indlogget oplevelse",
-    "link": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
-    "side": "artikel/60144b1613db26a4.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-29T20:08:31+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Meta quietly launches an AI fashion app called Style Sketch",
-    "rubrik": "Style Sketch foreslår outfits fra dit tøj",
-    "link": "https://techcrunch.com/2026/10/29/meta-quietly-launches-an-ai-fashion-app-called-style-sketch/",
-    "side": "artikel/5d9d7808457b118e.html",
-    "kategori": "Lanceringer",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-29T19:14:36+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "US investigated Chinese spy plot aimed at Nvidia CEO",
-    "rubrik": "Alice Huang overvåget i muligt spionforløb",
-    "link": "https://techcrunch.com/2026/10/29/u-s-investigated-chinese-spy-plot-aimed-at-nvidia-ceo/",
-    "side": "artikel/804bc5d490b80e76.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-29T16:42:32+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Rivian expands joint venture with VW to include AI assistant",
-    "rubrik": "Rivian licenserer AI-stemme til Volkswagen",
-    "link": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/",
-    "side": "artikel/223b05929cb398d8.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-29T20:05:47+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Granola crunches up a dictation feature to compete with Wispr",
-    "rubrik": "Granola skriver nu dine ord i alle apps",
-    "link": "https://techcrunch.com/2026/10/29/granola-crunches-up-a-dictation-feature-to-compete-with-wispr/",
-    "side": "artikel/72117db35823a11a.html",
-    "kategori": "Lanceringer",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-29T17:54:38+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Building a multiplayer game world with autonomous Fable-class models",
-    "rubrik": "Spawn lader agenter skrive koden hver time",
-    "link": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
-    "side": "artikel/a0c591335685a06d.html",
-    "kategori": "Forskning",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-10-29T17:00:26+00:00",
-    "billede": ""
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-30T06:19:58.354533+00:00",
+  "opdateret": "2026-10-30T15:15:27.943712+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -385,15 +385,15 @@ window.KOMMANDO_DATA = {
    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
   ],
   "udgivet_udvalg": [
-   "https://mistral.ai/news/mistral-large-4-oss/",
+   "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
-   "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/"
+   "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/"
   ],
   "vaerktoejer": [],
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-10-30T06:19:57.619264+00:00",
+  "opdateret": "2026-10-30T15:15:27.598468+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -749,8 +749,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-30T06:19:58.354533+00:00",
-  "artikler_i_alt": 105,
+  "opdateret": "2026-10-30T15:15:27.943712+00:00",
+  "artikler_i_alt": 111,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -776,17 +776,17 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 15,
-    "i_listen": 4,
-    "som_ekstra": 0,
+    "i_listen": 3,
+    "som_ekstra": 1,
     "seneste": [
      {
       "rubrik": "Mistral frigiver Le Chonk som åben model",
-      "dato": "2026-10-29T12:00:07",
+      "dato": "",
       "foerst_set": "2026-10-29T15:28:58",
       "link": "https://mistral.ai/news/mistral-large-4-oss/",
-      "side": "artikel/aa6b452fb675c833.html",
-      "hvor": "forside",
-      "under": ""
+      "side": "",
+      "hvor": "under",
+      "under": "Mistral frigiver sin trillionmodel til download"
      },
      {
       "rubrik": "Mistral og NVIDIA bygger benchmarks til ingeniør-AI",
@@ -1057,7 +1057,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 43,
+    "i_listen": 46,
     "som_ekstra": 2,
     "seneste": [
      {
@@ -1095,6 +1095,24 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "OpenAI træner nu sine stærkeste AI-modeller uden net"
+     },
+     {
+      "rubrik": "DoorDash: Kun få hundrede ordrer fra AI-agenter",
+      "dato": "2026-10-30T13:54:25",
+      "foerst_set": "2026-10-30T15:15:27",
+      "link": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/",
+      "side": "artikel/30b5f07a33cd2b6d.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Runware vil producere AI-datacentre på samlebånd",
+      "dato": "2026-10-30T13:00:00",
+      "foerst_set": "2026-10-30T15:15:27",
+      "link": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
+      "side": "artikel/12c5b28f8540d0b9.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "David Durman får AI-fritagelse på job",
@@ -1149,24 +1167,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/804bc5d490b80e76.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Rivian licenserer AI-stemme til Volkswagen",
-      "dato": "2026-10-29T20:05:47",
-      "foerst_set": "2026-10-29T21:21:56",
-      "link": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/",
-      "side": "artikel/223b05929cb398d8.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Granola skriver nu dine ord i alle apps",
-      "dato": "2026-10-29T17:54:38",
-      "foerst_set": "2026-10-29T21:21:56",
-      "link": "https://techcrunch.com/2026/10/29/granola-crunches-up-a-dictation-feature-to-compete-with-wispr/",
-      "side": "artikel/72117db35823a11a.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1180,7 +1180,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 28,
+    "i_listen": 32,
     "som_ekstra": 3,
     "seneste": [
      {
@@ -1229,6 +1229,42 @@ window.KOMMANDO_DATA = {
       "under": "Genie 4 kan ændre scenen midt i simulationen"
      },
      {
+      "rubrik": "Wikipedia vil have licens ved AI-gengivelse",
+      "dato": "2026-10-30T05:00:00",
+      "foerst_set": "2026-10-30T15:15:27",
+      "link": "https://www.theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright",
+      "side": "artikel/27c634a128420a0e.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Pave Leo XIV: Forbyd dødbringende AI-våben",
+      "dato": "2026-10-30T10:58:06",
+      "foerst_set": "2026-10-30T15:15:27",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai",
+      "side": "artikel/cfe1c65d6cd5d12d.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Anthropic lover mirakler og advarer om udslettelse",
+      "dato": "2026-10-30T09:11:05",
+      "foerst_set": "2026-10-30T15:15:27",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles",
+      "side": "artikel/97cc063537e04ec4.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Altman: OpenAI stopper ikke matematik-offensiv",
+      "dato": "2026-10-30T09:01:14",
+      "foerst_set": "2026-10-30T15:15:27",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1023054/altman-cheeky-pint-ai-math-interview",
+      "side": "artikel/20dbf88916765687.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Microsoft tilbyder 60.000 ansatte fratrædelse",
       "dato": "2026-10-29T12:00:00",
       "foerst_set": "2026-10-29T21:21:56",
@@ -1239,7 +1275,7 @@ window.KOMMANDO_DATA = {
      },
      {
       "rubrik": "TSMC slipper, datahaller møder modstand",
-      "dato": "2026-10-29T06:00:04",
+      "dato": "2026-10-29T10:00:04",
       "foerst_set": "2026-10-29T15:28:58",
       "link": "https://www.theverge.com/cs/features/1016650/arizona-water-data-center-tsmc",
       "side": "artikel/d5e0e9e01a4703dc.html",
@@ -1252,42 +1288,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-29T15:28:58",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1022193/nyt-cooking-app-ai-recipe-modification-tool",
       "side": "artikel/d4f8aae48adc9cf3.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Adam Mosseri: AI-frustrationen vil vokse",
-      "dato": "2026-10-28T19:05:39",
-      "foerst_set": "2026-10-29T06:21:31",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity",
-      "side": "artikel/5536851b9ba28ab5.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Gemini i Chrome udfylder formularer med Gmail-data",
-      "dato": "2026-10-28T17:00:00",
-      "foerst_set": "2026-10-28T21:16:14",
-      "link": "https://www.theverge.com/tech/1020626/chrome-enhanced-autofill-gmail-forms-gemini-personal-intelligence",
-      "side": "artikel/4ec46b596fc84ced.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Microsoft lukker Copilot på LG- og Samsung-TV",
-      "dato": "2026-10-28T14:36:26",
-      "foerst_set": "2026-10-28T21:16:14",
-      "link": "https://www.theverge.com/tech/1021143/microsoft-lg-samsung-copilot-ai-assistant-smart-tvs-ending",
-      "side": "artikel/3a6e219abc13c7e9.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Abbott i modvind: texanerne afviser data-centre",
-      "dato": "2026-10-28T12:00:00",
-      "foerst_set": "2026-10-28T15:23:12",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1018676/data-center-midterm-election-energy-water-texas",
-      "side": "artikel/a03c4a51a28af232.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1536,7 +1536,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-30T06:32:57.116268+00:00",
+  "opdateret": "2026-10-30T15:31:54.826546+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",

@@ -1,23 +1,10 @@
 {
- "rubrik": "Modelbølge: åbne vægte, cyberforsvar og verdenssimulationer",
- "indledning": "Ugen blev defineret af en tæt række modeludgivelser, hvor åbenhed, specialisering og adgang var de skarpe skillelinjer.",
+ "rubrik": "Frontmodeller, åbne vægte og kampen om adgang",
+ "indledning": "Frontmodellerne rykkede frem på cyberforsvar, computerbrug og simulering – men adgangen og prisen på regnekraft blev ugens egentlige skillelinje.",
  "historier": [
   {
-   "overskrift": "Mistral frigiver Le Chonk med åbne vægte",
-   "tekst": "Mistral har frigivet vægtene til Mistral Large 4, også kaldet Le Chonk. Den har 1 billion parametre, er multimodal og har tre reasoning-tilstande. På coding-tests fører den blandt åbne modeller, og på cyberforsvar scorer den 51%. Booz Allen fremhæver, at den kan køres på egne servere.",
-   "link": "https://mistral.ai/news/mistral-large-4-oss/",
-   "kategori": "Lanceringer",
-   "billede": "data/img/f4fa4d14d5158e74.webp",
-   "dato": "2026-10-29T12:00:07+00:00",
-   "andre": [],
-   "titel": "Le Chonk: Built for Coders, Trusted by Defenders.",
-   "rubrik": "Mistral frigiver Le Chonk som åben model",
-   "resume_da": "Le Chonk er nu tilgængelig med åbne vægte og fører open-weight coding og forsvar med lavere token-forbrug.",
-   "artikel_signatur": "9d647a6e7c8e3bc15acff07cfe2c4c9e6c034661417d50850dd0bc7af1630d15"
-  },
-  {
-   "overskrift": "Gemini 4 Carbon topper cyberbenchmarks",
-   "tekst": "Google annoncerede Gemini 4 Carbon som sin stærkeste model til cyberforsvar og langvarige opgaver. Den topper Artificial Analysis Intelligence Index med 59 og får 88,2% i SEC-bench Pro. Foreløbig får kun udvalgte cyberforsvarere adgang gennem Fairwind Program. Prisen er 2 og 10 dollar per million tokens.",
+   "overskrift": "Google holder Gemini 4 Carbon bag lukket dør",
+   "tekst": "Google præsenterede 28. oktober Gemini 4 Carbon som sin stærkeste model til dato og sin hidtil bedste på cyberforsvar. Ifølge Google fører den Artificial Analysis Intelligence Index med 59 og scorer 88,2 procent i SEC-bench Pro. Modellen er foreløbig kun åben for en mindre gruppe cyberforsvarere; Google lover bred adgang uden dato.",
    "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
    "kategori": "Lanceringer",
    "billede": "data/img/4b3d4e5d0a140c8a.jpg",
@@ -54,8 +41,43 @@
    "artikel_signatur": "d86b4dd0b49420ad7bce6bdb6f852424fa8419965d8d3d1a95f3090d6c08f3cc"
   },
   {
-   "overskrift": "Genie 4 kan skifte scene og tilføje lyd",
-   "tekst": "Google DeepMind sendte verdensmodellen Genie 4 ud i forskningspreview. Den kan skifte scene midt i simulationen, tilføjer realtidslyd og holder sammen i op til to minutter. Gemini fungerer som instruktør, og et forsøg med Gemini 4 Argon peger på simulation som træningsmiljø for robotter.",
+   "overskrift": "Mistral frigiver trillionmodel til download",
+   "tekst": "Mistral frigav 29. oktober vægtene – de filer, der gør modellen kørbar – til Mistral Large 4, som selskabet kalder en model med 1.000 milliarder parametre. De ligger på Hugging Face, så virksomheder og myndigheder selv kan køre den. Mistral hævder, at modellen især er stærk til cyberforsvar og bruger 47 procent færre tokens end GLM-5.3 pr. opgave.",
+   "link": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
+   "kategori": "Lanceringer",
+   "billede": "data/img/f4fa4d14d5158e74.webp",
+   "dato": "2026-10-29T17:00:00+00:00",
+   "andre": [
+    {
+     "kilde": "Mistral AI",
+     "link": "https://mistral.ai/news/mistral-large-4-oss/",
+     "rubrik": "Mistral frigiver Le Chonk som åben model",
+     "resume_da": "Le Chonk er nu tilgængelig med åbne vægte og fører open-weight coding og forsvar med lavere token-forbrug.",
+     "dato": "2026-10-29T12:00:07+00:00",
+     "foerst_set": "2026-10-29T15:28:58.929586+00:00"
+    }
+   ],
+   "titel": "Mistral releases weights for its trillion-parameter AI model, targeting cybersecurity",
+   "rubrik": "Mistral frigiver sin trillionmodel til download",
+   "resume_da": "Vægtene til Mistral Large 4 ligger nu på Hugging Face, så virksomheder og myndigheder selv kan køre modellen – især til cyberforsvar.",
+   "artikel_signatur": "dd9c07c8029ac10cf943afbfc85765cf5e9a7066ff368ae2ddedc13d11d9e8f7"
+  },
+  {
+   "overskrift": "GPT-6.1 Terra er OpenAIs billigere mellemvej",
+   "tekst": "OpenAI lancerede GPT-6.1 Terra som en hurtigere mellemklassemodel med vægt på at fortolke billeder og handle på en computer. Den koster 1 dollar per million input-tokens og 5 dollar per million output-tokens – omtrent halvdelen af GPT-6.1 Sol og GPT-5.6 Terra. En OpenAI-medarbejder vurderer ifølge Simon Willison, at Terra er stærk til teknisk kommunikation, men svagere på andre områder.",
+   "link": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
+   "kategori": "Lanceringer",
+   "billede": "data/img/ef6d64be6cb0ecf1.jpg",
+   "dato": "2026-10-26T23:53:07+00:00",
+   "andre": [],
+   "titel": "GPT-6.1 Terra",
+   "rubrik": "GPT-6.1 Terra kan se og bruge computeren",
+   "resume_da": "OpenAI lancerer GPT-6.1 Terra som en mellemklassemodel med fokus på visuel ræsonnering og computerbrug, prissat mellem GPT-6 Luna og GPT-6.1 Sol.",
+   "artikel_signatur": "09ca07dba964a4f0a8c263e94f4fcbf04ee20e23740e58473f0724eb9a435e2d"
+  },
+  {
+   "overskrift": "Genie 4 kan skifte scene midt i simulationen",
+   "tekst": "Google DeepMind sendte 27. oktober verdensmodellen Genie 4 ud i forskningspreview – en model, der genererer interaktive omgivelser i realtid. Den kan bygge verdener fra tekst eller billeder, skifte scene midt i simulationen og tilføje realtidslyd. Simulationer holder nu op til to minutter, det dobbelte af Genie 3. Adgangen er begrænset til udvalgte testbrugere og senere AI Ultra-abonnenter.",
    "link": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
    "kategori": "Lanceringer",
    "billede": "data/img/aa4a541db90e5f66.jpg",
@@ -76,8 +98,8 @@
    "artikel_signatur": "c6f963dbb08ab40c17e1cd09eb76fc8d0e20b8f76c3ae4850585b49b0e286831"
   },
   {
-   "overskrift": "Kimi K3.1 Pro nærmer sig fronten til halv pris",
-   "tekst": "Moonshot lagde Kimi K3.1 Pro på API med score 55 mod Claude Opus 5.5's 58. Den koster 2 og 10 dollar per million tokens, halvdelen af Opus 5.5. Vægtene er ikke frigivet endnu, men Moonshot lover fulde vægte senest 4. november 2026.",
+   "overskrift": "Kimi K3.1 Pro lover frontniveau til halv pris",
+   "tekst": "Moonshot lagde 23. oktober Kimi K3.1 Pro på sit API og lovede fulde vægte senest 4. november. Artificial Analysis giver modellen 55 point mod Claude Opus 5.5's 58, og prisen er 2 dollar per million input-tokens og 10 dollar per million output-tokens. Vægtene er altså ikke frigivet endnu; løftet er centralt for historien.",
    "link": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
    "kategori": "Lanceringer",
    "billede": "data/img/6268a306ed8c3a40.jpg",
@@ -89,74 +111,52 @@
    "artikel_signatur": "f073887eb98965099c6700d160d2165b104306f7c846c98e41bca7d347eacab8"
   },
   {
-   "overskrift": "OpenAI hævder at have modbevist ETH",
-   "tekst": "OpenAI hævder, at selskabets model har modbevist Exponential Time Hypothesis fra 1999 og løst flere matematiske formodninger. Et Lean-bevis er offentliggjort, og en arbejdsgruppe skal granske resultatet. Fysikresultatet er endnu ikke offentliggjort i fuld længde.",
-   "link": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
-   "kategori": "Forskning",
-   "billede": "",
-   "dato": "2026-10-27T17:08:08+00:00",
-   "andre": [],
-   "titel": "Frontier AI labs say their models refuted the Exponential Time Hypothesis. What does that mean?",
-   "rubrik": "OpenAI hævder modeller har modbevist ETH",
-   "resume_da": "Anthropic har også offentliggjort et modbevis, og dataloger vil undersøge konsekvenser for P versus NP og kryptografi.",
-   "artikel_signatur": "c21970cf3fe2d1378df322820667b0e96d138e662ed8e246304805411445b557"
-  },
-  {
-   "overskrift": "Anthropic vil på Nasdaq som ANT",
-   "tekst": "Anthropic har indsendt S-1 og vil noteres på Nasdaq som ANT. Prospektet viser 16,3 mia. dollar i omsætning i første halvår 2026, et nettounderskud på 80,7 mia. dollar og forpligtelser til regnekraft for hundreder af milliarder dollar frem mod 2033. Stifterne beholder 50,1% af stemmerne.",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
+   "overskrift": "Anthropic går mod børsen med stifterne ved magten",
+   "tekst": "Anthropic indgav 26. oktober sit børsprospekt til SEC og vil noteres på Nasdaq som ANT. Første halvår gav 16,3 milliarder dollar i omsætning, men et nettounderskud på 80,7 milliarder dollar, især fra regnskabsmæssige omkostninger ved konvertibel gæld – lån, der kan blive aktier. Stifterne beholder 50,1 procent af stemmerne via Founder LLC. Selskabet har samtidig forpligtet sig til enorme regnekraftkøb.",
+   "link": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
    "kategori": "Penge & marked",
-   "billede": "data/img/0d5a5d0b470f75ea.jpg",
-   "dato": "2026-10-26T13:32:49+00:00",
-   "andre": [
-    {
-     "kilde": "TechCrunch AI",
-     "link": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
-     "rubrik": "Flertal af store Anthropic-kunder bruger Claude-apps",
-     "resume_da": "S-1 viser 11.900 kunder over 100.000 dollar og cirka 900 procent i nettoomsætningsretention. Anthropic sælger flere produkter til de samme kunder.",
-     "dato": "2026-10-26T16:49:42+00:00",
-     "foerst_set": "2026-10-26T21:09:48.052336+00:00"
-    }
-   ],
-   "titel": "Anthropic’s IPO filing lays out a plan to ‘revolutionize every area of human endeavor’ with AI",
-   "rubrik": "Anthropic vil på Nasdaq med ticker ANT",
-   "resume_da": "Anthropic har indsendt sin børsprospekt og vil noteres på Nasdaq som ANT. Bag planen ligger et underskud på 80,7 milliarder dollar og milliardaftaler om regnekraft.",
-   "artikel_signatur": "422d1adac6586bcf7481fc0d059863eef8a88f28bb37579816eb52ae41a47c1d"
+   "billede": "data/img/30f185557210f86e.jpg",
+   "dato": "2026-10-26T14:35:22+00:00",
+   "andre": [],
+   "titel": "Anthropic officially files for its public debut",
+   "rubrik": "Anthropic søger børsnotering med stifterne ved magten",
+   "resume_da": "Omsætningen i første halvår 2026 lander på 16,3 mia. dollar mod 1,2 mia. året før, og driftsunderskuddet er skrumpet til 693 mio. dollar.",
+   "artikel_signatur": "2606c97090e25780c290a622294c3a54c21ff2350067a9b021f232b3c0f8abfe"
   }
  ],
  "overblik": [
   {
-   "tekst": "Ugen bød på fem markante modeludgivelser, men de peger i hver sin retning. Mistral Large 4 er nu tilgængelig med åbne vægte og fører blandt åbne modeller på coding, mens Kimi K3.1 Pro nærmer sig fronten til halv pris og lover vægte 4. november. Google vælger en anden vej med Gemini 4 Carbon: en specialiseret cyberforsvarsmodel, der topper flere benchmarks, men foreløbig kun er åben for udvalgte forsvarere. Fælles er, at adgang og vægte er blevet de skarpe konkurrenceparametre.",
+   "tekst": "Den vigtigste forandring var ikke én model, men at fronten blev flyttet på både evner og adgang. Googles Gemini 4 Carbon blev præsenteret som selskabets stærkeste model med topresultater i Googles egne cyberbenchmarks, men er foreløbig kun åben for udvalgte cyberforsvarere. Samme uge frigav Mistral vægtene til Mistral Large 4, så virksomheder og myndigheder selv kan køre en model med 1.000 milliarder parametre. Den ene lukker adgangen indtil videre; den anden gør modellen downloadbar. Det gør sikkerhed og kontrol til mere end et teknisk spørgsmål: Hvem må bruge frontmodellerne, og hvem kan trække adgangen tilbage?",
    "links": [
-    "https://mistral.ai/news/mistral-large-4-oss/",
-    "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
-    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+    "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
    ]
   },
   {
-   "tekst": "Samtidig flytter Genie 4 grænsen for, hvad en model kan simulere. Den kan skifte scene midt i forløbet, tilføje realtidslyd og holde en verden sammen i op til to minutter, og et forsøg med Gemini 4 Argon peger på simulation som træningsmiljø for robotter. OpenAIs påstand om at have modbevist ETH er en anden slags kapabilitetsdemonstration: her er det ikke et produkt, men et matematisk resultat, som eksterne forskere nu skal granske.",
+   "tekst": "Pris og specialisering blev en anden skillelinje. OpenAIs GPT-6.1 Terra er ikke den stærkeste model, men en billigere mellemvej med computerbrug og visuel ræsonnering til 1 og 5 dollar per million tokens. Moonshots Kimi K3.1 Pro lover næsten frontniveau til 2 og 10 dollar, men vægtene er først lovet senest 4. november. Begge flytter konkurrencen fra “bedst i alt” til “god nok til opgaven og prisen”.",
+   "links": [
+    "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
+    "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/"
+   ]
+  },
+  {
+   "tekst": "Samtidig viste Genie 4, at næste skridt ikke kun handler om tekst og kode. Googles verdensmodel kan nu bygge interaktive verdener med lyd og skifte scenen undervejs, men kun i forskningspreview og med omtrent to minutters sammenhæng. Bag kulissen kræver den slags modeller og cybermodeller enorm regnekraft. Anthropics børsprospekt illustrerer regningen: 16,3 milliarder dollar i halvårsomsætning, et nettounderskud på 80,7 milliarder dollar og langsigtede regnekraftforpligtelser i hundreder af milliarder. Evnerne vokser, men adgang, pris og kapital binder dem sammen.",
    "links": [
     "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
-    "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/"
-   ]
-  },
-  {
-   "tekst": "Bag udgivelserne ligger et stadigt større kapitalbehov. Anthropics børsprospekt viser 16,3 mia. dollar i omsætning i første halvår, men også et nettounderskud på 80,7 mia. dollar og forpligtelser til regnekraft for hundreder af milliarder dollar frem mod 2033. Stifterne beholder 50,1% af stemmerne. Det gør børsnoteringen til ugens finansielle modstykke til modelbølgen: modellerne bliver flere og mere specialiserede, mens regningen for at træne og køre dem vokser.",
-   "links": [
-    "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec"
+    "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/"
    ]
   }
  ],
- "tendens": "Kimi K3.1 Pro: Moonshot har lovet fulde vægte senest 4. november 2026. Det er uafklaret, om frigivelsen holder, og om vægtene yder som API-versionen.",
+ "tendens": "Et dokumenteret punkt at følge: Om Moonshot faktisk frigiver Kimi K3.1 Pro-vægtene senest 4. november, og om Google åbner Gemini 4 Carbon for flere end den lille gruppe cyberforsvarere. Begge er annoncerede løfter, ikke gennemførte udrulninger.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "69248e7b25b94017068a6fa7694ae6c224256e91be0e0b59e5653e057ee6a2d4",
- "dato": "2026-10-30T06:31:17.774370+00:00",
- "opdateret": "2026-10-30T06:31:17.774370+00:00",
+ "basis_signatur": "47d6d2eb156887f74de48bd26d1c7749485b40179129141787ccff171f27fe03",
+ "dato": "2026-10-30T15:30:38.193170+00:00",
+ "opdateret": "2026-10-30T15:30:38.193170+00:00",
  "periode_fra": "2026-10-22T22:00:00+00:00",
  "periode_til": "2026-10-29T23:00:00+00:00",
  "stats": {
   "historier": 91,
-  "kilder": 8
+  "kilder": 7
  }
 }
