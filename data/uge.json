@@ -1,10 +1,23 @@
 {
- "rubrik": "Modelkapløbet breder sig – og Anthropic går på børs",
- "indledning": "De syv dage blev et bredt modelkapløb: Google og OpenAI skærpede fronten, Moonshot pressede prisen, og nye modeller tog fat på simulation og design. Samtidig blev kapitalbehovet bag AI synligt i Anthropics børsplan.",
+ "rubrik": "Modelbølge: åbne vægte, cyberforsvar og verdenssimulationer",
+ "indledning": "Ugen blev defineret af en tæt række modeludgivelser, hvor åbenhed, specialisering og adgang var de skarpe skillelinjer.",
  "historier": [
   {
-   "overskrift": "Gemini 4 Carbon fører testene i sårbarhedsjagt",
-   "tekst": "Google annoncerede Gemini 4 Carbon som sin stærkeste model til dato. Den topper Artificial Analysis Intelligence Index med 59 og får 88,2 procent i SEC-bench Pro til at finde sårbarheder. Carbon er foreløbig kun åben for udvalgte cyberforsvarere gennem Fairwind Program; Google lover bred adgang »så hurtigt som muligt« uden dato.",
+   "overskrift": "Mistral frigiver Le Chonk med åbne vægte",
+   "tekst": "Mistral har frigivet vægtene til Mistral Large 4, også kaldet Le Chonk. Den har 1 billion parametre, er multimodal og har tre reasoning-tilstande. På coding-tests fører den blandt åbne modeller, og på cyberforsvar scorer den 51%. Booz Allen fremhæver, at den kan køres på egne servere.",
+   "link": "https://mistral.ai/news/mistral-large-4-oss/",
+   "kategori": "Lanceringer",
+   "billede": "data/img/f4fa4d14d5158e74.webp",
+   "dato": "2026-10-29T12:00:07+00:00",
+   "andre": [],
+   "titel": "Le Chonk: Built for Coders, Trusted by Defenders.",
+   "rubrik": "Mistral frigiver Le Chonk som åben model",
+   "resume_da": "Le Chonk er nu tilgængelig med åbne vægte og fører open-weight coding og forsvar med lavere token-forbrug.",
+   "artikel_signatur": "9d647a6e7c8e3bc15acff07cfe2c4c9e6c034661417d50850dd0bc7af1630d15"
+  },
+  {
+   "overskrift": "Gemini 4 Carbon topper cyberbenchmarks",
+   "tekst": "Google annoncerede Gemini 4 Carbon som sin stærkeste model til cyberforsvar og langvarige opgaver. Den topper Artificial Analysis Intelligence Index med 59 og får 88,2% i SEC-bench Pro. Foreløbig får kun udvalgte cyberforsvarere adgang gennem Fairwind Program. Prisen er 2 og 10 dollar per million tokens.",
    "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
    "kategori": "Lanceringer",
    "billede": "data/img/4b3d4e5d0a140c8a.jpg",
@@ -41,56 +54,8 @@
    "artikel_signatur": "d86b4dd0b49420ad7bce6bdb6f852424fa8419965d8d3d1a95f3090d6c08f3cc"
   },
   {
-   "overskrift": "GPT-6.1 Terra kan se og bruge computeren",
-   "tekst": "OpenAI introducerede GPT-6.1 Terra som en hurtig mellemklassemodel med særligt fokus på visuel ræsonnering og computerbrug. Den koster 1 dollar per million input-tokens og 5 dollar per million output-tokens, cirka halvdelen af GPT-6.1 Sol. OpenAI kalder den et betydeligt skridt op fra GPT-5.6 Terra, men den er ikke bedre end Sol på alle områder.",
-   "link": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
-   "kategori": "Lanceringer",
-   "billede": "data/img/ef6d64be6cb0ecf1.jpg",
-   "dato": "2026-10-26T23:53:07+00:00",
-   "andre": [],
-   "titel": "GPT-6.1 Terra",
-   "rubrik": "GPT-6.1 Terra kan se og bruge computeren",
-   "resume_da": "OpenAI lancerer GPT-6.1 Terra som en mellemklassemodel med fokus på visuel ræsonnering og computerbrug, prissat mellem GPT-6 Luna og GPT-6.1 Sol.",
-   "artikel_signatur": "09ca07dba964a4f0a8c263e94f4fcbf04ee20e23740e58473f0724eb9a435e2d"
-  },
-  {
-   "overskrift": "Kimi K3.1 Pro når fronten til halv pris",
-   "tekst": "Moonshot lagde Kimi K3.1 Pro på API med en score på 55 i Artificial Analysis, kun bag Claude Opus 5.5 med 58. Prisen er 2 dollar per million input-tokens og 10 dollar per million output-tokens, halvdelen af Opus 5.5. Moonshot lover at frigive de fulde vægte senest 4. november 2026; de er ikke ude endnu.",
-   "link": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
-   "kategori": "Lanceringer",
-   "billede": "data/img/6268a306ed8c3a40.jpg",
-   "dato": "2026-10-23T19:40:54+00:00",
-   "andre": [],
-   "titel": "Introducing Kimi K3.1 Pro",
-   "rubrik": "Kimi K3.1 Pro når fronten til halv pris",
-   "resume_da": "Moonshot sender Kimi K3.1 Pro på API med score 55 mod Opus 5.5's 58 og løfte om fulde vægte senest 4. november 2026.",
-   "artikel_signatur": "f073887eb98965099c6700d160d2165b104306f7c846c98e41bca7d347eacab8"
-  },
-  {
-   "overskrift": "Canva Craft planlægger billedet først",
-   "tekst": "Canva lancerede sin første egne billedmodel, Craft. Den lægger en plan for designet, før den genererer billedet, og skal især kunne lave læselig tekst og præcis placering i op til 2K og over 30 formater. Craft er tilgængelig nu for alle brugere via Dream Lab; hurtigere varianter er annonceret senere.",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
-   "kategori": "Lanceringer",
-   "billede": "data/img/7f16df291f423c60.jpg",
-   "dato": "2026-10-22T21:51:25+00:00",
-   "andre": [
-    {
-     "kilde": "TechCrunch AI",
-     "link": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
-     "rubrik": "Canva Craft laver billeder med læsbar tekst",
-     "resume_da": "Designplatformen sender sin egen model ud til alle brugere fra fanen Dream Lab og lover skarpe detaljer, læsbar tekst og redigering, der ikke rører resten af billedet.",
-     "dato": "2026-10-22T19:00:00+00:00",
-     "foerst_set": "2026-10-22T20:16:04.203492+00:00"
-    }
-   ],
-   "titel": "Canva’s first AI image model plans designs before generating them",
-   "rubrik": "Canva Craft planlægger billedet først",
-   "resume_da": "Den nye model tegner en plan, før den genererer, og skal kunne lave læselig tekst og præcis placering i op til 2K og over 30 formater.",
-   "artikel_signatur": "15cacb220f7e713dbfb6ff6b28f285d4a455a590f1c816fb4f312aaff3444f6b"
-  },
-  {
-   "overskrift": "Genie 4 kan ændre scenen midt i simulationen",
-   "tekst": "Google DeepMind sendte verdensmodellen Genie 4 ud i forskningspreview. Den kan bygge interaktive verdener fra tekst eller billeder, skifte scene midt i simulationen og tilføje realtidslyd. En simulation holder nu sammen i op til to minutter, det dobbelte af Genie 3. Adgangen er foreløbig begrænset til udvalgte testbrugere.",
+   "overskrift": "Genie 4 kan skifte scene og tilføje lyd",
+   "tekst": "Google DeepMind sendte verdensmodellen Genie 4 ud i forskningspreview. Den kan skifte scene midt i simulationen, tilføjer realtidslyd og holder sammen i op til to minutter. Gemini fungerer som instruktør, og et forsøg med Gemini 4 Argon peger på simulation som træningsmiljø for robotter.",
    "link": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
    "kategori": "Lanceringer",
    "billede": "data/img/aa4a541db90e5f66.jpg",
@@ -111,8 +76,34 @@
    "artikel_signatur": "c6f963dbb08ab40c17e1cd09eb76fc8d0e20b8f76c3ae4850585b49b0e286831"
   },
   {
-   "overskrift": "Anthropic vil på Nasdaq med ticker ANT",
-   "tekst": "Anthropic har indsendt sit S-1 til SEC og vil noteres på Nasdaq som ANT. I første halvår 2026 var omsætningen 16,3 mia. dollar, mens nettoresultatet var minus 80,7 mia. dollar, især på grund af regnskabsmæssige omkostninger ved konvertibel gæld. Stifterne vil kontrollere 50,1 procent af stemmerne gennem Founder LLC.",
+   "overskrift": "Kimi K3.1 Pro nærmer sig fronten til halv pris",
+   "tekst": "Moonshot lagde Kimi K3.1 Pro på API med score 55 mod Claude Opus 5.5's 58. Den koster 2 og 10 dollar per million tokens, halvdelen af Opus 5.5. Vægtene er ikke frigivet endnu, men Moonshot lover fulde vægte senest 4. november 2026.",
+   "link": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+   "kategori": "Lanceringer",
+   "billede": "data/img/6268a306ed8c3a40.jpg",
+   "dato": "2026-10-23T19:40:54+00:00",
+   "andre": [],
+   "titel": "Introducing Kimi K3.1 Pro",
+   "rubrik": "Kimi K3.1 Pro når fronten til halv pris",
+   "resume_da": "Moonshot sender Kimi K3.1 Pro på API med score 55 mod Opus 5.5's 58 og løfte om fulde vægte senest 4. november 2026.",
+   "artikel_signatur": "f073887eb98965099c6700d160d2165b104306f7c846c98e41bca7d347eacab8"
+  },
+  {
+   "overskrift": "OpenAI hævder at have modbevist ETH",
+   "tekst": "OpenAI hævder, at selskabets model har modbevist Exponential Time Hypothesis fra 1999 og løst flere matematiske formodninger. Et Lean-bevis er offentliggjort, og en arbejdsgruppe skal granske resultatet. Fysikresultatet er endnu ikke offentliggjort i fuld længde.",
+   "link": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
+   "kategori": "Forskning",
+   "billede": "",
+   "dato": "2026-10-27T17:08:08+00:00",
+   "andre": [],
+   "titel": "Frontier AI labs say their models refuted the Exponential Time Hypothesis. What does that mean?",
+   "rubrik": "OpenAI hævder modeller har modbevist ETH",
+   "resume_da": "Anthropic har også offentliggjort et modbevis, og dataloger vil undersøge konsekvenser for P versus NP og kryptografi.",
+   "artikel_signatur": "c21970cf3fe2d1378df322820667b0e96d138e662ed8e246304805411445b557"
+  },
+  {
+   "overskrift": "Anthropic vil på Nasdaq som ANT",
+   "tekst": "Anthropic har indsendt S-1 og vil noteres på Nasdaq som ANT. Prospektet viser 16,3 mia. dollar i omsætning i første halvår 2026, et nettounderskud på 80,7 mia. dollar og forpligtelser til regnekraft for hundreder af milliarder dollar frem mod 2033. Stifterne beholder 50,1% af stemmerne.",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
    "kategori": "Penge & marked",
    "billede": "data/img/0d5a5d0b470f75ea.jpg",
@@ -135,37 +126,37 @@
  ],
  "overblik": [
   {
-   "tekst": "Fronten blev mere specialiseret: Google annoncerede Gemini 4 Carbon som sin stærkeste model med fokus på cyberforsvar, men kun udvalgte forsvarere får adgang. OpenAI placerede GPT-6.1 Terra mellem Luna og Sol med vægt på visuel ræsonnering og computerbrug; den er billigere end Sol, men ikke bedre på alle områder. Moonshot pressede samtidig prisen med Kimi K3.1 Pro, der scorer 55 mod Opus 5.5's 58 og koster halvdelen – vægtene er dog kun lovet senest 4. november.",
+   "tekst": "Ugen bød på fem markante modeludgivelser, men de peger i hver sin retning. Mistral Large 4 er nu tilgængelig med åbne vægte og fører blandt åbne modeller på coding, mens Kimi K3.1 Pro nærmer sig fronten til halv pris og lover vægte 4. november. Google vælger en anden vej med Gemini 4 Carbon: en specialiseret cyberforsvarsmodel, der topper flere benchmarks, men foreløbig kun er åben for udvalgte forsvarere. Fælles er, at adgang og vægte er blevet de skarpe konkurrenceparametre.",
    "links": [
-    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
-    "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
-    "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/"
+    "https://mistral.ai/news/mistral-large-4-oss/",
+    "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
    ]
   },
   {
-   "tekst": "Canva viste en anden vej med Craft, sin første egne billedmodel, der lægger en plan før genereringen og er tilgængelig nu. Google DeepMind tog fat på simulation med Genie 4, der kan styres midt i forløbet, får realtidslyd og holder sammen i op til to minutter. Det er stadig et forskningspreview, og holdet erkender, at detaljer driver. Fælles er, at modellerne nu sælges på konkrete arbejdsopgaver: design, computerbrug, sikkerhed og simulation.",
+   "tekst": "Samtidig flytter Genie 4 grænsen for, hvad en model kan simulere. Den kan skifte scene midt i forløbet, tilføje realtidslyd og holde en verden sammen i op til to minutter, og et forsøg med Gemini 4 Argon peger på simulation som træningsmiljø for robotter. OpenAIs påstand om at have modbevist ETH er en anden slags kapabilitetsdemonstration: her er det ikke et produkt, men et matematisk resultat, som eksterne forskere nu skal granske.",
    "links": [
-    "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
-    "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/"
+    "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
+    "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/"
    ]
   },
   {
-   "tekst": "Bag lanceringerne ligger et voksende kapitalbehov. Anthropic har indsendt S-1 med ticker ANT, en omsætning på 16,3 mia. dollar i første halvår og et nettoresultat på minus 80,7 mia. dollar, især fra regnskabsmæssige omkostninger ved konvertibel gæld. Selskabet binder sig samtidig til store regnekraftsaftaler, og stifterne beholder 50,1 procent af stemmerne. Børsplanen viser, hvor dyr modelkapløbet er blevet.",
+   "tekst": "Bag udgivelserne ligger et stadigt større kapitalbehov. Anthropics børsprospekt viser 16,3 mia. dollar i omsætning i første halvår, men også et nettounderskud på 80,7 mia. dollar og forpligtelser til regnekraft for hundreder af milliarder dollar frem mod 2033. Stifterne beholder 50,1% af stemmerne. Det gør børsnoteringen til ugens finansielle modstykke til modelbølgen: modellerne bliver flere og mere specialiserede, mens regningen for at træne og køre dem vokser.",
    "links": [
     "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec"
    ]
   }
  ],
- "tendens": "",
+ "tendens": "Kimi K3.1 Pro: Moonshot har lovet fulde vægte senest 4. november 2026. Det er uafklaret, om frigivelsen holder, og om vægtene yder som API-versionen.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "7868bd02480e95c0d8f558a9e076b47a38a4c7f9041c669a2bce9a6e987dfe51",
- "dato": "2026-10-29T21:38:04.412457+00:00",
- "opdateret": "2026-10-29T21:38:04.412457+00:00",
- "periode_fra": "2026-10-21T22:00:00+00:00",
- "periode_til": "2026-10-28T23:00:00+00:00",
+ "basis_signatur": "69248e7b25b94017068a6fa7694ae6c224256e91be0e0b59e5653e057ee6a2d4",
+ "dato": "2026-10-30T06:31:17.774370+00:00",
+ "opdateret": "2026-10-30T06:31:17.774370+00:00",
+ "periode_fra": "2026-10-22T22:00:00+00:00",
+ "periode_til": "2026-10-29T23:00:00+00:00",
  "stats": {
-  "historier": 90,
-  "kilder": 7
+  "historier": 91,
+  "kilder": 8
  }
 }
