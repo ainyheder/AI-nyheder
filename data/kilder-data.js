@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-31T14:42:12.491704+00:00",
- "artikler_i_alt": 123,
+ "opdateret": "2026-10-31T20:14:09.467780+00:00",
+ "artikler_i_alt": 125,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -344,7 +344,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 51,
+   "i_listen": 52,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -382,6 +382,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Anthropic vil på Nasdaq med ticker ANT"
+    },
+    {
+     "rubrik": "OpenAI sænker sit mål til 20 milliarder dollars",
+     "dato": "2026-10-31T16:12:55",
+     "foerst_set": "2026-10-31T20:14:09",
+     "link": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/",
+     "side": "artikel/149be8f7454bcbde.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Alphabet og Amazon i minus på AI",
@@ -481,15 +490,6 @@ window.KILDER_STATUS = {
      "side": "artikel/db83db5c214c0a39.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Dream vil lade AI tegne hele bygninger",
-     "dato": "2026-10-29T16:21:00",
-     "foerst_set": "2026-10-29T21:21:56",
-     "link": "https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/",
-     "side": "artikel/b2c76de6c6e17d8b.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -521,7 +521,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 32,
+   "i_listen": 33,
    "som_ekstra": 4,
    "seneste": [
     {
@@ -570,6 +570,15 @@ window.KILDER_STATUS = {
      "under": "Genie 4 kan ændre scenen midt i simulationen"
     },
     {
+     "rubrik": "Muse-pendant til 50 dollar fik liv af Claude",
+     "dato": "2026-10-31T12:05:00",
+     "foerst_set": "2026-10-31T20:14:09",
+     "link": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code",
+     "side": "artikel/0289b26f177bf3f8.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Apple Intelligence lander i Kina med iOS 27.3",
      "dato": "2026-10-30T18:32:53",
      "foerst_set": "2026-10-31T06:12:14",
@@ -607,7 +616,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Wikipedia vil have licens ved AI-gengivelse",
-     "dato": "2026-10-30T05:00:00",
+     "dato": "2026-10-30T09:00:00",
      "foerst_set": "2026-10-30T15:15:27",
      "link": "https://www.theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright",
      "side": "artikel/27c634a128420a0e.html",
@@ -665,15 +674,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-29T15:28:58",
      "link": "https://www.theverge.com/cs/features/1016650/arizona-water-data-center-tsmc",
      "side": "artikel/d5e0e9e01a4703dc.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "NYT Cooking tester AI-opskriftsændringer",
-     "dato": "2026-10-29T14:39:37",
-     "foerst_set": "2026-10-29T15:28:58",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1022193/nyt-cooking-app-ai-recipe-modification-tool",
-     "side": "artikel/d4f8aae48adc9cf3.html",
      "hvor": "forside",
      "under": ""
     }
