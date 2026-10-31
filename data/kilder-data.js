@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-31T20:14:09.467780+00:00",
- "artikler_i_alt": 125,
+ "opdateret": "2026-10-31T23:37:47.288920+00:00",
+ "artikler_i_alt": 122,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -344,7 +344,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 52,
+   "i_listen": 50,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -382,6 +382,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Anthropic vil på Nasdaq med ticker ANT"
+    },
+    {
+     "rubrik": "NAACP's forureningssag mod xAI fortsætter",
+     "dato": "2026-10-31T21:17:03",
+     "foerst_set": "2026-10-31T23:37:47",
+     "link": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
+     "side": "artikel/9a46afb49d1d4059.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Ternus: Vi sender ikke AI for AI'ens skyld",
+     "dato": "2026-10-31T21:41:00",
+     "foerst_set": "2026-10-31T23:37:47",
+     "link": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
+     "side": "artikel/8462b9fc7109b30b.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI sænker sit mål til 20 milliarder dollars",
@@ -472,24 +490,6 @@ window.KILDER_STATUS = {
      "side": "artikel/ee09513d3b256af4.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "David Durman får AI-fritagelse på job",
-     "dato": "2026-10-30T01:20:48",
-     "foerst_set": "2026-10-30T06:19:58",
-     "link": "https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/",
-     "side": "artikel/4585bce5af537649.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Thrive Holdings køber ADT for 7,6 milliarder dollar",
-     "dato": "2026-10-29T19:56:19",
-     "foerst_set": "2026-10-29T21:21:56",
-     "link": "https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/",
-     "side": "artikel/db83db5c214c0a39.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -521,7 +521,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 33,
+   "i_listen": 32,
    "som_ekstra": 4,
    "seneste": [
     {

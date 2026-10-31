@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-31T20:20:11.628124+00:00",
+ "genereret": "2026-10-31T23:47:11.846666+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,22 +195,22 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-31T20:14:09.467780+00:00",
-  "antal": 125,
-  "med_billede": 52,
-  "paa_dansk": 125,
+  "opdateret": "2026-10-31T23:37:47.288920+00:00",
+  "antal": 122,
+  "med_billede": 50,
+  "paa_dansk": 122,
   "kategorier": {
-   "Lanceringer": 20,
+   "Lanceringer": 19,
    "Politik \u0026 jura": 12,
    "Samfund \u0026 etik": 17,
    "Penge \u0026 marked": 39,
-   "Hverdags-AI": 26,
-   "Forskning": 11
+   "Hverdags-AI": 25,
+   "Forskning": 10
   },
   "kilder": {
-   "TechCrunch AI": 52,
+   "TechCrunch AI": 50,
    "Google Gemini": 7,
-   "The Verge AI": 33,
+   "The Verge AI": 32,
    "MIT Tech Review AI": 6,
    "Ars Technica AI": 12,
    "Simon Willison AI": 8,
@@ -230,14 +230,14 @@ window.KOMMANDO_DATA = {
     "billede": ""
    },
    {
-    "titel": "Cracks are emerging in the AI spending boom",
-    "rubrik": "Alphabet og Amazon i minus på AI",
-    "link": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
-    "side": "artikel/d2ae3dfb1d7fd7f4.html",
-    "kategori": "Penge \u0026 marked",
+    "titel": "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
+    "rubrik": "NAACP's forureningssag mod xAI fortsætter",
+    "link": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
+    "side": "artikel/9a46afb49d1d4059.html",
+    "kategori": "Politik \u0026 jura",
     "kilde": "TechCrunch AI",
-    "dato": "2026-10-30T21:17:40+00:00",
-    "billede": ""
+    "dato": "2026-10-31T21:17:03+00:00",
+    "billede": "data/img/a5d123bb8b8198c0.jpg"
    },
    {
     "titel": "Anthropic VS code extension on Cursor backdoored for nearly 12 hours",
@@ -252,6 +252,26 @@ window.KOMMANDO_DATA = {
   ],
   "seneste": [
    {
+    "titel": "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
+    "rubrik": "NAACP's forureningssag mod xAI fortsætter",
+    "link": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
+    "side": "artikel/9a46afb49d1d4059.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-31T21:17:03+00:00",
+    "billede": "data/img/a5d123bb8b8198c0.jpg"
+   },
+   {
+    "titel": "Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’",
+    "rubrik": "Ternus: Vi sender ikke AI for AI'ens skyld",
+    "link": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
+    "side": "artikel/8462b9fc7109b30b.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-31T21:41:00+00:00",
+    "billede": ""
+   },
+   {
     "titel": "OpenAI reportedly lowers funding target for new round",
     "rubrik": "OpenAI sænker sit mål til 20 milliarder dollars",
     "link": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/",
@@ -259,7 +279,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Penge \u0026 marked",
     "kilde": "TechCrunch AI",
     "dato": "2026-10-31T16:12:55+00:00",
-    "billede": ""
+    "billede": "data/img/a0cd8bfed535177b.webp"
    },
    {
     "titel": "I built an AI Tamagotchi before Meta could",
@@ -350,31 +370,11 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-10-30T16:26:10-04:00",
     "billede": ""
-   },
-   {
-    "titel": "Zest’s new AI agent finds restaurants and books reservations over text",
-    "rubrik": "Zest-agent booker restaurantbord i SMS-tråden",
-    "link": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/",
-    "side": "artikel/c9dcfb62ccca45b2.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-30T17:47:12+00:00",
-    "billede": "data/img/579a51c4709816a4.jpg"
-   },
-   {
-    "titel": "Google’s first data center satellite is online and writing poetry",
-    "rubrik": "Googles satellit digter med Gemma 4 i kredsløb",
-    "link": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
-    "side": "artikel/d4c3a958104abce5.html",
-    "kategori": "Forskning",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-30T17:00:00+00:00",
-    "billede": ""
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-31T20:14:09.467780+00:00",
+  "opdateret": "2026-10-31T23:37:47.288920+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -387,14 +387,14 @@ window.KOMMANDO_DATA = {
   ],
   "udgivet_udvalg": [
    "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
-   "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+   "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
    "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/"
   ],
   "vaerktoejer": [],
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-10-31T20:14:08.759558+00:00",
+  "opdateret": "2026-10-31T23:37:46.773343+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -750,8 +750,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-31T20:14:09.467780+00:00",
-  "artikler_i_alt": 125,
+  "opdateret": "2026-10-31T23:37:47.288920+00:00",
+  "artikler_i_alt": 122,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1058,7 +1058,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 52,
+    "i_listen": 50,
     "som_ekstra": 2,
     "seneste": [
      {
@@ -1096,6 +1096,24 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Anthropic vil på Nasdaq med ticker ANT"
+     },
+     {
+      "rubrik": "NAACP's forureningssag mod xAI fortsætter",
+      "dato": "2026-10-31T21:17:03",
+      "foerst_set": "2026-10-31T23:37:47",
+      "link": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
+      "side": "artikel/9a46afb49d1d4059.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Ternus: Vi sender ikke AI for AI'ens skyld",
+      "dato": "2026-10-31T21:41:00",
+      "foerst_set": "2026-10-31T23:37:47",
+      "link": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
+      "side": "artikel/8462b9fc7109b30b.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "OpenAI sænker sit mål til 20 milliarder dollars",
@@ -1150,24 +1168,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/c9dcfb62ccca45b2.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Googles satellit digter med Gemma 4 i kredsløb",
-      "dato": "2026-10-30T17:00:00",
-      "foerst_set": "2026-10-30T21:00:09",
-      "link": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
-      "side": "artikel/d4c3a958104abce5.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Tyler Shultz: AI gør svindel svær at gennemskue",
-      "dato": "2026-10-30T16:03:45",
-      "foerst_set": "2026-10-30T21:00:09",
-      "link": "https://techcrunch.com/2026/10/30/theranos-whistleblower-tyler-shultz-warns-that-the-ai-boom-is-a-great-opportunity-to-go-deceive-people/",
-      "side": "artikel/9baf1e5f5cebdc8d.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1181,7 +1181,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 33,
+    "i_listen": 32,
     "som_ekstra": 4,
     "seneste": [
      {
@@ -1582,12 +1582,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-31T20:20:05.271378+00:00",
+  "opdateret": "2026-10-31T23:47:07.255025+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 17,
-  "sidevisninger_i_alt": 26,
+  "besoeg_i_alt": 18,
+  "sidevisninger_i_alt": 27,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1744,15 +1744,15 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 17,
-    "visninger": 26
+    "besoeg": 18,
+    "visninger": 27
    }
   ],
   "artikler": [],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 16
+    "besoeg": 17
    },
    {
     "fra": "www.bing.com",

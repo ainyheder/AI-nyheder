@@ -1,10 +1,10 @@
 {
- "rubrik": "Specialiserede modeller, begrænset adgang og dyr regnekraft",
- "indledning": "Frontlinjen blev mere specialiseret: åbne cybermodeller, lukkede sikkerhedsmodeller, verdenssimulation og en mellemklasse til computerbrug – samtidig med at børsplaner og matematikbeviser satte spørgsmålstegn ved adgang og verifikation.",
+ "rubrik": "Frontiermodeller, åbne vægte og et børsprospekt præger AI-ugen",
+ "indledning": "Ugen samlede flere nye frontiermodeller og en verdensmodel med realtidslyd, mens Anthropic gjorde alvor af børsplanerne og OpenAI satte matematikere til at granske et muligt gennembrud. Fælles er kampen om at gøre avancerede evner både bredere tilgængelige og kontrollerbare.",
  "historier": [
   {
    "overskrift": "Mistral frigiver trillionmodel med åbne vægte",
-   "tekst": "Den franske AI-virksomhed Mistral frigav 29. oktober vægtene til Mistral Large 4, som selskabet selv kalder en model med 1.000 milliarder parametre. Vægtene ligger på Hugging Face, så virksomheder og myndigheder kan køre modellen selv. Mistral retter den især mod cyberforsvar og hævder at slå åbne konkurrenter med færre tokens per opgave. Påstandene er selskabets egne.",
+   "tekst": "Mistral frigav vægtene – de tal, der styrer modellen – til Mistral Large 4, som selskabet kalder en model med 1.000 milliarder parametre. Den er især rettet mod cybersikkerhed og kan hentes på Hugging Face eller bruges via API. Mistral hævder førertrøjen blandt åbne modeller og lavere tokenforbrug end GLM-5.3; påstandene er selskabets egne.",
    "link": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
    "kategori": "Lanceringer",
    "billede": "data/img/f4fa4d14d5158e74.webp",
@@ -25,8 +25,8 @@
    "artikel_signatur": "dd9c07c8029ac10cf943afbfc85765cf5e9a7066ff368ae2ddedc13d11d9e8f7"
   },
   {
-   "overskrift": "Gemini 4 Carbon topper Googles sikkerhedstests",
-   "tekst": "Google annoncerede 28. oktober Gemini 4 Carbon som sin stærkeste model til dato, især til at finde og lukke sårbarheder i kode. Ifølge Google topper den Artificial Analysis Intelligence Index og får 88,2 procent i SEC-bench Pro. Modellen er foreløbig kun åben for udvalgte cyberforsvarere gennem Fairwind-programmet; Google oplyser ingen dato for bred udgivelse.",
+   "overskrift": "Google annoncerer Gemini 4 Carbon til cyberforsvar",
+   "tekst": "Google annoncerede Gemini 4 Carbon som sin stærkeste model, især til at finde og lukke sårbarheder i kode. Google oplyser, at den topper Artificial Analysis Intelligence Index og flere sikkerhedstests. Adgangen er foreløbig begrænset til udvalgte cyberforsvarere gennem Fairwind, uden dato for bred udgivelse.",
    "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
    "kategori": "Lanceringer",
    "billede": "data/img/4b3d4e5d0a140c8a.jpg",
@@ -63,8 +63,8 @@
    "artikel_signatur": "d86b4dd0b49420ad7bce6bdb6f852424fa8419965d8d3d1a95f3090d6c08f3cc"
   },
   {
-   "overskrift": "Genie 4 kan styres midt i simulationen",
-   "tekst": "Google DeepMind sendte 27. oktober verdensmodellen Genie 4 ud i forskningspreview. Den kan bygge interaktive verdener fra tekst eller billeder, skifte scene midt i simulationen og tilføje realtidslyd. En simulation kan holde sammen i op til to minutter, dobbelt så længe som Genie 3. Ifølge DeepMind er fysik og personer mere realistiske, men detaljer kan stadig drive.",
+   "overskrift": "Genie 4 kan ændre scenen midt i simulationen",
+   "tekst": "Google DeepMind sendte verdensmodellen Genie 4 – en model, der genererer interaktive omgivelser – ud i forskningspreview. Den kan ændre scenen midt i en simulation, tilføje realtidslyd og holde sammen i op til to minutter. Udvalgte testbrugere afprøver filmprototyper, og Google peger på simulering af robotter. Bred adgang og pris er endnu ikke fastlagt.",
    "link": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
    "kategori": "Lanceringer",
    "billede": "data/img/aa4a541db90e5f66.jpg",
@@ -85,8 +85,8 @@
    "artikel_signatur": "c6f963dbb08ab40c17e1cd09eb76fc8d0e20b8f76c3ae4850585b49b0e286831"
   },
   {
-   "overskrift": "GPT-6.1 Terra er en billigere mellemklasse",
-   "tekst": "OpenAI introducerede 26. oktober GPT-6.1 Terra, en hurtigere mellemklassemodel med vægt på visuel ræsonnering og computerbrug. Den koster 1 dollar per million input-tokens og 5 dollar per million output-tokens, ifølge Simon Willison. OpenAI kalder den et betydeligt skridt op fra GPT-5.6 Terra. Terra er ikke frontlinjen, men kan gøre automatiserede computeropgaver billigere for udviklere.",
+   "overskrift": "GPT-6.1 Terra kan se og bruge computeren",
+   "tekst": "OpenAI lancerede GPT-6.1 Terra som en mellemklassemodel med vægt på at forstå billeder og bruge computeren. Den placeres prismæssigt mellem GPT-6 Luna og GPT-6.1 Sol: 1 dollar per million input-tokens og 5 dollar per million output-tokens. OpenAI kalder den et betydeligt skridt op fra GPT-5.6 Terra.",
    "link": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
    "kategori": "Lanceringer",
    "billede": "data/img/ef6d64be6cb0ecf1.jpg",
@@ -98,83 +98,65 @@
    "artikel_signatur": "09ca07dba964a4f0a8c263e94f4fcbf04ee20e23740e58473f0724eb9a435e2d"
   },
   {
-   "overskrift": "Anthropic vil på Nasdaq som ANT",
-   "tekst": "Anthropic indsendte 26. oktober sin børsansøgning til SEC og vil noteres på Nasdaq som ANT. Prospektet viser 16,3 milliarder dollar i omsætning i første halvår og et driftsunderskud på 693 millioner dollar, mens nettoresultatet var minus 80,7 milliarder dollar på grund af ikke-kontante gældsposter. Stifterne beholder 50,1 procent af stemmerne gennem Founder LLC.",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
+   "overskrift": "Anthropic søger børsnotering med stifterne ved magten",
+   "tekst": "Anthropic indgav sit børsprospekt og planlægger at blive noteret på Nasdaq som ANT. Omsætningen var 16,3 milliarder dollar i første halvår, mens nettoresultatet var minus 80,7 milliarder på grund af regnskabsposter. Stifterne beholder 50,1 procent af stemmerne, og selskabet har forpligtet sig til enorme regnekraftkøb.",
+   "link": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
    "kategori": "Penge & marked",
-   "billede": "data/img/0d5a5d0b470f75ea.jpg",
-   "dato": "2026-10-26T13:32:49+00:00",
-   "andre": [
-    {
-     "kilde": "TechCrunch AI",
-     "link": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
-     "rubrik": "Flertal af store Anthropic-kunder bruger Claude-apps",
-     "resume_da": "S-1 viser 11.900 kunder over 100.000 dollar og cirka 900 procent i nettoomsætningsretention. Anthropic sælger flere produkter til de samme kunder.",
-     "dato": "2026-10-26T16:49:42+00:00",
-     "foerst_set": "2026-10-26T21:09:48.052336+00:00"
-    }
-   ],
-   "titel": "Anthropic’s IPO filing lays out a plan to ‘revolutionize every area of human endeavor’ with AI",
-   "rubrik": "Anthropic vil på Nasdaq med ticker ANT",
-   "resume_da": "Anthropic har indsendt sin børsprospekt og vil noteres på Nasdaq som ANT. Bag planen ligger et underskud på 80,7 milliarder dollar og milliardaftaler om regnekraft.",
-   "artikel_signatur": "422d1adac6586bcf7481fc0d059863eef8a88f28bb37579816eb52ae41a47c1d"
+   "billede": "data/img/30f185557210f86e.jpg",
+   "dato": "2026-10-26T14:35:22+00:00",
+   "andre": [],
+   "titel": "Anthropic officially files for its public debut",
+   "rubrik": "Anthropic søger børsnotering med stifterne ved magten",
+   "resume_da": "Omsætningen i første halvår 2026 lander på 16,3 mia. dollar mod 1,2 mia. året før, og driftsunderskuddet er skrumpet til 693 mio. dollar.",
+   "artikel_signatur": "2606c97090e25780c290a622294c3a54c21ff2350067a9b021f232b3c0f8abfe"
   },
   {
-   "overskrift": "OpenAI lader forskere granske matematikbeviser",
-   "tekst": "OpenAI hævder, at selskabets model har bevist, at The Exponential Time Hypothesis er falsk, og offentliggjorde 26. oktober et Lean-bevis og en forklarende tekst. En arbejdsgruppe med Russell Impagliazzo, Ramamohan Paturi og Ryan Williams skal granske resultatet. Et tredje resultat i fysik er ikke offentliggjort i fuld længde. Holder beviset, skal mange datalogiske antagelser revurderes.",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
+   "overskrift": "OpenAI hævder at have modbevist central datalogisk hypotese",
+   "tekst": "OpenAI hævdede, at selskabets model har modbevist Exponential Time Hypothesis og løst andre store matematik- og fysikproblemer. Dataloger og matematikere skal granske beviserne; fysikresultatet er ikke offentliggjort i fuld længde. Anthropic fremsatte kort efter et eget modbevis. Resultaterne er derfor lovende, men ikke endeligt verificeret.",
+   "link": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
    "kategori": "Forskning",
    "billede": "",
-   "dato": "2026-10-26T23:34:58+00:00",
-   "andre": [
-    {
-     "kilde": "The Verge AI",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
-     "rubrik": "OpenAI tilbageholder fysikresultat og vækker kritik",
-     "resume_da": "OpenAI har offentliggjort gennembrud i matematik og datalogi, men holder fysikresultatet tilbage. Forskere kræver åben adgang og kritiserer håndplukkede eksperter.",
-     "dato": "2026-10-27T16:48:58-04:00",
-     "foerst_set": "2026-10-27T20:55:19.965914+00:00"
-    }
-   ],
-   "titel": "OpenAI announces three big science discoveries and a new way to work with academics",
-   "rubrik": "OpenAI lader forskere granske tre nye beviser",
-   "resume_da": "Firmaet annoncerer resultater i matematik, datalogi og fysik. Fysikbeviset er endnu ikke offentliggjort i fuld længde.",
-   "artikel_signatur": "38094c7aecd36a2bfde80914930117078c1c11be93fcc82801272ec0f28a9088"
+   "dato": "2026-10-27T17:08:08+00:00",
+   "andre": [],
+   "titel": "Frontier AI labs say their models refuted the Exponential Time Hypothesis. What does that mean?",
+   "rubrik": "OpenAI hævder modeller har modbevist ETH",
+   "resume_da": "Anthropic har også offentliggjort et modbevis, og dataloger vil undersøge konsekvenser for P versus NP og kryptografi.",
+   "artikel_signatur": "c21970cf3fe2d1378df322820667b0e96d138e662ed8e246304805411445b557"
   }
  ],
  "overblik": [
   {
-   "tekst": "Den tydeligste linje er, at frontlinjen bliver mere specialiseret og mere delt i adgang. Mistral frigav vægtene til Mistral Large 4 med 1.000 milliarder parametre og cyberforsvar som sigte, så virksomheder og myndigheder selv kan køre modellen. Google annoncerede Gemini 4 Carbon, som ifølge Google topper flere sikkerhedstests, men foreløbig kun gives til udvalgte cyberforsvarere. Genie 4 viser en tredje slags specialisering: en verdensmodel med realtidsstyring og lyd, stadig kun i forskningspreview. Fælles er, at modellerne nu sælges på konkrete arbejdsopgaver frem for bred chat.",
+   "tekst": "Ugen viste et kapløb på flere spor. Mistral gjorde sin model med 1.000 milliarder parametre, Mistral Large 4, downloadbar med åbne vægte og markedsførte den til cyberforsvar, mens Google annoncerede Gemini 4 Carbon som en mere specialiseret sikkerhedsmodel – dog kun for udvalgte cyberforsvarere. Forskellen er konkret: Mistrals vægte kan hentes og køres selv; Googles model er lukket og gradvist udrullet. Imellem dem placerede OpenAI GPT-6.1 Terra som billigere mellemmodel med computerbrug og billedforståelse, mens Genie 4 viste interaktive verdener med realtidslyd, stadig i forskningspreview. Det handler ikke bare om scores, men om adgang og udførelse.",
    "links": [
     "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+    "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
     "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/"
    ]
   },
   {
-   "tekst": "Prisen og adgangen bliver samtidig en kampplads. GPT-6.1 Terra lægges mellem OpenAIs dyre og billige modeller og fremhæves til computerbrug og visuel ræsonnering, men er en mellemklasse, ikke et frontløb. Anthropics børsplan viser den anden side: For at finansiere regnekraft har selskabet forpligtet sig til hundreder af milliarder dollar frem mod 2033, mens stifterne beholder 50,1 procent af stemmerne. Det gør de mange nye modeller til et spørgsmål om både evne og betalingsmodel.",
+   "tekst": "Anthropics børsprospekt viser, hvad der skal betale for kapløbet. Selskabet planlægger notering på Nasdaq som ANT efter 16,3 milliarder dollar i omsætning i første halvår, men med et nettoresultat på minus 80,7 milliarder, især fra regnskabsposter. Stifterne beholder 50,1 procent af stemmerne, og selskabet har bundet sig til hundreder af milliarder dollars i regnekraft. Kapital og chips er derfor lige så centrale som modelnavnene.",
    "links": [
-    "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
-    "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec"
+    "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/"
    ]
   },
   {
-   "tekst": "Endelig viser OpenAIs matematikfremstød, at modellerne også flyttes ind i forskningen. Selskabet hævder, at dets model har modbevist The Exponential Time Hypothesis, og har lagt et Lean-bevis og en forklarende tekst frem. En ekstern arbejdsgruppe skal granske resultatet, og fysikbeviset er endnu ikke offentliggjort i fuld længde. Det er samme mønster som ved modelnavnene: Store påstande, men også spørgsmål om adgang, verifikation og hvem der kan efterprøve dem.",
+   "tekst": "OpenAIs matematikoffensiv peger på en tredje side: Påstande om nye evner skal kunne efterprøves. Selskabet hævder, at en model har modbevist Exponential Time Hypothesis og leveret resultater i matematik og fysik, men forskere skal granske beviserne, og fysikresultatet er ikke offentliggjort i fuld længde. At Anthropic fremlagde et eget modbevis, afgør ikke sagen. Samme forsigtighed gælder Mistrals og Googles benchmarkpåstande: De er producenternes egne, indtil uafhængige målinger bekræfter dem.",
    "links": [
-    "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics"
+    "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/"
    ]
   }
  ],
- "tendens": "Følg data center-modstanden frem mod midtvejsvalget 3. november. I Texas viste en augustmåling, at 57 procent af de adspurgte var imod nye anlæg, og i Maine vedtog lovgiver et moratorium, som guvernøren nedlagde veto mod. Det er uafklaret, om modstanden fører til føderale regler, og hvordan den påvirker kandidater i begge partier.",
+ "tendens": "",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "4136ba2c8946ad0a01c4d99e43e2139b2f7ae1e7374b3e0bae2634e8a60be6d9",
- "dato": "2026-10-31T20:18:53.219784+00:00",
- "opdateret": "2026-10-31T20:18:53.219784+00:00",
- "periode_fra": "2026-10-23T22:00:00+00:00",
- "periode_til": "2026-10-30T23:00:00+00:00",
+ "basis_signatur": "d37b5d86ef458e8671f78fe00f6b7e7b17bab6dfc1bcde4cf3f00c3fba0d2b71",
+ "dato": "2026-10-31T23:44:57.445045+00:00",
+ "opdateret": "2026-10-31T23:44:57.445045+00:00",
+ "periode_fra": "2026-10-24T22:00:00+00:00",
+ "periode_til": "2026-10-31T23:00:00+00:00",
  "stats": {
-  "historier": 106,
+  "historier": 104,
   "kilder": 6
  }
 }
