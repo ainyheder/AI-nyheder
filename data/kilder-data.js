@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-30T21:00:09.129763+00:00",
+ "opdateret": "2026-10-31T06:12:14.287974+00:00",
  "artikler_i_alt": 122,
  "kilder": [
   {
@@ -217,18 +217,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 2,
+   "i_listen": 1,
    "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "LitPivot foreslår rettelser med litteratur som belæg",
-     "dato": "2026-10-23T16:15:50",
-     "foerst_set": "2026-10-23T20:03:23",
-     "link": "https://huggingface.co/blog/allenai/litpivot",
-     "side": "artikel/c8f212640f722e47.html",
-     "hvor": "forside",
-     "under": ""
-    },
     {
      "rubrik": "VocabX skærer inferensregningen med 77 procent",
      "dato": "2026-10-21T17:35:36",
@@ -251,7 +242,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 8,
+   "i_listen": 7,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -325,15 +316,6 @@ window.KILDER_STATUS = {
      "side": "artikel/bf9f3a9c276f7c9d.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Kimi K3.1 Pro når fronten til halv pris",
-     "dato": "2026-10-23T19:40:54",
-     "foerst_set": "2026-10-23T20:03:23",
-     "link": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
-     "side": "artikel/6b4083129b1f5169.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -353,8 +335,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 49,
-   "som_ekstra": 3,
+   "i_listen": 51,
+   "som_ekstra": 2,
    "seneste": [
     {
      "rubrik": "DoorDash: Kun få hundrede ordrer fra AI-agenter",
@@ -393,13 +375,40 @@ window.KILDER_STATUS = {
      "under": "Anthropic vil på Nasdaq med ticker ANT"
     },
     {
-     "rubrik": "OpenAI stopper træning på det levende internet",
-     "dato": "",
-     "foerst_set": "2026-10-23T23:24:11",
-     "link": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI træner nu sine stærkeste AI-modeller uden net"
+     "rubrik": "Alphabet og Amazon i minus på AI",
+     "dato": "2026-10-30T21:17:40",
+     "foerst_set": "2026-10-31T06:12:14",
+     "link": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+     "side": "artikel/d2ae3dfb1d7fd7f4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Blackstone venter junk-rating til Anthropic efter IPO",
+     "dato": "2026-10-30T21:52:03",
+     "foerst_set": "2026-10-31T06:12:14",
+     "link": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+     "side": "artikel/d12607a6e4746ac3.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Ollie lukker efter konkurrence fra Muse og Instinct",
+     "dato": "2026-10-30T22:56:13",
+     "foerst_set": "2026-10-31T06:12:14",
+     "link": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/",
+     "side": "artikel/d319498a5eb3b02d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Nvidia overvejer garanti for Nscale-lån",
+     "dato": "2026-10-31T01:20:05",
+     "foerst_set": "2026-10-31T06:12:14",
+     "link": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
+     "side": "artikel/ec65015625291e9f.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Zest-agent booker restaurantbord i SMS-tråden",
@@ -472,48 +481,12 @@ window.KILDER_STATUS = {
      "side": "artikel/b2c76de6c6e17d8b.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Reddit skifter til primært indlogget oplevelse",
-     "dato": "2026-10-29T20:08:31",
-     "foerst_set": "2026-10-29T21:21:56",
-     "link": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
-     "side": "artikel/60144b1613db26a4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Style Sketch foreslår outfits fra dit tøj",
-     "dato": "2026-10-29T19:14:36",
-     "foerst_set": "2026-10-29T21:21:56",
-     "link": "https://techcrunch.com/2026/10/29/meta-quietly-launches-an-ai-fashion-app-called-style-sketch/",
-     "side": "artikel/5d9d7808457b118e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Alice Huang overvåget i muligt spionforløb",
-     "dato": "2026-10-29T16:42:32",
-     "foerst_set": "2026-10-29T21:21:56",
-     "link": "https://techcrunch.com/2026/10/29/u-s-investigated-chinese-spy-plot-aimed-at-nvidia-ceo/",
-     "side": "artikel/804bc5d490b80e76.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Rivian licenserer AI-stemme til Volkswagen",
-     "dato": "2026-10-29T20:05:47",
-     "foerst_set": "2026-10-29T21:21:56",
-     "link": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/",
-     "side": "artikel/223b05929cb398d8.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     4
+     3
     ],
     [
      "Ars Technica AI",
@@ -539,7 +512,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 34,
+   "i_listen": 32,
    "som_ekstra": 4,
    "seneste": [
     {
@@ -559,15 +532,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google Gemini redigerer filer i chatten"
-    },
-    {
-     "rubrik": "Meta kan udskyde forretningsvilkår igen",
-     "dato": "",
-     "foerst_set": "2026-10-28T21:16:14.888910+00:00",
-     "link": "https://www.theverge.com/tech/1020769/meta-updated-business-terms-delay-indefinitely",
-     "side": "",
-     "hvor": "under",
-     "under": "Meta udskyder nye vilkår efter pres fra medier"
     },
     {
      "rubrik": "Google sender Gemini 4 Carbon efter sikkerhedshuller",
@@ -597,6 +561,15 @@ window.KILDER_STATUS = {
      "under": "Genie 4 kan ændre scenen midt i simulationen"
     },
     {
+     "rubrik": "Apple Intelligence lander i Kina med iOS 27.3",
+     "dato": "2026-10-30T18:32:53",
+     "foerst_set": "2026-10-31T06:12:14",
+     "link": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
+     "side": "artikel/ffe1ba5a47188fc3.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Google og Microsoft bakker ny standard mod scraping",
      "dato": "2026-10-30T16:26:10",
      "foerst_set": "2026-10-30T21:00:09",
@@ -615,6 +588,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Starbucks undersøger personlig AI-menu ved drive-thru",
+     "dato": "2026-10-30T13:38:04",
+     "foerst_set": "2026-10-30T21:00:09",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
+     "side": "artikel/a5d82a5cf5c844da.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Wikipedia vil have licens ved AI-gengivelse",
      "dato": "2026-10-30T05:00:00",
      "foerst_set": "2026-10-30T15:15:27",
@@ -629,6 +611,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-30T15:15:27",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai",
      "side": "artikel/cfe1c65d6cd5d12d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Susan Collins møder modstand mod AI-data centre",
+     "dato": "2026-10-30T07:00:00",
+     "foerst_set": "2026-10-30T15:15:27",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1021080/maine-senate-race-susan-collins-ai-data-centers",
+     "side": "artikel/62deaf73d869952b.html",
      "hvor": "forside",
      "under": ""
     },
@@ -676,47 +667,16 @@ window.KILDER_STATUS = {
      "side": "artikel/d4f8aae48adc9cf3.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Adam Mosseri: AI-frustrationen vil vokse",
-     "dato": "2026-10-28T23:05:39",
-     "foerst_set": "2026-10-29T06:21:31",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity",
-     "side": "artikel/5536851b9ba28ab5.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Gemini i Chrome udfylder formularer med Gmail-data",
-     "dato": "2026-10-28T17:00:00",
-     "foerst_set": "2026-10-28T21:16:14",
-     "link": "https://www.theverge.com/tech/1020626/chrome-enhanced-autofill-gmail-forms-gemini-personal-intelligence",
-     "side": "artikel/4ec46b596fc84ced.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Microsoft lukker Copilot på LG- og Samsung-TV",
-     "dato": "2026-10-28T18:36:26",
-     "foerst_set": "2026-10-28T21:16:14",
-     "link": "https://www.theverge.com/tech/1021143/microsoft-lg-samsung-copilot-ai-assistant-smart-tvs-ending",
-     "side": "artikel/3a6e219abc13c7e9.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     4
+     3
     ],
     [
      "Google Gemini",
      2
-    ],
-    [
-     "Ars Technica AI",
-     1
     ]
    ]
   },
@@ -730,8 +690,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 10,
-   "som_ekstra": 3,
+   "i_listen": 12,
+   "som_ekstra": 2,
    "seneste": [
     {
      "rubrik": "Google erkender: AI-søgning indbringer mindre",
@@ -752,13 +712,13 @@ window.KILDER_STATUS = {
      "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
     },
     {
-     "rubrik": "Google opdaterer politik: Gmail kan bruges til annoncer",
-     "dato": "",
-     "foerst_set": "2026-10-23T23:24:11",
-     "link": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
-     "side": "",
-     "hvor": "under",
-     "under": "Google: Gmail-data kan nu bruges til annoncer"
+     "rubrik": "Anthropic-udvidelse bagdøret i næsten 12 timer",
+     "dato": "2026-10-30T21:09:54",
+     "foerst_set": "2026-10-31T06:12:14",
+     "link": "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/",
+     "side": "artikel/0697c0d6577e4ad4.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "USA's justitsministerium: Første store sag om spøgelsesstuderende",
@@ -775,6 +735,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-30T21:00:09",
      "link": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
      "side": "artikel/a4df15e2609a100e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Dartmouth-provost træder tilbage efter uoplyst Claude-brug",
+     "dato": "2026-10-30T20:40:13",
+     "foerst_set": "2026-10-30T21:00:09",
+     "link": "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/",
+     "side": "artikel/4c313421afd4676e.html",
      "hvor": "forside",
      "under": ""
     },
@@ -858,10 +827,6 @@ window.KILDER_STATUS = {
     ],
     [
      "Google Gemini",
-     1
-    ],
-    [
-     "The Verge AI",
      1
     ]
    ]

@@ -1,10 +1,10 @@
 {
- "rubrik": "Nye frontmodeller, åbne vægte og et kapitaltungt AI-kapløb",
- "indledning": "Ugen bød på nye frontmodeller, åbne vægte og et børsprospekt, der viser, hvor kapitaltung AI-konkurrencen er blevet.",
+ "rubrik": "Nye modeller, mere kontrol og et dyrere kapløb",
+ "indledning": "Ugen samler flere nye modeller og et sjældent forskningsløfte, men også spørgsmålet om, hvem der får adgang, og hvem der betaler.",
  "historier": [
   {
-   "overskrift": "Google annoncerer Gemini 4 Carbon til cyberforsvar",
-   "tekst": "Google annoncerede 28. oktober Gemini 4 Carbon og hævder, at den topper Artificial Analysis Intelligence Index med 59. Ifølge Google får den 88,2 procent i SEC-bench Pro og afviser alle forsøg på prompt-injektion i Grey Swan. Carbon er foreløbig kun åbnet for udvalgte cyberforsvarere; Google oplyser ingen dato for bred adgang.",
+   "overskrift": "Gemini 4 Carbon: cybermodel med begrænset adgang",
+   "tekst": "Google annoncerede 28. oktober Gemini 4 Carbon som sin stærkeste model og fører ifølge selskabet Artificial Analysis Intelligence Index med 59. Den er især rettet mod at finde og lukke sårbarheder i kode, men gives først til en mindre gruppe cyberforsvarere gennem Fairwind Program; bred udgivelse har ingen dato.",
    "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
    "kategori": "Lanceringer",
    "billede": "data/img/4b3d4e5d0a140c8a.jpg",
@@ -41,8 +41,8 @@
    "artikel_signatur": "d86b4dd0b49420ad7bce6bdb6f852424fa8419965d8d3d1a95f3090d6c08f3cc"
   },
   {
-   "overskrift": "Mistral frigiver vægte til trillionmodel",
-   "tekst": "Mistral frigav 29. oktober vægtene til Mistral Large 4, som selskabet selv kalder en model med 1.000 milliarder parametre. Modellen kan hentes på Hugging Face og køres på egne servere eller via Mistrals API. Mistral hævder, at den især er stærk til cyberarbejde og bruger 47 procent færre tokens pr. opgave end GLM-5.3.",
+   "overskrift": "Mistral Large 4 frigives med åbne vægte",
+   "tekst": "Mistral frigav 29. oktober vægtene til Mistral Large 4, som selskabet kalder en model med 1.000 milliarder parametre. Vægtene ligger på Hugging Face, så virksomheder og myndigheder selv kan køre modellen til blandt andet cyberforsvar. Mistral hævder, at den yder omtrent som GLM-5.3, men bruger 47 procent færre tokens pr. opgave.",
    "link": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
    "kategori": "Lanceringer",
    "billede": "data/img/f4fa4d14d5158e74.webp",
@@ -63,8 +63,8 @@
    "artikel_signatur": "dd9c07c8029ac10cf943afbfc85765cf5e9a7066ff368ae2ddedc13d11d9e8f7"
   },
   {
-   "overskrift": "GPT-6.1 Terra kan se og bruge computeren",
-   "tekst": "OpenAI introducerede GPT-6.1 Terra som en hurtigere mellemklassemodel med vægt på visuel ræsonnering og computerbrug. Ifølge OpenAI er den et betydeligt skridt op fra GPT-5.6 Terra. API-prisen er 1 dollar per million input-tokens og 5 dollar per million output-tokens. En OpenAI-medarbejder vurderer, at Terra er bedre til teknisk kommunikation end GPT-6 Astra og GPT-6.1 Sol.",
+   "overskrift": "GPT-6.1 Terra gør computerbrug billigere",
+   "tekst": "OpenAI introducerede GPT-6.1 Terra som en hurtigere mellemklassemodel med vægt på visuel ræsonnering og computerbrug. Ifølge OpenAI er den et betydeligt skridt op fra GPT-5.6 Terra; prisen er 1 dollar per million input-tokens og 5 dollar per million output-tokens. Den placeres mellem GPT-6 Luna og GPT-6.1 Sol.",
    "link": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
    "kategori": "Lanceringer",
    "billede": "data/img/ef6d64be6cb0ecf1.jpg",
@@ -76,8 +76,8 @@
    "artikel_signatur": "09ca07dba964a4f0a8c263e94f4fcbf04ee20e23740e58473f0724eb9a435e2d"
   },
   {
-   "overskrift": "Genie 4 kan ændre scenen midt i simulationen",
-   "tekst": "Google DeepMind sendte 27. oktober verdensmodellen Genie 4 ud i forskningspreview. Den kan ændre scenen midt i en simulation via nye prompts, tilføje realtidslyd og holde sammen i op til to minutter. DeepMind erkender, at detaljer kan drive, og at tekst og lyd endnu ikke er løst. Adgangen ruller ud til udvalgte testbrugere og senere AI Ultra-abonnenter.",
+   "overskrift": "Genie 4 kan skifte scene og tilføje lyd",
+   "tekst": "Google DeepMind sendte Genie 4 ud i forskningspreview 27. oktober. Verdensmodellen kan nu skifte scenen midt i simulationen, tilføje realtidslyd og holde sammen i op til to minutter. DeepMind erkender, at detaljer kan drive, og at lyd og læsbar tekst endnu ikke er løst; adgangen begynder først at rulle ud.",
    "link": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
    "kategori": "Lanceringer",
    "billede": "data/img/aa4a541db90e5f66.jpg",
@@ -98,21 +98,30 @@
    "artikel_signatur": "c6f963dbb08ab40c17e1cd09eb76fc8d0e20b8f76c3ae4850585b49b0e286831"
   },
   {
-   "overskrift": "Kimi K3.1 Pro når fronten til halv pris",
-   "tekst": "Moonshot lagde Kimi K3.1 Pro på API 23. oktober. Artificial Analysis giver modellen 55 point mod Claude Opus 5.5's 58, og prisen er 2 dollar per million input-tokens og 10 dollar per million output-tokens. Moonshot lover at frigive de fulde vægte senest 4. november. Indtil da kan modellen kun bruges via Moonshots API.",
-   "link": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
-   "kategori": "Lanceringer",
-   "billede": "data/img/6268a306ed8c3a40.jpg",
-   "dato": "2026-10-23T19:40:54+00:00",
-   "andre": [],
-   "titel": "Introducing Kimi K3.1 Pro",
-   "rubrik": "Kimi K3.1 Pro når fronten til halv pris",
-   "resume_da": "Moonshot sender Kimi K3.1 Pro på API med score 55 mod Opus 5.5's 58 og løfte om fulde vægte senest 4. november 2026.",
-   "artikel_signatur": "f073887eb98965099c6700d160d2165b104306f7c846c98e41bca7d347eacab8"
+   "overskrift": "OpenAI vil have matematiske beviser gransket",
+   "tekst": "OpenAI hævder, at selskabets model har modbevist The Exponential Time Hypothesis og løst andre matematiske problemer; et fysikbevis er endnu ikke offentliggjort i fuld længde. Arbejdsgrupper skal granske resultaterne, og forskere har kritiseret OpenAI for at vælge håndplukkede eksperter og for lidt kontekst.",
+   "link": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
+   "kategori": "Forskning",
+   "billede": "",
+   "dato": "2026-10-26T23:34:58+00:00",
+   "andre": [
+    {
+     "kilde": "The Verge AI",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
+     "rubrik": "OpenAI tilbageholder fysikresultat og vækker kritik",
+     "resume_da": "OpenAI har offentliggjort gennembrud i matematik og datalogi, men holder fysikresultatet tilbage. Forskere kræver åben adgang og kritiserer håndplukkede eksperter.",
+     "dato": "2026-10-27T16:48:58-04:00",
+     "foerst_set": "2026-10-27T20:55:19.965914+00:00"
+    }
+   ],
+   "titel": "OpenAI announces three big science discoveries and a new way to work with academics",
+   "rubrik": "OpenAI lader forskere granske tre nye beviser",
+   "resume_da": "Firmaet annoncerer resultater i matematik, datalogi og fysik. Fysikbeviset er endnu ikke offentliggjort i fuld længde.",
+   "artikel_signatur": "38094c7aecd36a2bfde80914930117078c1c11be93fcc82801272ec0f28a9088"
   },
   {
-   "overskrift": "Anthropic vil på Nasdaq med ticker ANT",
-   "tekst": "Anthropic indsendte 26. oktober sit børsprospekt og vil noteres på Nasdaq som ANT. Selskabet oplyser et nettoresultat på minus 80,7 milliarder dollar i første halvår, især fra regnskabsmæssige omkostninger ved konvertibel gæld. Stifterne vil gennem Founder LLC kontrollere 50,1 procent af stemmerne. Anthropic har samtidig forpligtet sig til store regnekraftkøb hos SpaceX, Microsoft, Google og Amazon.",
+   "overskrift": "Anthropic går mod Nasdaq som ANT",
+   "tekst": "Anthropic har indsendt sit S-1 til SEC og vil noteres på Nasdaq som ANT. Prospektet viser en omsætning på 16,3 milliarder dollar i første halvår 2026, men også et nettounderskud på 80,7 milliarder dollar og forpligtelser til regnekraft for hundreder af milliarder. Stifterne beholder 50,1 procent af stemmerne.",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
    "kategori": "Penge & marked",
    "billede": "data/img/0d5a5d0b470f75ea.jpg",
@@ -135,37 +144,37 @@
  ],
  "overblik": [
   {
-   "tekst": "Ugens vigtigste forandring er, at avancerede modeller både bliver mere specialiserede og lettere at eje. Google annoncerede Gemini 4 Carbon med løfter om topresultater i cyberforsvar, men kun udvalgte cyberforsvarere får adgang foreløbig. Mistral frigav samtidig vægtene til Mistral Large 4, som selskabet kalder en model med 1.000 milliarder parametre. Dermed kan myndigheder og virksomheder selv huse en stor model i stedet for at være afhængige af en ekstern udbyder. Begge handler om kontrol over data og sikkerhed, men adgangen er vidt forskellig: lukket og gradvis hos Google, åben til download hos Mistral.",
+   "tekst": "Ugens vigtigste bevægelse er, at frontiermodellerne rykker tættere på arbejde, kode og sikkerhed, men med vidt forskellig adgang. Googles Gemini 4 Carbon topper ifølge Google Artificial Analysis Intelligence Index med 59 og er især rettet mod cyberforsvar, men er foreløbig kun åben for udvalgte forsvarere; Mistral går modsat vej og frigiver vægtene til Mistral Large 4, så myndigheder og virksomheder selv kan køre en model med 1.000 milliarder parametre.",
    "links": [
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
     "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
    ]
   },
   {
-   "tekst": "Samme uge viste OpenAI og Google DeepMind, at modellerne også rykker fra tekst til handling og simulation. GPT-6.1 Terra er en mellemklassemodel med vægt på visuel ræsonnering og computerbrug, prissat mellem GPT-6 Luna og GPT-6.1 Sol. Genie 4 kan bygge interaktive verdener, skifte scene midt i forløbet og tilføje realtidslyd, men er kun et forskningspreview. Terra skal kunne udføre arbejde på en computer; Genie 4 skal kunne afprøve situationer i en simuleret verden. Det er to forskellige veje til mere selvstændig AI, og begge kræver tæt test.",
+   "tekst": "Samme dobbeltbevægelse ses i OpenAIs GPT-6.1 Terra: en mellemklassemodel, der ifølge OpenAI er stærkere til billedforståelse og computerbrug og prissat mellem Luna og Sol. Den er ikke en ny topmodel, men gør agentlignende computerbrug billigere. Genie 4 flytter noget andet: Googles verdensmodel kan nu styres midt i simulationen og har lyd, men er forskningspreview og har kun få minutters sammenhæng.",
    "links": [
     "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
     "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/"
    ]
   },
   {
-   "tekst": "Kimi K3.1 Pro viser, at frontniveau ikke længere er forbeholdt de lukkede laboratorier: Moonshot scorer 55 point mod Claude Opus 5.5's 58 og lover vægte senest 4. november. Anthropics børsprospekt viser den anden side af kapløbet: store regnekraftforpligtelser og en selskabsstruktur, hvor stifterne beholder 50,1 procent af stemmerne. Tilsammen tegner ugens begivenheder et marked med flere indgange til avanceret AI, men også større afhængighed af kapital, adgang og kontrol.",
+   "tekst": "Mens modellerne bliver mere anvendelige, bliver den økonomiske og videnskabelige bagside mere synlig. Anthropic har indsendt sin børsansøgning og vil noteres som ANT, men binder samtidig hundreder af milliarder til regnekraft. OpenAI hævder, at selskabets model har modbevist ETH og leveret andre matematiske resultater; de skal granskes, og et fysikbevis er endnu ikke offentliggjort. Tilsammen viser ugen både nye evner og hvor afhængige de er af adgang, kapital og verifikation.",
    "links": [
-    "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
-    "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec"
+    "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
+    "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics"
    ]
   }
  ],
- "tendens": "Følg, om Moonshot faktisk frigiver Kimi K3.1 Pro-vægtene senest 4. november, og om Google åbner Gemini 4 Carbon bredere. Begge dele er annonceret, men ikke gennemført.",
+ "tendens": "Blackstone venter ifølge Financial Times, at Anthropic efter børsnoteringen får en høj junk-rating i dobbelt B-området, ikke investment grade. Det vil gøre det dyrere for selskabet at rejse kapital til de store regnekraftaftaler. Hverken Anthropic eller Blackstone har kommenteret over for TechCrunch.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "e4d09f5073cc2147ec7f0fbb2a0c6611885e7783c6f43f110aa6007017a35a7e",
- "dato": "2026-10-30T21:21:31.732471+00:00",
- "opdateret": "2026-10-30T21:21:31.732471+00:00",
- "periode_fra": "2026-10-22T22:00:00+00:00",
- "periode_til": "2026-10-29T23:00:00+00:00",
+ "basis_signatur": "fe718e587b081e1e98a895eff924c0ab856e9b891d68c31dae018bcaf338a7df",
+ "dato": "2026-10-31T06:30:59.282579+00:00",
+ "opdateret": "2026-10-31T06:30:59.282579+00:00",
+ "periode_fra": "2026-10-23T22:00:00+00:00",
+ "periode_til": "2026-10-30T23:00:00+00:00",
  "stats": {
-  "historier": 91,
-  "kilder": 7
+  "historier": 105,
+  "kilder": 6
  }
 }
