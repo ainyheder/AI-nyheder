@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-10-31T06:12:14.287974+00:00",
+  "opdateret": "2026-10-31T14:42:12.491704+00:00",
   "kladder": [
     {
       "titel": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
@@ -101,39 +101,6 @@
       ]
     },
     {
-      "titel": "Genie 4: A new generation of world simulation",
-      "link": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-      "resume": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
-      "dato": "2026-10-27T16:01:38+00:00",
-      "kilde": "Google DeepMind",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-10-27T20:55:19.965914+00:00",
-      "eget_foerst_set": "2026-10-27T20:55:19.965914+00:00",
-      "rubrik": "DeepMind lancerer verdensmodellen Genie 4",
-      "resume_da": "Ifølge DeepMind løfter modellen realismen i realtidssimulering; materialet siger intet om adgang eller uafhængige tests.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 4,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "DeepMind annoncerer Genie 4 som ny verdensmodel med mere realistisk realtidssimulering; intet om adgang eller test.",
-        "forbehold": "Kun producentens påstand om realismen; materialet siger intet om adgang, benchmarks eller uafhængige tests.",
-        "emne": "genie 4"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Making it easier for websites to express AI training preferences",
       "link": "https://openai.com/index/helping-websites-express-ai-training-preferences",
       "resume": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers.",
@@ -159,6 +126,39 @@
         "begrundelse": "OpenAI vil respektere et fælles robots.txt-signal for AI-træningspræferencer.",
         "forbehold": "Få detaljer om hvilke udbydere der deltager, og hvordan signalet håndhæves.",
         "emne": "openai robots.txt ai-træning"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Genie 4: A new generation of world simulation",
+      "link": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "resume": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+      "dato": "2026-10-27T16:01:38+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-27T20:55:19.965914+00:00",
+      "eget_foerst_set": "2026-10-27T20:55:19.965914+00:00",
+      "rubrik": "DeepMind lancerer verdensmodellen Genie 4",
+      "resume_da": "Ifølge DeepMind løfter modellen realismen i realtidssimulering; materialet siger intet om adgang eller uafhængige tests.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "DeepMind annoncerer Genie 4 som ny verdensmodel med mere realistisk realtidssimulering; intet om adgang eller test.",
+        "forbehold": "Kun producentens påstand om realismen; materialet siger intet om adgang, benchmarks eller uafhængige tests.",
+        "emne": "genie 4"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 6,
@@ -243,6 +243,7 @@
       "eget_foerst_set": "2026-10-31T06:12:14.287974+00:00",
       "rubrik": "OpenAI deler retsindlæg om fair use",
       "resume_da": "OpenAI gengiver uddrag fra retsindlæg af skabere, akademikere, tilgængelighedsforkæmpere og juridiske eksperter, der argumenterer for, at fair use understøtter AI-træning og innovation.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -259,7 +260,6 @@
         "emne": "openai fair use"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -393,39 +393,6 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "dbreunig/nesformer",
-      "link": "https://simonwillison.net/2026/Oct/30/nesformer/",
-      "resume": "dbreunig/nesformer Inspired by qwenputer by Divyansh Agrawal, Drew Breunig baked a working emulator for a Nintendo Entertainment System 6502 CPU into the weights of Qwen3.5-4B. You can now play NES ROMs such as Super Mario Bros (very slowly) running inside Qwen! In a comment on Hacker News Drew reveals the Opus 5.5 prompts he used to build this system: Read this article and any relevant source…",
-      "dato": "2026-10-30T21:59:22+00:00",
-      "kilde": "Simon Willison AI",
-      "kategori": "Forskning",
-      "foerst_set": "2026-10-31T06:12:14.287974+00:00",
-      "eget_foerst_set": "2026-10-31T06:12:14.287974+00:00",
-      "rubrik": "Drew Breunig bygger NES-emulator ind i Qwen3.5-4B",
-      "resume_da": "Emulatoren til NES-konsollens 6502-CPU ligger i modellens vægte, så Super Mario Bros kan køre – meget langsomt – inde i sprogmodellen.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Drew Breunig har indbygget en NES-emulator i vægtene på Qwen3.5-4B, så spil kan køre meget langsomt i modellen.",
-        "forbehold": "",
-        "emne": "qwen3.5-4b/nesformer"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 3,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -772,39 +739,6 @@
       ]
     },
     {
-      "titel": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
-      "link": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
-      "resume": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
-      "dato": "2026-10-26T13:45:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-10-27T05:29:27.063150+00:00",
-      "eget_foerst_set": "2026-10-27T05:29:27.063150+00:00",
-      "rubrik": "CodeRabbit bruger GPT-6.1 Sol til sikkerhedstjek",
-      "resume_da": "OpenAI skriver, at sikkerhedsagenten hjælper udviklere med at gennemgå fund og foreslåede rettelser i komplekse kodebaser.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "CodeRabbit bruger GPT-6.1 Sol i en sikkerhedsagent, der undersøger risici i komplekse kodebaser og foreslår rettelser.",
-        "forbehold": "Kundecase fra OpenAI selv uden uafhængig dokumentation af effekten.",
-        "emne": "coderabbit"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Granite Switch 4.1.1 — Update models like you update software",
       "link": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
       "resume": "",
@@ -833,6 +767,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 2,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+      "link": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+      "resume": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
+      "dato": "2026-10-26T13:45:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-10-27T05:29:27.063150+00:00",
+      "eget_foerst_set": "2026-10-27T05:29:27.063150+00:00",
+      "rubrik": "CodeRabbit bruger GPT-6.1 Sol til sikkerhedstjek",
+      "resume_da": "OpenAI skriver, at sikkerhedsagenten hjælper udviklere med at gennemgå fund og foreslåede rettelser i komplekse kodebaser.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "CodeRabbit bruger GPT-6.1 Sol i en sikkerhedsagent, der undersøger risici i komplekse kodebaser og foreslår rettelser.",
+        "forbehold": "Kundecase fra OpenAI selv uden uafhængig dokumentation af effekten.",
+        "emne": "coderabbit"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1003,39 +970,6 @@
       ]
     },
     {
-      "titel": "Securing our frontier model training environment",
-      "link": "https://openai.com/index/securing-our-frontier-model-training-environment",
-      "resume": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming.",
-      "dato": "2026-10-23T10:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-10-23T20:03:23.140200+00:00",
-      "eget_foerst_set": "2026-10-23T20:03:23.140200+00:00",
-      "rubrik": "OpenAI strammer sikkerheden om modeltræning",
-      "resume_da": "Træning og evaluering af frontier-modeller foregår nu i isolerede offline-miljøer, og sikkerheden afprøves med ressourcekrævende red-teaming, oplyser OpenAI selv.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI beskriver skærpet indeslutning af træningsmiljøer for frontier-modeller med offline-miljøer og ressourcekrævende red-teaming.",
-        "forbehold": "OpenAI beskriver egne tiltag; ingen uafhængig granskning.",
-        "emne": "openai træningssikkerhed"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "nemotron-halloween",
       "link": "https://huggingface.co/blog/nvidia/nemotron-halloween",
       "resume": "",
@@ -1064,6 +998,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 2,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Securing our frontier model training environment",
+      "link": "https://openai.com/index/securing-our-frontier-model-training-environment",
+      "resume": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming.",
+      "dato": "2026-10-23T10:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "eget_foerst_set": "2026-10-23T20:03:23.140200+00:00",
+      "rubrik": "OpenAI strammer sikkerheden om modeltræning",
+      "resume_da": "Træning og evaluering af frontier-modeller foregår nu i isolerede offline-miljøer, og sikkerheden afprøves med ressourcekrævende red-teaming, oplyser OpenAI selv.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI beskriver skærpet indeslutning af træningsmiljøer for frontier-modeller med offline-miljøer og ressourcekrævende red-teaming.",
+        "forbehold": "OpenAI beskriver egne tiltag; ingen uafhængig granskning.",
+        "emne": "openai træningssikkerhed"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1410,6 +1377,7 @@
       "eget_foerst_set": "2026-10-31T06:12:14.287974+00:00",
       "rubrik": "Intel-aktien styrtdykker: 12 mia. dollars væk fra statens andel",
       "resume_da": "Faldet skyldes svigtende pc-salg, mens AI-industrien æder hukommelse og komponenter og presser pc-priserne op.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1426,7 +1394,6 @@
         "emne": "intel aktiefald"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -1443,6 +1410,7 @@
       "eget_foerst_set": "2026-10-31T06:12:14.287974+00:00",
       "rubrik": "Boom skifter fokus fra overlydsfly til AI-datacentre",
       "resume_da": "Overlydsflyet kan blive forsinket, og selskabets strømbusiness til datacentre har mistet en kunde.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1459,7 +1427,6 @@
         "emne": "boom supersonic"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -1476,6 +1443,7 @@
       "eget_foerst_set": "2026-10-31T06:12:14.287974+00:00",
       "rubrik": "Tech-nørder kan klæde sig ud som AI-agent-ikon",
       "resume_da": "Forslagene tæller et AI-agent-ikon, en PHP-sårbarhed og en søvnig Bryan Johnson.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1492,7 +1460,6 @@
         "emne": "halloweenkostumer tech"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -59391,7 +59358,9 @@
         "status": "godkendt",
         "kontrolleret": "2026-10-30T21:07:28.869911+00:00"
       },
-      "side": "artikel/ee09513d3b256af4.html"
+      "side": "artikel/ee09513d3b256af4.html",
+      "billedmotiv": "A large opaque cloud bearing the orange AWS smile-arrow mark sits atop a rising stack of solid server racks; a construction crane lifts one more server rack toward the cloud, and a single large golden coin rests at the base.",
+      "billedmotiv_instruks": "9634099e044e35577d7a"
     },
     {
       "titel": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
@@ -59738,6 +59707,42 @@
       "eget_foerst_set": "2026-10-31T06:12:14.287974+00:00",
       "rubrik": "Apple Intelligence lander i Kina med iOS 27.3",
       "resume_da": "Første version er en beta 4. november og byder på oversættelse og fotoredigering, men ikke den nye Siri. Alibabas Qwen-chatbot bliver en del af oplevelsen.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Beta 4. november, fuld i december",
+          "tekst": "Apple har annonceret på sin kinesiske nyhedsside, at Apple Intelligence kommer til Kina med iOS 27.3. Det skriver MacRumors. De første funktioner åbner i en beta den 4. november, og den fulde version er planlagt til december.\n\nGodkendelsen i Kina faldt i juli, hvilket varslede, at lanceringen var nær. Ifølge Reuters har Apple desuden trænet sin egen sprogmodel specifikt til det kinesiske marked."
+        },
+        {
+          "overskrift": "Den nye Siri bliver ikke med",
+          "tekst": "Lanceringen bringer **ikke** Apples nye Siri-AI til Kina. I stedet får brugerne flere af de tidligere Apple Intelligence-funktioner: opsummering af notifikationer, realtidsoversættelse, værktøjer til at omskrive og korrekturlæse tekst, visuel intelligens og en funktion, der fjerner objekter fra billeder.\n\nHvornår den nye Siri følger efter i Kina, og om den overhovedet gør det, fremgår ikke af Apples annoncering."
+        },
+        {
+          "overskrift": "Alibabas Qwen får plads i iOS",
+          "tekst": "Apple oplyser også, at man har arbejdet sammen med Alibaba om at understøtte dennes Qwen-chatbot i nogle oplevelser. Det minder om den måde, iOS integrerer OpenAIs ChatGPT på, og den integration kom i 2024.\n\nQwen er Alibabas familie af sprogmodeller. Apple siger selv, at den skal indgå i nogle oplevelser — hvilke fremgår ikke af annonceringen."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "4. november",
+          "label": "Beta af iOS 27.3 med de første Apple Intelligence-funktioner i Kina"
+        },
+        {
+          "tal": "December",
+          "label": "Planlagt fuld udgivelse af iOS 27.3"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "Kinesiske iPhone-brugere får dermed flere af de AI-funktioner, som andre markeder har haft, men må vente på den nye Siri. Qwen-samarbejdet viser, at Apple tilpasser sig lokale partnere i Kina.",
+      "pointer": [
+        "Beta 4. november, fuld version i december",
+        "Ingen ny Siri i Kina ved lanceringen",
+        "Alibabas Qwen indgår i nogle oplevelser"
+      ],
+      "billedmotiv": "A solid smartphone slab with a large front-facing Apple logo, a framed photo beside it where a solid object is lifted out leaving an empty outline, and a thick speech bubble with two opposing arrows for real-time translation; the three forms are clearly grouped.",
+      "billedmotiv_instruks": "384b075c011a34069f60",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -59754,48 +59759,12 @@
         "emne": "apple intelligence kina"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
-      "sektioner": [
-        {
-          "overskrift": "Beta 4. november, fuld i december",
-          "tekst": "Apple har annonceret på sin kinesiske nyhedsside, at Apple Intelligence kommer til Kina med iOS 27.3. Det skriver MacRumors. De første funktioner åbner i en beta den 4. november, og den fulde version er planlagt til december.\n\nGodkendelsen i Kina faldt i juli, hvilket varslede, at lanceringen var nær. Ifølge Reuters har Apple desuden trænet sin egen sprogmodel specifikt til det kinesiske marked."
-        },
-        {
-          "overskrift": "Den nye Siri bliver ikke med",
-          "tekst": "Lanceringen bringer **ikke** Apples nye Siri-AI til Kina. I stedet får brugerne flere af de tidligere Apple Intelligence-funktioner: opsummering af notifikationer, realtidsoversættelse, værktøjer til at omskrive og korrekturlæse tekst, visuel intelligens og en funktion, der fjerner objekter fra billeder.\n\nHvornår den nye Siri følger efter i Kina, og om den overhovedet gør det, fremgår ikke af Apples annoncering."
-        },
-        {
-          "overskrift": "Alibabas Qwen får plads i iOS",
-          "tekst": "Apple oplyser også, at man har arbejdet sammen med Alibaba om at understøtte dennes Qwen-chatbot i nogle oplevelser. Det minder om den måde, iOS integrerer OpenAIs ChatGPT på, og den integration kom i 2024.\n\nQwen er Alibabas familie af sprogmodeller. Apple siger selv, at den skal indgå i nogle oplevelser — hvilke fremgår ikke af annonceringen."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "4. november",
-          "label": "Beta af iOS 27.3 med de første Apple Intelligence-funktioner i Kina"
-        },
-        {
-          "tal": "December",
-          "label": "Planlagt fuld udgivelse af iOS 27.3"
-        }
-      ],
-      "detaljer": [],
-      "betydning": "Kinesiske iPhone-brugere får dermed flere af de AI-funktioner, som andre markeder har haft, men må vente på den nye Siri. Qwen-samarbejdet viser, at Apple tilpasser sig lokale partnere i Kina.",
-      "pointer": [
-        "Beta 4. november, fuld version i december",
-        "Ingen ny Siri i Kina ved lanceringen",
-        "Alibabas Qwen indgår i nogle oplevelser"
-      ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-31T06:15:35.521377+00:00"
       },
-      "billedmotiv": "A solid smartphone slab with a large front-facing Apple logo, a framed photo beside it where a solid object is lifted out leaving an empty outline, and a thick speech bubble with two opposing arrows for real-time translation; the three forms are clearly grouped.",
-      "billedmotiv_instruks": "384b075c011a34069f60",
+      "prio": 6,
       "side": "artikel/ffe1ba5a47188fc3.html"
     },
     {
@@ -59809,24 +59778,7 @@
       "eget_foerst_set": "2026-10-31T06:12:14.287974+00:00",
       "rubrik": "Alphabet og Amazon i minus på AI",
       "resume_da": "Alphabet, Amazon og Meta har negativ fri cashflow, mens Microsoft er undtagelsen. Gælden bag AI-investeringerne er tredoblet.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "TechCrunch: gæld, negativ cashflow og investorskepsis rejser spørgsmål om bæredygtigheden af AI-investeringsboomet.",
-        "forbehold": "",
-        "emne": "ai-investeringsboom"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Investorerne sælger efter AI-løfter",
@@ -59841,8 +59793,6 @@
           "tekst": "Microsoft, Alphabet, Amazon, Meta og Oracle rejste tilsammen 326 mia. dollar i gæld i 2026, tre gange mere end året før, ifølge S&P Global Market Intelligence.\n\nDet kan gøre Anthropics kommende børsnotering vanskeligere. AI-selskabet indgav sin ansøgning tidligere på ugen. Financial Times skrev fredag, at Blackstone har advaret investorer om, at Anthropic efter børsnoteringen måske ikke kvalificerer sig til en investment-grade-kreditvurdering. Det kan gøre selskabet mere afhængigt af store cloududbydere og tredjeparter til at finansiere sin infrastruktur."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "Over 740 mia. dollar",
@@ -59861,6 +59811,7 @@
           "label": "Alphabets negative frie cashflow i tredje kvartal"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Meta siger, at den gratis AI-agent Muse er meget beregningstung at drive.",
         "Aktier i mindre selskaber, der udlejer AI-regnekraft, faldt efter Microsofts lavere capex."
@@ -59871,13 +59822,31 @@
         "Alphabet, Amazon og Meta i minus",
         "Microsoft eneste positive undtagelse"
       ],
+      "billedmotiv": "A solid server rack split into two halves, one bearing Google's four-colour G and the other the curved Amazon smile arrow; a heavy chain wraps both halves, and one large coin falls from a jagged crack between them, showing negative cash flow and rising debt.",
+      "billedmotiv_instruks": "6f0c893d2e4b48d74049",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "TechCrunch: gæld, negativ cashflow og investorskepsis rejser spørgsmål om bæredygtigheden af AI-investeringsboomet.",
+        "forbehold": "",
+        "emne": "ai-investeringsboom"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-31T06:18:07.513846+00:00"
       },
-      "billedmotiv": "A solid server rack split into two halves, one bearing Google's four-colour G and the other the curved Amazon smile arrow; a heavy chain wraps both halves, and one large coin falls from a jagged crack between them, showing negative cash flow and rising debt.",
-      "billedmotiv_instruks": "6f0c893d2e4b48d74049",
+      "prio": 6,
       "side": "artikel/d2ae3dfb1d7fd7f4.html"
     },
     {
@@ -59891,24 +59860,7 @@
       "eget_foerst_set": "2026-10-31T06:12:14.287974+00:00",
       "rubrik": "Anthropic-udvidelse bagdøret i næsten 12 timer",
       "resume_da": "Version 2.1.313 på Cursor forsøgte at installere en SSH-bagdør hos op mod 5.000 udviklere. Anthropic har ikke offentligt advaret kunderne.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Anthropics VS Code-udvidelse var bagdørsåbnet via en verificeret Cursor-konto i næsten 12 timer.",
-        "forbehold": "Det er uafklaret, hvordan angriberne fik adgang til Anthropics verificerede konto.",
-        "emne": "anthropic cursor-udvidelse"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Version 2.1.313 blev skubbet ud",
@@ -59927,8 +59879,6 @@
           "tekst": "Har man installeret eller opdateret Anthropics VS Code-udvidelse fra Cursor mellem klokken 5.27 og 16.35 østlig amerikansk tid torsdag, bør man betragte sig som berørt. Har man gjort det for nylig, bør man også overveje mulig infektion.\n\nBåde Cursor og Phorion offentliggør indikatorer for kompromittering, blandt andet IP-adresser og kryptografiske hashes. Det kan bruges til at undersøge, om en maskine har været i kontakt med bagdøren."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "Op mod 5.000 brugere",
@@ -59939,6 +59889,7 @@
           "label": "Tidsvindue for installation eller opdatering af den bagdørede version"
         }
       ],
+      "figurer": [],
       "detaljer": [],
       "betydning": "Hændelsen viser, at en officiel udvidelseskonto kan blive et enkelt punkt, hvor mange udviklermiljøer kompromitteres på én gang.",
       "pointer": [
@@ -59946,14 +59897,32 @@
         "Op mod 5.000 brugere kan være berørt",
         "Anthropic har ikke offentligt advaret kunderne"
       ],
+      "billedmotiv": "A thick software extension package embossed with a large front-facing terracotta Anthropic starburst, its side sliding open to reveal a solid hidden door with a keyhole; a thick cable runs from the door into a dark tunnel showing the backdoor mechanism.",
+      "billedmotiv_instruks": "df7746ea5b78bbe8103a",
+      "billede": "data/img/531b5f998ce6523d.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Anthropics VS Code-udvidelse var bagdørsåbnet via en verificeret Cursor-konto i næsten 12 timer.",
+        "forbehold": "Det er uafklaret, hvordan angriberne fik adgang til Anthropics verificerede konto.",
+        "emne": "anthropic cursor-udvidelse"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-31T06:16:47.084017+00:00"
       },
-      "billedmotiv": "A thick software extension package embossed with a large front-facing terracotta Anthropic starburst, its side sliding open to reveal a solid hidden door with a keyhole; a thick cable runs from the door into a dark tunnel showing the backdoor mechanism.",
-      "billedmotiv_instruks": "df7746ea5b78bbe8103a",
-      "billede": "data/img/531b5f998ce6523d.webp",
+      "prio": 6,
       "side": "artikel/0697c0d6577e4ad4.html"
     },
     {
@@ -59967,24 +59936,7 @@
       "eget_foerst_set": "2026-10-30T15:15:27.943712+00:00",
       "rubrik": "Susan Collins møder modstand mod AI-data centre",
       "resume_da": "76 procent af adspurgte mainere modsætter sig data centre i deres lokalområde, og tech-penge strømmer ind i det dyreste senatsvalg pr. indbygger i USA's historie.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "AI-datacentre bliver centralt tema i senatsvalgkamp i Maine efter vrede over klima- og vandpåvirkning.",
-        "forbehold": "",
-        "emne": "maine, ai-datacentre, senatsvalg"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Maines vælgere vender sig mod data centre",
@@ -59999,8 +59951,6 @@
           "tekst": "Senatsvalget ventes at blive det dyreste pr. indbygger i USA's historie, og en stor del af pengene kommer fra tech-industrien. Molly White, der driver Tech Influence Watch, siger, at AI- og data center-tilhængere bruger samme playbook som krypto-industrien i 2024.\n\nHun startede sitet i 2024 for at spore krypto-spending og har nu udvidet det til AI og Big Tech. Ifølge White er AI blevet det nye spørgsmål på vælgermøder, hvor folk også spørger til økonomi og krig."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "76 procent",
@@ -60019,6 +59969,7 @@
           "label": "Republikanernes projekterede forbrug i senatsvalget"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Tømmerindustrien bidrog med ca. 8,3 mia. dollar til Maines økonomi i 2024, men tariffer har ramt den.",
         "Nicholas Jacobs, der leder Public Policy Lab ved Colby College, peger på uigennemsigtigt ejerskab.",
@@ -60030,11 +59981,31 @@
         "Tech-penge går til det dyreste senatsvalg pr. indbygger.",
         "Data centre skaber ifølge økonomer næsten ingen varig beskæftigelse."
       ],
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "AI-datacentre bliver centralt tema i senatsvalgkamp i Maine efter vrede over klima- og vandpåvirkning.",
+        "forbehold": "",
+        "emne": "maine, ai-datacentre, senatsvalg"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-31T06:19:56.653705+00:00"
       },
+      "prio": 5,
+      "billedmotiv": "An upright, solid ballot box shaped like Maine with a red stop bar across its slot; a black data-center server rack is firmly pushed back by the bar, while a thick stack of bound campaign cash sits beside the box.",
+      "billedmotiv_instruks": "d3649f5b00629ab8dbcb",
       "side": "artikel/62deaf73d869952b.html"
     },
     {
@@ -60048,6 +60019,46 @@
       "eget_foerst_set": "2026-10-31T06:12:14.287974+00:00",
       "rubrik": "Blackstone venter junk-rating til Anthropic efter IPO",
       "resume_da": "Blackstone har vendt sin prognose: Anthropic ventes nu at få en dobbelt B-rating, hvilket kan gøre det dyrere for AI-labben at rejse penge til chips.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Blackstone vendte sin vurdering",
+          "tekst": "Ifølge Financial Times fortalte Blackstone investorerne i en aftale på 63 milliarder dollar, der skal finansiere Anthropics chips, at selskabet nu venter en høj junk-rating efter børsnoteringen.\n\nDet er en vendning. Tidligere havde Blackstone ifølge avisen sagt det modsatte: at Anthropic, der står bag Claude, ville få en investment-grade-rating inden 2027."
+        },
+        {
+          "overskrift": "Dobbelt B er stadig junk",
+          "tekst": "En junk-rating er kreditvurderingernes betegnelse for gæld med høj risiko. Ifølge FT venter Blackstone nu en rating i **dobbelt B-området**, det øverste niveau i den spekulative kategori.\n\nBlackstones prognose er kun et bud. Men en høj junk-rating vil gøre det sværere og dyrere for Anthropic at rejse penge til sine store udgifter."
+        },
+        {
+          "overskrift": "Stort forbrug vækker investoruro",
+          "tekst": "Anthropic har det seneste år indgået en række store aftaler om computerkraft, og det har gjort investorerne urolige, skriver TechCrunch.\n\nTidligere på ugen indgav selskabet officielt sin ansøgning om at gå på børsen. Hverken Anthropic eller Blackstone har villet kommentere over for TechCrunch."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "63 milliarder dollar",
+          "label": "Aftale om finansiering af Anthropics chips, hvor Blackstone er ankerinvestor"
+        },
+        {
+          "tal": "Dobbelt B",
+          "label": "Forventet rating, øverste niveau i den spekulative junk-kategori"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Anthropic indgav tidligere på ugen officielt sin ansøgning om børsnotering.",
+        "Blackstone er ankerinvestor i aftalen om at finansiere Anthropics chips.",
+        "Blackstone ventede tidligere en investment-grade-rating inden 2027."
+      ],
+      "betydning": "En høj junk-rating vil gøre det dyrere og sværere for Anthropic at rejse kapital til de store compute-aftaler, selskabet har indgået det seneste år.",
+      "pointer": [
+        "Blackstone ventede investment-grade inden 2027",
+        "Anthropic har indgivet ansøgning om børsnotering"
+      ],
+      "billedmotiv": "A thick dark bond certificate embossed with a large front-facing terracotta Anthropic starburst, bent under a heavy metal weight; a downward arrow is cut into the weight's side, and the certificate's edge curls as it bears the load, showing the rating pressure on Anthropic.",
+      "billedmotiv_instruks": "4f1540f4881da3515a3d",
+      "billede": "data/img/bcaab7fceb122155.webp",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -60064,52 +60075,12 @@
         "emne": "anthropic kreditvurdering"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 5,
-      "sektioner": [
-        {
-          "overskrift": "Blackstone vendte sin vurdering",
-          "tekst": "Ifølge Financial Times fortalte Blackstone investorerne i en aftale på 63 milliarder dollar, der skal finansiere Anthropics chips, at selskabet nu venter en høj junk-rating efter børsnoteringen.\n\nDet er en vendning. Tidligere havde Blackstone ifølge avisen sagt det modsatte: at Anthropic, der står bag Claude, ville få en investment-grade-rating inden 2027."
-        },
-        {
-          "overskrift": "Dobbelt B er stadig junk",
-          "tekst": "En junk-rating er kreditvurderingernes betegnelse for gæld med høj risiko. Ifølge FT venter Blackstone nu en rating i **dobbelt B-området**, det øverste niveau i den spekulative kategori.\n\nBlackstones prognose er kun et bud. Men en høj junk-rating vil gøre det sværere og dyrere for Anthropic at rejse penge til sine store udgifter."
-        },
-        {
-          "overskrift": "Stort forbrug vækker investoruro",
-          "tekst": "Anthropic har det seneste år indgået en række store aftaler om computerkraft, og det har gjort investorerne urolige, skriver TechCrunch.\n\nTidligere på ugen indgav selskabet officielt sin ansøgning om at gå på børsen. Hverken Anthropic eller Blackstone har villet kommentere over for TechCrunch."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "63 milliarder dollar",
-          "label": "Aftale om finansiering af Anthropics chips, hvor Blackstone er ankerinvestor"
-        },
-        {
-          "tal": "Dobbelt B",
-          "label": "Forventet rating, øverste niveau i den spekulative junk-kategori"
-        }
-      ],
-      "detaljer": [
-        "Anthropic indgav tidligere på ugen officielt sin ansøgning om børsnotering.",
-        "Blackstone er ankerinvestor i aftalen om at finansiere Anthropics chips.",
-        "Blackstone ventede tidligere en investment-grade-rating inden 2027."
-      ],
-      "betydning": "En høj junk-rating vil gøre det dyrere og sværere for Anthropic at rejse kapital til de store compute-aftaler, selskabet har indgået det seneste år.",
-      "pointer": [
-        "Blackstone ventede investment-grade inden 2027",
-        "Anthropic har indgivet ansøgning om børsnotering"
-      ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-31T06:17:16.936203+00:00"
       },
-      "billedmotiv": "A thick dark bond certificate embossed with a large front-facing terracotta Anthropic starburst, bent under a heavy metal weight; a downward arrow is cut into the weight's side, and the certificate's edge curls as it bears the load, showing the rating pressure on Anthropic.",
-      "billedmotiv_instruks": "4f1540f4881da3515a3d",
-      "billede": "data/img/bcaab7fceb122155.webp",
+      "prio": 5,
       "side": "artikel/d12607a6e4746ac3.html"
     },
     {
@@ -60123,24 +60094,7 @@
       "eget_foerst_set": "2026-10-31T06:12:14.287974+00:00",
       "rubrik": "Ollie lukker efter konkurrence fra Muse og Instinct",
       "resume_da": "Den familieorienterede AI-assistent Ollie indstiller driften 6. november. Brugerne får besked om at eksportere data og få refunderet deres abonnement.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Privacy-fokuserede Ollie lukker om en uge ifølge stifteren, mens markedet fyldes af AI-assistenter.",
-        "forbehold": "",
-        "emne": "ollie ai-assistent"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Beskeden kom på X fredag",
@@ -60159,8 +60113,6 @@
           "tekst": "Lennon peger selv på konkurrencen. »Vi kom tæt på, men kunne i sidste ende ikke følge med,« skrev han og nævnte Muse, Instinct og andre nye aktører på markedet.\n\nMed flere spillere blev det sværere at skille sig ud, vokse og rejse den kapital, selskabet havde brug for. Kunderne får i de kommende dage besked om, hvordan de eksporterer deres data og får deres abonnement refunderet."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "7,5 mio. dollar",
@@ -60171,6 +60123,7 @@
           "label": "Datoen for Ollies nedlukning, annonceret 30. oktober"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Lennon grundlagde Ollie sammen med en lille gruppe og var CEO.",
         "Assistenten var tekstbaseret og solgt som abonnement.",
@@ -60183,14 +60136,32 @@
         "Brugerne får hjælp til dataeksport og refusion",
         "Konkurrence og kapitalrejsning blev for svært"
       ],
+      "billedmotiv": "A solid rounded family-assistant app tile bearing a simple house, calendar and coin symbol, with a power symbol carved into its top, squeezed between two thick blank app-shaped slabs; the tile's edge cracks and a refund arrow curls out from its side.",
+      "billedmotiv_instruks": "4425097729355c89bc4f",
+      "billede": "data/img/c12768d6f553bdcd.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Privacy-fokuserede Ollie lukker om en uge ifølge stifteren, mens markedet fyldes af AI-assistenter.",
+        "forbehold": "",
+        "emne": "ollie ai-assistent"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-31T06:18:10.873384+00:00"
       },
-      "billedmotiv": "A solid rounded family-assistant app tile bearing a simple house, calendar and coin symbol, with a power symbol carved into its top, squeezed between two thick blank app-shaped slabs; the tile's edge cracks and a refund arrow curls out from its side.",
-      "billedmotiv_instruks": "4425097729355c89bc4f",
-      "billede": "data/img/c12768d6f553bdcd.webp",
+      "prio": 4,
       "side": "artikel/d319498a5eb3b02d.html"
     },
     {
@@ -60204,6 +60175,49 @@
       "eget_foerst_set": "2026-10-31T06:12:14.287974+00:00",
       "rubrik": "Nvidia overvejer garanti for Nscale-lån",
       "resume_da": "Nvidia forhandler om at garantere milliarder i gæld til Nscale’s Anthropic-datacenter i West Virginia. Garantien skal dække restværdien og holde byggeriet i gang.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Nvidia som medunderskriver på lån",
+          "tekst": "Nvidia forhandler om at stå som garant for milliarder af dollars i gældsfinansiering til AI-cloududbyderen Nscale’s datacenter i West Virginia. Det skriver TechCrunch på baggrund af The Information og Bloomberg.\n\nGarantien er en såkaldt residual value guarantee: Hvis Nscale misligholder betalingerne til byggeriet, ville Nvidia træde ind, overtage anlægget midlertidigt og hjælpe med at finde en køber og en ny lejer. Nvidias tidligere støtte til cloududbydere har mest dækket lejemål og chipkøb, ikke konstruktion."
+        },
+        {
+          "overskrift": "Anthropic har skrevet under på 44,6 milliarder",
+          "tekst": "Anthropics kontrakt med Nscale dækker den første bygning på 460 megawatt i West Virginia og beløber sig til 44,6 milliarder dollars, ifølge Nscales børsnoteringspapirer. Bygningen forventes at bruge Nvidias næste generation af chips, Vera Rubin.\n\nParterne forhandler også om en anden aftale på cirka 45 milliarder dollars for endnu en bygning. Anthropic har spredt sin infrastrukturudgift på flere chipproducenter, skriver TechCrunch."
+        },
+        {
+          "overskrift": "Nscale er langt fra sine mål",
+          "tekst": "Nscale havde omkring 25.000 avancerede AI-chips kørende i august mod næsten 500.000 planlagte. Selskabet vil på børsen med en værdiansættelse på op til 35 milliarder dollars.\n\nWest Virginia-projektet har også haft problemer: Afstrømning fra byggepladsen har oversvømmet nærliggende hjem, og i september fik det statslig certificering efter måneders forhandlinger. I denne måned trak Microsoft sig fra et planlagt Nscale-anlæg i England, fordi strømmen først kommer i 2030'erne."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "170 mia. dollars",
+          "label": "Nvidias investeringer og kreditstøtte til neoclouds og store kunder, ifølge The Information"
+        },
+        {
+          "tal": "1 mia. dollars",
+          "label": "Nvidias konvertible finansiering til Nscale i september"
+        },
+        {
+          "tal": "Over 30 pct.",
+          "label": "Fald i aktierne i CoreWeave, Nebius og IREN i oktober, ifølge CNBC"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Blackstone har advaret om, at Anthropic kan få en kreditvurdering under investment grade efter sin børsnotering.",
+        "Anthropic har spredt sin infrastrukturudgift på flere chipproducenter, skriver TechCrunch."
+      ],
+      "betydning": "Garantien vil knytte Nvidia tættere til Nscale og sikre efterspørgsel efter Nvidias chips, men øger samtidig Nvidias økonomiske risiko, hvis Nscale misligholder.",
+      "pointer": [
+        "Nvidia overvejer at garantere Nscale-lån",
+        "Anthropic er en af de største købere af AI-compute"
+      ],
+      "billedmotiv": "A solid datacenter building with the terracotta Anthropic starburst on its front, protected by a thick metal shield held by a large green Nvidia chip bearing Nvidia's green eye logo; the chip's edge grips the shield as if guaranteeing the structure.",
+      "billedmotiv_instruks": "762466e9b830bab841c8",
+      "billede": "data/img/f0a190450f907a39.jpg",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -60220,55 +60234,12 @@
         "emne": "nvidia/nscale datacenterfinansiering"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Nvidia som medunderskriver på lån",
-          "tekst": "Nvidia forhandler om at stå som garant for milliarder af dollars i gældsfinansiering til AI-cloududbyderen Nscale’s datacenter i West Virginia. Det skriver TechCrunch på baggrund af The Information og Bloomberg.\n\nGarantien er en såkaldt residual value guarantee: Hvis Nscale misligholder betalingerne til byggeriet, ville Nvidia træde ind, overtage anlægget midlertidigt og hjælpe med at finde en køber og en ny lejer. Nvidias tidligere støtte til cloududbydere har mest dækket lejemål og chipkøb, ikke konstruktion."
-        },
-        {
-          "overskrift": "Anthropic har skrevet under på 44,6 milliarder",
-          "tekst": "Anthropics kontrakt med Nscale dækker den første bygning på 460 megawatt i West Virginia og beløber sig til 44,6 milliarder dollars, ifølge Nscales børsnoteringspapirer. Bygningen forventes at bruge Nvidias næste generation af chips, Vera Rubin.\n\nParterne forhandler også om en anden aftale på cirka 45 milliarder dollars for endnu en bygning. Anthropic har spredt sin infrastrukturudgift på flere chipproducenter, skriver TechCrunch."
-        },
-        {
-          "overskrift": "Nscale er langt fra sine mål",
-          "tekst": "Nscale havde omkring 25.000 avancerede AI-chips kørende i august mod næsten 500.000 planlagte. Selskabet vil på børsen med en værdiansættelse på op til 35 milliarder dollars.\n\nWest Virginia-projektet har også haft problemer: Afstrømning fra byggepladsen har oversvømmet nærliggende hjem, og i september fik det statslig certificering efter måneders forhandlinger. I denne måned trak Microsoft sig fra et planlagt Nscale-anlæg i England, fordi strømmen først kommer i 2030'erne."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "170 mia. dollars",
-          "label": "Nvidias investeringer og kreditstøtte til neoclouds og store kunder, ifølge The Information"
-        },
-        {
-          "tal": "1 mia. dollars",
-          "label": "Nvidias konvertible finansiering til Nscale i september"
-        },
-        {
-          "tal": "Over 30 pct.",
-          "label": "Fald i aktierne i CoreWeave, Nebius og IREN i oktober, ifølge CNBC"
-        }
-      ],
-      "detaljer": [
-        "Blackstone har advaret om, at Anthropic kan få en kreditvurdering under investment grade efter sin børsnotering.",
-        "Anthropic har spredt sin infrastrukturudgift på flere chipproducenter, skriver TechCrunch."
-      ],
-      "betydning": "Garantien vil knytte Nvidia tættere til Nscale og sikre efterspørgsel efter Nvidias chips, men øger samtidig Nvidias økonomiske risiko, hvis Nscale misligholder.",
-      "pointer": [
-        "Nvidia overvejer at garantere Nscale-lån",
-        "Anthropic er en af de største købere af AI-compute"
-      ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-31T06:22:30.660101+00:00"
       },
-      "billedmotiv": "A solid datacenter building with the terracotta Anthropic starburst on its front, protected by a thick metal shield held by a large green Nvidia chip bearing Nvidia's green eye logo; the chip's edge grips the shield as if guaranteeing the structure.",
-      "billedmotiv_instruks": "762466e9b830bab841c8",
-      "billede": "data/img/f0a190450f907a39.jpg",
+      "prio": 4,
       "side": "artikel/ec65015625291e9f.html"
     },
     {
@@ -60282,6 +60253,33 @@
       "eget_foerst_set": "2026-10-30T21:00:09.129763+00:00",
       "rubrik": "Dartmouth-provost træder tilbage efter uoplyst Claude-brug",
       "resume_da": "En komité fandt, at han undlod at oplyse AI-brug i en videnskabelig artikel og en klumme. Han afviste at udlevere logs fra private konti.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Komitéen fandt uoplyst Claude-brug",
+          "tekst": "Santiago Schnell, provost ved Dartmouth College, er trådt tilbage. En rådgivende komité fandt, at han ikke havde oplyst betydelig AI-brug i en akademisk artikel og i en klumme i Washington Post, selvom udgiverne krævede det.\n\nI august 2026 skrev han selv en klumme i Washington Post med titlen “Universities are fighting AI cheating. But there’s a deeper problem.”\n\nKomitéen mente, at hans offentlige forklaringer muligvis underspillede omfanget af hans faktiske AI-brug. Han samarbejdede ikke fuldt ud.\n\nHan afviste at udlevere logs fra personlige konti med store sprogmodeller (LLM'er) og ville ikke mødes med komitéen. Men han udleverede sin Dartmouth-laptop, og komitéen fik adgang til hans Claude enterprise-konto."
+        },
+        {
+          "overskrift": "Claude hjalp med mere end grammatik",
+          "tekst": "Logs fra Claude viser, at Schnell brugte sprogmodellen til at revidere artikler, finde og rette fejl i kode og redigere eller generere figurer. Et eksempel: Han bad Claude om at være reviewer for et papir til ChemSystemsChem.\n\nHan hævdede, at han brugte AI som redaktionelt hjælpemiddel og til at tjekke grammatik, og at han ikke forstod, at denne type redigering krævede oplysning.\n\nMen et Claude-udveksling rejser spørgsmål: Han uploadede et manuskript og spurgte “Are there many signatures of AI writing in this article?” og indarbejdede ændringerne. Det kan tyde på, at han ville skjule spor af AI."
+        },
+        {
+          "overskrift": "Dartmouth vil have mere AI",
+          "tekst": "Dartmouth kalder sig stedet, der “lancerede feltet AI” i 1956, hvor udtrykket blev opfundet. Nu holder universitetet konferencen “What Must Remain Human?” med en studenter-hackathon sponsoreret af Anthropic og talere som Mira Murati og Yann LeCun.\n\nPræsident Sian Leah Beilock vil have mere AI. Hun skrev i The Atlantic i september “Why I Want More AI at Dartmouth”. Hun siger, at ledere skal “holde sig selv til de højeste standarder”, hvilket ser ud til at betyde åbenhed.\n\nSchnell har selv i et papir fra september 2026, “Who Wrote This?”, argumenteret for, at “menneskeligt skrevet” eller “AI-skrevet” er en for simpel binær.\n\nHan beskriver, hvordan GPT-5.6 Pro foreslog struktur og genererede dele af tidlige udkast, og GPT-5.6 Sol hjalp med sprogredigering.\n\nHan mener, at den menneskelige forfatter skal tage fuldt ansvar for teksten, uanset hvordan den blev til."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "Sagen viser, at kravet om at oplyse AI-brug nu rammer helt op i universiteternes ledelse. Dartmouths præsident kræver åbenhed, samtidig med at hun vil have mere AI.",
+      "pointer": [
+        "Provost trådte tilbage efter manglende AI-oplysning",
+        "Claude-logs viste redigering, kodefejl og figurer",
+        "Dartmouth vil have mere AI og kræver åbenhed"
+      ],
+      "billedmotiv": "A thick academic manuscript roll with a blank cover sheet partly peeled back to reveal a large front-facing terracotta Anthropic starburst; a heavy withdrawal stamp hovers above its face marked with a simple cross showing the undisclosed Claude use that led to resignation.",
+      "billedmotiv_instruks": "008d2ce9262060b59674",
+      "billede": "data/img/7b52d555415095d6.webp",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -60299,39 +60297,12 @@
         "emne": "dartmouth, ai-brug"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Komitéen fandt uoplyst Claude-brug",
-          "tekst": "Santiago Schnell, provost ved Dartmouth College, er trådt tilbage. En rådgivende komité fandt, at han ikke havde oplyst betydelig AI-brug i en akademisk artikel og i en klumme i Washington Post, selvom udgiverne krævede det.\n\nI august 2026 skrev han selv en klumme i Washington Post med titlen “Universities are fighting AI cheating. But there’s a deeper problem.”\n\nKomitéen mente, at hans offentlige forklaringer muligvis underspillede omfanget af hans faktiske AI-brug. Han samarbejdede ikke fuldt ud.\n\nHan afviste at udlevere logs fra personlige konti med store sprogmodeller (LLM'er) og ville ikke mødes med komitéen. Men han udleverede sin Dartmouth-laptop, og komitéen fik adgang til hans Claude enterprise-konto."
-        },
-        {
-          "overskrift": "Claude hjalp med mere end grammatik",
-          "tekst": "Logs fra Claude viser, at Schnell brugte sprogmodellen til at revidere artikler, finde og rette fejl i kode og redigere eller generere figurer. Et eksempel: Han bad Claude om at være reviewer for et papir til ChemSystemsChem.\n\nHan hævdede, at han brugte AI som redaktionelt hjælpemiddel og til at tjekke grammatik, og at han ikke forstod, at denne type redigering krævede oplysning.\n\nMen et Claude-udveksling rejser spørgsmål: Han uploadede et manuskript og spurgte “Are there many signatures of AI writing in this article?” og indarbejdede ændringerne. Det kan tyde på, at han ville skjule spor af AI."
-        },
-        {
-          "overskrift": "Dartmouth vil have mere AI",
-          "tekst": "Dartmouth kalder sig stedet, der “lancerede feltet AI” i 1956, hvor udtrykket blev opfundet. Nu holder universitetet konferencen “What Must Remain Human?” med en studenter-hackathon sponsoreret af Anthropic og talere som Mira Murati og Yann LeCun.\n\nPræsident Sian Leah Beilock vil have mere AI. Hun skrev i The Atlantic i september “Why I Want More AI at Dartmouth”. Hun siger, at ledere skal “holde sig selv til de højeste standarder”, hvilket ser ud til at betyde åbenhed.\n\nSchnell har selv i et papir fra september 2026, “Who Wrote This?”, argumenteret for, at “menneskeligt skrevet” eller “AI-skrevet” er en for simpel binær.\n\nHan beskriver, hvordan GPT-5.6 Pro foreslog struktur og genererede dele af tidlige udkast, og GPT-5.6 Sol hjalp med sprogredigering.\n\nHan mener, at den menneskelige forfatter skal tage fuldt ansvar for teksten, uanset hvordan den blev til."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [],
-      "betydning": "Sagen viser, at kravet om at oplyse AI-brug nu rammer helt op i universiteternes ledelse. Dartmouths præsident kræver åbenhed, samtidig med at hun vil have mere AI.",
-      "pointer": [
-        "Provost trådte tilbage efter manglende AI-oplysning",
-        "Claude-logs viste redigering, kodefejl og figurer",
-        "Dartmouth vil have mere AI og kræver åbenhed"
-      ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-31T06:20:46.089344+00:00"
       },
-      "billedmotiv": "A thick academic manuscript roll with a blank cover sheet partly peeled back to reveal a large front-facing terracotta Anthropic starburst; a heavy withdrawal stamp hovers above its face marked with a simple cross showing the undisclosed Claude use that led to resignation.",
-      "billedmotiv_instruks": "008d2ce9262060b59674",
-      "billede": "data/img/7b52d555415095d6.webp",
+      "prio": 4,
       "side": "artikel/4c313421afd4676e.html"
     },
     {
@@ -60345,6 +60316,35 @@
       "eget_foerst_set": "2026-10-30T21:00:09.129763+00:00",
       "rubrik": "Starbucks undersøger personlig AI-menu ved drive-thru",
       "resume_da": "Kaffekæden vil ifølge topchef Brian Niccol genkende deltagende kunder og tilpasse menuen; AI skal også hjælpe baristaerne.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Genkendelse kan styre menuen",
+          "tekst": "Starbucks undersøger ifølge topchef Brian Niccol en drive-thru, hvor kunder bestiller fra bilen, og hvor deltagende kunder genkendes, når de ankommer. Målet er, at skærmen viser en personlig digital menu, og at betalingen bliver mere gnidningsfri. Det fortalte han på selskabets regnskabsopkald torsdag.\n\nIdéen er, at menuen ikke er ens for alle. Det er uklart, hvordan indholdet tilpasses, og hvornår de personlige menutavler kan stå klar. Niccol kalder selv indsatsen »tidligt« og siger, at kæden vil teste, lære og skalere det, der virker."
+        },
+        {
+          "overskrift": "McDonald's og Taco Bell tester også",
+          "tekst": "Starbucks er ikke alene med at flytte AI ind i drive-thruen. Taco Bell eksperimenterer med digitale menutavler, der kan ændre layout, indhold og visuelle elementer fra bil til bil. McDonald's har vist en AI-funktion, som den tester ved enkelte drive-thruer, hvor chatboten ArchIQ kan identificere faste kunder og lade dem bestille »det sædvanlige«."
+        },
+        {
+          "overskrift": "AI skal også hjælpe baristaerne",
+          "tekst": "Starbucks vil også begynde at teste AI-modeller i baggrunden ved drive-thru for at hjælpe baristaer med at taste ordrer mere præcist og effektivt, siger Niccol. Kæden vil desuden bruge AI i appens søgning og opdagelse og åbner for, at kunder senere kan bestille gennem samtale og en AI-agent, altså et program, der kan udføre handlinger på deres vegne.\n\nStarbucks tillader allerede bestilling via ChatGPT og har rullet Green Dot Assist ud, som medarbejdere kan bruge til at spørge om opskrifter og servicestandarder."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "2027",
+          "label": "År hvor Starbucks vil begynde at teste AI-modeller i baggrunden ved drive-thru"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "Hvis planerne holder, kan drive-thru-skærmen vise en menu, der er tilpasset den genkendte kunde, allerede når bilen holder fremme.",
+      "pointer": [
+        "Personlig menu er stadig på undersøgelsesstadiet",
+        "AI skal hjælpe baristaer ved drive-thru",
+        "Flere kæder tester AI ved drive-thru"
+      ],
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -60362,42 +60362,82 @@
         "emne": "starbucks, personlig menu"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Genkendelse kan styre menuen",
-          "tekst": "Starbucks undersøger ifølge topchef Brian Niccol en drive-thru, hvor kunder bestiller fra bilen, og hvor deltagende kunder genkendes, når de ankommer. Målet er, at skærmen viser en personlig digital menu, og at betalingen bliver mere gnidningsfri. Det fortalte han på selskabets regnskabsopkald torsdag.\n\nIdéen er, at menuen ikke er ens for alle. Det er uklart, hvordan indholdet tilpasses, og hvornår de personlige menutavler kan stå klar. Niccol kalder selv indsatsen »tidligt« og siger, at kæden vil teste, lære og skalere det, der virker."
-        },
-        {
-          "overskrift": "McDonald's og Taco Bell tester også",
-          "tekst": "Starbucks er ikke alene med at flytte AI ind i drive-thruen. Taco Bell eksperimenterer med digitale menutavler, der kan ændre layout, indhold og visuelle elementer fra bil til bil. McDonald's har vist en AI-funktion, som den tester ved enkelte drive-thruer, hvor chatboten ArchIQ kan identificere faste kunder og lade dem bestille »det sædvanlige«."
-        },
-        {
-          "overskrift": "AI skal også hjælpe baristaerne",
-          "tekst": "Starbucks vil også begynde at teste AI-modeller i baggrunden ved drive-thru for at hjælpe baristaer med at taste ordrer mere præcist og effektivt, siger Niccol. Kæden vil desuden bruge AI i appens søgning og opdagelse og åbner for, at kunder senere kan bestille gennem samtale og en AI-agent, altså et program, der kan udføre handlinger på deres vegne.\n\nStarbucks tillader allerede bestilling via ChatGPT og har rullet Green Dot Assist ud, som medarbejdere kan bruge til at spørge om opskrifter og servicestandarder."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "2027",
-          "label": "År hvor Starbucks vil begynde at teste AI-modeller i baggrunden ved drive-thru"
-        }
-      ],
-      "detaljer": [],
-      "betydning": "Hvis planerne holder, kan drive-thru-skærmen vise en menu, der er tilpasset den genkendte kunde, allerede når bilen holder fremme.",
-      "pointer": [
-        "Personlig menu er stadig på undersøgelsesstadiet",
-        "AI skal hjælpe baristaer ved drive-thru",
-        "Flere kæder tester AI ved drive-thru"
-      ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-31T06:21:18.446557+00:00"
       },
+      "prio": 4,
+      "billedmotiv": "A tall drive-thru menu board with the green Starbucks siren logo, its lower panel showing one personalised coffee cup as a simple car silhouette approaches; a small headset emblem floats beside the board, and a short scan arc links the board to the car.",
+      "billedmotiv_instruks": "9fe41eb109e3bfa2e0f7",
       "side": "artikel/a5d82a5cf5c844da.html"
+    },
+    {
+      "titel": "dbreunig/nesformer",
+      "link": "https://simonwillison.net/2026/Oct/30/nesformer/",
+      "resume": "dbreunig/nesformer Inspired by qwenputer by Divyansh Agrawal, Drew Breunig baked a working emulator for a Nintendo Entertainment System 6502 CPU into the weights of Qwen3.5-4B. You can now play NES ROMs such as Super Mario Bros (very slowly) running inside Qwen! In a comment on Hacker News Drew reveals the Opus 5.5 prompts he used to build this system: Read this article and any relevant source…",
+      "dato": "2026-10-30T21:59:22+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-31T06:12:14.287974+00:00",
+      "eget_foerst_set": "2026-10-31T06:12:14.287974+00:00",
+      "rubrik": "Nesformer spiller Super Mario Bros inde i Qwen3.5-4B",
+      "resume_da": "Drew Breunig har bagt en NES-emulator ind i vægtene på Qwen3.5-4B. Spillene kører, men meget langsomt.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Drew Breunig har indbygget en NES-emulator i vægtene på Qwen3.5-4B, så spil kan køre meget langsomt i modellen.",
+        "forbehold": "",
+        "emne": "qwen3.5-4b/nesformer"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "En NES-processor gemt i modellens vægte",
+          "tekst": "Drew Breunig har lagt en fungerende emulator for NES-konsollens 6502-processor ind i vægtene på sprogmodellen Qwen3.5-4B. Vægtene er de mange tal, modellen har lært under træningen, og som normalt styrer dens sprog. Nu efterligner de også en processor.\n\nI praksis kan man pege et lille kommandolinjeværktøj mod en ROM, altså en spilfil, og få eksempelvis **Super Mario Bros** til at køre inde i modellen. Ifølge kilden foregår det meget langsomt."
+        },
+        {
+          "overskrift": "Opus 5.5 fandt 15 år gamle tests",
+          "tekst": "Opskriften blev udviklet med AI-modellen Opus 5.5. I en kommentar på Hacker News viser Breunig de prompts, han brugte: Modellen skulle læse Divyansh Agrawals projekt qwenputer og derefter undersøge, om samme teknik kunne emulere NES' chip og RAM.\n\nIfølge Simon Willison fandt Opus 5.5 en samling såkaldte conformance-tests til NES-processoren, som Christopher Pow udgav for 15 år siden. Testsæt af den slags bruges til at kontrollere, om en emulator opfører sig som den rigtige chip."
+        },
+        {
+          "overskrift": "Leg frem for brugbar konsol",
+          "tekst": "Breunig beskriver selv målet som leg: Det er i orden, at det ikke går hurtigt, og det vigtige er at have vægtene og et værktøj, man kan pege på en ROM.\n\nEt åbent spørgsmål står tilbage i materialet: Om mindre og hurtigere modeller kan nå NES' normale klokfrekvens. Det spørger Breunigs prompt selv om, men der er ikke noget svar i kilden."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Breunig blev inspireret af Divyansh Agrawals qwenputer-projekt.",
+        "De anvendte conformance-tests til NES-processoren stammer fra Christopher Pow.",
+        "Simon Willison omtalte projektet i et linkindlæg 30. oktober 2026.",
+        "Breunig offentliggjorde sine prompts i en kommentar på Hacker News."
+      ],
+      "betydning": "Projektet viser, at en sprogmodels vægte kan rumme andet end sprog. Hastigheden gør det til en demonstration frem for en brugbar NES-emulator.",
+      "pointer": [
+        "NES-emulatoren ligger i vægtene på Qwen3.5-4B",
+        "Spil kører, men meget langsomt",
+        "Bygget med prompts til Opus 5.5"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-31T14:44:18.857456+00:00"
+      },
+      "billedmotiv": "An opaque black model-weight block with a compact Qwen wordmark badge on its front, an NES cartridge plugged into its side, and a tiny pixel-art plumber and green pipe standing on a small raised platform carved into the block; a single hourglass beside the cartridge marks slow emulation.",
+      "billedmotiv_instruks": "3b0533fd8cca6bf58a03",
+      "side": "artikel/e522964144b93760.html"
     }
   ]
 }

@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-31T06:32:01.238776+00:00",
+ "genereret": "2026-10-31T14:48:10.112952+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,59 +195,59 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-31T06:12:14.287974+00:00",
-  "antal": 122,
+  "opdateret": "2026-10-31T14:42:12.491704+00:00",
+  "antal": 123,
   "med_billede": 52,
-  "paa_dansk": 122,
+  "paa_dansk": 123,
   "kategorier": {
    "Lanceringer": 20,
    "Politik \u0026 jura": 12,
    "Samfund \u0026 etik": 17,
    "Penge \u0026 marked": 38,
    "Hverdags-AI": 25,
-   "Forskning": 10
+   "Forskning": 11
   },
   "kilder": {
    "TechCrunch AI": 51,
    "Google Gemini": 7,
    "The Verge AI": 32,
-   "Ars Technica AI": 12,
    "MIT Tech Review AI": 6,
-   "Simon Willison AI": 7,
+   "Ars Technica AI": 12,
+   "Simon Willison AI": 8,
    "Mistral AI": 3,
    "Hugging Face": 1,
    "Google DeepMind": 3
   },
   "udvalgte": [
    {
-    "titel": "Mistral releases weights for its trillion-parameter AI model, targeting cybersecurity",
-    "rubrik": "Mistral frigiver sin trillionmodel til download",
-    "link": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
-    "side": "artikel/f4d2fa0b488ed855.html",
+    "titel": "Apple Intelligence is finally coming to China with iOS 27.3",
+    "rubrik": "Apple Intelligence lander i Kina med iOS 27.3",
+    "link": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
+    "side": "artikel/ffe1ba5a47188fc3.html",
     "kategori": "Lanceringer",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-29T17:00:00+00:00",
-    "billede": "data/img/f4fa4d14d5158e74.webp"
-   },
-   {
-    "titel": "The biggest names in AI are backing a new way to opt out of scraping",
-    "rubrik": "Google og Microsoft bakker ny standard mod scraping",
-    "link": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
-    "side": "artikel/18ea57daed9dddc6.html",
-    "kategori": "Politik \u0026 jura",
     "kilde": "The Verge AI",
-    "dato": "2026-10-30T16:26:10-04:00",
+    "dato": "2026-10-30T18:32:53-04:00",
     "billede": ""
    },
    {
-    "titel": "We urgently need to monitor AI agents’ actions in real time",
-    "rubrik": "OpenAI-agenter kan ikke spores i realtid",
-    "link": "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/",
-    "side": "artikel/468ea3c00c34a75a.html",
+    "titel": "Cracks are emerging in the AI spending boom",
+    "rubrik": "Alphabet og Amazon i minus på AI",
+    "link": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+    "side": "artikel/d2ae3dfb1d7fd7f4.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-30T21:17:40+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Anthropic VS code extension on Cursor backdoored for nearly 12 hours",
+    "rubrik": "Anthropic-udvidelse bagdøret i næsten 12 timer",
+    "link": "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/",
+    "side": "artikel/0697c0d6577e4ad4.html",
     "kategori": "Samfund \u0026 etik",
-    "kilde": "MIT Tech Review AI",
-    "dato": "2026-10-29T10:11:12+00:00",
-    "billede": "data/img/418bdfd96044597d.webp"
+    "kilde": "Ars Technica AI",
+    "dato": "2026-10-30T21:09:54+00:00",
+    "billede": "data/img/531b5f998ce6523d.webp"
    }
   ],
   "seneste": [
@@ -312,6 +312,16 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/f0a190450f907a39.jpg"
    },
    {
+    "titel": "dbreunig/nesformer",
+    "rubrik": "Nesformer spiller Super Mario Bros inde i Qwen3.5-4B",
+    "link": "https://simonwillison.net/2026/Oct/30/nesformer/",
+    "side": "artikel/e522964144b93760.html",
+    "kategori": "Forskning",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-10-30T21:59:22+00:00",
+    "billede": ""
+   },
+   {
     "titel": "The biggest names in AI are backing a new way to opt out of scraping",
     "rubrik": "Google og Microsoft bakker ny standard mod scraping",
     "link": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
@@ -360,41 +370,31 @@ window.KOMMANDO_DATA = {
     "kilde": "Ars Technica AI",
     "dato": "2026-10-30T17:38:19+00:00",
     "billede": "data/img/19acfb4b4435561d.webp"
-   },
-   {
-    "titel": "Sam Altman says it’s better for RAM to be in a data center than on your desk",
-    "rubrik": "Altman: RAM hører i datacenteret, ikke på skrivebordet",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
-    "side": "artikel/22e8c569cc060b0a.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-30T16:48:43-04:00",
-    "billede": "data/img/92f6e595907519b8.jpg"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-31T06:12:14.287974+00:00",
+  "opdateret": "2026-10-31T14:42:12.491704+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
   "modelkald": 1,
   "kildehentninger": 0,
   "regelbaseret_udvalg": [
-   "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
-   "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
-   "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/"
+   "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
+   "https://openai.com/index/helping-websites-express-ai-training-preferences",
+   "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
   ],
   "udgivet_udvalg": [
-   "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
-   "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
-   "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/"
+   "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
+   "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+   "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/"
   ],
   "vaerktoejer": [],
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-10-31T06:12:13.439539+00:00",
+  "opdateret": "2026-10-31T14:42:11.807565+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -750,8 +750,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-31T06:12:14.287974+00:00",
-  "artikler_i_alt": 122,
+  "opdateret": "2026-10-31T14:42:12.491704+00:00",
+  "artikler_i_alt": 123,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -962,7 +962,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 7,
+    "i_listen": 8,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -973,6 +973,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Mistral Large 4 klarer opgaver andre afviser"
+     },
+     {
+      "rubrik": "Nesformer spiller Super Mario Bros inde i Qwen3.5-4B",
+      "dato": "2026-10-30T21:59:22",
+      "foerst_set": "2026-10-31T06:12:14",
+      "link": "https://simonwillison.net/2026/Oct/30/nesformer/",
+      "side": "artikel/e522964144b93760.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "OpenAI lægger API-kreditter oveni ChatGPT-abonnementer",
@@ -1573,12 +1582,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-31T06:31:57.246526+00:00",
+  "opdateret": "2026-10-31T14:48:03.220756+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
   "besoeg_i_alt": 19,
-  "sidevisninger_i_alt": 26,
+  "sidevisninger_i_alt": 28,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1728,15 +1737,15 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-10-31",
-    "besoeg": 0,
-    "visninger": 0
+    "besoeg": 10,
+    "visninger": 10
    }
   ],
   "sider": [
    {
     "sti": "/",
     "besoeg": 19,
-    "visninger": 26
+    "visninger": 28
    }
   ],
   "artikler": [],

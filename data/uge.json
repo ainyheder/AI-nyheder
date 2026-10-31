@@ -1,10 +1,10 @@
 {
- "rubrik": "Nye modeller, mere kontrol og et dyrere kapløb",
- "indledning": "Ugen samler flere nye modeller og et sjældent forskningsløfte, men også spørgsmålet om, hvem der får adgang, og hvem der betaler.",
+ "rubrik": "Nye modeller, åbne vægte og kampen om adgang",
+ "indledning": "Frontløbere og åbne udviklere rykker i samme uge, men på forskellige vilkår. Det gør spørgsmålet om kontrol og finansiering mere konkret.",
  "historier": [
   {
-   "overskrift": "Gemini 4 Carbon: cybermodel med begrænset adgang",
-   "tekst": "Google annoncerede 28. oktober Gemini 4 Carbon som sin stærkeste model og fører ifølge selskabet Artificial Analysis Intelligence Index med 59. Den er især rettet mod at finde og lukke sårbarheder i kode, men gives først til en mindre gruppe cyberforsvarere gennem Fairwind Program; bred udgivelse har ingen dato.",
+   "overskrift": "Google annoncerer Gemini 4 Carbon til cyberforsvar",
+   "tekst": "Google løfter sløret for Gemini 4 Carbon, som ifølge selskabet topper Artificial Analysis Intelligence Index med 59. Modellen er især rettet mod at finde og lukke sårbarheder i kode. Foreløbig får kun en mindre gruppe cyberforsvarere adgang gennem Fairwind Program; Google giver ingen dato for bred udgivelse.",
    "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
    "kategori": "Lanceringer",
    "billede": "data/img/4b3d4e5d0a140c8a.jpg",
@@ -41,8 +41,8 @@
    "artikel_signatur": "d86b4dd0b49420ad7bce6bdb6f852424fa8419965d8d3d1a95f3090d6c08f3cc"
   },
   {
-   "overskrift": "Mistral Large 4 frigives med åbne vægte",
-   "tekst": "Mistral frigav 29. oktober vægtene til Mistral Large 4, som selskabet kalder en model med 1.000 milliarder parametre. Vægtene ligger på Hugging Face, så virksomheder og myndigheder selv kan køre modellen til blandt andet cyberforsvar. Mistral hævder, at den yder omtrent som GLM-5.3, men bruger 47 procent færre tokens pr. opgave.",
+   "overskrift": "Mistral frigiver vægtene til sin trillionmodel",
+   "tekst": "Mistral har lagt vægtene til Mistral Large 4 på Hugging Face. Selskabet kalder modellen en trillionmodel og fremhæver især cyberforsvar. Virksomheder og myndigheder kan nu køre modellen selv i stedet for gennem Mistrals servere. Mistral hævder, at ML4 yder som GLM-5.3, men bruger 47 procent færre tokens pr. opgave.",
    "link": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
    "kategori": "Lanceringer",
    "billede": "data/img/f4fa4d14d5158e74.webp",
@@ -63,8 +63,8 @@
    "artikel_signatur": "dd9c07c8029ac10cf943afbfc85765cf5e9a7066ff368ae2ddedc13d11d9e8f7"
   },
   {
-   "overskrift": "GPT-6.1 Terra gør computerbrug billigere",
-   "tekst": "OpenAI introducerede GPT-6.1 Terra som en hurtigere mellemklassemodel med vægt på visuel ræsonnering og computerbrug. Ifølge OpenAI er den et betydeligt skridt op fra GPT-5.6 Terra; prisen er 1 dollar per million input-tokens og 5 dollar per million output-tokens. Den placeres mellem GPT-6 Luna og GPT-6.1 Sol.",
+   "overskrift": "OpenAI lancerer GPT-6.1 Terra til computerbrug",
+   "tekst": "OpenAI har introduceret GPT-6.1 Terra, en hurtigere mellemmodel med vægt på visuel ræsonnering og computerbrug. Den koster 1 dollar per million input-tokens og 5 dollar per million output-tokens, omkring halvdelen af GPT-6.1 Sol. Ifølge OpenAI-medarbejder Ted Sanders er Terra bedre til teknisk kommunikation, men svagere på flere andre områder.",
    "link": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
    "kategori": "Lanceringer",
    "billede": "data/img/ef6d64be6cb0ecf1.jpg",
@@ -76,8 +76,8 @@
    "artikel_signatur": "09ca07dba964a4f0a8c263e94f4fcbf04ee20e23740e58473f0724eb9a435e2d"
   },
   {
-   "overskrift": "Genie 4 kan skifte scene og tilføje lyd",
-   "tekst": "Google DeepMind sendte Genie 4 ud i forskningspreview 27. oktober. Verdensmodellen kan nu skifte scenen midt i simulationen, tilføje realtidslyd og holde sammen i op til to minutter. DeepMind erkender, at detaljer kan drive, og at lyd og læsbar tekst endnu ikke er løst; adgangen begynder først at rulle ud.",
+   "overskrift": "Genie 4 kan skifte scene og få lyd midt i simulationen",
+   "tekst": "Google DeepMind har sendt verdensmodellen Genie 4 ud i forskningspreview. Den kan bygge interaktive verdener fra tekst eller billeder, og brugeren kan nu skifte scene med en ny prompt undervejs. Genie 4 tilføjer realtidslyd og kan holde sammen i op til to minutter, dobbelt så længe som Genie 3. Adgangen er foreløbig begrænset.",
    "link": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
    "kategori": "Lanceringer",
    "billede": "data/img/aa4a541db90e5f66.jpg",
@@ -98,30 +98,8 @@
    "artikel_signatur": "c6f963dbb08ab40c17e1cd09eb76fc8d0e20b8f76c3ae4850585b49b0e286831"
   },
   {
-   "overskrift": "OpenAI vil have matematiske beviser gransket",
-   "tekst": "OpenAI hævder, at selskabets model har modbevist The Exponential Time Hypothesis og løst andre matematiske problemer; et fysikbevis er endnu ikke offentliggjort i fuld længde. Arbejdsgrupper skal granske resultaterne, og forskere har kritiseret OpenAI for at vælge håndplukkede eksperter og for lidt kontekst.",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
-   "kategori": "Forskning",
-   "billede": "",
-   "dato": "2026-10-26T23:34:58+00:00",
-   "andre": [
-    {
-     "kilde": "The Verge AI",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
-     "rubrik": "OpenAI tilbageholder fysikresultat og vækker kritik",
-     "resume_da": "OpenAI har offentliggjort gennembrud i matematik og datalogi, men holder fysikresultatet tilbage. Forskere kræver åben adgang og kritiserer håndplukkede eksperter.",
-     "dato": "2026-10-27T16:48:58-04:00",
-     "foerst_set": "2026-10-27T20:55:19.965914+00:00"
-    }
-   ],
-   "titel": "OpenAI announces three big science discoveries and a new way to work with academics",
-   "rubrik": "OpenAI lader forskere granske tre nye beviser",
-   "resume_da": "Firmaet annoncerer resultater i matematik, datalogi og fysik. Fysikbeviset er endnu ikke offentliggjort i fuld længde.",
-   "artikel_signatur": "38094c7aecd36a2bfde80914930117078c1c11be93fcc82801272ec0f28a9088"
-  },
-  {
-   "overskrift": "Anthropic går mod Nasdaq som ANT",
-   "tekst": "Anthropic har indsendt sit S-1 til SEC og vil noteres på Nasdaq som ANT. Prospektet viser en omsætning på 16,3 milliarder dollar i første halvår 2026, men også et nettounderskud på 80,7 milliarder dollar og forpligtelser til regnekraft for hundreder af milliarder. Stifterne beholder 50,1 procent af stemmerne.",
+   "overskrift": "Anthropic vil på Nasdaq med ticker ANT",
+   "tekst": "Anthropic har indsendt sin S-1 og planlægger at blive noteret på Nasdaq som ANT. Prospektet viser et nettounderskud på 80,7 milliarder dollar i første halvår, især fra regnskabsmæssige omkostninger ved konvertibel gæld, på en omsætning på 16,3 milliarder dollar. Stifterne vil kontrollere 50,1 procent af stemmerne gennem Founder LLC.",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
    "kategori": "Penge & marked",
    "billede": "data/img/0d5a5d0b470f75ea.jpg",
@@ -144,37 +122,36 @@
  ],
  "overblik": [
   {
-   "tekst": "Ugens vigtigste bevægelse er, at frontiermodellerne rykker tættere på arbejde, kode og sikkerhed, men med vidt forskellig adgang. Googles Gemini 4 Carbon topper ifølge Google Artificial Analysis Intelligence Index med 59 og er især rettet mod cyberforsvar, men er foreløbig kun åben for udvalgte forsvarere; Mistral går modsat vej og frigiver vægtene til Mistral Large 4, så myndigheder og virksomheder selv kan køre en model med 1.000 milliarder parametre.",
+   "tekst": "Ugen viser et modelmarked, der deler sig i lag. Google annoncerer Gemini 4 Carbon som sin stærkeste model til cyberforsvar og topper ifølge selskabet Artificial Analysis Intelligence Index, men kun en mindre gruppe cyberforsvarere får adgang. Dagen efter frigiver Mistral vægtene til Mistral Large 4, så virksomheder og myndigheder selv kan køre en trillionmodel. Det er to modsatte svar på spørgsmålet om kontrol: Google holder modellen tilbage, Mistral giver den videre.",
    "links": [
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
     "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
    ]
   },
   {
-   "tekst": "Samme dobbeltbevægelse ses i OpenAIs GPT-6.1 Terra: en mellemklassemodel, der ifølge OpenAI er stærkere til billedforståelse og computerbrug og prissat mellem Luna og Sol. Den er ikke en ny topmodel, men gør agentlignende computerbrug billigere. Genie 4 flytter noget andet: Googles verdensmodel kan nu styres midt i simulationen og har lyd, men er forskningspreview og har kun få minutters sammenhæng.",
+   "tekst": "OpenAI går en tredje vej med GPT-6.1 Terra: ikke en ny topmodel, men en billigere mellemmodel, der især skal bruges til computerbrug og visuel ræsonnering. Den kan sættes til gentagne opgaver, hvor GPT-6.1 Sol er for dyr. Genie 4 viser samtidig, at næste skridt ikke kun er tekst og kode: en verdensmodel kan nu ændres midt i en simulation og får lyd, men kun i forskningspreview. Fælles for dem er, at adgangen er lagdelt efter pris og modenhed.",
    "links": [
     "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
     "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/"
    ]
   },
   {
-   "tekst": "Mens modellerne bliver mere anvendelige, bliver den økonomiske og videnskabelige bagside mere synlig. Anthropic har indsendt sin børsansøgning og vil noteres som ANT, men binder samtidig hundreder af milliarder til regnekraft. OpenAI hævder, at selskabets model har modbevist ETH og leveret andre matematiske resultater; de skal granskes, og et fysikbevis er endnu ikke offentliggjort. Tilsammen viser ugen både nye evner og hvor afhængige de er af adgang, kapital og verifikation.",
+   "tekst": "Bag modelhistorierne står et kapitalbehov, som Anthropic nu tager til børsen. Selskabets S-1 viser et nettounderskud på 80,7 milliarder dollar, især fra regnskabsmæssige omkostninger ved konvertibel gæld, på en omsætning på 16,3 milliarder dollar. Samtidig beholder stifterne 50,1 procent af stemmerne. For læseren betyder det, at de nye modeller ikke bare konkurrerer på evner, men også på hvem der kan finansiere den regnekraft, der skal til. Mistral giver kunderne vægtene; Google holder adgangen tilbage; Anthropic vil sælge aktier.",
    "links": [
-    "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
-    "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics"
+    "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec"
    ]
   }
  ],
- "tendens": "Blackstone venter ifølge Financial Times, at Anthropic efter børsnoteringen får en høj junk-rating i dobbelt B-området, ikke investment grade. Det vil gøre det dyrere for selskabet at rejse kapital til de store regnekraftaftaler. Hverken Anthropic eller Blackstone har kommenteret over for TechCrunch.",
+ "tendens": "Det er uafklaret, om Mistrals påstande om Mistral Large 4 holder ved uafhængige tests. Selskabet hævder at yde som GLM-5.3 med 47 procent færre tokens og at føre Coding Agent Index; TechCrunch gengiver kun Mistrals egne tal.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "fe718e587b081e1e98a895eff924c0ab856e9b891d68c31dae018bcaf338a7df",
- "dato": "2026-10-31T06:30:59.282579+00:00",
- "opdateret": "2026-10-31T06:30:59.282579+00:00",
+ "basis_signatur": "44d8eb094315d765f8a1ab7dd3358a0e56dcb5a49ec99d8c7cdd57c33faf2ba2",
+ "dato": "2026-10-31T14:46:45.400338+00:00",
+ "opdateret": "2026-10-31T14:46:45.400338+00:00",
  "periode_fra": "2026-10-23T22:00:00+00:00",
  "periode_til": "2026-10-30T23:00:00+00:00",
  "stats": {
-  "historier": 105,
+  "historier": 106,
   "kilder": 6
  }
 }
