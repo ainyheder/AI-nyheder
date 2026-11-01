@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-11-01T15:25:55.675751+00:00",
+  "opdateret": "2026-11-01T20:45:42.066193+00:00",
   "kladder": [
     {
       "titel": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
@@ -294,6 +294,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Quoting Kyle Kingsbury",
+      "link": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/",
+      "resume": "More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to rely on as markers of a mature system are now easier to counterfeit. [...] In the age of LLMs, what can maintainers do to ensure correct software and accurate documentation?…",
+      "dato": "2026-11-01T16:49:04+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-01T20:45:42.066193+00:00",
+      "eget_foerst_set": "2026-11-01T20:45:42.066193+00:00",
+      "rubrik": "Kyle Kingsbury: LLM'er underminerer tilliden til dokumentation",
+      "resume_da": "Ifølge Kingsbury gør sprogmodeller det lettere at forfalske de signaler, der plejede at vise, at et softwaresystem var modent.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Kingsbury peger på, at sprogmodeller gør det lettere at forfalske signaler om moden software og dokumentation.",
+        "forbehold": "Meningsindlæg uden data eller metode.",
+        "emne": "llm'er og tillid til software"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 3,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -904,39 +937,6 @@
       ]
     },
     {
-      "titel": "Can we trust LLMs to judge whether a research idea is novel?",
-      "link": "https://huggingface.co/blog/allenai/novelty-bench",
-      "resume": "",
-      "dato": "2026-10-27T16:12:42+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Forskning",
-      "foerst_set": "2026-10-27T20:55:19.965914+00:00",
-      "eget_foerst_set": "2026-10-27T20:55:19.965914+00:00",
-      "rubrik": "LLM'er skal vurdere forskningsidéers nyhedsværdi",
-      "resume_da": "Hugging Face-opslaget rejser spørgsmålet, om man kan stole på LLM'er som dommere over, hvor nye forskningsidéer er. Uddraget har ingen resultater.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Hugging Face-opslag rejser spørgsmålet, om LLM'er kan bruges som dommere over forskningsidéers nyhed.",
-        "forbehold": "Ingen tekst eller resultater i uddraget.",
-        "emne": "llm nyhedsvurdering"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 2,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "nemotron-halloween",
       "link": "https://huggingface.co/blog/nvidia/nemotron-halloween",
       "resume": "",
@@ -962,6 +962,39 @@
         "begrundelse": "Kun en titel fra Nvidia på Hugging Face uden beskrivelse af model, data eller adgang.",
         "forbehold": "Intet indhold ud over titlen; kan ikke bekræftes som modeludgivelse.",
         "emne": "nvidia, nemotron"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 2,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Can we trust LLMs to judge whether a research idea is novel?",
+      "link": "https://huggingface.co/blog/allenai/novelty-bench",
+      "resume": "",
+      "dato": "2026-10-27T16:12:42+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-27T20:55:19.965914+00:00",
+      "eget_foerst_set": "2026-10-27T20:55:19.965914+00:00",
+      "rubrik": "LLM'er skal vurdere forskningsidéers nyhedsværdi",
+      "resume_da": "Hugging Face-opslaget rejser spørgsmålet, om man kan stole på LLM'er som dommere over, hvor nye forskningsidéer er. Uddraget har ingen resultater.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Hugging Face-opslag rejser spørgsmålet, om LLM'er kan bruges som dommere over forskningsidéers nyhed.",
+        "forbehold": "Ingen tekst eller resultater i uddraget.",
+        "emne": "llm nyhedsvurdering"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 2,
