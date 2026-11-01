@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-01T06:47:08.722234+00:00",
+ "genereret": "2026-11-01T15:28:46.905554+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,28 +195,27 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-01T06:43:50.198330+00:00",
-  "antal": 122,
-  "med_billede": 50,
-  "paa_dansk": 122,
+  "opdateret": "2026-11-01T15:25:55.675751+00:00",
+  "antal": 119,
+  "med_billede": 48,
+  "paa_dansk": 119,
   "kategorier": {
-   "Lanceringer": 19,
+   "Lanceringer": 17,
    "Politik \u0026 jura": 12,
    "Samfund \u0026 etik": 17,
    "Penge \u0026 marked": 39,
    "Hverdags-AI": 25,
-   "Forskning": 10
+   "Forskning": 9
   },
   "kilder": {
    "TechCrunch AI": 50,
-   "Google Gemini": 7,
    "The Verge AI": 32,
+   "Google Gemini": 7,
    "MIT Tech Review AI": 6,
    "Ars Technica AI": 12,
    "Simon Willison AI": 8,
    "Mistral AI": 3,
-   "Hugging Face": 1,
-   "Google DeepMind": 3
+   "Hugging Face": 1
   },
   "udvalgte": [
    {
@@ -230,14 +229,14 @@ window.KOMMANDO_DATA = {
     "billede": ""
    },
    {
-    "titel": "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
-    "rubrik": "NAACP's forureningssag mod xAI fortsætter",
-    "link": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
-    "side": "artikel/9a46afb49d1d4059.html",
-    "kategori": "Politik \u0026 jura",
+    "titel": "Cracks are emerging in the AI spending boom",
+    "rubrik": "Alphabet og Amazon i minus på AI",
+    "link": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+    "side": "artikel/d2ae3dfb1d7fd7f4.html",
+    "kategori": "Penge \u0026 marked",
     "kilde": "TechCrunch AI",
-    "dato": "2026-10-31T21:17:03+00:00",
-    "billede": "data/img/a5d123bb8b8198c0.jpg"
+    "dato": "2026-10-30T21:17:40+00:00",
+    "billede": ""
    },
    {
     "titel": "Anthropic VS code extension on Cursor backdoored for nearly 12 hours",
@@ -374,7 +373,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-01T06:43:50.198330+00:00",
+  "opdateret": "2026-11-01T15:25:55.675751+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -382,19 +381,19 @@ window.KOMMANDO_DATA = {
   "kildehentninger": 0,
   "regelbaseret_udvalg": [
    "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
-   "https://openai.com/index/helping-websites-express-ai-training-preferences",
-   "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
+   "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+   "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/"
   ],
   "udgivet_udvalg": [
    "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
-   "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
+   "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
    "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/"
   ],
   "vaerktoejer": [],
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-11-01T06:43:49.721969+00:00",
+  "opdateret": "2026-11-01T15:25:54.940684+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -750,8 +749,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-01T06:43:50.198330+00:00",
-  "artikler_i_alt": 122,
+  "opdateret": "2026-11-01T15:25:55.675751+00:00",
+  "artikler_i_alt": 119,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -829,7 +828,7 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 12,
     "i_listen": 7,
-    "som_ekstra": 2,
+    "som_ekstra": 1,
     "seneste": [
      {
       "rubrik": "Google åbner Connected Apps-platform i preview",
@@ -839,15 +838,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Google åbner Gemini for alle udvikleres apps"
-     },
-     {
-      "rubrik": "Google ruller Gemini 4 Argon bredt ud",
-      "dato": "",
-      "foerst_set": "2026-10-13T19:29:19",
-      "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
-      "side": "",
-      "hvor": "under",
-      "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
      },
      {
       "rubrik": "Google Gemini redigerer filer i chatten",
@@ -1507,10 +1497,10 @@ window.KOMMANDO_DATA = {
     "kun_aktuel": false,
     "max": 15,
     "aktiv": true,
-    "status": "ok",
-    "fejl": "",
-    "hentet": 15,
-    "i_listen": 3,
+    "status": "fejl",
+    "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
+    "hentet": 0,
+    "i_listen": 0,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -1521,33 +1511,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
-     },
-     {
-      "rubrik": "Google Antigravity finder ny peptidkandidat",
-      "dato": "2026-10-15T16:08:03",
-      "foerst_set": "2026-10-16T04:53:41",
-      "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-      "side": "artikel/ba028f76ed47c779.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
-      "dato": "2026-10-13T19:43:07",
-      "foerst_set": "2026-10-13T19:29:19",
-      "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-      "side": "artikel/42f1c245f492d3d1.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "EmbeddingGemma 2 finder videoklip ud fra tale",
-      "dato": "2026-10-06T19:57:04",
-      "foerst_set": "2026-10-07T15:44:28",
-      "link": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
-      "side": "artikel/bf211d23154acfab.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1582,12 +1545,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-01T06:47:04.627747+00:00",
+  "opdateret": "2026-11-01T15:28:36.715146+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 17,
-  "sidevisninger_i_alt": 26,
+  "besoeg_i_alt": 16,
+  "sidevisninger_i_alt": 25,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1744,15 +1707,15 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 17,
-    "visninger": 26
+    "besoeg": 16,
+    "visninger": 25
    }
   ],
   "artikler": [],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 16
+    "besoeg": 15
    },
    {
     "fra": "www.bing.com",
