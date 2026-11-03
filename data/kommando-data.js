@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-03T12:31:46.572641+00:00",
+ "genereret": "2026-11-03T20:03:41.391179+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,92 +195,169 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-03T12:15:27.201983+00:00",
-  "antal": 122,
-  "med_billede": 62,
-  "paa_dansk": 122,
+  "opdateret": "2026-11-03T19:45:16.653457+00:00",
+  "antal": 128,
+  "med_billede": 63,
+  "paa_dansk": 128,
   "kategorier": {
-   "Politik \u0026 jura": 14,
-   "Penge \u0026 marked": 37,
+   "Politik \u0026 jura": 17,
+   "Hverdags-AI": 28,
+   "Penge \u0026 marked": 39,
+   "Forskning": 10,
    "Samfund \u0026 etik": 16,
-   "Lanceringer": 17,
-   "Hverdags-AI": 26,
-   "Dybde": 2,
-   "Nyheder": 1,
-   "Forskning": 9
+   "Lanceringer": 18
   },
   "kilder": {
+   "The Verge AI": 27,
+   "TechCrunch AI": 62,
    "Ars Technica AI": 11,
-   "The Verge AI": 26,
-   "TechCrunch AI": 57,
-   "Simon Willison AI": 9,
    "MIT Tech Review AI": 8,
+   "Simon Willison AI": 10,
    "Google Gemini": 7,
-   "Mistral AI": 3,
-   "Hugging Face": 1
+   "Mistral AI": 3
   },
   "udvalgte": [
    {
-    "titel": "Claude’s new rules against game cloning won’t stop the AI copying boom",
-    "rubrik": "Claude får forbud mod at genskabe spil",
-    "link": "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/",
-    "side": "artikel/b26578c04a00196c.html",
+    "titel": "Google is entirely disabling Search in schools that don’t want AI",
+    "rubrik": "Google slår Search fra i skoler uden AI",
+    "link": "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features",
+    "side": "artikel/4da843cbbbb2ca4b.html",
     "kategori": "Politik \u0026 jura",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-11-02T18:05:31+00:00",
-    "billede": "data/img/10ee693f9e063dde.jpg"
-   },
-   {
-    "titel": "OpenAI pitches data center power plants as a way to protect nearby areas",
-    "rubrik": "OpenAI vil lade datacenter aflaste strømnettet",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
-    "side": "artikel/4abc12850beae1d0.html",
-    "kategori": "Penge \u0026 marked",
     "kilde": "The Verge AI",
-    "dato": "2026-11-02T13:01:30-05:00",
-    "billede": "data/img/fac5c4d563407830.webp"
+    "dato": "2026-11-03T12:00:04-05:00",
+    "billede": ""
    },
    {
-    "titel": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
-    "rubrik": "Anthropic varsler mulig RSI inden længe",
-    "link": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
-    "side": "artikel/b86b88ec9ca0ed8c.html",
-    "kategori": "Samfund \u0026 etik",
+    "titel": "Netflix’s new AI Discover tab helps you find something to watch based on your mood",
+    "rubrik": "Netflix tester AI Discover på tv",
+    "link": "https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/",
+    "side": "artikel/b0c96602861bfc20.html",
+    "kategori": "Hverdags-AI",
     "kilde": "TechCrunch AI",
-    "dato": "2026-11-02T22:14:50+00:00",
-    "billede": "data/img/434ff283f0614204.jpg"
-   }
-  ],
-  "seneste": [
+    "dato": "2026-11-03T18:42:16+00:00",
+    "billede": "data/img/31115ec6bb4f6018.jpg"
+   },
    {
     "titel": "How “reverse game theory” could keep AI agents in check",
     "rubrik": "Stephen Morris: Spilteori kan styre AI-agenter",
     "link": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/",
     "side": "artikel/5a465e187c017a30.html",
-    "kategori": "Dybde",
+    "kategori": "Forskning",
     "kilde": "MIT Tech Review AI",
     "dato": "2026-11-03T10:43:41+00:00",
     "billede": "data/img/6d803910cc85ab94.jpg"
+   }
+  ],
+  "seneste": [
+   {
+    "titel": "Google is entirely disabling Search in schools that don’t want AI",
+    "rubrik": "Google slår Search fra i skoler uden AI",
+    "link": "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features",
+    "side": "artikel/4da843cbbbb2ca4b.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-03T12:00:04-05:00",
+    "billede": ""
    },
    {
-    "titel": "Apple Watch’s AI features for rewinding and recapping conversations begin beta testing",
-    "rubrik": "Apple Watch tester Siri Recaps i beta",
-    "link": "https://techcrunch.com/2026/11/02/apple-watchs-ai-features-for-rewinding-and-recapping-conversations-begin-beta-testing/",
-    "side": "artikel/8f6f2c9dfcc57986.html",
-    "kategori": "Nyheder",
+    "titel": "Apple restricts dating apps and AI companions to users 18 and up",
+    "rubrik": "Apple kræver 18 år for AI-kærester",
+    "link": "https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up/",
+    "side": "artikel/74ef1aa5540cfddd.html",
+    "kategori": "Politik \u0026 jura",
     "kilde": "TechCrunch AI",
-    "dato": "2026-11-03T07:20:00+00:00",
+    "dato": "2026-11-03T15:38:27+00:00",
     "billede": ""
+   },
+   {
+    "titel": "Netflix’s new AI Discover tab helps you find something to watch based on your mood",
+    "rubrik": "Netflix tester AI Discover på tv",
+    "link": "https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/",
+    "side": "artikel/b0c96602861bfc20.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-03T18:42:16+00:00",
+    "billede": "data/img/31115ec6bb4f6018.jpg"
+   },
+   {
+    "titel": "AI inference startup Fal doubles its valuation to $16B as demand surges",
+    "rubrik": "Fal fordobler værdien til 16 milliarder dollar",
+    "link": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+    "side": "artikel/0018ea6e4618a3fe.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-03T19:34:43+00:00",
+    "billede": "data/img/a112eda632f2eedb.jpg"
+   },
+   {
+    "titel": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+    "rubrik": "Qwen 3.8 27B gætter Pac-Man ud fra vægte",
+    "link": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+    "side": "artikel/ab1728508583fdde.html",
+    "kategori": "Forskning",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-11-03T16:29:48+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Anthropic is still grappling with the economics of compute",
+    "rubrik": "Anthropic: Regnekraft æder 58 procent af omsætningen",
+    "link": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/",
+    "side": "artikel/741c3465b3a0806b.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-03T17:07:01+00:00",
+    "billede": "data/img/44a7aab407b50c8c.webp"
+   },
+   {
+    "titel": "Apple is all in on AI — its own and everyone else’s",
+    "rubrik": "Apple vil sælge ekstra adgang til Siri AI",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1025245/apple-earnings-q4-ai",
+    "side": "artikel/285929c63048ae0f.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-03T10:24:51-05:00",
+    "billede": ""
+   },
+   {
+    "titel": "How “reverse game theory” could keep AI agents in check",
+    "rubrik": "Stephen Morris: Spilteori kan styre AI-agenter",
+    "link": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/",
+    "side": "artikel/5a465e187c017a30.html",
+    "kategori": "Forskning",
+    "kilde": "MIT Tech Review AI",
+    "dato": "2026-11-03T10:43:41+00:00",
+    "billede": "data/img/6d803910cc85ab94.jpg"
    },
    {
     "titel": "Here’s who is falling in line for Trump’s “Super Intelligence” loyalty test",
     "rubrik": "Trump vil omdøbe AI til Super Intelligence",
     "link": "https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test/",
     "side": "artikel/72788a4d358feca2.html",
-    "kategori": "Dybde",
+    "kategori": "Politik \u0026 jura",
     "kilde": "MIT Tech Review AI",
     "dato": "2026-11-03T04:18:47+00:00",
     "billede": "data/img/8a5286c81e644952.jpg"
+   },
+   {
+    "titel": "Apple Watch’s AI features for rewinding and recapping conversations begin beta testing",
+    "rubrik": "Apple Watch tester Siri Recaps i beta",
+    "link": "https://techcrunch.com/2026/11/02/apple-watchs-ai-features-for-rewinding-and-recapping-conversations-begin-beta-testing/",
+    "side": "artikel/8f6f2c9dfcc57986.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-03T07:20:00+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Google takes Dreambeans to India in bid to bring AI-generated personal stories to the masses",
+    "rubrik": "Dreambeans åbner i Indien med 13 sprog",
+    "link": "https://techcrunch.com/2026/11/02/google-takes-dreambeans-to-india-in-bid-to-bring-ai-generated-personal-stories-to-the-masses/",
+    "side": "artikel/36719bfa3896332c.html",
+    "kategori": "Lanceringer",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-03T03:30:00+00:00",
+    "billede": ""
    },
    {
     "titel": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
@@ -291,111 +368,31 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-11-02T22:14:50+00:00",
     "billede": "data/img/434ff283f0614204.jpg"
-   },
-   {
-    "titel": "llm 0.37",
-    "rubrik": "LLM skifter til gpt-6-luna til halv pris",
-    "link": "https://simonwillison.net/2026/Nov/2/llm/",
-    "side": "artikel/5e2d12465b29b09a.html",
-    "kategori": "Lanceringer",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-11-02T23:49:30+00:00",
-    "billede": "data/img/88caaab27b9c8bda.webp"
-   },
-   {
-    "titel": "Y Combinator’s Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
-    "rubrik": "Garry Tan: Op til 200.000 dollar til AI-tokens",
-    "link": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
-    "side": "artikel/30470ccd04740eff.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-03T00:35:52+00:00",
-    "billede": "data/img/cb9932e89c9cdb81.webp"
-   },
-   {
-    "titel": "Trajectory raises $45M to make AI model training accessible to nontechnical experts",
-    "rubrik": "Trajectory lader advokater træne AI-modeller selv",
-    "link": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
-    "side": "artikel/c368c304bd55e435.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-02T23:13:53+00:00",
-    "billede": "data/img/0942aeae9c31e15a.webp"
-   },
-   {
-    "titel": "Apple may try to increase revenue by doing…something with third-party AI apps",
-    "rubrik": "Apple antyder AI-indtægter fra tredjepartsapps",
-    "link": "https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/",
-    "side": "artikel/dc645454d4f3c109.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-03T01:49:52+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Claude’s new rules against game cloning won’t stop the AI copying boom",
-    "rubrik": "Claude får forbud mod at genskabe spil",
-    "link": "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/",
-    "side": "artikel/b26578c04a00196c.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-11-02T18:05:31+00:00",
-    "billede": "data/img/10ee693f9e063dde.jpg"
-   },
-   {
-    "titel": "OpenAI pitches data center power plants as a way to protect nearby areas",
-    "rubrik": "OpenAI vil lade datacenter aflaste strømnettet",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
-    "side": "artikel/4abc12850beae1d0.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-02T13:01:30-05:00",
-    "billede": "data/img/fac5c4d563407830.webp"
-   },
-   {
-    "titel": "The New York Times sues Brave web browser for AI scraping and bypassing paywalls",
-    "rubrik": "New York Times sagsøger Brave for AI-scraping",
-    "link": "https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times",
-    "side": "artikel/f3c40d8a649f8cb1.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-02T12:51:19-05:00",
-    "billede": "data/img/fc6886dbfdc0116d.webp"
-   },
-   {
-    "titel": "Elon Musk throttles Grok Bot limits due to ‘unsustainably high’ costs",
-    "rubrik": "Musk sænker Grok Bot-grænser efter høje omkostninger",
-    "link": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/",
-    "side": "artikel/b7a0e68320c363ea.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-02T16:23:21+00:00",
-    "billede": "data/img/8d4482a78414f8f2.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-03T12:15:27.201983+00:00",
+  "opdateret": "2026-11-03T19:45:16.653457+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
   "modelkald": 1,
   "kildehentninger": 0,
   "regelbaseret_udvalg": [
-   "https://openai.com/index/lifeval",
-   "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/",
-   "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
+   "https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too/",
+   "https://www.theverge.com/tech/1025002/apple-watch-audio-intelligence-watchos-beta",
+   "https://openai.com/index/lifeval"
   ],
   "udgivet_udvalg": [
-   "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/",
-   "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
-   "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+   "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features",
+   "https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/",
+   "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/"
   ],
   "vaerktoejer": [],
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-11-03T12:15:26.852730+00:00",
+  "opdateret": "2026-11-03T19:45:15.981489+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -751,8 +748,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-03T12:15:27.201983+00:00",
-  "artikler_i_alt": 122,
+  "opdateret": "2026-11-03T19:45:16.653457+00:00",
+  "artikler_i_alt": 128,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -930,19 +927,9 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 1,
+    "i_listen": 0,
     "som_ekstra": 0,
-    "seneste": [
-     {
-      "rubrik": "VocabX skærer inferensregningen med 77 procent",
-      "dato": "2026-10-21T17:35:36",
-      "foerst_set": "2026-10-21T20:20:24",
-      "link": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
-      "side": "artikel/47ba5de6cc845501.html",
-      "hvor": "forside",
-      "under": ""
-     }
-    ]
+    "seneste": []
    },
    {
     "navn": "Simon Willison AI",
@@ -954,7 +941,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 9,
+    "i_listen": 10,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -965,6 +952,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Mistral Large 4 klarer opgaver andre afviser"
+     },
+     {
+      "rubrik": "Qwen 3.8 27B gætter Pac-Man ud fra vægte",
+      "dato": "2026-11-03T16:29:48",
+      "foerst_set": "2026-11-03T19:45:16",
+      "link": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+      "side": "artikel/ab1728508583fdde.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "LLM skifter til gpt-6-luna til halv pris",
@@ -1059,9 +1055,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 57,
-    "som_ekstra": 2,
+    "i_listen": 62,
+    "som_ekstra": 3,
     "seneste": [
+     {
+      "rubrik": "Google: Slukker skolen for AI, forsvinder Search",
+      "dato": "",
+      "foerst_set": "2026-11-03T19:45:16",
+      "link": "https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/",
+      "side": "",
+      "hvor": "under",
+      "under": "Google slår Search fra i skoler uden AI"
+     },
      {
       "rubrik": "New York Times sagsøger Brave for AI-scraping",
       "dato": "",
@@ -1099,6 +1104,42 @@ window.KOMMANDO_DATA = {
       "under": "Microsoft henter 10 milliarder dollar på OpenAI"
      },
      {
+      "rubrik": "Apple kræver 18 år for AI-kærester",
+      "dato": "2026-11-03T15:38:27",
+      "foerst_set": "2026-11-03T19:45:16",
+      "link": "https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up/",
+      "side": "artikel/74ef1aa5540cfddd.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Netflix tester AI Discover på tv",
+      "dato": "2026-11-03T18:42:16",
+      "foerst_set": "2026-11-03T19:45:16",
+      "link": "https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/",
+      "side": "artikel/b0c96602861bfc20.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Fal fordobler værdien til 16 milliarder dollar",
+      "dato": "2026-11-03T19:34:43",
+      "foerst_set": "2026-11-03T19:45:16",
+      "link": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+      "side": "artikel/0018ea6e4618a3fe.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Anthropic: Regnekraft æder 58 procent af omsætningen",
+      "dato": "2026-11-03T17:07:01",
+      "foerst_set": "2026-11-03T19:45:16",
+      "link": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/",
+      "side": "artikel/741c3465b3a0806b.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Apple Watch tester Siri Recaps i beta",
       "dato": "2026-11-03T07:20:00",
       "foerst_set": "2026-11-03T12:15:27",
@@ -1108,65 +1149,20 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
+      "rubrik": "Dreambeans åbner i Indien med 13 sprog",
+      "dato": "2026-11-03T03:30:00",
+      "foerst_set": "2026-11-03T12:15:27",
+      "link": "https://techcrunch.com/2026/11/02/google-takes-dreambeans-to-india-in-bid-to-bring-ai-generated-personal-stories-to-the-masses/",
+      "side": "artikel/36719bfa3896332c.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Anthropic varsler mulig RSI inden længe",
       "dato": "2026-11-02T22:14:50",
       "foerst_set": "2026-11-03T02:35:23",
       "link": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
       "side": "artikel/b86b88ec9ca0ed8c.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Garry Tan: Op til 200.000 dollar til AI-tokens",
-      "dato": "2026-11-03T00:35:52",
-      "foerst_set": "2026-11-03T02:35:23",
-      "link": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
-      "side": "artikel/30470ccd04740eff.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Trajectory lader advokater træne AI-modeller selv",
-      "dato": "2026-11-02T23:13:53",
-      "foerst_set": "2026-11-03T02:35:23",
-      "link": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
-      "side": "artikel/c368c304bd55e435.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Apple antyder AI-indtægter fra tredjepartsapps",
-      "dato": "2026-11-03T01:49:52",
-      "foerst_set": "2026-11-03T02:35:23",
-      "link": "https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/",
-      "side": "artikel/dc645454d4f3c109.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Musk sænker Grok Bot-grænser efter høje omkostninger",
-      "dato": "2026-11-02T16:23:21",
-      "foerst_set": "2026-11-02T18:45:47",
-      "link": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/",
-      "side": "artikel/b7a0e68320c363ea.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "OpenAI merger Chat og Work i ChatGPT",
-      "dato": "2026-11-02T13:57:53",
-      "foerst_set": "2026-11-02T18:45:47",
-      "link": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/",
-      "side": "artikel/e0d9533470c8827b.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "42AI vil forudsige, hvordan tradere reagerer",
-      "dato": "2026-11-02T16:30:00",
-      "foerst_set": "2026-11-02T18:45:47",
-      "link": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
-      "side": "artikel/b6e2d45456503ed8.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1182,9 +1178,27 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 26,
-    "som_ekstra": 5,
+    "i_listen": 27,
+    "som_ekstra": 7,
     "seneste": [
+     {
+      "rubrik": "Netflix ruller AI Discover ud i tv-appen",
+      "dato": "",
+      "foerst_set": "2026-11-03T19:45:16",
+      "link": "https://www.theverge.com/streaming/1025029/netflix-ai-discover-recommendations",
+      "side": "",
+      "hvor": "under",
+      "under": "Netflix tester AI Discover på tv"
+     },
+     {
+      "rubrik": "Siri på Apple Watch lytter og opsummerer",
+      "dato": "",
+      "foerst_set": "2026-11-03T19:45:16",
+      "link": "https://www.theverge.com/tech/1025002/apple-watch-audio-intelligence-watchos-beta",
+      "side": "",
+      "hvor": "under",
+      "under": "Apple Watch tester Siri Recaps i beta"
+     },
      {
       "rubrik": "Anthropic vil stoppe Claude med at klone spil",
       "dato": "",
@@ -1240,17 +1254,26 @@ window.KOMMANDO_DATA = {
       "under": "Genie 4 kan ændre scenen midt i simulationen"
      },
      {
-      "rubrik": "OpenAI vil lade datacenter aflaste strømnettet",
-      "dato": "2026-11-02T13:01:30",
-      "foerst_set": "2026-11-02T18:45:47",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
-      "side": "artikel/4abc12850beae1d0.html",
+      "rubrik": "Google slår Search fra i skoler uden AI",
+      "dato": "2026-11-03T12:00:04",
+      "foerst_set": "2026-11-03T19:45:16",
+      "link": "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features",
+      "side": "artikel/4da843cbbbb2ca4b.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Apple vil sælge ekstra adgang til Siri AI",
+      "dato": "2026-11-03T10:24:51",
+      "foerst_set": "2026-11-03T19:45:16",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1025245/apple-earnings-q4-ai",
+      "side": "artikel/285929c63048ae0f.html",
       "hvor": "forside",
       "under": ""
      },
      {
       "rubrik": "New York Times sagsøger Brave for AI-scraping",
-      "dato": "2026-11-02T12:51:19",
+      "dato": "2026-11-02T17:51:19",
       "foerst_set": "2026-11-02T18:45:47",
       "link": "https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times",
       "side": "artikel/f3c40d8a649f8cb1.html",
@@ -1259,37 +1282,10 @@ window.KOMMANDO_DATA = {
      },
      {
       "rubrik": "Muse-pendant til 50 dollar fik liv af Claude",
-      "dato": "2026-10-31T12:05:00",
+      "dato": "2026-10-31T16:05:00",
       "foerst_set": "2026-10-31T20:14:09",
       "link": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code",
       "side": "artikel/0289b26f177bf3f8.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Apple Intelligence lander i Kina med iOS 27.3",
-      "dato": "2026-10-30T18:32:53",
-      "foerst_set": "2026-10-31T06:12:14",
-      "link": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
-      "side": "artikel/ffe1ba5a47188fc3.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Google og Microsoft bakker ny standard mod scraping",
-      "dato": "2026-10-30T16:26:10",
-      "foerst_set": "2026-10-30T21:00:09",
-      "link": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
-      "side": "artikel/18ea57daed9dddc6.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Altman: RAM hører i datacenteret, ikke på skrivebordet",
-      "dato": "2026-10-30T16:48:43",
-      "foerst_set": "2026-10-30T21:00:09",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
-      "side": "artikel/22e8c569cc060b0a.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1306,8 +1302,17 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 12,
     "i_listen": 11,
-    "som_ekstra": 2,
+    "som_ekstra": 3,
     "seneste": [
+     {
+      "rubrik": "Google: Drop AI – mist Google Search",
+      "dato": "",
+      "foerst_set": "2026-11-03T19:45:16",
+      "link": "https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too/",
+      "side": "",
+      "hvor": "under",
+      "under": "Google slår Search fra i skoler uden AI"
+     },
      {
       "rubrik": "Google erkender: AI-søgning indbringer mindre",
       "dato": "",
@@ -1404,15 +1409,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-28T06:12:05",
       "link": "https://arstechnica.com/ai/2026/10/anthropic-ipo-warns-its-ai-could-blackmail-people-become-sentient-end-humanity/",
       "side": "artikel/089388ff10e50c37.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Genie 4 får tale og mere realistisk fysik",
-      "dato": "2026-10-27T16:00:22",
-      "foerst_set": "2026-10-27T20:55:19",
-      "link": "https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations/",
-      "side": "artikel/199801d5e60e45d1.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1574,12 +1570,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-03T12:31:39.621299+00:00",
+  "opdateret": "2026-11-03T20:03:33.921207+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
   "besoeg_i_alt": 19,
-  "sidevisninger_i_alt": 37,
+  "sidevisninger_i_alt": 39,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1730,14 +1726,14 @@ window.KOMMANDO_DATA = {
    {
     "dato": "2026-11-03",
     "besoeg": 0,
-    "visninger": 0
+    "visninger": 10
    }
   ],
   "sider": [
    {
     "sti": "/",
     "besoeg": 19,
-    "visninger": 37
+    "visninger": 39
    }
   ],
   "artikler": [],

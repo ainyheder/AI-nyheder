@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-11-03T12:15:27.201983+00:00",
+  "opdateret": "2026-11-03T19:45:16.653457+00:00",
   "kladder": [
     {
       "titel": "LifeVal",
@@ -68,6 +68,72 @@
       ]
     },
     {
+      "titel": "OpenAI says ChatGPT is catching up to Google in search",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search",
+      "resume": "In many circles, \"Ask Chat\" has replaced \"Google it,\" and that's reflected in a new announcement from OpenAI: the volume of search queries run through ChatGPT now equals 20 percent of the volume run through Google. Adam Fry, OpenAI's consumer product lead for ChatGPT, made the announcement at a press event on Monday. He said […]",
+      "dato": "2026-11-03T13:30:42-05:00",
+      "kilde": "The Verge AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "eget_foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "rubrik": "OpenAI: ChatGPT-søgninger når 20 procent af Googles",
+      "resume_da": "OpenAI-chefen Adam Fry oplyste på et pressemøde mandag, at søgevolumen i ChatGPT nu svarer til 20 procent af Googles.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI oplyser, at ChatGPTs søgevolumen nu er 20 pct. af Googles.",
+        "forbehold": "OpenAI-oplyst tal uden offentlig metode eller uafhængig dokumentation.",
+        "emne": "openai chatgpt søgning"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "StateBench: Testing how language models track state changes over long documents",
+      "link": "https://huggingface.co/blog/allenai/statebench",
+      "resume": "",
+      "dato": "2026-11-03T17:15:21+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "eget_foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "rubrik": "StateBench tester sprogmodeller på lange dokumenter",
+      "resume_da": "Benchmarken undersøger, om modellerne holder styr på tilstandsændringer, mens dokumentet skrider frem.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "StateBench fra AI2 tester, om sprogmodeller holder styr på tilstandsændringer i lange dokumenter.",
+        "forbehold": "Kun titel og kort resumé; ingen resultater eller metode gennemgået.",
+        "emne": "statebench ai2"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Qodo builds context into AI code review with Codex",
       "link": "https://openai.com/index/qodo-codex-plugin",
       "resume": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.",
@@ -96,6 +162,72 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Palette: teaching a small model to build decks in your design language",
+      "link": "https://huggingface.co/blog/ibm-research/palette-deck-building",
+      "resume": "",
+      "dato": "2026-11-03T16:35:36+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "eget_foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "rubrik": "Palette lærer lille model din stil til præsentationer",
+      "resume_da": "Projektet træner en lille model til at lave præsentationer i brugerens designsprog.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "IBM Research viser Palette, der træner en lille model til at bygge præsentationer i eget designsprog.",
+        "forbehold": "Kun titel og resumé; ingen modelnavn, data eller evaluering oplyst.",
+        "emne": "ibm palette"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Rewarding defenders with bigger bug bounties",
+      "link": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+      "resume": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
+      "dato": "2026-11-02T18:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-03T12:15:27.201983+00:00",
+      "eget_foerst_set": "2026-11-03T12:15:27.201983+00:00",
+      "rubrik": "OpenAI hæver dusører for sikkerhedsfejl",
+      "resume_da": "Selskabet indfører også bonusser for rapportkvalitet, loyalitet og prioriterede kampagner til uafhængige sikkerhedsforskere.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI hæver sine bug bounty-belønninger og indfører bonusser for rapportkvalitet, loyalitet og kampagner.",
+        "forbehold": "Ingen beløb, tidsplan eller effekt af ordningen oplyst i materialet.",
+        "emne": "openai bug bounty"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -134,47 +266,35 @@
       ]
     },
     {
-      "titel": "Heimstaden is changing residential real estate management with AI",
-      "link": "https://openai.com/index/heimstaden",
-      "resume": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
-      "dato": "2026-11-03T08:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Labs",
-      "foerst_set": "2026-11-03T12:15:27.201983+00:00",
-      "eget_foerst_set": "2026-11-03T12:15:27.201983+00:00",
-      "rubrik": "Heimstaden tager ChatGPT Enterprise og Codex i brug",
-      "resume_da": "Ejendomsselskabet bruger ifølge OpenAI værktøjerne til at ændre ejendomsforvaltning, skære omkostninger og styrke medarbejdere i Europa.",
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Google takes Dreambeans to India in bid to bring AI-generated personal stories to the masses",
-      "link": "https://techcrunch.com/2026/11/02/google-takes-dreambeans-to-india-in-bid-to-bring-ai-generated-personal-stories-to-the-masses/",
-      "resume": "Google's Dreambeans, its latest AI experiment, now supports 13 Indian languages.",
-      "dato": "2026-11-03T03:30:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Nyheder",
-      "foerst_set": "2026-11-03T12:15:27.201983+00:00",
-      "eget_foerst_set": "2026-11-03T12:15:27.201983+00:00",
-      "rubrik": "Google bringer Dreambeans til Indien med 13 sprog",
-      "resume_da": "De 13 sprog er indiske, og eksperimentet skal gøre AI-genererede personlige historier tilgængelige for flere.",
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Transformers Model Integration Contracts",
-      "link": "https://huggingface.co/blog/transformers-mic",
+      "titel": "CWE-bench v2: More coverage, quality, and transparency",
+      "link": "https://huggingface.co/blog/cwe-bench",
       "resume": "",
       "dato": "2026-11-03T00:00:00+00:00",
       "kilde": "Hugging Face",
-      "kategori": "Labs",
-      "foerst_set": "2026-11-03T12:15:27.201983+00:00",
-      "eget_foerst_set": "2026-11-03T12:15:27.201983+00:00",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "eget_foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "rubrik": "CWE-bench v2 udvider dækning og gennemsigtighed",
+      "resume_da": "Version 2 angiver større dækning, højere kvalitet og mere gennemsigtighed; materialet uddyber ikke omfanget.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Version 2 af benchmark-suiten CWE-bench meldes med større dækning, højere kvalitet og mere gennemsigtighed.",
+        "forbehold": "Materialet indeholder ingen tekst om omfang, metode eller resultater.",
+        "emne": "cwe-bench"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
       "afventer": [
-        "Mangler dansk overskrift",
-        "Mangler dansk indledning",
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
     },
@@ -184,59 +304,29 @@
       "resume": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
       "dato": "2026-11-02T18:00:00+00:00",
       "kilde": "OpenAI Blog",
-      "kategori": "Labs",
+      "kategori": "Samfund & etik",
       "foerst_set": "2026-11-03T12:15:27.201983+00:00",
       "eget_foerst_set": "2026-11-03T12:15:27.201983+00:00",
       "rubrik": "OpenAI forbereder sikkerhedssprint med Cathedral Systems",
       "resume_da": "Den interne sprint skal teste og styrke OpenAIs forsvar ved hjælp af AI, oplyser selskabet.",
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Rewarding defenders with bigger bug bounties",
-      "link": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
-      "resume": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
-      "dato": "2026-11-02T18:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Labs",
-      "foerst_set": "2026-11-03T12:15:27.201983+00:00",
-      "eget_foerst_set": "2026-11-03T12:15:27.201983+00:00",
-      "rubrik": "OpenAI hæver dusører for sikkerhedsfejl",
-      "resume_da": "Selskabet indfører også bonusser for rapportkvalitet, loyalitet og prioriterede kampagner til uafhængige sikkerhedsforskere.",
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Making it easier for websites to express AI training preferences",
-      "link": "https://openai.com/index/helping-websites-express-ai-training-preferences",
-      "resume": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers.",
-      "dato": "2026-10-30T09:30:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-10-30T21:00:09.129763+00:00",
-      "eget_foerst_set": "2026-10-30T21:00:09.129763+00:00",
-      "rubrik": "OpenAI vil følge fælles robots.txt-signal",
-      "resume_da": "Signalet skal lade hjemmesider fortælle deltagende AI-udbydere om deres præferencer for træning. OpenAI siger, at selskabet vil respektere det.",
-      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 3,
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
         "dokumentation": 3,
         "dansk": 0,
-        "type": "politik",
+        "type": "sikkerhed",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "OpenAI vil respektere et fælles robots.txt-signal for AI-træningspræferencer.",
-        "forbehold": "Få detaljer om hvilke udbydere der deltager, og hvordan signalet håndhæves.",
-        "emne": "openai robots.txt ai-træning"
+        "begrundelse": "OpenAI varsler endnu en intern sikkerhedssprint med Cathedral Systems for at teste og styrke forsvaret med AI.",
+        "forbehold": "Ingen oplysninger om omfang, testmetoder eller resultater.",
+        "emne": "openai sikkerhedssprint"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
+      "kat_ai": true,
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -270,6 +360,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Making it easier for websites to express AI training preferences",
+      "link": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+      "resume": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers.",
+      "dato": "2026-10-30T09:30:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "eget_foerst_set": "2026-10-30T21:00:09.129763+00:00",
+      "rubrik": "OpenAI vil følge fælles robots.txt-signal",
+      "resume_da": "Signalet skal lade hjemmesider fortælle deltagende AI-udbydere om deres præferencer for træning. OpenAI siger, at selskabet vil respektere det.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI vil respektere et fælles robots.txt-signal for AI-træningspræferencer.",
+        "forbehold": "Få detaljer om hvilke udbydere der deltager, og hvordan signalet håndhæves.",
+        "emne": "openai robots.txt ai-træning"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -374,34 +497,67 @@
       ]
     },
     {
-      "titel": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
-      "link": "https://huggingface.co/blog/anydecisionmodel",
-      "resume": "",
-      "dato": "2026-10-29T00:00:00+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-10-29T15:28:58.929586+00:00",
-      "eget_foerst_set": "2026-10-29T15:28:58.929586+00:00",
-      "rubrik": "AnySpeechRecognizer og AnyDecisionModel annonceres til Apple",
-      "resume_da": "De to åbne modeller er annonceret til Apples platforme; materialet angiver ikke licens, adgang eller præstationer.",
-      "kat_ai": true,
+      "titel": "Heimstaden is changing residential real estate management with AI",
+      "link": "https://openai.com/index/heimstaden",
+      "resume": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
+      "dato": "2026-11-03T08:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-11-03T12:15:27.201983+00:00",
+      "eget_foerst_set": "2026-11-03T12:15:27.201983+00:00",
+      "rubrik": "Heimstaden tager ChatGPT Enterprise og Codex i brug",
+      "resume_da": "Ejendomsselskabet bruger ifølge OpenAI værktøjerne til at ændre ejendomsforvaltning, skære omkostninger og styrke medarbejdere i Europa.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
+        "nyhed": 1,
+        "betydning": 1,
         "brugbarhed": 2,
         "dokumentation": 2,
         "dansk": 0,
-        "type": "lancering",
+        "type": "forretning",
         "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "To nye åbne modeller til tale og beslutninger annonceres til Apples platforme.",
-        "forbehold": "Licens, adgang og præstationer er ikke oplyst i materialet.",
-        "emne": "anyspeechrecognizer og anydecisionmodel"
+        "model_lancering": false,
+        "begrundelse": "OpenAI-kundehistorie om Heimstaden, der bruger ChatGPT Enterprise og Codex til ejendomsdrift i Europa.",
+        "forbehold": "Effekterne er beskrevet af leverandøren selv og er ikke uafhængigt dokumenteret.",
+        "emne": "heimstaden"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
+      "kat_ai": true,
+      "prio": 3,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Transformers Model Integration Contracts",
+      "link": "https://huggingface.co/blog/transformers-mic",
+      "resume": "",
+      "dato": "2026-11-03T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-11-03T12:15:27.201983+00:00",
+      "eget_foerst_set": "2026-11-03T12:15:27.201983+00:00",
+      "rubrik": "Transformers får kontrakter til modelintegration",
+      "resume_da": "Titlen peger på aftalte krav for modelintegration i Transformers; materialet uddyber ikke indhold, adgang eller hvornår det tages i brug.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Titlen peger på aftalte krav for modelintegration i Transformers, men indholdet er ikke beskrevet.",
+        "forbehold": "Kun overskrift; intet om hvad kontrakterne indebærer, eller hvornår de gælder.",
+        "emne": "transformers modelintegration"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 3,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -435,6 +591,72 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
+      "link": "https://huggingface.co/blog/anydecisionmodel",
+      "resume": "",
+      "dato": "2026-10-29T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-29T15:28:58.929586+00:00",
+      "eget_foerst_set": "2026-10-29T15:28:58.929586+00:00",
+      "rubrik": "AnySpeechRecognizer og AnyDecisionModel annonceres til Apple",
+      "resume_da": "De to åbne modeller er annonceret til Apples platforme; materialet angiver ikke licens, adgang eller præstationer.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "To nye åbne modeller til tale og beslutninger annonceres til Apples platforme.",
+        "forbehold": "Licens, adgang og præstationer er ikke oplyst i materialet.",
+        "emne": "anyspeechrecognizer og anydecisionmodel"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Quoting Kyle Kingsbury",
+      "link": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/",
+      "resume": "More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to rely on as markers of a mature system are now easier to counterfeit. [...] In the age of LLMs, what can maintainers do to ensure correct software and accurate documentation?…",
+      "dato": "2026-11-01T16:49:04+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-01T20:45:42.066193+00:00",
+      "eget_foerst_set": "2026-11-01T20:45:42.066193+00:00",
+      "rubrik": "Kyle Kingsbury: LLM'er underminerer tilliden til dokumentation",
+      "resume_da": "Ifølge Kingsbury gør sprogmodeller det lettere at forfalske de signaler, der plejede at vise, at et softwaresystem var modent.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Kingsbury peger på, at sprogmodeller gør det lettere at forfalske signaler om moden software og dokumentation.",
+        "forbehold": "Meningsindlæg uden data eller metode.",
+        "emne": "llm'er og tillid til software"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 3,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -506,72 +728,6 @@
       ]
     },
     {
-      "titel": "Quoting Kyle Kingsbury",
-      "link": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/",
-      "resume": "More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to rely on as markers of a mature system are now easier to counterfeit. [...] In the age of LLMs, what can maintainers do to ensure correct software and accurate documentation?…",
-      "dato": "2026-11-01T16:49:04+00:00",
-      "kilde": "Simon Willison AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-11-01T20:45:42.066193+00:00",
-      "eget_foerst_set": "2026-11-01T20:45:42.066193+00:00",
-      "rubrik": "Kyle Kingsbury: LLM'er underminerer tilliden til dokumentation",
-      "resume_da": "Ifølge Kingsbury gør sprogmodeller det lettere at forfalske de signaler, der plejede at vise, at et softwaresystem var modent.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Kingsbury peger på, at sprogmodeller gør det lettere at forfalske signaler om moden software og dokumentation.",
-        "forbehold": "Meningsindlæg uden data eller metode.",
-        "emne": "llm'er og tillid til software"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 3,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Genie 4: A new generation of world simulation",
-      "link": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-      "resume": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
-      "dato": "2026-10-27T16:01:38+00:00",
-      "kilde": "Google DeepMind",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-10-27T20:55:19.965914+00:00",
-      "eget_foerst_set": "2026-10-27T20:55:19.965914+00:00",
-      "rubrik": "DeepMind lancerer verdensmodellen Genie 4",
-      "resume_da": "Ifølge DeepMind løfter modellen realismen i realtidssimulering; materialet siger intet om adgang eller uafhængige tests.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 4,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "DeepMind annoncerer Genie 4 som ny verdensmodel med mere realistisk realtidssimulering; intet om adgang eller test.",
-        "forbehold": "Kun producentens påstand om realismen; materialet siger intet om adgang, benchmarks eller uafhængige tests.",
-        "emne": "genie 4"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
       "link": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
       "resume": "",
@@ -633,6 +789,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Genie 4: A new generation of world simulation",
+      "link": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "resume": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+      "dato": "2026-10-27T16:01:38+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-27T20:55:19.965914+00:00",
+      "eget_foerst_set": "2026-10-27T20:55:19.965914+00:00",
+      "rubrik": "DeepMind lancerer verdensmodellen Genie 4",
+      "resume_da": "Ifølge DeepMind løfter modellen realismen i realtidssimulering; materialet siger intet om adgang eller uafhængige tests.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "DeepMind annoncerer Genie 4 som ny verdensmodel med mere realistisk realtidssimulering; intet om adgang eller test.",
+        "forbehold": "Kun producentens påstand om realismen; materialet siger intet om adgang, benchmarks eller uafhængige tests.",
+        "emne": "genie 4"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -979,39 +1168,6 @@
       ]
     },
     {
-      "titel": "ChatGPT’s expanding world of work",
-      "link": "https://openai.com/index/chatgpt-expanding-world-of-work",
-      "resume": "Explore OpenAI Signals data on 165 work activities across nearly 100 countries, revealing how people use ChatGPT for work and how usage changes over time.",
-      "dato": "2026-10-26T10:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-10-26T21:09:48.052336+00:00",
-      "eget_foerst_set": "2026-10-26T21:09:48.052336+00:00",
-      "rubrik": "OpenAI kortlægger ChatGPT-brug i 165 arbejdsopgaver",
-      "resume_da": "Data fra OpenAI Signals dækker knap 100 lande og viser, hvordan arbejdsbrug ændrer sig over tid. Tallene er OpenAIs egne, ikke en uafhængig undersøgelse.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI offentliggør egen brugsstatistik for arbejdsopgaver i knap 100 lande og viser ændringer over tid.",
-        "forbehold": "Tallene er OpenAIs egne og ikke en uafhængig undersøgelse.",
-        "emne": "chatgpt arbejdsbrug"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Greptile takes bug detection beyond code review with GPT-6 Astra",
       "link": "https://openai.com/index/greptile-code-review-codex-astra",
       "resume": "How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework.",
@@ -1276,40 +1432,6 @@
       ]
     },
     {
-      "titel": "Ensemble forecasting with IBM Granite time-series models",
-      "link": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
-      "resume": "",
-      "dato": "2026-10-22T07:51:31+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Forskning",
-      "foerst_set": "2026-10-22T14:02:49.795092+00:00",
-      "eget_foerst_set": "2026-10-22T14:02:49.795092+00:00",
-      "rubrik": "IBM viser ensemble-forecasting med Granite-modeller",
-      "resume_da": "Indlæg på Hugging Face om IBM's Granite-modeller til tidsserier. Materialet har ingen brødtekst, så resultater og adgang er ikke oplyst.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Indlæg om ensemble-forecasting med IBM's eksisterende Granite-modeller til tidsserier.",
-        "forbehold": "Materialet har ingen brødtekst; hverken nye modelversioner, resultater eller adgang er oplyst.",
-        "emne": "ibm granite tidsserier"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "historie_dato": "2026-10-22T07:51:31+00:00",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Does Your Model Run on AWS Trainium? Look It Up",
       "link": "https://huggingface.co/blog/torch-neuronx-model-support",
       "resume": "",
@@ -1338,6 +1460,171 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 3,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Indie games are missing launch dates because Steam is backed up",
+      "link": "https://www.theverge.com/games/1025596/valve-steam-indie-games-missing-launch-dates",
+      "resume": "Many indie game developers have recently posted on social media about unexpectedly long approval wait times for their game submissions on Steam, with some of the approvals causing developers to miss their planned launch dates. For example, Studio Daimon, the team behind an upcoming title called Food Devils, had planned to launch the game in […]",
+      "dato": "2026-11-03T13:14:50-05:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "eget_foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "rubrik": "Steam er bagud: indie-spil misser lanceringsdatoer",
+      "resume_da": "Udviklere som Studio Daimon med Food Devils melder om uventet lange godkendelsestider, der kan få planlagte udgivelser til at glide.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Indie-udviklere melder om lange godkendelsestider på Steam, så planlagte udgivelser glider.",
+        "forbehold": "Ingen AI-vinkel; enkelte udvikleres oplevelser.",
+        "emne": "steam godkendelser"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Midterm elections 2026: all the news",
+      "link": "https://www.theverge.com/policy/1020640/midterm-elections-2026-all-the-news",
+      "resume": "The 2026 midterm elections will determine the scope of President Donald Trump’s power in his final two years in office, and signal what voters care about going into the 2028 presidential election. While this year’s races are expected to be most broadly defined by affordability issues, there are several topics impacting the tech industry that […]",
+      "dato": "2026-11-03T10:58:39-05:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "eget_foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "rubrik": "The Verge samler nyheder om midtvejsvalget 2026",
+      "resume_da": "Siden er en løbende oversigt over valget, der afgør Trumps magt i hans sidste to år og peger mod 2028.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 0,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Løbende oversigt over midtermvalget; AI nævnes kun som et af flere teknologitemaer.",
+        "forbehold": "",
+        "emne": "midtermvalg 2026"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "The TechCrunch Founder Summit agenda is only half the reason to be in Boston on Nov. 4",
+      "link": "https://techcrunch.com/2026/11/03/the-techcrunch-founder-summit-agenda-is-only-half-the-reason-to-be-in-boston-on-nov-4/",
+      "resume": "On Nov. 4, TechCrunch Founder Summit 2026 brings founders and VCs to Boston's SoWa Power Station for practical insights and connections. Register before prices increase at the door.",
+      "dato": "2026-11-03T14:30:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "eget_foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "rubrik": "TechCrunch afholder Founder Summit 4. november",
+      "resume_da": "Den 4. november 2026 mødes iværksættere og investorer i SoWa Power Station; prisen stiger ved døren.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 0,
+        "betydning": 0,
+        "brugbarhed": 0,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "reklame",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Invitation til TechCrunch Founder Summit med stigende billetpriser; ingen AI-nyhed.",
+        "forbehold": "",
+        "emne": "techcrunch founder summit"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Tomorrow: TechCrunch Founder Summit takes over Boston and when pass rates increase",
+      "link": "https://techcrunch.com/2026/11/03/tomorrow-techcrunch-founder-summit-takes-over-boston-and-when-pass-rates-increase/",
+      "resume": "Secure your TechCrunch Founder Summit pass savings before prices increase tomorrow at 9 a.m. ET. Save up to $100 on your pass, and get a second for free.",
+      "dato": "2026-11-03T14:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "eget_foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "rubrik": "TechCrunch Summit-billetter stiger i pris i morgen",
+      "resume_da": "Rabatten på op til 100 dollar udløber kl. 9 ET, og købere får en ekstra billet med.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 0,
+        "betydning": 0,
+        "brugbarhed": 0,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "reklame",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Rabat på billetter til TechCrunch Founder Summit; indholdet er markedsføring, ikke en AI-nyhed.",
+        "forbehold": "",
+        "emne": "techcrunch founder summit"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Accelerating engineering for the physical world",
+      "link": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+      "resume": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world.",
+      "dato": "2026-11-03T12:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "eget_foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "rubrik": "OpenAI vil bruge Codex til CAD- og PCB-arbejde",
+      "resume_da": "Et blogindlæg beskriver, hvordan ChatGPT og Codex kan hjælpe ingeniører med design og simulering. Konkrete resultater fremgår ikke.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "reklame",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI-blog viser ChatGPT og Codex i ingeniørarbejde som CAD og PCB-design uden konkrete resultater.",
+        "forbehold": "",
+        "emne": "openai codex"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -58608,7 +58895,7 @@
       "titel": "Pope Leo calls for the disarmament of AI: ‘Machines are tools, not persons’",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai",
       "resume": "Pope Leo XIV says AI systems should be \"disarmed,\" adding that humans \"have the responsibility to guide, change and, when necessary, reject its applications.\" In Friday's Papal Address, Pope Leo encourages United Nations member states to \"take concrete steps toward banning lethal autonomous weapons\" during their meeting in Geneva next month. The address reflects many […]",
-      "dato": "2026-10-30T10:58:06-04:00",
+      "dato": "2026-10-30T14:58:06+00:00",
       "kilde": "The Verge AI",
       "kategori": "Politik & jura",
       "foerst_set": "2026-10-30T15:15:27.943712+00:00",
@@ -58918,7 +59205,7 @@
       "titel": "The biggest names in AI are backing a new way to opt out of scraping",
       "link": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
       "resume": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI, as reported earlier by Search Engine Roundtable. With this control, publishers can apply their AI training preferences across multiple AI companies, instead of setting them individually. The shared \"policy token\" signal […]",
-      "dato": "2026-10-30T16:26:10-04:00",
+      "dato": "2026-10-30T20:26:10+00:00",
       "kilde": "The Verge AI",
       "kategori": "Politik & jura",
       "foerst_set": "2026-10-30T21:00:09.129763+00:00",
@@ -59400,7 +59687,7 @@
       "titel": "Sam Altman says it’s better for RAM to be in a data center than on your desk",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
       "resume": "Asked about supply chain shortages, like the ongoing RAM shortage, OpenAI CEO Sam Altman said in an interview that it's \"terrible\" to have RAM in personal PCs instead of data centers. During his appearance on the Cheeky Pint podcast, where he also commented on AI's impact on math, Altman said: \"A lot of people want […]",
-      "dato": "2026-10-30T16:48:43-04:00",
+      "dato": "2026-10-30T20:48:43+00:00",
       "kilde": "The Verge AI",
       "kategori": "Penge & marked",
       "foerst_set": "2026-10-30T21:00:09.129763+00:00",
@@ -59651,7 +59938,7 @@
       "titel": "Apple Intelligence is finally coming to China with iOS 27.3",
       "link": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
       "resume": "Apple will launch Apple Intelligence in China with iOS 27.3, the company announced on its Chinese newsroom website, as reported by MacRumors. The Apple Intelligence features will be available first in an iOS 27.3 beta that's set to launch on November 4th, with a full iOS 27.3 release scheduled for December. This launch doesn't bring […]",
-      "dato": "2026-10-30T18:32:53-04:00",
+      "dato": "2026-10-30T22:32:53+00:00",
       "kilde": "The Verge AI",
       "kategori": "Lanceringer",
       "foerst_set": "2026-10-31T06:12:14.287974+00:00",
@@ -60260,7 +60547,7 @@
       "titel": "Starbucks wants to use AI to show you a ‘personalized digital menu’ at the drive-thru",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
       "resume": "Starbucks could eventually show you a personalized digital menu when you pull up to the drive-thru. During an earnings call on Thursday, Starbucks CEO Brian Niccol said the company is going to explore \"experiences that recognize participating customers as they arrive, present personalized digital menus, and make payment more effortless,\" as spotted earlier by More […]",
-      "dato": "2026-10-30T13:38:04-04:00",
+      "dato": "2026-10-30T17:38:04+00:00",
       "kilde": "The Verge AI",
       "kategori": "Hverdags-AI",
       "foerst_set": "2026-10-30T21:00:09.129763+00:00",
@@ -60474,7 +60761,7 @@
       "titel": "I built an AI Tamagotchi before Meta could",
       "link": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code",
       "resume": "Mark Zuckerberg's Meta made AI look so stinking cute by giving it a squishy little face - and this holiday season, he wants to sell you a Muse Charm so you can carry your jolly AI helper around like a Tamagotchi. But I won't be buying one, because we have Muse Charm at home. It […]",
-      "dato": "2026-10-31T12:05:00-04:00",
+      "dato": "2026-10-31T16:05:00+00:00",
       "kilde": "The Verge AI",
       "kategori": "Hverdags-AI",
       "foerst_set": "2026-10-31T20:14:09.467780+00:00",
@@ -60994,7 +61281,7 @@
       "titel": "The New York Times sues Brave web browser for AI scraping and bypassing paywalls",
       "link": "https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times",
       "resume": "The New York Times and a group of other publications have filed lawsuits against the company that makes the Brave web browser over alleged unlawful scraping to train AI and also letting users bypass their paywalls, as reported by Reuters. According to a complaint filed by the New York Daily News, the Chicago Tribune, and […]",
-      "dato": "2026-11-02T12:51:19-05:00",
+      "dato": "2026-11-02T17:51:19+00:00",
       "kilde": "The Verge AI",
       "kategori": "Politik & jura",
       "foerst_set": "2026-11-02T18:45:47.523033+00:00",
@@ -62066,14 +62353,15 @@
     {
       "titel": "How “reverse game theory” could keep AI agents in check",
       "link": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/",
-      "resume": "A new approach known as “reverse game theory” aims to create incentives for powerful AI models that make following the rules the most rational choice. As AI models become more capable, safety researchers are scrambling to ensure they are “aligned” with human desires—to make sure, in other words, that rogue agents don’t break the law,…",
+      "resume": "A new approach known as “reverse game theory” aims to control powerful AI models by designing systems that incentivize them to stick to the rules. As AI models become more capable, safety researchers are scrambling to ensure they are “aligned” with human desires—to make sure, in other words, that rogue agents don’t break the law,…",
       "dato": "2026-11-03T10:43:41+00:00",
       "kilde": "MIT Tech Review AI",
-      "kategori": "Dybde",
+      "kategori": "Forskning",
       "foerst_set": "2026-11-03T12:15:27.201983+00:00",
       "eget_foerst_set": "2026-11-03T12:15:27.201983+00:00",
       "rubrik": "Stephen Morris: Spilteori kan styre AI-agenter",
       "resume_da": "Reverse game theory designer incitamenter, så AI-agenter vælger at følge reglerne, uden at forskere behøver at forstå deres indre.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Spilteori vendt på hovedet",
@@ -62088,9 +62376,8 @@
           "tekst": "Elad Hazan, professor i datalogi ved Princeton, vil låne mekanismer fra menneskelige samfund: sociale normer, retssystemet og kapitalismens incitamenter. 'Vi vil aligne superintelligent AI – få den til at følge menneskelige ønsker,' siger han. 'Hvorfor taler vi ikke først om mennesker?'\n\nHans forslag er at lade AI-modeller skiftes til at være 'solvers', der løser problemer, og 'auditors', der tjekker de andres arbejde. Under træning belønnes de efter udfald: Solvere, der fanges i at snyde, straffes, men det gør auditorer, der ikke fanger snyderne, også. Ved uenighed kan sagen gå til 'ret'.\n\nHazan erkender, at agenter kan samarbejde om at snyde. Det kan modvirkes ved at belønne auditorer godt nok og ved at auditere auditorerne med 'mystery shoppers'.\n\nMen metoden bygger på, at AI-agenter handler rationelt. Det er usikkert. 'Er det overhovedet rimeligt at antage, at de vil reagere på incitamenter?' spørger Helen Qu fra Flatiron Institute. Morris indrømmer: 'AI'er er ikke rationelle.'"
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Claude har en forfatning – en slags moralkodeks.",
         "Gary Becker introducerede 'den rationelle lovovertræder' i 1960'erne."
@@ -62101,14 +62388,32 @@
         "Stephen Morris foreslår at belønne modeller for at forudsige andre modellers svar.",
         "Elad Hazan vil lade AI-agenter optræde som solver og auditor."
       ],
+      "billedmotiv": "A large opaque AI-model block, sealed with no visible interior, holds up a deliberately poor answer tile. A second solid model block predicts that answer, and a round reward token moves toward the first block only when the prediction matches. Crisp flat vector shapes, high contrast.",
+      "billedmotiv_instruks": "726a79f3a6f3fd3a2f14",
+      "billede": "data/img/6d803910cc85ab94.jpg",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-03T12:19:59.866065+00:00"
       },
-      "billedmotiv": "A large opaque AI-model block, sealed with no visible interior, holds up a deliberately poor answer tile. A second solid model block predicts that answer, and a round reward token moves toward the first block only when the prediction matches. Crisp flat vector shapes, high contrast.",
-      "billedmotiv_instruks": "726a79f3a6f3fd3a2f14",
-      "billede": "data/img/6d803910cc85ab94.jpg",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "MIT Tech Review beskriver »reverse game theory« som metode til at holde AI-agenter inden for reglerne.",
+        "forbehold": "",
+        "emne": "ai-alignment"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
       "side": "artikel/5a465e187c017a30.html"
     },
     {
@@ -62117,11 +62422,12 @@
       "resume": "Now in beta: Apple's new Audio Intelligence features can help you remember what someone said or take notes on conversations.",
       "dato": "2026-11-03T07:20:00+00:00",
       "kilde": "TechCrunch AI",
-      "kategori": "Nyheder",
+      "kategori": "Hverdags-AI",
       "foerst_set": "2026-11-03T12:15:27.201983+00:00",
       "eget_foerst_set": "2026-11-03T12:15:27.201983+00:00",
       "rubrik": "Apple Watch tester Siri Recaps i beta",
       "resume_da": "Udviklere kan i iOS 27.3-beta også prøve Live Rewind, der viser de sidste 15 sekunder som tekst.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Dobbeltklik henter de sidste 15 sekunder",
@@ -62136,8 +62442,6 @@
           "tekst": "Optagelsen behandles ifølge Apple i et særligt beskyttet hukommelsesområde, en secure enclave, på urets S11-chip og overføres derefter til den koblede iPhone. Lette AI-modeller på uret skal afgøre, om der er en samtale, som brugeren deltager i. På iPhonen laves lyden om til kondenseret tekst, som krypteres og sendes til Apples Private Cloud Compute (PCC), hvor referatet dannes.\n\nApple hævder, at rå lyd ikke er tilgængelig for andre – heller ikke Apple – og at referatet slettes fra PCC med det samme. De færdige noter er kun tilgængelige for brugeren og krypteres, når de synkroniseres mellem enheder. Apple siger også, at funktionerne ikke bør påvirke batteritiden."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "15 sekunder",
@@ -62152,6 +62456,7 @@
           "label": "Siri Recaps, der ikke gemmes, slettes inden for syv dage"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Betaen er først for udviklere; offentlig beta og bredere udrulning følger senere.",
         "Apple viste Audio Intelligence på hardwareeventet Surprise and Shine i september.",
@@ -62163,13 +62468,42 @@
         "Siri Recaps laver korte noter uden rå lyd",
         "Ugemte referater slettes inden for syv dage"
       ],
+      "billedmotiv": "A large solid Apple Watch with its digital crown prominent; the bitten-apple logo appears clearly on the opaque band. A short paper-like text strip slides out from the crown, with two crisp click markers beside it showing a double-click; the strip carries a few solid lines rather than a screenshot. Flat vector shapes.",
+      "billedmotiv_instruks": "b22e3f1d7c0c512deeed",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-03T12:19:23.460283+00:00"
       },
-      "billedmotiv": "A large solid Apple Watch with its digital crown prominent; the bitten-apple logo appears clearly on the opaque band. A short paper-like text strip slides out from the crown, with two crisp click markers beside it showing a double-click; the strip carries a few solid lines rather than a screenshot. Flat vector shapes.",
-      "billedmotiv_instruks": "b22e3f1d7c0c512deeed",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Apple tester Audio Intelligence i iOS 27.3-beta med Live Rewind og opsummering af samtaler på Apple Watch.",
+        "forbehold": "Kun beta for udviklere; funktionerne er ikke udgivet bredt.",
+        "emne": "apple watch"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "historie_dato": "2026-11-03T07:20:00+00:00",
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/tech/1025002/apple-watch-audio-intelligence-watchos-beta",
+          "rubrik": "Siri på Apple Watch lytter og opsummerer",
+          "resume_da": "To nye funktioner i watchOS 27.3 lader Siri opsummere samtaler og lave tekst af de seneste 15 sekunder fra urets mikrofon.",
+          "dato": "2026-11-03T13:31:00-05:00",
+          "foerst_set": "2026-11-03T19:45:16.653457+00:00"
+        }
+      ],
       "side": "artikel/8f6f2c9dfcc57986.html"
     },
     {
@@ -62178,11 +62512,12 @@
       "resume": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. At the end of September, President Trump signed an executive order that contained just one directive, ordering government agencies to rebrand what they had been calling artificial intelligence as “Super Intelligence.” That…",
       "dato": "2026-11-03T04:18:47+00:00",
       "kilde": "MIT Tech Review AI",
-      "kategori": "Dybde",
+      "kategori": "Politik & jura",
       "foerst_set": "2026-11-03T12:15:27.201983+00:00",
       "eget_foerst_set": "2026-11-03T12:15:27.201983+00:00",
       "rubrik": "Trump vil omdøbe AI til Super Intelligence",
       "resume_da": "En præsidentiel ordre pålægger føderale agenturer at kalde AI for Super Intelligence. En måned senere bruger hverken Pentagon eller techcheferne ordet konsekvent.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Et nyt navn fra Det Hvide Hus",
@@ -62205,8 +62540,6 @@
           "tekst": "27. oktober kritiserede Trump Wall Street Journal på Truth Social for ikke at bruge Super Intelligence, som han kaldte »det navn, stort set alle andre bruger, eller snart vil bruge«. Han antydede, at en ny regel vil gå længere og forbyde ordet artificial intelligence i statslige dokumenter. Heller ikke Newsmax bruger det nye ord.\n\nIfølge ordren skal lederne af de føderale agenturer desuden udarbejde en ny juridisk definition af Super Intelligence, som præsidenten skal have inden udgangen af måneden."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "To tredjedele",
@@ -62217,6 +62550,7 @@
           "label": "underskrev erklæringen White House Accord on Super Intelligence"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Trump lod vælgerne på X vælge mellem Super Intelligence, Extreme Intelligence og Supreme Intelligence.",
         "Elon Musk har lovet at omdøbe SpaceXAI til SpaceXSI.",
@@ -62229,15 +62563,711 @@
         "Kun Musk og Zuckerberg brugte ordet konsekvent",
         "Ny juridisk definition ventes inden månedens udgang"
       ],
+      "billedmotiv": "A large solid official government nameplate stands front-facing, with the capital letters “SI” embossed in deep relief. A smaller old “AI” plate peels away at one corner, while a round formal approval stamp presses onto the new plate. Crisp flat vector shapes, no background.",
+      "billedmotiv_instruks": "30fcb4feb0622522b6de",
+      "billede": "data/img/8a5286c81e644952.jpg",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-03T12:19:26.401876+00:00"
       },
-      "billedmotiv": "A large solid official government nameplate stands front-facing, with the capital letters “SI” embossed in deep relief. A smaller old “AI” plate peels away at one corner, while a round formal approval stamp presses onto the new plate. Crisp flat vector shapes, no background.",
-      "billedmotiv_instruks": "30fcb4feb0622522b6de",
-      "billede": "data/img/8a5286c81e644952.jpg",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Trump-ordren om at kalde AI for »Super Intelligence« følges kun delvist af Pentagon og techchefer.",
+        "forbehold": "",
+        "emne": "super intelligence"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
       "side": "artikel/72788a4d358feca2.html"
+    },
+    {
+      "titel": "Google is entirely disabling Search in schools that don’t want AI",
+      "link": "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features",
+      "resume": "Google is completely turning off Search in schools that reject its AI features, the company told The New York Times. The decision was also shared in a broader education-related update from Google on Tuesday, saying that access to Gemini, Gemini Notebook, Gemini in Classroom, and Google Search \"will be entirely off\" for K-12 student accounts […]",
+      "dato": "2026-11-03T12:00:04-05:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "eget_foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "rubrik": "Google slår Search fra i skoler uden AI",
+      "resume_da": "Skoler, der fravælger Googles AI, mister også Google Search for eleverne. Administratorer kan ikke slå AI-funktioner fra og beholde søgningen.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "K-12-elever mister ifølge The New York Times Search og Gemini-funktioner, hvis skolen afviser AI.",
+        "forbehold": "Bygger på Googles udmelding og NYT-omtale; ingen uafhængig verifikation.",
+        "emne": "google skoler ai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Google slukker Search for elever uden AI",
+          "tekst": "Google har fortalt The New York Times, at Google Search bliver slået helt fra på skoler, der afviser selskabets AI-funktioner. I en bredere opdatering om uddannelse oplyser Google, at adgangen til Gemini, Gemini Notebook, Gemini in Classroom og Google Search vil være helt slukket for K-12-elevkonti, medmindre administratorer udtrykkeligt slår dem til. K-12 dækker elever fra børnehaveklasse til 12. klasse. Gemini er Googles AI-assistent, og Classroom er Googles undervisningsapp."
+        },
+        {
+          "overskrift": "Administratorer kan ikke fravælge AI og beholde Search",
+          "tekst": "Det er ikke en separat beslutning. Administratorer får ikke mulighed for at slå Gemini-drevne funktioner fra uden også at slå Search fra. Chris Phillips, Googles vice president for education, sagde til The New York Times, at Search og AI er tæt integreret. Skoler, der deaktiverer Googles AI-funktioner, vil ifølge ham ikke have adgang til Search og vil se en besked fra skolen om, at søgningen ikke er tilgængelig. Google svarede ikke umiddelbart The Verge på en anmodning om kommentar."
+        },
+        {
+          "overskrift": "Guided Learning skal hjælpe mod genveje",
+          "tekst": "Google forsøger også at håndtere bekymringen om, at elever bruger AI-funktioner til at finde “genveje” i stedet for selv at løse opgaver. Derfor indbygger Google funktionen Guided Learning i AI Overviews, de AI-genererede oversigter i Search. Guided Learning skal hjælpe elever med at arbejde sig igennem opgaver. Ifølge The Verge begynder Google at teste funktionen i udvalgte amerikanske skoler i denne måned."
+        },
+        {
+          "overskrift": "Gemini blev standard i Classroom",
+          "tekst": "Ændringen kommer få måneder efter, at Google slog Gemini til som standard i Classroom-appen. Det skabte skepsis, blandt andet med henvisning til rapporter om faldende testresultater og andre påvirkninger af elevers læringsevne. Lovgivere har ifølge The Verge presset Google på de “potentielle skader” ved at bruge selskabets AI-produkter i skoler. Google slår ikke længere AI-funktioner til som standard i skoler, men ifølge The Verge har valget en pris."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "150 mio.+",
+          "label": "Lærere og elever, der ifølge Google bruger Google Classroom globalt"
+        }
+      ],
+      "detaljer": [],
+      "betydning": "For skoler, der vil undgå AI i undervisningen, betyder valget, at eleverne også mister en almindelig søgemaskine. Google henviser til, at Search og AI er tæt integreret.",
+      "pointer": [
+        "Search slukkes helt, hvis skolen afviser Googles AI.",
+        "AI og Search kan ikke slås fra hver for sig.",
+        "Guided Learning testes i USA i denne måned."
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-03T19:51:02.097119+00:00"
+      },
+      "historie_dato": "2026-11-03T16:30:34+00:00",
+      "andre": [
+        {
+          "kilde": "Ars Technica AI",
+          "link": "https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too/",
+          "rubrik": "Google: Drop AI – mist Google Search",
+          "resume_da": "AI er som standard slået fra for skoler med Googles undervisningsprodukter; administratorer skal selv aktivere det.",
+          "dato": "2026-11-03T17:54:43+00:00",
+          "foerst_set": "2026-11-03T19:45:16.653457+00:00"
+        },
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/",
+          "rubrik": "Google: Slukker skolen for AI, forsvinder Search",
+          "resume_da": "Næste år bliver Gemini, NotebookLM og Classroom-AI slået fra som standard for K-12-elever, medmindre skolen tænder dem. Guided Learning lanceres samtidig.",
+          "dato": "2026-11-03T16:30:34+00:00",
+          "foerst_set": "2026-11-03T19:45:16.653457+00:00"
+        }
+      ],
+      "billedmotiv": "A large four-colour Google G sits on an oversized rocker switch set to OFF; a rigid metal arm links the switch to a magnifying glass and a small solid processor chip. The arm pulls both down, so the search lens and the AI chip are cut off together.",
+      "billedmotiv_instruks": "5d1b8cfaefb27d9a3325",
+      "side": "artikel/4da843cbbbb2ca4b.html"
+    },
+    {
+      "titel": "Apple restricts dating apps and AI companions to users 18 and up",
+      "link": "https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up/",
+      "resume": "Apple's new App Store rules will require 18+ ratings for dating apps and AI companions that offer sexual or romantic content.",
+      "dato": "2026-11-03T15:38:27+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "eget_foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "rubrik": "Apple kræver 18 år for AI-kærester",
+      "resume_da": "Fra 16. november skal dating- og AI-companion-apper i App Store have 18+-rating, og Apple kræver nye indholdsbeskrivelser fra udviklerne.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Apple indfører 18+-krav i App Store for datingapps og AI-companion-apps med seksuelt eller romantisk indhold.",
+        "forbehold": "",
+        "emne": "apple app store"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Dating og AI-kærester skal være 18+",
+          "tekst": "Apple strammer App Store, så mindreårige får sværere ved at bruge dating-apper og AI-apper med seksuelt eller romantisk indhold. Det har selskabet meddelt udviklerne ifølge TechCrunch.\n\nFra 16. november skal udviklere tilføje nye indholdsbeskrivelser, så appens aldersvurdering afspejler, hvad den faktisk tilbyder. Alle apper med dating- eller romantiske relationsfunktioner skal fremover have 18+."
+        },
+        {
+          "overskrift": "Også apps hvor funktionen er en blandt flere",
+          "tekst": "Reglen rammer ikke kun rene datingtjenester. AI-companion-apper — hvor brugeren kan skabe en AI-figur som ven, kæreste eller fantasy-karakter — er ofte rettet mod unge, og Character.AI og Replika er blandt de kendte. Apple kræver 18+, også når companion-funktionen blot er én af flere funktioner i appen.\n\nxAI lancerede sidste år 3D-animerede AI-companions, hvor brugere kunne låse voksent indhold op. Sidste sommer var de største AI-companion-apper på App Store og Google Play hentet 220 millioner gange globalt."
+        },
+        {
+          "overskrift": "Placering til andre skal deklareres",
+          "tekst": "Apple kræver også, at apper angiver det, hvis de deler brugerens faktiske placering med en anden person eller gruppe. Det rejser privatlivsspørgsmål, især hvis brugeren ikke var klar over, at placeringen blev delt.\n\nI Brasilien kan apper med lokationsdeling for familier i stedet anmode Justits- og sikkerhedsministeriet (MJSP) om en officiel vurdering, frem for at skulle anmeldes med A16-ratings, som lokal lov kræver."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "220 mio.",
+          "label": "Downloads af de største AI-companion-apper på App Store og Google Play, opgjort sidste sommer"
+        },
+        {
+          "tal": "18+",
+          "label": "Mindste aldersrating for apper med dating- eller romantiske relationsfunktioner"
+        }
+      ],
+      "detaljer": [
+        "Apple har tidligere rullet alderssikringsteknologi ud globalt og givet forældre flere kontrolmuligheder.",
+        "De nye regler blev sendt til udviklerne mandag og træder i kraft 16. november."
+      ],
+      "betydning": "Apple flytter grænsen fra den enkelte apps eget login til selskabets ratingsystem, så også apps, hvor companion-funktionen er én blandt flere, skal mærkes med 18+.",
+      "pointer": [
+        "18+ gælder også companion-apper som sidefunktion",
+        "Nye indholdsbeskrivelser fra 16. november",
+        "Apper skal oplyse om delt placering"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-03T19:49:47.197784+00:00"
+      },
+      "billedmotiv": "A large solid Apple logo stands as a heavy gate; its leaf forms a latch. A rounded chat bubble with a small heart symbol presses against the gate from outside, while a small shield-shaped lock hangs from the apple, barring entry.",
+      "billedmotiv_instruks": "fa38458c71559351c9f0",
+      "side": "artikel/74ef1aa5540cfddd.html"
+    },
+    {
+      "titel": "Netflix’s new AI Discover tab helps you find something to watch based on your mood",
+      "link": "https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/",
+      "resume": "The first experimental feature under the tab will allow users to get recommendations based on what they're currently in the mood for.",
+      "dato": "2026-11-03T18:42:16+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "eget_foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "rubrik": "Netflix tester AI Discover på tv",
+      "resume_da": "Fanen foreslår film og serier ud fra humør, tid og temaer; først i USA på understøttede tv og kun på engelsk.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Netflix lancerer AI Discover-fane med eksperimentelle AI-anbefalinger ud fra humør og temaer.",
+        "forbehold": "Netflix kalder selv funktionerne eksperimenter; ingen uafhængig test.",
+        "emne": "netflix"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Humør bliver et filter",
+          "tekst": "Netflix er begyndt at rulle en ny fane ud, AI Discover, hvor brugerne kan finde noget at se ud fra, hvad de er i humør til. Første forsøg lader dem vælge temaer som “something light”, “scare me”, “family movie night” og “quick watches”. Temaerne bygger på humør, seervaner, hvor megen tid brugeren har, eller hvad der er nyt og populært.\n\nNår et tema er valgt, viser Netflix matchende anbefalinger. Brugeren kan vælge mere specifikke temaer eller “something different” for at begynde forfra. Ved hver titel står knappen “Tune Your Recommendations” ved siden af “Play” og “My List”, så man kan gemme gode forslag eller udelukke titler, man ikke vil se igen."
+        },
+        {
+          "overskrift": "Et lag lærer i realtid",
+          "tekst": "Bag fanen ligger et nyt teknologilag, som Netflix har bygget, og som selskabet kalder et intelligence layer. Det reagerer på, hvad brugerne fortæller platformen i realtid, og bliver ved med at lære. Netflix kalder AI Discover sit “test kitchen”, hvor selskabet prøver nye opskrifter af til at opdage indhold.\n\nFørst lander fanen i USA til brugere, der ser Netflix på engelsk på understøttede tv. Netflix planlægger at bringe den til flere brugere i de kommende uger. Har man adgang, vises en “Discover”-knap med et rødt gem-ikon og et “New”-mærke i topnavigationen på tv’et. Feedback skal hjælpe med at afgøre, hvilke funktioner Netflix beholder eller forbedrer, før de flyttes til den almindelige Netflix-oplevelse."
+        },
+        {
+          "overskrift": "Et supplement, ikke en erstatning",
+          "tekst": "TechCrunch beskriver AI Discover som et tegn på, at Netflix vil gøre det voksende bibliotek lettere at navigere og flytte opdagelse væk fra endeløs rulning. Det er en læsning af annonceringen, ikke et løfte om, at rulning forsvinder. Fanen er en ekstra indgang ved siden af den almindelige Netflix-oplevelse, og funktionerne skal først testes."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [],
+      "betydning": "Hvis testen falder godt ud, kan Netflix flytte funktioner fra AI Discover til den almindelige Netflix-oplevelse. Det kan gøre opdagelse mere styret af konkrete ønsker end af en lang liste.",
+      "pointer": [
+        "AI Discover er en ny fane på Netflix.",
+        "Først i USA på engelsk og understøttede tv.",
+        "Netflix kalder fanen et testkøkken."
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-03T19:50:56.724395+00:00"
+      },
+      "historie_dato": "2026-11-03T18:00:00+00:00",
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/streaming/1025029/netflix-ai-discover-recommendations",
+          "rubrik": "Netflix ruller AI Discover ud i tv-appen",
+          "resume_da": "Ny fane foreslår film og serier ud fra temaer som »Family Movie Night«. Foreløbig kun i USA til engelske brugere på understøttede tv.",
+          "dato": "2026-11-03T13:00:00-05:00",
+          "foerst_set": "2026-11-03T19:45:16.653457+00:00"
+        }
+      ],
+      "billedmotiv": "A large red Netflix N badge stands on a solid TV remote; its single oversized dial is split into four mood segments with simple sun, cloud, heart and lightning icons. A pointer clicks onto the heart segment, and a small raised tab rises from the remote as a new discovery tab.",
+      "billedmotiv_instruks": "0a004165dd5940257dfd",
+      "billede": "data/img/31115ec6bb4f6018.jpg",
+      "side": "artikel/b0c96602861bfc20.html"
+    },
+    {
+      "titel": "AI inference startup Fal doubles its valuation to $16B as demand surges",
+      "link": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+      "resume": "The five-year-old startup raised a $1.3 billion round led by Bessemer.",
+      "dato": "2026-11-03T19:34:43+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "eget_foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "rubrik": "Fal fordobler værdien til 16 milliarder dollar",
+      "resume_da": "San Francisco-selskabet Fal rejser 1,3 milliarder dollar og fordobler sin værdi. Kunderne vil køre færdigtrænede AI-modeller for video og lyd.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Fal rejser 1,3 mia. dollar og fordobler værdiansættelsen til 16 mia. dollar på AI-inference.",
+        "forbehold": "Kun kort omtale; ingen økonomiske detaljer ud over runden.",
+        "emne": "fal"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Nvidia og Bessemer lægger 1,3 milliarder",
+          "tekst": "Fal rejser 1,3 milliarder dollar i en runde ledet af Bessemer Venture Partners. Nvidia, Sound Ventures og T. Rowe Price deltager, og det sætter en værdiansættelse på **16 milliarder dollar** — det dobbelte af de 8 milliarder dollar, som Bloomberg kunne fortælle om i april.\n\nFal offentliggør samtidig to runder på én gang: Series E og Series F, hvor der samlet kom 1,65 milliarder dollar ind. Sequoia stod i spidsen for den tidligere runde."
+        },
+        {
+          "overskrift": "Kunderne vil køre modeller, ikke træne dem",
+          "tekst": "Fal holder til i San Francisco og driver en tjeneste, hvor virksomheder kan køre AI-modeller for video, billede og lyd uden selv at eje maskinerne. Netop det at afvikle en model, der allerede er trænet, kaldes inference.\n\nEfterspørgslen kommer især fra kunder, der bruger åbne modeller, skriver TechCrunch. Fal passerede tidligere på året 800 millioner dollar i annualiseret omsætning, altså et tal for et helt år regnet ud fra den nuværende takt, ifølge Bloomberg."
+        },
+        {
+          "overskrift": "Tynde marginer trods voldsom vækst",
+          "tekst": "Væksten er ikke gratis. Baseten, Fireworks AI og Modal vokser også hurtigt og rejser store beløb til højere værdiansættelser. Men bruttoavancerne er tynde, fordi det er dyrt at købe eller leje den regnekraft, modellerne skal køre på. Det bygger TechCrunch på kilder med kendskab til branchens tal."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "16 mia. dollar",
+          "label": "Fals værdiansættelse, det dobbelte af 8 mia. dollar i april (Bloomberg)"
+        },
+        {
+          "tal": "1,3 mia. dollar",
+          "label": "Series F, ledet af Bessemer Venture Partners"
+        },
+        {
+          "tal": "1,65 mia. dollar",
+          "label": "Samlet rejsning i Series E og Series F tilsammen"
+        },
+        {
+          "tal": "800 mio. dollar",
+          "label": "Annualiseret omsætning tidligere på året (Bloomberg)"
+        }
+      ],
+      "detaljer": [
+        "Fal blev grundlagt i 2021 af Burkay Gur, tidligere hos Coinbase og Oracle, og Gorkem Yurtseven fra Amazon.",
+        "Sequoia stod i spidsen for den tidligere runde, Series E.",
+        "Fals tjeneste dækker modeller for video, billede og lyd."
+      ],
+      "betydning": "Værdiansættelsen viser, at investorernes interesse har flyttet sig fra at træne nye modeller til at drive dem i drift — men de tynde marginer følger med.",
+      "pointer": [
+        "Fal rejser 1,3 milliarder dollar i Series F",
+        "Værdien fordobles fra 8 til 16 milliarder dollar",
+        "Tynde bruttoavancer på grund af dyr regnekraft"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-03T19:51:09.350684+00:00"
+      },
+      "billedmotiv": "A tall solid server rack carries a bold black Fal F emblem on its front; a thick gold coin drops into a slot beside a large green play triangle, and a neat stack of gold coins grows at the rack's base. The play button shows finished models running, while the coins show the new funding.",
+      "billedmotiv_instruks": "75009c0b6373dc90651b",
+      "billede": "data/img/a112eda632f2eedb.jpg",
+      "side": "artikel/0018ea6e4618a3fe.html"
+    },
+    {
+      "titel": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+      "link": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+      "resume": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a…",
+      "dato": "2026-11-03T16:29:48+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "eget_foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "rubrik": "Qwen 3.8 27B gætter Pac-Man ud fra vægte",
+      "resume_da": "På en laptop identificerede modellen både Pac-Man og Pong ud fra rå modelvægte. Det viser, at lokale modeller kan få noget ud af tal, der ligner støj.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Blogindlæg viser, at en Qwen-model på en bærbar kan tolke rå modelvægte; et paper hævder samme evne hos GPT-6 Astra.",
+        "forbehold": "Forfatterne kalder selv arbejdet et blogindlæg, og der er ingen uafhængig verifikation.",
+        "emne": "qwen og modelvægte"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Et spil gættet ud fra tal",
+          "tekst": "På Simon Willisons laptop gjorde Qwen 3.8 27B noget usædvanligt: Den kiggede på de rå vægte af et lille trænet netværk og svarede, at det spillede en Pac-Man-lignende version af et gitter. Vægtene er de mange decimaltal, der tilsammen udgør en trænet model.\n\nPrompten kom fra et GitHub-repository til et nyt paper. Alle fire prompts var identiske bortset fra vægtene. Efter 46 minutter og 12 sekunder og 43.506 reasoning-tokens, altså interne tænketrin, beskrev Qwen et 8x8-labyrintspil med spøgelser og belønningsfelter.\n\nWillison testede også Pong, som Qwen identificerede efter 1 time, 4 minutter og 54 sekunder. Freeway gik det galt med: Her troede modellen, at spillet lignede Pac-Man."
+        },
+        {
+          "overskrift": "Paperet bag de fire prompts",
+          "tekst": "Forskerne bag paperet “Sparks of Weight-Space Programming” hedder Rikiya Takehi, Jayden Teoh, Alex Zhang og Omar Khattab. De trænede fire små netværk til 10x10-gitterversioner af Breakout, Pong, Pac-Man og Freeway og gav deres vægte til en sprogmodel.\n\nIfølge paperet kan GPT-6 Astra både aflæse, hvad et netværk er trænet til, og skrive små spillenetværk fra bunden, som slår netværk trænet med PPO, en almindelig træningsmetode, i 100 millioner skridt. Den kan også rette 0,016 % af vægtene i Qwen3.5-0.8B og løfte MATH-500, en matematiktest, fra 7,9 % til 48,1 %. Den tredobler også IFEval, en test i at følge instruktioner, ifølge paperet. Forskerne kalder metoden Weight-Space Programming."
+        },
+        {
+          "overskrift": "Kritikere deler forsøget i to",
+          "tekst": "Matthew Honnibal, manden bag sprogværktøjet spaCy, kaldte paperet misvisende, fordi det blander to ting: at en model læser rå vægte uden værktøjer, og at en model med kode kan ændre andre modeller. Sean Goedecke gennemgik Qwen3.5-0.8B-eksemplet og beskrev det som de samme skridt, en maskinlæringsforsker ville tage.\n\nWillison vælger derfor at fokusere på spørgsmålet uden værktøjer. Her er resultatet en demonstration, ikke en færdig anvendelse: Qwen brugte lang tid og fejlede på Freeway, et Atari 2600-spil fra 1981, som Willison kalder mere obskurt end de tre andre."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "46 min 12 sek",
+          "label": "svartid for Qwen 3.8 27B på Pac-Man-prompten på Willisons laptop"
+        },
+        {
+          "tal": "43.506",
+          "label": "reasoning-tokens før Qwen 3.8 27B svarede på Pac-Man"
+        },
+        {
+          "tal": "0,016 %",
+          "label": "andel af vægtene i Qwen3.5-0.8B, som GPT-6 Astra rettede ifølge paperet"
+        },
+        {
+          "tal": "7,9 % → 48,1 %",
+          "label": "MATH-500-score før og efter GPT-6 Astras vægtretning ifølge paperet"
+        }
+      ],
+      "detaljer": [
+        "Willison kørte prompten via llm-værktøjet og LM Studio på egen laptop.",
+        "Kimi K3.1 Pro brugte 9 min 41 s og 19.493 reasoning-tokens på Breakout.",
+        "Qwens Freeway-svar troede, det var et Pac-Man-lignende gitterspil.",
+        "Forfatterne kalder selv arbejdet et blogindlæg, men det er udformet som et paper."
+      ],
+      "betydning": "Forsøget viser, at en lokal model kan beskrive et trænet netværks formål uden værktøjer, men de lange køretider gør det endnu først og fremmest til en demonstration.",
+      "pointer": [
+        "Qwen 3.8 27B identificerede Pac-Man og Pong",
+        "Freeway blev gættet forkert",
+        "Kimi K3.1 Pro identificerede Breakout på 9 min 41 s"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-03T19:52:48.354610+00:00"
+      },
+      "billedmotiv": "A thick upright slab made of dense decimal numbers represents raw model weights; a solid yellow Pac-Man-like circle with a wedge mouth bites into the slab, revealing a crisp black-and-white maze grid inside. A small open laptop sits below, its keyboard made of tiny number tiles.",
+      "billedmotiv_instruks": "7a956eb053240ead95c5",
+      "side": "artikel/ab1728508583fdde.html"
+    },
+    {
+      "titel": "Anthropic is still grappling with the economics of compute",
+      "link": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/",
+      "resume": "At a moment when Anthropic's compute margins should be getting better, they’re getting worse.",
+      "dato": "2026-11-03T17:07:01+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "eget_foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "rubrik": "Anthropic: Regnekraft æder 58 procent af omsætningen",
+      "resume_da": "Ny børsfil viser, at Anthropics udgift til regnekraft steg til 10 milliarder dollar i kvartalet, fordi selskabet måtte købe dyr kapacitet i hast.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "TechCrunch: Anthropics beregningsmarginer forværres, netop når de burde forbedres.",
+        "forbehold": "Kort omtale uden tal eller kildeangivelse for marginudviklingen.",
+        "emne": "anthropic beregningsøkonomi"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Underskuddet vokser med omsætningen",
+          "tekst": "Anthropic har udvidet sin børsprospekt, S-1, med et ekstra kvartal, så regnskabet nu rækker frem til 30. september. Omsætningen nåede 17 milliarder dollar mod 11,5 milliarder kvartalet før.\n\nUnderskuddet voksede dog også. **Regnekraft slugte 58 procent af omsætningen** mod 48 procent kvartalet før, og regningen løb op i 10 milliarder dollar. Filens graf viser, at omsætningen pr. dollar brugt på regnekraft faldt til 1,72 efter at have toppet lidt over 2."
+        },
+        {
+          "overskrift": "Hastkøb til højere priser",
+          "tekst": "Af de 10 milliarder dollar faldt 5 milliarder på korttidskontrakter, som ifølge filen koster betydeligt mere end tilsvarende kapacitet på flerårige aftaler. Anthropic måtte altså skaffe regnekraft i hast.\n\nNogle aftaler er offentligt kendte: Selskabet betaler SpaceX 1,25 milliarder dollar om måneden og har store aftaler med Nscale, Akamai og Volta. De kaldes neoclouds — mindre udbydere, der lejer kapacitet ud fleksibelt og til højere priser end de store hyperscalers."
+        },
+        {
+          "overskrift": "Egen kapacitet haler ikke ind",
+          "tekst": "Anthropic forsøger at sænke prisen ved at bygge sin egen regnekraftbase under navnet Anthropic Direct. Men efterspørgslen vokser hurtigere, end den slags kan følge med, og neoclouds vil fortsat være det bedste bud.\n\nI filen skriver selskabet, at udgifterne til regnekraft og infrastruktur vil stige i absolutte dollars og forblive den største driftsudgift i overskuelig fremtid."
+        },
+        {
+          "overskrift": "Afhængig af andres datahaller",
+          "tekst": "Så længe omsætningen vokser med næsten 50 procent i kvartalet, vil de færreste investorer bekymre sig om høje regnekraftpriser. Men Anthropic er afhængig af den enorme udbygning af datahaller, som andre står for.\n\nIfølge TechCrunch kan den udbygning bremse, hvis obligationsmarkederne bliver nervøse, eller hvis lokal modstand tager til. Ingen af delene kan Anthropic selv styre."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "17 mia. dollar",
+          "label": "Omsætning i kvartalet til 30. september, mod 11,5 mia. dollar kvartalet før"
+        },
+        {
+          "tal": "58 pct.",
+          "label": "Regnekraftens andel af omsætningen, op fra 48 pct. kvartalet før"
+        },
+        {
+          "tal": "10 mia. dollar",
+          "label": "Samlet udgift til regnekraft i kvartalet"
+        },
+        {
+          "tal": "5 mia. dollar",
+          "label": "Regnekraft købt på korttidskontrakter, som koster mere end flerårige aftaler"
+        },
+        {
+          "tal": "1,72",
+          "label": "Omsætning pr. dollar brugt på regnekraft, efter et topniveau lidt over 2"
+        }
+      ],
+      "detaljer": [
+        "Den nye fil udvider regnskabet fra 30. juni til 30. september.",
+        "Projektet Anthropic Direct skal opbygge selskabets egen regnekraft.",
+        "Anthropic betaler SpaceX 1,25 mia. dollar om måneden for regnekraft."
+      ],
+      "betydning": "Anthropic nærmer sig en børsnotering med dårligere regnekraftmarginer. Det gør selskabet sårbart over for priser og udbygning, som det ikke selv kontrollerer.",
+      "pointer": [
+        "Regnekraft udgjorde 58 pct. af omsætningen",
+        "10 mia. dollar i regnekraft i kvartalet",
+        "Anthropic Direct skal bygge egen kapacitet"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-03T19:53:16.680787+00:00"
+      },
+      "billedmotiv": "A massive terracotta-orange, many-rayed Anthropic asterisk is bolted to the front of a heavy server block; its sharp rays act as a wedge, biting a large 58-percent slice out of a thick gold revenue coin. The coin's remaining wedge is visibly smaller.",
+      "billedmotiv_instruks": "4adc23bf096fb4abb675",
+      "billede": "data/img/44a7aab407b50c8c.webp",
+      "side": "artikel/741c3465b3a0806b.html"
+    },
+    {
+      "titel": "Apple is all in on AI — its own and everyone else’s",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1025245/apple-earnings-q4-ai",
+      "resume": "Apple's latest earnings show how it's continuing to capitalize on the AI boom without busting its budget on the infrastructure spending consuming its competitors. Overall, Apple posted its best-ever fiscal year for revenue and earnings per share. iPhone and Mac sales continued to grow strongly in the fourth quarter. iPhone revenue rose 17.5% from a […]",
+      "dato": "2026-11-03T10:24:51-05:00",
+      "kilde": "The Verge AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "eget_foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "rubrik": "Apple vil sælge ekstra adgang til Siri AI",
+      "resume_da": "Kunder skal kunne købe ekstra adgang til Siri AI og andre serverfunktioner. Apples kapitaludgifter er samtidig en brøkdel af Amazons og Alphabets.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Apple fremhæver rekordregnskab og AI-satsning uden at følge konkurrenternes infrastrukturudgifter.",
+        "forbehold": "",
+        "emne": "apple"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Siri AI får et loft for brug",
+          "tekst": "Siri AI er begyndt at nå kunderne. Apple lancerede den opdaterede assistent i beta til amerikansk engelsk i september og udvidede i oktober til fransk, japansk, koreansk, portugisisk og spansk. Noget af arbejdet kører på telefonen selv, andet kræver Apples servere.\n\nPå regnskabsfremlæggelsen sagde CEO John Ternus, at serverbaserede funktioner som Siri AI og intelligent fotoredigering får et loft for, hvor meget man kan bruge dem. Kunder med behov for mere vil ifølge Ternus kunne købe udvidet adgang i fremtiden. Han trak selv en linje til iCloud, hvor abonnementerne i begyndelsen mest handlede om lagerplads."
+        },
+        {
+          "overskrift": "Regningen er en brøkdel af rivalernes",
+          "tekst": "Apple har ikke kastet sig ind i AI-boomet med samme pengekanon som konkurrenterne. I det seneste kvartal brugte selskabet **2,2 milliarder dollar** på kapitaludgifter til anlæg og udstyr, mens Amazon brugte 77,3 milliarder og Alphabet 51,4 milliarder. Tallene dækker hele virksomhederne, ikke kun AI, og udelader visse AI-udgifter.\n\nI stedet kombinerer Apple beregning på enheden, sine egne servere og teknologi udefra. Siri AI bruger modeller udviklet med Googles Gemini-teknologi, og Apple planlægger efter sigende at lade brugerne vælge mellem eksterne AI-udbydere til funktioner som skriveværktøj og billedgenerering."
+        },
+        {
+          "overskrift": "Gap kører AI på Mac Mini i butikkerne",
+          "tekst": "Mac har fået en ny rolle som maskine til lokal AI. Ifølge Ternus kører tøjkæden Gap AI helt på Mac Mini-computere til tabsforebyggelse i hundredvis af butikker og undgår dermed at betale en cloud-udbyder for hver forespørgsel. Auktionshuset Christie's kører lokale modeller på Mac Studio til at forbedre arbejdsgange, herunder prisvurderinger.\n\nDet smitter af på salget: Mac-omsætningen steg 24 procent til 10,8 milliarder dollar, det højeste niveau i fire år."
+        },
+        {
+          "overskrift": "Gebyrer på andres AI-apps",
+          "tekst": "Apple tjener også, når kunderne abonnerer på andres AI. The Wall Street Journal har rapporteret, at Apple er på vej til at hente over 1 milliard dollar i App Store-gebyrer fra generative AI-apps i 2026, ifølge analysefirmaet AppMagic.\n\nMen OpenAI har ifølge avisen begyndt at henvise potentielle abonnenter til at betale via sin egen hjemmeside og dermed omgå Apples kommission. Apple kan altså tjene på konkurrenternes AI, men konkurrenterne har en grund til at finde en vej uden om."
+        }
+      ],
+      "brief": "",
+      "figurer": [
+        {
+          "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268855_Need_quick_graph_CVirginia_LIGHT-MODE.png",
+          "tekst": "Bar graph showing number of mentions of AI in Apple earnings calls over time.",
+          "kilde": "The Verge AI"
+        },
+        {
+          "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268855_Need_quick_graph_CVirginia_DARK-MODE.png",
+          "tekst": "Bar graph showing number of mentions of AI in Apple earnings calls over time.",
+          "kilde": "The Verge AI"
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "2,2 mia. dollar",
+          "label": "Apples kapitaludgifter i kvartalet, mod Amazons 77,3 og Alphabets 51,4 mia. – hele virksomheden, ikke kun AI"
+        },
+        {
+          "tal": "57,6 mia. dollar",
+          "label": "iPhone-omsætning i septemberkvartalet, op 17,5 pct. fra året før"
+        },
+        {
+          "tal": "10,8 mia. dollar",
+          "label": "Mac-omsætning, op 24 pct. og højeste niveau i fire år"
+        },
+        {
+          "tal": "2,5 mia.",
+          "label": "Aktive Apple-enheder – det publikum, AI-tjenester kan nå ud til"
+        }
+      ],
+      "detaljer": [
+        "Apple kalder det sit bedste regnskabsår nogensinde for omsætning og indtjening pr. aktie.",
+        "Selskabet advarede om stigende hukommelsespriser, der kan presse avancen i feriekvartalet; aktien faldt i førhandlen.",
+        "Driftsomkostningerne steg 21 pct. til 19,2 mia. dollar, blandt andet til forskning og udvikling i AI.",
+        "AI og Apple Intelligence blev nævnt 45 gange på regnskabsfremlæggelsen, ifølge AlphaSense."
+      ],
+      "betydning": "Hvis kunderne accepterer at betale for ekstra AI-kapacitet, får Apple en indtægtskilde, der vokser med brugen, uden at selskabet selv finansierer infrastruktur i rivalernes skala.",
+      "pointer": [
+        "Siri AI er nu i beta på seks sprog",
+        "Serverbaseret AI skal kunne købes i tillæg",
+        "Apple bygger ikke infrastruktur som rivalerne"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-03T19:53:43.444059+00:00"
+      },
+      "billedmotiv": "A large solid Apple logo is mounted on a coin-operated meter; a thick gold coin drops into its slot, and a curved soundwave rises from a small speaker grille beside the apple. The meter's needle swings from a low mark to a higher mark.",
+      "billedmotiv_instruks": "1cfde7fdb2e16bc62835",
+      "side": "artikel/285929c63048ae0f.html"
+    },
+    {
+      "titel": "Google takes Dreambeans to India in bid to bring AI-generated personal stories to the masses",
+      "link": "https://techcrunch.com/2026/11/02/google-takes-dreambeans-to-india-in-bid-to-bring-ai-generated-personal-stories-to-the-masses/",
+      "resume": "Google's Dreambeans, its latest AI experiment, now supports 13 Indian languages.",
+      "dato": "2026-11-03T03:30:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-11-03T12:15:27.201983+00:00",
+      "eget_foerst_set": "2026-11-03T12:15:27.201983+00:00",
+      "rubrik": "Dreambeans åbner i Indien med 13 sprog",
+      "resume_da": "Appen skriver illustrerede historier ud fra brugerens Gmail, Fotos og søgninger uden at blive spurgt. Nu testes den uden for USA.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google udvider AI-eksperimentet Dreambeans til Indien med støtte til 13 indiske sprog; ingen ny model.",
+        "forbehold": "Kilden er en kort notits uden detaljer om funktioner eller adgang.",
+        "emne": "google dreambeans"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Historier uden at skrive en prompt",
+          "tekst": "Google lancerede mandag appen Dreambeans i Indien. Det er første gang, appen er tilgængelig uden for USA, hvor den blev åbnet for alle brugere over 18 år for mindre end to måneder siden. Den findes til Android og iOS.\n\nDreambeans blev introduceret i juni og gør noget andet end de fleste AI-apps: Den venter ikke på et spørgsmål. I stedet trækker den på de Google-tjenester, brugeren har forbundet — Calendar, Gemini, Gmail, Photos, Search og YouTube — og skriver af sig selv illustrerede historier om brugerens interesser og hverdag. Billederne var oprindeligt statiske, men Google har for nylig tilføjet en funktion, hvor videomodellen Veo kan animere dem i udvalgte historier."
+        },
+        {
+          "overskrift": "13 sprog, men kun ét ad gangen",
+          "tekst": "I Indien understøtter Dreambeans 13 lokale sprog, heriblandt hindi, punjabi, tamil, telugu og bengali, foruden engelsk. Men brugeren kan kun vælge ét sprog ad gangen til de historier, appen genererer. Den kan godt trække på information på flere sprog, men den kan ikke blande sprog i selve historien, fortalte produktmanager Gozde Oznur på et pressemøde.\n\nDet kan begrænse appen i Indien, hvor mange jævnligt skifter mellem hindi og engelsk — ofte i blandingen, der kaldes hinglish."
+        },
+        {
+          "overskrift": "Få downloads efter den store åbning",
+          "tekst": "Tallene fra USA er indtil videre beskedne. Siden juni har Dreambeans ifølge analysefirmaet Sensor Tower næsten 55.000 downloads i USA, og omkring 63 pct. af dem kom i september, da appen blev åbnet for alle.\n\nI oktober faldt antallet 84 pct. fra måneden før til cirka 5.500. I de første 30 dage efter åbningen fik Dreambeans omkring 29.000 downloads — mod 7,4 mio. for Metas Muse og 2,8 mio. for ChatGPT i deres tilsvarende vindue. Sammenligningen halter dog, understreger TechCrunch: De apps er bredt anvendelige, mens Dreambeans kun laver personlige historier."
+        },
+        {
+          "overskrift": "Data fra Gmail og historier om døde",
+          "tekst": "Appen bygger på Googles teknologi Personal Intelligence, som trækker på de forbundne tjenester. Ifølge Oznur kan brugeren selv vælge, hvilke Google-tjenester appen må bruge, og afbryde dem når som helst. Man kan slette sine Dreambeans-data i appen, og Oznur oplyste, at information, der slettes i de underliggende tjenester, også fjernes fra personliggørelsen.\n\nHistorierne kan ramme emner, brugeren ikke ønsker. Oznur anerkendte, at Dreambeans kan lave historier, der involverer personer, der er døde, og henviste til, at man kan bede appen undgå bestemte emner — ligesom kontrollerne i Google Photos."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "Næsten 55.000",
+          "label": "Downloads i USA siden juni 2026, ifølge Sensor Tower"
+        },
+        {
+          "tal": "84 pct.",
+          "label": "Fald i amerikanske downloads fra september til oktober, til ca. 5.500"
+        },
+        {
+          "tal": "7,4 mio.",
+          "label": "Downloads for Metas Muse i første 30 dage mod ca. 29.000 for Dreambeans"
+        }
+      ],
+      "detaljer": [
+        "Dreambeans kræver en personlig Gmail-konto; virksomhedskonti kan ikke bruge appen.",
+        "Historierne er kun synlige for indehaveren af kontoen.",
+        "Google undersøger, hvordan appen kan omsætte sine forslag til handling."
+      ],
+      "betydning": "Indtoget i Indien bliver en test af, om personlige AI-historier kan få fodfæste i et marked, hvor brugerne blander sprog.",
+      "pointer": [
+        "Første marked uden for USA",
+        "13 indiske sprog, men kun ét ad gangen",
+        "Downloads langt under ChatGPT og Muse"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-03T19:54:09.805547+00:00"
+      },
+      "side": "artikel/36719bfa3896332c.html"
     }
   ]
 }

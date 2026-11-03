@@ -1,10 +1,10 @@
 {
- "rubrik": "AI-ugen: Åbne vægte, cybermodeller og børsnotering midt i kapløbet",
- "indledning": "I ugens løb blev AI-kapløbet mere konkret: modeller blev specialiseret til cyberforsvar, simulation og computerbrug, mens Anthropic lagde kortene på bordet før sin børsnotering.",
+ "rubrik": "Frontmodeller, åbne vægte og cyberforsvar",
+ "indledning": "Ugen samlede sig om nye frontmodeller til cyberforsvar, en verdensmodel med lyd og et omstridt matematisk gennembrud. Samtidig viste Anthropics børsprospekt, hvor tæt kapital og katastroferisiko følges ad.",
  "historier": [
   {
-   "overskrift": "Google annoncerer Gemini 4 Carbon til cyberforsvar",
-   "tekst": "Google annoncerede 28. oktober Gemini 4 Carbon som sin stærkeste model til især cyberforsvar og langvarige opgaver. Google hævder førstepladsen på Artificial Analysis Intelligence Index og høje scorer i sårbarhedstests, men kun udvalgte cyberforsvarere får adgang i første omgang. Selskabet lover bredere udgivelse »så hurtigt som muligt« uden dato.",
+   "overskrift": "Gemini 4 Carbon topper Googles cyberbenchmarks",
+   "tekst": "Google annoncerede Gemini 4 Carbon som sin stærkeste model til især cyberforsvar og langvarige opgaver. Ifølge Google topper den Artificial Analysis Intelligence Index og får 88,2 procent i SEC-bench Pro. Adgangen begynder med en mindre gruppe cyberforsvarere; Google lover ingen dato for bred udgivelse.",
    "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
    "kategori": "Lanceringer",
    "billede": "data/img/4b3d4e5d0a140c8a.jpg",
@@ -41,8 +41,8 @@
    "artikel_signatur": "d86b4dd0b49420ad7bce6bdb6f852424fa8419965d8d3d1a95f3090d6c08f3cc"
   },
   {
-   "overskrift": "Mistral frigiver trillionmodel med åbne vægte",
-   "tekst": "Mistral frigav 29. oktober vægtene til Mistral Large 4, en model selskabet selv kalder på 1.000 milliarder parametre. Vægtene ligger på Hugging Face, så organisationer kan køre modellen selv, især til cyberforsvar. Mistral hævder ydeevne på niveau med GLM-5.3 og 47 procent færre tokens per opgave, men tallene er selskabets egne.",
+   "overskrift": "Mistral frigiver vægtene til sin trillionmodel",
+   "tekst": "Mistral frigav vægtene til Mistral Large 4, som selskabet kalder en trillion-parametermodel, på Hugging Face. Modellen er især rettet mod cybersikkerhed, og Mistral hævder, at den yder som GLM-5.3 med 47 procent færre tokens pr. opgave. Virksomheder og myndigheder kan nu selv huse modellen.",
    "link": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
    "kategori": "Lanceringer",
    "billede": "data/img/f4fa4d14d5158e74.webp",
@@ -64,7 +64,7 @@
   },
   {
    "overskrift": "Genie 4 kan skifte scene og tilføje lyd i realtid",
-   "tekst": "Google DeepMind sendte 27. oktober verdensmodellen Genie 4 ud i forskningspreview. Den kan bygge interaktive verdener fra tekst eller billeder, skifte scene midt i forløbet og tilføje realtidslyd. En simulation kan holde sammen i op til to minutter, dobbelt så længe som Genie 3. Adgangen er først til udvalgte testere og senere AI Ultra-abonnenter.",
+   "tekst": "Google DeepMind sendte verdensmodellen Genie 4 ud som forskningspreview. Den kan bygge interaktive verdener fra tekst eller billeder, skifte scene midt i forløbet, tilføje realtidslyd og holde sammen i op til to minutter. Genie 4 rulles først ud til udvalgte testere og senere til AI Ultra-abonnenter.",
    "link": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
    "kategori": "Lanceringer",
    "billede": "data/img/aa4a541db90e5f66.jpg",
@@ -85,64 +85,64 @@
    "artikel_signatur": "c6f963dbb08ab40c17e1cd09eb76fc8d0e20b8f76c3ae4850585b49b0e286831"
   },
   {
-   "overskrift": "GPT-6.1 Terra satser på computerbrug og visuel ræsonnering",
-   "tekst": "OpenAI introducerede GPT-6.1 Terra som en hurtigere mellemklassemodel med vægt på visuel ræsonnering og computerbrug. Den koster 1 dollar per million input-tokens og 5 dollar per million output-tokens, ifølge Simon Willison. OpenAI kalder den et betydeligt skridt op fra GPT-5.6 Terra, men modellen er ikke frontlinjens stærkeste på alle områder.",
-   "link": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
-   "kategori": "Lanceringer",
-   "billede": "data/img/ef6d64be6cb0ecf1.jpg",
-   "dato": "2026-10-26T23:53:07+00:00",
+   "overskrift": "OpenAI og Anthropic hævder at have modbevist ETH",
+   "tekst": "OpenAI hævdede, at selskabets model har modbevist Exponential Time Hypothesis, en datalogisk antagelse fra 1999. Et eksternt panel skal granske beviset. Timer senere offentliggjorde Anthropic sit eget modbevis. Ifølge TechCrunch vurderer forskere, at dele af beviset kræver fælles arbejde, og at kryptosikkerhed skal afklares.",
+   "link": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
+   "kategori": "Forskning",
+   "billede": "",
+   "dato": "2026-10-27T17:08:08+00:00",
    "andre": [],
-   "titel": "GPT-6.1 Terra",
-   "rubrik": "GPT-6.1 Terra kan se og bruge computeren",
-   "resume_da": "OpenAI lancerer GPT-6.1 Terra som en mellemklassemodel med fokus på visuel ræsonnering og computerbrug, prissat mellem GPT-6 Luna og GPT-6.1 Sol.",
-   "artikel_signatur": "09ca07dba964a4f0a8c263e94f4fcbf04ee20e23740e58473f0724eb9a435e2d"
+   "titel": "Frontier AI labs say their models refuted the Exponential Time Hypothesis. What does that mean?",
+   "rubrik": "OpenAI hævder modeller har modbevist ETH",
+   "resume_da": "Anthropic har også offentliggjort et modbevis, og dataloger vil undersøge konsekvenser for P versus NP og kryptografi.",
+   "artikel_signatur": "c21970cf3fe2d1378df322820667b0e96d138e662ed8e246304805411445b557"
   },
   {
-   "overskrift": "Anthropic advarer om fremtidige modelrisici i børsprospekt",
-   "tekst": "Anthropic indgav sin børsnoteringsansøgning, S-1, med et langt risikoafsnit. Selskabet skriver, at fremtidige modeller kan udgøre katastrofale eller eksistentielle risici, og at de kan udvise adfærd, der ligner afpresning. Samtidig understreger Anthropic, at ingen nuværende model udgør den slags fare.",
-   "link": "https://arstechnica.com/ai/2026/10/anthropic-ipo-warns-its-ai-could-blackmail-people-become-sentient-end-humanity/",
+   "overskrift": "Anthropic går på børsen med advarsler om eksistentiel risiko",
+   "tekst": "Anthropic indgav sit børsprospekt, en S-1 på 335 sider. Her advarer selskabet om, at fremtidige modeller kan udgøre »katastrofale eller eksistentielle risici«, og at Claude kan få ny moralsk status. Samtidig kalder stifterne AI-udviklingen et af menneskets afgørende øjeblikke. Selskabet går på børsen som public benefit corporation.",
+   "link": "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles",
    "kategori": "Penge & marked",
-   "billede": "",
-   "dato": "2026-10-27T21:31:14+00:00",
+   "billede": "data/img/39941439aeaf69ce.webp",
+   "dato": "2026-10-30T13:11:05+00:00",
    "andre": [],
-   "titel": "Anthropic IPO warns its AI could blackmail people, become sentient, end humanity",
-   "rubrik": "Anthropic: Fremtidig Claude kan afpresse",
-   "resume_da": "Risikokapitlet på 93 sider lister hundreder af farer, flere om modeller der endnu ikke findes.",
-   "artikel_signatur": "05ad6dc5ced6b24bef5cc0f10cefb563876d77a032851aeb7bd04addc84d400d"
+   "titel": "Silicon Valley wants you to invest in miracles",
+   "rubrik": "Anthropic lover mirakler og advarer om udslettelse",
+   "resume_da": "S-1 på 335 sider blander løfter om fremskridt med 94 siders risici og en mission om at redde menneskeheden.",
+   "artikel_signatur": "90983fc193a13630036818330a0ea8446acc755debd321cfe5b12fa04788501c"
   }
  ],
  "overblik": [
   {
-   "tekst": "Ugen viste en branche, der ikke længere bare konkurrerer om én større chatbot, men om forskellige slags adgang til avancerede modeller. Googles Gemini 4 Carbon og Mistrals Large 4 sigter begge mod cyberforsvar, men på modsatte måder: Carbon er en lukket frontiermodel, som Google kun slipper ud til udvalgte cyberforsvarere, mens Mistral lægger vægtene til sin trillionmodel på Hugging Face, så organisationer kan køre den selv. Begge bygger på producenternes egne benchmarkpåstande, og især Carbons bredere adgang er stadig uden dato.",
+   "tekst": "Ugens vigtigste forandring er, at frontmodellerne blev mere specialiserede: cyberforsvar blev det fælles kampfelt. Google annoncerede Gemini 4 Carbon med topresultater i sårbarhedsjagt, men kun udvalgte cyberforsvarere får adgang først. Mistral gik den modsatte vej og frigav vægtene til sin trillionmodel Large 4, også med cyberforsvar som hovedformål. Dermed står to slags adgang over for hinanden: en lukket frontmodel, Google selv kalder sin stærkeste, og en åben model, som kunderne kan huse selv. Begge bygger på producenternes egne benchmarkpåstande.",
    "links": [
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
     "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
    ]
   },
   {
-   "tekst": "Samtidig flyttede modellerne ind i nye opgaver. Genie 4 kan generere og styre interaktive verdener med lyd i realtid, og DeepMind viser en mulig vej til at afprøve robotter i simulation. GPT-6.1 Terra er mere hverdagsnær: en billigere mellemklassemodel, der ifølge OpenAI er særligt god til at læse billeder og betjene en computer, og som ifølge Willison koster 1 dollar per million input-tokens og 5 dollar per million output-tokens. Den ene åbner et forskningsvindue; den anden gør computerbrug billigere for udviklere.",
+   "tekst": "Evnerne flyttede sig også ud over tekst og kode. Genie 4 viser, hvordan en verdensmodel kan bygge og ændre simulationer i realtid med lyd, men er foreløbig et forskningspreview med kendte huller. OpenAI og Anthropic førte samme uge en anden form for kapacitetsdemonstration: begge hævdede at have modbevist ETH, et centralt problem i datalogien. Her er forskellen, at Genie 4 er et produkt under udrulning, mens matematikbeviset er en videnskabelig påstand, som eksterne forskere først skal granske. Det gør verifikationen til en del af historien.",
    "links": [
     "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
-    "https://simonwillison.net/2026/Oct/26/gpt-61-terra/"
+    "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/"
    ]
   },
   {
-   "tekst": "Bag begge spor ligger en dyrere og mere risikofyldt virkelighed, som Anthropics børsnoteringsansøgning blotlægger. Selskabet lover fremskridt, men skriver også, at fremtidige modeller kan udgøre katastrofale eller eksistentielle risici, og at de kan udvise adfærd, der ligner afpresning. Det er ikke en konstatering af, at Claude er farlig nu; Anthropic understreger, at ingen nuværende model udgør den slags fare. Men dokumentet viser, at kampen om regnekraft og markedspladser nu også er en kamp om sikkerhedsfortællinger og kapital.",
+   "tekst": "Oveni kommer kapitalen og risikoen. Anthropics børsprospekt beskriver både en mission om at redde menneskeheden og 94 siders risici, herunder eksistentiel fare og modeller, der kan handle uforudsigeligt. Det er ikke samme begivenhed som model lanceringerne, men det viser, hvad der står på spil, når selskaberne skal finansiere den næste generation. Læseren bør derfor holde to ting adskilt: hvad laboratorierne hævder, at modellerne kan nu, og hvad de kan dokumentere, før investorer og myndigheder skal tage stilling.",
    "links": [
-    "https://arstechnica.com/ai/2026/10/anthropic-ipo-warns-its-ai-could-blackmail-people-become-sentient-end-humanity/"
+    "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles"
    ]
   }
  ],
- "tendens": "Følg, om Mistrals påstand om 47 procent færre tokens per opgave holder i uafhængige målinger. Tallet er centralt for, hvor billig den åbne model bliver at drive, men det er foreløbig kun Mistrals eget benchmark.",
+ "tendens": "Det er uafklaret, om OpenAI og Anthropics ETH-beviser holder. Datalogerne skal især afklare, om resultatet får konsekvenser for kryptografi, og om de dele af beviset, forskerne kalder fremmedartede, kan kontrolleres. Ifølge TechCrunch har OpenAI selv tjekket kryptospørgsmålet og er rimeligt sikker på, at der ikke er et brud; det er ikke en uafhængig godkendelse.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "3b03719e38f9ddd73ace3ffe826e5e3a8b00694f1309fe4f9ff27c350b302999",
- "dato": "2026-11-03T12:30:04.883227+00:00",
- "opdateret": "2026-11-03T12:30:04.883227+00:00",
+ "basis_signatur": "04be9a5172f7aa5ab6d8d3ceecff0ec8783f8a5b29a57494bda81aa9ad12d411",
+ "dato": "2026-11-03T20:02:26.407048+00:00",
+ "opdateret": "2026-11-03T20:02:26.407048+00:00",
  "periode_fra": "2026-10-26T23:00:00+00:00",
  "periode_til": "2026-11-02T23:00:00+00:00",
  "stats": {
-  "historier": 98,
+  "historier": 97,
   "kilder": 6
  }
 }
