@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-03T02:54:59.906267+00:00",
+ "genereret": "2026-11-03T12:31:46.572641+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,28 +195,29 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-03T02:35:23.085730+00:00",
-  "antal": 123,
-  "med_billede": 63,
-  "paa_dansk": 123,
+  "opdateret": "2026-11-03T12:15:27.201983+00:00",
+  "antal": 122,
+  "med_billede": 62,
+  "paa_dansk": 122,
   "kategorier": {
    "Politik \u0026 jura": 14,
    "Penge \u0026 marked": 37,
    "Samfund \u0026 etik": 16,
-   "Lanceringer": 20,
+   "Lanceringer": 17,
    "Hverdags-AI": 26,
-   "Forskning": 10
+   "Dybde": 2,
+   "Nyheder": 1,
+   "Forskning": 9
   },
   "kilder": {
    "Ars Technica AI": 11,
    "The Verge AI": 26,
-   "TechCrunch AI": 56,
+   "TechCrunch AI": 57,
    "Simon Willison AI": 9,
-   "MIT Tech Review AI": 6,
-   "Google Gemini": 8,
+   "MIT Tech Review AI": 8,
+   "Google Gemini": 7,
    "Mistral AI": 3,
-   "Hugging Face": 1,
-   "Google DeepMind": 3
+   "Hugging Face": 1
   },
   "udvalgte": [
    {
@@ -251,6 +252,36 @@ window.KOMMANDO_DATA = {
    }
   ],
   "seneste": [
+   {
+    "titel": "How “reverse game theory” could keep AI agents in check",
+    "rubrik": "Stephen Morris: Spilteori kan styre AI-agenter",
+    "link": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/",
+    "side": "artikel/5a465e187c017a30.html",
+    "kategori": "Dybde",
+    "kilde": "MIT Tech Review AI",
+    "dato": "2026-11-03T10:43:41+00:00",
+    "billede": "data/img/6d803910cc85ab94.jpg"
+   },
+   {
+    "titel": "Apple Watch’s AI features for rewinding and recapping conversations begin beta testing",
+    "rubrik": "Apple Watch tester Siri Recaps i beta",
+    "link": "https://techcrunch.com/2026/11/02/apple-watchs-ai-features-for-rewinding-and-recapping-conversations-begin-beta-testing/",
+    "side": "artikel/8f6f2c9dfcc57986.html",
+    "kategori": "Nyheder",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-03T07:20:00+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Here’s who is falling in line for Trump’s “Super Intelligence” loyalty test",
+    "rubrik": "Trump vil omdøbe AI til Super Intelligence",
+    "link": "https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test/",
+    "side": "artikel/72788a4d358feca2.html",
+    "kategori": "Dybde",
+    "kilde": "MIT Tech Review AI",
+    "dato": "2026-11-03T04:18:47+00:00",
+    "billede": "data/img/8a5286c81e644952.jpg"
+   },
    {
     "titel": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
     "rubrik": "Anthropic varsler mulig RSI inden længe",
@@ -340,41 +371,11 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-11-02T16:23:21+00:00",
     "billede": "data/img/8d4482a78414f8f2.webp"
-   },
-   {
-    "titel": "OpenAI is finally merging ChatGPT’s Chat and Work tabs",
-    "rubrik": "OpenAI merger Chat og Work i ChatGPT",
-    "link": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/",
-    "side": "artikel/e0d9533470c8827b.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-02T13:57:53+00:00",
-    "billede": "data/img/309d2d140365b80b.webp"
-   },
-   {
-    "titel": "42AI comes out of stealth with $62.5M and a world model that can ‘predict human behavior’",
-    "rubrik": "42AI vil forudsige, hvordan tradere reagerer",
-    "link": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
-    "side": "artikel/b6e2d45456503ed8.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-02T16:30:00+00:00",
-    "billede": "data/img/98b0f01a5b782b6a.webp"
-   },
-   {
-    "titel": "Raising the quality of insights in agentic analytics",
-    "rubrik": "MIT-rapport: Kun 48 procent af agenters indsigter virker",
-    "link": "https://www.technologyreview.com/2026/11/02/1147660/raising-the-quality-of-insights-in-agentic-analytics/",
-    "side": "artikel/adc599e6d52afcaf.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "MIT Tech Review AI",
-    "dato": "2026-11-02T17:00:00+00:00",
-    "billede": "data/img/e0b10209bc84972c.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-03T02:35:23.085730+00:00",
+  "opdateret": "2026-11-03T12:15:27.201983+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -382,7 +383,7 @@ window.KOMMANDO_DATA = {
   "kildehentninger": 0,
   "regelbaseret_udvalg": [
    "https://openai.com/index/lifeval",
-   "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
+   "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/",
    "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
   ],
   "udgivet_udvalg": [
@@ -394,7 +395,7 @@ window.KOMMANDO_DATA = {
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-11-03T02:35:22.490216+00:00",
+  "opdateret": "2026-11-03T12:15:26.852730+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -750,8 +751,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-03T02:35:23.085730+00:00",
-  "artikler_i_alt": 123,
+  "opdateret": "2026-11-03T12:15:27.201983+00:00",
+  "artikler_i_alt": 122,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -828,8 +829,8 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 8,
-    "som_ekstra": 2,
+    "i_listen": 7,
+    "som_ekstra": 1,
     "seneste": [
      {
       "rubrik": "Google åbner Connected Apps-platform i preview",
@@ -839,24 +840,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Google åbner Gemini for alle udvikleres apps"
-     },
-     {
-      "rubrik": "Google ruller Gemini 4 Argon bredt ud",
-      "dato": "",
-      "foerst_set": "2026-10-13T19:29:19",
-      "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
-      "side": "",
-      "hvor": "under",
-      "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
-     },
-     {
-      "rubrik": "Google udruller Gemini 4 Argon globalt",
-      "dato": "2026-11-02T17:45:00",
-      "foerst_set": "2026-11-02T18:45:47",
-      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
-      "side": "artikel/ff01b8b9f0687b69.html",
-      "hvor": "forside",
-      "under": ""
      },
      {
       "rubrik": "Google Gemini redigerer filer i chatten",
@@ -1076,11 +1059,11 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 56,
+    "i_listen": 57,
     "som_ekstra": 2,
     "seneste": [
      {
-      "rubrik": "New York Times sagsøger Brave for tekstskrabning",
+      "rubrik": "New York Times sagsøger Brave for AI-scraping",
       "dato": "",
       "foerst_set": "2026-11-03T02:35:23",
       "link": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
@@ -1114,6 +1097,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Microsoft henter 10 milliarder dollar på OpenAI"
+     },
+     {
+      "rubrik": "Apple Watch tester Siri Recaps i beta",
+      "dato": "2026-11-03T07:20:00",
+      "foerst_set": "2026-11-03T12:15:27",
+      "link": "https://techcrunch.com/2026/11/02/apple-watchs-ai-features-for-rewinding-and-recapping-conversations-begin-beta-testing/",
+      "side": "artikel/8f6f2c9dfcc57986.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Anthropic varsler mulig RSI inden længe",
@@ -1175,15 +1167,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-11-02T18:45:47",
       "link": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
       "side": "artikel/b6e2d45456503ed8.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Omen AI køber konkurrent for 16 millioner dollar",
-      "dato": "2026-11-02T15:00:00",
-      "foerst_set": "2026-11-02T18:45:47",
-      "link": "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/",
-      "side": "artikel/d2641740e5f255ec.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1445,9 +1428,27 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 6,
-    "i_listen": 6,
+    "i_listen": 8,
     "som_ekstra": 0,
     "seneste": [
+     {
+      "rubrik": "Stephen Morris: Spilteori kan styre AI-agenter",
+      "dato": "2026-11-03T10:43:41",
+      "foerst_set": "2026-11-03T12:15:27",
+      "link": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/",
+      "side": "artikel/5a465e187c017a30.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Trump vil omdøbe AI til Super Intelligence",
+      "dato": "2026-11-03T04:18:47",
+      "foerst_set": "2026-11-03T12:15:27",
+      "link": "https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test/",
+      "side": "artikel/72788a4d358feca2.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "MIT-rapport: Kun 48 procent af agenters indsigter virker",
       "dato": "2026-11-02T17:00:00",
@@ -1525,10 +1526,10 @@ window.KOMMANDO_DATA = {
     "kun_aktuel": false,
     "max": 15,
     "aktiv": true,
-    "status": "ok",
-    "fejl": "",
-    "hentet": 15,
-    "i_listen": 3,
+    "status": "fejl",
+    "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
+    "hentet": 0,
+    "i_listen": 0,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -1539,33 +1540,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
-     },
-     {
-      "rubrik": "Google Antigravity finder ny peptidkandidat",
-      "dato": "2026-10-15T16:08:03",
-      "foerst_set": "2026-10-16T04:53:41",
-      "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-      "side": "artikel/ba028f76ed47c779.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
-      "dato": "2026-10-13T19:43:07",
-      "foerst_set": "2026-10-13T19:29:19",
-      "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-      "side": "artikel/42f1c245f492d3d1.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "EmbeddingGemma 2 finder videoklip ud fra tale",
-      "dato": "2026-10-06T19:57:04",
-      "foerst_set": "2026-10-07T15:44:28",
-      "link": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
-      "side": "artikel/bf211d23154acfab.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1600,12 +1574,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-03T02:54:52.234038+00:00",
+  "opdateret": "2026-11-03T12:31:39.621299+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 16,
-  "sidevisninger_i_alt": 28,
+  "besoeg_i_alt": 19,
+  "sidevisninger_i_alt": 37,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1762,19 +1736,19 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 16,
-    "visninger": 28
+    "besoeg": 19,
+    "visninger": 37
    }
   ],
   "artikler": [],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 15
+    "besoeg": 17
    },
    {
     "fra": "www.bing.com",
-    "besoeg": 1
+    "besoeg": 2
    }
   ],
   "laeste_temaer": []

@@ -1,10 +1,10 @@
 {
- "rubrik": "Frontmodeller bliver specialiserede – og adgangen deler sig",
- "indledning": "Ugen bød på flere nye frontmodeller og verdensmodeller. Fælles er et skift mod specialiserede opgaver – og en kamp om, hvor åbent og verificerbart fremskridtet er.",
+ "rubrik": "AI-ugen: Åbne vægte, cybermodeller og børsnotering midt i kapløbet",
+ "indledning": "I ugens løb blev AI-kapløbet mere konkret: modeller blev specialiseret til cyberforsvar, simulation og computerbrug, mens Anthropic lagde kortene på bordet før sin børsnotering.",
  "historier": [
   {
    "overskrift": "Google annoncerer Gemini 4 Carbon til cyberforsvar",
-   "tekst": "Google præsenterede Gemini 4 Carbon som sin stærkeste model til dato og fremhævede cyberforsvar og langvarige opgaver. Selskabet oplyser, at Carbon topper Artificial Analysis Intelligence Index og scorer højt i flere sikkerhedstests. Modellen er foreløbig kun åben for en mindre gruppe cyberforsvarere; Google lover bred adgang »så hurtigt som muligt« uden dato.",
+   "tekst": "Google annoncerede 28. oktober Gemini 4 Carbon som sin stærkeste model til især cyberforsvar og langvarige opgaver. Google hævder førstepladsen på Artificial Analysis Intelligence Index og høje scorer i sårbarhedstests, men kun udvalgte cyberforsvarere får adgang i første omgang. Selskabet lover bredere udgivelse »så hurtigt som muligt« uden dato.",
    "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
    "kategori": "Lanceringer",
    "billede": "data/img/4b3d4e5d0a140c8a.jpg",
@@ -41,8 +41,8 @@
    "artikel_signatur": "d86b4dd0b49420ad7bce6bdb6f852424fa8419965d8d3d1a95f3090d6c08f3cc"
   },
   {
-   "overskrift": "Mistral lægger trillionmodel ud som åbne vægte",
-   "tekst": "Mistral frigav vægtene – de tal, der driver modellen – til Mistral Large 4, som selskabet oplyser har 1.000 milliarder parametre. Vægtene ligger på Hugging Face, så organisationer selv kan køre modellen, især til cyberforsvar. Mistral hævder ydelse på niveau med GLM-5.3 med 47 procent færre tokens pr. opgave og fører blandt åbne modeller på agentisk kodning. Tallene er selskabets egne.",
+   "overskrift": "Mistral frigiver trillionmodel med åbne vægte",
+   "tekst": "Mistral frigav 29. oktober vægtene til Mistral Large 4, en model selskabet selv kalder på 1.000 milliarder parametre. Vægtene ligger på Hugging Face, så organisationer kan køre modellen selv, især til cyberforsvar. Mistral hævder ydeevne på niveau med GLM-5.3 og 47 procent færre tokens per opgave, men tallene er selskabets egne.",
    "link": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
    "kategori": "Lanceringer",
    "billede": "data/img/f4fa4d14d5158e74.webp",
@@ -63,21 +63,8 @@
    "artikel_signatur": "dd9c07c8029ac10cf943afbfc85765cf5e9a7066ff368ae2ddedc13d11d9e8f7"
   },
   {
-   "overskrift": "OpenAI lancerer GPT-6.1 Terra til computerbrug",
-   "tekst": "OpenAI introducerede GPT-6.1 Terra som en hurtigere mellemklassemodel med vægt på visuel ræsonnering – at fortolke billeder og tegninger – og computerbrug. Ifølge Simon Willison koster den 1 dollar pr. million input-tokens og 5 dollar pr. million output-tokens, billigere end GPT-6.1 Sol og dyrere end GPT-6 Luna. OpenAI fremhæver formularer, tekniske tegninger og video; priser og sammenligninger er selskabets og Willisons.",
-   "link": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
-   "kategori": "Lanceringer",
-   "billede": "data/img/ef6d64be6cb0ecf1.jpg",
-   "dato": "2026-10-26T23:53:07+00:00",
-   "andre": [],
-   "titel": "GPT-6.1 Terra",
-   "rubrik": "GPT-6.1 Terra kan se og bruge computeren",
-   "resume_da": "OpenAI lancerer GPT-6.1 Terra som en mellemklassemodel med fokus på visuel ræsonnering og computerbrug, prissat mellem GPT-6 Luna og GPT-6.1 Sol.",
-   "artikel_signatur": "09ca07dba964a4f0a8c263e94f4fcbf04ee20e23740e58473f0724eb9a435e2d"
-  },
-  {
    "overskrift": "Genie 4 kan skifte scene og tilføje lyd i realtid",
-   "tekst": "Google DeepMind sendte verdensmodellen Genie 4 – en model, der genererer interaktive miljøer – ud i forskningspreview. Den kan bygge verdener fra tekst eller billeder, skifte scene midt i forløbet og tilføje realtidslyd. Simulationer holder i op til to minutter, og fysikken er forbedret, ifølge DeepMind. Adgangen er først til udvalgte testere, senere AI Ultra-abonnenter og partnere; prisen er ikke offentliggjort.",
+   "tekst": "Google DeepMind sendte 27. oktober verdensmodellen Genie 4 ud i forskningspreview. Den kan bygge interaktive verdener fra tekst eller billeder, skifte scene midt i forløbet og tilføje realtidslyd. En simulation kan holde sammen i op til to minutter, dobbelt så længe som Genie 3. Adgangen er først til udvalgte testere og senere AI Ultra-abonnenter.",
    "link": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
    "kategori": "Lanceringer",
    "billede": "data/img/aa4a541db90e5f66.jpg",
@@ -98,56 +85,60 @@
    "artikel_signatur": "c6f963dbb08ab40c17e1cd09eb76fc8d0e20b8f76c3ae4850585b49b0e286831"
   },
   {
-   "overskrift": "OpenAI vil lade forskere granske tre beviser",
-   "tekst": "OpenAI hævder, at selskabets model har modbevist Exponential Time Hypothesis (ETH), en grundantagelse i datalogien, og løst store matematiske formodninger. Et tredje resultat i fysik er endnu ikke offentliggjort i fuld længde. Arbejdsgrupper skal granske beviserne, og et Lean-bevis ligger på GitHub. Forskere har kritiseret både proces og foreløbige konklusioner; resultaterne er ikke endeligt verificeret.",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
-   "kategori": "Forskning",
+   "overskrift": "GPT-6.1 Terra satser på computerbrug og visuel ræsonnering",
+   "tekst": "OpenAI introducerede GPT-6.1 Terra som en hurtigere mellemklassemodel med vægt på visuel ræsonnering og computerbrug. Den koster 1 dollar per million input-tokens og 5 dollar per million output-tokens, ifølge Simon Willison. OpenAI kalder den et betydeligt skridt op fra GPT-5.6 Terra, men modellen er ikke frontlinjens stærkeste på alle områder.",
+   "link": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
+   "kategori": "Lanceringer",
+   "billede": "data/img/ef6d64be6cb0ecf1.jpg",
+   "dato": "2026-10-26T23:53:07+00:00",
+   "andre": [],
+   "titel": "GPT-6.1 Terra",
+   "rubrik": "GPT-6.1 Terra kan se og bruge computeren",
+   "resume_da": "OpenAI lancerer GPT-6.1 Terra som en mellemklassemodel med fokus på visuel ræsonnering og computerbrug, prissat mellem GPT-6 Luna og GPT-6.1 Sol.",
+   "artikel_signatur": "09ca07dba964a4f0a8c263e94f4fcbf04ee20e23740e58473f0724eb9a435e2d"
+  },
+  {
+   "overskrift": "Anthropic advarer om fremtidige modelrisici i børsprospekt",
+   "tekst": "Anthropic indgav sin børsnoteringsansøgning, S-1, med et langt risikoafsnit. Selskabet skriver, at fremtidige modeller kan udgøre katastrofale eller eksistentielle risici, og at de kan udvise adfærd, der ligner afpresning. Samtidig understreger Anthropic, at ingen nuværende model udgør den slags fare.",
+   "link": "https://arstechnica.com/ai/2026/10/anthropic-ipo-warns-its-ai-could-blackmail-people-become-sentient-end-humanity/",
+   "kategori": "Penge & marked",
    "billede": "",
-   "dato": "2026-10-26T23:34:58+00:00",
-   "andre": [
-    {
-     "kilde": "The Verge AI",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
-     "rubrik": "OpenAI tilbageholder fysikresultat og vækker kritik",
-     "resume_da": "OpenAI har offentliggjort gennembrud i matematik og datalogi, men holder fysikresultatet tilbage. Forskere kræver åben adgang og kritiserer håndplukkede eksperter.",
-     "dato": "2026-10-27T16:48:58-04:00",
-     "foerst_set": "2026-10-27T20:55:19.965914+00:00"
-    }
-   ],
-   "titel": "OpenAI announces three big science discoveries and a new way to work with academics",
-   "rubrik": "OpenAI lader forskere granske tre nye beviser",
-   "resume_da": "Firmaet annoncerer resultater i matematik, datalogi og fysik. Fysikbeviset er endnu ikke offentliggjort i fuld længde.",
-   "artikel_signatur": "38094c7aecd36a2bfde80914930117078c1c11be93fcc82801272ec0f28a9088"
+   "dato": "2026-10-27T21:31:14+00:00",
+   "andre": [],
+   "titel": "Anthropic IPO warns its AI could blackmail people, become sentient, end humanity",
+   "rubrik": "Anthropic: Fremtidig Claude kan afpresse",
+   "resume_da": "Risikokapitlet på 93 sider lister hundreder af farer, flere om modeller der endnu ikke findes.",
+   "artikel_signatur": "05ad6dc5ced6b24bef5cc0f10cefb563876d77a032851aeb7bd04addc84d400d"
   }
  ],
  "overblik": [
   {
-   "tekst": "Ugens tydeligste linje er, at frontmodeller bliver specialiserede, og at adgangen til dem deler sig. Googles Gemini 4 Carbon og Mistral Large 4 peger begge på cyberforsvar, men med modsatte modeller: Carbon annonceres som Googles stærkeste og topper ifølge Google flere benchmarks, men gives først til udvalgte forsvarere. Mistral lægger derimod vægtene ud, så virksomheder og myndigheder selv kan køre en model med 1.000 milliarder parametre. Det gør spørgsmålet om kontrol og afhængighed konkret: Skal evnen komme gennem en lukket udbyder eller gennem åbne filer, organisationen selv ejer?",
+   "tekst": "Ugen viste en branche, der ikke længere bare konkurrerer om én større chatbot, men om forskellige slags adgang til avancerede modeller. Googles Gemini 4 Carbon og Mistrals Large 4 sigter begge mod cyberforsvar, men på modsatte måder: Carbon er en lukket frontiermodel, som Google kun slipper ud til udvalgte cyberforsvarere, mens Mistral lægger vægtene til sin trillionmodel på Hugging Face, så organisationer kan køre den selv. Begge bygger på producenternes egne benchmarkpåstande, og især Carbons bredere adgang er stadig uden dato.",
    "links": [
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
     "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
    ]
   },
   {
-   "tekst": "Samtidig dækker de nye modeller forskellige arbejdsopgaver. GPT-6.1 Terra er en billigere mellemvej i OpenAIs sortiment med særligt fokus på billedforståelse og computerbrug, mens Genie 4 er et forskningspreview, der simulerer interaktive verdener med lyd og sceneskift. Terra skal få gentagne opgaver ned i pris; Genie 4 skal afprøve, om verdensmodeller kan bruges til prototyping og måske robottræning. Begge er omgivet af producenternes egne løfter og begrænset adgang.",
+   "tekst": "Samtidig flyttede modellerne ind i nye opgaver. Genie 4 kan generere og styre interaktive verdener med lyd i realtid, og DeepMind viser en mulig vej til at afprøve robotter i simulation. GPT-6.1 Terra er mere hverdagsnær: en billigere mellemklassemodel, der ifølge OpenAI er særligt god til at læse billeder og betjene en computer, og som ifølge Willison koster 1 dollar per million input-tokens og 5 dollar per million output-tokens. Den ene åbner et forskningsvindue; den anden gør computerbrug billigere for udviklere.",
    "links": [
-    "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
-    "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/"
+    "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
+    "https://simonwillison.net/2026/Oct/26/gpt-61-terra/"
    ]
   },
   {
-   "tekst": "OpenAIs matematikfremstød viser den anden side af ugen: Evnerne rykker ind i forskning, men verificeringen halter bagefter. Selskabet hævder at have modbevist en grundantagelse i datalogien og løst store formodninger, mens et fysikresultat holdes tilbage. Arbejdsgrupper og et Lean-bevis skal afgøre, om der holder. Dermed ligner ugen en bevægelse mod mere specialiserede og mere vidtrækkende AI-systemer, hvor brugerne må skelne mellem demonstreret adgang, producentpåstande og endnu ikke uafhængigt efterprøvede resultater.",
+   "tekst": "Bag begge spor ligger en dyrere og mere risikofyldt virkelighed, som Anthropics børsnoteringsansøgning blotlægger. Selskabet lover fremskridt, men skriver også, at fremtidige modeller kan udgøre katastrofale eller eksistentielle risici, og at de kan udvise adfærd, der ligner afpresning. Det er ikke en konstatering af, at Claude er farlig nu; Anthropic understreger, at ingen nuværende model udgør den slags fare. Men dokumentet viser, at kampen om regnekraft og markedspladser nu også er en kamp om sikkerhedsfortællinger og kapital.",
    "links": [
-    "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics"
+    "https://arstechnica.com/ai/2026/10/anthropic-ipo-warns-its-ai-could-blackmail-people-become-sentient-end-humanity/"
    ]
   }
  ],
- "tendens": "",
+ "tendens": "Følg, om Mistrals påstand om 47 procent færre tokens per opgave holder i uafhængige målinger. Tallet er centralt for, hvor billig den åbne model bliver at drive, men det er foreløbig kun Mistrals eget benchmark.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "ba87803df39bbd397ba5b31c0cd795cf82e71fa6ac472d4f6eeabce0adc9d343",
- "dato": "2026-11-03T02:53:32.473380+00:00",
- "opdateret": "2026-11-03T02:53:32.473380+00:00",
+ "basis_signatur": "3b03719e38f9ddd73ace3ffe826e5e3a8b00694f1309fe4f9ff27c350b302999",
+ "dato": "2026-11-03T12:30:04.883227+00:00",
+ "opdateret": "2026-11-03T12:30:04.883227+00:00",
  "periode_fra": "2026-10-26T23:00:00+00:00",
  "periode_til": "2026-11-02T23:00:00+00:00",
  "stats": {

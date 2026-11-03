@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-03T02:35:23.085730+00:00",
- "artikler_i_alt": 123,
+ "opdateret": "2026-11-03T12:15:27.201983+00:00",
+ "artikler_i_alt": 122,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -88,8 +88,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 8,
-   "som_ekstra": 2,
+   "i_listen": 7,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "Google åbner Connected Apps-platform i preview",
@@ -99,24 +99,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google åbner Gemini for alle udvikleres apps"
-    },
-    {
-     "rubrik": "Google ruller Gemini 4 Argon bredt ud",
-     "dato": "",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
-    },
-    {
-     "rubrik": "Google udruller Gemini 4 Argon globalt",
-     "dato": "2026-11-02T17:45:00",
-     "foerst_set": "2026-11-02T18:45:47",
-     "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
-     "side": "artikel/ff01b8b9f0687b69.html",
-     "hvor": "forside",
-     "under": ""
     },
     {
      "rubrik": "Google Gemini redigerer filer i chatten",
@@ -184,15 +166,15 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "Google DeepMind",
-     2
-    ],
-    [
      "The Verge AI",
      2
     ],
     [
      "Ars Technica AI",
+     1
+    ],
+    [
+     "Google DeepMind",
      1
     ],
     [
@@ -362,11 +344,11 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 56,
+   "i_listen": 57,
    "som_ekstra": 2,
    "seneste": [
     {
-     "rubrik": "New York Times sagsøger Brave for tekstskrabning",
+     "rubrik": "New York Times sagsøger Brave for AI-scraping",
      "dato": "",
      "foerst_set": "2026-11-03T02:35:23",
      "link": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
@@ -400,6 +382,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Microsoft henter 10 milliarder dollar på OpenAI"
+    },
+    {
+     "rubrik": "Apple Watch tester Siri Recaps i beta",
+     "dato": "2026-11-03T07:20:00",
+     "foerst_set": "2026-11-03T12:15:27",
+     "link": "https://techcrunch.com/2026/11/02/apple-watchs-ai-features-for-rewinding-and-recapping-conversations-begin-beta-testing/",
+     "side": "artikel/8f6f2c9dfcc57986.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Anthropic varsler mulig RSI inden længe",
@@ -497,15 +488,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-31T23:37:47",
      "link": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
      "side": "artikel/9a46afb49d1d4059.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Ternus: Vi sender ikke AI for AI'ens skyld",
-     "dato": "2026-10-31T21:41:00",
-     "foerst_set": "2026-10-31T23:37:47",
-     "link": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
-     "side": "artikel/8462b9fc7109b30b.html",
      "hvor": "forside",
      "under": ""
     }
@@ -678,20 +660,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Anthropic lover mirakler og advarer om udslettelse",
-     "dato": "2026-10-30T13:11:05",
-     "foerst_set": "2026-10-30T15:15:27",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles",
-     "side": "artikel/97cc063537e04ec4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Susan Collins møder modstand mod AI-data centre",
      "dato": "2026-10-30T11:00:00",
      "foerst_set": "2026-10-30T15:15:27",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1021080/maine-senate-race-susan-collins-ai-data-centers",
      "side": "artikel/62deaf73d869952b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic lover mirakler og advarer om udslettelse",
+     "dato": "2026-10-30T13:11:05",
+     "foerst_set": "2026-10-30T15:15:27",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles",
+     "side": "artikel/97cc063537e04ec4.html",
      "hvor": "forside",
      "under": ""
     },
@@ -876,9 +858,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 6,
+   "i_listen": 8,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Stephen Morris: Spilteori kan styre AI-agenter",
+     "dato": "2026-11-03T10:43:41",
+     "foerst_set": "2026-11-03T12:15:27",
+     "link": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/",
+     "side": "artikel/5a465e187c017a30.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Trump vil omdøbe AI til Super Intelligence",
+     "dato": "2026-11-03T04:18:47",
+     "foerst_set": "2026-11-03T12:15:27",
+     "link": "https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test/",
+     "side": "artikel/72788a4d358feca2.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "MIT-rapport: Kun 48 procent af agenters indsigter virker",
      "dato": "2026-11-02T17:00:00",
@@ -958,10 +958,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 15,
-   "i_listen": 3,
+   "status": "fejl",
+   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -972,39 +972,12 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
-    },
-    {
-     "rubrik": "Google Antigravity finder ny peptidkandidat",
-     "dato": "2026-10-15T16:08:03",
-     "foerst_set": "2026-10-16T04:53:41",
-     "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-     "side": "artikel/ba028f76ed47c779.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
-     "dato": "2026-10-13T19:43:07",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-     "side": "artikel/42f1c245f492d3d1.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "EmbeddingGemma 2 finder videoklip ud fra tale",
-     "dato": "2026-10-06T19:57:04",
-     "foerst_set": "2026-10-07T15:44:28",
-     "link": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
-     "side": "artikel/bf211d23154acfab.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "Google Gemini",
-     2
+     1
     ]
    ]
   },

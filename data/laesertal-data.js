@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-11-03T02:54:52.234038+00:00",
+ "opdateret": "2026-11-03T12:31:39.621299+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -278,49 +278,84 @@ window.LAESERTAL = {
      0,
      0,
      0,
-     0
+     1
+    ]
+   },
+   {
+    "navn": "Dybde",
+    "tal": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     2
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 16,
- "sidevisninger_i_alt": 28,
+ "besoeg_i_alt": 19,
+ "sidevisninger_i_alt": 37,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 16,
-   "visninger": 28
+   "besoeg": 19,
+   "visninger": 37
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 15
+   "besoeg": 17
   },
   {
    "fra": "www.bing.com",
-   "besoeg": 1
+   "besoeg": 2
   }
  ],
  "ai_chats": [],
  "sidehenvisere": {
   "/": [
    {
-    "fra": "direkte",
-    "besoeg": 15,
-    "visninger": 15
-   },
-   {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 12
+    "visninger": 18
+   },
+   {
+    "fra": "direkte",
+    "besoeg": 17,
+    "visninger": 17
    },
    {
     "fra": "www.bing.com",
-    "besoeg": 1,
-    "visninger": 1
+    "besoeg": 2,
+    "visninger": 2
    }
   ]
  },
