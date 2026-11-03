@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-11-02T18:45:47.523033+00:00",
+  "opdateret": "2026-11-03T02:35:23.085730+00:00",
   "kladder": [
     {
       "titel": "LifeVal",
@@ -12,6 +12,7 @@
       "eget_foerst_set": "2026-11-02T18:45:47.523033+00:00",
       "rubrik": "OpenAI lancerer LifeVal til hverdagsopgaver",
       "resume_da": "Benchmarken skal måle, hvor godt AI hjælper med opgaver som børnepasning, privatøkonomi og offentlige blanketter.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -28,7 +29,6 @@
         "emne": "lifeval-benchmark"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -45,6 +45,7 @@
       "eget_foerst_set": "2026-11-02T18:45:47.523033+00:00",
       "rubrik": "OpenAI starter Grid Protectors for strømnettet",
       "resume_da": "Programmet skal samarbejde med forsyningsselskaber om, at kommende datacentre understøtter netstabilitet og ikke skubber elpriserne op for forbrugerne.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -61,8 +62,73 @@
         "emne": "openai grid protectors"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Qodo builds context into AI code review with Codex",
+      "link": "https://openai.com/index/qodo-codex-plugin",
+      "resume": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.",
+      "dato": "2026-11-02T00:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-11-03T02:35:23.085730+00:00",
+      "eget_foerst_set": "2026-11-03T02:35:23.085730+00:00",
+      "rubrik": "Qodo giver Codex virksomhedsviden til kode-review",
+      "resume_da": "Værktøjet skal fange kritiske P0-fejl på tværs af kodelagre, før udvikleren åbner en pull request.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Qodo-plugin bringer virksomhedsviden og kodestandarder ind i Codex.",
+        "forbehold": "Leverandørens egen beskrivelse; ingen uafhængig test.",
+        "emne": "qodo"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Scaling Git at OpenAI",
+      "link": "https://openai.com/index/scaling-git-at-openai",
+      "resume": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.",
+      "dato": "2026-11-02T15:30:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-11-03T02:35:23.085730+00:00",
+      "eget_foerst_set": "2026-11-03T02:35:23.085730+00:00",
+      "rubrik": "OpenAI bygger Git-backend til Codex-skala",
+      "resume_da": "Pando er en Git-kompatibel backend, som OpenAI har udviklet til den udviklingsmængde, Codex ifølge selskabet muliggør.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI beskriver Pando, en Git-kompatibel backend bygget til Codex' udviklingsskala.",
+        "forbehold": "Ingen uafhængige data om ydeevne eller ekstern tilgængelighed.",
+        "emne": "openai pando"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -111,6 +177,7 @@
       "eget_foerst_set": "2026-11-02T18:45:47.523033+00:00",
       "rubrik": "Agentweb genopliver Berners-Lees semantiske web-idé",
       "resume_da": "Tim Berners-Lee skitserede i 2001 et web, hvor autonome softwareagenter navigerede for brugerne; MIT Technology Review ser nu den agentiske udgave tage form.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -125,6 +192,38 @@
         "begrundelse": "Feature der kobler Tim Berners-Lees Semantic Web-vision fra 2001 til nutidens agentiske web; ingen ny model eller data.",
         "forbehold": "Artiklen er en langsigtet trendanalyse uden nye konkrete produkter.",
         "emne": "agentisk web"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
+      "link": "https://openai.com/index/dan-driscoll-joins-openai",
+      "resume": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies.",
+      "dato": "2026-11-02T00:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-11-03T02:35:23.085730+00:00",
+      "eget_foerst_set": "2026-11-03T02:35:23.085730+00:00",
+      "rubrik": "OpenAI hyrer Dan Driscoll til national sikkerhed",
+      "resume_da": "Han skal rådgive om ansvarlig AI til modernisering af national sikkerhed, cyberrobusthed og samarbejde med USA's allierede.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI tilknytter Dan Driscoll som rådgiver om ansvarlig AI til amerikansk sikkerhedsmodernisering og cyberrobusthed.",
+        "forbehold": "",
+        "emne": "openai, national sikkerhed"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "kat_ai": true,
@@ -276,6 +375,7 @@
       "eget_foerst_set": "2026-11-02T18:45:47.523033+00:00",
       "rubrik": "DeepMind hjælper britisk regering med planvurderinger",
       "resume_da": "Samarbejdet skal forkorte tiden, myndighederne bruger på at vurdere planansøgninger. Hvor meget kortere sagsbehandlingen bliver, fremgår ikke.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -292,7 +392,6 @@
         "emne": "deepmind planbehandling"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -332,39 +431,6 @@
       ]
     },
     {
-      "titel": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
-      "link": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
-      "resume": "",
-      "dato": "2026-10-28T14:58:17+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-10-28T15:23:12.851168+00:00",
-      "eget_foerst_set": "2026-10-28T15:23:12.851168+00:00",
-      "rubrik": "Nvidia præsenterer Nemotron 3.5 Transcribe og Granary v2",
-      "resume_da": "Hugging Face-titlen beskriver en flersproget transskriptionsmodel, som kan styres med prompts og tilpasses; der er ingen yderligere oplysninger i materialet.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "Officiel NVIDIA-blog præsenterer Nemotron 3.5 Transcribe og Granary v2 som flersproget, promptbar transskription.",
-        "forbehold": "Kun titel i materialet; modelversioner, evner og adgang kan ikke bekræftes yderligere.",
-        "emne": "nvidia nemotron transcribe"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Genie 4: A new generation of world simulation",
       "link": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
       "resume": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
@@ -393,6 +459,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
+      "link": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+      "resume": "",
+      "dato": "2026-10-28T14:58:17+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-28T15:23:12.851168+00:00",
+      "eget_foerst_set": "2026-10-28T15:23:12.851168+00:00",
+      "rubrik": "Nvidia præsenterer Nemotron 3.5 Transcribe og Granary v2",
+      "resume_da": "Hugging Face-titlen beskriver en flersproget transskriptionsmodel, som kan styres med prompts og tilpasses; der er ingen yderligere oplysninger i materialet.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Officiel NVIDIA-blog præsenterer Nemotron 3.5 Transcribe og Granary v2 som flersproget, promptbar transskription.",
+        "forbehold": "Kun titel i materialet; modelversioner, evner og adgang kan ikke bekræftes yderligere.",
+        "emne": "nvidia nemotron transcribe"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1135,39 +1234,6 @@
       ]
     },
     {
-      "titel": "Securing our frontier model training environment",
-      "link": "https://openai.com/index/securing-our-frontier-model-training-environment",
-      "resume": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming.",
-      "dato": "2026-10-23T10:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-10-23T20:03:23.140200+00:00",
-      "eget_foerst_set": "2026-10-23T20:03:23.140200+00:00",
-      "rubrik": "OpenAI strammer sikkerheden om modeltræning",
-      "resume_da": "Træning og evaluering af frontier-modeller foregår nu i isolerede offline-miljøer, og sikkerheden afprøves med ressourcekrævende red-teaming, oplyser OpenAI selv.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI beskriver skærpet indeslutning af træningsmiljøer for frontier-modeller med offline-miljøer og ressourcekrævende red-teaming.",
-        "forbehold": "OpenAI beskriver egne tiltag; ingen uafhængig granskning.",
-        "emne": "openai træningssikkerhed"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "The future of the firm",
       "link": "https://openai.com/index/the-future-of-the-firm",
       "resume": "How AI might enter the org chart—beneath, beside, and between us.",
@@ -1229,72 +1295,6 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
-      "link": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
-      "resume": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.",
-      "dato": "2026-10-23T17:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Forskning",
-      "foerst_set": "2026-10-23T20:03:23.140200+00:00",
-      "eget_foerst_set": "2026-10-23T20:03:23.140200+00:00",
-      "rubrik": "OpenAI bygger lagring til 1 milliard ChatGPT-brugere",
-      "resume_da": "Ifølge OpenAI giver Habitat-lagringen nu 12 gange hurtigere læsninger ved hjælp af multi-tenancy, global caching og Azure Cosmos DB.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI beskriver, hvordan lagringslaget Habitat er skaleret med multi-tenancy og caching til 12 gange hurtigere læsninger i ChatGPT.",
-        "forbehold": "Producentens egne tal; ingen uafhængig verifikation.",
-        "emne": "openai habitat-lagring"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Anima helps clinics cut call waits by 75% with GPT-6 and GPT-Live",
-      "link": "https://openai.com/index/anima",
-      "resume": "Anima expands what care teams can do with OpenAI models, giving them more capacity to respond to patients.",
-      "dato": "2026-10-23T00:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-10-27T20:55:19.965914+00:00",
-      "eget_foerst_set": "2026-10-27T20:55:19.965914+00:00",
-      "rubrik": "Anima melder om 75 procent kortere telefonventetid",
-      "resume_da": "Klinikkerne bruger GPT-6 og GPT-Live til at give behandlerne mere kapacitet til at svare patienter, oplyser OpenAI.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI-kundecase: klinikleverandøren Anima bruger GPT-6 og GPT-Live og opnår ifølge OpenAI 75 procent kortere ventetid i telefonen.",
-        "forbehold": "Effekttallet kommer fra leverandøren; ingen metode eller uafhængig måling.",
-        "emne": "anima openai"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1433,7 +1433,40 @@
       ]
     },
     {
-      "titel": "Apple’s roaming home robot may do FaceTime, switch lights on, and yell at your cat",
+      "titel": "Web host Squarespace lays off 19% of its employees",
+      "link": "https://techcrunch.com/2026/11/02/web-host-squarespace-lays-off-19-of-its-employees/",
+      "resume": "The website builder said that the job losses are part of a broader restructuring of its organization.",
+      "dato": "2026-11-02T19:25:59+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-03T02:35:23.085730+00:00",
+      "eget_foerst_set": "2026-11-03T02:35:23.085730+00:00",
+      "rubrik": "Squarespace fyrer 19 procent af medarbejderne",
+      "resume_da": "Webstedsbyggeren kalder afskedigelserne en del af en bredere omorganisering af selskabet.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 0,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Squarespace afskediger 19 procent af medarbejderne som led i en omorganisering.",
+        "forbehold": "Ingen AI-vinkel i det medsendte uddrag.",
+        "emne": "squarespace"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Coming in 2027: Apple’s $1,000 home robot for FaceTime and switching on lights",
       "link": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/",
       "resume": "Apple robot backed by CEO John Ternus may have hefty price tag and limited uses.",
       "dato": "2026-11-02T18:32:21+00:00",
@@ -1443,6 +1476,7 @@
       "eget_foerst_set": "2026-11-02T18:45:47.523033+00:00",
       "rubrik": "Apple undersøger hjemmerobot med FaceTime og lysstyring",
       "resume_da": "Ifølge Ars Technica er robotten bakket op af topchef John Ternus, men den kan få en høj pris og begrænset brug.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1459,7 +1493,6 @@
         "emne": "apple hjemmerobot"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -1476,6 +1509,7 @@
       "eget_foerst_set": "2026-11-02T18:45:47.523033+00:00",
       "rubrik": "TechCrunch holder Founder Summit i Boston",
       "resume_da": "Konferencen finder sted 4. november med iværksættere som målgruppe, og billetter kan købes med op til 100 dollars rabat.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1492,7 +1526,6 @@
         "emne": "techcrunch founder summit"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -1917,72 +1950,6 @@
       ]
     },
     {
-      "titel": "ICE plan to buy robot dogs spurs protest from hundreds of Boston Dynamics employees",
-      "link": "https://arstechnica.com/ai/2026/10/boston-dynamics-employees-want-to-block-sale-of-robot-dogs-to-ice/",
-      "resume": "US robotics company stands by ICE deal as more than 300 employees warn of risk.",
-      "dato": "2026-10-26T18:50:41+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-10-26T21:09:48.052336+00:00",
-      "eget_foerst_set": "2026-10-26T21:09:48.052336+00:00",
-      "rubrik": "Boston Dynamics-ansatte protesterer mod robotkøb til ICE",
-      "resume_da": "Mere end 300 ansatte advarer om risikoen, mens Boston Dynamics fastholder aftalen med ICE, som planlægger at købe robotter.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 0,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Over 300 ansatte hos Boston Dynamics protesterer mod selskabets aftale om at sælge robotter til ICE.",
-        "forbehold": "Robotterne er ikke en AI-model, og AI-vinklen er perifer.",
-        "emne": "boston dynamics ice"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Highway thieves are spoofing GPS to steal millions in data center-bound cargo",
-      "link": "https://arstechnica.com/tech-policy/2026/10/highway-thieves-are-spoofing-gps-to-steal-millions-in-data-center-bound-cargo/",
-      "resume": "Investigators explain how highway thieves stole $100M in data center equipment.",
-      "dato": "2026-10-26T17:26:36+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-10-26T21:09:48.052336+00:00",
-      "eget_foerst_set": "2026-10-26T21:09:48.052336+00:00",
-      "rubrik": "Efterforskere forklarer GPS-forfalskning bag dataudstyrstyveri",
-      "resume_da": "Ifølge efterforskerne brugte highway-tyve GPS-forfalskning til at stjæle datacenterudstyr for 100 millioner dollar.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 0,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Efterforskere forklarer, hvordan tyve brugte GPS-forfalskning til at stjæle udstyr til datacentre for 100 mio. dollar.",
-        "forbehold": "Kun indirekte AI-relevans via datacenterudstyr; ingen AI-model eller AI-metode er omdrejningspunkt.",
-        "emne": "gps-tyveri datacentre"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "15 college students share their favorite Gemini features",
       "link": "https://blog.google/products-and-platforms/products/gemini/college-student-favorite-features/",
       "resume": "We asked 15 college students about their favorite Gemini features for learning, studying, taking notes, and more.",
@@ -2008,39 +1975,6 @@
         "begrundelse": "Google lader 15 studerende fortælle om deres yndlingsfunktioner i Gemini til studier og noter.",
         "forbehold": "Indholdet er markedsføring fra Google selv, ikke en uafhængig test.",
         "emne": "gemini studerende"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Microsoft offers buyouts to 60,000 employees",
-      "link": "https://www.theverge.com/tech/1018666/microsoft-expands-buyouts-60000-employees-eligible",
-      "resume": "Microsoft is offering voluntary buyouts to up to 60,000 employees across the US, UK, Canada, and India. In a message to employees, Microsoft chief people officer Amy Coleman writes that this gives staff members \"the opportunity to leave Microsoft with financial support and career planning resources\" as the company looks to trim staff without another […]",
-      "dato": "2026-10-26T15:58:27+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-10-26T21:09:48.052336+00:00",
-      "eget_foerst_set": "2026-10-26T21:09:48.052336+00:00",
-      "rubrik": "Microsoft tilbyder fratrædelse til 60.000 ansatte",
-      "resume_da": "Ordningen gælder ansatte i USA, Storbritannien, Canada og Indien og skal give folk mulighed for at forlade selskabet med økonomisk støtte og karrierehjælp.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Microsoft tilbyder frivillige fratrædelsesordninger til op mod 60.000 ansatte i fire lande.",
-        "forbehold": "Artiklen kobler ikke ordningen konkret til AI-satsningen.",
-        "emne": "microsoft fratrædelser"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 1,
@@ -58940,7 +58874,7 @@
       "titel": "Silicon Valley wants you to invest in miracles",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles",
       "resume": "Investing in any stock is kind of like gambling in the sense that you're betting your money on a company's future performance. But how do you bet on a technology that could, in the worst-case scenario, \"pose catastrophic or existential risks to humanity,\" or best case, \"bring forth an age of miracles\"? To some extent, […]",
-      "dato": "2026-10-30T09:11:05-04:00",
+      "dato": "2026-10-30T13:11:05+00:00",
       "kilde": "The Verge AI",
       "kategori": "Penge & marked",
       "foerst_set": "2026-10-30T15:15:27.943712+00:00",
@@ -61018,24 +60952,7 @@
       "eget_foerst_set": "2026-11-02T18:45:47.523033+00:00",
       "rubrik": "Claude får forbud mod at genskabe spil",
       "resume_da": "Anthropic har lagt to sætninger ind i Claude Code for at hindre modellen i at genskabe andres spil. Reglen gælder kun Claude — ikke konkurrenterne.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Anthropic indfører nye regler mod AI-kloning af spil, men analysen peger på, at reglerne ikke dæmmer op for kopiering.",
-        "forbehold": "Ingen konkrete håndhævelsesdetaljer eller effektmålinger.",
-        "emne": "anthropic spilleregl er"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "To sætninger i Claude Code",
@@ -61054,14 +60971,13 @@
           "tekst": "Reglen skal skelne mellem en direkte genskabelse af Tetris, som ikke er tilladt, og et spil i Tetris-genren, som er tilladt. Den samme uklarhed rammer de populære AI-mashups, hvor to spilkoncepter smeltes sammen — Mario i Elden Ring eller Spider-Man i Batman: Arkham Knight.\n\nEr det genskabelser eller transformative værker? Selv domstole har svært ved at afgøre den slags. Flere fejlrapporter på Anthropic GitHub tyder desuden på, at reglen allerede rammer nogle legitime spilprojekter."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "2 sætninger",
           "label": "Tilføjet til Claude Codes prompt for Opus 5.5 ifølge Anthropic-ingeniør Addy Osmani"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Reglen blev verificeret i Claude Code version 2.1.314, udgivet 30. oktober, af mediet XDA.",
         "Ifølge XDA har »tengu_heron_brook« tidligere været brugt til andre formål i ældre versioner.",
@@ -61074,14 +60990,43 @@
         "Dekompilering af gamle spil er blevet markant hurtigere med AI.",
         "Grænsen mellem genre og kopi er uafklaret."
       ],
+      "billedmotiv": "Claude's terracotta-orange many-rayed asterisk emblem set on a solid opaque game cartridge, with a thick diagonal bar striking through a duplicated game controller beside it, showing the model refusing to recreate an existing game while original games stay allowed.",
+      "billedmotiv_instruks": "672fa1b1bce76b925f4b",
+      "billede": "data/img/10ee693f9e063dde.jpg",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Anthropic indfører nye regler mod AI-kloning af spil, men analysen peger på, at reglerne ikke dæmmer op for kopiering.",
+        "forbehold": "Ingen konkrete håndhævelsesdetaljer eller effektmålinger.",
+        "emne": "anthropic spilleregl er"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-02T18:48:39.070265+00:00"
       },
-      "billedmotiv": "Claude's terracotta-orange many-rayed asterisk emblem set on a solid opaque game cartridge, with a thick diagonal bar striking through a duplicated game controller beside it, showing the model refusing to recreate an existing game while original games stay allowed.",
-      "billedmotiv_instruks": "672fa1b1bce76b925f4b",
-      "billede": "data/img/10ee693f9e063dde.jpg",
+      "prio": 6,
+      "historie_dato": "2026-11-02T18:05:31+00:00",
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+          "rubrik": "Anthropic vil stoppe Claude med at klone spil",
+          "resume_da": "To nye sætninger i Claude Codes prompt skal holde AI'en fra kopier af eksisterende spil, mens brugernes egne spil stadig er tilladt.",
+          "dato": "2026-11-02T13:56:02-05:00",
+          "foerst_set": "2026-11-03T02:35:23.085730+00:00"
+        }
+      ],
       "side": "artikel/b26578c04a00196c.html"
     },
     {
@@ -61095,6 +61040,47 @@
       "eget_foerst_set": "2026-11-02T18:45:47.523033+00:00",
       "rubrik": "OpenAI vil lade datacenter aflaste strømnettet",
       "resume_da": "I Georgia tester OpenAI et program, hvor selskabets datacenter frigiver op til 1.000 megawatt ved ekstremt vejr. Anlæggene kaldes nu «compute campuses».",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Georgia bliver første test",
+          "tekst": "Datacentre har længe haft ry for at være støjende strømslugere. Nu vil OpenAI vise, at et AI-datacenter også kan aflaste strømnettet, når det er mest presset.\n\nProgrammet hedder Grid Protectors Program og skal afprøves på et kommende datacenter i Effingham County i Georgia. Ved ekstremt vejr eller nødsituationer lover OpenAI at frigive op til 1.000 megawatt.\n\nDet sker ved at skrue ned for anlæggets eget forbrug, så strømmen kan bruges andre steder. Ifølge OpenAI svarer 1.000 megawatt nok til at drive aircondition i omkring 700.000 hjem."
+        },
+        {
+          "overskrift": "Modstand former love i flere delstater",
+          "tekst": "Annonceringen kommer, mens modstanden mod datacentre breder sig i USA. I Utah protesterede borgere, efter at kommissærer i Box Elder County godkendte et datacenter, der ventes at bruge mere end det dobbelte af delstatens spidsbelastning i 2025.\n\nFlere delstater har reageret. Tennessee, Florida, Oklahoma, Oregon og andre har vedtaget love, der skal forhindre AI-selskaber i at vælte energiregninger over på borgerne, og flere steder gælder moratorier og andre restriktioner.\n\nMiljøet er også i spil. En undersøgelse fra Houston Advanced Research Center (HARC) vurderer, at strøm til planlagte datacenterprojekter i Texas kan udslette årtiers luftkvalitetsforbedringer på bare fem år."
+        },
+        {
+          "overskrift": "OpenAI døber centrene compute campuses",
+          "tekst": "OpenAI kalder nu sine AI-datacentre for «compute campuses», altså store anlæg af AI-datacentre, for at distancere sig fra den dårlige omtale. Selskabet argumenterer samtidig for, at jævn efterspørgsel hele året kan sprede strømnettets faste omkostninger og dermed gavne kunderne.\n\nOpenAI oplyser, at selskabet vil fortsætte dialogen med politikere og forsyningsselskaber om at kunne sænke forbruget, når nettet er under pres. Ud over Georgia bygger OpenAI sammen med Oracle og SoftBank Stargate-datacentre i Texas og New Mexico."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "1.000 megawatt",
+          "label": "Effekt OpenAI lover at frigive ved ekstremt vejr eller nødsituationer"
+        },
+        {
+          "tal": "700.000 hjem",
+          "label": "Antal hjem, hvis aircondition 1.000 MW ifølge OpenAIs egen sammenligning kan drive"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Stargate-anlæggene omfatter Shackelford County i Texas, Doña Ana County i New Mexico og Milam County i Texas.",
+        "I Utah spredte datacenteret ifølge kritikerne varm luft i dalen omkring anlægget.",
+        "OpenAI beskriver selv kraftværkerne som en ressource, forsyningsselskaber kan kalde på, når samfund har mest brug for det."
+      ],
+      "betydning": "Hvis piloten indfries, kan den blive et argument for at opføre kraftværker til AI-anlæg i områder med voksende modstand. Ordningen er foreløbig kun annonceret som forsøg i Georgia.",
+      "pointer": [
+        "Pilot kun i Effingham County, Georgia",
+        "1.000 MW frigives ved ekstremt vejr",
+        "Stargate bygges med Oracle og SoftBank"
+      ],
+      "billedmotiv": "The intact black interwoven six-loop OpenAI Blossom symbol on the front of a solid opaque data-centre block; a thick cable runs from it into a sturdy electricity pylon that feeds two compact blocky houses, showing the campus releasing power back to the grid.",
+      "billedmotiv_instruks": "0bfabbc3a213cce8998c",
+      "billede": "data/img/fac5c4d563407830.webp",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -61111,59 +61097,18 @@
         "emne": "openai grid protectors"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
-      "sektioner": [
-        {
-          "overskrift": "Georgia bliver første test",
-          "tekst": "Datacentre har længe haft ry for at være støjende strømslugere. Nu vil OpenAI vise, at et AI-datacenter også kan aflaste strømnettet, når det er mest presset.\n\nProgrammet hedder Grid Protectors Program og skal afprøves på et kommende datacenter i Effingham County i Georgia. Ved ekstremt vejr eller nødsituationer lover OpenAI at frigive op til 1.000 megawatt.\n\nDet sker ved at skrue ned for anlæggets eget forbrug, så strømmen kan bruges andre steder. Ifølge OpenAI svarer 1.000 megawatt nok til at drive aircondition i omkring 700.000 hjem."
-        },
-        {
-          "overskrift": "Modstand former love i flere delstater",
-          "tekst": "Annonceringen kommer, mens modstanden mod datacentre breder sig i USA. I Utah protesterede borgere, efter at kommissærer i Box Elder County godkendte et datacenter, der ventes at bruge mere end det dobbelte af delstatens spidsbelastning i 2025.\n\nFlere delstater har reageret. Tennessee, Florida, Oklahoma, Oregon og andre har vedtaget love, der skal forhindre AI-selskaber i at vælte energiregninger over på borgerne, og flere steder gælder moratorier og andre restriktioner.\n\nMiljøet er også i spil. En undersøgelse fra Houston Advanced Research Center (HARC) vurderer, at strøm til planlagte datacenterprojekter i Texas kan udslette årtiers luftkvalitetsforbedringer på bare fem år."
-        },
-        {
-          "overskrift": "OpenAI døber centrene compute campuses",
-          "tekst": "OpenAI kalder nu sine AI-datacentre for «compute campuses», altså store anlæg af AI-datacentre, for at distancere sig fra den dårlige omtale. Selskabet argumenterer samtidig for, at jævn efterspørgsel hele året kan sprede strømnettets faste omkostninger og dermed gavne kunderne.\n\nOpenAI oplyser, at selskabet vil fortsætte dialogen med politikere og forsyningsselskaber om at kunne sænke forbruget, når nettet er under pres. Ud over Georgia bygger OpenAI sammen med Oracle og SoftBank Stargate-datacentre i Texas og New Mexico."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "1.000 megawatt",
-          "label": "Effekt OpenAI lover at frigive ved ekstremt vejr eller nødsituationer"
-        },
-        {
-          "tal": "700.000 hjem",
-          "label": "Antal hjem, hvis aircondition 1.000 MW ifølge OpenAIs egen sammenligning kan drive"
-        }
-      ],
-      "detaljer": [
-        "Stargate-anlæggene omfatter Shackelford County i Texas, Doña Ana County i New Mexico og Milam County i Texas.",
-        "I Utah spredte datacenteret ifølge kritikerne varm luft i dalen omkring anlægget.",
-        "OpenAI beskriver selv kraftværkerne som en ressource, forsyningsselskaber kan kalde på, når samfund har mest brug for det."
-      ],
-      "betydning": "Hvis piloten indfries, kan den blive et argument for at opføre kraftværker til AI-anlæg i områder med voksende modstand. Ordningen er foreløbig kun annonceret som forsøg i Georgia.",
-      "pointer": [
-        "Pilot kun i Effingham County, Georgia",
-        "1.000 MW frigives ved ekstremt vejr",
-        "Stargate bygges med Oracle og SoftBank"
-      ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-02T18:48:13.684637+00:00"
       },
-      "billedmotiv": "The intact black interwoven six-loop OpenAI Blossom symbol on the front of a solid opaque data-centre block; a thick cable runs from it into a sturdy electricity pylon that feeds two compact blocky houses, showing the campus releasing power back to the grid.",
-      "billedmotiv_instruks": "0bfabbc3a213cce8998c",
-      "billede": "data/img/fac5c4d563407830.webp",
+      "prio": 6,
       "side": "artikel/4abc12850beae1d0.html"
     },
     {
       "titel": "The New York Times sues Brave web browser for AI scraping and bypassing paywalls",
       "link": "https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times",
-      "resume": "The New York Times and a group of other publications have filed lawsuits against the company that makes the Brave web browser over alleged unlawful scraping to train AI and also letting users bypass their paywalls, as reported by Reuters. According to a complaint filed by the companies that run New York Daily News, the […]",
+      "resume": "The New York Times and a group of other publications have filed lawsuits against the company that makes the Brave web browser over alleged unlawful scraping to train AI and also letting users bypass their paywalls, as reported by Reuters. According to a complaint filed by the New York Daily News, the Chicago Tribune, and […]",
       "dato": "2026-11-02T12:51:19-05:00",
       "kilde": "The Verge AI",
       "kategori": "Politik & jura",
@@ -61171,24 +61116,7 @@
       "eget_foerst_set": "2026-11-02T18:45:47.523033+00:00",
       "rubrik": "New York Times sagsøger Brave for AI-scraping",
       "resume_da": "Aviser anklager Brave for at sælge adgang til deres indhold til AI-selskaber og for at lade brugere omgå betalingsmure.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "New York Times og flere udgivere sagsøger Brave for AI-scraping og omgåelse af betalingsmure.",
-        "forbehold": "Søgsmål er rejst, ikke afgjort; anklagerne er endnu ikke prøvet.",
-        "emne": "nyt brave søgsmål"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Aviser: Brave sælger stjålet indhold",
@@ -61207,8 +61135,6 @@
           "tekst": "Graham James, talsmand for The New York Times, siger i en udtalelse, at Brave har 'trodset gældende ophavsret' og ignoreret gentagne anmodninger fra avisen.\n\nHan siger, at søgsmålet skal stille Brave til ansvar for at 'stjæle vores indhold' og give det videre til nogle af verdens mest fremtrædende og velfinansierede generative AI-selskaber.\n\nPerplexitys kommunikationschef, Jesse Dwyer, afviser over for The Verge: 'The New York Times is overpaying its attorneys and underpaying its journalists.'"
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "5 navngivne AI-selskaber",
@@ -61219,6 +61145,7 @@
           "label": "Ifølge Brave om funktionen Paywall blocker"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Ifølge Reuters er klagen indgivet af selskaberne bag New York Daily News, Chicago Tribune og Orlando Sentinel.",
         "Brave, Anthropic, Mistral og Cohere svarede ikke straks på anmodninger om kommentar."
@@ -61229,14 +61156,43 @@
         "Klagen handler om AI-scraping og omgåelse af betalingsmure.",
         "Perplexity afviser søgsmålet som 'disinformation'."
       ],
+      "billedmotiv": "A solid opaque browser window frame bearing an orange lion-head emblem, carrying a stack of folded newspapers over a tall paywall gate into a wide funnel, with a single coin exchanging hands below, showing a browser selling publisher content past the paywall.",
+      "billedmotiv_instruks": "6c755647a4a95a2411a2",
+      "billede": "data/img/fc6886dbfdc0116d.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "New York Times og flere udgivere sagsøger Brave for AI-scraping og omgåelse af betalingsmure.",
+        "forbehold": "Søgsmål er rejst, ikke afgjort; anklagerne er endnu ikke prøvet.",
+        "emne": "nyt brave søgsmål"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-02T18:50:10.300314+00:00"
       },
-      "billedmotiv": "A solid opaque browser window frame bearing an orange lion-head emblem, carrying a stack of folded newspapers over a tall paywall gate into a wide funnel, with a single coin exchanging hands below, showing a browser selling publisher content past the paywall.",
-      "billedmotiv_instruks": "6c755647a4a95a2411a2",
-      "billede": "data/img/fc6886dbfdc0116d.webp",
+      "prio": 6,
+      "historie_dato": "2026-11-02T17:51:19+00:00",
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
+          "rubrik": "New York Times sagsøger Brave for tekstskrabning",
+          "resume_da": "Avisen anklager Brave for at have skrabet sit indhold og solgt det videre til fem AI-selskaber. Tre andre amerikanske aviser har rejst tilsvarende krav.",
+          "dato": "2026-11-02T19:19:17+00:00",
+          "foerst_set": "2026-11-03T02:35:23.085730+00:00"
+        }
+      ],
       "side": "artikel/f3c40d8a649f8cb1.html"
     },
     {
@@ -61250,24 +61206,7 @@
       "eget_foerst_set": "2026-11-02T18:45:47.523033+00:00",
       "rubrik": "Musk sænker Grok Bot-grænser efter høje omkostninger",
       "resume_da": "Brugere fandt deres ugentlige kvote brugt op uden at have brugt Grok Bot. Musk bekræfter, at det ikke er en fejl, men et spørgsmål om omkostninger.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Musk begrænser brugen af Grok Bot på grund af udgifter, som han kalder uholdbart høje, trods kraftig vækst.",
-        "forbehold": "Ingen tal på omkostninger eller nye grænser oplyst.",
-        "emne": "grok bot grænser"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Halloween-kvoten sprang til 100 procent",
@@ -61282,8 +61221,6 @@
           "tekst": "Grok Bot er blevet præsenteret som en succeshistorie for det nyligt børsnoterede SpaceX. I en indberetning sidste måned oplyste selskabet, at AI nu udgør 52 procent af indtægterne.\n\nDen omdøbte division \"Super Intelligence\" gav et overskud på 431 mio. dollars. Overskuddet ville have været højere, hvis ikke engangsomkostninger på 1,2 mia. dollars i forbindelse med købet af Cursor havde trukket det ned.\n\nMusk har kaldt Grok Bot det hurtigst voksende produkt, han har set i sit liv."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "52 %",
@@ -61302,6 +61239,7 @@
           "label": "Ugentlig kvote, som den sprang ifølge brugeres opslag på X"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Ifølge kilden er et overskud i en AI-division en sjældenhed i branchen."
       ],
@@ -61311,14 +61249,32 @@
         "Musk: omkostningerne var uholdbart høje",
         "Nye grænser for abonnenter er ikke meldt ud"
       ],
+      "billedmotiv": "A solid round quota gauge with its black needle jammed hard against the 100 percent mark, a heavy stack of coins beside it tipping over and spilling away, showing a weekly usage limit consumed by serving costs that outstripped revenue.",
+      "billedmotiv_instruks": "41cd781e26ea322b88db",
+      "billede": "data/img/8d4482a78414f8f2.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Musk begrænser brugen af Grok Bot på grund af udgifter, som han kalder uholdbart høje, trods kraftig vækst.",
+        "forbehold": "Ingen tal på omkostninger eller nye grænser oplyst.",
+        "emne": "grok bot grænser"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-02T18:51:28.700411+00:00"
       },
-      "billedmotiv": "A solid round quota gauge with its black needle jammed hard against the 100 percent mark, a heavy stack of coins beside it tipping over and spilling away, showing a weekly usage limit consumed by serving costs that outstripped revenue.",
-      "billedmotiv_instruks": "41cd781e26ea322b88db",
-      "billede": "data/img/8d4482a78414f8f2.webp",
+      "prio": 5,
       "side": "artikel/b7a0e68320c363ea.html"
     },
     {
@@ -61332,24 +61288,7 @@
       "eget_foerst_set": "2026-11-02T18:45:47.523033+00:00",
       "rubrik": "42AI vil forudsige, hvordan tradere reagerer",
       "resume_da": "Israelske 42AI står frem med 62,5 mio. dollar og en model, der forudsiger, hvordan kunder hos ti store mæglere reagerer.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "42AI kommer ud af stealth med 62,5 mio. dollars og påstand om en verdensmodel, der kan forudsige menneskelig adfærd.",
-        "forbehold": "Producentens påstand om forudsigelse er ikke uafhængigt dokumenteret.",
-        "emne": "42ai verdensmodel"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Motiver frem for tidligere handler",
@@ -61372,8 +61311,6 @@
           "tekst": "Uden for finans vil 42AI bruge modellen til gaming, svindelforebyggelse og cybersikkerhed og på sigt til at lære robotter og AI-agenter at forstå mennesker. Ezra erkender, at modellen skal trænes i regler og kontekst for hvert nyt område."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "62,5 mio. dollar",
@@ -61392,6 +61329,7 @@
           "label": "Omfang af de kundedatasæt, modellen arbejder med"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "42AI undersøgte først tusinder af personer med psykologiske tests og adfærdsscenarier.",
         "Dan Shechtman, der fik Nobelprisen i kemi i 2011, har rådgivet teamet.",
@@ -61404,14 +61342,32 @@
         "Nøjagtigheden falder uden vigtig situationskontekst.",
         "Nye domæner kræver træning i regler og kontekst."
       ],
+      "billedmotiv": "A solid lattice of connected nodes feeding into a trading chart whose next candlestick is drawn as an empty outline, beside a compact telephone handset, showing a world model predicting how a client will act under new circumstances.",
+      "billedmotiv_instruks": "307646cb4f5729f8b930",
+      "billede": "data/img/98b0f01a5b782b6a.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "42AI kommer ud af stealth med 62,5 mio. dollars og påstand om en verdensmodel, der kan forudsige menneskelig adfærd.",
+        "forbehold": "Producentens påstand om forudsigelse er ikke uafhængigt dokumenteret.",
+        "emne": "42ai verdensmodel"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-02T18:49:33.621404+00:00"
       },
-      "billedmotiv": "A solid lattice of connected nodes feeding into a trading chart whose next candlestick is drawn as an empty outline, beside a compact telephone handset, showing a world model predicting how a client will act under new circumstances.",
-      "billedmotiv_instruks": "307646cb4f5729f8b930",
-      "billede": "data/img/98b0f01a5b782b6a.webp",
+      "prio": 5,
       "side": "artikel/b6e2d45456503ed8.html"
     },
     {
@@ -61425,24 +61381,7 @@
       "eget_foerst_set": "2026-11-02T18:45:47.523033+00:00",
       "rubrik": "MIT-rapport: Kun 48 procent af agenters indsigter virker",
       "resume_da": "Manglende forretningskontekst er den største årsag til svage svar, viser rapport fra MIT Technology Review. Virksomheder satser på datastyring og semantiske lag.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Analyse peger på, at agentiske analyser automater arbejdsgange, men at kvaliteten af agenternes indsigter er et problem.",
-        "forbehold": "Ingen konkrete metoder, data eller afprøvede resultater angivet.",
-        "emne": "agentisk analyse"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Knap halvdelen fører til bedre forretning",
@@ -61469,8 +61408,6 @@
           "tekst": "Undersøgelsen er lavet af MIT Technology Review Insights, som er mediets betalte indholdsafdeling, ikke den redaktionelle. Rapporten oplyser ikke, hvor mange virksomheder der indgår, og den bygger på lederes egne svar om deres egne agenter."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "48 procent",
@@ -61489,6 +61426,7 @@
           "label": "Virksomheder hvor agenterne laver for mange indsigter til, at de bliver vurderet"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Fejlagtige indsigter, der udløser forkerte handlinger, kan koste omdømme eller penge, advarer rapporten.",
         "45 procent er ved at tilføje et semantisk lag til deres dataarkitektur."
@@ -61499,14 +61437,32 @@
         "Manglende forretningskontekst er hovedårsagen",
         "Over 70 procent hos indsigtslederne"
       ],
+      "billedmotiv": "A solid circular dial with its needle resting just below halfway at 48 percent; on one side a neat stack of analytical insight cards, on the other a single card dropping into a narrow action chute, showing that barely half of AI agent insights become action.",
+      "billedmotiv_instruks": "8c11b7f2cd76a4896ccd",
+      "billede": "data/img/e0b10209bc84972c.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Analyse peger på, at agentiske analyser automater arbejdsgange, men at kvaliteten af agenternes indsigter er et problem.",
+        "forbehold": "Ingen konkrete metoder, data eller afprøvede resultater angivet.",
+        "emne": "agentisk analyse"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-02T18:50:18.290496+00:00"
       },
-      "billedmotiv": "A solid circular dial with its needle resting just below halfway at 48 percent; on one side a neat stack of analytical insight cards, on the other a single card dropping into a narrow action chute, showing that barely half of AI agent insights become action.",
-      "billedmotiv_instruks": "8c11b7f2cd76a4896ccd",
-      "billede": "data/img/e0b10209bc84972c.webp",
+      "prio": 4,
       "side": "artikel/adc599e6d52afcaf.html"
     },
     {
@@ -61515,7 +61471,7 @@
       "resume": "OpenAI said that ChatGPT and Codex will draw usage from the same allocation pool after this change.",
       "dato": "2026-11-02T13:57:53+00:00",
       "kilde": "TechCrunch AI",
-      "kategori": "Nyheder",
+      "kategori": "Hverdags-AI",
       "foerst_set": "2026-11-02T18:45:47.523033+00:00",
       "eget_foerst_set": "2026-11-02T18:45:47.523033+00:00",
       "rubrik": "OpenAI merger Chat og Work i ChatGPT",
@@ -61555,7 +61511,25 @@
       "billedmotiv": "The intact black interwoven six-loop OpenAI Blossom symbol centred on one solid opaque panel that two smaller panels slide into, one carrying a chat bubble, the other a document with a briefcase shape, showing ChatGPT's chat and work modes merging into a single surface.",
       "billedmotiv_instruks": "2542cd588e9c6029a0bf",
       "billede": "data/img/309d2d140365b80b.webp",
-      "side": "artikel/e0d9533470c8827b.html"
+      "side": "artikel/e0d9533470c8827b.html",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI slår Chat og Work sammen i ChatGPT og lader Codex dele samme tokenbudget.",
+        "forbehold": "Uddraget mangler præcise vilkår og tidspunkt.",
+        "emne": "chatgpt"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5
     },
     {
       "titel": "Stop counting tokens, start counting what ships",
@@ -61568,24 +61542,7 @@
       "eget_foerst_set": "2026-11-02T18:45:47.523033+00:00",
       "rubrik": "HPE måler AI-kode per færdigt pull request",
       "resume_da": "HPE oplyser, at rutinearbejde fra over 150 interne applikationer nu kører på åbne modeller og har sænket tokenomkostningerne 30-50%. Selskabet måler færdigt arbejde.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Argumenterer for at måle agenters leverede resultater frem for tokenforbrug, fordi kodeagenter bruger 10-50 gange flere tokens pr. opgave.",
-        "forbehold": "Ingen konkrete målinger eller metode fremgår af uddraget.",
-        "emne": "ai-agenters tokenforbrug"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "HPE flytter rutinearbejde til egne modeller",
@@ -61600,8 +61557,6 @@
           "tekst": "HPE anbefaler at måle omkostningen per færdigt pull request: den samlede AI-assisterede udviklingsudgift divideret med antallet af ændringer, der går gennem kodegennemgang og bliver flettet ind i kodebasen. Et pull request er et forslag til en kodeændring, som andre kan gennemgå, før den merges. Man bør også følge omarbejde og fejl, så billigere ændringer ikke skjuler dårligere kvalitet.\n\nOpen-weight-modeller, hvis vægte er offentligt tilgængelige, kan ifølge softwarebenchmarks nærme sig de mest avancerede modellers ydeevne på nogle opgaver. HPE understreger, at det ikke viser, at de er lige gode i alle kodebaser. Derfor skal man teste kandidaterne på sin egen kode og sine acceptkriterier. Ejet kapacitet har store udgifter først, men bliver billigere per kald, når den bruges mere; strøm, drift og afskrivning skal medregnes."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "10-50 gange",
@@ -61620,6 +61575,7 @@
           "label": "Mulig stigning i månedlig udgift, hvis de mest aktive brugere bliver halvdelen af arbejdsstyrken"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Ved lav eller uforudsigelig brug kan lejede API'er være billigere end ejet kapacitet, ifølge HPE.",
         "De 5 procent mest aktive brugere stod for størstedelen af forbruget.",
@@ -61631,11 +61587,32 @@
         "Mål færdige pull requests, ikke tokens",
         "Test åbne modeller på egen kode"
       ],
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Argumenterer for at måle agenters leverede resultater frem for tokenforbrug, fordi kodeagenter bruger 10-50 gange flere tokens pr. opgave.",
+        "forbehold": "Ingen konkrete målinger eller metode fremgår af uddraget.",
+        "emne": "ai-agenters tokenforbrug"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-02T18:53:41.699513+00:00"
       },
+      "prio": 4,
+      "billedmotiv": "A large code-merge symbol—two thick branches joining into one line with a square check mark—stands on a balance scale opposite a tall stack of gold tokens. A solid green server cabinet supports the scale. The scene shows AI coding cost measured against completed, merged pull requests rather than raw token use.",
+      "billedmotiv_instruks": "d9d75b72a375d6c45d9d",
+      "billede": "data/img/24cef32719913be5.webp",
       "side": "artikel/6e7d4661da08e363.html"
     },
     {
@@ -61649,24 +61626,7 @@
       "eget_foerst_set": "2026-11-02T18:45:47.523033+00:00",
       "rubrik": "Omen AI køber konkurrent for 16 millioner dollar",
       "resume_da": "Omen AI køber Aquatic Labs og samler to vandmålere i én sensor til datacentrenes kølesystemer. Sensoren ventes på markedet i begyndelsen af 2027.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Omen AI køber Aquatic Labs for 16 mio. dollars for at få viden om vandkøling til datacentre.",
-        "forbehold": "Ingen oplysninger om teknologiens effekt eller kundebrug.",
-        "emne": "omen ai opkøb"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "To sensorer bliver til én",
@@ -61685,8 +61645,6 @@
           "tekst": "Mens nogle investorer er blevet skeptiske over for det store AI-byggeri, ser Omen ikke et problem. Selskabet arbejder på datacentre, der enten er bygget eller under opførelse, og de projekter blev finansieret for 12 måneder siden, siger Laberge."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "16 mio. dollar",
@@ -61705,6 +61663,7 @@
           "label": "Chipeffekt Omens første sensorer skal overvåge ved udgangen af 2026"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Zach Laberge droppede ud af high school for at forfølge sin første virksomhed",
         "Den første virksomhed lavede væskeanalyse for store anlægsmaskiner med hydraulik",
@@ -61716,14 +61675,32 @@
         "To målemetoder samles i én sensor",
         "Sensoren ventes klar i begyndelsen af 2027"
       ],
+      "billedmotiv": "Two solid sensor capsules merging into a single opaque inline sensor body clamped onto a thick cooling pipe, a small round dial on top and a bold arrow showing water flow inside the pipe, illustrating combined real-time water monitoring for data centres.",
+      "billedmotiv_instruks": "51df9c3db955eb4e785c",
+      "billede": "data/img/f9d806d3b94b063c.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Omen AI køber Aquatic Labs for 16 mio. dollars for at få viden om vandkøling til datacentre.",
+        "forbehold": "Ingen oplysninger om teknologiens effekt eller kundebrug.",
+        "emne": "omen ai opkøb"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-02T18:51:23.340680+00:00"
       },
-      "billedmotiv": "Two solid sensor capsules merging into a single opaque inline sensor body clamped onto a thick cooling pipe, a small round dial on top and a bold arrow showing water flow inside the pipe, illustrating combined real-time water monitoring for data centres.",
-      "billedmotiv_instruks": "51df9c3db955eb4e785c",
-      "billede": "data/img/f9d806d3b94b063c.webp",
+      "prio": 4,
       "side": "artikel/d2641740e5f255ec.html"
     },
     {
@@ -61737,24 +61714,7 @@
       "eget_foerst_set": "2026-11-02T18:45:47.523033+00:00",
       "rubrik": "Census Bureau spørger nu til Super Intelligence",
       "resume_da": "Den amerikanske statistikmyndighed har skiftet AI ud med SI i sin virksomhedsundersøgelse efter en executive order. De første svar offentliggøres torsdag.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Blogindlæg genbruger en Apollo-graf fra 2025 bygget på Census-tal om faldende AI-adoption i virksomheder; ingen nye modeloplysninger.",
-        "forbehold": "Grafens oprindelige datagrundlag er ikke fremlagt eller efterprøvet her.",
-        "emne": "ai-adoption i virksomheder"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Et nyt spørgsmål flyttede kurven",
@@ -61767,19 +61727,6 @@
         {
           "overskrift": "Om skiftet flytter besvarelserne",
           "tekst": "Om den nye ordlyd ændrer resultaterne, er et åbent spørgsmål. Virksomhederne i undersøgelsen svarer kun hver tolvte uge, så de har sidst set spørgsmålet, da det stadig hed AI.\n\nCensus Bureau sender spørgeskemaet til 200.000 virksomheder ud af 1,2 millioner og offentliggør nye tal hver anden torsdag klokken 10."
-        }
-      ],
-      "brief": "",
-      "figurer": [
-        {
-          "url": "https://static.simonwillison.net/static/2026-11-01/5821A414-FAF6-4E61-B037-952C1FD80D39.png",
-          "tekst": "Line chart titled \"AI use by U.S. firm size\", subtitled \"Six-survey trailing average • Share of employer businesses reporting use in the last two…",
-          "kilde": "Simon Willison AI"
-        },
-        {
-          "url": "https://static.simonwillison.net/static/2025/apollo-ai-chart.jpg",
-          "tekst": "AI adoption rates starting to decline for larger firms. A chart of AI adoption rate by firm size. Includes lines for 250+, 100-249, 50-99, 20-49,…",
-          "kilde": "Simon Willison AI"
         }
       ],
       "noegletal": [
@@ -61796,6 +61743,18 @@
           "label": "Samme gruppe i oktober 2026, stadig med AI-ordlyd"
         }
       ],
+      "figurer": [
+        {
+          "url": "https://static.simonwillison.net/static/2026-11-01/5821A414-FAF6-4E61-B037-952C1FD80D39.png",
+          "tekst": "Line chart titled \"AI use by U.S. firm size\", subtitled \"Six-survey trailing average • Share of employer businesses reporting use in the last two…",
+          "kilde": "Simon Willison AI"
+        },
+        {
+          "url": "https://static.simonwillison.net/static/2025/apollo-ai-chart.jpg",
+          "tekst": "AI adoption rates starting to decline for larger firms. A chart of AI adoption rate by firm size. Includes lines for 250+, 100-249, 50-99, 20-49,…",
+          "kilde": "Simon Willison AI"
+        }
+      ],
       "detaljer": [
         "Den nye ordlyd nævner SI-drevet dataanalyse, generativ SI til markedsføring og kodning samt virtuelle SI-agenter",
         "Willisons oprindelige kurve byggede på et diagram fra Apollo Global Management fra september 2025",
@@ -61807,12 +61766,483 @@
         "Tal før og efter skiftet kan ikke sammenlignes",
         "Første SI-besvarelser udkommer torsdag"
       ],
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Blogindlæg genbruger en Apollo-graf fra 2025 bygget på Census-tal om faldende AI-adoption i virksomheder; ingen nye modeloplysninger.",
+        "forbehold": "Grafens oprindelige datagrundlag er ikke fremlagt eller efterprøvet her.",
+        "emne": "ai-adoption i virksomheder"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-02T18:54:34.107755+00:00"
       },
+      "prio": 2,
+      "billedmotiv": "A thick official survey clipboard carries a prominent question mark and two answer boxes. A hinged flap flips one box from a small circuit-chip tile to a larger solid polyhedron, while a steep data curve rises beside the board. The scene shows a business questionnaire replacing AI with Super Intelligence and shifting its results.",
+      "billedmotiv_instruks": "653a1a1dc73d2cae8d8d",
+      "billede": "data/img/d15e56f29ce1e803.webp",
       "side": "artikel/d0367c83a5219a74.html"
+    },
+    {
+      "titel": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
+      "link": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+      "resume": "RSI is the point at which AI grows so good at training itself that it spawns a dramatic acceleration of AI capabilities. To the AI doomers, RSI represents the cataclysm from which there is no return.",
+      "dato": "2026-11-02T22:14:50+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-03T02:35:23.085730+00:00",
+      "eget_foerst_set": "2026-11-03T02:35:23.085730+00:00",
+      "rubrik": "Anthropic varsler mulig RSI inden længe",
+      "resume_da": "I en revideret børsfil skriver Anthropic, at selskabet muligvis snart kan nå sin egen definition af selvforbedrende AI. Ingen nuværende Claude-model har krydset grænsen.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 4,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Anthropic advarer om, at selskabet er meget tæt på selvforbedrende AI, såkaldt RSI.",
+        "forbehold": "Vage kriterier og ingen uafhængig dokumentation for påstanden.",
+        "emne": "anthropic rsi"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Anthropic peger på fremtidige modeller",
+          "tekst": "Anthropic skriver i en revideret S-1A, at selskabets interne skøn og forventninger til fremtidige modeller — ikke de nuværende — peger på, at det muligvis snart kan nå sin egen definition af »dramatically accelerated progress attributable to AI«. Det er et niveau, hvor AI i stigende grad forbedrer sig selv, også kaldet RSI (recursive self-improvement).\n\nAnthropic bruger allerede AI i sin forskning og udvikling. Selskabet advarer om, at det kan få modellerne til at udvikle sig hurtigere, end det kan udvikle, validere og implementere sikkerheds- og alignmentstiltag — altså tiltag, der skal få modellerne til at følge menneskelige hensigter."
+        },
+        {
+          "overskrift": "Ingen nuværende Claude-model over grænsen",
+          "tekst": "Anthropic understreger, at ingen af selskabets nuværende modeller er blevet udpeget som havende overskredet tærsklen, og at det fortsat vurderer de underliggende data. Selskabet siger også, at det ikke forventer at kunne bruge Claude til fuldt autonomt at designe og bygge på hinanden følgende generationer af frontier-modeller — de mest avancerede — uden meningsfuld menneskelig overvågning eller forståelse, hvis og når det bliver teknisk muligt.\n\nTechCrunch bemærker, at en S-1 både er oplysning og markedsføring, og at påstande om at være tæt på en selvbyggende model kan høre til sidstnævnte."
+        },
+        {
+          "overskrift": "Claude er blevet bedre til kodning",
+          "tekst": "TechCrunch vurderer, ikke Anthropic, at Claudes evner især inden for kodning, matematik og cybersikkerhed er vokset markant i år. Mediet skriver, at hvis Anthropic mener, at RSI er tæt på, bør omverdenen måske tro på det og handle — eventuelt regulere."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Anthropic har tidligere ikke opdaget en markant acceleration, før den var sket.",
+        "TechCrunch beskriver RSI som både et løfte om produktivitet og en sikkerhedsfare."
+      ],
+      "betydning": "Anthropic overvejer at opdatere sin Responsible Scaling Policy, så mennesker fortsat har kontrol med udviklingen af de mest avancerede modeller.",
+      "pointer": [
+        "Anthropic: mulig RSI snart",
+        "Ingen nuværende Claude-model over grænsen",
+        "S-1 kan også være markedsføring"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-03T02:39:49.934618+00:00"
+      },
+      "billedmotiv": "A large terracotta Claude asterisk with many sharp rays is mounted front-facing on a solid server cabinet. Two thick curved arrows form a closed self-improvement loop around it, and a sturdy safety bar clamps across one arrow. The scene shows recursive progress pressing against a safety limit.",
+      "billedmotiv_instruks": "c78bae6844e4eed88d01",
+      "billede": "data/img/434ff283f0614204.jpg",
+      "side": "artikel/b86b88ec9ca0ed8c.html"
+    },
+    {
+      "titel": "llm 0.37",
+      "link": "https://simonwillison.net/2026/Nov/2/llm/",
+      "resume": "Release: llm 0.37 There's a lot of stuff in this new release of my LLM CLI tool and Python library, representing around two months of accumulated features and fixes. I added gpt-6.1-sol and gpt-6.1-terra , plus a new llm openai endpoint add command to make it easier to configure additional models that use OpenAI-compatible endpoints. I switched the default model (if you have not set your own…",
+      "dato": "2026-11-02T23:49:30+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-11-03T02:35:23.085730+00:00",
+      "eget_foerst_set": "2026-11-03T02:35:23.085730+00:00",
+      "rubrik": "LLM skifter til gpt-6-luna til halv pris",
+      "resume_da": "Simon Willisons værktøj LLM får to nye modeller, lettere opsætning af OpenAI-kompatible endpoints og embeddings, der kan håndtere både tekst, lyd og video.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "LLM CLI 0.37 er en værktøjsopdatering med bl.a. en ny kommando til OpenAI-kompatible endpoints.",
+        "forbehold": "Egen udgivelsesnote; værktøjet er ikke en ny model.",
+        "emne": "llm cli"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Standardmodellen bliver halvt så dyr",
+          "tekst": "LLM er Simon Willisons kommandolinjeværktøj og Python-bibliotek, som samler adgangen til flere forskellige sprogmodeller bag samme kommando.\n\nI den nye udgave er standardmodellen skiftet til **gpt-6-luna**, som koster det halve af den tidligere standard, gpt-5.6-luna. Skiftet rammer kun brugere, der ikke selv har valgt en standardmodel."
+        },
+        {
+          "overskrift": "To nye modeller og kortere vej til endpoints",
+          "tekst": "Udgivelsen tilføjer modellerne gpt-6.1-sol og gpt-6.1-terra, og en ny kommando, llm openai endpoint add, gør opsætningen lettere for modeller, der bruger OpenAI-kompatible endpoints.\n\nEt endpoint er den adresse, programmet sender sine forespørgsler til. Kommandoen skal altså lette arbejdet med at konfigurere ekstra modeller, som ikke følger med i forvejen."
+        },
+        {
+          "overskrift": "Embeddings kan blande tekst, lyd og billeder",
+          "tekst": "Embeddings er måden, et program omdanner indhold til talrækker, så det kan søges og sammenlignes. LLM accepterer nu, at forskellige binære filer har forskellige content-typer — en angivelse af, hvilken slags data filen rummer.\n\nDet er nødvendigt for modeller som Gemini Embedding 2, der kan omdanne tekst, lyd, billeder og video."
+        },
+        {
+          "overskrift": "AI-assisterede rettelser gav ikke flaskehals",
+          "tekst": "Mange open source-vedligeholdere klager over strømmen af AI-assisterede pull requests. Willison skriver, at LLM er det af hans projekter, der er blevet mest påvirket, men at han ikke oplever det som et problem.\n\nÅrsagen er, at **Opus 5.5** eller GPT-6 Astra hjælper ham med at sortere i bidragene. Udgivelsen rummer rettelser fra 12 forfattere, næsten alle AI-assisterede, og han ser dem som fejlrapporter med vedlagt eksempel."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "Ca. 2 måneder",
+          "label": "features og rettelser samlet i udgivelsen"
+        },
+        {
+          "tal": "12 forfattere",
+          "label": "bidragydere bag rettelser, næsten alle AI-assisterede"
+        },
+        {
+          "tal": "Halv pris",
+          "label": "gpt-6-luna som ny standardmodel mod gpt-5.6-luna"
+        }
+      ],
+      "detaljer": [
+        "Udgivelsen er dateret 2. november 2026.",
+        "To af bidragyderne er Christopher Krah og Sharat Chandra Sai Boddu.",
+        "Willison tilbyder et månedligt nyhedsbrev om LLM-udvikling for 10 dollars om måneden."
+      ],
+      "betydning": "For brugere af LLM betyder det lavere udgifter til standardmodellen og færre manuelle indgreb, når et nyt OpenAI-kompatibelt endpoint eller en multimodal embedding-model skal tages i brug.",
+      "pointer": [
+        "Ny standard: gpt-6-luna til halv pris",
+        "Nye modeller: gpt-6.1-sol og gpt-6.1-terra",
+        "12 forfattere bag rettelserne"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-03T02:39:12.773307+00:00"
+      },
+      "billedmotiv": "A large solid command-prompt chevron stands beside three file blocks—text, sound wave and image—feeding into a dense grid of small squares. A thick gold coin is split cleanly in half next to the grid. The scene shows a command-line tool switching to a cheaper default and accepting multimodal embeddings.",
+      "billedmotiv_instruks": "0ab5ab1bc448fc35ebb4",
+      "billede": "data/img/88caaab27b9c8bda.webp",
+      "side": "artikel/5e2d12465b29b09a.html"
+    },
+    {
+      "titel": "Y Combinator’s Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
+      "link": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
+      "resume": "Y Combinator Garry Tan has jokingly admitted that he's suffered from \"cyber psychosis” and barely sleeps sometimes because he’s so excited to be working with his AI agents. On a new episode of Walter Isaacson’s podcast, The Builders, Tan put a price tag on his passion.",
+      "dato": "2026-11-03T00:35:52+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-11-03T02:35:23.085730+00:00",
+      "eget_foerst_set": "2026-11-03T02:35:23.085730+00:00",
+      "rubrik": "Garry Tan: Op til 200.000 dollar til AI-tokens",
+      "resume_da": "Y Combinators topchef lader sine agenter læse mail, noter og 20 års terapisedler. Selv advarer han om, at prisen gør personlige AI-agenter til et privilegium for de få.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Y Combinator-profilen Garry Tan siger, at han bruger op til 200.000 dollar om året på AI-tokens.",
+        "forbehold": "Selvrapporteret forbrug fra et podcastinterview.",
+        "emne": "garry tan"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Agenten har læst hans terapinoter",
+          "tekst": "Garry Tan, topchef i Y Combinator, betaler ifølge sit eget overslag mellem **100.000 og 200.000 dollar om året** for at bruge AI-agenter. Det fortæller han i et kommende afsnit af Walter Isaacsons podcast The Builders.\n\nTokens er de små tekstenheder, som en AI-model læser og skriver, og som man betaler per styk. Når en agent arbejder hele dagen på ens egne data, løber regningen derfor hurtigt op.\n\nIfølge Tan har agenten læst al hans mail, hele hans Dropbox og alle hans Apple Notes, \"endda mine terapinoter 20 år tilbage\", som han siger. Han beskriver den som en \"Jiminy Cricket\" på skulderen, der kender ham og løber i forvejen med forslag.\n\nTan har delt 23 såkaldte skills til Claude Code på GitHub under navnet gstack for at vise andre, hvad agenter kan."
+        },
+        {
+          "overskrift": "Stray Light kender alle ansøgninger",
+          "tekst": "Også Y Combinator bruger en agent, internt kaldet **Stray Light**. Den har ifølge Tan en personlighed og en \"virksomhedshjerne\" med kontekst om alle iværksættere, acceleratoren har støttet, alle der har mailet dem, og alle ansøgninger.\n\nAgenten er ved at \"genopbygge den måde, vi driver YC på\", siger han. Y Combinator er et amerikansk accelerator-program, der hjælper opstartvirksomheder i gang."
+        },
+        {
+          "overskrift": "Regningen skal ned, før alle får agenter",
+          "tekst": "Tan tror på, at personlige AI-agenter bliver en del af hverdagen for de fleste, men kun hvis en ting bliver løst: prisen. \"Det er for dyrt lige nu,\" siger han og kalder sit eget forbrug for et vanvittigt privilegium, som ikke alle har.\n\nHan advarer samtidig mod at behandle agenter som almindeligt software, hvor krav om sikkerhed og ensartede resultater kan koste de bedste egenskaber. Og gratis agenter fra de store techselskaber er ikke svaret, mener han med henvisning til Metas kontrol over algoritmer: en personlig AI bør være noget, man selv kontrollerer og programmerer."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "100.000–200.000 dollar",
+          "label": "Garry Tans eget overslag på sit årlige forbrug af tokens"
+        },
+        {
+          "tal": "23 skills",
+          "label": "Tans værktøjer til Claude Code, delt på GitHub som gstack"
+        }
+      ],
+      "detaljer": [
+        "Tan var tidlig bruger af OpenClaw og er ifølge sig selv blandt de mest erfarne.",
+        "Agenten bruges også til at researche podcasten og forberede spørgsmål, han kan få."
+      ],
+      "betydning": "Tan peger selv på prisen som den bremse, der holder personlige AI-agenter fra at blive hverdag for andre end de få, der kan betale.",
+      "pointer": [
+        "Tan betaler op til 200.000 dollar om året",
+        "Intern YC-agent hedder Stray Light",
+        "Prisen skal ned, før agenter bliver mainstream"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-03T02:39:59.962125+00:00"
+      },
+      "billedmotiv": "A bulky brass token meter with a coin slot stands over a stack of worn therapy notebooks and a mail envelope. A thick chain of gold tokens loops from the meter around the notebooks, while a compact solid agent tile with a simple compass arrow sits on top. The scene shows a personal AI agent consuming private archives at enormous cost.",
+      "billedmotiv_instruks": "b6418bd5896f48db2d07",
+      "billede": "data/img/cb9932e89c9cdb81.webp",
+      "side": "artikel/30470ccd04740eff.html"
+    },
+    {
+      "titel": "Trajectory raises $45M to make AI model training accessible to nontechnical experts",
+      "link": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+      "resume": "The one-year-old startup is now valued at $300 million.",
+      "dato": "2026-11-02T23:13:53+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-03T02:35:23.085730+00:00",
+      "eget_foerst_set": "2026-11-03T02:35:23.085730+00:00",
+      "rubrik": "Trajectory lader advokater træne AI-modeller selv",
+      "resume_da": "45 mio. dollar og en platform, der nu er åben for alle: Trajectory vil lade fagfolk uden teknisk baggrund forbedre open source-modeller med deres egen feedback.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Trajectory rejser 45 mio. dollar og værdisættes til 300 mio. for AI-træning til ikke-tekniske eksperter.",
+        "forbehold": "Uddraget siger intet om produktets modenhed eller kunder.",
+        "emne": "trajectory"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Modeller, der ikke lærer af fejl",
+          "tekst": "Nutidens AI-modeller lærer ikke af deres fejl, medmindre man træner dem videre. Derfor finjusterer virksomheder i blandt andet jura og finans en generel model — og det kræver ofte et internt forskerhold eller dyre konsulenter, som branchen kalder forward-deployed engineers.\n\nTrajectory vil automatisere den proces. Kunden starter med en open source-model og kobler platformen til sine applikationer, så den samler feedback op om, hvordan modellen klarer opgaverne.\n\nDen feedback bruger Trajectory til at træne modellen igen. Metoden hedder continual learning, kontinuerlig læring, og skal gøre modellen gradvist bedre til netop de opgaver, virksomheden løser."
+        },
+        {
+          "overskrift": "Advokater kan selv justere modellen",
+          "tekst": "Med Trajectory kan advokater, læger og andre specialister næsten selv forbedre modellerne, siger medstifter Ronak Malde. Brugerne afgør, hvad der er et godt resultat for deres organisation, og omsætter det til forbedringer af modellen.\n\nIfølge TechCrunch bruger Harvey og Rogo allerede platformen til at eftertræne open source-modeller, så de opfører sig mere som erfarne advokater eller finansanalytikere — eksempelvis når en bestemt type kontrakt skal gennemgås.\n\nAndre kunder er Decagon, Mercor og Nvidia. Platformen er nu offentligt tilgængelig."
+        },
+        {
+          "overskrift": "Mennesket bliver i maskinrummet",
+          "tekst": "Trajectorys metode ligner rekursiv selvforbedring, idéen om at AI-systemer kan forbedre deres egne evner. Medstifter Michael Elabd mener, at det er sikrere at holde mennesker inde i træningen, fordi selvstændig selvforbedring kan føre til utilsigtede eller farlige resultater.\n\nSelskabet er ikke alene om at automatisere eftertræning. Det ser Thinking Machines Lab — stiftet af tidligere OpenAI-CTO Mira Murati og selskabet bag finjusteringsplatformen Tinker — som en direkte konkurrent, ligesom Applied Compute og Prime Intellect.\n\nMalde peger på holdet som sin største fordel: stifterne har arbejdet hos Google DeepMind og Apple, og selskabet har hentet forskere og designere fra OpenAI, Stripe og Netflix. Medstifter Arjun Karanam siger, at de har bygget en grænseflade, der gør eftertræning tilgængelig for ikke-tekniske kunder."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "45 mio. dollar",
+          "label": "Series A-runde ledet af Sequoia"
+        },
+        {
+          "tal": "300 mio. dollar",
+          "label": "Værdiansættelse efter runden"
+        },
+        {
+          "tal": "3,25 mia. dollar",
+          "label": "Værdiansættelse af konkurrenten Applied Compute måneden før"
+        }
+      ],
+      "detaljer": [
+        "Trajectory blev grundlagt for cirka et år siden af tre Stanford-kammerater.",
+        "Nvidia, Bessemer Venture Partners og Bain Capital Ventures deltog i runden.",
+        "Selskabet har 18 ansatte.",
+        "Malde sammenligner grundmodeller med en klog PhD-studerende, der altid starter på et nyt job."
+      ],
+      "betydning": "Hvis specialister selv kan forbedre modellerne, kan specialiseret AI blive hurtigere og billigere at tage i brug og kræve færre dyre konsulenter.",
+      "pointer": [
+        "Platformen er nu offentligt tilgængelig",
+        "Konkurrenter tæller Thinking Machines Lab og Tinker",
+        "Mennesker holdes inde i træningsprocessen"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-03T02:40:17.058319+00:00"
+      },
+      "billedmotiv": "A thick wooden gavel strikes a round feedback button. A wide solid arrow loops from the button into a blocky open-source model cube, with a neat stack of legal document tiles beside it. The scene shows lawyers directly correcting and retraining a model through their own feedback.",
+      "billedmotiv_instruks": "a2c4bbe2f557dbb6e597",
+      "billede": "data/img/0942aeae9c31e15a.webp",
+      "side": "artikel/c368c304bd55e435.html"
+    },
+    {
+      "titel": "Apple may try to increase revenue by doing…something with third-party AI apps",
+      "link": "https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/",
+      "resume": "Apple hinted at ways that it could spur revenue through third-party \"opportunities\" during its Monday night earnings call.",
+      "dato": "2026-11-03T01:49:52+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-03T02:35:23.085730+00:00",
+      "eget_foerst_set": "2026-11-03T02:35:23.085730+00:00",
+      "rubrik": "Apple antyder AI-indtægter fra tredjepartsapps",
+      "resume_da": "Apples finansdirektør peger på muligheder i tredjepartsapps, men uddyber ikke. Investorer spekulerer i en andel af indtægter fra AI-agenter i App Store.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Apple antyder på regnskabsopkaldet ukonkrete indtægtsmuligheder med tredjeparts-AI-apps.",
+        "forbehold": "Ingen detaljer om hvad, hvornår eller hvordan.",
+        "emne": "apple"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Parekh ser muligheder i tredjepartsapps",
+          "tekst": "På regnskabsopkaldet for septemberkvartalet sagde Apples finansdirektør, Kevan Parekh, at AI på sigt kan bidrage til vækst. Han pegede på muligheder i tredjepartsapps, altså apps fra andre udviklere end Apple, og i partnerskaber samt i Apples egne produkter. Han uddybede ikke, hvad det konkret betyder.\n\nIfølge Reuters spekulerer investorerne i, om Apple kan tjene på at distribuere tredjeparts-AI-agenter – AI-programmer, der kan udføre opgaver for brugeren – via App Store og tage en andel af de indtægter, de skaber. Apple har ikke bekræftet en sådan model."
+        },
+        {
+          "overskrift": "App Store-kommissioner under pres",
+          "tekst": "Apples serviceforretning er på rekordniveau, men App Store er under pres. Nye regler og retssager har skåret i kommissionerne. Ifølge tredjepartsestimater fra august faldt Apples amerikanske kommissionsindtægter med 18 pct., og der var også fald i Brasilien og Japan efter nye regler.\n\nEpic Games-sagen førte til, at Apple måtte tillade apps at henvise brugere til betalingssystemer uden for App Store. Apple har traditionelt krævet en andel af alle transaktioner i butikken."
+        },
+        {
+          "overskrift": "Abonnementer for tredjepartsapps voksede tocifret",
+          "tekst": "I septemberkvartalet var App Stores præstation på niveau med året før, og Apple havde et rekordantal betalte abonnementer. Betalte abonnementer for tredjepartsapps voksede tocifret, sagde Parekh. Samtidig venter Apple modvind i mobilspil, som ventes at fortsætte i sommerkvarteret.\n\nApple forventer 8-9 pct. vækst i serviceforretningen i decemberkvartalet. Udsigten indregner modvind fra tredjepartslicenser og et ekstra halvt procentpoint fra valuta."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "18 pct.",
+          "label": "Fald i Apples amerikanske kommissionsindtægter ifølge tredjepartsestimat fra august"
+        },
+        {
+          "tal": "8-9 pct.",
+          "label": "Forventet vækst i Apples serviceforretning i decemberkvartalet"
+        },
+        {
+          "tal": "0,5 procentpoint",
+          "label": "Ekstra modvind fra valuta i Apples udsigt for decemberkvartalet"
+        }
+      ],
+      "detaljer": [
+        "Reuters bragte investorernes spekulation samme dag som regnskabsopkaldet.",
+        "TechCrunch har kontaktet Apple for yderligere kommentar."
+      ],
+      "betydning": "Hvis Apple tager en andel af indtægter fra tredjeparts-AI-agenter, vil det være en ny indtægtskilde efter fald i kommissionsindtægter i flere markeder.",
+      "pointer": [
+        "Apple uddybede ikke mulighederne i tredjepartsapps",
+        "Reuters: investorer spekulerer i andel af AI-agent-indtægter",
+        "18 pct. fald i amerikanske kommissioner ifølge tredjepartsestimat"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-03T02:43:32.741043+00:00"
+      },
+      "billedmotiv": "A large black Apple mark is mounted on the front of a solid blue App Store kiosk. A thick app tile with a small connected-node agent symbol enters one side, and a gold coin drops through a slot into the kiosk’s coin drawer. The scene shows a third-party AI app paying Apple a share.",
+      "billedmotiv_instruks": "354432dae7ac909252c5",
+      "side": "artikel/dc645454d4f3c109.html"
+    },
+    {
+      "titel": "The latest AI news we announced in October 2026",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+      "resume": "Here are Google’s latest AI updates from October 2026",
+      "dato": "2026-11-02T17:45:00+00:00",
+      "kilde": "Google Gemini",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-11-02T18:45:47.523033+00:00",
+      "eget_foerst_set": "2026-11-02T18:45:47.523033+00:00",
+      "rubrik": "Google udruller Gemini 4 Argon globalt",
+      "resume_da": "Googles nye model Gemini 4 Argon er nu tilgængelig globalt til komplekse opgaver. To uger senere annoncerede de Gemini 4 Carbon til cybersikkerhed.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google samler sine AI-opdateringer fra oktober 2026 uden enkeltheder i det medsendte uddrag.",
+        "forbehold": "Uddraget specificerer ikke lanceringerne.",
+        "emne": "google"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Global adgang til komplekse opgaver",
+          "tekst": "Google har rullet Gemini 4 Argon ud globalt. Det er en såkaldt frontiermodel, altså en af de stærkeste modeller, virksomheden har, og den kan bruges til kompleks kodning, finansiel analyse og juridiske arbejdsgange. Udrulningen omfatter udviklere, virksomheder, forskere og almindelige brugere.\n\nDen er tilgængelig gennem Google AI Studio, Google Cloud, Search og Gemini-appen samt et API, som udviklere bruger til at koble modellen til deres egne systemer. Ifølge Google driver den også fysisk ræsonnement gennem Gemini 4 Argon for Robotics."
+        },
+        {
+          "overskrift": "Carbon er stærkest men kun i test",
+          "tekst": "To uger efter udrulningen af Argon annoncerede Google Gemini 4 Carbon. Ifølge Google er det deres stærkeste model til langvarigt ingeniørarbejde og cybersikkerhedsforsvar.\n\nCarbon er ikke frit tilgængelig endnu. Den er i pre-release test med den amerikanske regering og et udvalg af betroede cyberforsvarere gennem Fairwind Program, mens Google finpudser sikkerhedsforanstaltningerne."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "2 uger",
+          "label": "Tid mellem global udrulning af Gemini 4 Argon og annonceringen af Gemini 4 Carbon"
+        }
+      ],
+      "detaljer": [
+        "Argon blev sikkerhedstestet, inden den blev rullet ud globalt.",
+        "Google planlægger en bredere lancering af Carbon til udviklere, virksomheder og forbrugere."
+      ],
+      "betydning": "Udviklere og virksomheder kan nu bygge på Gemini 4 Argon globalt, mens Gemini 4 Carbon kun er tilgængelig for et begrænset testpanel indtil videre.",
+      "pointer": [
+        "Gemini 4 Argon er globalt tilgængelig nu.",
+        "Gemini 4 Carbon er annonceret men i test."
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-03T02:43:19.660539+00:00"
+      },
+      "billedmotiv": "A large concave four-point Gemini spark in blue, red, yellow and green stands front-facing on a solid globe, with a thick code bracket orbiting beside it. The scene clearly shows Gemini 4 Argon reaching users worldwide for complex technical work.",
+      "billedmotiv_instruks": "dcc8fb7f4ea57b64f3bd",
+      "billede": "data/img/ca379b2a75e3e843.webp",
+      "side": "artikel/ff01b8b9f0687b69.html"
     }
   ]
 }

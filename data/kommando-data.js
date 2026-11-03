@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-02T19:03:25.340346+00:00",
+ "genereret": "2026-11-03T02:54:59.906267+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,26 +195,25 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-02T18:45:47.523033+00:00",
-  "antal": 130,
-  "med_billede": 58,
-  "paa_dansk": 130,
+  "opdateret": "2026-11-03T02:35:23.085730+00:00",
+  "antal": 123,
+  "med_billede": 63,
+  "paa_dansk": 123,
   "kategorier": {
    "Politik \u0026 jura": 14,
-   "Penge \u0026 marked": 42,
-   "Lanceringer": 19,
-   "Samfund \u0026 etik": 17,
-   "Hverdags-AI": 27,
-   "Forskning": 10,
-   "Nyheder": 1
+   "Penge \u0026 marked": 37,
+   "Samfund \u0026 etik": 16,
+   "Lanceringer": 20,
+   "Hverdags-AI": 26,
+   "Forskning": 10
   },
   "kilder": {
-   "Ars Technica AI": 13,
-   "The Verge AI": 32,
-   "TechCrunch AI": 54,
-   "MIT Tech Review AI": 8,
-   "Google Gemini": 7,
+   "Ars Technica AI": 11,
+   "The Verge AI": 26,
+   "TechCrunch AI": 56,
    "Simon Willison AI": 9,
+   "MIT Tech Review AI": 6,
+   "Google Gemini": 8,
    "Mistral AI": 3,
    "Hugging Face": 1,
    "Google DeepMind": 3
@@ -241,17 +240,67 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/fac5c4d563407830.webp"
    },
    {
-    "titel": "Elon Musk throttles Grok Bot limits due to ‘unsustainably high’ costs",
-    "rubrik": "Musk sænker Grok Bot-grænser efter høje omkostninger",
-    "link": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/",
-    "side": "artikel/b7a0e68320c363ea.html",
-    "kategori": "Penge \u0026 marked",
+    "titel": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
+    "rubrik": "Anthropic varsler mulig RSI inden længe",
+    "link": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+    "side": "artikel/b86b88ec9ca0ed8c.html",
+    "kategori": "Samfund \u0026 etik",
     "kilde": "TechCrunch AI",
-    "dato": "2026-11-02T16:23:21+00:00",
-    "billede": "data/img/8d4482a78414f8f2.webp"
+    "dato": "2026-11-02T22:14:50+00:00",
+    "billede": "data/img/434ff283f0614204.jpg"
    }
   ],
   "seneste": [
+   {
+    "titel": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
+    "rubrik": "Anthropic varsler mulig RSI inden længe",
+    "link": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+    "side": "artikel/b86b88ec9ca0ed8c.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-02T22:14:50+00:00",
+    "billede": "data/img/434ff283f0614204.jpg"
+   },
+   {
+    "titel": "llm 0.37",
+    "rubrik": "LLM skifter til gpt-6-luna til halv pris",
+    "link": "https://simonwillison.net/2026/Nov/2/llm/",
+    "side": "artikel/5e2d12465b29b09a.html",
+    "kategori": "Lanceringer",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-11-02T23:49:30+00:00",
+    "billede": "data/img/88caaab27b9c8bda.webp"
+   },
+   {
+    "titel": "Y Combinator’s Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
+    "rubrik": "Garry Tan: Op til 200.000 dollar til AI-tokens",
+    "link": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
+    "side": "artikel/30470ccd04740eff.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-03T00:35:52+00:00",
+    "billede": "data/img/cb9932e89c9cdb81.webp"
+   },
+   {
+    "titel": "Trajectory raises $45M to make AI model training accessible to nontechnical experts",
+    "rubrik": "Trajectory lader advokater træne AI-modeller selv",
+    "link": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+    "side": "artikel/c368c304bd55e435.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-02T23:13:53+00:00",
+    "billede": "data/img/0942aeae9c31e15a.webp"
+   },
+   {
+    "titel": "Apple may try to increase revenue by doing…something with third-party AI apps",
+    "rubrik": "Apple antyder AI-indtægter fra tredjepartsapps",
+    "link": "https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/",
+    "side": "artikel/dc645454d4f3c109.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-03T01:49:52+00:00",
+    "billede": ""
+   },
    {
     "titel": "Claude’s new rules against game cloning won’t stop the AI copying boom",
     "rubrik": "Claude får forbud mod at genskabe spil",
@@ -293,6 +342,16 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/8d4482a78414f8f2.webp"
    },
    {
+    "titel": "OpenAI is finally merging ChatGPT’s Chat and Work tabs",
+    "rubrik": "OpenAI merger Chat og Work i ChatGPT",
+    "link": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/",
+    "side": "artikel/e0d9533470c8827b.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-02T13:57:53+00:00",
+    "billede": "data/img/309d2d140365b80b.webp"
+   },
+   {
     "titel": "42AI comes out of stealth with $62.5M and a world model that can ‘predict human behavior’",
     "rubrik": "42AI vil forudsige, hvordan tradere reagerer",
     "link": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
@@ -311,71 +370,11 @@ window.KOMMANDO_DATA = {
     "kilde": "MIT Tech Review AI",
     "dato": "2026-11-02T17:00:00+00:00",
     "billede": "data/img/e0b10209bc84972c.webp"
-   },
-   {
-    "titel": "OpenAI is finally merging ChatGPT’s Chat and Work tabs",
-    "rubrik": "OpenAI merger Chat og Work i ChatGPT",
-    "link": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/",
-    "side": "artikel/e0d9533470c8827b.html",
-    "kategori": "Nyheder",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-02T13:57:53+00:00",
-    "billede": "data/img/309d2d140365b80b.webp"
-   },
-   {
-    "titel": "Stop counting tokens, start counting what ships",
-    "rubrik": "HPE måler AI-kode per færdigt pull request",
-    "link": "https://www.technologyreview.com/2026/11/02/1147702/stop-counting-tokens-start-counting-what-ships/",
-    "side": "artikel/6e7d4661da08e363.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "MIT Tech Review AI",
-    "dato": "2026-11-02T13:10:32+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Omen AI adds liquid know-how in $16 million Aquatic Labs acquisition",
-    "rubrik": "Omen AI køber konkurrent for 16 millioner dollar",
-    "link": "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/",
-    "side": "artikel/d2641740e5f255ec.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-02T15:00:00+00:00",
-    "billede": "data/img/f9d806d3b94b063c.webp"
-   },
-   {
-    "titel": "The U.S. Census Bureau and “Super Intelligence”",
-    "rubrik": "Census Bureau spørger nu til Super Intelligence",
-    "link": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
-    "side": "artikel/d0367c83a5219a74.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-11-02T13:31:26+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "AI can make tech CEOs’ lives easier. What about everyone else?",
-    "rubrik": "Marissa Mayer får kritik for AI-hjælp til skoleopgave",
-    "link": "https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else/",
-    "side": "artikel/b3a6357c7fdd515d.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-01T20:57:58+00:00",
-    "billede": "data/img/ee3d125c46e3b6d4.webp"
-   },
-   {
-    "titel": "OpenAI might rebrand its data centers as ‘AI compute campuses’",
-    "rubrik": "OpenAI vil måske omdøbe datacentre til campus",
-    "link": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
-    "side": "artikel/cf5e1b5d84c4197b.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-01T21:55:23+00:00",
-    "billede": "data/img/a15a7c3839375314.jpg"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-02T18:45:47.523033+00:00",
+  "opdateret": "2026-11-03T02:35:23.085730+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -383,19 +382,19 @@ window.KOMMANDO_DATA = {
   "kildehentninger": 0,
   "regelbaseret_udvalg": [
    "https://openai.com/index/lifeval",
-   "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/",
+   "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
    "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
   ],
   "udgivet_udvalg": [
    "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/",
    "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
-   "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/"
+   "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
   ],
   "vaerktoejer": [],
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-11-02T18:45:46.932872+00:00",
+  "opdateret": "2026-11-03T02:35:22.490216+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -751,8 +750,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-02T18:45:47.523033+00:00",
-  "artikler_i_alt": 130,
+  "opdateret": "2026-11-03T02:35:23.085730+00:00",
+  "artikler_i_alt": 123,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -829,7 +828,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 7,
+    "i_listen": 8,
     "som_ekstra": 2,
     "seneste": [
      {
@@ -849,6 +848,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
+     },
+     {
+      "rubrik": "Google udruller Gemini 4 Argon globalt",
+      "dato": "2026-11-02T17:45:00",
+      "foerst_set": "2026-11-02T18:45:47",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+      "side": "artikel/ff01b8b9f0687b69.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Google Gemini redigerer filer i chatten",
@@ -976,6 +984,15 @@ window.KOMMANDO_DATA = {
       "under": "Mistral Large 4 klarer opgaver andre afviser"
      },
      {
+      "rubrik": "LLM skifter til gpt-6-luna til halv pris",
+      "dato": "2026-11-02T23:49:30",
+      "foerst_set": "2026-11-03T02:35:23",
+      "link": "https://simonwillison.net/2026/Nov/2/llm/",
+      "side": "artikel/5e2d12465b29b09a.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Census Bureau spørger nu til Super Intelligence",
       "dato": "2026-11-02T13:31:26",
       "foerst_set": "2026-11-02T18:45:47",
@@ -1046,15 +1063,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/5e4a51fd299e58b3.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "ChatGPT sender supportproblemer til 404 Media",
-      "dato": "2026-10-26T19:00:25",
-      "foerst_set": "2026-10-26T21:09:48",
-      "link": "https://simonwillison.net/2026/Oct/26/jason-koebler/",
-      "side": "artikel/bf9f3a9c276f7c9d.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1068,9 +1076,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 54,
+    "i_listen": 56,
     "som_ekstra": 2,
     "seneste": [
+     {
+      "rubrik": "New York Times sagsøger Brave for tekstskrabning",
+      "dato": "",
+      "foerst_set": "2026-11-03T02:35:23",
+      "link": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
+      "side": "",
+      "hvor": "under",
+      "under": "New York Times sagsøger Brave for AI-scraping"
+     },
      {
       "rubrik": "DoorDash: Kun få hundrede ordrer fra AI-agenter",
       "dato": "",
@@ -1099,13 +1116,40 @@ window.KOMMANDO_DATA = {
       "under": "Microsoft henter 10 milliarder dollar på OpenAI"
      },
      {
-      "rubrik": "Flertal af store Anthropic-kunder bruger Claude-apps",
-      "dato": "",
-      "foerst_set": "2026-10-26T21:09:48",
-      "link": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
-      "side": "",
-      "hvor": "under",
-      "under": "Anthropic vil på Nasdaq med ticker ANT"
+      "rubrik": "Anthropic varsler mulig RSI inden længe",
+      "dato": "2026-11-02T22:14:50",
+      "foerst_set": "2026-11-03T02:35:23",
+      "link": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+      "side": "artikel/b86b88ec9ca0ed8c.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Garry Tan: Op til 200.000 dollar til AI-tokens",
+      "dato": "2026-11-03T00:35:52",
+      "foerst_set": "2026-11-03T02:35:23",
+      "link": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
+      "side": "artikel/30470ccd04740eff.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Trajectory lader advokater træne AI-modeller selv",
+      "dato": "2026-11-02T23:13:53",
+      "foerst_set": "2026-11-03T02:35:23",
+      "link": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+      "side": "artikel/c368c304bd55e435.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Apple antyder AI-indtægter fra tredjepartsapps",
+      "dato": "2026-11-03T01:49:52",
+      "foerst_set": "2026-11-03T02:35:23",
+      "link": "https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/",
+      "side": "artikel/dc645454d4f3c109.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Musk sænker Grok Bot-grænser efter høje omkostninger",
@@ -1113,15 +1157,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-11-02T18:45:47",
       "link": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/",
       "side": "artikel/b7a0e68320c363ea.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "42AI vil forudsige, hvordan tradere reagerer",
-      "dato": "2026-11-02T16:30:00",
-      "foerst_set": "2026-11-02T18:45:47",
-      "link": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
-      "side": "artikel/b6e2d45456503ed8.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1135,47 +1170,20 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
+      "rubrik": "42AI vil forudsige, hvordan tradere reagerer",
+      "dato": "2026-11-02T16:30:00",
+      "foerst_set": "2026-11-02T18:45:47",
+      "link": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
+      "side": "artikel/b6e2d45456503ed8.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Omen AI køber konkurrent for 16 millioner dollar",
       "dato": "2026-11-02T15:00:00",
       "foerst_set": "2026-11-02T18:45:47",
       "link": "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/",
       "side": "artikel/d2641740e5f255ec.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Marissa Mayer får kritik for AI-hjælp til skoleopgave",
-      "dato": "2026-11-01T20:57:58",
-      "foerst_set": "2026-11-02T06:42:08",
-      "link": "https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else/",
-      "side": "artikel/b3a6357c7fdd515d.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "OpenAI vil måske omdøbe datacentre til campus",
-      "dato": "2026-11-01T21:55:23",
-      "foerst_set": "2026-11-02T06:42:08",
-      "link": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
-      "side": "artikel/cf5e1b5d84c4197b.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "NAACP's forureningssag mod xAI fortsætter",
-      "dato": "2026-10-31T21:17:03",
-      "foerst_set": "2026-10-31T23:37:47",
-      "link": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
-      "side": "artikel/9a46afb49d1d4059.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Ternus: Vi sender ikke AI for AI'ens skyld",
-      "dato": "2026-10-31T21:41:00",
-      "foerst_set": "2026-10-31T23:37:47",
-      "link": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
-      "side": "artikel/8462b9fc7109b30b.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1191,9 +1199,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 32,
-    "som_ekstra": 4,
+    "i_listen": 26,
+    "som_ekstra": 5,
     "seneste": [
+     {
+      "rubrik": "Anthropic vil stoppe Claude med at klone spil",
+      "dato": "",
+      "foerst_set": "2026-11-03T02:35:23",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+      "side": "",
+      "hvor": "under",
+      "under": "Claude får forbud mod at genskabe spil"
+     },
      {
       "rubrik": "Gemma 4 svarede fra Googles satellit",
       "dato": "",
@@ -1292,15 +1309,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/22e8c569cc060b0a.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Starbucks undersøger personlig AI-menu ved drive-thru",
-      "dato": "2026-10-30T13:38:04",
-      "foerst_set": "2026-10-30T21:00:09",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
-      "side": "artikel/a5d82a5cf5c844da.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1314,7 +1322,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 13,
+    "i_listen": 11,
     "som_ekstra": 2,
     "seneste": [
      {
@@ -1437,7 +1445,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 6,
-    "i_listen": 8,
+    "i_listen": 6,
     "som_ekstra": 0,
     "seneste": [
      {
@@ -1491,24 +1499,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-27T14:52:12",
       "link": "https://www.technologyreview.com/2026/10/27/1147142/industrial-intelligence-the-next-growth-opportunity-for-manufacturing/",
       "side": "artikel/e3353615c610f4d0.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Anthropic sælger sin historie på vej mod børsen",
-      "dato": "2026-10-26T17:45:43",
-      "foerst_set": "2026-10-26T21:09:48",
-      "link": "https://www.technologyreview.com/2026/10/26/1147672/will-the-real-anthropic-please-stand-up/",
-      "side": "artikel/57916c9fe91871f6.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Google støttede AI-love med brede smuthuller",
-      "dato": "2026-10-26T09:01:00",
-      "foerst_set": "2026-10-26T15:25:50",
-      "link": "https://www.technologyreview.com/2026/10/26/1147645/the-focus-on-ai-safety-disasters-ignores-everyday-harms/",
-      "side": "artikel/1992a716e85df44e.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1610,7 +1600,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-02T19:03:17.363558+00:00",
+  "opdateret": "2026-11-03T02:54:52.234038+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
@@ -1618,11 +1608,6 @@ window.KOMMANDO_DATA = {
   "sidevisninger_i_alt": 28,
   "ai_chat_besoeg": 0,
   "serie": [
-   {
-    "dato": "2026-10-04",
-    "besoeg": 0,
-    "visninger": 0
-   },
    {
     "dato": "2026-10-05",
     "besoeg": 0,
@@ -1765,6 +1750,11 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-11-02",
+    "besoeg": 0,
+    "visninger": 0
+   },
+   {
+    "dato": "2026-11-03",
     "besoeg": 0,
     "visninger": 0
    }

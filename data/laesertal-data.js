@@ -1,10 +1,9 @@
 window.LAESERTAL = {
- "opdateret": "2026-11-02T19:03:17.363558+00:00",
+ "opdateret": "2026-11-03T02:54:52.234038+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
   "datoer": [
-   "2026-10-04",
    "2026-10-05",
    "2026-10-06",
    "2026-10-07",
@@ -33,13 +32,13 @@ window.LAESERTAL = {
    "2026-10-30",
    "2026-10-31",
    "2026-11-01",
-   "2026-11-02"
+   "2026-11-02",
+   "2026-11-03"
   ],
   "serier": [
    {
     "navn": "Penge & marked",
     "tal": [
-     0,
      4,
      4,
      8,
@@ -68,13 +67,13 @@ window.LAESERTAL = {
      9,
      3,
      0,
-     4
+     5,
+     1
     ]
    },
    {
     "navn": "Lanceringer",
     "tal": [
-     1,
      2,
      7,
      8,
@@ -103,13 +102,13 @@ window.LAESERTAL = {
      1,
      0,
      0,
+     2,
      0
     ]
    },
    {
     "navn": "Samfund & etik",
     "tal": [
-     1,
      7,
      0,
      3,
@@ -138,13 +137,13 @@ window.LAESERTAL = {
      3,
      0,
      2,
+     1,
      0
     ]
    },
    {
     "navn": "Hverdags-AI",
     "tal": [
-     0,
      7,
      4,
      2,
@@ -173,13 +172,13 @@ window.LAESERTAL = {
      3,
      1,
      0,
-     3
+     4,
+     1
     ]
    },
    {
     "navn": "Politik & jura",
     "tal": [
-     1,
      4,
      1,
      0,
@@ -208,13 +207,13 @@ window.LAESERTAL = {
      5,
      1,
      0,
-     2
+     2,
+     0
     ]
    },
    {
     "navn": "Forskning",
     "tal": [
-     1,
      4,
      2,
      2,
@@ -241,6 +240,7 @@ window.LAESERTAL = {
      1,
      1,
      3,
+     0,
      0,
      0,
      0
@@ -250,7 +250,6 @@ window.LAESERTAL = {
     "navn": "Nyheder",
     "tal": [
      0,
-     0,
      1,
      1,
      0,
@@ -278,7 +277,8 @@ window.LAESERTAL = {
      0,
      0,
      0,
-     1
+     0,
+     0
     ]
    }
   ]
@@ -332,11 +332,6 @@ window.LAESERTAL = {
   "/cookies.html"
  ],
  "serie": [
-  {
-   "dato": "2026-10-04",
-   "besoeg": 0,
-   "visninger": 0
-  },
   {
    "dato": "2026-10-05",
    "besoeg": 0,
@@ -479,6 +474,11 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-11-02",
+   "besoeg": 0,
+   "visninger": 0
+  },
+  {
+   "dato": "2026-11-03",
    "besoeg": 0,
    "visninger": 0
   }

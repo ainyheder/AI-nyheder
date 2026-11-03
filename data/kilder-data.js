@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-02T18:45:47.523033+00:00",
- "artikler_i_alt": 130,
+ "opdateret": "2026-11-03T02:35:23.085730+00:00",
+ "artikler_i_alt": 123,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -88,7 +88,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 7,
+   "i_listen": 8,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -108,6 +108,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
+    },
+    {
+     "rubrik": "Google udruller Gemini 4 Argon globalt",
+     "dato": "2026-11-02T17:45:00",
+     "foerst_set": "2026-11-02T18:45:47",
+     "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+     "side": "artikel/ff01b8b9f0687b69.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Google Gemini redigerer filer i chatten",
@@ -255,6 +264,15 @@ window.KILDER_STATUS = {
      "under": "Mistral Large 4 klarer opgaver andre afviser"
     },
     {
+     "rubrik": "LLM skifter til gpt-6-luna til halv pris",
+     "dato": "2026-11-02T23:49:30",
+     "foerst_set": "2026-11-03T02:35:23",
+     "link": "https://simonwillison.net/2026/Nov/2/llm/",
+     "side": "artikel/5e2d12465b29b09a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Census Bureau spørger nu til Super Intelligence",
      "dato": "2026-11-02T13:31:26",
      "foerst_set": "2026-11-02T18:45:47",
@@ -325,15 +343,6 @@ window.KILDER_STATUS = {
      "side": "artikel/5e4a51fd299e58b3.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "ChatGPT sender supportproblemer til 404 Media",
-     "dato": "2026-10-26T19:00:25",
-     "foerst_set": "2026-10-26T21:09:48",
-     "link": "https://simonwillison.net/2026/Oct/26/jason-koebler/",
-     "side": "artikel/bf9f3a9c276f7c9d.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -353,9 +362,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 54,
+   "i_listen": 56,
    "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "New York Times sagsøger Brave for tekstskrabning",
+     "dato": "",
+     "foerst_set": "2026-11-03T02:35:23",
+     "link": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
+     "side": "",
+     "hvor": "under",
+     "under": "New York Times sagsøger Brave for AI-scraping"
+    },
     {
      "rubrik": "DoorDash: Kun få hundrede ordrer fra AI-agenter",
      "dato": "",
@@ -384,13 +402,40 @@ window.KILDER_STATUS = {
      "under": "Microsoft henter 10 milliarder dollar på OpenAI"
     },
     {
-     "rubrik": "Flertal af store Anthropic-kunder bruger Claude-apps",
-     "dato": "",
-     "foerst_set": "2026-10-26T21:09:48",
-     "link": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic vil på Nasdaq med ticker ANT"
+     "rubrik": "Anthropic varsler mulig RSI inden længe",
+     "dato": "2026-11-02T22:14:50",
+     "foerst_set": "2026-11-03T02:35:23",
+     "link": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+     "side": "artikel/b86b88ec9ca0ed8c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Garry Tan: Op til 200.000 dollar til AI-tokens",
+     "dato": "2026-11-03T00:35:52",
+     "foerst_set": "2026-11-03T02:35:23",
+     "link": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
+     "side": "artikel/30470ccd04740eff.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Trajectory lader advokater træne AI-modeller selv",
+     "dato": "2026-11-02T23:13:53",
+     "foerst_set": "2026-11-03T02:35:23",
+     "link": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+     "side": "artikel/c368c304bd55e435.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Apple antyder AI-indtægter fra tredjepartsapps",
+     "dato": "2026-11-03T01:49:52",
+     "foerst_set": "2026-11-03T02:35:23",
+     "link": "https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/",
+     "side": "artikel/dc645454d4f3c109.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Musk sænker Grok Bot-grænser efter høje omkostninger",
@@ -402,20 +447,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "42AI vil forudsige, hvordan tradere reagerer",
-     "dato": "2026-11-02T16:30:00",
-     "foerst_set": "2026-11-02T18:45:47",
-     "link": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
-     "side": "artikel/b6e2d45456503ed8.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "OpenAI merger Chat og Work i ChatGPT",
      "dato": "2026-11-02T13:57:53",
      "foerst_set": "2026-11-02T18:45:47",
      "link": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/",
      "side": "artikel/e0d9533470c8827b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "42AI vil forudsige, hvordan tradere reagerer",
+     "dato": "2026-11-02T16:30:00",
+     "foerst_set": "2026-11-02T18:45:47",
+     "link": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
+     "side": "artikel/b6e2d45456503ed8.html",
      "hvor": "forside",
      "under": ""
     },
@@ -463,42 +508,6 @@ window.KILDER_STATUS = {
      "side": "artikel/8462b9fc7109b30b.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI sænker sit mål til 20 milliarder dollars",
-     "dato": "2026-10-31T16:12:55",
-     "foerst_set": "2026-10-31T20:14:09",
-     "link": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/",
-     "side": "artikel/149be8f7454bcbde.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Alphabet og Amazon i minus på AI",
-     "dato": "2026-10-30T21:17:40",
-     "foerst_set": "2026-10-31T06:12:14",
-     "link": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
-     "side": "artikel/d2ae3dfb1d7fd7f4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Blackstone venter junk-rating til Anthropic efter IPO",
-     "dato": "2026-10-30T21:52:03",
-     "foerst_set": "2026-10-31T06:12:14",
-     "link": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
-     "side": "artikel/d12607a6e4746ac3.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Ollie lukker efter konkurrence fra Muse og Instinct",
-     "dato": "2026-10-30T22:56:13",
-     "foerst_set": "2026-10-31T06:12:14",
-     "link": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/",
-     "side": "artikel/d319498a5eb3b02d.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -530,9 +539,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 32,
-   "som_ekstra": 4,
+   "i_listen": 26,
+   "som_ekstra": 5,
    "seneste": [
+    {
+     "rubrik": "Anthropic vil stoppe Claude med at klone spil",
+     "dato": "",
+     "foerst_set": "2026-11-03T02:35:23",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+     "side": "",
+     "hvor": "under",
+     "under": "Claude får forbud mod at genskabe spil"
+    },
     {
      "rubrik": "Gemma 4 svarede fra Googles satellit",
      "dato": "",
@@ -661,7 +679,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Anthropic lover mirakler og advarer om udslettelse",
-     "dato": "2026-10-30T09:11:05",
+     "dato": "2026-10-30T13:11:05",
      "foerst_set": "2026-10-30T15:15:27",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles",
      "side": "artikel/97cc063537e04ec4.html",
@@ -695,6 +713,10 @@ window.KILDER_STATUS = {
     [
      "Google Gemini",
      2
+    ],
+    [
+     "Ars Technica AI",
+     1
     ]
    ]
   },
@@ -708,7 +730,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 13,
+   "i_listen": 11,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -827,21 +849,16 @@ window.KILDER_STATUS = {
      "side": "artikel/691ccc79422d9dd0.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Siri AI husker samtaler i iOS 27.2",
-     "dato": "2026-10-26T20:04:16",
-     "foerst_set": "2026-10-26T21:09:48",
-     "link": "https://arstechnica.com/apple/2026/10/apple-releases-ios-and-macos-27-2-with-new-siri-ai-features-new-music-logo/",
-     "side": "artikel/25b40a661f74cd01.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
      2
+    ],
+    [
+     "The Verge AI",
+     1
     ],
     [
      "Google Gemini",
@@ -859,7 +876,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 8,
+   "i_listen": 6,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -913,24 +930,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-27T14:52:12",
      "link": "https://www.technologyreview.com/2026/10/27/1147142/industrial-intelligence-the-next-growth-opportunity-for-manufacturing/",
      "side": "artikel/e3353615c610f4d0.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Anthropic sælger sin historie på vej mod børsen",
-     "dato": "2026-10-26T17:45:43",
-     "foerst_set": "2026-10-26T21:09:48",
-     "link": "https://www.technologyreview.com/2026/10/26/1147672/will-the-real-anthropic-please-stand-up/",
-     "side": "artikel/57916c9fe91871f6.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google støttede AI-love med brede smuthuller",
-     "dato": "2026-10-26T09:01:00",
-     "foerst_set": "2026-10-26T15:25:50",
-     "link": "https://www.technologyreview.com/2026/10/26/1147645/the-focus-on-ai-safety-disasters-ignores-everyday-harms/",
-     "side": "artikel/1992a716e85df44e.html",
      "hvor": "forside",
      "under": ""
     }
