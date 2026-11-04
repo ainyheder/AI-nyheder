@@ -1,10 +1,10 @@
 {
- "rubrik": "Frontmodeller, åbne vægte og cyberforsvar",
- "indledning": "Ugen samlede sig om nye frontmodeller til cyberforsvar, en verdensmodel med lyd og et omstridt matematisk gennembrud. Samtidig viste Anthropics børsprospekt, hvor tæt kapital og katastroferisiko følges ad.",
+ "rubrik": "Specialiserede modeller, åbne vægte og kampen om data og regnekraft",
+ "indledning": "De store AI-lanceringer i perioden peger i flere retninger: modeller bliver mere specialiserede, mere åbne og mere bundet til kontrol over data og økonomi.",
  "historier": [
   {
-   "overskrift": "Gemini 4 Carbon topper Googles cyberbenchmarks",
-   "tekst": "Google annoncerede Gemini 4 Carbon som sin stærkeste model til især cyberforsvar og langvarige opgaver. Ifølge Google topper den Artificial Analysis Intelligence Index og får 88,2 procent i SEC-bench Pro. Adgangen begynder med en mindre gruppe cyberforsvarere; Google lover ingen dato for bred udgivelse.",
+   "overskrift": "Google annoncerer Gemini 4 Carbon til cyberforsvar",
+   "tekst": "Google annoncerede 28. oktober Gemini 4 Carbon som sin stærkeste model til dato med fokus på at finde og lukke sårbarheder i kode. Selskabet hævder topresultater på flere benchmarks, men modellen er foreløbig kun åben for udvalgte cyberforsvarere gennem Fairwind Program. Google oplyser ingen dato for bred udgivelse.",
    "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
    "kategori": "Lanceringer",
    "billede": "data/img/4b3d4e5d0a140c8a.jpg",
@@ -41,8 +41,8 @@
    "artikel_signatur": "d86b4dd0b49420ad7bce6bdb6f852424fa8419965d8d3d1a95f3090d6c08f3cc"
   },
   {
-   "overskrift": "Mistral frigiver vægtene til sin trillionmodel",
-   "tekst": "Mistral frigav vægtene til Mistral Large 4, som selskabet kalder en trillion-parametermodel, på Hugging Face. Modellen er især rettet mod cybersikkerhed, og Mistral hævder, at den yder som GLM-5.3 med 47 procent færre tokens pr. opgave. Virksomheder og myndigheder kan nu selv huse modellen.",
+   "overskrift": "Mistral frigiver vægtene til trillionmodellen Large 4",
+   "tekst": "Mistral lagde 29. oktober vægtene til Mistral Large 4 på Hugging Face. Selskabet kalder modellen en trillion-parameter-model og retter den især mod cybersikkerhed. Virksomheder og myndigheder kan nu hente og selv køre den i stedet for at gå gennem Mistrals servere. Mistral hævder, at modellen yder på niveau med GLM-5.3 med færre tokens per opgave.",
    "link": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
    "kategori": "Lanceringer",
    "billede": "data/img/f4fa4d14d5158e74.webp",
@@ -63,86 +63,77 @@
    "artikel_signatur": "dd9c07c8029ac10cf943afbfc85765cf5e9a7066ff368ae2ddedc13d11d9e8f7"
   },
   {
-   "overskrift": "Genie 4 kan skifte scene og tilføje lyd i realtid",
-   "tekst": "Google DeepMind sendte verdensmodellen Genie 4 ud som forskningspreview. Den kan bygge interaktive verdener fra tekst eller billeder, skifte scene midt i forløbet, tilføje realtidslyd og holde sammen i op til to minutter. Genie 4 rulles først ud til udvalgte testere og senere til AI Ultra-abonnenter.",
-   "link": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
+   "overskrift": "Nvidia frigiver åben talemodel til 40 sprog",
+   "tekst": "Nvidia udgav 28. oktober Nemotron 3.5 Transcribe med åbne vægte. Den 30 milliarder parametre store model kan transskribere optagelser på op til en time på 40 sprog og skelne op til otte talere. Nvidia siger, at den kan køre på en enkelt chip, men den virker ikke på live-strømme. Benchmarks er Nvidias egne.",
+   "link": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
    "kategori": "Lanceringer",
-   "billede": "data/img/aa4a541db90e5f66.jpg",
-   "dato": "2026-10-27T16:30:57+00:00",
-   "andre": [
-    {
-     "kilde": "The Verge AI",
-     "link": "https://www.theverge.com/tech/1019076/google-genie-4-ai-model",
-     "rubrik": "Genie 4 fordobler verdener til to minutter",
-     "resume_da": "Googles verdensmodel kan nu opdatere simulationer med en sætning, tilføje lyd og køre dobbelt så længe. Først til udvalgte testere.",
-     "dato": "2026-10-27T12:00:00-04:00",
-     "foerst_set": "2026-10-27T20:55:19.965914+00:00"
-    }
-   ],
-   "titel": "Google’s Genie 4 world model adds audio, more realistic worlds, and real-time steering",
-   "rubrik": "Genie 4 kan ændre scenen midt i simulationen",
-   "resume_da": "Googles nye verdensmodel tilføjer realtidslyd, bedre fysik og dobbelt så lang sammenhæng; testbrugere afprøver filmprototyper.",
-   "artikel_signatur": "c6f963dbb08ab40c17e1cd09eb76fc8d0e20b8f76c3ae4850585b49b0e286831"
+   "billede": "data/img/d4f8fb42050a7642.webp",
+   "dato": "2026-10-28T15:00:00+00:00",
+   "andre": [],
+   "titel": "Voice AI in vogue: Nvidia releases new open transcription model",
+   "rubrik": "Nvidia frigiver Nemotron 3.5 til 40 sprog",
+   "resume_da": "Den åbne model transskriberer optagelser på op til en time og skelner op til otte talere, men virker ikke på live-strømme.",
+   "artikel_signatur": "7da8b72457a8e04309f9c538507c6dcc34d6d10b5207a4e966013a7480723b55"
   },
   {
-   "overskrift": "OpenAI og Anthropic hævder at have modbevist ETH",
-   "tekst": "OpenAI hævdede, at selskabets model har modbevist Exponential Time Hypothesis, en datalogisk antagelse fra 1999. Et eksternt panel skal granske beviset. Timer senere offentliggjorde Anthropic sit eget modbevis. Ifølge TechCrunch vurderer forskere, at dele af beviset kræver fælles arbejde, og at kryptosikkerhed skal afklares.",
-   "link": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
-   "kategori": "Forskning",
+   "overskrift": "Fire AI-selskaber bakker fælles standard mod scraping",
+   "tekst": "OpenAI, Google, Microsoft og Anthropic vil gøre det lettere for udgivere at afvise AI-træning via ét signal i robots.txt. Anthropic har allerede taget standarden i brug, mens Google og Microsoft planlægger at følge efter næste år og OpenAI i de kommende måneder. Standarden er foreslået i IETF og skal erstatte separate signaler til hvert selskab.",
+   "link": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+   "kategori": "Politik & jura",
    "billede": "",
-   "dato": "2026-10-27T17:08:08+00:00",
+   "dato": "2026-10-30T20:26:10+00:00",
    "andre": [],
-   "titel": "Frontier AI labs say their models refuted the Exponential Time Hypothesis. What does that mean?",
-   "rubrik": "OpenAI hævder modeller har modbevist ETH",
-   "resume_da": "Anthropic har også offentliggjort et modbevis, og dataloger vil undersøge konsekvenser for P versus NP og kryptografi.",
-   "artikel_signatur": "c21970cf3fe2d1378df322820667b0e96d138e662ed8e246304805411445b557"
+   "titel": "The biggest names in AI are backing a new way to opt out of scraping",
+   "rubrik": "Google og Microsoft bakker ny standard mod scraping",
+   "resume_da": "OpenAI, Google, Microsoft og Anthropic vil gøre det muligt for udgivere at afvise AI-træning via én fælles indstilling i robots.txt.",
+   "artikel_signatur": "d7a950f72991f41519c3b629eb680ed1aaa42bc9a3c5c3e16083902409a8a94d"
   },
   {
-   "overskrift": "Anthropic går på børsen med advarsler om eksistentiel risiko",
-   "tekst": "Anthropic indgav sit børsprospekt, en S-1 på 335 sider. Her advarer selskabet om, at fremtidige modeller kan udgøre »katastrofale eller eksistentielle risici«, og at Claude kan få ny moralsk status. Samtidig kalder stifterne AI-udviklingen et af menneskets afgørende øjeblikke. Selskabet går på børsen som public benefit corporation.",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles",
-   "kategori": "Penge & marked",
-   "billede": "data/img/39941439aeaf69ce.webp",
-   "dato": "2026-10-30T13:11:05+00:00",
+   "overskrift": "Microsoft tilbyder 60.000 ansatte frivillig fratrædelse",
+   "tekst": "Microsoft tilbyder frivillig fratrædelse til omkring 60.000 ansatte i USA, Storbritannien, Canada og Indien – cirka en fjerdedel af arbejdsstyrken. Ifølge The Verge skal ordningen sænke driftsomkostningerne uden at skære i investeringerne i AI-infrastruktur. Ansatte har til december til at svare. Selskabet har ikke oplyst, hvor mange der ventes at acceptere.",
+   "link": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad",
+   "kategori": "Samfund & etik",
+   "billede": "",
+   "dato": "2026-10-29T16:00:00+00:00",
    "andre": [],
-   "titel": "Silicon Valley wants you to invest in miracles",
-   "rubrik": "Anthropic lover mirakler og advarer om udslettelse",
-   "resume_da": "S-1 på 335 sider blander løfter om fremskridt med 94 siders risici og en mission om at redde menneskeheden.",
-   "artikel_signatur": "90983fc193a13630036818330a0ea8446acc755debd321cfe5b12fa04788501c"
+   "titel": "Microsoft’s AI future has fewer jobs",
+   "rubrik": "Microsoft tilbyder 60.000 ansatte fratrædelse",
+   "resume_da": "Frivillig ordning skal sænke omkostningerne og friholde penge til AI-infrastruktur. Ansatte beslutter sig i december.",
+   "artikel_signatur": "2ed80fd884ca5d7e443d4c7c56263d643b16fb8b30eb37e06686c5b658c61083"
   }
  ],
  "overblik": [
   {
-   "tekst": "Ugens vigtigste forandring er, at frontmodellerne blev mere specialiserede: cyberforsvar blev det fælles kampfelt. Google annoncerede Gemini 4 Carbon med topresultater i sårbarhedsjagt, men kun udvalgte cyberforsvarere får adgang først. Mistral gik den modsatte vej og frigav vægtene til sin trillionmodel Large 4, også med cyberforsvar som hovedformål. Dermed står to slags adgang over for hinanden: en lukket frontmodel, Google selv kalder sin stærkeste, og en åben model, som kunderne kan huse selv. Begge bygger på producenternes egne benchmarkpåstande.",
+   "tekst": "Periodens vigtigste forandring er, at de nye frontmodeller ikke bare bliver større, men målrettes konkrete opgaver som cyberforsvar. Google annoncerede Gemini 4 Carbon, som ifølge selskabet topper flere benchmarks for at finde og lukke sårbarheder, men kun udvalgte cyberforsvarere får adgang. Mistral gik den modsatte vej og lagde vægtene til Mistral Large 4 ud, så virksomheder og myndigheder selv kan køre en trillion-parameter-model. Begge fremhæver cybersikkerhed, men adgangen er vidt forskellig.",
    "links": [
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
     "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
    ]
   },
   {
-   "tekst": "Evnerne flyttede sig også ud over tekst og kode. Genie 4 viser, hvordan en verdensmodel kan bygge og ændre simulationer i realtid med lyd, men er foreløbig et forskningspreview med kendte huller. OpenAI og Anthropic førte samme uge en anden form for kapacitetsdemonstration: begge hævdede at have modbevist ETH, et centralt problem i datalogien. Her er forskellen, at Genie 4 er et produkt under udrulning, mens matematikbeviset er en videnskabelig påstand, som eksterne forskere først skal granske. Det gør verifikationen til en del af historien.",
+   "tekst": "Nvidia viser en tredje vej med Nemotron 3.5 Transcribe: en åben talemodel på 30 milliarder parametre, der ifølge Nvidia kan køre på én chip og transskribere 40 sprog, men ikke live. Den er mere specialiseret og lettere at implementere end de to cybermodeller. Samtidig arbejder de store selskaber på at kontrollere, hvad modellerne må trænes på: OpenAI, Google, Microsoft og Anthropic vil bakke en fælles robots.txt-standard, så udgivere kan afvise AI-scraping ét sted.",
    "links": [
-    "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
-    "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/"
+    "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
+    "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out"
    ]
   },
   {
-   "tekst": "Oveni kommer kapitalen og risikoen. Anthropics børsprospekt beskriver både en mission om at redde menneskeheden og 94 siders risici, herunder eksistentiel fare og modeller, der kan handle uforudsigeligt. Det er ikke samme begivenhed som model lanceringerne, men det viser, hvad der står på spil, når selskaberne skal finansiere den næste generation. Læseren bør derfor holde to ting adskilt: hvad laboratorierne hævder, at modellerne kan nu, og hvad de kan dokumentere, før investorer og myndigheder skal tage stilling.",
+   "tekst": "Økonomien bag presser sig også på. Microsoft tilbyder frivillig fratrædelse til omkring 60.000 ansatte for at frigøre midler til AI-infrastruktur, mens selskabet fortsat investerer massivt. Tilsammen viser historierne ikke én fælles årsag, men en branche, hvor evner, adgang, data og omkostninger nu bliver forhandlet på samme tid.",
    "links": [
-    "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles"
+    "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad"
    ]
   }
  ],
- "tendens": "Det er uafklaret, om OpenAI og Anthropics ETH-beviser holder. Datalogerne skal især afklare, om resultatet får konsekvenser for kryptografi, og om de dele af beviset, forskerne kalder fremmedartede, kan kontrolleres. Ifølge TechCrunch har OpenAI selv tjekket kryptospørgsmålet og er rimeligt sikker på, at der ikke er et brud; det er ikke en uafhængig godkendelse.",
+ "tendens": "Uafklaret: Google har ikke oplyst, hvornår Gemini 4 Carbon bliver bredt tilgængelig, og det fremgår ikke, hvornår OpenAI og Microsoft tager den fælles robots.txt-standard i brug.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "04be9a5172f7aa5ab6d8d3ceecff0ec8783f8a5b29a57494bda81aa9ad12d411",
- "dato": "2026-11-03T20:02:26.407048+00:00",
- "opdateret": "2026-11-03T20:02:26.407048+00:00",
- "periode_fra": "2026-10-26T23:00:00+00:00",
- "periode_til": "2026-11-02T23:00:00+00:00",
+ "basis_signatur": "dd758b890caeee3b0a80580113618085ff582e244b6237dd5da4f161fb1a1238",
+ "dato": "2026-11-04T01:05:51.944459+00:00",
+ "opdateret": "2026-11-04T01:05:51.944459+00:00",
+ "periode_fra": "2026-10-27T23:00:00+00:00",
+ "periode_til": "2026-11-03T23:00:00+00:00",
  "stats": {
-  "historier": 97,
+  "historier": 98,
   "kilder": 6
  }
 }
