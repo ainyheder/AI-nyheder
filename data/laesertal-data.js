@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-11-04T01:07:02.802073+00:00",
+ "opdateret": "2026-11-04T12:37:41.461592+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -207,7 +207,7 @@ window.LAESERTAL = {
      1,
      0,
      2,
-     3,
+     4,
      0
     ]
    },
@@ -284,20 +284,20 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 17,
- "sidevisninger_i_alt": 37,
+ "besoeg_i_alt": 16,
+ "sidevisninger_i_alt": 35,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 17,
-   "visninger": 37
+   "besoeg": 16,
+   "visninger": 35
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 16
+   "besoeg": 15
   },
   {
    "fra": "www.bing.com",
@@ -310,12 +310,12 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 20
+    "visninger": 19
    },
    {
     "fra": "direkte",
-    "besoeg": 16,
-    "visninger": 16
+    "besoeg": 15,
+    "visninger": 15
    },
    {
     "fra": "www.bing.com",

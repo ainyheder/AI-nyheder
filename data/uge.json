@@ -1,10 +1,10 @@
 {
- "rubrik": "Specialiserede modeller, åbne vægte og kampen om data og regnekraft",
- "indledning": "De store AI-lanceringer i perioden peger i flere retninger: modeller bliver mere specialiserede, mere åbne og mere bundet til kontrol over data og økonomi.",
+ "rubrik": "Modeller, åbne vægte og kampen om adgang",
+ "indledning": "Ugen satte tre nye modeller i spil og viste, at adgang, pris og datakontrol nu er lige så afgørende som evnerne. Google holder sin frontmodel bag et forsvarerprogram, mens Mistral og Nvidia frigiver vægte; samtidig bliver prisen for regnekraft og retten til data mere synlig.",
  "historier": [
   {
    "overskrift": "Google annoncerer Gemini 4 Carbon til cyberforsvar",
-   "tekst": "Google annoncerede 28. oktober Gemini 4 Carbon som sin stærkeste model til dato med fokus på at finde og lukke sårbarheder i kode. Selskabet hævder topresultater på flere benchmarks, men modellen er foreløbig kun åben for udvalgte cyberforsvarere gennem Fairwind Program. Google oplyser ingen dato for bred udgivelse.",
+   "tekst": "Google annoncerede 28. oktober Gemini 4 Carbon som sin stærkeste model til især cyberforsvar og langvarige opgaver. Google oplyser, at Carbon topper Artificial Analysis Intelligence Index og får 88,2 procent i SEC-bench Pro. Modellen er foreløbig kun åben for udvalgte cyberforsvarere gennem Fairwind Program; bred adgang og dato er ikke oplyst. Prisen følger Argon.",
    "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
    "kategori": "Lanceringer",
    "billede": "data/img/4b3d4e5d0a140c8a.jpg",
@@ -33,16 +33,24 @@
      "resume_da": "Modellen topper flere benchmarks og er foreløbig kun åben for udvalgte cyberforsvarsselskaber. Prisen er den samme som forgængeren Argon.",
      "dato": "2026-10-28T16:03:00-04:00",
      "foerst_set": "2026-10-28T21:16:14.888910+00:00"
+    },
+    {
+     "kilde": "Google Gemini",
+     "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+     "rubrik": "Gemini 4 Argon klar til kodning og jura",
+     "resume_da": "Argon rullede ud i oktober til kodning, finans og jura. Carbon er i test, og Genie 4 og SynthID Detector er også annonceret.",
+     "dato": "2026-11-02T17:45:00+00:00",
+     "foerst_set": "2026-11-02T18:45:47.523033+00:00"
     }
    ],
    "titel": "Gemini 4 Carbon: our next frontier model",
    "rubrik": "Gemini 4 Carbon fører testene i sårbarhedsjagt",
    "resume_da": "Google annoncerer Gemini 4 Carbon, der især skal finde og lukke sårbarheder i kode. Foreløbig får kun udvalgte cyberforsvarere adgang.",
-   "artikel_signatur": "d86b4dd0b49420ad7bce6bdb6f852424fa8419965d8d3d1a95f3090d6c08f3cc"
+   "artikel_signatur": "4048aac5cdf3f191bf6e3c49095aacfa50c797d682eb0edcd5f10c6dd15c121b"
   },
   {
-   "overskrift": "Mistral frigiver vægtene til trillionmodellen Large 4",
-   "tekst": "Mistral lagde 29. oktober vægtene til Mistral Large 4 på Hugging Face. Selskabet kalder modellen en trillion-parameter-model og retter den især mod cybersikkerhed. Virksomheder og myndigheder kan nu hente og selv køre den i stedet for at gå gennem Mistrals servere. Mistral hævder, at modellen yder på niveau med GLM-5.3 med færre tokens per opgave.",
+   "overskrift": "Mistral frigiver vægtene til Mistral Large 4",
+   "tekst": "Den 29. oktober frigav Mistral vægtene til Mistral Large 4, som selskabet kalder en model med 1.000 milliarder parametre. Vægtene ligger på Hugging Face, så virksomheder og myndigheder selv kan køre modellen, især til cyberforsvar. Mistral hævder at matche GLM-5.3 med 47 procent færre tokens pr. opgave. Påstandene er selskabets egne.",
    "link": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
    "kategori": "Lanceringer",
    "billede": "data/img/f4fa4d14d5158e74.webp",
@@ -63,8 +71,8 @@
    "artikel_signatur": "dd9c07c8029ac10cf943afbfc85765cf5e9a7066ff368ae2ddedc13d11d9e8f7"
   },
   {
-   "overskrift": "Nvidia frigiver åben talemodel til 40 sprog",
-   "tekst": "Nvidia udgav 28. oktober Nemotron 3.5 Transcribe med åbne vægte. Den 30 milliarder parametre store model kan transskribere optagelser på op til en time på 40 sprog og skelne op til otte talere. Nvidia siger, at den kan køre på en enkelt chip, men den virker ikke på live-strømme. Benchmarks er Nvidias egne.",
+   "overskrift": "Nvidia udgiver Nemotron 3.5 Transcribe",
+   "tekst": "Nvidia udgav 28. oktober Nemotron 3.5 Transcribe med åbne vægte. Den 30 milliarder parametre store model transskriberer op til 40 sprog, kan skelne op til otte talere og køre på en enkelt chip, oplyser Nvidia. Den virker på optaget lyd, ikke live-strømme. Nvidia hævder at slå konkurrenterne på offentlige benchmarks; uafhængige målinger er ikke gengivet.",
    "link": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
    "kategori": "Lanceringer",
    "billede": "data/img/d4f8fb42050a7642.webp",
@@ -76,8 +84,21 @@
    "artikel_signatur": "7da8b72457a8e04309f9c538507c6dcc34d6d10b5207a4e966013a7480723b55"
   },
   {
-   "overskrift": "Fire AI-selskaber bakker fælles standard mod scraping",
-   "tekst": "OpenAI, Google, Microsoft og Anthropic vil gøre det lettere for udgivere at afvise AI-træning via ét signal i robots.txt. Anthropic har allerede taget standarden i brug, mens Google og Microsoft planlægger at følge efter næste år og OpenAI i de kommende måneder. Standarden er foreslået i IETF og skal erstatte separate signaler til hvert selskab.",
+   "overskrift": "Anthropics regnekraft sluger 58 procent af omsætningen",
+   "tekst": "Anthropic har udvidet sit børsprospekt med regnskab til 30. september. Omsætningen nåede 17 milliarder dollar, men regnekraft slugte 58 procent af omsætningen og kostede 10 milliarder dollar. Fem milliarder faldt på korttidskontrakter, som ifølge filen er betydeligt dyrere end flerårige aftaler. Selskabet venter, at regnekraft fortsat bliver den største driftsudgift.",
+   "link": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/",
+   "kategori": "Penge & marked",
+   "billede": "data/img/44a7aab407b50c8c.webp",
+   "dato": "2026-11-03T17:07:01+00:00",
+   "andre": [],
+   "titel": "Anthropic is still grappling with the economics of compute",
+   "rubrik": "Anthropic: Regnekraft æder 58 procent af omsætningen",
+   "resume_da": "Ny børsfil viser, at Anthropics udgift til regnekraft steg til 10 milliarder dollar i kvartalet, fordi selskabet måtte købe dyr kapacitet i hast.",
+   "artikel_signatur": "1fca374daf7355ee5452e012d02cfa292ce3068b80f1503d0ad3118f990079fc"
+  },
+  {
+   "overskrift": "Fire AI-selskaber vil respektere fælles scrapesignal",
+   "tekst": "OpenAI, Google, Microsoft og Anthropic vil adoptere et fælles policy token i robots.txt, så udgivere kan afvise AI-træning ét sted i stedet for at forhandle med hvert selskab. Anthropic har taget signalet i brug; Google og Microsoft planlægger støtte næste år, OpenAI i de kommende måneder.",
    "link": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
    "kategori": "Politik & jura",
    "billede": "",
@@ -87,53 +108,42 @@
    "rubrik": "Google og Microsoft bakker ny standard mod scraping",
    "resume_da": "OpenAI, Google, Microsoft og Anthropic vil gøre det muligt for udgivere at afvise AI-træning via én fælles indstilling i robots.txt.",
    "artikel_signatur": "d7a950f72991f41519c3b629eb680ed1aaa42bc9a3c5c3e16083902409a8a94d"
-  },
-  {
-   "overskrift": "Microsoft tilbyder 60.000 ansatte frivillig fratrædelse",
-   "tekst": "Microsoft tilbyder frivillig fratrædelse til omkring 60.000 ansatte i USA, Storbritannien, Canada og Indien – cirka en fjerdedel af arbejdsstyrken. Ifølge The Verge skal ordningen sænke driftsomkostningerne uden at skære i investeringerne i AI-infrastruktur. Ansatte har til december til at svare. Selskabet har ikke oplyst, hvor mange der ventes at acceptere.",
-   "link": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad",
-   "kategori": "Samfund & etik",
-   "billede": "",
-   "dato": "2026-10-29T16:00:00+00:00",
-   "andre": [],
-   "titel": "Microsoft’s AI future has fewer jobs",
-   "rubrik": "Microsoft tilbyder 60.000 ansatte fratrædelse",
-   "resume_da": "Frivillig ordning skal sænke omkostningerne og friholde penge til AI-infrastruktur. Ansatte beslutter sig i december.",
-   "artikel_signatur": "2ed80fd884ca5d7e443d4c7c56263d643b16fb8b30eb37e06686c5b658c61083"
   }
  ],
  "overblik": [
   {
-   "tekst": "Periodens vigtigste forandring er, at de nye frontmodeller ikke bare bliver større, men målrettes konkrete opgaver som cyberforsvar. Google annoncerede Gemini 4 Carbon, som ifølge selskabet topper flere benchmarks for at finde og lukke sårbarheder, men kun udvalgte cyberforsvarere får adgang. Mistral gik den modsatte vej og lagde vægtene til Mistral Large 4 ud, så virksomheder og myndigheder selv kan køre en trillion-parameter-model. Begge fremhæver cybersikkerhed, men adgangen er vidt forskellig.",
+   "tekst": "Afslutningen af oktober blev ikke én historie om en ny model, men et billede af, hvordan adgang og kontrol forskydes. Google annoncerede Gemini 4 Carbon som sin stærkeste model til cyberforsvar og langvarige opgaver, men kun udvalgte forsvarere får adgang gennem Fairwind. Mistral gik den modsatte vej og lagde vægtene til Mistral Large 4 på Hugging Face, så virksomheder og myndigheder selv kan køre en model, selskabet kalder en model med 1.000 milliarder parametre, især mod cybertrusler. Nvidia frigav samtidig Nemotron 3.5 Transcribe med åbne vægte til 40 sprog; Nvidia oplyser, at den kan køre på én chip, men ikke på live-lyd.",
    "links": [
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
-    "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
+    "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
+    "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/"
    ]
   },
   {
-   "tekst": "Nvidia viser en tredje vej med Nemotron 3.5 Transcribe: en åben talemodel på 30 milliarder parametre, der ifølge Nvidia kan køre på én chip og transskribere 40 sprog, men ikke live. Den er mere specialiseret og lettere at implementere end de to cybermodeller. Samtidig arbejder de store selskaber på at kontrollere, hvad modellerne må trænes på: OpenAI, Google, Microsoft og Anthropic vil bakke en fælles robots.txt-standard, så udgivere kan afvise AI-scraping ét sted.",
+   "tekst": "Forskellen er både praktisk og økonomisk. Mistral hævder, at ML4 klarer sig på niveau med GLM-5.3 med 47 procent færre tokens pr. opgave, og Nvidia oplyser, at talemodellen kan køre på en enkelt chip. Anthropics opdaterede børsprospekt viser den anden side: Regnekraft slugte 58 procent af omsætningen og kostede 10 milliarder dollar i kvartalet. Billigere tokens er altså et løfte om lavere driftsomkostninger, ikke et bevis på, at økonomien bag frontmodellerne hænger sammen.",
    "links": [
+    "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
     "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
-    "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out"
+    "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/"
    ]
   },
   {
-   "tekst": "Økonomien bag presser sig også på. Microsoft tilbyder frivillig fratrædelse til omkring 60.000 ansatte for at frigøre midler til AI-infrastruktur, mens selskabet fortsat investerer massivt. Tilsammen viser historierne ikke én fælles årsag, men en branche, hvor evner, adgang, data og omkostninger nu bliver forhandlet på samme tid.",
+   "tekst": "Kontrollen over data flyttede sig også. OpenAI, Google, Microsoft og Anthropic vil bruge et fælles policy token i robots.txt, så udgivere kan afvise AI-træning ét sted. Anthropic har taget signalet i brug; de andre følger senere. Det gør det lettere at sige nej, men også tydeligere, at adgang til data og modeller nu forhandles på flere fronter samtidig.",
    "links": [
-    "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad"
+    "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out"
    ]
   }
  ],
- "tendens": "Uafklaret: Google har ikke oplyst, hvornår Gemini 4 Carbon bliver bredt tilgængelig, og det fremgår ikke, hvornår OpenAI og Microsoft tager den fælles robots.txt-standard i brug.",
+ "tendens": "Følg Anthropics næste børsopdatering: om andelen af omsætningen, der går til regnekraft, falder fra 58 procent, når korttidskontrakter erstattes af flerårige aftaler. Selskabet oplyser ikke, hvornår det sker.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "dd758b890caeee3b0a80580113618085ff582e244b6237dd5da4f161fb1a1238",
- "dato": "2026-11-04T01:05:51.944459+00:00",
- "opdateret": "2026-11-04T01:05:51.944459+00:00",
+ "basis_signatur": "ab83662260365ea5375775830e74dd9221e25d6721aa06a65a03edb20043c1b6",
+ "dato": "2026-11-04T12:36:01.218347+00:00",
+ "opdateret": "2026-11-04T12:36:01.218347+00:00",
  "periode_fra": "2026-10-27T23:00:00+00:00",
  "periode_til": "2026-11-03T23:00:00+00:00",
  "stats": {
-  "historier": 98,
+  "historier": 99,
   "kilder": 6
  }
 }
