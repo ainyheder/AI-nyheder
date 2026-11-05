@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-11-05T01:00:33.324815+00:00",
+  "opdateret": "2026-11-05T12:41:56.333140+00:00",
   "kladder": [
     {
       "titel": "Introducing Images 2.6",
@@ -12,6 +12,7 @@
       "eget_foerst_set": "2026-11-05T01:00:33.324815+00:00",
       "rubrik": "OpenAI opdaterer Images til version 2.6",
       "resume_da": "Ifølge OpenAI giver versionen hurtigere billedgenerering, GIF'er og mere præcis redigering – i ChatGPT, Codex og API'et.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -28,8 +29,40 @@
         "emne": "openai images 2.6"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
+      "link": "https://huggingface.co/blog/phonon-tts",
+      "resume": "",
+      "dato": "2026-11-05T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-11-05T12:41:56.333140+00:00",
+      "eget_foerst_set": "2026-11-05T12:41:56.333140+00:00",
+      "rubrik": "Hugging Face lancerer Phonon TTS til enheder",
+      "resume_da": "Tekst-til-tale-modellen skal ifølge Hugging Face køre lokalt på enheden og slå benchmarks på tale.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Phonon TTS lanceres som ny tekst-til-tale-model, der ifølge producenten kører lokalt og slår benchmarks.",
+        "forbehold": "Kun producentens egen blog; tekstindhold mangler, og benchmarkpåstandene er ikke uafhængigt bekræftet.",
+        "emne": "phonon tts"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -45,6 +78,7 @@
       "eget_foerst_set": "2026-11-05T01:00:33.324815+00:00",
       "rubrik": "OpenAI-værktøj finder 948 huller i Linux-kernen",
       "resume_da": "OpenAI oplyser, at pipelineen selv fandt, validerede og skrev patches til fejlene, som giver lokal rettighedsforhøjelse i Linux-kernen.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -61,74 +95,7 @@
         "emne": "openai/linux-kernel"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 7,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Meta acquires AI coding startup Conductor",
-      "link": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
-      "resume": "The startup allows software engineers to deploy teams of agents to work on various aspects of a project simultaneously.",
-      "dato": "2026-11-04T21:10:56+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-11-05T01:00:33.324815+00:00",
-      "eget_foerst_set": "2026-11-05T01:00:33.324815+00:00",
-      "rubrik": "Meta køber AI-kodestartup Conductor",
-      "resume_da": "Conductor lader softwareingeniører sætte hold af agenter til at arbejde på dele af samme projekt samtidig.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Meta køber AI-kodestartupen Conductor, hvis værktøj lader ingeniører sætte hold af agenter på samme projekt.",
-        "forbehold": "Købesum, vilkår og hvordan teknologien indgår i Metas produkter er ikke oplyst.",
-        "emne": "meta køber conductor"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Google faces backlash for plan that would turn off Search for schools that restrict AI",
-      "link": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/",
-      "resume": "Politicians on the left, like NYC mayor Zohran Mamdani and former FTC chair Lina Khan, accused Google of acting as an unregulated monopoly.",
-      "dato": "2026-11-04T16:17:22+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-11-04T19:59:08.515800+00:00",
-      "eget_foerst_set": "2026-11-04T19:59:08.515800+00:00",
-      "rubrik": "Google vil slukke Search for skoler uden AI",
-      "resume_da": "New Yorks borgmester Zohran Mamdani og tidligere FTC-formand Lina Khan beskylder Google for at opføre sig som et ureguleret monopol.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Google kritiseres for en plan om at slukke for søgning på skoler, der begrænser AI; politikere kalder det monopoladfærd.",
-        "forbehold": "Googles plan er kun beskrevet gennem kritikernes udsagn; ingen officiel bekræftelse.",
-        "emne": "google, søgning, skoler, monopol"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -177,6 +144,7 @@
       "eget_foerst_set": "2026-11-05T01:00:33.324815+00:00",
       "rubrik": "OpenAI-rådgiver vil forme valget i 2028",
       "resume_da": "Chris Lehane foreslår en ny samfundskontrakt, som ifølge kilden både kan gavne amerikanerne og OpenAIs forretning.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -193,7 +161,6 @@
         "emne": "openai og valget 2028"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -243,6 +210,7 @@
       "eget_foerst_set": "2026-11-05T01:00:33.324815+00:00",
       "rubrik": "AI-PAC'er brugte millioner på midtvejsvalget med blandet udbytte",
       "resume_da": "Kilden angiver ikke beløb eller hvilke valgkredse, indsatsen flyttede; grupperne ser nu mod næste valgcyklus.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -259,7 +227,6 @@
         "emne": "ai-pacs og kongresvalg"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -365,6 +332,39 @@
       ]
     },
     {
+      "titel": "Setting a new standard for responsible AI infrastructure",
+      "link": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+      "resume": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
+      "dato": "2026-11-05T02:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-11-05T12:41:56.333140+00:00",
+      "eget_foerst_set": "2026-11-05T12:41:56.333140+00:00",
+      "rubrik": "OpenAI lancerer plan for ansvarlig AI-infrastruktur",
+      "resume_da": "Forslaget »National Community Compact« og en »Compute Campus Policy Blueprint« skal ifølge OpenAI beskytte lokale ressourcer og skabe job.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI fremlægger policy-forslag om ansvarlig AI-infrastruktur med lokal beskyttelse og jobskabelse.",
+        "forbehold": "Forslag uden bindende virkning; ingen konkrete forpligtelser eller tal.",
+        "emne": "openai-infrastrukturpolitik"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Building on open source AI? Hugging Face’s policy chief on the costs, risks, and trade-offs",
       "link": "https://techcrunch.com/podcast/building-on-open-source-ai-hugging-faces-policy-chief-on-the-costs-risks-and-trade-offs/",
       "resume": "Open source models are becoming more mainstream as enterprises, governments and startups alike rely on the promise of lower costs, more control, and more flexibility. But as increasingly capable models become more freely available, how do companies capture value? And with Chinese open models gaining ground, can American players keep up? On this episode of […]",
@@ -389,72 +389,6 @@
         "begrundelse": "Podcastinterview med Hugging Faces policychef om omkostninger, risici og forretningsvilkår for åbne modeller, også kinesiske.",
         "forbehold": "Der er tale om en samtale om emnet, ikke nye data eller en konkret modeludgivelse.",
         "emne": "åbne modeller og forretning"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Qodo builds context into AI code review with Codex",
-      "link": "https://openai.com/index/qodo-codex-plugin",
-      "resume": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.",
-      "dato": "2026-11-02T00:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-11-03T02:35:23.085730+00:00",
-      "eget_foerst_set": "2026-11-03T02:35:23.085730+00:00",
-      "rubrik": "Qodo giver Codex virksomhedsviden til kode-review",
-      "resume_da": "Værktøjet skal fange kritiske P0-fejl på tværs af kodelagre, før udvikleren åbner en pull request.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Qodo-plugin bringer virksomhedsviden og kodestandarder ind i Codex.",
-        "forbehold": "Leverandørens egen beskrivelse; ingen uafhængig test.",
-        "emne": "qodo"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
-      "link": "https://openai.com/index/devrev-enterprise-self-service",
-      "resume": "DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service.",
-      "dato": "2026-11-04T00:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-11-05T01:00:33.324815+00:00",
-      "eget_foerst_set": "2026-11-05T01:00:33.324815+00:00",
-      "rubrik": "DevRev bygger selvbetjening på GPT-6.1 Sol",
-      "resume_da": "Virksomheden bruger modellen i Computer og Operator og fremhæver en afvejning af ræsonnement, hastighed og pris til kundeservice.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Kundecase: DevRev bruger GPT-6.1 Sol i Computer og Operator til selvbetjening i virksomheder.",
-        "forbehold": "Leverandøromtale uden konkrete resultater eller uafhængig måling; ingen ny model udgives her.",
-        "emne": "devrev/gpt-6.1 sol"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "kat_ai": true,
@@ -530,6 +464,72 @@
       ]
     },
     {
+      "titel": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
+      "link": "https://openai.com/index/devrev-enterprise-self-service",
+      "resume": "DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service.",
+      "dato": "2026-11-04T00:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-11-05T01:00:33.324815+00:00",
+      "eget_foerst_set": "2026-11-05T01:00:33.324815+00:00",
+      "rubrik": "DevRev bygger selvbetjening på GPT-6.1 Sol",
+      "resume_da": "Virksomheden bruger modellen i Computer og Operator og fremhæver en afvejning af ræsonnement, hastighed og pris til kundeservice.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Kundecase: DevRev bruger GPT-6.1 Sol i Computer og Operator til selvbetjening i virksomheder.",
+        "forbehold": "Leverandøromtale uden konkrete resultater eller uafhængig måling; ingen ny model udgives her.",
+        "emne": "devrev/gpt-6.1 sol"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Qodo builds context into AI code review with Codex",
+      "link": "https://openai.com/index/qodo-codex-plugin",
+      "resume": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.",
+      "dato": "2026-11-02T00:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-11-03T02:35:23.085730+00:00",
+      "eget_foerst_set": "2026-11-03T02:35:23.085730+00:00",
+      "rubrik": "Qodo giver Codex virksomhedsviden til kode-review",
+      "resume_da": "Værktøjet skal fange kritiske P0-fejl på tværs af kodelagre, før udvikleren åbner en pull request.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Qodo-plugin bringer virksomhedsviden og kodestandarder ind i Codex.",
+        "forbehold": "Leverandørens egen beskrivelse; ingen uafhængig test.",
+        "emne": "qodo"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Agentic cheminformatics with Google Antigravity",
       "link": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
       "resume": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
@@ -596,6 +596,39 @@
       ]
     },
     {
+      "titel": "How Cisco defends at machine speed with OpenAI",
+      "link": "https://openai.com/index/cisco-cyber",
+      "resume": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses.",
+      "dato": "2026-11-03T08:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-04T00:49:46.441031+00:00",
+      "eget_foerst_set": "2026-11-04T00:49:46.441031+00:00",
+      "rubrik": "Cisco bruger OpenAI-modeller i sit sikkerhedsværn",
+      "resume_da": "Netværksselskabet kombinerer netværksintelligens med OpenAI-modeller for at gøre virksomhedsforsvar mere tilpasningsdygtige, oplyser OpenAI.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Cisco kombinerer netværksintelligens med OpenAI-modeller for at gøre virksomhedsforsvar mere tilpasningsdygtigt, oplyser OpenAI.",
+        "forbehold": "OpenAIs egen kundecase uden uafhængige testresultater eller tekniske detaljer.",
+        "emne": "cisco, openai og cybersikkerhed"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Open source AI is booming. Hugging Face explains who profits.",
       "link": "https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits/",
       "resume": "Open source models are becoming more mainstream as enterprises, governments and startups alike rely on the promise of lower costs, more control, and more flexibility. But as increasingly capable models become more freely available, how do companies capture value? And with Chinese open models gaining ground, can American players keep up? On this episode of […]",
@@ -624,39 +657,6 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "historie_dato": "2026-11-04T18:44:57+00:00",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "How Cisco defends at machine speed with OpenAI",
-      "link": "https://openai.com/index/cisco-cyber",
-      "resume": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses.",
-      "dato": "2026-11-03T08:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-11-04T00:49:46.441031+00:00",
-      "eget_foerst_set": "2026-11-04T00:49:46.441031+00:00",
-      "rubrik": "Cisco bruger OpenAI-modeller i sit sikkerhedsværn",
-      "resume_da": "Netværksselskabet kombinerer netværksintelligens med OpenAI-modeller for at gøre virksomhedsforsvar mere tilpasningsdygtige, oplyser OpenAI.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Cisco kombinerer netværksintelligens med OpenAI-modeller for at gøre virksomhedsforsvar mere tilpasningsdygtigt, oplyser OpenAI.",
-        "forbehold": "OpenAIs egen kundecase uden uafhængige testresultater eller tekniske detaljer.",
-        "emne": "cisco, openai og cybersikkerhed"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -1158,34 +1158,34 @@
       ]
     },
     {
-      "titel": "OpenAI and ServiceNow expand partnership across enterprise workflows",
-      "link": "https://openai.com/index/openai-servicenow-partnership-expansion",
-      "resume": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.",
-      "dato": "2026-10-28T13:15:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-10-28T21:16:14.888910+00:00",
-      "eget_foerst_set": "2026-10-28T21:16:14.888910+00:00",
-      "rubrik": "OpenAI og ServiceNow udvider partnerskab om arbejdsgange",
-      "resume_da": "OpenAI-modeller og -agenter skal ind i ServiceNow, mens ServiceNow-workflows skal kunne bruges i ChatGPT og Codex.",
-      "kat_ai": true,
+      "titel": "Genie 4: A new generation of world simulation",
+      "link": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "resume": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+      "dato": "2026-10-27T16:01:38+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-27T20:55:19.965914+00:00",
+      "eget_foerst_set": "2026-10-27T20:55:19.965914+00:00",
+      "rubrik": "Google DeepMind præsenterer verdensmodellen Genie 4",
+      "resume_da": "Genie 4 er en ny verdensmodel, som ifølge DeepMind giver hidtil uset realisme i realtidssimulering.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 2,
+        "nyhed": 4,
         "betydning": 3,
-        "brugbarhed": 2,
+        "brugbarhed": 1,
         "dokumentation": 3,
         "dansk": 0,
-        "type": "forretning",
+        "type": "lancering",
         "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI og ServiceNow udvider partnerskab, så OpenAI-modeller og agenter indgår i ServiceNow-workflows.",
-        "forbehold": "Ingen tidsplan, priser eller oplysning om hvilke modeller der bliver tilgængelige.",
-        "emne": "openai servicenow"
+        "model_lancering": true,
+        "begrundelse": "DeepMind lancerer Genie 4, en ny verdensmodel der ifølge selskabet giver hidtil uset realisme i realtidssimulering.",
+        "forbehold": "Kun én sætning fra producenten; ingen demoer, resultater eller oplysninger om adgang.",
+        "emne": "genie 4"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
+      "kat_ai": true,
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1422,34 +1422,34 @@
       ]
     },
     {
-      "titel": "Does Your Model Run on AWS Trainium? Look It Up",
-      "link": "https://huggingface.co/blog/torch-neuronx-model-support",
-      "resume": "",
-      "dato": "2026-10-23T00:00:00+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-10-23T13:45:47.400241+00:00",
-      "eget_foerst_set": "2026-10-23T13:45:47.400241+00:00",
-      "rubrik": "Hugging Face gør Trainium-support opslageligt",
-      "resume_da": "Artiklen har ingen brødtekst, så det fremgår kun af titlen, at man kan slå op, om en model kører på AWS Trainium.",
-      "kat_ai": true,
+      "titel": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+      "link": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "resume": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+      "dato": "2026-10-14T02:00:14+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-14T05:17:23.558972+00:00",
+      "eget_foerst_set": "2026-10-14T05:17:23.558972+00:00",
+      "rubrik": "DeepMind og Singapore bygger finjusteret Gemma-model mod svindel",
+      "resume_da": "Den lette model kører på enheden og skal fange svindel i private samtaler, uden at data sendes til cloud.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
+        "nyhed": 3,
+        "betydning": 3,
         "brugbarhed": 2,
-        "dokumentation": 1,
+        "dokumentation": 3,
         "dansk": 0,
         "type": "andet",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Hugging Face-indlæg om en opslagsmulighed for, om en model kan køre på AWS Trainium; kun titlen foreligger.",
-        "forbehold": "Ingen brødtekst, så funktionens omfang og praktiske værdi kan ikke vurderes.",
-        "emne": "aws trainium modelopslag"
+        "begrundelse": "DeepMind og Singapores GovTech tilpasser lette Gemma-modeller til at opfange svindel på enheden uden cloud-data.",
+        "forbehold": "Ingen oplyste træfsikkerheder, fejlrate eller hvor stort et område modellen er udrullet i.",
+        "emne": "gemma-svindeldetektion"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 3,
+      "kat_ai": true,
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1465,6 +1465,7 @@
       "eget_foerst_set": "2026-11-05T01:00:33.324815+00:00",
       "rubrik": "The Verge: Musk har spildt 446 millioner dollars",
       "resume_da": "Artiklen er et kommentarstykke og oplyser ikke, hvad pengene gik til; den lister i stedet alternative måder at bruge dem på.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1481,7 +1482,6 @@
         "emne": "elon musk kommentar"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -2098,6 +2098,39 @@
         "emne": "gemini studerende"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Beyond tree cover: mapping the world’s forest types",
+      "link": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+      "resume": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
+      "dato": "2026-10-22T14:30:24+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-22T20:16:04.203492+00:00",
+      "eget_foerst_set": "2026-10-22T20:16:04.203492+00:00",
+      "rubrik": "Google DeepMind kortlægger verdens skovtyper",
+      "resume_da": "Et globalt kort inddeler hver 10 meter land på Jorden i forskellige skovtyper.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "DeepMind offentliggør et globalt kort, der inddeler hver 10 meter land på Jorden i forskellige skovtyper.",
+        "forbehold": "Kilden nævner ikke AI-metode, opløsningens nøjagtighed eller hvordan data kan tilgås.",
+        "emne": "globalt skovtypekort"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -55786,8 +55819,8 @@
         {
           "kilde": "Google Gemini",
           "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
-          "rubrik": "Gemini 4 Argon ude – Carbon i lukket test",
-          "resume_da": "Google har sendt ræsonneringsmodellen Gemini 4 Argon ud globalt og annonceret Gemini 4 Carbon til cyberforsvar få uger senere.",
+          "rubrik": "Gemini 4 Argon globalt, Carbon i test",
+          "resume_da": "Google har udrullet Gemini 4 Argon globalt og annonceret Gemini 4 Carbon to uger senere. Carbon er kun i test med den amerikanske regering og udvalgte cyberforsvarere.",
           "dato": "2026-11-02T17:45:00+00:00",
           "foerst_set": "2026-11-02T18:45:47.523033+00:00"
         }
@@ -62584,6 +62617,14 @@
           "resume_da": "Næste år bliver Gemini, NotebookLM og Classroom-AI slået fra som standard for K-12-elever, medmindre skolen tænder dem. Guided Learning lanceres samtidig.",
           "dato": "2026-11-03T16:30:34+00:00",
           "foerst_set": "2026-11-03T19:45:16.653457+00:00"
+        },
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/",
+          "rubrik": "Google slukker Search for skoler uden AI",
+          "resume_da": "Googles undervisningschef bekræfter, at søgning og AI er sammenvævet. Bernie Sanders og Lina Khan kalder grebet afpresning og monopolisering.",
+          "dato": "2026-11-04T16:17:22+00:00",
+          "foerst_set": "2026-11-04T19:59:08.515800+00:00"
         }
       ],
       "detaljer": [],
@@ -64451,24 +64492,7 @@
       "eget_foerst_set": "2026-11-05T01:00:33.324815+00:00",
       "rubrik": "Qualcomm vil hente 30 procent i datacentre",
       "resume_da": "Smartphonesalget er faldet omkring 20 procent. Nu regner Qualcomm med 650 millioner dollar fra AI-datacentre i første kvartal 2027 og 15 milliarder dollar i 2029.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Qualcomm vil vokse via AI-datacentre med Amazon og Meta som partnere, efter at smartphonesalget er faldet omkring 20 procent mod 2025.",
-        "forbehold": "Konkrete investeringer, tidslinjer og økonomi i datacenterplanerne fremgår ikke af materialet.",
-        "emne": "qualcomm ai-datacentre"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Mobilmarkedet svigter Qualcomm",
@@ -64483,8 +64507,6 @@
           "tekst": "Qualcomms 30 procent er ikke det mest ambitiøse bud i branchen. AMD siger, at selskabet på sigt venter, at over 80 procent af omsætningen vil komme fra datacentre.\n\nIfølge The Verge peger de to meldinger på, at efterspørgslen efter AI-kapacitet er stor nok til at rumme flere leverandører."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "ca. 20 procent",
@@ -64507,6 +64529,7 @@
           "label": "Qualcomms samlede omsætning i 2026 ifølge The Verge"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Partnerskaberne med Amazon og Meta blev annonceret tidligere i 2026.",
         "AMD venter på sigt over 80 procent af omsætningen fra datacentre.",
@@ -64518,14 +64541,32 @@
         "Datacentre ventes at give 15 mia. dollar i 2029",
         "Qualcomm venter 30 procent af forretningen fra datacentre"
       ],
+      "billedmotiv": "A large server rack with Qualcomm's blue Q emblem on its front; a chunky AI server chip clicks into the rack while a small smartphone tilts away beside it. The rack dominates, the phone shrinks, showing Qualcomm shifting its business from handsets toward data centres.",
+      "billedmotiv_instruks": "261ad73a2fec312dc4f0",
+      "billede": "data/img/a4d4718ace3d9880.jpg",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Qualcomm vil vokse via AI-datacentre med Amazon og Meta som partnere, efter at smartphonesalget er faldet omkring 20 procent mod 2025.",
+        "forbehold": "Konkrete investeringer, tidslinjer og økonomi i datacenterplanerne fremgår ikke af materialet.",
+        "emne": "qualcomm ai-datacentre"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-05T01:02:29.822727+00:00"
       },
-      "billedmotiv": "A large server rack with Qualcomm's blue Q emblem on its front; a chunky AI server chip clicks into the rack while a small smartphone tilts away beside it. The rack dominates, the phone shrinks, showing Qualcomm shifting its business from handsets toward data centres.",
-      "billedmotiv_instruks": "261ad73a2fec312dc4f0",
-      "billede": "data/img/a4d4718ace3d9880.jpg",
+      "prio": 6,
       "side": "artikel/f11302ecebb56fae.html"
     },
     {
@@ -64539,24 +64580,7 @@
       "eget_foerst_set": "2026-11-05T01:00:33.324815+00:00",
       "rubrik": "Hinojosa sejr bremser Texas' AI-datacentre",
       "resume_da": "Vælgere vedtog 38 af 44 restriktioner mod datacentre i 10 stater. Tech-industrien kalder det anti-Trump, men exit polls viser bred AI-modstand.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Ifølge Ars Technica stemte et bredt flertal i USA for at begrænse AI og datacentre, mens branchen kalder modstanden anti-Trump.",
-        "forbehold": "Afstemningsresultater og konkrete restriktioner gengives ikke i detaljer.",
-        "emne": "amerikansk ai-modstand"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "38 af 44 restriktioner vedtaget",
@@ -64575,8 +64599,6 @@
           "tekst": "Forsinkelserne stopper ikke ved Texas. Demokraterne vandt også guvernørvalg i Arizona, Georgia og Ohio. Ifølge Axios kan næsten to tredjedele af den datacenterkapacitet, der er planlagt til 2028, møde lignende forsinkelser.\n\nFor AI-firmaer er det et problem, fordi forsinkelserne udskyder indtægter. Ifølge konsulentfirmaet Gartner er AI-boomen næsten 5 billioner dollars fra at betale sig selv. Bloomberg skriver, at udviklere snart vil møde strammere regler for skatteincitamenter og krav om at beskytte borgere mod udgifter til elnet og vandforbrug."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "38 af 44",
@@ -64599,6 +64621,17 @@
           "label": "AI-boomen er næsten så meget fra at betale sig selv ifølge Gartner"
         }
       ],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "MIT Tech Review AI",
+          "link": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
+          "rubrik": "Hinojosa vil bremse AI-datacentre i Texas",
+          "resume_da": "Demokraterne har vundet valget i Texas og kræver moratorium for nye datacentre. Det kan forsinke nogle af verdens største AI-anlæg.",
+          "dato": "2026-11-04T18:50:55+00:00",
+          "foerst_set": "2026-11-04T19:59:08.515800+00:00"
+        }
+      ],
       "detaljer": [
         "Demokraterne vandt guvernørvalg i Arizona, Georgia og Ohio.",
         "Chamber of Progress mener, at valget var anti-Trump, ikke anti-tech.",
@@ -64610,29 +64643,37 @@
         "Hinojosa vil forsinke AI-projekter i Texas",
         "Tech-industrien afviser anti-tech-mandat"
       ],
+      "billedmotiv": "A large windowless data-centre building with rows of solid server-rack blocks, a bold pause symbol mounted across its facade, and a single ballot-paper shape leaning at its base. Solid opaque forms, thick outlines, sharp edges, flat colours, clearly separated.",
+      "billede": "data/img/cc0036592e83ee8b.jpg",
+      "laant_billede": {
+        "fra": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
+        "billede": "data/img/cc0036592e83ee8b.jpg",
+        "motiv": "A large windowless data-centre building with rows of solid server-rack blocks, a bold pause symbol mounted across its facade, and a single ballot-paper shape leaning at its base. Solid opaque forms, thick outlines, sharp edges, flat colours, clearly separated."
+      },
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Ifølge Ars Technica stemte et bredt flertal i USA for at begrænse AI og datacentre, mens branchen kalder modstanden anti-Trump.",
+        "forbehold": "Afstemningsresultater og konkrete restriktioner gengives ikke i detaljer.",
+        "emne": "amerikansk ai-modstand"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-05T01:04:13.522816+00:00"
       },
       "historie_dato": "2026-11-04T18:50:55+00:00",
-      "billede": "data/img/cc0036592e83ee8b.jpg",
-      "billedmotiv": "A large windowless data-centre building with rows of solid server-rack blocks, a bold pause symbol mounted across its facade, and a single ballot-paper shape leaning at its base. Solid opaque forms, thick outlines, sharp edges, flat colours, clearly separated.",
-      "laant_billede": {
-        "fra": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
-        "billede": "data/img/cc0036592e83ee8b.jpg",
-        "motiv": "A large windowless data-centre building with rows of solid server-rack blocks, a bold pause symbol mounted across its facade, and a single ballot-paper shape leaning at its base. Solid opaque forms, thick outlines, sharp edges, flat colours, clearly separated."
-      },
-      "andre": [
-        {
-          "kilde": "MIT Tech Review AI",
-          "link": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
-          "rubrik": "Hinojosa vil bremse AI-datacentre i Texas",
-          "resume_da": "Demokraterne har vundet valget i Texas og kræver moratorium for nye datacentre. Det kan forsinke nogle af verdens største AI-anlæg.",
-          "dato": "2026-11-04T18:50:55+00:00",
-          "foerst_set": "2026-11-04T19:59:08.515800+00:00"
-        }
-      ],
+      "prio": 6,
       "side": "artikel/24e560ad31910656.html"
     },
     {
@@ -64646,24 +64687,7 @@
       "eget_foerst_set": "2026-11-05T01:00:33.324815+00:00",
       "rubrik": "Fire Uber-ture gennem AI-agent i travleste uge",
       "resume_da": "Uber løfter sløret for, hvor lidt AI-agenter bruges: fire ture og 500 madordrer i Halloween-ugen.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Ubers egen opgørelse viser, at kun fire personer i den travleste uge i seneste kvartal bestilte en tur via en AI-agent.",
-        "forbehold": "En enkelt uges tal fra Uber siger ikke noget generelt om brugen af AI-agenter.",
-        "emne": "ai-agenter og uber"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Fire ture på en hel uge",
@@ -64678,8 +64702,6 @@
           "tekst": "Mønsteret går igen hos konkurrenten DoorDash, der i sidste uge fortalte på sit regnskabsopkald, at selskabet indtil nu kun har modtaget få hundrede ordrer fra AI-agenter.\n\nDet står i kontrast til hypen omkring teknologien. AI-startuppen Instinct, grundlagt sidste år, rejste sin seneste runde til en værdi af 10 milliarder dollar. Og Metas Muse blev ifølge Meta selv den mest downloadede app i Apples amerikanske App Store i sidste måned med over 10 millioner brugere.\n\nKhosrowshahi regner med, at antallet af store AI-assistenter vokser fra omkring otte i dag til mere end ti."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "4 ture",
@@ -64702,6 +64724,17 @@
           "label": "Tid til at gentage en favoritmadbestilling i appen"
         }
       ],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/transportation/1026306/uber-ai-agents-q3-earnings-disintermediation",
+          "rubrik": "Uber: Kun fire ture bestilt af AI-agenter",
+          "resume_da": "Selskabet offentliggør for første gang tal for tredjeparts-bots: fire ture i kvartalet og cirka 500 Eats-ordrer i ugen omkring Halloween.",
+          "dato": "2026-11-04T10:58:45-05:00",
+          "foerst_set": "2026-11-04T19:59:08.515800+00:00"
+        }
+      ],
       "detaljer": [
         "DoorDash har ifølge eget udsagn kun fået få hundrede ordrer fra AI-agenter",
         "Instinct blev grundlagt sidste år og er senest værdisat til 10 mia. dollar",
@@ -64713,24 +64746,32 @@
         "500 Uber Eats-ordrer mod ca. 320 mio. i alt",
         "Ubers app tager 50 sekunder – svært at slå for en agent"
       ],
+      "billedmotiv": "A large solid smartphone with the black Uber wordmark across its lower edge; four tiny car-shaped ride tokens sit in a row before it, while a single small cursor arrow taps the screen. The four tokens look lost against the phone's wide, empty surface, showing how few rides AI agents booked in Uber's busiest week.",
+      "billedmotiv_instruks": "00a9a7c4b91941dc8e89",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Ubers egen opgørelse viser, at kun fire personer i den travleste uge i seneste kvartal bestilte en tur via en AI-agent.",
+        "forbehold": "En enkelt uges tal fra Uber siger ikke noget generelt om brugen af AI-agenter.",
+        "emne": "ai-agenter og uber"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-05T01:04:47.424107+00:00"
       },
       "historie_dato": "2026-11-04T15:58:45+00:00",
-      "andre": [
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/transportation/1026306/uber-ai-agents-q3-earnings-disintermediation",
-          "rubrik": "Uber: Kun fire ture bestilt af AI-agenter",
-          "resume_da": "Selskabet offentliggør for første gang tal for tredjeparts-bots: fire ture i kvartalet og cirka 500 Eats-ordrer i ugen omkring Halloween.",
-          "dato": "2026-11-04T10:58:45-05:00",
-          "foerst_set": "2026-11-04T19:59:08.515800+00:00"
-        }
-      ],
-      "billedmotiv": "A large solid smartphone with the black Uber wordmark across its lower edge; four tiny car-shaped ride tokens sit in a row before it, while a single small cursor arrow taps the screen. The four tokens look lost against the phone's wide, empty surface, showing how few rides AI agents booked in Uber's busiest week.",
-      "billedmotiv_instruks": "00a9a7c4b91941dc8e89",
+      "prio": 5,
       "side": "artikel/d13217a5b4923233.html"
     },
     {
@@ -64744,24 +64785,7 @@
       "eget_foerst_set": "2026-11-05T01:00:33.324815+00:00",
       "rubrik": "AT&T lader Gemini beskrive overvågningsvideoer",
       "resume_da": "Pakkeleveringer og nattens ubudne gæster kan nu findes med almindelige spørgsmål i AT&Ts Connected Life — men kun på den professionelle overvågningsplan.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "AT&Ts Connected Life integreres med Gemini for Home og får ifølge selskabet selv opsummering af hændelser og søgning i videohistorik.",
-        "forbehold": "Det er AT&Ts egen påstand om at være først; funktionernes kvalitet er ikke uafhængigt testet.",
-        "emne": "gemini for home og at&t"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Gemini beskriver, hvad kameraet så",
@@ -64780,14 +64804,13 @@
           "tekst": "AT&T lancerede Connected Life i december sammen med Google og Abode. Integrationen bruger Googles Gemini-drevne Home APIs, som lader producenter af smart home-udstyr bygge AI-funktioner ind i deres enheder.\n\nADT har antydet, at selskabet også vil bringe Gemini for Home-funktioner ind i sine sikkerhedssystemer. AT&T kan altså få selskab."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "29,99 dollars om måneden",
           "label": "AT&Ts professionelle Connected Life-overvågningsplan, som er den eneste adgang til Gemini-funktionerne"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Connected Life blev lanceret i december i samarbejde med Google og Abode.",
         "Integrationen bygger på Googles Gemini-drevne Home APIs til smart home-produkter.",
@@ -64800,13 +64823,31 @@
         "Videooptagelser kan søges med almindelige spørgsmål",
         "Kun med plan til 29,99 dollars om måneden"
       ],
+      "billedmotiv": "A solid home security camera bearing AT&T's blue globe emblem points at a rigid rectangular video frame; inside the frame, a parcel sits on a doorstep. Beside the frame floats the four-colour Gemini spark, its concave four-point star, indicating Gemini describes and searches the footage.",
+      "billedmotiv_instruks": "865d9ae43cc73bccdbbb",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "AT&Ts Connected Life integreres med Gemini for Home og får ifølge selskabet selv opsummering af hændelser og søgning i videohistorik.",
+        "forbehold": "Det er AT&Ts egen påstand om at være først; funktionernes kvalitet er ikke uafhængigt testet.",
+        "emne": "gemini for home og at&t"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-05T01:05:33.983321+00:00"
       },
-      "billedmotiv": "A solid home security camera bearing AT&T's blue globe emblem points at a rigid rectangular video frame; inside the frame, a parcel sits on a doorstep. Beside the frame floats the four-colour Gemini spark, its concave four-point star, indicating Gemini describes and searches the footage.",
-      "billedmotiv_instruks": "865d9ae43cc73bccdbbb",
+      "prio": 5,
       "side": "artikel/94f88b800358a11e.html"
     },
     {
@@ -64820,6 +64861,51 @@
       "eget_foerst_set": "2026-11-05T01:00:33.324815+00:00",
       "rubrik": "Nothing vil sende AI-produkt i december",
       "resume_da": "Carl Pei kalder det første AI-native produkt et produktivitetsværktøj uden ny skærm – og understreger, at det ikke kunne have været en app.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Et produktivitetsværktøj uden skærm",
+          "tekst": "Nothing, der står bag Nothing Phone, arbejder på et AI-produkt. I et opslag på X skrev topchef Carl Pei, at selskabets første »AI-native produkt« udkommer i december. Med AI-native mener han et produkt, der er bygget med AI som grundlag – ikke en app, hvor AI blot er føjet til.\n\nPei beskriver det som »et værktøj« med den personlighed og omhu, der kendetegner Nothing. Det har »ingen ny skærm«, og det »kunne ikke have været en app«. Han kalder det også et produktivitetsværktøj. Hvad værktøjet konkret kan, oplyser han ikke."
+        },
+        {
+          "overskrift": "Pei går en anden vej end branchen",
+          "tekst": "Pei nedtoner idéen om, at AI først og fremmest skal ind i en ny bærbar AI-enhed. »Hele branchen jagter sit iPhone-øjeblik: vedhænget, pinnen, brillerne, ledsageren, en magisk enhed for forbrugerne, der gør AI til en del af alles liv,« skrev han.\n\n»Jeg beundrer dristigheden, men jeg læser øjeblikket anderledes.« TechCrunch bemærker, at Pei dermed ser ud til at nedtone en kobling til AI-wearables. Hvad han i stedet sigter efter, står åbent."
+        },
+        {
+          "overskrift": "Ingen fast udgivelsesdato er meldt ud",
+          "tekst": "TechCrunch omtaler lanceringen som »næste måned«, og der er ikke offentliggjort en fast udgivelsesdato. I Peis opslag er måneden december. Der er altså ikke en præcis dag at sætte i kalenderen endnu.\n\nTechCrunch skriver, at Nothing-fans snart bør få mere at vide om, hvad selskabet har klar. Indtil da står det centrale spørgsmål åbent: Hvad kan et AI-produkt uden ny skærm og uden app egentlig?"
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1026586/nothing-screen-free-ai-device-carl-pei",
+          "rubrik": "Nothing lancerer skærmfri AI-enhed næste måned",
+          "resume_da": "Carl Pei bekræfter selskabets første AI-native produkt: en værktøjsenhed uden ny skærm, som ifølge CEO'en ikke kunne have været en app.",
+          "dato": "2026-11-04T13:26:07-05:00",
+          "foerst_set": "2026-11-04T19:59:08.515800+00:00"
+        }
+      ],
+      "detaljer": [
+        "Pei har længe antydet et AI-first device fra Nothing.",
+        "Nothing har tidligere varslet AI-smartbriller og earbuds med AI-integration."
+      ],
+      "betydning": "Hvis Peis beskrivelse holder, vil Nothing lancere et AI-produkt uden ny skærm og uden app – en anden vej end branchens bærbare AI-bølge.",
+      "pointer": [
+        "Carl Pei: Første AI-native produkt udkommer i december.",
+        "Det har ingen ny skærm og kunne ikke være en app.",
+        "Ingen fast udgivelsesdato er offentliggjort."
+      ],
+      "billedmotiv": "A compact black rounded-rectangle device with a completely blank, screenless face, the dot-matrix NOTHING wordmark set across its front, standing alone as one solid object. Solid opaque black form, thick crisp outline, sharp edges, clean separated silhouette.",
+      "billede": "data/img/ec804d473374114a.webp",
+      "laant_billede": {
+        "fra": "https://www.theverge.com/ai-artificial-intelligence/1026586/nothing-screen-free-ai-device-carl-pei",
+        "billede": "data/img/ec804d473374114a.webp",
+        "motiv": "A compact black rounded-rectangle device with a completely blank, screenless face, the dot-matrix NOTHING wordmark set across its front, standing alone as one solid object. Solid opaque black form, thick crisp outline, sharp edges, clean separated silhouette."
+      },
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -64836,59 +64922,514 @@
         "emne": "nothing ai-enhed"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Et produktivitetsværktøj uden skærm",
-          "tekst": "Nothing, der står bag Nothing Phone, arbejder på et AI-produkt. I et opslag på X skrev topchef Carl Pei, at selskabets første »AI-native produkt« udkommer i december. Med AI-native mener han et produkt, der er bygget med AI som grundlag – ikke en app, hvor AI blot er føjet til.\n\nPei beskriver det som »et værktøj« med den personlighed og omhu, der kendetegner Nothing. Det har »ingen ny skærm«, og det »kunne ikke have været en app«. Han kalder det også et produktivitetsværktøj. Hvad værktøjet konkret kan, oplyser han ikke."
-        },
-        {
-          "overskrift": "Pei går en anden vej end branchen",
-          "tekst": "Pei nedtoner idéen om, at AI først og fremmest skal ind i en ny bærbar AI-enhed. »Hele branchen jagter sit iPhone-øjeblik: vedhænget, pinnen, brillerne, ledsageren, en magisk enhed for forbrugerne, der gør AI til en del af alles liv,« skrev han.\n\n»Jeg beundrer dristigheden, men jeg læser øjeblikket anderledes.« TechCrunch bemærker, at Pei dermed ser ud til at nedtone en kobling til AI-wearables. Hvad han i stedet sigter efter, står åbent."
-        },
-        {
-          "overskrift": "Ingen fast udgivelsesdato er meldt ud",
-          "tekst": "TechCrunch omtaler lanceringen som »næste måned«, og der er ikke offentliggjort en fast udgivelsesdato. I Peis opslag er måneden december. Der er altså ikke en præcis dag at sætte i kalenderen endnu.\n\nTechCrunch skriver, at Nothing-fans snart bør få mere at vide om, hvad selskabet har klar. Indtil da står det centrale spørgsmål åbent: Hvad kan et AI-produkt uden ny skærm og uden app egentlig?"
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [
-        "Pei har længe antydet et AI-first device fra Nothing.",
-        "Nothing har tidligere varslet AI-smartbriller og earbuds med AI-integration."
-      ],
-      "betydning": "Hvis Peis beskrivelse holder, vil Nothing lancere et AI-produkt uden ny skærm og uden app – en anden vej end branchens bærbare AI-bølge.",
-      "pointer": [
-        "Carl Pei: Første AI-native produkt udkommer i december.",
-        "Det har ingen ny skærm og kunne ikke være en app.",
-        "Ingen fast udgivelsesdato er offentliggjort."
-      ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-05T01:07:26.583863+00:00"
       },
       "historie_dato": "2026-11-04T18:26:07+00:00",
-      "billede": "data/img/ec804d473374114a.webp",
-      "billedmotiv": "A compact black rounded-rectangle device with a completely blank, screenless face, the dot-matrix NOTHING wordmark set across its front, standing alone as one solid object. Solid opaque black form, thick crisp outline, sharp edges, clean separated silhouette.",
-      "laant_billede": {
-        "fra": "https://www.theverge.com/ai-artificial-intelligence/1026586/nothing-screen-free-ai-device-carl-pei",
-        "billede": "data/img/ec804d473374114a.webp",
-        "motiv": "A compact black rounded-rectangle device with a completely blank, screenless face, the dot-matrix NOTHING wordmark set across its front, standing alone as one solid object. Solid opaque black form, thick crisp outline, sharp edges, clean separated silhouette."
+      "prio": 4,
+      "side": "artikel/3ba59fa6ce836869.html"
+    },
+    {
+      "titel": "Meta acquires AI coding startup Conductor",
+      "link": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
+      "resume": "The startup allows software engineers to deploy teams of agents to work on various aspects of a project simultaneously.",
+      "dato": "2026-11-04T21:10:56+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-05T01:00:33.324815+00:00",
+      "eget_foerst_set": "2026-11-05T01:00:33.324815+00:00",
+      "rubrik": "Meta køber AI-kodestartupen Conductor",
+      "resume_da": "Conductor lader flere AI-agenter arbejde i hver sit arbejdsrum. Nu bliver selskabet en del af Meta, mens cloudtjenesten lukker 20. november.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Meta køber AI-kodestartupen Conductor, hvis værktøj lader ingeniører sætte hold af agenter på samme projekt.",
+        "forbehold": "Købesum, vilkår og hvordan teknologien indgår i Metas produkter er ikke oplyst.",
+        "emne": "meta køber conductor"
       },
-      "andre": [
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
+      "sektioner": [
         {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/1026586/nothing-screen-free-ai-device-carl-pei",
-          "rubrik": "Nothing lancerer skærmfri AI-enhed næste måned",
-          "resume_da": "Carl Pei bekræfter selskabets første AI-native produkt: en værktøjsenhed uden ny skærm, som ifølge CEO'en ikke kunne have været en app.",
-          "dato": "2026-11-04T13:26:07-05:00",
-          "foerst_set": "2026-11-04T19:59:08.515800+00:00"
+          "overskrift": "Flere agenter på samme projekt",
+          "tekst": "Conductor er et værktøj til softwareudviklere. I stedet for at én AI-assistent hjælper med hele kodebasen, kan brugeren sætte flere agenter i gang samtidigt i hver sit arbejdsrum. Hver agent tager en afgrænset del af projektet, og de arbejder side om side.\n\nDet er selve pointen: arbejdet deles op, så agenterne ikke skriver oven i hinanden. Ifølge TechCrunch kan agenterne køre i skyen, lokalt på computeren eller fra en telefon. Agenterne er ikke udviklet af Conductor selv, men kommer fra store laboratorier som Anthropic og OpenAI."
+        },
+        {
+          "overskrift": "Cloudtjenesten lukker 20. november",
+          "tekst": "Købet ændrer ikke alt med det samme. Ifølge grundlægger og CEO Charlie Holtz vil Conductors kernefunktioner fortsætte som hidtil indtil begyndelsen af næste år. Undtagelsen er cloudtjenesten, som lukker 20. november — derefter begynder selskabet at slette brugernes data i skyen.\n\nPå selskabets blog skriver Holtz, at Conductor slutter sig til Meta, og at der er »store, vanvittige planer« for den næste grænseflade. Han lover noget nyt til kunderne i begyndelsen af næste år. Meta bekræfter købet over for TechCrunch, men vil ikke oplyse flere detaljer om handlen."
+        },
+        {
+          "overskrift": "Meta henter kodeagenter ind",
+          "tekst": "Meta har tidligere været bagud på AI-tjenester og har brugt de seneste måneder på at indhente. I august lancerede selskabet sin egen kodeagent, Muse Code. Metas nyere Muse-agenter har samtidig passeret 10 millioner brugere, oplyser selskabet.\n\nKøbet af Conductor er et i rækken af AI-opkøb fra Metas side det seneste år; blandt andet har selskabet købt agentplatformen Moltbook. Holtz skriver på X, at han glæder sig til at arbejde sammen med Metas AI-chef Alexandr Wang og Nat Friedman, der er produktchef i selskabets Superintelligence Labs."
         }
       ],
-      "side": "artikel/3ba59fa6ce836869.html"
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "10 mio. brugere",
+          "label": "Metas Muse-agenter ifølge Metas egen opgørelse"
+        },
+        {
+          "tal": "20. november",
+          "label": "Conductors cloudtjeneste lukker; derefter slettes brugerdata i skyen"
+        }
+      ],
+      "detaljer": [
+        "Conductor blev grundlagt i 2024 og lancerede først sit kerneeprodukt sidste sommer.",
+        "Axios bragte nyheden om opkøbet først.",
+        "Holtz kalder Metas Superintelligence Labs for det lab med højest talenttæthed."
+      ],
+      "betydning": "For Conductors brugere betyder opkøbet først og fremmest en frist: clouddata slettes efter 20. november, mens kernefunktionerne fortsætter til næste år.",
+      "pointer": [
+        "Meta køber Conductor",
+        "Cloudtjeneste lukker 20. november",
+        "Kernefunktioner fortsætter til næste år"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-05T12:45:31.407416+00:00"
+      },
+      "billedmotiv": "Meta's blue infinity-loop emblem sits on a solid header panel above three separate upright compartments, each holding a small dark agent terminal block with its own screen rectangle, divided by thick walls so the blocks work side by side without overlap.",
+      "billedmotiv_instruks": "1babbd0557f31f8c86c9",
+      "side": "artikel/421e2b40f3bf5ee4.html"
+    },
+    {
+      "titel": "Agility Robotics' Nasdaq debut invites scrutiny of humanoid robot market",
+      "link": "https://arstechnica.com/ai/2026/11/agility-robotics-nasdaq-debut-invites-scrutiny-of-humanoid-robot-market/",
+      "resume": "US leader in deploying humanoid robots goes public on the Nadaq stock exchange.",
+      "dato": "2026-11-05T12:00:41+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-05T12:41:56.333140+00:00",
+      "eget_foerst_set": "2026-11-05T12:41:56.333140+00:00",
+      "rubrik": "Agility Robotics børsnoteres med Digit 5",
+      "resume_da": "Den menneskelignende robot Digit 5 kan lejes for 8.500 dollar om måneden og skal fra 2027 afløse manuelt arbejde. Agility Robotics er nu på Nasdaq.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Agility Robotics bliver første børsnoterede selskab, der udelukkende sælger humanoide robotter; rejser spørgsmål om markedets reelle størrelse.",
+        "forbehold": "Ingen oplysninger om omsætning, ordrer eller teknisk ydeevne i materialet.",
+        "emne": "agility robotics"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Digit 5 får hurtigt batteri og sikkerhedssystem",
+          "tekst": "Agility Robotics' nye robot Digit 5 er en tobenet maskine, der skal udføre manuelt arbejde i varehuse og fabrikker. Den kan løfte op til 50 pund (cirka 23 kilo), har udskiftelige hænder og kan arbejde mere end 20 timer i døgnet med et hurtigladende batteri.\n\nBatteriet fra britiske Nyobolt lader på **ni minutter** og giver 90 minutters drift. Agility har en eksklusiv aftale om at bruge batterikemien i menneskelignende robotter. Digit 5 har også et sikkerhedssystem, der opdager mennesker i nærheden og kan standse eller sætte sig ned for at undgå skader. Kunder kan få robotten fra 2027."
+        },
+        {
+          "overskrift": "To måder at betale for Digit 5",
+          "tekst": "Agility tilbyder en abonnementsmodel, hvor kunder betaler cirka 25.000 dollar pr. robot for levering og udrulning samt **8.500 dollar om måneden** for software og vedligeholdelse. Det giver ifølge selskabet en lavere risiko for kunderne, fordi de betaler en sats, der ligner menneskelig arbejdskraft.\n\nAlternativet er at købe robotten. Hardware koster 200.000 dollar, levering og udrulning 20.000 dollar, og software og vedligeholdelse koster 36.000 dollar om året. CFO Michael Beer har oplyst, at et abonnement kan erstatte 200.000 dollar i årlige lønomkostninger med 100.000 dollar i årlige robotomkostninger. Ved køb kan 1,1 million dollar i lønomkostninger over fem år blive cirka 400.000 dollar i robotomkostninger."
+        },
+        {
+          "overskrift": "Agility tabte 140 millioner dollar i 2025",
+          "tekst": "Agilitys børsnotering giver et sjældent indblik i økonomien bag menneskelignende robotter, men selskabet er stadig i en tidlig fase. I 2025 havde Agility en omsætning på **1,8 millioner dollar** og et driftsunderskud på 140 millioner dollar.\n\nSelskabet forventer fortsat underskud i overskuelig fremtid. Agilitys indtægtsberegninger for abonnementsmodellen bygger på en uidentificeret kundes ordre på 300 millioner dollar for 1.000 Digit 5-robotter over tre år. Ordren er ikke en garanti, fordi kontrakten kræver, at Agility leverer bestemte milepæle, produktfunktioner og specifikationer."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "15.000 USD",
+          "label": "Agilitys årlige driftsomkostning per robot til software og vedligeholdelse"
+        },
+        {
+          "tal": "75.000 USD",
+          "label": "Forventet materialepris per Digit 5 ved 1.000 robotter om året"
+        },
+        {
+          "tal": "30.000 USD",
+          "label": "Forventet materialepris per Digit 5 ved 10.000 robotter om året"
+        }
+      ],
+      "detaljer": [
+        "GXO udvider Digit-brugen fra et lager i Georgia til North Carolina og Tennessee.",
+        "Schaeffler og Toyota Motor Manufacturing Canada er også kunder.",
+        "Unitree på Shanghai STAR Market offentliggjorde regnskaber i august 2026."
+      ],
+      "betydning": "Agilitys børsnotering giver offentlig indsigt i økonomien bag menneskelignende robotter, men selskabet taber fortsat penge og skal bevise, at ordrer kan omsættes til indtjening.",
+      "pointer": [
+        "Digit 5 kan lejes for 8.500 dollar om måneden.",
+        "Agility Robotics blev børsnoteret på Nasdaq 5. november.",
+        "Selskabet havde 140 millioner dollar i driftsunderskud i 2025."
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-05T12:47:01.168688+00:00"
+      },
+      "billedmotiv": "A sturdy two-legged humanoid robot with a smooth white torso and dark joints lifts a heavy cardboard box; beside it a thick rectangular battery pack marked with a bold lightning bolt slides into the robot's back slot, and a round price-tag disc leans against the battery.",
+      "billedmotiv_instruks": "aca96a842dfc9dab8187",
+      "billede": "data/img/df3d4392d90b79c4.jpg",
+      "side": "artikel/9e827dbe569b5563.html"
+    },
+    {
+      "titel": "Agility is the first pure humanoid robot company on the stock market. Are you buying?",
+      "link": "https://techcrunch.com/2026/11/05/agility-is-the-first-pure-humanoid-robot-company-on-the-stock-market-are-you-buying/",
+      "resume": "Agility arrives on the Nasdaq today as the first publicly-traded pure-play humanoid robotics company.",
+      "dato": "2026-11-05T12:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-05T12:41:56.333140+00:00",
+      "eget_foerst_set": "2026-11-05T12:41:56.333140+00:00",
+      "rubrik": "Agility bliver første rene humanoid-robotselskab på børsen",
+      "resume_da": "Selskabet rejser 465 mio. dollar gennem en SPAC og satser på Digit 5, der skal arbejde blandt mennesker.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "TechCrunch rapporterer, at Agility i dag handles på Nasdaq som første rendyrkede humanoide robot-selskab.",
+        "forbehold": "Investorvinklet; ingen tal på forretningen eller den teknologiske modenhed.",
+        "emne": "agility robotics"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Første humanoide selskab på børsen",
+          "tekst": "Agility er på vej til at blive det første børsnoterede selskab, der kun bygger humanoide robotter. Det sker gennem en omvendt fusion med et såkaldt SPAC-selskab – en tom børsnoteret skal, som Agility smelter sammen med. Samtidig rejser selskabet 465 mio. dollar i ny kapital fra detailinvestorer og private investorer. Handlen er beskrevet før selskabets markedsdebut."
+        },
+        {
+          "overskrift": "Digit flytter tunge kasser for kunder",
+          "tekst": "Agility blev skilt ud fra Oregon State University i 2015 og har allerede Digit-robotter hos ni kunder, bl.a. Schaeffler, GXO, Toyota Motor Manufacturing Canada og Mercado Libre. De flytter typisk tunge kasser; hos GXO har de håndteret over 100.000. Indtægterne er beskedne: 174.000 dollar i første halvdel af 2026, mest fra nærtstående parter, mens underskuddet var 362 mio. dollar."
+        },
+        {
+          "overskrift": "Digit 5 skal arbejde blandt mennesker",
+          "tekst": "Næste model, Digit 5, kan ifølge Agility arbejde sikkert omkring mennesker, ikke kun i en aflukket arbejdscelle som den nuværende model. Selskabet har planlagte kontrakter til 300 mio. dollar fra 30 kunder, men kontrakterne afhænger af, at Digit 5 lever op til mål for bl.a. gennemstrømning, oppetid og placeringsnøjagtighed. Prototyperne er ikke vist endnu; de skal demonstreres på CES 2027 og være bredt tilgængelige ved udgangen af 2027."
+        },
+        {
+          "overskrift": "Grænsen går ved avanceret håndtering",
+          "tekst": "Digit kan løfte tunge byrder og placere dem med 98 procents nøjagtighed, men mangler som de fleste robotter i dag evnen til kompleks manipulation. Agility har 65.000 timers driftsdata fra rigtige kunder og faciliteter, som selskabet bruger til at træne Digit. CEO Peggy Johnson siger, at de nye midler dækker selskabets nuværende behov, men hun vil ikke spå om, at midlerne gør Agility selvbærende."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "465 mio. dollar",
+          "label": "Ny kapital fra detail- og private investorer i SPAC-handlen"
+        },
+        {
+          "tal": "300 mio. dollar",
+          "label": "Planlagte kontrakter med 30 kunder om Digit 5"
+        },
+        {
+          "tal": "174.000 dollar",
+          "label": "Omsætning i første halvår 2026, mest fra nærtstående parter"
+        },
+        {
+          "tal": "362 mio. dollar",
+          "label": "Underskud i samme periode"
+        }
+      ],
+      "detaljer": [
+        "Kunder betaler 500.000 dollar for en koncepttest på stedet, før en udrulning skaleres.",
+        "Agilitys produktionsanlæg kan ifølge selskabet producere 10.000 robotter om året.",
+        "Agility vil ikke oplyse, hvem de 30 kunder er, eller om de også er investorer."
+      ],
+      "betydning": "Digit 5 skal nå mål for bl.a. gennemstrømning, oppetid og præcision, før de planlagte kontrakter på 300 mio. dollar kan lukkes.",
+      "pointer": [
+        "Agility rejser 465 mio. dollar gennem SPAC.",
+        "Digit 5 skal arbejde blandt mennesker.",
+        "Planlagte kontrakter: 300 mio. dollar fra 30 kunder."
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-05T12:45:39.378451+00:00"
+      },
+      "billedmotiv": "A humanoid robot with a boxy white torso steps out through the open doorway of a solid safety cage onto the steps of a wide rising bar chart, one foot planted on the highest step, with a thick upward arrow standing beside the bars.",
+      "billedmotiv_instruks": "a643146391ef35d1ba93",
+      "billede": "data/img/3439d1d70a1270cd.webp",
+      "side": "artikel/ab92969d84578d5f.html"
+    },
+    {
+      "titel": "Big Tech’s big AI buildout will not end until someone stops it",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1027344/amazon-microsoft-alphabet-google-meta-data-centers-earnings-q3",
+      "resume": "After four of the biggest competitors in the AI race held quarterly earnings calls late last month, two things are clear: Big Tech is not done spending record amounts on the AI data center buildout, and the AI data center buildout is not any closer to yielding its promised returns. A third thing is also […]",
+      "dato": "2026-11-05T05:45:00-05:00",
+      "kilde": "The Verge AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-05T12:41:56.333140+00:00",
+      "eget_foerst_set": "2026-11-05T12:41:56.333140+00:00",
+      "rubrik": "Alphabet-aktien faldt 13 procent efter AI-investeringer",
+      "resume_da": "Amazon, Microsoft, Alphabet og Meta planlægger investeringer for mindst 720 milliarder dollar i år, mest til AI-infrastruktur, men Wall Street tvivler på afkastet.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Analyse af kvartalsregnskaber: Microsoft, Alphabet, Amazon og Meta fortsætter rekordinvesteringer i AI-datacentre uden synligt afkast.",
+        "forbehold": "Bygger på regnskabstal og vurderinger, ikke dokumenterede afkastberegninger.",
+        "emne": "big tech-ai-investeringer"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Alphabet-aktien faldt 13 procent på én dag",
+          "tekst": "Det var det største daglige fald i selskabets historie. Faldet kom efter Alphabets regnskab, hvor selskabet varslede markant større investeringer i AI-datacentre.\n\nAlphabet planlægger at bruge 195-205 milliarder dollar på anlægsinvesteringer (CapEx) i år, og CFO Anat Ashkenazi sagde, at selskabet vil øge investeringerne 'signifikant' i 2027.\n\nWall Street har indtil nu accepteret de stigende AI-investeringer. Men efter mere end tre år begynder investorerne at spørge, hvornår investeringerne giver afkast. Det er den usikkerhed, der nu rammer aktiekursen."
+        },
+        {
+          "overskrift": "Google Search vokser langsommere efter AI Mode",
+          "tekst": "Alphabets kerneforretning er Google Search, og den voksede langsommere i tredje kvartal. Annonceindtægterne fra Search steg 12 procent mod 17 procent i samme kvartal året før. Årsagen er ifølge Alphabet, at den nye AI-søgetilstand AI Mode giver lavere indtjening.\n\nDet er et paradoks: Google Search var med til at give investorerne tillid til Alphabets aggressive AI-investeringer, men nu spiser AI Mode en del af Search-forretningen, før Google har fundet en måde at tjene penge på AI Mode. Philipp Schindler, Alphabets forretningschef, sagde, at annonceeksperimenter viser 'lovende resultater', men gav ingen eksempler."
+        },
+        {
+          "overskrift": "Amazon og Meta øger også investeringerne",
+          "tekst": "Amazon planlægger at bruge 220 milliarder dollar på anlægsinvesteringer i år, og CEO Andy Jassy sagde, at selskabet vil bruge 'meningsfuldt mere' i 2027. Han kaldte investeringerne en 'once in a lifetime opportunity'.\n\nMeta forventer at bruge 135-145 milliarder dollar i år. Selskabet har ikke offentliggjort planerne for næste år, men store finanshuse forventer, at Meta øger investeringerne. CEO Mark Zuckerberg sagde, at Metas AI-program Muse kun bliver profitabelt, hvis Meta kan sænke sine omkostninger til datakraft. Han forventer, at Metas effektivitet med datakraft stiger 'ti gange' næste år."
+        },
+        {
+          "overskrift": "Anthropic brænder mere end det tjener",
+          "tekst": "Det er ikke kun techgiganterne, der bruger store summer. AI-startup Anthropic offentliggjorde tal for tredje kvartal: Omsætningen voksede til 17 milliarder dollar, mere end 1.000 procent fra året før. Men omkostningerne til datakraft var på 17,5 milliarder dollar, så de var ikke helt dækket ind.\n\nAnthropic har desuden forpligtet sig til næsten 900 milliarder dollar i fremtidige udgifter til datakraft og infrastruktur. En del af pengene går til Google, som sælger sine TPU-chips – sine egne AI-chips – til Anthropic."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "720 milliarder dollar",
+          "label": "Samlet CapEx for Amazon, Microsoft, Alphabet og Meta i år"
+        },
+        {
+          "tal": "195-205 milliarder dollar",
+          "label": "Alphabets planlagte CapEx i år"
+        },
+        {
+          "tal": "220 milliarder dollar",
+          "label": "Amazons planlagte CapEx i år"
+        },
+        {
+          "tal": "135-145 milliarder dollar",
+          "label": "Metas planlagte CapEx i år"
+        },
+        {
+          "tal": "13 procent",
+          "label": "Alphabets aktiefald på én dag – det største i selskabets historie"
+        }
+      ],
+      "detaljer": [
+        "Efter det store fald begyndte Alphabet-aktien at stige igen i denne uge.",
+        "Anthropic planlægger at bygge sine egne datacentre."
+      ],
+      "betydning": "Alphabets aktiefald viser, at investorerne nu straffer selskaber, der øger AI-investeringerne uden at vise tilsvarende indtjening.",
+      "pointer": [
+        "Fire techgiganter planlægger mindst 720 mia. dollar i CapEx i år.",
+        "Alphabet-aktien faldt 13 procent efter AI-investeringer.",
+        "Google Search-annoncevækst faldt til 12 procent fra 17 procent."
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-05T12:48:37.761664+00:00"
+      },
+      "billedmotiv": "A tall data-centre server rack tilts as a thick red arrow plunges downward across its front; a large four-colour Google G in blue, red, yellow and green is mounted on the rack panel, taking about a quarter of the motif's width.",
+      "billedmotiv_instruks": "2eee2fd750f831175197",
+      "side": "artikel/3b1e4e7f7c1e71fb.html"
+    },
+    {
+      "titel": "After the midterms, a bigger clash over data centers could be coming",
+      "link": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/",
+      "resume": "Data center opposition crossed party lines in Tuesday’s midterms.",
+      "dato": "2026-11-05T01:02:14+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-11-05T12:41:56.333140+00:00",
+      "eget_foerst_set": "2026-11-05T12:41:56.333140+00:00",
+      "rubrik": "Demokraterne vinder på modstand mod data centre",
+      "resume_da": "Demokraterne får hele Kongressen efter midterms. Et landsdækkende stop for nye data centre er nu mere sandsynligt, men møder modstand også blandt demokrater.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Modstand mod AI-datacentre blev ved midtvejsvalget et tema på tværs af partier, hvilket kan varsle ny politisk kamp.",
+        "forbehold": "Ingen konkrete beslutninger eller vedtagne ændringer refereret.",
+        "emne": "datacenter-modstand usa"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Næsten 80 procent siger nej tak",
+          "tekst": "Data centre – de store haller med de computere, der driver AI – blev for alvor en valgsag ved midterms 3. november. I en exitpoll fra NBC svarer næsten 80 procent af vælgerne, at de er imod, at der bygges data centre i deres nabolag.\n\nNæsten 60 procent kalder data centre en afgørende eller væsentlig faktor for deres stemme, og mere end halvdelen mener, at AI vil gøre mere skade end gavn."
+        },
+        {
+          "overskrift": "Et county i Ohio forbyder Metas anlæg",
+          "tekst": "Valget gav Demokraterne fuld kontrol over Kongressen, mens Republikanerne beholder Det Hvide Hus. I Ohio har det county, hvor Meta havde planlagt et anlæg på 700.000 kvadratfod, netop vedtaget et forbud mod data centre.\n\nIfølge Morgan Stanley er den kommende demokratiske guvernør Amy Acton en stor risiko for delstatens udbygning. OpenAI har kigget på et anlæg til 500 milliarder dollars i Ohio med over 100 milliarder dollars i finansiering fra Nvidia."
+        },
+        {
+          "overskrift": "Landsdækkende stop er tættere på",
+          "tekst": "Demokraternes kontrol med Kongressen kan forbedre chancerne for et lovforslag fra senator Bernie Sanders og repræsentant Alexandria Ocasio-Cortez. Det vil stoppe nye data centre i hele USA, indtil Kongressen sikrer, at udbygningen ikke hæver elpriserne, skader miljøet eller sker uden lokal opbakning.\n\nEt vedtaget lovforslag kan dog møde veto. Også GRID Savings Act fra senator Martin Heinrich vil beskytte lokalsamfund mod at betale for nettets opgraderinger."
+        },
+        {
+          "overskrift": "Kampen flytter til delstaterne",
+          "tekst": "I Texas gjorde den kommende guvernør Gina Hinojosa modstand mod data centre til en central del af sin kampagne. Goldman Sachs venter forsinkelser i Georgia og Texas som følge af de demokratiske fremgange.\n\nMaia Woluchem fra Data & Society venter, at meget vil ske i delstater og kommuner, uanset hvad der sker føderalt. Nadine Smith fra Color of Change siger, at et totalt stop også er omstridt blandt demokrater, der frygter at bremse AI."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "Næsten 80 %",
+          "label": "Vælgere i NBC-exitpoll imod data centre i deres nabolag"
+        },
+        {
+          "tal": "Næsten 60 %",
+          "label": "Vælgere, der kaldte data centre en afgørende eller væsentlig valgfaktor"
+        },
+        {
+          "tal": "700.000 kvadratfod",
+          "label": "Metas planlagte data center i Ohio, nu ramt af lokalt forbud"
+        },
+        {
+          "tal": "500 mia. dollars",
+          "label": "OpenAIs mulige anlæg i Ohio, med 100 mia. dollars fra Nvidia"
+        }
+      ],
+      "detaljer": [
+        "Amazon byggede et data center i Gilroy, Californien, uden at mange beboere vidste det – via en 45 år gammel zonelov.",
+        "Lokale embedsmænd har skullet underskrive hemmeligholdelsesaftaler om data center-projekter.",
+        "Data centre har fået milliarder i skattenedsættelser.",
+        "xAI's data center i Memphis får strøm fra gasturbiner."
+      ],
+      "betydning": "Flere kommuner kan følge Ohios eksempel og forbyde nye data centre, og Goldman Sachs venter forsinkelser i Georgia og Texas.",
+      "pointer": [
+        "Demokraterne kontrollerer Kongressen efter midterms",
+        "Næsten 80 % vil ikke have data centre i nabolaget",
+        "Et landsdækkende stop kan møde veto"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-05T12:50:49.034698+00:00"
+      },
+      "billedmotiv": "A wide flat-roofed data-centre hall with rows of vent slots stands behind a large red prohibition ring with a diagonal bar; beside it a solid ballot box with a slot holds one raised ballot card, showing voters blocking new construction.",
+      "billedmotiv_instruks": "5272d3b239e4daf6ae23",
+      "side": "artikel/487fe86018a1e7f1.html"
+    },
+    {
+      "titel": "Apple is reportedly cutting budgets for its internal AI usage",
+      "link": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+      "resume": "The company is said to be significantly dropping the amount it's spending on AI for its engineering teams.",
+      "dato": "2026-11-05T01:26:22+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-05T12:41:56.333140+00:00",
+      "eget_foerst_set": "2026-11-05T12:41:56.333140+00:00",
+      "rubrik": "Apple sænker ingeniørernes AI-loft til 200 dollar",
+      "resume_da": "Ifølge Bloomberg er det daglige AI-loft for Apples ingeniørteams sat ned fra 300 til 200 dollar, og flere nedskæringer er på vej.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "rygte",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Ifølge TechCrunch skærer Apple markant i sit AI-budget til ingeniørteams; ikke bekræftet af Apple.",
+        "forbehold": "Ubekræftet rapport uden tal, kilde eller Apples kommentar.",
+        "emne": "apple ai-budget"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Loftet er faldet fra 300 til 200 dollar",
+          "tekst": "Apples ingeniørteams kan ifølge Bloomberg ikke længere bruge 300 dollar om dagen på AI. I oktober sænkede selskabet det daglige loft til 200 dollar, og flere nedskæringer er ifølge mediet undervejs.\n\nNogle tilladelser ventes at falde til 100 dollar om dagen. Uden for ingeniørafdelingerne overvejer Apple angiveligt et dagligt loft på helt ned til 25 dollar. Tallene kommer fra Bloombergs kilder, og TechCrunch har ikke selv bekræftet dem."
+        },
+        {
+          "overskrift": "Regningen for tokens forfalder",
+          "tekst": "AI-modeller afregnes typisk per token — de små bidder tekst, som modellen læser og skriver. Tidligere på året drev det, TechCrunch kalder tokenmaxxing, virksomheder til at presse medarbejderne til at bruge AI mest muligt i håbet om effektivitet.\n\nBølgen blev kortvarig. Regningerne for tokens kom, og selskaberne begyndte at se rationering som en mere økonomisk fornuftig vej."
+        },
+        {
+          "overskrift": "Gevinsten er stadig uklar",
+          "tekst": "Usikkerheden handler ikke kun om prisen. Der er vedvarende bekymring for kløften mellem, hvad det koster at bygge og køre AI, og de produktivitetsgevinster teknologien forventes at give — gevinster, der ofte er uklare.\n\nFor Apple, der ellers har arbejdet på at integrere teknologien i sine ingeniørprocesser, betyder nedskæringen, at AI-forbruget nu holdes op mod en regning."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "300 → 200 dollar om dagen",
+          "label": "Dagligt AI-loft for Apples ingeniørteams, ifølge Bloomberg"
+        },
+        {
+          "tal": "100 dollar om dagen",
+          "label": "Niveau som nogle tilladelser ventes at falde til"
+        },
+        {
+          "tal": "25 dollar om dagen",
+          "label": "Muligt loft uden for ingeniørafdelingerne, under overvejelse"
+        }
+      ],
+      "detaljer": [
+        "Bloomberg bragte historien onsdag; TechCrunch refererer den.",
+        "Apple har ifølge TechCrunch arbejdet på at integrere AI i ingeniørprocesserne.",
+        "Lofterne er daglige beløb, ikke årlige budgetter."
+      ],
+      "betydning": "Hvis nedskæringerne gennemføres, bliver Apples interne AI-brug mere selektiv — men det fremgår ikke, om produktiviteten følger med ned.",
+      "pointer": [
+        "Apple sænker dagligt AI-loft for ingeniørteams",
+        "Flere nedskæringer ventes, ned til 100 dollar",
+        "Branchen går fra maksimal AI-brug til rationering"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-05T12:49:32.356054+00:00"
+      },
+      "billedmotiv": "A chunky round gauge with a black needle turned down to the low end is set in a solid metal housing carrying the black Apple logo on its face; a few thick token coins drop from beneath the dial toward a small tray.",
+      "billedmotiv_instruks": "864f9c3ba2e308dcbcb0",
+      "side": "artikel/87cd57a95fdb9ce3.html"
     }
   ]
 }

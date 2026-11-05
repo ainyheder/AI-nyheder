@@ -1,10 +1,10 @@
 {
- "rubrik": "Åbne AI-modeller og assistenter rykker ind – datacentre møder modstand",
- "indledning": "Fra åbne vægte til assistenter i apps: AI bliver lettere at tage i brug, men møder nye grænser i både adgang og infrastruktur.",
+ "rubrik": "Åbne modeller, platforme og politik: AI's næste fase handler om adgang",
+ "indledning": "Ugen viste AI som både mere åben og mere bundet: Mistral frigav vægte, Apple åbnede Siri for apps, mens regnekraft, skolepolitik og datacenter-modstand satte grænser for, hvor bredt teknologien kan nå.",
  "historier": [
   {
-   "overskrift": "Mistral frigiver vægtene til Mistral Large 4",
-   "tekst": "Den franske AI-virksomhed Mistral frigav 29. oktober vægtene til Mistral Large 4, som selskabet kalder en model med 1.000 milliarder parametre. Vægtene er de tal, der driver modellen; de kan hentes på Hugging Face, så virksomheder og myndigheder selv kan køre den. Mistral fremhæver cyberforsvar og hævder lavere tokenforbrug end GLM-5.3.",
+   "overskrift": "Mistral frigiver trillionmodel til download",
+   "tekst": "Mistral har lagt vægtene til Mistral Large 4 på Hugging Face. Den franske virksomhed kalder modellen en trillionmodel og siger, at den især er rettet mod cyberforsvar. Virksomheder og myndigheder kan dermed køre den på egne servere. Mistral hævder, at ML4 yder som GLM-5.3 med 47 procent færre tokens pr. opgave.",
    "link": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
    "kategori": "Lanceringer",
    "billede": "data/img/f4fa4d14d5158e74.webp",
@@ -25,8 +25,8 @@
    "artikel_signatur": "dd9c07c8029ac10cf943afbfc85765cf5e9a7066ff368ae2ddedc13d11d9e8f7"
   },
   {
-   "overskrift": "Apple åbner Siri AI for tredjeparts-apps",
-   "tekst": "Apple åbnede Siri AI for tredjeparts-apps med iOS 27.3, foreløbig som Developer Preview. Udviklere kan bygge assistenten ind i alle apps og samle opgaver i «app skills». Apple siger, at Siri kan bruge personlig kontekst og skærmindhold; hvor udbredt det bliver, afhænger af udviklernes tilslutning.",
+   "overskrift": "Siri AI åbner for alle apps",
+   "tekst": "Apple åbner Siri AI for tredjepartsapps med iOS 27.3, som først udkommer som Developer Preview. Udviklere kan bygge assistenten ind i apps og samle delopgaver i såkaldte app skills. Brugeren skal ikke længere nævne appens navn, når appen er i forgrunden. Apple understreger, at udbredelsen afhænger af, hvor mange udviklere der tager funktionerne i brug.",
    "link": "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps",
    "kategori": "Hverdags-AI",
    "billede": "",
@@ -38,43 +38,8 @@
    "artikel_signatur": "9f2178ec6dfaaaceb8e68dfa9a3a6796498f66202dfb3e7de6ff62a4dcf3c79c"
   },
   {
-   "overskrift": "Google lader Gemini redigere filer i chatten",
-   "tekst": "Google gjorde det muligt at redigere filer direkte i Gemini-chatten: dokumenter, PDF'er, præsentationer, regneark og kode. PDF-redigering virker på web og mobil, mens de øvrige formater indtil videre kræver webversionen. Funktionen er tilgængelig for alle Gemini-brugere, oplyser Google.",
-   "link": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/",
-   "kategori": "Hverdags-AI",
-   "billede": "",
-   "dato": "2026-10-29T16:15:00+00:00",
-   "andre": [
-    {
-     "kilde": "The Verge AI",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
-     "rubrik": "The Verge: Gemini redigerer nu Docs og regneark",
-     "resume_da": "Ifølge The Verge er filredigeringen fra i dag tilgængelig for alle brugere; kun PDF-visning og -redigering virker både på web og mobil.",
-     "dato": "2026-10-29 14:45:31-04:00",
-     "foerst_set": "2026-10-29T21:21:56.410708+00:00"
-    }
-   ],
-   "titel": "You can now generate, preview, and edit documents, PDFs, presentations, spreadsheets, and more directly in Gemini.",
-   "rubrik": "Google Gemini redigerer filer i chatten",
-   "resume_da": "Dokumenter, PDF'er, præsentationer og regneark kan nu laves og rettes direkte i chatten. PDF-redigering virker på web og mobil; andre formater kun på web.",
-   "artikel_signatur": "19bdc1400fe40a36aad5fd46e9336ee636061cbbb24a20106f7218b40fbaf1dd"
-  },
-  {
-   "overskrift": "OpenAI samler ChatGPTs Chat- og Work-faner",
-   "tekst": "OpenAI begyndte at lægge ChatGPTs Chat- og Work-faner sammen for udvalgte brugere. Målet er, at man kan gå fra idé til website, præsentation eller netopgave samme sted. Codex forbliver separat, men ChatGPT og Codex skal dele et fælles tokenbudget. Udrulningen er en test, ikke alle får den straks.",
-   "link": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/",
-   "kategori": "Hverdags-AI",
-   "billede": "data/img/309d2d140365b80b.webp",
-   "dato": "2026-11-02T13:57:53+00:00",
-   "andre": [],
-   "titel": "OpenAI is finally merging ChatGPT’s Chat and Work tabs",
-   "rubrik": "OpenAI merger Chat og Work i ChatGPT",
-   "resume_da": "En e-mail varsler én flade til at bygge websites og lave præsentationer — og et fælles tokenbudget med Codex.",
-   "artikel_signatur": "ebb0965615c533c9b54bc6ceb9fd1a62068fc2dd7400364806588d8873b27852"
-  },
-  {
-   "overskrift": "Vælgerne begrænser datacentre i USA",
-   "tekst": "Ved midtvejsvalget i USA vedtog vælgerne 38 af 44 lokale restriktioner mod datacentre, ifølge Redbud Consulting. I Texas vandt Gina Hinojosa guvernørposten og vil forsinke projekter, indtil der er regler for vand, el og luft. NBC's exitpoll viste, at omkring tre ud af fire adspurgte modsatte sig datacentre i deres lokalområde.",
+   "overskrift": "Vælgerne bremser AI-datacentre i USA",
+   "tekst": "Ved midtvejsvalget stemte vælgerne i 10 stater om 44 restriktioner mod datacentre, og 38 blev vedtaget. I Texas vandt Gina Hinojosa guvernørvalget og vil forsinke projekter, indtil der er love om vand, strøm og ejendomsrettigheder. Cirka 13 gigawatt kapacitet er nu eksponeret, og en exitpoll viste, at 76 procent af de adspurgte modsatte sig datacentre i deres lokalområde.",
    "link": "https://arstechnica.com/tech-policy/2026/11/big-tech-claims-voters-ai-backlash-is-anti-trump-not-anti-tech/",
    "kategori": "Politik & jura",
    "billede": "data/img/cc0036592e83ee8b.jpg",
@@ -93,40 +58,92 @@
    "rubrik": "Hinojosa sejr bremser Texas' AI-datacentre",
    "resume_da": "Vælgere vedtog 38 af 44 restriktioner mod datacentre i 10 stater. Tech-industrien kalder det anti-Trump, men exit polls viser bred AI-modstand.",
    "artikel_signatur": "933f9970d2bb31b2a150caba3a0157b75c05031b1aab01d6ecb715cb6f9ec96b"
+  },
+  {
+   "overskrift": "Anthropic: Regnekraft sluger 58 procent af omsætningen",
+   "tekst": "Anthropics opdaterede børsprospekt viser, at udgiften til regnekraft steg til 10 milliarder dollar i kvartalet og nu udgør 58 procent af omsætningen. Fem milliarder gik til dyrere korttidskontrakter, fordi selskabet måtte skaffe kapacitet i hast. Anthropic betaler blandt andet SpaceX 1,25 milliarder dollar om måneden og har aftaler med Nscale, Akamai og Volta. Selskabet venter, at udgiften fortsat vil stige.",
+   "link": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/",
+   "kategori": "Penge & marked",
+   "billede": "data/img/44a7aab407b50c8c.webp",
+   "dato": "2026-11-03T17:07:01+00:00",
+   "andre": [],
+   "titel": "Anthropic is still grappling with the economics of compute",
+   "rubrik": "Anthropic: Regnekraft æder 58 procent af omsætningen",
+   "resume_da": "Ny børsfil viser, at Anthropics udgift til regnekraft steg til 10 milliarder dollar i kvartalet, fordi selskabet måtte købe dyr kapacitet i hast.",
+   "artikel_signatur": "1fca374daf7355ee5452e012d02cfa292ce3068b80f1503d0ad3118f990079fc"
+  },
+  {
+   "overskrift": "Google: Drop AI – mist også Search",
+   "tekst": "Google slår Search helt fra på skoler, der afviser selskabets AI-funktioner. Administratorer kan ikke slå Gemini og AI-funktionerne fra og beholde søgningen, fordi Search og AI ifølge Google er tæt integreret. Ændringen kommer efter kritik af, at Gemini blev standard i Classroom. Google tester samtidig Guided Learning i AI Overviews, som skal hjælpe elever gennem opgaver.",
+   "link": "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features",
+   "kategori": "Politik & jura",
+   "billede": "",
+   "dato": "2026-11-03T17:00:04+00:00",
+   "andre": [
+    {
+     "kilde": "Ars Technica AI",
+     "link": "https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too/",
+     "rubrik": "Google: Drop AI – mist Google Search",
+     "resume_da": "AI er som standard slået fra for skoler med Googles undervisningsprodukter; administratorer skal selv aktivere det.",
+     "dato": "2026-11-03T17:54:43+00:00",
+     "foerst_set": "2026-11-03T19:45:16.653457+00:00"
+    },
+    {
+     "kilde": "TechCrunch AI",
+     "link": "https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/",
+     "rubrik": "Google: Slukker skolen for AI, forsvinder Search",
+     "resume_da": "Næste år bliver Gemini, NotebookLM og Classroom-AI slået fra som standard for K-12-elever, medmindre skolen tænder dem. Guided Learning lanceres samtidig.",
+     "dato": "2026-11-03T16:30:34+00:00",
+     "foerst_set": "2026-11-03T19:45:16.653457+00:00"
+    },
+    {
+     "kilde": "TechCrunch AI",
+     "link": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/",
+     "rubrik": "Google slukker Search for skoler uden AI",
+     "resume_da": "Googles undervisningschef bekræfter, at søgning og AI er sammenvævet. Bernie Sanders og Lina Khan kalder grebet afpresning og monopolisering.",
+     "dato": "2026-11-04T16:17:22+00:00",
+     "foerst_set": "2026-11-04T19:59:08.515800+00:00"
+    }
+   ],
+   "titel": "Google is entirely disabling Search in schools that don’t want AI",
+   "rubrik": "Google slår Search fra i skoler uden AI",
+   "resume_da": "Skoler, der fravælger Googles AI, mister også Google Search for eleverne. Administratorer kan ikke slå AI-funktioner fra og beholde søgningen.",
+   "artikel_signatur": "48c5ad8db566f63b404463f8f8d5054f4e9b8bd893cb1ec2b2dfac8789a8d4e9"
   }
  ],
  "overblik": [
   {
-   "tekst": "Ugens vigtigste træk er, at avancerede AI-evner bevæger sig ud af få laboratoriers servere og ind i både åbne vægte og eksisterende hverdagsværktøjer. Mistral frigav vægtene til Mistral Large 4 og gør dermed en model med 1.000 milliarder parametre til noget, virksomheder og myndigheder selv kan hente og køre. Mistral fremhæver cyberforsvar og hævder lavere tokenforbrug end GLM-5.3; det er selskabets egne påstande, ikke uafhængige tests.",
+   "tekst": "Ugens vigtigste forandring er, at AI i højere grad bliver noget, virksomheder og brugere selv kan eje og forme. Mistral har frigivet vægtene til Mistral Large 4, så myndigheder og virksomheder kan køre en avanceret model på egne servere. Apple åbner samtidig Siri AI for tredjepartsapps med iOS 27.3. Forskellen er, at Mistral giver kontrol over selve modellen, mens Apple giver udviklerne kontrol over grænsefladen. Begge dele gør AI mere tilgængelig, men også mere afhængig af, hvem der tager teknologien i brug.",
    "links": [
-    "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
+    "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
+    "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps"
    ]
   },
   {
-   "tekst": "Samme bevægelse ses i de store platforme, men med en anden kontrolmodel. Apple åbner Siri AI for tredjeparts-apps i en Developer Preview, så assistenten kan bruge personlig kontekst og samle opgaver på tværs af apps. Google lader Gemini redigere filer direkte i chatten, og OpenAI samler ChatGPTs Chat- og Work-faner for udvalgte brugere. Forskellen er grad og adgang: Geminis filredigering er tilgængelig nu, OpenAIs sammenlægning er en test, og Apples Siri-åbning afhænger af, at udviklerne bygger funktionerne ind.",
+   "tekst": "Samtidig viser ugens tal, at adgangen til regnekraft og fysisk infrastruktur er blevet en flaskehals. Anthropics opdaterede børsprospekt viser, at regnekraft slugte 58 procent af omsætningen, og at selskabet måtte købe dyr korttidskapacitet i hast. Ved midtvejsvalget i USA vedtog vælgerne 38 af 44 restriktioner mod datacentre, og i Texas kan guvernørvalget forsinke projekter. Åbne modeller som Mistrals kan mindske afhængigheden af en enkelt udbyder, men de fjerner ikke behovet for strøm, servere og lokal tilladelse.",
    "links": [
-    "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps",
-    "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/",
-    "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/"
+    "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/",
+    "https://arstechnica.com/tech-policy/2026/11/big-tech-claims-voters-ai-backlash-is-anti-trump-not-anti-tech/"
    ]
   },
   {
-   "tekst": "Mens evnerne bliver lettere at tage i brug, møder den fysiske udbygning politisk modstand. Ved midtvejsvalget vedtog vælgerne 38 af 44 lokale restriktioner mod datacentre, og i Texas vil den nye guvernør Gina Hinojosa forsinke projekter, indtil der er regler for vand, el og luft. Det er ikke en modsætning til modelnyhederne, men et andet vilkår: Selvhostede modeller og integrerede assistenter kræver stadig chips, strøm og bygninger, som vælgerne nu vil regulere.",
+   "tekst": "Politikken rykker også ind i selve produktet. Google slår Search helt fra på skoler, der afviser selskabets AI-funktioner, fordi søgning og AI ifølge Google er tæt integreret. Det viser, at valget om AI ikke kun handler om skole og undervisning, men om adgangen til en basal søgemaskine. På samme måde er datacenter-afstemningerne et udtryk for, at borgere og lokale myndigheder vil bestemme over AI'ens fysiske aftryk. Tilsammen peger ugens historier på, at AI's næste fase især handler om ejerskab, betaling og adgang – ikke bare om nye evner.",
    "links": [
+    "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features",
     "https://arstechnica.com/tech-policy/2026/11/big-tech-claims-voters-ai-backlash-is-anti-trump-not-anti-tech/"
    ]
   }
  ],
- "tendens": "Det er uafklaret, om Apples Developer Preview fører til faktiske tredjeparts-apps, og om OpenAIs sammenlægning bliver bredt tilgængelig. Også de 38 datacenter-restriktioner skal omsættes til konkrete forsinkelser i Texas. Det kan følges i udrulninger og selskabernes næste regnskaber.",
+ "tendens": "Om Apple-udviklerne reelt bygger Siri AI ind i deres apps, er uafklaret; funktionerne er kun en Developer Preview. Det samme gælder, om Mistrals åbne vægte bliver taget i brug til cyberforsvar uden for Mistrals egne kunder.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "430f47431c75693bb6e5bdfba56fbecf92f23c527273f6d137c29998c30133ab",
- "dato": "2026-11-05T01:13:24.040059+00:00",
- "opdateret": "2026-11-05T01:13:24.040059+00:00",
+ "basis_signatur": "8973653a172ea6ed6222dc0a2bb57c4f76881f110fec3fdfe05cdc62eb6a4845",
+ "dato": "2026-11-05T12:56:50.954530+00:00",
+ "opdateret": "2026-11-05T12:56:50.954530+00:00",
  "periode_fra": "2026-10-28T23:00:00+00:00",
  "periode_til": "2026-11-04T23:00:00+00:00",
  "stats": {
-  "historier": 88,
+  "historier": 89,
   "kilder": 6
  }
 }

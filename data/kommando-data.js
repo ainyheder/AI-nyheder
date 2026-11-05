@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-05T01:14:41.040934+00:00",
+ "genereret": "2026-11-05T12:58:24.713576+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,26 +195,27 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-05T01:00:33.324815+00:00",
-  "antal": 108,
-  "med_billede": 68,
-  "paa_dansk": 108,
+  "opdateret": "2026-11-05T12:41:56.333140+00:00",
+  "antal": 117,
+  "med_billede": 72,
+  "paa_dansk": 117,
   "kategorier": {
-   "Penge \u0026 marked": 34,
-   "Politik \u0026 jura": 16,
+   "Penge \u0026 marked": 39,
    "Hverdags-AI": 22,
+   "Politik \u0026 jura": 17,
    "Samfund \u0026 etik": 13,
-   "Forskning": 8,
-   "Lanceringer": 15
+   "Forskning": 9,
+   "Lanceringer": 17
   },
   "kilder": {
-   "The Verge AI": 28,
-   "Ars Technica AI": 8,
-   "TechCrunch AI": 47,
+   "The Verge AI": 29,
+   "TechCrunch AI": 51,
+   "Ars Technica AI": 9,
    "MIT Tech Review AI": 7,
    "Simon Willison AI": 8,
    "Google Gemini": 7,
-   "Mistral AI": 3
+   "Mistral AI": 3,
+   "Google DeepMind": 3
   },
   "udvalgte": [
    {
@@ -250,6 +251,56 @@ window.KOMMANDO_DATA = {
   ],
   "seneste": [
    {
+    "titel": "Agility Robotics' Nasdaq debut invites scrutiny of humanoid robot market",
+    "rubrik": "Agility Robotics børsnoteres med Digit 5",
+    "link": "https://arstechnica.com/ai/2026/11/agility-robotics-nasdaq-debut-invites-scrutiny-of-humanoid-robot-market/",
+    "side": "artikel/9e827dbe569b5563.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-11-05T12:00:41+00:00",
+    "billede": "data/img/df3d4392d90b79c4.jpg"
+   },
+   {
+    "titel": "Agility is the first pure humanoid robot company on the stock market. Are you buying?",
+    "rubrik": "Agility bliver første rene humanoid-robotselskab på børsen",
+    "link": "https://techcrunch.com/2026/11/05/agility-is-the-first-pure-humanoid-robot-company-on-the-stock-market-are-you-buying/",
+    "side": "artikel/ab92969d84578d5f.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-05T12:00:00+00:00",
+    "billede": "data/img/3439d1d70a1270cd.webp"
+   },
+   {
+    "titel": "Big Tech’s big AI buildout will not end until someone stops it",
+    "rubrik": "Alphabet-aktien faldt 13 procent efter AI-investeringer",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1027344/amazon-microsoft-alphabet-google-meta-data-centers-earnings-q3",
+    "side": "artikel/3b1e4e7f7c1e71fb.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-05T05:45:00-05:00",
+    "billede": ""
+   },
+   {
+    "titel": "After the midterms, a bigger clash over data centers could be coming",
+    "rubrik": "Demokraterne vinder på modstand mod data centre",
+    "link": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/",
+    "side": "artikel/487fe86018a1e7f1.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-05T01:02:14+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Apple is reportedly cutting budgets for its internal AI usage",
+    "rubrik": "Apple sænker ingeniørernes AI-loft til 200 dollar",
+    "link": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+    "side": "artikel/87cd57a95fdb9ce3.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-05T01:26:22+00:00",
+    "billede": ""
+   },
+   {
     "titel": "Qualcomm is betting big on data centers as smartphone sales sink",
     "rubrik": "Qualcomm vil hente 30 procent i datacentre",
     "link": "https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers",
@@ -258,6 +309,16 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-11-04T17:42:15-05:00",
     "billede": "data/img/a4d4718ace3d9880.jpg"
+   },
+   {
+    "titel": "Meta acquires AI coding startup Conductor",
+    "rubrik": "Meta køber AI-kodestartupen Conductor",
+    "link": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
+    "side": "artikel/421e2b40f3bf5ee4.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-04T21:10:56+00:00",
+    "billede": ""
    },
    {
     "titel": "Big Tech claims voters’ AI backlash is “anti-Trump” not “anti-tech”",
@@ -308,71 +369,11 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-11-04T19:29:52+00:00",
     "billede": ""
-   },
-   {
-    "titel": "Data centers lost the midterms",
-    "rubrik": "Data centre taber midtvejsvalget i USA",
-    "link": "https://www.theverge.com/policy/1026365/data-centers-midterms-results",
-    "side": "artikel/c62a7e00b4c97f38.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-04T11:05:39-05:00",
-    "billede": "data/img/5ecdcfa62ed39d72.webp"
-   },
-   {
-    "titel": "Securing the agentic enterprise with data lineage",
-    "rubrik": "MIT Technology Review: Spor data gennem AI-agenter",
-    "link": "https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage/",
-    "side": "artikel/5a5d2de4de04525c.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "MIT Tech Review AI",
-    "dato": "2026-11-04T13:00:00+00:00",
-    "billede": "data/img/41de6b00a09a99b9.webp"
-   },
-   {
-    "titel": "ChatGPT will now make you animated GIFs",
-    "rubrik": "ChatGPT laver nu GIF'er af en prompt",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6",
-    "side": "artikel/45b27d1602b07011.html",
-    "kategori": "Lanceringer",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-04T13:00:00-05:00",
-    "billede": "data/img/92e83fed7ff114be.webp"
-   },
-   {
-    "titel": "My therapist thinks I should chuck the Amazon Bee Frontier out a window",
-    "rubrik": "Amazon Bee gør samtaler til tvivlsspørgsmål",
-    "link": "https://www.theverge.com/column/1026464/optimizer-amazon-bee-frontier-ambient-listening-wearables",
-    "side": "artikel/e22d01c9eea4d5e1.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-04T13:00:00-05:00",
-    "billede": ""
-   },
-   {
-    "titel": "Apple starts giving Siri AI access to third-party apps",
-    "rubrik": "Siri AI får adgang til alle apps",
-    "link": "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps",
-    "side": "artikel/4cb12b423b57a6cc.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-03T20:16:17+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "The biggest modding site in PC gaming is taking a stance on AI",
-    "rubrik": "Nexus Mods kræver AI-erklæring for nye mods",
-    "link": "https://www.theverge.com/games/1026085/nexus-mods-ai-disclosures",
-    "side": "artikel/faa8b68df590a6f6.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-04T00:42:10+00:00",
-    "billede": "data/img/25a185fc93fb7070.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-05T01:00:33.324815+00:00",
+  "opdateret": "2026-11-05T12:41:56.333140+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -380,8 +381,8 @@ window.KOMMANDO_DATA = {
   "kildehentninger": 0,
   "regelbaseret_udvalg": [
    "https://openai.com/index/introducing-images-2-6",
-   "https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers",
-   "https://arstechnica.com/tech-policy/2026/11/big-tech-claims-voters-ai-backlash-is-anti-trump-not-anti-tech/"
+   "https://huggingface.co/blog/phonon-tts",
+   "https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers"
   ],
   "udgivet_udvalg": [
    "https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers",
@@ -392,7 +393,7 @@ window.KOMMANDO_DATA = {
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-11-05T01:00:32.818828+00:00",
+  "opdateret": "2026-11-05T12:41:55.702077+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -748,8 +749,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-05T01:00:33.324815+00:00",
-  "artikler_i_alt": 108,
+  "opdateret": "2026-11-05T12:41:56.333140+00:00",
+  "artikler_i_alt": 117,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -827,16 +828,25 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 12,
     "i_listen": 7,
-    "som_ekstra": 0,
+    "som_ekstra": 1,
     "seneste": [
      {
-      "rubrik": "Gemini 4 Argon ude – Carbon i lukket test",
+      "rubrik": "Gemini 4 Argon globalt, Carbon i test",
       "dato": "",
       "foerst_set": "2026-11-02T18:45:47.523033+00:00",
       "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
       "side": "",
       "hvor": "under",
       "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
+     },
+     {
+      "rubrik": "Google ruller Gemini 4 Argon bredt ud",
+      "dato": "",
+      "foerst_set": "2026-10-13T19:29:19",
+      "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
+      "side": "",
+      "hvor": "under",
+      "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
      },
      {
       "rubrik": "Google Gemini redigerer filer i chatten",
@@ -1037,8 +1047,8 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 47,
-    "som_ekstra": 3,
+    "i_listen": 51,
+    "som_ekstra": 4,
     "seneste": [
      {
       "rubrik": "Siri Recaps på Apple Watch fanger bilværkstedets priser",
@@ -1048,6 +1058,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Apple Watch tester Siri Recaps i beta"
+     },
+     {
+      "rubrik": "Google slukker Search for skoler uden AI",
+      "dato": "",
+      "foerst_set": "2026-11-04T19:59:08",
+      "link": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/",
+      "side": "",
+      "hvor": "under",
+      "under": "Google slår Search fra i skoler uden AI"
      },
      {
       "rubrik": "Google: Slukker skolen for AI, forsvinder Search",
@@ -1077,11 +1096,38 @@ window.KOMMANDO_DATA = {
       "under": "DoorDash ser næsten ingen AI-agent-ordrer"
      },
      {
-      "rubrik": "Fire Uber-ture gennem AI-agent i travleste uge",
-      "dato": "2026-11-04T21:56:01",
-      "foerst_set": "2026-11-04T19:59:08",
-      "link": "https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/",
-      "side": "artikel/d13217a5b4923233.html",
+      "rubrik": "Agility bliver første rene humanoid-robotselskab på børsen",
+      "dato": "2026-11-05T12:00:00",
+      "foerst_set": "2026-11-05T12:41:56",
+      "link": "https://techcrunch.com/2026/11/05/agility-is-the-first-pure-humanoid-robot-company-on-the-stock-market-are-you-buying/",
+      "side": "artikel/ab92969d84578d5f.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Demokraterne vinder på modstand mod data centre",
+      "dato": "2026-11-05T01:02:14",
+      "foerst_set": "2026-11-05T12:41:56",
+      "link": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/",
+      "side": "artikel/487fe86018a1e7f1.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Apple sænker ingeniørernes AI-loft til 200 dollar",
+      "dato": "2026-11-05T01:26:22",
+      "foerst_set": "2026-11-05T12:41:56",
+      "link": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+      "side": "artikel/87cd57a95fdb9ce3.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Meta køber AI-kodestartupen Conductor",
+      "dato": "2026-11-04T21:10:56",
+      "foerst_set": "2026-11-05T01:00:33",
+      "link": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
+      "side": "artikel/421e2b40f3bf5ee4.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1095,56 +1141,20 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
+      "rubrik": "Fire Uber-ture gennem AI-agent i travleste uge",
+      "dato": "2026-11-04T21:56:01",
+      "foerst_set": "2026-11-04T19:59:08",
+      "link": "https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/",
+      "side": "artikel/d13217a5b4923233.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Nothing vil sende AI-produkt i december",
       "dato": "2026-11-04T22:13:16",
       "foerst_set": "2026-11-04T19:59:08",
       "link": "https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-dropping-next-month/",
       "side": "artikel/3ba59fa6ce836869.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "FlashProve skal bevise hvilken AI-model du bruger",
-      "dato": "2026-11-03T22:41:03",
-      "foerst_set": "2026-11-04T00:49:46",
-      "link": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
-      "side": "artikel/bf81805a5ae860b9.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "xAI's Colossus 2 får strøm fra otte jetmotorer",
-      "dato": "2026-11-03T22:19:53",
-      "foerst_set": "2026-11-04T00:49:46",
-      "link": "https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/",
-      "side": "artikel/4970a06a586ccae0.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Ballistic Ventures søger 490 millioner dollar",
-      "dato": "2026-11-03T21:43:08",
-      "foerst_set": "2026-11-04T00:49:46",
-      "link": "https://techcrunch.com/2026/11/03/ted-schleins-ballistic-ventures-seeks-490m-for-new-funds-amid-ai-driven-cybersecurity-boom/",
-      "side": "artikel/0835e4c1adb39f7f.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Palantir vokser 96 procent – men kontrakterne krymper",
-      "dato": "2026-11-03T21:05:55",
-      "foerst_set": "2026-11-04T00:49:46",
-      "link": "https://techcrunch.com/2026/11/03/hiding-inside-palantirs-skyrocketing-quarter-is-a-foreboding-signal/",
-      "side": "artikel/656673d20b5c101d.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Apple kræver 18 år for AI-kærester",
-      "dato": "2026-11-03T15:38:27",
-      "foerst_set": "2026-11-03T19:45:16",
-      "link": "https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up/",
-      "side": "artikel/74ef1aa5540cfddd.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1160,7 +1170,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 28,
+    "i_listen": 29,
     "som_ekstra": 8,
     "seneste": [
      {
@@ -1236,6 +1246,15 @@ window.KOMMANDO_DATA = {
       "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
      },
      {
+      "rubrik": "Alphabet-aktien faldt 13 procent efter AI-investeringer",
+      "dato": "2026-11-05T05:45:00",
+      "foerst_set": "2026-11-05T12:41:56",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1027344/amazon-microsoft-alphabet-google-meta-data-centers-earnings-q3",
+      "side": "artikel/3b1e4e7f7c1e71fb.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Qualcomm vil hente 30 procent i datacentre",
       "dato": "2026-11-04T17:42:15",
       "foerst_set": "2026-11-05T01:00:33",
@@ -1261,15 +1280,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/c62a7e00b4c97f38.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "ChatGPT laver nu GIF'er af en prompt",
-      "dato": "2026-11-04T13:00:00",
-      "foerst_set": "2026-11-04T19:59:08",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6",
-      "side": "artikel/45b27d1602b07011.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1283,7 +1293,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 8,
+    "i_listen": 9,
     "som_ekstra": 2,
     "seneste": [
      {
@@ -1303,6 +1313,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
+     },
+     {
+      "rubrik": "Agility Robotics børsnoteres med Digit 5",
+      "dato": "2026-11-05T12:00:41",
+      "foerst_set": "2026-11-05T12:41:56",
+      "link": "https://arstechnica.com/ai/2026/11/agility-robotics-nasdaq-debut-invites-scrutiny-of-humanoid-robot-market/",
+      "side": "artikel/9e827dbe569b5563.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Hinojosa sejr bremser Texas' AI-datacentre",
@@ -1486,10 +1505,10 @@ window.KOMMANDO_DATA = {
     "kun_aktuel": false,
     "max": 15,
     "aktiv": true,
-    "status": "fejl",
-    "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-    "hentet": 0,
-    "i_listen": 0,
+    "status": "ok",
+    "fejl": "",
+    "hentet": 15,
+    "i_listen": 3,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -1500,6 +1519,33 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
+     },
+     {
+      "rubrik": "Google Antigravity finder ny peptidkandidat",
+      "dato": "2026-10-15T16:08:03",
+      "foerst_set": "2026-10-16T04:53:41",
+      "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+      "side": "artikel/ba028f76ed47c779.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
+      "dato": "2026-10-13T19:43:07",
+      "foerst_set": "2026-10-13T19:29:19",
+      "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+      "side": "artikel/42f1c245f492d3d1.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "EmbeddingGemma 2 finder videoklip ud fra tale",
+      "dato": "2026-10-06T19:57:04",
+      "foerst_set": "2026-10-07T15:44:28",
+      "link": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+      "side": "artikel/bf211d23154acfab.html",
+      "hvor": "forside",
+      "under": ""
      }
     ]
    },
@@ -1534,12 +1580,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-05T01:14:35.326448+00:00",
+  "opdateret": "2026-11-05T12:58:20.381316+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 15,
-  "sidevisninger_i_alt": 35,
+  "besoeg_i_alt": 14,
+  "sidevisninger_i_alt": 33,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1696,15 +1742,15 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 15,
-    "visninger": 35
+    "besoeg": 14,
+    "visninger": 33
    }
   ],
   "artikler": [],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 14
+    "besoeg": 13
    },
    {
     "fra": "www.bing.com",
