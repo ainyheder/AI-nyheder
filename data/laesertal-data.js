@@ -1,10 +1,9 @@
 window.LAESERTAL = {
- "opdateret": "2026-11-04T20:16:51.858431+00:00",
+ "opdateret": "2026-11-05T01:14:35.326448+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
   "datoer": [
-   "2026-10-06",
    "2026-10-07",
    "2026-10-08",
    "2026-10-09",
@@ -33,13 +32,13 @@ window.LAESERTAL = {
    "2026-11-01",
    "2026-11-02",
    "2026-11-03",
-   "2026-11-04"
+   "2026-11-04",
+   "2026-11-05"
   ],
   "serier": [
    {
     "navn": "Penge & marked",
     "tal": [
-     4,
      8,
      4,
      2,
@@ -68,13 +67,13 @@ window.LAESERTAL = {
      0,
      5,
      9,
-     1
+     2,
+     0
     ]
    },
    {
     "navn": "Lanceringer",
     "tal": [
-     7,
      8,
      7,
      3,
@@ -101,15 +100,15 @@ window.LAESERTAL = {
      1,
      0,
      0,
+     2,
      1,
-     1,
-     2
+     3,
+     0
     ]
    },
    {
     "navn": "Samfund & etik",
     "tal": [
-     0,
      3,
      3,
      7,
@@ -137,14 +136,14 @@ window.LAESERTAL = {
      0,
      2,
      1,
+     1,
      2,
-     1
+     0
     ]
    },
    {
     "navn": "Hverdags-AI",
     "tal": [
-     4,
      2,
      3,
      1,
@@ -171,15 +170,15 @@ window.LAESERTAL = {
      3,
      1,
      0,
-     6,
+     5,
      4,
-     1
+     3,
+     0
     ]
    },
    {
     "navn": "Politik & jura",
     "tal": [
-     1,
      0,
      5,
      2,
@@ -208,14 +207,14 @@ window.LAESERTAL = {
      0,
      2,
      4,
-     3
+     4,
+     0
     ]
    },
    {
     "navn": "Forskning",
     "tal": [
      2,
-     2,
      3,
      3,
      0,
@@ -243,6 +242,7 @@ window.LAESERTAL = {
      0,
      0,
      3,
+     0,
      0
     ]
    },
@@ -250,13 +250,13 @@ window.LAESERTAL = {
     "navn": "Nyheder",
     "tal": [
      1,
-     1,
      0,
      0,
      0,
      0,
      0,
      3,
+     0,
      0,
      0,
      0,
@@ -284,20 +284,20 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 16,
- "sidevisninger_i_alt": 36,
+ "besoeg_i_alt": 15,
+ "sidevisninger_i_alt": 35,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 16,
-   "visninger": 36
+   "besoeg": 15,
+   "visninger": 35
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 15
+   "besoeg": 14
   },
   {
    "fra": "www.bing.com",
@@ -314,8 +314,8 @@ window.LAESERTAL = {
    },
    {
     "fra": "direkte",
-    "besoeg": 15,
-    "visninger": 15
+    "besoeg": 14,
+    "visninger": 14
    },
    {
     "fra": "www.bing.com",
@@ -332,11 +332,6 @@ window.LAESERTAL = {
   "/cookies.html"
  ],
  "serie": [
-  {
-   "dato": "2026-10-06",
-   "besoeg": 0,
-   "visninger": 0
-  },
   {
    "dato": "2026-10-07",
    "besoeg": 0,
@@ -479,6 +474,11 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-11-04",
+   "besoeg": 0,
+   "visninger": 0
+  },
+  {
+   "dato": "2026-11-05",
    "besoeg": 0,
    "visninger": 0
   }

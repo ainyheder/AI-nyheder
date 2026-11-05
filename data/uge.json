@@ -1,48 +1,10 @@
 {
- "rubrik": "AI-overblik: Kampen om kontrol over modeller, agenter og data",
- "indledning": "De sidste syv dage handlede AI-kampen om kontrol: over modeller, data og regningen. To cybermodeller, en manglende logstandard og en fælles scraping-regel viser hvorfor.",
+ "rubrik": "Åbne AI-modeller og assistenter rykker ind – datacentre møder modstand",
+ "indledning": "Fra åbne vægte til assistenter i apps: AI bliver lettere at tage i brug, men møder nye grænser i både adgang og infrastruktur.",
  "historier": [
   {
-   "overskrift": "Google holder Gemini 4 Carbon lukket indtil videre",
-   "tekst": "Google annoncerede 28. oktober Gemini 4 Carbon som sin stærkeste model til cyberforsvar og langvarige ingeniøropgaver. Ifølge Google topper den Artificial Analysis Intelligence Index, et samlet benchmark, med 59 og scorer 88,2 pct. i SEC-bench Pro, en test i at finde sårbarheder. Modellen er foreløbig kun åbnet for udvalgte cyberforsvarere gennem Fairwind Program; Google giver ingen dato for bred adgang.",
-   "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
-   "kategori": "Lanceringer",
-   "billede": "data/img/4b3d4e5d0a140c8a.jpg",
-   "dato": "2026-10-28T17:00:00+00:00",
-   "andre": [
-    {
-     "kilde": "Ars Technica AI",
-     "link": "https://arstechnica.com/ai/2026/10/google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-cant-use/",
-     "rubrik": "Google annoncerer Gemini 4 Carbon uden adgang",
-     "resume_da": "Modellen beskrives som en lidt bedre udgave af Argon, men Google gør den ikke tilgængelig for brugere.",
-     "dato": "2026-10-28 18:47:27+00:00",
-     "foerst_set": "2026-10-28T21:16:14.888910+00:00"
-    },
-    {
-     "kilde": "Google DeepMind",
-     "link": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
-     "rubrik": "Google DeepMind annoncerer Gemini 4 Carbon",
-     "resume_da": "Google DeepMind præsenterer Gemini 4 Carbon som sin næste frontier-model, men uden oplysninger om adgang.",
-     "dato": "2026-10-28 17:00:58+00:00",
-     "foerst_set": "2026-10-28T21:16:14.888910+00:00"
-    },
-    {
-     "kilde": "The Verge AI",
-     "link": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
-     "rubrik": "Google sender Gemini 4 Carbon efter sikkerhedshuller",
-     "resume_da": "Modellen topper flere benchmarks og er foreløbig kun åben for udvalgte cyberforsvarsselskaber. Prisen er den samme som forgængeren Argon.",
-     "dato": "2026-10-28T16:03:00-04:00",
-     "foerst_set": "2026-10-28T21:16:14.888910+00:00"
-    }
-   ],
-   "titel": "Gemini 4 Carbon: our next frontier model",
-   "rubrik": "Gemini 4 Carbon fører testene i sårbarhedsjagt",
-   "resume_da": "Google annoncerer Gemini 4 Carbon, der især skal finde og lukke sårbarheder i kode. Foreløbig får kun udvalgte cyberforsvarere adgang.",
-   "artikel_signatur": "d86b4dd0b49420ad7bce6bdb6f852424fa8419965d8d3d1a95f3090d6c08f3cc"
-  },
-  {
    "overskrift": "Mistral frigiver vægtene til Mistral Large 4",
-   "tekst": "Den 29. oktober lagde Mistral modelvægtene – de tal, der driver modellen – til Mistral Large 4 på Hugging Face. Selskabet kalder modellen en trillionmodel (1.000 mia. parametre) og fremhæver især cyberforsvar; virksomheder og myndigheder kan nu køre den på egne servere. Mistral hævder, at den yder som GLM-5.3 med 47 pct. færre tokens (tekstenheder) pr. opgave, men tallene er selskabets egne.",
+   "tekst": "Den franske AI-virksomhed Mistral frigav 29. oktober vægtene til Mistral Large 4, som selskabet kalder en model med 1.000 milliarder parametre. Vægtene er de tal, der driver modellen; de kan hentes på Hugging Face, så virksomheder og myndigheder selv kan køre den. Mistral fremhæver cyberforsvar og hævder lavere tokenforbrug end GLM-5.3.",
    "link": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
    "kategori": "Lanceringer",
    "billede": "data/img/f4fa4d14d5158e74.webp",
@@ -63,77 +25,108 @@
    "artikel_signatur": "dd9c07c8029ac10cf943afbfc85765cf5e9a7066ff368ae2ddedc13d11d9e8f7"
   },
   {
-   "overskrift": "Agent-frameworks mangler logs om egne handlinger",
-   "tekst": "MIT Technology Review beskrev 29. oktober, at fire udbredte agent-frameworks – software, der kører agenterne – mangler logs til at vise, hvem der gjorde hvad, og hvorfor. Forskerne fandt blandt andet manglende vedvarende agent-ID'er og registreringer af menneskelige godkendelser. Det gør det svært for banker og hospitaler at dokumentere agenters handlinger i realtid.",
-   "link": "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/",
-   "kategori": "Samfund & etik",
-   "billede": "data/img/418bdfd96044597d.webp",
-   "dato": "2026-10-29T10:11:12+00:00",
+   "overskrift": "Apple åbner Siri AI for tredjeparts-apps",
+   "tekst": "Apple åbnede Siri AI for tredjeparts-apps med iOS 27.3, foreløbig som Developer Preview. Udviklere kan bygge assistenten ind i alle apps og samle opgaver i «app skills». Apple siger, at Siri kan bruge personlig kontekst og skærmindhold; hvor udbredt det bliver, afhænger af udviklernes tilslutning.",
+   "link": "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps",
+   "kategori": "Hverdags-AI",
+   "billede": "",
+   "dato": "2026-11-03T20:16:17+00:00",
    "andre": [],
-   "titel": "We urgently need to monitor AI agents’ actions in real time",
-   "rubrik": "OpenAI-agenter kan ikke spores i realtid",
-   "resume_da": "Fire populære agent-frameworks mangler logs, der viser hvem der gjorde hvad, og hvorfor. Det gør det svært at opdage ulovlige handlinger i realtid.",
-   "artikel_signatur": "53753a6f0e69a4b49cd3d6a7fac261e775958f244bc9171292c0c31336609fb6"
+   "titel": "Apple starts giving Siri AI access to third-party apps",
+   "rubrik": "Siri AI får adgang til alle apps",
+   "resume_da": "Udviklere kan nu bygge Siri AI ind i alle apps og samle flere opgaver i én «app skill» — brugeren slipper for at sige appens navn.",
+   "artikel_signatur": "9f2178ec6dfaaaceb8e68dfa9a3a6796498f66202dfb3e7de6ff62a4dcf3c79c"
   },
   {
-   "overskrift": "Fælles robots.txt-signal skal stoppe AI-træning",
-   "tekst": "OpenAI, Google, Microsoft og Anthropic vil tage en fælles standard i brug, så udgivere kan afvise AI-træning med ét signal i robots.txt. Anthropic har allerede adopteret det; Google og Microsoft planlægger støtte næste år, OpenAI i de kommende måneder. Standarden er foreslået i IETF og skal erstatte separate aftaler med hvert selskab.",
-   "link": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+   "overskrift": "Google lader Gemini redigere filer i chatten",
+   "tekst": "Google gjorde det muligt at redigere filer direkte i Gemini-chatten: dokumenter, PDF'er, præsentationer, regneark og kode. PDF-redigering virker på web og mobil, mens de øvrige formater indtil videre kræver webversionen. Funktionen er tilgængelig for alle Gemini-brugere, oplyser Google.",
+   "link": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/",
+   "kategori": "Hverdags-AI",
+   "billede": "",
+   "dato": "2026-10-29T16:15:00+00:00",
+   "andre": [
+    {
+     "kilde": "The Verge AI",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
+     "rubrik": "The Verge: Gemini redigerer nu Docs og regneark",
+     "resume_da": "Ifølge The Verge er filredigeringen fra i dag tilgængelig for alle brugere; kun PDF-visning og -redigering virker både på web og mobil.",
+     "dato": "2026-10-29 14:45:31-04:00",
+     "foerst_set": "2026-10-29T21:21:56.410708+00:00"
+    }
+   ],
+   "titel": "You can now generate, preview, and edit documents, PDFs, presentations, spreadsheets, and more directly in Gemini.",
+   "rubrik": "Google Gemini redigerer filer i chatten",
+   "resume_da": "Dokumenter, PDF'er, præsentationer og regneark kan nu laves og rettes direkte i chatten. PDF-redigering virker på web og mobil; andre formater kun på web.",
+   "artikel_signatur": "19bdc1400fe40a36aad5fd46e9336ee636061cbbb24a20106f7218b40fbaf1dd"
+  },
+  {
+   "overskrift": "OpenAI samler ChatGPTs Chat- og Work-faner",
+   "tekst": "OpenAI begyndte at lægge ChatGPTs Chat- og Work-faner sammen for udvalgte brugere. Målet er, at man kan gå fra idé til website, præsentation eller netopgave samme sted. Codex forbliver separat, men ChatGPT og Codex skal dele et fælles tokenbudget. Udrulningen er en test, ikke alle får den straks.",
+   "link": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/",
+   "kategori": "Hverdags-AI",
+   "billede": "data/img/309d2d140365b80b.webp",
+   "dato": "2026-11-02T13:57:53+00:00",
+   "andre": [],
+   "titel": "OpenAI is finally merging ChatGPT’s Chat and Work tabs",
+   "rubrik": "OpenAI merger Chat og Work i ChatGPT",
+   "resume_da": "En e-mail varsler én flade til at bygge websites og lave præsentationer — og et fælles tokenbudget med Codex.",
+   "artikel_signatur": "ebb0965615c533c9b54bc6ceb9fd1a62068fc2dd7400364806588d8873b27852"
+  },
+  {
+   "overskrift": "Vælgerne begrænser datacentre i USA",
+   "tekst": "Ved midtvejsvalget i USA vedtog vælgerne 38 af 44 lokale restriktioner mod datacentre, ifølge Redbud Consulting. I Texas vandt Gina Hinojosa guvernørposten og vil forsinke projekter, indtil der er regler for vand, el og luft. NBC's exitpoll viste, at omkring tre ud af fire adspurgte modsatte sig datacentre i deres lokalområde.",
+   "link": "https://arstechnica.com/tech-policy/2026/11/big-tech-claims-voters-ai-backlash-is-anti-trump-not-anti-tech/",
    "kategori": "Politik & jura",
-   "billede": "",
-   "dato": "2026-10-30T20:26:10+00:00",
-   "andre": [],
-   "titel": "The biggest names in AI are backing a new way to opt out of scraping",
-   "rubrik": "Google og Microsoft bakker ny standard mod scraping",
-   "resume_da": "OpenAI, Google, Microsoft og Anthropic vil gøre det muligt for udgivere at afvise AI-træning via én fælles indstilling i robots.txt.",
-   "artikel_signatur": "d7a950f72991f41519c3b629eb680ed1aaa42bc9a3c5c3e16083902409a8a94d"
-  },
-  {
-   "overskrift": "AI-boomet tærer på cashflow og øger gælden",
-   "tekst": "Alphabet, Amazon og Meta rapporterede negativ fri cashflow – kontanter tilbage efter drift og investeringer – mens de planlægger over 740 mia. dollar i anlægsinvesteringer (capex) i år. Microsoft var undtagelsen med positiv fri cashflow. Microsoft, Alphabet, Amazon, Meta og Oracle rejste tilsammen 326 mia. dollar i gæld i 2026, tre gange mere end året før, ifølge S&P Global Market Intelligence.",
-   "link": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
-   "kategori": "Penge & marked",
-   "billede": "",
-   "dato": "2026-10-30T21:17:40+00:00",
-   "andre": [],
-   "titel": "Cracks are emerging in the AI spending boom",
-   "rubrik": "Alphabet og Amazon i minus på AI",
-   "resume_da": "Alphabet, Amazon og Meta har negativ fri cashflow, mens Microsoft er undtagelsen. Gælden bag AI-investeringerne er tredoblet.",
-   "artikel_signatur": "d2bac2007e85ef07c147b1c38f94d92abcd3fa34ff4a3baeff3d809f055f863c"
+   "billede": "data/img/cc0036592e83ee8b.jpg",
+   "dato": "2026-11-04T20:55:50+00:00",
+   "andre": [
+    {
+     "kilde": "MIT Tech Review AI",
+     "link": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
+     "rubrik": "Hinojosa vil bremse AI-datacentre i Texas",
+     "resume_da": "Demokraterne har vundet valget i Texas og kræver moratorium for nye datacentre. Det kan forsinke nogle af verdens største AI-anlæg.",
+     "dato": "2026-11-04T18:50:55+00:00",
+     "foerst_set": "2026-11-04T19:59:08.515800+00:00"
+    }
+   ],
+   "titel": "Big Tech claims voters’ AI backlash is “anti-Trump” not “anti-tech”",
+   "rubrik": "Hinojosa sejr bremser Texas' AI-datacentre",
+   "resume_da": "Vælgere vedtog 38 af 44 restriktioner mod datacentre i 10 stater. Tech-industrien kalder det anti-Trump, men exit polls viser bred AI-modstand.",
+   "artikel_signatur": "933f9970d2bb31b2a150caba3a0157b75c05031b1aab01d6ecb715cb6f9ec96b"
   }
  ],
  "overblik": [
   {
-   "tekst": "Kapløbet om avancerede modeller blev i perioden et spørgsmål om adgang og kontrol. Google annoncerede Gemini 4 Carbon som sin stærkeste model til cyberforsvar, men lukkede den først ind til udvalgte forsvarere og satte ingen dato for bred udgivelse. Dagen efter frigav Mistral vægtene til Mistral Large 4, så virksomheder og myndigheder selv kan huse en trillionmodel. Begge er rettet mod at finde og lukke sårbarheder; forskellen er, om kontrollen ligger hos laboratoriet eller brugeren. Det er to samtidige svar på samme behov, ikke en fælles aftale.",
+   "tekst": "Ugens vigtigste træk er, at avancerede AI-evner bevæger sig ud af få laboratoriers servere og ind i både åbne vægte og eksisterende hverdagsværktøjer. Mistral frigav vægtene til Mistral Large 4 og gør dermed en model med 1.000 milliarder parametre til noget, virksomheder og myndigheder selv kan hente og køre. Mistral fremhæver cyberforsvar og hævder lavere tokenforbrug end GLM-5.3; det er selskabets egne påstande, ikke uafhængige tests.",
    "links": [
-    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
     "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
    ]
   },
   {
-   "tekst": "Adgang er også temaet for agenter og data. MIT Technology Review viste, at fire udbredte agent-frameworks mangler registreringer af, hvem der gjorde hvad, og hvorfor. Samme uge blev en fælles robots.txt-standard annonceret af OpenAI, Google, Microsoft og Anthropic, så udgivere kan afvise AI-træning med ét signal. Den ene historie handler om at kontrollere, hvad agenter gør; den anden om at kontrollere, hvad modeller lærer af. I begge tilfælde er løsningen foreløbig delvis: standarden er ikke bredt implementeret, og logs er ikke standardiserede.",
+   "tekst": "Samme bevægelse ses i de store platforme, men med en anden kontrolmodel. Apple åbner Siri AI for tredjeparts-apps i en Developer Preview, så assistenten kan bruge personlig kontekst og samle opgaver på tværs af apps. Google lader Gemini redigere filer direkte i chatten, og OpenAI samler ChatGPTs Chat- og Work-faner for udvalgte brugere. Forskellen er grad og adgang: Geminis filredigering er tilgængelig nu, OpenAIs sammenlægning er en test, og Apples Siri-åbning afhænger af, at udviklerne bygger funktionerne ind.",
    "links": [
-    "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/",
-    "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out"
+    "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps",
+    "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/",
+    "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/"
    ]
   },
   {
-   "tekst": "Regningen viser, hvorfor kontrollen er blevet presserende. Alphabet, Amazon og Meta havde negativ fri cashflow, mens de planlægger over 740 mia. dollar i anlægsinvesteringer i år; Microsoft var undtagelsen. De fem store AI-selskaber rejste 326 mia. dollar i gæld i 2026, tre gange mere end året før, ifølge S&P Global Market Intelligence. Det gør både åbne og lukkede modeller til et spørgsmål om, hvem der kan betale for regnekraften – og hvem der kan trække stikket, hvis økonomien strammer.",
+   "tekst": "Mens evnerne bliver lettere at tage i brug, møder den fysiske udbygning politisk modstand. Ved midtvejsvalget vedtog vælgerne 38 af 44 lokale restriktioner mod datacentre, og i Texas vil den nye guvernør Gina Hinojosa forsinke projekter, indtil der er regler for vand, el og luft. Det er ikke en modsætning til modelnyhederne, men et andet vilkår: Selvhostede modeller og integrerede assistenter kræver stadig chips, strøm og bygninger, som vælgerne nu vil regulere.",
    "links": [
-    "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
+    "https://arstechnica.com/tech-policy/2026/11/big-tech-claims-voters-ai-backlash-is-anti-trump-not-anti-tech/"
    ]
   }
  ],
- "tendens": "Følg, om den fælles robots.txt-standard faktisk bliver implementeret: Anthropic har adopteret signalet, mens Google og Microsoft planlægger støtte næste år og OpenAI i de kommende måneder. Samtidig er OpenTelemetry-arbejdsgruppens formater for agentlogs ikke færdige. Begge dele er annonceret, men ikke bredt på plads.",
+ "tendens": "Det er uafklaret, om Apples Developer Preview fører til faktiske tredjeparts-apps, og om OpenAIs sammenlægning bliver bredt tilgængelig. Også de 38 datacenter-restriktioner skal omsættes til konkrete forsinkelser i Texas. Det kan følges i udrulninger og selskabernes næste regnskaber.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "2d6182a8867ec12ee845c7fb93bad4a1ea692c599b66a4f07cc1a69fb80b264a",
- "dato": "2026-11-04T20:15:42.485465+00:00",
- "opdateret": "2026-11-04T20:15:42.485465+00:00",
- "periode_fra": "2026-10-27T23:00:00+00:00",
- "periode_til": "2026-11-03T23:00:00+00:00",
+ "basis_signatur": "430f47431c75693bb6e5bdfba56fbecf92f23c527273f6d137c29998c30133ab",
+ "dato": "2026-11-05T01:13:24.040059+00:00",
+ "opdateret": "2026-11-05T01:13:24.040059+00:00",
+ "periode_fra": "2026-10-28T23:00:00+00:00",
+ "periode_til": "2026-11-04T23:00:00+00:00",
  "stats": {
-  "historier": 100,
+  "historier": 88,
   "kilder": 6
  }
 }
