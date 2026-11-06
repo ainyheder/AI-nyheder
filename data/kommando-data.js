@@ -598,6 +598,47 @@ window.KOMMANDO_DATA = {
   "verified": "2026-09-22",
   "rules": [
    {
+    "pattern": "^gpt-6\\.1-terra$",
+    "kind": "openai",
+    "levels": [
+     "none",
+     "low",
+     "medium",
+     "high",
+     "xhigh",
+     "max"
+    ],
+    "default": "medium",
+    "source": "https://developers.openai.com/api/docs/models/gpt-6.1-terra"
+   },
+   {
+    "pattern": "^gpt-6\\.1-sol$|^gpt-6-astra$",
+    "kind": "openai",
+    "levels": [
+     "low",
+     "medium",
+     "high",
+     "xhigh",
+     "max"
+    ],
+    "default": "medium",
+    "source": "https://developers.openai.com/api/docs/guides/reasoning"
+   },
+   {
+    "pattern": "^gpt-6-(sol|luna)$",
+    "kind": "openai",
+    "levels": [
+     "none",
+     "low",
+     "medium",
+     "high",
+     "xhigh",
+     "max"
+    ],
+    "default": "medium",
+    "source": "https://developers.openai.com/api/docs/guides/deployment-checklist"
+   },
+   {
     "pattern": "^deepseek-(flash|pro|v4-flash|v4-pro)$",
     "kind": "deepseek",
     "levels": [
