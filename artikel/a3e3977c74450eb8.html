@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-nyheder.com · Claude Code byggede SPARQL-motor i SQLite</title>
+<meta name="description" content="I Ultracode-tilstand koordinerer Claude Code selv et netværk af subagenter. Simon Willison kan ikke overskue resultatet.">
+<link rel="canonical" href="https://ainyheder.com/artikel/a3e3977c74450eb8.html">
+<meta name="theme-color" content="#0c0e12">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI-nyheder">
+<meta property="og:title" content="Claude Code byggede SPARQL-motor i SQLite">
+<meta property="og:description" content="I Ultracode-tilstand koordinerer Claude Code selv et netværk af subagenter. Simon Willison kan ikke overskue resultatet.">
+<meta property="og:url" content="https://ainyheder.com/artikel/a3e3977c74450eb8.html">
+<meta property="og:image" content="https://ainyheder.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/fonts/skrifter.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Claude Code byggede SPARQL-motor i SQLite", "description": "I Ultracode-tilstand koordinerer Claude Code selv et netværk af subagenter. Simon Willison kan ikke overskue resultatet.", "url": "https://ainyheder.com/artikel/a3e3977c74450eb8.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/a3e3977c74450eb8.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "datePublished": "2026-10-16T01:58:00+00:00", "articleSection": "Forskning", "isBasedOn": "https://simonwillison.net/2026/Oct/16/sqlite-sparql-rust/"}</script>
+<style>
+:root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
+  --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:"Inter",-apple-system,sans-serif; background:var(--bg); color:var(--blaek); line-height:1.6; }
+.topbar { position:sticky; top:0; background:color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter:blur(14px); border-bottom:1px solid var(--linje); padding:14px 28px; }
+.brand { font-family:"Fraunces",Georgia,serif; font-weight:900; font-size:24px; letter-spacing:-.03em; text-decoration:none; color:inherit; display:inline-flex; align-items:center; }
+.brand-logo { width:28px; height:28px; margin-right:9px; display:block; flex:none; }
+.brand em { font-style:normal; color:var(--accent); }
+main { max-width:720px; margin:0 auto; padding:44px 24px 80px; }
+.kicker { font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin-bottom:12px; }
+h1 { font-family:"Fraunces",Georgia,serif; font-weight:900; letter-spacing:-.02em;
+  font-size:clamp(28px,5vw,40px); line-height:1.12; margin-bottom:14px; }
+.manchet { font-size:17px; line-height:1.65; color:var(--blaek-svag); margin-bottom:22px; }
+img.top { width:100%; border-radius:16px; margin-bottom:24px; }
+h2 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:21px; margin:28px 0 8px; }
+p { font-size:15.5px; line-height:1.75; margin-bottom:13px; }
+li { font-size:14.5px; line-height:1.7; margin:6px 0 6px 20px; }
+.boks { background:var(--accent-svag); border-left:3px solid var(--accent); border-radius:0 12px 12px 0;
+  padding:14px 18px; margin:20px 0; font-size:15px; }
+.kilde { display:inline-block; font-size:13px; font-weight:700; text-decoration:none; color:inherit;
+  border:1px solid var(--linje); background:var(--bg-kort); padding:8px 16px; border-radius:999px; margin:4px 6px 0 0; }
+.kilde:hover { border-color:var(--accent); color:var(--accent); }
+.cta { display:inline-block; font-size:14px; font-weight:700; text-decoration:none; color:#fff;
+  background:var(--accent); padding:12px 24px; border-radius:999px; margin-top:26px; }
+.note { font-size:12.5px; color:var(--blaek-svag); margin-top:22px; }
+footer { border-top:1px solid var(--linje); padding:30px 26px; text-align:center; font-size:12px; color:var(--blaek-svag); }
+footer a { color:var(--accent); }
+</style>
+<link rel="stylesheet" href="/assets/artikel.css?v=2">
+</head>
+<body>
+<a class="article-skip" href="#artikeltekst">Spring til artiklen</a>
+<div class="topbar"><a class="brand" href="/" aria-label="AI-nyheder, forsiden"><img class="brand-logo" src="/assets/ai-mark.svg" alt="" width="32" height="32" decoding="async"><span>nyheder</span></a><a class="article-models" href="/modeller.html">Modellanceringer</a></div>
+<main id="artikeltekst" tabindex="-1">
+<a class="article-back" href="/">← Tilbage til nyhederne</a>
+<div class="kicker">Forskning · Simon Willison AI · 16.10.2026 · 2 min. læsning</div>
+<h1>Claude Code byggede SPARQL-motor i SQLite</h1>
+<div class="article-intro"><p class="manchet">I Ultracode-tilstand koordinerer Claude Code selv et netværk af subagenter. Simon Willison kan ikke overskue resultatet.</p></div>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">01</span>Én prompt gav en SPARQL-motor</h2>
+<p>Simon Willison gav Claude Code for web en enkelt opgave: Skriv en udvidelse til SQLite i programmeringssproget Rust, som implementerer SPARQL og kører hurtigt. SQLite er en lille indbygget database, og SPARQL er et forespørgselssprog til at hente data ud af store grafer af sammenkædede oplysninger.</p><p>Ifølge Willison arbejdede Claude Code i over 12 timer med opgaven. Han havde slået tilstanden Ultracode til, hvor Claude Code ikke bare svarer, men genererer JavaScript, der definerer og koordinerer et netværk af subagenter — mindre hjælpeagenter, som deles om en kompleks opgave.</p></section>
+<dl class="article-metrics"><div><dt>Claude Codes kørselstid på den oprindelige prompt</dt><dd>Over 12 timer</dd></div></dl><section class="article-section"><h2><span class="section-index" aria-hidden="true">02</span>Tastefejlen blev en del af opgaven</h2>
+<p>I prompten skrev Willison, at udvidelsen skulle ramme &quot;the delete rows&quot; direkte. Det var en fejl: Han mente &quot;the rows&quot;, skriver han, og ordet &quot;delete&quot; var en tastefejl på telefonen. Om fejlen har påvirket resultatet, siger indlægget intet om.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">03</span>Willison bad om tutorial og eksempeldata</h2>
+<p>Da han næste dag så, hvor mange Rust-biblioteker Claude Code havde bygget, sendte han en opfølgende besked. Den bad om en tutorial.md, der forklarer installation, brug i SQLite-kommandolinjen og selve SPARQL, plus et script, der fylder en database med realistiske eksempeldata til undervisningen.</p><p>Indlægget viser anmodningen. Det viser ikke, om materialet blev leveret.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">04</span>Koden er for stor at gennemgå</h2>
+<p>Willison kalder projektet &quot;next-level vibe coding&quot; og skriver, at det ikke er realistisk at gennemgå den kode, der er lavet. Han er ikke sikker på, hvad han skal stille op med det.</p><p>Han har tilsyneladende en fuld SPARQL-implementering i Rust inde i SQLite nu, men spørger, hvor værdifuld den er, når den blev lavet på en indskydelse, og han ikke vil investere tiden i at forstå, hvad den kan.</p></section>
+
+<details class="boks article-details"><summary>Flere detaljer</summary><ul><li>Ultracode får Claude Code til at generere JavaScript, der koordinerer et netværk af subagenter.</li><li>Willison bad om tutorial.md med installation, brug i SQLite-kommandolinjen og undervisning i SPARQL.</li><li>Han sendte kun én opfølgende besked undervejs.</li></ul></details>
+<div class="boks" style="border-left-color:#2e9e5b;"><strong>Derfor er det interessant</strong>Willison peger selv på, at værdien er usikker, når koden ikke bliver gennemgået. Uden dokumenteret brug er det svært at sige, hvad udvidelsen kan bruges til.</div>
+<p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://simonwillison.net/2026/Oct/16/sqlite-sparql-rust/" rel="noopener">Simon Willison AI →</a></p>
+<a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
+<p class="note">Genfortalt i egne ord af AI-nyheder.com · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>
+</main>
+<footer>© 2026 AI-nyheder · <a href="/om.html">Om os</a> · <a href="/vaerktoejer.html">Værktøjer</a></footer>
+<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+</body>
+</html>

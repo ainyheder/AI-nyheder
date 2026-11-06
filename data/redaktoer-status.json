@@ -1,80 +1,23 @@
 {
-  "opdateret": "2026-09-28T16:58:31.293342+00:00",
+  "opdateret": "2026-11-06T16:11:20.307546+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
-    "https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents/",
-    "https://techcrunch.com/2026/09/28/meta-launches-enterprise-ai-platform-hires-mongodb-ceo-to-lead-new-initiative/",
-    "https://www.theverge.com/ai-artificial-intelligence/1001193/engram-sampler-ai-hallucinations-music"
+    "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+    "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
+    "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
   ],
-  "input_fingerprint": "7bb3173d7655c6f5",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "kontrolproblemer": [
-    "OpenAI-artiklens nøgletal-etiketter og afsnit 2 er uforståelig eller uforfænget dansk: \"systemet flager den\", \"Fra flagering til ...\", \"selve kørslens blev ikke manuelt stoppet\", \"stop af kørslens\" samt \"modeller uploade 53 billeder\". Det ligner en halvfærdig oversættelse/tekstfejl og skal rettes, før udgaven kan gå.",
-    "Rubrik og resume hævder en sandbox-flugt (\"En AI-agent brød ud af sin lukkede testzone\"), mens Ars Technica-kilden siger, at agenten forsøgte at bryde ud og kun nåede OpenAI's offline webcache - ikke det åbne internet. Artiklen selv skriver det samme, så overskriften overdriver i forhold til både kilden og teksten.",
-    "Anbefalingerne er ikke færdige artikler: DetectifAI, \"Quoting Muse AI Agent\", Google/Flipkart og Simon Willison-keynoten har sektioner: null og kilder: [] - dvs. kun rubrik/RSS-resumé uden belæg eller link. \"Quoting Muse AI Agent\" er endda kun et citat. Ifølge redaktionens retning skal sådanne uddrag afventes som færdige artikler eller udgå.",
-    "Meta-artiklen skriver, at det \"for Meta handler skiftet om at få afkast\" og kalder det \"en forventning fra Meta\". Kilden (TechCrunch) er en journalistisk spekulation (\"could help Meta see a return\"), ikke en udtalelse fra Meta - attributionen bør rettes eller udformes som kildens vurdering.",
-    "Begge hovedhistorier er acceptable valg (én begivenhed én plads, OpenAI's to kilder er slået sammen, ingen dublet i anbefalingerne), og tal, adgang og forbehold er i øvrigt dækket af kilderne - men punkterne ovenfor skal være på plads før godkendelse."
-  ],
-  "modelkald": 5,
-  "kildehentninger": 3,
-  "vaerktoejer": [
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "aflever_udgave",
-      "fejl": null
-    }
-  ],
-  "kildegrundlag": [
-    {
-      "link": "https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/28/meta-launches-enterprise-ai-platform-hires-mongodb-ceo-to-lead-new-initiative/",
-      "grundlag": "kildetekst"
-    }
-  ],
+  "input_fingerprint": "a0ef4e15866d8a77",
+  "forklaring": "Redaktionsmødet fejlede: HTTPError",
+  "modelkald": 1,
+  "kildehentninger": 0,
+  "vaerktoejer": [],
+  "kildegrundlag": [],
   "udgivet_udvalg": [
-    "https://www.theverge.com/tech/1001287/nvidia-ai-safety-platform-rogue-agents",
-    "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
-    "https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue/"
+    "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+    "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
+    "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/"
   ],
-  "afventer_artikler": 128
+  "afventer_artikler": 64
 }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-nyheder.com · Qwen 3.8 27B gætter Pac-Man ud fra vægte</title>
+<meta name="description" content="På en laptop identificerede modellen både Pac-Man og Pong ud fra rå modelvægte. Det viser, at lokale modeller kan få noget ud af tal, der ligner støj.">
+<link rel="canonical" href="https://ainyheder.com/artikel/ab1728508583fdde.html">
+<meta name="theme-color" content="#0c0e12">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI-nyheder">
+<meta property="og:title" content="Qwen 3.8 27B gætter Pac-Man ud fra vægte">
+<meta property="og:description" content="På en laptop identificerede modellen både Pac-Man og Pong ud fra rå modelvægte. Det viser, at lokale modeller kan få noget ud af tal, der ligner støj.">
+<meta property="og:url" content="https://ainyheder.com/artikel/ab1728508583fdde.html">
+<meta property="og:image" content="https://ainyheder.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/fonts/skrifter.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Qwen 3.8 27B gætter Pac-Man ud fra vægte", "description": "På en laptop identificerede modellen både Pac-Man og Pong ud fra rå modelvægte. Det viser, at lokale modeller kan få noget ud af tal, der ligner støj.", "url": "https://ainyheder.com/artikel/ab1728508583fdde.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/ab1728508583fdde.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "datePublished": "2026-11-03T16:29:48+00:00", "articleSection": "Forskning", "isBasedOn": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/"}</script>
+<style>
+:root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
+  --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:"Inter",-apple-system,sans-serif; background:var(--bg); color:var(--blaek); line-height:1.6; }
+.topbar { position:sticky; top:0; background:color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter:blur(14px); border-bottom:1px solid var(--linje); padding:14px 28px; }
+.brand { font-family:"Fraunces",Georgia,serif; font-weight:900; font-size:24px; letter-spacing:-.03em; text-decoration:none; color:inherit; display:inline-flex; align-items:center; }
+.brand-logo { width:28px; height:28px; margin-right:9px; display:block; flex:none; }
+.brand em { font-style:normal; color:var(--accent); }
+main { max-width:720px; margin:0 auto; padding:44px 24px 80px; }
+.kicker { font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin-bottom:12px; }
+h1 { font-family:"Fraunces",Georgia,serif; font-weight:900; letter-spacing:-.02em;
+  font-size:clamp(28px,5vw,40px); line-height:1.12; margin-bottom:14px; }
+.manchet { font-size:17px; line-height:1.65; color:var(--blaek-svag); margin-bottom:22px; }
+img.top { width:100%; border-radius:16px; margin-bottom:24px; }
+h2 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:21px; margin:28px 0 8px; }
+p { font-size:15.5px; line-height:1.75; margin-bottom:13px; }
+li { font-size:14.5px; line-height:1.7; margin:6px 0 6px 20px; }
+.boks { background:var(--accent-svag); border-left:3px solid var(--accent); border-radius:0 12px 12px 0;
+  padding:14px 18px; margin:20px 0; font-size:15px; }
+.kilde { display:inline-block; font-size:13px; font-weight:700; text-decoration:none; color:inherit;
+  border:1px solid var(--linje); background:var(--bg-kort); padding:8px 16px; border-radius:999px; margin:4px 6px 0 0; }
+.kilde:hover { border-color:var(--accent); color:var(--accent); }
+.cta { display:inline-block; font-size:14px; font-weight:700; text-decoration:none; color:#fff;
+  background:var(--accent); padding:12px 24px; border-radius:999px; margin-top:26px; }
+.note { font-size:12.5px; color:var(--blaek-svag); margin-top:22px; }
+footer { border-top:1px solid var(--linje); padding:30px 26px; text-align:center; font-size:12px; color:var(--blaek-svag); }
+footer a { color:var(--accent); }
+</style>
+<link rel="stylesheet" href="/assets/artikel.css?v=2">
+</head>
+<body>
+<a class="article-skip" href="#artikeltekst">Spring til artiklen</a>
+<div class="topbar"><a class="brand" href="/" aria-label="AI-nyheder, forsiden"><img class="brand-logo" src="/assets/ai-mark.svg" alt="" width="32" height="32" decoding="async"><span>nyheder</span></a><a class="article-models" href="/modeller.html">Modellanceringer</a></div>
+<main id="artikeltekst" tabindex="-1">
+<a class="article-back" href="/">← Tilbage til nyhederne</a>
+<div class="kicker">Forskning · Simon Willison AI · 03.11.2026 · 2 min. læsning</div>
+<h1>Qwen 3.8 27B gætter Pac-Man ud fra vægte</h1>
+<div class="article-intro"><p class="manchet">På en laptop identificerede modellen både Pac-Man og Pong ud fra rå modelvægte. Det viser, at lokale modeller kan få noget ud af tal, der ligner støj.</p></div>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">01</span>Et spil gættet ud fra tal</h2>
+<p>På Simon Willisons laptop gjorde Qwen 3.8 27B noget usædvanligt: Den kiggede på de rå vægte af et lille trænet netværk og svarede, at det spillede en Pac-Man-lignende version af et gitter. Vægtene er de mange decimaltal, der tilsammen udgør en trænet model.</p><p>Prompten kom fra et GitHub-repository til et nyt paper. Alle fire prompts var identiske bortset fra vægtene. Efter 46 minutter og 12 sekunder og 43.506 reasoning-tokens, altså interne tænketrin, beskrev Qwen et 8x8-labyrintspil med spøgelser og belønningsfelter.</p><p>Willison testede også Pong, som Qwen identificerede efter 1 time, 4 minutter og 54 sekunder. Freeway gik det galt med: Her troede modellen, at spillet lignede Pac-Man.</p></section>
+<dl class="article-metrics"><div><dt>svartid for Qwen 3.8 27B på Pac-Man-prompten på Willisons laptop</dt><dd>46 min 12 sek</dd></div><div><dt>reasoning-tokens før Qwen 3.8 27B svarede på Pac-Man</dt><dd>43.506</dd></div><div><dt>andel af vægtene i Qwen3.5-0.8B, som GPT-6 Astra rettede ifølge paperet</dt><dd>0,016 %</dd></div></dl><section class="article-section"><h2><span class="section-index" aria-hidden="true">02</span>Paperet bag de fire prompts</h2>
+<p>Forskerne bag paperet “Sparks of Weight-Space Programming” hedder Rikiya Takehi, Jayden Teoh, Alex Zhang og Omar Khattab. De trænede fire små netværk til 10x10-gitterversioner af Breakout, Pong, Pac-Man og Freeway og gav deres vægte til en sprogmodel.</p><p>Ifølge paperet kan GPT-6 Astra både aflæse, hvad et netværk er trænet til, og skrive små spillenetværk fra bunden, som slår netværk trænet med PPO, en almindelig træningsmetode, i 100 millioner skridt. Den kan også rette 0,016 % af vægtene i Qwen3.5-0.8B og løfte MATH-500, en matematiktest, fra 7,9 % til 48,1 %. Den tredobler også IFEval, en test i at følge instruktioner, ifølge paperet. Forskerne kalder metoden Weight-Space Programming.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">03</span>Kritikere deler forsøget i to</h2>
+<p>Matthew Honnibal, manden bag sprogværktøjet spaCy, kaldte paperet misvisende, fordi det blander to ting: at en model læser rå vægte uden værktøjer, og at en model med kode kan ændre andre modeller. Sean Goedecke gennemgik Qwen3.5-0.8B-eksemplet og beskrev det som de samme skridt, en maskinlæringsforsker ville tage.</p><p>Willison vælger derfor at fokusere på spørgsmålet uden værktøjer. Her er resultatet en demonstration, ikke en færdig anvendelse: Qwen brugte lang tid og fejlede på Freeway, et Atari 2600-spil fra 1981, som Willison kalder mere obskurt end de tre andre.</p></section>
+
+<details class="boks article-details"><summary>Flere detaljer</summary><ul><li>Willison kørte prompten via llm-værktøjet og LM Studio på egen laptop.</li><li>Kimi K3.1 Pro brugte 9 min 41 s og 19.493 reasoning-tokens på Breakout.</li><li>Qwens Freeway-svar troede, det var et Pac-Man-lignende gitterspil.</li><li>Forfatterne kalder selv arbejdet et blogindlæg, men det er udformet som et paper.</li></ul></details>
+<div class="boks" style="border-left-color:#2e9e5b;"><strong>Derfor er det interessant</strong>Forsøget viser, at en lokal model kan beskrive et trænet netværks formål uden værktøjer, men de lange køretider gør det endnu først og fremmest til en demonstration.</div>
+<p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/" rel="noopener">Simon Willison AI →</a></p>
+<a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
+<p class="note">Genfortalt i egne ord af AI-nyheder.com · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>
+</main>
+<footer>© 2026 AI-nyheder · <a href="/om.html">Om os</a> · <a href="/vaerktoejer.html">Værktøjer</a></footer>
+<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+</body>
+</html>

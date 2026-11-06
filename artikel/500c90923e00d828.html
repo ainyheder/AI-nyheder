@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-nyheder.com · Olmo-core 3 når 1.200 milliarder parameter</title>
+<meta name="description" content="Det åbne træningsværktøj bag næste Olmo gav 2,7 gange højere gennemstrømning på otte GPU&#x27;er og MXFP8-formatet 21 procent mere hastighed.">
+<link rel="canonical" href="https://ainyheder.com/artikel/500c90923e00d828.html">
+<meta name="theme-color" content="#0c0e12">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI-nyheder">
+<meta property="og:title" content="Olmo-core 3 når 1.200 milliarder parameter">
+<meta property="og:description" content="Det åbne træningsværktøj bag næste Olmo gav 2,7 gange højere gennemstrømning på otte GPU&#x27;er og MXFP8-formatet 21 procent mere hastighed.">
+<meta property="og:url" content="https://ainyheder.com/artikel/500c90923e00d828.html">
+<meta property="og:image" content="https://ainyheder.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/fonts/skrifter.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Olmo-core 3 når 1.200 milliarder parameter", "description": "Det åbne træningsværktøj bag næste Olmo gav 2,7 gange højere gennemstrømning på otte GPU'er og MXFP8-formatet 21 procent mere hastighed.", "url": "https://ainyheder.com/artikel/500c90923e00d828.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/500c90923e00d828.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "datePublished": "2026-10-01T15:01:43+00:00", "articleSection": "Lanceringer", "isBasedOn": "https://huggingface.co/blog/allenai/olmocore3"}</script>
+<style>
+:root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
+  --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:"Inter",-apple-system,sans-serif; background:var(--bg); color:var(--blaek); line-height:1.6; }
+.topbar { position:sticky; top:0; background:color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter:blur(14px); border-bottom:1px solid var(--linje); padding:14px 28px; }
+.brand { font-family:"Fraunces",Georgia,serif; font-weight:900; font-size:24px; letter-spacing:-.03em; text-decoration:none; color:inherit; display:inline-flex; align-items:center; }
+.brand-logo { width:28px; height:28px; margin-right:9px; display:block; flex:none; }
+.brand em { font-style:normal; color:var(--accent); }
+main { max-width:720px; margin:0 auto; padding:44px 24px 80px; }
+.kicker { font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin-bottom:12px; }
+h1 { font-family:"Fraunces",Georgia,serif; font-weight:900; letter-spacing:-.02em;
+  font-size:clamp(28px,5vw,40px); line-height:1.12; margin-bottom:14px; }
+.manchet { font-size:17px; line-height:1.65; color:var(--blaek-svag); margin-bottom:22px; }
+img.top { width:100%; border-radius:16px; margin-bottom:24px; }
+h2 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:21px; margin:28px 0 8px; }
+p { font-size:15.5px; line-height:1.75; margin-bottom:13px; }
+li { font-size:14.5px; line-height:1.7; margin:6px 0 6px 20px; }
+.boks { background:var(--accent-svag); border-left:3px solid var(--accent); border-radius:0 12px 12px 0;
+  padding:14px 18px; margin:20px 0; font-size:15px; }
+.kilde { display:inline-block; font-size:13px; font-weight:700; text-decoration:none; color:inherit;
+  border:1px solid var(--linje); background:var(--bg-kort); padding:8px 16px; border-radius:999px; margin:4px 6px 0 0; }
+.kilde:hover { border-color:var(--accent); color:var(--accent); }
+.cta { display:inline-block; font-size:14px; font-weight:700; text-decoration:none; color:#fff;
+  background:var(--accent); padding:12px 24px; border-radius:999px; margin-top:26px; }
+.note { font-size:12.5px; color:var(--blaek-svag); margin-top:22px; }
+footer { border-top:1px solid var(--linje); padding:30px 26px; text-align:center; font-size:12px; color:var(--blaek-svag); }
+footer a { color:var(--accent); }
+</style>
+<link rel="stylesheet" href="/assets/artikel.css?v=2">
+</head>
+<body>
+<a class="article-skip" href="#artikeltekst">Spring til artiklen</a>
+<div class="topbar"><a class="brand" href="/" aria-label="AI-nyheder, forsiden"><img class="brand-logo" src="/assets/ai-mark.svg" alt="" width="32" height="32" decoding="async"><span>nyheder</span></a><a class="article-models" href="/modeller.html">Modellanceringer</a></div>
+<main id="artikeltekst" tabindex="-1">
+<a class="article-back" href="/">← Tilbage til nyhederne</a>
+<div class="kicker">Lanceringer · Hugging Face · 01.10.2026 · 2 min. læsning</div>
+<h1>Olmo-core 3 når 1.200 milliarder parameter</h1>
+<div class="article-intro"><p class="manchet">Det åbne træningsværktøj bag næste Olmo gav 2,7 gange højere gennemstrømning på otte GPU&#x27;er og MXFP8-formatet 21 procent mere hastighed.</p></div>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">01</span>Eksperterne bliver liggende på GPU&#x27;erne</h2>
+<p>Olmo-core 3 er en opgradering af den åbne træningsramme omkring Olmo-modellerne, skabt til at træne MoE-modeller i meget stor skala. En MoE (mixture-of-experts) har mange specialiserede dele, men bruger kun fire per token – den lille tekstblok, modellen behandler.</p><p>Den forrige version samlede og omfordelte modelvægte ved hvert lille træningsbatch (FSDP, fuldt delt data parallelism). Olmo-core 3 lader i stedet eksperterne blive på GPU&#x27;erne – de grafikkort, modellerne trænes på – og sender data hen til dem (DDP, distribueret data parallelism).</p></section>
+<dl class="article-metrics"><div><dt>Gennemstrømning på 8 NVIDIA B300 GPU&#x27;er: 52.000 mod 19.400 tokens pr. sekund pr. GPU</dt><dd>2,7×</dd></div><div><dt>MXFP8 mod BF16 på 4 NVIDIA B300 GPU&#x27;er i kontrolleret benchmark</dt><dd>21 %</dd></div><div><dt>Top af aktiv hukommelse med MXFP8 aktiveret</dt><dd>103 → 95 GiB</dd></div></dl><section class="article-section"><h2><span class="section-index" aria-hidden="true">02</span>2,7 gange hurtigere gennemstrømning</h2>
+<p>På otte NVIDIA B300 GPU&#x27;er bearbejdede en MoE-model på 47 milliarder parameter 52.000 tokens pr. sekund pr. GPU med den nye stak mod 19.400 med den forrige udgave – <strong>2,7 gange</strong> så høj gennemstrømning.</p><p>I et andet benchmark voksede ekspertpuljen fra 8 til 128, mens der stadig kun blev valgt fire eksperter per token. De aktive parameter pr. token lå uændret på cirka 3,2 milliarder, det samlede omfang voksede fra 4,6 til 47 milliarder, og gennemstrømningen faldt med under 5 procent.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">03</span>MXFP8 giver 21 procent mere hastighed</h2>
+<p>MXFP8 er et talformat, der repræsenterer nogle værdier med færre bit. I en kontrolleret test på fire NVIDIA B300 GPU&#x27;er gav det omkring 21 procent højere gennemstrømning end det højpræcise BF16-format, mens toppen af aktiv hukommelse faldt fra 103 GiB til 95 GiB.</p><p>De fleste gevinster kom fra feed-forward-beregningen og dataflytning mellem eksperter snarere end fra attention alene. Stakken samler desuden rowwise expert parallelism (data lægges direkte i eksperternes inputbuffers), GPU-resident routing (rutningsmetadata bliver på GPU&#x27;en) og grouped GEMM (mange små beregninger grupperes).</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">04</span>Skalaen er målt, ikke trænet</h2>
+<p>Olmo-core 3 er benchmarket med en model på 1.200 milliarder samlede parameter og 58,36 milliarder aktive pr. token på 512 GPU&#x27;er. Den højeste observerede gennemstrømning var 858 TFLOP/s pr. GPU – et mål for nyttig beregning pr. sekund på hver GPU.</p><p>Målingerne brugte tilfældig rutning for at teste systemets ydelse, ikke kvaliteten af en trænet model. Et eksperiment med DeepEP v2, en anden måde at styre kommunikationen mellem eksperter på tværs af GPU&#x27;er, nåede 2.380 milliarder samlede parameter som kort kapacitetstest, ikke som fuldt træningsforløb.</p></section>
+
+<details class="boks article-details"><summary>Flere detaljer</summary><ul><li>DeepEP v2-konfigurationen nåede 2.380 milliarder samlede parameter i kort kapacitetstest.</li><li>OlmoE brugte 64 routed eksperter; Olmo 3 var en tæt (dense) model.</li><li>Interaktiv demo viser data-, eksperter- og pipeline-parallellisme fra én til mange GPU&#x27;er.</li><li>Teknisk rapport, kode og demo er udgivet sammen med Olmo-core 3.</li></ul></details>
+<div class="boks" style="border-left-color:#2e9e5b;"><strong>Derfor er det interessant</strong>Næste generation af Olmo bygger på denne stak, og koden er lagt ud, så også forskere uden store ressourcer kan følge og ændre træningsopsætningen.</div>
+<p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://huggingface.co/blog/allenai/olmocore3" rel="noopener">Hugging Face →</a></p>
+<a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
+<p class="note">Genfortalt i egne ord af AI-nyheder.com · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>
+</main>
+<footer>© 2026 AI-nyheder · <a href="/om.html">Om os</a> · <a href="/vaerktoejer.html">Værktøjer</a></footer>
+<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+</body>
+</html>

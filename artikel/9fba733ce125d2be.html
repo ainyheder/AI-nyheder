@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-nyheder.com · Hugging Face-modeller kører nu direkte på AWS Trainium</title>
+<meta name="description" content="TorchNeuron fjerner specialkoden: 89 procent af de mest brugte arkitekturer til tekstgenerering kører nu uden ændringer, ifølge Hugging Face.">
+<link rel="canonical" href="https://ainyheder.com/artikel/9fba733ce125d2be.html">
+<meta name="theme-color" content="#0c0e12">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI-nyheder">
+<meta property="og:title" content="Hugging Face-modeller kører nu direkte på AWS Trainium">
+<meta property="og:description" content="TorchNeuron fjerner specialkoden: 89 procent af de mest brugte arkitekturer til tekstgenerering kører nu uden ændringer, ifølge Hugging Face.">
+<meta property="og:url" content="https://ainyheder.com/artikel/9fba733ce125d2be.html">
+<meta property="og:image" content="https://ainyheder.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/fonts/skrifter.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Hugging Face-modeller kører nu direkte på AWS Trainium", "description": "TorchNeuron fjerner specialkoden: 89 procent af de mest brugte arkitekturer til tekstgenerering kører nu uden ændringer, ifølge Hugging Face.", "url": "https://ainyheder.com/artikel/9fba733ce125d2be.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/9fba733ce125d2be.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "datePublished": "2026-10-19T00:00:00+00:00", "articleSection": "Forskning", "isBasedOn": "https://huggingface.co/blog/hf-torchneuron"}</script>
+<style>
+:root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
+  --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:"Inter",-apple-system,sans-serif; background:var(--bg); color:var(--blaek); line-height:1.6; }
+.topbar { position:sticky; top:0; background:color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter:blur(14px); border-bottom:1px solid var(--linje); padding:14px 28px; }
+.brand { font-family:"Fraunces",Georgia,serif; font-weight:900; font-size:24px; letter-spacing:-.03em; text-decoration:none; color:inherit; display:inline-flex; align-items:center; }
+.brand-logo { width:28px; height:28px; margin-right:9px; display:block; flex:none; }
+.brand em { font-style:normal; color:var(--accent); }
+main { max-width:720px; margin:0 auto; padding:44px 24px 80px; }
+.kicker { font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin-bottom:12px; }
+h1 { font-family:"Fraunces",Georgia,serif; font-weight:900; letter-spacing:-.02em;
+  font-size:clamp(28px,5vw,40px); line-height:1.12; margin-bottom:14px; }
+.manchet { font-size:17px; line-height:1.65; color:var(--blaek-svag); margin-bottom:22px; }
+img.top { width:100%; border-radius:16px; margin-bottom:24px; }
+h2 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:21px; margin:28px 0 8px; }
+p { font-size:15.5px; line-height:1.75; margin-bottom:13px; }
+li { font-size:14.5px; line-height:1.7; margin:6px 0 6px 20px; }
+.boks { background:var(--accent-svag); border-left:3px solid var(--accent); border-radius:0 12px 12px 0;
+  padding:14px 18px; margin:20px 0; font-size:15px; }
+.kilde { display:inline-block; font-size:13px; font-weight:700; text-decoration:none; color:inherit;
+  border:1px solid var(--linje); background:var(--bg-kort); padding:8px 16px; border-radius:999px; margin:4px 6px 0 0; }
+.kilde:hover { border-color:var(--accent); color:var(--accent); }
+.cta { display:inline-block; font-size:14px; font-weight:700; text-decoration:none; color:#fff;
+  background:var(--accent); padding:12px 24px; border-radius:999px; margin-top:26px; }
+.note { font-size:12.5px; color:var(--blaek-svag); margin-top:22px; }
+footer { border-top:1px solid var(--linje); padding:30px 26px; text-align:center; font-size:12px; color:var(--blaek-svag); }
+footer a { color:var(--accent); }
+</style>
+<link rel="stylesheet" href="/assets/artikel.css?v=2">
+</head>
+<body>
+<a class="article-skip" href="#artikeltekst">Spring til artiklen</a>
+<div class="topbar"><a class="brand" href="/" aria-label="AI-nyheder, forsiden"><img class="brand-logo" src="/assets/ai-mark.svg" alt="" width="32" height="32" decoding="async"><span>nyheder</span></a><a class="article-models" href="/modeller.html">Modellanceringer</a></div>
+<main id="artikeltekst" tabindex="-1">
+<a class="article-back" href="/">← Tilbage til nyhederne</a>
+<div class="kicker">Forskning · Hugging Face · 19.10.2026 · 1 min. læsning</div>
+<h1>Hugging Face-modeller kører nu direkte på AWS Trainium</h1>
+<div class="article-intro"><p class="manchet">TorchNeuron fjerner specialkoden: 89 procent af de mest brugte arkitekturer til tekstgenerering kører nu uden ændringer, ifølge Hugging Face.</p></div>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">01</span>TorchNeuron gør Trainium til en almindelig enhed</h2>
+<p>Tidligere leverede Hugging Face understøttelse af AWS Trainium gennem biblioteket Optimum Neuron. Trainium er en AI-chip fra AWS, og den gamle løsning krævede, at udvikleren tænkte som en kompilator: træge tensorer med udskudt beregning og kun faste formstørrelser.</p><p>TorchNeuron forandrer det ved at gøre neuron til en nativ enhed i PyTorch. Transformers, Diffusers, Accelerate, PEFT og TRL genkender Trainium uden særlig kode — samme klasser og scripts som på andre akceleratorer. Offentlig beta fra 20. oktober 2026.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">02</span>89 procent af topmodellerne virker nu</h2>
+<p>TorchNeuron understøtter 89 procent af de 100 mest brugte arkitekturer til tekstgenerering direkte ud af boksen, ifølge Hugging Face. Med Optimum Neuron v0.4.5 var tallet kun 46 procent.</p><p>I praksis tilføjer udvikleren blot device_map=neuron i koden, hvorefter modellen flyttes automatisk til Trainium-enhederne.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">03</span>Træning kører med samme standardbiblioteker</h2>
+<p>Træning følger samme mønster: forskerne behøver nu hverken en særlig trainer eller en Neuron-variant af modelkoden. Et standard finjusteringsscript fra TRL kører direkte på en Trainium-instans med kun et par Trainium-specifikke indstillinger.</p></section>
+
+<details class="boks article-details"><summary>Flere detaljer</summary><ul><li>Offentlig beta fra 20. oktober 2026 med pip install torch-neuronx</li><li>Statisk cache anbefales for at undgå hyppig genkompilering under tekstgenerering</li><li>Understøtter eager mode, torch.compile, FSDP og tensor parallelisme</li></ul></details>
+<div class="boks" style="border-left-color:#2e9e5b;"><strong>Derfor er det interessant</strong>Forskere og udviklere kan installere TorchNeuron fra 20. oktober 2026 og køre Hugging Face-modeller på Trainium uden særlig kode.</div>
+<p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://huggingface.co/blog/hf-torchneuron" rel="noopener">Hugging Face →</a></p>
+<a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
+<p class="note">Genfortalt i egne ord af AI-nyheder.com · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>
+</main>
+<footer>© 2026 AI-nyheder · <a href="/om.html">Om os</a> · <a href="/vaerktoejer.html">Værktøjer</a></footer>
+<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+</body>
+</html>
