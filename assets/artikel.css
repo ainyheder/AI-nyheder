@@ -263,3 +263,59 @@ footer {
 .brand-logo{margin-right:4px}
 .article-details summary{cursor:pointer;font-weight:600}
 @media(max-width:380px){.article-intro img.top{width:90px;height:90px}}
+
+/* Samme brede artikelkomposition som forsidens læser, kun på desktop. */
+@media screen and (min-width:1024px) {
+  .topbar {padding:20px max(40px,calc((100vw - 1400px)/2));}
+  main {
+    width:calc(100% - 96px);
+    max-width:1400px;
+    padding:48px 0 96px;
+    display:grid;
+    grid-template-columns:minmax(0,800px) minmax(220px,1fr);
+    column-gap:clamp(40px,5vw,96px);
+    align-items:start;
+  }
+
+  main>* {grid-column:1;min-width:0;}
+  main>.article-back,main>.kicker,main>h1 {grid-column:1/-1;}
+  main>.article-back {margin-bottom:36px;}
+  main>.kicker {margin-bottom:18px;}
+  main>h1 {font-size:clamp(3rem,4.2vw,5rem);line-height:1.1;max-width:25ch;margin-bottom:32px;}
+  main>.article-intro {
+    grid-column:1/-1;
+    display:grid;
+    grid-template-columns:subgrid;
+    align-items:center;
+    margin-bottom:32px;
+  }
+
+  .article-intro img.top {
+    float:none;
+    grid-column:2;
+    grid-row:1;
+    width:100%;
+    height:280px;
+    margin:0;
+    object-position:center;
+  }
+
+  .article-intro .manchet {grid-column:1;grid-row:1;font-size:1.3rem;line-height:1.7;}
+  main>.article-section:first-of-type {margin-top:0;}
+  main>.article-section p,main>p {font-size:1.125rem;line-height:1.85;}
+  main>p:has(.kilde) {
+    grid-column:2;
+    grid-row:5;
+    align-self:start;
+    padding:24px;
+    border:1px solid var(--linje);
+    border-top:3px solid var(--accent);
+    border-radius:0 0 16px 16px;
+    background:var(--bg-kort);
+    font-size:.875rem;
+  }
+
+  main>p:has(.kilde) .kilde {max-width:100%;overflow-wrap:anywhere;}
+  main>.note {grid-column:2;grid-row:6;font-size:.8125rem;}
+  main>.cta {justify-self:start;}
+}
