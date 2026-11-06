@@ -50,12 +50,12 @@ jobs:
         run: echo "U2NET_HOME=$RUNNER_TEMP/ai-news-models" >> "$GITHUB_ENV"
 
       - name: Hent koden
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7.0.1
         with:
           ref: main  # En kørsel, der har ventet i kø, skal hente nyeste data.
 
       - name: Installér Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7.1.0
         with:
           python-version: "3.12"
           cache: pip
@@ -65,7 +65,7 @@ jobs:
         run: pip install 'pillow>=12.1,<13' -q
 
       - name: Genbrug BiRefNet-modellen
-        uses: actions/cache@v4
+        uses: actions/cache@v6.1.0
         with:
           path: ${{ env.U2NET_HOME }}
           key: birefnet-general-v1-${{ runner.os }}
@@ -95,7 +95,7 @@ jobs:
           python3 _redaktion/proeve-crawl-drift.py
 
       - name: Genoptag ufærdigt artikelarbejde
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v6.1.0
         with:
           path: _redaktion/.crawl-cache
           key: crawl-work-${{ runner.os }}-${{ github.run_id }}-${{ github.run_attempt }}
@@ -133,7 +133,7 @@ jobs:
 
       - name: Bevar artikelarbejdet også efter en afbrudt kørsel
         if: always() && steps.crawler.outcome != 'skipped'
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v6.1.0
         with:
           path: _redaktion/.crawl-cache
           key: crawl-work-${{ runner.os }}-${{ github.run_id }}-${{ github.run_attempt }}
@@ -152,10 +152,23 @@ jobs:
                   f.write(f"Samlet: {d['sekunder']/60:.1f} minutter. Færdig: {d['faerdig']}.\n\n")
                   for t in d['trin']:
                       f.write(f"- {t['trin']}: {t['sekunder']/60:.1f} minutter\n")
+                  f.write('\n### Faktiske modelforsøg\n\n')
+                  f.write('| Trin | Model | Reasoning | Kald | Fejl | Reserve |\n|---|---|---|---:|---:|---|\n')
+                  for m in d.get('modelbrug', []):
+                      f.write(f"| {m['trin']} | {m['model']} | {m['thinking']} | {m['antal']} | {m['fejl']} | {'Ja' if m['reserve'] else 'Nej'} |\n")
           else:
               with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as f:
                   f.write('Crawleren blev afbrudt før afslutningsrapporten. Se trinloggen; mellemresultater gemmes i Actions-cache.\n')
           PY
+
+      - name: Gem driftsrapport også ved fejl
+        if: always() && steps.crawler.outcome != 'skipped'
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: crawl-drift-${{ github.run_id }}-${{ github.run_attempt }}
+          path: data/crawl-status.json
+          if-no-files-found: ignore
+          retention-days: 14
 
       - name: Kontrollér den færdige udgave før commit
         run: python3 _redaktion/kontroller-udgave.py

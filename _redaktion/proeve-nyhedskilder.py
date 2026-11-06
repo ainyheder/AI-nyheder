@@ -27,6 +27,17 @@ OVERSIGT = b'''<html><body>
 
 
 class KildeTests(unittest.TestCase):
+    def test_dato_udenfor_linket_bindes_kun_til_samme_nyhedsraekke(self):
+        markup = b'''<ul>
+        <li data-listing-row="a"><a href="/new"><h3>New model</h3></a><a href="/new"><p>Details</p></a><time>Nov 6, 2026</time></li>
+        <li data-listing-row="b"><a href="/old"><h3>Older model</h3></a><time>Oct 2, 2026</time></li>
+        <li data-listing-row="c"><a href="/undated"><h3>No date</h3></a></li>
+        </ul><script><li data-listing-row="fake"><a href="/fake"><h3>Fake</h3></a><time>Nov 6, 2026</time></li></script>'''
+        rows = parse_nyhedsoversigt(markup, BASE)
+        self.assertEqual([r['link'] for r in rows], ['https://lab.example/new', 'https://lab.example/old'])
+        self.assertEqual(rows[0]['resume'], 'Details')
+        self.assertEqual(rows[1]['dato'], datetime(2026,10,2,tzinfo=timezone.utc))
+
     def test_featured_med_indlejret_link_bevarer_titel_dato_og_resume(self):
         articles = parse_nyhedsoversigt(OVERSIGT, BASE)
         self.assertEqual(len(articles), 3)

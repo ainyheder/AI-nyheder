@@ -36,6 +36,51 @@ class DriftTests(unittest.TestCase):
             with self.assertRaises(TidOpbrugt):
                 d.tid()
 
+    def test_modelrapport_skiller_valgt_model_fra_reserve(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            d = Drift(tmp)
+            with patch.object(c, '_drift', d), patch.object(c, '_doede_modeller', set()), \
+                 patch.object(c, '_model_fejl', {}), patch.object(c, 'UDBYDER', 'deepseek'), \
+                 patch.object(c, '_hjerner_cache', {'brief': {'model': 'gpt-6.1-terra', 'thinking': 'medium'}}), \
+                 patch.object(c, 'OPENAI_KEY', 'test'), \
+                 patch.object(c, 'kald_openai_model', side_effect=TimeoutError), \
+                 patch.object(c, 'kald_ai', return_value='reserve'):
+                self.assertEqual(c.hjerne_kald('brief', 's', 'u', 100), 'reserve')
+            d.rapport(True)
+            report = json.loads((Path(tmp)/'data/crawl-status.json').read_text())['modelbrug']
+            self.assertEqual([(r['model'], r['fejl'], r['reserve']) for r in report],
+                             [('gpt-6.1-terra', 1, False), (c.DEEPSEEK_MODEL, 0, True)])
+            self.assertEqual(report[0]['thinking'], 'medium')
+
+    def test_gemini_modelrapport_foelger_automatisk_modelskift(self):
+        def skift(*args, **kwargs):
+            c._gemini_model = c.GEMINI_FALLBACK
+            return 'svar'
+        with tempfile.TemporaryDirectory() as tmp, patch.object(c, '_drift', Drift(tmp)) as drift, \
+             patch.object(c, '_hjerner_cache', {}), patch.object(c, 'UDBYDER', 'gemini'), \
+             patch.object(c, '_gemini_model', c.GEMINI_MODEL), patch.object(c, 'kald_ai', side_effect=skift):
+            self.assertEqual(c.hjerne_kald('brief', 's', 'u', 100), 'svar')
+            self.assertEqual(next(iter(drift.modelbrug.values()))['model'], c.GEMINI_FALLBACK)
+
+    def test_sociale_udkast_genbruges_indtil_artikel_eller_modelvalg_aendres(self):
+        a = artikel('Nova')
+        a.update(prio=10, foerst_set=datetime.now(timezone.utc).isoformat(), betydning='En konkret forbedring')
+        with tempfile.TemporaryDirectory() as tmp, \
+             patch.object(c, 'OPSLAG_FIL', Path(tmp)/'opslag.json'), \
+             patch.object(c, 'API_KEY', 'test'), patch.object(c, '_hjerner_cache', {'opslag': {'model': 'gpt-6.1-terra'}}) as config, \
+             patch.dict(c.os.environ, {'OPSLAG_LIVE': 'nej'}), \
+             patch.object(c, 'PLATFORME', [('Test', 'kort', lambda *_: self.fail('Ingen udsendelse i testen'), [])]), \
+             patch.object(c, 'hjerne_kald', return_value='{"kort":"Et konkret udkast"}') as ai:
+            c.del_paa_platforme([a]); c.del_paa_platforme([a])
+            self.assertEqual(ai.call_count, 1)
+            self.assertEqual(len(json.loads(c.OPSLAG_FIL.read_text())['udkast']), 1)
+            a['rubrik'] = 'En ændret nyhed'
+            c.del_paa_platforme([a])
+            self.assertEqual(ai.call_count, 2)
+            config['opslag']['thinking'] = 'high'
+            c.del_paa_platforme([a])
+            self.assertEqual(ai.call_count, 3)
+
     def test_cache_overlever_afbrudt_koersel_og_ignoreres_efter_ny_udgivelse(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp); (root / 'data').mkdir()

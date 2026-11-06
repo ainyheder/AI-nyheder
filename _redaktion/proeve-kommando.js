@@ -158,7 +158,7 @@ async function run() {
       w.eval(fs.readFileSync(path.join(ROOT,'assets/kommando-start.js'),'utf8'));
       const scripts = () => [...w.document.querySelectorAll('script')];
       if(protocol==='file:') {
-        assert(scripts()[0].src.endsWith('data/kommando-lokal.js'));
+        assert(new URL(scripts()[0].src).pathname.endsWith('data/kommando-lokal.js'));
         scripts()[0].dispatchEvent(new w.Event('error'));
       }
       assert(scripts().at(-1).src.includes('assets/kommando.js?v='));
@@ -276,6 +276,7 @@ async function run() {
     choose('mimo-v2.6-pro');assert.deepEqual(levels(),['','disabled','enabled']);
     choose('gpt-6.1-terra');assert.deepEqual(levels(),['','none','low','medium','high','xhigh','max']);
     choose('gpt-6.1-sol');assert.deepEqual(levels(),['','low','medium','high','xhigh','max']);
+    choose('mimo-v2.6-pro');
     p.d.getElementById('step-thinking').value='enabled';
     p.d.getElementById('model-form').dispatchEvent(new p.w.Event('submit',{bubbles:true,cancelable:true}));
     assert.equal(p.app.state.drafts.hjerner.hjerner.motiv.thinking,'enabled');
@@ -311,6 +312,23 @@ async function run() {
     await p.app.saveChanges();
     assert.equal(JSON.parse(dir.content[CONFIG_PATHS[1]]).hjerner.forside_agent.thinking,'enabled');
     assert(!p.app.modelList('billedgenerator').includes('mimo-v2.6-flash'));
+  }));
+
+  await check("Terra reasoning survives bulk selection and file save", () => usingPanel(async p => {
+    const dir=fakeDirectory();await p.app.connectDirectory(dir.handle);p.app.navigate('models');
+    p.d.querySelector('[data-action="bulk-model"]').click();
+    const model=p.d.getElementById('step-model');model.value='gpt-6.1-terra';
+    model.dispatchEvent(new p.w.Event('change',{bubbles:true}));
+    const thinking=p.d.getElementById('step-thinking');
+    assert.equal(thinking.disabled,false);thinking.value='medium';
+    p.d.getElementById('model-form').dispatchEvent(new p.w.Event('submit',{bubbles:true,cancelable:true}));
+    await p.app.saveChanges();
+    const steps=JSON.parse(dir.content[CONFIG_PATHS[1]]).hjerner;
+    for(const name of ['brief','redaktoer','forside_agent','nyhedsbrev','nyhedsbrev_kontrol']) {
+      assert.equal(steps[name].model,'gpt-6.1-terra');assert.equal(steps[name].thinking,'medium');
+    }
+    p.d.querySelector('[data-edit-model="brief"]').click();
+    assert.equal(p.d.getElementById('step-thinking').value,'medium');
   }));
 
   await check("Source toggles preserve unknown fields and baseline until saved", () => usingPanel(async p => {

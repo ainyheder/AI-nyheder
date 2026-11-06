@@ -527,13 +527,14 @@ def _hjerne_kald(navn: str, standard_prompt: str, bruger: str,
             _doede_modeller.add(model)
         else:
             try:
-                svar = (kald_deepseek_model(system, bruger, max_tokens, model, **reasoning, **selected)
-                        if udbyder == "deepseek"
-                        else kald_xiaomi_model(system, bruger, max_tokens, model, **reasoning, **selected)
-                        if udbyder == "xiaomi"
-                        else kald_openai_model(system, bruger, max_tokens, model, **reasoning, **selected)
-                        if udbyder == "openai"
-                        else kald_gemini_model(system, bruger, max_tokens, model, **selected))
+                with _drift.transport(navn, model, thinking) if _drift else nullcontext():
+                    svar = (kald_deepseek_model(system, bruger, max_tokens, model, **reasoning, **selected)
+                            if udbyder == "deepseek"
+                            else kald_xiaomi_model(system, bruger, max_tokens, model, **reasoning, **selected)
+                            if udbyder == "xiaomi"
+                            else kald_openai_model(system, bruger, max_tokens, model, **reasoning, **selected)
+                            if udbyder == "openai"
+                            else kald_gemini_model(system, bruger, max_tokens, model, **selected))
                 with _model_lock:
                     _model_fejl.pop(model, None)     # rækken er brudt
                 return svar
@@ -567,7 +568,13 @@ def _hjerne_kald(navn: str, standard_prompt: str, bruger: str,
                           f"({type(fejl).__name__}, {antal}/"
                           f"{MODEL_FEJL_GRAENSE}) - dette trin bruger "
                           f"den daglige model")
-    return kald_ai(system, bruger, max_tokens, **reasoning, **(selected if not model else {}))
+    daglig = DEEPSEEK_MODEL if UDBYDER == "deepseek" else XIAOMI_MODEL if UDBYDER == "xiaomi" else OPENAI_MODEL if UDBYDER == "openai" else _gemini_model
+    with _drift.transport(navn, daglig, thinking if not model else None, reserve=bool(model)) if _drift else nullcontext() as identitet:
+        try:
+            return kald_ai(system, bruger, max_tokens, **reasoning, **(selected if not model else {}))
+        finally:
+            if identitet is not None and UDBYDER == 'gemini':
+                identitet['model'] = GEMINI_MODEL if selected and not model else _gemini_model
 
 
 # Arbejdsloopets dokumenter. De styrer, hvad sessionen laver - og kan redigeres
@@ -2808,7 +2815,9 @@ def lav_billeder(artikler: list[dict], forside=None, nu=None) -> None:
                 gem_fremskridt(artikler)
             except Exception as f:
                 fejl_i_traek += 1
-                print(f"  ⚠️ Cloudflare-billede fejlede: {type(f).__name__}. Kontrollér Workers AI-adgang og kvote.")
+                print(f"  ⚠️ Cloudflare-billede fejlede: {type(f).__name__}"
+                      f"{' · HTTP ' + str(f.code) if isinstance(f, urllib.error.HTTPError) else ''}. "
+                      "Kontrollér Workers AI-adgang og kvote.")
             continue
         body = json.dumps({
             "contents": [{"role": "user", "parts": [{"text": prompt}]}],
@@ -5769,9 +5778,18 @@ def del_paa_platforme(artikler: list[dict]) -> None:
 
         stof = {"rubrik": a["rubrik"], "resume": a.get("resume_da", ""),
                 "betydning": a.get("betydning", "")}
-        r = parse_json_objekt(hjerne_kald("opslag", SYSTEM_OPSLAG,
-                                      json.dumps(stof, ensure_ascii=False), 700))
-        tekster = {n: _som_tekst(r.get(n, "")).strip() for _, n, _, _ in PLATFORME}
+        signatur = redaktoer_agent.ident(json.dumps({"link": a["link"], "stof": stof,
+            "instruks": hjerne_prompt("opslag", SYSTEM_OPSLAG), "model": hjerne_model("opslag") or UDBYDER,
+            "thinking": (_hjerner().get("opslag") or {}).get("thinking")}, ensure_ascii=False, sort_keys=True))
+        gemt = next((d for d in log.get("udkast", []) if isinstance(d, dict)
+                     and d.get("signatur") == signatur and isinstance(d.get("tekster"), dict)), None)
+        if gemt:
+            tekster = gemt["tekster"]
+            print("📣 Genbruger opslag med uændret artikel, model og instruks")
+        else:
+            r = parse_json_objekt(hjerne_kald("opslag", SYSTEM_OPSLAG,
+                                          json.dumps(stof, ensure_ascii=False), 700))
+            tekster = {n: _som_tekst(r.get(n, "")).strip() for _, n, _, _ in PLATFORME}
         if not any(tekster.values()):
             return
         # Samme regel som feed, ugeside og nyhedsbrev: et opslag kan heller
@@ -5800,9 +5818,10 @@ def del_paa_platforme(artikler: list[dict]) -> None:
                 print(f"📣 ⚠️ {navn} fejlede: {type(fejl).__name__}: {fejl}")
 
         if not live:
-            log.setdefault("udkast", []).insert(
+            log["udkast"] = [d for d in log.get("udkast", []) if isinstance(d, dict) and d.get("signatur") != signatur]
+            log["udkast"].insert(
                 0, {"dag": dag, "link": a["link"], "rubrik": a["rubrik"],
-                    "url": url, "tekster": tekster})
+                    "url": url, "tekster": tekster, "signatur": signatur})
             log["udkast"] = log["udkast"][:60]
             if not resultat:
                 print(f"📣 [TØRKØRSEL] Udkast klar til: {a['rubrik'][:60]} "
@@ -5887,7 +5906,8 @@ def forbered_redaktoer(artikler, tidligere_forside, nu):
                 kwargs["timeout"] = _drift.tid()
             if agent_provider == "openai":
                 kwargs["session"] = openai_session
-            return transport(*args, **kwargs)
+            with _drift.transport("forside_agent", agent_model, kwargs.get("thinking")) if _drift else nullcontext():
+                return transport(*args, **kwargs)
     agent_thinking = hjerne_thinking("forside_agent", agent_model)
     effective_thinking = agent_thinking or ("modelstandard" if agent_provider == "openai" else "enabled" if agent_provider == "xiaomi" else DEEPSEEK_REASONING)
     baseline = redaktion.forside(artikler, nu)

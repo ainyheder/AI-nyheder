@@ -84,6 +84,8 @@ Offlinekontrol: `python3 _redaktion/proeve-crawl-drift.py` tester bl.a.
 parallel godkendelse/afvisning, genoptagelse, billedgenbrug og opbrugt budget.
 Den faktiske svartid og udgivelse skal måles ved første GitHub-kørsel efter upload.
 
+Seneste tekniske kontrol: [workflowgennemgang 6. november 2026](_redaktion/workflow-gennemgang.md), med produktionsmålinger, rettelser og åbne driftspunkter.
+
 ## AI-model
 
 Den daglige tekstmodel er **DeepSeek V4.1 Flash**, med API-navnet `deepseek-flash`. Alle arbejdstrin uden et særskilt modelvalg følger denne standard. Den valgte billedmodel er FLUX.2 Klein 4B via Cloudflare. Ændringer træder i kraft ved næste crawlerkørsel efter upload.

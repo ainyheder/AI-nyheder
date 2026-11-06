@@ -81,6 +81,22 @@ def parse_nyhedsoversigt(data: bytes, base_url: str) -> list[dict]:
     parser = _Links()
     parser.feed(data.decode("utf-8", errors="replace"))
     parser.close()
+    # Anthropic placerer nu datoen ved siden af linket i en eksplicit
+    # nyhedsrække. Bind kun datoen til links i samme række, aldrig hele siden.
+    visible = re.sub(r'<(script|style|noscript)\b[^>]*>.*?</\1>', '',
+                     data.decode("utf-8", errors="replace"), flags=re.I | re.S)
+    for row in re.findall(r'<li\b[^>]*\bdata-listing-row=[\'"][^\'"]+[\'"][^>]*>(.*?)</li>',
+                          visible, re.I | re.S):
+        dato = _dato(row)
+        if dato is None:
+            continue
+        links = _Links()
+        links.feed(row)
+        summary = re.search(r'<p\b[^>]*>(.*?)</p>', row, re.I | re.S)
+        for href, markup in links.links:
+            if re.search(r'<h[1-6]\b', markup, re.I):
+                parser.links.append((href, markup + f'<time datetime="{dato.isoformat()}"></time>'
+                                     + (f'<p>{summary[1]}</p>' if summary else '')))
     artikler = {}
     for href, markup in parser.links:
         if not href or href.startswith("#"):

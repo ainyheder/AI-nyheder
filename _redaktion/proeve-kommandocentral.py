@@ -55,6 +55,12 @@ class KommandoDataProeve(unittest.TestCase):
         self.assertNotIn("status", data["redaktoer_status"])
         self.assertEqual(data["version"], 1)
 
+    def test_openai_adgang_kommer_med_uden_credentials(self):
+        self.skriv('data/hjerner-status.json', {'openai_tilgaengelig': False, 'OPENAI_API_KEY': 'privat'})
+        data, tekst = self.pakke()
+        self.assertIs(data['hjerner_status']['openai_tilgaengelig'], False)
+        self.assertNotIn('privat', tekst)
+
     def test_oe_delagt_json_og_forkert_datatype(self):
         self.skriv("data/articles.json", '{"artikler": null}')
         self.skriv("opsaetning/feeds.json", '{"feeds": [')

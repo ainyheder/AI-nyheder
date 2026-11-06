@@ -23,6 +23,7 @@ class Drift:
         self.lock = Lock()
         self.trin = []
         self.kald = {}
+        self.modelbrug = {}
         self.beskyttede = {}
         self.cache = self.root / '_redaktion/.crawl-cache/arbejde.json'
         self.billeder_foer = {p.name for p in (self.root / 'data/img').glob('*')}
@@ -64,6 +65,26 @@ class Drift:
         finally:
             with self.lock:
                 tal = self.kald.setdefault(navn, {'antal': 0, 'fejl': 0, 'sekunder': 0})
+                tal['antal'] += 1
+                tal['fejl'] += int(not ok)
+                tal['sekunder'] = round(tal['sekunder'] + self.clock() - start, 2)
+
+    @contextmanager
+    def transport(self, trin, model, thinking=None, *, reserve=False):
+        """Mål faktiske model-forsøg, også når et trin bruger en reserve."""
+        self.tid()
+        start, ok = self.clock(), False
+        identitet = {'model': model}
+        try:
+            yield identitet
+            ok = True
+        finally:
+            with self.lock:
+                model = identitet['model']
+                key = (trin, model, thinking or 'modelstandard', reserve)
+                tal = self.modelbrug.setdefault(key, {'trin': trin, 'model': model,
+                    'thinking': thinking or 'modelstandard', 'reserve': reserve,
+                    'antal': 0, 'fejl': 0, 'sekunder': 0})
                 tal['antal'] += 1
                 tal['fejl'] += int(not ok)
                 tal['sekunder'] = round(tal['sekunder'] + self.clock() - start, 2)
@@ -131,4 +152,5 @@ class Drift:
             'opdateret': datetime.now(timezone.utc).isoformat(), 'faerdig': ok,
             'sekunder': round(self.clock() - self.start, 2),
             'ai_budget_minutter': 75, 'trin': self.trin, 'modelkald': self.kald,
+            'modelbrug': list(self.modelbrug.values()),
         })

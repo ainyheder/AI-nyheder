@@ -86,7 +86,7 @@ def _artikelstatus(data, root):
 
 def _hjernerstatus(data):
     status = _felter(data, ("opdateret", "daglig_model", "udbyder", "billedmodel", "billed_standard", "forside_standard", "billed_standard_prompt",
-                           "gemini_tilgaengelig", "deepseek_tilgaengelig", "xiaomi_tilgaengelig", "cloudflare_tilgaengelig"))
+                           "gemini_tilgaengelig", "deepseek_tilgaengelig", "xiaomi_tilgaengelig", "openai_tilgaengelig", "cloudflare_tilgaengelig"))
     hjerner = data.get("hjerner")
     status["hjerner"] = {
         k: _felter(v, ("beskrivelse", "model", "udbyder", "egen_model", "egen_prompt",
