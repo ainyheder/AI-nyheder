@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-05T22:13:13.067417+00:00",
- "artikler_i_alt": 129,
+ "opdateret": "2026-11-06T07:16:54.196123+00:00",
+ "artikler_i_alt": 120,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -27,17 +27,17 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 3,
-   "som_ekstra": 1,
+   "i_listen": 4,
+   "som_ekstra": 0,
    "seneste": [
     {
-     "rubrik": "Mistral frigiver Le Chonk som åben model",
-     "dato": "",
-     "foerst_set": "2026-10-29T15:28:58",
-     "link": "https://mistral.ai/news/mistral-large-4-oss/",
-     "side": "",
-     "hvor": "under",
-     "under": "Mistral frigiver sin trillionmodel til download"
+     "rubrik": "Mistral Studio samler agenter og apps",
+     "dato": "2026-11-05T12:00:14",
+     "foerst_set": "2026-11-05T22:13:13",
+     "link": "https://mistral.ai/news/build-with-studio/",
+     "side": "artikel/95ed6192fa24990c.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Mistral og NVIDIA bygger benchmarks til ingeniør-AI",
@@ -69,10 +69,6 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "TechCrunch AI",
-     1
-    ],
-    [
      "Simon Willison AI",
      1
     ]
@@ -89,8 +85,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 6,
-   "som_ekstra": 0,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "Google ruller Gemini 4 Argon bredt ud",
+     "dato": "",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
+    },
     {
      "rubrik": "Gemini Omni 1.2 Flash laver 15 sekunders klip",
      "dato": "2026-11-05T17:00:00",
@@ -148,15 +153,15 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
+     "Google DeepMind",
+     3
+    ],
+    [
      "The Verge AI",
      2
     ],
     [
      "Ars Technica AI",
-     1
-    ],
-    [
-     "Google DeepMind",
      1
     ]
    ]
@@ -303,8 +308,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 61,
-   "som_ekstra": 5,
+   "i_listen": 52,
+   "som_ekstra": 6,
    "seneste": [
     {
      "rubrik": "ChatGPT Cyber annonceret til Daybreak Reds topniveau",
@@ -329,6 +334,15 @@ window.KILDER_STATUS = {
      "dato": "",
      "foerst_set": "2026-11-04T19:59:08",
      "link": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/",
+     "side": "",
+     "hvor": "under",
+     "under": "Google slår Search fra i skoler uden AI"
+    },
+    {
+     "rubrik": "DuckDuckGo tilbyder skoler at slukke for AI",
+     "dato": "",
+     "foerst_set": "2026-11-04T19:59:08",
+     "link": "https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/",
      "side": "",
      "hvor": "under",
      "under": "Google slår Search fra i skoler uden AI"
@@ -359,6 +373,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "DoorDash ser næsten ingen AI-agent-ordrer"
+    },
+    {
+     "rubrik": "Airbnb lancerer AI-rejseagent i første halvdel af 2027",
+     "dato": "2026-11-05T22:40:55",
+     "foerst_set": "2026-11-06T07:16:54",
+     "link": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/",
+     "side": "artikel/560f077b27e20f29.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Palo Alto Networks i samtaler om Clutch-køb",
+     "dato": "2026-11-06T06:28:32",
+     "foerst_set": "2026-11-06T07:16:54",
+     "link": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
+     "side": "artikel/aa3547203e76d8ef.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Claude kobler sig til bankkontoen gennem Plaid",
@@ -406,6 +438,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Dropbox køber Tigris Data for 350 millioner dollar",
+     "dato": "2026-11-05T15:19:05",
+     "foerst_set": "2026-11-05T22:13:13",
+     "link": "https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/",
+     "side": "artikel/939524e97f242da6.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Box bygger Nvidia Nemotron ind i søgning",
      "dato": "2026-11-05T14:00:00",
      "foerst_set": "2026-11-05T22:13:13",
@@ -440,43 +481,12 @@ window.KILDER_STATUS = {
      "side": "artikel/ab92969d84578d5f.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Demokraterne vinder på modstand mod data centre",
-     "dato": "2026-11-05T01:02:14",
-     "foerst_set": "2026-11-05T12:41:56",
-     "link": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/",
-     "side": "artikel/487fe86018a1e7f1.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Apple sænker ingeniørernes AI-loft til 200 dollar",
-     "dato": "2026-11-05T01:26:22",
-     "foerst_set": "2026-11-05T12:41:56",
-     "link": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
-     "side": "artikel/87cd57a95fdb9ce3.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Meta køber AI-kodestartupen Conductor",
-     "dato": "2026-11-04T21:10:56",
-     "foerst_set": "2026-11-05T01:00:33",
-     "link": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
-     "side": "artikel/421e2b40f3bf5ee4.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     11
-    ],
-    [
-     "Mistral AI",
-     1
+     14
     ],
     [
      "Ars Technica AI",
@@ -494,9 +504,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 33,
-   "som_ekstra": 10,
+   "i_listen": 30,
+   "som_ekstra": 12,
    "seneste": [
+    {
+     "rubrik": "Airbnb vil lancere AI-agent til rejser i 2027",
+     "dato": "",
+     "foerst_set": "2026-11-06T07:16:54",
+     "link": "https://www.theverge.com/tech/1028412/airbnb-ai-travel-agent-q3-2026-earnings",
+     "side": "",
+     "hvor": "under",
+     "under": "Airbnb lancerer AI-rejseagent i første halvdel af 2027"
+    },
     {
      "rubrik": "Claude læser dine bankkonti via Plaid",
      "dato": "",
@@ -507,13 +526,22 @@ window.KILDER_STATUS = {
      "under": "Claude kobler sig til bankkontoen gennem Plaid"
     },
     {
-     "rubrik": "Metas Muse får stemme og levende avatar",
+     "rubrik": "Metas Muse-agent taler nu med animeret ansigt",
      "dato": "",
      "foerst_set": "2026-11-05T22:13:13",
      "link": "https://www.theverge.com/tech/1028015/meta-muse-ai-voice-mode-expressive-avatar",
      "side": "",
      "hvor": "under",
      "under": "Meta åbner Muse-videochat for alle i USA"
+    },
+    {
+     "rubrik": "Alphabet-aktien faldt 13 procent efter AI-investeringer",
+     "dato": "",
+     "foerst_set": "2026-11-05T12:41:56",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1027344/amazon-microsoft-alphabet-google-meta-data-centers-earnings-q3",
+     "side": "",
+     "hvor": "under",
+     "under": "Alphabet og Amazon i minus på AI"
     },
     {
      "rubrik": "Uber: Kun fire ture bestilt af AI-agenter",
@@ -588,6 +616,24 @@ window.KILDER_STATUS = {
      "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
     },
     {
+     "rubrik": "Perplexity lancerer altid tændte Teammates",
+     "dato": "2026-11-05T17:26:50",
+     "foerst_set": "2026-11-06T07:16:54",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
+     "side": "artikel/448caf20b90713b4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI dropper NDA'er i aftaler om datacentre",
+     "dato": "2026-11-05T19:37:56",
+     "foerst_set": "2026-11-06T07:16:54",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda",
+     "side": "artikel/3323df791b8bcd34.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "GPT-6 Cyber går sjældnere rogue i test",
      "dato": "2026-11-05T12:00:00",
      "foerst_set": "2026-11-05T22:13:13",
@@ -624,17 +670,8 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Alphabet-aktien faldt 13 procent efter AI-investeringer",
-     "dato": "2026-11-05T05:45:00",
-     "foerst_set": "2026-11-05T12:41:56",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1027344/amazon-microsoft-alphabet-google-meta-data-centers-earnings-q3",
-     "side": "artikel/3b1e4e7f7c1e71fb.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Qualcomm vil hente 30 procent i datacentre",
-     "dato": "2026-11-04T17:42:15",
+     "dato": "2026-11-04T22:42:15",
      "foerst_set": "2026-11-05T01:00:33",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers",
      "side": "artikel/f11302ecebb56fae.html",
@@ -685,21 +722,12 @@ window.KILDER_STATUS = {
      "side": "artikel/4cb12b423b57a6cc.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Nexus Mods kræver AI-erklæring for nye mods",
-     "dato": "2026-11-04T00:42:10",
-     "foerst_set": "2026-11-04T00:49:46",
-     "link": "https://www.theverge.com/games/1026085/nexus-mods-ai-disclosures",
-     "side": "artikel/faa8b68df590a6f6.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     11
+     14
     ],
     [
      "Ars Technica AI",
@@ -867,7 +895,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 8,
+   "i_listen": 7,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -932,15 +960,6 @@ window.KILDER_STATUS = {
      "side": "artikel/c1a0838047a393a1.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI-agenter kan ikke spores i realtid",
-     "dato": "2026-10-29T10:11:12",
-     "foerst_set": "2026-10-29T15:28:58",
-     "link": "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/",
-     "side": "artikel/468ea3c00c34a75a.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": []
@@ -967,12 +986,21 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-   "hentet": 0,
-   "i_listen": 0,
-   "som_ekstra": 1,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 15,
+   "i_listen": 3,
+   "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "Google viser Gemini Omni 1.2 Flash frem",
+     "dato": "",
+     "foerst_set": "2026-11-06T07:16:54",
+     "link": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini Omni 1.2 Flash laver 15 sekunders klip"
+    },
     {
      "rubrik": "Google DeepMind annoncerer Gemini 4 Carbon",
      "dato": "",
@@ -981,12 +1009,39 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
+    },
+    {
+     "rubrik": "Google Antigravity finder ny peptidkandidat",
+     "dato": "2026-10-15T16:08:03",
+     "foerst_set": "2026-10-16T04:53:41",
+     "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+     "side": "artikel/ba028f76ed47c779.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
+     "dato": "2026-10-13T19:43:07",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+     "side": "artikel/42f1c245f492d3d1.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "EmbeddingGemma 2 finder videoklip ud fra tale",
+     "dato": "2026-10-06T19:57:04",
+     "foerst_set": "2026-10-07T15:44:28",
+     "link": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+     "side": "artikel/bf211d23154acfab.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "Google Gemini",
-     1
+     3
     ]
    ]
   },

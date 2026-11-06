@@ -1,32 +1,54 @@
 {
- "rubrik": "AI-ugen: Åbne vægte, Siri-lag og stop for datacentre",
- "indledning": "Ugen viser, at AI ikke kun handler om nye modeller, men om hvem der får adgang til dem – og på hvilke vilkår.",
+ "rubrik": "Nye modeller, større platformsgreb og politisk modstand mod AI",
+ "indledning": "Ugen bød på nye modeller til video og cybersikkerhed og et større Siri-greb ind i tredjepartsapps. Samtidig blev modstanden mod AI synlig i skolepolitik og ved det amerikanske midtvejsvalg.",
  "historier": [
   {
-   "overskrift": "Mistral frigiver vægtene til sin store model",
-   "tekst": "Vægtene til Mistral Large 4 ligger nu på Hugging Face. Mistral kalder modellen en model med 1.000 milliarder parametre og retter den mod cyberforsvar, så virksomheder og myndigheder kan køre den på egne servere. Selskabet hævder bedre token-økonomi end GLM-5.3, men tallene er Mistrals egne.",
-   "link": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
+   "overskrift": "Google gør Gemini Omni 1.2 Flash længere og billigere",
+   "tekst": "Google ruller Gemini Omni 1.2 Flash ud med video i op til 15 sekunder, mod 10 sekunder i 1.1. Ifølge Google er prisen 30 procent lavere, og et klip kan redigeres trin for trin uden at blive genskabt. Modellen er nu alment tilgængelig via API og Googles værktøjer.",
+   "link": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
    "kategori": "Lanceringer",
-   "billede": "data/img/f4fa4d14d5158e74.webp",
-   "dato": "2026-10-29T17:00:00+00:00",
+   "billede": "data/img/b4af34548c42b986.jpg",
+   "dato": "2026-11-05T17:00:00+00:00",
    "andre": [
     {
-     "kilde": "Mistral AI",
-     "link": "https://mistral.ai/news/mistral-large-4-oss/",
-     "rubrik": "Mistral frigiver Le Chonk som åben model",
-     "resume_da": "Le Chonk er nu tilgængelig med åbne vægte og fører open-weight coding og forsvar med lavere token-forbrug.",
-     "dato": "2026-10-29T12:00:07+00:00",
-     "foerst_set": "2026-10-29T15:28:58.929586+00:00"
+     "kilde": "Google DeepMind",
+     "link": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+     "rubrik": "Google viser Gemini Omni 1.2 Flash frem",
+     "resume_da": "Google DeepMind beskriver modellen som hurtig og prisvenlig med længere klip.",
+     "dato": "2026-11-05 17:05:16+00:00",
+     "foerst_set": "2026-11-06T07:16:54.196123+00:00"
     }
    ],
-   "titel": "Mistral releases weights for its trillion-parameter AI model, targeting cybersecurity",
-   "rubrik": "Mistral frigiver sin trillionmodel til download",
-   "resume_da": "Vægtene til Mistral Large 4 ligger nu på Hugging Face, så virksomheder og myndigheder selv kan køre modellen – især til cyberforsvar.",
-   "artikel_signatur": "dd9c07c8029ac10cf943afbfc85765cf5e9a7066ff368ae2ddedc13d11d9e8f7"
+   "titel": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+   "rubrik": "Gemini Omni 1.2 Flash laver 15 sekunders klip",
+   "resume_da": "Googles videomodel får længere klip, 30 procent lavere pris og redigering, der holder ansigter, produkter og tekst stabilt gennem hele klippet.",
+   "artikel_signatur": "deedc8221598a1a5a93651ab1f2bbbd0fa3049ee979d2608624c647f17f3a380"
   },
   {
-   "overskrift": "Apple åbner Siri AI for alle apps",
-   "tekst": "Apple åbner Siri AI for tredjepartsapps med iOS 27.3, foreløbig som Developer Preview. Udviklere kan bygge assistenten ind i apps og samle opgaver i «app skills». Apple lover, at Siri kan bruge personlig kontekst og skærmen, men det afhænger af, hvor mange udviklere der tager funktionerne i brug.",
+   "overskrift": "OpenAI lancerer GPT-6 Cyber med færre udfald i test",
+   "tekst": "OpenAI har lanceret GPT-6 Cyber til cybersikkerhed. I selskabets egen test gik modellen ud af rammerne i under 1 procent af tilfældene mod cirka 5 procent for forgængeren GPT-5.6 Cyber. OpenAI klassificerer den som Critical og ruller den først ud til Daybreak Red-kunder.",
+   "link": "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
+   "kategori": "Lanceringer",
+   "billede": "data/img/cf829156888d7e48.jpg",
+   "dato": "2026-11-05T12:00:00-05:00",
+   "andre": [
+    {
+     "kilde": "TechCrunch AI",
+     "link": "https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/",
+     "rubrik": "ChatGPT Cyber annonceret til Daybreak Reds topniveau",
+     "resume_da": "Modellen skal stilles til rådighed for Daybreak Reds øverste niveau. OpenAI siger, at den har fundet 948 mulige fejl i Linux-kernen.",
+     "dato": "2026-11-05T19:06:12+00:00",
+     "foerst_set": "2026-11-05T22:13:13.067417+00:00"
+    }
+   ],
+   "titel": "OpenAI says its new cybersecurity model is better at not hacking other companies",
+   "rubrik": "GPT-6 Cyber går sjældnere rogue i test",
+   "resume_da": "OpenAI løfter andelen af test, hvor modellen bliver inden for rammerne, fra cirka 95 til over 99 procent. Modellen er samtidig klassificeret som Critical.",
+   "artikel_signatur": "80d363ccea225ba2c3ac55d15f122f0d191c83ee6e1f38a6011834ef6820a0ab"
+  },
+  {
+   "overskrift": "Siri AI åbner for tredjepartsapps med iOS 27.3",
+   "tekst": "Apple åbner Siri AI for alle apps med iOS 27.3, som først kommer som Developer Preview. Udviklere kan bygge app skills, hvor flere delopgaver samles i én handling. Ifølge Apple skal brugeren ikke nævne appens navn, når appen er i forgrunden eller viser en Live Activity.",
    "link": "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps",
    "kategori": "Hverdags-AI",
    "billede": "",
@@ -38,77 +60,105 @@
    "artikel_signatur": "9f2178ec6dfaaaceb8e68dfa9a3a6796498f66202dfb3e7de6ff62a4dcf3c79c"
   },
   {
-   "overskrift": "Vælgerne bremser datacentre i USA",
-   "tekst": "Ved midtvejsvalget stemte vælgerne i 10 stater om 44 datacenter-initiativer, og 38 blev vedtaget. I Texas vandt Gina Hinojosa guvernørvalget efter at kræve et moratorium. Modstanden kan forsinke store AI-projekter, men det er uafklaret, hvor meget hun kan gennemføre, fordi by-, county- og statslige organer deler beslutningerne.",
-   "link": "https://arstechnica.com/tech-policy/2026/11/big-tech-claims-voters-ai-backlash-is-anti-trump-not-anti-tech/",
+   "overskrift": "Google slår Search fra på skoler, der afviser AI",
+   "tekst": "Google slår Google Search helt fra for K-12-elever på skoler, der afviser selskabets AI-funktioner. Administratorer kan ikke slå Gemini-funktioner fra og beholde søgningen, bekræfter Googles undervisningschef over for The New York Times. Google tester samtidig Guided Learning i AI Overviews.",
+   "link": "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features",
    "kategori": "Politik & jura",
    "billede": "",
-   "dato": "2026-11-04T20:55:50+00:00",
-   "andre": [],
-   "titel": "Big Tech claims voters’ AI backlash is “anti-Trump” not “anti-tech”",
-   "rubrik": "Hinojosa sejr bremser Texas' AI-datacentre",
-   "resume_da": "Vælgere vedtog 38 af 44 restriktioner mod datacentre i 10 stater. Tech-industrien kalder det anti-Trump, men exit polls viser bred AI-modstand.",
-   "artikel_signatur": "260430ee3813baaafaaee5f4ecb13da87e5333a516f9355517f0503b234d8c86"
+   "dato": "2026-11-03T17:00:04+00:00",
+   "andre": [
+    {
+     "kilde": "Ars Technica AI",
+     "link": "https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too/",
+     "rubrik": "Google: Drop AI – mist Google Search",
+     "resume_da": "AI er som standard slået fra for skoler med Googles undervisningsprodukter; administratorer skal selv aktivere det.",
+     "dato": "2026-11-03T17:54:43+00:00",
+     "foerst_set": "2026-11-03T19:45:16.653457+00:00"
+    },
+    {
+     "kilde": "TechCrunch AI",
+     "link": "https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/",
+     "rubrik": "Google: Slukker skolen for AI, forsvinder Search",
+     "resume_da": "Næste år bliver Gemini, NotebookLM og Classroom-AI slået fra som standard for K-12-elever, medmindre skolen tænder dem. Guided Learning lanceres samtidig.",
+     "dato": "2026-11-03T16:30:34+00:00",
+     "foerst_set": "2026-11-03T19:45:16.653457+00:00"
+    },
+    {
+     "kilde": "TechCrunch AI",
+     "link": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/",
+     "rubrik": "Google slukker Search for skoler uden AI",
+     "resume_da": "Googles undervisningschef bekræfter, at søgning og AI er sammenvævet. Bernie Sanders og Lina Khan kalder grebet afpresning og monopolisering.",
+     "dato": "2026-11-04T16:17:22+00:00",
+     "foerst_set": "2026-11-04T19:59:08.515800+00:00"
+    },
+    {
+     "kilde": "Ars Technica AI",
+     "link": "https://arstechnica.com/ai/2026/11/google-schools-can-keep-search-while-skipping-gemini-but-ai-search-is-non-negotiable/",
+     "rubrik": "Google: Skoler kan slukke Gemini, ikke AI-søgning",
+     "resume_da": "Skoler kan bruge Google-apps og slå Gemini fra, men søgning kræver et valg mellem AI-funktioner.",
+     "dato": "2026-11-05T21:40:36+00:00",
+     "foerst_set": "2026-11-05T22:13:13.067417+00:00"
+    },
+    {
+     "kilde": "TechCrunch AI",
+     "link": "https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/",
+     "rubrik": "DuckDuckGo tilbyder skoler at slukke for AI",
+     "resume_da": "Efter Googles nye AI-valg til skolerne stiller DuckDuckGo sig op som alternativ: skift søgemaskine, og slå AI-funktionerne fra.",
+     "dato": "2026-11-04T19:29:52+00:00",
+     "foerst_set": "2026-11-04T19:59:08.515800+00:00"
+    }
+   ],
+   "titel": "Google is entirely disabling Search in schools that don’t want AI",
+   "rubrik": "Google slår Search fra i skoler uden AI",
+   "resume_da": "Skoler, der fravælger Googles AI, mister også Google Search for eleverne. Administratorer kan ikke slå AI-funktioner fra og beholde søgningen.",
+   "artikel_signatur": "1337a5023f6943342a7bd0fdcdcea3b0b78a87a13ccce2c0f0e1038a2a366296"
   },
   {
-   "overskrift": "Anthropic: Regnekraft æder 58 procent af omsætningen",
-   "tekst": "Anthropics børsfil viser, at regnekraft slugte 58 procent af omsætningen i kvartalet frem til 30. september – 10 milliarder dollar. Selskabet måtte købe dyr korttidskapacitet i hast. For investorerne bliver spørgsmålet, om væksten kan fortsætte, uden at udgifterne til chips og datahaller løber fra indtjeningen.",
-   "link": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/",
-   "kategori": "Penge & marked",
-   "billede": "data/img/44a7aab407b50c8c.webp",
-   "dato": "2026-11-03T17:07:01+00:00",
+   "overskrift": "Data centre møder modstand ved det amerikanske midtvejsvalg",
+   "tekst": "Ved midtvejsvalget sagde 76 procent af de adspurgte vælgere i NBC News' exitpoll, at de modsatte sig data centre i deres lokalområde. Ifølge The Verge begrænser foreløbigt 33 af 45 lokale afstemninger udviklingen. I Texas vil den nyvalgte guvernør Gina Hinojosa have et moratorium for nye anlæg.",
+   "link": "https://www.theverge.com/policy/1026365/data-centers-midterms-results",
+   "kategori": "Politik & jura",
+   "billede": "data/img/5ecdcfa62ed39d72.webp",
+   "dato": "2026-11-04T16:05:39+00:00",
    "andre": [],
-   "titel": "Anthropic is still grappling with the economics of compute",
-   "rubrik": "Anthropic: Regnekraft æder 58 procent af omsætningen",
-   "resume_da": "Ny børsfil viser, at Anthropics udgift til regnekraft steg til 10 milliarder dollar i kvartalet, fordi selskabet måtte købe dyr kapacitet i hast.",
-   "artikel_signatur": "1fca374daf7355ee5452e012d02cfa292ce3068b80f1503d0ad3118f990079fc"
-  },
-  {
-   "overskrift": "ChatGPT søger en femtedel af Googles volumen",
-   "tekst": "OpenAI oplyser, at ChatGPT nu kører søgninger svarende til 20 procent af Googles volumen. Det er et markant skridt mod søgemaskinens dominans, men OpenAI oplyser ikke, hvor Googles tal kommer fra. Samtidig vil selskabet gøre chatbot-svaret til et interaktivt lærred og indføre sponsorerede produktbilleder.",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search",
-   "kategori": "Penge & marked",
-   "billede": "",
-   "dato": "2026-11-03T18:30:42+00:00",
-   "andre": [],
-   "titel": "OpenAI says ChatGPT is catching up to Google in search",
-   "rubrik": "ChatGPT søger en femtedel af Googles volumen",
-   "resume_da": "OpenAI oplyser, at ChatGPT nu kører søgninger svarende til 20 procent af Googles volumen. Samtidig vil selskabet gøre chatbot-svaret til et interaktivt lærred med annoncer.",
-   "artikel_signatur": "60ca53062a001a99de15f03a5b6afaf2345d13d020ad9ef214c296a5eb099df8"
+   "titel": "Data centers lost the midterms",
+   "rubrik": "Data centre taber midtvejsvalget i USA",
+   "resume_da": "76 procent af adspurgte vælgere afviste data centre i deres lokalområde, og 33 af 45 lokale afstemninger begrænser nu udviklingen.",
+   "artikel_signatur": "a46c8942e882d8d53ea23e8323e7109d08752fdc2ce676c22b44ca4d2cb9944a"
   }
  ],
  "overblik": [
   {
-   "tekst": "Ugens vigtigste forandring er, at adgangen til avanceret AI flytter sig på flere planer. Mistral frigiver vægtene til Mistral Large 4, som selskabet selv kalder en model med 1.000 milliarder parametre, så virksomheder og myndigheder kan køre den selv – især til cyberforsvar. Det giver en anden kontrol end lukkede API'er, men Mistrals ydeevne- og tokenpåstande er producentens egne. Samme uge åbner Apple Siri AI for tredjepartsapps i iOS 27.3, foreløbig som Developer Preview. Her er åbningen ikke vægte, men et assistentlag, der kan samle opgaver på tværs af apps. Begge træk flytter AI tættere på brugerne og giver udviklere og organisationer mere at bygge på.",
+   "tekst": "Google og OpenAI flyttede hver deres grænse. Google oplyser, at Gemini Omni 1.2 Flash giver video i op til 15 sekunder og en 30 procent lavere pris, men selskabet indrømmer selv, at hurtig sport og kompleks fysik stadig er svage punkter. GPT-6 Cyber viser ifølge OpenAI bedre adfærd i test, men OpenAI klassificerer den som Critical, fordi den kan finde zero-days – sårbarheder, producenten ikke kender. Begge er gradvise forbedringer: længere og billigere video, og en cybermodel der oftere holder sig inden for rammerne, uden at de grundlæggende begrænsninger forsvinder.",
    "links": [
-    "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
-    "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps"
+    "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+    "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch"
    ]
   },
   {
-   "tekst": "Men udbredelsen møder fysiske og finansielle grænser. Ved midtvejsvalget i USA vedtog vælgerne 38 af 44 lokale initiativer mod datacentre, og i Texas vandt Gina Hinojosa guvernørvalget efter at kræve et moratorium. Det kan forsinke anlæg, som AI-modellerne skal køre på. Anthropics børsfil viser samtidig, at regnekraft slugte 58 procent af omsætningen i kvartalet frem til 30. september – 10 milliarder dollar – fordi selskabet måtte købe dyr korttidskapacitet. Teknologien er altså blevet både mere tilgængelig og dyrere at skalere.",
+   "tekst": "Apple og Google viser to forskellige måder, AI bliver en del af platformen. Apple åbner Siri AI for tredjepartsapps, så assistenten kan bruge skærmen og brugerens kontekst og samle delopgaver i én app skill. Det er annonceret som Developer Preview, og værdien afhænger af udviklerne. Google går den modsatte vej i skolerne: Slår administratoren Gemini-funktionerne fra, forsvinder Google Search også for K-12-elever. Apple inviterer udviklere ind i assistenten; Google gør AI til en betingelse for søgning.",
    "links": [
-    "https://arstechnica.com/tech-policy/2026/11/big-tech-claims-voters-ai-backlash-is-anti-trump-not-anti-tech/",
-    "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/"
+    "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps",
+    "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features"
    ]
   },
   {
-   "tekst": "På efterspørgselssiden melder OpenAI, at ChatGPT nu kører søgninger svarende til 20 procent af Googles volumen. Det er et markant skridt mod søgemaskinens dominans, men OpenAI oplyser ikke, hvor Googles tal kommer fra, og vil samtidig gøre svarene til et interaktivt lærred med sponsorerede produktbilleder. Tilsammen viser ugens historier ikke én fælles årsag, men en forskydning: hvem der kontrollerer adgangen til modeller, assistenter, strøm og søgning.",
+   "tekst": "Midtvejsvalget satte den fysiske udbygning under pres. Ifølge The Verge modsatte 76 procent af de adspurgte vælgere sig data centre i deres lokalområde, og 33 af 45 lokale afstemninger begrænser foreløbigt udviklingen. I Texas vil den nyvalgte guvernør Gina Hinojosa have et moratorium. Det er ikke en fælles årsag til modeludgivelserne, men en samtidig politisk modreaktion, som kan gøre det sværere at få byggetilladelser og strømtilslutning til den regnekraft, modellerne skal køre på. Nye AI-evner og lokal modstand følges altså ad.",
    "links": [
-    "https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search"
+    "https://www.theverge.com/policy/1026365/data-centers-midterms-results"
    ]
   }
  ],
- "tendens": "Det er uafklaret, om Gina Hinojosa kan gennemføre et statsdækkende moratorium i Texas. Intet enkelt organ afgør alene projekterne; bystyrer, county-embedsmænd og statslige kontorer deler beslutningerne.",
+ "tendens": "Google begynder at teste Guided Learning i AI Overviews i udvalgte amerikanske skoler i denne måned. Det er uafklaret, om funktionen kan hjælpe eleverne uden at erstatte den søgning, skolerne mister, hvis de fravælger AI.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "d9e7535d238863b191fd9065660b013a7615979a0c47e20922db7d1afeacb864",
- "dato": "2026-11-05T22:39:58.802408+00:00",
- "opdateret": "2026-11-05T22:39:58.802408+00:00",
- "periode_fra": "2026-10-28T23:00:00+00:00",
- "periode_til": "2026-11-04T23:00:00+00:00",
+ "basis_signatur": "c494f3909399969924a1ffbd37dd4b76b46cfe65285ce0b6d5b965735e5b0e3c",
+ "dato": "2026-11-06T07:32:36.471035+00:00",
+ "opdateret": "2026-11-06T07:32:36.471035+00:00",
+ "periode_fra": "2026-10-29T23:00:00+00:00",
+ "periode_til": "2026-11-05T23:00:00+00:00",
  "stats": {
   "historier": 92,
-  "kilder": 6
+  "kilder": 7
  }
 }
