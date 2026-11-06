@@ -274,6 +274,8 @@ async function run() {
     const levels=()=>Array.from(p.d.getElementById('step-thinking').options,o=>o.value);
     choose('deepseek-flash');assert.deepEqual(levels(),['','disabled','low','high','max']);
     choose('mimo-v2.6-pro');assert.deepEqual(levels(),['','disabled','enabled']);
+    choose('gpt-6.1-terra');assert.deepEqual(levels(),['','none','low','medium','high','xhigh','max']);
+    choose('gpt-6.1-sol');assert.deepEqual(levels(),['','low','medium','high','xhigh','max']);
     p.d.getElementById('step-thinking').value='enabled';
     p.d.getElementById('model-form').dispatchEvent(new p.w.Event('submit',{bubbles:true,cancelable:true}));
     assert.equal(p.app.state.drafts.hjerner.hjerner.motiv.thinking,'enabled');

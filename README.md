@@ -381,6 +381,6 @@ lægges i kladden og gemmes med den almindelige Gem-knap.
 
 ### OpenAI som tekstmodel
 
-Under **Indstillinger → Modeller & instrukser** kan du også vælge OpenAI-modeller til teksttrinene og forsideagenten, enkeltvis eller med **Skift alle tekstmodeller**. Eksisterende valg ændres ikke. Modelmenuen indeholder et udvalg, og flere GPT-model-ID'er kan tilføjes manuelt eller hentes med **Opdatér modelliste**. Adgang afhænger af din OpenAI-konto og modellens understøttelse af tekst og værktøjskald. Ræsonnement følger modellens standard.
+Under **Indstillinger → Modeller & instrukser** kan du også vælge OpenAI-modeller til teksttrinene og forsideagenten, enkeltvis eller med **Skift alle tekstmodeller**. Eksisterende valg ændres ikke. Modelmenuen indeholder et udvalg, og flere GPT-model-ID'er kan tilføjes manuelt eller hentes med **Opdatér modelliste**. Adgang afhænger af din OpenAI-konto og modellens understøttelse af tekst og værktøjskald. For GPT-6.1 Terra, GPT-6.1 Sol, GPT-6 Astra, GPT-6 Sol og GPT-6 Luna kan ræsonnement vælges pr. trin; standarden bruges, hvis der ikke vælges et niveau.
 
 Tilføj `OPENAI_API_KEY` som repository secret på GitHub; modelopdatering, crawler og nyhedsbrev får derefter adgang til nøglen. Ved lokal kørsel sættes samme miljøvariabel lokalt. Et valgt OpenAI-trin falder tilbage til den daglige model ved manglende nøgle eller API-fejl. Brug af OpenAI API kan medføre udgifter.

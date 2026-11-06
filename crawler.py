@@ -1135,6 +1135,7 @@ def kald_openai_model(system: str, bruger_tekst: str, max_tokens: int,
     body = json.dumps({"model": model, "messages": [
         {"role": "system", "content": system}, {"role": "user", "content": bruger_tekst}],
         "max_completion_tokens": max(32768, max_tokens),
+        **({"reasoning_effort": validate_thinking(model, thinking)} if thinking else {}),
         **({"response_format": {"type": "json_object"}} if reasoning_effort else {}),
     }).encode()
     raw = hent_url("https://api.openai.com/v1/chat/completions", data=body,
@@ -5879,10 +5880,13 @@ def forbered_redaktoer(artikler, tidligere_forside, nu):
     agent_key = _udbyder_noegle(agent_provider)
     agent_call = redaktoer_agent.openai_kald if agent_provider == "openai" else redaktoer_agent.xiaomi_kald if agent_provider == "xiaomi" else redaktoer_agent.deepseek_kald
     transport = agent_call
+    openai_session = {}
     def agent_call(*args, **kwargs):
         with _drift.modelkald("forside_agent") if _drift else nullcontext():
             if _drift:
                 kwargs["timeout"] = _drift.tid()
+            if agent_provider == "openai":
+                kwargs["session"] = openai_session
             return transport(*args, **kwargs)
     agent_thinking = hjerne_thinking("forside_agent", agent_model)
     effective_thinking = agent_thinking or ("modelstandard" if agent_provider == "openai" else "enabled" if agent_provider == "xiaomi" else DEEPSEEK_REASONING)

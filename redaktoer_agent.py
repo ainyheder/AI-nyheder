@@ -172,20 +172,48 @@ def deepseek_kald(noegle, model, messages, tools, *, thinking=None, timeout=DEEP
     return choice["message"]
 
 
-def openai_kald(noegle, model, messages, tools, *, thinking=None, timeout=DEEPSEEK_TIMEOUT):
+def openai_kald(noegle, model, messages, tools, *, thinking=None, timeout=DEEPSEEK_TIMEOUT, session=None):
+    """Responses API med bevaret, krypteret ræsonnement under værktøjskald."""
     if not noegle:
         raise ValueError("OPENAI_API_KEY mangler")
-    body = {"model": model, "messages": messages, "tools": tools,
-            "tool_choice": "auto", "max_completion_tokens": 32768}
-    request = urllib.request.Request("https://api.openai.com/v1/chat/completions",
+    session = session if session is not None else {}
+    previous = session.get("messages", [])
+    continuing = bool(previous) and messages[:len(previous)] == previous
+    items = list(session.get("items", [])) if continuing else []
+    for message in messages[len(previous) if continuing else 0:]:
+        role = message.get("role")
+        if role == "tool":
+            items.append({"type": "function_call_output", "call_id": message["tool_call_id"], "output": message["content"]})
+        elif role == "assistant" and message.get("tool_calls"):
+            # Disse funktioner ligger allerede i sessionens output.
+            if not continuing:
+                for call in message["tool_calls"]:
+                    items.append({"type": "function_call", "call_id": call["id"], **call["function"]})
+        else:
+            items.append({"role": role, "content": message.get("content") or ""})
+    response_tools = [{"type": "function", **tool["function"]} for tool in tools]
+    body = {"model": model, "input": items, "tools": response_tools,
+            "tool_choice": "auto", "max_output_tokens": 32768, "store": False,
+            **({"reasoning": {"effort": validate_thinking(model, thinking)}} if thinking else {})}
+    request = urllib.request.Request("https://api.openai.com/v1/responses",
               data=json.dumps(body, ensure_ascii=False).encode(),
               headers={"Authorization": "Bearer " + noegle, "Content-Type": "application/json"})
     with urllib.request.urlopen(request, timeout=timeout) as response:
         data = json.loads(response.read(1_000_000))
-    choice = data["choices"][0]
-    if choice.get("finish_reason") not in ("tool_calls", "stop"):
+    if data.get("status") != "completed" or not isinstance(data.get("output"), list):
         raise ValueError("OpenAI-agentens svar blev afbrudt")
-    return choice["message"]
+    output = data["output"]
+    calls = [{"id": item["call_id"], "type": "function", "function": {"name": item["name"], "arguments": item["arguments"]}}
+             for item in output if item.get("type") == "function_call"]
+    content = "".join(part.get("text", "") for item in output if item.get("type") == "message"
+                      for part in item.get("content", []) if part.get("type") == "output_text")
+    reply = {"role": "assistant", "content": content or None}
+    if calls:
+        reply["tool_calls"] = calls
+    session["items"] = items + output
+    # Agentens eget format tilføjer svaret før værktøjsresultaterne.
+    session["messages"] = [*messages, {**reply, "tool_calls": calls}] if calls else [*messages, reply]
+    return reply
 
 
 def xiaomi_kald(noegle, model, messages, tools, *, thinking=None, timeout=DEEPSEEK_TIMEOUT):
