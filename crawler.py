@@ -2697,12 +2697,24 @@ def _gemt_artikelbillede(a: dict) -> Path | None:
     return next((fil for fil in filer if fil.is_file()), None)
 
 
+def _billedfilter_signatur(a):
+    data = {'motiv': a.get('billedmotiv'), 'artikel': _billedkontekst(a),
+            'stil': hjerne_prompt('billedgenerator', SYSTEM_BILLEDSTIL),
+            'model': special_model('billedgenerator', BILLED_MODEL, 'gemini')}
+    return redaktoer_agent.ident(json.dumps(data, ensure_ascii=False, sort_keys=True))
+
+
+def _billedafvist(a):
+    status = a.get('billedstatus') or {}
+    return isinstance(status, dict) and status.get('status') == 'afvist_af_filter' and status.get('signatur') == _billedfilter_signatur(a)
+
+
 def udfyld_billedmotiver(artikler: list[dict], forside=None, nu=None) -> None:
     """Sørger for at billedkandidaterne har et konkret art director-motiv,
     før der genereres billeder."""
     # Skriv kun motiver til den portion, billedgeneratoren kan nå i denne kørsel.
     portion = [a for a in _billedartikler(artikler, forside, nu)
-               if _gemt_artikelbillede(a) is None][:MAX_BILLEDER_PR_KOERSEL]
+               if _gemt_artikelbillede(a) is None and not _billedafvist(a)][:MAX_BILLEDER_PR_KOERSEL]
     top = [a for a in portion if not a.get("billedmotiv")
            or a.get("billedmotiv_instruks") != _billedmotiv_signatur(a)]
     # Kun motiver uden et betalt billede må opdateres. Ved fejl bygger
@@ -2839,6 +2851,8 @@ def lav_billeder(artikler: list[dict], forside=None, nu=None) -> None:
                 gemt = _gem_artikelbillede(b'', gemt, gem_original=False)
             a["billede"] = f"data/img/{gemt.name}"
             continue
+        if _billedafvist(a):
+            continue
         if forsoeg >= MAX_BILLEDER_PR_KOERSEL or fejl_i_traek >= 2 or (_drift and not _drift.plads()):
             continue
         forsoeg += 1
@@ -2861,11 +2875,17 @@ def lav_billeder(artikler: list[dict], forside=None, nu=None) -> None:
                 fejl_i_traek = 0
                 gem_fremskridt(artikler)
             except Exception as f:
-                fejl_i_traek += 1
                 from _redaktion.billedfejl import BilledAPIError
+                if isinstance(f, BilledAPIError) and f.details.get('kategori') == 'sikkerhedsfilter':
+                    a['billedstatus'] = {'status': 'afvist_af_filter', 'signatur': _billedfilter_signatur(a)}
+                    fejl_i_traek = 0
+                    gem_fremskridt(artikler)
+                    print('  ⏭️ Illustration afvist af udbyderens filter; identisk prompt gentages ikke, og køen fortsætter')
+                else:
+                    fejl_i_traek += 1
                 print(f"  ⚠️ Cloudflare-billede fejlede: {str(f) if isinstance(f, BilledAPIError) else type(f).__name__}"
                       f"{' · HTTP ' + str(f.code) if isinstance(f, urllib.error.HTTPError) else ''}. "
-                      "Kontrollér Workers AI-adgang og kvote.")
+                      "Se kategori og fejlkode ovenfor.")
             continue
         body = json.dumps({
             "contents": [{"role": "user", "parts": [{"text": prompt}]}],
@@ -2912,11 +2932,12 @@ def lav_billeder(artikler: list[dict], forside=None, nu=None) -> None:
     # 30.07-01.08: 16 kort nåede at stå uden billede, før det blev opdaget i
     # hånden. Derfor råber vi op, når der VAR noget at lave og intet blev lavet.
     mangler = sum(_gemt_artikelbillede(a) is None for a in top)
-    print(f"🎨 Billedstatus: {len(top)} historier · {lavet} nye billeder · {mangler} venter på billede")
-    if mangler and not lavet:
+    afviste = sum(_billedafvist(a) and _gemt_artikelbillede(a) is None for a in top)
+    print(f"🎨 Billedstatus: {len(top)} historier · {lavet} nye billeder · {mangler-afviste} i kø · {afviste} afvist af filter")
+    if mangler > afviste and not lavet:
         print(f"🚨 INGEN billeder lavet, men {mangler} kort mangler et. "
-              f"Model: {_billed_model}. Tjek fejlen ovenfor - typisk en "
-              f"manglende API-adgang, betaling slået fra, eller opbrugt kvote.")
+              f"Model: {_billed_model}. Se den præcise årsag ovenfor; "
+              f"filterafvisninger gælder det enkelte motiv.")
 
     # ryd op: slet billeder for artikler, der er røget ud af listen - men kun
     # dem, ingen side på disken stadig peger på.
@@ -2991,6 +3012,8 @@ def omskriv_nye(artikler: list[dict], cache: dict) -> None:
                 a["billedmotiv"] = gammel["billedmotiv"]
                 if gammel.get("billedmotiv_instruks"):
                     a["billedmotiv_instruks"] = gammel["billedmotiv_instruks"]
+            if isinstance(gammel.get('billedstatus'), dict):
+                a['billedstatus'] = dict(gammel['billedstatus'])
             if gammel.get("billede"):
                 a["billede"] = gammel["billede"]
                 # `laant_billede` følger billedet og kun billedet: forsvinder
@@ -6190,6 +6213,7 @@ def _main() -> None:
                                 "detaljer": a.get("detaljer", []),
                                 "betydning": a.get("betydning", ""),
                                 "pointer": a.get("pointer", []),
+                                "billedstatus": a.get("billedstatus"),
                                 "billedmotiv": a.get("billedmotiv", ""),
                                 "billedmotiv_instruks": a.get("billedmotiv_instruks", ""),
                                 "billede": a.get("billede", ""),

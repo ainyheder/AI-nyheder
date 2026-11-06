@@ -448,6 +448,10 @@ class Redaktion:
         for round_ in range(MAX_KALD):
             afleveringstid = round_ >= MAX_RESEARCH_RUNDER or len(self.laeste) >= MAX_KILDER
             aktive_tools = [TOOLS[-1]] if afleveringstid else TOOLS
+            if not afleveringstid and not self.laeste and any(t['vaerktoej'] == 'find_kilder' for t in self.log):
+                aktive_tools = [TOOLS[1]]
+                messages.append({'role': 'user', 'content':
+                    'Læs nu en konkret kilde med laes_kilde. Brug et id fra kandidatoversigten eller søgeresultatet, før du søger igen.'})
             if afleveringstid:
                 messages.append({"role": "user", "content":
                     f"Research er afsluttet. Du har {MAX_KALD-round_} forsøg tilbage. "
@@ -486,8 +490,14 @@ class Redaktion:
                         result = self.laes(args.get("id", ""))
                     elif name == "find_kilder":
                         words = re.findall(r"\w+", tekst(args.get("soegning"), 150).lower())
+                        stop = {'the', 'and', 'for', 'with', 'from', 'news', 'latest', 'find', 'about',
+                                'og', 'med', 'fra', 'til', 'om', 'nyheder', 'seneste'}
+                        words = [w for w in words if len(w) > 1 and w not in stop]
+                        ranked = sorted(self.kilder.items(), key=lambda row: sum(
+                            w in (str(row[1].get('titel', '')) + ' ' + row[1]['link'] + ' ' + str(row[1].get('resume', ''))).lower()
+                            for w in words), reverse=True)
                         result = [{"id": k, "titel": s.get("titel"), "link": s["link"], "officiel": primaer(s["link"])}
-                                  for k, s in self.kilder.items() if words and all(w in (str(s.get("titel", "")) + " " + s["link"] + " " + str(s.get("resume", ""))).lower() for w in words)][:20]
+                                  for k, s in ranked[:20]]
                     elif name == "aflever_udgave" and len(calls) == 1:
                         aflevering = self.valider(args)
                         result = {"modtaget": True}

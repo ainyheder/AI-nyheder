@@ -128,3 +128,27 @@ with patch.dict(os.environ,{'CLOUDFLARE_AI_TOKEN':'private-token','CLOUDFLARE_AC
         assert error.details=={'http_status':400,'koder':[5006],'kategori':'promptlaengde'}
         assert 'private' not in str(error)
 print('OK: Cloudflare-fejl er præcise uden private data')
+
+# En filterafvist illustration må hverken stoppe køen eller blive købt igen.
+from _redaktion.billedfejl import BilledAPIError
+with tempfile.TemporaryDirectory() as folder, ExitStack() as stack:
+    root=Path(folder); images=root/'data/img';images.mkdir(parents=True)
+    rows=[{'link':'https://example.com/'+n,'rubrik':n,'billedmotiv':n} for n in ['A','B']]
+    for name,value in [('ROOT',root),('BILLED_MAPPE',images),('ARTIKEL_MAPPE',root/'artikel'),('MAX_BILLEDER_PR_KOERSEL',2)]:
+        stack.enter_context(patch.object(c,name,value))
+    stack.enter_context(patch.object(c,'_billedartikler',side_effect=lambda rows,*args:rows))
+    stack.enter_context(patch.object(c,'special_model',return_value=c.FLUX_MODEL))
+    stack.enter_context(patch.object(c,'cloudflare_billedadgang',return_value=('test','test')))
+    stack.enter_context(patch.object(c,'_gem_artikelbillede',side_effect=save))
+    error=BilledAPIError(400,{'errors':[{'code':3030,'message':'Your output has been flagged'}]})
+    api=stack.enter_context(patch.object(c,'lav_flux_billede',side_effect=[error,b'image']))
+    c.lav_billeder(rows)
+    assert api.call_count==2 and c._billedafvist(rows[0]) and rows[1].get('billede')
+    c.lav_billeder(rows)
+    assert api.call_count==2, 'Identisk filterafvist prompt skal springes over'
+    restored={'link':rows[0]['link'],'titel':'A','kilde':'Test'}
+    c.omskriv_nye([restored],{rows[0]['link']:rows[0]})
+    assert c._billedafvist(restored), 'Filterstatus skal overleve genindlæsning fra artikelcache'
+    restored['billedmotiv']='En ny, selvstændig motivbeskrivelse'
+    assert not c._billedafvist(restored), 'Ændret materiale skal have sin egen status'
+print('OK: Filterafvisninger huskes, og køen fortsætter til næste historie')

@@ -54,6 +54,22 @@ class AgentTests(unittest.TestCase):
         return agent.Redaktion([self.a, self.b], memory or {}, "Modeller først", NU,
                                svar or (lambda *_: tool("aflever_udgave", plan(self.a))), hent)
 
+    def test_soegning_med_loese_ord_foerer_til_kildelaesning(self):
+        calls=[]
+        def svar(messages,tools):
+            calls.append(copy.deepcopy(messages))
+            if len(calls)==1:
+                return tool('find_kilder',{'soegning':'latest Nova research completely-unmatched-extra-word'})
+            if len(calls)==2:
+                self.assertEqual([t['function']['name'] for t in tools],['laes_kilde'])
+                result=json.loads(next(m['content'] for m in reversed(messages) if m['role']=='tool'))
+                self.assertTrue(any(row['id']==agent.ident(self.a['link']) for row in result))
+                return tool('laes_kilde',{'id':agent.ident(self.a['link'])})
+            return tool('aflever_udgave',plan(self.a))
+        editor=self.lav(svar)
+        self.assertEqual(editor.koer(),plan(self.a))
+        self.assertEqual([t['vaerktoej'] for t in editor.log],['find_kilder','laes_kilde','aflever_udgave'])
+
     def test_mimo_fra_indstilling_til_agent_med_egen_noegle(self):
         calls = []
         def kald(key, model, messages, tools, **kwargs):
