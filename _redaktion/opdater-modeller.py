@@ -14,6 +14,8 @@ def hent(udbyder, key, request=urlopen):
     while True:
         if udbyder == 'DeepSeek':
             url, headers = 'https://api.deepseek.com/models', {'Authorization': 'Bearer ' + key}
+        elif udbyder == 'OpenAI':
+            url, headers = 'https://api.openai.com/v1/models', {'Authorization': 'Bearer ' + key}
         elif udbyder == 'Xiaomi':
             url, headers = 'https://api.xiaomimimo.com/v1/models', {'api-key': key}
         else:
@@ -27,7 +29,9 @@ def hent(udbyder, key, request=urlopen):
         for row in rows:
             name = row.get('id', '') if udbyder != 'Gemini' else row.get('name', '').removeprefix('models/')
             supported = (
-                udbyder == 'Xiaomi' and name.startswith('mimo-')
+                udbyder == 'OpenAI' and name.startswith('gpt-')
+                and not any(part in name for part in ('audio', 'realtime', 'transcribe', 'tts', 'image', 'embedding'))
+                or udbyder == 'Xiaomi' and name.startswith('mimo-')
                 and not any(part in name.split('-') for part in ('tts', 'asr'))
                 or udbyder == 'DeepSeek' and name.startswith('deepseek')
                 or udbyder == 'Gemini' and name.startswith('gemini')
@@ -53,7 +57,7 @@ def main():
     except (OSError, ValueError):
         data = {'udbydere': {}}
     now = datetime.now(timezone.utc).isoformat()
-    for name, env in [('DeepSeek', 'DEEPSEEK_API_KEY'), ('Gemini', 'GEMINI_API_KEY'), ('Xiaomi', 'XIAOMI_API_KEY')]:
+    for name, env in [('DeepSeek', 'DEEPSEEK_API_KEY'), ('Gemini', 'GEMINI_API_KEY'), ('Xiaomi', 'XIAOMI_API_KEY'), ('OpenAI', 'OPENAI_API_KEY')]:
         previous = data['udbydere'].get(name, {})
         try:
             key = os.environ.get(env)

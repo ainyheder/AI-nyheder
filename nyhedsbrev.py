@@ -695,7 +695,7 @@ def main():
         return
     if os.environ.get("GITHUB_ACTIONS") != "true" or not args.state_dir:
         raise ValueError("Automatisk udsendelse køres kun af GitHub Actions med varig status")
-    if not (os.environ.get("DEEPSEEK_API_KEY") or os.environ.get("GEMINI_API_KEY") or os.environ.get("XIAOMI_API_KEY")):
+    if not (os.environ.get("DEEPSEEK_API_KEY") or os.environ.get("GEMINI_API_KEY") or os.environ.get("XIAOMI_API_KEY") or os.environ.get("OPENAI_API_KEY")):
         raise ValueError("Redaktørens API-nøgle mangler")
     process(items, config, GitStore(args.state_dir), Buttondown(os.environ.get("BUTTONDOWN_API_KEY", "")))
 

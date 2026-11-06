@@ -172,6 +172,22 @@ def deepseek_kald(noegle, model, messages, tools, *, thinking=None, timeout=DEEP
     return choice["message"]
 
 
+def openai_kald(noegle, model, messages, tools, *, thinking=None, timeout=DEEPSEEK_TIMEOUT):
+    if not noegle:
+        raise ValueError("OPENAI_API_KEY mangler")
+    body = {"model": model, "messages": messages, "tools": tools,
+            "tool_choice": "auto", "max_completion_tokens": 32768}
+    request = urllib.request.Request("https://api.openai.com/v1/chat/completions",
+              data=json.dumps(body, ensure_ascii=False).encode(),
+              headers={"Authorization": "Bearer " + noegle, "Content-Type": "application/json"})
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        data = json.loads(response.read(1_000_000))
+    choice = data["choices"][0]
+    if choice.get("finish_reason") not in ("tool_calls", "stop"):
+        raise ValueError("OpenAI-agentens svar blev afbrudt")
+    return choice["message"]
+
+
 def xiaomi_kald(noegle, model, messages, tools, *, thinking=None, timeout=DEEPSEEK_TIMEOUT):
     """MiMo understøtter auto-toolvalg; agenten validerer selve afleveringen."""
     if not noegle:

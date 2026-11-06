@@ -73,6 +73,8 @@ MAX_DAGE_GAMMEL = 30         # smid artikler ældre end 30 dage væk
 TIMEOUT_SEK = 20
 
 # --- AI-omskrivning via DeepSeek, Gemini eller Xiaomi ---
+OPENAI_KEY = os.environ.get("OPENAI_API_KEY", "").strip()
+OPENAI_MODEL = "gpt-6.1-sol"
 GEMINI_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
 XIAOMI_KEY = os.environ.get("XIAOMI_API_KEY", "").strip()
 XIAOMI_MODEL = "mimo-v2.6-flash"
@@ -89,8 +91,8 @@ DEEPSEEK_URL = "https://api.deepseek.com/chat/completions"
 # Ellers vælges i denne rækkefølge: DeepSeek → Gemini → Xiaomi.
 # (Gemini-nøglen bruges under alle omstændigheder til artikelbillederne.)
 UDBYDER = os.environ.get("AI_UDBYDER", "").strip().lower() \
-    or ("deepseek" if DEEPSEEK_KEY else "gemini" if GEMINI_KEY else "xiaomi" if XIAOMI_KEY else "")
-API_KEY = {"gemini": GEMINI_KEY, "deepseek": DEEPSEEK_KEY, "xiaomi": XIAOMI_KEY}.get(UDBYDER, "")
+    or ("deepseek" if DEEPSEEK_KEY else "gemini" if GEMINI_KEY else "xiaomi" if XIAOMI_KEY else "openai" if OPENAI_KEY else "")
+API_KEY = {"gemini": GEMINI_KEY, "deepseek": DEEPSEEK_KEY, "xiaomi": XIAOMI_KEY, "openai": OPENAI_KEY}.get(UDBYDER, "")
 
 BATCH_STR = 10                   # artikler pr. API-kald (korte resuméer)
 MAX_OMSKRIV_PR_KOERSEL = 200     # loft over API-forbrug pr. kørsel
@@ -417,7 +419,7 @@ def hjerne_prompt(navn: str, standard: str) -> str:
 
 def special_model(navn, standard, prefix):
     model = hjerne_model(navn)
-    if navn == "forside_agent" and model and model.startswith("mimo-") and not any(part in model.split("-") for part in ("tts", "asr")):
+    if navn == "forside_agent" and model and (model.startswith("mimo-") or model.startswith("gpt-")) and not any(part in model.split("-") for part in ("tts", "asr")):
         return model
     if navn == "billedgenerator" and model == FLUX_MODEL:
         return model
@@ -436,7 +438,7 @@ def hjerne_thinking(navn, model):
 
 # Hvem ejer hvilke modelnavne. Rækkefølgen betyder intet - præfikserne
 # overlapper ikke.
-MODEL_PRAEFIKS = (("deepseek", "deepseek"), ("gemini", "gemini"), ("mimo-", "xiaomi"))
+MODEL_PRAEFIKS = (("deepseek", "deepseek"), ("gemini", "gemini"), ("mimo-", "xiaomi"), ("gpt-", "openai"))
 
 
 def model_udbyder(model: str) -> str:
@@ -460,7 +462,7 @@ def model_udbyder(model: str) -> str:
 
 def _udbyder_noegle(udbyder: str) -> str:
     """Nøglen der hører til en udbyder. Tom streng hvis den ikke er sat."""
-    return {"gemini": GEMINI_KEY, "deepseek": DEEPSEEK_KEY, "xiaomi": XIAOMI_KEY}.get(udbyder, "")
+    return {"gemini": GEMINI_KEY, "deepseek": DEEPSEEK_KEY, "xiaomi": XIAOMI_KEY, "openai": OPENAI_KEY}.get(udbyder, "")
 
 
 # Modeller, der har svigtet i DENNE kørsel, og hvor mange gange.
@@ -506,7 +508,7 @@ def _hjerne_kald(navn: str, standard_prompt: str, bruger: str,
     reasoning = {"reasoning_effort": reasoning_effort} if reasoning_effort else {}
     system = hjerne_prompt(navn, standard_prompt)
     model = hjerne_model(navn) or standard_model
-    effective_model = model or (DEEPSEEK_MODEL if UDBYDER == "deepseek" else XIAOMI_MODEL if UDBYDER == "xiaomi" else GEMINI_MODEL)
+    effective_model = model or (DEEPSEEK_MODEL if UDBYDER == "deepseek" else XIAOMI_MODEL if UDBYDER == "xiaomi" else OPENAI_MODEL if UDBYDER == "openai" else GEMINI_MODEL)
     thinking = hjerne_thinking(navn, effective_model)
     selected = {"thinking": thinking} if thinking else {}
     if model:
@@ -529,6 +531,8 @@ def _hjerne_kald(navn: str, standard_prompt: str, bruger: str,
                         if udbyder == "deepseek"
                         else kald_xiaomi_model(system, bruger, max_tokens, model, **reasoning, **selected)
                         if udbyder == "xiaomi"
+                        else kald_openai_model(system, bruger, max_tokens, model, **reasoning, **selected)
+                        if udbyder == "openai"
                         else kald_gemini_model(system, bruger, max_tokens, model, **selected))
                 with _model_lock:
                     _model_fejl.pop(model, None)     # rækken er brudt
@@ -725,7 +729,7 @@ def skriv_hjerne_status() -> None:
 
 
 def _skriv_hjerne_status() -> None:
-    daglig = DEEPSEEK_MODEL if UDBYDER == "deepseek" else XIAOMI_MODEL if UDBYDER == "xiaomi" else GEMINI_MODEL
+    daglig = DEEPSEEK_MODEL if UDBYDER == "deepseek" else XIAOMI_MODEL if UDBYDER == "xiaomi" else OPENAI_MODEL if UDBYDER == "openai" else GEMINI_MODEL
     std = _standard_prompts()
 
     def trin_udbyder(navn: str) -> str:
@@ -758,6 +762,7 @@ def _skriv_hjerne_status() -> None:
         "gemini_tilgaengelig": bool(GEMINI_KEY),
         "deepseek_tilgaengelig": bool(DEEPSEEK_KEY),
         "xiaomi_tilgaengelig": bool(XIAOMI_KEY),
+        "openai_tilgaengelig": bool(OPENAI_KEY),
         "hjerner": {
             navn: {
                 "beskrivelse": besk,
@@ -1123,6 +1128,28 @@ def kald_deepseek_model(system: str, bruger_tekst: str, max_tokens: int,
     return deepseek_json_svar(svar, require_object=bool(reasoning_effort))
 
 
+def kald_openai_model(system: str, bruger_tekst: str, max_tokens: int,
+                      model: str, *, reasoning_effort=None, thinking=None) -> str:
+    if not OPENAI_KEY:
+        raise RuntimeError("OPENAI_API_KEY mangler")
+    body = json.dumps({"model": model, "messages": [
+        {"role": "system", "content": system}, {"role": "user", "content": bruger_tekst}],
+        "max_completion_tokens": max(32768, max_tokens),
+        **({"response_format": {"type": "json_object"}} if reasoning_effort else {}),
+    }).encode()
+    raw = hent_url("https://api.openai.com/v1/chat/completions", data=body,
+                   headers={"Authorization": f"Bearer {OPENAI_KEY}", "content-type": "application/json"},
+                   timeout=DEEPSEEK_TIMEOUT)
+    payload = json.loads(raw)
+    choice = payload["choices"][0]
+    content = (choice.get("message") or {}).get("content")
+    if choice.get("finish_reason") != "stop" or not isinstance(content, str) or not content.strip():
+        raise ValueError("OpenAI returnerede ikke et fuldstændigt tekstsvar")
+    if reasoning_effort and not isinstance(json.loads(content), dict):
+        raise ValueError("OpenAI returnerede ikke et JSON-objekt")
+    return content
+
+
 def kald_xiaomi_model(system: str, bruger_tekst: str, max_tokens: int,
                       model: str, *, reasoning_effort: str | None = None, thinking: str | None = None) -> str:
     """MiMo tekstkald med Xiaomis egen nøgle og valideret slutsvar."""
@@ -1156,6 +1183,8 @@ def kald_xiaomi_model(system: str, bruger_tekst: str, max_tokens: int,
 def kald_ai(system: str, bruger_tekst: str, max_tokens: int, *, reasoning_effort: str | None = None, thinking: str | None = None) -> str:
     """Ét fælles AI-kald - taler med DeepSeek eller Gemini alt efter hvilken
     nøgle der er sat. Returnerer modellens rå tekstsvar."""
+    if UDBYDER == "openai":
+        return kald_openai_model(system, bruger_tekst, max_tokens, OPENAI_MODEL, reasoning_effort=reasoning_effort, thinking=thinking)
     if UDBYDER == "xiaomi":
         return kald_xiaomi_model(system, bruger_tekst, max_tokens, XIAOMI_MODEL, reasoning_effort=reasoning_effort, thinking=thinking)
     if UDBYDER == "deepseek":
@@ -1431,7 +1460,7 @@ def dybe_briefs(artikler: list[dict], redaktionsopgaver=None, kildetekster=None)
         print("📰 Alle topartikler har allerede et brief (cache)")
         return
     if not API_KEY:
-        print("📰 Ingen AI-nøgle sat (DEEPSEEK_API_KEY/GEMINI_API_KEY/XIAOMI_API_KEY) - springer dybe briefs over")
+        print("📰 Ingen AI-nøgle sat (DEEPSEEK_API_KEY/GEMINI_API_KEY/XIAOMI_API_KEY/OPENAI_API_KEY) - springer dybe briefs over")
         return
 
     print(f"📰 Henter og genfortæller {len(kandidater)} artikler i fuld længde …")
@@ -2948,7 +2977,7 @@ def omskriv_nye(artikler: list[dict], cache: dict) -> None:
         print("✍️  Alle artikler er allerede omskrevet (cache)")
         return
     if not API_KEY:
-        print(f"✍️  Ingen AI-nøgle sat (DEEPSEEK_API_KEY/GEMINI_API_KEY/XIAOMI_API_KEY) - springer omskrivning over "
+        print(f"✍️  Ingen AI-nøgle sat (DEEPSEEK_API_KEY/GEMINI_API_KEY/XIAOMI_API_KEY/OPENAI_API_KEY) - springer omskrivning over "
               f"({len(mangler)} artikler vises på engelsk)")
         return
 
@@ -5848,7 +5877,7 @@ def forbered_redaktoer(artikler, tidligere_forside, nu):
     agent_model = special_model("forside_agent", DEEPSEEK_MODEL, "deepseek")
     agent_provider = model_udbyder(agent_model)
     agent_key = _udbyder_noegle(agent_provider)
-    agent_call = redaktoer_agent.xiaomi_kald if agent_provider == "xiaomi" else redaktoer_agent.deepseek_kald
+    agent_call = redaktoer_agent.openai_kald if agent_provider == "openai" else redaktoer_agent.xiaomi_kald if agent_provider == "xiaomi" else redaktoer_agent.deepseek_kald
     transport = agent_call
     def agent_call(*args, **kwargs):
         with _drift.modelkald("forside_agent") if _drift else nullcontext():
@@ -5856,7 +5885,7 @@ def forbered_redaktoer(artikler, tidligere_forside, nu):
                 kwargs["timeout"] = _drift.tid()
             return transport(*args, **kwargs)
     agent_thinking = hjerne_thinking("forside_agent", agent_model)
-    effective_thinking = agent_thinking or ("enabled" if agent_provider == "xiaomi" else DEEPSEEK_REASONING)
+    effective_thinking = agent_thinking or ("modelstandard" if agent_provider == "openai" else "enabled" if agent_provider == "xiaomi" else DEEPSEEK_REASONING)
     baseline = redaktion.forside(artikler, nu)
     result = {"agent": None, "plan": None, "opgaver": {}, "tekster": {}, "originaler": {},
               "forside": baseline, "status": {"opdateret": nu.isoformat(), "status": "reserve",
@@ -5992,6 +6021,8 @@ def _main() -> None:
         print(f"🤖 Tekstmodel: DeepSeek · {DEEPSEEK_MODEL} (reasoning: {DEEPSEEK_REASONING})")
     elif UDBYDER == "xiaomi":
         print(f"🤖 Tekstmodel: Xiaomi · {XIAOMI_MODEL}")
+    elif UDBYDER == "openai":
+        print(f"🤖 Tekstmodel: OpenAI · {OPENAI_MODEL}")
     else:
         print(f"🤖 Tekstmodel: Gemini · {GEMINI_MODEL} (falder tilbage til {GEMINI_FALLBACK} hvis afvist)")
     print(f"🎨 Valgt billedmodel: {special_model('billedgenerator', BILLED_MODEL, 'gemini')}")

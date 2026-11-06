@@ -297,6 +297,9 @@ async function run() {
     assert.equal(p.app.state.drafts.hjerner.hjerner.motiv.thinking,undefined);
     assert(p.app.modelList('brief').includes('mimo-v2.6-flash'));
     assert(p.app.modelList('forside_agent').includes('mimo-v2.6-flash'));
+    assert(p.app.modelList('forside_agent').includes('gpt-6.1-terra'));
+    assert(p.app.modelList('brief').includes('gpt-6.1-terra'));
+    assert(!p.app.modelList('billedgenerator').includes('gpt-6.1-terra'));
     p.d.querySelector('[data-edit-model="forside_agent"]').click();
     const agentModel=p.d.getElementById('step-model');agentModel.value='mimo-v2.6-pro';agentModel.dispatchEvent(new p.w.Event('change',{bubbles:true}));
     assert.deepEqual(levels(),['','disabled','enabled']);

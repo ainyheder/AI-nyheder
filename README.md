@@ -378,3 +378,9 @@ redaktøragenten, motivbeskrivelsen og begge nyhedsbrevstrin. Fællesvalget vise
 DeepSeek og MiMo, som også understøttes af redaktøragenten. Alle instrukser
 og øvrige felter bevares; **Generér illustrationer** ændres ikke. Ændringerne
 lægges i kladden og gemmes med den almindelige Gem-knap.
+
+### OpenAI som tekstmodel
+
+Under **Indstillinger → Modeller & instrukser** kan du også vælge OpenAI-modeller til teksttrinene og forsideagenten, enkeltvis eller med **Skift alle tekstmodeller**. Eksisterende valg ændres ikke. Modelmenuen indeholder et udvalg, og flere GPT-model-ID'er kan tilføjes manuelt eller hentes med **Opdatér modelliste**. Adgang afhænger af din OpenAI-konto og modellens understøttelse af tekst og værktøjskald. Ræsonnement følger modellens standard.
+
+Tilføj `OPENAI_API_KEY` som repository secret på GitHub; modelopdatering, crawler og nyhedsbrev får derefter adgang til nøglen. Ved lokal kørsel sættes samme miljøvariabel lokalt. Et valgt OpenAI-trin falder tilbage til den daglige model ved manglende nøgle eller API-fejl. Brug af OpenAI API kan medføre udgifter.
