@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-06T22:15:22.300268+00:00",
+ "genereret": "2026-11-06T22:34:35.079427+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -199,17 +199,17 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-06T22:08:02.243687+00:00",
-  "antal": 141,
-  "med_billede": 104,
-  "paa_dansk": 141,
+  "opdateret": "2026-11-06T22:27:37.120546+00:00",
+  "antal": 139,
+  "med_billede": 105,
+  "paa_dansk": 139,
   "kategorier": {
-   "Lanceringer": 17,
+   "Lanceringer": 16,
    "Politik \u0026 jura": 26,
    "Hverdags-AI": 31,
    "Samfund \u0026 etik": 15,
    "Penge \u0026 marked": 41,
-   "Forskning": 11
+   "Forskning": 10
   },
   "kilder": {
    "TechCrunch AI": 59,
@@ -220,7 +220,6 @@ window.KOMMANDO_DATA = {
    "MIT Tech Review AI": 8,
    "Simon Willison AI": 8,
    "xAI News": 1,
-   "Google DeepMind": 2,
    "Anthropic News": 8
   },
   "udvalgte": [
@@ -379,7 +378,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-06T22:08:02.243687+00:00",
+  "opdateret": "2026-11-06T22:27:37.120546+00:00",
   "status": "reserve",
   "model": "gpt-6.1-terra",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
@@ -419,17 +418,17 @@ window.KOMMANDO_DATA = {
   ],
   "kildegrundlag": [
    {
-    "link": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+    "link": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+    "link": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
     "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-11-06T22:08:01.652277+00:00",
+  "opdateret": "2026-11-06T22:27:36.663596+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -894,8 +893,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-06T22:08:02.243687+00:00",
-  "artikler_i_alt": 141,
+  "opdateret": "2026-11-06T22:27:37.120546+00:00",
+  "artikler_i_alt": 139,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1037,17 +1036,8 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 12,
     "i_listen": 6,
-    "som_ekstra": 1,
+    "som_ekstra": 0,
     "seneste": [
-     {
-      "rubrik": "Google ruller Gemini 4 Argon bredt ud",
-      "dato": "",
-      "foerst_set": "2026-10-13T19:29:19",
-      "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
-      "side": "",
-      "hvor": "under",
-      "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
-     },
      {
       "rubrik": "Gemini Omni 1.2 Flash laver 15 sekunders klip",
       "dato": "2026-11-05T17:00:00",
@@ -1252,7 +1242,7 @@ window.KOMMANDO_DATA = {
     "som_ekstra": 8,
     "seneste": [
      {
-      "rubrik": "Amerikanske vælgere stemmer for datacenterrestriktioner",
+      "rubrik": "Vælgere i USA stemmer for datacenterbegrænsninger",
       "dato": "",
       "foerst_set": "2026-11-06T21:09:53.915130+00:00",
       "link": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/",
@@ -1375,7 +1365,7 @@ window.KOMMANDO_DATA = {
     "som_ekstra": 15,
     "seneste": [
      {
-      "rubrik": "OpenAI vil droppe hemmeligholdelsesaftaler med myndigheder",
+      "rubrik": "OpenAI dropper tavshedsaftaler med offentlige embedsfolk",
       "dato": "",
       "foerst_set": "2026-11-06T21:09:53.915130+00:00",
       "link": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
@@ -1715,10 +1705,10 @@ window.KOMMANDO_DATA = {
     "kun_aktuel": false,
     "max": 15,
     "aktiv": true,
-    "status": "ok",
-    "fejl": "",
-    "hentet": 15,
-    "i_listen": 2,
+    "status": "fejl",
+    "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
+    "hentet": 0,
+    "i_listen": 0,
     "som_ekstra": 2,
     "seneste": [
      {
@@ -1738,24 +1728,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
-     },
-     {
-      "rubrik": "Google Antigravity finder ny peptidkandidat",
-      "dato": "2026-10-15T16:08:03",
-      "foerst_set": "2026-10-16T04:53:41",
-      "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-      "side": "artikel/ba028f76ed47c779.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
-      "dato": "2026-10-13T19:43:07",
-      "foerst_set": "2026-10-13T19:29:19",
-      "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-      "side": "artikel/42f1c245f492d3d1.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1790,12 +1762,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-06T22:15:20.002734+00:00",
+  "opdateret": "2026-11-06T22:34:32.863971+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 16,
-  "sidevisninger_i_alt": 37,
+  "besoeg_i_alt": 23,
+  "sidevisninger_i_alt": 44,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1945,22 +1917,22 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-11-06",
-    "besoeg": 10,
-    "visninger": 10
+    "besoeg": 20,
+    "visninger": 20
    }
   ],
   "sider": [
    {
     "sti": "/",
-    "besoeg": 16,
-    "visninger": 37
+    "besoeg": 23,
+    "visninger": 44
    }
   ],
   "artikler": [],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 15
+    "besoeg": 22
    },
    {
     "fra": "www.bing.com",

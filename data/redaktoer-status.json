@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-11-06T22:08:02.243687+00:00",
+  "opdateret": "2026-11-06T22:27:37.120546+00:00",
   "status": "reserve",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
@@ -8,10 +8,10 @@
     "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
     "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
   ],
-  "input_fingerprint": "e861108e499c1e32",
+  "input_fingerprint": "8cdccb187ff101c8",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "kontrolproblemer": [
-    "Woof-resuméet fastslår, at demoen ikke sender tekst til en skytjeneste. Kilden dokumenterer browserdrift og gengiver Underdogs påstand om, at modellen kan køre offline, men dokumenterer ikke, at demoen aldrig sender tekst ud. Formuleringen skal kvalificeres."
+    "Rækkefølgen bryder med retningen om at begynde med nyheder fra de seneste 24 timer: Nvidia-historien er fra 5. november kl. 19.35, mens Woof er fra 6. november kl. 13.02. Den nyeste kandidat er fra 6. november kl. 20.02; sæt Woof før Nvidia."
   ],
   "modelkald": 6,
   "kildehentninger": 2,
@@ -39,11 +39,11 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+      "link": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+      "link": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
       "grundlag": "kildetekst"
     }
   ],
@@ -52,5 +52,5 @@
     "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
     "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/"
   ],
-  "afventer_artikler": 79
+  "afventer_artikler": 76
 }
