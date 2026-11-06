@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-06T21:16:19.224834+00:00",
+ "genereret": "2026-11-06T21:26:54.727753+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -197,27 +197,27 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-06T21:09:53.915130+00:00",
-  "antal": 131,
-  "med_billede": 94,
-  "paa_dansk": 131,
+  "opdateret": "2026-11-06T21:24:13.483646+00:00",
+  "antal": 137,
+  "med_billede": 96,
+  "paa_dansk": 137,
   "kategorier": {
-   "Samfund \u0026 etik": 14,
-   "Hverdags-AI": 31,
    "Lanceringer": 15,
-   "Politik \u0026 jura": 21,
-   "Penge \u0026 marked": 39,
-   "Forskning": 11
+   "Politik \u0026 jura": 25,
+   "Hverdags-AI": 31,
+   "Samfund \u0026 etik": 15,
+   "Penge \u0026 marked": 41,
+   "Forskning": 10
   },
   "kilder": {
-   "TechCrunch AI": 58,
    "Google Gemini": 6,
    "The Verge AI": 34,
+   "TechCrunch AI": 58,
    "Ars Technica AI": 12,
    "MIT Tech Review AI": 8,
    "Mistral AI": 3,
    "Simon Willison AI": 8,
-   "Google DeepMind": 2
+   "Anthropic News": 8
   },
   "udvalgte": [
    {
@@ -273,26 +273,6 @@ window.KOMMANDO_DATA = {
     "billede": ""
    },
    {
-    "titel": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
-    "rubrik": "Censys finder over 800 åbne Artex-værktøjer",
-    "link": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
-    "side": "artikel/37d75a0fa3790bf4.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-06T18:44:38+00:00",
-    "billede": "data/img/baed293ec662c5a7.jpg"
-   },
-   {
-    "titel": "Meta introduces Spaces, a new way to collaborate with your Muse agent",
-    "rubrik": "Meta lancerer Spaces til sin Muse-agent",
-    "link": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
-    "side": "artikel/dcfedcc7440be1b6.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-06T18:44:20+00:00",
-    "billede": "data/img/a1180bcf9d2b0a68.webp"
-   },
-   {
     "titel": "“Does Meta think we can’t read?” Meta abandons sketchy commercial terms update.",
     "rubrik": "Meta sætter krav om AI-træning på pause",
     "link": "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/",
@@ -303,6 +283,16 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/1d2d6b5516d55be5.webp"
    },
    {
+    "titel": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
+    "rubrik": "Censys finder over 800 åbne Artex-værktøjer",
+    "link": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
+    "side": "artikel/37d75a0fa3790bf4.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-06T18:44:38+00:00",
+    "billede": "data/img/baed293ec662c5a7.jpg"
+   },
+   {
     "titel": "How Akai and Moog are embracing vibe-coded mods",
     "rubrik": "Akai og Moog åbner maskinerne for mods",
     "link": "https://www.theverge.com/tech/1028720/vibe-coding-open-source-inmusic-akai",
@@ -311,6 +301,16 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-11-06T11:34:39-05:00",
     "billede": "data/img/5827e8c69e506696.webp"
+   },
+   {
+    "titel": "Meta introduces Spaces, a new way to collaborate with your Muse agent",
+    "rubrik": "Meta lancerer Spaces til sin Muse-agent",
+    "link": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
+    "side": "artikel/dcfedcc7440be1b6.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-06T18:44:20+00:00",
+    "billede": "data/img/a1180bcf9d2b0a68.webp"
    },
    {
     "titel": "Quoting Nilay Patel",
@@ -375,12 +375,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-06T21:09:53.915130+00:00",
+  "opdateret": "2026-11-06T21:24:13.483646+00:00",
   "status": "reserve",
   "model": "gpt-6.1-terra",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 6,
-  "kildehentninger": 8,
+  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Agenten afleverede ikke gyldige værktøjskald",
+  "modelkald": 2,
+  "kildehentninger": 0,
   "regelbaseret_udvalg": [
    "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
    "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
@@ -407,109 +407,12 @@ window.KOMMANDO_DATA = {
    {
     "vaerktoej": "find_kilder",
     "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "aflever_udgave",
-    "fejl": null
    }
   ],
-  "kildegrundlag": [
-   {
-    "link": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://huggingface.co/blog/phonon-tts",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
-    "grundlag": "kildetekst"
-   }
-  ]
+  "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-11-06T21:09:53.550416+00:00",
+  "opdateret": "2026-11-06T21:24:13.068868+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -519,6 +422,7 @@ window.KOMMANDO_DATA = {
   "gemini_tilgaengelig": true,
   "deepseek_tilgaengelig": true,
   "xiaomi_tilgaengelig": true,
+  "openai_tilgaengelig": true,
   "cloudflare_tilgaengelig": true,
   "hjerner": {
    "omskriv": {
@@ -973,8 +877,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-06T21:09:53.915130+00:00",
-  "artikler_i_alt": 131,
+  "opdateret": "2026-11-06T21:24:13.483646+00:00",
+  "artikler_i_alt": 137,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -983,12 +887,85 @@ window.KOMMANDO_DATA = {
     "kun_aktuel": false,
     "max": 15,
     "aktiv": true,
-    "status": "fejl",
-    "fejl": "ValueError: Kilden gav ingen læsbare artikler; kontrollér adresse og sideformat",
-    "hentet": 0,
-    "i_listen": 0,
+    "status": "ok",
+    "fejl": "",
+    "hentet": 15,
+    "i_listen": 8,
     "som_ekstra": 0,
-    "seneste": []
+    "seneste": [
+     {
+      "rubrik": "Anthropic afsætter fem procent af aktierne til fond",
+      "dato": "2026-10-18T00:00:00",
+      "foerst_set": "2026-10-18T18:50:54",
+      "link": "https://www.anthropic.com/news/public-benefit-fund",
+      "side": "artikel/b3a8add260a90d26.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Anthropic giver METR medarbejderadgang indefra",
+      "dato": "2026-10-15T00:00:00",
+      "foerst_set": "2026-10-15T20:00:28",
+      "link": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "side": "artikel/eb77f6484e453b05.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Claude viser valgdata og stemmested",
+      "dato": "2026-10-14T00:00:00",
+      "foerst_set": "2026-10-14T20:18:45",
+      "link": "https://www.anthropic.com/news/2026-us-midterms",
+      "side": "artikel/a326a9536354e596.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Anthropic åbner femte Asien-kontor i Singapore med regeringssamarbejde",
+      "dato": "2026-10-14T00:00:00",
+      "foerst_set": "2026-10-14T13:58:43",
+      "link": "https://www.anthropic.com/news/singapore-office-opening",
+      "side": "artikel/2922d5d8f3c24cb9.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Anthropic forsvarer kritisk infrastruktur med 11 partnere",
+      "dato": "2026-10-08T00:00:00",
+      "foerst_set": "2026-10-08T21:27:54",
+      "link": "https://www.anthropic.com/news/anthropic-cyber-mission",
+      "side": "artikel/5bf8bb967c950c6f.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Anthropic samler forbud mod falske kampagner",
+      "dato": "2026-10-08T00:00:00",
+      "foerst_set": "2026-10-08T21:27:54",
+      "link": "https://www.anthropic.com/news/2026-usage-policy-update",
+      "side": "artikel/c7e79a0127679fa1.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Anthropic giver 150 millioner dollar til Genesis Mission",
+      "dato": "2026-10-08T00:00:00",
+      "foerst_set": "2026-10-08T15:50:15",
+      "link": "https://www.anthropic.com/news/genesis-mission-commitment",
+      "side": "artikel/220278685f410a51.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Claude Haiku 5.5 kører 75 procent billigere",
+      "dato": "2026-10-07T00:00:00",
+      "foerst_set": "2026-10-07T21:31:02",
+      "link": "https://www.anthropic.com/claude-haiku-5-5",
+      "side": "artikel/2cf28a1a9302bc8a.html",
+      "hvor": "forside",
+      "under": ""
+     }
+    ]
    },
    {
     "navn": "Mistral AI",
@@ -1043,17 +1020,8 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 12,
     "i_listen": 6,
-    "som_ekstra": 1,
+    "som_ekstra": 0,
     "seneste": [
-     {
-      "rubrik": "Google ruller Gemini 4 Argon bredt ud",
-      "dato": "",
-      "foerst_set": "2026-10-13T19:29:19",
-      "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
-      "side": "",
-      "hvor": "under",
-      "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
-     },
      {
       "rubrik": "Gemini Omni 1.2 Flash laver 15 sekunders klip",
       "dato": "2026-11-05T17:00:00",
@@ -1149,8 +1117,17 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 10,
     "i_listen": 8,
-    "som_ekstra": 0,
+    "som_ekstra": 1,
     "seneste": [
+     {
+      "rubrik": "Claude Haiku 5.5 matcher GPT-6 Luna på pris",
+      "dato": "",
+      "foerst_set": "2026-10-07T21:31:02",
+      "link": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
+      "side": "",
+      "hvor": "under",
+      "under": "Claude Haiku 5.5 kører 75 procent billigere"
+     },
      {
       "rubrik": "Nilay Patel: AI-regningen er større end nytten",
       "dato": "2026-11-06T17:13:12",
@@ -1236,7 +1213,7 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 10,
     "i_listen": 58,
-    "som_ekstra": 6,
+    "som_ekstra": 8,
     "seneste": [
      {
       "rubrik": "ChatGPT Cyber annonceret til Daybreak Reds topniveau",
@@ -1302,6 +1279,24 @@ window.KOMMANDO_DATA = {
       "under": "DoorDash ser næsten ingen AI-agent-ordrer"
      },
      {
+      "rubrik": "Anthropic afsætter fem procent af aktier til fond",
+      "dato": "",
+      "foerst_set": "2026-10-18T22:33:18",
+      "link": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+      "side": "",
+      "hvor": "under",
+      "under": "Anthropic afsætter fem procent af aktierne til fond"
+     },
+     {
+      "rubrik": "Anthropic forbyder misbrug af Claude og valgindblanding",
+      "dato": "",
+      "foerst_set": "2026-10-08T21:27:54",
+      "link": "https://techcrunch.com/2026/10/08/anthropic-changes-usage-policy-to-ban-model-abuse-and-election-interference/",
+      "side": "",
+      "hvor": "under",
+      "under": "Anthropic samler forbud mod falske kampagner"
+     },
+     {
       "rubrik": "Censys finder over 800 åbne Artex-værktøjer",
       "dato": "2026-11-06T18:44:38",
       "foerst_set": "2026-11-06T20:49:47",
@@ -1327,24 +1322,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/9ae4899642152a01.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Amazon åbner for indkøb via tekstbeskeder til Alexa",
-      "dato": "2026-11-06T14:10:00",
-      "foerst_set": "2026-11-06T16:11:20",
-      "link": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/",
-      "side": "artikel/bacb3f0e9b0a9c2b.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Anthropic mod IPO: AI-udgifter steg kun 1,5%",
-      "dato": "2026-11-06T15:54:47",
-      "foerst_set": "2026-11-06T16:11:20",
-      "link": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
-      "side": "artikel/7b5a2965d87a1f12.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1359,10 +1336,10 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 10,
     "i_listen": 34,
-    "som_ekstra": 14,
+    "som_ekstra": 15,
     "seneste": [
      {
-      "rubrik": "OpenAI dropper hemmeligholdelsesaftaler med embedsfolk",
+      "rubrik": "OpenAI dropper tavshedsaftaler med embedsfolk",
       "dato": "",
       "foerst_set": "2026-11-06T21:09:53.915130+00:00",
       "link": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
@@ -1702,10 +1679,10 @@ window.KOMMANDO_DATA = {
     "kun_aktuel": false,
     "max": 15,
     "aktiv": true,
-    "status": "ok",
-    "fejl": "",
-    "hentet": 15,
-    "i_listen": 2,
+    "status": "fejl",
+    "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
+    "hentet": 0,
+    "i_listen": 0,
     "som_ekstra": 2,
     "seneste": [
      {
@@ -1725,24 +1702,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
-     },
-     {
-      "rubrik": "Google Antigravity finder ny peptidkandidat",
-      "dato": "2026-10-15T16:08:03",
-      "foerst_set": "2026-10-16T04:53:41",
-      "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-      "side": "artikel/ba028f76ed47c779.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
-      "dato": "2026-10-13T19:43:07",
-      "foerst_set": "2026-10-13T19:29:19",
-      "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-      "side": "artikel/42f1c245f492d3d1.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1777,7 +1736,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-06T21:16:16.050527+00:00",
+  "opdateret": "2026-11-06T21:26:51.564643+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",

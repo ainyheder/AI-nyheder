@@ -1,6 +1,6 @@
 {
- "opdateret": "2026-11-06T21:09:53.915130+00:00",
- "artikler_i_alt": 131,
+ "opdateret": "2026-11-06T21:24:13.483646+00:00",
+ "artikler_i_alt": 137,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -9,13 +9,99 @@
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "ValueError: Kilden gav ingen læsbare artikler; kontrollér adresse og sideformat",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 15,
+   "i_listen": 8,
    "som_ekstra": 0,
-   "seneste": [],
-   "overlap": []
+   "seneste": [
+    {
+     "rubrik": "Anthropic afsætter fem procent af aktierne til fond",
+     "dato": "2026-10-18T00:00:00",
+     "foerst_set": "2026-10-18T18:50:54",
+     "link": "https://www.anthropic.com/news/public-benefit-fund",
+     "side": "artikel/b3a8add260a90d26.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic giver METR medarbejderadgang indefra",
+     "dato": "2026-10-15T00:00:00",
+     "foerst_set": "2026-10-15T20:00:28",
+     "link": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+     "side": "artikel/eb77f6484e453b05.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Claude viser valgdata og stemmested",
+     "dato": "2026-10-14T00:00:00",
+     "foerst_set": "2026-10-14T20:18:45",
+     "link": "https://www.anthropic.com/news/2026-us-midterms",
+     "side": "artikel/a326a9536354e596.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic åbner femte Asien-kontor i Singapore med regeringssamarbejde",
+     "dato": "2026-10-14T00:00:00",
+     "foerst_set": "2026-10-14T13:58:43",
+     "link": "https://www.anthropic.com/news/singapore-office-opening",
+     "side": "artikel/2922d5d8f3c24cb9.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic forsvarer kritisk infrastruktur med 11 partnere",
+     "dato": "2026-10-08T00:00:00",
+     "foerst_set": "2026-10-08T21:27:54",
+     "link": "https://www.anthropic.com/news/anthropic-cyber-mission",
+     "side": "artikel/5bf8bb967c950c6f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic samler forbud mod falske kampagner",
+     "dato": "2026-10-08T00:00:00",
+     "foerst_set": "2026-10-08T21:27:54",
+     "link": "https://www.anthropic.com/news/2026-usage-policy-update",
+     "side": "artikel/c7e79a0127679fa1.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic giver 150 millioner dollar til Genesis Mission",
+     "dato": "2026-10-08T00:00:00",
+     "foerst_set": "2026-10-08T15:50:15",
+     "link": "https://www.anthropic.com/news/genesis-mission-commitment",
+     "side": "artikel/220278685f410a51.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Claude Haiku 5.5 kører 75 procent billigere",
+     "dato": "2026-10-07T00:00:00",
+     "foerst_set": "2026-10-07T21:31:02",
+     "link": "https://www.anthropic.com/claude-haiku-5-5",
+     "side": "artikel/2cf28a1a9302bc8a.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
+   "overlap": [
+    [
+     "TechCrunch AI",
+     2
+    ],
+    [
+     "Simon Willison AI",
+     1
+    ],
+    [
+     "The Verge AI",
+     1
+    ]
+   ]
   },
   {
    "navn": "Mistral AI",
@@ -71,17 +157,8 @@
    "fejl": "",
    "hentet": 12,
    "i_listen": 6,
-   "som_ekstra": 1,
+   "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "Google ruller Gemini 4 Argon bredt ud",
-     "dato": "",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
-    },
     {
      "rubrik": "Gemini Omni 1.2 Flash laver 15 sekunders klip",
      "dato": "2026-11-05T17:00:00",
@@ -140,7 +217,7 @@
    "overlap": [
     [
      "Google DeepMind",
-     3
+     2
     ],
     [
      "The Verge AI",
@@ -193,8 +270,17 @@
    "fejl": "",
    "hentet": 10,
    "i_listen": 8,
-   "som_ekstra": 0,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "Claude Haiku 5.5 matcher GPT-6 Luna på pris",
+     "dato": "",
+     "foerst_set": "2026-10-07T21:31:02",
+     "link": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
+     "side": "",
+     "hvor": "under",
+     "under": "Claude Haiku 5.5 kører 75 procent billigere"
+    },
     {
      "rubrik": "Nilay Patel: AI-regningen er større end nytten",
      "dato": "2026-11-06T17:13:12",
@@ -268,7 +354,12 @@
      "under": ""
     }
    ],
-   "overlap": []
+   "overlap": [
+    [
+     "Anthropic News",
+     1
+    ]
+   ]
   },
   {
    "navn": "TechCrunch AI",
@@ -281,7 +372,7 @@
    "fejl": "",
    "hentet": 10,
    "i_listen": 58,
-   "som_ekstra": 6,
+   "som_ekstra": 8,
    "seneste": [
     {
      "rubrik": "ChatGPT Cyber annonceret til Daybreak Reds topniveau",
@@ -345,6 +436,24 @@
      "side": "",
      "hvor": "under",
      "under": "DoorDash ser næsten ingen AI-agent-ordrer"
+    },
+    {
+     "rubrik": "Anthropic afsætter fem procent af aktier til fond",
+     "dato": "",
+     "foerst_set": "2026-10-18T22:33:18",
+     "link": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic afsætter fem procent af aktierne til fond"
+    },
+    {
+     "rubrik": "Anthropic forbyder misbrug af Claude og valgindblanding",
+     "dato": "",
+     "foerst_set": "2026-10-08T21:27:54",
+     "link": "https://techcrunch.com/2026/10/08/anthropic-changes-usage-policy-to-ban-model-abuse-and-election-interference/",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic samler forbud mod falske kampagner"
     },
     {
      "rubrik": "Censys finder over 800 åbne Artex-værktøjer",
@@ -461,6 +570,10 @@
      16
     ],
     [
+     "Anthropic News",
+     2
+    ],
+    [
      "Ars Technica AI",
      1
     ]
@@ -477,10 +590,10 @@
    "fejl": "",
    "hentet": 10,
    "i_listen": 34,
-   "som_ekstra": 14,
+   "som_ekstra": 15,
    "seneste": [
     {
-     "rubrik": "OpenAI dropper hemmeligholdelsesaftaler med embedsfolk",
+     "rubrik": "OpenAI dropper tavshedsaftaler med embedsfolk",
      "dato": "",
      "foerst_set": "2026-11-06T21:09:53.915130+00:00",
      "link": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
@@ -708,6 +821,10 @@
     [
      "Google Gemini",
      2
+    ],
+    [
+     "Anthropic News",
+     1
     ]
    ]
   },
@@ -985,10 +1102,10 @@
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 15,
-   "i_listen": 2,
+   "status": "fejl",
+   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -1008,30 +1125,12 @@
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
-    },
-    {
-     "rubrik": "Google Antigravity finder ny peptidkandidat",
-     "dato": "2026-10-15T16:08:03",
-     "foerst_set": "2026-10-16T04:53:41",
-     "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-     "side": "artikel/ba028f76ed47c779.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
-     "dato": "2026-10-13T19:43:07",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-     "side": "artikel/42f1c245f492d3d1.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "Google Gemini",
-     3
+     2
     ]
    ]
   },
