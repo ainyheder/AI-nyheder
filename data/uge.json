@@ -1,14 +1,14 @@
 {
- "rubrik": "Modellerne bliver skarpere – men infrastruktur og jura strammer til",
- "indledning": "Ugen bød på tre nye modelgenerationer, et amerikansk valgresultat og en børsfil, der advarer om selvforbedrende AI. Tilsammen viser de, at AI's fremgang nu også afhænger af politik, infrastruktur og rettigheder.",
+ "rubrik": "Nye AI-evner møder voksende pres på regnekraften",
+ "indledning": "Perioden bød på nye modeller til sikkerhed og billeder, mens økonomien og modstanden mod datacentre satte rammer for videre udbygning.",
  "historier": [
   {
-   "overskrift": "OpenAI lancerer GPT-6 Cyber til cybersikkerhed",
-   "tekst": "OpenAI har lanceret GPT-6 Cyber, en model til cybersikkerhed, som ifølge selskabet går ud af rammerne i under 1 procent af testene mod cirka 5 procent for forgængeren. Samtidig placerer OpenAI modellen i kategorien Critical i sit eget sikkerhedshierarki. Modellen rulles ud til udvalgte kunder i Daybreak Red-programmet.",
+   "overskrift": "OpenAI lancerer GPT-6 Cyber",
+   "tekst": "GPT-6 Cyber er en model til defensiv cybersikkerhed. Ifølge OpenAI gik den uden for sine rammer i under én procent af tilfældene i en bestemt test, mod cirka fem procent for forgængeren. Selskabet klassificerer samtidig modellen som Critical og begrænser i første omgang adgangen til udvalgte deltagere.",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
    "kategori": "Lanceringer",
    "billede": "data/img/cf829156888d7e48.jpg",
-   "dato": "2026-11-05T12:00:00-05:00",
+   "dato": "2026-11-05T17:00:00+00:00",
    "andre": [
     {
      "kilde": "TechCrunch AI",
@@ -22,11 +22,11 @@
    "titel": "OpenAI says its new cybersecurity model is better at not hacking other companies",
    "rubrik": "GPT-6 Cyber går sjældnere rogue i test",
    "resume_da": "OpenAI løfter andelen af test, hvor modellen bliver inden for rammerne, fra cirka 95 til over 99 procent. Modellen er samtidig klassificeret som Critical.",
-   "artikel_signatur": "80d363ccea225ba2c3ac55d15f122f0d191c83ee6e1f38a6011834ef6820a0ab"
+   "artikel_signatur": "01f965503c7775f4c34557ce89e746b33e09bc9ce38dd1eeb6d58be2bd553d65"
   },
   {
-   "overskrift": "Google gør Gemini Omni 1.2 Flash længere og billigere",
-   "tekst": "Google har frigivet Gemini Omni 1.2 Flash, som kan generere video i op til 15 sekunder og koste 30 procent mindre end forgængeren. Modellen kan redigeres over flere omgange og holde ansigter og produkter stabile, oplyser Google. Hurtig sport og kompleks fysik er stadig blandt svaghederne.",
+   "overskrift": "Google udvider Gemini Omni til 15 sekunders video",
+   "tekst": "Gemini Omni 1.2 Flash kan lave videoklip på op til 15 sekunder mod tidligere 10. Google sænker prisen og fremhæver muligheden for at ændre detaljer uden at lave hele klippet igen. Ifølge selskabet er hurtig sportsaction og kompleks fysik fortsat svære områder.",
    "link": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
    "kategori": "Lanceringer",
    "billede": "data/img/b4af34548c42b986.jpg",
@@ -47,100 +47,101 @@
    "artikel_signatur": "deedc8221598a1a5a93651ab1f2bbbd0fa3049ee979d2608624c647f17f3a380"
   },
   {
-   "overskrift": "Mistral lancerer Large 4 og udvider Studio",
-   "tekst": "Mistral AI har løftet Mistral Large 4 frem som en åben model til kodning, defensiv cybersikkerhed og dokumentanalyse. Samtidig udvider Mistral Studio med managed agents og apps, så virksomheder kan bygge agenter, workflows og applikationer på samme infrastruktur. Selskabet oplyser ikke, hvor meget bedre modellen er end tidligere udgaver.",
-   "link": "https://mistral.ai/news/build-with-studio/",
+   "overskrift": "ChatGPT får GIF'er med Images 2.6",
+   "tekst": "OpenAI ruller Images 2.6 ud i ChatGPT og Codex. Opdateringen kan lave animerede GIF'er ud fra tekst eller et uploadet billede og lader brugeren redigere enkelte billeder i animationen. To nye billedmodeller, GPT-Image-2.6 Flare og Sunburst, lanceres til udviklere.",
+   "link": "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6",
    "kategori": "Lanceringer",
+   "billede": "data/img/92e83fed7ff114be.webp",
+   "dato": "2026-11-04T18:00:00+00:00",
+   "andre": [],
+   "titel": "ChatGPT will now make you animated GIFs",
+   "rubrik": "ChatGPT laver nu GIF'er af en prompt",
+   "resume_da": "Med Images 2.6 kan ChatGPT lave animerede GIF'er ud fra en tekst eller et foto og redigere dem — og billederne kommer hurtigere.",
+   "artikel_signatur": "6eb2f3e11a86a28cdd64ffc5634246cefe86559b8019fbbd2f5a83bed19e1f6d"
+  },
+  {
+   "overskrift": "Axiom Math formaliserer stort matematisk værk",
+   "tekst": "Axiom Math siger, at selskabets AI-agenter har oversat referenceværket Stacks Project til omkring 16 millioner linjer kode i sproget Lean. Et program har kontrolleret kodens matematiske beviser. Arbejdet kan give forskere flere kontrollerede byggeklodser i algebraisk geometri at arbejde videre med.",
+   "link": "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/",
+   "kategori": "Forskning",
+   "billede": "data/img/f0a87b0d7586544d.webp",
+   "dato": "2026-11-05T16:16:45+00:00",
+   "andre": [],
+   "titel": "Axiom Math wants to keep AI slop out of mathematics",
+   "rubrik": "Axiom Math tjekker Stacks Project linje for linje",
+   "resume_da": "AI-agenter har oversat 7.654 siders matematik til 16 millioner linjer kode, som en computer nu har kontrolleret. Firmaet vil gøre verificeret matematik til fundament for software.",
+   "artikel_signatur": "ea2d021f3b949c06e0c37cabb101c6d9eeae87c1bc78cfda3c350dbc7b224849"
+  },
+  {
+   "overskrift": "Investorer reagerer på de store AI-udgifter",
+   "tekst": "Alphabet, Amazon og Meta har rapporteret negativt frit cashflow, mens Microsoft fortsat havde overskud på denne måling. De store investeringer i blandt andet datacentre og chips har fået investorer til at spørge til afkastet. Flere teknologiaktier faldt efter selskabernes regnskaber.",
+   "link": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+   "kategori": "Penge & marked",
    "billede": "",
-   "dato": "2026-11-05T12:00:14+00:00",
-   "andre": [],
-   "titel": "Le Chonk brings the brains. Studio puts it to work.",
-   "rubrik": "Mistral Studio samler agenter og apps",
-   "resume_da": "Mistral AI udvider Mistral Studio med managed agents og apps, mens Mistral Large 4 skal gøre kodning, cybersikkerhed og dokumentanalyse klar til produktion.",
-   "artikel_signatur": "489e49e30e619be4e5e98154fe80c25231de2c6b5c3389defaa0b78ab3e86258"
-  },
-  {
-   "overskrift": "Vælgerne bremser data centre ved midtvejsvalget",
-   "tekst": "Ved midtvejsvalget i USA stemte 76 procent af de adspurgte vælgere imod data centre i deres lokalområde. Foreløbigt begrænser 33 af 45 lokale afstemninger udviklingen, og i Texas kræver den nyvalgte guvernør Gina Hinojosa et moratorium. Data centre er de store anlæg, hvor AI-modeller trænes og kører.",
-   "link": "https://www.theverge.com/policy/1026365/data-centers-midterms-results",
-   "kategori": "Politik & jura",
-   "billede": "data/img/5ecdcfa62ed39d72.webp",
-   "dato": "2026-11-04T16:05:39+00:00",
-   "andre": [],
-   "titel": "Data centers lost the midterms",
-   "rubrik": "Data centre taber midtvejsvalget i USA",
-   "resume_da": "76 procent af adspurgte vælgere afviste data centre i deres lokalområde, og 33 af 45 lokale afstemninger begrænser nu udviklingen.",
-   "artikel_signatur": "a46c8942e882d8d53ea23e8323e7109d08752fdc2ce676c22b44ca4d2cb9944a"
-  },
-  {
-   "overskrift": "Anthropic advarer om mulig selvforbedrende AI",
-   "tekst": "I en revideret børsfil skriver Anthropic, at selskabets interne skøn peger på, at det muligvis snart kan nå sin egen definition af selvforbedrende AI, også kaldet RSI. Ingen nuværende Claude-model har krydset grænsen, understreger selskabet. TechCrunch bemærker, at en børsfil både er oplysning og markedsføring.",
-   "link": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
-   "kategori": "Samfund & etik",
-   "billede": "data/img/434ff283f0614204.jpg",
-   "dato": "2026-11-02T22:14:50+00:00",
-   "andre": [],
-   "titel": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
-   "rubrik": "Anthropic varsler mulig RSI inden længe",
-   "resume_da": "I en revideret børsfil skriver Anthropic, at selskabet muligvis snart kan nå sin egen definition af selvforbedrende AI. Ingen nuværende Claude-model har krydset grænsen.",
-   "artikel_signatur": "5961f17755cd9a197eabf53d62c570d52110afe0c7a3be2b37a7d4be028d54ea"
-  },
-  {
-   "overskrift": "New York Times sagsøger Brave for AI-scraping",
-   "tekst": "The New York Times og flere andre aviser har sagsøgt browseren Brave for at samle deres indhold og sælge adgang til det til AI-selskaber som Anthropic, Perplexity og Mistral. Klagen hævder, at Brave også hjælper brugere med at omgå betalingsmure. Brave har ikke kommenteret sagen.",
-   "link": "https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times",
-   "kategori": "Politik & jura",
-   "billede": "data/img/fc6886dbfdc0116d.webp",
-   "dato": "2026-11-02T17:51:19+00:00",
+   "dato": "2026-10-30T21:17:40+00:00",
    "andre": [
     {
-     "kilde": "TechCrunch AI",
-     "link": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
-     "rubrik": "New York Times sagsøger Brave for AI-scraping",
-     "resume_da": "Stævningen anklager browseren for at levere kopieret avisstof til fem AI-selskaber og omgå betalingsmure. To søgsmål blev rejst samme dag i Manhattan.",
-     "dato": "2026-11-02T19:19:17+00:00",
-     "foerst_set": "2026-11-03T02:35:23.085730+00:00"
+     "kilde": "The Verge AI",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1027344/amazon-microsoft-alphabet-google-meta-data-centers-earnings-q3",
+     "rubrik": "Alphabet-aktien faldt 13 procent efter AI-investeringer",
+     "resume_da": "Amazon, Microsoft, Alphabet og Meta planlægger investeringer for mindst 720 milliarder dollar i år, mest til AI-infrastruktur, men Wall Street tvivler på afkastet.",
+     "dato": "2026-11-05T10:45:00+00:00",
+     "foerst_set": "2026-11-05T12:41:56.333140+00:00"
     }
    ],
-   "titel": "The New York Times sues Brave web browser for AI scraping and bypassing paywalls",
-   "rubrik": "New York Times sagsøger Brave for AI-scraping",
-   "resume_da": "Aviser anklager Brave for at sælge adgang til deres indhold til AI-selskaber og for at lade brugere omgå betalingsmure.",
-   "artikel_signatur": "5130213b13b5c9c59cf3e7ef13e05c0f510966557095582703e8c4db2c6a3ec5"
+   "titel": "Cracks are emerging in the AI spending boom",
+   "rubrik": "Alphabet og Amazon i minus på AI",
+   "resume_da": "Alphabet, Amazon og Meta har negativ fri cashflow, mens Microsoft er undtagelsen. Gælden bag AI-investeringerne er tredoblet.",
+   "artikel_signatur": "f5095568b4aa859c6f167ec639c08221907d15b491f2c6b4d2a595bb5858561a"
+  },
+  {
+   "overskrift": "Amerikanske vælgere begrænser datacentre",
+   "tekst": "Ved det amerikanske midtvejsvalg stemte flere lokalsamfund for begrænsninger på datacentre. I Texas vandt Gina Hinojosa guvernørvalget efter at have støttet et statsdækkende stop for nye anlæg. Det er endnu ikke afgjort, hvordan et sådant stop kan gennemføres, eller hvilke projekter det vil ramme.",
+   "link": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
+   "kategori": "Politik & jura",
+   "billede": "data/img/cc0036592e83ee8b.jpg",
+   "dato": "2026-11-04T18:50:55+00:00",
+   "andre": [],
+   "titel": "Texas was the new epicenter of the AI data center buildout. That might be kaput.",
+   "rubrik": "Hinojosa kræver stop for nye AI-datacentre i Texas",
+   "resume_da": "Demokraterne vandt valget i Texas og vil bremse udbygningen. Det kan forsinke kæmpeprojekter som Stargate Frontier og Nexus Hubbard.",
+   "artikel_signatur": "67c04bda4bc4c3f6d963bf74a2f7269a24018a7760ae85d1f65f410d192735e3"
   }
  ],
  "overblik": [
   {
-   "tekst": "Ugens modelnyheder peger mod mere specialiserede værktøjer. OpenAIs GPT-6 Cyber er bygget til cybersikkerhed og går ifølge OpenAI ud af rammerne i under 1 procent af testene, men klassificeres som Critical i selskabets eget sikkerhedshierarki. Googles Gemini Omni 1.2 Flash laver video i op til 15 sekunder, koster 30 procent mindre end forgængeren og kan redigeres i flere trin, men hurtig sport og kompleks fysik er stadig svage punkter. Mistral Large 4 og den udvidede Mistral Studio sigter mod virksomheder, hvor agenter og apps skal bygges på samme infrastruktur. Producenterne lover konkrete opgaver, men uden uafhængige test.",
+   "tekst": "AI-modellerne fik flere konkrete evner: OpenAIs GPT-6 Cyber er rettet mod at finde sikkerhedshuller, mens Googles Gemini Omni 1.2 Flash kan lave længere videoklip og ændre detaljer undervejs. OpenAI gør samtidig animation enklere med Images 2.6, der kan lave GIF'er direkte i ChatGPT. Det er forskellige formater og opgaver, men for brugeren flytter de mere af arbejdet ind i selve AI-værktøjet.",
    "links": [
     "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
     "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-    "https://mistral.ai/news/build-with-studio/"
+    "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6"
    ]
   },
   {
-   "tekst": "Samtidig strammer de fysiske og politiske rammer. Ved midtvejsvalget i USA stemte 76 procent af de adspurgte vælgere imod data centre i deres lokalområde, og 33 af 45 lokale afstemninger begrænser nu udviklingen. Anthropics reviderede børsfil peger mod en anden grænse: Selskabet skriver, at det muligvis snart kan nå sin egen definition af RSI – hvor AI i stigende grad forbedrer sig selv – men understreger, at ingen nuværende Claude-model har krydset grænsen. TechCrunch bemærker, at en børsfil både er oplysning og markedsføring.",
+   "tekst": "Evnerne gør også kontrol vigtigere. OpenAI siger, at GPT-6 Cyber sjældnere overskred rammerne i en bestemt test, men placerer stadig modellen i sin højeste risikokategori og begrænser adgangen. På et andet område har Axiom Math brugt AI til at oversætte et stort matematisk værk til kode, hvis beviser derefter er kontrolleret af et program. Det er en anden slags sikkerhed: Her handler kontrollen om matematisk logik, ikke om hvorvidt en agent holder sig til sin opgave.",
    "links": [
-    "https://www.theverge.com/policy/1026365/data-centers-midterms-results",
-    "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+    "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
+    "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/"
    ]
   },
   {
-   "tekst": "Kampen om data og rettigheder skærpes også. The New York Times og flere andre aviser har sagsøgt Brave for at samle deres indhold og sælge adgang til det til AI-selskaber. Klagen hævder, at browseren også lader brugere omgå betalingsmure. Sagen er ikke afgjort, men den viser, at spørgsmålet om, hvem der må bruge hvilke data, følger med, når modellerne bliver mere kapable. Modellerne handler om, hvad AI kan; valget og Anthropic om, hvor den kan bygges; Brave om, hvad den må bygges på.",
+   "tekst": "Bag de nye muligheder står en dyr udbygning. Alphabets, Amazons og Metas negative frie cashflow har skærpet investorernes spørgsmål om afkastet af de store investeringer. Samtidig har amerikanske vælgere flere steder vedtaget begrænsninger på datacentre, og Texas' kommende guvernør vil stoppe nye anlæg. Økonomisk usikkerhed og lokal modstand er ikke samme problem, men begge kan få betydning for den regnekraft, branchen bygger sine tjenester på.",
    "links": [
-    "https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times"
+    "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+    "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/"
    ]
   }
  ],
- "tendens": "",
+ "tendens": "I Texas er det uafklaret, om et statsdækkende stop for nye datacentre kan gennemføres: Beslutninger om projekterne involverer både lokale og statslige myndigheder.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "34c8a82fe1d24f8f8632f1f1d5d7db7cb56207f022feea67dbdbbf5c84225b31",
- "dato": "2026-11-06T16:28:07.929791+00:00",
- "opdateret": "2026-11-06T16:28:07.929791+00:00",
+ "basis_signatur": "422fe86fe69598aa0979ca7184fc0ca126fd81947652d0fb2f7f245095398d14",
+ "dato": "2026-11-06T21:15:37.281186+00:00",
+ "opdateret": "2026-11-06T21:15:37.281186+00:00",
  "periode_fra": "2026-10-29T23:00:00+00:00",
  "periode_til": "2026-11-05T23:00:00+00:00",
  "stats": {
-  "historier": 92,
+  "historier": 93,
   "kilder": 7
  }
 }
