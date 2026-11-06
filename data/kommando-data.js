@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-06T07:34:23.807091+00:00",
+ "genereret": "2026-11-06T16:30:47.131762+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,27 +195,26 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-06T07:16:54.196123+00:00",
-  "antal": 120,
-  "med_billede": 80,
-  "paa_dansk": 120,
+  "opdateret": "2026-11-06T16:11:20.307546+00:00",
+  "antal": 122,
+  "med_billede": 84,
+  "paa_dansk": 122,
   "kategorier": {
-   "Lanceringer": 16,
-   "Hverdags-AI": 27,
+   "Lanceringer": 14,
+   "Hverdags-AI": 29,
+   "Penge \u0026 marked": 38,
+   "Samfund \u0026 etik": 11,
    "Politik \u0026 jura": 20,
-   "Penge \u0026 marked": 36,
-   "Forskning": 11,
-   "Samfund \u0026 etik": 10
+   "Forskning": 10
   },
   "kilder": {
    "Google Gemini": 6,
-   "The Verge AI": 30,
-   "TechCrunch AI": 52,
+   "The Verge AI": 31,
+   "TechCrunch AI": 56,
    "Ars Technica AI": 10,
-   "MIT Tech Review AI": 7,
-   "Mistral AI": 4,
-   "Simon Willison AI": 8,
-   "Google DeepMind": 3
+   "MIT Tech Review AI": 8,
+   "Mistral AI": 3,
+   "Simon Willison AI": 8
   },
   "udvalgte": [
    {
@@ -239,17 +238,77 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/cf829156888d7e48.jpg"
    },
    {
-    "titel": "Claude can now analyze your spending with its new Personal Finance tool",
-    "rubrik": "Claude kobler sig til bankkontoen gennem Plaid",
-    "link": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/",
-    "side": "artikel/ecdcd39295ca3f2b.html",
-    "kategori": "Hverdags-AI",
+    "titel": "Underdog shows off a 32MB speech model in new demo",
+    "rubrik": "Underdog viser 32 MB tale-model Woof i browseren",
+    "link": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+    "side": "artikel/9ae4899642152a01.html",
+    "kategori": "Lanceringer",
     "kilde": "TechCrunch AI",
-    "dato": "2026-11-05T18:00:00+00:00",
-    "billede": "data/img/716afee0c492d273.webp"
+    "dato": "2026-11-06T13:02:16+00:00",
+    "billede": "data/img/ff4db4ec5a2fef80.jpg"
    }
   ],
   "seneste": [
+   {
+    "titel": "Underdog shows off a 32MB speech model in new demo",
+    "rubrik": "Underdog viser 32 MB tale-model Woof i browseren",
+    "link": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+    "side": "artikel/9ae4899642152a01.html",
+    "kategori": "Lanceringer",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-06T13:02:16+00:00",
+    "billede": "data/img/ff4db4ec5a2fef80.jpg"
+   },
+   {
+    "titel": "After blocking Muse, Amazon now lets users text Alexa to help them shop",
+    "rubrik": "Amazon åbner for indkøb via tekstbeskeder til Alexa",
+    "link": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/",
+    "side": "artikel/bacb3f0e9b0a9c2b.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-06T14:10:00+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Ramp data shows AI spending stalling just as Anthropic nears its IPO",
+    "rubrik": "Anthropic mod IPO: AI-udgifter steg kun 1,5%",
+    "link": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
+    "side": "artikel/7b5a2965d87a1f12.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-06T15:54:47+00:00",
+    "billede": "data/img/975d86acb386b0ce.webp"
+   },
+   {
+    "titel": "Protesters break into Microsoft data center site in Amsterdam",
+    "rubrik": "Demonstranter bryder ind på Microsoft-byggeplads i Amsterdam",
+    "link": "https://www.theverge.com/news/1028549/protesters-microsoft-data-center-site-amsterdam",
+    "side": "artikel/18031d61f6077e3b.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-06T06:55:19-05:00",
+    "billede": "data/img/413262297b273cbf.webp"
+   },
+   {
+    "titel": "I watched a humanoid robot clean my apartment. It felt like a taste of the future.",
+    "rubrik": "Tau Robotics rengør hjem med fjernstyrede robotter",
+    "link": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
+    "side": "artikel/9552db008db1e415.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "MIT Tech Review AI",
+    "dato": "2026-11-06T10:00:00+00:00",
+    "billede": "data/img/14ac2211a7d81207.webp"
+   },
+   {
+    "titel": "Physicl raises $10M to make the digital world real enough for robots",
+    "rubrik": "Physicl får 10 mio. dollar og lancerer Studio",
+    "link": "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/",
+    "side": "artikel/6d72973eed55f30e.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-06T13:00:00+00:00",
+    "billede": "data/img/1c4092f9fe914444.webp"
+   },
    {
     "titel": "Perplexity launches its own take on AI agents for work",
     "rubrik": "Perplexity lancerer altid tændte Teammates",
@@ -309,71 +368,11 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-11-05T12:00:00-05:00",
     "billede": "data/img/cf829156888d7e48.jpg"
-   },
-   {
-    "titel": "Claude can now analyze your spending with its new Personal Finance tool",
-    "rubrik": "Claude kobler sig til bankkontoen gennem Plaid",
-    "link": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/",
-    "side": "artikel/ecdcd39295ca3f2b.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-05T18:00:00+00:00",
-    "billede": "data/img/716afee0c492d273.webp"
-   },
-   {
-    "titel": "Meta says US users can now video chat with their Muse AI avatar",
-    "rubrik": "Meta åbner Muse-videochat for alle i USA",
-    "link": "https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/",
-    "side": "artikel/759260a1403adea3.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-05T19:48:28+00:00",
-    "billede": "data/img/077cbe819108a1d8.webp"
-   },
-   {
-    "titel": "Axiom Math wants to keep AI slop out of mathematics",
-    "rubrik": "Axiom Math tjekker Stacks Project linje for linje",
-    "link": "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/",
-    "side": "artikel/7dac5ce0cdad0d3f.html",
-    "kategori": "Forskning",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-05T16:16:45+00:00",
-    "billede": "data/img/f0a87b0d7586544d.webp"
-   },
-   {
-    "titel": "Le Chonk brings the brains. Studio puts it to work.",
-    "rubrik": "Mistral Studio samler agenter og apps",
-    "link": "https://mistral.ai/news/build-with-studio/",
-    "side": "artikel/95ed6192fa24990c.html",
-    "kategori": "Lanceringer",
-    "kilde": "Mistral AI",
-    "dato": "2026-11-05T12:00:14+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Meta warns that election backlash against data centers could make AI expansion harder",
-    "rubrik": "Meta venter hårdere kamp om datacentre",
-    "link": "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder/",
-    "side": "artikel/1eac0b195a3b12f8.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-05T19:12:39+00:00",
-    "billede": "data/img/cd95a85f64c372fe.webp"
-   },
-   {
-    "titel": "OpenAI president Greg Brockman says company could be IPO ready in 2027",
-    "rubrik": "OpenAI kan være klar til børsnotering i 2027",
-    "link": "https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027/",
-    "side": "artikel/3cbf932ea50c768d.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-05T18:02:27+00:00",
-    "billede": "data/img/55a662f322aed259.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-06T07:16:54.196123+00:00",
+  "opdateret": "2026-11-06T16:11:20.307546+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -387,13 +386,13 @@ window.KOMMANDO_DATA = {
   "udgivet_udvalg": [
    "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
    "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
-   "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/"
+   "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/"
   ],
   "vaerktoejer": [],
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-11-06T07:16:53.715705+00:00",
+  "opdateret": "2026-11-06T16:11:19.219888+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -749,8 +748,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-06T07:16:54.196123+00:00",
-  "artikler_i_alt": 120,
+  "opdateret": "2026-11-06T16:11:20.307546+00:00",
+  "artikler_i_alt": 122,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -776,7 +775,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 15,
-    "i_listen": 4,
+    "i_listen": 3,
     "som_ekstra": 0,
     "seneste": [
      {
@@ -805,15 +804,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/90e3b37a09eaeb60.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Mistral Large 4 klarer opgaver andre afviser",
-      "dato": "2026-10-06T12:00:27",
-      "foerst_set": "2026-10-06T18:34:36",
-      "link": "https://mistral.ai/news/mistral-large-4/",
-      "side": "artikel/44d50d6d0c38b855.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -828,17 +818,8 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 12,
     "i_listen": 6,
-    "som_ekstra": 1,
+    "som_ekstra": 0,
     "seneste": [
-     {
-      "rubrik": "Google ruller Gemini 4 Argon bredt ud",
-      "dato": "",
-      "foerst_set": "2026-10-13T19:29:19",
-      "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
-      "side": "",
-      "hvor": "under",
-      "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
-     },
      {
       "rubrik": "Gemini Omni 1.2 Flash laver 15 sekunders klip",
       "dato": "2026-11-05T17:00:00",
@@ -934,17 +915,8 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 10,
     "i_listen": 8,
-    "som_ekstra": 1,
+    "som_ekstra": 0,
     "seneste": [
-     {
-      "rubrik": "Mistral Large 4 springer fra 9 til 38",
-      "dato": "",
-      "foerst_set": "2026-10-07T00:01:34",
-      "link": "https://simonwillison.net/2026/Oct/6/le-chonk/",
-      "side": "",
-      "hvor": "under",
-      "under": "Mistral Large 4 klarer opgaver andre afviser"
-     },
      {
       "rubrik": "Qwen 3.8 27B gætter Pac-Man ud fra vægte",
       "dato": "2026-11-03T16:29:48",
@@ -1029,7 +1001,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 52,
+    "i_listen": 56,
     "som_ekstra": 6,
     "seneste": [
      {
@@ -1096,47 +1068,47 @@ window.KOMMANDO_DATA = {
       "under": "DoorDash ser næsten ingen AI-agent-ordrer"
      },
      {
+      "rubrik": "Underdog viser 32 MB tale-model Woof i browseren",
+      "dato": "2026-11-06T13:02:16",
+      "foerst_set": "2026-11-06T16:11:20",
+      "link": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+      "side": "artikel/9ae4899642152a01.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Amazon åbner for indkøb via tekstbeskeder til Alexa",
+      "dato": "2026-11-06T14:10:00",
+      "foerst_set": "2026-11-06T16:11:20",
+      "link": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/",
+      "side": "artikel/bacb3f0e9b0a9c2b.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Anthropic mod IPO: AI-udgifter steg kun 1,5%",
+      "dato": "2026-11-06T15:54:47",
+      "foerst_set": "2026-11-06T16:11:20",
+      "link": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
+      "side": "artikel/7b5a2965d87a1f12.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Physicl får 10 mio. dollar og lancerer Studio",
+      "dato": "2026-11-06T13:00:00",
+      "foerst_set": "2026-11-06T16:11:20",
+      "link": "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/",
+      "side": "artikel/6d72973eed55f30e.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Airbnb lancerer AI-rejseagent i første halvdel af 2027",
       "dato": "2026-11-05T22:40:55",
       "foerst_set": "2026-11-06T07:16:54",
       "link": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/",
       "side": "artikel/560f077b27e20f29.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Palo Alto Networks i samtaler om Clutch-køb",
-      "dato": "2026-11-06T06:28:32",
-      "foerst_set": "2026-11-06T07:16:54",
-      "link": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
-      "side": "artikel/aa3547203e76d8ef.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Claude kobler sig til bankkontoen gennem Plaid",
-      "dato": "2026-11-05T18:00:00",
-      "foerst_set": "2026-11-05T22:13:13",
-      "link": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/",
-      "side": "artikel/ecdcd39295ca3f2b.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Meta åbner Muse-videochat for alle i USA",
-      "dato": "2026-11-05T19:48:28",
-      "foerst_set": "2026-11-05T22:13:13",
-      "link": "https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/",
-      "side": "artikel/759260a1403adea3.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Axiom Math tjekker Stacks Project linje for linje",
-      "dato": "2026-11-05T16:16:45",
-      "foerst_set": "2026-11-05T22:13:13",
-      "link": "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/",
-      "side": "artikel/7dac5ce0cdad0d3f.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1152,9 +1124,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 30,
-    "som_ekstra": 12,
+    "i_listen": 31,
+    "som_ekstra": 13,
     "seneste": [
+     {
+      "rubrik": "Alexa for Shopping bestiller varer via sms",
+      "dato": "",
+      "foerst_set": "2026-11-06T16:11:20",
+      "link": "https://www.theverge.com/tech/1028587/amazon-alexa-shopping-ai-text-orders",
+      "side": "",
+      "hvor": "under",
+      "under": "Amazon åbner for indkøb via tekstbeskeder til Alexa"
+     },
      {
       "rubrik": "Airbnb vil lancere AI-agent til rejser i 2027",
       "dato": "",
@@ -1253,15 +1234,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Google Gemini redigerer filer i chatten"
-     },
-     {
-      "rubrik": "Google sender Gemini 4 Carbon efter sikkerhedshuller",
-      "dato": "",
-      "foerst_set": "2026-10-28T21:16:14",
-      "link": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
-      "side": "",
-      "hvor": "under",
-      "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
      }
     ]
    },
@@ -1398,9 +1370,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 6,
-    "i_listen": 7,
+    "i_listen": 8,
     "som_ekstra": 0,
     "seneste": [
+     {
+      "rubrik": "Tau Robotics rengør hjem med fjernstyrede robotter",
+      "dato": "2026-11-06T10:00:00",
+      "foerst_set": "2026-11-06T16:11:20",
+      "link": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
+      "side": "artikel/9552db008db1e415.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "Hinojosa kræver stop for nye AI-datacentre i Texas",
       "dato": "2026-11-04T18:50:55",
@@ -1487,10 +1468,10 @@ window.KOMMANDO_DATA = {
     "kun_aktuel": false,
     "max": 15,
     "aktiv": true,
-    "status": "ok",
-    "fejl": "",
-    "hentet": 15,
-    "i_listen": 3,
+    "status": "fejl",
+    "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
+    "hentet": 0,
+    "i_listen": 0,
     "som_ekstra": 2,
     "seneste": [
      {
@@ -1510,33 +1491,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
-     },
-     {
-      "rubrik": "Google Antigravity finder ny peptidkandidat",
-      "dato": "2026-10-15T16:08:03",
-      "foerst_set": "2026-10-16T04:53:41",
-      "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-      "side": "artikel/ba028f76ed47c779.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
-      "dato": "2026-10-13T19:43:07",
-      "foerst_set": "2026-10-13T19:29:19",
-      "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-      "side": "artikel/42f1c245f492d3d1.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "EmbeddingGemma 2 finder videoklip ud fra tale",
-      "dato": "2026-10-06T19:57:04",
-      "foerst_set": "2026-10-07T15:44:28",
-      "link": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
-      "side": "artikel/bf211d23154acfab.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1571,7 +1525,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-06T07:34:20.475644+00:00",
+  "opdateret": "2026-11-06T16:30:37.381283+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",

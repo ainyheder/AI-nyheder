@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-06T07:16:54.196123+00:00",
- "artikler_i_alt": 120,
+ "opdateret": "2026-11-06T16:11:20.307546+00:00",
+ "artikler_i_alt": 122,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -27,7 +27,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 4,
+   "i_listen": 3,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -56,23 +56,9 @@ window.KILDER_STATUS = {
      "side": "artikel/90e3b37a09eaeb60.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Mistral Large 4 klarer opgaver andre afviser",
-     "dato": "2026-10-06T12:00:27",
-     "foerst_set": "2026-10-06T18:34:36",
-     "link": "https://mistral.ai/news/mistral-large-4/",
-     "side": "artikel/44d50d6d0c38b855.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
-   "overlap": [
-    [
-     "Simon Willison AI",
-     1
-    ]
-   ]
+   "overlap": []
   },
   {
    "navn": "Google Gemini",
@@ -85,17 +71,8 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 6,
-   "som_ekstra": 1,
+   "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "Google ruller Gemini 4 Argon bredt ud",
-     "dato": "",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
-    },
     {
      "rubrik": "Gemini Omni 1.2 Flash laver 15 sekunders klip",
      "dato": "2026-11-05T17:00:00",
@@ -154,7 +131,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google DeepMind",
-     3
+     2
     ],
     [
      "The Verge AI",
@@ -207,17 +184,8 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 8,
-   "som_ekstra": 1,
+   "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "Mistral Large 4 springer fra 9 til 38",
-     "dato": "",
-     "foerst_set": "2026-10-07T00:01:34",
-     "link": "https://simonwillison.net/2026/Oct/6/le-chonk/",
-     "side": "",
-     "hvor": "under",
-     "under": "Mistral Large 4 klarer opgaver andre afviser"
-    },
     {
      "rubrik": "Qwen 3.8 27B gætter Pac-Man ud fra vægte",
      "dato": "2026-11-03T16:29:48",
@@ -291,12 +259,7 @@ window.KILDER_STATUS = {
      "under": ""
     }
    ],
-   "overlap": [
-    [
-     "Mistral AI",
-     1
-    ]
-   ]
+   "overlap": []
   },
   {
    "navn": "TechCrunch AI",
@@ -308,7 +271,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 52,
+   "i_listen": 56,
    "som_ekstra": 6,
    "seneste": [
     {
@@ -373,6 +336,42 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "DoorDash ser næsten ingen AI-agent-ordrer"
+    },
+    {
+     "rubrik": "Underdog viser 32 MB tale-model Woof i browseren",
+     "dato": "2026-11-06T13:02:16",
+     "foerst_set": "2026-11-06T16:11:20",
+     "link": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+     "side": "artikel/9ae4899642152a01.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Amazon åbner for indkøb via tekstbeskeder til Alexa",
+     "dato": "2026-11-06T14:10:00",
+     "foerst_set": "2026-11-06T16:11:20",
+     "link": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/",
+     "side": "artikel/bacb3f0e9b0a9c2b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic mod IPO: AI-udgifter steg kun 1,5%",
+     "dato": "2026-11-06T15:54:47",
+     "foerst_set": "2026-11-06T16:11:20",
+     "link": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
+     "side": "artikel/7b5a2965d87a1f12.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Physicl får 10 mio. dollar og lancerer Studio",
+     "dato": "2026-11-06T13:00:00",
+     "foerst_set": "2026-11-06T16:11:20",
+     "link": "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/",
+     "side": "artikel/6d72973eed55f30e.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Airbnb lancerer AI-rejseagent i første halvdel af 2027",
@@ -445,48 +444,12 @@ window.KILDER_STATUS = {
      "side": "artikel/939524e97f242da6.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Box bygger Nvidia Nemotron ind i søgning",
-     "dato": "2026-11-05T14:00:00",
-     "foerst_set": "2026-11-05T22:13:13",
-     "link": "https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system/",
-     "side": "artikel/781e4656d3583054.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Aina lancerer AI-ring med skærm og joystick",
-     "dato": "2026-11-05T14:42:00",
-     "foerst_set": "2026-11-05T22:13:13",
-     "link": "https://techcrunch.com/2026/11/05/ainas-smart-ring-has-a-screen-a-joystick-and-a-mic-so-you-can-talk-to-ai-agents/",
-     "side": "artikel/d2cf34351a5f8610.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Discovered Materials udlover million til uløste problemer",
-     "dato": "2026-11-05T13:00:00",
-     "foerst_set": "2026-11-05T22:13:13",
-     "link": "https://techcrunch.com/2026/11/05/a-yc-startup-is-putting-1m-behind-five-unsolved-materials-science-problems-for-ai/",
-     "side": "artikel/ddef7f7b40b18c0e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Agility bliver første rene humanoid-robotselskab på børsen",
-     "dato": "2026-11-05T12:00:00",
-     "foerst_set": "2026-11-05T12:41:56",
-     "link": "https://techcrunch.com/2026/11/05/agility-is-the-first-pure-humanoid-robot-company-on-the-stock-market-are-you-buying/",
-     "side": "artikel/ab92969d84578d5f.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     14
+     15
     ],
     [
      "Ars Technica AI",
@@ -504,9 +467,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 30,
-   "som_ekstra": 12,
+   "i_listen": 31,
+   "som_ekstra": 13,
    "seneste": [
+    {
+     "rubrik": "Alexa for Shopping bestiller varer via sms",
+     "dato": "",
+     "foerst_set": "2026-11-06T16:11:20",
+     "link": "https://www.theverge.com/tech/1028587/amazon-alexa-shopping-ai-text-orders",
+     "side": "",
+     "hvor": "under",
+     "under": "Amazon åbner for indkøb via tekstbeskeder til Alexa"
+    },
     {
      "rubrik": "Airbnb vil lancere AI-agent til rejser i 2027",
      "dato": "",
@@ -607,13 +579,13 @@ window.KILDER_STATUS = {
      "under": "Google Gemini redigerer filer i chatten"
     },
     {
-     "rubrik": "Google sender Gemini 4 Carbon efter sikkerhedshuller",
-     "dato": "",
-     "foerst_set": "2026-10-28T21:16:14",
-     "link": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
+     "rubrik": "Demonstranter bryder ind på Microsoft-byggeplads i Amsterdam",
+     "dato": "2026-11-06T06:55:19",
+     "foerst_set": "2026-11-06T16:11:20",
+     "link": "https://www.theverge.com/news/1028549/protesters-microsoft-data-center-site-amsterdam",
+     "side": "artikel/18031d61f6077e3b.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Perplexity lancerer altid tændte Teammates",
@@ -644,7 +616,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "ElevenLabs-sange kan sendes direkte til SoundCloud",
-     "dato": "2026-11-05T10:00:00",
+     "dato": "2026-11-05T15:00:00",
      "foerst_set": "2026-11-05T22:13:13",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1027427/ai-music-soundcloud-elevenlabs",
      "side": "artikel/cca7625e0bb2b246.html",
@@ -713,21 +685,12 @@ window.KILDER_STATUS = {
      "side": "artikel/e22d01c9eea4d5e1.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Siri AI får adgang til alle apps",
-     "dato": "2026-11-03T20:16:17",
-     "foerst_set": "2026-11-04T00:49:46",
-     "link": "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps",
-     "side": "artikel/4cb12b423b57a6cc.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     14
+     15
     ],
     [
      "Ars Technica AI",
@@ -895,9 +858,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 7,
+   "i_listen": 8,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Tau Robotics rengør hjem med fjernstyrede robotter",
+     "dato": "2026-11-06T10:00:00",
+     "foerst_set": "2026-11-06T16:11:20",
+     "link": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
+     "side": "artikel/9552db008db1e415.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Hinojosa kræver stop for nye AI-datacentre i Texas",
      "dato": "2026-11-04T18:50:55",
@@ -986,10 +958,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 15,
-   "i_listen": 3,
+   "status": "fejl",
+   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -1009,39 +981,12 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
-    },
-    {
-     "rubrik": "Google Antigravity finder ny peptidkandidat",
-     "dato": "2026-10-15T16:08:03",
-     "foerst_set": "2026-10-16T04:53:41",
-     "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-     "side": "artikel/ba028f76ed47c779.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
-     "dato": "2026-10-13T19:43:07",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-     "side": "artikel/42f1c245f492d3d1.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "EmbeddingGemma 2 finder videoklip ud fra tale",
-     "dato": "2026-10-06T19:57:04",
-     "foerst_set": "2026-10-07T15:44:28",
-     "link": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
-     "side": "artikel/bf211d23154acfab.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "Google Gemini",
-     3
+     2
     ]
    ]
   },
