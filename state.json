@@ -616,38 +616,42 @@
             "dato": "2026-11-05T20:37:20+00:00",
             "url": "https://metatrends.substack.com/p/the-2026-holiday-gift-guide"
           },
-          "hovedide": "En personlig gaveguide fremhæver produkter og oplevelser, som ifølge afsenderen kan forbedre hverdagen.",
-          "hvorfor_nu": "Brevets anledning er en gaveguide op til afslutningen af 2026.",
-          "laeserudbytte": "Med mere materiale kunne læseren forstå, hvordan en AI-assistent kan bruges til daglige arbejdsopgaver, og hvilke begrænsninger den har.",
-          "kildedaekning": "Hele gaveguidens tekst er tilgængelig. Afsnittet om AI-assistenten Skippy er kort og beskriver ikke, hvordan opgaverne løses eller resultaterne kontrolleres.",
+          "hovedide": "En personlig gaveguide anbefaler produkter og oplevelser, som afsenderen mener kan forbedre hverdagen.",
+          "hvorfor_nu": "Anledningen er brevets gaveguide op til afslutningen af 2026.",
+          "laeserudbytte": "Med mere materiale kan læseren få en konkret forklaring på, hvordan en AI-assistent udfører arbejdsopgaver, og hvordan dens resultater kontrolleres.",
+          "kildedaekning": "Hele gaveguidens tekst er tilgængelig. Den beskriver Skippys opgaver, men ikke arbejdsgangen eller kontrollen af resultaterne.",
           "disposition": [
             {
-              "laesersporgsmaal": "Hvad bruger afsenderen sin AI-assistent til?",
-              "nyt_stof": "Skippy samler ifølge brevet en daglig nyhedsoversigt og hjælper med blandt andet indbakke og mødenoter."
+              "laesersporgsmaal": "Hvad bruges AI-assistenten Skippy til?",
+              "nyt_stof": "Skippy samler ifølge brevet en daglig nyhedsoversigt med kilder, resuméer og forbehold og hjælper med blandt andet indbakke og mødenoter."
             },
             {
-              "laesersporgsmaal": "Hvordan finder og sammenfatter assistenten oplysningerne?",
-              "nyt_stof": "Det kræver mere kildemateriale; gaveguiden beskriver ikke arbejdsgangen."
+              "laesersporgsmaal": "Hvordan udfører assistenten opgaverne?",
+              "nyt_stof": "Brevet oplyser, at Skippy er bygget med OpenClaw og kører på en Mac Mini, men beskriver ikke den konkrete arbejdsgang."
             },
             {
-              "laesersporgsmaal": "Hvordan kontrolleres assistentens resultater?",
-              "nyt_stof": "Brevet nævner kilder og forbehold i oversigten, men ikke hvordan indholdets pålidelighed vurderes."
+              "laesersporgsmaal": "Hvordan kontrolleres oversigtens indhold?",
+              "nyt_stof": "Oversigten indeholder kilder og forbehold, men brevet forklarer ikke, hvordan oplysningerne vurderes eller efterprøves."
             }
           ],
           "bevarede_pointer": [
-            "Afsenderen oplyser, at han bruger Skippy på en Mac Mini til en daglig oversigt og andre arbejdsopgaver.",
-            "Afsenderen er kunde hos alle de fremhævede virksomheder og investor i nogle af dem; gaveguiden er sponsoreret af tre virksomheder."
+            "Afsenderen oplyser, at Skippy bruges til en daglig oversigt og andre arbejdsopgaver.",
+            "Afsenderen oplyser, at han er kunde hos alle de fremhævede virksomheder og investor i nogle af dem.",
+            "Gaveguiden er sponsoreret af OneSkin, Wisewell og Superpower."
           ],
           "selvstaendige_greb": [
-            "AI-assistenten er udvalgt som den mest relevante mulige hovedhistorie frem for en gennemgang af gaveguiden."
+            "AI-assistenten er udvalgt som den mest relevante mulige hovedhistorie frem for en gennemgang af gaveguidens anbefalinger."
           ],
           "udeladelser": [
-            "Produktanbefalinger, rabatter og andre salgselementer udelades, fordi de ikke giver tilstrækkeligt belæg for en selvstændig AI-historie.",
+            "Rabatter, købsopfordringer og øvrige salgselementer udelades.",
+            "Meta-brillernes optagelser og Waymo-turene er konkrete eksempler, men brevet forklarer ikke deres AI-funktioner eller giver tilstrækkelig sammenhæng til en fyldig fælles historie.",
             "Illustrationer er fravalgt, fordi der ikke er grundlag for at skrive brevet endnu."
           ],
-          "rettelser": [],
+          "rettelser": [
+            "Kritikken har ret i, at gaveguiden indeholder konkrete eksempler på Skippy, Meta-briller og Waymo. De er gennemgået igen, men tre korte produktomtaler kan ikke bære den krævede fyldige, selvstændige AI-historie uden gentagelser eller udokumenterede forklaringer. Et kortere brev opfylder ikke den angivne ramme."
+          ],
           "uafklaret": [
-            "Der mangler væsentligt kildemateriale om assistentens virkemåde og begrænsninger til en fyldig, selvstændig historie uden reklamefyld."
+            "Der mangler væsentligt kildemateriale til at forklare assistentens arbejdsgang og kontrol eller til at forbinde gaveguidens separate teknologieksempler i en tilstrækkeligt fyldig historie."
           ]
         },
         "status": "kraever_mere_materiale",
@@ -656,7 +660,7 @@
         "brev_markdown": "",
         "illustrationer": []
       },
-      "fejl": "Redaktøren kræver mere materiale eller afklaring\nKvalitetskontrollen afviste brevet\n[\"Læseværdi og format — emne, preheader og brev_markdown — alle tre er tomme. Gaveguiden rummer konkrete eksempler på Skippys arbejdsopgaver, Meta-brillernes optagelser og selvkørende Waymo-ture; et kort brev kan bruge dem uden at opfinde tekniske forklaringer. Skriv et selvstændigt brev med emne, preheader og linket kreditering, og markér kort afsenderens interesser.\"]",
+      "fejl": "Redaktøren kræver mere materiale eller afklaring",
       "naeste_trin": "skrivning"
     }
   }
