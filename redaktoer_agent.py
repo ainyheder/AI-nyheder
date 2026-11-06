@@ -203,7 +203,8 @@ def openai_kald(noegle, model, messages, tools, *, thinking=None, timeout=DEEPSE
             items.append({"role": role, "content": message.get("content") or ""})
     response_tools = [{"type": "function", **tool["function"]} for tool in tools]
     body = {"model": model, "input": items, "tools": response_tools,
-            "tool_choice": "required", "max_output_tokens": 32768, "store": False,
+            "tool_choice": "required", "parallel_tool_calls": False,
+            "max_output_tokens": 32768, "store": False,
             **({"reasoning": {"effort": validate_thinking(model, thinking)}} if thinking else {})}
     request = urllib.request.Request("https://api.openai.com/v1/responses",
               data=json.dumps(body, ensure_ascii=False).encode(),
@@ -464,7 +465,8 @@ class Redaktion:
                 sidste_fejl = "Agenten svarede med tekst uden værktøjskald"
                 continue
             if not isinstance(calls, list) or not 1 <= len(calls) <= 8:
-                raise UdgaveFejl("Agenten afleverede ikke gyldige værktøjskald")
+                raise UdgaveFejl("Agenten afleverede ikke gyldige værktøjskald "
+                                f"(antal: {len(calls) if isinstance(calls, list) else 0})")
             assistant = {"role": "assistant", "content": reply.get("content"), "tool_calls": calls}
             # DeepSeek og MiMo bruger dette felt ved fortsatte thinking-tool-kald.
             # Bevares kun i samtalens hukommelse, aldrig i status eller log.
