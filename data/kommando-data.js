@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-06T21:26:54.727753+00:00",
+ "genereret": "2026-11-06T21:48:25.983617+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -40,7 +40,9 @@ window.KOMMANDO_DATA = {
     "url": "https://x.ai/news",
     "kategori": "Labs",
     "format": "nyhedsoversigt",
-    "max": 15
+    "max": 15,
+    "reserve_url": "https://docs.x.ai/developers/release-notes",
+    "note": "Ved HTTP 403 bruges xAI’s offentlige API-release notes. Det giver model- og API-nyheder, ikke hele selskabets nyhedsstrøm."
    },
    {
     "navn": "Hugging Face",
@@ -197,26 +199,28 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-06T21:24:13.483646+00:00",
-  "antal": 137,
-  "med_billede": 96,
-  "paa_dansk": 137,
+  "opdateret": "2026-11-06T21:44:23.310887+00:00",
+  "antal": 139,
+  "med_billede": 98,
+  "paa_dansk": 139,
   "kategorier": {
-   "Lanceringer": 15,
-   "Politik \u0026 jura": 25,
+   "Lanceringer": 17,
+   "Politik \u0026 jura": 24,
    "Hverdags-AI": 31,
    "Samfund \u0026 etik": 15,
    "Penge \u0026 marked": 41,
-   "Forskning": 10
+   "Forskning": 11
   },
   "kilder": {
    "Google Gemini": 6,
    "The Verge AI": 34,
    "TechCrunch AI": 58,
    "Ars Technica AI": 12,
-   "MIT Tech Review AI": 8,
    "Mistral AI": 3,
+   "MIT Tech Review AI": 7,
    "Simon Willison AI": 8,
+   "xAI News": 1,
+   "Google DeepMind": 2,
    "Anthropic News": 8
   },
   "udvalgte": [
@@ -238,7 +242,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Lanceringer",
     "kilde": "The Verge AI",
     "dato": "2026-11-05T17:00:00+00:00",
-    "billede": "data/img/cf829156888d7e48.jpg"
+    "billede": "data/img/cf829156888d7e48.webp"
    },
    {
     "titel": "Underdog shows off a 32MB speech model in new demo",
@@ -252,6 +256,16 @@ window.KOMMANDO_DATA = {
    }
   ],
   "seneste": [
+   {
+    "titel": "grok-imagine-image-quality retired",
+    "rubrik": "xAI sender billedanmodninger til ny model",
+    "link": "https://docs.x.ai/developers/release-notes#grok-imagine-image-quality-retired",
+    "side": "artikel/99c3122894ef9106.html",
+    "kategori": "Lanceringer",
+    "kilde": "xAI News",
+    "dato": "2026-11-02T00:00:00+00:00",
+    "billede": ""
+   },
    {
     "titel": "AI is the new dating dealbreaker",
     "rubrik": "Hinge-profil fravælger dates, der bruger AI",
@@ -361,21 +375,11 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-11-06T06:55:19-05:00",
     "billede": "data/img/413262297b273cbf.webp"
-   },
-   {
-    "titel": "I watched a humanoid robot clean my apartment. It felt like a taste of the future.",
-    "rubrik": "Tau Robotics rengør hjem med fjernstyrede robotter",
-    "link": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
-    "side": "artikel/9552db008db1e415.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "MIT Tech Review AI",
-    "dato": "2026-11-06T10:00:00+00:00",
-    "billede": "data/img/14ac2211a7d81207.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-06T21:24:13.483646+00:00",
+  "opdateret": "2026-11-06T21:44:23.310887+00:00",
   "status": "reserve",
   "model": "gpt-6.1-terra",
   "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Agenten afleverede ikke gyldige værktøjskald",
@@ -412,7 +416,7 @@ window.KOMMANDO_DATA = {
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-11-06T21:24:13.068868+00:00",
+  "opdateret": "2026-11-06T21:44:22.716069+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -877,8 +881,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-06T21:24:13.483646+00:00",
-  "artikler_i_alt": 137,
+  "opdateret": "2026-11-06T21:44:23.310887+00:00",
+  "artikler_i_alt": 139,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1020,8 +1024,17 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 12,
     "i_listen": 6,
-    "som_ekstra": 0,
+    "som_ekstra": 1,
     "seneste": [
+     {
+      "rubrik": "Google ruller Gemini 4 Argon bredt ud",
+      "dato": "",
+      "foerst_set": "2026-10-13T19:29:19",
+      "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
+      "side": "",
+      "hvor": "under",
+      "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
+     },
      {
       "rubrik": "Gemini Omni 1.2 Flash laver 15 sekunders klip",
       "dato": "2026-11-05T17:00:00",
@@ -1085,12 +1098,22 @@ window.KOMMANDO_DATA = {
     "kun_aktuel": false,
     "max": 15,
     "aktiv": true,
-    "status": "fejl",
-    "fejl": "HTTPError: HTTP Error 403: Forbidden",
-    "hentet": 0,
-    "i_listen": 0,
+    "status": "ok",
+    "fejl": "",
+    "hentet": 15,
+    "i_listen": 1,
     "som_ekstra": 0,
-    "seneste": []
+    "seneste": [
+     {
+      "rubrik": "xAI sender billedanmodninger til ny model",
+      "dato": "2026-11-02T00:00:00",
+      "foerst_set": "2026-11-06T21:44:23",
+      "link": "https://docs.x.ai/developers/release-notes#grok-imagine-image-quality-retired",
+      "side": "artikel/99c3122894ef9106.html",
+      "hvor": "forside",
+      "under": ""
+     }
+    ]
    },
    {
     "navn": "Hugging Face",
@@ -1213,8 +1236,26 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 10,
     "i_listen": 58,
-    "som_ekstra": 8,
+    "som_ekstra": 10,
     "seneste": [
+     {
+      "rubrik": "USA: Vælgere stemte for datacenterrestriktioner",
+      "dato": "",
+      "foerst_set": "2026-11-06T21:09:53",
+      "link": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/",
+      "side": "",
+      "hvor": "under",
+      "under": "Data centre taber midtvejsvalget i USA"
+     },
+     {
+      "rubrik": "Amerikanske vælgere stemmer for datacenterbegrænsninger",
+      "dato": "",
+      "foerst_set": "2026-11-06T21:09:53",
+      "link": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/",
+      "side": "",
+      "hvor": "under",
+      "under": "Data centre taber midtvejsvalget i USA"
+     },
      {
       "rubrik": "ChatGPT Cyber annonceret til Daybreak Reds topniveau",
       "dato": "",
@@ -1304,24 +1345,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/37d75a0fa3790bf4.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Meta lancerer Spaces til sin Muse-agent",
-      "dato": "2026-11-06T18:44:20",
-      "foerst_set": "2026-11-06T20:49:47",
-      "link": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
-      "side": "artikel/dcfedcc7440be1b6.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Underdog viser 32 MB tale-model Woof i browseren",
-      "dato": "2026-11-06T13:02:16",
-      "foerst_set": "2026-11-06T16:11:20",
-      "link": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
-      "side": "artikel/9ae4899642152a01.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1339,7 +1362,7 @@ window.KOMMANDO_DATA = {
     "som_ekstra": 15,
     "seneste": [
      {
-      "rubrik": "OpenAI dropper tavshedsaftaler med embedsfolk",
+      "rubrik": "OpenAI vil droppe hemmeligholdelsesaftaler med myndigheder",
       "dato": "",
       "foerst_set": "2026-11-06T21:09:53.915130+00:00",
       "link": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
@@ -1527,7 +1550,7 @@ window.KOMMANDO_DATA = {
      {
       "rubrik": "Hinojosa sejr bremser Texas' AI-datacentre",
       "dato": "2026-11-04T20:55:50",
-      "foerst_set": "2026-11-05T01:00:33",
+      "foerst_set": "2026-11-04T19:59:08",
       "link": "https://arstechnica.com/tech-policy/2026/11/big-tech-claims-voters-ai-backlash-is-anti-trump-not-anti-tech/",
       "side": "artikel/24e560ad31910656.html",
       "hvor": "forside",
@@ -1581,24 +1604,24 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 6,
-    "i_listen": 8,
-    "som_ekstra": 0,
+    "i_listen": 7,
+    "som_ekstra": 1,
     "seneste": [
+     {
+      "rubrik": "Hinojosa kræver stop for nye AI-datacentre i Texas",
+      "dato": "",
+      "foerst_set": "2026-11-04T19:59:08",
+      "link": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
+      "side": "",
+      "hvor": "under",
+      "under": "Hinojosa sejr bremser Texas' AI-datacentre"
+     },
      {
       "rubrik": "Tau Robotics rengør hjem med fjernstyrede robotter",
       "dato": "2026-11-06T10:00:00",
       "foerst_set": "2026-11-06T16:11:20",
       "link": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
       "side": "artikel/9552db008db1e415.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Hinojosa kræver stop for nye AI-datacentre i Texas",
-      "dato": "2026-11-04T18:50:55",
-      "foerst_set": "2026-11-04T19:59:08",
-      "link": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
-      "side": "artikel/f95b3a80fa8bdb80.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1679,10 +1702,10 @@ window.KOMMANDO_DATA = {
     "kun_aktuel": false,
     "max": 15,
     "aktiv": true,
-    "status": "fejl",
-    "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-    "hentet": 0,
-    "i_listen": 0,
+    "status": "ok",
+    "fejl": "",
+    "hentet": 15,
+    "i_listen": 2,
     "som_ekstra": 2,
     "seneste": [
      {
@@ -1702,6 +1725,24 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
+     },
+     {
+      "rubrik": "Google Antigravity finder ny peptidkandidat",
+      "dato": "2026-10-15T16:08:03",
+      "foerst_set": "2026-10-16T04:53:41",
+      "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+      "side": "artikel/ba028f76ed47c779.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
+      "dato": "2026-10-13T19:43:07",
+      "foerst_set": "2026-10-13T19:29:19",
+      "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+      "side": "artikel/42f1c245f492d3d1.html",
+      "hvor": "forside",
+      "under": ""
      }
     ]
    },
@@ -1736,12 +1777,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-06T21:26:51.564643+00:00",
+  "opdateret": "2026-11-06T21:48:23.479113+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 13,
-  "sidevisninger_i_alt": 32,
+  "besoeg_i_alt": 14,
+  "sidevisninger_i_alt": 35,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1898,15 +1939,15 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 13,
-    "visninger": 32
+    "besoeg": 14,
+    "visninger": 35
    }
   ],
   "artikler": [],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 12
+    "besoeg": 13
    },
    {
     "fra": "www.bing.com",

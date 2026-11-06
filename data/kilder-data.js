@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-06T21:24:13.483646+00:00",
- "artikler_i_alt": 137,
+ "opdateret": "2026-11-06T21:44:23.310887+00:00",
+ "artikler_i_alt": 139,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -157,8 +157,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 6,
-   "som_ekstra": 0,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "Google ruller Gemini 4 Argon bredt ud",
+     "dato": "",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
+    },
     {
      "rubrik": "Gemini Omni 1.2 Flash laver 15 sekunders klip",
      "dato": "2026-11-05T17:00:00",
@@ -217,7 +226,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google DeepMind",
-     2
+     3
     ],
     [
      "The Verge AI",
@@ -236,12 +245,22 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 403: Forbidden",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 15,
+   "i_listen": 1,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "xAI sender billedanmodninger til ny model",
+     "dato": "2026-11-02T00:00:00",
+     "foerst_set": "2026-11-06T21:44:23",
+     "link": "https://docs.x.ai/developers/release-notes#grok-imagine-image-quality-retired",
+     "side": "artikel/99c3122894ef9106.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   },
   {
@@ -372,8 +391,26 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 58,
-   "som_ekstra": 8,
+   "som_ekstra": 10,
    "seneste": [
+    {
+     "rubrik": "USA: Vælgere stemte for datacenterrestriktioner",
+     "dato": "",
+     "foerst_set": "2026-11-06T21:09:53",
+     "link": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/",
+     "side": "",
+     "hvor": "under",
+     "under": "Data centre taber midtvejsvalget i USA"
+    },
+    {
+     "rubrik": "Amerikanske vælgere stemmer for datacenterbegrænsninger",
+     "dato": "",
+     "foerst_set": "2026-11-06T21:09:53",
+     "link": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/",
+     "side": "",
+     "hvor": "under",
+     "under": "Data centre taber midtvejsvalget i USA"
+    },
     {
      "rubrik": "ChatGPT Cyber annonceret til Daybreak Reds topniveau",
      "dato": "",
@@ -567,7 +604,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     16
+     18
     ],
     [
      "Anthropic News",
@@ -593,7 +630,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 15,
    "seneste": [
     {
-     "rubrik": "OpenAI dropper tavshedsaftaler med embedsfolk",
+     "rubrik": "OpenAI vil droppe hemmeligholdelsesaftaler med myndigheder",
      "dato": "",
      "foerst_set": "2026-11-06T21:09:53.915130+00:00",
      "link": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
@@ -812,7 +849,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     16
+     18
     ],
     [
      "Ars Technica AI",
@@ -907,7 +944,7 @@ window.KILDER_STATUS = {
     {
      "rubrik": "Hinojosa sejr bremser Texas' AI-datacentre",
      "dato": "2026-11-04T20:55:50",
-     "foerst_set": "2026-11-05T01:00:33",
+     "foerst_set": "2026-11-04T19:59:08",
      "link": "https://arstechnica.com/tech-policy/2026/11/big-tech-claims-voters-ai-backlash-is-anti-trump-not-anti-tech/",
      "side": "artikel/24e560ad31910656.html",
      "hvor": "forside",
@@ -983,6 +1020,10 @@ window.KILDER_STATUS = {
      3
     ],
     [
+     "MIT Tech Review AI",
+     1
+    ],
+    [
      "Google Gemini",
      1
     ],
@@ -1002,24 +1043,24 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 8,
-   "som_ekstra": 0,
+   "i_listen": 7,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "Hinojosa kræver stop for nye AI-datacentre i Texas",
+     "dato": "",
+     "foerst_set": "2026-11-04T19:59:08",
+     "link": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
+     "side": "",
+     "hvor": "under",
+     "under": "Hinojosa sejr bremser Texas' AI-datacentre"
+    },
     {
      "rubrik": "Tau Robotics rengør hjem med fjernstyrede robotter",
      "dato": "2026-11-06T10:00:00",
      "foerst_set": "2026-11-06T16:11:20",
      "link": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
      "side": "artikel/9552db008db1e415.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Hinojosa kræver stop for nye AI-datacentre i Texas",
-     "dato": "2026-11-04T18:50:55",
-     "foerst_set": "2026-11-04T19:59:08",
-     "link": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
-     "side": "artikel/f95b3a80fa8bdb80.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1078,7 +1119,12 @@ window.KILDER_STATUS = {
      "under": ""
     }
    ],
-   "overlap": []
+   "overlap": [
+    [
+     "Ars Technica AI",
+     1
+    ]
+   ]
   },
   {
    "navn": "OpenAI Blog",
@@ -1102,10 +1148,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 15,
+   "i_listen": 2,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -1125,12 +1171,30 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
+    },
+    {
+     "rubrik": "Google Antigravity finder ny peptidkandidat",
+     "dato": "2026-10-15T16:08:03",
+     "foerst_set": "2026-10-16T04:53:41",
+     "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+     "side": "artikel/ba028f76ed47c779.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
+     "dato": "2026-10-13T19:43:07",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+     "side": "artikel/42f1c245f492d3d1.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "Google Gemini",
-     2
+     3
     ]
    ]
   },
@@ -1192,7 +1256,9 @@ window.KILDER_STATUS = {
     "url": "https://x.ai/news",
     "kategori": "Labs",
     "format": "nyhedsoversigt",
-    "max": 15
+    "max": 15,
+    "reserve_url": "https://docs.x.ai/developers/release-notes",
+    "note": "Ved HTTP 403 bruges xAI’s offentlige API-release notes. Det giver model- og API-nyheder, ikke hele selskabets nyhedsstrøm."
    },
    {
     "navn": "Hugging Face",
