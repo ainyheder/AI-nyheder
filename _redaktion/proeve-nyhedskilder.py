@@ -27,6 +27,46 @@ OVERSIGT = b'''<html><body>
 
 
 class KildeTests(unittest.TestCase):
+    def test_xai_reserve_bevarer_datoer_kildetekst_og_forskellige_begivenheder(self):
+        from urllib.error import HTTPError
+        from _redaktion import xai_releases
+        import redaktoer_agent, redaktion
+        markup = b'''<script type="application/ld+json">{"dateModified":"2026-01-08T00:00:00Z"}</script>
+        <h1 id="release-notes-1">Release Notes</h1><h2>January</h2>
+        <div class="relative">January 8<span aria-hidden="true"></span></div>
+        <h3 id="new-voice">A new voice model</h3><p>Documented voice details.</p>
+        <h3 id="new-code">A distinct coding release</h3><p>Documented coding details.</p>
+        <h2>December 2025</h2><div class="relative">December 3<span aria-hidden="true"></span></div>
+        <h3 id="old">Old update</h3><p>Older details.</p>'''
+        url='https://docs.x.ai/developers/release-notes'
+        feed={'navn':'xAI News','url':'https://x.ai/news','format':'nyhedsoversigt','reserve_url':url}
+        with patch.dict(xai_releases.MATERIAL, {}, clear=True), \
+             patch.object(c,'hent_url',side_effect=[HTTPError(feed['url'],403,'Forbidden',{},None),markup]) as request:
+            _, rows, error=c.crawl_feed(feed)
+            self.assertIsNone(error);self.assertEqual(request.call_count,2)
+            self.assertEqual(len(rows),3)
+            self.assertEqual(rows[-1]['dato'],datetime(2025,12,3,tzinfo=timezone.utc))
+            self.assertEqual(len(redaktion.unikke_historier(rows)),3)
+            with patch.object(c,'hent_url',side_effect=AssertionError('Genbrug allerede læst kildetekst')):
+                self.assertIn('Documented',c.hent_artikeltekst(rows[0])[1])
+                self.assertIn('Documented',redaktoer_agent.hent_kilde(rows[0]['link'])['tekst'])
+        with self.assertRaisesRegex(ValueError,'årstal'):
+            xai_releases.parse(b'<h1 id="release-notes">Release Notes</h1>',url)
+
+    def test_browserudfordring_genhentes_ikke_for_hver_artikel(self):
+        from urllib.error import HTTPError
+        from _redaktion import kildeadgang
+        with patch.object(kildeadgang,'_blokerede',set()), \
+             patch.object(c,'hent_url',side_effect=HTTPError('https://openai.com/a',403,'Forbidden',{'Cf-Mitigated':'challenge'},None)) as request:
+            c.hent_artikeltekst({'link':'https://openai.com/a','kilde':'OpenAI'})
+            c.hent_artikeltekst({'link':'https://openai.com/b','kilde':'OpenAI'})
+            self.assertEqual(request.call_count,1)
+        with patch.object(kildeadgang,'_blokerede',set()), \
+             patch.object(c,'hent_url',side_effect=HTTPError('https://example.com/a',403,'Forbidden',{},None)) as request:
+            c.hent_artikeltekst({'link':'https://example.com/a','kilde':'Test'})
+            c.hent_artikeltekst({'link':'https://example.com/b','kilde':'Test'})
+            self.assertEqual(request.call_count,2)
+
     def test_dato_udenfor_linket_bindes_kun_til_samme_nyhedsraekke(self):
         markup = b'''<ul>
         <li data-listing-row="a"><a href="/new"><h3>New model</h3></a><a href="/new"><p>Details</p></a><time>Nov 6, 2026</time></li>

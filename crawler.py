@@ -199,10 +199,21 @@ def parse_atom(rod: ET.Element) -> list[dict]:
 
 def crawl_feed(feed: dict) -> tuple[dict, list[dict], str | None]:
     try:
-        data = hent_url(feed["url"])
+        source_url = feed["url"]
+        try:
+            data = hent_url(source_url)
+        except urllib.error.HTTPError as fejl:
+            reserve = feed.get('reserve_url')
+            if fejl.code != 403 or reserve != 'https://docs.x.ai/developers/release-notes':
+                raise
+            source_url = reserve
+            data = hent_url(source_url)
+            print(f"  ℹ️ {feed['navn']}: bruger officielle API-release notes, fordi nyhedssiden svarer 403")
         format = feed.get("format", "feed")
         if format == "nyhedsoversigt":
-            artikler = parse_nyhedsoversigt(data, feed["url"])
+            from _redaktion import xai_releases
+            artikler = (xai_releases.parse(data, source_url) if xai_releases.er_release_url(source_url)
+                        else parse_nyhedsoversigt(data, source_url))
         elif format == "feed":
             rod = ET.fromstring(data)
             if rod.tag == "rss" or rod.find("channel") is not None:
@@ -289,12 +300,25 @@ def udtraek_billeder(html_raa: str, base_url: str) -> list[dict]:
     return rene[:8]
 
 
+def hent_kildeside(url):
+    from _redaktion.kildeadgang import kontroller, registrer
+    kontroller(url)
+    try:
+        return hent_url(url)
+    except urllib.error.HTTPError as fejl:
+        registrer(url, fejl)
+        raise
+
+
 def hent_artikeltekst(a: dict) -> tuple[dict, str, list[dict]]:
     """Henter artiklens egen side og returnerer (artikel, brødtekst, billeder).
     Billeder hentes OGSÅ fra historiens øvrige kilder ("+kilder") - det er tit
     dér, benchmark-graferne ligger."""
+    from _redaktion.xai_releases import MATERIAL
+    if a['link'] in MATERIAL:
+        return a, MATERIAL[a['link']], []
     try:
-        raa = hent_url(a["link"]).decode("utf-8", errors="replace")
+        raa = hent_kildeside(a["link"]).decode("utf-8", errors="replace")
         tekst, billeder = udtraek_tekst(raa), udtraek_billeder(raa, a["link"])
     except Exception:                        # paywall, botblokering, timeout …
         tekst, billeder = "", []             # … men prøv stadig de andre kilder
@@ -302,7 +326,7 @@ def hent_artikeltekst(a: dict) -> tuple[dict, str, list[dict]]:
         b["kilde"] = a["kilde"]
     for kilde in a.get("andre", [])[:2]:     # samme historie hos andre medier
         try:
-            raa2 = hent_url(kilde["link"]).decode("utf-8", errors="replace")
+            raa2 = hent_kildeside(kilde["link"]).decode("utf-8", errors="replace")
             ekstra = udtraek_tekst(raa2)[:3000]
             if len(ekstra) > 300:
                 tekst += f"\n\n--- SUPPLERENDE KILDE ({kilde['kilde']}) ---\n{ekstra}"
@@ -2543,22 +2567,31 @@ def _gem_billede(raa: bytes, sti: Path) -> None:
         sti.write_bytes(raa)
 
 
-def _gem_artikelbillede(raa: bytes, sti: Path) -> Path:
-    """Gem originalen først; fritlæg kun nygenererede billeder, højst 180 sek."""
+def _gem_artikelbillede(raa: bytes, sti: Path, *, gem_original=True) -> Path:
+    """Gem originalen først; giv den klargjorte CPU-model højst 180 sekunder."""
     import subprocess
     import tempfile
-    _gem_billede(raa, sti)
+    from _redaktion.nyhedsbrev_billeder import cutout_failure
+    if gem_original:
+        _gem_billede(raa, sti)
     fritlagt = sti.with_suffix(".webp")
     try:
-        # Isoler modelværktøjets midlertidige filer fra projektmappen.
         with tempfile.TemporaryDirectory(prefix="ai-news-fritlaeg-") as temp:
-            subprocess.run(
-                [sys.executable, str(ROOT / "_redaktion/fritlaeg_billede.py"),
-                 str(sti.resolve()), str(fritlagt.resolve())],
-                cwd=temp, env={**os.environ, "OMP_NUM_THREADS": "2"},
-                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
-                check=True, timeout=_drift.tid(45) if _drift else 180,
-            )
+            status_file = Path(temp) / 'status.json'
+            try:
+                subprocess.run(
+                    [sys.executable, str(ROOT / "_redaktion/fritlaeg_billede.py"),
+                     str(sti.resolve()), str(fritlagt.resolve()), '--status-fil', str(status_file)],
+                    cwd=temp, env={**os.environ, "OMP_NUM_THREADS": "2"},
+                    capture_output=True, text=True,
+                    check=True, timeout=_drift.tid(180) if _drift else 180,
+                )
+            except (subprocess.TimeoutExpired, subprocess.CalledProcessError) as fejl:
+                details = cutout_failure(status_file, getattr(fejl, 'returncode', None),
+                    getattr(fejl, 'stdout', ''), getattr(fejl, 'stderr', ''),
+                    timed_out=isinstance(fejl, subprocess.TimeoutExpired))
+                print('  ℹ️ Fritlægning afbrudt: ' + str(details) + '; originalbilledet bruges')
+                return sti
         if not fritlagt.is_file():
             raise ValueError("Fritlagt billede mangler")
         print("  ✂️ BiRefNet General: gemt med gennemsigtig baggrund")
@@ -2748,12 +2781,21 @@ def lav_flux_billede(prompt):
     boundary = "ai-news-" + uuid.uuid4().hex
     fields = {"prompt": prompt, "width": "1024", "height": "576"}
     body = "".join(f'--{boundary}\r\nContent-Disposition: form-data; name="{k}"\r\n\r\n{v}\r\n' for k, v in fields.items()) + f"--{boundary}--\r\n"
-    response = json.loads(hent_url(
-        f"https://api.cloudflare.com/client/v4/accounts/{konto}/ai/run/{FLUX_MODEL}",
-        data=body.encode("utf-8"), headers={"Authorization": "Bearer " + token,
-        "Content-Type": "multipart/form-data; boundary=" + boundary}))
+    from _redaktion.billedfejl import BilledAPIError
+    try:
+        raw = hent_url(
+            f"https://api.cloudflare.com/client/v4/accounts/{konto}/ai/run/{FLUX_MODEL}",
+            data=body.encode("utf-8"), headers={"Authorization": "Bearer " + token,
+            "Content-Type": "multipart/form-data; boundary=" + boundary})
+    except urllib.error.HTTPError as fejl:
+        try:
+            payload = json.loads(fejl.read(16000))
+        except (ValueError, OSError):
+            payload = {}
+        raise BilledAPIError(fejl.code, payload) from None
+    response = json.loads(raw)
     if response.get("success") is False:
-        raise ValueError("Cloudflare afviste billedkaldet; kontrollér Workers AI-adgang og kvote")
+        raise BilledAPIError(200, response)
     result = response.get("result", response)
     if not isinstance(result, dict) or not result.get("image"):
         raise ValueError("Cloudflare returnerede intet billede")
@@ -2782,7 +2824,7 @@ def lav_billeder(artikler: list[dict], forside=None, nu=None) -> None:
     BILLED_MAPPE.mkdir(parents=True, exist_ok=True)
 
     top = _billedartikler(artikler, forside, nu)
-    lavet, forsoeg, fejl_i_traek = 0, 0, 0
+    lavet, forsoeg, fejl_i_traek, fritlaeg_forsog = 0, 0, 0, 0
     for a in top:
         navn = _billed_navn(a["link"])
         sti = BILLED_MAPPE / navn
@@ -2790,6 +2832,11 @@ def lav_billeder(artikler: list[dict], forside=None, nu=None) -> None:
         # Gamle JPG'er skal ikke massefritlægges eller betales for igen.
         gemt = _gemt_artikelbillede(a)
         if gemt:
+            # Genoptag kun fritlægning af egne billeder fra den aktuelle stil.
+            # Originalen er allerede betalt; ældre arkivbilleder behandles ikke.
+            if gemt == sti and gemt.suffix == '.jpg' and fritlaeg_forsog < 2 and (not _drift or _drift.plads()):
+                fritlaeg_forsog += 1
+                gemt = _gem_artikelbillede(b'', gemt, gem_original=False)
             a["billede"] = f"data/img/{gemt.name}"
             continue
         if forsoeg >= MAX_BILLEDER_PR_KOERSEL or fejl_i_traek >= 2 or (_drift and not _drift.plads()):
@@ -2815,7 +2862,8 @@ def lav_billeder(artikler: list[dict], forside=None, nu=None) -> None:
                 gem_fremskridt(artikler)
             except Exception as f:
                 fejl_i_traek += 1
-                print(f"  ⚠️ Cloudflare-billede fejlede: {type(f).__name__}"
+                from _redaktion.billedfejl import BilledAPIError
+                print(f"  ⚠️ Cloudflare-billede fejlede: {str(f) if isinstance(f, BilledAPIError) else type(f).__name__}"
                       f"{' · HTTP ' + str(f.code) if isinstance(f, urllib.error.HTTPError) else ''}. "
                       "Kontrollér Workers AI-adgang og kvote.")
             continue

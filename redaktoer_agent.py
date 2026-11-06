@@ -134,9 +134,19 @@ class OffentligRedirect(urllib.request.HTTPRedirectHandler):
 
 
 def hent_kilde(url):
+    from _redaktion.xai_releases import MATERIAL
+    if url in MATERIAL:
+        return {"tekst": MATERIAL[url], "henvisninger": []}
+    from _redaktion.kildeadgang import kontroller, registrer
+    kontroller(url)
     offentlig_url(url)
     req = urllib.request.Request(url, headers={"User-Agent": "AInyhederRedaktoer/1.0"})
-    with urllib.request.build_opener(OffentligRedirect()).open(req, timeout=15) as response:
+    try:
+        response = urllib.request.build_opener(OffentligRedirect()).open(req, timeout=15)
+    except urllib.error.HTTPError as fejl:
+        registrer(url, fejl)
+        raise
+    with response:
         if "html" not in response.headers.get("Content-Type", "").lower():
             raise ValueError("Kilden er ikke HTML")
         raw = response.read(1_500_001)
@@ -193,7 +203,7 @@ def openai_kald(noegle, model, messages, tools, *, thinking=None, timeout=DEEPSE
             items.append({"role": role, "content": message.get("content") or ""})
     response_tools = [{"type": "function", **tool["function"]} for tool in tools]
     body = {"model": model, "input": items, "tools": response_tools,
-            "tool_choice": "auto", "max_output_tokens": 32768, "store": False,
+            "tool_choice": "required", "max_output_tokens": 32768, "store": False,
             **({"reasoning": {"effort": validate_thinking(model, thinking)}} if thinking else {})}
     request = urllib.request.Request("https://api.openai.com/v1/responses",
               data=json.dumps(body, ensure_ascii=False).encode(),

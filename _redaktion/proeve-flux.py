@@ -115,3 +115,16 @@ with tempfile.TemporaryDirectory() as folder, ExitStack() as stack:
     c.lav_billeder(articles, nu=nu)
     assert api.call_count == 2
 print('OK: Alle seks historier, portioner, motivbudget, indhentning og genbrug')
+
+# Udbyderfejl viser kun kategorier og koder, aldrig prompts eller tokens.
+from urllib.error import HTTPError
+from io import BytesIO
+from _redaktion.billedfejl import BilledAPIError
+with patch.dict(os.environ,{'CLOUDFLARE_AI_TOKEN':'private-token','CLOUDFLARE_ACCOUNT_ID':'a'*32}), patch.object(c,'hent_url',side_effect=HTTPError('https://example.org',400,'Bad Request',{},BytesIO(json.dumps({'errors':[{'code':5006,'message':'Prompt length exceeds maximum; private-token private-prompt'}]}).encode()))):
+    try:
+        c.lav_flux_billede('private-prompt')
+        raise AssertionError('Fejl blev accepteret')
+    except BilledAPIError as error:
+        assert error.details=={'http_status':400,'koder':[5006],'kategori':'promptlaengde'}
+        assert 'private' not in str(error)
+print('OK: Cloudflare-fejl er præcise uden private data')

@@ -39,6 +39,8 @@ async function mount(data=real,{hash='',blockedStorage=false,fail=false,now=test
   for(const url of ['javascript:alert(1)','data:text/html,test','//evil.example','http://[',''])ok(api.safeUrl(url)==='','Usikkert link afvises: '+url);
   for(const url of ['../secrets','/other.html','data/img/../../secret','https://evil.example/x.jpg'])ok(api.safeUrl(url,true)==='','Ugyldig lokal sti afvises');
   ok(api.escapeHtml('<img onerror="x">').includes('&lt;'),'HTML escapes');
+  const releases=[{link:'https://docs.x.ai/developers/release-notes#voice',titel:'A new voice model'},{link:'https://docs.x.ai/developers/release-notes#coding',titel:'A distinct coding release'}];
+  ok(api.uniqueStories(releases).length===2,'Forskellige xAI-releaseankre er forskellige begivenheder');
   const sunoFixture=JSON.parse(fs.readFileSync(path.join(repo,'_redaktion/fixtures/suno-v6.json'),'utf8')).map(completed);
   const sunoTime=Date.parse('2026-09-11T12:00:00Z');
   const oneSuno=api.uniqueStories(sunoFixture);

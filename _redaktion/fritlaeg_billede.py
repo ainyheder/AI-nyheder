@@ -80,8 +80,9 @@ def fritlaeg(source, destination, session=None, progress=None):
 def main(argv=None):
     import sys
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('original', type=Path)
-    parser.add_argument('output', type=Path)
+    parser.add_argument('original', type=Path, nargs='?')
+    parser.add_argument('output', type=Path, nargs='?')
+    parser.add_argument('--klargoer-model', action='store_true')
     parser.add_argument('--status-fil', type=Path)
     args = parser.parse_args(argv)
     status = {'trin': 'start'}
@@ -98,7 +99,12 @@ def main(argv=None):
         print('\nCUTOUT_STAGE=' + stage, flush=True)
 
     try:
-        fritlaeg(args.original, args.output, progress=progress)
+        if args.klargoer_model:
+            klargoer_model(progress)
+        else:
+            if args.original is None or args.output is None:
+                parser.error('original og output kræves ved fritlægning')
+            fritlaeg(args.original, args.output, progress=progress)
     except (Exception, SystemExit) as exc:
         # En separat statusfil kan ikke blive opslugt af en download-progressbar.
         # Ingen fejltekst, request-data, headers eller nøgler kopieres til loggen.

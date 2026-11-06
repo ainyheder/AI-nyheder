@@ -68,8 +68,9 @@ der allerede modtages. GitHub bruger derfor også en ydre grænse på 95 minutte
 så en hængende proces kan stoppes med tid til at gemme Actions-cachen.
 Resuméer, vurderinger og billedmotiver bruger MiMo uden thinking; artikler og
 kildekontrol beholder det. Dubletkontrollen genbruges ved helt uændret input.
-Billeder laves løbende, højst otte pr. kørsel, og fritlægning får højst 45
-sekunder pr. nyt billede. Ved fejl beholdes originalbilledet.
+Billeder laves løbende, højst otte pr. kørsel, og fritlægningsmodellen klargøres særskilt før billedkøb. Fritlægning får højst 180
+sekunder pr. billede inden for trinnets tidsbudget. Egne originaler fra den aktuelle
+billedstil kan forsøges fritlagt igen uden et nyt billedkøb. Ved fejl beholdes originalbilledet.
 
 Mellemresultater og nye billeder gemmes i `_redaktion/.crawl-cache`, som er
 Git-ignoreret og ikke udgives. GitHub gendanner og gemmer mappen, også når
@@ -386,3 +387,10 @@ lægges i kladden og gemmes med den almindelige Gem-knap.
 Under **Indstillinger → Modeller & instrukser** kan du også vælge OpenAI-modeller til teksttrinene og forsideagenten, enkeltvis eller med **Skift alle tekstmodeller**. Eksisterende valg ændres ikke. Modelmenuen indeholder et udvalg, og flere GPT-model-ID'er kan tilføjes manuelt eller hentes med **Opdatér modelliste**. Adgang afhænger af din OpenAI-konto og modellens understøttelse af tekst og værktøjskald. For GPT-6.1 Terra, GPT-6.1 Sol, GPT-6 Astra, GPT-6 Sol og GPT-6 Luna kan ræsonnement vælges pr. trin; standarden bruges, hvis der ikke vælges et niveau.
 
 Tilføj `OPENAI_API_KEY` som repository secret på GitHub; modelopdatering, crawler og nyhedsbrev får derefter adgang til nøglen. Ved lokal kørsel sættes samme miljøvariabel lokalt. Et valgt OpenAI-trin falder tilbage til den daglige model ved manglende nøgle eller API-fejl. Brug af OpenAI API kan medføre udgifter.
+
+Ved xAI HTTP 403 kan crawleren bruge den officielle releaseoversigt i
+`docs.x.ai/developers/release-notes`. De daterede opdateringer får separate
+links og kildetekster; de dækker API- og modelnyheder. Browserudfordringer på
+OpenAI-artikelsider registreres fælles under en kørsel, så de samme blokerede
+artikelsider ikke hentes igen for hver kandidat. Næste kørsel prøver igen.
+Feedets korte resumé bruges fortsat ikke som erstatning for en fuld kilde.

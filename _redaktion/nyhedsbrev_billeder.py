@@ -10,6 +10,7 @@ import sys
 import tempfile
 from urllib.parse import urlsplit
 from urllib.error import HTTPError
+from _redaktion.billedfejl import BilledAPIError
 
 ROOT = Path(__file__).resolve().parents[1]
 MODEL = '@cf/black-forest-labs/flux-2-klein-4b'
@@ -116,6 +117,10 @@ def generate_png(motif):
     prompt = (ROOT / 'opsaetning/nyhedsbrev-billedprompt.md').read_text()
     try:
         raw = crawler.lav_flux_billede(crawler.billedprompt(motif, prompt))
+    except BilledAPIError as exc:
+        error = ImageProviderError('billedgenerering', 'Cloudflare', exc.details['http_status'])
+        error.details.update(exc.details)
+        raise error from None
     except HTTPError as exc:
         raise ImageProviderError('billedgenerering', 'Cloudflare', exc.code) from None
     return cutout_png(raw)

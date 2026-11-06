@@ -68,7 +68,8 @@ jobs:
         uses: actions/cache@v6.1.0
         with:
           path: ${{ env.U2NET_HOME }}
-          key: birefnet-general-v1-${{ runner.os }}
+          key: birefnet-general-v2-${{ runner.os }}
+          restore-keys: birefnet-general-v1-${{ runner.os }}
 
       - name: Installér baggrundsfjernelse
         continue-on-error: true # Crawleren bruger originalen, hvis værktøjet mangler.
@@ -93,6 +94,11 @@ jobs:
           python3 _redaktion/proeve-uge.py
           python3 _redaktion/proeve-nyhedsbrev.py
           python3 _redaktion/proeve-crawl-drift.py
+
+      - name: Klargør fritlægningsmodel før nye billeder
+        continue-on-error: true
+        timeout-minutes: 10
+        run: python3 _redaktion/fritlaeg_billede.py --klargoer-model
 
       - name: Genoptag ufærdigt artikelarbejde
         uses: actions/cache/restore@v6.1.0

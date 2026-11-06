@@ -33,6 +33,22 @@ class Fritlaegning(unittest.TestCase):
         ImageDraw.Draw(image).rectangle(rect,fill=(200,240,80,255))
         return image
 
+    def test_klargoering_kan_downloades_uden_at_koebe_eller_behandle_billeder(self):
+        with patch.object(f,'klargoer_model') as prepare, patch.object(f,'fritlaeg') as image:
+            self.assertEqual(f.main(['--klargoer-model']),0)
+            prepare.assert_called_once();image.assert_not_called()
+
+    def test_fritlaegning_af_betalt_original_genbruger_bytes_og_har_180s_budget(self):
+        with patch.object(c,'_gem_billede') as save, patch.object(c,'_drift') as drift, \
+             patch('subprocess.run',side_effect=subprocess.TimeoutExpired('test',180)) as run:
+            drift.tid.return_value=173
+            self.assertEqual(c._gem_artikelbillede(b'',self.path,gem_original=False),self.path)
+            drift.tid.assert_called_with(180)
+            self.assertEqual(run.call_args.kwargs['timeout'],173)
+            self.assertIn('--status-fil',run.call_args.args[0])
+            self.assertEqual(self.path.read_bytes(),self.bytes)
+            save.assert_not_called()
+
     def test_grove_maskefejl_afvises(self):
         for rect in [(0,0,1,1),(0,0,199,99),(70,45,100,50)]:
             with self.assertRaises(ValueError): kontroller_maske(self.mask(rect))

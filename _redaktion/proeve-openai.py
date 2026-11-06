@@ -45,6 +45,7 @@ with patch.object(redaktoer_agent.urllib.request, 'urlopen', return_value=Respon
     body = json.loads(req.data)
     assert req.full_url == 'https://api.openai.com/v1/responses'
     assert body['tools'][0]['type'] == 'function' and body['reasoning']['effort'] == 'high'
+    assert body['tool_choice'] == 'required'
     messages = [*messages, reply, {'role':'tool', 'tool_call_id':'call_1', 'content':'{}'}]
     redaktoer_agent.openai_kald('test-key', 'gpt-6.1-terra', messages, redaktoer_agent.TOOLS, session=session)
     sent = json.loads(request.call_args.args[0].data)['input']

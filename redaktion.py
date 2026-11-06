@@ -250,7 +250,8 @@ def historie_noegler(a):
                             if not k.lower().startswith("utm_")
                             and k.lower() not in ("fbclid", "gclid", "mc_cid", "mc_eid"))
             noegler.add("url:" + u.netloc.lower().removeprefix("www.")
-                        + (u.path.rstrip("/") or "/") + "?" + urlencode(params))
+                        + (u.path.rstrip("/") or "/") + "?" + urlencode(params)
+                        + ('#' + u.fragment if u.hostname == 'docs.x.ai' and u.path.rstrip('/') == '/developers/release-notes' and u.fragment else ''))
         except (ValueError, TypeError):
             continue
     for titel in (a.get("titel"), a.get("rubrik")):

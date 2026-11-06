@@ -78,7 +78,8 @@
       if (!item || !safeUrl(item.link)) continue;
       const u = new URL(item.link);
       const params = [...u.searchParams].filter(([k])=>!k.toLowerCase().startsWith('utm_')&&!['fbclid','gclid','mc_cid','mc_eid'].includes(k.toLowerCase())).sort(([a,b],[c,d])=>a<c?-1:a>c?1:b<d?-1:b>d?1:0);
-      keys.add('url:'+u.host.replace(/^www\./,'')+(u.pathname.replace(/\/+$/,'')||'/')+'?'+new URLSearchParams(params));
+      const entry=u.hostname==='docs.x.ai'&&u.pathname.replace(/\/+$/,'')==='/developers/release-notes'?u.hash:'';
+      keys.add('url:'+u.host.replace(/^www\./,'')+(u.pathname.replace(/\/+$/,'')||'/')+'?'+new URLSearchParams(params)+entry);
     }
     for (const text of [a.titel,a.rubrik]) {
       if (typeof text !== 'string') continue;
