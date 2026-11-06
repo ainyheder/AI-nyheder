@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-06T16:30:47.131762+00:00",
+ "genereret": "2026-11-06T20:48:34.839311+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -702,7 +702,7 @@ window.KOMMANDO_DATA = {
  "modelkatalog": {
   "udbydere": {
    "DeepSeek": {
-    "opdateret": "2026-09-21T07:58:52.671472+00:00",
+    "opdateret": "2026-11-06T20:48:33.446129+00:00",
     "status": "Hentet",
     "modeller": [
      "deepseek-flash",
@@ -710,7 +710,7 @@ window.KOMMANDO_DATA = {
     ]
    },
    "Gemini": {
-    "opdateret": "2026-09-21T07:58:52.671472+00:00",
+    "opdateret": "2026-11-06T20:48:33.446129+00:00",
     "status": "Hentet",
     "modeller": [
      "gemini-2.5-computer-use-preview-10-2025",
@@ -737,12 +737,26 @@ window.KOMMANDO_DATA = {
      "gemini-3.6-flash",
      "gemini-3.7-flash",
      "gemini-3.8-flash",
+     "gemini-3.8-flash-lite-tts",
+     "gemini-3.8-flash-tts",
+     "gemini-4-argon",
      "gemini-flash-latest",
      "gemini-flash-lite-latest",
+     "gemini-nano-banana-2.1",
      "gemini-omni-1.1-flash",
+     "gemini-omni-1.2-flash",
      "gemini-omni-flash-preview",
      "gemini-pro-latest",
      "gemini-robotics-er-2-preview"
+    ]
+   },
+   "Xiaomi": {
+    "opdateret": "2026-11-06T20:48:33.446129+00:00",
+    "status": "Hentet",
+    "modeller": [
+     "mimo-v2.6-flash",
+     "mimo-v2.6-pro",
+     "mimo-v2.6-pro-ultraspeed"
     ]
    }
   }
