@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-06T20:48:34.839311+00:00",
+ "genereret": "2026-11-06T21:07:58.201431+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -598,6 +598,47 @@ window.KOMMANDO_DATA = {
   "verified": "2026-09-22",
   "rules": [
    {
+    "pattern": "^gpt-6\\.1-terra$",
+    "kind": "openai",
+    "levels": [
+     "none",
+     "low",
+     "medium",
+     "high",
+     "xhigh",
+     "max"
+    ],
+    "default": "medium",
+    "source": "https://developers.openai.com/api/docs/models/gpt-6.1-terra"
+   },
+   {
+    "pattern": "^gpt-6\\.1-sol$|^gpt-6-astra$",
+    "kind": "openai",
+    "levels": [
+     "low",
+     "medium",
+     "high",
+     "xhigh",
+     "max"
+    ],
+    "default": "medium",
+    "source": "https://developers.openai.com/api/docs/guides/reasoning"
+   },
+   {
+    "pattern": "^gpt-6-(sol|luna)$",
+    "kind": "openai",
+    "levels": [
+     "none",
+     "low",
+     "medium",
+     "high",
+     "xhigh",
+     "max"
+    ],
+    "default": "medium",
+    "source": "https://developers.openai.com/api/docs/guides/deployment-checklist"
+   },
+   {
     "pattern": "^deepseek-(flash|pro|v4-flash|v4-pro)$",
     "kind": "deepseek",
     "levels": [
@@ -702,7 +743,7 @@ window.KOMMANDO_DATA = {
  "modelkatalog": {
   "udbydere": {
    "DeepSeek": {
-    "opdateret": "2026-11-06T20:48:33.446129+00:00",
+    "opdateret": "2026-11-06T21:07:56.118670+00:00",
     "status": "Hentet",
     "modeller": [
      "deepseek-flash",
@@ -710,7 +751,7 @@ window.KOMMANDO_DATA = {
     ]
    },
    "Gemini": {
-    "opdateret": "2026-11-06T20:48:33.446129+00:00",
+    "opdateret": "2026-11-06T21:07:56.118670+00:00",
     "status": "Hentet",
     "modeller": [
      "gemini-2.5-computer-use-preview-10-2025",
@@ -751,12 +792,65 @@ window.KOMMANDO_DATA = {
     ]
    },
    "Xiaomi": {
-    "opdateret": "2026-11-06T20:48:33.446129+00:00",
+    "opdateret": "2026-11-06T21:07:56.118670+00:00",
     "status": "Hentet",
     "modeller": [
      "mimo-v2.6-flash",
      "mimo-v2.6-pro",
      "mimo-v2.6-pro-ultraspeed"
+    ]
+   },
+   "OpenAI": {
+    "opdateret": "2026-11-06T21:07:56.118670+00:00",
+    "status": "Hentet",
+    "modeller": [
+     "gpt-4.1",
+     "gpt-4.1-2025-04-14",
+     "gpt-4.1-mini",
+     "gpt-4.1-mini-2025-04-14",
+     "gpt-4o",
+     "gpt-4o-2024-08-06",
+     "gpt-4o-2024-11-20",
+     "gpt-4o-mini",
+     "gpt-4o-mini-2024-07-18",
+     "gpt-5",
+     "gpt-5-2025-08-07",
+     "gpt-5-mini",
+     "gpt-5-mini-2025-08-07",
+     "gpt-5-nano",
+     "gpt-5-nano-2025-08-07",
+     "gpt-5-pro",
+     "gpt-5-pro-2025-10-06",
+     "gpt-5-search-api",
+     "gpt-5-search-api-2025-10-14",
+     "gpt-5.1",
+     "gpt-5.1-2025-11-13",
+     "gpt-5.2",
+     "gpt-5.2-2025-12-11",
+     "gpt-5.2-pro",
+     "gpt-5.2-pro-2025-12-11",
+     "gpt-5.3-codex",
+     "gpt-5.4",
+     "gpt-5.4-2026-03-05",
+     "gpt-5.4-mini",
+     "gpt-5.4-mini-2026-03-17",
+     "gpt-5.4-nano",
+     "gpt-5.4-nano-2026-03-17",
+     "gpt-5.4-pro",
+     "gpt-5.4-pro-2026-03-05",
+     "gpt-5.5",
+     "gpt-5.5-2026-04-23",
+     "gpt-5.5-pro",
+     "gpt-5.5-pro-2026-04-23",
+     "gpt-5.6-luna",
+     "gpt-5.6-sol",
+     "gpt-5.6-terra",
+     "gpt-6-astra",
+     "gpt-6-luna",
+     "gpt-6-sol",
+     "gpt-6.1-sol",
+     "gpt-6.1-terra",
+     "gpt-live-1"
     ]
    }
   }
