@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-06T21:56:57.194104+00:00",
- "artikler_i_alt": 140,
+ "opdateret": "2026-11-06T22:08:02.243687+00:00",
+ "artikler_i_alt": 141,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -394,7 +394,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 8,
    "seneste": [
     {
-     "rubrik": "USA's vælgere stemmer for datacenterrestriktioner",
+     "rubrik": "Amerikanske vælgere stemmer for datacenterrestriktioner",
      "dato": "",
      "foerst_set": "2026-11-06T21:09:53.915130+00:00",
      "link": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/",
@@ -617,13 +617,22 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 33,
+   "i_listen": 34,
    "som_ekstra": 15,
    "seneste": [
     {
-     "rubrik": "Meta's Muse bygger spaces ud fra en beskrivelse",
+     "rubrik": "OpenAI vil droppe hemmeligholdelsesaftaler med myndigheder",
      "dato": "",
-     "foerst_set": "2026-11-06T20:49:47",
+     "foerst_set": "2026-11-06T21:09:53.915130+00:00",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI dropper NDA'er i aftaler om datacentre"
+    },
+    {
+     "rubrik": "Meta lader Muse bygge personlige app-områder",
+     "dato": "",
+     "foerst_set": "2026-11-06T21:09:53",
      "link": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
      "side": "",
      "hvor": "under",
@@ -720,15 +729,6 @@ window.KILDER_STATUS = {
      "under": "Claude får forbud mod at genskabe spil"
     },
     {
-     "rubrik": "Gemma 4 svarede fra Googles satellit",
-     "dato": "",
-     "foerst_set": "2026-10-30T21:00:09",
-     "link": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
-     "side": "",
-     "hvor": "under",
-     "under": "Googles satellit digter med Gemma 4 i kredsløb"
-    },
-    {
      "rubrik": "Hinge-profil fravælger dates, der bruger AI",
      "dato": "2026-11-06T12:00:00",
      "foerst_set": "2026-11-06T21:09:53",
@@ -761,6 +761,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-06T07:16:54",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
      "side": "artikel/448caf20b90713b4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI dropper NDA'er i aftaler om datacentre",
+     "dato": "2026-11-05T19:37:56",
+     "foerst_set": "2026-11-06T07:16:54",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda",
+     "side": "artikel/3323df791b8bcd34.html",
      "hvor": "forside",
      "under": ""
     },
@@ -824,15 +833,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-05T01:00:33",
      "link": "https://www.theverge.com/tech/1026787/att-gemini-for-home-connected-life-security-system",
      "side": "artikel/94f88b800358a11e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Data centre taber midtvejsvalget i USA",
-     "dato": "2026-11-04T16:05:39",
-     "foerst_set": "2026-11-04T19:59:08",
-     "link": "https://www.theverge.com/policy/1026365/data-centers-midterms-results",
-     "side": "artikel/c62a7e00b4c97f38.html",
      "hvor": "forside",
      "under": ""
     }

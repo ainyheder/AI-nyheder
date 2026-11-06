@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-11-06T21:56:57.194104+00:00",
+  "opdateret": "2026-11-06T22:08:02.243687+00:00",
   "status": "reserve",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
@@ -8,26 +8,24 @@
     "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
     "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
   ],
-  "input_fingerprint": "a1c16982fd460bc2",
+  "input_fingerprint": "e861108e499c1e32",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "kontrolproblemer": [
-    "Udgaven og anbefalingerne er tomme: Der er ingen færdige hovedhistorier at kontrollere eller udgive.",
-    "Der er kun vedlagt kandidatoversigt og resuméer, ikke fulde kilder, skriveopgaver eller tidligere forsider; faktatjek og kontrol af genvalg kan derfor ikke gennemføres.",
-    "Kandidatoversigten indeholder dubletter, som skal samles ved udvælgelse: blandt andet GPT-6 Cyber (c84a4cb62f0462d2 og 14e90e72d3401ddf) og samme Hugging Face-podcast (efff75d2c4af86e8 og 5112f3d519822a57)."
+    "Woof-resuméet fastslår, at demoen ikke sender tekst til en skytjeneste. Kilden dokumenterer browserdrift og gengiver Underdogs påstand om, at modellen kan køre offline, men dokumenterer ikke, at demoen aldrig sender tekst ud. Formuleringen skal kvalificeres."
   ],
   "modelkald": 6,
-  "kildehentninger": 0,
+  "kildehentninger": 2,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -39,7 +37,16 @@
       "fejl": null
     }
   ],
-  "kildegrundlag": [],
+  "kildegrundlag": [
+    {
+      "link": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+      "grundlag": "kildetekst"
+    }
+  ],
   "udgivet_udvalg": [
     "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
     "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
