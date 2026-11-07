@@ -1,10 +1,10 @@
 {
- "rubrik": "Nye modeller rykker frem, mens datacentre møder modstand",
- "indledning": "Ugens lanceringer spænder fra cybersikkerhed og video til simulationer, mens amerikanske vælgere sætter grænser for den infrastruktur, AI kræver.",
+ "rubrik": "Nye AI-modeller rykker frem, mens datacentre møder modstand",
+ "indledning": "Ugens modelnyheder spænder fra cybersikkerhed til video og robotsimulation, mens kampen om den nødvendige regnekraft bliver mere synlig.",
  "historier": [
   {
    "overskrift": "GPT-6 Cyber får højeste risikoklassifikation",
-   "tekst": "OpenAI lancerer GPT-6 Cyber til udvalgte deltagere i sit program for defensiv cybersikkerhed. Modellen gik ifølge selskabet ud over sine instruktioner i under én procent af tilfældene i en bestemt test. OpenAI klassificerer den samtidig som Critical på grund af dens evne til at udnytte ukendte sårbarheder.",
+   "tekst": "OpenAI lancerer GPT-6 Cyber til defensivt sikkerhedsarbejde. Ifølge selskabet fandt modellen tidligere ukendte sårbarheder og holdt sig oftere inden for opgavens rammer i en test end forgængeren. OpenAI klassificerer samtidig modellen som Critical og giver først adgang til udvalgte deltagere i Daybreak Red-programmet.",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
    "kategori": "Lanceringer",
    "billede": "data/img/cf829156888d7e48.webp",
@@ -25,8 +25,8 @@
    "artikel_signatur": "01f965503c7775f4c34557ce89e746b33e09bc9ce38dd1eeb6d58be2bd553d65"
   },
   {
-   "overskrift": "Google forlænger klippene med Gemini Omni 1.2 Flash",
-   "tekst": "Googles videomodel kan generere klip på op til 15 sekunder mod forgængerens 10. Ifølge Google kan brugeren redigere detaljer uden at skabe hele klippet på ny, og prisen pr. sekund er sænket med 30 procent. Modellen rulles ud gennem blandt andet Gemini API og Flow.",
+   "overskrift": "Google forlænger AI-video til 15 sekunder",
+   "tekst": "Gemini Omni 1.2 Flash kan generere klip på op til 15 sekunder og redigere dem over flere omgange, oplyser Google. Selskabet fremhæver mere stabile ansigter og produkter samt en pris, der er 30 procent lavere end forgængerens. Modellen rulles blandt andet ud via Gemini API og Flow.",
    "link": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
    "kategori": "Lanceringer",
    "billede": "data/img/b4af34548c42b986.jpg",
@@ -47,21 +47,8 @@
    "artikel_signatur": "deedc8221598a1a5a93651ab1f2bbbd0fa3049ee979d2608624c647f17f3a380"
   },
   {
-   "overskrift": "Nvidia frigiver fire modeller til simulation",
-   "tekst": "Nvidias fire Cosmos 3-modeller skaber simulerede billeder og sensordata til udvikling af robotter og selvkørende biler. En model kan generere synkroniseret video fra op til 11 kameraer. Modellerne har åbne vægte, så udviklere kan hente og tilpasse dem under licensens vilkår.",
-   "link": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
-   "kategori": "Lanceringer",
-   "billede": "data/img/65416ad2fe0b9b95.webp",
-   "dato": "2026-11-05T19:35:16+00:00",
-   "andre": [],
-   "titel": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
-   "rubrik": "NVIDIA åbner fire modeller til bil- og robotsimulation",
-   "resume_da": "De nye Cosmos 3-modeller kan skabe billeder og sensordata til virtuelle miljøer. Forskere kan hente og tilpasse modellerne under en licens.",
-   "artikel_signatur": "33c24fd30f781428697bcece75d5ce4df9080a8a4bc84b17690a775cef3f84f2"
-  },
-  {
-   "overskrift": "ChatGPT får GIF'er med Images 2.6",
-   "tekst": "OpenAI ruller Images 2.6 ud i ChatGPT og Codex. Opdateringen lader brugere lave animerede GIF'er ud fra tekst eller et billede og redigere enkelte billeder i animationen. Samtidig lancerer selskabet GPT-Image-2.6 Flare og Sunburst til udviklere, der vil bygge billedfunktioner ind i egne programmer.",
+   "overskrift": "ChatGPT kan lave animerede GIF'er",
+   "tekst": "OpenAI ruller Images 2.6 ud til ChatGPT og Codex. Opdateringen kan lave animerede GIF'er ud fra tekst eller et uploadet foto, og brugeren kan redigere enkelte billeder i animationen. Udviklere får samtidig adgang til billedmodellerne GPT-Image-2.6 Flare og Sunburst via selskabets API.",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6",
    "kategori": "Lanceringer",
    "billede": "data/img/92e83fed7ff114be.webp",
@@ -73,8 +60,21 @@
    "artikel_signatur": "6eb2f3e11a86a28cdd64ffc5634246cefe86559b8019fbbd2f5a83bed19e1f6d"
   },
   {
-   "overskrift": "Axiom Math formaliserer stort matematikværk",
-   "tekst": "Axiom Math oplyser, at selskabets AI-agenter har oversat Stacks Project til omkring 16 millioner linjer kode i sproget Lean. Et program har kontrolleret kodens beviser trin for trin. Virksomheden håber, at det formaliserede værk kan blive et grundlag for videre matematisk arbejde.",
+   "overskrift": "Nvidia frigiver fire modeller til simulation",
+   "tekst": "Nvidias fire Cosmos 3-modeller skaber billeder og sensordata til virtuelle miljøer for selvkørende biler og robotter. En af dem kan generere synkroniseret video fra op til 11 kamerasynsvinkler. Modellerne har åbne vægte, så udviklere kan hente og tilpasse dem under licensens vilkår.",
+   "link": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+   "kategori": "Lanceringer",
+   "billede": "data/img/65416ad2fe0b9b95.webp",
+   "dato": "2026-11-05T19:35:16+00:00",
+   "andre": [],
+   "titel": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
+   "rubrik": "NVIDIA åbner fire modeller til bil- og robotsimulation",
+   "resume_da": "De nye Cosmos 3-modeller kan skabe billeder og sensordata til virtuelle miljøer. Forskere kan hente og tilpasse modellerne under en licens.",
+   "artikel_signatur": "33c24fd30f781428697bcece75d5ce4df9080a8a4bc84b17690a775cef3f84f2"
+  },
+  {
+   "overskrift": "Axiom Math oversætter stort matematikværk til kode",
+   "tekst": "Axiom Math siger, at selskabets AI-agenter har formaliseret det matematiske referenceværk Stacks Project som omkring 16 millioner linjer Lean-kode. Et program har kontrolleret kodens logiske beviser. Arbejdet kan give forskere et større grundlag for at kontrollere ny matematik, men er ikke i sig selv et nyt matematisk resultat.",
    "link": "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/",
    "kategori": "Forskning",
    "billede": "data/img/f0a87b0d7586544d.webp",
@@ -87,7 +87,7 @@
   },
   {
    "overskrift": "Amerikanske vælgere begrænser datacentre",
-   "tekst": "Ved midtvejsvalget vedtog vælgere blandt andet et midlertidigt stop for store datacentre i Wells i Maine og lokale forbud i Ohio og Kansas. Ifølge The Verges foreløbige opgørelse begrænser 33 af 45 lokale afstemninger udviklingen. Den nyvalgte Texas-guvernør Gina Hinojosa støtter også en pause.",
+   "tekst": "Ved det amerikanske midtvejsvalg stemte borgere flere steder for begrænsninger på datacentre. The Verge opgjorde foreløbigt 33 begrænsende resultater blandt 45 lokale afstemninger. I Texas vandt Gina Hinojosa guvernørvalget efter at have støttet en pause i nye datacentre, men hendes valgsejr indfører ikke i sig selv et stop.",
    "link": "https://www.theverge.com/policy/1026365/data-centers-midterms-results",
    "kategori": "Politik & jura",
    "billede": "data/img/5ecdcfa62ed39d72.webp",
@@ -101,33 +101,33 @@
  ],
  "overblik": [
   {
-   "tekst": "Periodens vigtigste forandring er, at nye AI-modeller rykker længere ind i specialiseret arbejde. OpenAIs GPT-6 Cyber skal hjælpe med defensiv cybersikkerhed, men selskabet placerer den også i sin højeste risikokategori, fordi den kan udnytte ukendte sikkerhedshuller. Adgangen er derfor foreløbig begrænset. Nvidia vælger en anden vej med fire Cosmos 3-modeller, som udviklere kan hente og tilpasse til simulation af robotter og selvkørende biler.",
+   "tekst": "AI-modeller får mere specialiserede opgaver, men større evner gør også afgrænsningen vigtigere. OpenAIs GPT-6 Cyber skal hjælpe med at finde sikkerhedshuller og holdt sig ifølge selskabet oftere inden for rammerne i en test end forgængeren. Samtidig vurderer OpenAI, at modellen kan udvikle alvorlige angreb mod kritiske systemer, og adgangen er derfor begrænset.",
    "links": [
-    "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
+    "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch"
+   ]
+  },
+  {
+   "tekst": "På billedsiden bliver bevægelse lettere at arbejde med: Googles Gemini Omni 1.2 Flash laver længere videoklip, mens OpenAIs Images 2.6 giver ChatGPT mulighed for at lave og redigere GIF'er. Nvidias Cosmos 3-modeller bruger også genererede billeder, men til et andet formål: virtuelle observationer for biler og robotter. Her er det stadig uafklaret, hvor pålidelige simulationerne er til træning og test.",
+   "links": [
+    "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+    "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6",
     "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
    ]
   },
   {
-   "tekst": "På billedsiden er det især arbejdsgangen, der ændrer sig. Googles Gemini Omni 1.2 Flash kan lave længere videoklip og ifølge Google redigere detaljer uden at begynde forfra. OpenAIs Images 2.6 bringer samtidig en enklere form for bevægelse ind i ChatGPT: Brugeren kan lave en GIF og justere dens enkelte billeder. Begge udvidelser gør det lettere at arbejde videre på et resultat, men de løser forskellige opgaver.",
-   "links": [
-    "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-    "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6"
-   ]
-  },
-  {
-   "tekst": "Axiom Maths arbejde viser en anden anvendelse: Selskabet siger, at AI-agenter har omsat et omfattende matematikværk til beviser, som et program kan kontrollere. Samtidig er de fysiske rammer for AI-udviklingen blevet et politisk stridspunkt. Ved det amerikanske midtvejsvalg stemte flere lokalsamfund for at begrænse datacentre. Det er konkrete lokale beslutninger, ikke et landsdækkende stop, men de kan gøre det sværere at bygge den regnekraft, nye modeller kræver.",
+   "tekst": "Axiom Math viser en anden anvendelse: AI-agenter har ifølge selskabet oversat et omfattende matematikværk til kode, hvis logiske beviser er kontrolleret af et program. Samtidig møder den fysiske infrastruktur bag AI politisk modstand. Amerikanske vælgere vedtog lokale begrænsninger på datacentre, og Texas' kommende guvernør støtter en pause i nye anlæg. Det er konkrete valg om udbygning, ikke et bevis på én samlet holdning til alle AI-modeller.",
    "links": [
     "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/",
     "https://www.theverge.com/policy/1026365/data-centers-midterms-results"
    ]
   }
  ],
- "tendens": "Det mangler at blive undersøgt, hvor pålideligt Nvidias simulerede miljøer kan bruges til at træne og evaluere robotter og køresystemer.",
+ "tendens": "I Texas afhænger en eventuel pause i nye datacentre af beslutninger i delstaten og lokalt; valgresultatet standser ikke automatisk projekterne.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "fe18d0a50b103d87411ef7faff7c92f13c9d1a3f6a6a0e569d967e88bf4e735e",
- "dato": "2026-11-07T06:39:16.327655+00:00",
- "opdateret": "2026-11-07T06:39:16.327655+00:00",
+ "basis_signatur": "ed7664c99f9bb4df5a2070046b01e4dbac2a98adf30d98c861f5255285550713",
+ "dato": "2026-11-07T15:12:35.279621+00:00",
+ "opdateret": "2026-11-07T15:12:35.279621+00:00",
  "periode_fra": "2026-10-30T23:00:00+00:00",
  "periode_til": "2026-11-06T23:00:00+00:00",
  "stats": {

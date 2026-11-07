@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-07T06:30:44.469330+00:00",
- "artikler_i_alt": 121,
+ "opdateret": "2026-11-07T15:04:23.260548+00:00",
+ "artikler_i_alt": 122,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -476,20 +476,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Meta lader Muse bygge dit projektrum",
-     "dato": "2026-11-06T18:44:20",
-     "foerst_set": "2026-11-06T20:49:47",
-     "link": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
-     "side": "artikel/dcfedcc7440be1b6.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Censys finder over 800 åbne Artex-værktøjer",
      "dato": "2026-11-06T18:44:38",
      "foerst_set": "2026-11-06T20:49:47",
      "link": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
      "side": "artikel/37d75a0fa3790bf4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Meta lader Muse bygge dit projektrum",
+     "dato": "2026-11-06T18:44:20",
+     "foerst_set": "2026-11-06T20:49:47",
+     "link": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
+     "side": "artikel/dcfedcc7440be1b6.html",
      "hvor": "forside",
      "under": ""
     },
@@ -587,7 +587,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 26,
+   "i_listen": 27,
    "som_ekstra": 13,
    "seneste": [
     {
@@ -699,6 +699,15 @@ window.KILDER_STATUS = {
      "under": "Google Gemini redigerer filer i chatten"
     },
     {
+     "rubrik": "Forskere: AI sætter fart på Anthropics modeludvikling",
+     "dato": "2026-11-07T07:30:00",
+     "foerst_set": "2026-11-07T15:04:23",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
+     "side": "artikel/d36485a6e1dbd817.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Kina skal have rekrutteret leder til Nvidia-spionage",
      "dato": "2026-11-06T18:00:44",
      "foerst_set": "2026-11-07T06:30:44",
@@ -745,7 +754,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "OpenAI dropper NDA'er i aftaler om datacentre",
-     "dato": "2026-11-05T19:37:56",
+     "dato": "2026-11-06T00:37:56",
      "foerst_set": "2026-11-06T07:16:54",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda",
      "side": "artikel/3323df791b8bcd34.html",
@@ -794,15 +803,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-05T22:13:13",
      "link": "https://www.theverge.com/podcast/1024438/willy-shih-supply-chain-ai-chips-ram-where-does-my-stuff-come-from-book",
      "side": "artikel/c4575aebee2fe261.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Qualcomm vil hente 30 procent i datacentre",
-     "dato": "2026-11-04T22:42:15",
-     "foerst_set": "2026-11-05T01:00:33",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers",
-     "side": "artikel/f11302ecebb56fae.html",
      "hvor": "forside",
      "under": ""
     }
