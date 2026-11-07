@@ -1,6 +1,6 @@
 {
-  "opdateret": "2026-11-07T20:27:33.778172+00:00",
-  "status": "godkendt",
+  "opdateret": "2026-11-07T23:53:26.592859+00:00",
+  "status": "reserve",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
@@ -8,33 +8,11 @@
     "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
     "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/"
   ],
-  "input_fingerprint": "26e717b52cf1f68d",
-  "redaktionsnote": "Der er kun to læste kilder til rådighed i denne udgave. Woof genvælges åbent som en fortsat vigtig modelnyhed; der tilføjes ingen ulæste anbefalinger.",
-  "beslutninger": [
-    {
-      "id": "76d77f901fa07104",
-      "begrundelse": "Woof er en usædvanligt lille talemodel, der ifølge Underdog kan køre lokalt i browseren. Det er den vigtigste nyere modellancering blandt de læste kilder.",
-      "nyt_siden_sidst": "Woof har allerede været hovedhistorie to gange, senest i morges. Der er ikke dokumenteret en ny version siden; modellen genvælges, fordi den fortsat er den stærkeste belagte nyere modelnyhed.",
-      "skriveopgave": "Rubrik: »Woof laver tale i browseren med 32 MB«. Forklar demoens skrivemaskine og musikvælger, modellens størrelse og downloadmulighed i korte afsnit med konkrete mellemoverskrifter. Definér modelparametre, og gør klart, at lokal drift på de fleste enheder er virksomhedens påstand; der foreligger ingen uafhængig kvalitetstest her.",
-      "kilder": [
-        "76d77f901fa07104"
-      ],
-      "samme_historie": [],
-      "link": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
-      "rubrik": "Woof laver tale i browseren med 32 MB"
-    },
-    {
-      "id": "1ab28dde47a3074f",
-      "begrundelse": "The Verges praktiske afprøvning viser både en konkret ny anvendelse af AI i køkkenet og hvorfor brugeren bør kontrollere svarene.",
-      "nyt_siden_sidst": "Den nye test beskriver, hvordan NYT Cookings assistent tilpassede en kyllingeret, men også var tæt på at give et forkert råd om smør i en kage. Historien har ikke været på de tidligere forsider.",
-      "skriveopgave": "Rubrik: »AI reddede kyllingeretten – men var tæt på at ødelægge kagen«. Forklar med korte afsnit og konkrete mellemoverskrifter, hvordan assistenten tilpasser en opskrift uden at ændre originalen, og hvem der havde adgang ved lanceringen. Beskriv testens begrænsede omfang og adskil journalistens erfaring fra generelle kvalitetsudsagn; opfind ikke kagens detaljer.",
-      "kilder": [
-        "1ab28dde47a3074f"
-      ],
-      "samme_historie": [],
-      "link": "https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review",
-      "rubrik": "NYT Cooking reddede kyllingen, men truede kagen"
-    }
+  "input_fingerprint": "de2dc8692bd0d2f9",
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "kontrolproblemer": [
+    "Ingen hovedhistorie er fra de seneste 24 timer målt fra den nyeste kandidat 7. november kl. 15.43. Undersøg de nyere kandidater, herunder METR-undersøgelsen, før udvalget fastlægges.",
+    "Woof genvælges for fjerde gang uden en dokumenteret ny udvikling. Begrundelsen for, at den fortsat skal ligge øverst, bør vurderes mod de nyere kandidater."
   ],
   "modelkald": 6,
   "kildehentninger": 2,
@@ -66,12 +44,14 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review",
+      "link": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/"
+    "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+    "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
+    "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/"
   ],
-  "afventer_artikler": 71
+  "afventer_artikler": 72
 }
