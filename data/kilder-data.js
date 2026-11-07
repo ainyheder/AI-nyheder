@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-06T22:27:37.120546+00:00",
- "artikler_i_alt": 139,
+ "opdateret": "2026-11-07T06:30:44.469330+00:00",
+ "artikler_i_alt": 121,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -12,7 +12,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 8,
+   "i_listen": 7,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -77,25 +77,12 @@ window.KILDER_STATUS = {
      "side": "artikel/220278685f410a51.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Claude Haiku 5.5 kører 75 procent billigere",
-     "dato": "2026-10-07T00:00:00",
-     "foerst_set": "2026-10-07T21:31:02",
-     "link": "https://www.anthropic.com/claude-haiku-5-5",
-     "side": "artikel/2cf28a1a9302bc8a.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
      2
-    ],
-    [
-     "Simon Willison AI",
-     1
     ],
     [
      "The Verge AI",
@@ -157,8 +144,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 6,
-   "som_ekstra": 0,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "Google ruller Gemini 4 Argon bredt ud",
+     "dato": "",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
+    },
     {
      "rubrik": "Gemini Omni 1.2 Flash laver 15 sekunders klip",
      "dato": "2026-11-05T17:00:00",
@@ -217,7 +213,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google DeepMind",
-     2
+     3
     ],
     [
      "The Verge AI",
@@ -264,9 +260,19 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 0,
+   "i_listen": 1,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "NVIDIA åbner fire modeller til bil- og robotsimulation",
+     "dato": "2026-11-05T19:35:16",
+     "foerst_set": "2026-11-05T22:13:13",
+     "link": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+     "side": "artikel/84bace4b67d1c0f2.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   },
   {
@@ -280,17 +286,8 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 8,
-   "som_ekstra": 1,
+   "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "Claude Haiku 5.5 matcher GPT-6 Luna på pris",
-     "dato": "",
-     "foerst_set": "2026-10-07T21:31:02",
-     "link": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
-     "side": "",
-     "hvor": "under",
-     "under": "Claude Haiku 5.5 kører 75 procent billigere"
-    },
     {
      "rubrik": "Nilay Patel: AI-regningen er større end nytten",
      "dato": "2026-11-06T17:13:12",
@@ -364,12 +361,7 @@ window.KILDER_STATUS = {
      "under": ""
     }
    ],
-   "overlap": [
-    [
-     "Anthropic News",
-     1
-    ]
-   ]
+   "overlap": []
   },
   {
    "navn": "TechCrunch AI",
@@ -381,8 +373,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 59,
-   "som_ekstra": 8,
+   "i_listen": 51,
+   "som_ekstra": 7,
    "seneste": [
     {
      "rubrik": "Vælgere i USA stemmer for datacenterbegrænsninger",
@@ -448,15 +440,6 @@ window.KILDER_STATUS = {
      "under": "New York Times sagsøger Brave for AI-scraping"
     },
     {
-     "rubrik": "DoorDash: Kun få hundrede ordrer fra AI-agenter",
-     "dato": "",
-     "foerst_set": "2026-10-30T15:15:27",
-     "link": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/",
-     "side": "",
-     "hvor": "under",
-     "under": "DoorDash ser næsten ingen AI-agent-ordrer"
-    },
-    {
      "rubrik": "Anthropic afsætter fem procent af aktier til fond",
      "dato": "",
      "foerst_set": "2026-10-18T22:33:18",
@@ -475,11 +458,29 @@ window.KILDER_STATUS = {
      "under": "Anthropic samler forbud mod falske kampagner"
     },
     {
+     "rubrik": "Crusoe bekræfter salg af datacenter til Google",
+     "dato": "2026-11-07T01:40:28",
+     "foerst_set": "2026-11-07T06:30:44",
+     "link": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
+     "side": "artikel/bfdaf195a235ade1.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "TechCrunch: Vælgere vil begrænse datacentre",
      "dato": "2026-11-06T18:00:00",
      "foerst_set": "2026-11-06T21:09:53",
      "link": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/",
      "side": "artikel/39eb6389cd506408.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Meta lader Muse bygge dit projektrum",
+     "dato": "2026-11-06T18:44:20",
+     "foerst_set": "2026-11-06T20:49:47",
+     "link": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
+     "side": "artikel/dcfedcc7440be1b6.html",
      "hvor": "forside",
      "under": ""
     },
@@ -493,16 +494,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Meta lancerer Spaces til sin Muse-agent",
-     "dato": "2026-11-06T18:44:20",
-     "foerst_set": "2026-11-06T20:49:47",
-     "link": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
-     "side": "artikel/dcfedcc7440be1b6.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Underdog viser 32 MB tale-model Woof i browseren",
+     "rubrik": "Woof laver tale i browseren med 32 MB",
      "dato": "2026-11-06T13:02:16",
      "foerst_set": "2026-11-06T16:11:20",
      "link": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
@@ -572,29 +564,16 @@ window.KILDER_STATUS = {
      "side": "artikel/759260a1403adea3.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Axiom Math tjekker Stacks Project linje for linje",
-     "dato": "2026-11-05T16:16:45",
-     "foerst_set": "2026-11-05T22:13:13",
-     "link": "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/",
-     "side": "artikel/7dac5ce0cdad0d3f.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     16
+     14
     ],
     [
      "Anthropic News",
      2
-    ],
-    [
-     "Ars Technica AI",
-     1
     ]
    ]
   },
@@ -608,11 +587,11 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 34,
-   "som_ekstra": 15,
+   "i_listen": 26,
+   "som_ekstra": 13,
    "seneste": [
     {
-     "rubrik": "OpenAI dropper tavshedsaftaler med offentlige embedsfolk",
+     "rubrik": "OpenAI lover færre hemmelige datacenteraftaler",
      "dato": "",
      "foerst_set": "2026-11-06T21:09:53.915130+00:00",
      "link": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
@@ -627,7 +606,7 @@ window.KILDER_STATUS = {
      "link": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
      "side": "",
      "hvor": "under",
-     "under": "Meta lancerer Spaces til sin Muse-agent"
+     "under": "Meta lader Muse bygge dit projektrum"
     },
     {
      "rubrik": "Alexa for Shopping bestiller varer via sms",
@@ -664,15 +643,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Meta åbner Muse-videochat for alle i USA"
-    },
-    {
-     "rubrik": "Alphabet-aktien faldt 13 procent efter AI-investeringer",
-     "dato": "",
-     "foerst_set": "2026-11-05T12:41:56",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1027344/amazon-microsoft-alphabet-google-meta-data-centers-earnings-q3",
-     "side": "",
-     "hvor": "under",
-     "under": "Alphabet og Amazon i minus på AI"
     },
     {
      "rubrik": "Uber: Kun fire ture bestilt af AI-agenter",
@@ -720,6 +690,24 @@ window.KILDER_STATUS = {
      "under": "Claude får forbud mod at genskabe spil"
     },
     {
+     "rubrik": "The Verge: Gemini redigerer nu Docs og regneark",
+     "dato": "",
+     "foerst_set": "2026-10-29T21:21:56",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
+     "side": "",
+     "hvor": "under",
+     "under": "Google Gemini redigerer filer i chatten"
+    },
+    {
+     "rubrik": "Kina skal have rekrutteret leder til Nvidia-spionage",
+     "dato": "2026-11-06T18:00:44",
+     "foerst_set": "2026-11-07T06:30:44",
+     "link": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
+     "side": "artikel/421fa7063f0687d0.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Hinge-profil fravælger dates, der bruger AI",
      "dato": "2026-11-06T12:00:00",
      "foerst_set": "2026-11-06T21:09:53",
@@ -748,7 +736,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Perplexity lancerer altid tændte Teammates",
-     "dato": "2026-11-05T17:26:50",
+     "dato": "2026-11-05T22:26:50",
      "foerst_set": "2026-11-06T07:16:54",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
      "side": "artikel/448caf20b90713b4.html",
@@ -817,21 +805,12 @@ window.KILDER_STATUS = {
      "side": "artikel/f11302ecebb56fae.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "AT&T lader Gemini beskrive overvågningsvideoer",
-     "dato": "2026-11-04T20:23:24",
-     "foerst_set": "2026-11-05T01:00:33",
-     "link": "https://www.theverge.com/tech/1026787/att-gemini-for-home-connected-life-security-system",
-     "side": "artikel/94f88b800358a11e.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     16
+     14
     ],
     [
      "Ars Technica AI",
@@ -857,7 +836,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 12,
+   "i_listen": 8,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -958,42 +937,6 @@ window.KILDER_STATUS = {
      "side": "artikel/0697c0d6577e4ad4.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "USA's justitsministerium: Første store sag om spøgelsesstuderende",
-     "dato": "2026-10-30T16:53:49",
-     "foerst_set": "2026-10-30T21:00:09",
-     "link": "https://arstechnica.com/tech-policy/2026/10/doj-exposes-ghost-students-using-ai-to-complete-courses-steal-student-loans/",
-     "side": "artikel/45464663f5cb4135.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Fujifilm femdobler båndproduktion til AI-arkivering",
-     "dato": "2026-10-30T17:38:19",
-     "foerst_set": "2026-10-30T21:00:09",
-     "link": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
-     "side": "artikel/a4df15e2609a100e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Dartmouth-provost træder tilbage efter uoplyst Claude-brug",
-     "dato": "2026-10-30T20:40:13",
-     "foerst_set": "2026-10-30T21:00:09",
-     "link": "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/",
-     "side": "artikel/4c313421afd4676e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "DoorDash ser næsten ingen AI-agent-ordrer",
-     "dato": "2026-10-30T19:30:52",
-     "foerst_set": "2026-10-30T15:15:27",
-     "link": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/",
-     "side": "artikel/655f823878f84966.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -1003,10 +946,6 @@ window.KILDER_STATUS = {
     ],
     [
      "Google Gemini",
-     1
-    ],
-    [
-     "TechCrunch AI",
      1
     ]
    ]
@@ -1121,10 +1060,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 15,
+   "i_listen": 2,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -1144,12 +1083,30 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
+    },
+    {
+     "rubrik": "Google Antigravity finder ny peptidkandidat",
+     "dato": "2026-10-15T16:08:03",
+     "foerst_set": "2026-10-16T04:53:41",
+     "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+     "side": "artikel/ba028f76ed47c779.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
+     "dato": "2026-10-13T19:43:07",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+     "side": "artikel/42f1c245f492d3d1.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "Google Gemini",
-     2
+     3
     ]
    ]
   },

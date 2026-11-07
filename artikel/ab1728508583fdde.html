@@ -12,13 +12,13 @@
 <meta property="og:title" content="Qwen 3.8 27B gætter Pac-Man ud fra vægte">
 <meta property="og:description" content="På en laptop identificerede modellen både Pac-Man og Pong ud fra rå modelvægte. Det viser, at lokale modeller kan få noget ud af tal, der ligner støj.">
 <meta property="og:url" content="https://ainyheder.com/artikel/ab1728508583fdde.html">
-<meta property="og:image" content="https://ainyheder.com/assets/og.png">
+<meta property="og:image" content="https://ainyheder.com/data/img/e447f9bfe199b46f.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/fonts/skrifter.css?v=2">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Qwen 3.8 27B gætter Pac-Man ud fra vægte", "description": "På en laptop identificerede modellen både Pac-Man og Pong ud fra rå modelvægte. Det viser, at lokale modeller kan få noget ud af tal, der ligner støj.", "url": "https://ainyheder.com/artikel/ab1728508583fdde.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/ab1728508583fdde.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "datePublished": "2026-11-03T16:29:48+00:00", "articleSection": "Forskning", "isBasedOn": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Qwen 3.8 27B gætter Pac-Man ud fra vægte", "description": "På en laptop identificerede modellen både Pac-Man og Pong ud fra rå modelvægte. Det viser, at lokale modeller kan få noget ud af tal, der ligner støj.", "url": "https://ainyheder.com/artikel/ab1728508583fdde.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/ab1728508583fdde.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "image": "https://ainyheder.com/data/img/e447f9bfe199b46f.jpg", "datePublished": "2026-11-03T16:29:48+00:00", "articleSection": "Forskning", "isBasedOn": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/"}</script>
 <style>
 :root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
   --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }
@@ -58,7 +58,7 @@ footer a { color:var(--accent); }
 <a class="article-back" href="/">← Tilbage til nyhederne</a>
 <div class="kicker">Forskning · Simon Willison AI · 03.11.2026 · 2 min. læsning</div>
 <h1>Qwen 3.8 27B gætter Pac-Man ud fra vægte</h1>
-<div class="article-intro"><p class="manchet">På en laptop identificerede modellen både Pac-Man og Pong ud fra rå modelvægte. Det viser, at lokale modeller kan få noget ud af tal, der ligner støj.</p></div>
+<div class="article-intro"><img class="top" src="/data/img/e447f9bfe199b46f.webp" alt="A thick upright slab made of dense decimal numbers represents raw model weights; a solid yellow Pac-Man-like circle with a wedge mouth bites into the slab, revealing a crisp black-"><p class="manchet">På en laptop identificerede modellen både Pac-Man og Pong ud fra rå modelvægte. Det viser, at lokale modeller kan få noget ud af tal, der ligner støj.</p></div>
 <section class="article-section"><h2><span class="section-index" aria-hidden="true">01</span>Et spil gættet ud fra tal</h2>
 <p>På Simon Willisons laptop gjorde Qwen 3.8 27B noget usædvanligt: Den kiggede på de rå vægte af et lille trænet netværk og svarede, at det spillede en Pac-Man-lignende version af et gitter. Vægtene er de mange decimaltal, der tilsammen udgør en trænet model.</p><p>Prompten kom fra et GitHub-repository til et nyt paper. Alle fire prompts var identiske bortset fra vægtene. Efter 46 minutter og 12 sekunder og 43.506 reasoning-tokens, altså interne tænketrin, beskrev Qwen et 8x8-labyrintspil med spøgelser og belønningsfelter.</p><p>Willison testede også Pong, som Qwen identificerede efter 1 time, 4 minutter og 54 sekunder. Freeway gik det galt med: Her troede modellen, at spillet lignede Pac-Man.</p></section>
 <dl class="article-metrics"><div><dt>svartid for Qwen 3.8 27B på Pac-Man-prompten på Willisons laptop</dt><dd>46 min 12 sek</dd></div><div><dt>reasoning-tokens før Qwen 3.8 27B svarede på Pac-Man</dt><dd>43.506</dd></div><div><dt>andel af vægtene i Qwen3.5-0.8B, som GPT-6 Astra rettede ifølge paperet</dt><dd>0,016 %</dd></div></dl><section class="article-section"><h2><span class="section-index" aria-hidden="true">02</span>Paperet bag de fire prompts</h2>
@@ -70,7 +70,7 @@ footer a { color:var(--accent); }
 <div class="boks" style="border-left-color:#2e9e5b;"><strong>Derfor er det interessant</strong>Forsøget viser, at en lokal model kan beskrive et trænet netværks formål uden værktøjer, men de lange køretider gør det endnu først og fremmest til en demonstration.</div>
 <p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/" rel="noopener">Simon Willison AI →</a></p>
 <a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
-<p class="note">Genfortalt i egne ord af AI-nyheder.com · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>
+<p class="note">Genfortalt i egne ord af AI-nyheder.com · AI-genereret illustration · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>
 </main>
 <footer>© 2026 AI-nyheder · <a href="/om.html">Om os</a> · <a href="/vaerktoejer.html">Værktøjer</a></footer>
 <!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->

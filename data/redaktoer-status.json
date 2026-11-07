@@ -1,6 +1,6 @@
 {
-  "opdateret": "2026-11-06T22:27:37.120546+00:00",
-  "status": "reserve",
+  "opdateret": "2026-11-07T06:30:44.469330+00:00",
+  "status": "godkendt",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
@@ -8,13 +8,48 @@
     "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
     "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
   ],
-  "input_fingerprint": "8cdccb187ff101c8",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "kontrolproblemer": [
-    "Rækkefølgen bryder med retningen om at begynde med nyheder fra de seneste 24 timer: Nvidia-historien er fra 5. november kl. 19.35, mens Woof er fra 6. november kl. 13.02. Den nyeste kandidat er fra 6. november kl. 20.02; sæt Woof før Nvidia."
+  "input_fingerprint": "b41b4a2a9f0fb629",
+  "redaktionsnote": "Woof genvælges uden påstået ny udvikling; den lille model er fortsat væsentlig. Cosmos-historien bygger på Nvidias egen beskrivelse, og Woofs officielle primærkilde er ikke dokumenteret i det foreliggende materiale. Ingen øvrige anbefalinger er valgt uden læste kilder.",
+  "beslutninger": [
+    {
+      "id": "76d77f901fa07104",
+      "begrundelse": "Woof er en usædvanligt lille talemodel, som ifølge Underdog kan køre lokalt i browseren. Den konkrete demonstration gør nyheden relevant trods genvalget.",
+      "nyt_siden_sidst": "Historien var på forsiden i går; der er ikke dokumenteret en ny modeludgivelse siden. Den er stadig blandt de vigtigste nyere modelnyheder på grund af størrelsen og muligheden for lokal tale.",
+      "skriveopgave": "Rubrik: »Woof laver tale i browseren med en model på 32 MB«. Forklar demonstrationen, 31 millioner parametre og forskellen på modelstørrelse og antal parametre. Brug korte afsnit med konkrete mellemoverskrifter; angiv, at offlinefunktion og download er firmaets oplysninger, og at uafhængig kvalitetstest mangler.",
+      "kilder": [
+        "76d77f901fa07104"
+      ],
+      "samme_historie": [],
+      "link": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+      "rubrik": "Woof laver tale i browseren med 32 MB"
+    },
+    {
+      "id": "f25b9201ad6bdcc6",
+      "begrundelse": "Nvidia frigiver fire specialiserede modeller med åbne vægte til robot- og kørselssimulering. Det er en væsentlig ny mulighed for udviklere, ikke blot en ny omtale af den eksisterende modelserie.",
+      "nyt_siden_sidst": "Nye Cosmos 3 Nano-varianter kan blandt andet generere synkroniserede kamerabilleder og lidardata eller simulere en robot med to arme. Historien var ikke blandt gårsdagens hovedhistorier.",
+      "skriveopgave": "Rubrik: »Nvidia åbner fire modeller til virtuelle biler og robotter«. Forklar med korte afsnit og informative mellemoverskrifter, hvad modellerne genererer, og hvad åbne vægte betyder. Skeln mellem simulerede observationer og fysikberegning; nævn licensvilkår og at pålidelighed i træning og evaluering endnu skal undersøges.",
+      "kilder": [
+        "f25b9201ad6bdcc6"
+      ],
+      "samme_historie": [],
+      "link": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+      "rubrik": "NVIDIA åbner fire modeller til bil- og robotsimulation"
+    },
+    {
+      "id": "2d23850120e57d6c",
+      "begrundelse": "Spaces giver Muse en konkret ny anvendelse: projektområder, som agenten ifølge Meta kan bygge og opdatere i baggrunden. Det er en produktfunktion, ikke en ny model.",
+      "nyt_siden_sidst": "Meta har lanceret Spaces til projekter som rejseplanlægning og gaveoverblik. Funktionen er adskilt fra Muse-videochatten, som blev annonceret dagen før.",
+      "skriveopgave": "Rubrik: »Meta lader Muse bygge et rum til dit næste projekt«. Forklar med konkrete eksempler og korte afsnit med mellemoverskrifter, hvad et Space er, og hvordan tilsluttede apps ifølge Meta kan holde det opdateret. Markér produktløfter som Metas oplysninger, og lad pris og adgang stå uafklaret.",
+      "kilder": [
+        "2d23850120e57d6c"
+      ],
+      "samme_historie": [],
+      "link": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
+      "rubrik": "Meta lader Muse bygge dit projektrum"
+    }
   ],
   "modelkald": 6,
-  "kildehentninger": 2,
+  "kildehentninger": 3,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -29,7 +64,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -39,18 +74,22 @@
   ],
   "kildegrundlag": [
     {
+      "link": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+      "grundlag": "kildetekst"
+    },
+    {
       "link": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+      "link": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-    "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
-    "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/"
+    "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+    "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+    "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/"
   ],
-  "afventer_artikler": 76
+  "afventer_artikler": 71
 }
