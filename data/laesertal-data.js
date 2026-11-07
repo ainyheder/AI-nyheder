@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-11-07T15:13:00.502730+00:00",
+ "opdateret": "2026-11-07T20:38:41.108904+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      2,
      1,
      4,
-     0
+     1
     ]
    },
    {
@@ -208,7 +208,7 @@ window.LAESERTAL = {
      6,
      2,
      4,
-     0
+     1
     ]
    },
    {
@@ -284,20 +284,20 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 23,
- "sidevisninger_i_alt": 46,
+ "besoeg_i_alt": 24,
+ "sidevisninger_i_alt": 49,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 23,
-   "visninger": 46
+   "besoeg": 24,
+   "visninger": 49
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 22
+   "besoeg": 23
   },
   {
    "fra": "www.bing.com",
@@ -310,12 +310,12 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 23
+    "visninger": 25
    },
    {
     "fra": "direkte",
-    "besoeg": 22,
-    "visninger": 22
+    "besoeg": 23,
+    "visninger": 23
    },
    {
     "fra": "www.bing.com",
@@ -480,7 +480,7 @@ window.LAESERTAL = {
   {
    "dato": "2026-11-07",
    "besoeg": 0,
-   "visninger": 0
+   "visninger": 10
   }
  ],
  "artikler": [],

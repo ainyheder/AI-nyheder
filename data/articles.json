@@ -1,67 +1,67 @@
 {
-  "opdateret": "2026-11-07T15:04:23.260548+00:00",
-  "antal": 122,
+  "opdateret": "2026-11-07T20:27:33.778172+00:00",
+  "antal": 124,
   "artikler": [
     {
-      "titel": "Why a new report on Anthropic automating AI development is alarming researchers",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
-      "resume": "Anthropic is using AI to build more powerful AI. And it appears to be working remarkably well, with the company's models improving roughly twice as quickly as a year ago, with little indication of slowing down. That's according to a new report published Thursday by the AI safety research organization METR, following an 11-week investigation […]",
-      "dato": "2026-11-07T07:30:00-05:00",
-      "kilde": "The Verge AI",
-      "kategori": "Forskning",
-      "foerst_set": "2026-11-07T15:04:23.260548+00:00",
-      "eget_foerst_set": "2026-11-07T15:04:23.260548+00:00",
-      "rubrik": "Forskere: AI sætter fart på Anthropics modeludvikling",
-      "resume_da": "En undersøgelse peger på hurtigere fremskridt, men bygger blandt andet på medarbejdernes egne vurderinger. Væsentlig dokumentation er fjernet fra den offentlige rapport.",
+      "titel": "Underdog shows off a 32MB speech model in new demo",
+      "link": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+      "resume": "Despite its small size, Underdog's new model can generate both speech and music.",
+      "dato": "2026-11-06T13:02:16+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-11-06T16:11:20.307546+00:00",
+      "eget_foerst_set": "2026-11-06T16:11:20.307546+00:00",
+      "rubrik": "Woof laver tale i browseren med 32 MB",
+      "resume_da": "Underdogs lille talemodel kan downloades af alle og demonstreres i et spil med en skrivemaskine og en musikvælger.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Skrivemaskinen læser teksten højt",
+          "tekst": "Skriv en sætning på tastaturet, og en stemme læser den op. Sådan viser virksomheden Underdog sin nye talemodel, Woof, frem i et spil, der kører i browseren.\n\nSpillet foregår i et rum med gammeldags teknologi. Her kan spilleren bruge en skrivemaskine til at få teksten læst op og dreje på en musikvælger for at skabe forskellige slags musik. Ifølge Underdog er alle stemmerne i spillet lavet med Woof."
+        },
+        {
+          "overskrift": "En lille model kan downloades",
+          "tekst": "Woof fylder 31,7 MB og har 31 millioner parametre. Parametre er de værdier, en model lærer under træningen, og som er med til at bestemme dens svar. Modellen er åben for alle at downloade.\n\nIfølge Underdog kan Woof køre lokalt på de fleste enheder uden internetforbindelse. Lokal drift betyder, at modellen arbejder på selve enheden frem for at skulle sende opgaven til en tjeneste på nettet. Der foreligger ingen uafhængig kvalitetstest af Woof i materialet."
+        },
+        {
+          "overskrift": "Underdog vil holde data lokalt",
+          "tekst": "Woof kommer få uger efter Underdogs lancering af Bark, en model på 167 MB, der omdanner tale til tekst ved blandt andet diktering og også er lavet til lokal drift.\n\nGrundlæggeren Sigil Wen fortæller til TechCrunch, at han ønskede at bygge et system med AI-modeller på brugernes egne enheder, så de kan eje deres data. Det er virksomhedens mål, ikke en dokumentation af, hvordan data håndteres i alle situationer."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "En lille model, der kan køre lokalt, kan mindske behovet for at bruge en tjeneste på nettet til tale. Kilden dokumenterer dog ikke Woofs kvalitet uafhængigt.",
+      "pointer": [],
+      "billedmotiv": "A solid retro typewriter with one key pressed and two thick speech bubbles rising from its paper, beside a bulky CRT monitor showing a simple sound-wave shape; a small opaque memory chip lies next to the typewriter, suggesting the tiny local model.",
+      "billedmotiv_instruks": "9d983ad231f8d8b7f218",
+      "billede": "data/img/ff4db4ec5a2fef80.webp",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 4,
-        "betydning": 4,
+        "nyhed": 3,
+        "betydning": 2,
         "brugbarhed": 2,
-        "dokumentation": 3,
+        "dokumentation": 2,
         "dansk": 0,
-        "type": "forskning",
+        "type": "lancering",
         "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "En METR-rapport undersøger Anthropics brug af AI til AI-udvikling og peger på hurtigere modelforbedringer.",
-        "forbehold": "Materialet beskriver ikke rapportens metode eller begrænsninger nærmere.",
-        "emne": "anthropic og metr"
+        "model_lancering": true,
+        "begrundelse": "Underdog viser en ny 32MB-model, der ifølge demoen kan generere både tale og musik.",
+        "forbehold": "Kun demonstration; ingen uafhængig test, pris, adgang eller modeldetaljer fremgår.",
+        "emne": "underdog tale-model"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 7,
-      "sektioner": [
-        {
-          "overskrift": "AI hjælper forskerne med udviklingen",
-          "tekst": "Anthropics AI-modeller forbedrer sig omkring dobbelt så hurtigt som for et år siden. Det vurderer sikkerhedsforskningsorganisationen METR efter en undersøgelse hos virksomheden, skriver The Verge.\n\nVurderingen bygger blandt andet på resultater fra standardiserede modeltest. Ifølge METR svarer forbedringerne det seneste år til omkring to års fremskridt i det tidligere tempo.\n\nMETR vurderer, at størstedelen af accelerationen i oktober skyldtes AI-hjælp, ikke blot mere regnekraft til at træne modellerne. AI hjælper især menneskelige forskere; undersøgelsen dokumenterer ikke, at AI udvikler nye modeller fuldt selvstændigt."
-        },
-        {
-          "overskrift": "Medarbejdernes vurderinger er ikke målinger",
-          "tekst": "Anthropics medarbejdere vurderede i gennemsnit, at de var omkring 12 gange så produktive med virksomhedens mest avancerede interne model som uden AI-hjælp. Tallet kom fra uformelle spørgerunder og interview.\n\nDet er medarbejdernes egne skøn, ikke en uafhængig måling af deres faktiske produktivitet. Deres vurdering var omkring dobbelt så høj som nogle måneder tidligere, da de brugte Mythos 5."
-        },
-        {
-          "overskrift": "Anthropic fjernede væsentlig dokumentation",
-          "tekst": "METR undersøgte virksomheden i 11 uger og fik adgang til blandt andet fortrolig forskning, men ikke ubegrænset adgang. Organisationen fortæller, at enkelte anmodninger om data blev afvist.\n\nAnthropic kunne fjerne oplysninger fra den offentlige rapport. Ifølge METR fjernede virksomheden størstedelen af den dokumentation, forskerne fandt mest oplysende. Det gør det sværere for offentligheden selv at vurdere konklusionerne og usikkerheden.\n\nDenne artikel bygger på The Verges omtale. METRs rapport er ikke læst direkte."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [],
-      "betydning": "Undersøgelsen peger på, at AI allerede kan fremskynde udviklingen af nye modeller, men den viser ikke, at mennesker er ude af processen.",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
-        "kontrolleret": "2026-11-07T15:06:10.322928+00:00"
+        "kontrolleret": "2026-11-07T20:29:25.862410+00:00"
       },
-      "redaktoer_opgave_id": "628f40ed826ad2e2",
+      "redaktoer_opgave_id": "dee6e8ad4737edbd",
       "redaktoer_kilder": [],
-      "billedmotiv": "An Anthropic research block bearing Claude's warm terracotta-orange, many-rayed asterisk supports a thick, rising two-step arrow, suggesting AI-assisted model development moving faster. Beside it, a solid report page carries broad black redaction bars, showing the missing public evidence. The front-facing emblem is prominent; all forms have sharp edges, substantial thickness and clearly separated contours.",
-      "billedmotiv_instruks": "93ecdf35d6c24012d0d1",
-      "billede": "data/img/4f3c8834913f3162.webp",
-      "side": "artikel/d36485a6e1dbd817.html"
+      "prio": 5,
+      "side": "artikel/9ae4899642152a01.html"
     },
     {
       "titel": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
@@ -329,74 +329,65 @@
       "side": "artikel/84bace4b67d1c0f2.html"
     },
     {
-      "titel": "Underdog shows off a 32MB speech model in new demo",
-      "link": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
-      "resume": "Despite its small size, Underdog's new model can generate both speech and music.",
-      "dato": "2026-11-06T13:02:16+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-11-06T16:11:20.307546+00:00",
-      "eget_foerst_set": "2026-11-06T16:11:20.307546+00:00",
-      "rubrik": "Woof laver tale i browseren med 32 MB",
-      "resume_da": "Underdogs nye demonstration læser tekst højt og laver musik. Modellen er lille nok til at køre lokalt, oplyser virksomheden.",
+      "titel": "Why a new report on Anthropic automating AI development is alarming researchers",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
+      "resume": "Anthropic is using AI to build more powerful AI. And it appears to be working remarkably well, with the company's models improving roughly twice as quickly as a year ago, with little indication of slowing down. That's according to a new report published Thursday by the AI safety research organization METR, following an 11-week investigation […]",
+      "dato": "2026-11-07T07:30:00-05:00",
+      "kilde": "The Verge AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-07T15:04:23.260548+00:00",
+      "eget_foerst_set": "2026-11-07T15:04:23.260548+00:00",
+      "rubrik": "Forskere: AI sætter fart på Anthropics modeludvikling",
+      "resume_da": "En undersøgelse peger på hurtigere fremskridt, men bygger blandt andet på medarbejdernes egne vurderinger. Væsentlig dokumentation er fjernet fra den offentlige rapport.",
       "brief": "",
       "sektioner": [
         {
-          "overskrift": "Et spil læser teksten højt",
-          "tekst": "Underdog har lavet et browserspil for at vise sin nye talemodel Woof frem. Spilleren kan skrive på en virtuel skrivemaskine og høre modellen læse ordene højt.\n\nSpillet foregår i et rum med gammeldags teknologi. Her kan man også dreje på en musiktuner for at skabe forskellige slags musik. Ifølge Underdog er alle stemmerne i spillet lavet med Woof."
+          "overskrift": "AI hjælper forskerne med udviklingen",
+          "tekst": "Anthropics AI-modeller forbedrer sig omkring dobbelt så hurtigt som for et år siden. Det vurderer sikkerhedsforskningsorganisationen METR efter en undersøgelse hos virksomheden, skriver The Verge.\n\nVurderingen bygger blandt andet på resultater fra standardiserede modeltest. Ifølge METR svarer forbedringerne det seneste år til omkring to års fremskridt i det tidligere tempo.\n\nMETR vurderer, at størstedelen af accelerationen i oktober skyldtes AI-hjælp, ikke blot mere regnekraft til at træne modellerne. AI hjælper især menneskelige forskere; undersøgelsen dokumenterer ikke, at AI udvikler nye modeller fuldt selvstændigt."
         },
         {
-          "overskrift": "Størrelse og parametre måler forskelligt",
-          "tekst": "Woof fylder omkring 32 MB og har 31 millioner parametre. Parametre er de talværdier, en model har lært under sin træning. Antallet fortæller altså, hvor mange værdier modellen bruger, mens størrelsen i MB angiver, hvor meget plads den optager.\n\nUnderdog oplyser, at modellen kan downloades af alle og køre på de fleste enheder uden internetforbindelse. TechCrunch beskriver ikke en uafhængig test af kvaliteten, så demonstrationen siger ikke i sig selv, hvordan Woof klarer sig mod større modeller."
+          "overskrift": "Medarbejdernes vurderinger er ikke målinger",
+          "tekst": "Anthropics medarbejdere vurderede i gennemsnit, at de var omkring 12 gange så produktive med virksomhedens mest avancerede interne model som uden AI-hjælp. Tallet kom fra uformelle spørgerunder og interview.\n\nDet er medarbejdernes egne skøn, ikke en uafhængig måling af deres faktiske produktivitet. Deres vurdering var omkring dobbelt så høj som nogle måneder tidligere, da de brugte Mythos 5."
         },
         {
-          "overskrift": "Underdog vil holde AI lokalt",
-          "tekst": "Uger før Woof lancerede Underdog Bark, en model, der går den modsatte vej: Den omdanner tale til tekst og er beregnet til blandt andet diktering.\n\nGrundlæggeren Sigil Wen siger til TechCrunch, at han ville bygge et system med AI-modeller, som kører på brugernes egne enheder og lader dem eje deres data. Det er baggrunden for virksomhedens arbejde med lokale modeller."
+          "overskrift": "Anthropic fjernede væsentlig dokumentation",
+          "tekst": "METR undersøgte virksomheden i 11 uger og fik adgang til blandt andet fortrolig forskning, men ikke ubegrænset adgang. Organisationen fortæller, at enkelte anmodninger om data blev afvist.\n\nAnthropic kunne fjerne oplysninger fra den offentlige rapport. Ifølge METR fjernede virksomheden størstedelen af den dokumentation, forskerne fandt mest oplysende. Det gør det sværere for offentligheden selv at vurdere konklusionerne og usikkerheden.\n\nDenne artikel bygger på The Verges omtale. METRs rapport er ikke læst direkte."
         }
       ],
-      "noegletal": [
-        {
-          "tal": "31,7 MB",
-          "label": "Woofs størrelse ifølge Underdog; modellen laver tekst om til tale."
-        },
-        {
-          "tal": "167 MB",
-          "label": "Størrelsen på Bark, Underdogs model til at omdanne tale til tekst."
-        }
-      ],
+      "noegletal": [],
       "figurer": [],
       "detaljer": [],
-      "betydning": "En model, der kan køre lokalt, behøver ikke sende opgaven til en ekstern tjeneste for at lave tale.",
+      "betydning": "Undersøgelsen peger på, at AI allerede kan fremskynde udviklingen af nye modeller, men den viser ikke, at mennesker er ude af processen.",
       "pointer": [],
-      "billedmotiv": "A solid retro typewriter with one key pressed and two thick speech bubbles rising from its paper, beside a bulky CRT monitor showing a simple sound-wave shape; a small opaque memory chip lies next to the typewriter, suggesting the tiny local model.",
-      "billedmotiv_instruks": "9d983ad231f8d8b7f218",
-      "billede": "data/img/ff4db4ec5a2fef80.webp",
+      "billedmotiv": "An Anthropic research block bearing Claude's warm terracotta-orange, many-rayed asterisk supports a thick, rising two-step arrow, suggesting AI-assisted model development moving faster. Beside it, a solid report page carries broad black redaction bars, showing the missing public evidence. The front-facing emblem is prominent; all forms have sharp edges, substantial thickness and clearly separated contours.",
+      "billedmotiv_instruks": "93ecdf35d6c24012d0d1",
+      "billede": "data/img/4f3c8834913f3162.webp",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
+        "nyhed": 4,
+        "betydning": 4,
         "brugbarhed": 2,
-        "dokumentation": 2,
+        "dokumentation": 3,
         "dansk": 0,
-        "type": "lancering",
+        "type": "forskning",
         "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "Underdog viser en ny 32MB-model, der ifølge demoen kan generere både tale og musik.",
-        "forbehold": "Kun demonstration; ingen uafhængig test, pris, adgang eller modeldetaljer fremgår.",
-        "emne": "underdog tale-model"
+        "model_lancering": false,
+        "begrundelse": "En METR-rapport undersøger Anthropics brug af AI til AI-udvikling og peger på hurtigere modelforbedringer.",
+        "forbehold": "Materialet beskriver ikke rapportens metode eller begrænsninger nærmere.",
+        "emne": "anthropic og metr"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
-        "kontrolleret": "2026-11-07T06:32:47.095970+00:00"
+        "kontrolleret": "2026-11-07T15:06:10.322928+00:00"
       },
-      "redaktoer_opgave_id": "9d26e3aa5d903235",
+      "redaktoer_opgave_id": "628f40ed826ad2e2",
       "redaktoer_kilder": [],
-      "prio": 5,
-      "side": "artikel/9ae4899642152a01.html"
+      "prio": 7,
+      "side": "artikel/d36485a6e1dbd817.html"
     },
     {
       "titel": "“Does Meta think we can’t read?” Meta abandons sketchy commercial terms update.",
@@ -633,6 +624,65 @@
       "side": "artikel/bacb3f0e9b0a9c2b.html"
     },
     {
+      "titel": "The US let Nvidia sell chips to an empty office in China",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+      "resume": "Concerns are being raised that neither the Commerce Department nor Nvidia are doing their due diligence when it comes to vetting Chinese firms cleared to handle the company's H200 AI chips. According to The New York Times, New Matrix is on the list of approved firms, yet its offices are empty, \"a hollow gray shell […]",
+      "dato": "2026-11-07T10:43:45-05:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-11-07T20:27:33.778172+00:00",
+      "eget_foerst_set": "2026-11-07T20:27:33.778172+00:00",
+      "rubrik": "USA godkender Nvidia-chips til ukendt firma",
+      "resume_da": "New Matrix står på listen over kinesiske virksomheder, der må købe H200-chips. En undersøgelse rejser tvivl om, hvor grundigt myndighederne kontrollerer køberne.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "En kinesisk virksomhed med tomme kontorer er ifølge omtalen godkendt til at håndtere Nvidias H200 AI-chips.",
+        "forbehold": "Oplysningen bygger på en indirekte omtale af The New York Times.",
+        "emne": "nvidia og kina"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Tomt kontor på firmaets adresse",
+          "tekst": "Et kinesisk firma ved navn New Matrix har fået lov til at købe Nvidias H200-chips, som bruges til AI. Men på firmaets oplyste adresse fandt The New York Times et tomt lokale med ledninger hængende fra loftet.\n\nAvisen fandt kun sparsomme oplysninger om New Matrix på nettet. Firmaets navn stod ikke på bygningens oversigt over virksomheder, og to ansatte hos industriområdets ejendomsadministration sagde, at de ikke kendte til firmaet.\n\nOplysningerne kommer fra The New York Times’ undersøgelse, som The Verge omtaler. De viser, at New Matrix er godkendt som køber, men fortæller ikke, om firmaet faktisk har modtaget chips."
+        },
+        {
+          "overskrift": "Ejerne har forbindelse til sortlistet firma",
+          "tekst": "New Matrix’ ejere har forbindelser til en kinesisk kapitalfond, som USA har haft på sin sorte liste siden 2024. Listen omfatter virksomheder, der er underlagt amerikanske handelsrestriktioner.\n\nIfølge The New York Times er New Matrix ikke et enestående tilfælde. Avisen beskriver et mønster, hvor virksomheder med forbindelser til aktører, der er underlagt handelsrestriktioner af hensyn til national sikkerhed, bliver godkendt til at købe Nvidia-chips.\n\nDet rejser spørgsmål om, hvor grundigt både det amerikanske handelsministerium og Nvidia undersøger de kinesiske virksomheder, før de får lov til at håndtere H200."
+        },
+        {
+          "overskrift": "Trump lempede reglerne for salg",
+          "tekst": "Under præsident Joe Biden var Nvidia begrænset i sit salg af chips til Kina. Donald Trumps regering lempede begrænsningerne, efter at Nvidia havde indvilliget i at give den amerikanske regering 15 procent af salget.\n\nNvidias direktør, Jensen Huang, førte også en intensiv kampagne for at påvirke beslutningstagerne. Godkendelsen af New Matrix viser nu, at der er spørgsmål om kontrollen med, hvem der får adgang til at købe chipsene."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [],
+      "betydning": "Godkendelserne kan give virksomheder med forbindelser til amerikansk sortlistede aktører adgang til at købe Nvidia-chips, selv om handelsrestriktionerne skal varetage national sikkerhed.",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-07T20:29:28.982975+00:00"
+      },
+      "billedmotiv": "An Nvidia H200 chip with Nvidia's recognizable green eye emblem sits beside an approval document bearing a bold check mark. The document points toward an empty office doorway, suggesting an approved but little-known buyer rather than a completed delivery. Use solid, opaque shapes with crisp edges and clearly separated contours, isolated without a floor or surroundings.",
+      "billedmotiv_instruks": "d49d6c243619667e7340",
+      "billede": "data/img/a6535c060598dc61.webp",
+      "side": "artikel/6f25ac9278119b95.html"
+    },
+    {
       "titel": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
       "link": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
       "resume": "Security researchers found hundreds of servers hosting the penetration testing tool Artex exposed to the internet, allowing anyone access to the hacking tool.",
@@ -767,8 +817,8 @@
         {
           "kilde": "TechCrunch AI",
           "link": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/",
-          "rubrik": "Vælgere i USA stemmer for datacenterbegrænsninger",
-          "resume_da": "Ved ugens mellemvalg stemte flertallet for flere begrænsninger i 40 af 41 afstemninger om datacentre.",
+          "rubrik": "USA: Vælgere stemte for begrænsninger på datacentre",
+          "resume_da": "Ved alle på nær én af 41 afstemninger stemte et flertal for flere begrænsninger på opførelse af datacentre.",
           "dato": "2026-11-06 17:23:52+00:00",
           "foerst_set": "2026-11-06T21:09:53.915130+00:00"
         }
@@ -1011,7 +1061,7 @@
       "titel": "Protesters break into Microsoft data center site in Amsterdam",
       "link": "https://www.theverge.com/news/1028549/protesters-microsoft-data-center-site-amsterdam",
       "resume": "Protesters have broken into a construction site of a new Microsoft data center in Amsterdam this morning. Members of the Geef Tegengas group helped organize the protest against the construction of three 85-meter data center towers in the outskirts of Amsterdam. Reuters reports that around 100 people made it into the construction site, with some […]",
-      "dato": "2026-11-06T06:55:19-05:00",
+      "dato": "2026-11-06T11:55:19+00:00",
       "kilde": "The Verge AI",
       "kategori": "Samfund & etik",
       "foerst_set": "2026-11-06T16:11:20.307546+00:00",
@@ -1087,7 +1137,7 @@
       "titel": "How Akai and Moog are embracing vibe-coded mods",
       "link": "https://www.theverge.com/tech/1028720/vibe-coding-open-source-inmusic-akai",
       "resume": "inMusic, the parent company of Akai, Moog, Native Instruments, and more, has decided to embrace the modding community. In an interview with The Verge, inMusic CEO Jack O'Donnell said, \"We're going to provide a toolbox to the community, we're going to provide the inner workings of, say, an MPC or Sample so that people can […]",
-      "dato": "2026-11-06T11:34:39-05:00",
+      "dato": "2026-11-06T16:34:39+00:00",
       "kilde": "The Verge AI",
       "kategori": "Hverdags-AI",
       "foerst_set": "2026-11-06T20:49:47.939046+00:00",
@@ -1491,74 +1541,12 @@
         {
           "kilde": "The Verge AI",
           "link": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
-          "rubrik": "OpenAI lover færre hemmelige datacenteraftaler",
-          "resume_da": "Efter amerikanske vælgeres modstand mod datacentre vil OpenAI undgå fortrolighedsaftaler med offentlige embedsfolk, men følsomme oplysninger kan stadig beskyttes.",
+          "rubrik": "OpenAI dropper hemmeligholdelsesaftaler med myndighedspersoner",
+          "resume_da": "Løftet kommer efter et amerikansk valg, hvor modstanden mod nye datacentre fyldte. OpenAI vil stadig beskytte visse følsomme oplysninger.",
           "dato": "2026-11-06T15:02:22-05:00",
           "foerst_set": "2026-11-06T21:09:53.915130+00:00"
         }
       ]
-    },
-    {
-      "titel": "Crusoe sells troubled Wyoming data center project to Google",
-      "link": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
-      "resume": "The deal highlights the challenges of developing massive AI data centers.",
-      "dato": "2026-11-07T01:40:28+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-11-07T06:30:44.469330+00:00",
-      "eget_foerst_set": "2026-11-07T06:30:44.469330+00:00",
-      "rubrik": "Crusoe bekræfter salg af datacenter til Google",
-      "resume_da": "Google overtager det ufærdige projekt i Wyoming og planlægger at investere 17 milliarder dollar i området.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Salget er nu bekræftet",
-          "tekst": "Datacenterudvikleren Crusoe bekræftede 6. november, at selskabet har solgt et ufærdigt datacenterprojekt i det sydøstlige Wyoming til Google. Et datacenter rummer de servere og den regnekraft, der blandt andet bruges til AI.\n\nSalget er ikke en helt ny oplysning: Bloomberg omtalte aftalen allerede i juni. Google har ikke oplyst, hvad selskabet betalte Crusoe for projektet, skriver TechCrunch."
-        },
-        {
-          "overskrift": "Google overtager et stort byggeprojekt",
-          "tekst": "Crusoe forsøgte først at få Google som kunde i Wyoming, men uden held. Google skal ifølge omtale have udtrykt bekymring over projektets pris og byggetid under Crusoes ledelse.\n\nNu overtager Google udviklingen og planlægger at investere 17 milliarder dollar i datacenterområdet. Da Crusoe lancerede projektet i 2025 sammen med infrastrukturselskabet Tallgrass, var planen på sigt en strømkapacitet på 10 gigawatt. Kilden oplyser ikke, om det fortsat er Googles mål.\n\nStore datacentre kan være vanskelige at færdiggøre til tiden og inden for budgettet, blandt andet fordi udviklerne skal skaffe både udstyr og strøm."
-        },
-        {
-          "overskrift": "Crusoe bygger stadig for Google",
-          "tekst": "Salget betyder ikke, at samarbejdet er slut. Crusoe udvikler også et datacenter til Google nær Amarillo i Texas. Selskabet bygger desuden datacentre til blandt andre Oracle, OpenAI og Microsoft.\n\nCrusoe tjener blandt andet penge ved at udleje plads i datacentre og den regnekraft, der bruges til at køre AI-modeller. I september rejste selskabet 3,9 milliarder dollar fra investorer."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [],
-      "betydning": "Google får selv ansvaret for at udvikle Wyoming-projektet, mens Crusoe fortsætter som leverandør til Google i Texas.",
-      "pointer": [],
-      "billedmotiv": "An unfinished datacenter structure receives a large front-facing panel bearing Google’s recognisable four-colour G, suggesting Google’s takeover of the Wyoming project. Exposed roof beams and an incomplete wall make the building’s unfinished state unmistakable. Keep the panel and building as solid, opaque forms with clear thickness and sharply separated contours. The scene is a conceptual illustration, isolated without surroundings or explanatory text.",
-      "billedmotiv_instruks": "2849f797c379f6ccfa66",
-      "billedstatus": {
-        "status": "afvist_af_filter",
-        "signatur": "fd1c5034a9775366"
-      },
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Crusoe sælger et problemramt datacenterprojekt i Wyoming til Google.",
-        "forbehold": "Materialet oplyser ikke handlens vilkår eller projektets videre forløb.",
-        "emne": "crusoe og google"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-11-07T06:33:23.267173+00:00"
-      },
-      "prio": 4,
-      "side": "artikel/bfdaf195a235ade1.html"
     },
     {
       "titel": "Axiom Math wants to keep AI slop out of mathematics",
@@ -1639,6 +1627,68 @@
       "billedmotiv_instruks": "b587feff677b1bd86f61",
       "billede": "data/img/f0a87b0d7586544d.webp",
       "side": "artikel/7dac5ce0cdad0d3f.html"
+    },
+    {
+      "titel": "Crusoe sells troubled Wyoming data center project to Google",
+      "link": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
+      "resume": "The deal highlights the challenges of developing massive AI data centers.",
+      "dato": "2026-11-07T01:40:28+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-07T06:30:44.469330+00:00",
+      "eget_foerst_set": "2026-11-07T06:30:44.469330+00:00",
+      "rubrik": "Crusoe bekræfter salg af datacenter til Google",
+      "resume_da": "Google overtager det ufærdige projekt i Wyoming og planlægger at investere 17 milliarder dollar i området.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Salget er nu bekræftet",
+          "tekst": "Datacenterudvikleren Crusoe bekræftede 6. november, at selskabet har solgt et ufærdigt datacenterprojekt i det sydøstlige Wyoming til Google. Et datacenter rummer de servere og den regnekraft, der blandt andet bruges til AI.\n\nSalget er ikke en helt ny oplysning: Bloomberg omtalte aftalen allerede i juni. Google har ikke oplyst, hvad selskabet betalte Crusoe for projektet, skriver TechCrunch."
+        },
+        {
+          "overskrift": "Google overtager et stort byggeprojekt",
+          "tekst": "Crusoe forsøgte først at få Google som kunde i Wyoming, men uden held. Google skal ifølge omtale have udtrykt bekymring over projektets pris og byggetid under Crusoes ledelse.\n\nNu overtager Google udviklingen og planlægger at investere 17 milliarder dollar i datacenterområdet. Da Crusoe lancerede projektet i 2025 sammen med infrastrukturselskabet Tallgrass, var planen på sigt en strømkapacitet på 10 gigawatt. Kilden oplyser ikke, om det fortsat er Googles mål.\n\nStore datacentre kan være vanskelige at færdiggøre til tiden og inden for budgettet, blandt andet fordi udviklerne skal skaffe både udstyr og strøm."
+        },
+        {
+          "overskrift": "Crusoe bygger stadig for Google",
+          "tekst": "Salget betyder ikke, at samarbejdet er slut. Crusoe udvikler også et datacenter til Google nær Amarillo i Texas. Selskabet bygger desuden datacentre til blandt andre Oracle, OpenAI og Microsoft.\n\nCrusoe tjener blandt andet penge ved at udleje plads i datacentre og den regnekraft, der bruges til at køre AI-modeller. I september rejste selskabet 3,9 milliarder dollar fra investorer."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "Google får selv ansvaret for at udvikle Wyoming-projektet, mens Crusoe fortsætter som leverandør til Google i Texas.",
+      "pointer": [],
+      "billedmotiv": "An unfinished datacenter structure receives a large front-facing panel bearing Google’s recognisable four-colour G, suggesting Google’s takeover of the Wyoming project. Exposed roof beams and an incomplete wall make the building’s unfinished state unmistakable. Keep the panel and building as solid, opaque forms with clear thickness and sharply separated contours. The scene is a conceptual illustration, isolated without surroundings or explanatory text.",
+      "billedmotiv_instruks": "2849f797c379f6ccfa66",
+      "billedstatus": {
+        "status": "afvist_af_filter",
+        "signatur": "fd1c5034a9775366"
+      },
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Crusoe sælger et problemramt datacenterprojekt i Wyoming til Google.",
+        "forbehold": "Materialet oplyser ikke handlens vilkår eller projektets videre forløb.",
+        "emne": "crusoe og google"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-07T06:33:23.267173+00:00"
+      },
+      "prio": 4,
+      "side": "artikel/bfdaf195a235ade1.html"
     },
     {
       "titel": "Le Chonk brings the brains. Studio puts it to work.",
@@ -2291,6 +2341,219 @@
       "billede": "data/img/f18c61f09042906f.webp"
     },
     {
+      "titel": "I watched a humanoid robot clean my apartment. It felt like a taste of the future.",
+      "link": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
+      "resume": "I’m not the sort of person who typically pays for a house cleaner. I’m too frugal, and I kind of enjoy putting on a podcast and going to town on my tub with a Magic Eraser. But when I saw an X post about a new humanoid-robot cleaning service in San Francisco, I immediately signed…",
+      "dato": "2026-11-06T10:00:00+00:00",
+      "kilde": "MIT Tech Review AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-11-06T16:11:20.307546+00:00",
+      "eget_foerst_set": "2026-11-06T16:11:20.307546+00:00",
+      "rubrik": "Tau Robotics rengør hjem med fjernstyrede robotter",
+      "resume_da": "I San Francisco kan man få besøg af en humanoid robot fra Tau Robotics, mens en menneskelig pilot styrer mange bevægelser og samler træningsdata.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "En fjernstyret robot i stuen",
+          "tekst": "Tau Robotics sender humanoide robotter ud til rengøring i San Francisco. Under besøget styres robotten af en menneskelig pilot, som følger med via kameraer i robotens hoved og håndled.\n\nNogle opgaver, som at rede sengen og folde tøj, kræver kinematisk vejledning: Piloten udfører bevægelserne, sensorer sender dem til robotten, som kopierer dem."
+        },
+        {
+          "overskrift": "Data er mere værd end rengøringen",
+          "tekst": "Hver aftørret bordplade og foldet T-shirt hjælper ifølge Tau med at træne de modeller, der skal gøre robotterne mere selvstændige. Fordi dataene er så værdifulde, satte Tau prisen lavere, end man kunne forvente til et så nyt produkt.\n\nRobotten er grundig, men langsom, så den er ikke et godt køb, hvis man bliver stående og ser på hele besøget."
+        },
+        {
+          "overskrift": "Første besøg endte før tiden",
+          "tekst": "Det første besøg begyndte med en blå minivan og otte trappetrin. Robotten havde svært ved trappen. Den gik ustabilt, hvilket Tau-medstifter Cornelia Weinzierl forklarede med den korte forsinkelse i fjernstyringen. Indendørs måtte hun slæbe den op ad de sidste trin af den tæppebelagte trappe.\n\nUnder rengøringen stoppede robotten gentagne gange; Weinzierl forklarede først, at den blev overophedet i det usædvanligt varme vejr. En kollega fortalte, at varmen havde slukket det udstyr, som den menneskelige fjernstyring brugte til at følge med.\n\nUden fjernhjælp kunne robotten ikke rengøre, og den og Weinzierl gik før den bookede time. Tau kompenserede besøget og tilbød et nyt."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "30 dollar",
+          "label": "Pris ved bookingen af det første besøg for en times rengøring med én robot"
+        },
+        {
+          "tal": "60 dollar",
+          "label": "Ny pris for ugentlig rengøring med to robotter"
+        },
+        {
+          "tal": "100 dollar",
+          "label": "Ny pris for et engangsbesøg"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Ved andet besøg klarede robotten trappen med lidt hjælp og gjorde køkkenet rent.",
+        "Tre gange faldt hovedet af dens toiletbørste, og tre gange satte den det på igen.",
+        "Robotten er 4,5 fod høj og har 3D-printede klohænder og grippestrømper.",
+        "Tau-medstifter Cornelia Weinzierl siger, at robotten allerede kan støvsuge og vaske gulv uden hjælp."
+      ],
+      "betydning": "Hvis Tau lykkes med autonome og billige rengøringsrobotter, kan de ifølge artiklen blive en ny tech-attraktion i San Francisco, i takt med at Waymos bliver mere almindelige.",
+      "pointer": [
+        "Tau-robotter fjernstyres fra hovedkontoret",
+        "Data fra hver rengøring træner AI-modeller",
+        "Første besøg blev afbrudt af udstyrssvigt"
+      ],
+      "billedmotiv": "A 4.5-foot-tall humanoid robot with 3D-printed claw hands and grip socks folds a T-shirt beside a laundry basket; a solid joystick console stands next to it, linked to the robot by a thick signal beam, showing a remote pilot guiding the cleaning task.",
+      "billedmotiv_instruks": "6f2c1689f9c8d49941a9",
+      "billede": "data/img/14ac2211a7d81207.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Førstehåndsreportage fra en humanoid rengøringstjeneste i San Francisco viser tidlig hverdagsbrug.",
+        "forbehold": "Enkeltstående oplevelse, ikke en systematisk test af robottens evner.",
+        "emne": "humanoid rengøringsrobot"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-06T16:19:24.925937+00:00"
+      },
+      "prio": 4,
+      "side": "artikel/9552db008db1e415.html"
+    },
+    {
+      "titel": "Gemini for Home now plugs into AT&T’s smart security system",
+      "link": "https://www.theverge.com/tech/1026787/att-gemini-for-home-connected-life-security-system",
+      "resume": "AT&T's smart home security system now integrates with Gemini for Home. The company says its Connected Life system is the \"first\" home security product to integrate with Google Home Premium, enabling a bunch of Gemini-powered features that can summarize home events, search your video history, and more. With the update, Gemini for Home can provide […]",
+      "dato": "2026-11-04T20:23:24+00:00",
+      "kilde": "The Verge AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-11-05T01:00:33.324815+00:00",
+      "eget_foerst_set": "2026-11-05T01:00:33.324815+00:00",
+      "rubrik": "AT&T lader Gemini beskrive overvågningsvideoer",
+      "resume_da": "Pakkeleveringer og nattens ubudne gæster kan nu findes med almindelige spørgsmål i AT&Ts Connected Life — men kun på den professionelle overvågningsplan.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Gemini beskriver, hvad kameraet så",
+          "tekst": "AT&Ts Connected Life er et smart overvågningssystem til boligen, og det kan nu kobles sammen med Gemini for Home, Googles AI-funktioner til hjemmet. Ifølge AT&T er det det første sikkerhedsprodukt, der integrerer med Google Home Premium.\n\nDet betyder, at Gemini kan give detaljerede beskrivelser af det, kameraerne fanger. Systemet kan for eksempel fortælle, hvem der leverede en pakke, og hvor mange ting de satte fra sig."
+        },
+        {
+          "overskrift": "Man kan spørge om nattens hærværk",
+          "tekst": "Optagelserne bliver søgbare med almindeligt sprog. I stedet for at rulle gennem timers video kan man stille spørgsmål som «Hvad gravede haven op i nat?» eller «Hvem lukkede hundene ud?» og få svar fra de gemte optagelser.\n\nSystemet kan også levere daglige opsummeringer af, hvad der er sket inde og ude omkring boligen."
+        },
+        {
+          "overskrift": "Kræver AT&Ts dyreste overvågningsplan",
+          "tekst": "Funktionerne er kun tilgængelige med AT&Ts professionelle Connected Life-plan til **29,99 dollars om måneden**. Samme opdatering gør det også muligt at lade systemet aktivere eller deaktivere alarmen automatisk, når man nærmer sig eller forlader hjemmet."
+        },
+        {
+          "overskrift": "Bygget på Googles Home APIs",
+          "tekst": "AT&T lancerede Connected Life i december sammen med Google og Abode. Integrationen bruger Googles Gemini-drevne Home APIs, som lader producenter af smart home-udstyr bygge AI-funktioner ind i deres enheder.\n\nADT har antydet, at selskabet også vil bringe Gemini for Home-funktioner ind i sine sikkerhedssystemer. AT&T kan altså få selskab."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "29,99 dollars om måneden",
+          "label": "AT&Ts professionelle Connected Life-overvågningsplan, som er den eneste adgang til Gemini-funktionerne"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Connected Life blev lanceret i december i samarbejde med Google og Abode.",
+        "Integrationen bygger på Googles Gemini-drevne Home APIs til smart home-produkter.",
+        "ADT har antydet, at selskabet vil bringe Gemini for Home ind i sine sikkerhedssystemer.",
+        "Alarmen kan nu aktiveres og deaktiveres automatisk ud fra afstanden til hjemmet."
+      ],
+      "betydning": "AT&T kalder selv integrationen den første af sin slags. Hvis flere alarmleverandører følger efter, kan AI-søgning i kameraoptagelser blive en fast del af hjemmets sikkerhedspakke.",
+      "pointer": [
+        "Gemini beskriver hændelser fanget af sikkerhedskameraer",
+        "Videooptagelser kan søges med almindelige spørgsmål",
+        "Kun med plan til 29,99 dollars om måneden"
+      ],
+      "billedmotiv": "A solid home security camera bearing AT&T's blue globe emblem points at a rigid rectangular video frame; inside the frame, a parcel sits on a doorstep. Beside the frame floats the four-colour Gemini spark, its concave four-point star, indicating Gemini describes and searches the footage.",
+      "billedmotiv_instruks": "865d9ae43cc73bccdbbb",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "AT&Ts Connected Life integreres med Gemini for Home og får ifølge selskabet selv opsummering af hændelser og søgning i videohistorik.",
+        "forbehold": "Det er AT&Ts egen påstand om at være først; funktionernes kvalitet er ikke uafhængigt testet.",
+        "emne": "gemini for home og at&t"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-05T01:05:33.983321+00:00"
+      },
+      "prio": 5,
+      "side": "artikel/94f88b800358a11e.html",
+      "billede": "data/img/bec73cf7eaacf6fa.webp"
+    },
+    {
+      "titel": "China reportedly recruited AI exec to spy on Jensen Huang",
+      "link": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
+      "resume": "China's intelligence agency recruited Megaspeed executive Alice Huang to spy on Nvidia CEO Jensen Huang, according to The New York Times. The Ministry of State Security (MSS) enlisted her to glean information about American AI chips and \"potentially influence the company to push for its most advanced chips to be made available to China.\" Megaspeed […]",
+      "dato": "2026-11-06T18:00:44-05:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-11-07T06:30:44.469330+00:00",
+      "eget_foerst_set": "2026-11-07T06:30:44.469330+00:00",
+      "rubrik": "Kina skal have rekrutteret leder til Nvidia-spionage",
+      "resume_da": "Ifølge The New York Times skulle Alice Huang skaffe oplysninger om amerikanske AI-chips og muligvis påvirke Nvidias arbejde for salg til Kina.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Kontakter skulle åbne vej til oplysninger",
+          "tekst": "Kinas efterretningstjeneste, Ministry of State Security (MSS), rekrutterede ifølge The New York Times Megaspeed-lederen Alice Huang til at spionere mod Nvidias direktør, Jensen Huang. Nvidia producerer blandt andet chips, der bruges til AI.\n\nFormålet var ifølge avisen at skaffe oplysninger om amerikanske AI-chips. Alice Huang skulle muligvis også påvirke Nvidia til at arbejde for, at selskabets mest avancerede chips blev tilgængelige i Kina.\n\nMegaspeed er kunde hos Nvidia. Ifølge The New York Times har Alice Huang desuden forbindelser til ledere på højeste niveau i AI-chipindustrien, herunder hos virksomheden Gigabyte."
+        },
+        {
+          "overskrift": "Kongresudvalg vil tale med Jensen Huang",
+          "tekst": "The New York Times beskrev allerede i sidste uge Jensen Huang som mål for en kinesisk spionplan og fortalte om hans forhold til Alice Huang. Den nye oplysning er ifølge The Verge, at Kinas efterretningstjeneste skal have rekrutteret hende.\n\nAvisen beskriver forholdet mellem de to som tæt. De er ikke i familie. Præsident Donald Trump blev sidste år orienteret om deres forhold, men foretog sig ifølge omtalen ikke noget.\n\nTre udvalg i Repræsentanternes Hus har nu bedt Jensen Huang om at møde op til en fælles, lukket briefing om sin kontakt med Alice Huang. Materialet beskriver ikke, om hun skaffede oplysninger eller påvirkede Nvidia."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "",
+      "pointer": [],
+      "billedmotiv": "A solid spyglass points toward an AI chip bearing NVIDIA’s recognisable green eye logo, suggesting the reported attempt to gather information about the company’s chips. A closed chip surface keeps the outcome unresolved rather than implying information was obtained. Make the eye mark large and front-facing, with thick opaque forms, crisp edges and separated contours. The conceptual scene stands alone without surroundings or explanatory text.",
+      "billedmotiv_instruks": "9b9b43677caa0cd1ea51",
+      "billede": "data/img/72a0e9dc03f26634.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Kinesisk efterretningstjeneste rekrutterede ifølge New York Times en leder til at spionere på Nvidias direktør.",
+        "forbehold": "Påstandene er ikke selvstændigt dokumenteret i det medsendte materiale.",
+        "emne": "nvidia og kina"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-07T06:33:22.420811+00:00"
+      },
+      "prio": 4,
+      "side": "artikel/421fa7063f0687d0.html"
+    },
+    {
       "titel": "Apple starts giving Siri AI access to third-party apps",
       "link": "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps",
       "resume": "Apple will now let Siri AI perform actions across third-party apps. As part of the iOS 27.3 update rolling out on Tuesday, Apple announced developers can now integrate Siri AI's new features in \"all apps,\" allowing the voice assistant to draw on a user's personal context, process natural language prompts, and use on-screen awareness to […]",
@@ -2543,61 +2806,163 @@
       }
     },
     {
-      "titel": "I watched a humanoid robot clean my apartment. It felt like a taste of the future.",
-      "link": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
-      "resume": "I’m not the sort of person who typically pays for a house cleaner. I’m too frugal, and I kind of enjoy putting on a podcast and going to town on my tub with a Magic Eraser. But when I saw an X post about a new humanoid-robot cleaning service in San Francisco, I immediately signed…",
-      "dato": "2026-11-06T10:00:00+00:00",
-      "kilde": "MIT Tech Review AI",
+      "titel": "Dropbox acquires Tigris Data for $350M to bolster its AI infrastructure",
+      "link": "https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/",
+      "resume": "The deal is expected to support the development of DBX Agent Cloud, a new storage platform aimed at developers building AI models and agents.",
+      "dato": "2026-11-05T15:19:05+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-05T22:13:13.067417+00:00",
+      "eget_foerst_set": "2026-11-05T22:13:13.067417+00:00",
+      "rubrik": "Dropbox køber Tigris Data for 350 millioner dollar",
+      "resume_da": "Opkøbet skal bære DBX Agent Cloud, en lagerplatform Dropbox vil sælge løsrevet til virksomheder, der bygger AI-agenter.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Dropbox køber Tigris Data for 350 mio. dollar for at understøtte DBX Agent Cloud til udviklere af AI-modeller og agenter.",
+        "forbehold": "Kun kort omtale af opkøbet; platformens funktioner og tidsplan er ikke beskrevet.",
+        "emne": "dropbox"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Tigris placerer data tæt på brugerne",
+          "tekst": "Tigris Data blev grundlagt af tidligere Uber-ingeniører, som var med til at bygge kørselstjenestens lagerinfrastruktur. Selskabet sælger cloudlagring, der automatisk placerer data tættere på de brugere og beregningskræfter, som skal bruge dem.\n\nDet skal forkorte adgangstiden og give bedre ydeevne for virksomheder, der henter data fra flere regioner. Sidste år rejste Tigris Data 25 millioner dollar i en Series A-runde."
+        },
+        {
+          "overskrift": "Lagring til AI-agenter bliver et selvstændigt produkt",
+          "tekst": "Opkøbet skal styrke Dropbox' udvikling af **DBX Agent Cloud**, en ny lagerplatform for virksomheder og udviklere, der bygger AI-modeller og AI-agenter. Første version bliver objektlagring — en måde at gemme store mængder data på, som kan hentes enkeltvis — og den kan købes separat uden et Dropbox-abonnement.\n\nProduktet skal kunne bruges sammen med værktøjer, der allerede er bygget til Amazon S3, Amazons tjeneste til at gemme og hente store datamængder. Dropbox planlægger senere at tilføje dokumenter, billeder, lyd og video samt funktioner som i et filsystem, så AI-agenter kan styre filer og bevare sammenhæng mellem opgaver."
+        },
+        {
+          "overskrift": "AI kan udføre opgaver i dine egne filer",
+          "tekst": "Dropbox ruller samtidig AI-funktioner ud i selve produktet. Brugerne kan bede AI'en udføre understøttede opgaver med deres filer, vælge mellem forskellige AI-modeller og koble indholdet til eksterne værktøjer som ChatGPT, Claude og Muse.\n\nIfølge Dropbox har over 70.000 teams fået den opdaterede oplevelse. Den første udrulning gælder kvalificerede Standard- og Advanced-kunder i USA, Storbritannien og Australien, og bredere tilgængelighed er planlagt til 2027."
+        },
+        {
+          "overskrift": "Ingen fyringer varslet trods nedskæring sidste måned",
+          "tekst": "Dropbox oplyser til TechCrunch, at opkøbet ikke ventes at føre til fyringer, og at handlen forventes afsluttet i fjerde kvartal 2026. Måneden før skar selskabet 9 procent af sin globale medarbejderstab, skriver WSJ.\n\nIfølge TechCrunch er de 350 millioner dollar Dropbox' hidtil største opkøb. Det er ikke det første inden for AI: Dropbox har tidligere købt Reclaim.ai, Promoted.ai og Mobius Labs."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "350 mio. dollar",
+          "label": "Pris for Dropbox' opkøb af Tigris Data; selskabets største til dato ifølge TechCrunch"
+        },
+        {
+          "tal": "25 mio. dollar",
+          "label": "Tigris Datas Series A-runde sidste år"
+        },
+        {
+          "tal": "70.000+ teams",
+          "label": "Har fået Dropbox' opdaterede AI-oplevelse, oplyser Dropbox"
+        },
+        {
+          "tal": "9 pct.",
+          "label": "Af den globale medarbejderstab nedlagt måneden før opkøbet (WSJ)"
+        }
+      ],
+      "detaljer": [
+        "Handlen ventes afsluttet i fjerde kvartal 2026.",
+        "Tigris Data er grundlagt af tidligere Uber-ingeniører.",
+        "Første udrulning gælder Standard- og Advanced-kunder i USA, Storbritannien og Australien.",
+        "Dropbox har tidligere opkøbt Reclaim.ai, Promoted.ai og Mobius Labs."
+      ],
+      "betydning": "Sælges lagringen løsrevet fra Dropbox-abonnementet, får selskabet en indtægt, der ikke afhænger af antallet af brugere — og en plads ved siden af Amazon S3.",
+      "pointer": [
+        "Tigris Data købes for 350 mio. dollar",
+        "DBX Agent Cloud sælges som separat lagring",
+        "AI-funktioner i Dropbox når 70.000+ teams"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-06T07:21:20.356664+00:00"
+      },
+      "billedmotiv": "A large solid blue Dropbox open-box mark sits on an opaque cloud-shaped storage module; a smaller data canister locks into its side, and a simple globe pin hovers close to the canister. Thick outlines and sharp edges keep the acquisition, the storage layer, and local data placement distinct.",
+      "billedmotiv_instruks": "4b1b0b5d1b4601a3f6a4",
+      "side": "artikel/939524e97f242da6.html",
+      "billede": "data/img/a8c2d38f5c674d13.webp"
+    },
+    {
+      "titel": "Airbnb says it’s launching an AI travel agent in the first half of 2027",
+      "link": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/",
+      "resume": "Airbnb says its upcoming AI agent will help travelers plan trips, compare options, manage bookings, and get assistance throughout their stay.",
+      "dato": "2026-11-05T22:40:55+00:00",
+      "kilde": "TechCrunch AI",
       "kategori": "Hverdags-AI",
-      "foerst_set": "2026-11-06T16:11:20.307546+00:00",
-      "eget_foerst_set": "2026-11-06T16:11:20.307546+00:00",
-      "rubrik": "Tau Robotics rengør hjem med fjernstyrede robotter",
-      "resume_da": "I San Francisco kan man få besøg af en humanoid robot fra Tau Robotics, mens en menneskelig pilot styrer mange bevægelser og samler træningsdata.",
+      "foerst_set": "2026-11-06T07:16:54.196123+00:00",
+      "eget_foerst_set": "2026-11-06T07:16:54.196123+00:00",
+      "rubrik": "Airbnb lancerer AI-rejseagent i første halvdel af 2027",
+      "resume_da": "Agenten skal sammensætte kort, fotos og kalendere i realtid i stedet for at svare i ren tekst og hjælpe under selve rejsen.",
       "brief": "",
       "sektioner": [
         {
-          "overskrift": "En fjernstyret robot i stuen",
-          "tekst": "Tau Robotics sender humanoide robotter ud til rengøring i San Francisco. Under besøget styres robotten af en menneskelig pilot, som følger med via kameraer i robotens hoved og håndled.\n\nNogle opgaver, som at rede sengen og folde tøj, kræver kinematisk vejledning: Piloten udfører bevægelserne, sensorer sender dem til robotten, som kopierer dem."
+          "overskrift": "Byggeklodser i stedet for chattekst",
+          "tekst": "Airbnb har tidligere talt om en AI-rejseagent i vage vendinger. Nu binder selskabet sig til at lancere den i første halvdel af 2027, fremgår det af aktionærbrevet for tredje kvartal.\n\nAgenten bliver ikke en almindelig chatbot. Den skal trække på et bibliotek med **hundreder af færdige byggeklodser** til rejsegrænseflader — kort, fotos, sammenligninger, kalendere og rejseplaner — og sammensætte dem i realtid efter gæstens spørgsmål.\n\nChesky beskriver selv oplevelsen som »lidt ligesom generativ UI«: altså en grænseflade, som AI'en bygger fra bunden, så den passer til den enkelte forespørgsel."
         },
         {
-          "overskrift": "Data er mere værd end rengøringen",
-          "tekst": "Hver aftørret bordplade og foldet T-shirt hjælper ifølge Tau med at træne de modeller, der skal gøre robotterne mere selvstændige. Fordi dataene er så værdifulde, satte Tau prisen lavere, end man kunne forvente til et så nyt produkt.\n\nRobotten er grundig, men langsom, så den er ikke et godt køb, hvis man bliver stående og ser på hele besøget."
+          "overskrift": "Hjælp når reservationen skal ændres",
+          "tekst": "Airbnb fremhæver i brevet, at agenten også skal kunne noget, en udefrakommende agent har svært ved: at hjælpe under selve rejsen. Det gælder ændring af en reservation, betalingsproblemer, refusion, ombooking og sikkerhedssupport hele døgnet.\n\nSelskabet begrunder det med næsten 20 års erfaring med værter og gæster, som ifølge Airbnb former måden, agenten bygges på."
         },
         {
-          "overskrift": "Første besøg endte før tiden",
-          "tekst": "Det første besøg begyndte med en blå minivan og otte trappetrin. Robotten havde svært ved trappen. Den gik ustabilt, hvilket Tau-medstifter Cornelia Weinzierl forklarede med den korte forsinkelse i fjernstyringen. Indendørs måtte hun slæbe den op ad de sidste trin af den tæppebelagte trappe.\n\nUnder rengøringen stoppede robotten gentagne gange; Weinzierl forklarede først, at den blev overophedet i det usædvanligt varme vejr. En kollega fortalte, at varmen havde slukket det udstyr, som den menneskelige fjernstyring brugte til at følge med.\n\nUden fjernhjælp kunne robotten ikke rengøre, og den og Weinzierl gik før den bookede time. Tau kompenserede besøget og tilbød et nyt."
+          "overskrift": "Rejser er ikke en rutineopgave",
+          "tekst": "På regnskabsopkaldet skelnede CEO Brian Chesky mellem rejseplanlægning og simple gøremål. AI-agenter som Muse og Instinct er gode til rutineopgaver som at bestille et restaurantbord eller en tid, sagde han. Rejser er noget andet.\n\n»Rejser er aspirerende. At opdage, hvor man skal hen, og hvor man skal bo, er en del af oplevelsen,« sagde han ifølge TechCrunch og henviste til, at **80 procent af rejsende** efter hans oplysninger siger, de nyder at undersøge ture."
+        },
+        {
+          "overskrift": "På sigt også hoteller og oplevelser",
+          "tekst": "Airbnb venter, at agenten med tiden også dækker hoteller, services og oplevelser — to områder, der har fået større vægt, siden selskabet sidste år lavede et redesign."
         }
       ],
       "noegletal": [
         {
-          "tal": "30 dollar",
-          "label": "Pris ved bookingen af det første besøg for en times rengøring med én robot"
+          "tal": "19 %",
+          "label": "Vækst i omsætningen i tredje kvartal sammenlignet med samme kvartal året før"
         },
         {
-          "tal": "60 dollar",
-          "label": "Ny pris for ugentlig rengøring med to robotter"
+          "tal": "4,87 mia. dollar",
+          "label": "Airbnbs omsætning i tredje kvartal"
         },
         {
-          "tal": "100 dollar",
-          "label": "Ny pris for et engangsbesøg"
+          "tal": "80 %",
+          "label": "Rejsende, der ifølge Chesky nyder at bruge tid på at undersøge ture"
         }
       ],
       "figurer": [],
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/tech/1028412/airbnb-ai-travel-agent-q3-2026-earnings",
+          "rubrik": "Airbnb vil lancere AI-agent til rejser i 2027",
+          "resume_da": "Agenten skal både finde og booke ophold uden et egentligt chatvindue og er planlagt til første halvår 2027.",
+          "dato": "2026-11-05T19:06:12-05:00",
+          "foerst_set": "2026-11-06T07:16:54.196123+00:00"
+        }
+      ],
       "detaljer": [
-        "Ved andet besøg klarede robotten trappen med lidt hjælp og gjorde køkkenet rent.",
-        "Tre gange faldt hovedet af dens toiletbørste, og tre gange satte den det på igen.",
-        "Robotten er 4,5 fod høj og har 3D-printede klohænder og grippestrømper.",
-        "Tau-medstifter Cornelia Weinzierl siger, at robotten allerede kan støvsuge og vaske gulv uden hjælp."
+        "Tidligere lød meldingen »inden for det næste år«; nu er datoen første halvdel af 2027.",
+        "Airbnb hævede sin prognose for omsætningsvækst i 2026 til den høje ende af teenageårene.",
+        "Agenten skal ifølge brevet kunne skifte en reservation og løse betalingsproblemer under rejsen."
       ],
-      "betydning": "Hvis Tau lykkes med autonome og billige rengøringsrobotter, kan de ifølge artiklen blive en ny tech-attraktion i San Francisco, i takt med at Waymos bliver mere almindelige.",
+      "betydning": "Airbnb satser på, at rejseplanlægning kræver mere end chat. Det er et svar på, at generelle agenter som Muse og Instinct allerede klarer enkle opgaver som bordbestilling.",
       "pointer": [
-        "Tau-robotter fjernstyres fra hovedkontoret",
-        "Data fra hver rengøring træner AI-modeller",
-        "Første besøg blev afbrudt af udstyrssvigt"
+        "Agenten lanceres i første halvdel af 2027",
+        "Bygger grænseflader af kort, fotos og kalendere",
+        "Skal også hjælpe under rejsen med ombooking og refusion"
       ],
-      "billedmotiv": "A 4.5-foot-tall humanoid robot with 3D-printed claw hands and grip socks folds a T-shirt beside a laundry basket; a solid joystick console stands next to it, linked to the robot by a thick signal beam, showing a remote pilot guiding the cleaning task.",
-      "billedmotiv_instruks": "6f2c1689f9c8d49941a9",
-      "billede": "data/img/14ac2211a7d81207.webp",
+      "billedmotiv": "A large coral-red Airbnb Bélo emblem sits on a solid white travel panel; a rounded map tile with a pin and a rounded calendar tile click into two slots beside it. Thick outlines and sharp edges keep the modular travel pieces separate.",
+      "billedmotiv_instruks": "c40e06f32a34fa43828f",
+      "billede": "data/img/78729b0e25376571.webp",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -2607,153 +2972,100 @@
         "brugbarhed": 2,
         "dokumentation": 3,
         "dansk": 0,
-        "type": "analyse",
+        "type": "lancering",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Førstehåndsreportage fra en humanoid rengøringstjeneste i San Francisco viser tidlig hverdagsbrug.",
-        "forbehold": "Enkeltstående oplevelse, ikke en systematisk test af robottens evner.",
-        "emne": "humanoid rengøringsrobot"
+        "begrundelse": "Airbnb bekræfter, at agenten skal planlægge rejser, sammenligne muligheder og håndtere bookinger fra første halvdel af 2027.",
+        "forbehold": "Kun annonceret; ingen demonstration eller pris.",
+        "emne": "airbnb ai-rejseagent"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
-        "kontrolleret": "2026-11-06T16:19:24.925937+00:00"
+        "kontrolleret": "2026-11-06T07:21:00.753113+00:00"
       },
+      "historie_dato": "2026-11-05T22:40:55+00:00",
       "prio": 4,
-      "side": "artikel/9552db008db1e415.html"
+      "side": "artikel/560f077b27e20f29.html"
     },
     {
-      "titel": "Gemini for Home now plugs into AT&T’s smart security system",
-      "link": "https://www.theverge.com/tech/1026787/att-gemini-for-home-connected-life-security-system",
-      "resume": "AT&T's smart home security system now integrates with Gemini for Home. The company says its Connected Life system is the \"first\" home security product to integrate with Google Home Premium, enabling a bunch of Gemini-powered features that can summarize home events, search your video history, and more. With the update, Gemini for Home can provide […]",
-      "dato": "2026-11-04T20:23:24+00:00",
-      "kilde": "The Verge AI",
+      "titel": "Box taps Nvidia’s Nemotron for new agent-first content retrieval system",
+      "link": "https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system/",
+      "resume": "The system can supposedly answer queries four times faster, with 20% fewer errors and 90% fewer tokens used.",
+      "dato": "2026-11-05T14:00:00+00:00",
+      "kilde": "TechCrunch AI",
       "kategori": "Hverdags-AI",
-      "foerst_set": "2026-11-05T01:00:33.324815+00:00",
-      "eget_foerst_set": "2026-11-05T01:00:33.324815+00:00",
-      "rubrik": "AT&T lader Gemini beskrive overvågningsvideoer",
-      "resume_da": "Pakkeleveringer og nattens ubudne gæster kan nu findes med almindelige spørgsmål i AT&Ts Connected Life — men kun på den professionelle overvågningsplan.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Gemini beskriver, hvad kameraet så",
-          "tekst": "AT&Ts Connected Life er et smart overvågningssystem til boligen, og det kan nu kobles sammen med Gemini for Home, Googles AI-funktioner til hjemmet. Ifølge AT&T er det det første sikkerhedsprodukt, der integrerer med Google Home Premium.\n\nDet betyder, at Gemini kan give detaljerede beskrivelser af det, kameraerne fanger. Systemet kan for eksempel fortælle, hvem der leverede en pakke, og hvor mange ting de satte fra sig."
-        },
-        {
-          "overskrift": "Man kan spørge om nattens hærværk",
-          "tekst": "Optagelserne bliver søgbare med almindeligt sprog. I stedet for at rulle gennem timers video kan man stille spørgsmål som «Hvad gravede haven op i nat?» eller «Hvem lukkede hundene ud?» og få svar fra de gemte optagelser.\n\nSystemet kan også levere daglige opsummeringer af, hvad der er sket inde og ude omkring boligen."
-        },
-        {
-          "overskrift": "Kræver AT&Ts dyreste overvågningsplan",
-          "tekst": "Funktionerne er kun tilgængelige med AT&Ts professionelle Connected Life-plan til **29,99 dollars om måneden**. Samme opdatering gør det også muligt at lade systemet aktivere eller deaktivere alarmen automatisk, når man nærmer sig eller forlader hjemmet."
-        },
-        {
-          "overskrift": "Bygget på Googles Home APIs",
-          "tekst": "AT&T lancerede Connected Life i december sammen med Google og Abode. Integrationen bruger Googles Gemini-drevne Home APIs, som lader producenter af smart home-udstyr bygge AI-funktioner ind i deres enheder.\n\nADT har antydet, at selskabet også vil bringe Gemini for Home-funktioner ind i sine sikkerhedssystemer. AT&T kan altså få selskab."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "29,99 dollars om måneden",
-          "label": "AT&Ts professionelle Connected Life-overvågningsplan, som er den eneste adgang til Gemini-funktionerne"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Connected Life blev lanceret i december i samarbejde med Google og Abode.",
-        "Integrationen bygger på Googles Gemini-drevne Home APIs til smart home-produkter.",
-        "ADT har antydet, at selskabet vil bringe Gemini for Home ind i sine sikkerhedssystemer.",
-        "Alarmen kan nu aktiveres og deaktiveres automatisk ud fra afstanden til hjemmet."
-      ],
-      "betydning": "AT&T kalder selv integrationen den første af sin slags. Hvis flere alarmleverandører følger efter, kan AI-søgning i kameraoptagelser blive en fast del af hjemmets sikkerhedspakke.",
-      "pointer": [
-        "Gemini beskriver hændelser fanget af sikkerhedskameraer",
-        "Videooptagelser kan søges med almindelige spørgsmål",
-        "Kun med plan til 29,99 dollars om måneden"
-      ],
-      "billedmotiv": "A solid home security camera bearing AT&T's blue globe emblem points at a rigid rectangular video frame; inside the frame, a parcel sits on a doorstep. Beside the frame floats the four-colour Gemini spark, its concave four-point star, indicating Gemini describes and searches the footage.",
-      "billedmotiv_instruks": "865d9ae43cc73bccdbbb",
-      "kat_ai": true,
+      "foerst_set": "2026-11-05T22:13:13.067417+00:00",
+      "eget_foerst_set": "2026-11-05T22:13:13.067417+00:00",
+      "rubrik": "Box bygger Nvidia Nemotron ind i søgning",
+      "resume_da": "Box Content Retrieval skal lade AI-agenter hente relevante dokumentbidder hurtigere og billigere ved hjælp af Nvidias Nemotron Embed.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
         "nyhed": 2,
         "betydning": 2,
         "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "AT&Ts Connected Life integreres med Gemini for Home og får ifølge selskabet selv opsummering af hændelser og søgning i videohistorik.",
-        "forbehold": "Det er AT&Ts egen påstand om at være først; funktionernes kvalitet er ikke uafhængigt testet.",
-        "emne": "gemini for home og at&t"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-11-05T01:05:33.983321+00:00"
-      },
-      "prio": 5,
-      "side": "artikel/94f88b800358a11e.html",
-      "billede": "data/img/bec73cf7eaacf6fa.webp"
-    },
-    {
-      "titel": "China reportedly recruited AI exec to spy on Jensen Huang",
-      "link": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
-      "resume": "China's intelligence agency recruited Megaspeed executive Alice Huang to spy on Nvidia CEO Jensen Huang, according to The New York Times. The Ministry of State Security (MSS) enlisted her to glean information about American AI chips and \"potentially influence the company to push for its most advanced chips to be made available to China.\" Megaspeed […]",
-      "dato": "2026-11-06T18:00:44-05:00",
-      "kilde": "The Verge AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-11-07T06:30:44.469330+00:00",
-      "eget_foerst_set": "2026-11-07T06:30:44.469330+00:00",
-      "rubrik": "Kina skal have rekrutteret leder til Nvidia-spionage",
-      "resume_da": "Ifølge The New York Times skulle Alice Huang skaffe oplysninger om amerikanske AI-chips og muligvis påvirke Nvidias arbejde for salg til Kina.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Kontakter skulle åbne vej til oplysninger",
-          "tekst": "Kinas efterretningstjeneste, Ministry of State Security (MSS), rekrutterede ifølge The New York Times Megaspeed-lederen Alice Huang til at spionere mod Nvidias direktør, Jensen Huang. Nvidia producerer blandt andet chips, der bruges til AI.\n\nFormålet var ifølge avisen at skaffe oplysninger om amerikanske AI-chips. Alice Huang skulle muligvis også påvirke Nvidia til at arbejde for, at selskabets mest avancerede chips blev tilgængelige i Kina.\n\nMegaspeed er kunde hos Nvidia. Ifølge The New York Times har Alice Huang desuden forbindelser til ledere på højeste niveau i AI-chipindustrien, herunder hos virksomheden Gigabyte."
-        },
-        {
-          "overskrift": "Kongresudvalg vil tale med Jensen Huang",
-          "tekst": "The New York Times beskrev allerede i sidste uge Jensen Huang som mål for en kinesisk spionplan og fortalte om hans forhold til Alice Huang. Den nye oplysning er ifølge The Verge, at Kinas efterretningstjeneste skal have rekrutteret hende.\n\nAvisen beskriver forholdet mellem de to som tæt. De er ikke i familie. Præsident Donald Trump blev sidste år orienteret om deres forhold, men foretog sig ifølge omtalen ikke noget.\n\nTre udvalg i Repræsentanternes Hus har nu bedt Jensen Huang om at møde op til en fælles, lukket briefing om sin kontakt med Alice Huang. Materialet beskriver ikke, om hun skaffede oplysninger eller påvirkede Nvidia."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [],
-      "betydning": "",
-      "pointer": [],
-      "billedmotiv": "A solid spyglass points toward an AI chip bearing NVIDIA’s recognisable green eye logo, suggesting the reported attempt to gather information about the company’s chips. A closed chip surface keeps the outcome unresolved rather than implying information was obtained. Make the eye mark large and front-facing, with thick opaque forms, crisp edges and separated contours. The conceptual scene stands alone without surroundings or explanatory text.",
-      "billedmotiv_instruks": "9b9b43677caa0cd1ea51",
-      "billede": "data/img/72a0e9dc03f26634.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 1,
         "dokumentation": 2,
         "dansk": 0,
-        "type": "sikkerhed",
+        "type": "forretning",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Kinesisk efterretningstjeneste rekrutterede ifølge New York Times en leder til at spionere på Nvidias direktør.",
-        "forbehold": "Påstandene er ikke selvstændigt dokumenteret i det medsendte materiale.",
-        "emne": "nvidia og kina"
+        "begrundelse": "Box bygger agentbaseret søgesystem på Nvidias Nemotron og lover hurtigere svar med færre fejl og tokens.",
+        "forbehold": "Præstationstallene er Box' egne og ikke uafhængigt efterprøvet.",
+        "emne": "box nemotron"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Agenter får bidder i stedet for hele dokumenter",
+          "tekst": "På sin udviklerkonference viste dokumenttjenesten Box en ny funktion kaldet Box Content Retrieval. Den bygger Nvidias Nemotron Embed ind i kernen af Box' produkt, så AI-agenter, altså programmer der selv kan udføre opgaver, kan søge i dokumenter via metadata, altså oplysninger om indholdet, som modellen har skabt.\n\nNemotron Embed er en familie af frit tilgængelige indlejringsmodeller. Indlejring betyder, at tekst omdannes til en form, en AI kan sammenligne, så den kan finde beslægtede begreber i stedet for kun at matche nøgleord. I stedet for at agenten skal læse hvert dokument igennem, sender systemet de mest relevante bidder tilbage, siger Box-topchef Aaron Levie. Det skal give hurtigere, mere præcise og billigere forespørgsler for kunderne."
+        },
+        {
+          "overskrift": "Nvidia venter fire gange hurtigere svar",
+          "tekst": "Kari Briski, Nvidias vicepræsident for generativ AI-software, forventer, at forespørgslerne bliver besvaret markant hurtigere, med færre fejl og langt lavere tokenforbrug. Et token er en lille tekstbid, som en AI-model behandler. Tallene er Nvidias forventning, ikke en offentliggjort måling fra Box.\n\nBox nævner advokater som eksempel: De skal lettere kunne finde relevante klausuler og præcedenser, fordi Nemotrons indlejringer matcher begreber frem for blot nøgleord, også når ordvalget eller sproget er et andet."
+        },
+        {
+          "overskrift": "Systemet er mere end åbne modeller",
+          "tekst": "Selv om Nemotron-modellerne er frit tilgængelige, hviler systemet også på Box' eksisterende metadata og adgangskontrol. Det gør det ifølge Levie svært at genskabe fra bunden; han siger, at Box pakker fem teknologier ind i ét API, en programmeringsgrænseflade som andre systemer kan kalde.\n\nFunktionen rulles ud til alle Box' Enterprise Advance-kunder i begyndelsen af næste år."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "4 gange",
+          "label": "Nvidias forventede hastighedsforbedring for forespørgsler"
+        },
+        {
+          "tal": "20 %",
+          "label": "Nvidias forventede fald i fejl"
+        },
+        {
+          "tal": "90 %",
+          "label": "Nvidias forventede fald i tokenforbrug"
+        }
+      ],
+      "detaljer": [
+        "En Nemotron-udgivelse i juli toppede RTEB, et benchmark for søgekvalitet."
+      ],
+      "betydning": "Hvis Nvidias forventning holder, kan agenter arbejde i store dokumentarkiver med færre tokens, hvilket kan sænke driftsomkostningerne ved AI-søgning.",
+      "pointer": [
+        "Box Content Retrieval bruger Nemotron Embed",
+        "Nvidia forventer 4 gange hurtigere svar",
+        "Udbredes til Enterprise Advance næste år"
+      ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
-        "kontrolleret": "2026-11-07T06:33:22.420811+00:00"
+        "kontrolleret": "2026-11-05T22:26:33.285598+00:00"
       },
-      "prio": 4,
-      "side": "artikel/421fa7063f0687d0.html"
+      "side": "artikel/781e4656d3583054.html",
+      "billedmotiv": "A tall stack of document sheets with one narrow strip pulled out sideways and lifted away, feeding into a solid rectangular chip module beside it; a compact archive folder with a few marked tabs stands next to the chip. Thick opaque shapes, sharp contours, no text or transparent glass.",
+      "billedmotiv_instruks": "809fecfeccd184bcdb10",
+      "billede": "data/img/95411e8be00bf637.webp"
     },
     {
       "titel": "Securing the agentic enterprise with data lineage",
@@ -2941,6 +3253,92 @@
       }
     },
     {
+      "titel": "AI PACs spent millions trying to shape Congress — here’s how they fared",
+      "link": "https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/",
+      "resume": "AI industry PACs spent millions influencing the 2026 midterms, with mixed results. Political groups are already looking toward the next election cycle.",
+      "dato": "2026-11-04T22:45:09+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-11-05T01:00:33.324815+00:00",
+      "eget_foerst_set": "2026-11-05T01:00:33.324815+00:00",
+      "rubrik": "American Mission tabte dyr senatskamp",
+      "resume_da": "To AI-PAC'er brugte 4,8 mio. dollar på en tabende senatskandidat, mens Guardrails Alliance vil gøre AI-penge til en politisk byrde.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "AI-branchens PAC'er brugte millioner på at påvirke kongresvalget i 2026 med blandet resultat, og grupperne ser nu mod næste cyklus.",
+        "forbehold": "Kilden angiver hverken beløb eller hvilke valgkredse indsatsen flyttede.",
+        "emne": "ai-pacs og kongresvalg"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ],
+      "sektioner": [
+        {
+          "overskrift": "4,8 millioner dollar på en tabende kandidat",
+          "tekst": "To AI-fokuserede politiske aktionskomitéer (PAC'er) brugte tilsammen 4,8 millioner dollar på at støtte Darline Graham, der var kandidat til Senatet i South Carolina. Hun tabte. Det var American Mission og Building the Future, og TechCrunch rapporterer, at flere af de tungest støttede kandidater tabte.\n\nAmerican Mission støttede også de republikanske huskandidater Aaron Flint i Montana og Laurie Buckhout i North Carolina med store beløb. Begge tabte.\n\nLTF's demokratiske gren Think Big gik bedre: Florida-repræsentanten Jared Moskowitz vandt genvalg. Det er svært at skille AI-pengenes effekt fra den bredere demokratiske bølge, og også Elon Musk så mange af sine kandidater tabe, selv om han angiveligt brugte en halv milliard dollar."
+        },
+        {
+          "overskrift": "Guardrails Alliance gjorde modstand dyrt",
+          "tekst": "Guardrails Alliance, der har forsøgt at gøre det politisk belastende at tage imod penge fra AI-virksomheder, brugte over en million dollars på at bekæmpe hver af de to kandidater: California-repræsentanten Jimmy Gomez og Montanas Aaron Flint. Begge tabte.\n\nGruppen støttede også Angela Gonzales-Torres, som besejrede Gomez. “Vores mål er at gøre AI-penge politisk giftige,” siger Charlie Blaettler, politisk direktør i Guardrails Alliance."
+        },
+        {
+          "overskrift": "Primærvalgene var LTF's store slagmark",
+          "tekst": "Leading the Future, LTF, brugte 27,38 millioner dollar i primærvalgene. Alene 8 millioner dollar gik til at modarbejde Alex Bores, medlem af New Yorks delstatsforsamling, som tabte sit forsøg på at komme i Kongressen i juni.\n\nLTF vurderer, at primærvalg er et mere effektivt sted at bruge penge, fordi de kan opbygge navnekendskab og hjælpe kandidater med AI-politiske dagsordener. Før et hovedvalg vurderer gruppen, hvor tæt løbet er, og om penge kan gøre en forskel."
+        },
+        {
+          "overskrift": "Striden om et nationalt AI-rammeværk",
+          "tekst": "Den centrale uenighed mellem AI-PAC'erne er, om Kongressen skal vedtage et nationalt AI-rammeværk, der overtrumfer delstatslove, eller om delstaterne fortsat skal kunne indføre egne AI-regler.\n\nLTF går ind for et enkelt nationalt rammeværk og siger, at gruppen fortsætter med at bruge penge ved valget i 2028. Guardrails Alliance vil fortsætte med at modarbejde kandidater, som AI-industrien støtter.\n\nBlaettler siger, at LTF's annoncer sjældent handler om AI, mens Guardrails' annoncer netop handler om, hvem der tager imod AI-penge."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "3 mio. dollar",
+          "label": "Public First, støttet af Anthropic, bidrog til en PAC for Scott Wiener, der førte ved publiceringen"
+        },
+        {
+          "tal": "Over 500.000 dollar hver",
+          "label": "American Mission til Aaron Flint og Laurie Buckhout; begge tabte"
+        },
+        {
+          "tal": "300.000 dollar",
+          "label": "Guardrails Alliance til Angela Gonzales-Torres, som besejrede Gomez"
+        }
+      ],
+      "detaljer": [
+        "American Mission er den republikanske gren af Leading the Future, som OpenAI-præsident Greg Brockman og Andreessen Horowitz støtter.",
+        "Public First er støttet af Anthropic; gruppen havde blandede resultater på tværs af partier."
+      ],
+      "betydning": "Næste store slag bliver, om AI-pengene kan føre til et nationalt AI-rammeværk, der overtrumfer delstatslove.",
+      "pointer": [
+        "AI-PAC'er tabte flere tungt støttede kampe",
+        "LTF ser primærvalg som mere effektive",
+        "Striden står om et nationalt AI-rammeværk"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-05T22:28:22.651261+00:00"
+      },
+      "side": "artikel/2a45f43e41ba7289.html",
+      "billedmotiv": "A thick stack of dollar bills pushes toward a ballot bearing an unchecked candidate box, while a bold downward arrow crosses the ballot to show the supported candidate's defeat. The relationship depicts campaign spending that failed to secure a Senate win. Use solid, opaque shapes with sharp edges and clearly separated contours.",
+      "billedmotiv_instruks": "b8db19071afb6944c68e",
+      "billede": "data/img/39f6c8beb3e8d789.webp"
+    },
+    {
       "titel": "The biggest modding site in PC gaming is taking a stance on AI",
       "link": "https://www.theverge.com/games/1026085/nexus-mods-ai-disclosures",
       "resume": "The PC gaming mods repository Nexus Mods is making disclosures about AI mandatory for uploads of new mods, meaning that mod authors will have to declare \"whether AI has been used in their work,\" the site announced today as part of a big post about AI-generated content on the platform. \"One of the most consistent […]",
@@ -3011,268 +3409,6 @@
       },
       "prio": 6,
       "side": "artikel/faa8b68df590a6f6.html"
-    },
-    {
-      "titel": "Airbnb says it’s launching an AI travel agent in the first half of 2027",
-      "link": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/",
-      "resume": "Airbnb says its upcoming AI agent will help travelers plan trips, compare options, manage bookings, and get assistance throughout their stay.",
-      "dato": "2026-11-05T22:40:55+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-11-06T07:16:54.196123+00:00",
-      "eget_foerst_set": "2026-11-06T07:16:54.196123+00:00",
-      "rubrik": "Airbnb lancerer AI-rejseagent i første halvdel af 2027",
-      "resume_da": "Agenten skal sammensætte kort, fotos og kalendere i realtid i stedet for at svare i ren tekst og hjælpe under selve rejsen.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Byggeklodser i stedet for chattekst",
-          "tekst": "Airbnb har tidligere talt om en AI-rejseagent i vage vendinger. Nu binder selskabet sig til at lancere den i første halvdel af 2027, fremgår det af aktionærbrevet for tredje kvartal.\n\nAgenten bliver ikke en almindelig chatbot. Den skal trække på et bibliotek med **hundreder af færdige byggeklodser** til rejsegrænseflader — kort, fotos, sammenligninger, kalendere og rejseplaner — og sammensætte dem i realtid efter gæstens spørgsmål.\n\nChesky beskriver selv oplevelsen som »lidt ligesom generativ UI«: altså en grænseflade, som AI'en bygger fra bunden, så den passer til den enkelte forespørgsel."
-        },
-        {
-          "overskrift": "Hjælp når reservationen skal ændres",
-          "tekst": "Airbnb fremhæver i brevet, at agenten også skal kunne noget, en udefrakommende agent har svært ved: at hjælpe under selve rejsen. Det gælder ændring af en reservation, betalingsproblemer, refusion, ombooking og sikkerhedssupport hele døgnet.\n\nSelskabet begrunder det med næsten 20 års erfaring med værter og gæster, som ifølge Airbnb former måden, agenten bygges på."
-        },
-        {
-          "overskrift": "Rejser er ikke en rutineopgave",
-          "tekst": "På regnskabsopkaldet skelnede CEO Brian Chesky mellem rejseplanlægning og simple gøremål. AI-agenter som Muse og Instinct er gode til rutineopgaver som at bestille et restaurantbord eller en tid, sagde han. Rejser er noget andet.\n\n»Rejser er aspirerende. At opdage, hvor man skal hen, og hvor man skal bo, er en del af oplevelsen,« sagde han ifølge TechCrunch og henviste til, at **80 procent af rejsende** efter hans oplysninger siger, de nyder at undersøge ture."
-        },
-        {
-          "overskrift": "På sigt også hoteller og oplevelser",
-          "tekst": "Airbnb venter, at agenten med tiden også dækker hoteller, services og oplevelser — to områder, der har fået større vægt, siden selskabet sidste år lavede et redesign."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "19 %",
-          "label": "Vækst i omsætningen i tredje kvartal sammenlignet med samme kvartal året før"
-        },
-        {
-          "tal": "4,87 mia. dollar",
-          "label": "Airbnbs omsætning i tredje kvartal"
-        },
-        {
-          "tal": "80 %",
-          "label": "Rejsende, der ifølge Chesky nyder at bruge tid på at undersøge ture"
-        }
-      ],
-      "figurer": [],
-      "andre": [
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/tech/1028412/airbnb-ai-travel-agent-q3-2026-earnings",
-          "rubrik": "Airbnb vil lancere AI-agent til rejser i 2027",
-          "resume_da": "Agenten skal både finde og booke ophold uden et egentligt chatvindue og er planlagt til første halvår 2027.",
-          "dato": "2026-11-05T19:06:12-05:00",
-          "foerst_set": "2026-11-06T07:16:54.196123+00:00"
-        }
-      ],
-      "detaljer": [
-        "Tidligere lød meldingen »inden for det næste år«; nu er datoen første halvdel af 2027.",
-        "Airbnb hævede sin prognose for omsætningsvækst i 2026 til den høje ende af teenageårene.",
-        "Agenten skal ifølge brevet kunne skifte en reservation og løse betalingsproblemer under rejsen."
-      ],
-      "betydning": "Airbnb satser på, at rejseplanlægning kræver mere end chat. Det er et svar på, at generelle agenter som Muse og Instinct allerede klarer enkle opgaver som bordbestilling.",
-      "pointer": [
-        "Agenten lanceres i første halvdel af 2027",
-        "Bygger grænseflader af kort, fotos og kalendere",
-        "Skal også hjælpe under rejsen med ombooking og refusion"
-      ],
-      "billedmotiv": "A large coral-red Airbnb Bélo emblem sits on a solid white travel panel; a rounded map tile with a pin and a rounded calendar tile click into two slots beside it. Thick outlines and sharp edges keep the modular travel pieces separate.",
-      "billedmotiv_instruks": "c40e06f32a34fa43828f",
-      "billede": "data/img/78729b0e25376571.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Airbnb bekræfter, at agenten skal planlægge rejser, sammenligne muligheder og håndtere bookinger fra første halvdel af 2027.",
-        "forbehold": "Kun annonceret; ingen demonstration eller pris.",
-        "emne": "airbnb ai-rejseagent"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-11-06T07:21:00.753113+00:00"
-      },
-      "historie_dato": "2026-11-05T22:40:55+00:00",
-      "prio": 4,
-      "side": "artikel/560f077b27e20f29.html"
-    },
-    {
-      "titel": "Dropbox acquires Tigris Data for $350M to bolster its AI infrastructure",
-      "link": "https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/",
-      "resume": "The deal is expected to support the development of DBX Agent Cloud, a new storage platform aimed at developers building AI models and agents.",
-      "dato": "2026-11-05T15:19:05+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-11-05T22:13:13.067417+00:00",
-      "eget_foerst_set": "2026-11-05T22:13:13.067417+00:00",
-      "rubrik": "Dropbox køber Tigris Data for 350 millioner dollar",
-      "resume_da": "Opkøbet skal bære DBX Agent Cloud, en lagerplatform Dropbox vil sælge løsrevet til virksomheder, der bygger AI-agenter.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Dropbox køber Tigris Data for 350 mio. dollar for at understøtte DBX Agent Cloud til udviklere af AI-modeller og agenter.",
-        "forbehold": "Kun kort omtale af opkøbet; platformens funktioner og tidsplan er ikke beskrevet.",
-        "emne": "dropbox"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Tigris placerer data tæt på brugerne",
-          "tekst": "Tigris Data blev grundlagt af tidligere Uber-ingeniører, som var med til at bygge kørselstjenestens lagerinfrastruktur. Selskabet sælger cloudlagring, der automatisk placerer data tættere på de brugere og beregningskræfter, som skal bruge dem.\n\nDet skal forkorte adgangstiden og give bedre ydeevne for virksomheder, der henter data fra flere regioner. Sidste år rejste Tigris Data 25 millioner dollar i en Series A-runde."
-        },
-        {
-          "overskrift": "Lagring til AI-agenter bliver et selvstændigt produkt",
-          "tekst": "Opkøbet skal styrke Dropbox' udvikling af **DBX Agent Cloud**, en ny lagerplatform for virksomheder og udviklere, der bygger AI-modeller og AI-agenter. Første version bliver objektlagring — en måde at gemme store mængder data på, som kan hentes enkeltvis — og den kan købes separat uden et Dropbox-abonnement.\n\nProduktet skal kunne bruges sammen med værktøjer, der allerede er bygget til Amazon S3, Amazons tjeneste til at gemme og hente store datamængder. Dropbox planlægger senere at tilføje dokumenter, billeder, lyd og video samt funktioner som i et filsystem, så AI-agenter kan styre filer og bevare sammenhæng mellem opgaver."
-        },
-        {
-          "overskrift": "AI kan udføre opgaver i dine egne filer",
-          "tekst": "Dropbox ruller samtidig AI-funktioner ud i selve produktet. Brugerne kan bede AI'en udføre understøttede opgaver med deres filer, vælge mellem forskellige AI-modeller og koble indholdet til eksterne værktøjer som ChatGPT, Claude og Muse.\n\nIfølge Dropbox har over 70.000 teams fået den opdaterede oplevelse. Den første udrulning gælder kvalificerede Standard- og Advanced-kunder i USA, Storbritannien og Australien, og bredere tilgængelighed er planlagt til 2027."
-        },
-        {
-          "overskrift": "Ingen fyringer varslet trods nedskæring sidste måned",
-          "tekst": "Dropbox oplyser til TechCrunch, at opkøbet ikke ventes at føre til fyringer, og at handlen forventes afsluttet i fjerde kvartal 2026. Måneden før skar selskabet 9 procent af sin globale medarbejderstab, skriver WSJ.\n\nIfølge TechCrunch er de 350 millioner dollar Dropbox' hidtil største opkøb. Det er ikke det første inden for AI: Dropbox har tidligere købt Reclaim.ai, Promoted.ai og Mobius Labs."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "350 mio. dollar",
-          "label": "Pris for Dropbox' opkøb af Tigris Data; selskabets største til dato ifølge TechCrunch"
-        },
-        {
-          "tal": "25 mio. dollar",
-          "label": "Tigris Datas Series A-runde sidste år"
-        },
-        {
-          "tal": "70.000+ teams",
-          "label": "Har fået Dropbox' opdaterede AI-oplevelse, oplyser Dropbox"
-        },
-        {
-          "tal": "9 pct.",
-          "label": "Af den globale medarbejderstab nedlagt måneden før opkøbet (WSJ)"
-        }
-      ],
-      "detaljer": [
-        "Handlen ventes afsluttet i fjerde kvartal 2026.",
-        "Tigris Data er grundlagt af tidligere Uber-ingeniører.",
-        "Første udrulning gælder Standard- og Advanced-kunder i USA, Storbritannien og Australien.",
-        "Dropbox har tidligere opkøbt Reclaim.ai, Promoted.ai og Mobius Labs."
-      ],
-      "betydning": "Sælges lagringen løsrevet fra Dropbox-abonnementet, får selskabet en indtægt, der ikke afhænger af antallet af brugere — og en plads ved siden af Amazon S3.",
-      "pointer": [
-        "Tigris Data købes for 350 mio. dollar",
-        "DBX Agent Cloud sælges som separat lagring",
-        "AI-funktioner i Dropbox når 70.000+ teams"
-      ],
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-11-06T07:21:20.356664+00:00"
-      },
-      "billedmotiv": "A large solid blue Dropbox open-box mark sits on an opaque cloud-shaped storage module; a smaller data canister locks into its side, and a simple globe pin hovers close to the canister. Thick outlines and sharp edges keep the acquisition, the storage layer, and local data placement distinct.",
-      "billedmotiv_instruks": "4b1b0b5d1b4601a3f6a4",
-      "side": "artikel/939524e97f242da6.html",
-      "billede": "data/img/a8c2d38f5c674d13.webp"
-    },
-    {
-      "titel": "Box taps Nvidia’s Nemotron for new agent-first content retrieval system",
-      "link": "https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system/",
-      "resume": "The system can supposedly answer queries four times faster, with 20% fewer errors and 90% fewer tokens used.",
-      "dato": "2026-11-05T14:00:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-11-05T22:13:13.067417+00:00",
-      "eget_foerst_set": "2026-11-05T22:13:13.067417+00:00",
-      "rubrik": "Box bygger Nvidia Nemotron ind i søgning",
-      "resume_da": "Box Content Retrieval skal lade AI-agenter hente relevante dokumentbidder hurtigere og billigere ved hjælp af Nvidias Nemotron Embed.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Box bygger agentbaseret søgesystem på Nvidias Nemotron og lover hurtigere svar med færre fejl og tokens.",
-        "forbehold": "Præstationstallene er Box' egne og ikke uafhængigt efterprøvet.",
-        "emne": "box nemotron"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Agenter får bidder i stedet for hele dokumenter",
-          "tekst": "På sin udviklerkonference viste dokumenttjenesten Box en ny funktion kaldet Box Content Retrieval. Den bygger Nvidias Nemotron Embed ind i kernen af Box' produkt, så AI-agenter, altså programmer der selv kan udføre opgaver, kan søge i dokumenter via metadata, altså oplysninger om indholdet, som modellen har skabt.\n\nNemotron Embed er en familie af frit tilgængelige indlejringsmodeller. Indlejring betyder, at tekst omdannes til en form, en AI kan sammenligne, så den kan finde beslægtede begreber i stedet for kun at matche nøgleord. I stedet for at agenten skal læse hvert dokument igennem, sender systemet de mest relevante bidder tilbage, siger Box-topchef Aaron Levie. Det skal give hurtigere, mere præcise og billigere forespørgsler for kunderne."
-        },
-        {
-          "overskrift": "Nvidia venter fire gange hurtigere svar",
-          "tekst": "Kari Briski, Nvidias vicepræsident for generativ AI-software, forventer, at forespørgslerne bliver besvaret markant hurtigere, med færre fejl og langt lavere tokenforbrug. Et token er en lille tekstbid, som en AI-model behandler. Tallene er Nvidias forventning, ikke en offentliggjort måling fra Box.\n\nBox nævner advokater som eksempel: De skal lettere kunne finde relevante klausuler og præcedenser, fordi Nemotrons indlejringer matcher begreber frem for blot nøgleord, også når ordvalget eller sproget er et andet."
-        },
-        {
-          "overskrift": "Systemet er mere end åbne modeller",
-          "tekst": "Selv om Nemotron-modellerne er frit tilgængelige, hviler systemet også på Box' eksisterende metadata og adgangskontrol. Det gør det ifølge Levie svært at genskabe fra bunden; han siger, at Box pakker fem teknologier ind i ét API, en programmeringsgrænseflade som andre systemer kan kalde.\n\nFunktionen rulles ud til alle Box' Enterprise Advance-kunder i begyndelsen af næste år."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "4 gange",
-          "label": "Nvidias forventede hastighedsforbedring for forespørgsler"
-        },
-        {
-          "tal": "20 %",
-          "label": "Nvidias forventede fald i fejl"
-        },
-        {
-          "tal": "90 %",
-          "label": "Nvidias forventede fald i tokenforbrug"
-        }
-      ],
-      "detaljer": [
-        "En Nemotron-udgivelse i juli toppede RTEB, et benchmark for søgekvalitet."
-      ],
-      "betydning": "Hvis Nvidias forventning holder, kan agenter arbejde i store dokumentarkiver med færre tokens, hvilket kan sænke driftsomkostningerne ved AI-søgning.",
-      "pointer": [
-        "Box Content Retrieval bruger Nemotron Embed",
-        "Nvidia forventer 4 gange hurtigere svar",
-        "Udbredes til Enterprise Advance næste år"
-      ],
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-11-05T22:26:33.285598+00:00"
-      },
-      "side": "artikel/781e4656d3583054.html",
-      "billedmotiv": "A tall stack of document sheets with one narrow strip pulled out sideways and lifted away, feeding into a solid rectangular chip module beside it; a compact archive folder with a few marked tabs stands next to the chip. Thick opaque shapes, sharp contours, no text or transparent glass.",
-      "billedmotiv_instruks": "809fecfeccd184bcdb10",
-      "billede": "data/img/95411e8be00bf637.webp"
     },
     {
       "titel": "Anthropic is working on a system to prove AI models’ identity",
@@ -3426,92 +3562,6 @@
       },
       "prio": 6,
       "side": "artikel/4970a06a586ccae0.html"
-    },
-    {
-      "titel": "AI PACs spent millions trying to shape Congress — here’s how they fared",
-      "link": "https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/",
-      "resume": "AI industry PACs spent millions influencing the 2026 midterms, with mixed results. Political groups are already looking toward the next election cycle.",
-      "dato": "2026-11-04T22:45:09+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-11-05T01:00:33.324815+00:00",
-      "eget_foerst_set": "2026-11-05T01:00:33.324815+00:00",
-      "rubrik": "American Mission tabte dyr senatskamp",
-      "resume_da": "To AI-PAC'er brugte 4,8 mio. dollar på en tabende senatskandidat, mens Guardrails Alliance vil gøre AI-penge til en politisk byrde.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "AI-branchens PAC'er brugte millioner på at påvirke kongresvalget i 2026 med blandet resultat, og grupperne ser nu mod næste cyklus.",
-        "forbehold": "Kilden angiver hverken beløb eller hvilke valgkredse indsatsen flyttede.",
-        "emne": "ai-pacs og kongresvalg"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ],
-      "sektioner": [
-        {
-          "overskrift": "4,8 millioner dollar på en tabende kandidat",
-          "tekst": "To AI-fokuserede politiske aktionskomitéer (PAC'er) brugte tilsammen 4,8 millioner dollar på at støtte Darline Graham, der var kandidat til Senatet i South Carolina. Hun tabte. Det var American Mission og Building the Future, og TechCrunch rapporterer, at flere af de tungest støttede kandidater tabte.\n\nAmerican Mission støttede også de republikanske huskandidater Aaron Flint i Montana og Laurie Buckhout i North Carolina med store beløb. Begge tabte.\n\nLTF's demokratiske gren Think Big gik bedre: Florida-repræsentanten Jared Moskowitz vandt genvalg. Det er svært at skille AI-pengenes effekt fra den bredere demokratiske bølge, og også Elon Musk så mange af sine kandidater tabe, selv om han angiveligt brugte en halv milliard dollar."
-        },
-        {
-          "overskrift": "Guardrails Alliance gjorde modstand dyrt",
-          "tekst": "Guardrails Alliance, der har forsøgt at gøre det politisk belastende at tage imod penge fra AI-virksomheder, brugte over en million dollars på at bekæmpe hver af de to kandidater: California-repræsentanten Jimmy Gomez og Montanas Aaron Flint. Begge tabte.\n\nGruppen støttede også Angela Gonzales-Torres, som besejrede Gomez. “Vores mål er at gøre AI-penge politisk giftige,” siger Charlie Blaettler, politisk direktør i Guardrails Alliance."
-        },
-        {
-          "overskrift": "Primærvalgene var LTF's store slagmark",
-          "tekst": "Leading the Future, LTF, brugte 27,38 millioner dollar i primærvalgene. Alene 8 millioner dollar gik til at modarbejde Alex Bores, medlem af New Yorks delstatsforsamling, som tabte sit forsøg på at komme i Kongressen i juni.\n\nLTF vurderer, at primærvalg er et mere effektivt sted at bruge penge, fordi de kan opbygge navnekendskab og hjælpe kandidater med AI-politiske dagsordener. Før et hovedvalg vurderer gruppen, hvor tæt løbet er, og om penge kan gøre en forskel."
-        },
-        {
-          "overskrift": "Striden om et nationalt AI-rammeværk",
-          "tekst": "Den centrale uenighed mellem AI-PAC'erne er, om Kongressen skal vedtage et nationalt AI-rammeværk, der overtrumfer delstatslove, eller om delstaterne fortsat skal kunne indføre egne AI-regler.\n\nLTF går ind for et enkelt nationalt rammeværk og siger, at gruppen fortsætter med at bruge penge ved valget i 2028. Guardrails Alliance vil fortsætte med at modarbejde kandidater, som AI-industrien støtter.\n\nBlaettler siger, at LTF's annoncer sjældent handler om AI, mens Guardrails' annoncer netop handler om, hvem der tager imod AI-penge."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "3 mio. dollar",
-          "label": "Public First, støttet af Anthropic, bidrog til en PAC for Scott Wiener, der førte ved publiceringen"
-        },
-        {
-          "tal": "Over 500.000 dollar hver",
-          "label": "American Mission til Aaron Flint og Laurie Buckhout; begge tabte"
-        },
-        {
-          "tal": "300.000 dollar",
-          "label": "Guardrails Alliance til Angela Gonzales-Torres, som besejrede Gomez"
-        }
-      ],
-      "detaljer": [
-        "American Mission er den republikanske gren af Leading the Future, som OpenAI-præsident Greg Brockman og Andreessen Horowitz støtter.",
-        "Public First er støttet af Anthropic; gruppen havde blandede resultater på tværs af partier."
-      ],
-      "betydning": "Næste store slag bliver, om AI-pengene kan føre til et nationalt AI-rammeværk, der overtrumfer delstatslove.",
-      "pointer": [
-        "AI-PAC'er tabte flere tungt støttede kampe",
-        "LTF ser primærvalg som mere effektive",
-        "Striden står om et nationalt AI-rammeværk"
-      ],
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-11-05T22:28:22.651261+00:00"
-      },
-      "side": "artikel/2a45f43e41ba7289.html",
-      "billedmotiv": "A thick stack of dollar bills pushes toward a ballot bearing an unchecked candidate box, while a bold downward arrow crosses the ballot to show the supported candidate's defeat. The relationship depicts campaign spending that failed to secure a Senate win. Use solid, opaque shapes with sharp edges and clearly separated contours.",
-      "billedmotiv_instruks": "b8db19071afb6944c68e",
-      "billede": "data/img/39f6c8beb3e8d789.webp"
     },
     {
       "titel": "Physicl raises $10M to make the digital world real enough for robots",
@@ -4061,78 +4111,6 @@
       "side": "artikel/0018ea6e4618a3fe.html"
     },
     {
-      "titel": "ChatGPT will now make you animated GIFs",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6",
-      "resume": "ChatGPT can now create GIFs using a prompt or a photo uploaded to the AI chatbot. The update, which is rolling out alongside OpenAI's new Images 2.6 model, allows you to adjust the GIF's animation speed, edit individual frames, and share it with others. Before this change, ChatGPT couldn't natively generate GIFs in a single […]",
-      "dato": "2026-11-04T18:00:00+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-11-04T19:59:08.515800+00:00",
-      "eget_foerst_set": "2026-11-04T19:59:08.515800+00:00",
-      "rubrik": "ChatGPT laver nu GIF'er af en prompt",
-      "resume_da": "Med Images 2.6 kan ChatGPT lave animerede GIF'er ud fra en tekst eller et foto og redigere dem — og billederne kommer hurtigere.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Fra prompt til dansende kat",
-          "tekst": "Beder man ChatGPT om at lave en dansende kat, kan den nu svare med en animeret GIF. Animationen kan laves ud fra en tekstprompt eller ud fra et foto, man uploader til chatbotten. Det sker som led i opdateringen Images 2.6, som OpenAI ruller ud nu.\n\nOpenAI viser selv et eksempel, hvor prompten »can you make a gif of a cat dancing?« giver en dansende kat — og hvor brugeren bagefter kan se animationen billede for billede.\n\nIfølge The Verge kunne ChatGPT før denne ændring ikke selv lave GIF'er i et enkelt trin. Med opdateringen kan man ændre afspilningshastigheden, **redigere enkelte billeder i animationen** og dele den med andre."
-        },
-        {
-          "overskrift": "Images 2.6 ruller ud til alle",
-          "tekst": "Images 2.6 skal også gøre selve billedgenereringen i ChatGPT hurtigere, oplyser OpenAI. Modellen ruller ud til alle brugere af ChatGPT og af Codex — selskabets værktøj til at skrive kode med AI — på web, desktop og i mobilapps.\n\nVed siden af lancerer OpenAI to modeller i sit API, den adgang udviklere bruger til at bygge billedfunktioner ind i egne programmer: GPT-Image-2.6 Flare og Sunburst. De skal ifølge selskabet give hurtigere og bedre billeder.\n\nBilledmængden vokser samtidig. Brugerne genererer nu over fire milliarder billeder om ugen på tværs af ChatGPT og API'et, op fra tre milliarder om ugen, som OpenAI rapporterede i september."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "4 mia.+ billeder om ugen",
-          "label": "Genereret via ChatGPT og OpenAI's API, opgjort af OpenAI"
-        },
-        {
-          "tal": "3 mia. billeder om ugen",
-          "label": "OpenAI's tal for september i samme opgørelse"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "GIF-funktionen bygger på OpenAI's nye billedmodel Images 2.6.",
-        "Både ChatGPT og Codex får opdateringen på web, desktop og mobil.",
-        "I API'et hedder de nye modeller GPT-Image-2.6 Flare og Sunburst."
-      ],
-      "betydning": "ChatGPT kan nu levere en animation i samme trin som prompten. Det gør chatbotten til et sted, hvor også bevægelige billeder opstår og redigeres.",
-      "pointer": [
-        "GIF'er kan laves af tekst eller foto",
-        "Animationen kan ses billede for billede",
-        "Images 2.6 ruller ud til alle brugere"
-      ],
-      "billedmotiv": "The intact black OpenAI Blossom symbol fixed on a solid frame card, beside a flipbook strip of three joined frames showing the same cat in successive dance poses, reading as a moving image made from one prompt. Solid opaque forms, thick outlines, sharp edges, clearly separated.",
-      "billedmotiv_instruks": "0da68e73d9b372c2cadf",
-      "billede": "data/img/92e83fed7ff114be.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "ChatGPT kan nu lave animerede GIF'er; funktionen rulles ud sammen med OpenAI-billedmodellen Images 2.6, som kun nævnes kort.",
-        "forbehold": "Hovednyheden er GIF-funktionen; Images 2.6 beskrives uden detaljer eller tests.",
-        "emne": "chatgpt, openai images 2.6, gif"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-11-04T20:06:04.827387+00:00"
-      },
-      "prio": 4,
-      "side": "artikel/45b27d1602b07011.html"
-    },
-    {
       "titel": "After the midterms, a bigger clash over data centers could be coming",
       "link": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/",
       "resume": "Data center opposition crossed party lines in Tuesday’s midterms.",
@@ -4220,6 +4198,78 @@
       "billedmotiv_instruks": "5272d3b239e4daf6ae23",
       "side": "artikel/487fe86018a1e7f1.html",
       "billede": "data/img/82ff5e67e23c3d04.webp"
+    },
+    {
+      "titel": "ChatGPT will now make you animated GIFs",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6",
+      "resume": "ChatGPT can now create GIFs using a prompt or a photo uploaded to the AI chatbot. The update, which is rolling out alongside OpenAI's new Images 2.6 model, allows you to adjust the GIF's animation speed, edit individual frames, and share it with others. Before this change, ChatGPT couldn't natively generate GIFs in a single […]",
+      "dato": "2026-11-04T18:00:00+00:00",
+      "kilde": "The Verge AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-11-04T19:59:08.515800+00:00",
+      "eget_foerst_set": "2026-11-04T19:59:08.515800+00:00",
+      "rubrik": "ChatGPT laver nu GIF'er af en prompt",
+      "resume_da": "Med Images 2.6 kan ChatGPT lave animerede GIF'er ud fra en tekst eller et foto og redigere dem — og billederne kommer hurtigere.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Fra prompt til dansende kat",
+          "tekst": "Beder man ChatGPT om at lave en dansende kat, kan den nu svare med en animeret GIF. Animationen kan laves ud fra en tekstprompt eller ud fra et foto, man uploader til chatbotten. Det sker som led i opdateringen Images 2.6, som OpenAI ruller ud nu.\n\nOpenAI viser selv et eksempel, hvor prompten »can you make a gif of a cat dancing?« giver en dansende kat — og hvor brugeren bagefter kan se animationen billede for billede.\n\nIfølge The Verge kunne ChatGPT før denne ændring ikke selv lave GIF'er i et enkelt trin. Med opdateringen kan man ændre afspilningshastigheden, **redigere enkelte billeder i animationen** og dele den med andre."
+        },
+        {
+          "overskrift": "Images 2.6 ruller ud til alle",
+          "tekst": "Images 2.6 skal også gøre selve billedgenereringen i ChatGPT hurtigere, oplyser OpenAI. Modellen ruller ud til alle brugere af ChatGPT og af Codex — selskabets værktøj til at skrive kode med AI — på web, desktop og i mobilapps.\n\nVed siden af lancerer OpenAI to modeller i sit API, den adgang udviklere bruger til at bygge billedfunktioner ind i egne programmer: GPT-Image-2.6 Flare og Sunburst. De skal ifølge selskabet give hurtigere og bedre billeder.\n\nBilledmængden vokser samtidig. Brugerne genererer nu over fire milliarder billeder om ugen på tværs af ChatGPT og API'et, op fra tre milliarder om ugen, som OpenAI rapporterede i september."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "4 mia.+ billeder om ugen",
+          "label": "Genereret via ChatGPT og OpenAI's API, opgjort af OpenAI"
+        },
+        {
+          "tal": "3 mia. billeder om ugen",
+          "label": "OpenAI's tal for september i samme opgørelse"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "GIF-funktionen bygger på OpenAI's nye billedmodel Images 2.6.",
+        "Både ChatGPT og Codex får opdateringen på web, desktop og mobil.",
+        "I API'et hedder de nye modeller GPT-Image-2.6 Flare og Sunburst."
+      ],
+      "betydning": "ChatGPT kan nu levere en animation i samme trin som prompten. Det gør chatbotten til et sted, hvor også bevægelige billeder opstår og redigeres.",
+      "pointer": [
+        "GIF'er kan laves af tekst eller foto",
+        "Animationen kan ses billede for billede",
+        "Images 2.6 ruller ud til alle brugere"
+      ],
+      "billedmotiv": "The intact black OpenAI Blossom symbol fixed on a solid frame card, beside a flipbook strip of three joined frames showing the same cat in successive dance poses, reading as a moving image made from one prompt. Solid opaque forms, thick outlines, sharp edges, clearly separated.",
+      "billedmotiv_instruks": "0da68e73d9b372c2cadf",
+      "billede": "data/img/92e83fed7ff114be.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "ChatGPT kan nu lave animerede GIF'er; funktionen rulles ud sammen med OpenAI-billedmodellen Images 2.6, som kun nævnes kort.",
+        "forbehold": "Hovednyheden er GIF-funktionen; Images 2.6 beskrives uden detaljer eller tests.",
+        "emne": "chatgpt, openai images 2.6, gif"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-04T20:06:04.827387+00:00"
+      },
+      "prio": 4,
+      "side": "artikel/45b27d1602b07011.html"
     },
     {
       "titel": "Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M",
@@ -4388,151 +4438,6 @@
       }
     },
     {
-      "titel": "How “reverse game theory” could keep AI agents in check",
-      "link": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/",
-      "resume": "A new approach known as “reverse game theory” aims to control powerful AI models by designing systems that incentivize them to stick to the rules. As AI models become more capable, safety researchers are scrambling to ensure they are “aligned” with human desires—to make sure, in other words, that rogue agents don’t break the law,…",
-      "dato": "2026-11-03T10:43:41+00:00",
-      "kilde": "MIT Tech Review AI",
-      "kategori": "Forskning",
-      "foerst_set": "2026-11-03T12:15:27.201983+00:00",
-      "eget_foerst_set": "2026-11-03T12:15:27.201983+00:00",
-      "rubrik": "Stephen Morris: Spilteori kan styre AI-agenter",
-      "resume_da": "Reverse game theory designer incitamenter, så AI-agenter vælger at følge reglerne, uden at forskere behøver at forstå deres indre.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Spilteori vendt på hovedet",
-          "tekst": "En ny tilgang kaldet reverse game theory vinder frem blandt AI-sikkerhedsforskere. I stedet for at prøve at forstå AI-modellers indre vil de designe regler, der gør det rationelt for modellen at opføre sig ordentligt.\n\nReverse game theory, også kendt som mechanism design, vender spilteori på hovedet. Spilteori forudsiger, hvordan rationelle aktører handler under givne regler. Mechanism design designer regler, der fremkalder ønsket adfærd. Et klassisk eksempel er kagedeling: Den ene skærer, den anden vælger først, så skæreren laver lige store stykker.\n\nI AI starter metoden fra den antagelse, at vi måske aldrig forstår de mest avancerede modellers indre godt nok. Derfor skal vi designe incitamenter, der virker uanset hvad der foregår indeni."
-        },
-        {
-          "overskrift": "Belønning for at forudsige snyd",
-          "tekst": "Et nyt studie fra Stephen Morris, økonom ved MIT, og kolleger fra Yale og Columbia foreslår konkrete mekanismer mod 'sandbagging' – når en model bevidst præsterer dårligt for at undgå sikkerhedsmekanismer.\n\nI stedet for kun at belønne en model for testresultater kan man belønne den for, hvor godt dens svar forudsiger en anden models svar. Så bliver det en dårlig forretning at spille dum. 'AI-agenter har en meget god forståelse af, hvad andre AI-agenter kan præstere,' siger Morris."
-        },
-        {
-          "overskrift": "Hazan vil efterligne samfundet",
-          "tekst": "Elad Hazan, professor i datalogi ved Princeton, vil låne mekanismer fra menneskelige samfund: sociale normer, retssystemet og kapitalismens incitamenter. 'Vi vil aligne superintelligent AI – få den til at følge menneskelige ønsker,' siger han. 'Hvorfor taler vi ikke først om mennesker?'\n\nHans forslag er at lade AI-modeller skiftes til at være 'solvers', der løser problemer, og 'auditors', der tjekker de andres arbejde. Under træning belønnes de efter udfald: Solvere, der fanges i at snyde, straffes, men det gør auditorer, der ikke fanger snyderne, også. Ved uenighed kan sagen gå til 'ret'.\n\nHazan erkender, at agenter kan samarbejde om at snyde. Det kan modvirkes ved at belønne auditorer godt nok og ved at auditere auditorerne med 'mystery shoppers'.\n\nMen metoden bygger på, at AI-agenter handler rationelt. Det er usikkert. 'Er det overhovedet rimeligt at antage, at de vil reagere på incitamenter?' spørger Helen Qu fra Flatiron Institute. Morris indrømmer: 'AI'er er ikke rationelle.'"
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Claude har en forfatning – en slags moralkodeks.",
-        "Gary Becker introducerede 'den rationelle lovovertræder' i 1960'erne."
-      ],
-      "betydning": "Hvis metoden virker, kan forskere styre AI-agenter via incitamenter uden at forstå deres indre. Det kan gøre sikkerhedsarbejdet mere praktisk.",
-      "pointer": [
-        "Reverse game theory designer incitamenter i stedet for at forstå AI-modellers indre.",
-        "Stephen Morris foreslår at belønne modeller for at forudsige andre modellers svar.",
-        "Elad Hazan vil lade AI-agenter optræde som solver og auditor."
-      ],
-      "billedmotiv": "A large opaque AI-model block, sealed with no visible interior, holds up a deliberately poor answer tile. A second solid model block predicts that answer, and a round reward token moves toward the first block only when the prediction matches. Crisp flat vector shapes, high contrast.",
-      "billedmotiv_instruks": "726a79f3a6f3fd3a2f14",
-      "billede": "data/img/6d803910cc85ab94.jpg",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "MIT Tech Review beskriver »reverse game theory« som metode til at holde AI-agenter inden for reglerne.",
-        "forbehold": "",
-        "emne": "ai-alignment"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-11-03T12:19:59.866065+00:00"
-      },
-      "prio": 5,
-      "side": "artikel/5a465e187c017a30.html"
-    },
-    {
-      "titel": "OpenAI says ChatGPT is catching up to Google in search",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search",
-      "resume": "In many circles, \"Ask Chat\" has replaced \"Google it,\" and that's reflected in a new announcement from OpenAI: the volume of search queries run through ChatGPT now equals 20 percent of the volume run through Google. Adam Fry, OpenAI's consumer product lead for ChatGPT, made the announcement at a press event on Monday. He said […]",
-      "dato": "2026-11-03T18:30:42+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-11-03T19:45:16.653457+00:00",
-      "eget_foerst_set": "2026-11-03T19:45:16.653457+00:00",
-      "rubrik": "ChatGPT søger en femtedel af Googles volumen",
-      "resume_da": "OpenAI oplyser, at ChatGPT nu kører søgninger svarende til 20 procent af Googles volumen. Samtidig vil selskabet gøre chatbot-svaret til et interaktivt lærred med annoncer.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "En femtedel så mange søgninger som Google",
-          "tekst": "ChatGPT behandler nu søgninger svarende til 20 procent af det volumen, der går gennem Google. Det sagde Adam Fry, der er OpenAIs produktchef for ChatGPT, på et pressemøde mandag ifølge The Verge.\n\nOpenAI tæller en søgning, hver gang en bruger skriver noget, der udløser en websøgning. Det gælder altså ikke, når chatbot'en bare forklarer et ord eller en simpel fremgangsmåde. **Fry oplyste ikke, hvor tallet for Googles søgevolumen kommer fra.**"
-        },
-        {
-          "overskrift": "Bing nåede kun tre procent efter ti år",
-          "tekst": "Til sammenligning fortalte Microsofts topchef, Satya Nadella, under Googles konkurrencesag i 2023, at Bing efter mere end ti års forsøg havde omkring 3 procent af markedet for søgemaskiner. En femtedel er stadig langt fra at vælte Google, men det er et andet udgangspunkt end Bings.\n\nOpenAI trækker sandsynligvis en betydelig del af sine søgninger gennem Microsofts Bing og sit eget søgeindeks. Der har desuden været spekulationer om, at nogle forespørgsler sendes gennem Google."
-        },
-        {
-          "overskrift": "Fry vil gøre svaret til et lærred",
-          "tekst": "Fry beskriver fremtiden som «Intelligent UI»: et visuelt og interaktivt svar inde i chatbotten. «Det er der, hvor fremtiden for denne teknologi går hen. Man taler til et lærred,» sagde han.\n\nOpenAI ser også annoncer som en vej til indtjening frem mod en mulig børsnotering, der muligvis er planlagt til begyndelsen af næste år. Sidste måned annoncerede OpenAI, at selskabet ville begynde at indføre billeder af sponsorerede produkter og tjenester i ChatGPT i stedet for kun navn, logo og link. Ifølge Fry har annoncerne ikke skadet produktet eller brugen af det."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "20 procent",
-          "label": "ChatGPTs søgevolumen målt mod Googles, ifølge OpenAI. Kilden til Googles tal er ikke oplyst"
-        },
-        {
-          "tal": "3 procent",
-          "label": "Bings andel af søgemaskinemarkedet efter mere end ti års forsøg, ifølge Satya Nadella i 2023"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Google skærer ned på henvisninger til tredjepartssider og satser på AI Overview og personlige søgeresultater.",
-        "Fry: «Ads have not negatively impacted the product or the usage of the product.»",
-        "OpenAI vil vise sponsorerede produkter som billeder i ChatGPT, ikke kun som navn og link."
-      ],
-      "betydning": "OpenAI melder sig dermed som den første seriøse udfordrer til Googles søgning, og annoncer i chatbot-svar bliver et format, flere annoncører skal forholde sig til.",
-      "pointer": [
-        "ChatGPT søger 20 procent af Googles volumen",
-        "OpenAI oplyser ikke Googles talgrundlag",
-        "Næste skridt: interaktive svar og annoncer"
-      ],
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI oplyser, at ChatGPTs søgevolumen nu er 20 pct. af Googles.",
-        "forbehold": "OpenAI-oplyst tal uden offentlig metode eller uafhængig dokumentation.",
-        "emne": "openai chatgpt søgning"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-11-04T00:54:21.240271+00:00"
-      },
-      "prio": 5,
-      "billedmotiv": "A solid ChatGPT answer canvas bearing the black OpenAI Blossom unfolds into an interactive panel with a small sponsor tag. Beside it, a tall search column marked with Google’s four-colour G rises, while a gauge on the canvas is filled to one-fifth. Clear, opaque shapes with sharp edges, no background or floor.",
-      "billedmotiv_instruks": "71620bd665fb7c7eb284",
-      "side": "artikel/eaa88cee498cbfc2.html",
-      "billedstatus": {
-        "status": "afvist_af_filter",
-        "signatur": "17e08ab39802452a"
-      }
-    },
-    {
       "titel": "‘Total repudiation’: The blue wave is about to hit AI",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1026927/total-repudiation-the-blue-wave-is-about-to-hit-ai",
       "resume": "On Tuesday night, Democrats made history as they took control of the House and the Senate, and a blue wave swept through traditionally red and swing states - with the nation's first Black woman governor elected in Georgia, the country's first Native American woman governor elected in New Mexico, and a Maine Senator ceding to […]",
@@ -4607,6 +4512,72 @@
       },
       "prio": 4,
       "side": "artikel/51ff4c2f73a749d0.html"
+    },
+    {
+      "titel": "How “reverse game theory” could keep AI agents in check",
+      "link": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/",
+      "resume": "A new approach known as “reverse game theory” aims to control powerful AI models by designing systems that incentivize them to stick to the rules. As AI models become more capable, safety researchers are scrambling to ensure they are “aligned” with human desires—to make sure, in other words, that rogue agents don’t break the law,…",
+      "dato": "2026-11-03T10:43:41+00:00",
+      "kilde": "MIT Tech Review AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-03T12:15:27.201983+00:00",
+      "eget_foerst_set": "2026-11-03T12:15:27.201983+00:00",
+      "rubrik": "Stephen Morris: Spilteori kan styre AI-agenter",
+      "resume_da": "Reverse game theory designer incitamenter, så AI-agenter vælger at følge reglerne, uden at forskere behøver at forstå deres indre.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Spilteori vendt på hovedet",
+          "tekst": "En ny tilgang kaldet reverse game theory vinder frem blandt AI-sikkerhedsforskere. I stedet for at prøve at forstå AI-modellers indre vil de designe regler, der gør det rationelt for modellen at opføre sig ordentligt.\n\nReverse game theory, også kendt som mechanism design, vender spilteori på hovedet. Spilteori forudsiger, hvordan rationelle aktører handler under givne regler. Mechanism design designer regler, der fremkalder ønsket adfærd. Et klassisk eksempel er kagedeling: Den ene skærer, den anden vælger først, så skæreren laver lige store stykker.\n\nI AI starter metoden fra den antagelse, at vi måske aldrig forstår de mest avancerede modellers indre godt nok. Derfor skal vi designe incitamenter, der virker uanset hvad der foregår indeni."
+        },
+        {
+          "overskrift": "Belønning for at forudsige snyd",
+          "tekst": "Et nyt studie fra Stephen Morris, økonom ved MIT, og kolleger fra Yale og Columbia foreslår konkrete mekanismer mod 'sandbagging' – når en model bevidst præsterer dårligt for at undgå sikkerhedsmekanismer.\n\nI stedet for kun at belønne en model for testresultater kan man belønne den for, hvor godt dens svar forudsiger en anden models svar. Så bliver det en dårlig forretning at spille dum. 'AI-agenter har en meget god forståelse af, hvad andre AI-agenter kan præstere,' siger Morris."
+        },
+        {
+          "overskrift": "Hazan vil efterligne samfundet",
+          "tekst": "Elad Hazan, professor i datalogi ved Princeton, vil låne mekanismer fra menneskelige samfund: sociale normer, retssystemet og kapitalismens incitamenter. 'Vi vil aligne superintelligent AI – få den til at følge menneskelige ønsker,' siger han. 'Hvorfor taler vi ikke først om mennesker?'\n\nHans forslag er at lade AI-modeller skiftes til at være 'solvers', der løser problemer, og 'auditors', der tjekker de andres arbejde. Under træning belønnes de efter udfald: Solvere, der fanges i at snyde, straffes, men det gør auditorer, der ikke fanger snyderne, også. Ved uenighed kan sagen gå til 'ret'.\n\nHazan erkender, at agenter kan samarbejde om at snyde. Det kan modvirkes ved at belønne auditorer godt nok og ved at auditere auditorerne med 'mystery shoppers'.\n\nMen metoden bygger på, at AI-agenter handler rationelt. Det er usikkert. 'Er det overhovedet rimeligt at antage, at de vil reagere på incitamenter?' spørger Helen Qu fra Flatiron Institute. Morris indrømmer: 'AI'er er ikke rationelle.'"
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Claude har en forfatning – en slags moralkodeks.",
+        "Gary Becker introducerede 'den rationelle lovovertræder' i 1960'erne."
+      ],
+      "betydning": "Hvis metoden virker, kan forskere styre AI-agenter via incitamenter uden at forstå deres indre. Det kan gøre sikkerhedsarbejdet mere praktisk.",
+      "pointer": [
+        "Reverse game theory designer incitamenter i stedet for at forstå AI-modellers indre.",
+        "Stephen Morris foreslår at belønne modeller for at forudsige andre modellers svar.",
+        "Elad Hazan vil lade AI-agenter optræde som solver og auditor."
+      ],
+      "billedmotiv": "A large opaque AI-model block, sealed with no visible interior, holds up a deliberately poor answer tile. A second solid model block predicts that answer, and a round reward token moves toward the first block only when the prediction matches. Crisp flat vector shapes, high contrast.",
+      "billedmotiv_instruks": "726a79f3a6f3fd3a2f14",
+      "billede": "data/img/6d803910cc85ab94.jpg",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "MIT Tech Review beskriver »reverse game theory« som metode til at holde AI-agenter inden for reglerne.",
+        "forbehold": "",
+        "emne": "ai-alignment"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-03T12:19:59.866065+00:00"
+      },
+      "prio": 5,
+      "side": "artikel/5a465e187c017a30.html"
     },
     {
       "titel": "The hidden supply chain costs of the AI boom",
@@ -4748,6 +4719,85 @@
       "billedmotiv": "Five distinct solid crystal samples sit together beneath a large prize coin, each marked with a question mark to represent an unsolved materials-science problem. A compact AI chip presses against the samples without breaking through, suggesting unsuccessful model attempts. Use thick, opaque forms and sharp, clearly separated contours in a freestanding composition.",
       "billedmotiv_instruks": "6eabf0ebafc523d40c91",
       "billede": "data/img/b55a3ed704672a0d.webp"
+    },
+    {
+      "titel": "OpenAI says ChatGPT is catching up to Google in search",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search",
+      "resume": "In many circles, \"Ask Chat\" has replaced \"Google it,\" and that's reflected in a new announcement from OpenAI: the volume of search queries run through ChatGPT now equals 20 percent of the volume run through Google. Adam Fry, OpenAI's consumer product lead for ChatGPT, made the announcement at a press event on Monday. He said […]",
+      "dato": "2026-11-03T18:30:42+00:00",
+      "kilde": "The Verge AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "eget_foerst_set": "2026-11-03T19:45:16.653457+00:00",
+      "rubrik": "ChatGPT søger en femtedel af Googles volumen",
+      "resume_da": "OpenAI oplyser, at ChatGPT nu kører søgninger svarende til 20 procent af Googles volumen. Samtidig vil selskabet gøre chatbot-svaret til et interaktivt lærred med annoncer.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "En femtedel så mange søgninger som Google",
+          "tekst": "ChatGPT behandler nu søgninger svarende til 20 procent af det volumen, der går gennem Google. Det sagde Adam Fry, der er OpenAIs produktchef for ChatGPT, på et pressemøde mandag ifølge The Verge.\n\nOpenAI tæller en søgning, hver gang en bruger skriver noget, der udløser en websøgning. Det gælder altså ikke, når chatbot'en bare forklarer et ord eller en simpel fremgangsmåde. **Fry oplyste ikke, hvor tallet for Googles søgevolumen kommer fra.**"
+        },
+        {
+          "overskrift": "Bing nåede kun tre procent efter ti år",
+          "tekst": "Til sammenligning fortalte Microsofts topchef, Satya Nadella, under Googles konkurrencesag i 2023, at Bing efter mere end ti års forsøg havde omkring 3 procent af markedet for søgemaskiner. En femtedel er stadig langt fra at vælte Google, men det er et andet udgangspunkt end Bings.\n\nOpenAI trækker sandsynligvis en betydelig del af sine søgninger gennem Microsofts Bing og sit eget søgeindeks. Der har desuden været spekulationer om, at nogle forespørgsler sendes gennem Google."
+        },
+        {
+          "overskrift": "Fry vil gøre svaret til et lærred",
+          "tekst": "Fry beskriver fremtiden som «Intelligent UI»: et visuelt og interaktivt svar inde i chatbotten. «Det er der, hvor fremtiden for denne teknologi går hen. Man taler til et lærred,» sagde han.\n\nOpenAI ser også annoncer som en vej til indtjening frem mod en mulig børsnotering, der muligvis er planlagt til begyndelsen af næste år. Sidste måned annoncerede OpenAI, at selskabet ville begynde at indføre billeder af sponsorerede produkter og tjenester i ChatGPT i stedet for kun navn, logo og link. Ifølge Fry har annoncerne ikke skadet produktet eller brugen af det."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "20 procent",
+          "label": "ChatGPTs søgevolumen målt mod Googles, ifølge OpenAI. Kilden til Googles tal er ikke oplyst"
+        },
+        {
+          "tal": "3 procent",
+          "label": "Bings andel af søgemaskinemarkedet efter mere end ti års forsøg, ifølge Satya Nadella i 2023"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Google skærer ned på henvisninger til tredjepartssider og satser på AI Overview og personlige søgeresultater.",
+        "Fry: «Ads have not negatively impacted the product or the usage of the product.»",
+        "OpenAI vil vise sponsorerede produkter som billeder i ChatGPT, ikke kun som navn og link."
+      ],
+      "betydning": "OpenAI melder sig dermed som den første seriøse udfordrer til Googles søgning, og annoncer i chatbot-svar bliver et format, flere annoncører skal forholde sig til.",
+      "pointer": [
+        "ChatGPT søger 20 procent af Googles volumen",
+        "OpenAI oplyser ikke Googles talgrundlag",
+        "Næste skridt: interaktive svar og annoncer"
+      ],
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI oplyser, at ChatGPTs søgevolumen nu er 20 pct. af Googles.",
+        "forbehold": "OpenAI-oplyst tal uden offentlig metode eller uafhængig dokumentation.",
+        "emne": "openai chatgpt søgning"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-04T00:54:21.240271+00:00"
+      },
+      "prio": 5,
+      "billedmotiv": "A solid ChatGPT answer canvas bearing the black OpenAI Blossom unfolds into an interactive panel with a small sponsor tag. Beside it, a tall search column marked with Google’s four-colour G rises, while a gauge on the canvas is filled to one-fifth. Clear, opaque shapes with sharp edges, no background or floor.",
+      "billedmotiv_instruks": "71620bd665fb7c7eb284",
+      "side": "artikel/eaa88cee498cbfc2.html",
+      "billedstatus": {
+        "status": "afvist_af_filter",
+        "signatur": "17e08ab39802452a"
+      }
     },
     {
       "titel": "Claude’s new rules against game cloning won’t stop the AI copying boom",
@@ -5119,7 +5169,7 @@
       "detaljer": [],
       "betydning": "Forsinkelser i Texas kan ramme store teknologivirksomheders planer for anlæg til træning af AI. Om projekterne faktisk bremses, afhænger blandt andet af beslutninger lokalt og i delstaten.",
       "pointer": [],
-      "billede": "data/img/cc0036592e83ee8b.jpg",
+      "billede": "data/img/cc0036592e83ee8b.webp",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -5293,6 +5343,72 @@
       "side": "artikel/b86b88ec9ca0ed8c.html"
     },
     {
+      "titel": "Quoting Nilay Patel",
+      "link": "https://simonwillison.net/2026/Nov/6/nilay-patel/",
+      "resume": "The products aren't good enough to sell people on the costs. You cannot tell people that you have to listen to the whine of a data center in their backyard for AI overviews and some of the most hilarious deep fake slop in history. It's not worth it. It just isn't worth it to anyone. And agents aren't real and they might not be being used the way that anyone wants them to yet. All these companies…",
+      "dato": "2026-11-06T17:13:12+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-06T20:49:47.939046+00:00",
+      "eget_foerst_set": "2026-11-06T20:49:47.939046+00:00",
+      "rubrik": "Nilay Patel: AI-regningen er større end nytten",
+      "resume_da": "I The Vergecast siger Nilay Patel, at AI-selskaberne bruger mere, end de tjener, og at produkterne endnu ikke beviser deres værdi.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Produkterne skal tale for sig selv",
+          "tekst": "Nilay Patel stiller i podcasten The Vergecast et enkelt spørgsmål: Er ulemperne ved AI prisen værd? Hans svar er nej.\n\nHan siger, at AI-industrien ikke kommer ud af problemerne, før produkterne bliver bedre. Brugerne skal kunne mærke i hverdagen, at et produkt gør livet bedre, uden at nogen først skal overbevise dem med en reklamekampagne."
+        },
+        {
+          "overskrift": "Støj, deepfakes og hackede køleskabe",
+          "tekst": "Blandt generne nævner han støjen fra datacentre i folks baghaver og de AI-genererede oversigter, «AI overviews», som nu dukker op i søgeresultater.\n\nHan peger også på deepfake-slop — falske billeder og videoer lavet med AI — og på køleskabe i Europa, der opbevarer blod, og som ifølge ham bliver hacket. Det er hans egne eksempler, og citatet dokumenterer dem ikke yderligere."
+        },
+        {
+          "overskrift": "Agenter, regnskaber og politik",
+          "tekst": "Om AI-agenter, der selv skal kunne udføre opgaver for brugeren, siger han, at de ikke er virkelige endnu, og at de måske ikke bruges, som nogen ønsker.\n\nHan tilføjer, at selskaberne bruger mere, end de tjener på produkterne, og kobler det til en politisk forbindelse, som han kalder åbenlys korruption. Citatet rummer ingen regnskabstal, så beløbene kan ikke efterprøves her."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Citatet er samlet af Simon Willison og offentliggjort 6. november 2026.",
+        "Afsnittet hedder «The Vergecast: Big Tech lost big in the 2026 election»."
+      ],
+      "betydning": "Ifølge Patel er vejen ud af kritikken ikke bedre markedsføring, men produkter der beviseligt gør hverdagen bedre for dem, der bruger dem.",
+      "pointer": [
+        "Patel: Ulemperne er ikke prisen værd",
+        "Agenter er ifølge ham ikke virkelige endnu",
+        "Kritikken gælder både produkter og pengeforbrug"
+      ],
+      "billedmotiv": "A two-pan balance scale tilted sharply downward on the left, its left pan loaded with a tall stack of heavy dark blocks, its right pan holding a single small pale cube raised high in the air. Solid thick shapes with sharp edges and clear outlines, isolated without floor or shadow.",
+      "billedmotiv_instruks": "178ee3bb631583989e70",
+      "billede": "data/img/6de8c2d6bf4e4832.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Citat fra Nilay Patel om, at AI-produkterne ikke er gode nok til at retfærdiggøre datacentrenes omkostninger; ren kommentar.",
+        "forbehold": "Et enkelt citat uden underliggende data eller metode.",
+        "emne": "ai-økonomi"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-06T20:58:14.128440+00:00"
+      },
+      "prio": 3,
+      "side": "artikel/0491af6508848e01.html"
+    },
+    {
       "titel": "llm 0.37",
       "link": "https://simonwillison.net/2026/Nov/2/llm/",
       "resume": "Release: llm 0.37 There's a lot of stuff in this new release of my LLM CLI tool and Python library, representing around two months of accumulated features and fixes. I added gpt-6.1-sol and gpt-6.1-terra , plus a new llm openai endpoint add command to make it easier to configure additional models that use OpenAI-compatible endpoints. I switched the default model (if you have not set your own…",
@@ -5375,72 +5491,6 @@
       },
       "prio": 5,
       "side": "artikel/5e2d12465b29b09a.html"
-    },
-    {
-      "titel": "Quoting Nilay Patel",
-      "link": "https://simonwillison.net/2026/Nov/6/nilay-patel/",
-      "resume": "The products aren't good enough to sell people on the costs. You cannot tell people that you have to listen to the whine of a data center in their backyard for AI overviews and some of the most hilarious deep fake slop in history. It's not worth it. It just isn't worth it to anyone. And agents aren't real and they might not be being used the way that anyone wants them to yet. All these companies…",
-      "dato": "2026-11-06T17:13:12+00:00",
-      "kilde": "Simon Willison AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-11-06T20:49:47.939046+00:00",
-      "eget_foerst_set": "2026-11-06T20:49:47.939046+00:00",
-      "rubrik": "Nilay Patel: AI-regningen er større end nytten",
-      "resume_da": "I The Vergecast siger Nilay Patel, at AI-selskaberne bruger mere, end de tjener, og at produkterne endnu ikke beviser deres værdi.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Produkterne skal tale for sig selv",
-          "tekst": "Nilay Patel stiller i podcasten The Vergecast et enkelt spørgsmål: Er ulemperne ved AI prisen værd? Hans svar er nej.\n\nHan siger, at AI-industrien ikke kommer ud af problemerne, før produkterne bliver bedre. Brugerne skal kunne mærke i hverdagen, at et produkt gør livet bedre, uden at nogen først skal overbevise dem med en reklamekampagne."
-        },
-        {
-          "overskrift": "Støj, deepfakes og hackede køleskabe",
-          "tekst": "Blandt generne nævner han støjen fra datacentre i folks baghaver og de AI-genererede oversigter, «AI overviews», som nu dukker op i søgeresultater.\n\nHan peger også på deepfake-slop — falske billeder og videoer lavet med AI — og på køleskabe i Europa, der opbevarer blod, og som ifølge ham bliver hacket. Det er hans egne eksempler, og citatet dokumenterer dem ikke yderligere."
-        },
-        {
-          "overskrift": "Agenter, regnskaber og politik",
-          "tekst": "Om AI-agenter, der selv skal kunne udføre opgaver for brugeren, siger han, at de ikke er virkelige endnu, og at de måske ikke bruges, som nogen ønsker.\n\nHan tilføjer, at selskaberne bruger mere, end de tjener på produkterne, og kobler det til en politisk forbindelse, som han kalder åbenlys korruption. Citatet rummer ingen regnskabstal, så beløbene kan ikke efterprøves her."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Citatet er samlet af Simon Willison og offentliggjort 6. november 2026.",
-        "Afsnittet hedder «The Vergecast: Big Tech lost big in the 2026 election»."
-      ],
-      "betydning": "Ifølge Patel er vejen ud af kritikken ikke bedre markedsføring, men produkter der beviseligt gør hverdagen bedre for dem, der bruger dem.",
-      "pointer": [
-        "Patel: Ulemperne er ikke prisen værd",
-        "Agenter er ifølge ham ikke virkelige endnu",
-        "Kritikken gælder både produkter og pengeforbrug"
-      ],
-      "billedmotiv": "A two-pan balance scale tilted sharply downward on the left, its left pan loaded with a tall stack of heavy dark blocks, its right pan holding a single small pale cube raised high in the air. Solid thick shapes with sharp edges and clear outlines, isolated without floor or shadow.",
-      "billedmotiv_instruks": "178ee3bb631583989e70",
-      "billede": "data/img/6de8c2d6bf4e4832.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Citat fra Nilay Patel om, at AI-produkterne ikke er gode nok til at retfærdiggøre datacentrenes omkostninger; ren kommentar.",
-        "forbehold": "Et enkelt citat uden underliggende data eller metode.",
-        "emne": "ai-økonomi"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-11-06T20:58:14.128440+00:00"
-      },
-      "prio": 3,
-      "side": "artikel/0491af6508848e01.html"
     },
     {
       "titel": "Qwen 3.8 27B on my laptop can interpret model weights, too",
@@ -5624,6 +5674,65 @@
       "side": "artikel/0835e4c1adb39f7f.html"
     },
     {
+      "titel": "AI broke the cybersecurity world. What’s next?",
+      "link": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
+      "resume": "Today, I’m talking with Alex Stamos, chief security officer at Cognition and longtime cybersecurity expert, about what a mess cybersecurity is right now. This episode is part one of a special series looking at AI in real life. I’ve always enjoyed talking to Alex because he’s so direct, and you’re going to hear him say […]",
+      "dato": "2026-11-07T10:00:00-05:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-07T20:27:33.778172+00:00",
+      "eget_foerst_set": "2026-11-07T20:27:33.778172+00:00",
+      "rubrik": "Alex Stamos: AI kan automatisere cyberangreb",
+      "resume_da": "Et åbent værktøj kan ifølge sikkerhedschefen finde og udnytte sårbarheder i virksomhedernes systemer, mens angrebet står på.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "The Verge taler med Cognitions sikkerhedschef om AI og cybersikkerhed.",
+        "forbehold": "Uddraget gengiver ingen konkrete konklusioner fra samtalen.",
+        "emne": "ai og cybersikkerhed"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 2,
+      "sektioner": [
+        {
+          "overskrift": "Angrebene finder selv nye huller",
+          "tekst": "AI kan nu bruges til at finde fejl i software og skrive programmer, der udnytter dem, mens et angreb er i gang. Det siger Alex Stamos, sikkerhedschef hos AI-virksomheden Cognition, i et interview med The Verge.\n\nTidligere fandt angribere typisk sårbarheder og udviklede deres værktøjer på forhånd. Derefter satte mennesker angrebene ind mod et eller mange mål. Ifølge Stamos kan AI automatisere en stor del af den proces."
+        },
+        {
+          "overskrift": "Et åbent værktøj vækker bekymring",
+          "tekst": "Stamos fremhæver ARTEX, et kinesisk værktøj med åben kildekode, som alle kan hente og undersøge. Kombineret med en særligt modificeret udgave af AI-modellen GLM-5.3 kan det ifølge ham bruges til at bryde ind hos et overraskende stort antal organisationer.\n\nHan siger, at forløbet begyndte med tre sydkoreanske banker, og at omkring 200 virksomheder mere blev ramt i interviewugen. Stamos fortæller, at han har hjulpet nogle af de ramte virksomheder med at rette fejl."
+        },
+        {
+          "overskrift": "Ét indbrud kan føre videre",
+          "tekst": "Stamos beskriver også, hvordan angreb kan kædes sammen. Ifølge hans oplysninger blev adgangsnøgler stjålet hos Fireworks, der leverer AI-tjenester til virksomheder. Nøglerne blev derefter brugt til at bryde ind hos Cursor.\n\nAngriberne sendte ifølge Stamos et skadeligt tilføjelsesprogram videre til 5.000 virksomheder. Det skabte risiko for yderligere indbrud, men tallet er ikke det samme som 5.000 bekræftede indbrud. Stamos forventer en vanskelig periode, mens virksomhederne tilpasser deres forsvar."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [],
+      "betydning": "Når angribere kan automatisere flere trin og bruge ét indbrud til at nå videre, kan et sikkerhedsbrud få konsekvenser for mange virksomheder.",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-07T20:30:01.391714+00:00"
+      },
+      "billedmotiv": "A solid automated probing tool discovers a crack in a company system's shield and extends a wedge through that same opening, showing vulnerability discovery and exploitation as one continuous attack. A second connected shield has a matching breach, suggesting the attack can move onward. Use thick, opaque forms with crisp, clearly separated contours.",
+      "billedmotiv_instruks": "0e732e4a8e2c4b0e56cd",
+      "billede": "data/img/074b54739283d7e8.webp",
+      "side": "artikel/c350b1638a5338a2.html"
+    },
+    {
       "titel": "Hiding inside Palantir’s skyrocketing quarter is a foreboding signal",
       "link": "https://techcrunch.com/2026/11/03/hiding-inside-palantirs-skyrocketing-quarter-is-a-foreboding-signal/",
       "resume": "Palantir's U.S. commercial revenue surpassed U.S. government revenue for the first time ever.",
@@ -5710,6 +5819,88 @@
       },
       "prio": 4,
       "side": "artikel/656673d20b5c101d.html"
+    },
+    {
+      "titel": "Elon Musk throttles Grok Bot limits due to ‘unsustainably high’ costs",
+      "link": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/",
+      "resume": "Musk recently referred to Grok Bot as having \"the fastest growth of a product that I've ever seen in my life.\"",
+      "dato": "2026-11-02T16:23:21+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-02T18:45:47.523033+00:00",
+      "eget_foerst_set": "2026-11-02T18:45:47.523033+00:00",
+      "rubrik": "Musk sænker Grok Bot-grænser efter høje omkostninger",
+      "resume_da": "Brugere fandt deres ugentlige kvote brugt op uden at have brugt Grok Bot. Musk bekræfter, at det ikke er en fejl, men et spørgsmål om omkostninger.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Halloween-kvoten sprang til 100 procent",
+          "tekst": "Over halloween-weekenden opdagede flere brugere af Grok Bot, at deres ugentlige forbrugsgrænse pludselig var brugt op. Det skete, selv om de ikke havde brugt SpaceX' AI-agent i løbet af natten.\n\nPå X skrev flere brugere, at deres forbrug sprang fra **helt ned til 50 procent** til 100 procent. Grok Bot er den AI, som Musk har fremhævet blandt andet kan hjælpe med at købe gaver til familien."
+        },
+        {
+          "overskrift": "Musk kalder det ikke en fejl",
+          "tekst": "Elon Musk bekræftede søndag i en kommentar på X, at der ikke var tale om en fejl. \"The cost of serving Grok Bot was unsustainably high relative to revenue,\" skrev han som svar på et spørgsmål fra en bruger.\n\nDet betyder, at det kostede mere at drive Grok Bot, end det stod mål med indtægterne. Musk har ikke taget emnet op på sin hovedprofil. Der har han ifølge kilden fortsat fremhævet, at Grok Bot kan hjælpe med at købe gaver."
+        },
+        {
+          "overskrift": "Et overskud i SpaceX' AI-division",
+          "tekst": "Grok Bot er blevet præsenteret som en succeshistorie for det nyligt børsnoterede SpaceX. I en indberetning sidste måned oplyste selskabet, at AI nu udgør 52 procent af indtægterne.\n\nDen omdøbte division \"Super Intelligence\" gav et overskud på 431 mio. dollars. Overskuddet ville have været højere, hvis ikke engangsomkostninger på 1,2 mia. dollars i forbindelse med købet af Cursor havde trukket det ned.\n\nMusk har kaldt Grok Bot det hurtigst voksende produkt, han har set i sit liv."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "52 %",
+          "label": "AI's andel af SpaceX' indtægter ifølge selskabets indberetning sidste måned"
+        },
+        {
+          "tal": "431 mio. dollars",
+          "label": "Overskud i divisionen \"Super Intelligence\""
+        },
+        {
+          "tal": "1,2 mia. dollars",
+          "label": "Engangsomkostninger ved købet af Cursor, som trak overskuddet ned"
+        },
+        {
+          "tal": "50 → 100 %",
+          "label": "Ugentlig kvote, som den sprang ifølge brugeres opslag på X"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Ifølge kilden er et overskud i en AI-division en sjældenhed i branchen."
+      ],
+      "betydning": "Musk har ikke oplyst, hvordan abonnenternes grænser ændres fremover. Det står åbent, hvor meget de kan bruge Grok Bot.",
+      "pointer": [
+        "Kvoter blev brugt op uden brug i weekenden",
+        "Musk: omkostningerne var uholdbart høje",
+        "Nye grænser for abonnenter er ikke meldt ud"
+      ],
+      "billedmotiv": "A solid round quota gauge with its black needle jammed hard against the 100 percent mark, a heavy stack of coins beside it tipping over and spilling away, showing a weekly usage limit consumed by serving costs that outstripped revenue.",
+      "billedmotiv_instruks": "41cd781e26ea322b88db",
+      "billede": "data/img/8d4482a78414f8f2.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Musk begrænser brugen af Grok Bot på grund af udgifter, som han kalder uholdbart høje, trods kraftig vækst.",
+        "forbehold": "Ingen tal på omkostninger eller nye grænser oplyst.",
+        "emne": "grok bot grænser"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-02T18:51:28.700411+00:00"
+      },
+      "prio": 5,
+      "side": "artikel/b7a0e68320c363ea.html"
     },
     {
       "titel": "Apple Watch’s AI features for rewinding and recapping conversations begin beta testing",
@@ -5812,88 +6003,6 @@
         "status": "afvist_af_filter",
         "signatur": "4719e359283fc079"
       }
-    },
-    {
-      "titel": "Elon Musk throttles Grok Bot limits due to ‘unsustainably high’ costs",
-      "link": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/",
-      "resume": "Musk recently referred to Grok Bot as having \"the fastest growth of a product that I've ever seen in my life.\"",
-      "dato": "2026-11-02T16:23:21+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-11-02T18:45:47.523033+00:00",
-      "eget_foerst_set": "2026-11-02T18:45:47.523033+00:00",
-      "rubrik": "Musk sænker Grok Bot-grænser efter høje omkostninger",
-      "resume_da": "Brugere fandt deres ugentlige kvote brugt op uden at have brugt Grok Bot. Musk bekræfter, at det ikke er en fejl, men et spørgsmål om omkostninger.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Halloween-kvoten sprang til 100 procent",
-          "tekst": "Over halloween-weekenden opdagede flere brugere af Grok Bot, at deres ugentlige forbrugsgrænse pludselig var brugt op. Det skete, selv om de ikke havde brugt SpaceX' AI-agent i løbet af natten.\n\nPå X skrev flere brugere, at deres forbrug sprang fra **helt ned til 50 procent** til 100 procent. Grok Bot er den AI, som Musk har fremhævet blandt andet kan hjælpe med at købe gaver til familien."
-        },
-        {
-          "overskrift": "Musk kalder det ikke en fejl",
-          "tekst": "Elon Musk bekræftede søndag i en kommentar på X, at der ikke var tale om en fejl. \"The cost of serving Grok Bot was unsustainably high relative to revenue,\" skrev han som svar på et spørgsmål fra en bruger.\n\nDet betyder, at det kostede mere at drive Grok Bot, end det stod mål med indtægterne. Musk har ikke taget emnet op på sin hovedprofil. Der har han ifølge kilden fortsat fremhævet, at Grok Bot kan hjælpe med at købe gaver."
-        },
-        {
-          "overskrift": "Et overskud i SpaceX' AI-division",
-          "tekst": "Grok Bot er blevet præsenteret som en succeshistorie for det nyligt børsnoterede SpaceX. I en indberetning sidste måned oplyste selskabet, at AI nu udgør 52 procent af indtægterne.\n\nDen omdøbte division \"Super Intelligence\" gav et overskud på 431 mio. dollars. Overskuddet ville have været højere, hvis ikke engangsomkostninger på 1,2 mia. dollars i forbindelse med købet af Cursor havde trukket det ned.\n\nMusk har kaldt Grok Bot det hurtigst voksende produkt, han har set i sit liv."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "52 %",
-          "label": "AI's andel af SpaceX' indtægter ifølge selskabets indberetning sidste måned"
-        },
-        {
-          "tal": "431 mio. dollars",
-          "label": "Overskud i divisionen \"Super Intelligence\""
-        },
-        {
-          "tal": "1,2 mia. dollars",
-          "label": "Engangsomkostninger ved købet af Cursor, som trak overskuddet ned"
-        },
-        {
-          "tal": "50 → 100 %",
-          "label": "Ugentlig kvote, som den sprang ifølge brugeres opslag på X"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Ifølge kilden er et overskud i en AI-division en sjældenhed i branchen."
-      ],
-      "betydning": "Musk har ikke oplyst, hvordan abonnenternes grænser ændres fremover. Det står åbent, hvor meget de kan bruge Grok Bot.",
-      "pointer": [
-        "Kvoter blev brugt op uden brug i weekenden",
-        "Musk: omkostningerne var uholdbart høje",
-        "Nye grænser for abonnenter er ikke meldt ud"
-      ],
-      "billedmotiv": "A solid round quota gauge with its black needle jammed hard against the 100 percent mark, a heavy stack of coins beside it tipping over and spilling away, showing a weekly usage limit consumed by serving costs that outstripped revenue.",
-      "billedmotiv_instruks": "41cd781e26ea322b88db",
-      "billede": "data/img/8d4482a78414f8f2.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Musk begrænser brugen af Grok Bot på grund af udgifter, som han kalder uholdbart høje, trods kraftig vækst.",
-        "forbehold": "Ingen tal på omkostninger eller nye grænser oplyst.",
-        "emne": "grok bot grænser"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-11-02T18:51:28.700411+00:00"
-      },
-      "prio": 5,
-      "side": "artikel/b7a0e68320c363ea.html"
     },
     {
       "titel": "Ukraine’s drone strikes spur hasty Russian plans for underground data centers",
@@ -6159,6 +6268,9 @@
       "detaljer": [],
       "betydning": "Eksisterende integrationer kan fortsætte uden ændringer, men deres billedanmodninger bliver nu behandlet af en anden model.",
       "pointer": [],
+      "billedmotiv": "An image frame bearing the recognisable stylised black xAI wordmark receives two thick incoming arrows that merge into one, showing existing image requests being routed to a different model. A solid price tag with a downward arrow hangs from the frame to signal the lower price. Keep the mark front-facing and the forms opaque, thick and sharply outlined.",
+      "billedmotiv_instruks": "bb66fd77ec90404bdfde",
+      "billede": "data/img/620504147d0c7a03.webp",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -6182,9 +6294,6 @@
         "kontrolleret": "2026-11-06T21:46:30.744418+00:00"
       },
       "prio": 6,
-      "billedmotiv": "An image frame bearing the recognisable stylised black xAI wordmark receives two thick incoming arrows that merge into one, showing existing image requests being routed to a different model. A solid price tag with a downward arrow hangs from the frame to signal the lower price. Keep the mark front-facing and the forms opaque, thick and sharply outlined.",
-      "billedmotiv_instruks": "bb66fd77ec90404bdfde",
-      "billede": "data/img/620504147d0c7a03.webp",
       "side": "artikel/99c3122894ef9106.html"
     },
     {
@@ -6924,81 +7033,6 @@
       "side": "artikel/6e7d4661da08e363.html"
     },
     {
-      "titel": "Those Jeff Bezos hair transplant photos are very fake",
-      "link": "https://www.theverge.com/tech/1025745/fake-jeff-bezos-hair-replacement-photos-debunk",
-      "resume": "Amazon founder Jeff Bezos and actor Jason Statham have a distinctive feature in common: They're both famously bald, and that definitely hasn't changed in the last few days. However, there are some images of the two men circulating around X, Threads, and Bluesky in which they both have substantially more hair than their usual shaved […]",
-      "dato": "2026-11-03T21:01:07+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-11-04T00:49:46.441031+00:00",
-      "eget_foerst_set": "2026-11-04T00:49:46.441031+00:00",
-      "rubrik": "Jeff Bezos’ hår er redigeret på falske billeder",
-      "resume_da": "Billeder af en hårbevokset Jeff Bezos og Jason Statham deles på sociale medier. The Verge fandt originalfotos fra 2023 og 2011 ved omvendt billedsøgning.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Hår på hovedet, ikke i virkeligheden",
-          "tekst": "På X, Threads og Bluesky cirkulerer billeder af Amazon-grundlæggeren Jeff Bezos og skuespilleren Jason Statham med markant mere hår end deres sædvanlige skallede look. Nogle opslag hævder, at de har fået hårtransplantation. Det er ikke tilfældet.\n\nThe Verge har set billederne i sociale medie-feeds, men kan ikke fastslå, hvor virale de er. Det står heller ikke klart, hvem der først lagde dem ud."
-        },
-        {
-          "overskrift": "Originalerne ligger frit tilgængelige",
-          "tekst": "Ved at køre billederne gennem Googles omvendte billedsøgning fandt The Verge frem til de oprindelige fotos. Bezos-billedet kunne spores via samme tøj og baggrund til et fotografi fra 2023 med et vandmærke nederst til venstre.\n\nFor Statham gik det endnu hurtigere: søgningen viste med det samme vandmærkede versioner af originalerne, som en paparazzo tog i 2011."
-        },
-        {
-          "overskrift": "Hvorfor hårtransplantation ikke giver mening",
-          "tekst": "Ifølge The Verge er der også faglige tegn på fup. En hårtransplantation kræver donorhår fra baghovedet og siderne, som flyttes op til hårgrænsen. Bezos og Statham har ikke det nødvendige donorhår at tage af.\n\nDesuden får patienter typisk kraftig hævelse i ansigtet den første uges tid. Bezos viser ingen tegn på det. En paryk eller et hårsystem ville være en midlertidig løsning, men ifølge skribenten et usandsynligt valg for en så velhavende og velforbundet person."
-        },
-        {
-          "overskrift": "Ingen AI-mærker, men stadig snyd",
-          "tekst": "Det er uklart, om der er brugt AI til at lave billederne. Ingen af de billeder, The Verge testede, havde Content Credentials eller SynthID-markører, som er tekniske spor, der kan vise, at et billede er AI-genereret eller redigeret.\n\nSociale mediers mærkningssystemer er generelt dårlige til at fange den slags fup, skriver The Verge. Derfor er omvendt billedsøgning et enkelt sted at begynde, hvis man vil tjekke et mistænkeligt billede."
-        },
-        {
-          "overskrift": "Kendte ansigter er et fast mål",
-          "tekst": "Det er ikke første gang, redigerede billeder af kendte narrede folk på sociale medier. Tidligere har et AI-billede af paven cirkuleret, og fotografier af Callum Turner, Harry Styles og Noah Schnapp er blevet manipuleret, så de fremstår uden trøje.\n\nBillederne er ofte lavet for at skabe likes og delinger. De rammer en fascination af kendtes liv med situationer, der er bizarre nok til at vække opsigt, men stadig virker troværdige."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "De falske billeder cirkulerer på X, Threads og Bluesky.",
-        "The Verge fandt ingen Content Credentials eller SynthID-markører i de testede billeder.",
-        "Originalfotografiet af Bezos er fra 2023; Statham-fotografiet er fra 2011."
-      ],
-      "betydning": "Redigerede billeder kan skabe falske historier om kendtes udseende, og de er svære at gennemskue, når sociale medier ikke mærker dem.",
-      "pointer": [
-        "Billederne er redigerede, ikke ægte.",
-        "Originalfotos kan findes med omvendt billedsøgning.",
-        "Ingen AI-mærkning blev fundet."
-      ],
-      "billedmotiv": "Two solid photo cards stand side by side, each with a thick false hairpiece clipped over a plain oval portrait shape; a large magnifying glass lifts one hairpiece to reveal the unedited card beneath, while a small blank verification tag hangs nearby. The wig edge is sharply offset from the card.",
-      "billedmotiv_instruks": "77e3eff0eda6e156f6df",
-      "billede": "data/img/f456342d03e86f97.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Falske AI-billeder af Jeff Bezos og Jason Statham med fyldigt hår spredes på flere sociale platforme.",
-        "forbehold": "Ingen oplysninger om, hvordan billederne er lavet, eller hvem der står bag.",
-        "emne": "deepfakes"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-11-04T00:57:05.770725+00:00"
-      },
-      "prio": 3,
-      "side": "artikel/b0c31bffb9e6d1b2.html"
-    },
-    {
       "titel": "Omen AI adds liquid know-how in $16 million Aquatic Labs acquisition",
       "link": "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/",
       "resume": "Two startups tackling the data center water problem are joining forces in a $16 million deal.",
@@ -7085,6 +7119,81 @@
       },
       "prio": 4,
       "side": "artikel/d2641740e5f255ec.html"
+    },
+    {
+      "titel": "Those Jeff Bezos hair transplant photos are very fake",
+      "link": "https://www.theverge.com/tech/1025745/fake-jeff-bezos-hair-replacement-photos-debunk",
+      "resume": "Amazon founder Jeff Bezos and actor Jason Statham have a distinctive feature in common: They're both famously bald, and that definitely hasn't changed in the last few days. However, there are some images of the two men circulating around X, Threads, and Bluesky in which they both have substantially more hair than their usual shaved […]",
+      "dato": "2026-11-03T21:01:07+00:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-04T00:49:46.441031+00:00",
+      "eget_foerst_set": "2026-11-04T00:49:46.441031+00:00",
+      "rubrik": "Jeff Bezos’ hår er redigeret på falske billeder",
+      "resume_da": "Billeder af en hårbevokset Jeff Bezos og Jason Statham deles på sociale medier. The Verge fandt originalfotos fra 2023 og 2011 ved omvendt billedsøgning.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Hår på hovedet, ikke i virkeligheden",
+          "tekst": "På X, Threads og Bluesky cirkulerer billeder af Amazon-grundlæggeren Jeff Bezos og skuespilleren Jason Statham med markant mere hår end deres sædvanlige skallede look. Nogle opslag hævder, at de har fået hårtransplantation. Det er ikke tilfældet.\n\nThe Verge har set billederne i sociale medie-feeds, men kan ikke fastslå, hvor virale de er. Det står heller ikke klart, hvem der først lagde dem ud."
+        },
+        {
+          "overskrift": "Originalerne ligger frit tilgængelige",
+          "tekst": "Ved at køre billederne gennem Googles omvendte billedsøgning fandt The Verge frem til de oprindelige fotos. Bezos-billedet kunne spores via samme tøj og baggrund til et fotografi fra 2023 med et vandmærke nederst til venstre.\n\nFor Statham gik det endnu hurtigere: søgningen viste med det samme vandmærkede versioner af originalerne, som en paparazzo tog i 2011."
+        },
+        {
+          "overskrift": "Hvorfor hårtransplantation ikke giver mening",
+          "tekst": "Ifølge The Verge er der også faglige tegn på fup. En hårtransplantation kræver donorhår fra baghovedet og siderne, som flyttes op til hårgrænsen. Bezos og Statham har ikke det nødvendige donorhår at tage af.\n\nDesuden får patienter typisk kraftig hævelse i ansigtet den første uges tid. Bezos viser ingen tegn på det. En paryk eller et hårsystem ville være en midlertidig løsning, men ifølge skribenten et usandsynligt valg for en så velhavende og velforbundet person."
+        },
+        {
+          "overskrift": "Ingen AI-mærker, men stadig snyd",
+          "tekst": "Det er uklart, om der er brugt AI til at lave billederne. Ingen af de billeder, The Verge testede, havde Content Credentials eller SynthID-markører, som er tekniske spor, der kan vise, at et billede er AI-genereret eller redigeret.\n\nSociale mediers mærkningssystemer er generelt dårlige til at fange den slags fup, skriver The Verge. Derfor er omvendt billedsøgning et enkelt sted at begynde, hvis man vil tjekke et mistænkeligt billede."
+        },
+        {
+          "overskrift": "Kendte ansigter er et fast mål",
+          "tekst": "Det er ikke første gang, redigerede billeder af kendte narrede folk på sociale medier. Tidligere har et AI-billede af paven cirkuleret, og fotografier af Callum Turner, Harry Styles og Noah Schnapp er blevet manipuleret, så de fremstår uden trøje.\n\nBillederne er ofte lavet for at skabe likes og delinger. De rammer en fascination af kendtes liv med situationer, der er bizarre nok til at vække opsigt, men stadig virker troværdige."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "De falske billeder cirkulerer på X, Threads og Bluesky.",
+        "The Verge fandt ingen Content Credentials eller SynthID-markører i de testede billeder.",
+        "Originalfotografiet af Bezos er fra 2023; Statham-fotografiet er fra 2011."
+      ],
+      "betydning": "Redigerede billeder kan skabe falske historier om kendtes udseende, og de er svære at gennemskue, når sociale medier ikke mærker dem.",
+      "pointer": [
+        "Billederne er redigerede, ikke ægte.",
+        "Originalfotos kan findes med omvendt billedsøgning.",
+        "Ingen AI-mærkning blev fundet."
+      ],
+      "billedmotiv": "Two solid photo cards stand side by side, each with a thick false hairpiece clipped over a plain oval portrait shape; a large magnifying glass lifts one hairpiece to reveal the unedited card beneath, while a small blank verification tag hangs nearby. The wig edge is sharply offset from the card.",
+      "billedmotiv_instruks": "77e3eff0eda6e156f6df",
+      "billede": "data/img/f456342d03e86f97.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Falske AI-billeder af Jeff Bezos og Jason Statham med fyldigt hår spredes på flere sociale platforme.",
+        "forbehold": "Ingen oplysninger om, hvordan billederne er lavet, eller hvem der står bag.",
+        "emne": "deepfakes"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-04T00:57:05.770725+00:00"
+      },
+      "prio": 3,
+      "side": "artikel/b0c31bffb9e6d1b2.html"
     },
     {
       "titel": "The agentic web is here",
@@ -7609,6 +7718,7 @@
       ],
       "billedmotiv": "A solid chat bubble carrying the large four-point Gemini spark in Google's blue, red, yellow and green gradient; beside it, an opaque document sheet has a marked paragraph and a thick editing cursor reshaping the text. The scene shows Gemini generating and editing a file inside the conversation.",
       "billedmotiv_instruks": "547aac4ef3c9e6acb841",
+      "billede": "data/img/28cab3d2b0ae9b8e.webp",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -7633,7 +7743,6 @@
       },
       "historie_dato": "2026-10-29T16:15:00+00:00",
       "prio": 6,
-      "billede": "data/img/28cab3d2b0ae9b8e.webp",
       "side": "artikel/7bc579d856eb19e4.html"
     },
     {
@@ -8283,6 +8392,10 @@
       ],
       "billedmotiv": "An opaque black model-weight block with a compact Qwen wordmark badge on its front, an NES cartridge plugged into its side, and a tiny pixel-art plumber and green pipe standing on a small raised platform carved into the block; a single hourglass beside the cartridge marks slow emulation.",
       "billedmotiv_instruks": "3b0533fd8cca6bf58a03",
+      "billedstatus": {
+        "status": "afvist_af_filter",
+        "signatur": "1a16d8966734cdd8"
+      },
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -8306,10 +8419,6 @@
         "kontrolleret": "2026-10-31T14:44:18.857456+00:00"
       },
       "prio": 3,
-      "billedstatus": {
-        "status": "afvist_af_filter",
-        "signatur": "1a16d8966734cdd8"
-      },
       "side": "artikel/e522964144b93760.html"
     },
     {
@@ -8461,6 +8570,7 @@
         "kontrolleret": "2026-10-28T21:26:02.367435+00:00"
       },
       "prio": 4,
+      "billede": "data/img/60f7bab2dc8b2fd4.webp",
       "side": "artikel/3a389809e57a68f3.html"
     },
     {
@@ -8656,6 +8766,7 @@
       ],
       "billedmotiv": "A solid game tile showing a small castle and a dragon silhouette is being rebuilt by a stream of thick code-bracket blocks; beside it, a large circular clock marks one hour, and a stack of version blocks waits to deploy. The scene shows Spawn's agent swarm shipping a game change every hour.",
       "billedmotiv_instruks": "1e1275aac1ec8c9a3e05",
+      "billede": "data/img/f35b21ca8376e1c3.webp",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -8679,7 +8790,6 @@
         "kontrolleret": "2026-10-29T21:35:11.622376+00:00"
       },
       "prio": 4,
-      "billede": "data/img/f35b21ca8376e1c3.webp",
       "side": "artikel/a0c591335685a06d.html"
     },
     {
@@ -8740,6 +8850,9 @@
         "kontrolleret": "2026-10-30T06:26:56.656962+00:00"
       },
       "prio": 3,
+      "billedmotiv": "A branching family of solid model blocks shows a small step between two closely related versions and a larger gap toward the next branch. Separately, a larger block carries a price tag and a sturdier check mark, distinguishing model size from version order. Use crisp, opaque forms and clearly separated contours, without text or numerals.",
+      "billedmotiv_instruks": "c39fa2d45be7e815f176",
+      "billede": "data/img/afff9e0c6c43ff8f.webp",
       "side": "artikel/df9784fd80f89748.html"
     },
     {
@@ -8808,6 +8921,9 @@
         "kontrolleret": "2026-10-30T06:27:24.073814+00:00"
       },
       "prio": 3,
+      "billedmotiv": "A sheet of loose, uneven notes passes through a solid Gemini emblem and emerges as a clean CV sheet with exactly four aligned bullet points. The emblem shows Google's concave four-point Gemini spark in its blue, red, yellow and green gradient. Keep all shapes opaque, thick-edged and clearly separated, with no readable text.",
+      "billedmotiv_instruks": "03138467d06550ecfc0d",
+      "billede": "data/img/88073a6b6b8517a8.webp",
       "side": "artikel/2aa0ec0e29c2ff37.html"
     },
     {
@@ -9234,6 +9350,9 @@
         "kontrolleret": "2026-10-14T20:47:00.637064+00:00"
       },
       "prio": 6,
+      "billedmotiv": "A solid conversation bubble bearing Claude's distinctive warm terracotta-orange, many-rayed asterisk presents a location pin beside a ballot box with a simple vote-count graphic. The elements show voting-place information and election results delivered inside a conversation. Keep the emblem prominent and front-facing, with thick opaque forms and clearly separated contours, without readable text.",
+      "billedmotiv_instruks": "9c1d7ee4111f98720d61",
+      "billede": "data/img/04d4123d702e4b2c.webp",
       "side": "artikel/a326a9536354e596.html"
     },
     {
@@ -9317,6 +9436,7 @@
         "kontrolleret": "2026-10-14T14:14:25.903714+00:00"
       },
       "prio": 4,
+      "billede": "data/img/2171cd5319d6e2d4.webp",
       "side": "artikel/2922d5d8f3c24cb9.html"
     },
     {
@@ -9400,6 +9520,7 @@
         "kontrolleret": "2026-10-17T05:08:44.884261+00:00"
       },
       "prio": 2,
+      "billede": "data/img/15f254751f6dd2fe.webp",
       "side": "artikel/eb77f6484e453b05.html"
     },
     {
@@ -9760,11 +9881,14 @@
   ],
   "forside": {
     "version": 3,
-    "beregnet": "2026-11-07T15:04:23.260548+00:00",
+    "beregnet": "2026-11-07T20:27:33.778172+00:00",
     "udvalgte": [
-      "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development"
+      "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/"
     ],
     "raekkefoelge": [
+      "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+      "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+      "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
       "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
       "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
       "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
@@ -9778,7 +9902,6 @@
       "https://arstechnica.com/gaming/2026/11/could-potential-ai-clones-of-gta-vi-force-a-quicker-official-port/",
       "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
       "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/",
-      "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
       "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/",
       "https://www.theverge.com/news/1028549/protesters-microsoft-data-center-site-amsterdam",
       "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
@@ -9888,13 +10011,13 @@
       "https://www.anthropic.com/news/anthropic-cyber-mission",
       "https://www.anthropic.com/news/genesis-mission-commitment"
     ],
-    "ai_vurderet": 195,
+    "ai_vurderet": 199,
     "metode": "agent",
     "agent_version": 2,
     "kontrolleret": true,
-    "data_opdateret": "2026-11-07T15:04:23.260548+00:00",
+    "data_opdateret": "2026-11-07T20:27:33.778172+00:00",
     "samlede": {
-      "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development": []
+      "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/": []
     },
     "anbefalede": []
   }

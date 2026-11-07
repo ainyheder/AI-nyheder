@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-07T15:13:06.957575+00:00",
+ "genereret": "2026-11-07T20:38:46.521251+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -199,23 +199,23 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-07T15:04:23.260548+00:00",
-  "antal": 122,
-  "med_billede": 100,
-  "paa_dansk": 122,
+  "opdateret": "2026-11-07T20:27:33.778172+00:00",
+  "antal": 124,
+  "med_billede": 108,
+  "paa_dansk": 124,
   "kategorier": {
-   "Forskning": 10,
    "Lanceringer": 16,
-   "Politik \u0026 jura": 22,
+   "Forskning": 10,
+   "Politik \u0026 jura": 23,
    "Hverdags-AI": 28,
-   "Samfund \u0026 etik": 13,
+   "Samfund \u0026 etik": 14,
    "Penge \u0026 marked": 33
   },
   "kilder": {
-   "The Verge AI": 27,
-   "Google Gemini": 6,
-   "Hugging Face": 1,
    "TechCrunch AI": 51,
+   "Google Gemini": 6,
+   "The Verge AI": 29,
+   "Hugging Face": 1,
    "Ars Technica AI": 8,
    "Mistral AI": 3,
    "MIT Tech Review AI": 8,
@@ -226,17 +226,37 @@ window.KOMMANDO_DATA = {
   },
   "udvalgte": [
    {
-    "titel": "Why a new report on Anthropic automating AI development is alarming researchers",
-    "rubrik": "Forskere: AI sætter fart på Anthropics modeludvikling",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
-    "side": "artikel/d36485a6e1dbd817.html",
-    "kategori": "Forskning",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-07T07:30:00-05:00",
-    "billede": "data/img/4f3c8834913f3162.webp"
+    "titel": "Underdog shows off a 32MB speech model in new demo",
+    "rubrik": "Woof laver tale i browseren med 32 MB",
+    "link": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+    "side": "artikel/9ae4899642152a01.html",
+    "kategori": "Lanceringer",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-06T13:02:16+00:00",
+    "billede": "data/img/ff4db4ec5a2fef80.webp"
    }
   ],
   "seneste": [
+   {
+    "titel": "The US let Nvidia sell chips to an empty office in China",
+    "rubrik": "USA godkender Nvidia-chips til ukendt firma",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+    "side": "artikel/6f25ac9278119b95.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-07T10:43:45-05:00",
+    "billede": "data/img/a6535c060598dc61.webp"
+   },
+   {
+    "titel": "AI broke the cybersecurity world. What’s next?",
+    "rubrik": "Alex Stamos: AI kan automatisere cyberangreb",
+    "link": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
+    "side": "artikel/c350b1638a5338a2.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-07T10:00:00-05:00",
+    "billede": "data/img/074b54739283d7e8.webp"
+   },
    {
     "titel": "Why a new report on Anthropic automating AI development is alarming researchers",
     "rubrik": "Forskere: AI sætter fart på Anthropics modeludvikling",
@@ -334,44 +354,24 @@ window.KOMMANDO_DATA = {
     "side": "artikel/b8851797863ea479.html",
     "kategori": "Hverdags-AI",
     "kilde": "The Verge AI",
-    "dato": "2026-11-06T11:34:39-05:00",
+    "dato": "2026-11-06T16:34:39+00:00",
     "billede": "data/img/5827e8c69e506696.webp"
-   },
-   {
-    "titel": "Meta introduces Spaces, a new way to collaborate with your Muse agent",
-    "rubrik": "Meta lader Muse bygge dit projektrum",
-    "link": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
-    "side": "artikel/dcfedcc7440be1b6.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-06T18:44:20+00:00",
-    "billede": "data/img/a1180bcf9d2b0a68.webp"
-   },
-   {
-    "titel": "Quoting Nilay Patel",
-    "rubrik": "Nilay Patel: AI-regningen er større end nytten",
-    "link": "https://simonwillison.net/2026/Nov/6/nilay-patel/",
-    "side": "artikel/0491af6508848e01.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-11-06T17:13:12+00:00",
-    "billede": "data/img/6de8c2d6bf4e4832.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-07T15:04:23.260548+00:00",
+  "opdateret": "2026-11-07T20:27:33.778172+00:00",
   "status": "godkendt",
   "model": "gpt-6.1-terra",
   "modelkald": 6,
-  "kildehentninger": 1,
+  "kildehentninger": 2,
   "regelbaseret_udvalg": [
-   "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-   "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
-   "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
+   "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+   "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
+   "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/"
   ],
   "udgivet_udvalg": [
-   "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development"
+   "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/"
   ],
   "vaerktoejer": [
    {
@@ -387,7 +387,7 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
+    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
@@ -397,13 +397,17 @@ window.KOMMANDO_DATA = {
   ],
   "kildegrundlag": [
    {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
+    "link": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review",
     "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-11-07T15:04:22.492747+00:00",
+  "opdateret": "2026-11-07T20:27:33.121139+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -868,8 +872,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-07T15:04:23.260548+00:00",
-  "artikler_i_alt": 122,
+  "opdateret": "2026-11-07T20:27:33.778172+00:00",
+  "artikler_i_alt": 124,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1218,7 +1222,7 @@ window.KOMMANDO_DATA = {
     "som_ekstra": 7,
     "seneste": [
      {
-      "rubrik": "Vælgere i USA stemmer for datacenterbegrænsninger",
+      "rubrik": "USA: Vælgere stemte for begrænsninger på datacentre",
       "dato": "",
       "foerst_set": "2026-11-06T21:09:53.915130+00:00",
       "link": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/",
@@ -1337,11 +1341,11 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 27,
+    "i_listen": 29,
     "som_ekstra": 13,
     "seneste": [
      {
-      "rubrik": "OpenAI lover færre hemmelige datacenteraftaler",
+      "rubrik": "OpenAI dropper hemmeligholdelsesaftaler med myndighedspersoner",
       "dato": "",
       "foerst_set": "2026-11-06T21:09:53.915130+00:00",
       "link": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
@@ -1747,12 +1751,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-07T15:13:00.502730+00:00",
+  "opdateret": "2026-11-07T20:38:41.108904+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 23,
-  "sidevisninger_i_alt": 46,
+  "besoeg_i_alt": 24,
+  "sidevisninger_i_alt": 49,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1903,21 +1907,21 @@ window.KOMMANDO_DATA = {
    {
     "dato": "2026-11-07",
     "besoeg": 0,
-    "visninger": 0
+    "visninger": 10
    }
   ],
   "sider": [
    {
     "sti": "/",
-    "besoeg": 23,
-    "visninger": 46
+    "besoeg": 24,
+    "visninger": 49
    }
   ],
   "artikler": [],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 22
+    "besoeg": 23
    },
    {
     "fra": "www.bing.com",

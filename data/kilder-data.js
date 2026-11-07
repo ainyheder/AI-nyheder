@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-07T15:04:23.260548+00:00",
- "artikler_i_alt": 122,
+ "opdateret": "2026-11-07T20:27:33.778172+00:00",
+ "artikler_i_alt": 124,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -377,7 +377,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 7,
    "seneste": [
     {
-     "rubrik": "Vælgere i USA stemmer for datacenterbegrænsninger",
+     "rubrik": "USA: Vælgere stemte for begrænsninger på datacentre",
      "dato": "",
      "foerst_set": "2026-11-06T21:09:53.915130+00:00",
      "link": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/",
@@ -587,11 +587,11 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 27,
+   "i_listen": 29,
    "som_ekstra": 13,
    "seneste": [
     {
-     "rubrik": "OpenAI lover færre hemmelige datacenteraftaler",
+     "rubrik": "OpenAI dropper hemmeligholdelsesaftaler med myndighedspersoner",
      "dato": "",
      "foerst_set": "2026-11-06T21:09:53.915130+00:00",
      "link": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
@@ -699,6 +699,24 @@ window.KILDER_STATUS = {
      "under": "Google Gemini redigerer filer i chatten"
     },
     {
+     "rubrik": "USA godkender Nvidia-chips til ukendt firma",
+     "dato": "2026-11-07T10:43:45",
+     "foerst_set": "2026-11-07T20:27:33",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+     "side": "artikel/6f25ac9278119b95.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Alex Stamos: AI kan automatisere cyberangreb",
+     "dato": "2026-11-07T10:00:00",
+     "foerst_set": "2026-11-07T20:27:33",
+     "link": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
+     "side": "artikel/c350b1638a5338a2.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Forskere: AI sætter fart på Anthropics modeludvikling",
      "dato": "2026-11-07T07:30:00",
      "foerst_set": "2026-11-07T15:04:23",
@@ -727,7 +745,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Akai og Moog åbner maskinerne for mods",
-     "dato": "2026-11-06T11:34:39",
+     "dato": "2026-11-06T16:34:39",
      "foerst_set": "2026-11-06T20:49:47",
      "link": "https://www.theverge.com/tech/1028720/vibe-coding-open-source-inmusic-akai",
      "side": "artikel/b8851797863ea479.html",
@@ -736,7 +754,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Demonstranter bryder ind på Microsoft-byggeplads i Amsterdam",
-     "dato": "2026-11-06T06:55:19",
+     "dato": "2026-11-06T11:55:19",
      "foerst_set": "2026-11-06T16:11:20",
      "link": "https://www.theverge.com/news/1028549/protesters-microsoft-data-center-site-amsterdam",
      "side": "artikel/18031d61f6077e3b.html",
@@ -785,24 +803,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-05T22:13:13",
      "link": "https://www.theverge.com/entertainment/1026282/grimes-ai-movie",
      "side": "artikel/8c5376908c7eeba7.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI frygter bremser for datacentre efter midtvejsvalg",
-     "dato": "2026-11-05T17:51:52",
-     "foerst_set": "2026-11-05T22:13:13",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1026927/total-repudiation-the-blue-wave-is-about-to-hit-ai",
-     "side": "artikel/51ff4c2f73a749d0.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Willy Shih: AI-boom kræver fysisk produktion",
-     "dato": "2026-11-05T15:00:00",
-     "foerst_set": "2026-11-05T22:13:13",
-     "link": "https://www.theverge.com/podcast/1024438/willy-shih-supply-chain-ai-chips-ram-where-does-my-stuff-come-from-book",
-     "side": "artikel/c4575aebee2fe261.html",
      "hvor": "forside",
      "under": ""
     }
