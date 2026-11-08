@@ -1,17 +1,28 @@
 {
-  "opdateret": "2026-11-08T15:33:05.645646+00:00",
-  "status": "reserve",
+  "opdateret": "2026-11-08T20:44:13.255018+00:00",
+  "status": "godkendt",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
     "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
-    "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/",
-    "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/"
+    "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
+    "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/"
   ],
-  "input_fingerprint": "2462668b578da4f0",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "kontrolproblemer": [
-    "New Matrix genvælges uden dokumenteret nyt, men det er ikke dokumenteret, at den nyere modelkandidat Woof (6. november) er undersøgt før genvalget. Læs kilden, afklar om der er tale om en modellancering eller alene en demo, og vurder den mod hovedhistorien. RSS-resuméet er ikke tilstrækkeligt grundlag."
+  "input_fingerprint": "1f4aaca430296ac4",
+  "redaktionsnote": "Der er ingen dokumenteret ny modellancering inden for 48 timer i det foreliggende kandidatmateriale. Woof ligger uden for tidsgrænsen og genvælges ikke; Googles overtagelse af Wyoming-projektet anbefales som en bekræftelse af en tidligere omtalt handel, ikke som en helt ny aftale.",
+  "beslutninger": [
+    {
+      "id": "c08233254ab55692",
+      "begrundelse": "To nye søgsmål mod Suno rejser konkrete spørgsmål om AI-genereret musik og efterligning af kunstneres stemmer. The Verge gengiver både anklagerne og Sunos svar.",
+      "nyt_siden_sidst": "Rettighedshavere til Elvis Presleys musik og en udgiver af Eminem-sange har anlagt to nye søgsmål mod Suno. De er ikke tidligere fremhævet på de oplyste forsider.",
+      "skriveopgave": "Rubrik: »Elvis- og Eminem-rettighedshavere sagsøger Suno«. Forklar med korte afsnit og meningsfulde mellemoverskrifter, hvad de to søgsmål hævder, og hvad Tennessee-loven om stemmekloning går ud på; gengiv Sunos svar og sikkerhedsforanstaltninger. Anklagerne er ikke dokumenterede lovbrud, og udfaldet er uafklaret.",
+      "kilder": [
+        "c08233254ab55692"
+      ],
+      "samme_historie": [],
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
+      "rubrik": "Elvis- og Eminem-rettighedshavere sagsøger Suno"
+    }
   ],
   "modelkald": 6,
   "kildehentninger": 2,
@@ -25,11 +36,11 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -39,18 +50,16 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+      "link": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
-    "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/",
-    "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/"
+    "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit"
   ],
-  "afventer_artikler": 68
+  "afventer_artikler": 73
 }

@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-08T15:33:05.645646+00:00",
- "artikler_i_alt": 115,
+ "opdateret": "2026-11-08T20:44:13.255018+00:00",
+ "artikler_i_alt": 118,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -113,8 +113,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 7,
-   "som_ekstra": 0,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "Google ruller Gemini 4 Argon bredt ud",
+     "dato": "",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
+    },
     {
      "rubrik": "Gemini Omni 1.2 Flash laver 15 sekunders klip",
      "dato": "2026-11-05T17:00:00",
@@ -182,7 +191,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google DeepMind",
-     2
+     3
     ],
     [
      "The Verge AI",
@@ -346,6 +355,15 @@ window.KILDER_STATUS = {
    "som_ekstra": 6,
    "seneste": [
     {
+     "rubrik": "TechCrunch: Vælgere vil begrænse datacentre",
+     "dato": "",
+     "foerst_set": "2026-11-06T21:09:53.915130+00:00",
+     "link": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/",
+     "side": "",
+     "hvor": "under",
+     "under": "USA's vælgere stemte for datacenterbegrænsninger"
+    },
+    {
      "rubrik": "ChatGPT Cyber annonceret til Daybreak Reds topniveau",
      "dato": "",
      "foerst_set": "2026-11-05T22:13:13",
@@ -418,11 +436,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "TechCrunch: Vælgere vil begrænse datacentre",
-     "dato": "2026-11-06T18:00:00",
+     "rubrik": "USA's vælgere stemte for datacenterbegrænsninger",
+     "dato": "2026-11-06T17:23:52",
      "foerst_set": "2026-11-06T21:09:53",
-     "link": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/",
-     "side": "artikel/39eb6389cd506408.html",
+     "link": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/",
+     "side": "artikel/8f51c7b390aa45bf.html",
      "hvor": "forside",
      "under": ""
     },
@@ -538,11 +556,11 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 28,
+   "i_listen": 29,
    "som_ekstra": 12,
    "seneste": [
     {
-     "rubrik": "OpenAI dropper hemmeligholdelsesaftaler med embedsfolk",
+     "rubrik": "OpenAI lover åbenhed om datacenterprojekter",
      "dato": "",
      "foerst_set": "2026-11-06T21:09:53.915130+00:00",
      "link": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
@@ -650,6 +668,15 @@ window.KILDER_STATUS = {
      "under": "Google Gemini redigerer filer i chatten"
     },
     {
+     "rubrik": "Elvis- og Eminem-rettighedshavere sagsøger Suno",
+     "dato": "2026-11-08T12:23:19",
+     "foerst_set": "2026-11-08T20:44:13",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
+     "side": "artikel/801f2a048a781a2d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Nvidia-køber godkendt trods tomt kontor",
      "dato": "2026-11-07T10:43:45",
      "foerst_set": "2026-11-07T20:27:33",
@@ -687,7 +714,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Hinge-profil fravælger dates, der bruger AI",
-     "dato": "2026-11-06T12:00:00",
+     "dato": "2026-11-06T17:00:00",
      "foerst_set": "2026-11-06T21:09:53",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1028609/ai-dating-feelings-doomers-singularity",
      "side": "artikel/aeb37577bdc737ff.html",
@@ -745,15 +772,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-05T22:13:13",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1027427/ai-music-soundcloud-elevenlabs",
      "side": "artikel/cca7625e0bb2b246.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Grimes medvirker i AI-film til biografer",
-     "dato": "2026-11-05T17:00:00",
-     "foerst_set": "2026-11-05T22:13:13",
-     "link": "https://www.theverge.com/entertainment/1026282/grimes-ai-movie",
-     "side": "artikel/8c5376908c7eeba7.html",
      "hvor": "forside",
      "under": ""
     }
@@ -1007,10 +1025,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 15,
+   "i_listen": 2,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -1030,12 +1048,30 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
+    },
+    {
+     "rubrik": "Google Antigravity finder ny peptidkandidat",
+     "dato": "2026-10-15T16:08:03",
+     "foerst_set": "2026-10-16T04:53:41",
+     "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+     "side": "artikel/ba028f76ed47c779.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
+     "dato": "2026-10-13T19:43:07",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+     "side": "artikel/42f1c245f492d3d1.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "Google Gemini",
-     2
+     3
     ]
    ]
   },
