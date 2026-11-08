@@ -1,40 +1,17 @@
 {
-  "opdateret": "2026-11-08T06:37:05.626397+00:00",
-  "status": "godkendt",
+  "opdateret": "2026-11-08T15:33:05.645646+00:00",
+  "status": "reserve",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
-    "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
     "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
-    "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/"
+    "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/",
+    "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/"
   ],
   "input_fingerprint": "2462668b578da4f0",
-  "redaktionsnote": "Kun to historier har læste kilder i denne research. Der er ikke fundet belæg for en nyere modellancering, der kan fortrænge Woof; ingen øvrige anbefalinger tilføjes på grundlag af resuméer alene.",
-  "beslutninger": [
-    {
-      "id": "76d77f901fa07104",
-      "begrundelse": "Woof er en usædvanligt lille talemodel, som ifølge Underdog kan køre lokalt i browseren. Den er stadig den vigtigste belagte nye modellancering i det undersøgte materiale.",
-      "nyt_siden_sidst": "Woof var senest hovedhistorie i går aftes og har været på forsiden tre gange. Der er ikke dokumenteret en ny version; den genvælges, fordi ingen stærkere nyere modellancering er belagt i det undersøgte materiale.",
-      "skriveopgave": "Rubrikforslag: »Woof laver tale i browseren med 32 MB«. Forklar med korte afsnit og konkrete mellemoverskrifter, hvad demoen gør, og hvad lokal kørsel betyder; medtag størrelsen og de 31 millioner parametre, forklaret ved første brug. Skeln mellem TechCrunchs beskrivelse og Underdogs påstande om offlinebrug; kvalitet og licensvilkår er ikke uafhængigt afklaret.",
-      "kilder": [
-        "76d77f901fa07104"
-      ],
-      "samme_historie": [],
-      "link": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
-      "rubrik": "Woof laver tale i browseren med 32 MB"
-    },
-    {
-      "id": "b521172828d62613",
-      "begrundelse": "En ny undersøgelse rejser konkrete spørgsmål om kontrollen med amerikanske AI-chips til Kina. Det er en væsentlig nyere historie om infrastrukturen bag AI, selv om den ikke er en modelnyhed.",
-      "nyt_siden_sidst": "The Verge gengiver nye oplysninger fra The New York Times om New Matrix, som står på listen over godkendte købere af Nvidias H200-chips, men ifølge undersøgelsen har en tom registreret adresse. Historien har ikke været hovedhistorie på de oplyste forsider.",
-      "skriveopgave": "Rubrikforslag: »Godkendt til Nvidia-chips, men kontoret står tomt«. Forklar i korte afsnit med meningsfulde mellemoverskrifter, hvad The New York Times fandt om New Matrix, og hvorfor forbindelsen til et sortlistet firma rejser spørgsmål. Tilskriv fundene avisen via The Verge, og undlad at fastslå et faktisk chipsalg eller regelbrud, som materialet ikke dokumenterer.",
-      "kilder": [
-        "b521172828d62613"
-      ],
-      "samme_historie": [],
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
-      "rubrik": "Nvidia-køber godkendt trods tomt kontor"
-    }
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "kontrolproblemer": [
+    "New Matrix genvælges uden dokumenteret nyt, men det er ikke dokumenteret, at den nyere modelkandidat Woof (6. november) er undersøgt før genvalget. Læs kilden, afklar om der er tale om en modellancering eller alene en demo, og vurder den mod hovedhistorien. RSS-resuméet er ikke tilstrækkeligt grundlag."
   ],
   "modelkald": 6,
   "kildehentninger": 2,
@@ -62,17 +39,18 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+      "link": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
-    "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government"
+    "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
+    "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/",
+    "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/"
   ],
-  "afventer_artikler": 73
+  "afventer_artikler": 68
 }

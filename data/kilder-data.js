@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-08T06:37:05.626397+00:00",
- "artikler_i_alt": 117,
+ "opdateret": "2026-11-08T15:33:05.645646+00:00",
+ "artikler_i_alt": 115,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -113,17 +113,8 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 7,
-   "som_ekstra": 1,
+   "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "Google ruller Gemini 4 Argon bredt ud",
-     "dato": "",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
-    },
     {
      "rubrik": "Gemini Omni 1.2 Flash laver 15 sekunders klip",
      "dato": "2026-11-05T17:00:00",
@@ -191,7 +182,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google DeepMind",
-     3
+     2
     ],
     [
      "The Verge AI",
@@ -551,6 +542,15 @@ window.KILDER_STATUS = {
    "som_ekstra": 12,
    "seneste": [
     {
+     "rubrik": "OpenAI dropper hemmeligholdelsesaftaler med embedsfolk",
+     "dato": "",
+     "foerst_set": "2026-11-06T21:09:53.915130+00:00",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI dropper NDA'er i aftaler om datacentre"
+    },
+    {
      "rubrik": "Meta lader Muse bygge personlige app-områder",
      "dato": "",
      "foerst_set": "2026-11-06T21:09:53",
@@ -648,15 +648,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google Gemini redigerer filer i chatten"
-    },
-    {
-     "rubrik": "Google sender Gemini 4 Carbon efter sikkerhedshuller",
-     "dato": "",
-     "foerst_set": "2026-10-28T21:16:14",
-     "link": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
     },
     {
      "rubrik": "Nvidia-køber godkendt trods tomt kontor",
@@ -1016,10 +1007,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 15,
-   "i_listen": 2,
+   "status": "fejl",
+   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -1039,30 +1030,12 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
-    },
-    {
-     "rubrik": "Google Antigravity finder ny peptidkandidat",
-     "dato": "2026-10-15T16:08:03",
-     "foerst_set": "2026-10-16T04:53:41",
-     "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-     "side": "artikel/ba028f76ed47c779.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
-     "dato": "2026-10-13T19:43:07",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-     "side": "artikel/42f1c245f492d3d1.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "Google Gemini",
-     3
+     2
     ]
    ]
   },
