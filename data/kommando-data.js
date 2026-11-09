@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-08T20:49:29.882024+00:00",
+ "genereret": "2026-11-09T07:13:51.243774+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -199,44 +199,74 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-08T20:44:13.255018+00:00",
+  "opdateret": "2026-11-09T07:05:45.896008+00:00",
   "antal": 118,
-  "med_billede": 104,
+  "med_billede": 103,
   "paa_dansk": 118,
   "kategorier": {
-   "Politik \u0026 jura": 20,
+   "Hverdags-AI": 31,
    "Lanceringer": 16,
-   "Forskning": 10,
-   "Hverdags-AI": 28,
-   "Samfund \u0026 etik": 14,
+   "Forskning": 8,
+   "Politik \u0026 jura": 20,
+   "Samfund \u0026 etik": 13,
    "Penge \u0026 marked": 30
   },
   "kilder": {
-   "The Verge AI": 29,
+   "Simon Willison AI": 9,
    "Google Gemini": 7,
-   "TechCrunch AI": 47,
+   "The Verge AI": 30,
+   "TechCrunch AI": 45,
    "Hugging Face": 1,
    "Ars Technica AI": 8,
-   "Mistral AI": 3,
    "MIT Tech Review AI": 8,
-   "Simon Willison AI": 8,
+   "Mistral AI": 3,
    "xAI News": 1,
    "Google DeepMind": 2,
    "Anthropic News": 4
   },
   "udvalgte": [
    {
-    "titel": "Elvis and Eminem rights holders are suing Suno",
-    "rubrik": "Elvis- og Eminem-rettighedshavere sagsøger Suno",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
-    "side": "artikel/801f2a048a781a2d.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-08T12:23:19-05:00",
-    "billede": "data/img/becdcf0ce1936571.webp"
+    "titel": "Hide your slop PR descriptions behind",
+    "rubrik": "Willison gemmer AI-agentens lange forklaring bag ét klik",
+    "link": "https://simonwillison.net/2026/Nov/9/details-summary/",
+    "side": "artikel/7796d5edf90e59f0.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-11-09T04:25:05+00:00",
+    "billede": "data/img/30daa06b3a5cdc83.webp"
    }
   ],
   "seneste": [
+   {
+    "titel": "Hide your slop PR descriptions behind",
+    "rubrik": "Willison gemmer AI-agentens lange forklaring bag ét klik",
+    "link": "https://simonwillison.net/2026/Nov/9/details-summary/",
+    "side": "artikel/7796d5edf90e59f0.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-11-09T04:25:05+00:00",
+    "billede": "data/img/30daa06b3a5cdc83.webp"
+   },
+   {
+    "titel": "The Web Is More Than Enough, by Paul Ford",
+    "rubrik": "Claude omskrev 3D-æg uden Three.js",
+    "link": "https://simonwillison.net/2026/Nov/9/hn-50421091/",
+    "side": "artikel/c3dd8886e7848fb0.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-11-09T04:32:33+00:00",
+    "billede": "data/img/a3280121ab5d789d.webp"
+   },
+   {
+    "titel": "AI is destroying my CS degree",
+    "rubrik": "Simon Willison: AI udfordrer vurderingen af studerende",
+    "link": "https://simonwillison.net/2026/Nov/3/hn-50354278/",
+    "side": "artikel/d0278afb22662d33.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-11-03T16:42:02+00:00",
+    "billede": "data/img/c050e1c495bd6a2b.webp"
+   },
    {
     "titel": "Elvis and Eminem rights holders are suing Suno",
     "rubrik": "Elvis- og Eminem-rettighedshavere sagsøger Suno",
@@ -246,6 +276,16 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-11-08T12:23:19-05:00",
     "billede": "data/img/becdcf0ce1936571.webp"
+   },
+   {
+    "titel": "Apple is racing to make Siri more agentic",
+    "rubrik": "Apple vil lade Siri styre flere apps",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
+    "side": "artikel/3fa60b95a7a47cb3.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-08T14:18:19-05:00",
+    "billede": ""
    },
    {
     "titel": "The US let Nvidia sell chips to an empty office in China",
@@ -315,52 +355,12 @@ window.KOMMANDO_DATA = {
     "kategori": "Politik \u0026 jura",
     "kilde": "TechCrunch AI",
     "dato": "2026-11-06T17:23:52+00:00",
-    "billede": "data/img/1f0907d977e7bf84.webp"
-   },
-   {
-    "titel": "AI is the new dating dealbreaker",
-    "rubrik": "Hinge-profil fravælger dates, der bruger AI",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1028609/ai-dating-feelings-doomers-singularity",
-    "side": "artikel/aeb37577bdc737ff.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-06T17:00:00+00:00",
-    "billede": "data/img/58068bb41ff1c00f.webp"
-   },
-   {
-    "titel": "Could potential AI clones of GTA VI force a quicker official port?",
-    "rubrik": "Tidligere Rockstar-chef frygter AI-kopi af GTA VI",
-    "link": "https://arstechnica.com/gaming/2026/11/could-potential-ai-clones-of-gta-vi-force-a-quicker-official-port/",
-    "side": "artikel/5aeb17f4b6e1d3cf.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-11-06T16:19:12+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "“Does Meta think we can’t read?” Meta abandons sketchy commercial terms update.",
-    "rubrik": "Meta sætter krav om AI-træning på pause",
-    "link": "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/",
-    "side": "artikel/2bfa238b2cef60c6.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-11-06T17:43:02+00:00",
-    "billede": "data/img/1d2d6b5516d55be5.webp"
-   },
-   {
-    "titel": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
-    "rubrik": "Censys finder over 800 åbne Artex-værktøjer",
-    "link": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
-    "side": "artikel/37d75a0fa3790bf4.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-06T18:44:38+00:00",
-    "billede": "data/img/baed293ec662c5a7.webp"
+    "billede": "data/img/fb52b8549181ffe7.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-08T20:44:13.255018+00:00",
+  "opdateret": "2026-11-09T07:05:45.896008+00:00",
   "status": "godkendt",
   "model": "gpt-6.1-terra",
   "modelkald": 6,
@@ -368,10 +368,10 @@ window.KOMMANDO_DATA = {
   "regelbaseret_udvalg": [
    "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
    "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
-   "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/"
+   "https://simonwillison.net/2026/Nov/9/details-summary/"
   ],
   "udgivet_udvalg": [
-   "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit"
+   "https://simonwillison.net/2026/Nov/9/details-summary/"
   ],
   "vaerktoejer": [
    {
@@ -383,11 +383,11 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
+    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
-    "vaerktoej": "laes_kilde",
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
@@ -397,17 +397,17 @@ window.KOMMANDO_DATA = {
   ],
   "kildegrundlag": [
    {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
+    "link": "https://simonwillison.net/2026/Nov/9/details-summary/",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
+    "link": "https://simonwillison.net/2026/Nov/9/hn-50421091/",
     "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-11-08T20:44:12.796243+00:00",
+  "opdateret": "2026-11-09T07:05:45.253076+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -872,7 +872,7 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-08T20:44:13.255018+00:00",
+  "opdateret": "2026-11-09T07:05:45.896008+00:00",
   "artikler_i_alt": 118,
   "kilder": [
    {
@@ -1113,9 +1113,36 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 8,
+    "i_listen": 9,
     "som_ekstra": 0,
     "seneste": [
+     {
+      "rubrik": "Willison gemmer AI-agentens lange forklaring bag ét klik",
+      "dato": "2026-11-09T04:25:05",
+      "foerst_set": "2026-11-09T07:05:45",
+      "link": "https://simonwillison.net/2026/Nov/9/details-summary/",
+      "side": "artikel/7796d5edf90e59f0.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Claude omskrev 3D-æg uden Three.js",
+      "dato": "2026-11-09T04:32:33",
+      "foerst_set": "2026-11-09T07:05:45",
+      "link": "https://simonwillison.net/2026/Nov/9/hn-50421091/",
+      "side": "artikel/c3dd8886e7848fb0.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Simon Willison: AI udfordrer vurderingen af studerende",
+      "dato": "2026-11-03T16:42:02",
+      "foerst_set": "2026-11-09T07:05:45",
+      "link": "https://simonwillison.net/2026/Nov/3/hn-50354278/",
+      "side": "artikel/d0278afb22662d33.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "Nilay Patel: AI-regningen er større end nytten",
       "dato": "2026-11-06T17:13:12",
@@ -1169,24 +1196,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/2686ec1eaed7b5a2.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Spawn lader agenter skrive koden hver time",
-      "dato": "2026-10-29T17:00:26",
-      "foerst_set": "2026-10-29T21:21:56",
-      "link": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
-      "side": "artikel/a0c591335685a06d.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Willison: Sådan læses et modelnavn som 6.1",
-      "dato": "2026-10-28T23:23:21",
-      "foerst_set": "2026-10-29T06:21:31",
-      "link": "https://simonwillison.net/2026/Oct/28/ted-sanders/",
-      "side": "artikel/df9784fd80f89748.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1200,11 +1209,11 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 47,
+    "i_listen": 45,
     "som_ekstra": 6,
     "seneste": [
      {
-      "rubrik": "TechCrunch: Vælgere vil begrænse datacentre",
+      "rubrik": "USA's vælgere stemmer for datacenterbegrænsninger",
       "dato": "",
       "foerst_set": "2026-11-06T21:09:53.915130+00:00",
       "link": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/",
@@ -1323,7 +1332,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 29,
+    "i_listen": 30,
     "som_ekstra": 12,
     "seneste": [
      {
@@ -1733,19 +1742,14 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-08T20:49:22.309420+00:00",
+  "opdateret": "2026-11-09T07:13:45.100202+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 26,
-  "sidevisninger_i_alt": 49,
+  "besoeg_i_alt": 27,
+  "sidevisninger_i_alt": 55,
   "ai_chat_besoeg": 0,
   "serie": [
-   {
-    "dato": "2026-10-10",
-    "besoeg": 0,
-    "visninger": 0
-   },
    {
     "dato": "2026-10-11",
     "besoeg": 0,
@@ -1890,20 +1894,25 @@ window.KOMMANDO_DATA = {
     "dato": "2026-11-08",
     "besoeg": 0,
     "visninger": 0
+   },
+   {
+    "dato": "2026-11-09",
+    "besoeg": 0,
+    "visninger": 10
    }
   ],
   "sider": [
    {
     "sti": "/",
-    "besoeg": 26,
-    "visninger": 49
+    "besoeg": 27,
+    "visninger": 55
    }
   ],
   "artikler": [],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 25
+    "besoeg": 26
    },
    {
     "fra": "www.bing.com",

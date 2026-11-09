@@ -1,27 +1,27 @@
 {
-  "opdateret": "2026-11-08T20:44:13.255018+00:00",
+  "opdateret": "2026-11-09T07:05:45.896008+00:00",
   "status": "godkendt",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
     "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
     "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
-    "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/"
+    "https://simonwillison.net/2026/Nov/9/details-summary/"
   ],
-  "input_fingerprint": "1f4aaca430296ac4",
-  "redaktionsnote": "Der er ingen dokumenteret ny modellancering inden for 48 timer i det foreliggende kandidatmateriale. Woof ligger uden for tidsgrænsen og genvælges ikke; Googles overtagelse af Wyoming-projektet anbefales som en bekræftelse af en tidligere omtalt handel, ikke som en helt ny aftale.",
+  "input_fingerprint": "19026b72a48b928d",
+  "redaktionsnote": "Ingen nye modellanceringer inden for 48 timer er dokumenteret i de undersøgte kilder. Willisons æg er en personlig demonstration, ikke en ny model; gårsdagens Suno-søgsmål genvælges ikke uden en ny udvikling.",
   "beslutninger": [
     {
-      "id": "c08233254ab55692",
-      "begrundelse": "To nye søgsmål mod Suno rejser konkrete spørgsmål om AI-genereret musik og efterligning af kunstneres stemmer. The Verge gengiver både anklagerne og Sunos svar.",
-      "nyt_siden_sidst": "Rettighedshavere til Elvis Presleys musik og en udgiver af Eminem-sange har anlagt to nye søgsmål mod Suno. De er ikke tidligere fremhævet på de oplyste forsider.",
-      "skriveopgave": "Rubrik: »Elvis- og Eminem-rettighedshavere sagsøger Suno«. Forklar med korte afsnit og meningsfulde mellemoverskrifter, hvad de to søgsmål hævder, og hvad Tennessee-loven om stemmekloning går ud på; gengiv Sunos svar og sikkerhedsforanstaltninger. Anklagerne er ikke dokumenterede lovbrud, og udfaldet er uafklaret.",
+      "id": "cfd192eda4f22e6c",
+      "begrundelse": "Simon Willison viser en konkret måde at gøre kodeagenters lange ændringsbeskrivelser lettere at læse på. Det er en praktisk erfaring med AI i udviklingsarbejde, ikke en ny modellancering.",
+      "nyt_siden_sidst": "Willison beskriver nu, hvordan han placerer agentens detaljerede tekst bag en udvidelig overskrift og selv udvælger en kort indledning. Historien har ikke været hovedhistorie på de oplyste forsider.",
+      "skriveopgave": "Rubrik: »Willison gemmer AI-agentens lange forklaring bag ét klik«. Forklar kort, hvad et ændringsforslag er, og vis med korte mellemoverskrifter, hvordan den menneskeligt udvalgte indledning og de udvidelige detaljer fungerer på GitHub. Gør klart, at vurderingen bygger på Willisons egen erfaring, ikke en uafhængig test.",
       "kilder": [
-        "c08233254ab55692"
+        "cfd192eda4f22e6c"
       ],
       "samme_historie": [],
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
-      "rubrik": "Elvis- og Eminem-rettighedshavere sagsøger Suno"
+      "link": "https://simonwillison.net/2026/Nov/9/details-summary/",
+      "rubrik": "Willison gemmer AI-agentens lange forklaring bag ét klik"
     }
   ],
   "modelkald": 6,
@@ -36,11 +36,11 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -50,16 +50,16 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
+      "link": "https://simonwillison.net/2026/Nov/9/details-summary/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
+      "link": "https://simonwillison.net/2026/Nov/9/hn-50421091/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit"
+    "https://simonwillison.net/2026/Nov/9/details-summary/"
   ],
   "afventer_artikler": 73
 }
