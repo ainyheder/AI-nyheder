@@ -1,31 +1,44 @@
 {
-  "opdateret": "2026-11-09T07:05:45.896008+00:00",
+  "opdateret": "2026-11-09T19:04:48.520272+00:00",
   "status": "godkendt",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
-    "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
-    "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
-    "https://simonwillison.net/2026/Nov/9/details-summary/"
+    "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
+    "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
+    "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/"
   ],
-  "input_fingerprint": "19026b72a48b928d",
-  "redaktionsnote": "Ingen nye modellanceringer inden for 48 timer er dokumenteret i de undersøgte kilder. Willisons æg er en personlig demonstration, ikke en ny model; gårsdagens Suno-søgsmål genvælges ikke uden en ny udvikling.",
+  "input_fingerprint": "36d92d34657c9c2c",
+  "redaktionsnote": "Begge nye modellanceringer er læst og prioriteret over tidligere forsidehistorier. Anthropics officielle meddelelse og The Verge er læst; der er ikke fundet en læsbar officiel meddelelse om Ember i det tilgængelige materiale. Ingen øvrige anbefalinger uden læst kilde.",
   "beslutninger": [
     {
-      "id": "cfd192eda4f22e6c",
-      "begrundelse": "Simon Willison viser en konkret måde at gøre kodeagenters lange ændringsbeskrivelser lettere at læse på. Det er en praktisk erfaring med AI i udviklingsarbejde, ikke en ny modellancering.",
-      "nyt_siden_sidst": "Willison beskriver nu, hvordan han placerer agentens detaljerede tekst bag en udvidelig overskrift og selv udvælger en kort indledning. Historien har ikke været hovedhistorie på de oplyste forsider.",
-      "skriveopgave": "Rubrik: »Willison gemmer AI-agentens lange forklaring bag ét klik«. Forklar kort, hvad et ændringsforslag er, og vis med korte mellemoverskrifter, hvordan den menneskeligt udvalgte indledning og de udvidelige detaljer fungerer på GitHub. Gør klart, at vurderingen bygger på Willisons egen erfaring, ikke en uafhængig test.",
+      "id": "ea9e227012293141",
+      "begrundelse": "Anthropic lancerer en væsentlig ny modelversion til krævende tekniske opgaver. Den fælles model udbydes med forskellige sikkerhedsbegrænsninger og adgangsvilkår.",
+      "nyt_siden_sidst": "Fable 5.2 lanceres i dag, mens Mythos 5.2 i første omgang kræver godkendelse. Modellerne afløser 5.1-versionerne fra september og har ikke været på de oplyste forsider.",
+      "skriveopgave": "Rubrik: »Anthropic opgraderer Claude til svære tekniske opgaver«. Forklar med korte mellemoverskrifter forskellen på Fable og Mythos, adgang og pris pr. million input- og outputtokens; forklar tokens ved første brug. Beskriv hastighed og eksempler som Anthropics egne påstande, ikke uafhængigt beviste resultater.",
       "kilder": [
-        "cfd192eda4f22e6c"
+        "ea9e227012293141",
+        "9fbaf812b26d34ed"
       ],
       "samme_historie": [],
-      "link": "https://simonwillison.net/2026/Nov/9/details-summary/",
-      "rubrik": "Willison gemmer AI-agentens lange forklaring bag ét klik"
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
+      "rubrik": "Anthropic opgraderer Claude til svære tekniske opgaver"
+    },
+    {
+      "id": "730323ba6c06bee9",
+      "begrundelse": "Muse Ember er en ny, let model til gentagne agentopgaver og kan ifølge omtalen håndtere flere typer input. Den lave inputpris gør lanceringen relevant for udviklere.",
+      "nyt_siden_sidst": "Meta udgiver nu Ember, en separat model til agentarbejde. Det er en anden begivenhed end projektrummene Spaces og Muse-videochatten på tidligere forsider.",
+      "skriveopgave": "Rubrik: »Meta sender billig agentmodel på arbejde med tekst, billeder og lyd«. Forklar med korte mellemoverskrifter, hvilke opgaver Ember er tiltænkt, og hvordan den kan supplere en større model. Angiv prisen på 10 cent pr. million inputtokens og forklar tokens; gengiv præstationssammenligninger som Metas påstande, og angiv adgang og outputpris som uafklaret.",
+      "kilder": [
+        "730323ba6c06bee9"
+      ],
+      "samme_historie": [],
+      "link": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
+      "rubrik": "Meta sender billig agentmodel på arbejde"
     }
   ],
   "modelkald": 6,
-  "kildehentninger": 2,
+  "kildehentninger": 3,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -40,7 +53,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -50,16 +63,21 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://simonwillison.net/2026/Nov/9/details-summary/",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://simonwillison.net/2026/Nov/9/hn-50421091/",
+      "link": "https://anthropic.com/claude-fable-and-mythos-5-2",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://simonwillison.net/2026/Nov/9/details-summary/"
+    "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
+    "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/"
   ],
-  "afventer_artikler": 73
+  "afventer_artikler": 77
 }

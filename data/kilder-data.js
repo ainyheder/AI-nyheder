@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-09T07:05:45.896008+00:00",
- "artikler_i_alt": 118,
+ "opdateret": "2026-11-09T19:04:48.520272+00:00",
+ "artikler_i_alt": 129,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -360,7 +360,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 45,
+   "i_listen": 50,
    "som_ekstra": 6,
    "seneste": [
     {
@@ -436,6 +436,51 @@ window.KILDER_STATUS = {
      "under": "Anthropic afsætter fem procent af aktierne til fond"
     },
     {
+     "rubrik": "Meta sender billig agentmodel på arbejde",
+     "dato": "2026-11-09T18:00:00",
+     "foerst_set": "2026-11-09T19:04:48",
+     "link": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
+     "side": "artikel/9b99d3e8fbba1524.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Medium lancerer skriveapp med indbygget AI",
+     "dato": "2026-11-09T16:12:28",
+     "foerst_set": "2026-11-09T19:04:48",
+     "link": "https://techcrunch.com/2026/11/09/mediums-new-tk-app-brings-ai-assistance-directly-into-the-writing-process/",
+     "side": "artikel/9ed094811c690553.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Automattic lancerer Spacefast til AI-skabte apps",
+     "dato": "2026-11-09T14:00:00",
+     "foerst_set": "2026-11-09T19:04:48",
+     "link": "https://techcrunch.com/2026/11/09/automattic-debuts-a-platform-to-deploy-vibe-coding-apps-amid-a-changing-internet/",
+     "side": "artikel/0fe933f7440bef57.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic køber gasturbiner for milliarder",
+     "dato": "2026-11-09T16:56:54",
+     "foerst_set": "2026-11-09T19:04:48",
+     "link": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/",
+     "side": "artikel/f3c522ff77f3b76a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Nvidia undersøger direktørens forhold til formodet spion",
+     "dato": "2026-11-09T18:09:52",
+     "foerst_set": "2026-11-09T19:04:48",
+     "link": "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/",
+     "side": "artikel/c81f482fdf110b88.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Crusoe bekræfter salg af datacenter til Google",
      "dato": "2026-11-07T01:40:28",
      "foerst_set": "2026-11-07T06:30:44",
@@ -497,51 +542,6 @@ window.KILDER_STATUS = {
      "side": "artikel/7b5a2965d87a1f12.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Physicl får 10 mio. dollar og lancerer Studio",
-     "dato": "2026-11-06T13:00:00",
-     "foerst_set": "2026-11-06T16:11:20",
-     "link": "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/",
-     "side": "artikel/6d72973eed55f30e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Airbnb lancerer AI-rejseagent i første halvdel af 2027",
-     "dato": "2026-11-05T22:40:55",
-     "foerst_set": "2026-11-06T07:16:54",
-     "link": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/",
-     "side": "artikel/560f077b27e20f29.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Palo Alto Networks i samtaler om Clutch-køb",
-     "dato": "2026-11-06T06:28:32",
-     "foerst_set": "2026-11-06T07:16:54",
-     "link": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
-     "side": "artikel/aa3547203e76d8ef.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Claude kobler sig til bankkontoen gennem Plaid",
-     "dato": "2026-11-05T18:00:00",
-     "foerst_set": "2026-11-05T22:13:13",
-     "link": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/",
-     "side": "artikel/ecdcd39295ca3f2b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Meta åbner Muse-videochat for alle i USA",
-     "dato": "2026-11-05T19:48:28",
-     "foerst_set": "2026-11-05T22:13:13",
-     "link": "https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/",
-     "side": "artikel/759260a1403adea3.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -565,7 +565,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 30,
+   "i_listen": 34,
    "som_ekstra": 12,
    "seneste": [
     {
@@ -677,8 +677,53 @@ window.KILDER_STATUS = {
      "under": "Google Gemini redigerer filer i chatten"
     },
     {
+     "rubrik": "Anthropic opgraderer Claude til svære tekniske opgaver",
+     "dato": "2026-11-09T14:00:00",
+     "foerst_set": "2026-11-09T19:04:48",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
+     "side": "artikel/c301a0197fe30514.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Instagram laver filtre ud fra tekst",
+     "dato": "2026-11-09T13:07:23",
+     "foerst_set": "2026-11-09T19:04:48",
+     "link": "https://www.theverge.com/tech/1030061/instagram-ai-effect-builder-filters",
+     "side": "artikel/9c473fd9de958c8d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Disney og Adobe vil udvikle egne AI-modeller",
+     "dato": "2026-11-09T10:38:56",
+     "foerst_set": "2026-11-09T19:04:48",
+     "link": "https://www.theverge.com/tech/1029773/disney-adobe-generative-ai-partnership",
+     "side": "artikel/f9c4955a3661c102.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Trump hævder at have truet AI-direktør",
+     "dato": "2026-11-09T10:50:38",
+     "foerst_set": "2026-11-09T19:04:48",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1029802/trump-60-minutes-ai",
+     "side": "artikel/7bf546edea528c20.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Jonathan Kanter bruger AI mod monopoler",
+     "dato": "2026-11-09T09:30:00",
+     "foerst_set": "2026-11-09T19:04:48",
+     "link": "https://www.theverge.com/policy/1029652/kanter-doj-biden-legal-tech",
+     "side": "artikel/9e75efd7851d98b1.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Elvis- og Eminem-rettighedshavere sagsøger Suno",
-     "dato": "2026-11-08T12:23:19",
+     "dato": "2026-11-08T17:23:19",
      "foerst_set": "2026-11-08T20:44:13",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
      "side": "artikel/801f2a048a781a2d.html",
@@ -696,7 +741,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Nvidia-køber godkendt trods tomt kontor",
-     "dato": "2026-11-07T10:43:45",
+     "dato": "2026-11-07T15:43:45",
      "foerst_set": "2026-11-07T20:27:33",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
      "side": "artikel/6f25ac9278119b95.html",
@@ -705,7 +750,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Alex Stamos: AI kan automatisere cyberangreb",
-     "dato": "2026-11-07T10:00:00",
+     "dato": "2026-11-07T15:00:00",
      "foerst_set": "2026-11-07T20:27:33",
      "link": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
      "side": "artikel/c350b1638a5338a2.html",
@@ -714,19 +759,10 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Forskere: AI sætter fart på Anthropics modeludvikling",
-     "dato": "2026-11-07T07:30:00",
+     "dato": "2026-11-07T12:30:00",
      "foerst_set": "2026-11-07T15:04:23",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
      "side": "artikel/d36485a6e1dbd817.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Kina skal have rekrutteret leder til Nvidia-spionage",
-     "dato": "2026-11-06T18:00:44",
-     "foerst_set": "2026-11-07T06:30:44",
-     "link": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
-     "side": "artikel/421fa7063f0687d0.html",
      "hvor": "forside",
      "under": ""
     },
@@ -745,42 +781,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-06T20:49:47",
      "link": "https://www.theverge.com/tech/1028720/vibe-coding-open-source-inmusic-akai",
      "side": "artikel/b8851797863ea479.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Demonstranter bryder ind på Microsoft-byggeplads i Amsterdam",
-     "dato": "2026-11-06T11:55:19",
-     "foerst_set": "2026-11-06T16:11:20",
-     "link": "https://www.theverge.com/news/1028549/protesters-microsoft-data-center-site-amsterdam",
-     "side": "artikel/18031d61f6077e3b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Perplexity lancerer altid tændte Teammates",
-     "dato": "2026-11-05T22:26:50",
-     "foerst_set": "2026-11-06T07:16:54",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
-     "side": "artikel/448caf20b90713b4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI dropper NDA'er i aftaler om datacentre",
-     "dato": "2026-11-06T00:37:56",
-     "foerst_set": "2026-11-06T07:16:54",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda",
-     "side": "artikel/3323df791b8bcd34.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "GPT-6 Cyber går sjældnere rogue i test",
-     "dato": "2026-11-05T17:00:00",
-     "foerst_set": "2026-11-05T22:13:13",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
-     "side": "artikel/8d55da85fce43312.html",
      "hvor": "forside",
      "under": ""
     }
@@ -839,6 +839,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
+    },
+    {
+     "rubrik": "Claude Code kan afsløre adgangskoder på GitHub",
+     "dato": "2026-11-09T17:24:26",
+     "foerst_set": "2026-11-09T19:04:48",
+     "link": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/",
+     "side": "artikel/d965126e9003a91f.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Tidligere Rockstar-chef frygter AI-kopi af GTA VI",
@@ -902,15 +911,6 @@ window.KILDER_STATUS = {
      "side": "artikel/b26578c04a00196c.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Anthropic-udvidelse bagdøret i næsten 12 timer",
-     "dato": "2026-10-30T21:09:54",
-     "foerst_set": "2026-10-31T06:12:14",
-     "link": "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/",
-     "side": "artikel/0697c0d6577e4ad4.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -934,9 +934,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 8,
+   "i_listen": 10,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Scott Wiener vil regulere AI i Kongressen",
+     "dato": "2026-11-09T17:05:43",
+     "foerst_set": "2026-11-09T19:04:48",
+     "link": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/",
+     "side": "artikel/9541439da1a607fd.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Lubrizol bygger datagrundlag til materialeforskning med AI",
+     "dato": "2026-11-09T13:00:00",
+     "foerst_set": "2026-11-09T19:04:48",
+     "link": "https://www.technologyreview.com/2026/11/09/1147654/innovating-with-ai-in-the-special-chemicals-industry/",
+     "side": "artikel/08088be30a8e00a4.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Tau Robotics rengør hjem med fjernstyrede robotter",
      "dato": "2026-11-06T10:00:00",

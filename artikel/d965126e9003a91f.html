@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-nyheder.com · Claude Code kan afsløre adgangskoder på GitHub</title>
+<meta name="description" content="Godkendte kommandoer kan gemmes med hemmelige oplysninger og ende i offentlige projekter. Forskere har fundet berørte filer fra 63 organisationer.">
+<link rel="canonical" href="https://ainyheder.com/artikel/d965126e9003a91f.html">
+<meta name="theme-color" content="#0c0e12">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI-nyheder">
+<meta property="og:title" content="Claude Code kan afsløre adgangskoder på GitHub">
+<meta property="og:description" content="Godkendte kommandoer kan gemmes med hemmelige oplysninger og ende i offentlige projekter. Forskere har fundet berørte filer fra 63 organisationer.">
+<meta property="og:url" content="https://ainyheder.com/artikel/d965126e9003a91f.html">
+<meta property="og:image" content="https://ainyheder.com/data/img/eca4e6b873c1da20.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/fonts/skrifter.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Claude Code kan afsløre adgangskoder på GitHub", "description": "Godkendte kommandoer kan gemmes med hemmelige oplysninger og ende i offentlige projekter. Forskere har fundet berørte filer fra 63 organisationer.", "url": "https://ainyheder.com/artikel/d965126e9003a91f.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/d965126e9003a91f.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "image": "https://ainyheder.com/data/img/eca4e6b873c1da20.jpg", "datePublished": "2026-11-09T17:24:26+00:00", "articleSection": "Hverdags-AI", "isBasedOn": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/"}</script>
+<style>
+:root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
+  --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:"Inter",-apple-system,sans-serif; background:var(--bg); color:var(--blaek); line-height:1.6; }
+.topbar { position:sticky; top:0; background:color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter:blur(14px); border-bottom:1px solid var(--linje); padding:14px 28px; }
+.brand { font-family:"Fraunces",Georgia,serif; font-weight:900; font-size:24px; letter-spacing:-.03em; text-decoration:none; color:inherit; display:inline-flex; align-items:center; }
+.brand-logo { width:28px; height:28px; margin-right:9px; display:block; flex:none; }
+.brand em { font-style:normal; color:var(--accent); }
+main { max-width:720px; margin:0 auto; padding:44px 24px 80px; }
+.kicker { font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin-bottom:12px; }
+h1 { font-family:"Fraunces",Georgia,serif; font-weight:900; letter-spacing:-.02em;
+  font-size:clamp(28px,5vw,40px); line-height:1.12; margin-bottom:14px; }
+.manchet { font-size:17px; line-height:1.65; color:var(--blaek-svag); margin-bottom:22px; }
+img.top { width:100%; border-radius:16px; margin-bottom:24px; }
+h2 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:21px; margin:28px 0 8px; }
+p { font-size:15.5px; line-height:1.75; margin-bottom:13px; }
+li { font-size:14.5px; line-height:1.7; margin:6px 0 6px 20px; }
+.boks { background:var(--accent-svag); border-left:3px solid var(--accent); border-radius:0 12px 12px 0;
+  padding:14px 18px; margin:20px 0; font-size:15px; }
+.kilde { display:inline-block; font-size:13px; font-weight:700; text-decoration:none; color:inherit;
+  border:1px solid var(--linje); background:var(--bg-kort); padding:8px 16px; border-radius:999px; margin:4px 6px 0 0; }
+.kilde:hover { border-color:var(--accent); color:var(--accent); }
+.cta { display:inline-block; font-size:14px; font-weight:700; text-decoration:none; color:#fff;
+  background:var(--accent); padding:12px 24px; border-radius:999px; margin-top:26px; }
+.note { font-size:12.5px; color:var(--blaek-svag); margin-top:22px; }
+footer { border-top:1px solid var(--linje); padding:30px 26px; text-align:center; font-size:12px; color:var(--blaek-svag); }
+footer a { color:var(--accent); }
+</style>
+<link rel="stylesheet" href="/assets/artikel.css?v=3">
+</head>
+<body>
+<a class="article-skip" href="#artikeltekst">Spring til artiklen</a>
+<div class="topbar"><a class="brand" href="/" aria-label="AI-nyheder, forsiden"><img class="brand-logo" src="/assets/ai-mark.svg" alt="" width="32" height="32" decoding="async"><span>nyheder</span></a><a class="article-models" href="/modeller.html">Modellanceringer</a></div>
+<main id="artikeltekst" tabindex="-1">
+<a class="article-back" href="/">← Tilbage til nyhederne</a>
+<div class="kicker">Hverdags-AI · Ars Technica AI · 09.11.2026 · 2 min. læsning</div>
+<h1>Claude Code kan afsløre adgangskoder på GitHub</h1>
+<div class="article-intro"><img class="top" src="/data/img/eca4e6b873c1da20.webp" alt="A Claude Code settings file bearing Claude’s warm terracotta-orange, many-rayed asterisk exposes a solid key as the file slips into an open public repository box. The key represent"><p class="manchet">Godkendte kommandoer kan gemmes med hemmelige oplysninger og ende i offentlige projekter. Forskere har fundet berørte filer fra 63 organisationer.</p></div>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">01</span>Godkendelse gemmer hele kommandoen</h2>
+<p>Claude Code kan komme til at gemme adgangskoder og andre hemmelige oplysninger i en indstillingsfil, som derefter kan havne på GitHub. Det har sikkerhedsforskere hos Apiiro opdaget.</p><p>Claude Code er Anthropics AI-værktøj til programmering. Når en bruger godkender en kommando med valget om ikke at blive spurgt igen, gemmer værktøjet en regel i en lokal fil. Reglen kan indeholde hele kommandoen, også hvis den rummer en adgangskode eller en API-nøgle, der giver adgang til en tjeneste.</p></section>
+<dl class="article-metrics"><div><dt>Tilfælde, hvor Claude Codes lokale indstillingsfil var uploadet til et offentligt GitHub-projekt</dt><dd>Over 100.000 filer</dd></div><div><dt>Indeholdt hemmelige oplysninger og stammede fra 63 organisationer</dt><dd>Cirka 1.100 filer</dd></div><div><dt>Af cirka 1.100 fundne offentlige hemmeligheder blev ikke markeret af scannerne gitleaks og TruffleHog</dt><dd>215</dd></div></dl><section class="article-section"><h2><span class="section-index" aria-hidden="true">02</span>Lokal beskyttelse følger ikke altid med</h2>
+<p>Anthropic oplyser, at filen normalt tilføjes en lokal liste over filer, der ikke skal deles. Beskyttelsen ligger dog ikke i selve projektet og følger derfor ikke nødvendigvis med, hvis projektet kopieres til en anden computer.</p><p>Ifølge Apiiro kan Claude Code også selv tilføje ændringer i filen til projektets versionshistorik uden brugerens medvirken. Selv efter at en fil er fjernet, kan oplysningerne leve videre i andres kopier af projektet på GitHub.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">03</span>Automatisk tilstand løser ikke alt</h2>
+<p>Claude Codes Boris Cherny siger, at holdet undersøger, hvordan problemet kan forebygges. Han anbefaler blandt andet auto mode, som bruger klassifikatorer til automatisk at håndtere rutinemæssige anmodninger om tilladelse.</p><p>En bruger påpegede dog, at følsomme kommandoer stadig kan gemmes i indstillingsfiler med auto mode. Cherny anerkendte problemet og anbefaler også programmer, der leder efter hemmelige oplysninger i filer. Apiiros fund viser imidlertid, at sådanne programmer kan overse oplysninger.</p></section>
+
+<details class="boks article-details"><summary>Flere detaljer</summary><ul><li>En fejlrapport om problemet blev indgivet allerede i august 2025 og senere lukket efter 60 dage uden aktivitet.</li></ul></details>
+
+<p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/" rel="noopener">Ars Technica AI →</a></p>
+<a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
+<p class="note">Genfortalt i egne ord af AI-nyheder.com · AI-genereret illustration · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>
+</main>
+<footer>© 2026 AI-nyheder · <a href="/om.html">Om os</a> · <a href="/vaerktoejer.html">Værktøjer</a></footer>
+<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-09T07:13:51.243774+00:00",
+ "genereret": "2026-11-09T19:16:47.313819+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -199,26 +199,26 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-09T07:05:45.896008+00:00",
-  "antal": 118,
-  "med_billede": 103,
-  "paa_dansk": 118,
+  "opdateret": "2026-11-09T19:04:48.520272+00:00",
+  "antal": 129,
+  "med_billede": 108,
+  "paa_dansk": 129,
   "kategorier": {
-   "Hverdags-AI": 31,
-   "Lanceringer": 16,
+   "Lanceringer": 18,
+   "Hverdags-AI": 36,
+   "Penge \u0026 marked": 33,
    "Forskning": 8,
-   "Politik \u0026 jura": 20,
-   "Samfund \u0026 etik": 13,
-   "Penge \u0026 marked": 30
+   "Politik \u0026 jura": 22,
+   "Samfund \u0026 etik": 12
   },
   "kilder": {
-   "Simon Willison AI": 9,
-   "Google Gemini": 7,
-   "The Verge AI": 30,
-   "TechCrunch AI": 45,
-   "Hugging Face": 1,
+   "The Verge AI": 34,
+   "TechCrunch AI": 50,
    "Ars Technica AI": 8,
-   "MIT Tech Review AI": 8,
+   "Google Gemini": 7,
+   "MIT Tech Review AI": 10,
+   "Hugging Face": 1,
+   "Simon Willison AI": 9,
    "Mistral AI": 3,
    "xAI News": 1,
    "Google DeepMind": 2,
@@ -226,152 +226,163 @@ window.KOMMANDO_DATA = {
   },
   "udvalgte": [
    {
-    "titel": "Hide your slop PR descriptions behind",
-    "rubrik": "Willison gemmer AI-agentens lange forklaring bag ét klik",
-    "link": "https://simonwillison.net/2026/Nov/9/details-summary/",
-    "side": "artikel/7796d5edf90e59f0.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-11-09T04:25:05+00:00",
-    "billede": "data/img/30daa06b3a5cdc83.webp"
+    "titel": "Anthropic launches new Claude Fable and Mythos 5.2 models",
+    "rubrik": "Anthropic opgraderer Claude til svære tekniske opgaver",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
+    "side": "artikel/c301a0197fe30514.html",
+    "kategori": "Lanceringer",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-09T14:00:00-05:00",
+    "billede": "data/img/5f62db5b82d652d4.webp"
+   },
+   {
+    "titel": "Meta releases Muse Ember, a new lightweight model for agent execution",
+    "rubrik": "Meta sender billig agentmodel på arbejde",
+    "link": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
+    "side": "artikel/9b99d3e8fbba1524.html",
+    "kategori": "Lanceringer",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-09T18:00:00+00:00",
+    "billede": "data/img/2fd3f27ea10c76f0.webp"
    }
   ],
   "seneste": [
    {
-    "titel": "Hide your slop PR descriptions behind",
-    "rubrik": "Willison gemmer AI-agentens lange forklaring bag ét klik",
-    "link": "https://simonwillison.net/2026/Nov/9/details-summary/",
-    "side": "artikel/7796d5edf90e59f0.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-11-09T04:25:05+00:00",
-    "billede": "data/img/30daa06b3a5cdc83.webp"
-   },
-   {
-    "titel": "The Web Is More Than Enough, by Paul Ford",
-    "rubrik": "Claude omskrev 3D-æg uden Three.js",
-    "link": "https://simonwillison.net/2026/Nov/9/hn-50421091/",
-    "side": "artikel/c3dd8886e7848fb0.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-11-09T04:32:33+00:00",
-    "billede": "data/img/a3280121ab5d789d.webp"
-   },
-   {
-    "titel": "AI is destroying my CS degree",
-    "rubrik": "Simon Willison: AI udfordrer vurderingen af studerende",
-    "link": "https://simonwillison.net/2026/Nov/3/hn-50354278/",
-    "side": "artikel/d0278afb22662d33.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-11-03T16:42:02+00:00",
-    "billede": "data/img/c050e1c495bd6a2b.webp"
-   },
-   {
-    "titel": "Elvis and Eminem rights holders are suing Suno",
-    "rubrik": "Elvis- og Eminem-rettighedshavere sagsøger Suno",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
-    "side": "artikel/801f2a048a781a2d.html",
-    "kategori": "Politik \u0026 jura",
+    "titel": "Anthropic launches new Claude Fable and Mythos 5.2 models",
+    "rubrik": "Anthropic opgraderer Claude til svære tekniske opgaver",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
+    "side": "artikel/c301a0197fe30514.html",
+    "kategori": "Lanceringer",
     "kilde": "The Verge AI",
-    "dato": "2026-11-08T12:23:19-05:00",
-    "billede": "data/img/becdcf0ce1936571.webp"
+    "dato": "2026-11-09T14:00:00-05:00",
+    "billede": "data/img/5f62db5b82d652d4.webp"
    },
    {
-    "titel": "Apple is racing to make Siri more agentic",
-    "rubrik": "Apple vil lade Siri styre flere apps",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
-    "side": "artikel/3fa60b95a7a47cb3.html",
+    "titel": "Meta releases Muse Ember, a new lightweight model for agent execution",
+    "rubrik": "Meta sender billig agentmodel på arbejde",
+    "link": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
+    "side": "artikel/9b99d3e8fbba1524.html",
+    "kategori": "Lanceringer",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-09T18:00:00+00:00",
+    "billede": "data/img/2fd3f27ea10c76f0.webp"
+   },
+   {
+    "titel": "Claude Code is accidentally exposing secrets all over GitHub",
+    "rubrik": "Claude Code kan afsløre adgangskoder på GitHub",
+    "link": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/",
+    "side": "artikel/d965126e9003a91f.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-11-09T17:24:26+00:00",
+    "billede": "data/img/eca4e6b873c1da20.webp"
+   },
+   {
+    "titel": "Instagram’s Effect Builder makes new filters from AI prompts",
+    "rubrik": "Instagram laver filtre ud fra tekst",
+    "link": "https://www.theverge.com/tech/1030061/instagram-ai-effect-builder-filters",
+    "side": "artikel/9c473fd9de958c8d.html",
     "kategori": "Hverdags-AI",
     "kilde": "The Verge AI",
-    "dato": "2026-11-08T14:18:19-05:00",
+    "dato": "2026-11-09T13:07:23-05:00",
     "billede": ""
    },
    {
-    "titel": "The US let Nvidia sell chips to an empty office in China",
-    "rubrik": "Nvidia-køber godkendt trods tomt kontor",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
-    "side": "artikel/6f25ac9278119b95.html",
+    "titel": "Disney and Adobe are building generative AI tools together",
+    "rubrik": "Disney og Adobe vil udvikle egne AI-modeller",
+    "link": "https://www.theverge.com/tech/1029773/disney-adobe-generative-ai-partnership",
+    "side": "artikel/f9c4955a3661c102.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-09T10:38:56-05:00",
+    "billede": ""
+   },
+   {
+    "titel": "Nancy Pelosi’s replacement is ready to regulate AI",
+    "rubrik": "Scott Wiener vil regulere AI i Kongressen",
+    "link": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/",
+    "side": "artikel/9541439da1a607fd.html",
     "kategori": "Politik \u0026 jura",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-07T10:43:45-05:00",
-    "billede": "data/img/a6535c060598dc61.webp"
+    "kilde": "MIT Tech Review AI",
+    "dato": "2026-11-09T17:05:43+00:00",
+    "billede": "data/img/26013affe626e553.webp"
    },
    {
-    "titel": "AI broke the cybersecurity world. What’s next?",
-    "rubrik": "Alex Stamos: AI kan automatisere cyberangreb",
-    "link": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
-    "side": "artikel/c350b1638a5338a2.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-07T10:00:00-05:00",
-    "billede": "data/img/074b54739283d7e8.webp"
+    "titel": "Medium’s new TK app brings AI assistance directly into the writing process",
+    "rubrik": "Medium lancerer skriveapp med indbygget AI",
+    "link": "https://techcrunch.com/2026/11/09/mediums-new-tk-app-brings-ai-assistance-directly-into-the-writing-process/",
+    "side": "artikel/9ed094811c690553.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-09T16:12:28+00:00",
+    "billede": "data/img/79a9d714038fac67.jpg"
    },
    {
-    "titel": "Why a new report on Anthropic automating AI development is alarming researchers",
-    "rubrik": "Forskere: AI sætter fart på Anthropics modeludvikling",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
-    "side": "artikel/d36485a6e1dbd817.html",
-    "kategori": "Forskning",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-07T07:30:00-05:00",
-    "billede": "data/img/4f3c8834913f3162.webp"
+    "titel": "Automattic debuts a platform to deploy vibe-coding apps amid a changing internet",
+    "rubrik": "Automattic lancerer Spacefast til AI-skabte apps",
+    "link": "https://techcrunch.com/2026/11/09/automattic-debuts-a-platform-to-deploy-vibe-coding-apps-amid-a-changing-internet/",
+    "side": "artikel/0fe933f7440bef57.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-09T14:00:00+00:00",
+    "billede": ""
    },
    {
-    "titel": "Crusoe sells troubled Wyoming data center project to Google",
-    "rubrik": "Crusoe bekræfter salg af datacenter til Google",
-    "link": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
-    "side": "artikel/bfdaf195a235ade1.html",
+    "titel": "Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines",
+    "rubrik": "Anthropic køber gasturbiner for milliarder",
+    "link": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/",
+    "side": "artikel/f3c522ff77f3b76a.html",
     "kategori": "Penge \u0026 marked",
     "kilde": "TechCrunch AI",
-    "dato": "2026-11-07T01:40:28+00:00",
+    "dato": "2026-11-09T16:56:54+00:00",
+    "billede": "data/img/7f7a18a3f1c0d29a.webp"
+   },
+   {
+    "titel": "Trump’s 60 Minutes interview touched on AI safety, threat to arrest an AI exec",
+    "rubrik": "Trump hævder at have truet AI-direktør",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1029802/trump-60-minutes-ai",
+    "side": "artikel/7bf546edea528c20.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-09T10:50:38-05:00",
     "billede": ""
    },
    {
-    "titel": "China reportedly recruited AI exec to spy on Jensen Huang",
-    "rubrik": "Kina skal have rekrutteret leder til Nvidia-spionage",
-    "link": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
-    "side": "artikel/421fa7063f0687d0.html",
+    "titel": "Jensen Huang’s affair with alleged Chinese spy puts Nvidia’s China ambitions under scrutiny",
+    "rubrik": "Nvidia undersøger direktørens forhold til formodet spion",
+    "link": "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/",
+    "side": "artikel/c81f482fdf110b88.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-09T18:09:52+00:00",
+    "billede": "data/img/09606a96c87091ac.webp"
+   },
+   {
+    "titel": "Jonathan Kanter is using AI to take on Big Tech",
+    "rubrik": "Jonathan Kanter bruger AI mod monopoler",
+    "link": "https://www.theverge.com/policy/1029652/kanter-doj-biden-legal-tech",
+    "side": "artikel/9e75efd7851d98b1.html",
     "kategori": "Politik \u0026 jura",
     "kilde": "The Verge AI",
-    "dato": "2026-11-06T18:00:44-05:00",
-    "billede": "data/img/72a0e9dc03f26634.webp"
-   },
-   {
-    "titel": "grok-imagine-image-quality retired",
-    "rubrik": "xAI sender billedanmodninger til ny model",
-    "link": "https://docs.x.ai/developers/release-notes#grok-imagine-image-quality-retired",
-    "side": "artikel/99c3122894ef9106.html",
-    "kategori": "Lanceringer",
-    "kilde": "xAI News",
-    "dato": "2026-11-02T00:00:00+00:00",
-    "billede": "data/img/620504147d0c7a03.webp"
-   },
-   {
-    "titel": "After the midterms, is the AI industry in for a rough two years?",
-    "rubrik": "USA's vælgere stemte for datacenterbegrænsninger",
-    "link": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/",
-    "side": "artikel/8f51c7b390aa45bf.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-06T17:23:52+00:00",
-    "billede": "data/img/fb52b8549181ffe7.webp"
+    "dato": "2026-11-09T09:30:00-05:00",
+    "billede": ""
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-09T07:05:45.896008+00:00",
+  "opdateret": "2026-11-09T19:04:48.520272+00:00",
   "status": "godkendt",
   "model": "gpt-6.1-terra",
   "modelkald": 6,
-  "kildehentninger": 2,
+  "kildehentninger": 3,
   "regelbaseret_udvalg": [
-   "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
-   "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
-   "https://simonwillison.net/2026/Nov/9/details-summary/"
+   "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
+   "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
+   "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/"
   ],
   "udgivet_udvalg": [
-   "https://simonwillison.net/2026/Nov/9/details-summary/"
+   "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
+   "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/"
   ],
   "vaerktoejer": [
    {
@@ -387,7 +398,7 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
+    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
@@ -397,17 +408,21 @@ window.KOMMANDO_DATA = {
   ],
   "kildegrundlag": [
    {
-    "link": "https://simonwillison.net/2026/Nov/9/details-summary/",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://simonwillison.net/2026/Nov/9/hn-50421091/",
+    "link": "https://anthropic.com/claude-fable-and-mythos-5-2",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
     "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-11-09T07:05:45.253076+00:00",
+  "opdateret": "2026-11-09T19:04:47.952683+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -872,8 +887,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-09T07:05:45.896008+00:00",
-  "artikler_i_alt": 118,
+  "opdateret": "2026-11-09T19:04:48.520272+00:00",
+  "artikler_i_alt": 129,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1209,7 +1224,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 45,
+    "i_listen": 50,
     "som_ekstra": 6,
     "seneste": [
      {
@@ -1285,38 +1300,38 @@ window.KOMMANDO_DATA = {
       "under": "Anthropic afsætter fem procent af aktierne til fond"
      },
      {
-      "rubrik": "Crusoe bekræfter salg af datacenter til Google",
-      "dato": "2026-11-07T01:40:28",
-      "foerst_set": "2026-11-07T06:30:44",
-      "link": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
-      "side": "artikel/bfdaf195a235ade1.html",
+      "rubrik": "Meta sender billig agentmodel på arbejde",
+      "dato": "2026-11-09T18:00:00",
+      "foerst_set": "2026-11-09T19:04:48",
+      "link": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
+      "side": "artikel/9b99d3e8fbba1524.html",
       "hvor": "forside",
       "under": ""
      },
      {
-      "rubrik": "USA's vælgere stemte for datacenterbegrænsninger",
-      "dato": "2026-11-06T17:23:52",
-      "foerst_set": "2026-11-06T21:09:53",
-      "link": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/",
-      "side": "artikel/8f51c7b390aa45bf.html",
+      "rubrik": "Medium lancerer skriveapp med indbygget AI",
+      "dato": "2026-11-09T16:12:28",
+      "foerst_set": "2026-11-09T19:04:48",
+      "link": "https://techcrunch.com/2026/11/09/mediums-new-tk-app-brings-ai-assistance-directly-into-the-writing-process/",
+      "side": "artikel/9ed094811c690553.html",
       "hvor": "forside",
       "under": ""
      },
      {
-      "rubrik": "Censys finder over 800 åbne Artex-værktøjer",
-      "dato": "2026-11-06T18:44:38",
-      "foerst_set": "2026-11-06T20:49:47",
-      "link": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
-      "side": "artikel/37d75a0fa3790bf4.html",
+      "rubrik": "Automattic lancerer Spacefast til AI-skabte apps",
+      "dato": "2026-11-09T14:00:00",
+      "foerst_set": "2026-11-09T19:04:48",
+      "link": "https://techcrunch.com/2026/11/09/automattic-debuts-a-platform-to-deploy-vibe-coding-apps-amid-a-changing-internet/",
+      "side": "artikel/0fe933f7440bef57.html",
       "hvor": "forside",
       "under": ""
      },
      {
-      "rubrik": "Meta lader Muse bygge dit projektrum",
-      "dato": "2026-11-06T18:44:20",
-      "foerst_set": "2026-11-06T20:49:47",
-      "link": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
-      "side": "artikel/dcfedcc7440be1b6.html",
+      "rubrik": "Anthropic køber gasturbiner for milliarder",
+      "dato": "2026-11-09T16:56:54",
+      "foerst_set": "2026-11-09T19:04:48",
+      "link": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/",
+      "side": "artikel/f3c522ff77f3b76a.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1332,7 +1347,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 30,
+    "i_listen": 34,
     "som_ekstra": 12,
     "seneste": [
      {
@@ -1486,6 +1501,15 @@ window.KOMMANDO_DATA = {
       "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
      },
      {
+      "rubrik": "Claude Code kan afsløre adgangskoder på GitHub",
+      "dato": "2026-11-09T17:24:26",
+      "foerst_set": "2026-11-09T19:04:48",
+      "link": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/",
+      "side": "artikel/d965126e9003a91f.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Tidligere Rockstar-chef frygter AI-kopi af GTA VI",
       "dato": "2026-11-06T16:19:12",
       "foerst_set": "2026-11-06T21:09:53",
@@ -1547,15 +1571,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/b26578c04a00196c.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Anthropic-udvidelse bagdøret i næsten 12 timer",
-      "dato": "2026-10-30T21:09:54",
-      "foerst_set": "2026-10-31T06:12:14",
-      "link": "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/",
-      "side": "artikel/0697c0d6577e4ad4.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1569,9 +1584,27 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 6,
-    "i_listen": 8,
+    "i_listen": 10,
     "som_ekstra": 0,
     "seneste": [
+     {
+      "rubrik": "Scott Wiener vil regulere AI i Kongressen",
+      "dato": "2026-11-09T17:05:43",
+      "foerst_set": "2026-11-09T19:04:48",
+      "link": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/",
+      "side": "artikel/9541439da1a607fd.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Lubrizol bygger datagrundlag til materialeforskning med AI",
+      "dato": "2026-11-09T13:00:00",
+      "foerst_set": "2026-11-09T19:04:48",
+      "link": "https://www.technologyreview.com/2026/11/09/1147654/innovating-with-ai-in-the-special-chemicals-industry/",
+      "side": "artikel/08088be30a8e00a4.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "Tau Robotics rengør hjem med fjernstyrede robotter",
       "dato": "2026-11-06T10:00:00",
@@ -1742,12 +1775,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-09T07:13:45.100202+00:00",
+  "opdateret": "2026-11-09T19:16:35.069333+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 27,
-  "sidevisninger_i_alt": 55,
+  "besoeg_i_alt": 31,
+  "sidevisninger_i_alt": 61,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1782,8 +1815,8 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-10-17",
-    "besoeg": 10,
-    "visninger": 20
+    "besoeg": 0,
+    "visninger": 0
    },
    {
     "dato": "2026-10-18",
@@ -1797,8 +1830,8 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-10-20",
-    "besoeg": 10,
-    "visninger": 20
+    "besoeg": 100,
+    "visninger": 100
    },
    {
     "dato": "2026-10-21",
@@ -1808,7 +1841,7 @@ window.KOMMANDO_DATA = {
    {
     "dato": "2026-10-22",
     "besoeg": 0,
-    "visninger": 10
+    "visninger": 100
    },
    {
     "dato": "2026-10-23",
@@ -1822,8 +1855,8 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-10-25",
-    "besoeg": 10,
-    "visninger": 10
+    "besoeg": 0,
+    "visninger": 0
    },
    {
     "dato": "2026-10-26",
@@ -1852,8 +1885,8 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-10-31",
-    "besoeg": 10,
-    "visninger": 10
+    "besoeg": 0,
+    "visninger": 0
    },
    {
     "dato": "2026-11-01",
@@ -1868,7 +1901,7 @@ window.KOMMANDO_DATA = {
    {
     "dato": "2026-11-03",
     "besoeg": 0,
-    "visninger": 10
+    "visninger": 0
    },
    {
     "dato": "2026-11-04",
@@ -1882,13 +1915,13 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-11-06",
-    "besoeg": 20,
-    "visninger": 20
+    "besoeg": 0,
+    "visninger": 0
    },
    {
     "dato": "2026-11-07",
     "besoeg": 0,
-    "visninger": 10
+    "visninger": 0
    },
    {
     "dato": "2026-11-08",
@@ -1898,21 +1931,21 @@ window.KOMMANDO_DATA = {
    {
     "dato": "2026-11-09",
     "besoeg": 0,
-    "visninger": 10
+    "visninger": 0
    }
   ],
   "sider": [
    {
     "sti": "/",
-    "besoeg": 27,
-    "visninger": 55
+    "besoeg": 31,
+    "visninger": 61
    }
   ],
   "artikler": [],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 26
+    "besoeg": 30
    },
    {
     "fra": "www.bing.com",
