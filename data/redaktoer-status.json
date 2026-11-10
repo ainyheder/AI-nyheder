@@ -1,41 +1,18 @@
 {
-  "opdateret": "2026-11-09T19:04:48.520272+00:00",
-  "status": "godkendt",
+  "opdateret": "2026-11-10T02:53:29.396748+00:00",
+  "status": "reserve",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
+    "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
     "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
-    "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
-    "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/"
+    "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/"
   ],
-  "input_fingerprint": "36d92d34657c9c2c",
-  "redaktionsnote": "Begge nye modellanceringer er læst og prioriteret over tidligere forsidehistorier. Anthropics officielle meddelelse og The Verge er læst; der er ikke fundet en læsbar officiel meddelelse om Ember i det tilgængelige materiale. Ingen øvrige anbefalinger uden læst kilde.",
-  "beslutninger": [
-    {
-      "id": "ea9e227012293141",
-      "begrundelse": "Anthropic lancerer en væsentlig ny modelversion til krævende tekniske opgaver. Den fælles model udbydes med forskellige sikkerhedsbegrænsninger og adgangsvilkår.",
-      "nyt_siden_sidst": "Fable 5.2 lanceres i dag, mens Mythos 5.2 i første omgang kræver godkendelse. Modellerne afløser 5.1-versionerne fra september og har ikke været på de oplyste forsider.",
-      "skriveopgave": "Rubrik: »Anthropic opgraderer Claude til svære tekniske opgaver«. Forklar med korte mellemoverskrifter forskellen på Fable og Mythos, adgang og pris pr. million input- og outputtokens; forklar tokens ved første brug. Beskriv hastighed og eksempler som Anthropics egne påstande, ikke uafhængigt beviste resultater.",
-      "kilder": [
-        "ea9e227012293141",
-        "9fbaf812b26d34ed"
-      ],
-      "samme_historie": [],
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
-      "rubrik": "Anthropic opgraderer Claude til svære tekniske opgaver"
-    },
-    {
-      "id": "730323ba6c06bee9",
-      "begrundelse": "Muse Ember er en ny, let model til gentagne agentopgaver og kan ifølge omtalen håndtere flere typer input. Den lave inputpris gør lanceringen relevant for udviklere.",
-      "nyt_siden_sidst": "Meta udgiver nu Ember, en separat model til agentarbejde. Det er en anden begivenhed end projektrummene Spaces og Muse-videochatten på tidligere forsider.",
-      "skriveopgave": "Rubrik: »Meta sender billig agentmodel på arbejde med tekst, billeder og lyd«. Forklar med korte mellemoverskrifter, hvilke opgaver Ember er tiltænkt, og hvordan den kan supplere en større model. Angiv prisen på 10 cent pr. million inputtokens og forklar tokens; gengiv præstationssammenligninger som Metas påstande, og angiv adgang og outputpris som uafklaret.",
-      "kilder": [
-        "730323ba6c06bee9"
-      ],
-      "samme_historie": [],
-      "link": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
-      "rubrik": "Meta sender billig agentmodel på arbejde"
-    }
+  "input_fingerprint": "e4dd915833983950",
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "kontrolproblemer": [
+    "Ember-artiklens mellemoverskrift »Prisen dækker kun input« er misvisende: Kilden oplyser inputprisen, men ikke om output er gratis eller har en pris.",
+    "Kandidatoversigten indeholder yderligere omtaler af samme Fable/Mythos 5.2-lancering (58580c03fbdd2552 og a989f1582084d0cf). De må ikke vises som selvstændige historier ved siden af hovedhistorien; der er ingen anbefalinger i udgaven."
   ],
   "modelkald": 6,
   "kildehentninger": 3,
@@ -63,21 +40,22 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://anthropic.com/claude-fable-and-mythos-5-2",
-      "grundlag": "kildetekst"
-    },
-    {
       "link": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
-    "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/"
+    "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
+    "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+    "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/"
   ],
-  "afventer_artikler": 77
+  "afventer_artikler": 81
 }

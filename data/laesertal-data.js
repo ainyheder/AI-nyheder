@@ -1,10 +1,9 @@
 window.LAESERTAL = {
- "opdateret": "2026-11-09T19:16:35.069333+00:00",
+ "opdateret": "2026-11-10T03:05:46.979004+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
   "datoer": [
-   "2026-10-11",
    "2026-10-12",
    "2026-10-13",
    "2026-10-14",
@@ -33,13 +32,13 @@ window.LAESERTAL = {
    "2026-11-06",
    "2026-11-07",
    "2026-11-08",
-   "2026-11-09"
+   "2026-11-09",
+   "2026-11-10"
   ],
   "serier": [
    {
     "navn": "Penge & marked",
     "tal": [
-     0,
      3,
      5,
      6,
@@ -68,13 +67,13 @@ window.LAESERTAL = {
      4,
      1,
      0,
-     3
+     3,
+     0
     ]
    },
    {
     "navn": "Hverdags-AI",
     "tal": [
-     1,
      2,
      8,
      7,
@@ -103,13 +102,13 @@ window.LAESERTAL = {
      4,
      0,
      1,
-     7
+     10,
+     0
     ]
    },
    {
     "navn": "Lanceringer",
     "tal": [
-     1,
      2,
      9,
      1,
@@ -138,13 +137,13 @@ window.LAESERTAL = {
      1,
      0,
      0,
-     2
+     3,
+     0
     ]
    },
    {
     "navn": "Samfund & etik",
     "tal": [
-     1,
      2,
      7,
      5,
@@ -173,13 +172,13 @@ window.LAESERTAL = {
      4,
      1,
      0,
+     2,
      0
     ]
    },
    {
     "navn": "Politik & jura",
     "tal": [
-     0,
      1,
      1,
      4,
@@ -208,14 +207,14 @@ window.LAESERTAL = {
      5,
      1,
      1,
-     3
+     3,
+     0
     ]
    },
    {
     "navn": "Forskning",
     "tal": [
      0,
-     0,
      2,
      2,
      3,
@@ -242,6 +241,7 @@ window.LAESERTAL = {
      2,
      0,
      1,
+     0,
      0,
      0
     ]
@@ -250,8 +250,8 @@ window.LAESERTAL = {
     "navn": "Nyheder",
     "tal": [
      0,
-     0,
      3,
+     0,
      0,
      0,
      0,
@@ -284,20 +284,20 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 31,
- "sidevisninger_i_alt": 61,
+ "besoeg_i_alt": 35,
+ "sidevisninger_i_alt": 65,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 31,
-   "visninger": 61
+   "besoeg": 35,
+   "visninger": 65
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 30
+   "besoeg": 34
   },
   {
    "fra": "www.bing.com",
@@ -309,8 +309,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 30,
-    "visninger": 30
+    "besoeg": 34,
+    "visninger": 34
    },
    {
     "fra": "herfra selv",
@@ -332,11 +332,6 @@ window.LAESERTAL = {
   "/cookies.html"
  ],
  "serie": [
-  {
-   "dato": "2026-10-11",
-   "besoeg": 0,
-   "visninger": 0
-  },
   {
    "dato": "2026-10-12",
    "besoeg": 0,
@@ -364,8 +359,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-10-17",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 20
   },
   {
    "dato": "2026-10-18",
@@ -379,8 +374,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-10-20",
-   "besoeg": 100,
-   "visninger": 100
+   "besoeg": 10,
+   "visninger": 20
   },
   {
    "dato": "2026-10-21",
@@ -390,7 +385,7 @@ window.LAESERTAL = {
   {
    "dato": "2026-10-22",
    "besoeg": 0,
-   "visninger": 100
+   "visninger": 10
   },
   {
    "dato": "2026-10-23",
@@ -404,8 +399,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-10-25",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 10
   },
   {
    "dato": "2026-10-26",
@@ -434,8 +429,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-10-31",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 10
   },
   {
    "dato": "2026-11-01",
@@ -450,7 +445,7 @@ window.LAESERTAL = {
   {
    "dato": "2026-11-03",
    "besoeg": 0,
-   "visninger": 0
+   "visninger": 10
   },
   {
    "dato": "2026-11-04",
@@ -464,13 +459,13 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-11-06",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 20,
+   "visninger": 20
   },
   {
    "dato": "2026-11-07",
    "besoeg": 0,
-   "visninger": 0
+   "visninger": 10
   },
   {
    "dato": "2026-11-08",
@@ -479,6 +474,11 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-11-09",
+   "besoeg": 10,
+   "visninger": 20
+  },
+  {
+   "dato": "2026-11-10",
    "besoeg": 0,
    "visninger": 0
   }

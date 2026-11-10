@@ -1,10 +1,40 @@
 {
- "rubrik": "Nye AI-modeller får flere evner, mens regnekraft møder modstand",
- "indledning": "Perioden bød på fremskridt inden for sikkerhed, billeder og simulation – og på nye begrænsninger for den infrastruktur, som AI kræver.",
+ "rubrik": "Nye AI-modeller rykker ind i kode, video og virtuelle verdener",
+ "indledning": "Ugens lanceringer spænder fra sikkerhed og programmering til video og robotsimulation, mens modstand mod datacentre lægger pres på den nødvendige regnekraft.",
  "historier": [
   {
-   "overskrift": "GPT-6 Cyber får stærkere evner og højere risikoklassificering",
-   "tekst": "OpenAI lancerer GPT-6 Cyber til udvalgte deltagere i sit program for defensiv cybersikkerhed. Ifølge selskabet fandt modellen flere sårbarheder og gik sjældnere uden for opgavens rammer i test end forgængeren. Samtidig placerer OpenAI den i sin højeste risikokategori, Critical.",
+   "overskrift": "Claude Fable og Mythos 5.2 går efter svære tekniske opgaver",
+   "tekst": "Anthropic har lanceret Claude Fable 5.2 og Claude Mythos 5.2, som bygger på samme model. Fable er tilgængelig for alle, mens organisationer kan ansøge om Mythos til cybersikkerhed eller biomedicinsk forskning. Ifølge Anthropics egne test klarer Fable nogle krævende kodeopgaver billigere end Opus 5.5.",
+   "link": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+   "kategori": "Lanceringer",
+   "billede": "data/img/5f62db5b82d652d4.webp",
+   "dato": "2026-11-09T00:00:00+00:00",
+   "andre": [
+    {
+     "kilde": "The Verge AI",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
+     "rubrik": "Anthropic opgraderer Claude til svære tekniske opgaver",
+     "resume_da": "Claude Fable 5.2 er tilgængelig for alle brugere, mens Claude Mythos 5.2 kræver godkendelse. Anthropic lover hurtigere svar og stærkere tekniske evner.",
+     "dato": "2026-11-09T14:00:00-05:00",
+     "foerst_set": "2026-11-09T19:04:48.520272+00:00"
+    },
+    {
+     "kilde": "TechCrunch AI",
+     "link": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
+     "rubrik": "Anthropic lancerer Mythos 5.2 og Fable 5.2",
+     "resume_da": "Fable bliver billigere og hurtigere, mens Anthropic advarer om, at modellernes mistanke om test gør deres adfærd sværere at vurdere.",
+     "dato": "2026-11-09T19:24:51+00:00",
+     "foerst_set": "2026-11-10T02:53:29.396748+00:00"
+    }
+   ],
+   "titel": "Introducing Claude Fable 5.2 and Claude Mythos 5.2",
+   "rubrik": "Claude Fable 5.2 skal løse svære kodeopgaver",
+   "resume_da": "Anthropic lancerer to udgaver af samme AI-model. Den ene er tilgængelig for alle, mens adgang til den anden kræver en ansøgning.",
+   "artikel_signatur": "bcaaa5368e86ba698063a2209a71129b43561f6748fbc556df348330ea5bfbc8"
+  },
+  {
+   "overskrift": "GPT-6 Cyber får stærkere evner og begrænset adgang",
+   "tekst": "OpenAI lancerer GPT-6 Cyber til defensivt sikkerhedsarbejde. Ifølge selskabet går modellen sjældnere uden for sine rammer i en bestemt test end forgængeren. Samtidig placerer OpenAI den i sin højeste risikokategori, Critical. Den rulles først ud til udvalgte deltagere i Daybreak Red-programmet.",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
    "kategori": "Lanceringer",
    "billede": "data/img/cf829156888d7e48.webp",
@@ -25,8 +55,8 @@
    "artikel_signatur": "01f965503c7775f4c34557ce89e746b33e09bc9ce38dd1eeb6d58be2bd553d65"
   },
   {
-   "overskrift": "Google forlænger videoklip med Gemini Omni 1.2 Flash",
-   "tekst": "Googles videomodel kan lave klip på op til 15 sekunder mod tidligere 10 og redigere detaljer uden at generere hele klippet igen. Google siger, at modellen bedre fastholder ansigter og produkter. Prisen for 720p-video er sænket 30 procent, men kompleks fysik er stadig en svaghed.",
+   "overskrift": "Gemini Omni 1.2 Flash laver længere videoklip",
+   "tekst": "Googles videomodel kan generere klip på op til 15 sekunder mod tidligere 10 og rulles ud via blandt andet Gemini API. Google siger, at brugere kan redigere detaljer uden at genskabe hele klippet. Hurtig sportsaction og kompleks fysik er ifølge selskabet stadig under forbedring.",
    "link": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
    "kategori": "Lanceringer",
    "billede": "data/img/b4af34548c42b986.jpg",
@@ -47,21 +77,8 @@
    "artikel_signatur": "deedc8221598a1a5a93651ab1f2bbbd0fa3049ee979d2608624c647f17f3a380"
   },
   {
-   "overskrift": "Nvidia frigiver fire modeller til robot- og bilsimulation",
-   "tekst": "De fire Cosmos 3-modeller kan generere billeder og sensordata til virtuelle miljøer for robotter og selvkørende biler. Deres vægte kan hentes og tilpasses under en licens. En af modellerne kan eksempelvis skabe synkroniseret video fra flere kameraer sammen med afstandsmålinger fra laser.",
-   "link": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
-   "kategori": "Lanceringer",
-   "billede": "data/img/65416ad2fe0b9b95.webp",
-   "dato": "2026-11-05T19:35:16+00:00",
-   "andre": [],
-   "titel": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
-   "rubrik": "NVIDIA åbner fire modeller til bil- og robotsimulation",
-   "resume_da": "De nye Cosmos 3-modeller kan skabe billeder og sensordata til virtuelle miljøer. Forskere kan hente og tilpasse modellerne under en licens.",
-   "artikel_signatur": "33c24fd30f781428697bcece75d5ce4df9080a8a4bc84b17690a775cef3f84f2"
-  },
-  {
-   "overskrift": "ChatGPT kan lave animerede GIF'er",
-   "tekst": "OpenAI ruller Images 2.6 ud i ChatGPT og Codex. Opdateringen lader brugere lave en animeret GIF direkte fra tekst eller et foto og redigere enkelte billeder i animationen. Selskabet lancerer også billedmodellerne GPT-Image-2.6 Flare og Sunburst til udviklere.",
+   "overskrift": "ChatGPT får animationer med Images 2.6",
+   "tekst": "OpenAI ruller Images 2.6 ud i ChatGPT og Codex. Brugere kan lave animerede GIF'er ud fra tekst eller et foto og redigere enkelte billeder i animationen. Samtidig lancerer selskabet GPT-Image-2.6 Flare og Sunburst til udviklere, der vil bygge billedfunktioner ind i egne programmer.",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6",
    "kategori": "Lanceringer",
    "billede": "data/img/92e83fed7ff114be.webp",
@@ -73,21 +90,21 @@
    "artikel_signatur": "6eb2f3e11a86a28cdd64ffc5634246cefe86559b8019fbbd2f5a83bed19e1f6d"
   },
   {
-   "overskrift": "Axiom Math omsætter matematisk værk til kontrolleret kode",
-   "tekst": "Axiom Math oplyser, at virksomhedens AI-agenter har oversat Stacks Project til omkring 16 millioner linjer kode i sproget Lean. Et program har derefter kontrolleret kodens logiske beviser. Referenceværket dækker blandt andet algebraisk geometri og kan give forskere flere formelle byggeklodser at arbejde med.",
-   "link": "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/",
-   "kategori": "Forskning",
-   "billede": "data/img/f0a87b0d7586544d.webp",
-   "dato": "2026-11-05T16:16:45+00:00",
+   "overskrift": "Nvidia frigiver modeller til bil- og robotsimulation",
+   "tekst": "Nvidia har frigivet fire Cosmos 3-modeller, der kan skabe simulerede billeder og sensordata til arbejde med selvkørende biler og robotter. Modellerne kan downloades og tilpasses under en licens. Det skal stadig undersøges, hvor pålidelige de virtuelle miljøer er til træning og evaluering.",
+   "link": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+   "kategori": "Lanceringer",
+   "billede": "data/img/65416ad2fe0b9b95.webp",
+   "dato": "2026-11-05T19:35:16+00:00",
    "andre": [],
-   "titel": "Axiom Math wants to keep AI slop out of mathematics",
-   "rubrik": "Axiom Math tjekker Stacks Project linje for linje",
-   "resume_da": "AI-agenter har oversat 7.654 siders matematik til 16 millioner linjer kode, som en computer nu har kontrolleret. Firmaet vil gøre verificeret matematik til fundament for software.",
-   "artikel_signatur": "ea2d021f3b949c06e0c37cabb101c6d9eeae87c1bc78cfda3c350dbc7b224849"
+   "titel": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
+   "rubrik": "NVIDIA åbner fire modeller til bil- og robotsimulation",
+   "resume_da": "De nye Cosmos 3-modeller kan skabe billeder og sensordata til virtuelle miljøer. Forskere kan hente og tilpasse modellerne under en licens.",
+   "artikel_signatur": "33c24fd30f781428697bcece75d5ce4df9080a8a4bc84b17690a775cef3f84f2"
   },
   {
-   "overskrift": "Amerikanske vælgere begrænser datacentre",
-   "tekst": "Ved midtvejsvalget stemte vælgere flere steder for at begrænse datacentre, som blandt andet leverer regnekraft til AI. Wells i Maine vedtog en midlertidig pause for store anlæg, mens flere byer i Ohio forbød anlæg over en bestemt størrelse. Valgundersøgelser viste bred lokal modstand.",
+   "overskrift": "Amerikanske vælgere begrænser datacentre lokalt",
+   "tekst": "Ved midtvejsvalget stemte flere amerikanske lokalsamfund for begrænsninger på datacentre, som blandt andet leverer regnekraft til AI. Wells i Maine vedtog en pause på 180 dage for store anlæg, mens flere byer i Ohio forbød datacentre over en bestemt størrelse.",
    "link": "https://www.theverge.com/policy/1026365/data-centers-midterms-results",
    "kategori": "Politik & jura",
    "billede": "data/img/5ecdcfa62ed39d72.webp",
@@ -101,42 +118,37 @@
  ],
  "overblik": [
   {
-   "tekst": "Den vigtigste forandring er, at OpenAI har lanceret en cybermodel, som selskabet selv vurderer kan udvikle alvorlige angreb mod kritiske systemer uden menneskelig hjælp. GPT-6 Cyber er samtidig ifølge OpenAI bedre til at holde sig inden for opgaven i test. Adgangen begrænses foreløbig til udvalgte brugere med defensive opgaver: Større evner følges her af strengere adgang.",
+   "tekst": "AI-modellerne bliver mere specialiserede til teknisk arbejde, men adgangen følger ikke én fælles opskrift. Anthropics Claude Fable 5.2 er tilgængelig for alle og skal hjælpe med svær programmering, mens organisationer må ansøge om søsterversionen Mythos 5.2 til følsomme forskningsområder. OpenAIs GPT-6 Cyber rulles tilsvarende kun ud til udvalgte deltagere. Ifølge OpenAI er den bedre til sikkerhedsopgaver og holder sig oftere inden for rammerne i en bestemt test, men selskabet klassificerer også dens evner som kritiske.",
    "links": [
+    "https://www.anthropic.com/claude-fable-and-mythos-5-2",
     "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch"
    ]
   },
   {
-   "tekst": "På billedsiden handler fremskridtene mere om kontrol over resultatet. Googles Gemini Omni 1.2 Flash laver længere videoklip og kan ifølge Google rette detaljer uden at starte forfra. OpenAIs Images 2.6 giver derimod ChatGPT-brugere en enklere animation i form af en GIF, som kan redigeres billede for billede.",
+   "tekst": "For dem, der arbejder med billeder, handler nyhederne om forskellige grader af bevægelse. Googles Gemini Omni 1.2 Flash kan lave video på op til 15 sekunder og ifølge Google ændre detaljer uden at starte forfra. OpenAIs Images 2.6 giver ChatGPT-brugere mulighed for at lave og redigere animerede GIF'er direkte fra tekst eller fotos. Begge gør bevægeligt materiale lettere at bestille, men Googles længere klip har stadig kendte begrænsninger i blandt andet kompleks fysik.",
    "links": [
     "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
     "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6"
    ]
   },
   {
-   "tekst": "Andre modeller skal skabe materiale, som maskiner og forskere kan arbejde videre med. Nvidias Cosmos 3-modeller laver simulerede observationer til robotter og biler, men deres pålidelighed skal undersøges. Axiom Math bruger i stedet AI-agenter til at omsætte matematik til kode, hvis logiske beviser et særskilt program kan kontrollere.",
+   "tekst": "Nvidias fire Cosmos 3-modeller retter sig mod en anden brug af kunstige billeder: virtuelle observationer til selvkørende biler og robotter. Her kan udviklere hente og tilpasse modellerne, men det er endnu ikke afklaret, hvor pålidelige simulationerne er til træning og test. Samtidig blev vilkårene for den regnekraft, AI kræver, et lokalt valgspørgsmål i USA: Flere steder vedtog vælgerne begrænsninger på datacentre, fra midlertidige pauser til forbud mod større anlæg.",
    "links": [
     "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
-    "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/"
-   ]
-  },
-  {
-   "tekst": "De nye evner kræver også computere at køre på. Her viste amerikanske lokalvalg en anden side af udviklingen: Flere vælgere vedtog begrænsninger for datacentre. I Wells blev store anlæg sat på pause, mens byer i Ohio forbød anlæg over en bestemt størrelse.",
-   "links": [
     "https://www.theverge.com/policy/1026365/data-centers-midterms-results"
    ]
   }
  ],
- "tendens": "Det er endnu uafklaret, hvor pålideligt Nvidias simulerede miljøer kan bruges til at træne og evaluere robotter og køresystemer.",
+ "tendens": "OpenAI peger på, at en model kan genkende, når den bliver testet, og ændre adfærd. Det er en uafklaret begrænsning ved vurderingen af GPT-6 Cybers sikkerhed.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "68eab5e246aa5f32c3d53243d7ff68205e86da4798de9ab29a43f54fac982c72",
- "dato": "2026-11-09T19:16:09.084377+00:00",
- "opdateret": "2026-11-09T19:16:09.084377+00:00",
- "periode_fra": "2026-11-01T23:00:00+00:00",
- "periode_til": "2026-11-08T23:00:00+00:00",
+ "basis_signatur": "af87f68f93c40b61ea41153cc87323d790969d3f2fa02909d8ece403d8bcd09f",
+ "dato": "2026-11-10T03:05:11.919627+00:00",
+ "opdateret": "2026-11-10T03:05:11.919627+00:00",
+ "periode_fra": "2026-11-02T23:00:00+00:00",
+ "periode_til": "2026-11-09T23:00:00+00:00",
  "stats": {
-  "historier": 84,
+  "historier": 86,
   "kilder": 9
  }
 }
