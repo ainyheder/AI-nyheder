@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-10T02:53:29.396748+00:00",
- "artikler_i_alt": 122,
+ "opdateret": "2026-11-10T12:55:44.065731+00:00",
+ "artikler_i_alt": 125,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -12,9 +12,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 5,
+   "i_listen": 6,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Anthropic indleder præsentationsrunde før børsnotering",
+     "dato": "2026-11-10T00:00:00",
+     "foerst_set": "2026-11-10T12:55:44",
+     "link": "https://www.anthropic.com/news/roadshow-launch",
+     "side": "artikel/2b4d7d1089cab0b2.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Claude Fable 5.2 skal løse svære kodeopgaver",
      "dato": "2026-11-09T00:00:00",
@@ -251,9 +260,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 1,
+   "i_listen": 2,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Amazon-forskere skærer AI-eksperter fra i fællesskab",
+     "dato": "2026-11-09T12:34:29",
+     "foerst_set": "2026-11-09T19:04:48",
+     "link": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
+     "side": "artikel/885842594d3710d7.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "NVIDIA åbner fire modeller til bil- og robotsimulation",
      "dato": "2026-11-05T19:35:16",
@@ -276,9 +294,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 9,
+   "i_listen": 10,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Claude Fable 5.2 samler oftere gentaget kode",
+     "dato": "2026-11-10T05:34:14",
+     "foerst_set": "2026-11-10T12:55:44",
+     "link": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/",
+     "side": "artikel/c65c16754ea56ea1.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Claude Fable 5.2 gennemskuede tastefejl",
+     "dato": "2026-11-10T03:53:04",
+     "foerst_set": "2026-11-10T12:55:44",
+     "link": "https://simonwillison.net/2026/Nov/10/yonkers-rises/",
+     "side": "artikel/27380ba49ff7074f.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Fable 5.2 fejlede på højeste ræsonnementsniveau",
      "dato": "2026-11-09T23:58:46",
@@ -350,15 +386,6 @@ window.KILDER_STATUS = {
      "side": "artikel/5e2d12465b29b09a.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Census Bureau spørger nu til Super Intelligence",
-     "dato": "2026-11-02T13:31:26",
-     "foerst_set": "2026-11-02T18:45:47",
-     "link": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
-     "side": "artikel/d0367c83a5219a74.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": []
@@ -374,7 +401,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 45,
-   "som_ekstra": 6,
+   "som_ekstra": 8,
    "seneste": [
     {
      "rubrik": "Anthropic lancerer Mythos 5.2 og Fable 5.2",
@@ -388,11 +415,20 @@ window.KILDER_STATUS = {
     {
      "rubrik": "Nvidia vil undersøge Jensen Huangs forhold",
      "dato": "",
-     "foerst_set": "2026-11-09T07:05:45.896008+00:00",
+     "foerst_set": "2026-11-09T07:05:45",
      "link": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
      "side": "",
      "hvor": "under",
-     "under": "Nvidia undersøger direktørens forhold til formodet spion"
+     "under": "Mistanke mod bekendt sætter Jensen Huang i fokus"
+    },
+    {
+     "rubrik": "Nvidia undersøger direktørens forhold til formodet spion",
+     "dato": "",
+     "foerst_set": "2026-11-08T20:44:13",
+     "link": "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/",
+     "side": "",
+     "hvor": "under",
+     "under": "Mistanke mod bekendt sætter Jensen Huang i fokus"
     },
     {
      "rubrik": "USA's vælgere stemmer for datacenterbegrænsninger",
@@ -458,6 +494,15 @@ window.KILDER_STATUS = {
      "under": "Anthropic afsætter fem procent af aktierne til fond"
     },
     {
+     "rubrik": "Otter.ai vil følge sprogskift under møder",
+     "dato": "2026-11-10T07:00:00",
+     "foerst_set": "2026-11-10T12:55:44",
+     "link": "https://techcrunch.com/2026/11/09/otter-ai-can-now-follow-conversations-across-30-languages/",
+     "side": "artikel/fc66a21ca327a046.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Meta sender billig agentmodel på arbejde",
      "dato": "2026-11-09T18:00:00",
      "foerst_set": "2026-11-09T19:04:48",
@@ -490,15 +535,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-09T19:04:48",
      "link": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/",
      "side": "artikel/f3c522ff77f3b76a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Nvidia undersøger direktørens forhold til formodet spion",
-     "dato": "2026-11-09T18:09:52",
-     "foerst_set": "2026-11-08T20:44:13",
-     "link": "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/",
-     "side": "artikel/c81f482fdf110b88.html",
      "hvor": "forside",
      "under": ""
     },
@@ -588,7 +624,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 33,
-   "som_ekstra": 15,
+   "som_ekstra": 12,
    "seneste": [
     {
      "rubrik": "Anthropic opgraderer Claude til svære tekniske opgaver",
@@ -602,20 +638,29 @@ window.KILDER_STATUS = {
     {
      "rubrik": "Nvidia undersøger Jensen Huangs forhold til Alice Huang",
      "dato": "",
-     "foerst_set": "2026-11-08T20:44:13",
+     "foerst_set": "2026-11-08T20:44:13.255018+00:00",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
      "side": "",
      "hvor": "under",
-     "under": "Nvidia undersøger direktørens forhold til formodet spion"
+     "under": "Mistanke mod bekendt sætter Jensen Huang i fokus"
     },
     {
      "rubrik": "Nvidia undersøger Jensen Huangs relation til direktør",
      "dato": "",
-     "foerst_set": "2026-11-08T20:44:13",
+     "foerst_set": "2026-11-08T20:44:13.255018+00:00",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy",
      "side": "",
      "hvor": "under",
-     "under": "Nvidia undersøger direktørens forhold til formodet spion"
+     "under": "Mistanke mod bekendt sætter Jensen Huang i fokus"
+    },
+    {
+     "rubrik": "Apple vil lade Siri styre flere apps",
+     "dato": "",
+     "foerst_set": "2026-11-08T20:44:13.255018+00:00",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
+     "side": "",
+     "hvor": "under",
+     "under": "Siri AI får adgang til alle apps"
     },
     {
      "rubrik": "OpenAI lover åbenhed om datacenterprojekter",
@@ -690,15 +735,6 @@ window.KILDER_STATUS = {
      "under": "Nothing vil sende AI-produkt i december"
     },
     {
-     "rubrik": "Netflix ruller AI Discover ud i tv-appen",
-     "dato": "",
-     "foerst_set": "2026-11-03T19:45:16",
-     "link": "https://www.theverge.com/streaming/1025029/netflix-ai-discover-recommendations",
-     "side": "",
-     "hvor": "under",
-     "under": "Netflix tester AI Discover på tv"
-    },
-    {
      "rubrik": "Logic Pro sælger mere adgang til AI",
      "dato": "2026-11-09T14:09:58",
      "foerst_set": "2026-11-10T02:53:29",
@@ -762,11 +798,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Apple vil lade Siri styre flere apps",
-     "dato": "2026-11-08T19:18:19",
+     "rubrik": "Mistanke mod bekendt sætter Jensen Huang i fokus",
+     "dato": "2026-11-09T18:51:58",
      "foerst_set": "2026-11-08T20:44:13",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
-     "side": "artikel/3fa60b95a7a47cb3.html",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1030328/what-could-china-get-from-jensen-huang",
+     "side": "artikel/d916d20f0c2ff987.html",
      "hvor": "forside",
      "under": ""
     },
@@ -814,7 +850,7 @@ window.KILDER_STATUS = {
     ],
     [
      "Ars Technica AI",
-     3
+     2
     ],
     [
      "Google Gemini",
@@ -865,6 +901,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
+    },
+    {
+     "rubrik": "AI-datacentre presser Ukraines droneproduktion",
+     "dato": "2026-11-10T12:15:32",
+     "foerst_set": "2026-11-10T12:55:44",
+     "link": "https://arstechnica.com/gadgets/2026/11/ukraines-fiber-optic-drones-get-squeezed-by-ai-data-center-demand/",
+     "side": "artikel/66b1f40797084fbb.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Claude Code kan afsløre adgangskoder på GitHub",
@@ -928,21 +973,12 @@ window.KILDER_STATUS = {
      "side": "artikel/c3696f86bfc50e5c.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Claude får forbud mod at genskabe spil",
-     "dato": "2026-11-02T18:05:31",
-     "foerst_set": "2026-11-02T18:45:47",
-     "link": "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/",
-     "side": "artikel/b26578c04a00196c.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     3
+     2
     ],
     [
      "Google Gemini",

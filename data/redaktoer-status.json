@@ -1,18 +1,19 @@
 {
-  "opdateret": "2026-11-10T02:53:29.396748+00:00",
+  "opdateret": "2026-11-10T12:55:44.065731+00:00",
   "status": "reserve",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
-    "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
-    "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
-    "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/"
+    "https://simonwillison.net/2026/Nov/10/muse-ember/",
+    "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
+    "https://www.anthropic.com/claude-fable-and-mythos-5-2"
   ],
-  "input_fingerprint": "e4dd915833983950",
+  "input_fingerprint": "fb1861a74b18b567",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "kontrolproblemer": [
-    "Ember-artiklens mellemoverskrift »Prisen dækker kun input« er misvisende: Kilden oplyser inputprisen, men ikke om output er gratis eller har en pris.",
-    "Kandidatoversigten indeholder yderligere omtaler af samme Fable/Mythos 5.2-lancering (58580c03fbdd2552 og a989f1582084d0cf). De må ikke vises som selvstændige historier ved siden af hovedhistorien; der er ingen anbefalinger i udgaven."
+    "Gårsdagens Muse Ember-lancering er genvalgt på grundlag af ét snævert tegneforsøg. Samtidig peger kandidatoversigten på nye Claude Fable 5.2 og Mythos 5.2; deres lancering bør undersøges og prioriteres, før en lille opfølgning holder gårsdagens historie øverst. RSS-resuméer er ikke tilstrækkeligt grundlag for en færdig artikel.",
+    "Muse Ember-artiklen angiver priser, men ikke hvordan modellen kan tilgås. Det fremgår ikke af de læste kilder og bør siges tydeligt frem for at blive antaget.",
+    "Kandidatoversigten indeholder både Willisons Muse Ember-omtale og TechCrunchs omtale af samme lancering. De er korrekt knyttet sammen i opgaven, men skal ikke også optræde som separate forsidehistorier."
   ],
   "modelkald": 6,
   "kildehentninger": 3,
@@ -40,15 +41,15 @@
   ],
   "kildegrundlag": [
     {
+      "link": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "grundlag": "rss_resume"
+    },
+    {
+      "link": "https://simonwillison.net/2026/Nov/10/muse-ember/",
+      "grundlag": "kildetekst"
+    },
+    {
       "link": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
       "grundlag": "kildetekst"
     }
   ],
@@ -57,5 +58,5 @@
     "https://www.anthropic.com/claude-fable-and-mythos-5-2",
     "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/"
   ],
-  "afventer_artikler": 81
+  "afventer_artikler": 80
 }
