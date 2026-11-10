@@ -1,19 +1,18 @@
 {
-  "opdateret": "2026-11-10T12:55:44.065731+00:00",
+  "opdateret": "2026-11-10T21:56:03.050309+00:00",
   "status": "reserve",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
-    "https://simonwillison.net/2026/Nov/10/muse-ember/",
-    "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
-    "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+    "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
+    "https://simonwillison.net/2026/Nov/10/muse-ember/"
   ],
-  "input_fingerprint": "fb1861a74b18b567",
+  "input_fingerprint": "d3810cfb4898ba8a",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "kontrolproblemer": [
-    "Gårsdagens Muse Ember-lancering er genvalgt på grundlag af ét snævert tegneforsøg. Samtidig peger kandidatoversigten på nye Claude Fable 5.2 og Mythos 5.2; deres lancering bør undersøges og prioriteres, før en lille opfølgning holder gårsdagens historie øverst. RSS-resuméer er ikke tilstrækkeligt grundlag for en færdig artikel.",
-    "Muse Ember-artiklen angiver priser, men ikke hvordan modellen kan tilgås. Det fremgår ikke af de læste kilder og bør siges tydeligt frem for at blive antaget.",
-    "Kandidatoversigten indeholder både Willisons Muse Ember-omtale og TechCrunchs omtale af samme lancering. De er korrekt knyttet sammen i opgaven, men skal ikke også optræde som separate forsidehistorier."
+    "Kandidatoversigten gentager hovedhistorien om den bredere adgang til Gemini 4 Carbon: både The Verge (8658a0744e2cda3c) og Simon Willison (e5607ea9b3456678) omtaler samme udrulning. Saml eller fjern gentagelserne fra forsiden; en selvstændig test skal have en tydelig anden vinkel.",
+    "Kandidatrubrikken »Gemini 4 Carbon er tilgængelig for alle« er misvisende: den dokumenterede adgang omfatter betalende udviklere og virksomheder samt udrulning til Ultra-abonnenter, ikke alle brugere."
   ],
   "modelkald": 6,
   "kildehentninger": 3,
@@ -41,22 +40,22 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
       "grundlag": "rss_resume"
-    },
-    {
-      "link": "https://simonwillison.net/2026/Nov/10/muse-ember/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
-      "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
-    "https://www.anthropic.com/claude-fable-and-mythos-5-2",
-    "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/"
+    "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+    "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
+    "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/"
   ],
-  "afventer_artikler": 80
+  "afventer_artikler": 90
 }

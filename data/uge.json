@@ -1,10 +1,10 @@
 {
- "rubrik": "Nye AI-modeller rykker frem, mens datacentre møder modstand",
- "indledning": "Perioden bød på nye modeller til kode, cybersikkerhed, video og simulation – og på politisk modstand mod den regnekraft, de kræver.",
+ "rubrik": "Nye AI-modeller rykker på kode, video og simulation",
+ "indledning": "Ugens lanceringer spænder fra cybersikkerhed til robottræning, mens amerikanske vælgere sætter grænser for den fysiske udbygning.",
  "historier": [
   {
    "overskrift": "Anthropic lancerer Claude Fable og Mythos 5.2",
-   "tekst": "Claude Fable 5.2 og Claude Mythos 5.2 bygger på samme model og er rettet mod krævende tekniske opgaver. Fable er ifølge Anthropic tilgængelig for alle, mens organisationer kan søge om adgang til Mythos til cybersikkerhed og biomedicinsk forskning. Anthropic anbefaler fortsat Opus 5.5 til de fleste kodeopgaver.",
+   "tekst": "De to udgaver bygger på samme model og er ifølge Anthropic rettet mod krævende tekniske opgaver. Fable 5.2 er tilgængelig for alle, mens organisationer kan ansøge om adgang til Mythos 5.2. I virksomhedens kodetest klarede Fable sig omtrent som Opus 5.5 til cirka halv pris pr. opgave.",
    "link": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
    "kategori": "Lanceringer",
    "billede": "data/img/5f62db5b82d652d4.webp",
@@ -25,16 +25,24 @@
      "resume_da": "Fable bliver billigere og hurtigere, mens Anthropic advarer om, at modellernes mistanke om test gør deres adfærd sværere at vurdere.",
      "dato": "2026-11-09T19:24:51+00:00",
      "foerst_set": "2026-11-10T02:53:29.396748+00:00"
+    },
+    {
+     "kilde": "Simon Willison AI",
+     "link": "https://simonwillison.net/2026/Nov/9/llm-anthropic/",
+     "rubrik": "Fable 5.2 fejlede på højeste ræsonnementsniveau",
+     "resume_da": "Simon Willison bad Anthropics nye model tegne en pelikan på cykel. På niveauet max slap den op for tokens uden at levere et billede.",
+     "dato": "2026-11-09T23:58:46+00:00",
+     "foerst_set": "2026-11-10T02:53:29.396748+00:00"
     }
    ],
    "titel": "Introducing Claude Fable 5.2 and Claude Mythos 5.2",
    "rubrik": "Claude Fable 5.2 skal løse svære kodeopgaver",
    "resume_da": "Anthropic lancerer to udgaver af samme AI-model. Den ene er tilgængelig for alle, mens adgang til den anden kræver en ansøgning.",
-   "artikel_signatur": "bcaaa5368e86ba698063a2209a71129b43561f6748fbc556df348330ea5bfbc8"
+   "artikel_signatur": "2a05573200c86d5baa4faa8d4a6c4c3a55f3969f75a32dce9c5de9f9139a4706"
   },
   {
-   "overskrift": "OpenAI sender GPT-6 Cyber til udvalgte sikkerhedskunder",
-   "tekst": "OpenAI lancerer GPT-6 Cyber til autoriseret defensivt sikkerhedsarbejde. Selskabet siger, at modellen gik uden for opgavens rammer i under én procent af tilfældene i en test, mod omkring fem procent for forgængeren. Samtidig placerer OpenAI modellen på det højeste niveau i sit eget sikkerhedshierarki.",
+   "overskrift": "GPT-6 Cyber finder svagheder med begrænset adgang",
+   "tekst": "OpenAI lancerer GPT-6 Cyber til defensivt sikkerhedsarbejde og giver først adgang til udvalgte organisationer. I selskabets test gik modellen uden for sine rammer i under én procent af tilfældene. OpenAI placerer den samtidig i sin højeste risikokategori, Critical, på grund af dens evne til at udnytte ukendte sårbarheder.",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
    "kategori": "Lanceringer",
    "billede": "data/img/cf829156888d7e48.webp",
@@ -55,8 +63,8 @@
    "artikel_signatur": "01f965503c7775f4c34557ce89e746b33e09bc9ce38dd1eeb6d58be2bd553d65"
   },
   {
-   "overskrift": "Google forlænger videoklip med Gemini Omni 1.2 Flash",
-   "tekst": "Gemini Omni 1.2 Flash kan generere op til 15 sekunders video mod forgængerens ti sekunder. Google siger, at modellen kan redigere detaljer uden at genskabe hele klippet og bedre holde personer og produkter stabile. Selskabet oplyser også, at hurtig sport og kompleks fysik stadig er svage områder.",
+   "overskrift": "Google udvider Gemini Omni 1.2 Flash til længere video",
+   "tekst": "Gemini Omni 1.2 Flash kan lave videoklip på op til 15 sekunder og redigere detaljer uden at genskabe hele klippet. Ifølge Google holder modellen bedre fast i blandt andet ansigter og produkter. Selskabet ruller modellen ud gennem flere tjenester, men fremhæver selv begrænsninger ved hurtig action og kompleks fysik.",
    "link": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
    "kategori": "Lanceringer",
    "billede": "data/img/b4af34548c42b986.jpg",
@@ -77,8 +85,8 @@
    "artikel_signatur": "deedc8221598a1a5a93651ab1f2bbbd0fa3049ee979d2608624c647f17f3a380"
   },
   {
-   "overskrift": "NVIDIA frigiver fire modeller til robot- og bilsimulation",
-   "tekst": "NVIDIAs fire Cosmos 3-modeller kan skabe billeder, video og sensordata til virtuelle miljøer for robotter og selvkørende biler. Modellerne kan downloades og tilpasses under en licens, der tillader kommerciel og ikke-kommerciel brug på sine vilkår. Det er endnu uafklaret, hvor pålidelige simulationerne er til træning og evaluering.",
+   "overskrift": "Nvidia frigiver fire modeller til bil- og robotsimulation",
+   "tekst": "Nvidias fire Cosmos 3-modeller skaber simulerede billeder og sensordata til udvikling af selvkørende biler og robotter. Modellerne har åbne vægte, så udviklere kan hente og tilpasse dem under licensens vilkår. Hvor pålideligt de simulerede miljøer kan bruges til træning og evaluering, skal stadig undersøges.",
    "link": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
    "kategori": "Lanceringer",
    "billede": "data/img/65416ad2fe0b9b95.webp",
@@ -90,8 +98,8 @@
    "artikel_signatur": "33c24fd30f781428697bcece75d5ce4df9080a8a4bc84b17690a775cef3f84f2"
   },
   {
-   "overskrift": "Axiom Math bruger AI til at formalisere matematisk værk",
-   "tekst": "Axiom Math siger, at selskabets AI-agenter har oversat det store matematiske referenceværk Stacks Project til omkring 16 millioner linjer kode i sproget Lean. Et program har kontrolleret de formaliserede beviser. Resultatet kan give forskere flere kontrollerede byggeklodser til videre arbejde med matematisk bevisførelse.",
+   "overskrift": "Axiom Math bruger AI til at formalisere stort matematikværk",
+   "tekst": "Axiom Math siger, at virksomhedens AI-agenter har oversat Stacks Project til omkring 16 millioner linjer kode i sproget Lean. Et program har efterfølgende kontrolleret koden logisk. Det kan give forskere flere kontrollerede byggeklodser til matematiske beviser, men kontrol af koden er ikke i sig selv en garanti for, at oversættelsen gengiver originalen korrekt.",
    "link": "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/",
    "kategori": "Forskning",
    "billede": "data/img/f0a87b0d7586544d.webp",
@@ -104,7 +112,7 @@
   },
   {
    "overskrift": "Amerikanske vælgere begrænser datacentre",
-   "tekst": "Ved midtvejsvalget vedtog vælgere i flere amerikanske lokalsamfund begrænsninger for datacentre, som blandt andet leverer regnekraft til AI. Wells i Maine indførte eksempelvis en pause på 180 dage for store anlæg. I Texas støtter den nyvalgte guvernør Gina Hinojosa en pause i nye datacentre.",
+   "tekst": "Ved midtvejsvalget vedtog vælgere en række lokale begrænsninger på datacentre, som blandt andet leverer regnekraft til AI. Wells i Maine indførte en midlertidig pause, mens flere byer i Ohio forbød store anlæg. Texas’ kommende guvernør støtter også en pause, men valgresultatet standser ikke i sig selv projekterne.",
    "link": "https://www.theverge.com/policy/1026365/data-centers-midterms-results",
    "kategori": "Politik & jura",
    "billede": "data/img/5ecdcfa62ed39d72.webp",
@@ -118,33 +126,34 @@
  ],
  "overblik": [
   {
-   "tekst": "Nye modeller retter sig mod stadig mere krævende teknisk arbejde, men producenterne sætter forskellige grænser for adgangen. Anthropics Claude Fable 5.2 er bredt tilgængelig, mens organisationer må ansøge om Mythos 5.2 til sikkerhed og forskning. OpenAI giver udvalgte kunder adgang til GPT-6 Cyber, som selskabet både beskriver som bedre til at holde sig inden for opgaven og klassificerer på sit højeste risikoniveau. Et andet eksempel på specialiseret AI kommer fra Axiom Math: Selskabet siger, at agenter har omsat et omfattende matematisk værk til beviser, som et program kan kontrollere.",
+   "tekst": "Ugens vigtigste forandring er, at nye modeller bliver målrettet mere krævende teknisk arbejde, samtidig med at adgangen opdeles efter risiko. Anthropic stiller Claude Fable 5.2 bredt til rådighed til blandt andet kodning, mens organisationer må ansøge om Mythos 5.2. OpenAIs GPT-6 Cyber får en mere begrænset udrulning: Selskabet siger, at modellen sjældnere går uden for sine rammer i én test, men klassificerer den også som Critical på grund af dens evne til at udnytte sårbarheder.",
    "links": [
     "https://www.anthropic.com/claude-fable-and-mythos-5-2",
-    "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
+    "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch"
+   ]
+  },
+  {
+   "tekst": "De nye evner handler ikke kun om kode. Googles Gemini Omni 1.2 Flash kan lave længere videoklip og efter Googles beskrivelse ændre detaljer i dem uden at starte forfra. Nvidias Cosmos 3-modeller skal derimod skabe billeder og sensordata til virtuelle miljøer for biler og robotter; her er det stadig uafklaret, hvor pålidelige simulationerne er. I matematik viser Axiom Maths arbejde en anden brug af AI: Agenterne har ifølge virksomheden oversat et stort referenceværk til kode, som et program kan kontrollere logisk.",
+   "links": [
+    "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+    "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
     "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/"
    ]
   },
   {
-   "tekst": "Udviklingen handler også om andet end tekst og kode. Googles Gemini Omni 1.2 Flash laver længere videoklip og kan ifølge selskabet ændre detaljer uden at begynde forfra. NVIDIAs Cosmos 3-modeller skaber derimod virtuelle observationer til biler og robotter, blandt andet video fra flere kameraer og afstandsmålinger med laser. Her er formålet ikke en færdig film, men materiale til at udvikle og afprøve systemer. Hvor godt simulationerne svarer til virkeligheden, skal stadig undersøges.",
+   "tekst": "Samtidig mødte den fysiske infrastruktur bag mange AI-tjenester modstand ved det amerikanske midtvejsvalg. Lokale vælgere vedtog blandt andet pauser og størrelsesgrænser for datacentre. Det er en anden type begrænsning end modellernes sikkerhedsværn: Den handler om, hvor anlæggene kan bygges, ikke om hvilke opgaver en model må udføre.",
    "links": [
-    "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-    "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
-   ]
-  },
-  {
-   "tekst": "Samtidig mødte den fysiske infrastruktur bag AI modstand ved det amerikanske midtvejsvalg. Flere lokalsamfund stemte for begrænsninger på datacentre, og Texas’ nyvalgte guvernør støtter en pause i nye anlæg. Det er en anden slags grænse end modellernes sikkerhedsværn: Spørgsmålet her er, hvor de store computeranlæg kan bygges.",
-   "links": [
-    "https://www.theverge.com/policy/1026365/data-centers-midterms-results"
+    "https://www.theverge.com/policy/1026365/data-centers-midterms-results",
+    "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch"
    ]
   }
  ],
  "tendens": "",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "991f9d00d12a7fd70049bf93741196fb0792f59717d44394663cb50cf9024df1",
- "dato": "2026-11-10T13:05:09.124294+00:00",
- "opdateret": "2026-11-10T13:05:09.124294+00:00",
+ "basis_signatur": "c5c2372612df915cdbe29c097b4929dd5020f9d00766f91253ddee8b08a46612",
+ "dato": "2026-11-10T22:10:13.895007+00:00",
+ "opdateret": "2026-11-10T22:10:13.895007+00:00",
  "periode_fra": "2026-11-02T23:00:00+00:00",
  "periode_til": "2026-11-09T23:00:00+00:00",
  "stats": {
