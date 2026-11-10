@@ -767,8 +767,20 @@
           }
         ]
       },
-      "fejl": "Læserytme ved To ranglister, mange slags kriser: mere end to tekstafsnit i træk; skab en meningsfuld pause uden at gentage indhold",
-      "naeste_trin": "skrivning"
+      "fejl": "Læserytme ved To ranglister, mange slags kriser: mere end to tekstafsnit i træk; skab en meningsfuld pause uden at gentage indhold\nKvalitetskontrollen afviste brevet\n[\"Læseværdi — intro og arbejdseksempler — Brevet forklarer ikke, hvad AI konkret kan gøre i arbejdet, selv om jobfrygten er hovedemnet. Forklar kort, at eksempelvis en chatbot kan skrive et udkast til en e-mail, som kilden nævner.\", \"Læseværdi — «To ranglister, mange slags kriser» — Fire almindelige afsnit står i træk uden visuel pause. Saml eller omform noget af sammenligningen til en kort, relevant visuel pause, uden at gentage pointen i brødteksten.\", \"Læseværdi — illustrationerne ved introen og sidste afsnit — Begge viser en maskine med en stak ark; uden tekst på arkene viser intromotivet ikke tydeligt AI eller varslede jobnedskæringer. Giv introen en genkendelig forbindelse mellem AI og job og lad slutmotivet vise måling af udført arbejde med en tydeligt anden form.\"]",
+      "naeste_trin": "skrivning",
+      "kontrol": {
+        "godkendt": false,
+        "fuld_kilde": true,
+        "faktuel_troskab": true,
+        "selvstaendig": true,
+        "laesevaerdi": false,
+        "problemer": [
+          "Læseværdi — intro og arbejdseksempler — Brevet forklarer ikke, hvad AI konkret kan gøre i arbejdet, selv om jobfrygten er hovedemnet. Forklar kort, at eksempelvis en chatbot kan skrive et udkast til en e-mail, som kilden nævner.",
+          "Læseværdi — «To ranglister, mange slags kriser» — Fire almindelige afsnit står i træk uden visuel pause. Saml eller omform noget af sammenligningen til en kort, relevant visuel pause, uden at gentage pointen i brødteksten.",
+          "Læseværdi — illustrationerne ved introen og sidste afsnit — Begge viser en maskine med en stak ark; uden tekst på arkene viser intromotivet ikke tydeligt AI eller varslede jobnedskæringer. Giv introen en genkendelig forbindelse mellem AI og job og lad slutmotivet vise måling af udført arbejde med en tydeligt anden form."
+        ]
+      }
     }
   }
 }
