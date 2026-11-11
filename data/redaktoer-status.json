@@ -1,17 +1,17 @@
 {
-  "opdateret": "2026-11-11T07:00:37.277331+00:00",
+  "opdateret": "2026-11-11T16:32:11.614097+00:00",
   "status": "reserve",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
-    "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
-    "https://simonwillison.net/2026/Nov/10/muse-ember/"
+    "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
+    "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/"
   ],
-  "input_fingerprint": "5fe91650714fc623",
+  "input_fingerprint": "2865e059944531e7",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "kontrolproblemer": [
-    "Kandidatoversigten gentager hovedhistorien om åbningen af Gemini 4 Carbon: Google Gemini (5d3f1a46c035f064) og The Verge (8658a0744e2cda3c) beskriver samme adgangsudvidelse, ikke nye hændelser. Saml omtalerne og fjern dubletterne fra forsiden."
+    "Kandidat 5d3f1a46c035f064 omtaler samme Carbon-udrulning som hovedhistorien og må ikke også vælges til forsiden."
   ],
   "modelkald": 6,
   "kildehentninger": 3,
@@ -39,22 +39,22 @@
   ],
   "kildegrundlag": [
     {
+      "link": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
+      "grundlag": "kildetekst"
+    },
+    {
       "link": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
       "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
-      "grundlag": "rss_resume"
     }
   ],
   "udgivet_udvalg": [
-    "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
     "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
-    "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/"
+    "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
+    "https://www.theverge.com/tech/1030653/adobe-max-2026-photoshop-premiere-removal-updates"
   ],
   "afventer_artikler": 82
 }
