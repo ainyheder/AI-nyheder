@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-11T16:32:11.614097+00:00",
- "artikler_i_alt": 125,
+ "opdateret": "2026-11-11T22:58:05.172801+00:00",
+ "artikler_i_alt": 131,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -142,13 +142,22 @@ window.KILDER_STATUS = {
    "som_ekstra": 1,
    "seneste": [
     {
-     "rubrik": "Google ruller Gemini 4 Argon bredt ud",
+     "rubrik": "Google åbner Gemini 4 Carbon for betalende",
      "dato": "",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
+     "foerst_set": "2026-11-10T21:56:03",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
      "side": "",
      "hvor": "under",
-     "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
+     "under": "Google åbner Gemini 4 Carbon for betalende brugere"
+    },
+    {
+     "rubrik": "Gemini Live kommer til Apple CarPlay",
+     "dato": "2026-11-11T17:00:00",
+     "foerst_set": "2026-11-11T22:58:05",
+     "link": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-on-apple-carplay/",
+     "side": "artikel/0f008a805c574e46.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Google tester AI på visuelt krævende arbejde",
@@ -219,15 +228,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-28T21:16:14",
      "link": "https://blog.google/innovation-and-ai/products/gemini-app/immersive-explorations-student-hub/",
      "side": "artikel/8dd837b04080fbe9.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "XREAL AURA projicerer apps i synsfeltet",
-     "dato": "2026-10-28T17:00:00",
-     "foerst_set": "2026-10-28T21:16:14",
-     "link": "https://blog.google/products-and-platforms/platforms/android/xreal-aura/",
-     "side": "artikel/3a389809e57a68f3.html",
      "hvor": "forside",
      "under": ""
     }
@@ -334,9 +334,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 7,
-   "som_ekstra": 2,
+   "i_listen": 9,
+   "som_ekstra": 3,
    "seneste": [
+    {
+     "rubrik": "Gemini 4 Carbon er tilgængelig for alle",
+     "dato": "",
+     "foerst_set": "2026-11-10T21:56:03",
+     "link": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+     "side": "",
+     "hvor": "under",
+     "under": "Google åbner Gemini 4 Carbon for betalende brugere"
+    },
     {
      "rubrik": "Meta lancerer den lille AI-model Muse Ember",
      "dato": "",
@@ -354,6 +363,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
+    },
+    {
+     "rubrik": "AWS gør det muligt at teste lokalt",
+     "dato": "2026-11-11T21:18:30",
+     "foerst_set": "2026-11-11T22:58:05",
+     "link": "https://simonwillison.net/2026/Nov/11/aws-emulator/",
+     "side": "artikel/3ab1e5bf32c1c850.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Simon Willisons værktøjer kan nu findes via emner",
+     "dato": "2026-11-11T18:42:50",
+     "foerst_set": "2026-11-11T22:58:05",
+     "link": "https://simonwillison.net/2026/Nov/11/tools-tags/",
+     "side": "artikel/0d0bc3b18adf2a7d.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Anthropic fik Claude til at køre på AMD",
@@ -421,6 +448,10 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
+     "Google DeepMind",
+     1
+    ],
+    [
      "TechCrunch AI",
      1
     ],
@@ -440,7 +471,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 44,
+   "i_listen": 46,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -478,6 +509,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Anthropic afsætter fem procent af aktierne til fond"
+    },
+    {
+     "rubrik": "CoreWeave beder kunder betale på forskud",
+     "dato": "2026-11-11T19:54:00",
+     "foerst_set": "2026-11-11T22:58:05",
+     "link": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/",
+     "side": "artikel/546c365caa1bad2d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Fractile får millioner til sine AI-chips",
+     "dato": "2026-11-11T19:34:55",
+     "foerst_set": "2026-11-11T22:58:05",
+     "link": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/",
+     "side": "artikel/69792f3c808437d7.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI passerer ifølge kilder 10 milliarder dollars",
@@ -568,24 +617,6 @@ window.KILDER_STATUS = {
      "side": "artikel/24b56e0e82fbea84.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Oura vil købe læge-AI for 625 millioner dollar",
-     "dato": "2026-11-10T19:23:34",
-     "foerst_set": "2026-11-10T21:56:03",
-     "link": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/",
-     "side": "artikel/d29090d0b774daa5.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Otter.ai vil følge sprogskift under møder",
-     "dato": "2026-11-10T07:00:00",
-     "foerst_set": "2026-11-10T12:55:44",
-     "link": "https://techcrunch.com/2026/11/09/otter-ai-can-now-follow-conversations-across-30-languages/",
-     "side": "artikel/fc66a21ca327a046.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -613,9 +644,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 34,
-   "som_ekstra": 12,
+   "i_listen": 36,
+   "som_ekstra": 13,
    "seneste": [
+    {
+     "rubrik": "Google lancerer Gemini 4 Carbon med agent-sværm",
+     "dato": "",
+     "foerst_set": "2026-11-10T21:56:03",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
+     "side": "",
+     "hvor": "under",
+     "under": "Google åbner Gemini 4 Carbon for betalende brugere"
+    },
     {
      "rubrik": "ChatGPT får virksomhedsrepræsentanter til produktspørgsmål",
      "dato": "",
@@ -716,13 +756,22 @@ window.KILDER_STATUS = {
      "under": "Nothing vil sende AI-produkt i december"
     },
     {
-     "rubrik": "The Verge: Gemini redigerer nu Docs og regneark",
-     "dato": "",
-     "foerst_set": "2026-10-29T21:21:56",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
-     "side": "",
-     "hvor": "under",
-     "under": "Google Gemini redigerer filer i chatten"
+     "rubrik": "United stopper AI-agenter fra at købe flybilletter",
+     "dato": "2026-11-11T16:54:21",
+     "foerst_set": "2026-11-11T22:58:05",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents",
+     "side": "artikel/a3a0c9996cbe1c5a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AlphaGenome 2 forudsiger mutationers virkning i celler",
+     "dato": "2026-11-11T10:00:00",
+     "foerst_set": "2026-11-11T16:32:11",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
+     "side": "artikel/872573b4c15b2f70.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Google Tabletop laver fælles værktøjer ud fra beskrivelser",
@@ -813,24 +862,6 @@ window.KILDER_STATUS = {
      "side": "artikel/9c473fd9de958c8d.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Disney og Adobe vil udvikle egne AI-modeller",
-     "dato": "2026-11-09T15:38:56",
-     "foerst_set": "2026-11-09T19:04:48",
-     "link": "https://www.theverge.com/tech/1029773/disney-adobe-generative-ai-partnership",
-     "side": "artikel/f9c4955a3661c102.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Trump hævder at have truet AI-direktør",
-     "dato": "2026-11-09T15:50:38",
-     "foerst_set": "2026-11-09T19:04:48",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1029802/trump-60-minutes-ai",
-     "side": "artikel/7bf546edea528c20.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -841,6 +872,10 @@ window.KILDER_STATUS = {
     [
      "Google Gemini",
      2
+    ],
+    [
+     "Google DeepMind",
+     1
     ],
     [
      "Anthropic News",
@@ -858,7 +893,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 10,
+   "i_listen": 11,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -869,6 +904,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
+    },
+    {
+     "rubrik": "TSMC vil investere i OpenAI og Anthropic",
+     "dato": "2026-11-11T18:16:40",
+     "foerst_set": "2026-11-11T22:58:05",
+     "link": "https://arstechnica.com/ai/2026/11/taiwans-chipmaking-giant-tsmc-to-invest-1b-in-anthropic-openai/",
+     "side": "artikel/f104fa5b73158a4a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Big Walk brugte AI til fejlretning",
+     "dato": "2026-11-11T17:37:32",
+     "foerst_set": "2026-11-11T22:58:05",
+     "link": "https://arstechnica.com/gaming/2026/11/big-walk-used-ai-to-fix-a-bug-now-the-indie-gaming-world-is-having-a-reckoning/",
+     "side": "artikel/48c8b10aae6e7aad.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Google DeepMind beviser udvalgte sikkerhedsegenskaber i Signal-protokollen",
@@ -948,15 +1001,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-05T12:41:56",
      "link": "https://arstechnica.com/ai/2026/11/agility-robotics-nasdaq-debut-invites-scrutiny-of-humanoid-robot-market/",
      "side": "artikel/9e827dbe569b5563.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Hinojosa sejr bremser Texas' AI-datacentre",
-     "dato": "2026-11-04T20:55:50",
-     "foerst_set": "2026-11-05T01:00:33",
-     "link": "https://arstechnica.com/tech-policy/2026/11/big-tech-claims-voters-ai-backlash-is-anti-trump-not-anti-tech/",
-     "side": "artikel/24e560ad31910656.html",
      "hvor": "forside",
      "under": ""
     }
@@ -1060,10 +1104,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 15,
-   "i_listen": 2,
+   "status": "fejl",
+   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
+   "hentet": 0,
+   "i_listen": 1,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -1085,20 +1129,11 @@ window.KILDER_STATUS = {
      "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
     },
     {
-     "rubrik": "Google Antigravity finder ny peptidkandidat",
-     "dato": "2026-10-15T16:08:03",
-     "foerst_set": "2026-10-16T04:53:41",
-     "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-     "side": "artikel/ba028f76ed47c779.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
-     "dato": "2026-10-13T19:43:07",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-     "side": "artikel/42f1c245f492d3d1.html",
+     "rubrik": "Google åbner Gemini 4 Carbon for betalende brugere",
+     "dato": "2026-11-10T16:03:47",
+     "foerst_set": "2026-11-10T21:56:03",
+     "link": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+     "side": "artikel/e38c92a7cefc59fe.html",
      "hvor": "forside",
      "under": ""
     }
@@ -1107,6 +1142,14 @@ window.KILDER_STATUS = {
     [
      "Google Gemini",
      3
+    ],
+    [
+     "Simon Willison AI",
+     1
+    ],
+    [
+     "The Verge AI",
+     1
     ]
    ]
   },
