@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-10T22:11:00.377021+00:00",
+ "genereret": "2026-11-11T07:11:38.510947+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -199,28 +199,28 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-10T21:56:03.050309+00:00",
-  "antal": 139,
-  "med_billede": 109,
-  "paa_dansk": 139,
+  "opdateret": "2026-11-11T07:00:37.277331+00:00",
+  "antal": 118,
+  "med_billede": 99,
+  "paa_dansk": 118,
   "kategorier": {
-   "Lanceringer": 20,
-   "Samfund \u0026 etik": 16,
-   "Politik \u0026 jura": 21,
-   "Hverdags-AI": 40,
-   "Penge \u0026 marked": 32,
-   "Forskning": 10
+   "Lanceringer": 19,
+   "Samfund \u0026 etik": 15,
+   "Politik \u0026 jura": 17,
+   "Hverdags-AI": 36,
+   "Penge \u0026 marked": 24,
+   "Forskning": 7
   },
   "kilder": {
    "Google DeepMind": 3,
-   "Ars Technica AI": 10,
-   "TechCrunch AI": 53,
+   "Ars Technica AI": 9,
+   "TechCrunch AI": 41,
    "Anthropic News": 5,
-   "The Verge AI": 36,
+   "The Verge AI": 32,
    "Hugging Face": 3,
    "Google Gemini": 8,
-   "Simon Willison AI": 9,
-   "MIT Tech Review AI": 8,
+   "Simon Willison AI": 7,
+   "MIT Tech Review AI": 6,
    "Mistral AI": 3,
    "xAI News": 1
   },
@@ -305,7 +305,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Hverdags-AI",
     "kilde": "TechCrunch AI",
     "dato": "2026-11-10T18:49:52+00:00",
-    "billede": ""
+    "billede": "data/img/e8d61c400b014b36.webp"
    },
    {
     "titel": "Anthropic launches Claude Meetings to turn workplace discussions into plans and tasks",
@@ -315,7 +315,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Hverdags-AI",
     "kilde": "TechCrunch AI",
     "dato": "2026-11-10T17:30:00+00:00",
-    "billede": ""
+    "billede": "data/img/bcbd96c05075f14a.webp"
    },
    {
     "titel": "Meta’s AI agent Muse lands on Apple Watch and Android Wear OS",
@@ -325,7 +325,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Hverdags-AI",
     "kilde": "TechCrunch AI",
     "dato": "2026-11-10T15:29:30+00:00",
-    "billede": ""
+    "billede": "data/img/f62df8145fae126d.webp"
    },
    {
     "titel": "Photoshop, Lightroom, and Premiere are making it easier to remove things",
@@ -336,6 +336,26 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-11-10T09:00:00-05:00",
     "billede": ""
+   },
+   {
+    "titel": "Google broadens its AI hardware portfolio with two new specialized chips",
+    "rubrik": "Google præsenterer to specialchips til AI",
+    "link": "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips/",
+    "side": "artikel/af325a13228f8f12.html",
+    "kategori": "Lanceringer",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-10T15:54:08+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Anthropic targets $1.4 trillion IPO",
+    "rubrik": "Anthropic sigter mod børsnotering til billionværdi",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1030703/anthropic-ipo-1-4-trillion",
+    "side": "artikel/8e00065e3edcd7f6.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-10T09:06:54-05:00",
+    "billede": "data/img/75a53253e17634bc.webp"
    },
    {
     "titel": "Adobe is going all in on agentic AI",
@@ -356,31 +376,11 @@ window.KOMMANDO_DATA = {
     "kilde": "Hugging Face",
     "dato": "2026-11-10T00:00:00+00:00",
     "billede": ""
-   },
-   {
-    "titel": "All 7 Anthropic founders will each cash out about $250M in IPO",
-    "rubrik": "Anthropics stiftere vil sælge aktier ved børsnotering",
-    "link": "https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo/",
-    "side": "artikel/6fc8f319c68f7543.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-10T19:57:52+00:00",
-    "billede": "data/img/43c95f626d2863cf.webp"
-   },
-   {
-    "titel": "The indie game community is in disarray over AI and Big Walk",
-    "rubrik": "House House brugte AI under Big Walk",
-    "link": "https://www.theverge.com/games/1030994/big-walk-independent-games-festival-igf-ai",
-    "side": "artikel/efee8cc48ed16cb1.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-10T12:32:47-05:00",
-    "billede": ""
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-10T21:56:03.050309+00:00",
+  "opdateret": "2026-11-11T07:00:37.277331+00:00",
   "status": "reserve",
   "model": "gpt-6.1-terra",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
@@ -420,7 +420,7 @@ window.KOMMANDO_DATA = {
   ],
   "kildegrundlag": [
    {
-    "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+    "link": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
     "grundlag": "kildetekst"
    },
    {
@@ -434,7 +434,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-11-10T21:56:02.399374+00:00",
+  "opdateret": "2026-11-11T07:00:36.509751+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -899,8 +899,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-10T21:56:03.050309+00:00",
-  "artikler_i_alt": 139,
+  "opdateret": "2026-11-11T07:00:37.277331+00:00",
+  "artikler_i_alt": 118,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1185,8 +1185,8 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 9,
-    "som_ekstra": 2,
+    "i_listen": 7,
+    "som_ekstra": 3,
     "seneste": [
      {
       "rubrik": "Gemini 4 Carbon er tilgængelig for alle",
@@ -1196,6 +1196,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Google åbner Gemini 4 Carbon for betalende brugere"
+     },
+     {
+      "rubrik": "Meta lancerer den lille AI-model Muse Ember",
+      "dato": "",
+      "foerst_set": "2026-11-10T12:55:44",
+      "link": "https://simonwillison.net/2026/Nov/10/muse-ember/",
+      "side": "",
+      "hvor": "under",
+      "under": "Meta sender billig agentmodel på arbejde"
      },
      {
       "rubrik": "Fable 5.2 fejlede på højeste ræsonnementsniveau",
@@ -1268,24 +1277,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/0491af6508848e01.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Qwen 3.8 27B gætter Pac-Man ud fra vægte",
-      "dato": "2026-11-03T16:29:48",
-      "foerst_set": "2026-11-03T19:45:16",
-      "link": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
-      "side": "artikel/ab1728508583fdde.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "LLM skifter til gpt-6-luna til halv pris",
-      "dato": "2026-11-02T23:49:30",
-      "foerst_set": "2026-11-03T02:35:23",
-      "link": "https://simonwillison.net/2026/Nov/2/llm/",
-      "side": "artikel/5e2d12465b29b09a.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1299,8 +1290,8 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 53,
-    "som_ekstra": 6,
+    "i_listen": 41,
+    "som_ekstra": 3,
     "seneste": [
      {
       "rubrik": "Anthropic lancerer Mythos 5.2 og Fable 5.2",
@@ -1328,42 +1319,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "GPT-6 Cyber går sjældnere rogue i test"
-     },
-     {
-      "rubrik": "Siri Recaps på Apple Watch fanger bilværkstedets priser",
-      "dato": "",
-      "foerst_set": "2026-11-04T19:59:08.515800+00:00",
-      "link": "https://techcrunch.com/2026/11/04/i-tried-apples-siri-recaps-theyre-surprisingly-useful-and-a-little-unsettling/",
-      "side": "",
-      "hvor": "under",
-      "under": "Apple Watch tester Siri Recaps i beta"
-     },
-     {
-      "rubrik": "Google slukker Search for skoler uden AI",
-      "dato": "",
-      "foerst_set": "2026-11-04T19:59:08",
-      "link": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/",
-      "side": "",
-      "hvor": "under",
-      "under": "Google slår Search fra i skoler uden AI"
-     },
-     {
-      "rubrik": "DuckDuckGo tilbyder skoler at slukke for AI",
-      "dato": "",
-      "foerst_set": "2026-11-04T19:59:08",
-      "link": "https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/",
-      "side": "",
-      "hvor": "under",
-      "under": "Google slår Search fra i skoler uden AI"
-     },
-     {
-      "rubrik": "Google: Slukker skolen for AI, forsvinder Search",
-      "dato": "",
-      "foerst_set": "2026-11-03T19:45:16",
-      "link": "https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/",
-      "side": "",
-      "hvor": "under",
-      "under": "Google slår Search fra i skoler uden AI"
      },
      {
       "rubrik": "Anthropic afsætter fem procent af aktier til fond",
@@ -1409,6 +1364,42 @@ window.KOMMANDO_DATA = {
       "side": "artikel/5ab46a1f966a1dd1.html",
       "hvor": "forside",
       "under": ""
+     },
+     {
+      "rubrik": "Google præsenterer to specialchips til AI",
+      "dato": "2026-11-10T15:54:08",
+      "foerst_set": "2026-11-10T21:56:03",
+      "link": "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips/",
+      "side": "artikel/af325a13228f8f12.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "PSI bruger Fable 5.2 til kvantegennembrud",
+      "dato": "2026-11-10T19:03:52",
+      "foerst_set": "2026-11-10T21:56:03",
+      "link": "https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery/",
+      "side": "artikel/a032a0b0222a87eb.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "OpenAI køber rejseværktøjet Odessia",
+      "dato": "2026-11-10T21:08:52",
+      "foerst_set": "2026-11-10T21:56:03",
+      "link": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
+      "side": "artikel/24b56e0e82fbea84.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Oura vil købe læge-AI for 625 millioner dollar",
+      "dato": "2026-11-10T19:23:34",
+      "foerst_set": "2026-11-10T21:56:03",
+      "link": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/",
+      "side": "artikel/d29090d0b774daa5.html",
+      "hvor": "forside",
+      "under": ""
      }
     ]
    },
@@ -1422,9 +1413,27 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 36,
+    "i_listen": 32,
     "som_ekstra": 12,
     "seneste": [
+     {
+      "rubrik": "Google lancerer Gemini 4 Carbon med agent-sværm",
+      "dato": "",
+      "foerst_set": "2026-11-10T21:56:03",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
+      "side": "",
+      "hvor": "under",
+      "under": "Google åbner Gemini 4 Carbon for betalende brugere"
+     },
+     {
+      "rubrik": "ChatGPT får virksomhedsrepræsentanter til produktspørgsmål",
+      "dato": "",
+      "foerst_set": "2026-11-10T21:56:03",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub",
+      "side": "",
+      "hvor": "under",
+      "under": "OpenAI lancerer virksomhedsprofiler til ChatGPT"
+     },
      {
       "rubrik": "Anthropic opgraderer Claude til svære tekniske opgaver",
       "dato": "",
@@ -1433,15 +1442,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
-     },
-     {
-      "rubrik": "Apple vil lade Siri styre flere apps",
-      "dato": "",
-      "foerst_set": "2026-11-08T20:44:13.255018+00:00",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
-      "side": "",
-      "hvor": "under",
-      "under": "Siri AI får adgang til alle apps"
      },
      {
       "rubrik": "OpenAI lover åbenhed om datacenterprojekter",
@@ -1516,22 +1516,13 @@ window.KOMMANDO_DATA = {
       "under": "Nothing vil sende AI-produkt i december"
      },
      {
-      "rubrik": "Netflix ruller AI Discover ud i tv-appen",
+      "rubrik": "The Verge: Gemini redigerer nu Docs og regneark",
       "dato": "",
-      "foerst_set": "2026-11-03T19:45:16",
-      "link": "https://www.theverge.com/streaming/1025029/netflix-ai-discover-recommendations",
+      "foerst_set": "2026-10-29T21:21:56",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
       "side": "",
       "hvor": "under",
-      "under": "Netflix tester AI Discover på tv"
-     },
-     {
-      "rubrik": "Siri på Apple Watch lytter og opsummerer",
-      "dato": "",
-      "foerst_set": "2026-11-03T19:45:16",
-      "link": "https://www.theverge.com/tech/1025002/apple-watch-audio-intelligence-watchos-beta",
-      "side": "",
-      "hvor": "under",
-      "under": "Apple Watch tester Siri Recaps i beta"
+      "under": "Google Gemini redigerer filer i chatten"
      }
     ]
    },
@@ -1545,27 +1536,9 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 10,
-    "som_ekstra": 3,
+    "i_listen": 9,
+    "som_ekstra": 1,
     "seneste": [
-     {
-      "rubrik": "Google: Skoler kan slukke Gemini, ikke AI-søgning",
-      "dato": "",
-      "foerst_set": "2026-11-05T22:13:13",
-      "link": "https://arstechnica.com/ai/2026/11/google-schools-can-keep-search-while-skipping-gemini-but-ai-search-is-non-negotiable/",
-      "side": "",
-      "hvor": "under",
-      "under": "Google slår Search fra i skoler uden AI"
-     },
-     {
-      "rubrik": "Google: Drop AI – mist Google Search",
-      "dato": "",
-      "foerst_set": "2026-11-03T19:45:16",
-      "link": "https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too/",
-      "side": "",
-      "hvor": "under",
-      "under": "Google slår Search fra i skoler uden AI"
-     },
      {
       "rubrik": "Google annoncerer Gemini 4 Carbon uden adgang",
       "dato": "",
@@ -1668,7 +1641,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 6,
-    "i_listen": 8,
+    "i_listen": 6,
     "som_ekstra": 0,
     "seneste": [
      {
@@ -1722,24 +1695,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-11-04T19:59:08",
       "link": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
       "side": "artikel/f95b3a80fa8bdb80.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Stephen Morris: Spilteori kan styre AI-agenter",
-      "dato": "2026-11-03T10:43:41",
-      "foerst_set": "2026-11-03T12:15:27",
-      "link": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/",
-      "side": "artikel/5a465e187c017a30.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Trump vil omdøbe AI til Super Intelligence",
-      "dato": "2026-11-03T04:18:47",
-      "foerst_set": "2026-11-03T12:15:27",
-      "link": "https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test/",
-      "side": "artikel/72788a4d358feca2.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1850,19 +1805,14 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-10T22:10:55.375796+00:00",
+  "opdateret": "2026-11-11T07:11:31.150307+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
   "besoeg_i_alt": 34,
-  "sidevisninger_i_alt": 54,
+  "sidevisninger_i_alt": 57,
   "ai_chat_besoeg": 0,
   "serie": [
-   {
-    "dato": "2026-10-12",
-    "besoeg": 0,
-    "visninger": 0
-   },
    {
     "dato": "2026-10-13",
     "besoeg": 0,
@@ -2007,13 +1957,18 @@ window.KOMMANDO_DATA = {
     "dato": "2026-11-10",
     "besoeg": 0,
     "visninger": 0
+   },
+   {
+    "dato": "2026-11-11",
+    "besoeg": 0,
+    "visninger": 10
    }
   ],
   "sider": [
    {
     "sti": "/",
     "besoeg": 34,
-    "visninger": 54
+    "visninger": 57
    }
   ],
   "artikler": [],

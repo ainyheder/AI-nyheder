@@ -1,10 +1,9 @@
 window.LAESERTAL = {
- "opdateret": "2026-11-10T22:10:55.375796+00:00",
+ "opdateret": "2026-11-11T07:11:31.150307+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
   "datoer": [
-   "2026-10-12",
    "2026-10-13",
    "2026-10-14",
    "2026-10-15",
@@ -33,13 +32,13 @@ window.LAESERTAL = {
    "2026-11-07",
    "2026-11-08",
    "2026-11-09",
-   "2026-11-10"
+   "2026-11-10",
+   "2026-11-11"
   ],
   "serier": [
    {
     "navn": "Penge & marked",
     "tal": [
-     3,
      5,
      6,
      2,
@@ -68,13 +67,13 @@ window.LAESERTAL = {
      1,
      2,
      2,
-     5
+     6,
+     0
     ]
    },
    {
     "navn": "Hverdags-AI",
     "tal": [
-     2,
      8,
      7,
      1,
@@ -103,13 +102,13 @@ window.LAESERTAL = {
      0,
      1,
      10,
-     10
+     10,
+     0
     ]
    },
    {
     "navn": "Lanceringer",
     "tal": [
-     2,
      9,
      1,
      12,
@@ -138,13 +137,13 @@ window.LAESERTAL = {
      0,
      0,
      3,
-     2
+     3,
+     0
     ]
    },
    {
     "navn": "Samfund & etik",
     "tal": [
-     2,
      7,
      5,
      5,
@@ -173,14 +172,14 @@ window.LAESERTAL = {
      1,
      0,
      1,
-     4
+     4,
+     0
     ]
    },
    {
     "navn": "Politik & jura",
     "tal": [
      1,
-     1,
      4,
      4,
      2,
@@ -208,13 +207,13 @@ window.LAESERTAL = {
      1,
      1,
      3,
-     1
+     1,
+     0
     ]
    },
    {
     "navn": "Forskning",
     "tal": [
-     0,
      2,
      2,
      3,
@@ -243,14 +242,15 @@ window.LAESERTAL = {
      1,
      0,
      1,
-     2
+     2,
+     0
     ]
    },
    {
     "navn": "Nyheder",
     "tal": [
-     0,
      3,
+     0,
      0,
      0,
      0,
@@ -285,13 +285,13 @@ window.LAESERTAL = {
  },
  "maaling": "ok",
  "besoeg_i_alt": 34,
- "sidevisninger_i_alt": 54,
+ "sidevisninger_i_alt": 57,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
    "besoeg": 34,
-   "visninger": 54
+   "visninger": 57
   }
  ],
  "henvisere": [
@@ -311,7 +311,7 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 20
+    "visninger": 23
    }
   ]
  },
@@ -323,11 +323,6 @@ window.LAESERTAL = {
   "/cookies.html"
  ],
  "serie": [
-  {
-   "dato": "2026-10-12",
-   "besoeg": 0,
-   "visninger": 0
-  },
   {
    "dato": "2026-10-13",
    "besoeg": 0,
@@ -472,6 +467,11 @@ window.LAESERTAL = {
    "dato": "2026-11-10",
    "besoeg": 0,
    "visninger": 0
+  },
+  {
+   "dato": "2026-11-11",
+   "besoeg": 0,
+   "visninger": 10
   }
  ],
  "artikler": [],
