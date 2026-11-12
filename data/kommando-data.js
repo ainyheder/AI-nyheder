@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-12T07:46:36.334519+00:00",
+ "genereret": "2026-11-12T17:11:44.007805+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -199,27 +199,27 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-12T07:38:22.389539+00:00",
-  "antal": 121,
-  "med_billede": 96,
-  "paa_dansk": 121,
+  "opdateret": "2026-11-12T17:01:28.796363+00:00",
+  "antal": 128,
+  "med_billede": 102,
+  "paa_dansk": 128,
   "kategorier": {
    "Lanceringer": 17,
-   "Samfund \u0026 etik": 14,
-   "Hverdags-AI": 43,
+   "Hverdags-AI": 44,
+   "Samfund \u0026 etik": 16,
+   "Penge \u0026 marked": 29,
    "Politik \u0026 jura": 13,
-   "Penge \u0026 marked": 26,
-   "Forskning": 8
+   "Forskning": 9
   },
   "kilder": {
-   "Simon Willison AI": 10,
-   "The Verge AI": 29,
-   "Google DeepMind": 1,
-   "Ars Technica AI": 12,
-   "TechCrunch AI": 41,
-   "Anthropic News": 5,
-   "Google Gemini": 8,
+   "The Verge AI": 31,
    "Hugging Face": 5,
+   "Simon Willison AI": 10,
+   "Google DeepMind": 1,
+   "Ars Technica AI": 13,
+   "TechCrunch AI": 45,
+   "Google Gemini": 8,
+   "Anthropic News": 5,
    "MIT Tech Review AI": 6,
    "Mistral AI": 3,
    "xAI News": 1
@@ -237,6 +237,66 @@ window.KOMMANDO_DATA = {
    }
   ],
   "seneste": [
+   {
+    "titel": "Cyberattack on Fireworks AI allowed hackers to access Notion customers’ chat transcripts",
+    "rubrik": "Hackere stjal Notion-chats via Fireworks AI",
+    "link": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/",
+    "side": "artikel/2843d5b0f258e599.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-12T15:02:28+00:00",
+    "billede": "data/img/51e09330f139d8b8.webp"
+   },
+   {
+    "titel": "SoftBank’s billion-dollar loss may have put a cap on AI’s natural gas ambitions",
+    "rubrik": "SoftBank taber milliarder på eludstyr til AI",
+    "link": "https://techcrunch.com/2026/11/12/softbanks-billion-dollar-loss-may-have-put-a-cap-on-ais-natural-gas-ambitions/",
+    "side": "artikel/55bf40a54c79d71b.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-12T17:00:52+00:00",
+    "billede": "data/img/269d25bc86c9dd5f.webp"
+   },
+   {
+    "titel": "More game developers are using generative AI than they did last year",
+    "rubrik": "GDC: Flere spiludviklere bruger AI på jobbet",
+    "link": "https://www.theverge.com/games/1032085/gdc-festival-of-gaming-annual-survey-ai-layoffs",
+    "side": "artikel/75acdb0b89ac64fc.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-12T12:00:00-05:00",
+    "billede": ""
+   },
+   {
+    "titel": "Nvidia CEO Jensen Huang resigns amid spy, affair scandals",
+    "rubrik": "Jensen Huang forlader Nvidia efter affæreafsløringer",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1031689/jensen-huang-nvidia-ceo-resigns",
+    "side": "artikel/a8c2afcede6353b3.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-12T08:53:16-05:00",
+    "billede": "data/img/cdce5543bb99fc85.webp"
+   },
+   {
+    "titel": "Norwest pushes deeper into AI with new $4B fund",
+    "rubrik": "Norwest rejser 4 milliarder dollar til investeringer",
+    "link": "https://techcrunch.com/2026/11/12/norwest-pushes-deeper-into-ai-with-new-4b-fund/",
+    "side": "artikel/a8b4ef01f1e068ca.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-12T15:18:14+00:00",
+    "billede": "data/img/4aaf70bb5042c3fa.webp"
+   },
+   {
+    "titel": "Phota Labs uses AI to turn everyday photos into professional-looking shots",
+    "rubrik": "Phota Labs ændrer perspektivet i dine fotos",
+    "link": "https://techcrunch.com/2026/11/12/phota-labs-uses-ai-to-turn-everyday-photos-into-professional-looking-shots/",
+    "side": "artikel/6c6681e03d7676b3.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-12T17:00:00+00:00",
+    "billede": "data/img/f8def728b98e852f.webp"
+   },
    {
     "titel": "Gemini Decisions API",
     "rubrik": "Googles model besvarer 1.000 spørgsmål om video",
@@ -296,79 +356,20 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-11-11T19:34:55+00:00",
     "billede": ""
-   },
-   {
-    "titel": "Taiwan’s chipmaking giant TSMC to invest $1B in Anthropic, OpenAI",
-    "rubrik": "TSMC vil investere i OpenAI og Anthropic",
-    "link": "https://arstechnica.com/ai/2026/11/taiwans-chipmaking-giant-tsmc-to-invest-1b-in-anthropic-openai/",
-    "side": "artikel/f104fa5b73158a4a.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-11-11T18:16:40+00:00",
-    "billede": "data/img/a5952e598790cffd.webp"
-   },
-   {
-    "titel": "Big Walk used AI to fix a bug. Now the indie gaming world is having a reckoning.",
-    "rubrik": "Big Walk brugte AI til fejlretning",
-    "link": "https://arstechnica.com/gaming/2026/11/big-walk-used-ai-to-fix-a-bug-now-the-indie-gaming-world-is-having-a-reckoning/",
-    "side": "artikel/48c8b10aae6e7aad.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-11-11T17:37:32+00:00",
-    "billede": "data/img/52bca73fe3cf2979.webp"
-   },
-   {
-    "titel": "Browse tools.simonwillison.net by tag",
-    "rubrik": "Simon Willisons værktøjer kan nu findes via emner",
-    "link": "https://simonwillison.net/2026/Nov/11/tools-tags/",
-    "side": "artikel/0d0bc3b18adf2a7d.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-11-11T18:42:50+00:00",
-    "billede": "data/img/0a2ee8dd6812643d.webp"
-   },
-   {
-    "titel": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
-    "rubrik": "AlphaGenome 2 forudsiger mutationers virkning i celler",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
-    "side": "artikel/872573b4c15b2f70.html",
-    "kategori": "Lanceringer",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-11T10:00:00-05:00",
-    "billede": ""
-   },
-   {
-    "titel": "Google DeepMind just mathematically verified key parts of Signal",
-    "rubrik": "Google DeepMind beviser udvalgte sikkerhedsegenskaber i Signal-protokollen",
-    "link": "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/",
-    "side": "artikel/8f2f29688e4a72c8.html",
-    "kategori": "Forskning",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-11-11T14:08:57+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "OpenAI’s quarterly revenue reportedly crosses $10B for the first time",
-    "rubrik": "OpenAI passerer ifølge kilder 10 milliarder dollars",
-    "link": "https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/",
-    "side": "artikel/b577d6b06f32358e.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-11T16:14:44+00:00",
-    "billede": "data/img/3047d93646f059f5.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-12T07:38:22.389539+00:00",
-  "status": "godkendt",
+  "opdateret": "2026-11-12T17:01:28.796363+00:00",
+  "status": "reserve",
   "model": "gpt-6.1-terra",
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "modelkald": 6,
-  "kildehentninger": 2,
+  "kildehentninger": 3,
   "regelbaseret_udvalg": [
    "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
    "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
-   "https://deepmind.google/blog/gemini-4-carbon-is-now-available/"
+   "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/"
   ],
   "udgivet_udvalg": [
    "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/"
@@ -383,7 +384,7 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
+    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
@@ -397,17 +398,21 @@ window.KOMMANDO_DATA = {
   ],
   "kildegrundlag": [
    {
-    "link": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+    "link": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+    "grundlag": "utilgaengelig"
+   },
+   {
+    "link": "https://huggingface.co/blog/qvac/botpsy",
     "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-11-12T07:38:21.800612+00:00",
+  "opdateret": "2026-11-12T17:01:28.215314+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -872,8 +877,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-12T07:38:22.389539+00:00",
-  "artikler_i_alt": 121,
+  "opdateret": "2026-11-12T17:01:28.796363+00:00",
+  "artikler_i_alt": 128,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1299,9 +1304,27 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 41,
-    "som_ekstra": 3,
+    "i_listen": 45,
+    "som_ekstra": 5,
     "seneste": [
+     {
+      "rubrik": "Colette Kress overtager Nvidia efter Jensen Huang",
+      "dato": "",
+      "foerst_set": "2026-11-12T17:01:28",
+      "link": "https://techcrunch.com/2026/11/12/jensen-huang-is-out-at-nvidia-who-is-colette-kress-his-interim-replacement/",
+      "side": "",
+      "hvor": "under",
+      "under": "Jensen Huang forlader Nvidia efter affæreafsløringer"
+     },
+     {
+      "rubrik": "Nvidia afsætter Jensen Huang som topchef",
+      "dato": "",
+      "foerst_set": "2026-11-12T17:01:28",
+      "link": "https://techcrunch.com/2026/11/12/five-ways-jensen-huangs-ouster-from-nvidia-could-damage-the-ai-industry/",
+      "side": "",
+      "hvor": "under",
+      "under": "Jensen Huang forlader Nvidia efter affæreafsløringer"
+     },
      {
       "rubrik": "Anthropic lancerer Mythos 5.2 og Fable 5.2",
       "dato": "",
@@ -1339,6 +1362,42 @@ window.KOMMANDO_DATA = {
       "under": "Anthropic afsætter fem procent af aktierne til fond"
      },
      {
+      "rubrik": "Hackere stjal Notion-chats via Fireworks AI",
+      "dato": "2026-11-12T15:02:28",
+      "foerst_set": "2026-11-12T17:01:28",
+      "link": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/",
+      "side": "artikel/2843d5b0f258e599.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "SoftBank taber milliarder på eludstyr til AI",
+      "dato": "2026-11-12T17:00:52",
+      "foerst_set": "2026-11-12T17:01:28",
+      "link": "https://techcrunch.com/2026/11/12/softbanks-billion-dollar-loss-may-have-put-a-cap-on-ais-natural-gas-ambitions/",
+      "side": "artikel/55bf40a54c79d71b.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Norwest rejser 4 milliarder dollar til investeringer",
+      "dato": "2026-11-12T15:18:14",
+      "foerst_set": "2026-11-12T17:01:28",
+      "link": "https://techcrunch.com/2026/11/12/norwest-pushes-deeper-into-ai-with-new-4b-fund/",
+      "side": "artikel/a8b4ef01f1e068ca.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Phota Labs ændrer perspektivet i dine fotos",
+      "dato": "2026-11-12T17:00:00",
+      "foerst_set": "2026-11-12T17:01:28",
+      "link": "https://techcrunch.com/2026/11/12/phota-labs-uses-ai-to-turn-everyday-photos-into-professional-looking-shots/",
+      "side": "artikel/6c6681e03d7676b3.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "CoreWeave beder kunder betale på forskud",
       "dato": "2026-11-11T19:54:00",
       "foerst_set": "2026-11-11T22:58:05",
@@ -1355,60 +1414,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/69792f3c808437d7.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "OpenAI passerer ifølge kilder 10 milliarder dollars",
-      "dato": "2026-11-11T16:14:44",
-      "foerst_set": "2026-11-11T16:32:11",
-      "link": "https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/",
-      "side": "artikel/b577d6b06f32358e.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Databricks giver Genie opgaver i flere trin",
-      "dato": "2026-11-11T15:00:00",
-      "foerst_set": "2026-11-11T16:32:11",
-      "link": "https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth/",
-      "side": "artikel/a12c5f3d8f2dcc71.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Plurai vil træne AI-agenter med simulationer",
-      "dato": "2026-11-11T14:00:00",
-      "foerst_set": "2026-11-11T16:32:11",
-      "link": "https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads/",
-      "side": "artikel/c469d7bbc40ab142.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "OpenAI og Anthropic skal registreres i New York",
-      "dato": "2026-11-10T20:52:13",
-      "foerst_set": "2026-11-10T21:56:03",
-      "link": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
-      "side": "artikel/eb94be6281ea4820.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "OpenAI lancerer virksomhedsprofiler til ChatGPT",
-      "dato": "2026-11-10T18:49:52",
-      "foerst_set": "2026-11-10T21:56:03",
-      "link": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/",
-      "side": "artikel/4b68cc7db805bd19.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Claude begynder på opgaver under videomøder",
-      "dato": "2026-11-10T17:30:00",
-      "foerst_set": "2026-11-10T21:56:03",
-      "link": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/",
-      "side": "artikel/994129552b18505b.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1422,9 +1427,27 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 29,
+    "i_listen": 31,
     "som_ekstra": 11,
     "seneste": [
+     {
+      "rubrik": "Jensen Huang forlader posten som Nvidia-direktør",
+      "dato": "",
+      "foerst_set": "2026-11-12T17:01:28.796363+00:00",
+      "link": "https://www.theverge.com/podcast/1031260/nvidia-jensen-huang-resign-china-spy-scandal-ai-chips-trump",
+      "side": "",
+      "hvor": "under",
+      "under": "Jensen Huang forlader Nvidia efter affæreafsløringer"
+     },
+     {
+      "rubrik": "Nvidia-bestyrelse søger afløser for Jensen Huang",
+      "dato": "",
+      "foerst_set": "2026-11-12T17:01:28.796363+00:00",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1032028/read-nvidias-internal-emails-jensen-huang",
+      "side": "",
+      "hvor": "under",
+      "under": "Jensen Huang forlader Nvidia efter affæreafsløringer"
+     },
      {
       "rubrik": "Google lancerer Gemini 4 Carbon med agent-sværm",
       "dato": "",
@@ -1514,24 +1537,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Meta åbner Muse-videochat for alle i USA"
-     },
-     {
-      "rubrik": "The Verge: Gemini redigerer nu Docs og regneark",
-      "dato": "",
-      "foerst_set": "2026-10-29T21:21:56",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
-      "side": "",
-      "hvor": "under",
-      "under": "Google Gemini redigerer filer i chatten"
-     },
-     {
-      "rubrik": "Google sender Gemini 4 Carbon efter sikkerhedshuller",
-      "dato": "",
-      "foerst_set": "2026-10-28T21:16:14",
-      "link": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
-      "side": "",
-      "hvor": "under",
-      "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
      }
     ]
    },
@@ -1545,7 +1550,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 12,
+    "i_listen": 13,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -1612,6 +1617,15 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
+      "rubrik": "Strogatz: AI udfordrer menneskers matematiske forståelse",
+      "dato": "2026-11-10T20:30:01",
+      "foerst_set": "2026-11-10T21:56:03",
+      "link": "https://arstechnica.com/science/2026/11/what-happens-to-mathematics-when-ai-becames-an-oracle/",
+      "side": "artikel/5e903e9b7ca79175.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "AI-datacentre presser Ukraines droneproduktion",
       "dato": "2026-11-10T12:15:32",
       "foerst_set": "2026-11-10T12:55:44",
@@ -1644,15 +1658,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-11-06T20:49:47",
       "link": "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/",
       "side": "artikel/2bfa238b2cef60c6.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Søgsmål: ChatGPT hjalp med mordplan",
-      "dato": "2026-11-05T21:39:40",
-      "foerst_set": "2026-11-05T22:13:13",
-      "link": "https://arstechnica.com/tech-policy/2026/11/lawsuit-man-introduced-his-wife-to-chatgpt-she-used-it-to-plan-his-murder/",
-      "side": "artikel/6d2c88f3c1d8a1c0.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1814,12 +1819,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-12T07:46:29.675565+00:00",
+  "opdateret": "2026-11-12T17:11:37.987308+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 38,
-  "sidevisninger_i_alt": 60,
+  "besoeg_i_alt": 42,
+  "sidevisninger_i_alt": 69,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1976,8 +1981,8 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 38,
-    "visninger": 59
+    "besoeg": 42,
+    "visninger": 68
    },
    {
     "sti": "/uge.html",
@@ -1989,7 +1994,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 37
+    "besoeg": 41
    },
    {
     "fra": "www.google.com",

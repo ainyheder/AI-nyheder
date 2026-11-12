@@ -1,32 +1,21 @@
 {
-  "opdateret": "2026-11-12T07:38:22.389539+00:00",
-  "status": "godkendt",
+  "opdateret": "2026-11-12T17:01:28.796363+00:00",
+  "status": "reserve",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
     "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
     "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
-    "https://deepmind.google/blog/gemini-4-carbon-is-now-available/"
+    "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/"
   ],
-  "input_fingerprint": "4ccff30a199784ca",
-  "redaktionsnote": "Øvrige kandidater, herunder AlphaGenome 2 og Gemini 4 Carbon, er ikke kildegennemlæst og afventer. Der tilføjes ingen anbefalinger alene på baggrund af RSS-resuméer.",
-  "beslutninger": [
-    {
-      "id": "485ec329c8b74027",
-      "begrundelse": "Gemini Decision 1 er en ny multimodal model til afgrænsede beslutninger og kan vurdere op til 1.000 spørgsmål om samme materiale. Google dokumenterer API-adgangen, og Simon Willison har afprøvet modellen på video.",
-      "nyt_siden_sidst": "Google har lanceret Decision 1 og et API til at vurdere tekst, billeder, lyd, video og PDF-filer. Modellen har ikke været hovedhistorie på de oplyste forsider.",
-      "skriveopgave": "Rubrik: «Googles nye model svarer på 1.000 spørgsmål om samme video». Forklar med Willisons videotest, hvordan modellen vurderer afgrænsede spørgsmål og angiver sandsynligheder, og hvad udviklere kan bruge svarene til. Brug korte afsnit med konkrete mellemoverskrifter; forklar API og tokens ved første brug. Angiv adgang via Google AI Studio og prisen på 0,10 dollar pr. million inputtokens uden betaling for output. Googles løfter om hastighed og præstation er ikke uafhængigt verificeret.",
-      "kilder": [
-        "485ec329c8b74027",
-        "c06fca3b9549fb95"
-      ],
-      "samme_historie": [],
-      "link": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
-      "rubrik": "Googles model besvarer 1.000 spørgsmål om video"
-    }
+  "input_fingerprint": "96983445410aab87",
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "kontrolproblemer": [
+    "Forsiden begynder ikke med nyheder fra de seneste 24 timer: Begge hovedhistorier er fra 11. november og ældre end 24 timer målt mod de nyeste kandidater 12. november.",
+    "Den nyere kandidat om lanceringen af Gemini Decision 1 bør undersøges før modeludvalget fastlægges. Det vedlagte materiale dokumenterer ikke en læsning af hele kilden eller en begrundelse for fravalget."
   ],
   "modelkald": 6,
-  "kildehentninger": 2,
+  "kildehentninger": 3,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -37,7 +26,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -51,16 +40,20 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "link": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+      "grundlag": "utilgaengelig"
+    },
+    {
+      "link": "https://huggingface.co/blog/qvac/botpsy",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
     "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/"
   ],
-  "afventer_artikler": 75
+  "afventer_artikler": 80
 }
