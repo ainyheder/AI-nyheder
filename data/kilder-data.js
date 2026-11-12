@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-11T22:58:05.172801+00:00",
- "artikler_i_alt": 131,
+ "opdateret": "2026-11-12T07:38:22.389539+00:00",
+ "artikler_i_alt": 121,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -138,7 +138,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 9,
+   "i_listen": 8,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -183,15 +183,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-05T22:13:13",
      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
      "side": "artikel/4eabb5f27738ceda.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google frigav Gemini 4 Argon og tester Carbon",
-     "dato": "2026-11-02T17:45:00",
-     "foerst_set": "2026-11-02T18:45:47",
-     "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
-     "side": "artikel/ff01b8b9f0687b69.html",
      "hvor": "forside",
      "under": ""
     },
@@ -282,7 +273,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 4,
+   "i_listen": 5,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -300,6 +291,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-10T21:56:03",
      "link": "https://huggingface.co/blog/hub-gcp-marketplace",
      "side": "artikel/992e8c4109473216.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Hugging Face viser AI, der vælger svar",
+     "dato": "2026-11-10T00:00:00",
+     "foerst_set": "2026-11-10T21:56:03",
+     "link": "https://huggingface.co/blog/decision",
+     "side": "artikel/de10773c014618cc.html",
      "hvor": "forside",
      "under": ""
     },
@@ -334,7 +334,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 9,
+   "i_listen": 10,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -363,6 +363,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
+    },
+    {
+     "rubrik": "Googles model besvarer 1.000 spørgsmål om video",
+     "dato": "2026-11-11T22:03:25",
+     "foerst_set": "2026-11-11T22:58:05",
+     "link": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+     "side": "artikel/2115de876eeeab07.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "AWS gør det muligt at teste lokalt",
@@ -471,7 +480,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 46,
+   "i_listen": 41,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -622,7 +631,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     10
+     8
     ],
     [
      "Anthropic News",
@@ -644,8 +653,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 36,
-   "som_ekstra": 13,
+   "i_listen": 29,
+   "som_ekstra": 11,
    "seneste": [
     {
      "rubrik": "Google lancerer Gemini 4 Carbon med agent-sværm",
@@ -738,22 +747,22 @@ window.KILDER_STATUS = {
      "under": "Meta åbner Muse-videochat for alle i USA"
     },
     {
-     "rubrik": "Uber: Kun fire ture bestilt af AI-agenter",
+     "rubrik": "The Verge: Gemini redigerer nu Docs og regneark",
      "dato": "",
-     "foerst_set": "2026-11-04T19:59:08",
-     "link": "https://www.theverge.com/transportation/1026306/uber-ai-agents-q3-earnings-disintermediation",
+     "foerst_set": "2026-10-29T21:21:56",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
      "side": "",
      "hvor": "under",
-     "under": "Fire Uber-ture gennem AI-agent i travleste uge"
+     "under": "Google Gemini redigerer filer i chatten"
     },
     {
-     "rubrik": "Nothing lancerer skærmfri AI-enhed næste måned",
+     "rubrik": "Google sender Gemini 4 Carbon efter sikkerhedshuller",
      "dato": "",
-     "foerst_set": "2026-11-04T19:59:08",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1026586/nothing-screen-free-ai-device-carl-pei",
+     "foerst_set": "2026-10-28T21:16:14",
+     "link": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
      "side": "",
      "hvor": "under",
-     "under": "Nothing vil sende AI-produkt i december"
+     "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
     },
     {
      "rubrik": "United stopper AI-agenter fra at købe flybilletter",
@@ -867,7 +876,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     10
+     8
     ],
     [
      "Google Gemini",
@@ -893,7 +902,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 11,
+   "i_listen": 12,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -929,6 +938,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-11T16:32:11",
      "link": "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/",
      "side": "artikel/8f2f29688e4a72c8.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Amazon giver Ring-kameraer vinger og hjul",
+     "dato": "2026-11-10T22:35:01",
+     "foerst_set": "2026-11-11T07:00:37",
+     "link": "https://arstechnica.com/ai/2026/11/ring-cameras-go-mobile-as-amazon-debuts-ai-powered-security-drone-and-robot/",
+     "side": "artikel/6904b35e4757872c.html",
      "hvor": "forside",
      "under": ""
     },

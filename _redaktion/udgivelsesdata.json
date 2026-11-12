@@ -1,39 +1,6 @@
 {
-  "opdateret": "2026-11-11T22:58:05.172801+00:00",
+  "opdateret": "2026-11-12T07:38:22.389539+00:00",
   "kladder": [
-    {
-      "titel": "Gemini Decisions API",
-      "link": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
-      "resume": "Gemini Decisions API Google join Jev and OpenAI in the decision model category with \"Gemini Decision 1\". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's term \"Noul\" for a yes/no question. It's priced the same as the GPT-6 Luna decision model: 10 cents per million input tokens, and output is…",
-      "dato": "2026-11-11T22:03:25+00:00",
-      "kilde": "Simon Willison AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-11-11T22:58:05.172801+00:00",
-      "eget_foerst_set": "2026-11-11T22:58:05.172801+00:00",
-      "rubrik": "Google præsenterer Gemini Decision 1",
-      "resume_da": "Modellens API understøtter ja/nej-spørgsmål, valg og vurdering efter kriterier. Ifølge Simon Willison bruger Google også Jevs betegnelse Noul for ja/nej-spørgsmål.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "Google præsenterer Gemini Decision 1 til ja/nej-svar, valg og vurdering efter kriterier via et API.",
-        "forbehold": "Materialet indeholder ingen uafhængige testresultater eller fulde prisoplysninger.",
-        "emne": "gemini decision 1"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
     {
       "titel": "Gemini Robotics 2.5 accelerates real-world general dexterity",
       "link": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
@@ -200,6 +167,39 @@
       ]
     },
     {
+      "titel": "How backlash and red tape continue to slow data centers post-Blue Wave",
+      "link": "https://techcrunch.com/podcast/how-backlash-and-red-tape-continue-to-slow-data-centers-post-blue-wave/",
+      "resume": "The data center boom is running into serious real-world obstacles, from widespread local opposition and permitting delays to a scramble for electricity. Before those challenges even come into play, though, there’s a more basic problem: A lot of the projects being announced may never get built in the first place. With billions of dollars in AI infrastructure […]",
+      "dato": "2026-11-11T20:02:14+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-11T22:58:05.172801+00:00",
+      "eget_foerst_set": "2026-11-11T22:58:05.172801+00:00",
+      "rubrik": "Blue Wave: Datacentre møder modstand og forsinkelser",
+      "resume_da": "Lokale protester, tilladelser og mangel på strøm bremser projekter. Ifølge TechCrunch bliver mange af de annoncerede datacentre måske aldrig bygget.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "En podcast gennemgår modstand, tilladelser og strømproblemer som hindringer for datacentre.",
+        "forbehold": "Uddraget dokumenterer ikke, hvor mange projekter der risikerer at blive opgivet.",
+        "emne": "ai-datacentre"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Why the data center you dread might never even be built",
       "link": "https://techcrunch.com/video/why-the-data-center-you-dread-might-never-even-be-built/",
       "resume": "The data center boom is running into serious real-world obstacles, from widespread local opposition and permitting delays to a scramble for electricity. Before those challenges even come into play, though, there’s a more basic problem: A lot of the projects being announced may never get built in the first place. With billions of dollars in AI infrastructure […]",
@@ -210,6 +210,7 @@
       "eget_foerst_set": "2026-11-11T22:58:05.172801+00:00",
       "rubrik": "TechCrunch peger på usikre datacenterplaner",
       "resume_da": "Mange annoncerede projekter risikerer ifølge mediet aldrig at blive bygget. Lokal modstand, forsinkede tilladelser og mangel på elektricitet er blandt udfordringerne.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -226,19 +227,8 @@
         "emne": "ai-datacentre"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
       "historie_dato": "2026-11-11T20:02:14+00:00",
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/podcast/how-backlash-and-red-tape-continue-to-slow-data-centers-post-blue-wave/",
-          "rubrik": "TechCrunch beskriver modstand mod nye datacentre",
-          "resume_da": "Projekterne møder også forsinkede tilladelser og konkurrence om elektricitet. Mange annoncerede datacentre risikerer ifølge mediet aldrig at blive bygget.",
-          "dato": "2026-11-11 20:02:14+00:00",
-          "foerst_set": "2026-11-11T22:58:05.172801+00:00"
-        }
-      ],
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -335,39 +325,6 @@
         "begrundelse": "Over 20.000 veteraner og militærfolk på vej til civile job har fået et gratis år med ChatGPT Plus.",
         "forbehold": "Materialet specificerer ikke alle betingelser for tilbuddet.",
         "emne": "chatgpt plus"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Ring cameras go mobile as Amazon debuts AI-powered security drone and robot",
-      "link": "https://arstechnica.com/ai/2026/11/ring-cameras-go-mobile-as-amazon-debuts-ai-powered-security-drone-and-robot/",
-      "resume": "Amazon's roaming Ring Robotics devices will debut in late 2026 and early 2027.",
-      "dato": "2026-11-10T22:35:01+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-11-11T07:00:37.277331+00:00",
-      "eget_foerst_set": "2026-11-11T07:00:37.277331+00:00",
-      "rubrik": "Amazon præsenterer Ring-drone og sikkerhedsrobot med AI",
-      "resume_da": "De mobile Ring Robotics-enheder ventes at debutere i slutningen af 2026 og begyndelsen af 2027.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Amazon præsenterer en AI-drevet sikkerhedsdrone og robot under Ring Robotics.",
-        "forbehold": "Enhederne ventes først at debutere fra slutningen af 2026; konkrete AI-evner er ikke beskrevet.",
-        "emne": "ring robotics"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
@@ -574,35 +531,35 @@
       ]
     },
     {
-      "titel": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
-      "link": "https://openai.com/index/introducing-gpt-6-cyber",
-      "resume": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope.",
-      "dato": "2026-11-05T09:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-11-05T22:13:13.067417+00:00",
-      "eget_foerst_set": "2026-11-05T22:13:13.067417+00:00",
-      "rubrik": "OpenAI introducerer GPT-6 Cyber mod sårbarheder",
-      "resume_da": "OpenAI siger, at modellen er trænet til at holde sig inden for autoriseret område og til at finde udnyttelige sårbarheder og udvikle rettelser.",
-      "kat_ai": true,
+      "titel": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
+      "link": "https://huggingface.co/blog/token-pooling",
+      "resume": "",
+      "dato": "2026-11-11T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-11T16:32:11.614097+00:00",
+      "eget_foerst_set": "2026-11-11T16:32:11.614097+00:00",
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 4,
-        "betydning": 3,
-        "brugbarhed": 3,
-        "dokumentation": 3,
+        "nyhed": 2,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 2,
         "dansk": 0,
-        "type": "lancering",
+        "type": "forskning",
         "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "OpenAI præsenterer GPT-6 Cyber, en ny sikkerhedsmodel trænet til at finde sårbarheder inden for autoriseret område.",
-        "forbehold": "OpenAI's egen dokumentation; uafhængige test af sikkerhed og afgrænsning mangler.",
-        "emne": "openai gpt-6 cyber"
+        "model_lancering": false,
+        "begrundelse": "Et indlæg handler om træning med token pooling for multi-vector embedding-modeller.",
+        "forbehold": "Kun titlen er oplyst; metode og resultater fremgår ikke.",
+        "emne": "embedding-modeller"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 7,
+      "kat_ai": true,
+      "prio": 3,
       "afventer": [
+        "Mangler dansk overskrift",
+        "Mangler dansk indledning",
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
     },
@@ -617,6 +574,7 @@
       "eget_foerst_set": "2026-11-11T22:58:05.172801+00:00",
       "rubrik": "JioStars chefarkitekt deler erfaringer med AI",
       "resume_da": "Vijay Seshadri fortæller om evaluering, sikkerhedsrammer og drift af AI i en skala på 500 millioner brugere.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -633,7 +591,6 @@
         "emne": "jiostar"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 3,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -668,6 +625,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 3,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+      "link": "https://openai.com/index/introducing-gpt-6-cyber",
+      "resume": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope.",
+      "dato": "2026-11-05T09:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-11-05T22:13:13.067417+00:00",
+      "eget_foerst_set": "2026-11-05T22:13:13.067417+00:00",
+      "rubrik": "OpenAI introducerer GPT-6 Cyber mod sårbarheder",
+      "resume_da": "OpenAI siger, at modellen er trænet til at holde sig inden for autoriseret område og til at finde udnyttelige sårbarheder og udvikle rettelser.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "OpenAI præsenterer GPT-6 Cyber, en ny sikkerhedsmodel trænet til at finde sårbarheder inden for autoriseret område.",
+        "forbehold": "OpenAI's egen dokumentation; uafhængige test af sikkerhed og afgrænsning mangler.",
+        "emne": "openai gpt-6 cyber"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 7,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -871,39 +861,6 @@
       ]
     },
     {
-      "titel": "Big Tech lost big in the 2026 election",
-      "link": "https://www.theverge.com/podcast/1028731/2026-midterms-tech-ai-vergecast",
-      "resume": "On Tuesday, millions of American voters went to the polls and voted overwhelmingly for Democrats and against AI. The fight against Big Tech is about to come roaring back, and the fight over data centers is looking even harder for the folks trying to build them. On this episode of The Vergecast, Nilay and David […]",
-      "dato": "2026-11-06T16:38:02+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-11-06T21:09:53.915130+00:00",
-      "eget_foerst_set": "2026-11-06T21:09:53.915130+00:00",
-      "rubrik": "Demokraterne vinder valg præget af AI-strid",
-      "resume_da": "The Verge beskriver datacentre som et voksende stridspunkt efter det amerikanske midtvejsvalg.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "The Verge diskuterer modstand mod AI og datacentre efter det amerikanske midtvejsvalg.",
-        "forbehold": "Uddraget underbygger ikke påstanden om, at vælgerne stemte imod AI.",
-        "emne": "ai og midtvejsvalg"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Gilbert + Tobin rethinks the business of law with AI",
       "link": "https://openai.com/index/gilbert-tobin-sam-nickless",
       "resume": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin.",
@@ -937,34 +894,34 @@
       ]
     },
     {
-      "titel": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
-      "link": "https://huggingface.co/blog/phonon-tts",
-      "resume": "",
-      "dato": "2026-11-05T00:00:00+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-11-05T12:41:56.333140+00:00",
-      "eget_foerst_set": "2026-11-05T12:41:56.333140+00:00",
-      "rubrik": "Hugging Face lancerer Phonon TTS til enheder",
-      "resume_da": "Tekst-til-tale-modellen skal ifølge Hugging Face køre lokalt på enheden og slå benchmarks på tale.",
+      "titel": "Big Tech lost big in the 2026 election",
+      "link": "https://www.theverge.com/podcast/1028731/2026-midterms-tech-ai-vergecast",
+      "resume": "On Tuesday, millions of American voters went to the polls and voted overwhelmingly for Democrats and against AI. The fight against Big Tech is about to come roaring back, and the fight over data centers is looking even harder for the folks trying to build them. On this episode of The Vergecast, Nilay and David […]",
+      "dato": "2026-11-06T16:38:02+00:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-11-06T21:09:53.915130+00:00",
+      "eget_foerst_set": "2026-11-06T21:09:53.915130+00:00",
+      "rubrik": "Demokraterne vinder valg præget af AI-strid",
+      "resume_da": "The Verge beskriver datacentre som et voksende stridspunkt efter det amerikanske midtvejsvalg.",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 2,
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 1,
         "dokumentation": 2,
         "dansk": 0,
-        "type": "lancering",
+        "type": "analyse",
         "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "Phonon TTS lanceres som ny tekst-til-tale-model, der ifølge producenten kører lokalt og slår benchmarks.",
-        "forbehold": "Kun producentens egen blog; tekstindhold mangler, og benchmarkpåstandene er ikke uafhængigt bekræftet.",
-        "emne": "phonon tts"
+        "model_lancering": false,
+        "begrundelse": "The Verge diskuterer modstand mod AI og datacentre efter det amerikanske midtvejsvalg.",
+        "forbehold": "Uddraget underbygger ikke påstanden om, at vælgerne stemte imod AI.",
+        "emne": "ai og midtvejsvalg"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1028,39 +985,6 @@
         "begrundelse": "OpenAI oplyser, at det køber Pierre Computer Company for at udvide Codex' værktøjer til kode.",
         "forbehold": "Købesum, tidspunkt og hvad værktøjerne konkret tilfører fremgår ikke.",
         "emne": "openai codex"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Introducing Images 2.6",
-      "link": "https://openai.com/index/introducing-images-2-6",
-      "resume": "Images 2.6 brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Codex, and the API.",
-      "dato": "2026-11-04T00:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-11-05T01:00:33.324815+00:00",
-      "eget_foerst_set": "2026-11-05T01:00:33.324815+00:00",
-      "rubrik": "OpenAI opdaterer Images til version 2.6",
-      "resume_da": "Ifølge OpenAI giver versionen hurtigere billedgenerering, GIF'er og mere præcis redigering – i ChatGPT, Codex og API'et.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "OpenAI udgiver billedversionen Images 2.6 med hurtigere generering, GIF, mere præcis redigering og nye API-kontroller.",
-        "forbehold": "Kun producentens egne oplysninger; ingen uafhængige tests af hastighed eller kvalitet.",
-        "emne": "openai images 2.6"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 6,
@@ -1135,6 +1059,39 @@
       ]
     },
     {
+      "titel": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
+      "link": "https://huggingface.co/blog/phonon-tts",
+      "resume": "",
+      "dato": "2026-11-05T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-11-05T12:41:56.333140+00:00",
+      "eget_foerst_set": "2026-11-05T12:41:56.333140+00:00",
+      "rubrik": "Hugging Face lancerer Phonon TTS til enheder",
+      "resume_da": "Tekst-til-tale-modellen skal ifølge Hugging Face køre lokalt på enheden og slå benchmarks på tale.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Phonon TTS lanceres som ny tekst-til-tale-model, der ifølge producenten kører lokalt og slår benchmarks.",
+        "forbehold": "Kun producentens egen blog; tekstindhold mangler, og benchmarkpåstandene er ikke uafhængigt bekræftet.",
+        "emne": "phonon tts"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Daybreak Red is now available in AWS GovCloud (US-East)",
       "link": "https://openai.com/index/daybreak-red-aws-govcloud",
       "resume": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work.",
@@ -1201,72 +1158,6 @@
       ]
     },
     {
-      "titel": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
-      "link": "https://huggingface.co/blog/token-pooling",
-      "resume": "",
-      "dato": "2026-11-11T00:00:00+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Forskning",
-      "foerst_set": "2026-11-11T16:32:11.614097+00:00",
-      "eget_foerst_set": "2026-11-11T16:32:11.614097+00:00",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 0,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Titlen omtaler træning med token pooling for multi-vector embedding-modeller.",
-        "forbehold": "Der er ingen beskrivelse af metode, resultater eller en konkret nyhed.",
-        "emne": "token pooling"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 2,
-      "afventer": [
-        "Mangler dansk overskrift",
-        "Mangler dansk indledning",
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Building on open source AI? Hugging Face’s policy chief on the costs, risks, and trade-offs",
-      "link": "https://techcrunch.com/podcast/building-on-open-source-ai-hugging-faces-policy-chief-on-the-costs-risks-and-trade-offs/",
-      "resume": "Open source models are becoming more mainstream as enterprises, governments and startups alike rely on the promise of lower costs, more control, and more flexibility. But as increasingly capable models become more freely available, how do companies capture value? And with Chinese open models gaining ground, can American players keep up? On this episode of […]",
-      "dato": "2026-11-04T18:44:57+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-11-04T19:59:08.515800+00:00",
-      "eget_foerst_set": "2026-11-04T19:59:08.515800+00:00",
-      "rubrik": "Hugging Face-politikchef drøfter åbne modellers pris og risiko",
-      "resume_da": "I TechCrunch-podcasten handler det om lavere omkostninger og mere kontrol – og om kinesiske åbne modeller nu presser amerikanske aktører.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Podcastinterview med Hugging Faces policychef om omkostninger, risici og forretningsvilkår for åbne modeller, også kinesiske.",
-        "forbehold": "Der er tale om en samtale om emnet, ikke nye data eller en konkret modeludgivelse.",
-        "emne": "åbne modeller og forretning"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Cult.fit builds operational muscle with Codex",
       "link": "https://openai.com/index/cultfit-builds-with-codex",
       "resume": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
@@ -1295,73 +1186,6 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 3,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Open source AI is booming. Hugging Face explains who profits.",
-      "link": "https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits/",
-      "resume": "Open source models are becoming more mainstream as enterprises, governments and startups alike rely on the promise of lower costs, more control, and more flexibility. But as increasingly capable models become more freely available, how do companies capture value? And with Chinese open models gaining ground, can American players keep up? On this episode of […]",
-      "dato": "2026-11-04T19:30:04+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-11-04T19:59:08.515800+00:00",
-      "eget_foerst_set": "2026-11-04T19:59:08.515800+00:00",
-      "rubrik": "Hugging Face: Sådan tjener virksomheder på åbne modeller",
-      "resume_da": "I et podcastafsnit drøfter Hugging Faces politikchef omkostninger og risici ved åbne modeller, mens kinesiske åbne modeller vinder frem.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Podcastinterview med Hugging Faces politikchef om forretningsværdi og risici ved åbne modeller, ikke en ny model.",
-        "forbehold": "Kun kort uddrag af podcasten; ingen konkrete tal eller nye produkter.",
-        "emne": "open source-ai, hugging face"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "historie_dato": "2026-11-04T18:44:57+00:00",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
-      "link": "https://openai.com/index/devrev-enterprise-self-service",
-      "resume": "DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service.",
-      "dato": "2026-11-04T00:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-11-05T01:00:33.324815+00:00",
-      "eget_foerst_set": "2026-11-05T01:00:33.324815+00:00",
-      "rubrik": "DevRev bygger selvbetjening på GPT-6.1 Sol",
-      "resume_da": "Virksomheden bruger modellen i Computer og Operator og fremhæver en afvejning af ræsonnement, hastighed og pris til kundeservice.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Kundecase: DevRev bruger GPT-6.1 Sol i Computer og Operator til selvbetjening i virksomheder.",
-        "forbehold": "Leverandøromtale uden konkrete resultater eller uafhængig måling; ingen ny model udgives her.",
-        "emne": "devrev/gpt-6.1 sol"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1664,39 +1488,6 @@
       ]
     },
     {
-      "titel": "Decision Models in Hugging Face",
-      "link": "https://huggingface.co/blog/decision",
-      "resume": "",
-      "dato": "2026-11-10T00:00:00+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Forskning",
-      "foerst_set": "2026-11-10T21:56:03.050309+00:00",
-      "eget_foerst_set": "2026-11-10T21:56:03.050309+00:00",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 0,
-        "betydning": 0,
-        "brugbarhed": 0,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Titlen omtaler beslutningsmodeller i Hugging Face.",
-        "forbehold": "Der er ingen artikeltekst eller konkret ny oplysning i materialet.",
-        "emne": "beslutningsmodeller"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 1,
-      "afventer": [
-        "Mangler dansk overskrift",
-        "Mangler dansk indledning",
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Anthropic files S-1 with the SEC for proposed initial public offering",
       "link": "https://www.anthropic.com/news/s1-sec",
       "resume": "Today, Anthropic, PBC filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission relating to its proposed initial public offering of its Class A common stock.",
@@ -1829,34 +1620,100 @@
       ]
     },
     {
-      "titel": "Strengthening our defenses against distillation attacks",
-      "link": "https://www.anthropic.com/news/distillation-defenses",
-      "resume": "Illicit distillation allows model developers to copy frontier AI capabilities without creating proportionally robust safeguards. Here, we describe how we’ve reduced the rate of distillation by more than 90%.",
-      "dato": "2026-10-12T00:00:00+00:00",
-      "kilde": "Anthropic News",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-11-06T21:24:13.483646+00:00",
-      "eget_foerst_set": "2026-11-06T21:24:13.483646+00:00",
-      "rubrik": "Anthropic melder om færre destillationsangreb",
-      "resume_da": "Selskabet siger, at det har reduceret omfanget af destillation med over 90 procent. Metoden kan bruges til at kopiere AI-evner uden tilsvarende sikkerhedsforanstaltninger.",
+      "titel": "Who could replace Jensen Huang? A highly unscientific list of possible successors",
+      "link": "https://techcrunch.com/2026/11/11/who-could-replace-jensen-huang-a-highly-unscientific-list-of-possible-successors/",
+      "resume": "Nvidia has no succession plan and a CEO in hot water, so we’ve drafted a shortlist.",
+      "dato": "2026-11-12T03:13:10+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-12T07:38:22.389539+00:00",
+      "eget_foerst_set": "2026-11-12T07:38:22.389539+00:00",
+      "rubrik": "TechCrunch peger på mulige afløsere for Jensen Huang",
+      "resume_da": "Listen er ifølge mediet uvidenskabelig. TechCrunch skriver, at Nvidia ikke har en plan for direktørskifte.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "TechCrunch opstiller en uvidenskabelig liste over mulige efterfølgere til Nvidias direktør.",
+        "forbehold": "Listen er spekulativ; der er ikke meddelt et direktørskifte.",
+        "emne": "nvidia"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "kat_ai": true,
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Nvidia’s stock drops as board reportedly preps to oust CEO Jensen Huang",
+      "link": "https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang/",
+      "resume": "As soon as Wednesday evening, Nvidia's board could decide to remove its founder and CEO of 33 years.",
+      "dato": "2026-11-11T23:28:45+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-12T07:38:22.389539+00:00",
+      "eget_foerst_set": "2026-11-12T07:38:22.389539+00:00",
+      "rubrik": "Nvidia-aktien falder efter melding om mulig direktørfyring",
+      "resume_da": "Bestyrelsen kan ifølge TechCrunch tage stilling til, om grundlægger og direktør Jensen Huang skal fjernes.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
         "nyhed": 3,
         "betydning": 3,
         "brugbarhed": 2,
-        "dokumentation": 3,
+        "dokumentation": 2,
         "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": true,
+        "type": "rygte",
+        "ai_relevant": false,
         "model_lancering": false,
-        "begrundelse": "Anthropic siger, at selskabet har reduceret omfanget af destillationsangreb med over 90 procent.",
-        "forbehold": "Materialet beskriver ikke målemetode eller uafhængig afprøvning.",
-        "emne": "destillationsangreb"
+        "begrundelse": "Nvidias aktie falder, mens bestyrelsen ifølge TechCrunch kan overveje at fjerne Jensen Huang.",
+        "forbehold": "Et direktørskifte er ikke bekræftet.",
+        "emne": "nvidia"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
+      "kat_ai": true,
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Jensen Huang accused of having another affair — with an Nvidia exec",
+      "link": "https://techcrunch.com/2026/11/11/jensen-huang-accused-of-having-another-affair-with-a-nvidia-exec/",
+      "resume": "Jensen Huang, who has come under fire for admitting to an affair with a woman accused of being a Chinese intelligence agent, has been accused of having a separate affair with an Nvidia subordinate.",
+      "dato": "2026-11-11T23:17:05+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-12T07:38:22.389539+00:00",
+      "eget_foerst_set": "2026-11-12T07:38:22.389539+00:00",
+      "rubrik": "Jensen Huang beskyldes for affære med Nvidia-chef",
+      "resume_da": "Beskyldningen handler om en anden affære end den, Huang tidligere har indrømmet. Den involverede en kvinde, der er beskyldt for at være kinesisk efterretningsagent.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Jensen Huang beskyldes for en yderligere affære med en ansat hos Nvidia.",
+        "forbehold": "Uddraget dokumenterer ikke beskyldningen.",
+        "emne": "jensen huang"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1872,6 +1729,7 @@
       "eget_foerst_set": "2026-11-11T22:58:05.172801+00:00",
       "rubrik": "Nvidia-bestyrelse forbereder angiveligt fyring af Jensen Huang",
       "resume_da": "Ifølge The Wall Street Journal sker det efter en omtale af endnu en påstået udenomsægteskabelig affære.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1888,7 +1746,6 @@
         "emne": "nvidia"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -1905,6 +1762,7 @@
       "eget_foerst_set": "2026-11-11T22:58:05.172801+00:00",
       "rubrik": "Metas infrastrukturchef Santosh Janardhan stopper",
       "resume_da": "Janardhan kom til selskabet i 2009.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1921,7 +1779,6 @@
         "emne": "meta"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -1938,6 +1795,7 @@
       "eget_foerst_set": "2026-11-11T22:58:05.172801+00:00",
       "rubrik": "Republikanere beder Nvidias Jensen Huang om forklaring",
       "resume_da": "Han skal inden udgangen af onsdag svare på en anmodning om en lukket orientering om sit forhold til en formodet kinesisk spion.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1954,7 +1812,6 @@
         "emne": "jensen huang"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -2027,21 +1884,20 @@
       ]
     },
     {
-      "titel": "Nvidia CEO Jensen Huang’s affair with alleged Chinese spy: a timeline",
-      "link": "https://techcrunch.com/2026/11/10/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+      "titel": "The unfolding Jensen Huang scandal: a timeline",
+      "link": "https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
       "resume": "The affair could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
-      "dato": "2026-11-10T17:04:19+00:00",
+      "dato": "2026-11-11T23:50:00+00:00",
       "kilde": "TechCrunch AI",
       "kategori": "Samfund & etik",
       "foerst_set": "2026-11-10T21:56:03.050309+00:00",
-      "eget_foerst_set": "2026-11-10T21:56:03.050309+00:00",
-      "rubrik": "TechCrunch kortlægger Jensen Huangs forhold til angivelig spion",
-      "resume_da": "Forholdet kan ifølge TechCrunch få betydning for national sikkerhed, mens USA og Kina konkurrerer om at udvikle AI-infrastruktur.",
-      "kat_ai": true,
+      "eget_foerst_set": "2026-11-12T07:38:22.389539+00:00",
+      "rubrik": "TechCrunch kortlægger sagen om Jensen Huang",
+      "resume_da": "Ifølge mediet kan sagen få betydning for national sikkerhed, mens USA og Kina konkurrerer om at udvikle avanceret AI-infrastruktur.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 2,
+        "nyhed": 1,
         "betydning": 2,
         "brugbarhed": 1,
         "dokumentation": 2,
@@ -2049,12 +1905,24 @@
         "type": "analyse",
         "ai_relevant": false,
         "model_lancering": false,
-        "begrundelse": "TechCrunch gennemgår Nvidia-chefens forhold til en person, der angiveligt er kinesisk spion.",
+        "begrundelse": "TechCrunch samler en tidslinje over sagen om Jensen Huang.",
         "forbehold": "Mulige konsekvenser for national sikkerhed er ikke dokumenteret i uddraget.",
         "emne": "jensen huang"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
       "prio": 1,
+      "historie_dato": "2026-11-10T17:04:19+00:00",
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/11/10/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+          "rubrik": "TechCrunch kortlægger Jensen Huangs forhold til angivelig spion",
+          "resume_da": "Forholdet kan ifølge TechCrunch få betydning for national sikkerhed, mens USA og Kina konkurrerer om at udvikle AI-infrastruktur.",
+          "dato": "2026-11-10 17:04:19+00:00",
+          "foerst_set": "2026-11-10T21:56:03.050309+00:00"
+        }
+      ],
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -2549,105 +2417,6 @@
         "emne": "chatgpt ads"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "17 better ways Elon Musk could have wasted $446 million",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1026878/not-even-good-at-being-rich",
-      "resume": "One of the basic problems of spending too much time on social media is that you are cooking your brain by reading posts from a pack of attention-seeking lunatics. If your social media of choice is the site formerly known as Twitter, and it is your main source of contact with the outside world, you […]",
-      "dato": "2026-11-04T21:45:00+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-11-05T01:00:33.324815+00:00",
-      "eget_foerst_set": "2026-11-05T01:00:33.324815+00:00",
-      "rubrik": "The Verge: Musk har spildt 446 millioner dollars",
-      "resume_da": "Artiklen er et kommentarstykke og oplyser ikke, hvad pengene gik til; den lister i stedet alternative måder at bruge dem på.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 0,
-        "betydning": 1,
-        "brugbarhed": 0,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Kommentarstykke med forslag til alternative måder at bruge 446 millioner dollar; uden nye AI-oplysninger.",
-        "forbehold": "Artiklen oplyser ikke, hvad pengene faktisk gik til.",
-        "emne": "elon musk kommentar"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Sam Altman addresses RAM comments: People should ‘put as much as they want in their computers’",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1026292/sam-altman-ram-shortage-pcs-comments",
-      "resume": "OpenAI CEO Sam Altman spent election night defending his position on PC RAM purchases. He changed his name on X to \"Ram Altman\" in response to another user's comment, saying, \"i actually do want the world to have tons of memory and people to put as much as they want in their computers, and it […]",
-      "dato": "2026-11-04T14:46:01+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-11-04T19:59:08.515800+00:00",
-      "eget_foerst_set": "2026-11-04T19:59:08.515800+00:00",
-      "rubrik": "Sam Altman vil have mere RAM i folks computere",
-      "resume_da": "OpenAI-chefen forsvarede sin holdning på X og skiftede navn til \"Ram Altman\" efter en anden brugers kommentar.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 0,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "OpenAI-chefens kommentarer om PC-RAM og navneskift på X er ikke en AI-nyhed af betydning.",
-        "forbehold": "Kun korte uddrag af opslaget er gengivet.",
-        "emne": "sam altman"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "TechCrunch Founder Summit 2026: Doors open at 9 a.m. ET in Boston",
-      "link": "https://techcrunch.com/2026/11/04/techcrunch-founder-summit-2026-todays-the-day/",
-      "resume": "Today is the day to join TechCrunch Founder Summit 2026 in Boston's SoWa Power Station. Register now to join this founder-focused conference today.",
-      "dato": "2026-11-04T13:00:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-11-04T19:59:08.515800+00:00",
-      "eget_foerst_set": "2026-11-04T19:59:08.515800+00:00",
-      "rubrik": "TechCrunch holder Founder Summit i Boston i dag",
-      "resume_da": "Konferencen for grundlæggere løber i SoWa Power Station, og tilmelding foregår ifølge opslaget i dag.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 0,
-        "betydning": 0,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "reklame",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Opslag om tilmelding til TechCrunch Founder Summit 2026 er en eventpåmindelse uden AI-indhold.",
-        "forbehold": "",
-        "emne": "techcrunch founder summit"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -71595,7 +71364,10 @@
         "kontrolleret": "2026-11-10T22:02:51.319721+00:00"
       },
       "prio": 6,
-      "side": "artikel/6373e497a4d4c8ac.html"
+      "side": "artikel/6373e497a4d4c8ac.html",
+      "billedmotiv": "A thick stack of editable creative layers bearing Adobe's red stylised A mark opens to admit a solid tool-shaped connector from outside. One layer is visibly shifted, showing an external agent changing a local project while its layers remain separate. Put the Adobe mark prominently on the front layer; use opaque, sharply edged forms with clear contours and no simulated application interface.",
+      "billedmotiv_instruks": "201870acb76af607b98a",
+      "billede": "data/img/463e7381496405c8.webp"
     },
     {
       "titel": "Pay for Hugging Face Hub with your Google Cloud Account",
@@ -71647,6 +71419,12 @@
         "kontrolleret": "2026-11-10T22:02:41.715107+00:00"
       },
       "prio": 6,
+      "billedmotiv": "A Hugging Face usage token moves onto a single cloud bill bearing Google's recognisable four-colour G, showing the platform's charges joining an existing Google Cloud invoice. The token displays Hugging Face's yellow smiling face with open hugging hands, large and front-facing. Use a thick folded bill and a solid directional arrow, with opaque surfaces and cleanly separated contours.",
+      "billedmotiv_instruks": "d6644e99414d60d9234d",
+      "billedstatus": {
+        "status": "afvist_af_filter",
+        "signatur": "4ba7d4cee5b2106a"
+      },
       "side": "artikel/992e8c4109473216.html"
     },
     {
@@ -72433,6 +72211,12 @@
         "kontrolleret": "2026-11-11T16:36:22.578697+00:00"
       },
       "prio": 6,
+      "billedmotiv": "A watch-listing card bearing the multicoloured eBay wordmark is separated by a solid barrier from a token bearing Meta's blue infinity-loop symbol. The token faces the watch but cannot reach the listing, illustrating the reported access problem without implying a confirmed new policy. Make both marks prominent and front-facing, with thick opaque shapes and sharply defined, separate outlines.",
+      "billedmotiv_instruks": "5764f3794bbfdad7f61d",
+      "billedstatus": {
+        "status": "afvist_af_filter",
+        "signatur": "45f7fd7c039f9465"
+      },
       "side": "artikel/c77128a201b88a55.html"
     },
     {
@@ -72763,6 +72547,9 @@
         "kontrolleret": "2026-11-11T16:37:04.764656+00:00"
       },
       "prio": 4,
+      "billedmotiv": "A compact device chip sits inside an open handheld device and reaches toward a small calendar tool icon, suggesting an assistant executing a task locally. The chip is the dominant shape, visibly contained within the device rather than connected to a remote server. Use solid, opaque components with substantial thickness, crisp edges and clearly separated outlines.",
+      "billedmotiv_instruks": "d69c38f104c757632531",
+      "billede": "data/img/ef4ca73068a046a6.webp",
       "side": "artikel/4c5ef8a2d9eadfaa.html"
     },
     {
@@ -72851,6 +72638,41 @@
       "eget_foerst_set": "2026-11-11T16:32:11.614097+00:00",
       "rubrik": "AlphaGenome 2 forudsiger mutationers virkning i celler",
       "resume_da": "Google DeepMinds nye AI-model kan undersøge, hvordan den samme DNA-ændring påvirker forskellige celletyper og deres tilstande.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Samme DNA, forskellige virkninger",
+          "tekst": "Næsten alle kroppens celler har det samme DNA. Men en hudcelle, en hjertemuskelcelle og en immuncelle tænder og slukker for forskellige gener. Derfor kan den samme DNA-ændring have forskellig virkning fra celle til celle.\n\nAlphaGenome 2 er udviklet til at forudsige disse forskelle, også når en celles tilstand ændrer sig. Ifølge Google kan det afsløre virkninger med betydning for sygdom, som bredere modeller kan overse."
+        },
+        {
+          "overskrift": "Cellekort bliver til forudsigelser",
+          "tekst": "Modellen er trænet på store samlinger af oplysninger om individuelle celler. Google DeepMind beskriver resultatet som en måde at bruge detaljerede cellekort til at forudsige virkningen af ændringer i menneskers DNA.\n\nIfølge forskerne kan modellen også lave forudsigelser om nye celletyper og biologiske tilstande uden at blive trænet igen. Den kan desuden pege på huller i forsøgsdata, som forskere kan vælge at undersøge nærmere."
+        },
+        {
+          "overskrift": "Mere detaljerede svar koster mere",
+          "tekst": "AlphaGenome 2 er en efterfølger til AlphaGenome, men erstatter den ikke. De mere detaljerede forudsigelser kræver mere computerkraft og er dyrere at fremstille, siger Google DeepMinds genomikchef Žiga Avsec til The Verge.\n\nGoogle siger, at modellen stilles til rådighed for ikke-kommerciel forskning via AlphaGenome API, en adgang til modellen for andre programmer. Kommerciel forskning får adgang gennem en begrænset, lukket prøveordning."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "Over 100 millioner celleprofiler",
+          "label": "Træningsdata fra individuelle celler på tværs af 68 vævstyper"
+        },
+        {
+          "tal": "Næsten dobbelt så mange",
+          "label": "DNA-varianter, der kan ændre geners aktivitet i celler, sammenlignet med DeepMinds hidtil bedste model, ifølge virksomheden"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "Modellen kan hjælpe forskere med at forbinde DNA-varianter med virkninger i bestemte celler og dermed undersøge mulige årsager til sygdom. Den er ikke i sig selv en behandling.",
+      "pointer": [],
+      "billedmotiv": "A DNA strand bearing Google DeepMind’s recognisable four-colour Google G splits toward two distinct solid cell shapes, each displaying a different pattern of active gene segments. Highlight the same altered DNA segment on both branches to show AlphaGenome 2 predicting different effects in different cells. Use thick, opaque forms and clearly separated contours.",
+      "billedmotiv_instruks": "a02e9fe8ea2918a3112c",
+      "billedstatus": {
+        "status": "afvist_af_filter",
+        "signatur": "5c309a629336b5f6"
+      },
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -72868,48 +72690,13 @@
         "emne": "alphagenome 2"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "historie_dato": "2026-11-11T15:00:00+00:00",
-      "prio": 6,
-      "sektioner": [
-        {
-          "overskrift": "Samme DNA, forskellige virkninger",
-          "tekst": "Næsten alle kroppens celler har det samme DNA. Men en hudcelle, en hjertemuskelcelle og en immuncelle tænder og slukker for forskellige gener. Derfor kan den samme DNA-ændring have forskellig virkning fra celle til celle.\n\nAlphaGenome 2 er udviklet til at forudsige disse forskelle, også når en celles tilstand ændrer sig. Ifølge Google kan det afsløre virkninger med betydning for sygdom, som bredere modeller kan overse."
-        },
-        {
-          "overskrift": "Cellekort bliver til forudsigelser",
-          "tekst": "Modellen er trænet på store samlinger af oplysninger om individuelle celler. Google DeepMind beskriver resultatet som en måde at bruge detaljerede cellekort til at forudsige virkningen af ændringer i menneskers DNA.\n\nIfølge forskerne kan modellen også lave forudsigelser om nye celletyper og biologiske tilstande uden at blive trænet igen. Den kan desuden pege på huller i forsøgsdata, som forskere kan vælge at undersøge nærmere."
-        },
-        {
-          "overskrift": "Mere detaljerede svar koster mere",
-          "tekst": "AlphaGenome 2 er en efterfølger til AlphaGenome, men erstatter den ikke. De mere detaljerede forudsigelser kræver mere computerkraft og er dyrere at fremstille, siger Google DeepMinds genomikchef Žiga Avsec til The Verge.\n\nGoogle siger, at modellen stilles til rådighed for ikke-kommerciel forskning via AlphaGenome API, en adgang til modellen for andre programmer. Kommerciel forskning får adgang gennem en begrænset, lukket prøveordning."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "Over 100 millioner celleprofiler",
-          "label": "Træningsdata fra individuelle celler på tværs af 68 vævstyper"
-        },
-        {
-          "tal": "Næsten dobbelt så mange",
-          "label": "DNA-varianter, der kan ændre geners aktivitet i celler, sammenlignet med DeepMinds hidtil bedste model, ifølge virksomheden"
-        }
-      ],
-      "detaljer": [],
-      "betydning": "Modellen kan hjælpe forskere med at forbinde DNA-varianter med virkninger i bestemte celler og dermed undersøge mulige årsager til sygdom. Den er ikke i sig selv en behandling.",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-11T23:00:28.060642+00:00"
       },
-      "billedmotiv": "A DNA strand bearing Google DeepMind’s recognisable four-colour Google G splits toward two distinct solid cell shapes, each displaying a different pattern of active gene segments. Highlight the same altered DNA segment on both branches to show AlphaGenome 2 predicting different effects in different cells. Use thick, opaque forms and clearly separated contours.",
-      "billedmotiv_instruks": "a02e9fe8ea2918a3112c",
-      "billedstatus": {
-        "status": "afvist_af_filter",
-        "signatur": "5c309a629336b5f6"
-      },
+      "historie_dato": "2026-11-11T15:00:00+00:00",
+      "prio": 6,
       "side": "artikel/872573b4c15b2f70.html"
     },
     {
@@ -72923,6 +72710,30 @@
       "eget_foerst_set": "2026-11-11T22:58:05.172801+00:00",
       "rubrik": "United stopper AI-agenter fra at købe flybilletter",
       "resume_da": "Personlige AI-assistenter kan stadig vise fly fra United, men passageren må selv gennemføre købet. Flyselskabet peger på privatliv og sikkerhed.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "AI kan finde fly, men ikke betale",
+          "tekst": "United vil ikke lade personlige AI-agenter købe billetter hos flyselskabet på kundernes vegne. En AI-agent er en assistent, der kan udføre opgaver for en bruger. Den kan fortsat vise Uniteds flyafgange, men ikke gennemføre bestillingen.\n\nIfølge The Wall Street Journal har United endnu ikke set mange forsøge at bruge agenter til at bestille fly. Beslutningen sætter alligevel en grænse for, hvor meget af et billetkøb assistenterne kan klare."
+        },
+        {
+          "overskrift": "United frygter fejl og følsomme oplysninger",
+          "tekst": "United er bekymret for, at en agent kan afsløre kunders oplysninger eller foretage køb, som de ikke havde tænkt sig. Selskabet peger også på regler om de oplysninger, flyselskaber skal give deres kunder.\n\nEt eksempel er erklæringen om, at der ikke er sprængstoffer i bagagen. Den kan en AI-agent ikke afgive på passagerens vegne. United vil derfor have beskyttelse for de rejsende på plads, før agenter får direkte adgang til konti eller bestillinger."
+        },
+        {
+          "overskrift": "Flere virksomheder begrænser agenternes adgang",
+          "tekst": "United er ikke alene om at sætte grænser. Ifølge The Verge så eBay ud til at blokere agenter fra at gennemse sit websted, og flere store banker har også begrænset deres adgang.\n\nUnited udelukker ikke at ændre kurs, efterhånden som teknologien udvikler sig. Selskabets direktør, Scott Kirby, har samtidig sagt, at han ikke ønsker endnu et mellemled mellem selskabet og kunderne."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "Begrænsningen betyder, at assistenter som Meta’s Muse og OpenAI’s Dots ikke kan klare hele billetkøbet hos United for deres brugere.",
+      "pointer": [],
+      "billedmotiv": "A United Airlines boarding pass bearing the airline’s blue globe emblem meets a solid barrier at the payment step, while an AI assistant’s speech bubble points toward the pass from the other side. The arrangement shows an agent can find a flight but cannot complete its purchase. Use bold, opaque shapes with distinct edges.",
+      "billedmotiv_instruks": "2aaf5e429dd91f8ce041",
+      "billede": "data/img/cffc52bc4a4c2af4.webp",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -72939,36 +72750,12 @@
         "emne": "united og ai-agenter"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
-      "sektioner": [
-        {
-          "overskrift": "AI kan finde fly, men ikke betale",
-          "tekst": "United vil ikke lade personlige AI-agenter købe billetter hos flyselskabet på kundernes vegne. En AI-agent er en assistent, der kan udføre opgaver for en bruger. Den kan fortsat vise Uniteds flyafgange, men ikke gennemføre bestillingen.\n\nIfølge The Wall Street Journal har United endnu ikke set mange forsøge at bruge agenter til at bestille fly. Beslutningen sætter alligevel en grænse for, hvor meget af et billetkøb assistenterne kan klare."
-        },
-        {
-          "overskrift": "United frygter fejl og følsomme oplysninger",
-          "tekst": "United er bekymret for, at en agent kan afsløre kunders oplysninger eller foretage køb, som de ikke havde tænkt sig. Selskabet peger også på regler om de oplysninger, flyselskaber skal give deres kunder.\n\nEt eksempel er erklæringen om, at der ikke er sprængstoffer i bagagen. Den kan en AI-agent ikke afgive på passagerens vegne. United vil derfor have beskyttelse for de rejsende på plads, før agenter får direkte adgang til konti eller bestillinger."
-        },
-        {
-          "overskrift": "Flere virksomheder begrænser agenternes adgang",
-          "tekst": "United er ikke alene om at sætte grænser. Ifølge The Verge så eBay ud til at blokere agenter fra at gennemse sit websted, og flere store banker har også begrænset deres adgang.\n\nUnited udelukker ikke at ændre kurs, efterhånden som teknologien udvikler sig. Selskabets direktør, Scott Kirby, har samtidig sagt, at han ikke ønsker endnu et mellemled mellem selskabet og kunderne."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [],
-      "betydning": "Begrænsningen betyder, at assistenter som Meta’s Muse og OpenAI’s Dots ikke kan klare hele billetkøbet hos United for deres brugere.",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-11T23:00:28.186660+00:00"
       },
-      "billedmotiv": "A United Airlines boarding pass bearing the airline’s blue globe emblem meets a solid barrier at the payment step, while an AI assistant’s speech bubble points toward the pass from the other side. The arrangement shows an agent can find a flight but cannot complete its purchase. Use bold, opaque shapes with distinct edges.",
-      "billedmotiv_instruks": "2aaf5e429dd91f8ce041",
-      "billede": "data/img/cffc52bc4a4c2af4.webp",
+      "prio": 6,
       "side": "artikel/a3a0c9996cbe1c5a.html"
     },
     {
@@ -72980,6 +72767,29 @@
       "kategori": "Hverdags-AI",
       "foerst_set": "2026-11-11T22:58:05.172801+00:00",
       "eget_foerst_set": "2026-11-11T22:58:05.172801+00:00",
+      "rubrik": "Gemini Live kommer til Apple CarPlay",
+      "resume_da": "Googles samtaleassistent kan nu bruges fra bilens skærm til blandt andet at opsummere mails og tjekke kalenderen.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Samtalen fortsætter på bilens skærm",
+          "tekst": "iPhone-brugere kan nu tale med Gemini Live gennem Apple CarPlay, som viser udvalgte telefonapps på bilens skærm. Google er begyndt at rulle funktionen ud globalt.\n\nGemini Live er Googles AI-samtalefunktion. Fra CarPlay kan brugeren starte en ny samtale eller fortsætte en tidligere. Samtalerne synkroniseres med Gemini-appen på telefonen, så de også ligger i historikken, når turen er slut."
+        },
+        {
+          "overskrift": "Stemmen kan bruges til mere",
+          "tekst": "Under kørslen kan brugeren bede Gemini om at opsummere mails, tjekke kalenderen, få hjælp til idéer eller øve sig på et kommende møde. Ifølge Google kan samtalen foregå håndfrit.\n\nBrugeren kan afbryde for at tilføje en detalje, skifte emne eller holde pause. Google siger, at løsningen er designet til at begrænse distraktion, men materialet dokumenterer ikke, hvor meget den påvirker trafiksikkerheden."
+        },
+        {
+          "overskrift": "Appen skal gøres klar først",
+          "tekst": "For at komme i gang skal man opdatere Gemini-appen på sin iPhone, give adgang til mikrofonen og have brugt Gemini Live på telefonen mindst én gang. Når telefonen er forbundet til bilen, åbnes Gemini fra CarPlay-skærmen.\n\nUdrulningen gælder ifølge Google Gemini-brugere på iOS på de sprog, som Gemini Live understøtter. Gemini er tidligere blevet rullet ud på Android Auto og i biler med Google indbygget."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "",
+      "pointer": [],
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -72996,35 +72806,15 @@
         "emne": "gemini på apple carplay"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
-      "rubrik": "Gemini Live kommer til Apple CarPlay",
-      "resume_da": "Googles samtaleassistent kan nu bruges fra bilens skærm til blandt andet at opsummere mails og tjekke kalenderen.",
-      "sektioner": [
-        {
-          "overskrift": "Samtalen fortsætter på bilens skærm",
-          "tekst": "iPhone-brugere kan nu tale med Gemini Live gennem Apple CarPlay, som viser udvalgte telefonapps på bilens skærm. Google er begyndt at rulle funktionen ud globalt.\n\nGemini Live er Googles AI-samtalefunktion. Fra CarPlay kan brugeren starte en ny samtale eller fortsætte en tidligere. Samtalerne synkroniseres med Gemini-appen på telefonen, så de også ligger i historikken, når turen er slut."
-        },
-        {
-          "overskrift": "Stemmen kan bruges til mere",
-          "tekst": "Under kørslen kan brugeren bede Gemini om at opsummere mails, tjekke kalenderen, få hjælp til idéer eller øve sig på et kommende møde. Ifølge Google kan samtalen foregå håndfrit.\n\nBrugeren kan afbryde for at tilføje en detalje, skifte emne eller holde pause. Google siger, at løsningen er designet til at begrænse distraktion, men materialet dokumenterer ikke, hvor meget den påvirker trafiksikkerheden."
-        },
-        {
-          "overskrift": "Appen skal gøres klar først",
-          "tekst": "For at komme i gang skal man opdatere Gemini-appen på sin iPhone, give adgang til mikrofonen og have brugt Gemini Live på telefonen mindst én gang. Når telefonen er forbundet til bilen, åbnes Gemini fra CarPlay-skærmen.\n\nUdrulningen gælder ifølge Google Gemini-brugere på iOS på de sprog, som Gemini Live understøtter. Gemini er tidligere blevet rullet ud på Android Auto og i biler med Google indbygget."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [],
-      "betydning": "",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-11T23:00:41.849087+00:00"
       },
+      "prio": 6,
+      "billedmotiv": "A car dashboard display bearing the Google Gemini mark carries a hands-free conversation, shown by two solid speech bubbles projecting from its edge. The mark is the concave four-point Gemini spark in Google's blue, red, yellow and green gradient, large and front-facing on the display. Give the dashboard a recognisable steering-wheel contour and the bubbles thick, distinct edges; keep the display symbolic rather than a simulated interface.",
+      "billedmotiv_instruks": "542f04f437d64893d49a",
+      "billede": "data/img/be5768671f10aedd.webp",
       "side": "artikel/0f008a805c574e46.html"
     },
     {
@@ -73038,6 +72828,38 @@
       "eget_foerst_set": "2026-11-11T22:58:05.172801+00:00",
       "rubrik": "AWS gør det muligt at teste lokalt",
       "resume_da": "Et nyt værktøj efterligner AWS-tjenester på brugerens computer, så udviklere kan teste uden at oprette en betalt API-nøgle.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "En lokal kopi til test",
+          "tekst": "AWS har fået en officiel emulator, aws-emulator, som lader udviklere teste mod lokale kopier af en række af selskabets tjenester. AWS leverer blandt andet tjenester, som udviklere kan bruge i deres programmer.\n\nEn emulator efterligner et andet system. Her betyder det, at udviklere kan afprøve deres programmer mod lokale kopier uden først at oprette en betalt API-nøgle, som normalt bruges til at få adgang til en tjeneste."
+        },
+        {
+          "overskrift": "Mange ændringer på tre uger",
+          "tekst": "Ifølge Simon Willison er værktøjet skrevet i programmeringssproget Rust af en stor gruppe AI-agenter. En agent er et AI-system, der kan udføre opgaver. Projektet fik et meget stort antal registrerede ændringer, såkaldte commits, i sine første tre uger.\n\nSwaminathan (Swami) Sivasubramanian har beskrevet tilblivelsen i et gæsteindlæg på Werner Vogels’ blog. Antallet af ændringer siger dog ikke i sig selv, hvor godt emulatoren virker."
+        },
+        {
+          "overskrift": "Docker er stadig nødvendigt",
+          "tekst": "På macOS og Windows kræver aws-emulator i øjeblikket Docker, et værktøj til at køre programmer i afgrænsede miljøer.\n\nWillison håber, at emulatoren senere kan hentes som én selvstændig programfil. Det ville ifølge ham gøre det lettere at bruge den i almindelige tests på flere platforme og med flere programmeringssprog."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "29.684 commits",
+          "label": "Registrerede ændringer i projektets første tre uger, ifølge Simon Willison"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "Den lokale testmulighed fjerner behovet for en betalt API-nøgle i netop denne del af udviklernes arbejde.",
+      "pointer": [],
+      "billedmotiv": "A laptop bearing the AWS wordmark and its orange smile arrow contains a compact stack of service blocks, with a testing checkmark placed directly against the stack. Show the copied services inside the computer rather than in a cloud, expressing local testing without a paid API key. Use solid, clearly separated shapes.",
+      "billedmotiv_instruks": "40f2dd8b650a50c054e0",
+      "billedstatus": {
+        "status": "afvist_af_filter",
+        "signatur": "9e1032e619baa27b"
+      },
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -73054,50 +72876,18 @@
         "emne": "aws-emulator"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
-      "sektioner": [
-        {
-          "overskrift": "En lokal kopi til test",
-          "tekst": "AWS har fået en officiel emulator, aws-emulator, som lader udviklere teste mod lokale kopier af en række af selskabets tjenester. AWS leverer blandt andet tjenester, som udviklere kan bruge i deres programmer.\n\nEn emulator efterligner et andet system. Her betyder det, at udviklere kan afprøve deres programmer mod lokale kopier uden først at oprette en betalt API-nøgle, som normalt bruges til at få adgang til en tjeneste."
-        },
-        {
-          "overskrift": "Mange ændringer på tre uger",
-          "tekst": "Ifølge Simon Willison er værktøjet skrevet i programmeringssproget Rust af en stor gruppe AI-agenter. En agent er et AI-system, der kan udføre opgaver. Projektet fik et meget stort antal registrerede ændringer, såkaldte commits, i sine første tre uger.\n\nSwaminathan (Swami) Sivasubramanian har beskrevet tilblivelsen i et gæsteindlæg på Werner Vogels’ blog. Antallet af ændringer siger dog ikke i sig selv, hvor godt emulatoren virker."
-        },
-        {
-          "overskrift": "Docker er stadig nødvendigt",
-          "tekst": "På macOS og Windows kræver aws-emulator i øjeblikket Docker, et værktøj til at køre programmer i afgrænsede miljøer.\n\nWillison håber, at emulatoren senere kan hentes som én selvstændig programfil. Det ville ifølge ham gøre det lettere at bruge den i almindelige tests på flere platforme og med flere programmeringssprog."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "29.684 commits",
-          "label": "Registrerede ændringer i projektets første tre uger, ifølge Simon Willison"
-        }
-      ],
-      "detaljer": [],
-      "betydning": "Den lokale testmulighed fjerner behovet for en betalt API-nøgle i netop denne del af udviklernes arbejde.",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-11T23:00:45.723376+00:00"
       },
-      "billedmotiv": "A laptop bearing the AWS wordmark and its orange smile arrow contains a compact stack of service blocks, with a testing checkmark placed directly against the stack. Show the copied services inside the computer rather than in a cloud, expressing local testing without a paid API key. Use solid, clearly separated shapes.",
-      "billedmotiv_instruks": "40f2dd8b650a50c054e0",
-      "billedstatus": {
-        "status": "afvist_af_filter",
-        "signatur": "9e1032e619baa27b"
-      },
+      "prio": 6,
       "side": "artikel/3ab1e5bf32c1c850.html"
     },
     {
       "titel": "CoreWeave turns to customer prepayments, shorter contracts to fund AI growth",
       "link": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/",
-      "resume": "CoreWeave is increasingly asking customers to pay upfront, borrowing against specific contracts, and even looking to short-term deals that could lead to higher prices, according to the company’s third-quarter earnings.",
+      "resume": "CoreWeave is increasingly asking customers to pay up front, borrowing against specific contracts, and even looking to short-term deals that could lead to higher prices, according to the company’s third-quarter earnings.",
       "dato": "2026-11-11T19:54:00+00:00",
       "kilde": "TechCrunch AI",
       "kategori": "Penge & marked",
@@ -73105,6 +72895,43 @@
       "eget_foerst_set": "2026-11-11T22:58:05.172801+00:00",
       "rubrik": "CoreWeave beder kunder betale på forskud",
       "resume_da": "Udlejeren af regnekraft til AI vil finansiere sin vækst med kundernes penge og lån knyttet til kontrakter frem for usikret gæld.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Kunderne skal betale før levering",
+          "tekst": "CoreWeave forventer omkring 9 milliarder dollar i forudbetalinger og depositummer fra kunder over de næste tre måneder. Pengene kan mindske virksomhedens behov for at låne her og nu.\n\nMere end 3 milliarder dollar er knyttet til nye kontrakter om regnekraft, som CoreWeave allerede har bygget kapacitet til. De aftaler kræver derfor ikke yderligere udgifter til hardware.\n\nVirksomheden vil også låne med sikkerhed i konkrete kundekontrakter og trække pengene efter behov. Ifølge regnskabet for tredje kvartal skal det finansiere størstedelen af den infrastruktur, der endnu mangler til en ordrebeholdning på 132,5 milliarder dollar."
+        },
+        {
+          "overskrift": "Kortere aftaler giver højere priser",
+          "tekst": "CoreWeave sætter samtidig mere kapacitet af til kortvarige aftaler, når prisen er høj nok. De giver virksomheden mulighed for at ændre priserne oftere end ved lange kontrakter.\n\nPriserne steg ifølge virksomheden omkring 25 procent i juli og yderligere 10 procent senere i kvartalet. Direktør Michael Intrator siger, at priserne fortsat stiger og mere end opvejer stigende omkostninger.\n\nI august optog CoreWeave et lån på 2,6 milliarder dollar, som er særligt indrettet til kortere kundekontrakter. Lånet kan trækkes i portioner, efterhånden som virksomheden har brug for pengene."
+        },
+        {
+          "overskrift": "Gælden gør væksten sårbar",
+          "tekst": "Strategien afhænger af, at efterspørgslen og de høje priser holder. Korte aftaler skal fornys oftere, mens forudbetalinger binder CoreWeave til at levere til en pris, der senere kan vise sig mindre attraktiv.\n\nLångivere lægger samtidig større vægt på lange kontrakter, fordi de giver mere forudsigelige indtægter til at betale lån tilbage. I oktober steg afkastkravet på nogle af CoreWeaves obligationer til over 15 procent, et tegn på investorernes bekymring over gælden."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "3,66 milliarder dollar",
+          "label": "Omsætning i tredje kvartal, 168 procent højere end året før"
+        },
+        {
+          "tal": "709 millioner dollar",
+          "label": "Nettounderskud i tredje kvartal; renteudgifterne var 846 millioner dollar"
+        },
+        {
+          "tal": "Over 40 millioner dollar pr. megawatt årligt",
+          "label": "Pris på kortvarig kapacitet mod 20–25 millioner dollar pr. megawatt for ny infrastruktur på fire- og femårige kontrakter"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "Forudbetalinger kan skaffe CoreWeave penge uden nye usikrede lån, men binder også virksomheden til fremtidige leverancer til aftalte priser.",
+      "pointer": [],
+      "billedmotiv": "A stack of coins moves into an AI server rack before a separate computing-chip token moves outward, illustrating customer payments arriving ahead of CoreWeave’s future computing-capacity delivery. Make the incoming and outgoing directions unmistakable through broad solid arrows. Use thick, opaque forms and clean, separated contours.",
+      "billedmotiv_instruks": "ffe5d19c1486a40a25e7",
+      "billede": "data/img/e36933f6cf445cc2.webp",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -73121,49 +72948,12 @@
         "emne": "coreweave"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
-      "sektioner": [
-        {
-          "overskrift": "Kunderne skal betale før levering",
-          "tekst": "CoreWeave forventer omkring 9 milliarder dollar i forudbetalinger og depositummer fra kunder over de næste tre måneder. Pengene kan mindske virksomhedens behov for at låne her og nu.\n\nMere end 3 milliarder dollar er knyttet til nye kontrakter om regnekraft, som CoreWeave allerede har bygget kapacitet til. De aftaler kræver derfor ikke yderligere udgifter til hardware.\n\nVirksomheden vil også låne med sikkerhed i konkrete kundekontrakter og trække pengene efter behov. Ifølge regnskabet for tredje kvartal skal det finansiere størstedelen af den infrastruktur, der endnu mangler til en ordrebeholdning på 132,5 milliarder dollar."
-        },
-        {
-          "overskrift": "Kortere aftaler giver højere priser",
-          "tekst": "CoreWeave sætter samtidig mere kapacitet af til kortvarige aftaler, når prisen er høj nok. De giver virksomheden mulighed for at ændre priserne oftere end ved lange kontrakter.\n\nPriserne steg ifølge virksomheden omkring 25 procent i juli og yderligere 10 procent senere i kvartalet. Direktør Michael Intrator siger, at priserne fortsat stiger og mere end opvejer stigende omkostninger.\n\nI august optog CoreWeave et lån på 2,6 milliarder dollar, som er særligt indrettet til kortere kundekontrakter. Lånet kan trækkes i portioner, efterhånden som virksomheden har brug for pengene."
-        },
-        {
-          "overskrift": "Gælden gør væksten sårbar",
-          "tekst": "Strategien afhænger af, at efterspørgslen og de høje priser holder. Korte aftaler skal fornys oftere, mens forudbetalinger binder CoreWeave til at levere til en pris, der senere kan vise sig mindre attraktiv.\n\nLångivere lægger samtidig større vægt på lange kontrakter, fordi de giver mere forudsigelige indtægter til at betale lån tilbage. I oktober steg afkastkravet på nogle af CoreWeaves obligationer til over 15 procent, et tegn på investorernes bekymring over gælden."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "3,66 milliarder dollar",
-          "label": "Omsætning i tredje kvartal, 168 procent højere end året før"
-        },
-        {
-          "tal": "709 millioner dollar",
-          "label": "Nettounderskud i tredje kvartal; renteudgifterne var 846 millioner dollar"
-        },
-        {
-          "tal": "Over 40 millioner dollar pr. megawatt årligt",
-          "label": "Pris på kortvarig kapacitet mod 20–25 millioner dollar pr. megawatt for ny infrastruktur på fire- og femårige kontrakter"
-        }
-      ],
-      "detaljer": [],
-      "betydning": "Forudbetalinger kan skaffe CoreWeave penge uden nye usikrede lån, men binder også virksomheden til fremtidige leverancer til aftalte priser.",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-11T23:01:03.751729+00:00"
       },
-      "billedmotiv": "A stack of coins moves into an AI server rack before a separate computing-chip token moves outward, illustrating customer payments arriving ahead of CoreWeave’s future computing-capacity delivery. Make the incoming and outgoing directions unmistakable through broad solid arrows. Use thick, opaque forms and clean, separated contours.",
-      "billedmotiv_instruks": "ffe5d19c1486a40a25e7",
-      "billede": "data/img/e36933f6cf445cc2.webp",
+      "prio": 6,
       "side": "artikel/546c365caa1bad2d.html"
     },
     {
@@ -73177,6 +72967,38 @@
       "eget_foerst_set": "2026-11-11T22:58:05.172801+00:00",
       "rubrik": "Fractile får millioner til sine AI-chips",
       "resume_da": "Den britiske virksomhed vil bruge ny kapital til at sende sine første chips og systemer på markedet i 2027.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Pengene skal føre til første levering",
+          "tekst": "Fractile har hentet 720 millioner dollar til udviklingen af chips, der skal bruges til AI. Ifølge direktør Walter Goodwin skal pengene gøre det muligt at levere virksomhedens første chips og systemer i 2027.\n\nKapitalrunden blev ledet af Thrive Capital, Founders Fund, Lightspeed Venture Partners og Redpoint. Også Storbritanniens Sovereign AI Fund, en statslig AI-fond, står bag investeringen.\n\nDen britiske regering ser investeringen som et middel til at give Storbritannien en større andel i den hardware, der skal understøtte landets fremtidige økonomi. Goodwin understreger samtidig, at virksomheden stadig har meget arbejde foran sig."
+        },
+        {
+          "overskrift": "Hukommelse placeres oven på chippen",
+          "tekst": "Fractile har ændret kurs i sit design og satser nu på at stable hukommelse af typen DRAM oven på hver chip. DRAM er den mest almindelige type RAM, som bruges til at opbevare data, mens de behandles.\n\nVirksomheden udvikler også software, der skal hjælpe store sprogmodeller med at køre så hurtigt som muligt på dens chips. De særlige AI-chips er en af flere veje, som virksomheder undersøger for at sænke prisen på at bruge krævende AI-modeller.\n\nBehovet er vokset med AI-systemer, der udfører længere kæder af opgaver. Men Fractiles chips er endnu ikke leveret, og kilden dokumenterer ikke, hvor hurtigt de vil kunne køre modellerne."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "720 millioner dollar",
+          "label": "Rejst i Fractiles seneste kapitalrunde"
+        },
+        {
+          "tal": "Over 5 milliarder pund",
+          "label": "Virksomhedens værdiansættelse ifølge den britiske regering"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "Kapitalen skal bringe Fractile frem til de første leveringer, men virkningen af chipdesignet er endnu ikke dokumenteret i kilden.",
+      "pointer": [],
+      "billedmotiv": "A stack of investment coins points toward a conceptual AI chip with a distinct memory layer stacked directly on top, representing Fractile’s funding for its first planned chips. Keep the chip clearly illustrative and unfinished, not a photograph of a delivered product. Use thick, opaque shapes and a broad, solid arrow.",
+      "billedmotiv_instruks": "3af97096c53c6515e707",
+      "billedstatus": {
+        "status": "afvist_af_filter",
+        "signatur": "7207ff5c7676ed18"
+      },
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -73193,44 +73015,12 @@
         "emne": "fractile"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Pengene skal føre til første levering",
-          "tekst": "Fractile har hentet 720 millioner dollar til udviklingen af chips, der skal bruges til AI. Ifølge direktør Walter Goodwin skal pengene gøre det muligt at levere virksomhedens første chips og systemer i 2027.\n\nKapitalrunden blev ledet af Thrive Capital, Founders Fund, Lightspeed Venture Partners og Redpoint. Også Storbritanniens Sovereign AI Fund, en statslig AI-fond, står bag investeringen.\n\nDen britiske regering ser investeringen som et middel til at give Storbritannien en større andel i den hardware, der skal understøtte landets fremtidige økonomi. Goodwin understreger samtidig, at virksomheden stadig har meget arbejde foran sig."
-        },
-        {
-          "overskrift": "Hukommelse placeres oven på chippen",
-          "tekst": "Fractile har ændret kurs i sit design og satser nu på at stable hukommelse af typen DRAM oven på hver chip. DRAM er den mest almindelige type RAM, som bruges til at opbevare data, mens de behandles.\n\nVirksomheden udvikler også software, der skal hjælpe store sprogmodeller med at køre så hurtigt som muligt på dens chips. De særlige AI-chips er en af flere veje, som virksomheder undersøger for at sænke prisen på at bruge krævende AI-modeller.\n\nBehovet er vokset med AI-systemer, der udfører længere kæder af opgaver. Men Fractiles chips er endnu ikke leveret, og kilden dokumenterer ikke, hvor hurtigt de vil kunne køre modellerne."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "720 millioner dollar",
-          "label": "Rejst i Fractiles seneste kapitalrunde"
-        },
-        {
-          "tal": "Over 5 milliarder pund",
-          "label": "Virksomhedens værdiansættelse ifølge den britiske regering"
-        }
-      ],
-      "detaljer": [],
-      "betydning": "Kapitalen skal bringe Fractile frem til de første leveringer, men virkningen af chipdesignet er endnu ikke dokumenteret i kilden.",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-11T23:01:27.352851+00:00"
       },
-      "billedmotiv": "A stack of investment coins points toward a conceptual AI chip with a distinct memory layer stacked directly on top, representing Fractile’s funding for its first planned chips. Keep the chip clearly illustrative and unfinished, not a photograph of a delivered product. Use thick, opaque shapes and a broad, solid arrow.",
-      "billedmotiv_instruks": "3af97096c53c6515e707",
-      "billedstatus": {
-        "status": "afvist_af_filter",
-        "signatur": "7207ff5c7676ed18"
-      },
+      "prio": 4,
       "side": "artikel/69792f3c808437d7.html"
     },
     {
@@ -73244,6 +73034,46 @@
       "eget_foerst_set": "2026-11-11T22:58:05.172801+00:00",
       "rubrik": "TSMC vil investere i OpenAI og Anthropic",
       "resume_da": "Chipproducentens bestyrelse har godkendt investeringer på op til en milliard dollar i to af de store udviklere af AI.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Chipproducenten vil købe aktier",
+          "tekst": "Taiwanske TSMC vil investere op til 500 millioner dollar i OpenAI og yderligere 500 millioner dollar i Anthropic. Dermed kan chipproducenten få direkte ejerandele i selskaberne bag AI-tjenesterne ChatGPT og Claude.\n\nBestyrelsen har ifølge Reuters godkendt planen. TSMC vil købe særlige OpenAI-aktier forbeholdt store investorer og almindelige aktier i Anthropic til den forventede pris ved en børsnotering."
+        },
+        {
+          "overskrift": "Pengene bevæger sig i ring",
+          "tekst": "TSMC fremstiller langt de fleste af Nvidias chips til AI-datacentre. Både OpenAI og Anthropic køber store mængder AI-udstyr med chips fra TSMC til deres datacenterprojekter.\n\nMed investeringen sender TSMC penge tilbage mod selskaber, hvis efterspørgsel er med til at drive salget af selskabets chips. Det er et eksempel på cirkulær finansiering mellem virksomheder, der både handler med og investerer i hinanden."
+        },
+        {
+          "overskrift": "Analytikere advarer om uklart marked",
+          "tekst": "Cirkulær finansiering kan gøre det svært at vurdere den reelle efterspørgsel efter AI-udstyr og -tjenester, advarer analytikere ifølge The Wall Street Journal. Avisen peger samtidig på, at TSMC's investering kan styrke markedets tillid, mens AI-investeringer viser tegn på pres.\n\nTSMC har nydt godt af efterspørgslen efter AI-chips og har meldt om rekordoverskud seks kvartaler i træk. Den planlagte investering er dog mindre end de beløb, Nvidia allerede har investeret i de to AI-selskaber."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "Over 23 milliarder dollar",
+          "label": "TSMC's overskud i juli–september 2026, ifølge Reuters"
+        },
+        {
+          "tal": "30 milliarder dollar",
+          "label": "Nvidias hidtidige investering i OpenAI"
+        },
+        {
+          "tal": "10 milliarder dollar",
+          "label": "Nvidias hidtidige investering i Anthropic"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "TSMC fremstiller også de fleste af Apples specialudviklede chips til blandt andet iPhone og Mac.",
+        "De fleste TSMC-fabrikker ligger i Taiwan, men selskabet producerer også chips i Japan, Kina og USA."
+      ],
+      "betydning": "Investeringen knytter chipproducenten tættere til to store AI-udviklere, samtidig med at forbindelserne mellem investorer, leverandører og kunder gør efterspørgslen sværere at vurdere.",
+      "pointer": [],
+      "billedmotiv": "A semiconductor chip bearing TSMC’s recognisable logo, with its red segmented wafer and dark lowercase wordmark, sends two equal stacks of coins toward two separate share certificates. The paired certificates represent planned investments in OpenAI and Anthropic rather than chip sales. Use solid, opaque shapes and broad directional arrows.",
+      "billedmotiv_instruks": "8890d9012746cb03e9a8",
+      "billede": "data/img/a5952e598790cffd.webp",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -73260,52 +73090,12 @@
         "emne": "tsmc"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Chipproducenten vil købe aktier",
-          "tekst": "Taiwanske TSMC vil investere op til 500 millioner dollar i OpenAI og yderligere 500 millioner dollar i Anthropic. Dermed kan chipproducenten få direkte ejerandele i selskaberne bag AI-tjenesterne ChatGPT og Claude.\n\nBestyrelsen har ifølge Reuters godkendt planen. TSMC vil købe særlige OpenAI-aktier forbeholdt store investorer og almindelige aktier i Anthropic til den forventede pris ved en børsnotering."
-        },
-        {
-          "overskrift": "Pengene bevæger sig i ring",
-          "tekst": "TSMC fremstiller langt de fleste af Nvidias chips til AI-datacentre. Både OpenAI og Anthropic køber store mængder AI-udstyr med chips fra TSMC til deres datacenterprojekter.\n\nMed investeringen sender TSMC penge tilbage mod selskaber, hvis efterspørgsel er med til at drive salget af selskabets chips. Det er et eksempel på cirkulær finansiering mellem virksomheder, der både handler med og investerer i hinanden."
-        },
-        {
-          "overskrift": "Analytikere advarer om uklart marked",
-          "tekst": "Cirkulær finansiering kan gøre det svært at vurdere den reelle efterspørgsel efter AI-udstyr og -tjenester, advarer analytikere ifølge The Wall Street Journal. Avisen peger samtidig på, at TSMC's investering kan styrke markedets tillid, mens AI-investeringer viser tegn på pres.\n\nTSMC har nydt godt af efterspørgslen efter AI-chips og har meldt om rekordoverskud seks kvartaler i træk. Den planlagte investering er dog mindre end de beløb, Nvidia allerede har investeret i de to AI-selskaber."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "Over 23 milliarder dollar",
-          "label": "TSMC's overskud i juli–september 2026, ifølge Reuters"
-        },
-        {
-          "tal": "30 milliarder dollar",
-          "label": "Nvidias hidtidige investering i OpenAI"
-        },
-        {
-          "tal": "10 milliarder dollar",
-          "label": "Nvidias hidtidige investering i Anthropic"
-        }
-      ],
-      "detaljer": [
-        "TSMC fremstiller også de fleste af Apples specialudviklede chips til blandt andet iPhone og Mac.",
-        "De fleste TSMC-fabrikker ligger i Taiwan, men selskabet producerer også chips i Japan, Kina og USA."
-      ],
-      "betydning": "Investeringen knytter chipproducenten tættere til to store AI-udviklere, samtidig med at forbindelserne mellem investorer, leverandører og kunder gør efterspørgslen sværere at vurdere.",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-11T23:01:19.738328+00:00"
       },
-      "billedmotiv": "A semiconductor chip bearing TSMC’s recognisable logo, with its red segmented wafer and dark lowercase wordmark, sends two equal stacks of coins toward two separate share certificates. The paired certificates represent planned investments in OpenAI and Anthropic rather than chip sales. Use solid, opaque shapes and broad directional arrows.",
-      "billedmotiv_instruks": "8890d9012746cb03e9a8",
-      "billede": "data/img/a5952e598790cffd.webp",
+      "prio": 4,
       "side": "artikel/f104fa5b73158a4a.html"
     },
     {
@@ -73319,6 +73109,30 @@
       "eget_foerst_set": "2026-11-11T22:58:05.172801+00:00",
       "rubrik": "Big Walk brugte AI til fejlretning",
       "resume_da": "Udvikleren House House har offentliggjort en begrænset brug af AI, som har udløst debat blandt dommere ved en prisuddeling for uafhængige spil.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Skygger bremsede spillet",
+          "tekst": "House House brugte en AI-chatbot til at hjælpe med at løse en fejl i Big Walk, et samarbejdsspil med gåder og udforskning. Fejlen kunne skabe uendeligt lange skygger, som gjorde spillet langsomt.\n\nUdvikleren havde først spurgt en ingeniør hos Unity, hvis spilmotor bruges til at bygge spillet. Ifølge House House vurderede ingeniøren, at fejlen ikke kunne løses. Chatbotten foreslog derefter en løsning, som udviklerne siger, at de måtte ændre omfattende.\n\nResultatet blev 10 linjer kode i det færdige spil. House House oplyser, at AI-brugen samlet vedrører langt under 0,1 procent af spillets kode."
+        },
+        {
+          "overskrift": "Jurymedlemmer afviser enhver AI-brug",
+          "tekst": "Brugen blev først offentlig kendt, efter at 19 af de mere end 50 jurymedlemmer ved Independent Games Festival Awards havde erklæret, at de ikke vil stemme på spil, der bruger generativ AI i nogen form. Den type AI kan blandt andet skabe tekst, billeder og kode.\n\nJurymedlemmerne nævnte blandt andet miljømæssige og arbejdsmæssige skadevirkninger. De opfordrede festivalen til fremover at afvise spil med AI-skabt arbejde, men deres udmelding var ikke festivalens samlede politik.\n\nAndre mener, at der er forskel på en begrænset teknisk rettelse og omfattende brug af AI til eksempelvis grafik eller musik. Jurymedlem Liz Ryerson mente ikke, at Big Walks AI-brug i sig selv burde udelukke spillet fra priser."
+        },
+        {
+          "overskrift": "Forskellige krav til åbenhed",
+          "tekst": "House House oplyste om AI-hjælpen ved indstillingen til festivalen, men ikke ved udgivelsen på spilplatformen Steam. Ifølge udvikleren beder Steams ejer Valve ikke om oplysninger om brug af AI til kode eller chatbots.\n\nValve skelner mellem AI-skabt indhold og effektivitetsgevinster fra værktøjer med AI. House House siger, at oplysningerne nu er offentliggjort, fordi de er blevet et spørgsmål af offentlig interesse. Udvikleren understreger, at offentliggørelsen ikke er en anbefaling af AI-værktøjer."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "Sagen viser, at selv en lille AI-assisteret rettelse kan få betydning for et spils muligheder hos nogle prisdommere.",
+      "pointer": [],
+      "billedmotiv": "A solid chatbot speech bubble places a small code patch into a broken game tile, shortening an exaggerated dark polygon inside the tile to represent Big Walk’s long-shadow bug being fixed. Keep the polygon visibly part of the game graphic, not a cast shadow. Use thick, opaque shapes with distinct contours.",
+      "billedmotiv_instruks": "0569fb6061305a79ca07",
+      "billede": "data/img/52bca73fe3cf2979.webp",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -73335,36 +73149,12 @@
         "emne": "ai-kodning i spil"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Skygger bremsede spillet",
-          "tekst": "House House brugte en AI-chatbot til at hjælpe med at løse en fejl i Big Walk, et samarbejdsspil med gåder og udforskning. Fejlen kunne skabe uendeligt lange skygger, som gjorde spillet langsomt.\n\nUdvikleren havde først spurgt en ingeniør hos Unity, hvis spilmotor bruges til at bygge spillet. Ifølge House House vurderede ingeniøren, at fejlen ikke kunne løses. Chatbotten foreslog derefter en løsning, som udviklerne siger, at de måtte ændre omfattende.\n\nResultatet blev 10 linjer kode i det færdige spil. House House oplyser, at AI-brugen samlet vedrører langt under 0,1 procent af spillets kode."
-        },
-        {
-          "overskrift": "Jurymedlemmer afviser enhver AI-brug",
-          "tekst": "Brugen blev først offentlig kendt, efter at 19 af de mere end 50 jurymedlemmer ved Independent Games Festival Awards havde erklæret, at de ikke vil stemme på spil, der bruger generativ AI i nogen form. Den type AI kan blandt andet skabe tekst, billeder og kode.\n\nJurymedlemmerne nævnte blandt andet miljømæssige og arbejdsmæssige skadevirkninger. De opfordrede festivalen til fremover at afvise spil med AI-skabt arbejde, men deres udmelding var ikke festivalens samlede politik.\n\nAndre mener, at der er forskel på en begrænset teknisk rettelse og omfattende brug af AI til eksempelvis grafik eller musik. Jurymedlem Liz Ryerson mente ikke, at Big Walks AI-brug i sig selv burde udelukke spillet fra priser."
-        },
-        {
-          "overskrift": "Forskellige krav til åbenhed",
-          "tekst": "House House oplyste om AI-hjælpen ved indstillingen til festivalen, men ikke ved udgivelsen på spilplatformen Steam. Ifølge udvikleren beder Steams ejer Valve ikke om oplysninger om brug af AI til kode eller chatbots.\n\nValve skelner mellem AI-skabt indhold og effektivitetsgevinster fra værktøjer med AI. House House siger, at oplysningerne nu er offentliggjort, fordi de er blevet et spørgsmål af offentlig interesse. Udvikleren understreger, at offentliggørelsen ikke er en anbefaling af AI-værktøjer."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [],
-      "betydning": "Sagen viser, at selv en lille AI-assisteret rettelse kan få betydning for et spils muligheder hos nogle prisdommere.",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-11T23:01:36.927211+00:00"
       },
-      "billedmotiv": "A solid chatbot speech bubble places a small code patch into a broken game tile, shortening an exaggerated dark polygon inside the tile to represent Big Walk’s long-shadow bug being fixed. Keep the polygon visibly part of the game graphic, not a cast shadow. Use thick, opaque shapes with distinct contours.",
-      "billedmotiv_instruks": "0569fb6061305a79ca07",
-      "billede": "data/img/52bca73fe3cf2979.webp",
+      "prio": 4,
       "side": "artikel/48c8b10aae6e7aad.html"
     },
     {
@@ -73378,6 +73168,26 @@
       "eget_foerst_set": "2026-11-11T22:58:05.172801+00:00",
       "rubrik": "Simon Willisons værktøjer kan nu findes via emner",
       "resume_da": "En analyse af koden har ført til nye emneord på forsiden af hans samling med 244 AI-udviklede værktøjer.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Koden bestemmer værktøjernes emneord",
+          "tekst": "Simon Willisons samling af AI-udviklede værktøjer kan nu gennemsés efter, hvilke teknologier værktøjerne bruger. Forsiden viser emneord i tre grupper, så læseren kan finde værktøjer med fælles tekniske træk.\n\nEmneordene bygger på en analyse af hvert værktøjs kode. Willison brugte sine resterende kreditter til Fable 5.2 før deres ugentlige nulstilling og satte den til at udføre arbejdet med tree-sitter, et program til at analysere kode."
+        },
+        {
+          "overskrift": "Tre veje ind i samlingen",
+          "tekst": "Analysen ledte efter JavaScript-API’er, biblioteker og værter for web-API’er. Et API er en måde, programmer kan udveksle data eller funktioner på. Et bibliotek er færdig kode, som et program kan bruge, mens en vært er det sted på nettet, en tjeneste findes.\n\nDe tre grupper giver dermed forskellige indgange til samlingen, som ifølge Willison tæller 244 værktøjer og stadig vokser. Emneordene fortæller om teknologier i koden; de er ikke i sig selv en beskrivelse af, hvad hvert værktøj gør."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "Den nye inddeling gør det muligt at udforske samlingen efter fælles teknologier frem for kun at gå fra værktøj til værktøj.",
+      "pointer": [],
+      "billedmotiv": "A compact bundle of software tools fans outward into three distinct groups of solid tag shapes, showing Simon Willison’s collection newly organised by technologies found in its code. Make the three routes visibly separate and keep the tags unlettered. Use bold, opaque forms with thick edges and clear contours.",
+      "billedmotiv_instruks": "a744916a7ccb9e609569",
+      "billede": "data/img/0a2ee8dd6812643d.webp",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -73394,33 +73204,214 @@
         "emne": "simon willisons værktøjer"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-11T23:01:45.662741+00:00"
+      },
       "prio": 3,
+      "side": "artikel/0d0bc3b18adf2a7d.html"
+    },
+    {
+      "titel": "Gemini Decisions API",
+      "link": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+      "resume": "Gemini Decisions API Google join Jev and OpenAI in the decision model category with \"Gemini Decision 1\". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's term \"Noul\" for a yes/no question. It's priced the same as the GPT-6 Luna decision model: 10 cents per million input tokens, and output is…",
+      "dato": "2026-11-11T22:03:25+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-11-11T22:58:05.172801+00:00",
+      "eget_foerst_set": "2026-11-11T22:58:05.172801+00:00",
+      "rubrik": "Googles model besvarer 1.000 spørgsmål om video",
+      "resume_da": "Gemini Decision 1 vurderer afgrænsede spørgsmål om blandt andet video og billeder og angiver, hvor sandsynligt hvert svar er.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Google præsenterer Gemini Decision 1 til ja/nej-svar, valg og vurdering efter kriterier via et API.",
+        "forbehold": "Materialet indeholder ingen uafhængige testresultater eller fulde prisoplysninger.",
+        "emne": "gemini decision 1"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
       "sektioner": [
         {
-          "overskrift": "Koden bestemmer værktøjernes emneord",
-          "tekst": "Simon Willisons samling af AI-udviklede værktøjer kan nu gennemsés efter, hvilke teknologier værktøjerne bruger. Forsiden viser emneord i tre grupper, så læseren kan finde værktøjer med fælles tekniske træk.\n\nEmneordene bygger på en analyse af hvert værktøjs kode. Willison brugte sine resterende kreditter til Fable 5.2 før deres ugentlige nulstilling og satte den til at udføre arbejdet med tree-sitter, et program til at analysere kode."
+          "overskrift": "Robotvideo fik fire sandsynligheder",
+          "tekst": "Google har lanceret en model, der kan vurdere op til 1.000 spørgsmål om det samme materiale på én gang. Modellen hedder Gemini Decision 1 og kan undersøge tekst, billeder, lyd, video og PDF-filer.\n\nSkribenten Simon Willison prøvede modellen på en video med en robot. Han spurgte blandt andet, om der var en robot eller en drage i videoen, og om den foregik i USA eller Frankrig.\n\nModellen vurderede sandsynligheden for en robot til cirka 92 procent og for en drage til cirka 5 procent. For USA svarede den cirka 92 procent og for Frankrig cirka 8 procent. Tallene viser modellens vurdering, ikke en garanti for, at den har ret."
         },
         {
-          "overskrift": "Tre veje ind i samlingen",
-          "tekst": "Analysen ledte efter JavaScript-API’er, biblioteker og værter for web-API’er. Et API er en måde, programmer kan udveksle data eller funktioner på. Et bibliotek er færdig kode, som et program kan bruge, mens en vært er det sted på nettet, en tjeneste findes.\n\nDe tre grupper giver dermed forskellige indgange til samlingen, som ifølge Willison tæller 244 værktøjer og stadig vokser. Emneordene fortæller om teknologier i koden; de er ikke i sig selv en beskrivelse af, hvad hvert værktøj gør."
+          "overskrift": "Svarene kan sortere usikre tilfælde",
+          "tekst": "Gemini Decision 1 er lavet til afgrænsede opgaver: ja- eller nej-spørgsmål, valg mellem faste muligheder og vurderinger efter en angivet skala. Den giver svarene sandsynligheder i stedet for at skrive en længere forklaring.\n\nUdviklere kan bruge svarene til eksempelvis at kontrollere indhold mod regler eller sende usikre tilfælde videre til et menneske. De kan stille flere uafhængige spørgsmål til det samme materiale i én anmodning."
+        },
+        {
+          "overskrift": "Adgang og pris for udviklere",
+          "tekst": "Modellen er tilgængelig via Gemini Decisions API, en forbindelse, som udviklere kan bruge fra deres egne programmer. Google oplyser, at de kan hente en adgangsnøgle i Google AI Studio, og at der findes et gratis niveau til afprøvning.\n\nPrisen er 0,10 dollar pr. million inputtokens, mens output er gratis. Tokens er mindre dele af det materiale og de instruktioner, modellen modtager. Det fælles materiale faktureres én gang pr. anmodning; spørgsmålene tilføjer deres egne tokens.\n\nGoogle oplyser en samlet svartid på 150–250 millisekunder for input på op til 16.000 tokens og siger, at tiden er næsten uændret ved 1–100 spørgsmål. De øvrige testforhold er ikke beskrevet, og Googles løfter om hastighed og præstation er ikke uafhængigt verificeret."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "0,042 dollar",
+          "label": "Jevs pris pr. million inputtokens, ifølge Simon Willison"
+        },
+        {
+          "tal": "0,10 dollar",
+          "label": "Prisen pr. million inputtokens for OpenAIs GPT-6 Luna; output er gratis"
+        }
+      ],
+      "detaljer": [
+        "En anmodning til Gemini Decision 1 kan ifølge Google indeholde op til 256.000 inputtokens."
+      ],
+      "betydning": "",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-12T07:40:31.130346+00:00"
+      },
+      "redaktoer_opgave_id": "41e02d9684c44e6b",
+      "redaktoer_kilder": [
+        {
+          "link": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+          "kilde": "blog.google"
+        }
+      ],
+      "billedmotiv": "A solid video frame bearing the Google Gemini mark feeds into a single answer card with four probability bars of visibly different lengths. The mark is the concave four-point Gemini spark in Google's blue, red, yellow and green gradient, prominent on the frame. A play triangle identifies the shared video; the separate bars show multiple bounded judgments about it. Use thick, opaque shapes and clean, separated contours.",
+      "billedmotiv_instruks": "74f3be8319bb67948ed9",
+      "billedstatus": {
+        "status": "afvist_af_filter",
+        "signatur": "ffb90e5f5f16bd3e"
+      },
+      "side": "artikel/2115de876eeeab07.html"
+    },
+    {
+      "titel": "Ring cameras go mobile as Amazon debuts AI-powered security drone and robot",
+      "link": "https://arstechnica.com/ai/2026/11/ring-cameras-go-mobile-as-amazon-debuts-ai-powered-security-drone-and-robot/",
+      "resume": "Amazon's roaming Ring Robotics devices will debut in late 2026 and early 2027.",
+      "dato": "2026-11-10T22:35:01+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-11-11T07:00:37.277331+00:00",
+      "eget_foerst_set": "2026-11-11T07:00:37.277331+00:00",
+      "rubrik": "Amazon giver Ring-kameraer vinger og hjul",
+      "resume_da": "En drone til hjemmet og en robot til virksomheder skal selv kunne patruljere og reagere på alarmer fra andre Ring-enheder.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Amazon præsenterer en AI-drevet sikkerhedsdrone og robot under Ring Robotics.",
+        "forbehold": "Enhederne ventes først at debutere fra slutningen af 2026; konkrete AI-evner er ikke beskrevet.",
+        "emne": "ring robotics"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Kameraerne tegner selv et kort",
+          "tekst": "Amazon har præsenteret Ring Drone Cam og Ring Rover Cam, der bruger kameraer, sensorer og AI til at finde rundt indendørs. Systemet skal planlægge ruter og styre uden om møbler.\n\nFørst kortlægger enhederne bygningen. Kunden bærer dronen gennem rummene, mens robotten selv kan udforske dem. Ifølge Amazon kan systemet derefter foreslå steder at patruljere, eksempelvis ved døre og vinduer."
+        },
+        {
+          "overskrift": "Dronen kræver stadig amerikansk godkendelse",
+          "tekst": "Ring Drone Cam kan ifølge Amazon flyve på faste ruter og reagere på beskeder fra Ring-kameraer, sensorer eller alarmer. Planlagte ruter kræver abonnement på Ring Protect.\n\nDronen har otte minutters flyvetid målt med et nyt, fuldt opladet batteri under kontrollerede forhold. Den kan navigere dårligere ved blank marmor, våde fliser, matte vægge uden kendetegn samt glas og spejle.\n\nAmazon sigter mod salg fra 27. januar 2027 til en startpris på 250 dollar. Før salget kan begynde, kræver dronen godkendelse fra den amerikanske myndighed FCC."
+        },
+        {
+          "overskrift": "Robotten kan ikke tage trapper",
+          "tekst": "Ring Rover Cam er en sikkerhedsrobot til virksomheder. Den kører indendørs på én etage og kan optage video i op til 4K. En justerbar mast løfter kameraet, så det kan se over eksempelvis diske og reoler.\n\nRobotten er ikke kompatibel med sorte, blanke gulve eller gulvovergange over 3,5 centimeter. Den kan forudbestilles til 1.000 dollar, og Amazon planlægger at sende den til kunder fra 16. december 2026."
+        },
+        {
+          "overskrift": "Optagelser rejser spørgsmål om privatliv",
+          "tekst": "De bevægelige kameraer giver nye bekymringer om privatliv. I 2023 beskrev den amerikanske forbrugermyndighed FTC, hvordan Ring havde givet ansatte og kontraktarbejdere mulighed for at se optagelser fra kunders private rum.\n\nAmazon oplyser, at nye optagelser beskyttes med Rings Throw Away the Key Encryption. Rettighedsorganisationen EFF kalder beskyttelsen en forbedring, men understreger, at den ikke svarer til ende-til-ende-kryptering, hvor kun afsender og modtager kan læse indholdet."
         }
       ],
       "brief": "",
       "figurer": [],
       "noegletal": [],
       "detaljer": [],
-      "betydning": "Den nye inddeling gør det muligt at udforske samlingen efter fælles teknologier frem for kun at gå fra værktøj til værktøj.",
+      "betydning": "Kameraerne kan undersøge flere steder end et fastmonteret kamera, men kortlægning og optagelser udvider også de oplysninger, systemerne håndterer.",
       "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
-        "kontrolleret": "2026-11-11T23:01:45.662741+00:00"
+        "kontrolleret": "2026-11-12T07:40:31.179176+00:00"
       },
-      "billedmotiv": "A compact bundle of software tools fans outward into three distinct groups of solid tag shapes, showing Simon Willison’s collection newly organised by technologies found in its code. Make the three routes visibly separate and keep the tags unlettered. Use bold, opaque forms with thick edges and clear contours.",
-      "billedmotiv_instruks": "a744916a7ccb9e609569",
-      "billede": "data/img/0a2ee8dd6812643d.webp",
-      "side": "artikel/0d0bc3b18adf2a7d.html"
+      "billedmotiv": "A compact camera drone and a wheeled camera rover patrol side by side, each directed toward a single solid alarm indicator. Place the recognisable blue lowercase Ring wordmark prominently on the front of the rover. Give the drone enclosed propeller guards and the rover a raised camera mast. Render both as simplified conceptual devices with thick, opaque forms and clearly separated contours.",
+      "billedmotiv_instruks": "52450fb680b9e18a6145",
+      "billedstatus": {
+        "status": "afvist_af_filter",
+        "signatur": "0be69cc9414c770c"
+      },
+      "side": "artikel/6904b35e4757872c.html"
+    },
+    {
+      "titel": "Decision Models in Hugging Face",
+      "link": "https://huggingface.co/blog/decision",
+      "resume": "",
+      "dato": "2026-11-10T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-10T21:56:03.050309+00:00",
+      "eget_foerst_set": "2026-11-10T21:56:03.050309+00:00",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 0,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Et Hugging Face-indlæg handler ifølge titlen om beslutningsmodeller.",
+        "forbehold": "Kun titlen er oplyst; indhold og eventuelle nyheder fremgår ikke.",
+        "emne": "beslutningsmodeller"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 2,
+      "rubrik": "Hugging Face viser AI, der vælger svar",
+      "resume_da": "En beslutningsmodel kan vurdere faste svarmuligheder og give sandsynligheder frem for at skrive et svar fra bunden.",
+      "sektioner": [
+        {
+          "overskrift": "En kundebesked bliver til et valg",
+          "tekst": "En AI-model kan læse en kundes klage over en dobbelt betaling og vælge, hvilken afdeling der skal behandle den. Den vælger blandt de muligheder, den får stillet, og giver hver mulighed en sandsynlighed.\n\nHugging Face viser fremgangsmåden i et indlæg offentliggjort 10. november. Eksemplet bruger modellen autotrust/GEV-26B-Decide gennem Transformers, et softwarebibliotek til at arbejde med AI-modeller.\n\nHer får modellen kundens besked, et spørgsmål og beskrivelser af afdelingerne. Den vælger betalingsafdelingen frem for teknisk support eller salg. Svaret kommer i et fast format, som et program kan arbejde videre med, uden at modellen først skal formulere en tekst."
+        },
+        {
+          "overskrift": "Svarmulighederne kan ændres undervejs",
+          "tekst": "En traditionel klassifikationsmodel fordeler input i kategorier, som er fastlagt i modellen. Hvis virksomheden tilføjer en juridisk afdeling, kan det kræve ændringer og ny træning at få den med.\n\nBeslutningsmodellen får derimod svarmulighederne sammen med spørgsmålet. Den kan også få flere navngivne spørgsmål om samme situation. En anden metode, kaldet zero-shot-klassifikation, kan ligeledes få nye kategorier undervejs, men er tættere knyttet til selve kategoriseringen.\n\nHugging Faces eksempel viser, hvordan modellen kan bruges til at fordele henvendelser. Det viser ikke, hvor ofte den vælger rigtigt i praksis. En angivet sandsynlighed er modellens vurdering, ikke en dokumenteret garanti for et korrekt valg."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [],
+      "betydning": "",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-12T07:40:52.423226+00:00"
+      },
+      "billedmotiv": "A customer-message card enters a decision block bearing Hugging Face's recognisable yellow smiling face with open hugging hands. The block directs it toward a single answer card with three unequal probability bars, the payment choice visibly highest. Keep the Hugging Face emblem large and front-facing; make the message, block and answer card solid, thick and distinctly outlined.",
+      "billedmotiv_instruks": "c95af52b86fa0da00f5d",
+      "billede": "data/img/f62a1d6205e230ff.webp",
+      "side": "artikel/de10773c014618cc.html"
     }
   ]
 }

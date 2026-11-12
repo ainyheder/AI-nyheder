@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-11T23:08:11.801500+00:00",
+ "genereret": "2026-11-12T07:46:36.334519+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -199,64 +199,54 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-11T22:58:05.172801+00:00",
-  "antal": 131,
-  "med_billede": 103,
-  "paa_dansk": 131,
+  "opdateret": "2026-11-12T07:38:22.389539+00:00",
+  "antal": 121,
+  "med_billede": 96,
+  "paa_dansk": 121,
   "kategorier": {
-   "Lanceringer": 18,
-   "Samfund \u0026 etik": 15,
-   "Hverdags-AI": 46,
-   "Politik \u0026 jura": 16,
-   "Penge \u0026 marked": 29,
-   "Forskning": 7
+   "Lanceringer": 17,
+   "Samfund \u0026 etik": 14,
+   "Hverdags-AI": 43,
+   "Politik \u0026 jura": 13,
+   "Penge \u0026 marked": 26,
+   "Forskning": 8
   },
   "kilder": {
-   "The Verge AI": 36,
+   "Simon Willison AI": 10,
+   "The Verge AI": 29,
    "Google DeepMind": 1,
-   "Ars Technica AI": 11,
-   "TechCrunch AI": 46,
+   "Ars Technica AI": 12,
+   "TechCrunch AI": 41,
    "Anthropic News": 5,
-   "Google Gemini": 9,
-   "Simon Willison AI": 9,
-   "Hugging Face": 4,
+   "Google Gemini": 8,
+   "Hugging Face": 5,
    "MIT Tech Review AI": 6,
    "Mistral AI": 3,
    "xAI News": 1
   },
   "udvalgte": [
    {
-    "titel": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
-    "rubrik": "AlphaGenome 2 forudsiger mutationers virkning i celler",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
-    "side": "artikel/872573b4c15b2f70.html",
+    "titel": "Gemini Decisions API",
+    "rubrik": "Googles model besvarer 1.000 spørgsmål om video",
+    "link": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+    "side": "artikel/2115de876eeeab07.html",
     "kategori": "Lanceringer",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-11T10:00:00-05:00",
-    "billede": ""
-   },
-   {
-    "titel": "Gemini 4 Carbon is now available",
-    "rubrik": "Google åbner Gemini 4 Carbon for betalende brugere",
-    "link": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
-    "side": "artikel/e38c92a7cefc59fe.html",
-    "kategori": "Lanceringer",
-    "kilde": "Google DeepMind",
-    "dato": "2026-11-10T16:03:47+00:00",
-    "billede": "data/img/82af2c97b6cff130.webp"
-   },
-   {
-    "titel": "DeepMind reveals Gemini Robotics 2.5 and open safety benchmark \"ASIMOV-jailbreak\"",
-    "rubrik": "Gemini Robotics 2.5 testet på Mercedes-fabrikker",
-    "link": "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
-    "side": "artikel/d276c841d952384f.html",
-    "kategori": "Lanceringer",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-11-10T15:00:39+00:00",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-11-11T22:03:25+00:00",
     "billede": ""
    }
   ],
   "seneste": [
+   {
+    "titel": "Gemini Decisions API",
+    "rubrik": "Googles model besvarer 1.000 spørgsmål om video",
+    "link": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+    "side": "artikel/2115de876eeeab07.html",
+    "kategori": "Lanceringer",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-11-11T22:03:25+00:00",
+    "billede": ""
+   },
    {
     "titel": "United won’t let your AI agent book your flight",
     "rubrik": "United stopper AI-agenter fra at købe flybilletter",
@@ -275,7 +265,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Hverdags-AI",
     "kilde": "Google Gemini",
     "dato": "2026-11-11T17:00:00+00:00",
-    "billede": ""
+    "billede": "data/img/be5768671f10aedd.webp"
    },
    {
     "titel": "aws-emulator",
@@ -366,35 +356,22 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-11-11T16:14:44+00:00",
     "billede": "data/img/3047d93646f059f5.webp"
-   },
-   {
-    "titel": "Google’s Tabletop AI experiment lets you build custom collaboration apps",
-    "rubrik": "Google Tabletop laver fælles værktøjer ud fra beskrivelser",
-    "link": "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
-    "side": "artikel/fd7c9361a612e0ea.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-11T11:00:00-05:00",
-    "billede": ""
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-11T22:58:05.172801+00:00",
-  "status": "reserve",
+  "opdateret": "2026-11-12T07:38:22.389539+00:00",
+  "status": "godkendt",
   "model": "gpt-6.1-terra",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 5,
-  "kildehentninger": 3,
+  "modelkald": 6,
+  "kildehentninger": 2,
   "regelbaseret_udvalg": [
    "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
    "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
    "https://deepmind.google/blog/gemini-4-carbon-is-now-available/"
   ],
   "udgivet_udvalg": [
-   "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
-   "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
-   "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/"
+   "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/"
   ],
   "vaerktoejer": [
    {
@@ -406,7 +383,7 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "laes_kilde",
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
@@ -426,15 +403,11 @@ window.KOMMANDO_DATA = {
    {
     "link": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
     "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
-    "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-11-11T22:58:04.423297+00:00",
+  "opdateret": "2026-11-12T07:38:21.800612+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -899,8 +872,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-11T22:58:05.172801+00:00",
-  "artikler_i_alt": 131,
+  "opdateret": "2026-11-12T07:38:22.389539+00:00",
+  "artikler_i_alt": 121,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1023,7 +996,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 9,
+    "i_listen": 8,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -1068,15 +1041,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-11-05T22:13:13",
       "link": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
       "side": "artikel/4eabb5f27738ceda.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Google frigav Gemini 4 Argon og tester Carbon",
-      "dato": "2026-11-02T17:45:00",
-      "foerst_set": "2026-11-02T18:45:47",
-      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
-      "side": "artikel/ff01b8b9f0687b69.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1152,7 +1116,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 4,
+    "i_listen": 5,
     "som_ekstra": 0,
     "seneste": [
      {
@@ -1170,6 +1134,15 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-11-10T21:56:03",
       "link": "https://huggingface.co/blog/hub-gcp-marketplace",
       "side": "artikel/992e8c4109473216.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Hugging Face viser AI, der vælger svar",
+      "dato": "2026-11-10T00:00:00",
+      "foerst_set": "2026-11-10T21:56:03",
+      "link": "https://huggingface.co/blog/decision",
+      "side": "artikel/de10773c014618cc.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1203,7 +1176,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 9,
+    "i_listen": 10,
     "som_ekstra": 3,
     "seneste": [
      {
@@ -1232,6 +1205,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
+     },
+     {
+      "rubrik": "Googles model besvarer 1.000 spørgsmål om video",
+      "dato": "2026-11-11T22:03:25",
+      "foerst_set": "2026-11-11T22:58:05",
+      "link": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+      "side": "artikel/2115de876eeeab07.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "AWS gør det muligt at teste lokalt",
@@ -1304,15 +1286,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/c3dd8886e7848fb0.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Nilay Patel: AI-regningen er større end nytten",
-      "dato": "2026-11-06T17:13:12",
-      "foerst_set": "2026-11-06T20:49:47",
-      "link": "https://simonwillison.net/2026/Nov/6/nilay-patel/",
-      "side": "artikel/0491af6508848e01.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1326,7 +1299,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 46,
+    "i_listen": 41,
     "som_ekstra": 3,
     "seneste": [
      {
@@ -1449,8 +1422,8 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 36,
-    "som_ekstra": 13,
+    "i_listen": 29,
+    "som_ekstra": 11,
     "seneste": [
      {
       "rubrik": "Google lancerer Gemini 4 Carbon med agent-sværm",
@@ -1543,22 +1516,22 @@ window.KOMMANDO_DATA = {
       "under": "Meta åbner Muse-videochat for alle i USA"
      },
      {
-      "rubrik": "Uber: Kun fire ture bestilt af AI-agenter",
+      "rubrik": "The Verge: Gemini redigerer nu Docs og regneark",
       "dato": "",
-      "foerst_set": "2026-11-04T19:59:08",
-      "link": "https://www.theverge.com/transportation/1026306/uber-ai-agents-q3-earnings-disintermediation",
+      "foerst_set": "2026-10-29T21:21:56",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
       "side": "",
       "hvor": "under",
-      "under": "Fire Uber-ture gennem AI-agent i travleste uge"
+      "under": "Google Gemini redigerer filer i chatten"
      },
      {
-      "rubrik": "Nothing lancerer skærmfri AI-enhed næste måned",
+      "rubrik": "Google sender Gemini 4 Carbon efter sikkerhedshuller",
       "dato": "",
-      "foerst_set": "2026-11-04T19:59:08",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1026586/nothing-screen-free-ai-device-carl-pei",
+      "foerst_set": "2026-10-28T21:16:14",
+      "link": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
       "side": "",
       "hvor": "under",
-      "under": "Nothing vil sende AI-produkt i december"
+      "under": "Gemini 4 Carbon fører testene i sårbarhedsjagt"
      }
     ]
    },
@@ -1572,7 +1545,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 11,
+    "i_listen": 12,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -1608,6 +1581,15 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-11-11T16:32:11",
       "link": "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/",
       "side": "artikel/8f2f29688e4a72c8.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Amazon giver Ring-kameraer vinger og hjul",
+      "dato": "2026-11-10T22:35:01",
+      "foerst_set": "2026-11-11T07:00:37",
+      "link": "https://arstechnica.com/ai/2026/11/ring-cameras-go-mobile-as-amazon-debuts-ai-powered-security-drone-and-robot/",
+      "side": "artikel/6904b35e4757872c.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1671,15 +1653,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-11-05T22:13:13",
       "link": "https://arstechnica.com/tech-policy/2026/11/lawsuit-man-introduced-his-wife-to-chatgpt-she-used-it-to-plan-his-murder/",
       "side": "artikel/6d2c88f3c1d8a1c0.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Agility Robotics børsnoteres med Digit 5",
-      "dato": "2026-11-05T12:00:41",
-      "foerst_set": "2026-11-05T12:41:56",
-      "link": "https://arstechnica.com/ai/2026/11/agility-robotics-nasdaq-debut-invites-scrutiny-of-humanoid-robot-market/",
-      "side": "artikel/9e827dbe569b5563.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1841,7 +1814,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-11T23:08:05.567334+00:00",
+  "opdateret": "2026-11-12T07:46:29.675565+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
@@ -1849,11 +1822,6 @@ window.KOMMANDO_DATA = {
   "sidevisninger_i_alt": 60,
   "ai_chat_besoeg": 0,
   "serie": [
-   {
-    "dato": "2026-10-13",
-    "besoeg": 0,
-    "visninger": 0
-   },
    {
     "dato": "2026-10-14",
     "besoeg": 0,
@@ -1998,6 +1966,11 @@ window.KOMMANDO_DATA = {
     "dato": "2026-11-11",
     "besoeg": 10,
     "visninger": 30
+   },
+   {
+    "dato": "2026-11-12",
+    "besoeg": 0,
+    "visninger": 0
    }
   ],
   "sider": [
