@@ -1,21 +1,31 @@
 {
-  "opdateret": "2026-11-12T17:01:28.796363+00:00",
-  "status": "reserve",
+  "opdateret": "2026-11-13T01:26:35.703125+00:00",
+  "status": "godkendt",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
+    "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
     "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
-    "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
-    "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/"
+    "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/"
   ],
-  "input_fingerprint": "96983445410aab87",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "kontrolproblemer": [
-    "Forsiden begynder ikke med nyheder fra de seneste 24 timer: Begge hovedhistorier er fra 11. november og ældre end 24 timer målt mod de nyeste kandidater 12. november.",
-    "Den nyere kandidat om lanceringen af Gemini Decision 1 bør undersøges før modeludvalget fastlægges. Det vedlagte materiale dokumenterer ikke en læsning af hele kilden eller en begrundelse for fravalget."
+  "input_fingerprint": "6b0021eb302e9478",
+  "redaktionsnote": "AlphaGenome 2 er en anden interessant ny model inden for 48 timer, men afventer læsning af den officielle kilde, som er identificeret gennem The Verge. Hydrogen er kun belyst med Googles egen meddelelse; uafhængig omtale og mulige dubletter er ikke læst.",
+  "beslutninger": [
+    {
+      "id": "b4df4a94fa379054",
+      "begrundelse": "Gemini 4 Hydrogen er en ny model til hurtig kode og opgaver i flere trin, med bred adgang i både udviklerværktøjer og Googles forbrugerprodukter. Den er en vigtigere ny modellancering end gårsdagens allerede fremhævede Decision 1.",
+      "nyt_siden_sidst": "Google lancerer nu Hydrogen som en ny model i Gemini 4-familien. Den er en separat lancering fra Gemini Decision 1, som var hovedhistorie på den seneste forside.",
+      "skriveopgave": "Rubrik: 'Google sender Gemini 4 Hydrogen ud til alle'. Forklar med korte afsnit og konkrete mellemoverskrifter, hvad modellen skal bruges til, og hvor den er tilgængelig. Angiv API-prisen på 1,50 dollar pr. million inputtokens og 7,50 dollar pr. million outputtokens, og forklar tokens ved første brug. Sammenlign med 3.8 Flash, men gør det klart, at præstationsmålene er Googles egne, og at uafhængig test ikke er læst.",
+      "kilder": [
+        "80edea19d5fdcf28"
+      ],
+      "samme_historie": [],
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/",
+      "rubrik": "Google sender Gemini 4 Hydrogen ud til alle"
+    }
   ],
   "modelkald": 6,
-  "kildehentninger": 3,
+  "kildehentninger": 2,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -26,7 +36,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -40,20 +50,16 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
-      "grundlag": "utilgaengelig"
-    },
-    {
-      "link": "https://huggingface.co/blog/qvac/botpsy",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/"
+    "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/"
   ],
-  "afventer_artikler": 80
+  "afventer_artikler": 88
 }
