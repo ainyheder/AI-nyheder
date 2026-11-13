@@ -1,43 +1,18 @@
 {
-  "opdateret": "2026-11-13T12:33:55.476940+00:00",
-  "status": "godkendt",
+  "opdateret": "2026-11-13T19:59:33.270017+00:00",
+  "status": "reserve",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
     "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
     "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
-    "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
+    "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/"
   ],
-  "input_fingerprint": "51a36c3f7cfd7b73",
-  "redaktionsnote": "Granite er nyheden øverst; Hydrogen genvælges med præcisering af adgang. Øvrige kandidater afventer læsbare kilder, og den ældre Decision 1 genvælges ikke.",
-  "beslutninger": [
-    {
-      "id": "84ec87286cb35a64",
-      "begrundelse": "IBM præsenterer to eksperimentelle Granite 4.1-modeller og et nyt format, der skal hjælpe mindre modeller med at skelne mellem instruktioner og data. Det er en konkret ny modellancering med en mulig anvendelse i sikkerhed.",
-      "nyt_siden_sidst": "IBM udgiver nu 3B- og 8B-previewmodeller, som er trænet til at læse og skrive LLMON, samt værktøjer og eksempler. Lanceringen har ikke været hovedhistorie på de oplyste forsider.",
-      "skriveopgave": "Rubrik: »IBM lærer små Granite-modeller at skelne mellem beskeder og data«. Forklar LLMON som et format, der mærker tekstens dele, og beskriv de to eksperimentelle modeller og værktøjerne. Brug korte afsnit med mellemoverskrifter; forklar skjulte angrebsinstruktioner og understreg, at sikkerhedsfordelene er IBM's egne test og ikke en garanti.",
-      "kilder": [
-        "84ec87286cb35a64"
-      ],
-      "samme_historie": [],
-      "link": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
-      "rubrik": "IBM lærer Granite at skelne instruktioner fra data"
-    },
-    {
-      "id": "b4df4a94fa379054",
-      "begrundelse": "Gemini 4 Hydrogen er fortsat en af de vigtigste nye modeller i materialet, fordi den både retter sig mod udviklere og erstatter en udbredt forgænger. Den uafhængige omtale præciserer adgang og pris.",
-      "nyt_siden_sidst": "Modellen var hovedhistorie på den seneste forside og er ikke en ny lancering siden da. Den genvælges som en væsentlig aktuel modelnyhed; Ars Technica præciserer, at adgang i Gemini-appen ikke omfatter alle gratisbrugere.",
-      "skriveopgave": "Rubrik: »Gemini 4 Hydrogen erstatter Flash – men ikke alle får adgang i appen«. Forklar kodeopgaver, de fire niveauer for ræsonnement og forskellen mellem adgang i søgning, app og udviklerværktøjer. Angiv API-prisen pr. million input- og outputtokens, forklar tokens kort, og tilskriv præstations- og hastighedsløfter til Google. Brug korte afsnit med præcise mellemoverskrifter.",
-      "kilder": [
-        "b4df4a94fa379054",
-        "6efd6e806be9c0a7"
-      ],
-      "samme_historie": [
-        "6efd6e806be9c0a7"
-      ],
-      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/",
-      "rubrik": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser"
-    }
+  "input_fingerprint": "dfbaf752bd96c99c",
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "kontrolproblemer": [
+    "Kandidatoversigten indeholder både hovedhistorien om ChatGPT Wallet og OpenAI’s omtale af samme lancering (7d4d71d056da0286). Saml dem, så lanceringen ikke gentages på forsiden; anbefalingslisten er tom.",
+    "Gemini 4 Hydrogen er en aktuel modellancering, men udgaven vælger to appfunktioner uden at dokumentere, at modelkandidaten er undersøgt eller begrunde fravalget. Vurder de tilgængelige kilder og eventuel tidligere forside før udvælgelsen."
   ],
   "modelkald": 6,
   "kildehentninger": 3,
@@ -65,21 +40,22 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+      "link": "https://openai.com/index/introducing-chatgpt-wallet",
+      "grundlag": "rss_resume"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
+      "link": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
-    "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/"
+    "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
+    "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+    "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/"
   ],
-  "afventer_artikler": 94
+  "afventer_artikler": 98
 }

@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-13T12:42:16.723211+00:00",
+ "genereret": "2026-11-13T20:10:06.634586+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -199,26 +199,26 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-13T12:33:55.476940+00:00",
-  "antal": 114,
-  "med_billede": 86,
-  "paa_dansk": 114,
+  "opdateret": "2026-11-13T19:59:33.270017+00:00",
+  "antal": 119,
+  "med_billede": 91,
+  "paa_dansk": 119,
   "kategorier": {
    "Lanceringer": 16,
-   "Forskning": 10,
-   "Samfund \u0026 etik": 16,
-   "Hverdags-AI": 37,
-   "Politik \u0026 jura": 11,
-   "Penge \u0026 marked": 24
+   "Politik \u0026 jura": 12,
+   "Samfund \u0026 etik": 17,
+   "Hverdags-AI": 39,
+   "Penge \u0026 marked": 25,
+   "Forskning": 10
   },
   "kilder": {
-   "Google Gemini": 5,
-   "Hugging Face": 5,
+   "Ars Technica AI": 15,
    "Simon Willison AI": 10,
-   "The Verge AI": 27,
-   "Google DeepMind": 3,
-   "Ars Technica AI": 13,
-   "TechCrunch AI": 37,
+   "The Verge AI": 28,
+   "Google DeepMind": 2,
+   "TechCrunch AI": 40,
+   "Google Gemini": 4,
+   "Hugging Face": 6,
    "Anthropic News": 5,
    "MIT Tech Review AI": 5,
    "Mistral AI": 3,
@@ -226,46 +226,106 @@ window.KOMMANDO_DATA = {
   },
   "udvalgte": [
    {
-    "titel": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
-    "rubrik": "IBM lærer Granite at skelne instruktioner fra data",
-    "link": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
-    "side": "artikel/f052c6845a6ebe45.html",
-    "kategori": "Forskning",
-    "kilde": "Hugging Face",
-    "dato": "2026-11-12T19:07:35+00:00",
+    "titel": "Google rolls out Gemini 4 Hydrogen, finally replacing 3.8 Flash",
+    "rubrik": "Gemini 4 Hydrogen erstatter Googles Flash-model",
+    "link": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
+    "side": "artikel/4140b7449a1cdcfd.html",
+    "kategori": "Lanceringer",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-11-12T19:23:03+00:00",
+    "billede": "data/img/e80859784d1ec49d.webp"
+   },
+   {
+    "titel": "Gemini Decisions API",
+    "rubrik": "Googles model besvarer 1.000 spørgsmål om video",
+    "link": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+    "side": "artikel/2115de876eeeab07.html",
+    "kategori": "Lanceringer",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-11-11T22:03:25+00:00",
     "billede": ""
    },
    {
-    "titel": "Gemini 4 Hydrogen: everyday coding and agentic workflows for developers",
-    "rubrik": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser",
-    "link": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/",
-    "side": "artikel/b3b68327aa8b3588.html",
-    "kategori": "Lanceringer",
-    "kilde": "Google Gemini",
-    "dato": "2026-11-12T18:00:00+00:00",
-    "billede": "data/img/e80859784d1ec49d.webp"
+    "titel": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh oh, Jensen!",
+    "rubrik": "Nvidia-chips sætter spor i kinesiske AI-modeller",
+    "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+    "side": "artikel/3bcb8ca81cbad6cd.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-13T18:40:30+00:00",
+    "billede": "data/img/968edadc2ee360b0.webp"
    }
   ],
   "seneste": [
    {
-    "titel": "Gemini 4 Hydrogen: everyday coding and agentic workflows for developers",
-    "rubrik": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser",
-    "link": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/",
-    "side": "artikel/b3b68327aa8b3588.html",
-    "kategori": "Lanceringer",
-    "kilde": "Google Gemini",
-    "dato": "2026-11-12T18:00:00+00:00",
-    "billede": "data/img/e80859784d1ec49d.webp"
+    "titel": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh oh, Jensen!",
+    "rubrik": "Nvidia-chips sætter spor i kinesiske AI-modeller",
+    "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+    "side": "artikel/3bcb8ca81cbad6cd.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-13T18:40:30+00:00",
+    "billede": "data/img/968edadc2ee360b0.webp"
    },
    {
-    "titel": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
-    "rubrik": "IBM lærer Granite at skelne instruktioner fra data",
-    "link": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
-    "side": "artikel/f052c6845a6ebe45.html",
-    "kategori": "Forskning",
+    "titel": "ElevenLabs’ new app combines meeting note-taking and dictation for teams",
+    "rubrik": "ElevenAI samler mødenoter og diktering",
+    "link": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
+    "side": "artikel/c6494705d362bbaf.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-13T14:44:48+00:00",
+    "billede": "data/img/8002572240ad385a.webp"
+   },
+   {
+    "titel": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+    "rubrik": "llama.cpp v1.0.0 varsler tydeligere versionsskift",
+    "link": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+    "side": "artikel/1f76189be1eacadc.html",
+    "kategori": "Lanceringer",
     "kilde": "Hugging Face",
-    "dato": "2026-11-12T19:07:35+00:00",
-    "billede": ""
+    "dato": "2026-11-13T14:05:22+00:00",
+    "billede": "data/img/2ad3a1e6d9c97b8d.webp"
+   },
+   {
+    "titel": "Claude’s Duet agent is a little neurotic and surprisingly helpful",
+    "rubrik": "Claude Duet finder oversete huller i arbejdsplanen",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
+    "side": "artikel/2c7a6e6b19ce61f9.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-13T09:00:00-05:00",
+    "billede": "data/img/cf11c0c9814229fc.webp"
+   },
+   {
+    "titel": "OpenAI board member worries an AI \"takeover\" of society could be months away",
+    "rubrik": "OpenAI-bestyrelsesmedlem advarer om muligt AI-overtag",
+    "link": "https://arstechnica.com/features/2026/11/ai-is-the-most-likely-reason-youll-die-openai-board-member-warns/",
+    "side": "artikel/82a25efe6c9f3f01.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-11-13T17:25:45+00:00",
+    "billede": "data/img/f72704e9de5577d7.webp"
+   },
+   {
+    "titel": "Israel’s VCs see opportunity for challengers in Nvidia’s turmoil",
+    "rubrik": "Investorer ser åbning for Nvidias udfordrere",
+    "link": "https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil/",
+    "side": "artikel/eac079c142ed1396.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-13T12:52:19+00:00",
+    "billede": "data/img/85da2e9e057bb10d.webp"
+   },
+   {
+    "titel": "Google rolls out Gemini 4 Hydrogen, finally replacing 3.8 Flash",
+    "rubrik": "Gemini 4 Hydrogen erstatter Googles Flash-model",
+    "link": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
+    "side": "artikel/4140b7449a1cdcfd.html",
+    "kategori": "Lanceringer",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-11-12T19:23:03+00:00",
+    "billede": "data/img/e80859784d1ec49d.webp"
    },
    {
     "titel": "FAA expands AI advice to manage air traffic congestion across entire US airspace",
@@ -316,73 +376,25 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-11-12T14:42:40-05:00",
     "billede": "data/img/69ff8debcfa02716.webp"
-   },
-   {
-    "titel": "Nectar launches an AI agent to automate creator discovery and outreach for brands",
-    "rubrik": "Nectars AI finder og kontakter indholdsskabere",
-    "link": "https://techcrunch.com/2026/11/12/nectar-launches-an-ai-agent-to-automate-creator-discovery-and-outreach-for-brands/",
-    "side": "artikel/0a010acdd07c2ba4.html",
-    "kategori": "Lanceringer",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-12T19:11:00+00:00",
-    "billede": "data/img/1fd85d982f8c2b6e.webp"
-   },
-   {
-    "titel": "Google faces calls for AI moratoriums in schools after Gemini pilot backlash",
-    "rubrik": "Googles AI-søgning udløser protester fra familier",
-    "link": "https://arstechnica.com/tech-policy/2026/11/families-fight-to-keep-googles-disturbing-ai-off-school-issued-chromebooks/",
-    "side": "artikel/c9fc570fadc2fd46.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-11-12T18:57:45+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Jensen Huang’s exit puts Nvidia’s support for open source in question",
-    "rubrik": "Huangs afgang sår tvivl om Nvidias åbne AI",
-    "link": "https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/",
-    "side": "artikel/d56c2fc89bca0f7d.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-12T18:39:23+00:00",
-    "billede": "data/img/0c43ea6e9ac23413.jpg"
-   },
-   {
-    "titel": "AI chatbots are recommending fake retail websites, study finds",
-    "rubrik": "ChatGPT og rivaler viser risikable netbutikker",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
-    "side": "artikel/7e494307f0691779.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-12T12:00:00-05:00",
-    "billede": ""
-   },
-   {
-    "titel": "Cyberattack on Fireworks AI allowed hackers to access Notion customers’ chat transcripts",
-    "rubrik": "Hackere stjal Notion-chats via Fireworks AI",
-    "link": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/",
-    "side": "artikel/2843d5b0f258e599.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-12T15:02:28+00:00",
-    "billede": "data/img/51e09330f139d8b8.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-13T12:33:55.476940+00:00",
-  "status": "godkendt",
+  "opdateret": "2026-11-13T19:59:33.270017+00:00",
+  "status": "reserve",
   "model": "gpt-6.1-terra",
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "modelkald": 6,
   "kildehentninger": 3,
   "regelbaseret_udvalg": [
    "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
    "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
-   "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
+   "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/"
   ],
   "udgivet_udvalg": [
-   "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
-   "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/"
+   "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
+   "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+   "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/"
   ],
   "vaerktoejer": [
    {
@@ -408,21 +420,21 @@ window.KOMMANDO_DATA = {
   ],
   "kildegrundlag": [
    {
-    "link": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+    "link": "https://openai.com/index/introducing-chatgpt-wallet",
+    "grundlag": "rss_resume"
+   },
+   {
+    "link": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
+    "link": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
     "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-11-13T12:33:54.842499+00:00",
+  "opdateret": "2026-11-13T19:59:30.867266+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -887,8 +899,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-13T12:33:55.476940+00:00",
-  "artikler_i_alt": 114,
+  "opdateret": "2026-11-13T19:59:33.270017+00:00",
+  "artikler_i_alt": 119,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1011,26 +1023,35 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 5,
-    "som_ekstra": 2,
+    "i_listen": 4,
+    "som_ekstra": 4,
     "seneste": [
+     {
+      "rubrik": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser",
+      "dato": "",
+      "foerst_set": "2026-11-13T01:26:35",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/",
+      "side": "",
+      "hvor": "under",
+      "under": "Gemini 4 Hydrogen erstatter Googles Flash-model"
+     },
      {
       "rubrik": "Google præsenterer Gemini 4 Hydrogen",
       "dato": "",
-      "foerst_set": "2026-11-13T01:26:35.703125+00:00",
+      "foerst_set": "2026-11-13T01:26:35",
       "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
       "side": "",
       "hvor": "under",
-      "under": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser"
+      "under": "Gemini 4 Hydrogen erstatter Googles Flash-model"
      },
      {
       "rubrik": "Gemini 4 Hydrogen kommer til Google Search",
       "dato": "",
-      "foerst_set": "2026-11-13T01:26:35.703125+00:00",
+      "foerst_set": "2026-11-13T01:26:35",
       "link": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
       "side": "",
       "hvor": "under",
-      "under": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser"
+      "under": "Gemini 4 Hydrogen erstatter Googles Flash-model"
      },
      {
       "rubrik": "Google åbner Gemini 4 Carbon for betalende",
@@ -1040,24 +1061,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Google åbner Gemini 4 Carbon for betalende brugere"
-     },
-     {
-      "rubrik": "Google ruller Gemini 4 Argon bredt ud",
-      "dato": "",
-      "foerst_set": "2026-10-13T19:29:19",
-      "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
-      "side": "",
-      "hvor": "under",
-      "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
-     },
-     {
-      "rubrik": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser",
-      "dato": "2026-11-12T18:00:00",
-      "foerst_set": "2026-11-13T01:26:35",
-      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/",
-      "side": "artikel/b3b68327aa8b3588.html",
-      "hvor": "forside",
-      "under": ""
      },
      {
       "rubrik": "Gemini Live kommer til Apple CarPlay",
@@ -1131,9 +1134,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 5,
+    "i_listen": 6,
     "som_ekstra": 0,
     "seneste": [
+     {
+      "rubrik": "llama.cpp v1.0.0 varsler tydeligere versionsskift",
+      "dato": "2026-11-13T14:05:22",
+      "foerst_set": "2026-11-13T19:59:33",
+      "link": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+      "side": "artikel/1f76189be1eacadc.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "IBM lærer Granite at skelne instruktioner fra data",
       "dato": "2026-11-12T19:07:35",
@@ -1192,7 +1204,7 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 10,
     "i_listen": 10,
-    "som_ekstra": 4,
+    "som_ekstra": 3,
     "seneste": [
      {
       "rubrik": "Gemini 4 Hydrogen skal drive AI i Google-søgning",
@@ -1201,16 +1213,7 @@ window.KOMMANDO_DATA = {
       "link": "https://simonwillison.net/2026/Nov/12/llm-gemini/",
       "side": "",
       "hvor": "under",
-      "under": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser"
-     },
-     {
-      "rubrik": "Gemini 4 Carbon bliver tilgængelig for alle",
-      "dato": "",
-      "foerst_set": "2026-11-10T21:56:03",
-      "link": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
-      "side": "",
-      "hvor": "under",
-      "under": "Google åbner Gemini 4 Carbon for betalende brugere"
+      "under": "Gemini 4 Hydrogen erstatter Googles Flash-model"
      },
      {
       "rubrik": "Meta lancerer den lille AI-model Muse Ember",
@@ -1301,6 +1304,15 @@ window.KOMMANDO_DATA = {
       "side": "artikel/7796d5edf90e59f0.html",
       "hvor": "forside",
       "under": ""
+     },
+     {
+      "rubrik": "Claude omskrev 3D-æg uden Three.js",
+      "dato": "2026-11-09T04:32:33",
+      "foerst_set": "2026-11-09T07:05:45",
+      "link": "https://simonwillison.net/2026/Nov/9/hn-50421091/",
+      "side": "artikel/c3dd8886e7848fb0.html",
+      "hvor": "forside",
+      "under": ""
      }
     ]
    },
@@ -1314,7 +1326,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 37,
+    "i_listen": 40,
     "som_ekstra": 5,
     "seneste": [
      {
@@ -1333,7 +1345,7 @@ window.KOMMANDO_DATA = {
       "link": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/",
       "side": "",
       "hvor": "under",
-      "under": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser"
+      "under": "Gemini 4 Hydrogen erstatter Googles Flash-model"
      },
      {
       "rubrik": "Colette Kress overtager Nvidia efter Jensen Huang",
@@ -1381,6 +1393,33 @@ window.KOMMANDO_DATA = {
       "under": "Anthropic afsætter fem procent af aktierne til fond"
      },
      {
+      "rubrik": "Nvidia-chips sætter spor i kinesiske AI-modeller",
+      "dato": "2026-11-13T18:40:30",
+      "foerst_set": "2026-11-13T19:59:33",
+      "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+      "side": "artikel/3bcb8ca81cbad6cd.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "ElevenAI samler mødenoter og diktering",
+      "dato": "2026-11-13T14:44:48",
+      "foerst_set": "2026-11-13T19:59:33",
+      "link": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
+      "side": "artikel/c6494705d362bbaf.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Investorer ser åbning for Nvidias udfordrere",
+      "dato": "2026-11-13T12:52:19",
+      "foerst_set": "2026-11-13T19:59:33",
+      "link": "https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil/",
+      "side": "artikel/eac079c142ed1396.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "United Airlines begrænser AI-agenters adgang",
       "dato": "2026-11-12T17:17:58",
       "foerst_set": "2026-11-13T01:26:35",
@@ -1397,33 +1436,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/3896780f30628465.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Nebius vil bruge milliarder trods forsinket Microsoft-center",
-      "dato": "2026-11-12T21:27:10",
-      "foerst_set": "2026-11-13T01:26:35",
-      "link": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/",
-      "side": "artikel/076e5b99074af123.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Nectars AI finder og kontakter indholdsskabere",
-      "dato": "2026-11-12T19:11:00",
-      "foerst_set": "2026-11-13T01:26:35",
-      "link": "https://techcrunch.com/2026/11/12/nectar-launches-an-ai-agent-to-automate-creator-discovery-and-outreach-for-brands/",
-      "side": "artikel/0a010acdd07c2ba4.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Huangs afgang sår tvivl om Nvidias åbne AI",
-      "dato": "2026-11-12T18:39:23",
-      "foerst_set": "2026-11-13T01:26:35",
-      "link": "https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/",
-      "side": "artikel/d56c2fc89bca0f7d.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1437,7 +1449,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 27,
+    "i_listen": 28,
     "som_ekstra": 7,
     "seneste": [
      {
@@ -1447,7 +1459,7 @@ window.KOMMANDO_DATA = {
       "link": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
       "side": "",
       "hvor": "under",
-      "under": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser"
+      "under": "Gemini 4 Hydrogen erstatter Googles Flash-model"
      },
      {
       "rubrik": "Jensen Huang forlader posten som Nvidia-direktør",
@@ -1531,20 +1543,20 @@ window.KOMMANDO_DATA = {
       "under": "Amazon åbner for indkøb via tekstbeskeder til Alexa"
      },
      {
+      "rubrik": "Claude Duet finder oversete huller i arbejdsplanen",
+      "dato": "2026-11-13T09:00:00",
+      "foerst_set": "2026-11-13T19:59:33",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
+      "side": "artikel/2c7a6e6b19ce61f9.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Miottis AI fandt allerede kendt Maya-sted",
       "dato": "2026-11-12T14:42:40",
       "foerst_set": "2026-11-13T01:26:35",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery",
       "side": "artikel/2b94a6dc55086b83.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "ChatGPT og rivaler viser risikable netbutikker",
-      "dato": "2026-11-12T12:00:00",
-      "foerst_set": "2026-11-12T17:01:28",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
-      "side": "artikel/7e494307f0691779.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1560,9 +1572,27 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 13,
+    "i_listen": 15,
     "som_ekstra": 0,
     "seneste": [
+     {
+      "rubrik": "OpenAI-bestyrelsesmedlem advarer om muligt AI-overtag",
+      "dato": "2026-11-13T17:25:45",
+      "foerst_set": "2026-11-13T19:59:33",
+      "link": "https://arstechnica.com/features/2026/11/ai-is-the-most-likely-reason-youll-die-openai-board-member-warns/",
+      "side": "artikel/82a25efe6c9f3f01.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Gemini 4 Hydrogen erstatter Googles Flash-model",
+      "dato": "2026-11-12T19:23:03",
+      "foerst_set": "2026-11-13T01:26:35",
+      "link": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
+      "side": "artikel/4140b7449a1cdcfd.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "FAA udbreder AI-råd til hele USA",
       "dato": "2026-11-12T22:28:47",
@@ -1652,24 +1682,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/66b1f40797084fbb.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Claude Code kan afsløre adgangskoder på GitHub",
-      "dato": "2026-11-09T17:24:26",
-      "foerst_set": "2026-11-09T19:04:48",
-      "link": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/",
-      "side": "artikel/d965126e9003a91f.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Tidligere Rockstar-chef frygter AI-kopi af GTA VI",
-      "dato": "2026-11-06T16:19:12",
-      "foerst_set": "2026-11-06T21:09:53",
-      "link": "https://arstechnica.com/gaming/2026/11/could-potential-ai-clones-of-gta-vi-force-a-quicker-official-port/",
-      "side": "artikel/5aeb17f4b6e1d3cf.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1757,7 +1769,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 15,
-    "i_listen": 3,
+    "i_listen": 2,
     "som_ekstra": 3,
     "seneste": [
      {
@@ -1767,7 +1779,7 @@ window.KOMMANDO_DATA = {
       "link": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
       "side": "",
       "hvor": "under",
-      "under": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser"
+      "under": "Gemini 4 Hydrogen erstatter Googles Flash-model"
      },
      {
       "rubrik": "AlphaGenome 2 forudsiger DNA-ændringers virkning i celler",
@@ -1804,15 +1816,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/ba028f76ed47c779.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
-      "dato": "2026-10-13T19:43:07",
-      "foerst_set": "2026-10-13T19:29:19",
-      "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-      "side": "artikel/42f1c245f492d3d1.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1847,12 +1850,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-13T12:42:11.496180+00:00",
+  "opdateret": "2026-11-13T20:09:58.713512+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 43,
-  "sidevisninger_i_alt": 70,
+  "besoeg_i_alt": 44,
+  "sidevisninger_i_alt": 73,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -2009,8 +2012,8 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 43,
-    "visninger": 69
+    "besoeg": 44,
+    "visninger": 72
    },
    {
     "sti": "/uge.html",
@@ -2022,7 +2025,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 42
+    "besoeg": 43
    },
    {
     "fra": "www.google.com",
