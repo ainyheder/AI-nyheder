@@ -1,23 +1,15 @@
 {
- "rubrik": "Nye AI-modeller fordeler arbejdet – mens Nvidia skifter chef",
- "indledning": "Ugens lanceringer spænder fra kode og robotter til genetisk forskning. Samtidig står en central chipleverandør over for et lederskifte.",
+ "rubrik": "Nye AI-modeller går fra kode til celler og robotter",
+ "indledning": "Periodens største lanceringer spænder fra programmering til forskning og fabriksgulve, mens et lederskifte rammer en central leverandør af AI-chips.",
  "historier": [
   {
-   "overskrift": "Google åbner Gemini 4 Carbon for betalende",
-   "tekst": "Gemini 4 Carbon er tilgængelig for betalende udviklere og virksomheder og rulles ud til flere Ultra-abonnenter. Ifølge Google er modellen beregnet til krævende opgaver i flere trin. En prøveversion af funktionen /swarm kan fordele arbejde mellem flere AI-agenter.",
+   "overskrift": "Google åbner Gemini 4 Carbon til krævende opgaver",
+   "tekst": "Gemini 4 Carbon er tilgængelig for betalende udviklere og virksomheder. Ifølge Google er modellen lavet til komplicerede opgaver over flere trin. En prøveversion af funktionen /swarm kan fordele en opgave mellem flere AI-agenter, mens Carbon blandt andet planlægger og kontrollerer arbejdet.",
    "link": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
    "kategori": "Lanceringer",
    "billede": "data/img/82af2c97b6cff130.webp",
    "dato": "2026-11-10T16:03:47+00:00",
    "andre": [
-    {
-     "kilde": "Simon Willison AI",
-     "link": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
-     "rubrik": "Gemini 4 Carbon er tilgængelig for alle",
-     "resume_da": "Googles model var først forbeholdt udvalgte cyberforsvarere. Simon Willison har blandt andet testet den på en opgave med et animeret New York-kort.",
-     "dato": "2026-11-10T20:09:44+00:00",
-     "foerst_set": "2026-11-10T21:56:03.050309+00:00"
-    },
     {
      "kilde": "The Verge AI",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
@@ -33,16 +25,62 @@
      "resume_da": "Den nye model er bygget til krævende opgaver over mange trin. I en forhåndsvisning kan udviklere sætte flere AI-agenter til at samarbejde.",
      "dato": "2026-11-10T16:00:00+00:00",
      "foerst_set": "2026-11-10T21:56:03.050309+00:00"
+    },
+    {
+     "kilde": "Simon Willison AI",
+     "link": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+     "rubrik": "Gemini 4 Carbon bliver tilgængelig for alle",
+     "resume_da": "Googles model var først forbeholdt en mindre gruppe cyberforsvarere. Simon Willison har testet den på en opgave med en animeret by.",
+     "dato": "2026-11-10T20:09:44+00:00",
+     "foerst_set": "2026-11-10T21:56:03.050309+00:00"
     }
    ],
    "titel": "Gemini 4 Carbon is now available",
    "rubrik": "Google åbner Gemini 4 Carbon for betalende brugere",
    "resume_da": "Den nye AI-model kan arbejde med lange opgaver i flere trin. Samtidig afprøver Google en funktion, der lader flere modeller arbejde sammen.",
-   "artikel_signatur": "a63a69bc000af1b459a1ea67ec46079a3baa2dda8bd106589df86f3398f639b8"
+   "artikel_signatur": "b28e8491c4f7738f70baa6c828c06be85fa04cb39d572e918486a38255c3d76c"
   },
   {
-   "overskrift": "Google lancerer Gemini 4 Hydrogen til hverdagsopgaver",
-   "tekst": "Gemini 4 Hydrogen er Googles nye model til blandt andet kodning og opgaver med flere trin. Google siger, at den kommer til Gemini-appen, Search og udviklerværktøjer. Modellen skal kunne arbejde sammen med større modeller; Googles præstationsmålinger er ikke uafhængigt verificeret i materialet.",
+   "overskrift": "Claude Fable og Mythos 5.2 får forskellige adgangsvilkår",
+   "tekst": "Anthropic lancerer Claude Fable 5.2 og Claude Mythos 5.2 til krævende teknisk arbejde. Fable er tilgængelig for alle og har stærke sikkerhedsværn. Organisationer kan ansøge om adgang til Mythos til gavnlige formål inden for cybersikkerhed eller biomedicinsk forskning; adgang er ikke garanteret.",
+   "link": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+   "kategori": "Lanceringer",
+   "billede": "data/img/5f62db5b82d652d4.webp",
+   "dato": "2026-11-09T00:00:00+00:00",
+   "andre": [
+    {
+     "kilde": "The Verge AI",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
+     "rubrik": "Anthropic opgraderer Claude til svære tekniske opgaver",
+     "resume_da": "Claude Fable 5.2 er tilgængelig for alle brugere, mens Claude Mythos 5.2 kræver godkendelse. Anthropic lover hurtigere svar og stærkere tekniske evner.",
+     "dato": "2026-11-09T14:00:00-05:00",
+     "foerst_set": "2026-11-09T19:04:48.520272+00:00"
+    },
+    {
+     "kilde": "TechCrunch AI",
+     "link": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
+     "rubrik": "Anthropic lancerer Mythos 5.2 og Fable 5.2",
+     "resume_da": "Fable bliver billigere og hurtigere, mens Anthropic advarer om, at modellernes mistanke om test gør deres adfærd sværere at vurdere.",
+     "dato": "2026-11-09T19:24:51+00:00",
+     "foerst_set": "2026-11-10T02:53:29.396748+00:00"
+    },
+    {
+     "kilde": "Simon Willison AI",
+     "link": "https://simonwillison.net/2026/Nov/9/llm-anthropic/",
+     "rubrik": "Fable 5.2 fejlede på højeste ræsonnementsniveau",
+     "resume_da": "Simon Willison bad Anthropics nye model tegne en pelikan på cykel. På niveauet max slap den op for tokens uden at levere et billede.",
+     "dato": "2026-11-09T23:58:46+00:00",
+     "foerst_set": "2026-11-10T02:53:29.396748+00:00"
+    }
+   ],
+   "titel": "Introducing Claude Fable 5.2 and Claude Mythos 5.2",
+   "rubrik": "Claude Fable 5.2 skal løse svære kodeopgaver",
+   "resume_da": "Anthropic lancerer to udgaver af samme AI-model. Den ene er tilgængelig for alle, mens adgang til den anden kræver en ansøgning.",
+   "artikel_signatur": "2a05573200c86d5baa4faa8d4a6c4c3a55f3969f75a32dce9c5de9f9139a4706"
+  },
+  {
+   "overskrift": "Gemini 4 Hydrogen erstatter Flash",
+   "tekst": "Google lancerer Gemini 4 Hydrogen til blandt andet programmering og søgning. Modellen erstatter Gemini 3.8 Flash, og Google siger, at den er hurtigere og fremsætter færre opdigtede påstande. Adgangen varierer: Alle ventes at få modellen i Search, mens Gemini-appens adgang kræver Pro- eller Ultra-abonnement.",
    "link": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/",
    "kategori": "Lanceringer",
    "billede": "data/img/e80859784d1ec49d.webp",
@@ -87,54 +125,24 @@
      "resume_da": "Googles nye model skal håndtere spørgsmål med flere dele og svære tastefejl. Den bliver standard i Googles AI Mode.",
      "dato": "2026-11-12T16:55:32-05:00",
      "foerst_set": "2026-11-13T01:26:35.703125+00:00"
+    },
+    {
+     "kilde": "Google DeepMind",
+     "link": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+     "rubrik": "Google lancerer Gemini 4 Hydrogen",
+     "resume_da": "Den nye AI-model skal skrive kode og løse daglige opgaver hurtigt. Google begynder nu at udrulle den globalt i blandt andet Gemini-appen og Search.",
+     "dato": "2026-11-12T18:00:50+00:00",
+     "foerst_set": "2026-11-13T12:33:55.476940+00:00"
     }
    ],
    "titel": "Gemini 4 Hydrogen: everyday coding and agentic workflows for developers",
-   "rubrik": "Google sender Gemini 4 Hydrogen ud til alle",
-   "resume_da": "Modellen skal skrive kode og udføre opgaver hurtigt. Den kommer til blandt andet Gemini-appen, Google Search og udvikleres værktøjer.",
-   "artikel_signatur": "c62005dbfa90503b526c35ce0601ba60631de3da7344b41d4d23d9ebcd1f63fe"
+   "rubrik": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser",
+   "resume_da": "Googles nye model skal hjælpe med kode og søgning. Adgangen afhænger af, om man bruger søgemaskinen, Gemini-appen eller udviklerværktøjer.",
+   "artikel_signatur": "48f07fbaeae3d47139d4e93a87c9f81c48ff67e0af43ee8f3a422d200fd2fcdc"
   },
   {
-   "overskrift": "Anthropic lancerer Claude Fable og Mythos 5.2",
-   "tekst": "Claude Fable 5.2 og Claude Mythos 5.2 bygger på samme model og er rettet mod krævende tekniske opgaver. Fable er tilgængelig for alle, mens organisationer kan ansøge om adgang til Mythos. I Anthropics egen kodetest klarede Fable sig omtrent som Opus 5.5 til lavere pris.",
-   "link": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
-   "kategori": "Lanceringer",
-   "billede": "data/img/5f62db5b82d652d4.webp",
-   "dato": "2026-11-09T00:00:00+00:00",
-   "andre": [
-    {
-     "kilde": "The Verge AI",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
-     "rubrik": "Anthropic opgraderer Claude til svære tekniske opgaver",
-     "resume_da": "Claude Fable 5.2 er tilgængelig for alle brugere, mens Claude Mythos 5.2 kræver godkendelse. Anthropic lover hurtigere svar og stærkere tekniske evner.",
-     "dato": "2026-11-09T14:00:00-05:00",
-     "foerst_set": "2026-11-09T19:04:48.520272+00:00"
-    },
-    {
-     "kilde": "TechCrunch AI",
-     "link": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
-     "rubrik": "Anthropic lancerer Mythos 5.2 og Fable 5.2",
-     "resume_da": "Fable bliver billigere og hurtigere, mens Anthropic advarer om, at modellernes mistanke om test gør deres adfærd sværere at vurdere.",
-     "dato": "2026-11-09T19:24:51+00:00",
-     "foerst_set": "2026-11-10T02:53:29.396748+00:00"
-    },
-    {
-     "kilde": "Simon Willison AI",
-     "link": "https://simonwillison.net/2026/Nov/9/llm-anthropic/",
-     "rubrik": "Fable 5.2 fejlede på højeste ræsonnementsniveau",
-     "resume_da": "Simon Willison bad Anthropics nye model tegne en pelikan på cykel. På niveauet max slap den op for tokens uden at levere et billede.",
-     "dato": "2026-11-09T23:58:46+00:00",
-     "foerst_set": "2026-11-10T02:53:29.396748+00:00"
-    }
-   ],
-   "titel": "Introducing Claude Fable 5.2 and Claude Mythos 5.2",
-   "rubrik": "Claude Fable 5.2 skal løse svære kodeopgaver",
-   "resume_da": "Anthropic lancerer to udgaver af samme AI-model. Den ene er tilgængelig for alle, mens adgang til den anden kræver en ansøgning.",
-   "artikel_signatur": "2a05573200c86d5baa4faa8d4a6c4c3a55f3969f75a32dce9c5de9f9139a4706"
-  },
-  {
-   "overskrift": "Gemini Robotics 2.5 prøvet på Mercedes-fabrikker",
-   "tekst": "Robotter med Googles nye model samlede bildele til sæt på europæiske Mercedes-fabrikker og gennemførte 96 procent af opgaverne korrekt. Gemini Robotics 2.5 er tilgængelig for udvalgte partnere, ikke generelt. DeepMind har samtidig offentliggjort en database til test af robotsikkerhed.",
+   "overskrift": "Gemini Robotics 2.5 er afprøvet på fabrikker",
+   "tekst": "Robotter med Gemini Robotics 2.5 gennemførte 96 procent af opgaverne korrekt, da de samlede bildele til sæt på Mercedes-Benz-fabrikker. Modellen er tilgængelig for Googles robotpartnere, ikke generelt. DeepMind har samtidig udgivet en database med instruktioner til test af robotsikkerhed.",
    "link": "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
    "kategori": "Lanceringer",
    "billede": "",
@@ -146,21 +154,30 @@
    "artikel_signatur": "9509411e6fdcb5adca2233a1a97b5fb56db59603f29afed6603796c4a6a97bab"
   },
   {
-   "overskrift": "AlphaGenome 2 undersøger DNA-ændringer i celler",
-   "tekst": "Google DeepMinds AlphaGenome 2 er udviklet til at forudsige, hvordan en DNA-ændring påvirker forskellige celletyper og deres tilstande. Modellen stilles ifølge Google til rådighed for ikke-kommerciel forskning, mens kommerciel forskning får en begrænset prøveordning. Forudsigelserne er ikke i sig selv behandling.",
+   "overskrift": "AlphaGenome 2 undersøger DNA i forskellige celler",
+   "tekst": "Google DeepMinds AlphaGenome 2 skal forudsige, hvordan en DNA-ændring påvirker forskellige celletyper og tilstande. Modellen erstatter ikke den tidligere AlphaGenome: De mere detaljerede forudsigelser kræver mere regnekraft. Google stiller den til rådighed for ikke-kommerciel forskning og tilbyder en begrænset kommerciel prøveordning.",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
    "kategori": "Lanceringer",
    "billede": "",
    "dato": "2026-11-11T15:00:00+00:00",
-   "andre": [],
+   "andre": [
+    {
+     "kilde": "Google DeepMind",
+     "link": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+     "rubrik": "AlphaGenome 2 forudsiger DNA-ændringers virkning i celler",
+     "resume_da": "Google DeepMinds nye model kan hjælpe forskere med at undersøge, hvordan genetiske variationer påvirker bestemte menneskelige celletyper.",
+     "dato": "2026-11-11T15:00:15+00:00",
+     "foerst_set": "2026-11-11T16:32:11.614097+00:00"
+    }
+   ],
    "titel": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
    "rubrik": "AlphaGenome 2 forudsiger mutationers virkning i celler",
    "resume_da": "Google DeepMinds nye AI-model kan undersøge, hvordan den samme DNA-ændring påvirker forskellige celletyper og deres tilstande.",
-   "artikel_signatur": "3566482664fcd97d7962f7505553acfe8914948eb7303c490762c69864f7baf2"
+   "artikel_signatur": "510e884c82318c1933b4440cb9a4e7e1ccf3e47938c9e677d80ad03044d53a12"
   },
   {
    "overskrift": "Jensen Huang forlader Nvidia",
-   "tekst": "Nvidias medstifter Jensen Huang er trådt tilbage som direktør efter omtale af udenomsægteskabelige forhold. Finansdirektør Colette Kress leder midlertidigt selskabet, mens bestyrelsen søger en permanent afløser. Lederskiftet rammer en central leverandør af chips til udvikling og drift af AI.",
+   "tekst": "Nvidias medstifter Jensen Huang er trådt tilbage som direktør efter omtale af to udenomsægteskabelige forhold. Finansdirektør Colette Kress overtager midlertidigt, mens bestyrelsen søger en permanent afløser. Lederskiftet rammer en virksomhed, hvis chips bruges bredt til at udvikle og drive AI-modeller.",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1031689/jensen-huang-nvidia-ceo-resigns",
    "kategori": "Penge & marked",
    "billede": "data/img/cdce5543bb99fc85.webp",
@@ -207,7 +224,7 @@
  ],
  "overblik": [
   {
-   "tekst": "AI-udviklerne gør det lettere at vælge forskellige modeller til forskellige dele af arbejdet. Google har åbnet Gemini 4 Carbon for betalende udviklere og virksomheder til krævende opgaver og lanceret Gemini 4 Hydrogen til hurtigere hverdagsarbejde. I Googles udviklerværktøj kan en prøvefunktion fordele opgaver mellem flere AI-agenter. Det er dog producentens beskrivelser og målinger, ikke en garanti for resultaterne i praksis.\n\nAnthropic skelner også mellem opgaver: Claude Fable 5.2 er tilgængelig for alle og rettet mod krævende teknisk arbejde, mens organisationer kan ansøge om adgang til søstermodellen Mythos 5.2. Anthropic anbefaler fortsat Opus 5.5 til de fleste kode- og vidensopgaver.",
+   "tekst": "Nye modeller bliver i stigende grad indrettet til forskellige slags arbejde frem for én universel opgave. Google har åbnet Gemini 4 Carbon for betalende udviklere og virksomheder til krævende forløb og afprøver samtidig en funktion, hvor flere AI-agenter kan dele arbejdet. Gemini 4 Hydrogen skal derimod bruges bredere til kode og søgning, men adgangen afhænger af produkt og abonnement. Anthropic retter Claude Fable 5.2 og Mythos 5.2 mod svære tekniske opgaver, med henholdsvis åben adgang og en ansøgningsordning.",
    "links": [
     "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
     "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/",
@@ -215,14 +232,14 @@
    ]
   },
   {
-   "tekst": "Andre nye modeller er bygget til mere afgrænsede formål. Gemini Robotics 2.5 har været afprøvet på Mercedes-fabrikker, hvor robotter samlede bildele til sæt. Resultatet viser både en anvendelse uden for laboratoriet og et stykke vej til menneskers pålidelighed. AlphaGenome 2 skal derimod hjælpe forskere med at forudsige DNA-ændringers virkning i bestemte celler. Det er et forskningsredskab, ikke en behandling.",
+   "tekst": "Specialiseringen rækker også ud over skærmen. Gemini Robotics 2.5 har i en fabrikstest samlet bildele til sæt, men fejl i fire procent af opgaverne viser, at pålideligheden stadig er en udfordring. AlphaGenome 2 arbejder i stedet med forudsigelser om DNA i forskellige celletyper. Det kan give forskere nye spørgsmål at undersøge, men er ikke i sig selv en behandling.",
    "links": [
     "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
     "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model"
    ]
   },
   {
-   "tekst": "Mens modellerne får nye opgaver, skifter en vigtig leverandør af regnekraft ledelse: Jensen Huang forlader Nvidia, og finansdirektør Colette Kress tager midlertidigt over. Nvidia leverer chips, som mange virksomheder bruger til at udvikle og drive AI. Afgangen er en væsentlig ændring i branchen, men materialet fastslår ikke, hvad den betyder for selskabets fremtidige kurs.",
+   "tekst": "Samtidig skifter en central leverandør bag modellerne ledelse: Jensen Huang forlader Nvidia, hvis chips bruges til både at udvikle og drive AI. Colette Kress leder virksomheden midlertidigt, mens bestyrelsen finder en permanent afløser. Lederskiftet er en selvstændig begivenhed, ikke en dokumenteret følge af periodens modellanceringer.",
    "links": [
     "https://www.theverge.com/ai-artificial-intelligence/1031689/jensen-huang-nvidia-ceo-resigns"
    ]
@@ -231,13 +248,13 @@
  "tendens": "",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "cd6326eea2e1b58b3013c540f9c8aa5acd176218a7e2510d3cdda71e08da2abd",
- "dato": "2026-11-13T01:37:47.570563+00:00",
- "opdateret": "2026-11-13T01:37:47.570563+00:00",
+ "basis_signatur": "f7ad41bc83b9ad703a94830ffecb84eb50698d0929e1410b28015cf15cdc5440",
+ "dato": "2026-11-13T12:41:43.298446+00:00",
+ "opdateret": "2026-11-13T12:41:43.298446+00:00",
  "periode_fra": "2026-11-05T23:00:00+00:00",
  "periode_til": "2026-11-12T23:00:00+00:00",
  "stats": {
-  "historier": 86,
+  "historier": 88,
   "kilder": 9
  }
 }

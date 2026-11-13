@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-13T01:38:19.951507+00:00",
+ "genereret": "2026-11-13T12:42:16.723211+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -199,35 +199,45 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-13T01:26:35.703125+00:00",
-  "antal": 111,
-  "med_billede": 84,
-  "paa_dansk": 111,
+  "opdateret": "2026-11-13T12:33:55.476940+00:00",
+  "antal": 114,
+  "med_billede": 86,
+  "paa_dansk": 114,
   "kategorier": {
-   "Lanceringer": 15,
+   "Lanceringer": 16,
+   "Forskning": 10,
    "Samfund \u0026 etik": 16,
    "Hverdags-AI": 37,
-   "Penge \u0026 marked": 24,
-   "Forskning": 8,
-   "Politik \u0026 jura": 11
+   "Politik \u0026 jura": 11,
+   "Penge \u0026 marked": 24
   },
   "kilder": {
-   "Google Gemini": 6,
+   "Google Gemini": 5,
+   "Hugging Face": 5,
    "Simon Willison AI": 10,
    "The Verge AI": 27,
-   "Google DeepMind": 1,
+   "Google DeepMind": 3,
    "Ars Technica AI": 13,
-   "TechCrunch AI": 36,
+   "TechCrunch AI": 37,
    "Anthropic News": 5,
-   "Hugging Face": 4,
    "MIT Tech Review AI": 5,
    "Mistral AI": 3,
    "xAI News": 1
   },
   "udvalgte": [
    {
+    "titel": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+    "rubrik": "IBM lærer Granite at skelne instruktioner fra data",
+    "link": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+    "side": "artikel/f052c6845a6ebe45.html",
+    "kategori": "Forskning",
+    "kilde": "Hugging Face",
+    "dato": "2026-11-12T19:07:35+00:00",
+    "billede": ""
+   },
+   {
     "titel": "Gemini 4 Hydrogen: everyday coding and agentic workflows for developers",
-    "rubrik": "Google sender Gemini 4 Hydrogen ud til alle",
+    "rubrik": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser",
     "link": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/",
     "side": "artikel/b3b68327aa8b3588.html",
     "kategori": "Lanceringer",
@@ -239,13 +249,23 @@ window.KOMMANDO_DATA = {
   "seneste": [
    {
     "titel": "Gemini 4 Hydrogen: everyday coding and agentic workflows for developers",
-    "rubrik": "Google sender Gemini 4 Hydrogen ud til alle",
+    "rubrik": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser",
     "link": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/",
     "side": "artikel/b3b68327aa8b3588.html",
     "kategori": "Lanceringer",
     "kilde": "Google Gemini",
     "dato": "2026-11-12T18:00:00+00:00",
     "billede": "data/img/e80859784d1ec49d.webp"
+   },
+   {
+    "titel": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+    "rubrik": "IBM lærer Granite at skelne instruktioner fra data",
+    "link": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+    "side": "artikel/f052c6845a6ebe45.html",
+    "kategori": "Forskning",
+    "kilde": "Hugging Face",
+    "dato": "2026-11-12T19:07:35+00:00",
+    "billede": ""
    },
    {
     "titel": "FAA expands AI advice to manage air traffic congestion across entire US airspace",
@@ -266,6 +286,16 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-11-12T17:17:58+00:00",
     "billede": "data/img/9171381e53849bd8.webp"
+   },
+   {
+    "titel": "Muse can now place calls to US businesses — if you pay",
+    "rubrik": "Meta lader Muse ringe til virksomheder",
+    "link": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
+    "side": "artikel/3896780f30628465.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-12T22:22:28+00:00",
+    "billede": "data/img/23426f1534882209.webp"
    },
    {
     "titel": "Nebius tests the neocloud playbook with $40 billion in planned spending",
@@ -336,41 +366,22 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-11-12T15:02:28+00:00",
     "billede": "data/img/51e09330f139d8b8.webp"
-   },
-   {
-    "titel": "SoftBank’s billion-dollar loss may have put a cap on AI’s natural gas ambitions",
-    "rubrik": "SoftBank taber milliarder på eludstyr til AI",
-    "link": "https://techcrunch.com/2026/11/12/softbanks-billion-dollar-loss-may-have-put-a-cap-on-ais-natural-gas-ambitions/",
-    "side": "artikel/55bf40a54c79d71b.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-12T17:00:52+00:00",
-    "billede": "data/img/269d25bc86c9dd5f.webp"
-   },
-   {
-    "titel": "More game developers are starting to use generative AI",
-    "rubrik": "GDC: Flere spiludviklere bruger AI på jobbet",
-    "link": "https://www.theverge.com/games/1032085/gdc-festival-of-gaming-annual-survey-ai-layoffs",
-    "side": "artikel/75acdb0b89ac64fc.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-12T12:00:00-05:00",
-    "billede": ""
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-13T01:26:35.703125+00:00",
+  "opdateret": "2026-11-13T12:33:55.476940+00:00",
   "status": "godkendt",
   "model": "gpt-6.1-terra",
   "modelkald": 6,
-  "kildehentninger": 2,
+  "kildehentninger": 3,
   "regelbaseret_udvalg": [
-   "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
+   "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
    "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
-   "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/"
+   "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
   ],
   "udgivet_udvalg": [
+   "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
    "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/"
   ],
   "vaerktoejer": [
@@ -383,7 +394,7 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
+    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
@@ -397,17 +408,21 @@ window.KOMMANDO_DATA = {
   ],
   "kildegrundlag": [
    {
-    "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+    "link": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
+    "link": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
     "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-11-13T01:26:35.154081+00:00",
+  "opdateret": "2026-11-13T12:33:54.842499+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -872,8 +887,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-13T01:26:35.703125+00:00",
-  "artikler_i_alt": 111,
+  "opdateret": "2026-11-13T12:33:55.476940+00:00",
+  "artikler_i_alt": 114,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -996,8 +1011,8 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 6,
-    "som_ekstra": 1,
+    "i_listen": 5,
+    "som_ekstra": 2,
     "seneste": [
      {
       "rubrik": "Google præsenterer Gemini 4 Hydrogen",
@@ -1006,7 +1021,7 @@ window.KOMMANDO_DATA = {
       "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
       "side": "",
       "hvor": "under",
-      "under": "Google sender Gemini 4 Hydrogen ud til alle"
+      "under": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser"
      },
      {
       "rubrik": "Gemini 4 Hydrogen kommer til Google Search",
@@ -1015,7 +1030,7 @@ window.KOMMANDO_DATA = {
       "link": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
       "side": "",
       "hvor": "under",
-      "under": "Google sender Gemini 4 Hydrogen ud til alle"
+      "under": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser"
      },
      {
       "rubrik": "Google åbner Gemini 4 Carbon for betalende",
@@ -1027,7 +1042,16 @@ window.KOMMANDO_DATA = {
       "under": "Google åbner Gemini 4 Carbon for betalende brugere"
      },
      {
-      "rubrik": "Google sender Gemini 4 Hydrogen ud til alle",
+      "rubrik": "Google ruller Gemini 4 Argon bredt ud",
+      "dato": "",
+      "foerst_set": "2026-10-13T19:29:19",
+      "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
+      "side": "",
+      "hvor": "under",
+      "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
+     },
+     {
+      "rubrik": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser",
       "dato": "2026-11-12T18:00:00",
       "foerst_set": "2026-11-13T01:26:35",
       "link": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/",
@@ -1070,15 +1094,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/4eabb5f27738ceda.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Google frigav Gemini 4 Argon og tester Carbon",
-      "dato": "2026-11-02T17:45:00",
-      "foerst_set": "2026-11-02T18:45:47",
-      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
-      "side": "artikel/ff01b8b9f0687b69.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1116,9 +1131,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 4,
+    "i_listen": 5,
     "som_ekstra": 0,
     "seneste": [
+     {
+      "rubrik": "IBM lærer Granite at skelne instruktioner fra data",
+      "dato": "2026-11-12T19:07:35",
+      "foerst_set": "2026-11-13T01:26:35",
+      "link": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+      "side": "artikel/f052c6845a6ebe45.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "BotPsy bruger værktøjer på egen enhed",
       "dato": "2026-11-11T05:01:16",
@@ -1177,10 +1201,10 @@ window.KOMMANDO_DATA = {
       "link": "https://simonwillison.net/2026/Nov/12/llm-gemini/",
       "side": "",
       "hvor": "under",
-      "under": "Google sender Gemini 4 Hydrogen ud til alle"
+      "under": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser"
      },
      {
-      "rubrik": "Gemini 4 Carbon er tilgængelig for alle",
+      "rubrik": "Gemini 4 Carbon bliver tilgængelig for alle",
       "dato": "",
       "foerst_set": "2026-11-10T21:56:03",
       "link": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
@@ -1290,7 +1314,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 36,
+    "i_listen": 37,
     "som_ekstra": 5,
     "seneste": [
      {
@@ -1309,7 +1333,7 @@ window.KOMMANDO_DATA = {
       "link": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/",
       "side": "",
       "hvor": "under",
-      "under": "Google sender Gemini 4 Hydrogen ud til alle"
+      "under": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser"
      },
      {
       "rubrik": "Colette Kress overtager Nvidia efter Jensen Huang",
@@ -1366,6 +1390,15 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
+      "rubrik": "Meta lader Muse ringe til virksomheder",
+      "dato": "2026-11-12T22:22:28",
+      "foerst_set": "2026-11-13T01:26:35",
+      "link": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
+      "side": "artikel/3896780f30628465.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Nebius vil bruge milliarder trods forsinket Microsoft-center",
       "dato": "2026-11-12T21:27:10",
       "foerst_set": "2026-11-13T01:26:35",
@@ -1391,15 +1424,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/d56c2fc89bca0f7d.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Hackere stjal Notion-chats via Fireworks AI",
-      "dato": "2026-11-12T15:02:28",
-      "foerst_set": "2026-11-12T17:01:28",
-      "link": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/",
-      "side": "artikel/2843d5b0f258e599.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1423,7 +1447,7 @@ window.KOMMANDO_DATA = {
       "link": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
       "side": "",
       "hvor": "under",
-      "under": "Google sender Gemini 4 Hydrogen ud til alle"
+      "under": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser"
      },
      {
       "rubrik": "Jensen Huang forlader posten som Nvidia-direktør",
@@ -1730,12 +1754,30 @@ window.KOMMANDO_DATA = {
     "kun_aktuel": false,
     "max": 15,
     "aktiv": true,
-    "status": "fejl",
-    "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-    "hentet": 0,
-    "i_listen": 1,
-    "som_ekstra": 1,
+    "status": "ok",
+    "fejl": "",
+    "hentet": 15,
+    "i_listen": 3,
+    "som_ekstra": 3,
     "seneste": [
+     {
+      "rubrik": "Google lancerer Gemini 4 Hydrogen",
+      "dato": "",
+      "foerst_set": "2026-11-13T12:33:55",
+      "link": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+      "side": "",
+      "hvor": "under",
+      "under": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser"
+     },
+     {
+      "rubrik": "AlphaGenome 2 forudsiger DNA-ændringers virkning i celler",
+      "dato": "",
+      "foerst_set": "2026-11-11T16:32:11",
+      "link": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+      "side": "",
+      "hvor": "under",
+      "under": "AlphaGenome 2 forudsiger mutationers virkning i celler"
+     },
      {
       "rubrik": "Google viser Gemini Omni 1.2 Flash frem",
       "dato": "",
@@ -1751,6 +1793,24 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-11-10T21:56:03",
       "link": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
       "side": "artikel/e38c92a7cefc59fe.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Google Antigravity finder ny peptidkandidat",
+      "dato": "2026-10-15T16:08:03",
+      "foerst_set": "2026-10-16T04:53:41",
+      "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+      "side": "artikel/ba028f76ed47c779.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
+      "dato": "2026-10-13T19:43:07",
+      "foerst_set": "2026-10-13T19:29:19",
+      "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+      "side": "artikel/42f1c245f492d3d1.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1787,12 +1847,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-13T01:38:13.919747+00:00",
+  "opdateret": "2026-11-13T12:42:11.496180+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 44,
-  "sidevisninger_i_alt": 71,
+  "besoeg_i_alt": 43,
+  "sidevisninger_i_alt": 70,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1949,8 +2009,8 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 44,
-    "visninger": 70
+    "besoeg": 43,
+    "visninger": 69
    },
    {
     "sti": "/uge.html",
@@ -1962,7 +2022,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 43
+    "besoeg": 42
    },
    {
     "fra": "www.google.com",

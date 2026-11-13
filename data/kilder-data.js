@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-13T01:26:35.703125+00:00",
- "artikler_i_alt": 111,
+ "opdateret": "2026-11-13T12:33:55.476940+00:00",
+ "artikler_i_alt": 114,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -138,8 +138,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 6,
-   "som_ekstra": 1,
+   "i_listen": 5,
+   "som_ekstra": 2,
    "seneste": [
     {
      "rubrik": "Google præsenterer Gemini 4 Hydrogen",
@@ -148,7 +148,7 @@ window.KILDER_STATUS = {
      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
      "side": "",
      "hvor": "under",
-     "under": "Google sender Gemini 4 Hydrogen ud til alle"
+     "under": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser"
     },
     {
      "rubrik": "Gemini 4 Hydrogen kommer til Google Search",
@@ -157,7 +157,7 @@ window.KILDER_STATUS = {
      "link": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
      "side": "",
      "hvor": "under",
-     "under": "Google sender Gemini 4 Hydrogen ud til alle"
+     "under": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser"
     },
     {
      "rubrik": "Google åbner Gemini 4 Carbon for betalende",
@@ -169,7 +169,16 @@ window.KILDER_STATUS = {
      "under": "Google åbner Gemini 4 Carbon for betalende brugere"
     },
     {
-     "rubrik": "Google sender Gemini 4 Hydrogen ud til alle",
+     "rubrik": "Google ruller Gemini 4 Argon bredt ud",
+     "dato": "",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
+    },
+    {
+     "rubrik": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser",
      "dato": "2026-11-12T18:00:00",
      "foerst_set": "2026-11-13T01:26:35",
      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/",
@@ -212,21 +221,12 @@ window.KILDER_STATUS = {
      "side": "artikel/4eabb5f27738ceda.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Google frigav Gemini 4 Argon og tester Carbon",
-     "dato": "2026-11-02T17:45:00",
-     "foerst_set": "2026-11-02T18:45:47",
-     "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
-     "side": "artikel/ff01b8b9f0687b69.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "Google DeepMind",
-     2
+     4
     ],
     [
      "TechCrunch AI",
@@ -277,9 +277,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 4,
+   "i_listen": 5,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "IBM lærer Granite at skelne instruktioner fra data",
+     "dato": "2026-11-12T19:07:35",
+     "foerst_set": "2026-11-13T01:26:35",
+     "link": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+     "side": "artikel/f052c6845a6ebe45.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "BotPsy bruger værktøjer på egen enhed",
      "dato": "2026-11-11T05:01:16",
@@ -339,10 +348,10 @@ window.KILDER_STATUS = {
      "link": "https://simonwillison.net/2026/Nov/12/llm-gemini/",
      "side": "",
      "hvor": "under",
-     "under": "Google sender Gemini 4 Hydrogen ud til alle"
+     "under": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser"
     },
     {
-     "rubrik": "Gemini 4 Carbon er tilgængelig for alle",
+     "rubrik": "Gemini 4 Carbon bliver tilgængelig for alle",
      "dato": "",
      "foerst_set": "2026-11-10T21:56:03",
      "link": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
@@ -488,7 +497,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 36,
+   "i_listen": 37,
    "som_ekstra": 5,
    "seneste": [
     {
@@ -507,7 +516,7 @@ window.KILDER_STATUS = {
      "link": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/",
      "side": "",
      "hvor": "under",
-     "under": "Google sender Gemini 4 Hydrogen ud til alle"
+     "under": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser"
     },
     {
      "rubrik": "Colette Kress overtager Nvidia efter Jensen Huang",
@@ -560,6 +569,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-13T01:26:35",
      "link": "https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks/",
      "side": "artikel/0deb78fa341dbcc1.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Meta lader Muse ringe til virksomheder",
+     "dato": "2026-11-12T22:22:28",
+     "foerst_set": "2026-11-13T01:26:35",
+     "link": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
+     "side": "artikel/3896780f30628465.html",
      "hvor": "forside",
      "under": ""
     },
@@ -652,15 +670,6 @@ window.KILDER_STATUS = {
      "side": "artikel/b577d6b06f32358e.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Databricks giver Genie opgaver i flere trin",
-     "dato": "2026-11-11T15:00:00",
-     "foerst_set": "2026-11-11T16:32:11",
-     "link": "https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth/",
-     "side": "artikel/a12c5f3d8f2dcc71.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -702,7 +711,7 @@ window.KILDER_STATUS = {
      "link": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
      "side": "",
      "hvor": "under",
-     "under": "Google sender Gemini 4 Hydrogen ud til alle"
+     "under": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser"
     },
     {
      "rubrik": "Jensen Huang forlader posten som Nvidia-direktør",
@@ -900,11 +909,11 @@ window.KILDER_STATUS = {
      6
     ],
     [
-     "Google Gemini",
-     1
+     "Google DeepMind",
+     2
     ],
     [
-     "Google DeepMind",
+     "Google Gemini",
      1
     ],
     [
@@ -1120,12 +1129,30 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-   "hentet": 0,
-   "i_listen": 1,
-   "som_ekstra": 1,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 15,
+   "i_listen": 3,
+   "som_ekstra": 3,
    "seneste": [
+    {
+     "rubrik": "Google lancerer Gemini 4 Hydrogen",
+     "dato": "",
+     "foerst_set": "2026-11-13T12:33:55",
+     "link": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser"
+    },
+    {
+     "rubrik": "AlphaGenome 2 forudsiger DNA-ændringers virkning i celler",
+     "dato": "",
+     "foerst_set": "2026-11-11T16:32:11",
+     "link": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+     "side": "",
+     "hvor": "under",
+     "under": "AlphaGenome 2 forudsiger mutationers virkning i celler"
+    },
     {
      "rubrik": "Google viser Gemini Omni 1.2 Flash frem",
      "dato": "",
@@ -1143,19 +1170,37 @@ window.KILDER_STATUS = {
      "side": "artikel/e38c92a7cefc59fe.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Google Antigravity finder ny peptidkandidat",
+     "dato": "2026-10-15T16:08:03",
+     "foerst_set": "2026-10-16T04:53:41",
+     "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+     "side": "artikel/ba028f76ed47c779.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
+     "dato": "2026-10-13T19:43:07",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+     "side": "artikel/42f1c245f492d3d1.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "Google Gemini",
+     4
+    ],
+    [
+     "The Verge AI",
      2
     ],
     [
      "Simon Willison AI",
-     1
-    ],
-    [
-     "The Verge AI",
      1
     ]
    ]
