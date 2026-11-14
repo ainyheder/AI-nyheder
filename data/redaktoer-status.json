@@ -1,15 +1,53 @@
 {
-  "opdateret": "2026-11-14T11:43:36.450905+00:00",
-  "status": "reserve",
+  "opdateret": "2026-11-14T18:27:35.441030+00:00",
+  "status": "godkendt",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
-    "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
     "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
-    "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/"
+    "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+    "https://arstechnica.com/ai/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/"
   ],
-  "input_fingerprint": "b08f58899ba641a9",
-  "forklaring": "Udgavekontrol fejlede: TimeoutError",
+  "input_fingerprint": "87c1dfd078c915d5",
+  "redaktionsnote": "De nyeste kandidater er gennemgået. Ingen ny modellancering inden for tidsvinduet er underbygget af en læst kilde i denne research; tidligere fremhævede modeller genvælges derfor ikke af vane. Ingen yderligere anbefalinger uden læst kilde.",
+  "beslutninger": [
+    {
+      "id": "6669a4d19d8d9722",
+      "begrundelse": "En ny analyse hævder at finde spor af avancerede Nvidia-chips i åbne kinesiske AI-modeller. Den kan give indblik i, hvilken regnekraft der ligger bag modellerne, men metoden og konklusionen er ikke uafhængigt verificeret i det læste materiale.",
+      "nyt_siden_sidst": "Analysen peger nu på chipspor i blandt andet DeepSeeks V4-modeller og Moonshots K3-udgivelser. Det er en ny forskningspåstand, ikke en ny modeludgivelse eller dokumentation for en bestemt eksportovertrædelse.",
+      "skriveopgave": "Rubrik: »Analyse finder spor af Nvidia-chips i kinesiske AI-modeller«. Forklar modelvægte og de påståede chipaftryk i korte afsnit med konkrete mellemoverskrifter; beskriv, hvilke modeller analysen omfatter. Tilskriv fundet forskeren, og forklar, at hverken træningssted, ulovlig import eller brug af udelukkende Nvidia-chips er fastslået; selve analysen er ikke læst.",
+      "kilder": [
+        "6669a4d19d8d9722"
+      ],
+      "samme_historie": [],
+      "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+      "rubrik": "Analyse finder spor af Nvidia-chips i kinesiske AI-modeller"
+    },
+    {
+      "id": "0acc674430dfd202",
+      "begrundelse": "En uafhængig praktisk test viser både en konkret nytte og en fejlbedømmelse hos en arbejdsorienteret AI-agent. Det giver læseren mere end producentens produktløfter.",
+      "nyt_siden_sidst": "The Verge har afprøvet Claude Duet i en uge og beskriver, hvordan agenten fandt en overset planlægningskonflikt, men også overdrev, hvor meget en anden opgave hastede. Testen har ikke været hovedhistorie på de oplyste forsider.",
+      "skriveopgave": "Rubrik: »Claude Duet fandt hullet i kalenderen – men gik også i selvsving«. Forklar med korte afsnit og meningsfulde mellemoverskrifter, hvordan agenten bruger tilsluttede tjenester, og gengiv både det nyttige fund og fejlbedømmelsen. Angiv, at der er tale om én journalists test, og at forskningsforhåndsvisningen kræver venteliste og et kvalificerende abonnement i USA.",
+      "kilder": [
+        "0acc674430dfd202"
+      ],
+      "samme_historie": [],
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
+      "rubrik": "Claude Duet fandt kalenderhul og overreagerede"
+    },
+    {
+      "id": "7deafdaefb224d33",
+      "begrundelse": "Geminis nye adgang til Wallet giver en konkret anvendelse af AI på personlige forbrugsdata. Funktionen er noget andet end ChatGPT Wallets indkøb på brugerens vegne.",
+      "nyt_siden_sidst": "Google begynder at udrulle en valgfri Wallet-forbindelse til Gemini-brugere i USA, så de kan stille spørgsmål om deres forbrug. Funktionen har ikke været hovedhistorie på de oplyste forsider.",
+      "skriveopgave": "Rubrik: »Gemini kan svare på spørgsmål om dit forbrug«. Forklar med korte afsnit og meningsfulde mellemoverskrifter, hvordan brugeren vælger forbindelsen til og fra, og at bankkonti og kreditkort kan tilknyttes via Plaid. Angiv amerikansk udrulning og Googles oplysning om, at Gemini kun kan læse data, ikke flytte penge; sikkerhedsløfterne er ikke uafhængigt afprøvet.",
+      "kilder": [
+        "7deafdaefb224d33"
+      ],
+      "samme_historie": [],
+      "link": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
+      "rubrik": "Gemini kan svare på spørgsmål om dit forbrug"
+    }
+  ],
   "modelkald": 6,
   "kildehentninger": 3,
   "vaerktoejer": [
@@ -40,14 +78,18 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
+      "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
       "grundlag": "kildetekst"
     }
   ],
-  "udgivet_udvalg": [],
-  "afventer_artikler": 89
+  "udgivet_udvalg": [
+    "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+    "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
+    "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/"
+  ],
+  "afventer_artikler": 90
 }

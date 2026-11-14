@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI-nyheder.com · Nvidia-chips sætter spor i kinesiske AI-modeller</title>
-<meta name="description" content="En analyse finder tegn på, at kinesiske selskaber har trænet førende AI-modeller med Blackwell-chips, som USA har forbudt at eksportere til Kina.">
+<title>AI-nyheder.com · Analyse finder spor af Nvidia-chips i kinesiske AI-modeller</title>
+<meta name="description" content="En forsker mener at kunne se spor af Blackwell-chips i åbne modeller fra blandt andre DeepSeek og Moonshot AI.">
 <link rel="canonical" href="https://ainyheder.com/artikel/3bcb8ca81cbad6cd.html">
 <meta name="theme-color" content="#0c0e12">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="AI-nyheder">
-<meta property="og:title" content="Nvidia-chips sætter spor i kinesiske AI-modeller">
-<meta property="og:description" content="En analyse finder tegn på, at kinesiske selskaber har trænet førende AI-modeller med Blackwell-chips, som USA har forbudt at eksportere til Kina.">
+<meta property="og:title" content="Analyse finder spor af Nvidia-chips i kinesiske AI-modeller">
+<meta property="og:description" content="En forsker mener at kunne se spor af Blackwell-chips i åbne modeller fra blandt andre DeepSeek og Moonshot AI.">
 <meta property="og:url" content="https://ainyheder.com/artikel/3bcb8ca81cbad6cd.html">
 <meta property="og:image" content="https://ainyheder.com/data/img/968edadc2ee360b0.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -18,7 +18,7 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/fonts/skrifter.css?v=2">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Nvidia-chips sætter spor i kinesiske AI-modeller", "description": "En analyse finder tegn på, at kinesiske selskaber har trænet førende AI-modeller med Blackwell-chips, som USA har forbudt at eksportere til Kina.", "url": "https://ainyheder.com/artikel/3bcb8ca81cbad6cd.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/3bcb8ca81cbad6cd.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "image": "https://ainyheder.com/data/img/968edadc2ee360b0.jpg", "datePublished": "2026-11-13T18:40:30+00:00", "articleSection": "Politik \u0026 jura", "isBasedOn": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Analyse finder spor af Nvidia-chips i kinesiske AI-modeller", "description": "En forsker mener at kunne se spor af Blackwell-chips i åbne modeller fra blandt andre DeepSeek og Moonshot AI.", "url": "https://ainyheder.com/artikel/3bcb8ca81cbad6cd.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/3bcb8ca81cbad6cd.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "image": "https://ainyheder.com/data/img/968edadc2ee360b0.jpg", "datePublished": "2026-11-13T18:40:30+00:00", "articleSection": "Politik \u0026 jura", "isBasedOn": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/"}</script>
 <style>
 :root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
   --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }
@@ -56,18 +56,18 @@ footer a { color:var(--accent); }
 <div class="topbar"><a class="brand" href="/" aria-label="AI-nyheder, forsiden"><img class="brand-logo" src="/assets/ai-mark.svg" alt="" width="32" height="32" decoding="async"><span>nyheder</span></a><a class="article-models" href="/modeller.html">Modellanceringer</a></div>
 <main id="artikeltekst" tabindex="-1">
 <a class="article-back" href="/">← Tilbage til nyhederne</a>
-<div class="kicker">Politik &amp; jura · TechCrunch AI · 13.11.2026 · 2 min. læsning</div>
-<h1>Nvidia-chips sætter spor i kinesiske AI-modeller</h1>
-<div class="article-intro"><img class="top" src="/data/img/968edadc2ee360b0.webp" alt="An Nvidia Blackwell chip bearing Nvidia’s recognizable green eye mark leaves a matching pattern in a solid grid of model weights, with a magnifying glass revealing the corresponden"><p class="manchet">En analyse finder tegn på, at kinesiske selskaber har trænet førende AI-modeller med Blackwell-chips, som USA har forbudt at eksportere til Kina.</p></div>
-<section class="article-section"><h2><span class="section-index" aria-hidden="true">01</span>Modellernes opbygning afslører spor af chips</h2>
-<p>En ny analyse peger på, at flere af Kinas mest avancerede AI-modeller er trænet med Nvidias Blackwell-chips. Det gælder blandt andet Moonshot AIs Kimi K3-udgivelser og DeepSeeks V4-modeller.</p><p>Forsker Will DePue fra den nonprofit forskningsgruppe Unemployment Labs har undersøgt modellernes vægte: de tal, der bestemmer, hvordan modellerne behandler information. Ifølge analysen afspejler vægtene stadig indstillingerne på de chips, der blev brugt under træningen.</p><p>DePue har også undersøgt åbent udgivne modeller fra MiniMax og Ant Group. De åbne vægte gør det muligt for andre at undersøge og bruge modellerne.</p></section>
-<dl class="article-metrics"><div><dt>Epoch AIs skøn over avancerede chips, der kom ind i Kina i 2024 og 2025 gennem ordninger, som skjulte destinationen.</dt><dd>Omkring 2 millioner chips</dd></div><div><dt>Epoch AIs skøn over AI-acceleratorer importeret til Malaysia i 2024 og 2025.</dt><dd>275.000 Nvidia AI-chips</dd></div></dl><section class="article-section"><h2><span class="section-index" aria-hidden="true">02</span>Fundet beviser ikke et lovbrud</h2>
-<p>USA&#x27;s eksportkontrol skal begrænse Kinas adgang til den mest avancerede AI-teknologi. Blackwell-chips er forbudt at eksportere til Kina og kinesisk ejede selskaber, mens den mindre kraftige H200-chip må eksporteres under særlige betingelser.</p><p>Sporene viser ikke, at modellerne udelukkende er trænet på Nvidia-chips, eller at nogen nødvendigvis har brudt loven. Chipsene kan have stået i et datacenter uden for Kina, som selskaberne har haft adgang til.</p><p>Den amerikanske teknologirådgiver Michael Kratsios har tidligere sagt, at Moonshot brugte chips omfattet af eksportforbuddet. Han henviste til amerikanske efterretningskilder.</p></section>
-<section class="article-section"><h2><span class="section-index" aria-hidden="true">03</span>Nvidia står samtidig med smuglingssag</h2>
-<p>Analysen kommer i en uge, hvor Jensen Huang har forladt posten som Nvidias direktør efter at have indrømmet et forhold til Alice Huang. Hun er direktør i Megaspeed, et selskab, der er sat i forbindelse med smugling af Nvidia-chips til Kina.</p><p>Ifølge TechCrunch kan sagen få større konsekvenser for Nvidia, hvis myndighederne bekræfter, at smugling fandt sted, og at Jensen Huang kendte til det. Nvidia og Huang har sagt, at Nvidia-medarbejdere havde besøgt Megaspeeds datacentre for at kontrollere dem.</p></section>
+<div class="kicker">Politik &amp; jura · TechCrunch AI · 13.11.2026 · 1 min. læsning</div>
+<h1>Analyse finder spor af Nvidia-chips i kinesiske AI-modeller</h1>
+<div class="article-intro"><img class="top" src="/data/img/968edadc2ee360b0.webp" alt="An Nvidia Blackwell chip bearing Nvidia’s recognizable green eye mark leaves a matching pattern in a solid grid of model weights, with a magnifying glass revealing the corresponden"><p class="manchet">En forsker mener at kunne se spor af Blackwell-chips i åbne modeller fra blandt andre DeepSeek og Moonshot AI.</p></div>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">01</span>Chipaftryk i åbne modeller</h2>
+<p>Kinesiske AI-modeller bærer spor efter træning med Nvidia-chips, som USA har begrænset eksporten af. Det hævder forskeren Will DePue i en analyse, som TechCrunch omtaler. Selve analysen er ikke gennemgået her.</p><p>DePue leder forskningsgruppen Unemployment Labs og har undersøgt modeller fra DeepSeek, Moonshot AI, MiniMax og Ant Group. Ifølge TechCrunch finder han overbevisende tegn på Blackwell-træning i blandt andet Moonshots Kimi K3 og DeepSeek V4.</p></section>
+<dl class="article-metrics"><div><dt>Epoch AI’s skøn over chips, der kom ind i Kina i 2024 og 2025 gennem ordninger, som skjulte slutdestinationen.</dt><dd>Cirka 2 millioner avancerede chips</dd></div><div><dt>Epoch AI’s skøn over importen til Malaysia i 2024 og 2025. Tallet fastslår ikke, hvem der brugte chipsene.</dt><dd>275.000 Nvidia AI-acceleratorer</dd></div></dl><section class="article-section"><h2><span class="section-index" aria-hidden="true">02</span>Modelvægte kan afsløre chipspor</h2>
+<p>DePue har set på modellernes vægte: de tal, der er fastlagt under træningen og påvirker, hvordan en model svarer. De undersøgte modeller har åbne vægte, så andre kan hente og undersøge dem.</p><p>Ifølge TechCrunch kan vægtene stadig afspejle opsætningen af de chips, der blev brugt til træningen. Det er disse mulige aftryk, DePue har ledt efter.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">03</span>Træningssted og lovbrud er uafklaret</h2>
+<p>USA forbyder eksport af Blackwell-chips til Kina og kinesisk ejede virksomheder. Men fundet fastslår ikke, hvor træningen fandt sted, om chips blev importeret ulovligt, eller om modellerne udelukkende blev trænet på Nvidia-chips.</p><p>Chipsene kan have stået i et datacenter uden for Kina. Ifølge TechCrunch bruger kinesiske virksomheder datacentre i udlandet til at få adgang til regnekraft, blandt andet i Malaysia.</p></section>
 
 
-<div class="boks" style="border-left-color:#2e9e5b;"><strong>Derfor er det interessant</strong>Fundet peger på en begrænsning ved eksportkontrol: Avancerede chips kan muligvis bruges af kinesiske AI-selskaber, selv om de står uden for Kina.</div>
+<div class="boks" style="border-left-color:#2e9e5b;"><strong>Derfor er det interessant</strong>Hvis analysens fund holder, peger de på en udfordring for USA’s mål om at begrænse kinesiske AI-virksomheders adgang til de mest kraftfulde chips.</div>
 <p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/" rel="noopener">TechCrunch AI →</a></p>
 <a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
 <p class="note">Genfortalt i egne ord af AI-nyheder.com · AI-genereret illustration · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>

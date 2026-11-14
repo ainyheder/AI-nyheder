@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-14T11:43:36.450905+00:00",
- "artikler_i_alt": 104,
+ "opdateret": "2026-11-14T18:27:35.441030+00:00",
+ "artikler_i_alt": 107,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -160,7 +160,7 @@ window.KILDER_STATUS = {
      "under": "Google åbner Gemini 4 Carbon for betalende brugere"
     },
     {
-     "rubrik": "Gemini kan bruge Google Wallet til budgetspørgsmål",
+     "rubrik": "Gemini kan svare på spørgsmål om dit forbrug",
      "dato": "2026-11-13T17:00:00",
      "foerst_set": "2026-11-13T19:59:33",
      "link": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
@@ -471,7 +471,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 33,
+   "i_listen": 34,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -502,6 +502,15 @@ window.KILDER_STATUS = {
      "under": "Anthropic afsætter fem procent af aktierne til fond"
     },
     {
+     "rubrik": "Character.ai og Ollie blandt forliste AI-projekter",
+     "dato": "2026-11-14T17:30:00",
+     "foerst_set": "2026-11-14T18:27:35",
+     "link": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+     "side": "artikel/17dd6d164624ae18.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "LangChain rejser 300 millioner dollar",
      "dato": "2026-11-13T19:37:57",
      "foerst_set": "2026-11-14T01:00:14",
@@ -511,11 +520,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "ElevenAI samler mødenoter og diktering",
-     "dato": "2026-11-13T14:44:48",
+     "rubrik": "Analyse finder spor af Nvidia-chips i kinesiske AI-modeller",
+     "dato": "2026-11-13T18:40:30",
      "foerst_set": "2026-11-13T19:59:33",
-     "link": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
-     "side": "artikel/c6494705d362bbaf.html",
+     "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+     "side": "artikel/3bcb8ca81cbad6cd.html",
      "hvor": "forside",
      "under": ""
     },
@@ -529,11 +538,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Nvidia-chips sætter spor i kinesiske AI-modeller",
-     "dato": "2026-11-13T18:40:30",
+     "rubrik": "ElevenAI samler mødenoter og diktering",
+     "dato": "2026-11-13T14:44:48",
      "foerst_set": "2026-11-13T19:59:33",
-     "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-     "side": "artikel/3bcb8ca81cbad6cd.html",
+     "link": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
+     "side": "artikel/c6494705d362bbaf.html",
      "hvor": "forside",
      "under": ""
     },
@@ -599,15 +608,6 @@ window.KILDER_STATUS = {
      "side": "artikel/55bf40a54c79d71b.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Norwest rejser 4 milliarder dollar til investeringer",
-     "dato": "2026-11-12T15:18:14",
-     "foerst_set": "2026-11-12T17:01:28",
-     "link": "https://techcrunch.com/2026/11/12/norwest-pushes-deeper-into-ai-with-new-4b-fund/",
-     "side": "artikel/a8b4ef01f1e068ca.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -643,7 +643,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 24,
+   "i_listen": 25,
    "som_ekstra": 6,
    "seneste": [
     {
@@ -701,7 +701,16 @@ window.KILDER_STATUS = {
      "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
     },
     {
-     "rubrik": "Claude Duet finder oversete huller i arbejdsplanen",
+     "rubrik": "Helen Toner advarer mod blind tillid til AI-chefer",
+     "dato": "2026-11-14T10:00:00",
+     "foerst_set": "2026-11-14T18:27:35",
+     "link": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
+     "side": "artikel/e906ce588cf4c1c4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Claude Duet fandt kalenderhul og overreagerede",
      "dato": "2026-11-13T09:00:00",
      "foerst_set": "2026-11-13T19:59:33",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
@@ -720,7 +729,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "ChatGPT og rivaler viser risikable netbutikker",
-     "dato": "2026-11-12T12:00:00",
+     "dato": "2026-11-12T17:00:00",
      "foerst_set": "2026-11-12T17:01:28",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
      "side": "artikel/7e494307f0691779.html",
@@ -798,15 +807,6 @@ window.KILDER_STATUS = {
      "side": "artikel/6373e497a4d4c8ac.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "House House brugte AI under Big Walk",
-     "dato": "2026-11-10T17:32:47",
-     "foerst_set": "2026-11-10T21:56:03",
-     "link": "https://www.theverge.com/games/1030994/big-walk-independent-games-festival-igf-ai",
-     "side": "artikel/efee8cc48ed16cb1.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -838,7 +838,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 13,
+   "i_listen": 14,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -892,6 +892,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-13T01:26:35",
      "link": "https://arstechnica.com/tech-policy/2026/11/families-fight-to-keep-googles-disturbing-ai-off-school-issued-chromebooks/",
      "side": "artikel/c9fc570fadc2fd46.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google åbner for forudbestilling af Gemini-briller",
+     "dato": "2026-11-12T14:50:17",
+     "foerst_set": "2026-11-12T17:01:28",
+     "link": "https://arstechnica.com/google/2026/11/google-pushes-privacy-angle-as-gemini-powered-smartglasses-debut-starting-at-395/",
+     "side": "artikel/b5e8f41e03cae59b.html",
      "hvor": "forside",
      "under": ""
     },
@@ -955,15 +964,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-10T21:56:03",
      "link": "https://arstechnica.com/science/2026/11/what-happens-to-mathematics-when-ai-becames-an-oracle/",
      "side": "artikel/5e903e9b7ca79175.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI-datacentre presser Ukraines droneproduktion",
-     "dato": "2026-11-10T12:15:32",
-     "foerst_set": "2026-11-10T12:55:44",
-     "link": "https://arstechnica.com/gadgets/2026/11/ukraines-fiber-optic-drones-get-squeezed-by-ai-data-center-demand/",
-     "side": "artikel/66b1f40797084fbb.html",
      "hvor": "forside",
      "under": ""
     }
