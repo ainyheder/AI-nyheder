@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-13T20:10:06.634586+00:00",
+ "genereret": "2026-11-14T01:06:24.654164+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -199,66 +199,65 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-13T19:59:33.270017+00:00",
-  "antal": 119,
-  "med_billede": 91,
-  "paa_dansk": 119,
+  "opdateret": "2026-11-14T01:00:14.998513+00:00",
+  "antal": 105,
+  "med_billede": 77,
+  "paa_dansk": 105,
   "kategorier": {
-   "Lanceringer": 16,
-   "Politik \u0026 jura": 12,
-   "Samfund \u0026 etik": 17,
-   "Hverdags-AI": 39,
-   "Penge \u0026 marked": 25,
-   "Forskning": 10
+   "Lanceringer": 15,
+   "Hverdags-AI": 38,
+   "Politik \u0026 jura": 8,
+   "Samfund \u0026 etik": 13,
+   "Penge \u0026 marked": 22,
+   "Forskning": 9
   },
   "kilder": {
-   "Ars Technica AI": 15,
-   "Simon Willison AI": 10,
-   "The Verge AI": 28,
-   "Google DeepMind": 2,
-   "TechCrunch AI": 40,
-   "Google Gemini": 4,
+   "Ars Technica AI": 13,
+   "Simon Willison AI": 9,
+   "The Verge AI": 25,
+   "Google Gemini": 5,
+   "Google DeepMind": 1,
+   "TechCrunch AI": 34,
    "Hugging Face": 6,
-   "Anthropic News": 5,
+   "Anthropic News": 3,
    "MIT Tech Review AI": 5,
    "Mistral AI": 3,
    "xAI News": 1
   },
-  "udvalgte": [
+  "udvalgte": [],
+  "seneste": [
    {
-    "titel": "Google rolls out Gemini 4 Hydrogen, finally replacing 3.8 Flash",
-    "rubrik": "Gemini 4 Hydrogen erstatter Googles Flash-model",
-    "link": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
-    "side": "artikel/4140b7449a1cdcfd.html",
-    "kategori": "Lanceringer",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-11-12T19:23:03+00:00",
-    "billede": "data/img/e80859784d1ec49d.webp"
+    "titel": "AI agent startup LangChain hits $3B valuation",
+    "rubrik": "LangChain rejser 300 millioner dollar",
+    "link": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+    "side": "artikel/26d265ce671c85ec.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-13T19:37:57+00:00",
+    "billede": "data/img/e6e9a2836f050a07.webp"
    },
    {
-    "titel": "Gemini Decisions API",
-    "rubrik": "Googles model besvarer 1.000 spørgsmål om video",
-    "link": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
-    "side": "artikel/2115de876eeeab07.html",
-    "kategori": "Lanceringer",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-11-11T22:03:25+00:00",
+    "titel": "Connect Google Wallet to Gemini for personal finance insights",
+    "rubrik": "Gemini kan bruge Google Wallet til budgetspørgsmål",
+    "link": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
+    "side": "artikel/3dd10e847b99d7f7.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "Google Gemini",
+    "dato": "2026-11-13T17:00:00+00:00",
     "billede": ""
    },
    {
-    "titel": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh oh, Jensen!",
-    "rubrik": "Nvidia-chips sætter spor i kinesiske AI-modeller",
-    "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-    "side": "artikel/3bcb8ca81cbad6cd.html",
-    "kategori": "Politik \u0026 jura",
+    "titel": "ChatGPT’s new Wallet lets AI agents shop and check out for you",
+    "rubrik": "ChatGPT Wallet kan købe varer for brugeren",
+    "link": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
+    "side": "artikel/a89e405114485a54.html",
+    "kategori": "Hverdags-AI",
     "kilde": "TechCrunch AI",
-    "dato": "2026-11-13T18:40:30+00:00",
-    "billede": "data/img/968edadc2ee360b0.webp"
-   }
-  ],
-  "seneste": [
+    "dato": "2026-11-13T16:00:12+00:00",
+    "billede": "data/img/3402b190a924c28a.webp"
+   },
    {
-    "titel": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh oh, Jensen!",
+    "titel": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
     "rubrik": "Nvidia-chips sætter spor i kinesiske AI-modeller",
     "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
     "side": "artikel/3bcb8ca81cbad6cd.html",
@@ -346,56 +345,21 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-11-12T17:17:58+00:00",
     "billede": "data/img/9171381e53849bd8.webp"
-   },
-   {
-    "titel": "Muse can now place calls to US businesses — if you pay",
-    "rubrik": "Meta lader Muse ringe til virksomheder",
-    "link": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
-    "side": "artikel/3896780f30628465.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-12T22:22:28+00:00",
-    "billede": "data/img/23426f1534882209.webp"
-   },
-   {
-    "titel": "Nebius tests the neocloud playbook with $40 billion in planned spending",
-    "rubrik": "Nebius vil bruge milliarder trods forsinket Microsoft-center",
-    "link": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/",
-    "side": "artikel/076e5b99074af123.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-12T21:27:10+00:00",
-    "billede": "data/img/8c053fb0e1889983.webp"
-   },
-   {
-    "titel": "No, AI agents did not discover a previously unknown Maya site",
-    "rubrik": "Miottis AI fandt allerede kendt Maya-sted",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery",
-    "side": "artikel/2b94a6dc55086b83.html",
-    "kategori": "Forskning",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-12T14:42:40-05:00",
-    "billede": "data/img/69ff8debcfa02716.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-13T19:59:33.270017+00:00",
-  "status": "reserve",
+  "opdateret": "2026-11-14T01:00:14.998513+00:00",
+  "status": "godkendt",
   "model": "gpt-6.1-terra",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "modelkald": 6,
   "kildehentninger": 3,
   "regelbaseret_udvalg": [
    "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
-   "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
-   "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/"
-  ],
-  "udgivet_udvalg": [
-   "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
-   "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+   "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
    "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/"
   ],
+  "udgivet_udvalg": [],
   "vaerktoejer": [
    {
     "vaerktoej": "find_kilder",
@@ -424,17 +388,17 @@ window.KOMMANDO_DATA = {
     "grundlag": "rss_resume"
    },
    {
-    "link": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
-    "grundlag": "kildetekst"
+    "link": "https://openai.com/index/introducing-chatgpt-wallet/",
+    "grundlag": "utilgaengelig"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-11-13T19:59:30.867266+00:00",
+  "opdateret": "2026-11-14T01:00:14.490828+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -899,8 +863,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-13T19:59:33.270017+00:00",
-  "artikler_i_alt": 119,
+  "opdateret": "2026-11-14T01:00:14.998513+00:00",
+  "artikler_i_alt": 105,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -912,7 +876,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 15,
-    "i_listen": 5,
+    "i_listen": 3,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -948,24 +912,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-15T20:00:28",
       "link": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
       "side": "artikel/eb77f6484e453b05.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Claude viser valgdata og stemmested",
-      "dato": "2026-10-14T00:00:00",
-      "foerst_set": "2026-10-14T20:18:45",
-      "link": "https://www.anthropic.com/news/2026-us-midterms",
-      "side": "artikel/a326a9536354e596.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Anthropic åbner femte Asien-kontor i Singapore med regeringssamarbejde",
-      "dato": "2026-10-14T00:00:00",
-      "foerst_set": "2026-10-14T13:58:43",
-      "link": "https://www.anthropic.com/news/singapore-office-opening",
-      "side": "artikel/2922d5d8f3c24cb9.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1023,7 +969,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 4,
+    "i_listen": 5,
     "som_ekstra": 4,
     "seneste": [
      {
@@ -1061,6 +1007,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Google åbner Gemini 4 Carbon for betalende brugere"
+     },
+     {
+      "rubrik": "Gemini kan bruge Google Wallet til budgetspørgsmål",
+      "dato": "2026-11-13T17:00:00",
+      "foerst_set": "2026-11-13T19:59:33",
+      "link": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
+      "side": "artikel/3dd10e847b99d7f7.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Gemini Live kommer til Apple CarPlay",
@@ -1203,8 +1158,8 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 10,
-    "som_ekstra": 3,
+    "i_listen": 9,
+    "som_ekstra": 4,
     "seneste": [
      {
       "rubrik": "Gemini 4 Hydrogen skal drive AI i Google-søgning",
@@ -1214,6 +1169,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Gemini 4 Hydrogen erstatter Googles Flash-model"
+     },
+     {
+      "rubrik": "Gemini 4 Carbon åbner for alle",
+      "dato": "",
+      "foerst_set": "2026-11-10T21:56:03",
+      "link": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+      "side": "",
+      "hvor": "under",
+      "under": "Google åbner Gemini 4 Carbon for betalende brugere"
      },
      {
       "rubrik": "Meta lancerer den lille AI-model Muse Ember",
@@ -1304,15 +1268,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/7796d5edf90e59f0.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Claude omskrev 3D-æg uden Three.js",
-      "dato": "2026-11-09T04:32:33",
-      "foerst_set": "2026-11-09T07:05:45",
-      "link": "https://simonwillison.net/2026/Nov/9/hn-50421091/",
-      "side": "artikel/c3dd8886e7848fb0.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1326,9 +1281,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 40,
-    "som_ekstra": 5,
+    "i_listen": 34,
+    "som_ekstra": 6,
     "seneste": [
+     {
+      "rubrik": "Huangs exit kan ramme AI-startups finansiering",
+      "dato": "",
+      "foerst_set": "2026-11-14T01:00:14",
+      "link": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
+      "side": "",
+      "hvor": "under",
+      "under": "Jensen Huang forlader Nvidia efter affæreafsløringer"
+     },
      {
       "rubrik": "Hugging Face-chef lover kamp for open source",
       "dato": "",
@@ -1375,15 +1339,6 @@ window.KOMMANDO_DATA = {
       "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
      },
      {
-      "rubrik": "USA's vælgere stemmer for datacenterbegrænsninger",
-      "dato": "",
-      "foerst_set": "2026-11-06T21:09:53.915130+00:00",
-      "link": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/",
-      "side": "",
-      "hvor": "under",
-      "under": "USA's vælgere stemte for datacenterbegrænsninger"
-     },
-     {
       "rubrik": "Anthropic afsætter fem procent af aktier til fond",
       "dato": "",
       "foerst_set": "2026-10-18T22:33:18",
@@ -1391,6 +1346,24 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Anthropic afsætter fem procent af aktierne til fond"
+     },
+     {
+      "rubrik": "LangChain rejser 300 millioner dollar",
+      "dato": "2026-11-13T19:37:57",
+      "foerst_set": "2026-11-14T01:00:14",
+      "link": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+      "side": "artikel/26d265ce671c85ec.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "ChatGPT Wallet kan købe varer for brugeren",
+      "dato": "2026-11-13T16:00:12",
+      "foerst_set": "2026-11-13T19:59:33",
+      "link": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
+      "side": "artikel/a89e405114485a54.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Nvidia-chips sætter spor i kinesiske AI-modeller",
@@ -1418,24 +1391,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/eac079c142ed1396.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "United Airlines begrænser AI-agenters adgang",
-      "dato": "2026-11-12T17:17:58",
-      "foerst_set": "2026-11-13T01:26:35",
-      "link": "https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks/",
-      "side": "artikel/0deb78fa341dbcc1.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Meta lader Muse ringe til virksomheder",
-      "dato": "2026-11-12T22:22:28",
-      "foerst_set": "2026-11-13T01:26:35",
-      "link": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
-      "side": "artikel/3896780f30628465.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1449,9 +1404,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 28,
-    "som_ekstra": 7,
+    "i_listen": 25,
+    "som_ekstra": 6,
     "seneste": [
+     {
+      "rubrik": "ChatGPTs agenter kan nu købe ind for dig",
+      "dato": "",
+      "foerst_set": "2026-11-14T01:00:14",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
+      "side": "",
+      "hvor": "under",
+      "under": "ChatGPT Wallet kan købe varer for brugeren"
+     },
      {
       "rubrik": "Gemini 4 Hydrogen deler svære spørgsmål op",
       "dato": "",
@@ -1516,33 +1480,6 @@ window.KOMMANDO_DATA = {
       "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
      },
      {
-      "rubrik": "OpenAI lover åbenhed om datacenterprojekter",
-      "dato": "",
-      "foerst_set": "2026-11-06T21:09:53.915130+00:00",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
-      "side": "",
-      "hvor": "under",
-      "under": "OpenAI dropper NDA'er i aftaler om datacentre"
-     },
-     {
-      "rubrik": "Meta lader Muse bygge personlige app-områder",
-      "dato": "",
-      "foerst_set": "2026-11-06T21:09:53",
-      "link": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
-      "side": "",
-      "hvor": "under",
-      "under": "Meta lader Muse bygge dit projektrum"
-     },
-     {
-      "rubrik": "Alexa for Shopping bestiller varer via sms",
-      "dato": "",
-      "foerst_set": "2026-11-06T16:11:20",
-      "link": "https://www.theverge.com/tech/1028587/amazon-alexa-shopping-ai-text-orders",
-      "side": "",
-      "hvor": "under",
-      "under": "Amazon åbner for indkøb via tekstbeskeder til Alexa"
-     },
-     {
       "rubrik": "Claude Duet finder oversete huller i arbejdsplanen",
       "dato": "2026-11-13T09:00:00",
       "foerst_set": "2026-11-13T19:59:33",
@@ -1559,6 +1496,24 @@ window.KOMMANDO_DATA = {
       "side": "artikel/2b94a6dc55086b83.html",
       "hvor": "forside",
       "under": ""
+     },
+     {
+      "rubrik": "ChatGPT og rivaler viser risikable netbutikker",
+      "dato": "2026-11-12T12:00:00",
+      "foerst_set": "2026-11-12T17:01:28",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
+      "side": "artikel/7e494307f0691779.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "GDC: Flere spiludviklere bruger AI på jobbet",
+      "dato": "2026-11-12T17:00:00",
+      "foerst_set": "2026-11-12T17:01:28",
+      "link": "https://www.theverge.com/games/1032085/gdc-festival-of-gaming-annual-survey-ai-layoffs",
+      "side": "artikel/75acdb0b89ac64fc.html",
+      "hvor": "forside",
+      "under": ""
      }
     ]
    },
@@ -1572,9 +1527,27 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 15,
+    "i_listen": 13,
     "som_ekstra": 0,
     "seneste": [
+     {
+      "rubrik": "FAA udvider AI-rådgivning til hele USA",
+      "dato": "",
+      "foerst_set": "2026-11-14T01:00:14.998513+00:00",
+      "link": "https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
+      "side": "",
+      "hvor": "under",
+      "under": "FAA udbreder AI-råd til hele USA"
+     },
+     {
+      "rubrik": "OpenAI-bestyrelsesmedlem frygter snarlig AI-overtagelse",
+      "dato": "",
+      "foerst_set": "2026-11-14T01:00:14.998513+00:00",
+      "link": "https://arstechnica.com/ai/2026/11/ai-is-the-most-likely-reason-youll-die-openai-board-member-warns/",
+      "side": "",
+      "hvor": "under",
+      "under": "OpenAI-bestyrelsesmedlem advarer om muligt AI-overtag"
+     },
      {
       "rubrik": "OpenAI-bestyrelsesmedlem advarer om muligt AI-overtag",
       "dato": "2026-11-13T17:25:45",
@@ -1664,24 +1637,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/4514984ec2ddf20a.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Strogatz: AI udfordrer menneskers matematiske forståelse",
-      "dato": "2026-11-10T20:30:01",
-      "foerst_set": "2026-11-10T21:56:03",
-      "link": "https://arstechnica.com/science/2026/11/what-happens-to-mathematics-when-ai-becames-an-oracle/",
-      "side": "artikel/5e903e9b7ca79175.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "AI-datacentre presser Ukraines droneproduktion",
-      "dato": "2026-11-10T12:15:32",
-      "foerst_set": "2026-11-10T12:55:44",
-      "link": "https://arstechnica.com/gadgets/2026/11/ukraines-fiber-optic-drones-get-squeezed-by-ai-data-center-demand/",
-      "side": "artikel/66b1f40797084fbb.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1756,8 +1711,18 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 25,
     "i_listen": 0,
-    "som_ekstra": 0,
-    "seneste": []
+    "som_ekstra": 1,
+    "seneste": [
+     {
+      "rubrik": "OpenAI introducerer ChatGPT Wallet til AI-køb",
+      "dato": "",
+      "foerst_set": "2026-11-13T19:59:33",
+      "link": "https://openai.com/index/introducing-chatgpt-wallet",
+      "side": "",
+      "hvor": "under",
+      "under": "ChatGPT Wallet kan købe varer for brugeren"
+     }
+    ]
    },
    {
     "navn": "Google DeepMind",
@@ -1766,10 +1731,10 @@ window.KOMMANDO_DATA = {
     "kun_aktuel": false,
     "max": 15,
     "aktiv": true,
-    "status": "ok",
-    "fejl": "",
-    "hentet": 15,
-    "i_listen": 2,
+    "status": "fejl",
+    "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
+    "hentet": 0,
+    "i_listen": 1,
     "som_ekstra": 3,
     "seneste": [
      {
@@ -1807,15 +1772,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/e38c92a7cefc59fe.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Google Antigravity finder ny peptidkandidat",
-      "dato": "2026-10-15T16:08:03",
-      "foerst_set": "2026-10-16T04:53:41",
-      "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-      "side": "artikel/ba028f76ed47c779.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1850,19 +1806,14 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-13T20:09:58.713512+00:00",
+  "opdateret": "2026-11-14T01:06:18.713134+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 44,
-  "sidevisninger_i_alt": 73,
+  "besoeg_i_alt": 35,
+  "sidevisninger_i_alt": 58,
   "ai_chat_besoeg": 0,
   "serie": [
-   {
-    "dato": "2026-10-15",
-    "besoeg": 0,
-    "visninger": 0
-   },
    {
     "dato": "2026-10-16",
     "besoeg": 0,
@@ -2007,13 +1958,18 @@ window.KOMMANDO_DATA = {
     "dato": "2026-11-13",
     "besoeg": 0,
     "visninger": 0
+   },
+   {
+    "dato": "2026-11-14",
+    "besoeg": 0,
+    "visninger": 0
    }
   ],
   "sider": [
    {
     "sti": "/",
-    "besoeg": 44,
-    "visninger": 72
+    "besoeg": 35,
+    "visninger": 57
    },
    {
     "sti": "/uge.html",
@@ -2025,7 +1981,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 43
+    "besoeg": 34
    },
    {
     "fra": "www.google.com",

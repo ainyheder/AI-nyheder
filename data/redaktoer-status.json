@@ -1,18 +1,28 @@
 {
-  "opdateret": "2026-11-13T19:59:33.270017+00:00",
-  "status": "reserve",
+  "opdateret": "2026-11-14T01:00:14.998513+00:00",
+  "status": "godkendt",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
     "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
-    "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
-    "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/"
+    "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
+    "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/"
   ],
-  "input_fingerprint": "dfbaf752bd96c99c",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "kontrolproblemer": [
-    "Kandidatoversigten indeholder både hovedhistorien om ChatGPT Wallet og OpenAI’s omtale af samme lancering (7d4d71d056da0286). Saml dem, så lanceringen ikke gentages på forsiden; anbefalingslisten er tom.",
-    "Gemini 4 Hydrogen er en aktuel modellancering, men udgaven vælger to appfunktioner uden at dokumentere, at modelkandidaten er undersøgt eller begrunde fravalget. Vurder de tilgængelige kilder og eventuel tidligere forside før udvælgelsen."
+  "input_fingerprint": "2051b21ce4e93e38",
+  "redaktionsnote": "OpenAI's primærkilde kunne ikke åbnes som fuld tekst; den læsbare Verge-omtale danner grundlag for artiklen. Øvrige kandidater afventer læsning og er ikke anbefalet.",
+  "beslutninger": [
+    {
+      "id": "754f24889ed9e00a",
+      "begrundelse": "ChatGPT Wallet giver AI-agenter en konkret ny mulighed: at gennemføre indkøb for brugeren. Lanceringen er aktuel, men adgangen er foreløbig begrænset til amerikanske Pro-abonnenter.",
+      "nyt_siden_sidst": "OpenAI begynder nu udrulningen af ChatGPT Wallet til kvalificerede voksne Pro-abonnenter i USA. Hvert køb kræver brugerens godkendelse; funktionen har ikke været hovedhistorie på de oplyste forsider.",
+      "skriveopgave": "Rubrik: »ChatGPTs agenter kan nu købe ind for dig«. Forklar med korte afsnit og sigende mellemoverskrifter, hvordan Dots-agenten bruger et tilføjet kort, og hvorfor hvert køb kræver godkendelse og biometrisk kontrol. Beskriv de amerikanske adgangskrav, forklar betalingstoken ved første brug, og tilskriv sikkerhedsløfterne OpenAI; fuldt selvstændige køb er kun en fremtidsplan, og nogle butikker kan blokere agenter.",
+      "kilder": [
+        "754f24889ed9e00a"
+      ],
+      "samme_historie": [],
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
+      "rubrik": "ChatGPTs agenter kan nu købe ind for dig"
+    }
   ],
   "modelkald": 6,
   "kildehentninger": 3,
@@ -44,18 +54,14 @@
       "grundlag": "rss_resume"
     },
     {
-      "link": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
-      "grundlag": "kildetekst"
+      "link": "https://openai.com/index/introducing-chatgpt-wallet/",
+      "grundlag": "utilgaengelig"
     }
   ],
-  "udgivet_udvalg": [
-    "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
-    "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
-    "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/"
-  ],
-  "afventer_artikler": 98
+  "udgivet_udvalg": [],
+  "afventer_artikler": 85
 }
