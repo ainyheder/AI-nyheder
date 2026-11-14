@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-14T01:06:24.654164+00:00",
+ "genereret": "2026-11-14T11:51:07.694977+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -199,25 +199,25 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-14T01:00:14.998513+00:00",
-  "antal": 105,
-  "med_billede": 77,
-  "paa_dansk": 105,
+  "opdateret": "2026-11-14T11:43:36.450905+00:00",
+  "antal": 104,
+  "med_billede": 76,
+  "paa_dansk": 104,
   "kategorier": {
-   "Lanceringer": 15,
    "Hverdags-AI": 38,
+   "Lanceringer": 15,
    "Politik \u0026 jura": 8,
    "Samfund \u0026 etik": 13,
-   "Penge \u0026 marked": 22,
-   "Forskning": 9
+   "Penge \u0026 marked": 20,
+   "Forskning": 10
   },
   "kilder": {
+   "Google Gemini": 5,
+   "TechCrunch AI": 33,
+   "The Verge AI": 24,
    "Ars Technica AI": 13,
    "Simon Willison AI": 9,
-   "The Verge AI": 25,
-   "Google Gemini": 5,
-   "Google DeepMind": 1,
-   "TechCrunch AI": 34,
+   "Google DeepMind": 2,
    "Hugging Face": 6,
    "Anthropic News": 3,
    "MIT Tech Review AI": 5,
@@ -247,6 +247,26 @@ window.KOMMANDO_DATA = {
     "billede": ""
    },
    {
+    "titel": "ElevenLabs’ new app combines meeting note-taking and dictation for teams",
+    "rubrik": "ElevenAI samler mødenoter og diktering",
+    "link": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
+    "side": "artikel/c6494705d362bbaf.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-13T14:44:48+00:00",
+    "billede": "data/img/8002572240ad385a.webp"
+   },
+   {
+    "titel": "Claude’s Duet agent is a little neurotic and surprisingly helpful",
+    "rubrik": "Claude Duet finder oversete huller i arbejdsplanen",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
+    "side": "artikel/2c7a6e6b19ce61f9.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-13T09:00:00-05:00",
+    "billede": "data/img/cf11c0c9814229fc.webp"
+   },
+   {
     "titel": "ChatGPT’s new Wallet lets AI agents shop and check out for you",
     "rubrik": "ChatGPT Wallet kan købe varer for brugeren",
     "link": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
@@ -267,16 +287,6 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/968edadc2ee360b0.webp"
    },
    {
-    "titel": "ElevenLabs’ new app combines meeting note-taking and dictation for teams",
-    "rubrik": "ElevenAI samler mødenoter og diktering",
-    "link": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
-    "side": "artikel/c6494705d362bbaf.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-13T14:44:48+00:00",
-    "billede": "data/img/8002572240ad385a.webp"
-   },
-   {
     "titel": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
     "rubrik": "llama.cpp v1.0.0 varsler tydeligere versionsskift",
     "link": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
@@ -285,16 +295,6 @@ window.KOMMANDO_DATA = {
     "kilde": "Hugging Face",
     "dato": "2026-11-13T14:05:22+00:00",
     "billede": "data/img/2ad3a1e6d9c97b8d.webp"
-   },
-   {
-    "titel": "Claude’s Duet agent is a little neurotic and surprisingly helpful",
-    "rubrik": "Claude Duet finder oversete huller i arbejdsplanen",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
-    "side": "artikel/2c7a6e6b19ce61f9.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-13T09:00:00-05:00",
-    "billede": "data/img/cf11c0c9814229fc.webp"
    },
    {
     "titel": "OpenAI board member worries an AI \"takeover\" of society could be months away",
@@ -349,9 +349,10 @@ window.KOMMANDO_DATA = {
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-14T01:00:14.998513+00:00",
-  "status": "godkendt",
+  "opdateret": "2026-11-14T11:43:36.450905+00:00",
+  "status": "reserve",
   "model": "gpt-6.1-terra",
+  "forklaring": "Udgavekontrol fejlede: TimeoutError",
   "modelkald": 6,
   "kildehentninger": 3,
   "regelbaseret_udvalg": [
@@ -384,21 +385,21 @@ window.KOMMANDO_DATA = {
   ],
   "kildegrundlag": [
    {
-    "link": "https://openai.com/index/introducing-chatgpt-wallet",
-    "grundlag": "rss_resume"
-   },
-   {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
+    "link": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://openai.com/index/introducing-chatgpt-wallet/",
-    "grundlag": "utilgaengelig"
+    "link": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
+    "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-11-14T01:00:14.490828+00:00",
+  "opdateret": "2026-11-14T11:43:35.666229+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -863,8 +864,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-14T01:00:14.998513+00:00",
-  "artikler_i_alt": 105,
+  "opdateret": "2026-11-14T11:43:36.450905+00:00",
+  "artikler_i_alt": 104,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1281,27 +1282,9 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 34,
-    "som_ekstra": 6,
+    "i_listen": 33,
+    "som_ekstra": 3,
     "seneste": [
-     {
-      "rubrik": "Huangs exit kan ramme AI-startups finansiering",
-      "dato": "",
-      "foerst_set": "2026-11-14T01:00:14",
-      "link": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
-      "side": "",
-      "hvor": "under",
-      "under": "Jensen Huang forlader Nvidia efter affæreafsløringer"
-     },
-     {
-      "rubrik": "Hugging Face-chef lover kamp for open source",
-      "dato": "",
-      "foerst_set": "2026-11-13T01:26:35.703125+00:00",
-      "link": "https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/",
-      "side": "",
-      "hvor": "under",
-      "under": "Huangs afgang sår tvivl om Nvidias åbne AI"
-     },
      {
       "rubrik": "Gemini 4 Hydrogen skal forstå sværere søgninger",
       "dato": "",
@@ -1310,24 +1293,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Gemini 4 Hydrogen erstatter Googles Flash-model"
-     },
-     {
-      "rubrik": "Colette Kress overtager Nvidia efter Jensen Huang",
-      "dato": "",
-      "foerst_set": "2026-11-12T17:01:28",
-      "link": "https://techcrunch.com/2026/11/12/jensen-huang-is-out-at-nvidia-who-is-colette-kress-his-interim-replacement/",
-      "side": "",
-      "hvor": "under",
-      "under": "Jensen Huang forlader Nvidia efter affæreafsløringer"
-     },
-     {
-      "rubrik": "Nvidia afsætter Jensen Huang som topchef",
-      "dato": "",
-      "foerst_set": "2026-11-12T17:01:28",
-      "link": "https://techcrunch.com/2026/11/12/five-ways-jensen-huangs-ouster-from-nvidia-could-damage-the-ai-industry/",
-      "side": "",
-      "hvor": "under",
-      "under": "Jensen Huang forlader Nvidia efter affæreafsløringer"
      },
      {
       "rubrik": "Anthropic lancerer Mythos 5.2 og Fable 5.2",
@@ -1357,6 +1322,15 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
+      "rubrik": "ElevenAI samler mødenoter og diktering",
+      "dato": "2026-11-13T14:44:48",
+      "foerst_set": "2026-11-13T19:59:33",
+      "link": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
+      "side": "artikel/c6494705d362bbaf.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "ChatGPT Wallet kan købe varer for brugeren",
       "dato": "2026-11-13T16:00:12",
       "foerst_set": "2026-11-13T19:59:33",
@@ -1375,20 +1349,47 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "ElevenAI samler mødenoter og diktering",
-      "dato": "2026-11-13T14:44:48",
-      "foerst_set": "2026-11-13T19:59:33",
-      "link": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
-      "side": "artikel/c6494705d362bbaf.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
       "rubrik": "Investorer ser åbning for Nvidias udfordrere",
       "dato": "2026-11-13T12:52:19",
       "foerst_set": "2026-11-13T19:59:33",
       "link": "https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil/",
       "side": "artikel/eac079c142ed1396.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "United Airlines begrænser AI-agenters adgang",
+      "dato": "2026-11-12T17:17:58",
+      "foerst_set": "2026-11-13T01:26:35",
+      "link": "https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks/",
+      "side": "artikel/0deb78fa341dbcc1.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Meta lader Muse ringe til virksomheder",
+      "dato": "2026-11-12T22:22:28",
+      "foerst_set": "2026-11-13T01:26:35",
+      "link": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
+      "side": "artikel/3896780f30628465.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Nebius vil bruge milliarder trods forsinket Microsoft-center",
+      "dato": "2026-11-12T21:27:10",
+      "foerst_set": "2026-11-13T01:26:35",
+      "link": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/",
+      "side": "artikel/076e5b99074af123.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Nectars AI finder og kontakter indholdsskabere",
+      "dato": "2026-11-12T19:11:00",
+      "foerst_set": "2026-11-13T01:26:35",
+      "link": "https://techcrunch.com/2026/11/12/nectar-launches-an-ai-agent-to-automate-creator-discovery-and-outreach-for-brands/",
+      "side": "artikel/0a010acdd07c2ba4.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1404,7 +1405,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 25,
+    "i_listen": 24,
     "som_ekstra": 6,
     "seneste": [
      {
@@ -1424,24 +1425,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Gemini 4 Hydrogen erstatter Googles Flash-model"
-     },
-     {
-      "rubrik": "Jensen Huang forlader posten som Nvidia-direktør",
-      "dato": "",
-      "foerst_set": "2026-11-12T17:01:28.796363+00:00",
-      "link": "https://www.theverge.com/podcast/1031260/nvidia-jensen-huang-resign-china-spy-scandal-ai-chips-trump",
-      "side": "",
-      "hvor": "under",
-      "under": "Jensen Huang forlader Nvidia efter affæreafsløringer"
-     },
-     {
-      "rubrik": "Nvidia-bestyrelse søger afløser for Jensen Huang",
-      "dato": "",
-      "foerst_set": "2026-11-12T17:01:28.796363+00:00",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1032028/read-nvidias-internal-emails-jensen-huang",
-      "side": "",
-      "hvor": "under",
-      "under": "Jensen Huang forlader Nvidia efter affæreafsløringer"
      },
      {
       "rubrik": "Google lancerer Gemini 4 Carbon med agent-sværm",
@@ -1512,6 +1495,24 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-11-12T17:01:28",
       "link": "https://www.theverge.com/games/1032085/gdc-festival-of-gaming-annual-survey-ai-layoffs",
       "side": "artikel/75acdb0b89ac64fc.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "United stopper AI-agenter fra at købe flybilletter",
+      "dato": "2026-11-11T21:54:21",
+      "foerst_set": "2026-11-11T22:58:05",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents",
+      "side": "artikel/a3a0c9996cbe1c5a.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "AlphaGenome 2 forudsiger mutationers virkning i celler",
+      "dato": "2026-11-11T15:00:00",
+      "foerst_set": "2026-11-11T16:32:11",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
+      "side": "artikel/872573b4c15b2f70.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1731,10 +1732,10 @@ window.KOMMANDO_DATA = {
     "kun_aktuel": false,
     "max": 15,
     "aktiv": true,
-    "status": "fejl",
-    "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-    "hentet": 0,
-    "i_listen": 1,
+    "status": "ok",
+    "fejl": "",
+    "hentet": 15,
+    "i_listen": 2,
     "som_ekstra": 3,
     "seneste": [
      {
@@ -1772,6 +1773,15 @@ window.KOMMANDO_DATA = {
       "side": "artikel/e38c92a7cefc59fe.html",
       "hvor": "forside",
       "under": ""
+     },
+     {
+      "rubrik": "Google Antigravity finder ny peptidkandidat",
+      "dato": "2026-10-15T16:08:03",
+      "foerst_set": "2026-10-16T04:53:41",
+      "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+      "side": "artikel/ba028f76ed47c779.html",
+      "hvor": "forside",
+      "under": ""
      }
     ]
    },
@@ -1806,12 +1816,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-14T01:06:18.713134+00:00",
+  "opdateret": "2026-11-14T11:51:00.460742+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 35,
-  "sidevisninger_i_alt": 58,
+  "besoeg_i_alt": 37,
+  "sidevisninger_i_alt": 60,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1968,8 +1978,8 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 35,
-    "visninger": 57
+    "besoeg": 37,
+    "visninger": 59
    },
    {
     "sti": "/uge.html",
@@ -1981,7 +1991,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 34
+    "besoeg": 36
    },
    {
     "fra": "www.google.com",

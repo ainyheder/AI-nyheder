@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-14T01:00:14.998513+00:00",
- "artikler_i_alt": 105,
+ "opdateret": "2026-11-14T11:43:36.450905+00:00",
+ "artikler_i_alt": 104,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -471,27 +471,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 34,
-   "som_ekstra": 6,
+   "i_listen": 33,
+   "som_ekstra": 3,
    "seneste": [
-    {
-     "rubrik": "Huangs exit kan ramme AI-startups finansiering",
-     "dato": "",
-     "foerst_set": "2026-11-14T01:00:14",
-     "link": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
-     "side": "",
-     "hvor": "under",
-     "under": "Jensen Huang forlader Nvidia efter affæreafsløringer"
-    },
-    {
-     "rubrik": "Hugging Face-chef lover kamp for open source",
-     "dato": "",
-     "foerst_set": "2026-11-13T01:26:35.703125+00:00",
-     "link": "https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/",
-     "side": "",
-     "hvor": "under",
-     "under": "Huangs afgang sår tvivl om Nvidias åbne AI"
-    },
     {
      "rubrik": "Gemini 4 Hydrogen skal forstå sværere søgninger",
      "dato": "",
@@ -500,24 +482,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Hydrogen erstatter Googles Flash-model"
-    },
-    {
-     "rubrik": "Colette Kress overtager Nvidia efter Jensen Huang",
-     "dato": "",
-     "foerst_set": "2026-11-12T17:01:28",
-     "link": "https://techcrunch.com/2026/11/12/jensen-huang-is-out-at-nvidia-who-is-colette-kress-his-interim-replacement/",
-     "side": "",
-     "hvor": "under",
-     "under": "Jensen Huang forlader Nvidia efter affæreafsløringer"
-    },
-    {
-     "rubrik": "Nvidia afsætter Jensen Huang som topchef",
-     "dato": "",
-     "foerst_set": "2026-11-12T17:01:28",
-     "link": "https://techcrunch.com/2026/11/12/five-ways-jensen-huangs-ouster-from-nvidia-could-damage-the-ai-industry/",
-     "side": "",
-     "hvor": "under",
-     "under": "Jensen Huang forlader Nvidia efter affæreafsløringer"
     },
     {
      "rubrik": "Anthropic lancerer Mythos 5.2 og Fable 5.2",
@@ -547,6 +511,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "ElevenAI samler mødenoter og diktering",
+     "dato": "2026-11-13T14:44:48",
+     "foerst_set": "2026-11-13T19:59:33",
+     "link": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
+     "side": "artikel/c6494705d362bbaf.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "ChatGPT Wallet kan købe varer for brugeren",
      "dato": "2026-11-13T16:00:12",
      "foerst_set": "2026-11-13T19:59:33",
@@ -561,15 +534,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-13T19:59:33",
      "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
      "side": "artikel/3bcb8ca81cbad6cd.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "ElevenAI samler mødenoter og diktering",
-     "dato": "2026-11-13T14:44:48",
-     "foerst_set": "2026-11-13T19:59:33",
-     "link": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
-     "side": "artikel/c6494705d362bbaf.html",
      "hvor": "forside",
      "under": ""
     },
@@ -619,15 +583,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Huangs afgang sår tvivl om Nvidias åbne AI",
-     "dato": "2026-11-12T18:39:23",
-     "foerst_set": "2026-11-13T01:26:35",
-     "link": "https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/",
-     "side": "artikel/d56c2fc89bca0f7d.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Hackere stjal Notion-chats via Fireworks AI",
      "dato": "2026-11-12T15:02:28",
      "foerst_set": "2026-11-12T17:01:28",
@@ -644,12 +599,21 @@ window.KILDER_STATUS = {
      "side": "artikel/55bf40a54c79d71b.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Norwest rejser 4 milliarder dollar til investeringer",
+     "dato": "2026-11-12T15:18:14",
+     "foerst_set": "2026-11-12T17:01:28",
+     "link": "https://techcrunch.com/2026/11/12/norwest-pushes-deeper-into-ai-with-new-4b-fund/",
+     "side": "artikel/a8b4ef01f1e068ca.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     6
+     3
     ],
     [
      "Anthropic News",
@@ -679,7 +643,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 25,
+   "i_listen": 24,
    "som_ekstra": 6,
    "seneste": [
     {
@@ -699,24 +663,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Hydrogen erstatter Googles Flash-model"
-    },
-    {
-     "rubrik": "Jensen Huang forlader posten som Nvidia-direktør",
-     "dato": "",
-     "foerst_set": "2026-11-12T17:01:28.796363+00:00",
-     "link": "https://www.theverge.com/podcast/1031260/nvidia-jensen-huang-resign-china-spy-scandal-ai-chips-trump",
-     "side": "",
-     "hvor": "under",
-     "under": "Jensen Huang forlader Nvidia efter affæreafsløringer"
-    },
-    {
-     "rubrik": "Nvidia-bestyrelse søger afløser for Jensen Huang",
-     "dato": "",
-     "foerst_set": "2026-11-12T17:01:28.796363+00:00",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1032028/read-nvidias-internal-emails-jensen-huang",
-     "side": "",
-     "hvor": "under",
-     "under": "Jensen Huang forlader Nvidia efter affæreafsløringer"
     },
     {
      "rubrik": "Google lancerer Gemini 4 Carbon med agent-sværm",
@@ -791,15 +737,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Jensen Huang forlader Nvidia efter affæreafsløringer",
-     "dato": "2026-11-12T13:53:16",
-     "foerst_set": "2026-11-12T17:01:28",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1031689/jensen-huang-nvidia-ceo-resigns",
-     "side": "artikel/a8c2afcede6353b3.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "United stopper AI-agenter fra at købe flybilletter",
      "dato": "2026-11-11T21:54:21",
      "foerst_set": "2026-11-11T22:58:05",
@@ -861,12 +798,21 @@ window.KILDER_STATUS = {
      "side": "artikel/6373e497a4d4c8ac.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "House House brugte AI under Big Walk",
+     "dato": "2026-11-10T17:32:47",
+     "foerst_set": "2026-11-10T21:56:03",
+     "link": "https://www.theverge.com/games/1030994/big-walk-independent-games-festival-igf-ai",
+     "side": "artikel/efee8cc48ed16cb1.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     6
+     3
     ],
     [
      "Google DeepMind",
@@ -1143,10 +1089,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-   "hentet": 0,
-   "i_listen": 1,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 15,
+   "i_listen": 2,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -1182,6 +1128,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-10T21:56:03",
      "link": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
      "side": "artikel/e38c92a7cefc59fe.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google Antigravity finder ny peptidkandidat",
+     "dato": "2026-10-15T16:08:03",
+     "foerst_set": "2026-10-16T04:53:41",
+     "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+     "side": "artikel/ba028f76ed47c779.html",
      "hvor": "forside",
      "under": ""
     }
