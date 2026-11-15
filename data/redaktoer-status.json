@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-11-15T07:04:34.653849+00:00",
+  "opdateret": "2026-11-15T15:51:37.879676+00:00",
   "status": "godkendt",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
@@ -8,24 +8,24 @@
     "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
     "https://simonwillison.net/2026/Nov/14/datasette-llm/"
   ],
-  "input_fingerprint": "ae238834e0fce33a",
-  "redaktionsnote": "Der er ingen dokumenteret ny modellancering inden for 48 timer i det undersøgte materiale. ElevenAI omtales som lanceret ved 11/11 Summit, så den nyere omtale gør ikke produktlanceringen ny; ældre forsidehistorier genvælges ikke af vane.",
+  "input_fingerprint": "75e6a2512763c2b5",
+  "redaktionsnote": "Ingen ny modellancering inden for 48 timer er dokumenteret i det undersøgte katalog. TechCrunchs oversigt er en ny opsamling af ældre begivenheder, ikke nye lukninger; Toner-interviewet er optaget før Nvidia-undersøgelsen og direktørafgangen.",
   "beslutninger": [
     {
       "id": "e9477865501b0215",
-      "begrundelse": "Den nye version gør det muligt at bruge lokalt kørende sprogmodeller med Datasette og dets plugins. Det er en konkret ny mulighed for udviklere og den mest aktuelle dokumenterede produktændring i materialet.",
-      "nyt_siden_sidst": "Datasette-llm 0.1a11 tilføjer understøttelse af OpenAI-kompatible forbindelser, så blandt andet lokale modeller kan kobles på. Udgivelsen har ikke været hovedhistorie på de oplyste forsider.",
-      "skriveopgave": "Rubrik: »Datasette kan nu bruge lokale AI-modeller«. Forklar med korte afsnit og mellemoverskrifter, hvad pluginet gør, og hvordan en OpenAI-kompatibel forbindelse åbner for modeller kørt med eksempelvis Ollama eller LM Studio. Forklar tekniske begreber ved første brug, og gør klart, at eksemplet kommer fra udvikleren, ikke en uafhængig test.",
+      "begrundelse": "Datasette får en konkret ny mulighed for at bruge lokale sprogmodeller. Det er den mest aktuelle dokumenterede produktændring i det undersøgte materiale, selv om den især henvender sig til udviklere.",
+      "nyt_siden_sidst": "Datasette-llm 0.1a11 var hovedhistorie på seneste forside; der er ikke dokumenteret en ny opdatering siden. Den genvælges, fordi forbindelsen til lokale modeller fortsat er den mest relevante aktuelle produktnyhed i det undersøgte materiale.",
+      "skriveopgave": "Rubrik: »Datasette kan nu kobles til lokale AI-modeller«. Forklar i korte afsnit med sigende mellemoverskrifter, hvordan pluginet forbinder Datasette med modeller via en OpenAI-kompatibel grænseflade, og giv eksemplerne Ollama og LM Studio. Forklar, at det er en pluginopdatering, ikke en ny model; uafhængige tests af funktionen er ikke dokumenteret.",
       "kilder": [
         "e9477865501b0215"
       ],
       "samme_historie": [],
       "link": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
-      "rubrik": "Datasette kan nu bruge lokale AI-modeller"
+      "rubrik": "Datasette kan nu kobles til lokale AI-modeller"
     }
   ],
   "modelkald": 6,
-  "kildehentninger": 2,
+  "kildehentninger": 3,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -40,7 +40,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -54,12 +54,16 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
+      "link": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
     "https://simonwillison.net/2026/Nov/14/datasette-llm/"
   ],
-  "afventer_artikler": 87
+  "afventer_artikler": 88
 }

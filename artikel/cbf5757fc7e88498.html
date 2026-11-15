@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI-nyheder.com · Datasette kan nu bruge lokale AI-modeller</title>
-<meta name="description" content="En opdatering af pluginet datasette-llm gør det muligt at forbinde Datasette med modeller, der bruger samme forbindelsesform som OpenAI.">
+<title>AI-nyheder.com · Datasette kan nu kobles til lokale AI-modeller</title>
+<meta name="description" content="En opdatering til pluginet datasette-llm gør det muligt at bruge modeller fra blandt andet Ollama og LM Studio sammen med Datasette.">
 <link rel="canonical" href="https://ainyheder.com/artikel/cbf5757fc7e88498.html">
 <meta name="theme-color" content="#0c0e12">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="AI-nyheder">
-<meta property="og:title" content="Datasette kan nu bruge lokale AI-modeller">
-<meta property="og:description" content="En opdatering af pluginet datasette-llm gør det muligt at forbinde Datasette med modeller, der bruger samme forbindelsesform som OpenAI.">
+<meta property="og:title" content="Datasette kan nu kobles til lokale AI-modeller">
+<meta property="og:description" content="En opdatering til pluginet datasette-llm gør det muligt at bruge modeller fra blandt andet Ollama og LM Studio sammen med Datasette.">
 <meta property="og:url" content="https://ainyheder.com/artikel/cbf5757fc7e88498.html">
 <meta property="og:image" content="https://ainyheder.com/data/img/2fa4160382fe9cb0.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -18,7 +18,7 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/fonts/skrifter.css?v=2">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Datasette kan nu bruge lokale AI-modeller", "description": "En opdatering af pluginet datasette-llm gør det muligt at forbinde Datasette med modeller, der bruger samme forbindelsesform som OpenAI.", "url": "https://ainyheder.com/artikel/cbf5757fc7e88498.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/cbf5757fc7e88498.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "image": "https://ainyheder.com/data/img/2fa4160382fe9cb0.jpg", "datePublished": "2026-11-14T23:59:28+00:00", "articleSection": "Hverdags-AI", "isBasedOn": "https://simonwillison.net/2026/Nov/14/datasette-llm/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Datasette kan nu kobles til lokale AI-modeller", "description": "En opdatering til pluginet datasette-llm gør det muligt at bruge modeller fra blandt andet Ollama og LM Studio sammen med Datasette.", "url": "https://ainyheder.com/artikel/cbf5757fc7e88498.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/cbf5757fc7e88498.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "image": "https://ainyheder.com/data/img/2fa4160382fe9cb0.jpg", "datePublished": "2026-11-14T23:59:28+00:00", "articleSection": "Hverdags-AI", "isBasedOn": "https://simonwillison.net/2026/Nov/14/datasette-llm/"}</script>
 <style>
 :root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
   --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }
@@ -57,14 +57,14 @@ footer a { color:var(--accent); }
 <main id="artikeltekst" tabindex="-1">
 <a class="article-back" href="/">← Tilbage til nyhederne</a>
 <div class="kicker">Hverdags-AI · Simon Willison AI · 14.11.2026 · 1 min. læsning</div>
-<h1>Datasette kan nu bruge lokale AI-modeller</h1>
-<div class="article-intro"><img class="top" src="/data/img/2fa4160382fe9cb0.webp" alt="A compact computer containing a solid AI-model chip receives a query from a stacked-database shape through a thick plug-shaped adapter, depicting Datasette’s updated plugin connect"><p class="manchet">En opdatering af pluginet datasette-llm gør det muligt at forbinde Datasette med modeller, der bruger samme forbindelsesform som OpenAI.</p></div>
-<section class="article-section"><h2><span class="section-index" aria-hidden="true">01</span>Et plugin forbinder Datasette med modeller</h2>
-<p>Datasette kan nu sættes op til at bruge en AI-model, som kører på brugerens egen computer. Muligheden kommer med en opdatering af datasette-llm, et plugin, der håndterer opsætningen af AI-modeller for andre plugins i Datasette.</p><p>Datasette er et værktøj til at arbejde med data. Et plugin er en tilføjelse til et program, og datasette-llm fungerer som mellemled mellem AI-modellen og de øvrige tilføjelser.</p></section>
-<section class="article-section"><h2><span class="section-index" aria-hidden="true">02</span>Samme forbindelsesform som hos OpenAI</h2>
-<p>Opdateringen understøtter forbindelser, der er kompatible med OpenAI. Det betyder, at Datasette kan sende forespørgsler efter samme tekniske regler som til OpenAI, men til en model, der kører et andet sted.</p><p>Modellen behøver derfor ikke at køre hos OpenAI. Den kan for eksempel køre lokalt med LM Studio eller Ollama, som er programmer til at køre AI-modeller.</p></section>
-<section class="article-section"><h2><span class="section-index" aria-hidden="true">03</span>Udvikleren viser en lokal opsætning</h2>
-<p>Udvikleren Simon Willison viser et eksempel, hvor Datasette forbindes til en lokal model via LM Studio. I opsætningen angiver han modellens navn og en lokal adresse, som Datasette kan sende forespørgsler til.</p><p>Ifølge Willison giver kommandoen en lokal server med Datasette Agent, der bruger den lokale model. Eksemplet er udviklerens egen demonstration, ikke en uafhængig test.</p></section>
+<h1>Datasette kan nu kobles til lokale AI-modeller</h1>
+<div class="article-intro"><img class="top" src="/data/img/2fa4160382fe9cb0.webp" alt="A compact computer containing a solid AI-model chip receives a query from a stacked-database shape through a thick plug-shaped adapter, depicting Datasette’s updated plugin connect"><p class="manchet">En opdatering til pluginet datasette-llm gør det muligt at bruge modeller fra blandt andet Ollama og LM Studio sammen med Datasette.</p></div>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">01</span>Pluginet forbinder databaser og modeller</h2>
+<p>Datasette, et værktøj til at arbejde med data i databaser, kan nu forbindes med AI-modeller, der kører lokalt på brugerens egen computer. Ændringen kommer gennem en opdatering af datasette-llm.</p><p>Pluginet bruges til at indstille, hvilke AI-modeller andre Datasette-plugins skal bruge. Det er altså forbindelsen til modellerne, der er opdateret; der er ikke tale om en ny model.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">02</span>Samme grænseflade virker flere steder</h2>
+<p>Opdateringen understøtter en OpenAI-kompatibel grænseflade: en måde for programmer at sende forespørgsler til en model og modtage svar på. En model kan dermed bruges med Datasette, hvis den tilbyder en sådan forbindelse.</p><p>Det gælder ifølge Simon Willison blandt andet lokale modeller, der kører med LM Studio eller Ollama. Grænsefladen er ikke begrænset til lokale modeller; modellen kan være placeret andre steder.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">03</span>Willison viser en lokal opsætning</h2>
+<p>Willison viser et eksempel, hvor Datasette sættes op med pluginet Datasette Agent og en lokal model via LM Studio. Opsætningen angiver blandt andet modellens navn og adressen på den lokale grænseflade.</p><p>Eksemplet beskriver, hvordan en lokal Datasette-server kan køre med en agent, der bruger modellen. Omtalen fra 14. november 2026 dokumenterer ikke uafhængige tests af funktionen.</p></section>
 
 
 
