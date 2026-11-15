@@ -1,27 +1,27 @@
 {
-  "opdateret": "2026-11-15T15:51:37.879676+00:00",
+  "opdateret": "2026-11-15T21:12:22.625383+00:00",
   "status": "godkendt",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
-    "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
-    "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-    "https://simonwillison.net/2026/Nov/14/datasette-llm/"
+    "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
+    "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+    "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/"
   ],
-  "input_fingerprint": "75e6a2512763c2b5",
-  "redaktionsnote": "Ingen ny modellancering inden for 48 timer er dokumenteret i det undersøgte katalog. TechCrunchs oversigt er en ny opsamling af ældre begivenheder, ikke nye lukninger; Toner-interviewet er optaget før Nvidia-undersøgelsen og direktørafgangen.",
+  "input_fingerprint": "e11b51e4c3665f8b",
+  "redaktionsnote": "Der er ingen ny dokumenteret modellancering blandt de undersøgte aktuelle kandidater. Datasette-opdateringen anbefales uden at genvælge den som hovedhistorie: den har allerede været på de to seneste forsider, og der er ikke dokumenteret en ny opdatering.",
   "beslutninger": [
     {
-      "id": "e9477865501b0215",
-      "begrundelse": "Datasette får en konkret ny mulighed for at bruge lokale sprogmodeller. Det er den mest aktuelle dokumenterede produktændring i det undersøgte materiale, selv om den især henvender sig til udviklere.",
-      "nyt_siden_sidst": "Datasette-llm 0.1a11 var hovedhistorie på seneste forside; der er ikke dokumenteret en ny opdatering siden. Den genvælges, fordi forbindelsen til lokale modeller fortsat er den mest relevante aktuelle produktnyhed i det undersøgte materiale.",
-      "skriveopgave": "Rubrik: »Datasette kan nu kobles til lokale AI-modeller«. Forklar i korte afsnit med sigende mellemoverskrifter, hvordan pluginet forbinder Datasette med modeller via en OpenAI-kompatibel grænseflade, og giv eksemplerne Ollama og LM Studio. Forklar, at det er en pluginopdatering, ikke en ny model; uafhængige tests af funktionen er ikke dokumenteret.",
+      "id": "6c2c64409dfbba0f",
+      "begrundelse": "Kongresmedlemmernes reaktion kan få betydning for eksporten af de chips, som bruges til at udvikle AI. Det er en ny politisk udvikling, ikke endnu en omtale af selve afgangen.",
+      "nyt_siden_sidst": "Både demokrater og republikanere vil ifølge The Verge stramme eksportreglerne eller kræve forklaringer fra Nvidia. Et ældre lovforslag har fået fornyet opmærksomhed, men ingen ny begrænsning er vedtaget i det læste materiale.",
+      "skriveopgave": "Rubrik: »Kongresmedlemmer vil stramme eksporten af AI-chips«. Forklar med korte afsnit og konkrete mellemoverskrifter, hvem der kræver høring, og hvordan et ældre lovforslag igen er kommet i fokus. Skeln mellem forslag, politisk støtte og vedtaget lov; omtalen dokumenterer ikke, at spionage har fundet sted.",
       "kilder": [
-        "e9477865501b0215"
+        "6c2c64409dfbba0f"
       ],
       "samme_historie": [],
-      "link": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
-      "rubrik": "Datasette kan nu kobles til lokale AI-modeller"
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
+      "rubrik": "Nvidias AI-chips: Kongresmedlemmer vil stramme eksporten"
     }
   ],
   "modelkald": 6,
@@ -54,16 +54,16 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
+      "link": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://simonwillison.net/2026/Nov/14/datasette-llm/"
+    "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china"
   ],
-  "afventer_artikler": 88
+  "afventer_artikler": 90
 }

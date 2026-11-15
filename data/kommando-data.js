@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-15T15:55:43.851477+00:00",
+ "genereret": "2026-11-15T21:17:09.361642+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -199,26 +199,26 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-15T15:51:37.879676+00:00",
+  "opdateret": "2026-11-15T21:12:22.625383+00:00",
   "antal": 104,
   "med_billede": 76,
   "paa_dansk": 104,
   "kategorier": {
-   "Hverdags-AI": 40,
+   "Politik \u0026 jura": 8,
    "Lanceringer": 15,
+   "Hverdags-AI": 40,
    "Samfund \u0026 etik": 12,
-   "Politik \u0026 jura": 7,
    "Penge \u0026 marked": 21,
-   "Forskning": 9
+   "Forskning": 8
   },
   "kilder": {
-   "Simon Willison AI": 10,
+   "The Verge AI": 23,
    "Ars Technica AI": 14,
    "Google Gemini": 5,
+   "Simon Willison AI": 10,
    "TechCrunch AI": 33,
-   "The Verge AI": 22,
    "Hugging Face": 6,
-   "Google DeepMind": 2,
+   "Google DeepMind": 1,
    "Anthropic News": 3,
    "MIT Tech Review AI": 5,
    "Mistral AI": 3,
@@ -226,17 +226,27 @@ window.KOMMANDO_DATA = {
   },
   "udvalgte": [
    {
-    "titel": "datasette-llm 0.1a11",
-    "rubrik": "Datasette kan nu kobles til lokale AI-modeller",
-    "link": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
-    "side": "artikel/cbf5757fc7e88498.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-11-14T23:59:28+00:00",
-    "billede": "data/img/2fa4160382fe9cb0.webp"
+    "titel": "Congress wants to tighten export rules on AI chips after Nvidia spy scandal",
+    "rubrik": "Nvidias AI-chips: Kongresmedlemmer vil stramme eksporten",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
+    "side": "artikel/bc766627e4a1f87c.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-15T14:15:43-05:00",
+    "billede": "data/img/6bc1994d3bd134e9.webp"
    }
   ],
   "seneste": [
+   {
+    "titel": "Congress wants to tighten export rules on AI chips after Nvidia spy scandal",
+    "rubrik": "Nvidias AI-chips: Kongresmedlemmer vil stramme eksporten",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
+    "side": "artikel/bc766627e4a1f87c.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-15T14:15:43-05:00",
+    "billede": "data/img/6bc1994d3bd134e9.webp"
+   },
    {
     "titel": "datasette-llm 0.1a11",
     "rubrik": "Datasette kan nu kobles til lokale AI-modeller",
@@ -346,32 +356,22 @@ window.KOMMANDO_DATA = {
     "kilde": "Ars Technica AI",
     "dato": "2026-11-13T17:25:45+00:00",
     "billede": "data/img/f72704e9de5577d7.webp"
-   },
-   {
-    "titel": "Israel’s VCs see opportunity for challengers in Nvidia’s turmoil",
-    "rubrik": "Investorer ser åbning for Nvidias udfordrere",
-    "link": "https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil/",
-    "side": "artikel/eac079c142ed1396.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-13T12:52:19+00:00",
-    "billede": "data/img/85da2e9e057bb10d.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-15T15:51:37.879676+00:00",
+  "opdateret": "2026-11-15T21:12:22.625383+00:00",
   "status": "godkendt",
   "model": "gpt-6.1-terra",
   "modelkald": 6,
   "kildehentninger": 3,
   "regelbaseret_udvalg": [
-   "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
-   "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-   "https://simonwillison.net/2026/Nov/14/datasette-llm/"
+   "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
+   "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+   "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/"
   ],
   "udgivet_udvalg": [
-   "https://simonwillison.net/2026/Nov/14/datasette-llm/"
+   "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china"
   ],
   "vaerktoejer": [
    {
@@ -401,17 +401,17 @@ window.KOMMANDO_DATA = {
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
+    "link": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
     "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-11-15T15:51:37.296191+00:00",
+  "opdateret": "2026-11-15T21:12:21.854731+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -876,7 +876,7 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-15T15:51:37.879676+00:00",
+  "opdateret": "2026-11-15T21:12:22.625383+00:00",
   "artikler_i_alt": 104,
   "kilder": [
    {
@@ -1417,7 +1417,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 22,
+    "i_listen": 23,
     "som_ekstra": 6,
     "seneste": [
      {
@@ -1475,6 +1475,15 @@ window.KOMMANDO_DATA = {
       "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
      },
      {
+      "rubrik": "Nvidias AI-chips: Kongresmedlemmer vil stramme eksporten",
+      "dato": "2026-11-15T14:15:43",
+      "foerst_set": "2026-11-15T21:12:22",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
+      "side": "artikel/bc766627e4a1f87c.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Helen Toner advarer mod blind tillid til AI-chefer",
       "dato": "2026-11-14T10:00:00",
       "foerst_set": "2026-11-14T18:27:35",
@@ -1494,7 +1503,7 @@ window.KOMMANDO_DATA = {
      },
      {
       "rubrik": "Miottis AI fandt allerede kendt Maya-sted",
-      "dato": "2026-11-12T14:42:40",
+      "dato": "2026-11-12T19:42:40",
       "foerst_set": "2026-11-13T01:26:35",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery",
       "side": "artikel/2b94a6dc55086b83.html",
@@ -1516,15 +1525,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-11-12T17:01:28",
       "link": "https://www.theverge.com/games/1032085/gdc-festival-of-gaming-annual-survey-ai-layoffs",
       "side": "artikel/75acdb0b89ac64fc.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "United stopper AI-agenter fra at købe flybilletter",
-      "dato": "2026-11-11T21:54:21",
-      "foerst_set": "2026-11-11T22:58:05",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents",
-      "side": "artikel/a3a0c9996cbe1c5a.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1747,7 +1747,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 15,
-    "i_listen": 2,
+    "i_listen": 1,
     "som_ekstra": 3,
     "seneste": [
      {
@@ -1785,15 +1785,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/e38c92a7cefc59fe.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Google Antigravity finder ny peptidkandidat",
-      "dato": "2026-10-15T16:08:03",
-      "foerst_set": "2026-10-16T04:53:41",
-      "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-      "side": "artikel/ba028f76ed47c779.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1828,12 +1819,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-15T15:55:37.505937+00:00",
+  "opdateret": "2026-11-15T21:17:02.377984+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 38,
-  "sidevisninger_i_alt": 59,
+  "besoeg_i_alt": 39,
+  "sidevisninger_i_alt": 60,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1990,8 +1981,8 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 38,
-    "visninger": 58
+    "besoeg": 39,
+    "visninger": 59
    },
    {
     "sti": "/uge.html",
@@ -2003,7 +1994,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 37
+    "besoeg": 38
    },
    {
     "fra": "www.google.com",
