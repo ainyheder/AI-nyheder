@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI-nyheder.com · llama.cpp v1.0.0 varsler tydeligere versionsskift</title>
-<meta name="description" content="Nye versioner af bibliotekerne llama.cpp og ggml skal gøre det lettere for udviklere at opdage ændringer, der kan påvirke deres programmer.">
+<title>AI-nyheder.com · llama.cpp vil advare om brud med versionsnumre</title>
+<meta name="description" content="Bibliotekerne bag værktøjet udkommer i version 1.0.0. Fremover skal et nyt hovedversionsnummer gøre ændringer, der bryder kompatibiliteten, synlige for udviklere.">
 <link rel="canonical" href="https://ainyheder.com/artikel/1f76189be1eacadc.html">
 <meta name="theme-color" content="#0c0e12">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="AI-nyheder">
-<meta property="og:title" content="llama.cpp v1.0.0 varsler tydeligere versionsskift">
-<meta property="og:description" content="Nye versioner af bibliotekerne llama.cpp og ggml skal gøre det lettere for udviklere at opdage ændringer, der kan påvirke deres programmer.">
+<meta property="og:title" content="llama.cpp vil advare om brud med versionsnumre">
+<meta property="og:description" content="Bibliotekerne bag værktøjet udkommer i version 1.0.0. Fremover skal et nyt hovedversionsnummer gøre ændringer, der bryder kompatibiliteten, synlige for udviklere.">
 <meta property="og:url" content="https://ainyheder.com/artikel/1f76189be1eacadc.html">
 <meta property="og:image" content="https://ainyheder.com/data/img/2ad3a1e6d9c97b8d.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -18,7 +18,7 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/fonts/skrifter.css?v=2">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "llama.cpp v1.0.0 varsler tydeligere versionsskift", "description": "Nye versioner af bibliotekerne llama.cpp og ggml skal gøre det lettere for udviklere at opdage ændringer, der kan påvirke deres programmer.", "url": "https://ainyheder.com/artikel/1f76189be1eacadc.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/1f76189be1eacadc.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "image": "https://ainyheder.com/data/img/2ad3a1e6d9c97b8d.jpg", "datePublished": "2026-11-13T14:05:22+00:00", "articleSection": "Lanceringer", "isBasedOn": "https://huggingface.co/blog/ggml-org/llama-cpp-v1"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "llama.cpp vil advare om brud med versionsnumre", "description": "Bibliotekerne bag værktøjet udkommer i version 1.0.0. Fremover skal et nyt hovedversionsnummer gøre ændringer, der bryder kompatibiliteten, synlige for udviklere.", "url": "https://ainyheder.com/artikel/1f76189be1eacadc.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/1f76189be1eacadc.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "image": "https://ainyheder.com/data/img/2ad3a1e6d9c97b8d.jpg", "datePublished": "2026-11-13T14:05:22+00:00", "articleSection": "Lanceringer", "isBasedOn": "https://huggingface.co/blog/ggml-org/llama-cpp-v1"}</script>
 <style>
 :root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
   --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }
@@ -57,17 +57,17 @@ footer a { color:var(--accent); }
 <main id="artikeltekst" tabindex="-1">
 <a class="article-back" href="/">← Tilbage til nyhederne</a>
 <div class="kicker">Lanceringer · Hugging Face · 13.11.2026 · 2 min. læsning</div>
-<h1>llama.cpp v1.0.0 varsler tydeligere versionsskift</h1>
-<div class="article-intro"><img class="top" src="/data/img/2ad3a1e6d9c97b8d.webp" alt="Two thick library blocks meet at a connector that changes from a matching fit to a broken fit, while a prominent version indicator advances from one raised dot to two. The change s"><p class="manchet">Nye versioner af bibliotekerne llama.cpp og ggml skal gøre det lettere for udviklere at opdage ændringer, der kan påvirke deres programmer.</p></div>
-<section class="article-section"><h2><span class="section-index" aria-hidden="true">01</span>Lokale AI-programmer får tydeligere grænser</h2>
-<p>Udviklere, der bygger programmer med llama.cpp, får nu et tydeligere varsel, når fremtidige ændringer kan gøre deres programmer uforenelige med værktøjet. Holdet bag har udgivet llama.cpp v1.0.0 og ggml v1.0.0 og vil fremover markere sådanne brud med et nyt hovedversionsnummer.</p><p>llama.cpp bruges til at køre AI-modeller på alt fra almindelige lokale computere til store servere. ggml er den underliggende motor, der hjælper med at udføre modellernes beregninger. Andre programmer kan bruge begge dele som biblioteker, altså samlinger af kode, de bygger videre på.</p></section>
-<dl class="article-metrics"><div><dt>Varianter af modelarkitekturer, som llama.cpp ifølge holdet understøtter</dt><dd>Over 150</dd></div></dl><section class="article-section"><h2><span class="section-index" aria-hidden="true">02</span>Versionsnummeret advarer om brud</h2>
-<p>Ifølge holdet gælder reglen ændringer i både API og ABI. API er den måde, et program beder et bibliotek om at udføre opgaver på. ABI handler om, hvordan programmer og biblioteker passer sammen, når de er oversat til maskinkode.</p><p>Hvis en fremtidig ændring bryder med en af de to forbindelser, skal det afspejles i hovedversionsnummeret. Det giver udviklere et signal om, at en opdatering kan kræve ændringer i deres egne programmer. Det er ikke et løfte om, at der aldrig kommer brud.</p></section>
-<section class="article-section"><h2><span class="section-index" aria-hidden="true">03</span>Samme værktøj på forskelligt udstyr</h2>
-<p>llama.cpp kan køre modeller med forskellige typer input. En teknik kaldet kvantisering reducerer præcisionen i modellens tal og gør det muligt at bruge mindre krævende udstyr.</p><p>Motoren ggml har desuden særlige programdele til forskellige typer hardware. De kan indlæses, mens et program kører. Holdet siger, at det fortsat vil understøtte alle modelarkitekturer, og at det udvider sine automatiserede test på flere hardwareplatforme.</p></section>
+<h1>llama.cpp vil advare om brud med versionsnumre</h1>
+<div class="article-intro"><img class="top" src="/data/img/2ad3a1e6d9c97b8d.webp" alt="Two thick library blocks meet at a connector that changes from a matching fit to a broken fit, while a prominent version indicator advances from one raised dot to two. The change s"><p class="manchet">Bibliotekerne bag værktøjet udkommer i version 1.0.0. Fremover skal et nyt hovedversionsnummer gøre ændringer, der bryder kompatibiliteten, synlige for udviklere.</p></div>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">01</span>AI-modeller kan køre på egen hardware</h2>
+<p>llama.cpp er et open source-værktøj, der gør det muligt at køre AI-modeller på hardware fra almindelige computere til store servere. Version 1.0.0 er en udgivelse af bibliotekerne bag værktøjet, ikke en ny AI-model.</p><p>Værktøjet kan bruge modeller, der håndterer flere typer indhold. Det kan også gøre modeller mindre gennem kvantisering, hvor modellen repræsenteres med færre detaljer, og bruger dele af programmet, som er tilpasset forskellig hardware.</p></section>
+<dl class="article-metrics"><div><dt>Understøttede varianter af måder at opbygge modeller på – ikke antal modeller</dt><dd>Over 150</dd></div></dl><section class="article-section"><h2><span class="section-index" aria-hidden="true">02</span>Hovedversionen skal vise brud</h2>
+<p>Andre programmer bygger allerede på llama.cpp. Derfor har deres udviklere brug for at kunne se, når en opdatering ændrer den måde, deres program kan tale med biblioteket på.</p><p>Fremover vil både llama.cpp og den underliggende motor ggml bruge et nyt hovedversionsnummer ved ændringer, der bryder kompatibiliteten. Det gælder både den grænseflade, udviklere skriver kode til, og den måde, færdige programmer forbindes med biblioteket på.</p><p>Versionsnummeret skal gøre brud synlige; det er ikke et løfte om, at alle programmer altid forbliver kompatible.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">03</span>Motoren tilpasses forskellig hardware</h2>
+<p>Motoren ggml er bygget til at kunne arbejde på mange typer hardware. Det sker ved hjælp af særlige programdele, som kan indlæses, mens programmet kører.</p><p>Holdet bag udgivelsen fortæller også, at det udvider sine automatiske test på forskellige hardwareplatforme. Det skal understøtte kontrollen af ændringer, efterhånden som udviklingen går hurtigere.</p></section>
 
 
-<div class="boks" style="border-left-color:#2e9e5b;"><strong>Derfor er det interessant</strong>Udviklere får et tydeligere tegn på, hvornår en opdatering kan kræve arbejde, før deres programmer fortsat fungerer med bibliotekerne.</div>
+<div class="boks" style="border-left-color:#2e9e5b;"><strong>Derfor er det interessant</strong>Udviklere, der bygger programmer på bibliotekerne, får et tydeligere signal om, hvornår en opdatering kan kræve ændringer i deres egen kode.</div>
 <p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://huggingface.co/blog/ggml-org/llama-cpp-v1" rel="noopener">Hugging Face →</a></p>
 <a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
 <p class="note">Genfortalt i egne ord af AI-nyheder.com · AI-genereret illustration · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>

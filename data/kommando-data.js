@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-14T18:34:55.994109+00:00",
+ "genereret": "2026-11-15T00:14:49.000261+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -199,26 +199,26 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-14T18:27:35.441030+00:00",
-  "antal": 107,
-  "med_billede": 78,
-  "paa_dansk": 107,
+  "opdateret": "2026-11-15T00:10:10.078294+00:00",
+  "antal": 102,
+  "med_billede": 74,
+  "paa_dansk": 102,
   "kategorier": {
-   "Hverdags-AI": 39,
-   "Politik \u0026 jura": 8,
    "Lanceringer": 15,
-   "Samfund \u0026 etik": 14,
+   "Hverdags-AI": 39,
+   "Samfund \u0026 etik": 12,
+   "Politik \u0026 jura": 7,
    "Penge \u0026 marked": 21,
-   "Forskning": 10
+   "Forskning": 8
   },
   "kilder": {
-   "Google Gemini": 5,
-   "TechCrunch AI": 34,
-   "The Verge AI": 25,
+   "Hugging Face": 6,
    "Ars Technica AI": 14,
    "Simon Willison AI": 9,
-   "Google DeepMind": 2,
-   "Hugging Face": 6,
+   "Google Gemini": 5,
+   "The Verge AI": 22,
+   "TechCrunch AI": 33,
+   "Google DeepMind": 1,
    "Anthropic News": 3,
    "MIT Tech Review AI": 5,
    "Mistral AI": 3,
@@ -226,34 +226,14 @@ window.KOMMANDO_DATA = {
   },
   "udvalgte": [
    {
-    "titel": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
-    "rubrik": "Analyse finder spor af Nvidia-chips i kinesiske AI-modeller",
-    "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-    "side": "artikel/3bcb8ca81cbad6cd.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-13T18:40:30+00:00",
-    "billede": "data/img/968edadc2ee360b0.webp"
-   },
-   {
-    "titel": "Claude’s Duet agent is a little neurotic and surprisingly helpful",
-    "rubrik": "Claude Duet fandt kalenderhul og overreagerede",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
-    "side": "artikel/2c7a6e6b19ce61f9.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-13T09:00:00-05:00",
-    "billede": "data/img/cf11c0c9814229fc.webp"
-   },
-   {
-    "titel": "Connect Google Wallet to Gemini for personal finance insights",
-    "rubrik": "Gemini kan svare på spørgsmål om dit forbrug",
-    "link": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
-    "side": "artikel/3dd10e847b99d7f7.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "Google Gemini",
-    "dato": "2026-11-13T17:00:00+00:00",
-    "billede": ""
+    "titel": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+    "rubrik": "llama.cpp vil advare om brud med versionsnumre",
+    "link": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+    "side": "artikel/1f76189be1eacadc.html",
+    "kategori": "Lanceringer",
+    "kilde": "Hugging Face",
+    "dato": "2026-11-13T14:05:22+00:00",
+    "billede": "data/img/2ad3a1e6d9c97b8d.webp"
    }
   ],
   "seneste": [
@@ -288,6 +268,16 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/e6e9a2836f050a07.webp"
    },
    {
+    "titel": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+    "rubrik": "llama.cpp vil advare om brud med versionsnumre",
+    "link": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+    "side": "artikel/1f76189be1eacadc.html",
+    "kategori": "Lanceringer",
+    "kilde": "Hugging Face",
+    "dato": "2026-11-13T14:05:22+00:00",
+    "billede": "data/img/2ad3a1e6d9c97b8d.webp"
+   },
+   {
     "titel": "Connect Google Wallet to Gemini for personal finance insights",
     "rubrik": "Gemini kan svare på spørgsmål om dit forbrug",
     "link": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
@@ -296,26 +286,6 @@ window.KOMMANDO_DATA = {
     "kilde": "Google Gemini",
     "dato": "2026-11-13T17:00:00+00:00",
     "billede": ""
-   },
-   {
-    "titel": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
-    "rubrik": "Analyse finder spor af Nvidia-chips i kinesiske AI-modeller",
-    "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-    "side": "artikel/3bcb8ca81cbad6cd.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-13T18:40:30+00:00",
-    "billede": "data/img/968edadc2ee360b0.webp"
-   },
-   {
-    "titel": "Claude’s Duet agent is a little neurotic and surprisingly helpful",
-    "rubrik": "Claude Duet fandt kalenderhul og overreagerede",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
-    "side": "artikel/2c7a6e6b19ce61f9.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-13T09:00:00-05:00",
-    "billede": "data/img/cf11c0c9814229fc.webp"
    },
    {
     "titel": "ChatGPT’s new Wallet lets AI agents shop and check out for you",
@@ -328,6 +298,16 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/3402b190a924c28a.webp"
    },
    {
+    "titel": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
+    "rubrik": "Analyse finder spor af Nvidia-chips i kinesiske AI-modeller",
+    "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+    "side": "artikel/3bcb8ca81cbad6cd.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-13T18:40:30+00:00",
+    "billede": "data/img/968edadc2ee360b0.webp"
+   },
+   {
     "titel": "ElevenLabs’ new app combines meeting note-taking and dictation for teams",
     "rubrik": "ElevenAI samler mødenoter og diktering",
     "link": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
@@ -338,14 +318,14 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/8002572240ad385a.webp"
    },
    {
-    "titel": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
-    "rubrik": "llama.cpp v1.0.0 varsler tydeligere versionsskift",
-    "link": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
-    "side": "artikel/1f76189be1eacadc.html",
-    "kategori": "Lanceringer",
-    "kilde": "Hugging Face",
-    "dato": "2026-11-13T14:05:22+00:00",
-    "billede": "data/img/2ad3a1e6d9c97b8d.webp"
+    "titel": "Claude’s Duet agent is a little neurotic and surprisingly helpful",
+    "rubrik": "Claude Duet fandt kalenderhul og overreagerede",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
+    "side": "artikel/2c7a6e6b19ce61f9.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-13T09:00:00-05:00",
+    "billede": "data/img/cf11c0c9814229fc.webp"
    },
    {
     "titel": "OpenAI board member worries an AI \"takeover\" of society could be months away",
@@ -380,7 +360,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-14T18:27:35.441030+00:00",
+  "opdateret": "2026-11-15T00:10:10.078294+00:00",
   "status": "godkendt",
   "model": "gpt-6.1-terra",
   "modelkald": 6,
@@ -388,12 +368,10 @@ window.KOMMANDO_DATA = {
   "regelbaseret_udvalg": [
    "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
    "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-   "https://arstechnica.com/ai/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/"
+   "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
   ],
   "udgivet_udvalg": [
-   "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-   "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
-   "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/"
+   "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
   ],
   "vaerktoejer": [
    {
@@ -419,21 +397,21 @@ window.KOMMANDO_DATA = {
   ],
   "kildegrundlag": [
    {
-    "link": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
+    "link": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
+    "link": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+    "link": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
     "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-11-14T18:27:35.068862+00:00",
+  "opdateret": "2026-11-15T00:10:09.538311+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -898,8 +876,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-14T18:27:35.441030+00:00",
-  "artikler_i_alt": 107,
+  "opdateret": "2026-11-15T00:10:10.078294+00:00",
+  "artikler_i_alt": 102,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -933,20 +911,20 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
+      "rubrik": "Anthropic giver amerikanske myndigheder rabat på Claude",
+      "dato": "2026-10-27T00:00:00",
+      "foerst_set": "2026-11-06T21:24:13",
+      "link": "https://www.anthropic.com/news/expanding-partnership-gsa",
+      "side": "artikel/c6996b4346a3f164.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Anthropic afsætter fem procent af aktierne til fond",
       "dato": "2026-10-18T00:00:00",
       "foerst_set": "2026-10-18T18:50:54",
       "link": "https://www.anthropic.com/news/public-benefit-fund",
       "side": "artikel/b3a8add260a90d26.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Anthropic giver METR medarbejderadgang indefra",
-      "dato": "2026-10-15T00:00:00",
-      "foerst_set": "2026-10-15T20:00:28",
-      "link": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-      "side": "artikel/eb77f6484e453b05.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1128,7 +1106,7 @@ window.KOMMANDO_DATA = {
     "som_ekstra": 0,
     "seneste": [
      {
-      "rubrik": "llama.cpp v1.0.0 varsler tydeligere versionsskift",
+      "rubrik": "llama.cpp vil advare om brud med versionsnumre",
       "dato": "2026-11-13T14:05:22",
       "foerst_set": "2026-11-13T19:59:33",
       "link": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
@@ -1316,7 +1294,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 34,
+    "i_listen": 33,
     "som_ekstra": 3,
     "seneste": [
      {
@@ -1365,20 +1343,20 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "Analyse finder spor af Nvidia-chips i kinesiske AI-modeller",
-      "dato": "2026-11-13T18:40:30",
-      "foerst_set": "2026-11-13T19:59:33",
-      "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-      "side": "artikel/3bcb8ca81cbad6cd.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
       "rubrik": "ChatGPT Wallet kan købe varer for brugeren",
       "dato": "2026-11-13T16:00:12",
       "foerst_set": "2026-11-13T19:59:33",
       "link": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
       "side": "artikel/a89e405114485a54.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Analyse finder spor af Nvidia-chips i kinesiske AI-modeller",
+      "dato": "2026-11-13T18:40:30",
+      "foerst_set": "2026-11-13T19:59:33",
+      "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+      "side": "artikel/3bcb8ca81cbad6cd.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1439,7 +1417,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 25,
+    "i_listen": 22,
     "som_ekstra": 6,
     "seneste": [
      {
@@ -1766,10 +1744,10 @@ window.KOMMANDO_DATA = {
     "kun_aktuel": false,
     "max": 15,
     "aktiv": true,
-    "status": "ok",
-    "fejl": "",
-    "hentet": 15,
-    "i_listen": 2,
+    "status": "fejl",
+    "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
+    "hentet": 0,
+    "i_listen": 1,
     "som_ekstra": 3,
     "seneste": [
      {
@@ -1807,15 +1785,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/e38c92a7cefc59fe.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Google Antigravity finder ny peptidkandidat",
-      "dato": "2026-10-15T16:08:03",
-      "foerst_set": "2026-10-16T04:53:41",
-      "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-      "side": "artikel/ba028f76ed47c779.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1850,23 +1819,18 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-14T18:34:49.700022+00:00",
+  "opdateret": "2026-11-15T00:14:44.775464+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 40,
-  "sidevisninger_i_alt": 61,
+  "besoeg_i_alt": 42,
+  "sidevisninger_i_alt": 63,
   "ai_chat_besoeg": 0,
   "serie": [
    {
-    "dato": "2026-10-16",
-    "besoeg": 0,
-    "visninger": 10
-   },
-   {
     "dato": "2026-10-17",
     "besoeg": 10,
-    "visninger": 10
+    "visninger": 20
    },
    {
     "dato": "2026-10-18",
@@ -1880,13 +1844,13 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-10-20",
-    "besoeg": 0,
-    "visninger": 10
+    "besoeg": 10,
+    "visninger": 20
    },
    {
     "dato": "2026-10-21",
     "besoeg": 0,
-    "visninger": 10
+    "visninger": 0
    },
    {
     "dato": "2026-10-22",
@@ -1905,8 +1869,8 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-10-25",
-    "besoeg": 0,
-    "visninger": 0
+    "besoeg": 10,
+    "visninger": 10
    },
    {
     "dato": "2026-10-26",
@@ -1935,13 +1899,13 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-10-31",
-    "besoeg": 0,
+    "besoeg": 10,
     "visninger": 10
    },
    {
     "dato": "2026-11-01",
     "besoeg": 0,
-    "visninger": 10
+    "visninger": 0
    },
    {
     "dato": "2026-11-02",
@@ -1951,7 +1915,7 @@ window.KOMMANDO_DATA = {
    {
     "dato": "2026-11-03",
     "besoeg": 0,
-    "visninger": 20
+    "visninger": 10
    },
    {
     "dato": "2026-11-04",
@@ -1965,13 +1929,13 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-11-06",
-    "besoeg": 10,
-    "visninger": 30
+    "besoeg": 20,
+    "visninger": 20
    },
    {
     "dato": "2026-11-07",
     "besoeg": 0,
-    "visninger": 0
+    "visninger": 10
    },
    {
     "dato": "2026-11-08",
@@ -1980,23 +1944,23 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-11-09",
-    "besoeg": 20,
-    "visninger": 30
+    "besoeg": 10,
+    "visninger": 20
    },
    {
     "dato": "2026-11-10",
     "besoeg": 0,
-    "visninger": 10
+    "visninger": 0
    },
    {
     "dato": "2026-11-11",
     "besoeg": 10,
-    "visninger": 10
+    "visninger": 30
    },
    {
     "dato": "2026-11-12",
-    "besoeg": 0,
-    "visninger": 0
+    "besoeg": 10,
+    "visninger": 10
    },
    {
     "dato": "2026-11-13",
@@ -2007,13 +1971,18 @@ window.KOMMANDO_DATA = {
     "dato": "2026-11-14",
     "besoeg": 0,
     "visninger": 0
+   },
+   {
+    "dato": "2026-11-15",
+    "besoeg": 0,
+    "visninger": 0
    }
   ],
   "sider": [
    {
     "sti": "/",
-    "besoeg": 40,
-    "visninger": 60
+    "besoeg": 42,
+    "visninger": 62
    },
    {
     "sti": "/uge.html",
@@ -2025,7 +1994,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 39
+    "besoeg": 41
    },
    {
     "fra": "www.google.com",

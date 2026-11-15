@@ -1,10 +1,10 @@
 {
- "rubrik": "Nye AI-modeller rykker fra kode og søgning til robotter og celler",
- "indledning": "Periodens vigtigste lanceringer spænder fra bredere adgang til AI-søgning til nye værktøjer for forskning og robotter.",
+ "rubrik": "Nye AI-modeller rykker fra søgning til robotter og forskning",
+ "indledning": "Perioden bød på nye modeller til både hverdag og specialopgaver, mens Anthropic tog skridt mod børsen.",
  "historier": [
   {
-   "overskrift": "Gemini 4 Hydrogen kommer til Googles søgning",
-   "tekst": "Google lancerer Gemini 4 Hydrogen som afløser for Gemini 3.8 Flash. Modellen kommer til Search, hvor Google lover bedre håndtering af sammensatte spørgsmål. I Gemini-appen og AI Studio er den tilgængelig for Pro- og Ultra-abonnenter, mens gratisbrugere må bruge en ældre model.",
+   "overskrift": "Gemini 4 Hydrogen erstatter Googles Flash-model",
+   "tekst": "Google lancerede Gemini 4 Hydrogen som afløser for Gemini 3.8 Flash. Modellen kommer til Google Search, mens adgang i Gemini-appen og AI Studio afhænger af abonnementet. Google lover hurtigere svar og færre opdigtede påstande, men kilden beskriver ikke, hvordan sammenligningerne er målt.",
    "link": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
    "kategori": "Lanceringer",
    "billede": "data/img/e80859784d1ec49d.webp",
@@ -73,8 +73,8 @@
    "artikel_signatur": "bc83f0281531c52ac199621074e7cf5491d0dd6b495744790a2d744b0874f311"
   },
   {
-   "overskrift": "Anthropic lancerer Claude Fable og Mythos 5.2",
-   "tekst": "Claude Fable 5.2 er tilgængelig for alle og skal ifølge Anthropic hjælpe med krævende tekniske opgaver. Mythos 5.2 bygger på samme model, men organisationer skal ansøge om adgang til cybersikkerhed eller biomedicinsk forskning. I Anthropics kodetest klarede Fable sig omtrent som Opus 5.5 til lavere pris.",
+   "overskrift": "Anthropic lancerer Claude Fable 5.2 og Mythos 5.2",
+   "tekst": "Anthropics to nye udgaver bygger på samme model og er rettet mod krævende tekniske opgaver. Fable 5.2 er tilgængelig for alle, mens organisationer kan ansøge om adgang til Mythos 5.2. I Anthropics egen kodetest klarede Fable sig omtrent som Opus 5.5 for cirka halvdelen af prisen pr. opgave.",
    "link": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
    "kategori": "Lanceringer",
    "billede": "data/img/5f62db5b82d652d4.webp",
@@ -111,8 +111,46 @@
    "artikel_signatur": "2a05573200c86d5baa4faa8d4a6c4c3a55f3969f75a32dce9c5de9f9139a4706"
   },
   {
-   "overskrift": "Gemini Robotics 2.5 afprøvet på fabrik",
-   "tekst": "Robotter med Gemini Robotics 2.5 udførte 96 procent af opgaverne korrekt, da de samlede bildele til sæt på Mercedes-Benz-fabrikker. Modellen er ikke generelt tilgængelig, men Googles robotpartnere har adgang. DeepMind har samtidig offentliggjort en database til test af usikre instruktioner til robotter.",
+   "overskrift": "Google åbner Gemini 4 Carbon for betalende kunder",
+   "tekst": "Gemini 4 Carbon er blevet tilgængelig for betalende udviklere og virksomheder efter en indledende adgang for sikkerhedseksperter. Google retter modellen mod krævende opgaver over flere trin og afprøver samtidig en funktion, hvor flere AI-programmer kan arbejde parallelt på en opgave.",
+   "link": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+   "kategori": "Lanceringer",
+   "billede": "data/img/82af2c97b6cff130.webp",
+   "dato": "2026-11-10T16:03:47+00:00",
+   "andre": [
+    {
+     "kilde": "The Verge AI",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
+     "rubrik": "Google lancerer Gemini 4 Carbon med agent-sværm",
+     "resume_da": "Den nye model rulles ud til betalende udviklere og virksomheder. Google afprøver samtidig en funktion, der samler flere AI-agenter om én opgave.",
+     "dato": "2026-11-10T11:00:00-05:00",
+     "foerst_set": "2026-11-10T21:56:03.050309+00:00"
+    },
+    {
+     "kilde": "Google Gemini",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+     "rubrik": "Google åbner Gemini 4 Carbon for betalende",
+     "resume_da": "Den nye model er bygget til krævende opgaver over mange trin. I en forhåndsvisning kan udviklere sætte flere AI-agenter til at samarbejde.",
+     "dato": "2026-11-10T16:00:00+00:00",
+     "foerst_set": "2026-11-10T21:56:03.050309+00:00"
+    },
+    {
+     "kilde": "Simon Willison AI",
+     "link": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+     "rubrik": "Gemini 4 Carbon åbner for alle",
+     "resume_da": "Googles model kan nu bruges bredt efter først at være blevet tilbudt en mindre gruppe, der arbejder med cyberforsvar.",
+     "dato": "2026-11-10T20:09:44+00:00",
+     "foerst_set": "2026-11-10T21:56:03.050309+00:00"
+    }
+   ],
+   "titel": "Gemini 4 Carbon is now available",
+   "rubrik": "Google åbner Gemini 4 Carbon for betalende brugere",
+   "resume_da": "Den nye AI-model kan arbejde med lange opgaver i flere trin. Samtidig afprøver Google en funktion, der lader flere modeller arbejde sammen.",
+   "artikel_signatur": "3a11b7e2ac82d62b5720ee3139dd6c5e894329aa92d62fb22f400863fc4f9213"
+  },
+  {
+   "overskrift": "Gemini Robotics 2.5 afprøvet på fabrikker",
+   "tekst": "Robotter med Googles nye Gemini Robotics 2.5 løste 96 procent af opgaverne korrekt i en test, hvor de samlede bildele til sæt på Mercedes-Benz-fabrikker. Modellen er ikke generelt tilgængelig, men Googles robotpartnere har adgang. DeepMind offentliggjorde også en database til test af robotsikkerhed.",
    "link": "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
    "kategori": "Lanceringer",
    "billede": "",
@@ -124,8 +162,8 @@
    "artikel_signatur": "9509411e6fdcb5adca2233a1a97b5fb56db59603f29afed6603796c4a6a97bab"
   },
   {
-   "overskrift": "AlphaGenome 2 undersøger DNA-ændringer i celler",
-   "tekst": "Google DeepMinds AlphaGenome 2 skal forudsige, hvordan en DNA-ændring påvirker forskellige celletyper og tilstande. Google stiller modellen til rådighed for ikke-kommerciel forskning via en programmeringsforbindelse, mens kommerciel forskning får en begrænset prøveordning. Forudsigelserne er et forskningsværktøj, ikke en behandling.",
+   "overskrift": "AlphaGenome 2 skal forudsige DNA-ændringers virkning",
+   "tekst": "Google DeepMinds AlphaGenome 2 er udviklet til at forudsige, hvordan samme DNA-ændring påvirker forskellige celletyper og tilstande. Ifølge Google kan modellen hjælpe forskere med at undersøge sygdom, men den er ikke en behandling. Modellen stilles til rådighed for ikke-kommerciel forskning; kommerciel adgang er begrænset.",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
    "kategori": "Lanceringer",
    "billede": "",
@@ -146,38 +184,8 @@
    "artikel_signatur": "510e884c82318c1933b4440cb9a4e7e1ccf3e47938c9e677d80ad03044d53a12"
   },
   {
-   "overskrift": "ChatGPT Wallet åbner for begrænsede AI-køb",
-   "tekst": "OpenAI lancerer ChatGPT Wallet for et begrænset antal voksne Pro-abonnenter i USA. En AI-agent kan hjælpe med at vælge og købe varer, men brugeren skal gennemgå og godkende hvert køb. OpenAI vil bruge den begrænsede lancering til at teste funktionen, før adgangen udvides.",
-   "link": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
-   "kategori": "Hverdags-AI",
-   "billede": "data/img/3402b190a924c28a.webp",
-   "dato": "2026-11-13T16:00:12+00:00",
-   "andre": [
-    {
-     "kilde": "The Verge AI",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
-     "rubrik": "ChatGPTs agenter kan nu købe ind for dig",
-     "resume_da": "OpenAI udruller ChatGPT Wallet i USA. Brugeren skal foreløbig godkende hvert køb og gennemføre en biometrisk sikkerhedskontrol.",
-     "dato": "2026-11-13T15:45:10-05:00",
-     "foerst_set": "2026-11-14T01:00:14.998513+00:00"
-    },
-    {
-     "kilde": "OpenAI Blog",
-     "link": "https://openai.com/index/introducing-chatgpt-wallet",
-     "rubrik": "OpenAI introducerer ChatGPT Wallet til AI-køb",
-     "resume_da": "AI-agenter i ChatGPT Work, Codex og dots kan gennemføre køb med brugerens godkendelse og eksisterende kortbeskyttelse.",
-     "dato": "2026-11-13T15:00:00+00:00",
-     "foerst_set": "2026-11-13T19:59:33.270017+00:00"
-    }
-   ],
-   "titel": "ChatGPT’s new Wallet lets AI agents shop and check out for you",
-   "rubrik": "ChatGPT Wallet kan købe varer for brugeren",
-   "resume_da": "OpenAI lader i første omgang et begrænset antal amerikanske Pro-abonnenter betale gennem ChatGPT efter at have godkendt hvert køb.",
-   "artikel_signatur": "964abfb77ef019bc4c6ac8e57296fe970b601cea09c92cb1010599e3954f3c04"
-  },
-  {
    "overskrift": "Anthropic forbereder børsnotering",
-   "tekst": "Anthropic har fremlagt et foreslået prisinterval for sin børsnotering. Ved intervallets midterkurs vil hver af de syv stiftere sælge aktier for knap 250 millioner dollar. Særlige aktier betyder ifølge børsdokumentet, at stifterne tilsammen beholder 51,1 procent af stemmerne efter salget.",
+   "tekst": "Anthropic har fremlagt planer for en børsnotering, hvor de syv stiftere hver vil sælge aktier. Ved den foreslåede midterkurs vil de hver få knap 250 millioner dollar. Særlige aktier skal samtidig sikre stifterne samlet 51,1 procent af stemmerne. Den endelige kurs er ikke fastlagt.",
    "link": "https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo/",
    "kategori": "Penge & marked",
    "billede": "data/img/43c95f626d2863cf.webp",
@@ -208,23 +216,30 @@
  ],
  "overblik": [
   {
-   "tekst": "AI-modellerne rykker både tættere på almindelige søgninger og længere ind i specialiseret arbejde. Google sender Gemini 4 Hydrogen ind i Search som afløser for sin hurtige Flash-model. Anthropic retter derimod Claude Fable 5.2 mod krævende tekniske opgaver. Adgangen er forskellig: Fable er tilgængelig for alle, mens Hydrogen i Gemini-appen er forbeholdt Pro- og Ultra-abonnenter. Den beslægtede Mythos 5.2 kræver en ansøgning.",
+   "tekst": "Periodens vigtigste skifte er, at en ny generation AI-modeller rykkede ind i flere slags arbejde på én gang. Gemini 4 Hydrogen skal bruges i Google Search og er rettet mod hurtige hverdagsopgaver. Claude Fable 5.2 er derimod målrettet krævende teknisk arbejde; i Anthropics egen test klarede den kodeopgaver omtrent som selskabets Opus 5.5 til en lavere pris. Resultaterne er producenternes oplysninger, ikke en garanti for samme forskel i praksis.",
    "links": [
     "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
     "https://www.anthropic.com/claude-fable-and-mythos-5-2"
    ]
   },
   {
-   "tekst": "To andre modeller viser, hvor forskellige opgaverne kan være. Gemini Robotics 2.5 omsætter planer til robotbevægelser og er afprøvet på Mercedes-Benz-fabrikker, hvor fire procent af opgaverne ikke blev udført korrekt. AlphaGenome 2 skal i stedet hjælpe forskere med at forudsige virkningen af DNA-ændringer i bestemte celletyper. Fabrikstesten viser en konkret fysisk anvendelse; cellemodellens forudsigelser skal fortsat undersøges af forskere.",
+   "tekst": "Adgangen følger ikke én fælles model. Hydrogen ventes bredt ud i søgning, men kræver bestemte abonnementer i Gemini-appen. Gemini 4 Carbon er nu åben for betalende udviklere og virksomheder og skal bruge mere regnekraft på lange opgaver. Anthropic giver alle adgang til Fable, mens brug af den beslægtede Mythos 5.2 kræver en ansøgning til særlige forsknings- og sikkerhedsformål.",
+   "links": [
+    "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
+    "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+    "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+   ]
+  },
+  {
+   "tekst": "De specialiserede modeller viser samtidig, hvor forskelligt fremskridt skal vurderes. Gemini Robotics 2.5 er prøvet på en konkret fabriksopgave, hvor fejl stadig forekom. AlphaGenome 2 skal derimod hjælpe forskere med at forudsige virkninger af DNA-ændringer i forskellige celler; en sådan forudsigelse er ikke i sig selv en behandling.",
    "links": [
     "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
     "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model"
    ]
   },
   {
-   "tekst": "Samtidig udvider OpenAI, hvad en assistent kan gøre for brugeren: ChatGPT Wallet kan gennemføre køb, men foreløbig kun for en begrænset gruppe i USA og med godkendelse af hvert køb. På virksomhedssiden forbereder Anthropic en børsnotering, hvor stifterne planlægger at sælge aktier, men beholde kontrollen over stemmerne. Det er to forskellige skridt: det ene åbner en ny tjeneste for kunder, det andet ændrer selskabets finansiering og ejerskab.",
+   "tekst": "Samtidig forbereder Anthropic en børsnotering. Planen kan give stifterne store aktiesalg, men lader dem beholde flertallet af stemmerne gennem særlige aktier. Det er en ændring i selskabets finansiering, ikke i sig selv et mål for, hvad de nye modeller kan.",
    "links": [
-    "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
     "https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo/"
    ]
   }
@@ -232,13 +247,13 @@
  "tendens": "",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "677fa99b03829da63956d09491735896e7fdd09f0d6d5eeb789277a90c9e8daf",
- "dato": "2026-11-14T18:34:23.261109+00:00",
- "opdateret": "2026-11-14T18:34:23.261109+00:00",
- "periode_fra": "2026-11-06T23:00:00+00:00",
- "periode_til": "2026-11-13T23:00:00+00:00",
+ "basis_signatur": "37b602ae228991bb82a43dcb44a88babec96ef213486fda141de33b198cb0b82",
+ "dato": "2026-11-15T00:14:22.813207+00:00",
+ "opdateret": "2026-11-15T00:14:22.813207+00:00",
+ "periode_fra": "2026-11-07T23:00:00+00:00",
+ "periode_til": "2026-11-14T23:00:00+00:00",
  "stats": {
-  "historier": 84,
+  "historier": 82,
   "kilder": 9
  }
 }
