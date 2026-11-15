@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-15T00:10:10.078294+00:00",
- "artikler_i_alt": 102,
+ "opdateret": "2026-11-15T07:04:34.653849+00:00",
+ "artikler_i_alt": 104,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -321,7 +321,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 9,
+   "i_listen": 10,
    "som_ekstra": 4,
    "seneste": [
     {
@@ -359,6 +359,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
+    },
+    {
+     "rubrik": "Datasette kan nu bruge lokale AI-modeller",
+     "dato": "2026-11-14T23:59:28",
+     "foerst_set": "2026-11-15T07:04:34",
+     "link": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+     "side": "artikel/cbf5757fc7e88498.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Googles model besvarer 1.000 spørgsmål om video",
@@ -1089,10 +1098,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-   "hentet": 0,
-   "i_listen": 1,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 15,
+   "i_listen": 2,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -1128,6 +1137,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-10T21:56:03",
      "link": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
      "side": "artikel/e38c92a7cefc59fe.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google Antigravity finder ny peptidkandidat",
+     "dato": "2026-10-15T16:08:03",
+     "foerst_set": "2026-10-16T04:53:41",
+     "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+     "side": "artikel/ba028f76ed47c779.html",
      "hvor": "forside",
      "under": ""
     }

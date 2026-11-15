@@ -1,31 +1,31 @@
 {
-  "opdateret": "2026-11-15T00:10:10.078294+00:00",
+  "opdateret": "2026-11-15T07:04:34.653849+00:00",
   "status": "godkendt",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
     "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
     "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-    "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
+    "https://simonwillison.net/2026/Nov/14/datasette-llm/"
   ],
-  "input_fingerprint": "78f0b50b971b1ce5",
-  "redaktionsnote": "Der er ingen dokumenteret ny modellancering i de seneste 48 timer blandt de læste kilder. TechCrunchs oversigt er ny, men dens eksempler på nedlukninger og forsinkelser er ældre; ElevenAI blev præsenteret ved topmødet 11. november og genvælges ikke som en ny lancering.",
+  "input_fingerprint": "ae238834e0fce33a",
+  "redaktionsnote": "Der er ingen dokumenteret ny modellancering inden for 48 timer i det undersøgte materiale. ElevenAI omtales som lanceret ved 11/11 Summit, så den nyere omtale gør ikke produktlanceringen ny; ældre forsidehistorier genvælges ikke af vane.",
   "beslutninger": [
     {
-      "id": "6841e619fcd7e8d9",
-      "begrundelse": "Llama.cpp er et udbredt værktøj til at køre AI-modeller lokalt. Version 1.0.0 giver udviklere tydeligere besked om ændringer, der kan gøre deres integrationer inkompatible.",
-      "nyt_siden_sidst": "Projektet udgiver nu version 1.0.0 af bibliotekerne til llama.cpp og ggml og indfører tydeligere hovedversionsskift ved inkompatible ændringer. Det har ikke været hovedhistorie på de oplyste forsider.",
-      "skriveopgave": "Rubrik: »Llama.cpp får version 1.0: Lettere at opdage ændringer, der bryder apps«. Forklar kort, hvordan værktøjet kører modeller på egen hardware, og hvad versionsnumrene betyder for udviklere. Brug korte afsnit med konkrete mellemoverskrifter; gør klart, at dette er en biblioteksversion, ikke en ny AI-model eller et løfte om fejlfri kompatibilitet.",
+      "id": "e9477865501b0215",
+      "begrundelse": "Den nye version gør det muligt at bruge lokalt kørende sprogmodeller med Datasette og dets plugins. Det er en konkret ny mulighed for udviklere og den mest aktuelle dokumenterede produktændring i materialet.",
+      "nyt_siden_sidst": "Datasette-llm 0.1a11 tilføjer understøttelse af OpenAI-kompatible forbindelser, så blandt andet lokale modeller kan kobles på. Udgivelsen har ikke været hovedhistorie på de oplyste forsider.",
+      "skriveopgave": "Rubrik: »Datasette kan nu bruge lokale AI-modeller«. Forklar med korte afsnit og mellemoverskrifter, hvad pluginet gør, og hvordan en OpenAI-kompatibel forbindelse åbner for modeller kørt med eksempelvis Ollama eller LM Studio. Forklar tekniske begreber ved første brug, og gør klart, at eksemplet kommer fra udvikleren, ikke en uafhængig test.",
       "kilder": [
-        "6841e619fcd7e8d9"
+        "e9477865501b0215"
       ],
       "samme_historie": [],
-      "link": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
-      "rubrik": "llama.cpp vil advare om brud med versionsnumre"
+      "link": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+      "rubrik": "Datasette kan nu bruge lokale AI-modeller"
     }
   ],
   "modelkald": 6,
-  "kildehentninger": 3,
+  "kildehentninger": 2,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -40,7 +40,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -50,20 +50,16 @@
   ],
   "kildegrundlag": [
     {
+      "link": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+      "grundlag": "kildetekst"
+    },
+    {
       "link": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
+    "https://simonwillison.net/2026/Nov/14/datasette-llm/"
   ],
-  "afventer_artikler": 83
+  "afventer_artikler": 87
 }

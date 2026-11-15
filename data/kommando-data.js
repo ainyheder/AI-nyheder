@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-15T00:14:49.000261+00:00",
+ "genereret": "2026-11-15T07:09:07.859991+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -199,26 +199,26 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-15T00:10:10.078294+00:00",
-  "antal": 102,
-  "med_billede": 74,
-  "paa_dansk": 102,
+  "opdateret": "2026-11-15T07:04:34.653849+00:00",
+  "antal": 104,
+  "med_billede": 76,
+  "paa_dansk": 104,
   "kategorier": {
+   "Hverdags-AI": 40,
    "Lanceringer": 15,
-   "Hverdags-AI": 39,
    "Samfund \u0026 etik": 12,
    "Politik \u0026 jura": 7,
    "Penge \u0026 marked": 21,
-   "Forskning": 8
+   "Forskning": 9
   },
   "kilder": {
-   "Hugging Face": 6,
+   "Simon Willison AI": 10,
    "Ars Technica AI": 14,
-   "Simon Willison AI": 9,
    "Google Gemini": 5,
-   "The Verge AI": 22,
    "TechCrunch AI": 33,
-   "Google DeepMind": 1,
+   "The Verge AI": 22,
+   "Hugging Face": 6,
+   "Google DeepMind": 2,
    "Anthropic News": 3,
    "MIT Tech Review AI": 5,
    "Mistral AI": 3,
@@ -226,17 +226,27 @@ window.KOMMANDO_DATA = {
   },
   "udvalgte": [
    {
-    "titel": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
-    "rubrik": "llama.cpp vil advare om brud med versionsnumre",
-    "link": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
-    "side": "artikel/1f76189be1eacadc.html",
-    "kategori": "Lanceringer",
-    "kilde": "Hugging Face",
-    "dato": "2026-11-13T14:05:22+00:00",
-    "billede": "data/img/2ad3a1e6d9c97b8d.webp"
+    "titel": "datasette-llm 0.1a11",
+    "rubrik": "Datasette kan nu bruge lokale AI-modeller",
+    "link": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+    "side": "artikel/cbf5757fc7e88498.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-11-14T23:59:28+00:00",
+    "billede": "data/img/2fa4160382fe9cb0.webp"
    }
   ],
   "seneste": [
+   {
+    "titel": "datasette-llm 0.1a11",
+    "rubrik": "Datasette kan nu bruge lokale AI-modeller",
+    "link": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+    "side": "artikel/cbf5757fc7e88498.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-11-14T23:59:28+00:00",
+    "billede": "data/img/2fa4160382fe9cb0.webp"
+   },
    {
     "titel": "The AI graveyard: a running list of projects and startups that didn’t make it",
     "rubrik": "Character.ai og Ollie blandt forliste AI-projekter",
@@ -266,16 +276,6 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-11-13T19:37:57+00:00",
     "billede": "data/img/e6e9a2836f050a07.webp"
-   },
-   {
-    "titel": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
-    "rubrik": "llama.cpp vil advare om brud med versionsnumre",
-    "link": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
-    "side": "artikel/1f76189be1eacadc.html",
-    "kategori": "Lanceringer",
-    "kilde": "Hugging Face",
-    "dato": "2026-11-13T14:05:22+00:00",
-    "billede": "data/img/2ad3a1e6d9c97b8d.webp"
    },
    {
     "titel": "Connect Google Wallet to Gemini for personal finance insights",
@@ -318,6 +318,16 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/8002572240ad385a.webp"
    },
    {
+    "titel": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+    "rubrik": "llama.cpp vil advare om brud med versionsnumre",
+    "link": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+    "side": "artikel/1f76189be1eacadc.html",
+    "kategori": "Lanceringer",
+    "kilde": "Hugging Face",
+    "dato": "2026-11-13T14:05:22+00:00",
+    "billede": "data/img/2ad3a1e6d9c97b8d.webp"
+   },
+   {
     "titel": "Claude’s Duet agent is a little neurotic and surprisingly helpful",
     "rubrik": "Claude Duet fandt kalenderhul og overreagerede",
     "link": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
@@ -346,32 +356,22 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-11-13T12:52:19+00:00",
     "billede": "data/img/85da2e9e057bb10d.webp"
-   },
-   {
-    "titel": "Google rolls out Gemini 4 Hydrogen, finally replacing 3.8 Flash",
-    "rubrik": "Gemini 4 Hydrogen erstatter Googles Flash-model",
-    "link": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
-    "side": "artikel/4140b7449a1cdcfd.html",
-    "kategori": "Lanceringer",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-11-12T19:23:03+00:00",
-    "billede": "data/img/e80859784d1ec49d.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-15T00:10:10.078294+00:00",
+  "opdateret": "2026-11-15T07:04:34.653849+00:00",
   "status": "godkendt",
   "model": "gpt-6.1-terra",
   "modelkald": 6,
-  "kildehentninger": 3,
+  "kildehentninger": 2,
   "regelbaseret_udvalg": [
    "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
    "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-   "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
+   "https://simonwillison.net/2026/Nov/14/datasette-llm/"
   ],
   "udgivet_udvalg": [
-   "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
+   "https://simonwillison.net/2026/Nov/14/datasette-llm/"
   ],
   "vaerktoejer": [
    {
@@ -387,7 +387,7 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "laes_kilde",
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
@@ -397,21 +397,17 @@ window.KOMMANDO_DATA = {
   ],
   "kildegrundlag": [
    {
+    "link": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+    "grundlag": "kildetekst"
+   },
+   {
     "link": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
     "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-11-15T00:10:09.538311+00:00",
+  "opdateret": "2026-11-15T07:04:34.267832+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -876,8 +872,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-15T00:10:10.078294+00:00",
-  "artikler_i_alt": 102,
+  "opdateret": "2026-11-15T07:04:34.653849+00:00",
+  "artikler_i_alt": 104,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1171,7 +1167,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 9,
+    "i_listen": 10,
     "som_ekstra": 4,
     "seneste": [
      {
@@ -1209,6 +1205,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
+     },
+     {
+      "rubrik": "Datasette kan nu bruge lokale AI-modeller",
+      "dato": "2026-11-14T23:59:28",
+      "foerst_set": "2026-11-15T07:04:34",
+      "link": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+      "side": "artikel/cbf5757fc7e88498.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Googles model besvarer 1.000 spørgsmål om video",
@@ -1270,15 +1275,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-11-10T02:53:29",
       "link": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
       "side": "artikel/35e753e57ab25524.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Willison gemmer AI-agentens lange forklaring bag ét klik",
-      "dato": "2026-11-09T04:25:05",
-      "foerst_set": "2026-11-09T07:05:45",
-      "link": "https://simonwillison.net/2026/Nov/9/details-summary/",
-      "side": "artikel/7796d5edf90e59f0.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1744,10 +1740,10 @@ window.KOMMANDO_DATA = {
     "kun_aktuel": false,
     "max": 15,
     "aktiv": true,
-    "status": "fejl",
-    "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-    "hentet": 0,
-    "i_listen": 1,
+    "status": "ok",
+    "fejl": "",
+    "hentet": 15,
+    "i_listen": 2,
     "som_ekstra": 3,
     "seneste": [
      {
@@ -1785,6 +1781,15 @@ window.KOMMANDO_DATA = {
       "side": "artikel/e38c92a7cefc59fe.html",
       "hvor": "forside",
       "under": ""
+     },
+     {
+      "rubrik": "Google Antigravity finder ny peptidkandidat",
+      "dato": "2026-10-15T16:08:03",
+      "foerst_set": "2026-10-16T04:53:41",
+      "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+      "side": "artikel/ba028f76ed47c779.html",
+      "hvor": "forside",
+      "under": ""
      }
     ]
    },
@@ -1819,12 +1824,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-15T00:14:44.775464+00:00",
+  "opdateret": "2026-11-15T07:09:01.824484+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 42,
-  "sidevisninger_i_alt": 63,
+  "besoeg_i_alt": 39,
+  "sidevisninger_i_alt": 60,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1981,8 +1986,8 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 42,
-    "visninger": 62
+    "besoeg": 39,
+    "visninger": 59
    },
    {
     "sti": "/uge.html",
@@ -1994,7 +1999,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 41
+    "besoeg": 38
    },
    {
     "fra": "www.google.com",
