@@ -961,8 +961,20 @@
           }
         ]
       },
-      "fejl": "Læserytme ved Rumprisen blev forbillede for en bil: mere end to tekstafsnit i træk; skab en meningsfuld pause uden at gentage indhold",
-      "naeste_trin": "skrivning"
+      "fejl": "Læserytme ved Rumprisen blev forbillede for en bil: mere end to tekstafsnit i træk; skab en meningsfuld pause uden at gentage indhold\nKvalitetskontrollen afviste brevet\n[\"Gentagelse — under 'Hvem betaler for forsøget?' — Fremhævningen siger, at deltagerne skal finde penge til deres arbejde; næste afsnit gentager, at rumholdene selv måtte skaffe midler. Saml forklaringen ét sted, og behold den konkrete forskel mellem præmie og arbejdsomkostninger.\", \"Format — under 'Rumprisen blev forbillede for en bil' — Fire almindelige afsnit følger hinanden uden en tekstlig pause. Indsæt en relevant visuel pause, eksempelvis en kort liste over bilens krav, som erstatter den tilsvarende brødtekst.\", \"Læseværdi — under 'CO₂ blev målt i fjernede nettoton' — Nettoton er centralt for resultatet, men forklares ikke for en læser uden forkundskaber. Forklar kort, hvad netto betyder, uden at opfinde detaljer om holdenes beregning.\"]",
+      "naeste_trin": "skrivning",
+      "kontrol": {
+        "godkendt": false,
+        "fuld_kilde": true,
+        "faktuel_troskab": true,
+        "selvstaendig": true,
+        "laesevaerdi": false,
+        "problemer": [
+          "Gentagelse — under 'Hvem betaler for forsøget?' — Fremhævningen siger, at deltagerne skal finde penge til deres arbejde; næste afsnit gentager, at rumholdene selv måtte skaffe midler. Saml forklaringen ét sted, og behold den konkrete forskel mellem præmie og arbejdsomkostninger.",
+          "Format — under 'Rumprisen blev forbillede for en bil' — Fire almindelige afsnit følger hinanden uden en tekstlig pause. Indsæt en relevant visuel pause, eksempelvis en kort liste over bilens krav, som erstatter den tilsvarende brødtekst.",
+          "Læseværdi — under 'CO₂ blev målt i fjernede nettoton' — Nettoton er centralt for resultatet, men forklares ikke for en læser uden forkundskaber. Forklar kort, hvad netto betyder, uden at opfinde detaljer om holdenes beregning."
+        ]
+      }
     }
   }
 }
