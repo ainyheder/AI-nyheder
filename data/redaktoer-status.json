@@ -1,31 +1,17 @@
 {
-  "opdateret": "2026-11-16T07:11:09.449511+00:00",
-  "status": "godkendt",
+  "opdateret": "2026-11-16T18:51:00.859402+00:00",
+  "status": "reserve",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
-    "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
-    "https://simonwillison.net/2026/Nov/14/datasette-llm/",
-    "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/"
+    "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+    "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/",
+    "https://www.theverge.com/tech/1034110/google-ask-maps-ai-trip-planning"
   ],
-  "input_fingerprint": "5fd676a5518557fa",
-  "redaktionsnote": "OpenAIs omtale af GPT-6 Astras bidrag til et fysikbevis afventer: Den tilgængelige kilde gav kun et RSS-resumé. Der er ingen dokumenteret ny modellancering blandt de undersøgte aktuelle historier.",
-  "beslutninger": [
-    {
-      "id": "a22318abd9f9f947",
-      "begrundelse": "Apple og OpenEvidence giver deltagere adgang til en app med AI-svar på sundhedsspørgsmål. Det er en konkret ny anvendelse, samtidig med at studiet skal undersøge, hvor nyttige svarene er.",
-      "nyt_siden_sidst": "Apple åbner nu tilmelding til studiet i USA og sigter efter op til 200.000 deltagere. Appen og studiet har ikke været hovedhistorie på de oplyste forsider.",
-      "skriveopgave": "Rubrik: »Apple vil undersøge AI-svar om sundhed med ny app«. Forklar i korte afsnit med sigende mellemoverskrifter, hvordan deltagere stiller spørgsmål, vurderer svar og eventuelt deler helbredsdata. Beskriv adgang og Apples dataløfter som påstande; kilderne er uenige om iPhone-krav og Apple Intelligence, så markér det som uafklaret. Svarenes medicinske kvalitet er ikke dokumenteret af studiet endnu.",
-      "kilder": [
-        "a22318abd9f9f947",
-        "c57d5fdb338c13eb"
-      ],
-      "samme_historie": [
-        "c57d5fdb338c13eb"
-      ],
-      "link": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
-      "rubrik": "Apple undersøger AI-svar om sundhed med ny app"
-    }
+  "input_fingerprint": "e67bca41d35cf847",
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "kontrolproblemer": [
+    "Kandidat 2fdf48c7e9e85e8a beskriver samme Google Maps-lancering som hovedhistorien. Den bør ikke vises som en separat historie på forsiden."
   ],
   "modelkald": 6,
   "kildehentninger": 3,
@@ -53,20 +39,22 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+      "link": "https://huggingface.co/blog/openrouter",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/tech/1033355/apples-new-study-looks-to-improve-the-effectiveness-of-ai-health-tools",
+      "link": "https://techcrunch.com/2026/11/16/google-maps-can-now-build-trip-itineraries-with-real-time-details-about-each-stop/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://openai.com/index/step-toward-defining-the-standard-model",
-      "grundlag": "rss_resume"
+      "link": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/",
+      "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/"
+    "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/",
+    "https://www.theverge.com/tech/1034110/google-ask-maps-ai-trip-planning",
+    "https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion/"
   ],
-  "afventer_artikler": 92
+  "afventer_artikler": 98
 }
