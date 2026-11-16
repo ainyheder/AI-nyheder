@@ -1,27 +1,30 @@
 {
-  "opdateret": "2026-11-15T21:12:22.625383+00:00",
+  "opdateret": "2026-11-16T07:11:09.449511+00:00",
   "status": "godkendt",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
     "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
     "https://simonwillison.net/2026/Nov/14/datasette-llm/",
-    "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/"
+    "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/"
   ],
-  "input_fingerprint": "e11b51e4c3665f8b",
-  "redaktionsnote": "Der er ingen ny dokumenteret modellancering blandt de undersøgte aktuelle kandidater. Datasette-opdateringen anbefales uden at genvælge den som hovedhistorie: den har allerede været på de to seneste forsider, og der er ikke dokumenteret en ny opdatering.",
+  "input_fingerprint": "5fd676a5518557fa",
+  "redaktionsnote": "OpenAIs omtale af GPT-6 Astras bidrag til et fysikbevis afventer: Den tilgængelige kilde gav kun et RSS-resumé. Der er ingen dokumenteret ny modellancering blandt de undersøgte aktuelle historier.",
   "beslutninger": [
     {
-      "id": "6c2c64409dfbba0f",
-      "begrundelse": "Kongresmedlemmernes reaktion kan få betydning for eksporten af de chips, som bruges til at udvikle AI. Det er en ny politisk udvikling, ikke endnu en omtale af selve afgangen.",
-      "nyt_siden_sidst": "Både demokrater og republikanere vil ifølge The Verge stramme eksportreglerne eller kræve forklaringer fra Nvidia. Et ældre lovforslag har fået fornyet opmærksomhed, men ingen ny begrænsning er vedtaget i det læste materiale.",
-      "skriveopgave": "Rubrik: »Kongresmedlemmer vil stramme eksporten af AI-chips«. Forklar med korte afsnit og konkrete mellemoverskrifter, hvem der kræver høring, og hvordan et ældre lovforslag igen er kommet i fokus. Skeln mellem forslag, politisk støtte og vedtaget lov; omtalen dokumenterer ikke, at spionage har fundet sted.",
+      "id": "a22318abd9f9f947",
+      "begrundelse": "Apple og OpenEvidence giver deltagere adgang til en app med AI-svar på sundhedsspørgsmål. Det er en konkret ny anvendelse, samtidig med at studiet skal undersøge, hvor nyttige svarene er.",
+      "nyt_siden_sidst": "Apple åbner nu tilmelding til studiet i USA og sigter efter op til 200.000 deltagere. Appen og studiet har ikke været hovedhistorie på de oplyste forsider.",
+      "skriveopgave": "Rubrik: »Apple vil undersøge AI-svar om sundhed med ny app«. Forklar i korte afsnit med sigende mellemoverskrifter, hvordan deltagere stiller spørgsmål, vurderer svar og eventuelt deler helbredsdata. Beskriv adgang og Apples dataløfter som påstande; kilderne er uenige om iPhone-krav og Apple Intelligence, så markér det som uafklaret. Svarenes medicinske kvalitet er ikke dokumenteret af studiet endnu.",
       "kilder": [
-        "6c2c64409dfbba0f"
+        "a22318abd9f9f947",
+        "c57d5fdb338c13eb"
       ],
-      "samme_historie": [],
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
-      "rubrik": "Nvidias AI-chips: Kongresmedlemmer vil stramme eksporten"
+      "samme_historie": [
+        "c57d5fdb338c13eb"
+      ],
+      "link": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+      "rubrik": "Apple undersøger AI-svar om sundhed med ny app"
     }
   ],
   "modelkald": 6,
@@ -50,20 +53,20 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+      "link": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
+      "link": "https://www.theverge.com/tech/1033355/apples-new-study-looks-to-improve-the-effectiveness-of-ai-health-tools",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
-      "grundlag": "kildetekst"
+      "link": "https://openai.com/index/step-toward-defining-the-standard-model",
+      "grundlag": "rss_resume"
     }
   ],
   "udgivet_udvalg": [
-    "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china"
+    "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/"
   ],
-  "afventer_artikler": 90
+  "afventer_artikler": 92
 }

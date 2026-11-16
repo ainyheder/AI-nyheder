@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-15T21:12:22.625383+00:00",
- "artikler_i_alt": 104,
+ "opdateret": "2026-11-16T07:11:09.449511+00:00",
+ "artikler_i_alt": 105,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -480,7 +480,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 33,
+   "i_listen": 35,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -509,6 +509,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Anthropic afsætter fem procent af aktierne til fond"
+    },
+    {
+     "rubrik": "Apple undersøger AI-svar om sundhed med ny app",
+     "dato": "2026-11-16T01:30:00",
+     "foerst_set": "2026-11-16T07:11:09",
+     "link": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+     "side": "artikel/74c2539a197400ce.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Bharat Semi henter 24 millioner til AI-sensorer",
+     "dato": "2026-11-15T23:30:00",
+     "foerst_set": "2026-11-16T07:11:09",
+     "link": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+     "side": "artikel/22756b5773130bd0.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Character.ai og Ollie blandt forliste AI-projekter",
@@ -599,24 +617,6 @@ window.KILDER_STATUS = {
      "side": "artikel/0a010acdd07c2ba4.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Hackere stjal Notion-chats via Fireworks AI",
-     "dato": "2026-11-12T15:02:28",
-     "foerst_set": "2026-11-12T17:01:28",
-     "link": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/",
-     "side": "artikel/2843d5b0f258e599.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "SoftBank taber milliarder på eludstyr til AI",
-     "dato": "2026-11-12T17:00:52",
-     "foerst_set": "2026-11-12T17:01:28",
-     "link": "https://techcrunch.com/2026/11/12/softbanks-billion-dollar-loss-may-have-put-a-cap-on-ais-natural-gas-ambitions/",
-     "side": "artikel/55bf40a54c79d71b.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -652,7 +652,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 23,
+   "i_listen": 22,
    "som_ekstra": 6,
    "seneste": [
     {

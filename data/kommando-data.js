@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-15T21:17:09.361642+00:00",
+ "genereret": "2026-11-16T07:16:50.680726+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -199,24 +199,24 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-15T21:12:22.625383+00:00",
-  "antal": 104,
+  "opdateret": "2026-11-16T07:11:09.449511+00:00",
+  "antal": 105,
   "med_billede": 76,
-  "paa_dansk": 104,
+  "paa_dansk": 105,
   "kategorier": {
-   "Politik \u0026 jura": 8,
+   "Hverdags-AI": 41,
    "Lanceringer": 15,
-   "Hverdags-AI": 40,
+   "Politik \u0026 jura": 7,
    "Samfund \u0026 etik": 12,
-   "Penge \u0026 marked": 21,
+   "Penge \u0026 marked": 22,
    "Forskning": 8
   },
   "kilder": {
-   "The Verge AI": 23,
+   "TechCrunch AI": 35,
    "Ars Technica AI": 14,
+   "The Verge AI": 22,
    "Google Gemini": 5,
    "Simon Willison AI": 10,
-   "TechCrunch AI": 33,
    "Hugging Face": 6,
    "Google DeepMind": 1,
    "Anthropic News": 3,
@@ -226,17 +226,37 @@ window.KOMMANDO_DATA = {
   },
   "udvalgte": [
    {
-    "titel": "Congress wants to tighten export rules on AI chips after Nvidia spy scandal",
-    "rubrik": "Nvidias AI-chips: Kongresmedlemmer vil stramme eksporten",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
-    "side": "artikel/bc766627e4a1f87c.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-15T14:15:43-05:00",
-    "billede": "data/img/6bc1994d3bd134e9.webp"
+    "titel": "Apple launches new app to study how people use AI for health",
+    "rubrik": "Apple undersøger AI-svar om sundhed med ny app",
+    "link": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+    "side": "artikel/74c2539a197400ce.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-16T01:30:00+00:00",
+    "billede": ""
    }
   ],
   "seneste": [
+   {
+    "titel": "Apple launches new app to study how people use AI for health",
+    "rubrik": "Apple undersøger AI-svar om sundhed med ny app",
+    "link": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+    "side": "artikel/74c2539a197400ce.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-16T01:30:00+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market",
+    "rubrik": "Bharat Semi henter 24 millioner til AI-sensorer",
+    "link": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+    "side": "artikel/22756b5773130bd0.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-15T23:30:00+00:00",
+    "billede": "data/img/33b38dc6890c1eee.webp"
+   },
    {
     "titel": "Congress wants to tighten export rules on AI chips after Nvidia spy scandal",
     "rubrik": "Nvidias AI-chips: Kongresmedlemmer vil stramme eksporten",
@@ -336,31 +356,11 @@ window.KOMMANDO_DATA = {
     "kilde": "Hugging Face",
     "dato": "2026-11-13T14:05:22+00:00",
     "billede": "data/img/2ad3a1e6d9c97b8d.webp"
-   },
-   {
-    "titel": "Claude’s Duet agent is a little neurotic and surprisingly helpful",
-    "rubrik": "Claude Duet fandt kalenderhul og overreagerede",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
-    "side": "artikel/2c7a6e6b19ce61f9.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-13T09:00:00-05:00",
-    "billede": "data/img/cf11c0c9814229fc.webp"
-   },
-   {
-    "titel": "OpenAI board member worries an AI \"takeover\" of society could be months away",
-    "rubrik": "OpenAI-bestyrelsesmedlem advarer om muligt AI-overtag",
-    "link": "https://arstechnica.com/features/2026/11/ai-is-the-most-likely-reason-youll-die-openai-board-member-warns/",
-    "side": "artikel/82a25efe6c9f3f01.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-11-13T17:25:45+00:00",
-    "billede": "data/img/f72704e9de5577d7.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-15T21:12:22.625383+00:00",
+  "opdateret": "2026-11-16T07:11:09.449511+00:00",
   "status": "godkendt",
   "model": "gpt-6.1-terra",
   "modelkald": 6,
@@ -368,10 +368,10 @@ window.KOMMANDO_DATA = {
   "regelbaseret_udvalg": [
    "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
    "https://simonwillison.net/2026/Nov/14/datasette-llm/",
-   "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/"
+   "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/"
   ],
   "udgivet_udvalg": [
-   "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china"
+   "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/"
   ],
   "vaerktoejer": [
    {
@@ -397,21 +397,21 @@ window.KOMMANDO_DATA = {
   ],
   "kildegrundlag": [
    {
-    "link": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+    "link": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
+    "link": "https://www.theverge.com/tech/1033355/apples-new-study-looks-to-improve-the-effectiveness-of-ai-health-tools",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
-    "grundlag": "kildetekst"
+    "link": "https://openai.com/index/step-toward-defining-the-standard-model",
+    "grundlag": "rss_resume"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-11-15T21:12:21.854731+00:00",
+  "opdateret": "2026-11-16T07:11:08.599939+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -876,8 +876,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-15T21:12:22.625383+00:00",
-  "artikler_i_alt": 104,
+  "opdateret": "2026-11-16T07:11:09.449511+00:00",
+  "artikler_i_alt": 105,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1294,7 +1294,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 33,
+    "i_listen": 35,
     "som_ekstra": 3,
     "seneste": [
      {
@@ -1323,6 +1323,24 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Anthropic afsætter fem procent af aktierne til fond"
+     },
+     {
+      "rubrik": "Apple undersøger AI-svar om sundhed med ny app",
+      "dato": "2026-11-16T01:30:00",
+      "foerst_set": "2026-11-16T07:11:09",
+      "link": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+      "side": "artikel/74c2539a197400ce.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Bharat Semi henter 24 millioner til AI-sensorer",
+      "dato": "2026-11-15T23:30:00",
+      "foerst_set": "2026-11-16T07:11:09",
+      "link": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+      "side": "artikel/22756b5773130bd0.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Character.ai og Ollie blandt forliste AI-projekter",
@@ -1386,24 +1404,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/0deb78fa341dbcc1.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Meta lader Muse ringe til virksomheder",
-      "dato": "2026-11-12T22:22:28",
-      "foerst_set": "2026-11-13T01:26:35",
-      "link": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
-      "side": "artikel/3896780f30628465.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Nebius vil bruge milliarder trods forsinket Microsoft-center",
-      "dato": "2026-11-12T21:27:10",
-      "foerst_set": "2026-11-13T01:26:35",
-      "link": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/",
-      "side": "artikel/076e5b99074af123.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1417,7 +1417,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 23,
+    "i_listen": 22,
     "som_ekstra": 6,
     "seneste": [
      {
@@ -1819,19 +1819,14 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-15T21:17:02.377984+00:00",
+  "opdateret": "2026-11-16T07:16:45.694232+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 39,
-  "sidevisninger_i_alt": 60,
+  "besoeg_i_alt": 37,
+  "sidevisninger_i_alt": 52,
   "ai_chat_besoeg": 0,
   "serie": [
-   {
-    "dato": "2026-10-17",
-    "besoeg": 10,
-    "visninger": 20
-   },
    {
     "dato": "2026-10-18",
     "besoeg": 0,
@@ -1976,13 +1971,18 @@ window.KOMMANDO_DATA = {
     "dato": "2026-11-15",
     "besoeg": 0,
     "visninger": 0
+   },
+   {
+    "dato": "2026-11-16",
+    "besoeg": 0,
+    "visninger": 0
    }
   ],
   "sider": [
    {
     "sti": "/",
-    "besoeg": 39,
-    "visninger": 59
+    "besoeg": 37,
+    "visninger": 51
    },
    {
     "sti": "/uge.html",
@@ -1994,7 +1994,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 38
+    "besoeg": 36
    },
    {
     "fra": "www.google.com",
