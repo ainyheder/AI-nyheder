@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-17T03:06:49.933219+00:00",
- "artikler_i_alt": 103,
+ "opdateret": "2026-11-17T13:47:51.865712+00:00",
+ "artikler_i_alt": 104,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -124,15 +124,6 @@ window.KILDER_STATUS = {
    "som_ekstra": 4,
    "seneste": [
     {
-     "rubrik": "Gemini 4 Hydrogen erstatter Flash med adgangsgrænser",
-     "dato": "",
-     "foerst_set": "2026-11-13T01:26:35",
-     "link": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 4 Hydrogen erstatter Googles Flash-model"
-    },
-    {
      "rubrik": "Google præsenterer Gemini 4 Hydrogen",
      "dato": "",
      "foerst_set": "2026-11-13T01:26:35",
@@ -146,6 +137,15 @@ window.KILDER_STATUS = {
      "dato": "",
      "foerst_set": "2026-11-13T01:26:35",
      "link": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 4 Hydrogen erstatter Googles Flash-model"
+    },
+    {
+     "rubrik": "Google lancerer Gemini 4 Hydrogen til udviklere",
+     "dato": "",
+     "foerst_set": "2026-11-13T01:26:35",
+     "link": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/",
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Hydrogen erstatter Googles Flash-model"
@@ -635,7 +635,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 20,
+   "i_listen": 21,
    "som_ekstra": 9,
    "seneste": [
     {
@@ -747,6 +747,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Nvidia møder nye anklager efter Huang-exit",
+     "dato": "2026-11-16T13:00:00",
+     "foerst_set": "2026-11-16T18:51:00",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1031740/jensen-huang-nvidia-scandal-isnt-slowing-down",
+     "side": "artikel/84522dc3aa84ccf0.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Nvidias AI-chips: Kongresmedlemmer vil stramme eksporten",
      "dato": "2026-11-15T19:15:43",
      "foerst_set": "2026-11-15T21:12:22",
@@ -815,15 +824,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-11T16:32:11",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
      "side": "artikel/872573b4c15b2f70.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google Tabletop laver fælles værktøjer ud fra beskrivelser",
-     "dato": "2026-11-11T16:00:00",
-     "foerst_set": "2026-11-11T16:32:11",
-     "link": "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
-     "side": "artikel/fd7c9361a612e0ea.html",
      "hvor": "forside",
      "under": ""
     }
