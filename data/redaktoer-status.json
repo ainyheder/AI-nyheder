@@ -1,16 +1,33 @@
 {
-  "opdateret": "2026-11-17T13:47:51.865712+00:00",
-  "status": "reserve",
+  "opdateret": "2026-11-17T23:38:27.542092+00:00",
+  "status": "godkendt",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
-    "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
-    "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/",
-    "https://blog.google/innovation-and-ai/products/gemini-app/regional-voices/"
+    "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/",
+    "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+    "https://www.theverge.com/tech/1035756/google-spark-ai-tasks-free"
   ],
-  "input_fingerprint": "6e82382b79caad1d",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 5,
+  "input_fingerprint": "7cf6f40e77dc3632",
+  "redaktionsnote": "Én hovedhistorie: Den officielle OpenAI-side gav kun et RSS-resumé, men Willisons læsbare artikel indeholder priser og en selvstændig test. Øvrige kandidater afventer læste kilder.",
+  "beslutninger": [
+    {
+      "id": "0b5f35342ecc69a5",
+      "begrundelse": "OpenAI lancerer to væsentlige nye modelversioner, som allerede kan bruges via API. Simon Willisons selvstændige afprøvning giver også et konkret modspil til producentens løfter.",
+      "nyt_siden_sidst": "GPT-6.2 Astra og GPT-6.2 Sol er nye modelversioner, ikke blot en ny omtale af de tidligere GPT-6-modeller. Astra er billigere end forgængeren, mens Sol beholder sin hidtidige API-pris.",
+      "skriveopgave": "Rubrik: »OpenAI lancerer GPT-6.2: Astra bliver billigere, Sol holder prisen«. Forklar forskellen på modellerne og API-adgangen, og brug korte afsnit med mellemoverskrifter om pris og praktisk test. Angiv priser pr. million input- og outputtokens, og forklar token ved første brug. Beskriv Willisons kodetest og dens begrænsede omfang; OpenAIs præstationsløfter er påstande. Den fulde officielle meddelelse kunne ikke åbnes, så uafklarede adgangsvilkår må ikke gættes.",
+      "kilder": [
+        "0b5f35342ecc69a5",
+        "8f6af8c44a4a1bfb"
+      ],
+      "samme_historie": [
+        "8f6af8c44a4a1bfb"
+      ],
+      "link": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/",
+      "rubrik": "OpenAI: GPT-6.2 Astra bliver billigere, Sol holder prisen"
+    }
+  ],
+  "modelkald": 6,
   "kildehentninger": 3,
   "vaerktoejer": [
     {
@@ -36,22 +53,20 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://www.theverge.com/tech/1034110/google-ask-maps-ai-trip-planning",
+      "link": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "grundlag": "rss_resume"
+    },
+    {
+      "link": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription",
-      "grundlag": "kildetekst"
+      "link": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "grundlag": "utilgaengelig"
     }
   ],
   "udgivet_udvalg": [
-    "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/",
-    "https://blog.google/innovation-and-ai/products/gemini-app/regional-voices/",
-    "https://www.theverge.com/tech/1034110/google-ask-maps-ai-trip-planning"
+    "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/"
   ],
-  "afventer_artikler": 99
+  "afventer_artikler": 92
 }
