@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-16T18:51:00.859402+00:00",
- "artikler_i_alt": 109,
+ "opdateret": "2026-11-17T03:06:49.933219+00:00",
+ "artikler_i_alt": 103,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -120,7 +120,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 5,
+   "i_listen": 6,
    "som_ekstra": 4,
    "seneste": [
     {
@@ -158,6 +158,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google åbner Gemini 4 Carbon for betalende brugere"
+    },
+    {
+     "rubrik": "Gemini får 66 nye regionale stemmer",
+     "dato": "2026-11-16T18:45:00",
+     "foerst_set": "2026-11-17T03:06:49",
+     "link": "https://blog.google/innovation-and-ai/products/gemini-app/regional-voices/",
+     "side": "artikel/42b056617ad81eaa.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Gemini kan svare på spørgsmål om dit forbrug",
@@ -321,8 +330,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 10,
-   "som_ekstra": 4,
+   "i_listen": 8,
+   "som_ekstra": 3,
    "seneste": [
     {
      "rubrik": "Gemini 4 Hydrogen skal drive AI i Google-søgning",
@@ -341,15 +350,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google åbner Gemini 4 Carbon for betalende brugere"
-    },
-    {
-     "rubrik": "Meta lancerer den lille AI-model Muse Ember",
-     "dato": "",
-     "foerst_set": "2026-11-10T12:55:44",
-     "link": "https://simonwillison.net/2026/Nov/10/muse-ember/",
-     "side": "",
-     "hvor": "under",
-     "under": "Meta sender billig agentmodel på arbejde"
     },
     {
      "rubrik": "Fable 5.2 fejlede på højeste ræsonnementsniveau",
@@ -431,24 +431,6 @@ window.KILDER_STATUS = {
      "side": "artikel/35e753e57ab25524.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Willison gemmer AI-agentens lange forklaring bag ét klik",
-     "dato": "2026-11-09T04:25:05",
-     "foerst_set": "2026-11-09T07:05:45",
-     "link": "https://simonwillison.net/2026/Nov/9/details-summary/",
-     "side": "artikel/7796d5edf90e59f0.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Claude omskrev 3D-æg uden Three.js",
-     "dato": "2026-11-09T04:32:33",
-     "foerst_set": "2026-11-09T07:05:45",
-     "link": "https://simonwillison.net/2026/Nov/9/hn-50421091/",
-     "side": "artikel/c3dd8886e7848fb0.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -458,10 +440,6 @@ window.KILDER_STATUS = {
     ],
     [
      "Google DeepMind",
-     1
-    ],
-    [
-     "TechCrunch AI",
      1
     ],
     [
@@ -520,6 +498,24 @@ window.KILDER_STATUS = {
      "under": "Anthropic afsætter fem procent af aktierne til fond"
     },
     {
+     "rubrik": "Californien sagsøger OpenAI efter agentindbrud",
+     "dato": "2026-11-16T20:07:13",
+     "foerst_set": "2026-11-17T03:06:49",
+     "link": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/",
+     "side": "artikel/6e394d6d04ab34b6.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Corma når milliardværdi tre måneder efter produktlancering",
+     "dato": "2026-11-16T23:32:32",
+     "foerst_set": "2026-11-17T03:06:49",
+     "link": "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/",
+     "side": "artikel/7517b8cd010a2f70.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "USA vil begrænse fjernadgang til AI-chips",
      "dato": "2026-11-16T15:02:34",
      "foerst_set": "2026-11-16T18:51:00",
@@ -529,11 +525,29 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "FBI: Artex-angreb kan bryde ind på tre timer",
+     "dato": "2026-11-16T17:36:43",
+     "foerst_set": "2026-11-16T18:51:00",
+     "link": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/",
+     "side": "artikel/8e371c25a440033a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI lukker eksterne sikkerhedsforskere indenfor",
      "dato": "2026-11-16T17:02:43",
      "foerst_set": "2026-11-16T18:51:00",
      "link": "https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion/",
      "side": "artikel/f2c3c92b0ac1d660.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI advarer brugere og leder efter overgrebsbilleder",
+     "dato": "2026-11-16T17:00:00",
+     "foerst_set": "2026-11-16T18:51:00",
+     "link": "https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam/",
+     "side": "artikel/c241de6853258324.html",
      "hvor": "forside",
      "under": ""
     },
@@ -590,48 +604,12 @@ window.KILDER_STATUS = {
      "side": "artikel/17dd6d164624ae18.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "LangChain rejser 300 millioner dollar",
-     "dato": "2026-11-13T19:37:57",
-     "foerst_set": "2026-11-14T01:00:14",
-     "link": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
-     "side": "artikel/26d265ce671c85ec.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "ChatGPT Wallet kan købe varer for brugeren",
-     "dato": "2026-11-13T16:00:12",
-     "foerst_set": "2026-11-13T19:59:33",
-     "link": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
-     "side": "artikel/a89e405114485a54.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Analyse finder spor af Nvidia-chips i kinesiske AI-modeller",
-     "dato": "2026-11-13T18:40:30",
-     "foerst_set": "2026-11-13T19:59:33",
-     "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-     "side": "artikel/3bcb8ca81cbad6cd.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "ElevenAI samler mødenoter og diktering",
-     "dato": "2026-11-13T14:44:48",
-     "foerst_set": "2026-11-13T19:59:33",
-     "link": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
-     "side": "artikel/c6494705d362bbaf.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     5
+     7
     ],
     [
      "Anthropic News",
@@ -643,10 +621,6 @@ window.KILDER_STATUS = {
     ],
     [
      "OpenAI Blog",
-     1
-    ],
-    [
-     "Simon Willison AI",
      1
     ]
    ]
@@ -661,9 +635,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 23,
-   "som_ekstra": 7,
+   "i_listen": 20,
+   "som_ekstra": 9,
    "seneste": [
+    {
+     "rubrik": "OpenAI vil markere mulige AI-overgrebsbilleder",
+     "dato": "",
+     "foerst_set": "2026-11-17T03:06:49",
+     "link": "https://www.theverge.com/policy/1034527/openai-csam-classifier",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI advarer brugere og leder efter overgrebsbilleder"
+    },
+    {
+     "rubrik": "Californien sagsøger OpenAI efter AI-angreb",
+     "dato": "",
+     "foerst_set": "2026-11-17T03:06:49",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit",
+     "side": "",
+     "hvor": "under",
+     "under": "Californien sagsøger OpenAI efter agentindbrud"
+    },
     {
      "rubrik": "Apple åbner app til sundhedsspørgsmål",
      "dato": "",
@@ -728,6 +720,15 @@ window.KILDER_STATUS = {
      "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
     },
     {
+     "rubrik": "Apple tester daglige grænser for Siri AI",
+     "dato": "2026-11-16T14:24:40",
+     "foerst_set": "2026-11-17T03:06:49",
+     "link": "https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription",
+     "side": "artikel/13db3cf78d533313.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Google Maps laver nu rejseplaner",
      "dato": "2026-11-16T09:00:00",
      "foerst_set": "2026-11-16T18:51:00",
@@ -737,8 +738,17 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Audible giver lydbøger AI-genererede lydintroduktioner",
+     "dato": "2026-11-16T09:00:00",
+     "foerst_set": "2026-11-16T18:51:00",
+     "link": "https://www.theverge.com/tech/1034083/audible-audio-discovery-ai-feature-availability",
+     "side": "artikel/b65376beb7eacaa8.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Nvidias AI-chips: Kongresmedlemmer vil stramme eksporten",
-     "dato": "2026-11-15T14:15:43",
+     "dato": "2026-11-15T19:15:43",
      "foerst_set": "2026-11-15T21:12:22",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
      "side": "artikel/bc766627e4a1f87c.html",
@@ -747,7 +757,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Helen Toner advarer mod blind tillid til AI-chefer",
-     "dato": "2026-11-14T10:00:00",
+     "dato": "2026-11-14T15:00:00",
      "foerst_set": "2026-11-14T18:27:35",
      "link": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
      "side": "artikel/e906ce588cf4c1c4.html",
@@ -816,30 +826,12 @@ window.KILDER_STATUS = {
      "side": "artikel/fd7c9361a612e0ea.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Adobe viser billeder fra nye vinkler",
-     "dato": "2026-11-11T14:00:00",
-     "foerst_set": "2026-11-11T16:32:11",
-     "link": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
-     "side": "artikel/24878850a24ab619.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Adobe gør det lettere at fjerne uønskede objekter",
-     "dato": "2026-11-10T14:00:00",
-     "foerst_set": "2026-11-10T21:56:03",
-     "link": "https://www.theverge.com/tech/1030653/adobe-max-2026-photoshop-premiere-removal-updates",
-     "side": "artikel/6c21c86eb4f726cd.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     5
+     7
     ],
     [
      "Google DeepMind",
@@ -865,7 +857,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 14,
+   "i_listen": 13,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -1028,7 +1020,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 3,
+   "i_listen": 2,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -1046,15 +1038,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-09T19:04:48",
      "link": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/",
      "side": "artikel/9541439da1a607fd.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Lubrizol bygger datagrundlag til materialeforskning med AI",
-     "dato": "2026-11-09T13:00:00",
-     "foerst_set": "2026-11-09T19:04:48",
-     "link": "https://www.technologyreview.com/2026/11/09/1147654/innovating-with-ai-in-the-special-chemicals-industry/",
-     "side": "artikel/08088be30a8e00a4.html",
      "hvor": "forside",
      "under": ""
     }
@@ -1098,9 +1081,9 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-   "hentet": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 15,
    "i_listen": 1,
    "som_ekstra": 3,
    "seneste": [

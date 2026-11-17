@@ -1,19 +1,16 @@
 {
-  "opdateret": "2026-11-16T18:51:00.859402+00:00",
+  "opdateret": "2026-11-17T03:06:49.933219+00:00",
   "status": "reserve",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
+    "https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit",
     "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
-    "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/",
-    "https://www.theverge.com/tech/1034110/google-ask-maps-ai-trip-planning"
+    "https://blog.google/innovation-and-ai/products/gemini-app/regional-voices/"
   ],
-  "input_fingerprint": "e67bca41d35cf847",
+  "input_fingerprint": "8f51d48aa8160c0a",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "kontrolproblemer": [
-    "Kandidat 2fdf48c7e9e85e8a beskriver samme Google Maps-lancering som hovedhistorien. Den bør ikke vises som en separat historie på forsiden."
-  ],
-  "modelkald": 6,
+  "modelkald": 5,
   "kildehentninger": 3,
   "vaerktoejer": [
     {
@@ -39,22 +36,22 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://huggingface.co/blog/openrouter",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/16/google-maps-can-now-build-trip-itineraries-with-real-time-details-about-each-stop/",
+      "link": "https://www.theverge.com/tech/1034110/google-ask-maps-ai-trip-planning",
       "grundlag": "kildetekst"
     },
     {
       "link": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/",
       "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://huggingface.co/blog/openrouter",
+      "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
     "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/",
-    "https://www.theverge.com/tech/1034110/google-ask-maps-ai-trip-planning",
-    "https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion/"
+    "https://blog.google/innovation-and-ai/products/gemini-app/regional-voices/",
+    "https://www.theverge.com/tech/1034110/google-ask-maps-ai-trip-planning"
   ],
   "afventer_artikler": 98
 }
