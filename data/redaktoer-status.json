@@ -1,21 +1,20 @@
 {
-  "opdateret": "2026-11-18T07:53:51.845694+00:00",
+  "opdateret": "2026-11-18T17:30:51.294742+00:00",
   "status": "reserve",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
     "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/",
-    "https://openai.com/index/introducing-gpt-6-2-astra-sol",
-    "https://www.theverge.com/tech/1035756/google-spark-ai-tasks-free"
+    "https://huggingface.co/blog/rumble-2-flash",
+    "https://openai.com/index/introducing-gpt-6-2-astra-sol"
   ],
-  "input_fingerprint": "c7004bb2068ddd87",
+  "input_fingerprint": "3ff6f2f09ff9547d",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "kontrolproblemer": [
-    "En ny modellancering, GPT-6.2 Astra og Sol, fremgår af kandidatoversigten, men udgaven prioriterer i stedet en bredere udrulning af en eksisterende model uden at forklare fravalget. Undersøg lanceringens fulde kilder før udvælgelsen; RSS-resuméerne er ikke tilstrækkelige til en artikel.",
-    "De to kandidater om GPT-6.2 Astra og Sol beskriver samme lancering og skal samles som én historie, hvis den vælges."
+    "En væsentlig modellancering er ikke undersøgt eller begrundet fravalgt: GPT-6.2 Astra og Sol optræder i kandidatoversigten, mens Sunos appfunktion er valgt som hovedhistorie. Læs kilderne og vurder lanceringen før udgivelse. OpenAI-opslaget og Simon Willisons omtale handler om samme lancering, ikke to historier."
   ],
   "modelkald": 6,
-  "kildehentninger": 2,
+  "kildehentninger": 3,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -26,7 +25,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -40,18 +39,22 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://techcrunch.com/2026/11/17/as-decision-model-use-skyrockets-is-customization-is-the-next-frontier/",
+      "link": "https://huggingface.co/blog/rumble-2-flash",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
-      "grundlag": "rss_resume"
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1036415/suno-visuals-ai-generated-video-images-feature",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://suno.com/blog/introducing-visuals",
+      "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
     "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/",
-    "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
-    "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/"
+    "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
+    "https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling"
   ],
-  "afventer_artikler": 99
+  "afventer_artikler": 100
 }
