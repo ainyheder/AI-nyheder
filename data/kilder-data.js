@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-19T13:47:54.248644+00:00",
- "artikler_i_alt": 93,
+ "opdateret": "2026-11-19T23:12:19.344731+00:00",
+ "artikler_i_alt": 85,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -111,18 +111,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 6,
-   "som_ekstra": 5,
+   "i_listen": 5,
+   "som_ekstra": 3,
    "seneste": [
-    {
-     "rubrik": "Googles Genie 4 ændrer verdener undervejs",
-     "dato": "",
-     "foerst_set": "2026-11-19T01:59:29",
-     "link": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
-     "side": "",
-     "hvor": "under",
-     "under": "Genie 4 ændrer digitale verdener undervejs"
-    },
     {
      "rubrik": "Google lancerer Gemini 4 Neon",
      "dato": "",
@@ -133,31 +124,22 @@ window.KILDER_STATUS = {
      "under": "Google lancerer Gemini 4 Neon til komplekse opgaver"
     },
     {
-     "rubrik": "Google præsenterer Gemini 4 Hydrogen",
+     "rubrik": "Googles Genie 4 ændrer verdener undervejs",
      "dato": "",
-     "foerst_set": "2026-11-13T01:26:35",
-     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+     "foerst_set": "2026-11-19T01:59:29",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
      "side": "",
      "hvor": "under",
-     "under": "Gemini 4 Hydrogen erstatter Googles Flash-model"
+     "under": "Genie 4 ændrer digitale verdener undervejs"
     },
     {
-     "rubrik": "Gemini 4 Hydrogen kommer til Google Search",
+     "rubrik": "Google åbner Gemini 4 Carbon for betalende",
      "dato": "",
-     "foerst_set": "2026-11-13T01:26:35",
-     "link": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+     "foerst_set": "2026-11-10T21:56:03",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
      "side": "",
      "hvor": "under",
-     "under": "Gemini 4 Hydrogen erstatter Googles Flash-model"
-    },
-    {
-     "rubrik": "Google lancerer Gemini 4 Hydrogen til udviklere",
-     "dato": "",
-     "foerst_set": "2026-11-13T01:26:35",
-     "link": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 4 Hydrogen erstatter Googles Flash-model"
+     "under": "Google åbner Gemini 4 Carbon for betalende brugere"
     },
     {
      "rubrik": "Google bringer Gemini til Android Go-telefoner",
@@ -203,25 +185,12 @@ window.KILDER_STATUS = {
      "side": "artikel/3dd10e847b99d7f7.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Gemini Live kommer til Apple CarPlay",
-     "dato": "2026-11-11T17:00:00",
-     "foerst_set": "2026-11-11T22:58:05",
-     "link": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-on-apple-carplay/",
-     "side": "artikel/0f008a805c574e46.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "Ars Technica AI",
-     3
-    ],
-    [
      "Google DeepMind",
-     2
+     3
     ],
     [
      "The Verge AI",
@@ -342,13 +311,13 @@ window.KILDER_STATUS = {
      "under": "Google lancerer Gemini 4 Neon til komplekse opgaver"
     },
     {
-     "rubrik": "Gemini 4 Hydrogen skal drive AI i Google-søgning",
+     "rubrik": "Gemini 4 Carbon åbner for alle",
      "dato": "",
-     "foerst_set": "2026-11-13T01:26:35",
-     "link": "https://simonwillison.net/2026/Nov/12/llm-gemini/",
+     "foerst_set": "2026-11-10T21:56:03",
+     "link": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
      "side": "",
      "hvor": "under",
-     "under": "Gemini 4 Hydrogen erstatter Googles Flash-model"
+     "under": "Google åbner Gemini 4 Carbon for betalende brugere"
     },
     {
      "rubrik": "Fable 5.2 fejlede på højeste ræsonnementsniveau",
@@ -399,11 +368,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google DeepMind",
-     1
-    ],
-    [
-     "Ars Technica AI",
-     1
+     2
     ],
     [
      "Anthropic News",
@@ -421,9 +386,45 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 38,
-   "som_ekstra": 5,
+   "i_listen": 33,
+   "som_ekstra": 7,
    "seneste": [
+    {
+     "rubrik": "Anthropic går på børsen med leverandører som ejere",
+     "dato": "",
+     "foerst_set": "2026-11-19T23:12:19.344731+00:00",
+     "link": "https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test/",
+     "side": "",
+     "hvor": "under",
+     "under": "Amazon og Google får store ejerandele i Anthropic"
+    },
+    {
+     "rubrik": "Anthropic-aktien stiger ved Nasdaq-debut",
+     "dato": "",
+     "foerst_set": "2026-11-19T23:12:19",
+     "link": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic er begyndt at handle på Nasdaq"
+    },
+    {
+     "rubrik": "Anthropic vil tilpasse AI-tempoet efter sikkerhed",
+     "dato": "",
+     "foerst_set": "2026-11-19T23:12:19",
+     "link": "https://techcrunch.com/2026/11/19/at-nasdaq-opening-bell-anthropic-ceo-recommits-to-pacing-ai-development/",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic er begyndt at handle på Nasdaq"
+    },
+    {
+     "rubrik": "Meta-ansatte advarer om samtaler på afveje i Muse",
+     "dato": "",
+     "foerst_set": "2026-11-19T23:12:19",
+     "link": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta-ansatte advarede om Muse og private data"
+    },
     {
      "rubrik": "Nvidia stopper chipsalg til Kina",
      "dato": "",
@@ -461,15 +462,6 @@ window.KILDER_STATUS = {
      "under": "Google Maps laver nu rejseplaner"
     },
     {
-     "rubrik": "Gemini 4 Hydrogen skal forstå sværere søgninger",
-     "dato": "",
-     "foerst_set": "2026-11-13T01:26:35",
-     "link": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 4 Hydrogen erstatter Googles Flash-model"
-    },
-    {
      "rubrik": "Anthropic lancerer Mythos 5.2 og Fable 5.2",
      "dato": "",
      "foerst_set": "2026-11-10T02:53:29",
@@ -479,20 +471,38 @@ window.KILDER_STATUS = {
      "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
     },
     {
+     "rubrik": "Gemini kan nu arbejde på din Mac",
+     "dato": "2026-11-19T18:09:11",
+     "foerst_set": "2026-11-19T23:12:19",
+     "link": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
+     "side": "artikel/ffcfd7e32e09e749.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Meta Muse Charm kan koste 300 dollar",
+     "dato": "2026-11-19T21:58:06",
+     "foerst_set": "2026-11-19T23:12:19",
+     "link": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/",
+     "side": "artikel/6b24f4e22080386e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic-aktier kan udløse 156 milliarder dollar",
+     "dato": "2026-11-19T19:10:45",
+     "foerst_set": "2026-11-19T23:12:19",
+     "link": "https://techcrunch.com/2026/11/19/anthropics-ipo-could-deliver-156-billion-to-charity/",
+     "side": "artikel/38cbde179199e5d6.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Nadella: AI-agenter kan ændre nettets reklamer",
      "dato": "2026-11-18T22:58:11",
      "foerst_set": "2026-11-19T01:59:29",
      "link": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web/",
      "side": "artikel/fac74cc95111f0ba.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Anthropic sætter kursen for rekordstor børsnotering",
-     "dato": "2026-11-18T22:11:15",
-     "foerst_set": "2026-11-19T01:59:29",
-     "link": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
-     "side": "artikel/dcfcb32bd475feea.html",
      "hvor": "forside",
      "under": ""
     },
@@ -511,6 +521,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-19T01:59:29",
      "link": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/",
      "side": "artikel/5d67ac67da7b88b9.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic sætter kursen for rekordstor børsnotering",
+     "dato": "2026-11-18T22:11:15",
+     "foerst_set": "2026-11-19T01:59:29",
+     "link": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
+     "side": "artikel/dcfcb32bd475feea.html",
      "hvor": "forside",
      "under": ""
     },
@@ -558,39 +577,12 @@ window.KILDER_STATUS = {
      "side": "artikel/b26bbd76c789e330.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Nvidia fastholder åben AI efter Huang",
-     "dato": "2026-11-17T23:04:35",
-     "foerst_set": "2026-11-17T23:38:27",
-     "link": "https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit/",
-     "side": "artikel/74fa1f5e6e2f7677.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Amazon og Google får store ejerandele i Anthropic",
-     "dato": "2026-11-17T22:29:05",
-     "foerst_set": "2026-11-17T23:38:27",
-     "link": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo/",
-     "side": "artikel/fc1294d53116d356.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Model ML rejser penge til bankers AI-arbejde",
-     "dato": "2026-11-17T19:32:11",
-     "foerst_set": "2026-11-17T23:38:27",
-     "link": "https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work/",
-     "side": "artikel/4744f1cb7fc5fb5a.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     5
+     8
     ],
     [
      "Ars Technica AI",
@@ -621,8 +613,26 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 19,
-   "som_ekstra": 8,
+   "som_ekstra": 9,
    "seneste": [
+    {
+     "rubrik": "Anthropic børsnoteres med stifterne ved roret",
+     "dato": "",
+     "foerst_set": "2026-11-19T23:12:19.344731+00:00",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1037459/anthropic-ipo-safe-ai-reputation-power-structure",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic er begyndt at handle på Nasdaq"
+    },
+    {
+     "rubrik": "Meta kan tage 300 dollar for Muse Charm",
+     "dato": "",
+     "foerst_set": "2026-11-19T23:12:19",
+     "link": "https://www.theverge.com/tech/1038087/meta-muse-charm-ai-price",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta Muse Charm kan koste 300 dollar"
+    },
     {
      "rubrik": "Will Wright vil gøre minder til spilverden",
      "dato": "",
@@ -678,13 +688,13 @@ window.KILDER_STATUS = {
      "under": "ChatGPT Wallet kan købe varer for brugeren"
     },
     {
-     "rubrik": "Gemini 4 Hydrogen deler svære spørgsmål op",
+     "rubrik": "Google lancerer Gemini 4 Carbon med agent-sværm",
      "dato": "",
-     "foerst_set": "2026-11-13T01:26:35",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
+     "foerst_set": "2026-11-10T21:56:03",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
      "side": "",
      "hvor": "under",
-     "under": "Gemini 4 Hydrogen erstatter Googles Flash-model"
+     "under": "Google åbner Gemini 4 Carbon for betalende brugere"
     },
     {
      "rubrik": "Anthropic opgraderer Claude til svære tekniske opgaver",
@@ -694,6 +704,33 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
+    },
+    {
+     "rubrik": "Google lægger AI-samtaler på forsiden",
+     "dato": "2026-11-19T15:05:06",
+     "foerst_set": "2026-11-19T23:12:19",
+     "link": "https://www.theverge.com/tech/1038059/google-search-homepage-ai-chats",
+     "side": "artikel/84a5dc6d5cb4b105.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic er begyndt at handle på Nasdaq",
+     "dato": "2026-11-19T11:52:01",
+     "foerst_set": "2026-11-19T23:12:19",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1035384/anthropic-ipo-trading-nasdaq",
+     "side": "artikel/89e78470e0968472.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Apple søger ingeniør til ny AI-agent",
+     "dato": "2026-11-19T17:31:41",
+     "foerst_set": "2026-11-19T23:12:19",
+     "link": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
+     "side": "artikel/21b44fd34fd356ca.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Canva lader brugere slå AI-værktøjer fra",
@@ -706,7 +743,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "USA's politikere vil åbne for deepfake-søgsmål",
-     "dato": "2026-11-18T14:07:29",
+     "dato": "2026-11-18T19:07:29",
      "foerst_set": "2026-11-19T01:59:29",
      "link": "https://www.theverge.com/policy/1036935/congress-forced-arbitration-deepfakes-defiance-act",
      "side": "artikel/e365983d924d7b60.html",
@@ -715,7 +752,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Disneys Star Wars-figurer skal reagere på gæster",
-     "dato": "2026-11-18T12:50:57",
+     "dato": "2026-11-18T17:50:57",
      "foerst_set": "2026-11-19T01:59:29",
      "link": "https://www.theverge.com/tech/1036729/disney-star-wars-anzellans-animatronic-amazon-aws-cloud-ai",
      "side": "artikel/a2950c7055438357.html",
@@ -724,7 +761,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Nvidias bestyrelse afviser Huangs tilbagevenden",
-     "dato": "2026-11-18T13:34:15",
+     "dato": "2026-11-18T18:34:15",
      "foerst_set": "2026-11-19T01:59:29",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1036776/nvidia-earnings-kress-jensen-huang-petition",
      "side": "artikel/ee402172e0e23c3f.html",
@@ -751,7 +788,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Nvidia og AMD sælger flere AI-chips",
-     "dato": "2026-11-18T10:44:02",
+     "dato": "2026-11-18T15:44:02",
      "foerst_set": "2026-11-18T17:30:51",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1036549/nvidia-amd-earnings-fall-2026-chips-pause-frontier-models",
      "side": "artikel/ca77971be0f13878.html",
@@ -775,46 +812,23 @@ window.KILDER_STATUS = {
      "side": "artikel/a1592a2be395aeb6.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Apple tester daglige grænser for Siri AI",
-     "dato": "2026-11-16T19:24:40",
-     "foerst_set": "2026-11-17T03:06:49",
-     "link": "https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription",
-     "side": "artikel/13db3cf78d533313.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google Maps laver nu rejseplaner",
-     "dato": "2026-11-16T14:00:00",
-     "foerst_set": "2026-11-16T18:51:00",
-     "link": "https://www.theverge.com/tech/1034110/google-ask-maps-ai-trip-planning",
-     "side": "artikel/2e66b242e3e51de2.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Audible giver lydbøger AI-genererede lydintroduktioner",
-     "dato": "2026-11-16T14:00:00",
-     "foerst_set": "2026-11-16T18:51:00",
-     "link": "https://www.theverge.com/tech/1034083/audible-audio-discovery-ai-feature-availability",
-     "side": "artikel/b65376beb7eacaa8.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     5
-    ],
-    [
-     "Ars Technica AI",
-     2
+     8
     ],
     [
      "Google Gemini",
+     1
+    ],
+    [
+     "Ars Technica AI",
+     1
+    ],
+    [
+     "Google DeepMind",
      1
     ],
     [
@@ -833,7 +847,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 10,
+   "i_listen": 7,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -846,15 +860,6 @@ window.KILDER_STATUS = {
      "under": "USA vil begrænse fjernadgang til AI-chips"
     },
     {
-     "rubrik": "FAA udvider AI-rådgivning til hele USA",
-     "dato": "",
-     "foerst_set": "2026-11-14T01:00:14.998513+00:00",
-     "link": "https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
-     "side": "",
-     "hvor": "under",
-     "under": "FAA udbreder AI-råd til hele USA"
-    },
-    {
      "rubrik": "OpenAI-bestyrelsesmedlem frygter snarlig AI-overtagelse",
      "dato": "",
      "foerst_set": "2026-11-14T01:00:14.998513+00:00",
@@ -862,6 +867,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI-bestyrelsesmedlem advarer om muligt AI-overtag"
+    },
+    {
+     "rubrik": "Doritos-pose udløste Omnilert-alarm og politirykning",
+     "dato": "2026-11-19T20:19:28",
+     "foerst_set": "2026-11-19T23:12:19",
+     "link": "https://arstechnica.com/tech-policy/2026/11/traumatized-teens-sue-school-cops-after-doritos-bag-triggers-ai-gun-alert/",
+     "side": "artikel/4feac83240203b8c.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Meta-ansatte advarede om Muse og private data",
@@ -916,42 +930,6 @@ window.KILDER_STATUS = {
      "side": "artikel/82a25efe6c9f3f01.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Gemini 4 Hydrogen erstatter Googles Flash-model",
-     "dato": "2026-11-12T19:23:03",
-     "foerst_set": "2026-11-13T01:26:35",
-     "link": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
-     "side": "artikel/4140b7449a1cdcfd.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "FAA udbreder AI-råd til hele USA",
-     "dato": "2026-11-12T22:28:47",
-     "foerst_set": "2026-11-13T01:26:35",
-     "link": "https://arstechnica.com/ai/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
-     "side": "artikel/37feba6fef9d392b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Googles AI-søgning udløser protester fra familier",
-     "dato": "2026-11-12T18:57:45",
-     "foerst_set": "2026-11-13T01:26:35",
-     "link": "https://arstechnica.com/tech-policy/2026/11/families-fight-to-keep-googles-disturbing-ai-off-school-issued-chromebooks/",
-     "side": "artikel/c9fc570fadc2fd46.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google åbner for forudbestilling af Gemini-briller",
-     "dato": "2026-11-12T14:50:17",
-     "foerst_set": "2026-11-12T17:01:28",
-     "link": "https://arstechnica.com/google/2026/11/google-pushes-privacy-angle-as-gemini-powered-smartglasses-debut-starting-at-395/",
-     "side": "artikel/b5e8f41e03cae59b.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -960,19 +938,7 @@ window.KILDER_STATUS = {
      3
     ],
     [
-     "Google Gemini",
-     3
-    ],
-    [
      "The Verge AI",
-     2
-    ],
-    [
-     "Simon Willison AI",
-     1
-    ],
-    [
-     "Google DeepMind",
      1
     ]
    ]
@@ -1057,20 +1023,20 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-   "hentet": 0,
-   "i_listen": 2,
-   "som_ekstra": 1,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 15,
+   "i_listen": 3,
+   "som_ekstra": 0,
    "seneste": [
     {
-     "rubrik": "Google lancerer Gemini 4 Hydrogen",
-     "dato": "",
-     "foerst_set": "2026-11-13T12:33:55",
-     "link": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 4 Hydrogen erstatter Googles Flash-model"
+     "rubrik": "Google lancerer Gemini 4 Neon til komplekse opgaver",
+     "dato": "2026-11-18T21:35:43",
+     "foerst_set": "2026-11-19T01:59:29",
+     "link": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+     "side": "artikel/88e5a492fec09122.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Genie 4 ændrer digitale verdener undervejs",
@@ -1082,11 +1048,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Google lancerer Gemini 4 Neon til komplekse opgaver",
-     "dato": "2026-11-18T21:35:43",
-     "foerst_set": "2026-11-19T01:59:29",
-     "link": "https://deepmind.google/blog/introducing-gemini-4-neon/",
-     "side": "artikel/88e5a492fec09122.html",
+     "rubrik": "Google åbner Gemini 4 Carbon for betalende brugere",
+     "dato": "2026-11-10T16:03:47",
+     "foerst_set": "2026-11-10T21:56:03",
+     "link": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+     "side": "artikel/e38c92a7cefc59fe.html",
      "hvor": "forside",
      "under": ""
     }
@@ -1094,14 +1060,14 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google Gemini",
-     2
+     3
     ],
     [
      "Simon Willison AI",
-     1
+     2
     ],
     [
-     "Ars Technica AI",
+     "The Verge AI",
      1
     ]
    ]

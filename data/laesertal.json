@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-11-19T14:00:20.877243+00:00",
+  "opdateret": "2026-11-19T23:24:24.393793+00:00",
   "dage": 7,
   "serie_dage": 30,
   "udgivne_temaer": {
@@ -68,7 +68,7 @@
           5,
           4,
           9,
-          1
+          3
         ]
       },
       {
@@ -103,7 +103,7 @@
           6,
           5,
           6,
-          1
+          3
         ]
       },
       {
@@ -138,7 +138,7 @@
           4,
           3,
           4,
-          0
+          1
         ]
       },
       {
@@ -173,7 +173,7 @@
           1,
           1,
           3,
-          0
+          2
         ]
       },
       {
@@ -249,15 +249,47 @@
     ]
   },
   "maaling": "ok",
-  "besoeg_i_alt": 0,
-  "sidevisninger_i_alt": 0,
+  "besoeg_i_alt": 37,
+  "sidevisninger_i_alt": 56,
   "ai_chat_besoeg": 0,
-  "sider": [],
-  "henvisere": [],
+  "sider": [
+    {
+      "sti": "/",
+      "besoeg": 37,
+      "visninger": 56
+    }
+  ],
+  "henvisere": [
+    {
+      "fra": "direkte",
+      "besoeg": 36
+    },
+    {
+      "fra": "safe.duckduckgo.com",
+      "besoeg": 1
+    }
+  ],
   "ai_chats": [],
-  "sidehenvisere": {},
+  "sidehenvisere": {
+    "/": [
+      {
+        "fra": "direkte",
+        "besoeg": 36,
+        "visninger": 36
+      },
+      {
+        "fra": "herfra selv",
+        "besoeg": 0,
+        "visninger": 19
+      },
+      {
+        "fra": "safe.duckduckgo.com",
+        "besoeg": 1,
+        "visninger": 1
+      }
+    ]
+  },
   "faste_uden_besoeg": [
-    "/",
     "/uge.html",
     "/vaerktoejer.html",
     "/faq.html",
@@ -413,7 +445,7 @@
     {
       "dato": "2026-11-19",
       "besoeg": 0,
-      "visninger": 0
+      "visninger": 10
     }
   ],
   "artikler": [],
