@@ -1,43 +1,21 @@
 {
-  "opdateret": "2026-11-19T01:59:29.336973+00:00",
-  "status": "godkendt",
+  "opdateret": "2026-11-19T13:47:54.248644+00:00",
+  "status": "reserve",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
     "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/",
-    "https://huggingface.co/blog/rumble-2-flash",
-    "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+    "https://deepmind.google/blog/genie-4-is-now-available/",
+    "https://huggingface.co/blog/rumble-2-flash"
   ],
-  "input_fingerprint": "73c2d461b85a86ae",
-  "redaktionsnote": "Kun to hovedhistorier har læste, tilstrækkelige kilder. Andre kandidater afventer kildegennemgang; gårsdagens GPT-6.2-lancering genvælges ikke af vane.",
-  "beslutninger": [
-    {
-      "id": "52f6bc9a43b3606d",
-      "begrundelse": "Genie 4 er en ny verdensmodel, der giver brugere mulighed for at ændre interaktive omgivelser undervejs og tilføjer lyd. Den konkrete nye modeludgivelse fortjener førstepladsen.",
-      "nyt_siden_sidst": "Google åbner for første gang Genie 4 i Project Genie for kvalificerede AI Ultra-abonnenter. Modellen kan ifølge Google ændre scener med tekst undervejs og skabe lyd, der følger handlingen.",
-      "skriveopgave": "Rubrik: 'Googles Genie 4 lader dig ændre en AI-verden, mens du udforsker den'. Forklar verdensmodellen og giv konkrete eksempler på ændringer og lyd i korte afsnit med mellemoverskrifter. Beskriv Ultra-adgang og Pro-venteliste samt at Genie 3 fortsat tilbyder længere forløb. Googles præstationsløfter er ikke uafhængigt testet; nævn kendte begrænsninger i fysik, lyd og vedvarende scener.",
-      "kilder": [
-        "52f6bc9a43b3606d"
-      ],
-      "samme_historie": [],
-      "link": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
-      "rubrik": "Googles Genie 4 ændrer verdener undervejs"
-    },
-    {
-      "id": "5b89a2db7f60ae90",
-      "begrundelse": "Rumble-2-Flash er en ny, lille model til talegenkendelse med åbne vægte og understøttelse af mere end 40 sprog. Den giver udviklere et konkret alternativ, de kan køre selv.",
-      "nyt_siden_sidst": "Reson8 frigiver Rumble-2-Flash med 0,5 milliarder parametre under Apache 2.0 og tilbyder også adgang via sin API. Lanceringen har ikke været hovedhistorie på de oplyste forsider.",
-      "skriveopgave": "Rubrik: 'Ny lille talemodel skriver tale på over 40 sprog til tekst'. Forklar i korte afsnit med mellemoverskrifter, hvad talegenkendelse og åbne vægte betyder, og hvordan modellen kan bruges. Gengiv relevante fejlprocenter med testens omfang og forklar, at tallene er producentens sammenligninger, ikke en selvstændig test; lov ikke dansk understøttelse uden belæg.",
-      "kilder": [
-        "5b89a2db7f60ae90"
-      ],
-      "samme_historie": [],
-      "link": "https://huggingface.co/blog/rumble-2-flash",
-      "rubrik": "Rumble-2-Flash skriver tale på over 40 sprog"
-    }
+  "input_fingerprint": "6e999aeab3068228",
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "kontrolproblemer": [
+    "Kandidatoversigten indeholder en selvstændig Neon-historie om Willisons sammenligning (02f125d9c6cc4401), som allerede indgår i hovedhistorien. Saml omtalen, og undgå en ekstra plads på forsiden; prissammenligningen er ikke en separat prisændring.",
+    "Genie-artiklens betydningsfelt hævder, at verden før kun kunne beskrives før oplevelsen begyndte. Kilden beskriver også ændringer undervejs i Genie 3 og dokumenterer ikke den generelle modsætning."
   ],
   "modelkald": 6,
-  "kildehentninger": 2,
+  "kildehentninger": 3,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -52,7 +30,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -62,16 +40,22 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+      "link": "https://deepmind.google/blog/introducing-gemini-4-neon/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://huggingface.co/blog/rumble-2-flash",
+      "link": "https://simonwillison.net/2026/Nov/18/llm-gemini/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://deepmind.google/blog/genie-4-is-now-available/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
+    "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/",
+    "https://deepmind.google/blog/genie-4-is-now-available/",
     "https://huggingface.co/blog/rumble-2-flash"
   ],
-  "afventer_artikler": 113
+  "afventer_artikler": 101
 }
