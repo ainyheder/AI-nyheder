@@ -1,10 +1,9 @@
 window.LAESERTAL = {
- "opdateret": "2026-11-18T17:48:58.070798+00:00",
+ "opdateret": "2026-11-19T02:13:44.070570+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
   "datoer": [
-   "2026-10-20",
    "2026-10-21",
    "2026-10-22",
    "2026-10-23",
@@ -33,13 +32,13 @@ window.LAESERTAL = {
    "2026-11-15",
    "2026-11-16",
    "2026-11-17",
-   "2026-11-18"
+   "2026-11-18",
+   "2026-11-19"
   ],
   "serier": [
    {
     "navn": "Penge & marked",
     "tal": [
-     9,
      5,
      7,
      1,
@@ -68,13 +67,13 @@ window.LAESERTAL = {
      1,
      5,
      4,
-     4
+     7,
+     1
     ]
    },
    {
     "navn": "Hverdags-AI",
     "tal": [
-     2,
      1,
      6,
      0,
@@ -103,13 +102,13 @@ window.LAESERTAL = {
      0,
      6,
      5,
-     3
+     6,
+     0
     ]
    },
    {
     "navn": "Samfund & etik",
     "tal": [
-     3,
      4,
      5,
      2,
@@ -138,13 +137,13 @@ window.LAESERTAL = {
      0,
      4,
      3,
-     1
+     4,
+     0
     ]
    },
    {
     "navn": "Lanceringer",
     "tal": [
-     8,
      5,
      2,
      2,
@@ -173,13 +172,13 @@ window.LAESERTAL = {
      0,
      1,
      1,
+     3,
      0
     ]
    },
    {
     "navn": "Politik & jura",
     "tal": [
-     5,
      2,
      3,
      2,
@@ -208,13 +207,13 @@ window.LAESERTAL = {
      1,
      2,
      0,
+     0,
      0
     ]
    },
    {
     "navn": "Forskning",
     "tal": [
-     2,
      1,
      2,
      1,
@@ -243,26 +242,27 @@ window.LAESERTAL = {
      0,
      0,
      0,
-     1
+     1,
+     0
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 42,
- "sidevisninger_i_alt": 59,
+ "besoeg_i_alt": 40,
+ "sidevisninger_i_alt": 57,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 42,
-   "visninger": 59
+   "besoeg": 40,
+   "visninger": 57
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 41
+   "besoeg": 39
   },
   {
    "fra": "safe.duckduckgo.com",
@@ -274,8 +274,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 41,
-    "visninger": 41
+    "besoeg": 39,
+    "visninger": 39
    },
    {
     "fra": "herfra selv",
@@ -298,11 +298,6 @@ window.LAESERTAL = {
  ],
  "serie": [
   {
-   "dato": "2026-10-20",
-   "besoeg": 100,
-   "visninger": 100
-  },
-  {
    "dato": "2026-10-21",
    "besoeg": 0,
    "visninger": 0
@@ -310,7 +305,7 @@ window.LAESERTAL = {
   {
    "dato": "2026-10-22",
    "besoeg": 0,
-   "visninger": 100
+   "visninger": 10
   },
   {
    "dato": "2026-10-23",
@@ -324,8 +319,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-10-25",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 10
   },
   {
    "dato": "2026-10-26",
@@ -354,8 +349,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-10-31",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 10
   },
   {
    "dato": "2026-11-01",
@@ -370,7 +365,7 @@ window.LAESERTAL = {
   {
    "dato": "2026-11-03",
    "besoeg": 0,
-   "visninger": 0
+   "visninger": 10
   },
   {
    "dato": "2026-11-04",
@@ -384,13 +379,13 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-11-06",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 20,
+   "visninger": 20
   },
   {
    "dato": "2026-11-07",
    "besoeg": 0,
-   "visninger": 0
+   "visninger": 10
   },
   {
    "dato": "2026-11-08",
@@ -399,8 +394,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-11-09",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 20
   },
   {
    "dato": "2026-11-10",
@@ -409,13 +404,13 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-11-11",
-   "besoeg": 0,
-   "visninger": 100
+   "besoeg": 10,
+   "visninger": 30
   },
   {
    "dato": "2026-11-12",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 10
   },
   {
    "dato": "2026-11-13",
@@ -439,11 +434,16 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-11-17",
-   "besoeg": 100,
-   "visninger": 100
+   "besoeg": 20,
+   "visninger": 20
   },
   {
    "dato": "2026-11-18",
+   "besoeg": 0,
+   "visninger": 0
+  },
+  {
+   "dato": "2026-11-19",
    "besoeg": 0,
    "visninger": 0
   }

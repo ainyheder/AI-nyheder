@@ -1,6 +1,6 @@
 {
-  "opdateret": "2026-11-18T17:30:51.294742+00:00",
-  "status": "reserve",
+  "opdateret": "2026-11-19T01:59:29.336973+00:00",
+  "status": "godkendt",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
@@ -8,13 +8,36 @@
     "https://huggingface.co/blog/rumble-2-flash",
     "https://openai.com/index/introducing-gpt-6-2-astra-sol"
   ],
-  "input_fingerprint": "3ff6f2f09ff9547d",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "kontrolproblemer": [
-    "En væsentlig modellancering er ikke undersøgt eller begrundet fravalgt: GPT-6.2 Astra og Sol optræder i kandidatoversigten, mens Sunos appfunktion er valgt som hovedhistorie. Læs kilderne og vurder lanceringen før udgivelse. OpenAI-opslaget og Simon Willisons omtale handler om samme lancering, ikke to historier."
+  "input_fingerprint": "73c2d461b85a86ae",
+  "redaktionsnote": "Kun to hovedhistorier har læste, tilstrækkelige kilder. Andre kandidater afventer kildegennemgang; gårsdagens GPT-6.2-lancering genvælges ikke af vane.",
+  "beslutninger": [
+    {
+      "id": "52f6bc9a43b3606d",
+      "begrundelse": "Genie 4 er en ny verdensmodel, der giver brugere mulighed for at ændre interaktive omgivelser undervejs og tilføjer lyd. Den konkrete nye modeludgivelse fortjener førstepladsen.",
+      "nyt_siden_sidst": "Google åbner for første gang Genie 4 i Project Genie for kvalificerede AI Ultra-abonnenter. Modellen kan ifølge Google ændre scener med tekst undervejs og skabe lyd, der følger handlingen.",
+      "skriveopgave": "Rubrik: 'Googles Genie 4 lader dig ændre en AI-verden, mens du udforsker den'. Forklar verdensmodellen og giv konkrete eksempler på ændringer og lyd i korte afsnit med mellemoverskrifter. Beskriv Ultra-adgang og Pro-venteliste samt at Genie 3 fortsat tilbyder længere forløb. Googles præstationsløfter er ikke uafhængigt testet; nævn kendte begrænsninger i fysik, lyd og vedvarende scener.",
+      "kilder": [
+        "52f6bc9a43b3606d"
+      ],
+      "samme_historie": [],
+      "link": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+      "rubrik": "Googles Genie 4 ændrer verdener undervejs"
+    },
+    {
+      "id": "5b89a2db7f60ae90",
+      "begrundelse": "Rumble-2-Flash er en ny, lille model til talegenkendelse med åbne vægte og understøttelse af mere end 40 sprog. Den giver udviklere et konkret alternativ, de kan køre selv.",
+      "nyt_siden_sidst": "Reson8 frigiver Rumble-2-Flash med 0,5 milliarder parametre under Apache 2.0 og tilbyder også adgang via sin API. Lanceringen har ikke været hovedhistorie på de oplyste forsider.",
+      "skriveopgave": "Rubrik: 'Ny lille talemodel skriver tale på over 40 sprog til tekst'. Forklar i korte afsnit med mellemoverskrifter, hvad talegenkendelse og åbne vægte betyder, og hvordan modellen kan bruges. Gengiv relevante fejlprocenter med testens omfang og forklar, at tallene er producentens sammenligninger, ikke en selvstændig test; lov ikke dansk understøttelse uden belæg.",
+      "kilder": [
+        "5b89a2db7f60ae90"
+      ],
+      "samme_historie": [],
+      "link": "https://huggingface.co/blog/rumble-2-flash",
+      "rubrik": "Rumble-2-Flash skriver tale på over 40 sprog"
+    }
   ],
   "modelkald": 6,
-  "kildehentninger": 3,
+  "kildehentninger": 2,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -29,7 +52,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -39,22 +62,16 @@
   ],
   "kildegrundlag": [
     {
+      "link": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+      "grundlag": "kildetekst"
+    },
+    {
       "link": "https://huggingface.co/blog/rumble-2-flash",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1036415/suno-visuals-ai-generated-video-images-feature",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://suno.com/blog/introducing-visuals",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/",
-    "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
-    "https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling"
+    "https://huggingface.co/blog/rumble-2-flash"
   ],
-  "afventer_artikler": 100
+  "afventer_artikler": 113
 }
