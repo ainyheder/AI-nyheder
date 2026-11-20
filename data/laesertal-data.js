@@ -1,10 +1,9 @@
 window.LAESERTAL = {
- "opdateret": "2026-11-19T23:24:24.393793+00:00",
+ "opdateret": "2026-11-20T07:48:17.827185+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
   "datoer": [
-   "2026-10-21",
    "2026-10-22",
    "2026-10-23",
    "2026-10-24",
@@ -33,13 +32,13 @@ window.LAESERTAL = {
    "2026-11-16",
    "2026-11-17",
    "2026-11-18",
-   "2026-11-19"
+   "2026-11-19",
+   "2026-11-20"
   ],
   "serier": [
    {
     "navn": "Penge & marked",
     "tal": [
-     5,
      7,
      1,
      1,
@@ -68,13 +67,13 @@ window.LAESERTAL = {
      5,
      4,
      9,
-     3
+     3,
+     0
     ]
    },
    {
     "navn": "Hverdags-AI",
     "tal": [
-     1,
      6,
      0,
      1,
@@ -103,13 +102,13 @@ window.LAESERTAL = {
      6,
      5,
      6,
-     3
+     4,
+     0
     ]
    },
    {
     "navn": "Samfund & etik",
     "tal": [
-     4,
      5,
      2,
      0,
@@ -138,13 +137,13 @@ window.LAESERTAL = {
      4,
      3,
      4,
+     1,
      1
     ]
    },
    {
     "navn": "Lanceringer",
     "tal": [
-     5,
      2,
      2,
      1,
@@ -173,13 +172,13 @@ window.LAESERTAL = {
      1,
      1,
      3,
-     2
+     2,
+     0
     ]
    },
    {
     "navn": "Politik & jura",
     "tal": [
-     2,
      3,
      2,
      1,
@@ -208,13 +207,13 @@ window.LAESERTAL = {
      2,
      0,
      1,
+     0,
      0
     ]
    },
    {
     "navn": "Forskning",
     "tal": [
-     1,
      2,
      1,
      1,
@@ -243,26 +242,27 @@ window.LAESERTAL = {
      0,
      0,
      1,
+     0,
      0
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 37,
- "sidevisninger_i_alt": 56,
+ "besoeg_i_alt": 38,
+ "sidevisninger_i_alt": 61,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 37,
-   "visninger": 56
+   "besoeg": 38,
+   "visninger": 61
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 36
+   "besoeg": 37
   },
   {
    "fra": "safe.duckduckgo.com",
@@ -274,13 +274,13 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 36,
-    "visninger": 36
+    "besoeg": 37,
+    "visninger": 37
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 19
+    "visninger": 23
    },
    {
     "fra": "safe.duckduckgo.com",
@@ -297,11 +297,6 @@ window.LAESERTAL = {
   "/cookies.html"
  ],
  "serie": [
-  {
-   "dato": "2026-10-21",
-   "besoeg": 0,
-   "visninger": 0
-  },
   {
    "dato": "2026-10-22",
    "besoeg": 0,
@@ -444,6 +439,11 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-11-19",
+   "besoeg": 0,
+   "visninger": 10
+  },
+  {
+   "dato": "2026-11-20",
    "besoeg": 0,
    "visninger": 10
   }
