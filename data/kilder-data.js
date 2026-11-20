@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-20T07:41:24.873945+00:00",
- "artikler_i_alt": 84,
+ "opdateret": "2026-11-20T17:11:55.623291+00:00",
+ "artikler_i_alt": 85,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -12,7 +12,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 2,
+   "i_listen": 3,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -23,6 +23,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Anthropic sætter kursen for rekordstor børsnotering"
+    },
+    {
+     "rubrik": "Anthropic har afsluttet sin børsnotering",
+     "dato": "2026-11-20T00:00:00",
+     "foerst_set": "2026-11-20T17:11:55",
+     "link": "https://www.anthropic.com/news/ipo-close",
+     "side": "artikel/462db626dd31f818.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Claude Fable 5.2 skal løse svære kodeopgaver",
@@ -68,7 +77,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 3,
+   "i_listen": 2,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -88,15 +97,6 @@ window.KILDER_STATUS = {
      "side": "artikel/9bde5caa0375c81d.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Mistral bygger taleagent i én pipeline",
-     "dato": "2026-10-20T12:00:22",
-     "foerst_set": "2026-10-20T20:06:38",
-     "link": "https://mistral.ai/news/voxtral-3/",
-     "side": "artikel/90e3b37a09eaeb60.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": []
@@ -112,7 +112,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 5,
-   "som_ekstra": 3,
+   "som_ekstra": 4,
    "seneste": [
     {
      "rubrik": "Gemini kan nu bruge computeren på Mac",
@@ -124,6 +124,15 @@ window.KILDER_STATUS = {
      "under": "Gemini kan nu arbejde på din Mac"
     },
     {
+     "rubrik": "Googles Genie 4 ændrer verdener undervejs",
+     "dato": "",
+     "foerst_set": "2026-11-19T01:59:29",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+     "side": "",
+     "hvor": "under",
+     "under": "Genie 4 ændrer digitale verdener undervejs"
+    },
+    {
      "rubrik": "Google lancerer Gemini 4 Neon",
      "dato": "",
      "foerst_set": "2026-11-19T01:59:29",
@@ -133,13 +142,13 @@ window.KILDER_STATUS = {
      "under": "Google lancerer Gemini 4 Neon til komplekse opgaver"
     },
     {
-     "rubrik": "Googles Genie 4 ændrer verdener undervejs",
+     "rubrik": "Google åbner Gemini 4 Carbon for betalende",
      "dato": "",
-     "foerst_set": "2026-11-19T01:59:29",
-     "link": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+     "foerst_set": "2026-11-10T21:56:03",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
      "side": "",
      "hvor": "under",
-     "under": "Genie 4 ændrer digitale verdener undervejs"
+     "under": "Google åbner Gemini 4 Carbon for betalende brugere"
     },
     {
      "rubrik": "Google bringer Gemini til Android Go-telefoner",
@@ -190,7 +199,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google DeepMind",
-     2
+     3
     ],
     [
      "TechCrunch AI",
@@ -237,7 +246,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 5,
+   "i_listen": 4,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -275,15 +284,6 @@ window.KILDER_STATUS = {
      "side": "artikel/f052c6845a6ebe45.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "BotPsy bruger værktøjer på egen enhed",
-     "dato": "2026-11-11T05:01:16",
-     "foerst_set": "2026-11-11T07:00:37",
-     "link": "https://huggingface.co/blog/qvac/botpsy",
-     "side": "artikel/4c5ef8a2d9eadfaa.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": []
@@ -299,7 +299,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 4,
-   "som_ekstra": 2,
+   "som_ekstra": 3,
    "seneste": [
     {
      "rubrik": "Google placerer Gemini 4 Neon mellem modeller",
@@ -309,6 +309,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google lancerer Gemini 4 Neon til komplekse opgaver"
+    },
+    {
+     "rubrik": "Gemini 4 Carbon åbner for alle",
+     "dato": "",
+     "foerst_set": "2026-11-10T21:56:03",
+     "link": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+     "side": "",
+     "hvor": "under",
+     "under": "Google åbner Gemini 4 Carbon for betalende brugere"
     },
     {
      "rubrik": "Fable 5.2 fejlede på højeste ræsonnementsniveau",
@@ -359,7 +368,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google DeepMind",
-     1
+     2
     ],
     [
      "Anthropic News",
@@ -377,7 +386,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 33,
+   "i_listen": 34,
    "som_ekstra": 6,
    "seneste": [
     {
@@ -469,6 +478,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
+    },
+    {
+     "rubrik": "Flowtica og Anker lader AI skrive mødenoter",
+     "dato": "2026-11-20T14:00:00",
+     "foerst_set": "2026-11-20T17:11:55",
+     "link": "https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter/",
+     "side": "artikel/a2263c052fc471a0.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Gemini kan nu arbejde på din Mac",
@@ -568,15 +586,6 @@ window.KILDER_STATUS = {
      "side": "artikel/11fb9fc05fb19324.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Altman advarer mod at overlade magten til AI",
-     "dato": "2026-11-18T16:59:00",
-     "foerst_set": "2026-11-18T17:30:51",
-     "link": "https://techcrunch.com/2026/11/18/sam-altman-warns-against-a-future-where-ai-not-humans-calls-the-shots/",
-     "side": "artikel/b26bbd76c789e330.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -613,7 +622,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 19,
-   "som_ekstra": 11,
+   "som_ekstra": 12,
    "seneste": [
     {
      "rubrik": "Gemini kan nu bruge apps på Mac",
@@ -706,6 +715,15 @@ window.KILDER_STATUS = {
      "under": "ChatGPT Wallet kan købe varer for brugeren"
     },
     {
+     "rubrik": "Google lancerer Gemini 4 Carbon med agent-sværm",
+     "dato": "",
+     "foerst_set": "2026-11-10T21:56:03",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
+     "side": "",
+     "hvor": "under",
+     "under": "Google åbner Gemini 4 Carbon for betalende brugere"
+    },
+    {
      "rubrik": "Anthropic opgraderer Claude til svære tekniske opgaver",
      "dato": "",
      "foerst_set": "2026-11-09T19:04:48",
@@ -743,7 +761,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Canva lader brugere slå AI-værktøjer fra",
-     "dato": "2026-11-19T07:30:00",
+     "dato": "2026-11-19T12:30:00",
      "foerst_set": "2026-11-19T13:47:54",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button",
      "side": "artikel/708518498c68a5d2.html",
@@ -834,6 +852,10 @@ window.KILDER_STATUS = {
     ],
     [
      "Ars Technica AI",
+     1
+    ],
+    [
+     "Google DeepMind",
      1
     ],
     [
@@ -1028,12 +1050,21 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-   "hentet": 0,
-   "i_listen": 2,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 15,
+   "i_listen": 3,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Genie 4 ændrer digitale verdener undervejs",
+     "dato": "2026-11-18T18:13:42",
+     "foerst_set": "2026-11-19T01:59:29",
+     "link": "https://deepmind.google/blog/genie-4-is-now-available/",
+     "side": "artikel/5d2eb708222dfe77.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Google lancerer Gemini 4 Neon til komplekse opgaver",
      "dato": "2026-11-18T21:35:43",
@@ -1044,11 +1075,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Genie 4 ændrer digitale verdener undervejs",
-     "dato": "2026-11-18T18:13:42",
-     "foerst_set": "2026-11-19T01:59:29",
-     "link": "https://deepmind.google/blog/genie-4-is-now-available/",
-     "side": "artikel/5d2eb708222dfe77.html",
+     "rubrik": "Google åbner Gemini 4 Carbon for betalende brugere",
+     "dato": "2026-11-10T16:03:47",
+     "foerst_set": "2026-11-10T21:56:03",
+     "link": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+     "side": "artikel/e38c92a7cefc59fe.html",
      "hvor": "forside",
      "under": ""
     }
@@ -1056,10 +1087,14 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google Gemini",
-     2
+     3
     ],
     [
      "Simon Willison AI",
+     2
+    ],
+    [
+     "The Verge AI",
      1
     ]
    ]

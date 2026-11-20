@@ -1,6 +1,72 @@
 {
-  "opdateret": "2026-11-20T07:41:24.873945+00:00",
+  "opdateret": "2026-11-20T17:11:55.623291+00:00",
   "kladder": [
+    {
+      "titel": "Signal is blocking Gemini and Siri AI from reading your screen",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
+      "resume": "Signal is restricting the ability to take screenshots on Android and iOS devices in an effort to prevent AI agents from reading users' messages and other data. The agentic AI capabilities built into operating systems that analyze on-screen information to learn more about the user are \"undermining Signal's ability to independently guarantee privacy,\" Signal president […]",
+      "dato": "2026-11-20T07:30:47-05:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-20T17:11:55.623291+00:00",
+      "eget_foerst_set": "2026-11-20T17:11:55.623291+00:00",
+      "rubrik": "Signal begrænser Gemini og Siris adgang til beskeder",
+      "resume_da": "Appen begrænser skærmbilleder på Android og iOS for at forhindre AI-agenter i at læse beskeder og andre data.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Signal begrænser skærmbilleder for at forhindre AI-agenter i at læse brugernes beskeder.",
+        "forbehold": "Uddraget beskriver ikke de præcise begrænsninger på hver platform.",
+        "emne": "signal"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+      "link": "https://huggingface.co/blog/harness-adapters-at-scale",
+      "resume": "",
+      "dato": "2026-11-20T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-20T17:11:55.623291+00:00",
+      "eget_foerst_set": "2026-11-20T17:11:55.623291+00:00",
+      "rubrik": "Hugging Face introducerer harness adapters",
+      "resume_da": "De skal tilpasse AI-modeller til den ramme, de arbejder i, og forbedre ydelse og omkostninger.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Hugging Face introducerer harness adapters til at tilpasse modeller til deres arbejdsramme.",
+        "forbehold": "Materialet indeholder ingen konkrete resultater, metode eller adgangsoplysninger.",
+        "emne": "harness adapters"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
     {
       "titel": "Introducing GPT-6.2 Astra and Sol",
       "link": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
@@ -101,6 +167,39 @@
       ]
     },
     {
+      "titel": "Inside the Codex sandbox",
+      "link": "https://openai.com/index/inside-the-codex-sandbox",
+      "resume": "See how Codex runs commands on your machine while enforcing the filesystem and network limits you control across macOS, Linux, and Windows.",
+      "dato": "2026-11-18T08:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-11-19T01:59:29.336973+00:00",
+      "eget_foerst_set": "2026-11-19T01:59:29.336973+00:00",
+      "rubrik": "OpenAI forklarer begrænsningerne i Codex",
+      "resume_da": "Codex kan køre kommandoer på brugerens computer inden for brugerdefinerede grænser for filsystem og netværk på macOS, Linux og Windows.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "guide",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI beskriver, hvordan Codex kører kommandoer med brugerdefinerede filsystem- og netværksgrænser.",
+        "forbehold": "Materialet dokumenterer ikke, at funktionerne er nye eller uafhængigt sikkerhedstestede.",
+        "emne": "codex sandbox"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Introducing ChatGPT for Sales",
       "link": "https://openai.com/index/introducing-chatgpt-for-sales",
       "resume": "Explore the new Sales plugin and 30+ new and expanded partner plugins in ChatGPT to research prospects, prepare pitches, update your CRM, and move deals forward.",
@@ -134,31 +233,64 @@
       ]
     },
     {
-      "titel": "Inside the Codex sandbox",
-      "link": "https://openai.com/index/inside-the-codex-sandbox",
-      "resume": "See how Codex runs commands on your machine while enforcing the filesystem and network limits you control across macOS, Linux, and Windows.",
-      "dato": "2026-11-18T08:00:00+00:00",
+      "titel": "Deploying Daybreak Red",
+      "link": "https://openai.com/business/learn/deploying-daybreak-red",
+      "resume": "Explore a reference architecture for supervised security investigations with Daybreak Red, including safety controls, setup, and monitoring.",
+      "dato": "2026-11-19T00:00:00+00:00",
       "kilde": "OpenAI Blog",
       "kategori": "Hverdags-AI",
-      "foerst_set": "2026-11-19T01:59:29.336973+00:00",
-      "eget_foerst_set": "2026-11-19T01:59:29.336973+00:00",
-      "rubrik": "OpenAI forklarer begrænsningerne i Codex",
-      "resume_da": "Codex kan køre kommandoer på brugerens computer inden for brugerdefinerede grænser for filsystem og netværk på macOS, Linux og Windows.",
+      "foerst_set": "2026-11-20T07:41:24.873945+00:00",
+      "eget_foerst_set": "2026-11-20T07:41:24.873945+00:00",
+      "rubrik": "OpenAI viser plan for undersøgelser med Daybreak Red",
+      "resume_da": "Planen beskriver opsætning, overvågning og sikkerhedskontrol for sikkerhedsundersøgelser under opsyn.",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
         "nyhed": 2,
-        "betydning": 3,
+        "betydning": 2,
         "brugbarhed": 3,
         "dokumentation": 3,
         "dansk": 0,
         "type": "guide",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "OpenAI beskriver, hvordan Codex kører kommandoer med brugerdefinerede filsystem- og netværksgrænser.",
-        "forbehold": "Materialet dokumenterer ikke, at funktionerne er nye eller uafhængigt sikkerhedstestede.",
-        "emne": "codex sandbox"
+        "begrundelse": "OpenAI beskriver en referencearkitektur til sikkerhedsundersøgelser med Daybreak Red.",
+        "forbehold": "Uddraget indeholder ingen resultater fra praktisk brug.",
+        "emne": "daybreak red"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Research acceleration: The jagged frontier",
+      "link": "https://openai.com/index/research-acceleration-jagged-frontier",
+      "resume": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.",
+      "dato": "2026-11-18T08:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-19T01:59:29.336973+00:00",
+      "eget_foerst_set": "2026-11-19T01:59:29.336973+00:00",
+      "rubrik": "OpenAI undersøger kodeagenters rolle i AI-forskning",
+      "resume_da": "OpenAI måler, hvordan agenterne fremskynder forskning, men peger også på, at deres præstationer fortsat er ujævne.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI undersøger, hvordan kodningsagenter fremskynder AI-forskning, men fortsat præsterer ujævnt.",
+        "forbehold": "Materialet indeholder ingen måleresultater eller metode.",
+        "emne": "ai-forskning og kodningsagenter"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
@@ -200,105 +332,6 @@
       ]
     },
     {
-      "titel": "Astra for Law leads in legal intelligence",
-      "link": "https://openai.com/index/astra-law-6-2",
-      "resume": "Astra for Law ranked first in a launch evaluation spanning 24 areas of law. Every ChatGPT Enterprise customer can now request access.",
-      "dato": "2026-11-17T00:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-11-17T23:38:27.542092+00:00",
-      "eget_foerst_set": "2026-11-17T23:38:27.542092+00:00",
-      "rubrik": "OpenAI åbner for anmodninger om Astra for Law",
-      "resume_da": "Alle ChatGPT Enterprise-kunder kan anmode om adgang. Ifølge OpenAI blev værktøjet nummer ét i en evaluering ved lanceringen, som dækkede 24 retsområder.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "ChatGPT Enterprise-kunder kan anmode om adgang til Astra for Law, som ifølge OpenAI blev nummer ét i en juridisk evaluering.",
-        "forbehold": "Materialet beskriver ikke evalueringens metode eller sammenligningsgrundlag.",
-        "emne": "astra for law"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Deploying Daybreak Red",
-      "link": "https://openai.com/business/learn/deploying-daybreak-red",
-      "resume": "Explore a reference architecture for supervised security investigations with Daybreak Red, including safety controls, setup, and monitoring.",
-      "dato": "2026-11-19T00:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-11-20T07:41:24.873945+00:00",
-      "eget_foerst_set": "2026-11-20T07:41:24.873945+00:00",
-      "rubrik": "OpenAI viser plan for undersøgelser med Daybreak Red",
-      "resume_da": "Planen beskriver opsætning, overvågning og sikkerhedskontrol for sikkerhedsundersøgelser under opsyn.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "guide",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI beskriver en referencearkitektur til sikkerhedsundersøgelser med Daybreak Red.",
-        "forbehold": "Uddraget indeholder ingen resultater fra praktisk brug.",
-        "emne": "daybreak red"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Research acceleration: The jagged frontier",
-      "link": "https://openai.com/index/research-acceleration-jagged-frontier",
-      "resume": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.",
-      "dato": "2026-11-18T08:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Forskning",
-      "foerst_set": "2026-11-19T01:59:29.336973+00:00",
-      "eget_foerst_set": "2026-11-19T01:59:29.336973+00:00",
-      "rubrik": "OpenAI undersøger kodeagenters rolle i AI-forskning",
-      "resume_da": "OpenAI måler, hvordan agenterne fremskynder forskning, men peger også på, at deres præstationer fortsat er ujævne.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI undersøger, hvordan kodningsagenter fremskynder AI-forskning, men fortsat præsterer ujævnt.",
-        "forbehold": "Materialet indeholder ingen måleresultater eller metode.",
-        "emne": "ai-forskning og kodningsagenter"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Advancing chip design with OpenAI models",
       "link": "https://openai.com/index/advancing-chip-design-with-our-models",
       "resume": "OpenAI models optimized circuits used in Jalapeño silicon and improved RISC‑V core designs, showing progress in AI-assisted chip design with GPT‑6 Astra.",
@@ -327,6 +360,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Astra for Law leads in legal intelligence",
+      "link": "https://openai.com/index/astra-law-6-2",
+      "resume": "Astra for Law ranked first in a launch evaluation spanning 24 areas of law. Every ChatGPT Enterprise customer can now request access.",
+      "dato": "2026-11-17T00:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-11-17T23:38:27.542092+00:00",
+      "eget_foerst_set": "2026-11-17T23:38:27.542092+00:00",
+      "rubrik": "OpenAI åbner for anmodninger om Astra for Law",
+      "resume_da": "Alle ChatGPT Enterprise-kunder kan anmode om adgang. Ifølge OpenAI blev værktøjet nummer ét i en evaluering ved lanceringen, som dækkede 24 retsområder.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "ChatGPT Enterprise-kunder kan anmode om adgang til Astra for Law, som ifølge OpenAI blev nummer ét i en juridisk evaluering.",
+        "forbehold": "Materialet beskriver ikke evalueringens metode eller sammenligningsgrundlag.",
+        "emne": "astra for law"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -365,39 +431,6 @@
       ]
     },
     {
-      "titel": "Strengthening NATO and allied cyber defenses with AI",
-      "link": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
-      "resume": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
-      "dato": "2026-11-17T00:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-11-17T13:47:51.865712+00:00",
-      "eget_foerst_set": "2026-11-17T13:47:51.865712+00:00",
-      "rubrik": "OpenAI samarbejder med NATO om cyberforsvar",
-      "resume_da": "Samarbejdet skal hjælpe betroede forsvarere med at finde sårbarheder, teste løsninger og beskytte kritiske systemer.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI beskriver et samarbejde med NATO og allierede cybermyndigheder om at finde og afhjælpe sårbarheder.",
-        "forbehold": "Materialet beskriver ikke konkrete resultater eller omfanget af samarbejdet.",
-        "emne": "openai og nato"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "How OpenAI’s Performance Factory keeps ChatGPT fast",
       "link": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
       "resume": "Learn how OpenAI built the Performance Factory, a system of Codex-powered workflows that finds and fixes performance issues to help keep ChatGPT fast.",
@@ -426,6 +459,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Strengthening NATO and allied cyber defenses with AI",
+      "link": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+      "resume": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
+      "dato": "2026-11-17T00:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-17T13:47:51.865712+00:00",
+      "eget_foerst_set": "2026-11-17T13:47:51.865712+00:00",
+      "rubrik": "OpenAI samarbejder med NATO om cyberforsvar",
+      "resume_da": "Samarbejdet skal hjælpe betroede forsvarere med at finde sårbarheder, teste løsninger og beskytte kritiske systemer.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI beskriver et samarbejde med NATO og allierede cybermyndigheder om at finde og afhjælpe sårbarheder.",
+        "forbehold": "Materialet beskriver ikke konkrete resultater eller omfanget af samarbejdet.",
+        "emne": "openai og nato"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -497,39 +563,6 @@
       ]
     },
     {
-      "titel": "Our first phase of embedded assessments",
-      "link": "https://openai.com/index/our-first-phase-of-embedded-assessments",
-      "resume": "OpenAI begins embedded assessments with Apollo Research, METR, and Transluce, and Goodfire to independently evaluate model alignment, safeguards, and monitoring systems.",
-      "dato": "2026-11-16T08:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-11-16T18:51:00.859402+00:00",
-      "eget_foerst_set": "2026-11-16T18:51:00.859402+00:00",
-      "rubrik": "OpenAI indleder eksterne vurderinger af sine modeller",
-      "resume_da": "Apollo Research, METR, Transluce og Goodfire skal uafhængigt vurdere modellernes tilpasning til ønsket adfærd samt sikkerhedsforanstaltninger og overvågning.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI indleder evalueringer med eksterne aktører af modeladfærd, sikkerhedsforanstaltninger og overvågning.",
-        "forbehold": "Materialet indeholder endnu ingen resultater eller detaljer om evalueringernes rammer.",
-        "emne": "openai-sikkerhed"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Quoting Daniel Stenberg",
       "link": "https://simonwillison.net/2026/Nov/18/daniel-stenberg/",
       "resume": "During the time these agents converted 185,000 lines of C code into 340,000 lines of Rust code (I counted), we merged over 300 commits in the actual curl project. We actually improved curl during these a little more than three weeks. A little over 200 bugfixes actually. 200 bugfixes that none of those rust rewrites have. We also fixed a few vulnerabilities. In another month we have done another…",
@@ -558,6 +591,105 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Quoting Levent Alpöge",
+      "link": "https://simonwillison.net/2026/Nov/20/levent-alpoge/",
+      "resume": "I believe I have, working with Claude, discovered a proof of the Riemann Hypothesis. In fact, the method easily extends much further, resolving the so-called Generalized Riemann Hypothesis, and I expect, with more time, the Extended Riemann Hypothesis too. Claude and I have also formalized the arguments without assumptions. It is natural to feel that this is an end, in my case a loss of a…",
+      "dato": "2026-11-20T16:30:48+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-20T17:11:55.623291+00:00",
+      "eget_foerst_set": "2026-11-20T17:11:55.623291+00:00",
+      "rubrik": "Levent Alpöge hævder at have bevist Riemann-hypotesen",
+      "resume_da": "Han siger, at han brugte Claude, og at metoden også beviser den generaliserede Riemann-hypotese. Materialet indeholder ingen uafhængig kontrol.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 0,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Levent Alpöge hævder at have bevist Riemann-hypotesen i samarbejde med Claude.",
+        "forbehold": "Materialet indeholder ingen uafhængig kontrol af det påståede bevis.",
+        "emne": "claude og riemann-hypotesen"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 3,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
+      "link": "https://huggingface.co/blog/moe-expert-streaming",
+      "resume": "",
+      "dato": "2026-11-18T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-18T17:30:51.294742+00:00",
+      "eget_foerst_set": "2026-11-18T17:30:51.294742+00:00",
+      "rubrik": "Transformers presser AI-afvikling med 32 GB RAM",
+      "resume_da": "Artiklen handler om at afvikle en MoE-model med 180 milliarder parametre og 32 GB RAM.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "guide",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "En artikel beskriver afvikling af en MoE-model med 180 milliarder parametre og 32 GB RAM.",
+        "forbehold": "Materialet indeholder ikke metode, hastighed eller resultater.",
+        "emne": "moe-inferens"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Our first phase of embedded assessments",
+      "link": "https://openai.com/index/our-first-phase-of-embedded-assessments",
+      "resume": "OpenAI begins embedded assessments with Apollo Research, METR, and Transluce, and Goodfire to independently evaluate model alignment, safeguards, and monitoring systems.",
+      "dato": "2026-11-16T08:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-16T18:51:00.859402+00:00",
+      "eget_foerst_set": "2026-11-16T18:51:00.859402+00:00",
+      "rubrik": "OpenAI indleder eksterne vurderinger af sine modeller",
+      "resume_da": "Apollo Research, METR, Transluce og Goodfire skal uafhængigt vurdere modellernes tilpasning til ønsket adfærd samt sikkerhedsforanstaltninger og overvågning.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI indleder evalueringer med eksterne aktører af modeladfærd, sikkerhedsforanstaltninger og overvågning.",
+        "forbehold": "Materialet indeholder endnu ingen resultater eller detaljer om evalueringernes rammer.",
+        "emne": "openai-sikkerhed"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -597,34 +729,34 @@
       ]
     },
     {
-      "titel": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
-      "link": "https://huggingface.co/blog/moe-expert-streaming",
-      "resume": "",
-      "dato": "2026-11-18T00:00:00+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Forskning",
-      "foerst_set": "2026-11-18T17:30:51.294742+00:00",
-      "eget_foerst_set": "2026-11-18T17:30:51.294742+00:00",
-      "rubrik": "Transformers presser AI-afvikling med 32 GB RAM",
-      "resume_da": "Artiklen handler om at afvikle en MoE-model med 180 milliarder parametre og 32 GB RAM.",
+      "titel": "Managing frontier AI risk: From training to deployment",
+      "link": "https://openai.com/index/managing-frontier-ai-risk",
+      "resume": "OpenAI explains how it manages frontier AI risk from training through deployment with model alignment, sandboxing, blocking safeguards, and monitoring.",
+      "dato": "2026-11-18T06:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-19T01:59:29.336973+00:00",
+      "eget_foerst_set": "2026-11-19T01:59:29.336973+00:00",
+      "rubrik": "OpenAI beskriver håndtering af avancerede AI-risici",
+      "resume_da": "Virksomheden gennemgår sine sikkerhedstiltag fra træning til brug, herunder afskærmede miljøer, blokeringer og overvågning.",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 2,
+        "nyhed": 1,
         "betydning": 2,
         "brugbarhed": 2,
         "dokumentation": 2,
         "dansk": 0,
-        "type": "guide",
+        "type": "sikkerhed",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "En artikel beskriver afvikling af en MoE-model med 180 milliarder parametre og 32 GB RAM.",
-        "forbehold": "Materialet indeholder ikke metode, hastighed eller resultater.",
-        "emne": "moe-inferens"
+        "begrundelse": "OpenAI gennemgår sine sikkerhedstiltag fra træning til anvendelse.",
+        "forbehold": "Materialet oplyser ikke om nye tiltag eller deres dokumenterede effekt.",
+        "emne": "openai sikkerhed"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
+      "prio": 3,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -696,39 +828,6 @@
       ]
     },
     {
-      "titel": "Managing frontier AI risk: From training to deployment",
-      "link": "https://openai.com/index/managing-frontier-ai-risk",
-      "resume": "OpenAI explains how it manages frontier AI risk from training through deployment with model alignment, sandboxing, blocking safeguards, and monitoring.",
-      "dato": "2026-11-18T06:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-11-19T01:59:29.336973+00:00",
-      "eget_foerst_set": "2026-11-19T01:59:29.336973+00:00",
-      "rubrik": "OpenAI beskriver håndtering af avancerede AI-risici",
-      "resume_da": "Virksomheden gennemgår sine sikkerhedstiltag fra træning til brug, herunder afskærmede miljøer, blokeringer og overvågning.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI gennemgår sine sikkerhedstiltag fra træning til anvendelse.",
-        "forbehold": "Materialet oplyser ikke om nye tiltag eller deres dokumenterede effekt.",
-        "emne": "openai sikkerhed"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 3,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "llm 0.37.3",
       "link": "https://simonwillison.net/2026/Nov/16/llm/",
       "resume": "Release: llm 0.37.3 A bug fix release for LLM , mainly to cover a problem with the most recent Homebrew package of the software. Homebrew now ships the latest SQLite, 3.54.1 , which includes a fix that broke LLM's logging code . Short version: in SQLite 3.54.0 the following SQL: select json_object('a', (select json_array(1))) Returns this: {\"a\":[1]} But in 3.54.1 the same query returns this:…",
@@ -762,6 +861,39 @@
       ]
     },
     {
+      "titel": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
+      "link": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
+      "resume": "",
+      "dato": "2026-11-18T19:54:56+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-19T01:59:29.336973+00:00",
+      "eget_foerst_set": "2026-11-19T01:59:29.336973+00:00",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Artiklen om DaisyRose-27B fremhæver effektivitet i eftertræning.",
+        "forbehold": "Kun titlen er medsendt; resultater og en eventuel modeludgivelse kan ikke vurderes.",
+        "emne": "daisyrose-27b"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 3,
+      "afventer": [
+        "Mangler dansk overskrift",
+        "Mangler dansk indledning",
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Explore the Codex Security Plugin",
       "link": "https://openai.com/business/learn/codex-security-plugin-demo",
       "resume": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording.",
@@ -772,6 +904,7 @@
       "eget_foerst_set": "2026-11-20T07:41:24.873945+00:00",
       "rubrik": "OpenAI demonstrerer Codex Security Plugin",
       "resume_da": "Videoen viser forløbet fra opsætning til gennemgang af resultater.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -788,7 +921,6 @@
         "emne": "codex security plugin"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 3,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -805,6 +937,7 @@
       "eget_foerst_set": "2026-11-20T07:41:24.873945+00:00",
       "rubrik": "OpenAI viser PR scans i kodegennemgang",
       "resume_da": "En video gennemgår scanningsresultater i en pull request, hvor foreslåede kodeændringer gennemgås.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -821,41 +954,7 @@
         "emne": "pr scans"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 3,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "How Revolut raises ambition without lowering the bar",
-      "link": "https://openai.com/business/customer-stories/revolut",
-      "resume": "Discover how Revolut uses OpenAI models and Codex to cut coding time by 30–60%, scale financial crime investigations, and innovate without compromising security.",
-      "dato": "2026-11-16T09:30:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-11-17T13:47:51.865712+00:00",
-      "eget_foerst_set": "2026-11-17T13:47:51.865712+00:00",
-      "rubrik": "Revolut bruger OpenAI til hurtigere kodning",
-      "resume_da": "Ifølge OpenAI bruger Revolut 30–60 procent mindre tid på kodning med OpenAI-modeller og Codex. Værktøjerne bruges også til at undersøge finansiel kriminalitet.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI beskriver, hvordan Revolut bruger virksomhedens modeller og Codex til kodning og undersøgelser af finansiel kriminalitet.",
-        "forbehold": "OpenAIs påstand om 30–60 procent mindre kodningstid er ikke ledsaget af en metode.",
-        "emne": "revolut og openai"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -922,6 +1021,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 3,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "How Revolut raises ambition without lowering the bar",
+      "link": "https://openai.com/business/customer-stories/revolut",
+      "resume": "Discover how Revolut uses OpenAI models and Codex to cut coding time by 30–60%, scale financial crime investigations, and innovate without compromising security.",
+      "dato": "2026-11-16T09:30:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-11-17T13:47:51.865712+00:00",
+      "eget_foerst_set": "2026-11-17T13:47:51.865712+00:00",
+      "rubrik": "Revolut bruger OpenAI til hurtigere kodning",
+      "resume_da": "Ifølge OpenAI bruger Revolut 30–60 procent mindre tid på kodning med OpenAI-modeller og Codex. Værktøjerne bruges også til at undersøge finansiel kriminalitet.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI beskriver, hvordan Revolut bruger virksomhedens modeller og Codex til kodning og undersøgelser af finansiel kriminalitet.",
+        "forbehold": "OpenAIs påstand om 30–60 procent mindre kodningstid er ikke ledsaget af en metode.",
+        "emne": "revolut og openai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1026,6 +1158,39 @@
       ]
     },
     {
+      "titel": "Trump’s latest land grab is an AI hub in the Philippines",
+      "link": "https://www.theverge.com/policy/1036749/trump-ai-chip-data-center-us-philippines-pax-silica",
+      "resume": "President Donald Trump was greeted by no less than five beauty queens when he landed in the Philippines on Tuesday, according to local news outlet Rappler. As he stepped onto the tarmac, a child handed him small US and Philippine flags. A band played \"YMCA,\" a staple at Trump rallies, as more girls in traditional […]",
+      "dato": "2026-11-18T19:40:36+00:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-11-19T01:59:29.336973+00:00",
+      "eget_foerst_set": "2026-11-19T01:59:29.336973+00:00",
+      "rubrik": "Trump kobles til AI-center i Filippinerne",
+      "resume_da": "Ifølge Rappler blev han mødt af mindst fem skønhedsdronninger ved sin ankomst til landet tirsdag.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 1,
+        "brugbarhed": 0,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Overskriften omtaler et AI-knudepunkt i Filippinerne i forbindelse med Trump.",
+        "forbehold": "Uddraget beskriver ikke selve AI-projektet eller dets status.",
+        "emne": "ai-knudepunkt i filippinerne"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 2,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Science at the Frontier: How scientists use ChatGPT",
       "link": "https://openai.com/index/science-at-the-frontier",
       "resume": "Explore how more than 1,800 scientists use ChatGPT in research. See findings on daily workflows, reported productivity, and expectations for discovery.",
@@ -1092,31 +1257,31 @@
       ]
     },
     {
-      "titel": "Trump’s latest land grab is an AI hub in the Philippines",
-      "link": "https://www.theverge.com/policy/1036749/trump-ai-chip-data-center-us-philippines-pax-silica",
-      "resume": "President Donald Trump was greeted by no less than five beauty queens when he landed in the Philippines on Tuesday, according to local news outlet Rappler. As he stepped onto the tarmac, a child handed him small US and Philippine flags. A band played \"YMCA,\" a staple at Trump rallies, as more girls in traditional […]",
-      "dato": "2026-11-18T19:40:36+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Politik & jura",
+      "titel": "Why your fine-tuning job takes longer than the FLOPs say",
+      "link": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
+      "resume": "",
+      "dato": "2026-11-18T18:53:43+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
       "foerst_set": "2026-11-19T01:59:29.336973+00:00",
       "eget_foerst_set": "2026-11-19T01:59:29.336973+00:00",
-      "rubrik": "Trump kobles til AI-center i Filippinerne",
-      "resume_da": "Ifølge Rappler blev han mødt af mindst fem skønhedsdronninger ved sin ankomst til landet tirsdag.",
+      "rubrik": "Hugging Face forklarer ventetid ved finjustering",
+      "resume_da": "Beregninger af regneoperationer viser ikke alene, hvor lang tid finjusteringen tager.",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 2,
+        "nyhed": 1,
         "betydning": 1,
-        "brugbarhed": 0,
+        "brugbarhed": 1,
         "dokumentation": 2,
         "dansk": 0,
-        "type": "politik",
+        "type": "guide",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Overskriften omtaler et AI-knudepunkt i Filippinerne i forbindelse med Trump.",
-        "forbehold": "Uddraget beskriver ikke selve AI-projektet eller dets status.",
-        "emne": "ai-knudepunkt i filippinerne"
+        "begrundelse": "Artiklen peger på, at FLOP-beregninger ikke alene bestemmer tiden til finjustering.",
+        "forbehold": "Det medsendte materiale indeholder ingen metode eller konkrete beregninger.",
+        "emne": "finjustering"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 2,
@@ -1153,39 +1318,6 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Why your fine-tuning job takes longer than the FLOPs say",
-      "link": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
-      "resume": "",
-      "dato": "2026-11-18T18:53:43+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Forskning",
-      "foerst_set": "2026-11-19T01:59:29.336973+00:00",
-      "eget_foerst_set": "2026-11-19T01:59:29.336973+00:00",
-      "rubrik": "Hugging Face forklarer ventetid ved finjustering",
-      "resume_da": "Beregninger af regneoperationer viser ikke alene, hvor lang tid finjusteringen tager.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "guide",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Artiklen peger på, at FLOP-beregninger ikke alene bestemmer tiden til finjustering.",
-        "forbehold": "Det medsendte materiale indeholder ingen metode eller konkrete beregninger.",
-        "emne": "finjustering"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 2,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1257,39 +1389,6 @@
       ]
     },
     {
-      "titel": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
-      "link": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
-      "resume": "",
-      "dato": "2026-11-18T19:54:56+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Forskning",
-      "foerst_set": "2026-11-19T01:59:29.336973+00:00",
-      "eget_foerst_set": "2026-11-19T01:59:29.336973+00:00",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 0,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "En artikel omtaler DaisyRose-27B og effektivitet i eftertræning.",
-        "forbehold": "Kun overskriften er medsendt; den bekræfter ikke en modeludgivelse eller konkrete resultater.",
-        "emne": "daisyrose-27b"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 2,
-      "afventer": [
-        "Mangler dansk overskrift",
-        "Mangler dansk indledning",
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Shield helps technicians hand off legacy portal work with OpenAI",
       "link": "https://openai.com/business/customer-stories/shield",
       "resume": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
@@ -1323,6 +1422,72 @@
       ]
     },
     {
+      "titel": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+      "link": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "resume": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
+      "dato": "2026-11-10T12:02:28+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-10T12:55:44.065731+00:00",
+      "eget_foerst_set": "2026-11-10T12:55:44.065731+00:00",
+      "rubrik": "AlphaProof Code verificerer Signals centrale kryptering",
+      "resume_da": "Ifølge Google DeepMind skrev agenterne tre millioner linjer med beviser i sproget Lean for at verificere krypteringen.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "gennembrud",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "DeepMind præsenterer AlphaProof Code og siger, at agenter skrev Lean-beviser for Signals kernekryptering.",
+        "forbehold": "Materialet beskriver ikke omfanget af verifikationen eller uafhængig kontrol.",
+        "emne": "alphaproof code"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Opening the datasets behind our AI weather models",
+      "link": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
+      "resume": "Foundational precipitation and geostationary satellite datasets to observe the planet clearly.",
+      "dato": "2026-11-10T11:13:04+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-13T12:33:55.476940+00:00",
+      "eget_foerst_set": "2026-11-13T12:33:55.476940+00:00",
+      "rubrik": "Google DeepMind åbner datasæt til AI-vejrmodeller",
+      "resume_da": "Datasættene indeholder oplysninger om nedbør og data fra geostationære satellitter.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google DeepMind åbner datasæt om nedbør og geostationære satellitdata bag sine AI-vejrmodeller.",
+        "forbehold": "Materialet angiver ikke adgangsvilkår eller datasættenes omfang.",
+        "emne": "ai-vejrdata"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Advancing computer-use agents for healthcare teams",
       "link": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
       "resume": "",
@@ -1335,16 +1500,16 @@
         "version": 3,
         "metode": "ai",
         "nyhed": 1,
-        "betydning": 2,
+        "betydning": 1,
         "brugbarhed": 0,
         "dokumentation": 2,
         "dansk": 0,
         "type": "andet",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "OpenAI omtaler computerbrugende agenter til sundhedspersonale.",
-        "forbehold": "Kun overskriften er medsendt; den angiver ingen konkrete evner eller adgang.",
-        "emne": "openai og sundhed"
+        "begrundelse": "OpenAI omtaler computer use-agenter til sundhedspersonale.",
+        "forbehold": "Kun titlen er medsendt; konkrete fremskridt og adgang er ikke beskrevet.",
+        "emne": "computer use i sundhedsvæsenet"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "kat_ai": true,
@@ -1364,27 +1529,60 @@
       "kategori": "Forskning",
       "foerst_set": "2026-11-13T19:59:33.270017+00:00",
       "eget_foerst_set": "2026-11-13T19:59:33.270017+00:00",
+      "rubrik": "Hugging Face præsenterer XYBench",
+      "resume_da": "XYBench skal hjælpe med problemet bag et spørgsmål.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 1,
+        "nyhed": 2,
         "betydning": 1,
-        "brugbarhed": 0,
+        "brugbarhed": 1,
         "dokumentation": 2,
         "dansk": 0,
         "type": "forskning",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "En artikel omtaler XYBench og problemet bag et spørgsmål.",
-        "forbehold": "Kun overskriften er medsendt; formål, metode og resultater er ikke beskrevet.",
+        "begrundelse": "XYBench handler om at hjælpe med problemet bag et spørgsmål.",
+        "forbehold": "Materialet beskriver ikke metoden eller resultaterne.",
         "emne": "xybench"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "kat_ai": true,
-      "prio": 2,
+      "prio": 3,
       "afventer": [
-        "Mangler dansk overskrift",
-        "Mangler dansk indledning",
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+      "link": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+      "resume": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
+      "dato": "2026-11-09T19:51:47+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-11-10T21:56:03.050309+00:00",
+      "eget_foerst_set": "2026-11-10T21:56:03.050309+00:00",
+      "rubrik": "Google DeepMind præsenterer Gemini Robotics 2.5",
+      "resume_da": "Ifølge Google DeepMind forbedrer modellen robotters fingerfærdighed, pålidelighed og sikkerhed.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google DeepMind beskriver Gemini Robotics 2.5 som en model til robotters fingerfærdighed.",
+        "forbehold": "Materialet bekræfter ikke en udgivelse og giver ikke testresultater eller adgangsvilkår.",
+        "emne": "gemini robotics 2.5"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
     },
@@ -1417,6 +1615,72 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 2,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Agentic cheminformatics with Google Antigravity",
+      "link": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+      "resume": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
+      "dato": "2026-11-03T17:01:49+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-04T12:26:57.700834+00:00",
+      "eget_foerst_set": "2026-11-04T12:26:57.700834+00:00",
+      "rubrik": "Google Antigravity bruges i lægemiddelforskning",
+      "resume_da": "Google viser, hvordan værktøjet sammen med Cheminformatics Skills kan søge efter kemiske forbindelser og foreslå nye makrocykler.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "guide",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google beskriver brug af Antigravity og Cheminformatics Skills til søgning efter forbindelser og forslag til makrocykler.",
+        "forbehold": "Materialet dokumenterer ikke, at forslagene virker som lægemidler.",
+        "emne": "google antigravity"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Speeding up planning decisions with AI",
+      "link": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/",
+      "resume": "Google DeepMind and UK government work together to reduce planning assessment times",
+      "dato": "2026-10-30T14:18:30+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-02T18:45:47.523033+00:00",
+      "eget_foerst_set": "2026-11-02T18:45:47.523033+00:00",
+      "rubrik": "Google DeepMind samarbejder med briterne om planvurderinger",
+      "resume_da": "Målet er at reducere tiden til vurdering af planer ved hjælp af AI.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google DeepMind og den britiske regering samarbejder om at nedbringe vurderingstiden for planer med AI.",
+        "forbehold": "Materialet angiver ikke resultater eller konkrete tidsbesparelser.",
+        "emne": "ai i planvurdering"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1488,6 +1752,39 @@
       ]
     },
     {
+      "titel": "Genie 4: A new generation of world simulation",
+      "link": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "resume": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+      "dato": "2026-10-27T16:01:38+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-27T20:55:19.965914+00:00",
+      "eget_foerst_set": "2026-10-27T20:55:19.965914+00:00",
+      "rubrik": "Genie 4 simulerer verdener i realtid",
+      "resume_da": "Google DeepMind beskriver den nye verdensmodels realisme som hidtil uset.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 3,
+        "brugbarhed": 0,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Google DeepMind præsenterer Genie 4, en ny verdensmodel til simulering i realtid.",
+        "forbehold": "Påstanden om hidtil uset realisme er ikke underbygget med test i materialet; adgang er ikke beskrevet.",
+        "emne": "genie 4"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Anthropic files S-1 with the SEC for proposed initial public offering",
       "link": "https://www.anthropic.com/news/s1-sec",
       "resume": "Today, Anthropic, PBC filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission relating to its proposed initial public offering of its Class A common stock.",
@@ -1549,6 +1846,72 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "The fallout from Nvidia’s Jensen Huang scandal continues",
+      "link": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/",
+      "resume": "In the midst of dealing with the fallout from its ouster of CEO Jensen Huang, Nvidia delivered its latest earnings report this week, with healthy growth and promises that the good times will continue. At the same time, the chipmaker said it will stop selling its H200 chips in China, and it dismissed calls to […]",
+      "dato": "2026-11-20T14:55:44+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-20T17:11:55.623291+00:00",
+      "eget_foerst_set": "2026-11-20T17:11:55.623291+00:00",
+      "rubrik": "Nvidia stopper salg af H200 i Kina",
+      "resume_da": "Chipproducenten melder samtidig om vækst i sit seneste regnskab og forventer, at fremgangen fortsætter.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Nvidia rapporterer vækst og vil ifølge omtalen stoppe salget af H200-chips i Kina.",
+        "forbehold": "Uddraget forklarer ikke forbindelsen til AI eller baggrunden for ændringerne.",
+        "emne": "nvidia"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "The week everything fell apart",
+      "link": "https://www.theverge.com/podcast/1038419/outage-outlook-ground-stop-tech-failure-vergecast",
+      "resume": "There was a dayslong Outlook outage. A nationwide ground stop for only the second time in 25 years. Banks seemed to suddenly stop working. Even iCloud couldn't stay up and running. This week, it felt like the technological world simply collapsed. And it felt like this might be the beginning of something even bigger. On […]",
+      "dato": "2026-11-20T09:06:59-05:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-20T17:11:55.623291+00:00",
+      "eget_foerst_set": "2026-11-20T17:11:55.623291+00:00",
+      "rubrik": "Outlook blev ramt af flere dages nedbrud",
+      "resume_da": "Også iCloud og banker blev ramt af problemer, og flytrafikken blev sat på pause i et helt land.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "En podcast omtaler nedbrud hos blandt andet Outlook, iCloud og banker samt et flystop.",
+        "forbehold": "Materialet angiver ingen forbindelse til AI.",
+        "emne": "it-nedbrud"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1663,6 +2026,7 @@
       "eget_foerst_set": "2026-11-20T07:41:24.873945+00:00",
       "rubrik": "OpenAI viser opsætning af Daybreak Blue",
       "resume_da": "En video gennemgår, hvordan man kommer i gang med værktøjet.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1679,7 +2043,6 @@
         "emne": "daybreak blue"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -3033,6 +3396,39 @@
         "emne": "jensen huang"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Beyond tree cover: mapping the world’s forest types",
+      "link": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+      "resume": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
+      "dato": "2026-10-22T14:30:24+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-22T20:16:04.203492+00:00",
+      "eget_foerst_set": "2026-10-22T20:16:04.203492+00:00",
+      "rubrik": "Google DeepMind kortlægger verdens skovtyper",
+      "resume_da": "Kortet inddeler ifølge Google DeepMind Jordens landområder i felter på 10 meter og kategoriserer dem efter skovtype.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Google DeepMind beskriver et globalt kort, der kategoriserer skovtyper i felter på 10 meter.",
+        "forbehold": "Materialet beskriver hverken metoden, adgang til kortet eller en konkret brug af AI.",
+        "emne": "kort over skovtyper"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -79769,7 +80165,7 @@
       "titel": "Canva adds an AI ‘off’ button",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button",
       "resume": "Canva will now allow you to turn off its generative AI features. With this change, you can disable the graphic design platform's array of AI tools, such as its AI photo-extending Magic Expand feature, as well as turn off the ability to generate images with its Canva chatbot. This toggle doesn't turn off every AI-powered […]",
-      "dato": "2026-11-19T07:30:00-05:00",
+      "dato": "2026-11-19T12:30:00+00:00",
       "kilde": "The Verge AI",
       "kategori": "Hverdags-AI",
       "foerst_set": "2026-11-19T13:47:54.248644+00:00",
@@ -80092,6 +80488,24 @@
       ],
       "noegletal": [],
       "figurer": [],
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use",
+          "rubrik": "Gemini kan nu bruge apps på Mac",
+          "resume_da": "Googles AI-app kan klikke, skrive og udfylde formularer på tværs af filer, programmer og nettet. Funktionen rulles foreløbig ud på engelsk i USA.",
+          "dato": "2026-11-19T13:21:13-05:00",
+          "foerst_set": "2026-11-19T23:12:19.344731+00:00"
+        },
+        {
+          "kilde": "Google Gemini",
+          "link": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/",
+          "rubrik": "Gemini kan nu bruge computeren på Mac",
+          "resume_da": "Funktionen i Gemini-appen skal hjælpe med gentagne opgaver.",
+          "dato": "2026-11-19 17:00:00+00:00",
+          "foerst_set": "2026-11-19T23:12:19.344731+00:00"
+        }
+      ],
       "detaljer": [],
       "betydning": "",
       "pointer": [],
@@ -80123,26 +80537,8 @@
         "status": "godkendt",
         "kontrolleret": "2026-11-19T23:16:17.868878+00:00"
       },
-      "prio": 7,
       "historie_dato": "2026-11-19T17:00:00+00:00",
-      "andre": [
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use",
-          "rubrik": "Gemini kan nu bruge apps på Mac",
-          "resume_da": "Googles AI-app kan klikke, skrive og udfylde formularer på tværs af filer, programmer og nettet. Funktionen rulles foreløbig ud på engelsk i USA.",
-          "dato": "2026-11-19T13:21:13-05:00",
-          "foerst_set": "2026-11-19T23:12:19.344731+00:00"
-        },
-        {
-          "kilde": "Google Gemini",
-          "link": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/",
-          "rubrik": "Gemini kan nu bruge computeren på Mac",
-          "resume_da": "Funktionen i Gemini-appen skal hjælpe med gentagne opgaver.",
-          "dato": "2026-11-19 17:00:00+00:00",
-          "foerst_set": "2026-11-19T23:12:19.344731+00:00"
-        }
-      ],
+      "prio": 7,
       "side": "artikel/ffcfd7e32e09e749.html"
     },
     {
@@ -80266,7 +80662,7 @@
     {
       "titel": "Apple is hiring engineers to build its own AI agent",
       "link": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
-      "resume": "Apple is working on its own AI agent that can perform a range of tasks for you, including browsing the web, working across apps, writing code, and calling services. That's according to a job listing spotted by Bloomberg, which says Apple is looking for an engineer to lead the creation of an agentic AI assistant. […]",
+      "resume": "Apple is working on its own AI agent that can perform a range of tasks for you, including browsing the web, working across apps, writing code, and calling services. That's according to a now-removed job listing spotted by Bloomberg, which said Apple is looking for an engineer to lead the creation of an agentic AI […]",
       "dato": "2026-11-19T17:31:41-05:00",
       "kilde": "The Verge AI",
       "kategori": "Lanceringer",
@@ -80291,6 +80687,16 @@
       ],
       "noegletal": [],
       "figurer": [],
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+          "rubrik": "Apple søger leder til AI-agent",
+          "resume_da": "Et jobopslag beskriver en agent, der skal arbejde på tværs af programmer og websites. Udviklingen er ifølge Bloomberg på et tidligt stadie.",
+          "dato": "2026-11-20T00:56:01+00:00",
+          "foerst_set": "2026-11-20T07:41:24.873945+00:00"
+        }
+      ],
       "detaljer": [],
       "betydning": "Apples planer kan udvide Siri og andre AI-værktøjer fra svar og enkelte handlinger til opgaver, der kræver flere trin på tværs af programmer.",
       "pointer": [],
@@ -80322,18 +80728,8 @@
         "status": "godkendt",
         "kontrolleret": "2026-11-19T23:18:01.913773+00:00"
       },
-      "prio": 5,
       "historie_dato": "2026-11-19T22:31:41+00:00",
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
-          "rubrik": "Apple søger leder til AI-agent",
-          "resume_da": "Et jobopslag beskriver en agent, der skal arbejde på tværs af programmer og websites. Udviklingen er ifølge Bloomberg på et tidligt stadie.",
-          "dato": "2026-11-20T00:56:01+00:00",
-          "foerst_set": "2026-11-20T07:41:24.873945+00:00"
-        }
-      ],
+      "prio": 5,
       "side": "artikel/21b44fd34fd356ca.html"
     },
     {
@@ -80513,6 +80909,34 @@
       "eget_foerst_set": "2026-11-19T23:12:19.344731+00:00",
       "rubrik": "ChatGPT skriver med, mens du taler",
       "resume_da": "Live Dictation viser den løbende tekst fra mikrofonen, så brugeren kan gennemgå og redigere den. Funktionen rulles ud globalt.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Teksten kommer frem under optagelsen",
+          "tekst": "ChatGPT kan nu omsætte tale til tekst, mens brugeren taler, i stedet for at vente på, at optagelsen er slut. Funktionen hedder Live Dictation og bruges til at indtale en besked til chatbotten.\n\nUnder dikteringen kan brugeren trykke eller klikke på lydbølgen for at se den tekst, AI’en skriver. Når optagelsen er færdig, kan teksten redigeres i beskedfeltet."
+        },
+        {
+          "overskrift": "Tidsgrænsen for diktering forsvinder",
+          "tekst": "OpenAI fjerner samtidig den hidtidige grænse for, hvor længe en diktering måtte vare. Ifølge virksomheden bliver funktionen også mere pålidelig, men The Verge beskriver ikke, hvordan forbedringen er målt.\n\nLive Dictation er under global udrulning til alle ChatGPT-abonnementer. Den kommer på web, i desktopappen og i apps til iOS og Android."
+        },
+        {
+          "overskrift": "Diktering er ikke en stemmesamtale",
+          "tekst": "Diktering skriver brugerens tale om til tekst i beskedfeltet. Det er en anden funktion end ChatGPTs stemmetilstand, hvor brugeren kan føre en samtale frem og tilbage. OpenAI ændrede stemmetilstanden tidligere på året.\n\nChatGPT har også en separat optagetilstand til at skrive stemmenoter og møder ned. Den er fortsat i beta, altså en prøveversion, og begrænset til Plus, Enterprise, Edu, Business og Pro."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "10 minutter",
+          "label": "Den tidligere grænse for en stemmediktering i ChatGPT; OpenAI fjerner den."
+        }
+      ],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "",
+      "pointer": [],
+      "billedmotiv": "A microphone bearing the intact black OpenAI six-loop Blossom sends a thick waveform into a document where solid text lines are appearing progressively, representing ChatGPT Live Dictation. Place the front-facing Blossom prominently on the microphone, about a quarter of the motif’s width. Use opaque shapes with sharp, separated contours.",
+      "billedmotiv_instruks": "fe5b656ac366c1ce380d",
+      "billede": "data/img/6c0feab08060da37.webp",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -80530,40 +80954,12 @@
         "emne": "chatgpt"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "sektioner": [
-        {
-          "overskrift": "Teksten kommer frem under optagelsen",
-          "tekst": "ChatGPT kan nu omsætte tale til tekst, mens brugeren taler, i stedet for at vente på, at optagelsen er slut. Funktionen hedder Live Dictation og bruges til at indtale en besked til chatbotten.\n\nUnder dikteringen kan brugeren trykke eller klikke på lydbølgen for at se den tekst, AI’en skriver. Når optagelsen er færdig, kan teksten redigeres i beskedfeltet."
-        },
-        {
-          "overskrift": "Tidsgrænsen for diktering forsvinder",
-          "tekst": "OpenAI fjerner samtidig den hidtidige grænse for, hvor længe en diktering måtte vare. Ifølge virksomheden bliver funktionen også mere pålidelig, men The Verge beskriver ikke, hvordan forbedringen er målt.\n\nLive Dictation er under global udrulning til alle ChatGPT-abonnementer. Den kommer på web, i desktopappen og i apps til iOS og Android."
-        },
-        {
-          "overskrift": "Diktering er ikke en stemmesamtale",
-          "tekst": "Diktering skriver brugerens tale om til tekst i beskedfeltet. Det er en anden funktion end ChatGPTs stemmetilstand, hvor brugeren kan føre en samtale frem og tilbage. OpenAI ændrede stemmetilstanden tidligere på året.\n\nChatGPT har også en separat optagetilstand til at skrive stemmenoter og møder ned. Den er fortsat i beta, altså en prøveversion, og begrænset til Plus, Enterprise, Edu, Business og Pro."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "10 minutter",
-          "label": "Den tidligere grænse for en stemmediktering i ChatGPT; OpenAI fjerner den."
-        }
-      ],
-      "detaljer": [],
-      "betydning": "",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-20T07:44:26.667911+00:00"
       },
-      "billedmotiv": "A microphone bearing the intact black OpenAI six-loop Blossom sends a thick waveform into a document where solid text lines are appearing progressively, representing ChatGPT Live Dictation. Place the front-facing Blossom prominently on the microphone, about a quarter of the motif’s width. Use opaque shapes with sharp, separated contours.",
-      "billedmotiv_instruks": "fe5b656ac366c1ce380d",
-      "billede": "data/img/6c0feab08060da37.webp",
+      "prio": 6,
       "side": "artikel/38c66bd23a6ee655.html"
     },
     {
@@ -80577,6 +80973,30 @@
       "eget_foerst_set": "2026-11-20T07:41:24.873945+00:00",
       "rubrik": "ChatPRD afvikler gratis prøveperioder efter misbrug",
       "resume_da": "Grupper har brugt prøveadgang og kampagnekoder til at få gratis AI-forbrug og drive kommercielle projekter gennem tjenesten.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Gratis adgang blev brugt igen og igen",
+          "tekst": "Claire Vo er ved at afvikle de gratis prøveperioder på ChatPRD, efter at grupper gentagne gange har misbrugt dem. ChatPRD er en AI-platform, der hjælper produktansvarlige med at omsætte en idé til en beskrivelse af et produkt.\n\nI en YouTube-video fortæller Vo, at nogle grupper blot ville have gratis AI-forbrug. Andre brugte ifølge hende adgangen til at videresælge tokens eller drive kommercielle projekter oven på ChatPRD. Tokens er de små tekstdele, som AI-modeller behandler."
+        },
+        {
+          "overskrift": "Kortstudie brugte ChatPRD som mellemled",
+          "tekst": "Vo beskriver blandt andet et internationalt studie, der bygger baner til Roblox og Fortnite. Ifølge hende brugte studiet gentagne prøveperioder og kampagnekoder til at få adgang til ChatPRD’s AI-agent og bruge den til arbejdet med banerne.\n\nAI-agenten er den del af tjenesten, der udfører opgaver for brugeren. Når andre bruger den via gratis prøveadgang, ligger forbruget hos ChatPRD frem for hos dem, der benytter tjenesten."
+        },
+        {
+          "overskrift": "Cykelpælikaner kan afsløre modellen",
+          "tekst": "En af de forespørgsler, Vo ofte så, bad om SVG-billeder af pelikaner på cykler. SVG er et billedformat, hvor figurer beskrives med tekst.\n\nSkribenten Simon Willison formoder, at forespørgslen blev brugt til at gætte, hvilke AI-modeller ChatPRD byggede på. Han skriver, at forskellige modelfamilier har genkendelige særpræg, men hensigten med netop disse forespørgsler er ikke fastslået."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "Når ChatPRD afvikler prøveperioderne, forsvinder den gratis adgang, som grupperne ifølge Vo har udnyttet.",
+      "pointer": [],
+      "billedmotiv": "A solid gate closes across a stack of repeated free-trial tickets, stopping them from reaching an AI chip. The overlapping tickets suggest repeated attempts at access, while the closed gate shows ChatPRD ending its trials. Use thick, opaque forms with sharp edges and clearly separated contours.",
+      "billedmotiv_instruks": "69c002b690b2815f11ec",
+      "billede": "data/img/32e3ead198c43090.webp",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -80593,37 +81013,160 @@
         "emne": "chatprd"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Gratis adgang blev brugt igen og igen",
-          "tekst": "Claire Vo er ved at afvikle de gratis prøveperioder på ChatPRD, efter at grupper gentagne gange har misbrugt dem. ChatPRD er en AI-platform, der hjælper produktansvarlige med at omsætte en idé til en beskrivelse af et produkt.\n\nI en YouTube-video fortæller Vo, at nogle grupper blot ville have gratis AI-forbrug. Andre brugte ifølge hende adgangen til at videresælge tokens eller drive kommercielle projekter oven på ChatPRD. Tokens er de små tekstdele, som AI-modeller behandler."
-        },
-        {
-          "overskrift": "Kortstudie brugte ChatPRD som mellemled",
-          "tekst": "Vo beskriver blandt andet et internationalt studie, der bygger baner til Roblox og Fortnite. Ifølge hende brugte studiet gentagne prøveperioder og kampagnekoder til at få adgang til ChatPRD’s AI-agent og bruge den til arbejdet med banerne.\n\nAI-agenten er den del af tjenesten, der udfører opgaver for brugeren. Når andre bruger den via gratis prøveadgang, ligger forbruget hos ChatPRD frem for hos dem, der benytter tjenesten."
-        },
-        {
-          "overskrift": "Cykelpælikaner kan afsløre modellen",
-          "tekst": "En af de forespørgsler, Vo ofte så, bad om SVG-billeder af pelikaner på cykler. SVG er et billedformat, hvor figurer beskrives med tekst.\n\nSkribenten Simon Willison formoder, at forespørgslen blev brugt til at gætte, hvilke AI-modeller ChatPRD byggede på. Han skriver, at forskellige modelfamilier har genkendelige særpræg, men hensigten med netop disse forespørgsler er ikke fastslået."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [],
-      "betydning": "Når ChatPRD afvikler prøveperioderne, forsvinder den gratis adgang, som grupperne ifølge Vo har udnyttet.",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-20T07:45:20.286197+00:00"
       },
-      "billedmotiv": "A solid gate closes across a stack of repeated free-trial tickets, stopping them from reaching an AI chip. The overlapping tickets suggest repeated attempts at access, while the closed gate shows ChatPRD ending its trials. Use thick, opaque forms with sharp edges and clearly separated contours.",
-      "billedmotiv_instruks": "69c002b690b2815f11ec",
-      "billede": "data/img/32e3ead198c43090.webp",
+      "prio": 4,
       "side": "artikel/9b1f48b39d99f20e.html"
+    },
+    {
+      "titel": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent private placement",
+      "link": "https://www.anthropic.com/news/ipo-close",
+      "resume": "Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public offering price.",
+      "dato": "2026-11-20T00:00:00+00:00",
+      "kilde": "Anthropic News",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-20T17:11:55.623291+00:00",
+      "eget_foerst_set": "2026-11-20T17:11:55.623291+00:00",
+      "rubrik": "Anthropic har afsluttet sin børsnotering",
+      "resume_da": "Selskabet har også solgt aktier direkte til syv virksomheder. De to salg indbragte tilsammen cirka 119,5 milliarder dollar før omkostninger.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Anthropic har afsluttet sin børsnotering med salg af 1,127 milliarder aktier til 83 dollar stykket.",
+        "forbehold": "",
+        "emne": "anthropic"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Aktien handles nu på Nasdaq",
+          "tekst": "Anthropic har afsluttet sin børsnotering med et salg af i alt 1,127 milliarder A-aktier til 83 dollar stykket. Aktien begyndte at handle på Nasdaq-børsen den 19. november 2026 under symbolet ANT.\n\nDet samlede salg omfatter 147 millioner ekstra aktier, som bankerne bag børsnoteringen valgte at købe fra Anthropic. De havde på forhånd fået mulighed for at købe aktierne til samme pris som ved børsnoteringen."
+        },
+        {
+          "overskrift": "Syv virksomheder købte aktier direkte",
+          "tekst": "Samtidig med børsnoteringen solgte Anthropic en anden aktieklasse, N-aktier, direkte til syv virksomheder for cirka 26,0 milliarder dollar. Prisen var også her 83 dollar pr. aktie.\n\nKøberne var Advanced Micro Devices, Broadcom, Google, Micron Technology, Microsoft, NVIDIA og TSMC Partners. Dette private aktiesalg var ikke registreret under den amerikanske værdipapirlov fra 1933."
+        },
+        {
+          "overskrift": "Ikke alle pengene går til Anthropic",
+          "tekst": "Børsnoteringen indbragte cirka 93,5 milliarder dollar, men Anthropic modtog kun cirka 91,6 milliarder. Resten kom fra aktier, som eksisterende aktionærer solgte; pengene fra deres salg gik ikke til selskabet.\n\nSamlet indbragte børsnoteringen og det private aktiesalg cirka 119,5 milliarder dollar. Beløbet inkluderer de eksisterende aktionærers salg og er opgjort før blandt andet bankernes provisioner og øvrige omkostninger."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "1.103.351.354 aktier",
+          "label": "A-aktier solgt af Anthropic ved børsnoteringen"
+        },
+        {
+          "tal": "23.648.646 aktier",
+          "label": "A-aktier solgt af eksisterende aktionærer ved børsnoteringen"
+        }
+      ],
+      "detaljer": [],
+      "betydning": "",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-20T17:15:48.357430+00:00"
+      },
+      "billedmotiv": "An Anthropic share certificate bearing Claude’s distinctive warm terracotta-orange, many-rayed asterisk splits into two groups of shares: a tall stack beside a stock-exchange bell and a smaller group of seven distinct certificates representing the direct company sales. Make the emblem prominent and front-facing, with solid, opaque forms and sharply separated contours.",
+      "billedmotiv_instruks": "dd888aeffc733421befa",
+      "billede": "data/img/1f50bb1b0ad0871b.webp",
+      "side": "artikel/462db626dd31f818.html"
+    },
+    {
+      "titel": "Six AI-powered gadgets that could make your home office smarter",
+      "link": "https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter/",
+      "resume": "From notetakers to webcams, here are six AI-powered gadgets to upgrade your workspace.",
+      "dato": "2026-11-20T14:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-11-20T17:11:55.623291+00:00",
+      "eget_foerst_set": "2026-11-20T17:11:55.623291+00:00",
+      "rubrik": "Flowtica og Anker lader AI skrive mødenoter",
+      "resume_da": "En pen og en lille optager kan lave tekst og opsummeringer af samtaler. TechCrunch fremhæver også fire andre AI-produkter til arbejdspladsen.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "guide",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "En oversigt præsenterer seks AI-produkter til hjemmekontoret.",
+        "forbehold": "Uddraget identificerer ikke produkterne eller dokumenterer deres funktioner.",
+        "emne": "ai til hjemmekontoret"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 2,
+      "sektioner": [
+        {
+          "overskrift": "Pennen kombinerer håndskrift og lyd",
+          "tekst": "Flowticas Scribe er en pen, der både skriver på papir og optager lyd. Efter et møde kan dens AI omsætte samtalen til tekst, opsummere hovedpunkter og lave en huskeliste.\n\nBrugeren kan også stille spørgsmål til optagelsen for at finde bestemte oplysninger. Pennen kan ifølge TechCrunch genkende op til 15 talere og understøtter 92 sprog."
+        },
+        {
+          "overskrift": "Ankers optager kræver plads til abonnement",
+          "tekst": "Ankers Soundcore Work er en optager på størrelse med en mønt. En tilhørende app omsætter lyd til tekst og bruger AI til at organisere noter og lave opsummeringer.\n\nDer følger 300 minutters gratis lydtransskription om måneden med. Vil man have mere kapacitet eller flere AI-funktioner, tilbyder Anker betalte abonnementer."
+        },
+        {
+          "overskrift": "Genveje og ryddeligere digitale noter",
+          "tekst": "Logitechs MX Keypad er et lille tastatur med knapper, der kan åbne en valgt AI-assistent eller starte værktøjer med ét tryk. Det kan blandt andet sættes op til Claude Code, Excel og Zoom.\n\nAmazons Kindle Scribe Colorsoft er en digital enhed til læsning og noter. Dens AI-værktøjer kan gøre håndskrift mere læselig, rette overstregninger og opsummere noter. En søgefunktion kan også finde oplysninger på tværs af gemte noter."
+        },
+        {
+          "overskrift": "Kamera følger bevægelser ved skærmen",
+          "tekst": "Insta360s Link 2 Pro er et webkamera, der kan følge en persons bevægelser og justere kameravinklen automatisk. Det kan også følge en gruppe og bruge AI til at dæmpe baggrundsstøj.\n\nHæve-sænkebordet Autonomous Desk Pro bruger sensorer til at registrere aktivitet og minde brugeren om at bevæge sig. Man kan også spørge bordet, hvor længe man har siddet, eller få oplysninger om rummets CO2-niveau."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "159 dollar",
+          "label": "Normalpris for Anker Soundcore Work; abonnement kan tilkøbes"
+        },
+        {
+          "tal": "Fra 629 dollar",
+          "label": "Startpris for Amazon Kindle Scribe Colorsoft"
+        },
+        {
+          "tal": "249 dollar",
+          "label": "Normalpris for Insta360 Link 2 Pro"
+        }
+      ],
+      "detaljer": [],
+      "betydning": "Produkterne fordeler AI-funktioner mellem pen, optager, skærm og møbler. TechCrunch beskriver funktionerne, men oplyser ikke, hvordan de klarer sig i uafhængige test.",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-20T17:16:32.760299+00:00"
+      },
+      "billedmotiv": "A coin-sized Anker Soundcore Work recorder, bearing the recognisable ANKER wordmark on its front, rests beside a pen and a solid sheet of meeting notes. An embossed waveform from the recorder transitions into concise bullet-like marks on the sheet, while the pen adds handwritten marks. Use thick, opaque forms with crisp, clearly separated contours.",
+      "billedmotiv_instruks": "7ff6be8aab144752572a",
+      "billedstatus": {
+        "status": "afvist_af_filter",
+        "signatur": "2eeda97da62e1611"
+      },
+      "side": "artikel/a2263c052fc471a0.html"
     }
   ]
 }

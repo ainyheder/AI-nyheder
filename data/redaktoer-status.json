@@ -1,17 +1,20 @@
 {
-  "opdateret": "2026-11-20T07:41:24.873945+00:00",
+  "opdateret": "2026-11-20T17:11:55.623291+00:00",
   "status": "reserve",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
     "https://deepmind.google/blog/genie-4-is-now-available/",
     "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
-    "https://deepmind.google/blog/introducing-gemini-4-neon/"
+    "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app"
   ],
-  "input_fingerprint": "9880d3acd10b6233",
+  "input_fingerprint": "d14d1568dec5bbb2",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 5,
-  "kildehentninger": 3,
+  "kontrolproblemer": [
+    "Kontrollér, om Gemini 4 Neon og Genie 4 stadig er inden for 48-timersvinduet, og vurder deres kilder mod de valgte historier. Udgivelsestidspunkt og tidligere forsider er ikke oplyst."
+  ],
+  "modelkald": 6,
+  "kildehentninger": 2,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -26,7 +29,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -36,15 +39,11 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+      "link": "https://huggingface.co/blog/harness-adapters-at-scale",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
       "grundlag": "kildetekst"
     }
   ],
@@ -53,5 +52,5 @@
     "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
     "https://deepmind.google/blog/introducing-gemini-4-neon/"
   ],
-  "afventer_artikler": 94
+  "afventer_artikler": 106
 }
