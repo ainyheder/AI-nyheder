@@ -1058,8 +1058,18 @@
           }
         ]
       },
-      "fejl": "Kvalitetskontrollen er ikke afsluttet",
-      "naeste_trin": "kontrol"
+      "fejl": "Kvalitetskontrollen afviste brevet\n[\"Læseværdi — feltet under »Unge mærker usikkerheden om arbejde« — 19-procenttallet står fremhævet uden aldersgruppen og forskernes årsagsforbehold, som først kommer i brødteksten omkring feltet. Saml tal, sammenligningsgrundlag og forbehold i feltet, og fjern den tilsvarende gentagelse i brødteksten.\"]",
+      "naeste_trin": "skrivning",
+      "kontrol": {
+        "godkendt": false,
+        "fuld_kilde": true,
+        "faktuel_troskab": true,
+        "selvstaendig": true,
+        "laesevaerdi": false,
+        "problemer": [
+          "Læseværdi — feltet under »Unge mærker usikkerheden om arbejde« — 19-procenttallet står fremhævet uden aldersgruppen og forskernes årsagsforbehold, som først kommer i brødteksten omkring feltet. Saml tal, sammenligningsgrundlag og forbehold i feltet, og fjern den tilsvarende gentagelse i brødteksten."
+        ]
+      }
     }
   }
 }
