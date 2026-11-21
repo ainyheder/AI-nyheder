@@ -1,20 +1,20 @@
 {
-  "opdateret": "2026-11-21T01:42:50.990268+00:00",
+  "opdateret": "2026-11-21T12:57:30.868462+00:00",
   "status": "reserve",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
     "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
-    "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
-    "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/"
+    "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
+    "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/"
   ],
-  "input_fingerprint": "f4c138708e64c42d",
+  "input_fingerprint": "a99f44a19d36d060",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "kontrolproblemer": [
-    "Hugging Face-artiklen forklarer ikke, hvad der er nyt i forhold til holdets tidligere adapterforsøg: Arbejdet udvides til en model med 27 milliarder parametre og tre agentmiljøer. Den nævner heller ikke, at holdet deler en opskrift, som andre kan bruge til at gentage tilpasningen."
+    "Rækkefølgen følger ikke retningen om at begynde med nyheder fra de seneste 24 timer: Gemini-historien er fra 19. november kl. 17, mens Hugging Face-historien er fra 20. november kl. 00. Den seneste kandidat er fra 20. november kl. 21.47. Kontrollér udgivelsestidspunktet og placér døgnets nyhed først."
   ],
   "modelkald": 6,
-  "kildehentninger": 1,
+  "kildehentninger": 3,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -25,11 +25,11 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -41,12 +41,20 @@
     {
       "link": "https://huggingface.co/blog/harness-adapters-at-scale",
       "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
+      "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
     "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
-    "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
-    "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/"
+    "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
+    "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/"
   ],
-  "afventer_artikler": 90
+  "afventer_artikler": 69
 }
