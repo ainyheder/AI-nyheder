@@ -1,17 +1,17 @@
 {
-  "opdateret": "2026-11-21T12:57:30.868462+00:00",
+  "opdateret": "2026-11-21T21:50:31.854305+00:00",
   "status": "reserve",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
-    "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
-    "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
+    "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+    "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
     "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/"
   ],
-  "input_fingerprint": "a99f44a19d36d060",
+  "input_fingerprint": "dd60effc5622073a",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "kontrolproblemer": [
-    "Rækkefølgen følger ikke retningen om at begynde med nyheder fra de seneste 24 timer: Gemini-historien er fra 19. november kl. 17, mens Hugging Face-historien er fra 20. november kl. 00. Den seneste kandidat er fra 20. november kl. 21.47. Kontrollér udgivelsestidspunktet og placér døgnets nyhed først."
+    "Kandidatoversigten indeholder en anden omtale af Signals samme mobilbegrænsning (af7d30f58230f923). Saml den med hovedhistorien, hvis kandidaten senere bruges; den er ikke blandt de udvalgte eller anbefalede."
   ],
   "modelkald": 6,
   "kildehentninger": 3,
@@ -39,22 +39,22 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://huggingface.co/blog/harness-adapters-at-scale",
+      "link": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/",
+      "link": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
+      "link": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
     "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
-    "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
-    "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/"
+    "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+    "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax"
   ],
-  "afventer_artikler": 69
+  "afventer_artikler": 77
 }
