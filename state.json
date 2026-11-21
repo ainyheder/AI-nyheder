@@ -1155,8 +1155,20 @@
           }
         ]
       },
-      "fejl": "Læserytme ved Hvad fortæller aktiekursen?: mere end to tekstafsnit i træk; skab en meningsfuld pause uden at gentage indhold",
-      "naeste_trin": "skrivning"
+      "fejl": "Læserytme ved Hvad fortæller aktiekursen?: mere end to tekstafsnit i træk; skab en meningsfuld pause uden at gentage indhold\nKvalitetskontrollen afviste brevet\n[\"Fakta — illustrationen ved 'Salget er vokset, men hvad med overskuddet?' — Anthropics indtægtsblok deles i udgifter og en positiv rest, selv om brevet ikke oplyser overskuddet, og brødteksten netop siger, at det er ukendt. Vis forskellen på omsætning og udgifter uden at fremstille en rest som et kendt resultat.\", \"Fakta — 'Kan formuerne skabe nye virksomheder?' — Kildens estimat på 1,2 billioner dollar gælder 'insiders at San Francisco’s AI startups', ikke generelt personer med ejerandele i virksomhederne. Præcisér, at estimatet gælder insidere.\", \"Læseværdi — slutningen — Tre almindelige afsnit følger hinanden efter feltet om medstifterne. Forkort og saml eksempelvis indvendingen om koncentration med oplysningen om private investorer, så rytmen brydes uden at gentage stoffet.\"]",
+      "naeste_trin": "skrivning",
+      "kontrol": {
+        "godkendt": false,
+        "fuld_kilde": true,
+        "faktuel_troskab": false,
+        "selvstaendig": true,
+        "laesevaerdi": false,
+        "problemer": [
+          "Fakta — illustrationen ved 'Salget er vokset, men hvad med overskuddet?' — Anthropics indtægtsblok deles i udgifter og en positiv rest, selv om brevet ikke oplyser overskuddet, og brødteksten netop siger, at det er ukendt. Vis forskellen på omsætning og udgifter uden at fremstille en rest som et kendt resultat.",
+          "Fakta — 'Kan formuerne skabe nye virksomheder?' — Kildens estimat på 1,2 billioner dollar gælder 'insiders at San Francisco’s AI startups', ikke generelt personer med ejerandele i virksomhederne. Præcisér, at estimatet gælder insidere.",
+          "Læseværdi — slutningen — Tre almindelige afsnit følger hinanden efter feltet om medstifterne. Forkort og saml eksempelvis indvendingen om koncentration med oplysningen om private investorer, så rytmen brydes uden at gentage stoffet."
+        ]
+      }
     }
   }
 }
