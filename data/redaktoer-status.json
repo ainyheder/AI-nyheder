@@ -1,20 +1,20 @@
 {
-  "opdateret": "2026-11-20T17:11:55.623291+00:00",
+  "opdateret": "2026-11-21T01:42:50.990268+00:00",
   "status": "reserve",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
-    "https://deepmind.google/blog/genie-4-is-now-available/",
-    "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
-    "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app"
+    "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+    "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+    "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/"
   ],
-  "input_fingerprint": "d14d1568dec5bbb2",
+  "input_fingerprint": "f4c138708e64c42d",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "kontrolproblemer": [
-    "Kontrollér, om Gemini 4 Neon og Genie 4 stadig er inden for 48-timersvinduet, og vurder deres kilder mod de valgte historier. Udgivelsestidspunkt og tidligere forsider er ikke oplyst."
+    "Hugging Face-artiklen forklarer ikke, hvad der er nyt i forhold til holdets tidligere adapterforsøg: Arbejdet udvides til en model med 27 milliarder parametre og tre agentmiljøer. Den nævner heller ikke, at holdet deler en opskrift, som andre kan bruge til at gentage tilpasningen."
   ],
   "modelkald": 6,
-  "kildehentninger": 2,
+  "kildehentninger": 1,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -25,7 +25,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -41,16 +41,12 @@
     {
       "link": "https://huggingface.co/blog/harness-adapters-at-scale",
       "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
-      "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://deepmind.google/blog/genie-4-is-now-available/",
-    "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
-    "https://deepmind.google/blog/introducing-gemini-4-neon/"
+    "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+    "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+    "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/"
   ],
-  "afventer_artikler": 106
+  "afventer_artikler": 90
 }

@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-20T17:11:55.623291+00:00",
- "artikler_i_alt": 85,
+ "opdateret": "2026-11-21T01:42:50.990268+00:00",
+ "artikler_i_alt": 99,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -298,8 +298,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 4,
-   "som_ekstra": 3,
+   "i_listen": 5,
+   "som_ekstra": 4,
    "seneste": [
     {
      "rubrik": "Google placerer Gemini 4 Neon mellem modeller",
@@ -309,6 +309,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google lancerer Gemini 4 Neon til komplekse opgaver"
+    },
+    {
+     "rubrik": "OpenAI: GPT-6.2 Astra bliver billigere, Sol holder prisen",
+     "dato": "",
+     "foerst_set": "2026-11-17T23:38:27",
+     "link": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI lancerer GPT-6.2 Astra og Sol"
     },
     {
      "rubrik": "Gemini 4 Carbon åbner for alle",
@@ -329,6 +338,15 @@ window.KILDER_STATUS = {
      "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
     },
     {
+     "rubrik": "Claude hjælper matematiker med muligt Riemann-bevis",
+     "dato": "2026-11-20T16:30:48",
+     "foerst_set": "2026-11-20T17:11:55",
+     "link": "https://simonwillison.net/2026/Nov/20/levent-alpoge/",
+     "side": "artikel/773e6dba4a324352.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "ChatPRD afvikler gratis prøveperioder efter misbrug",
      "dato": "2026-11-20T02:49:57",
      "foerst_set": "2026-11-20T07:41:24",
@@ -338,20 +356,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI: GPT-6.2 Astra bliver billigere, Sol holder prisen",
-     "dato": "2026-11-17T22:38:52",
-     "foerst_set": "2026-11-17T23:38:27",
-     "link": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/",
-     "side": "artikel/a1dbdf766202efe9.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Simon Willison flytter kode til sandkasser",
      "dato": "2026-11-17T22:52:29",
      "foerst_set": "2026-11-17T23:38:27",
      "link": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/",
      "side": "artikel/1f643769f40b75cc.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "LLM retter fejl i sin logføring",
+     "dato": "2026-11-16T23:57:26",
+     "foerst_set": "2026-11-17T03:06:49",
+     "link": "https://simonwillison.net/2026/Nov/16/llm/",
+     "side": "artikel/d7e5cf02c8228094.html",
      "hvor": "forside",
      "under": ""
     },
@@ -371,6 +389,18 @@ window.KILDER_STATUS = {
      2
     ],
     [
+     "OpenAI Blog",
+     1
+    ],
+    [
+     "The Verge AI",
+     1
+    ],
+    [
+     "TechCrunch AI",
+     1
+    ],
+    [
      "Anthropic News",
      1
     ]
@@ -386,9 +416,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 34,
-   "som_ekstra": 6,
+   "i_listen": 29,
+   "som_ekstra": 7,
    "seneste": [
+    {
+     "rubrik": "Alpöge fremlægger AI-støttet bevis for Riemann-hypotesen",
+     "dato": "",
+     "foerst_set": "2026-11-21T01:42:50",
+     "link": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
+     "side": "",
+     "hvor": "under",
+     "under": "Claude hjælper matematiker med muligt Riemann-bevis"
+    },
     {
      "rubrik": "Apple søger leder til AI-agent",
      "dato": "",
@@ -591,7 +630,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     10
+     9
     ],
     [
      "Ars Technica AI",
@@ -606,7 +645,7 @@ window.KILDER_STATUS = {
      2
     ],
     [
-     "OpenAI Blog",
+     "Simon Willison AI",
      1
     ]
    ]
@@ -622,8 +661,26 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 19,
-   "som_ekstra": 12,
+   "som_ekstra": 13,
    "seneste": [
+    {
+     "rubrik": "Anthropic-matematiker hævder at have løst Riemann-hypotesen",
+     "dato": "",
+     "foerst_set": "2026-11-21T01:42:50",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
+     "side": "",
+     "hvor": "under",
+     "under": "Claude hjælper matematiker med muligt Riemann-bevis"
+    },
+    {
+     "rubrik": "Google lægger AI-samtaler på forsiden",
+     "dato": "",
+     "foerst_set": "2026-11-19T23:12:19",
+     "link": "https://www.theverge.com/tech/1038059/google-search-homepage-ai-chats",
+     "side": "",
+     "hvor": "under",
+     "under": "Google fjerner søgeknap og fremhæver AI"
+    },
     {
      "rubrik": "Gemini kan nu bruge apps på Mac",
      "dato": "",
@@ -706,15 +763,6 @@ window.KILDER_STATUS = {
      "under": "Apple undersøger AI-svar om sundhed med ny app"
     },
     {
-     "rubrik": "ChatGPTs agenter kan nu købe ind for dig",
-     "dato": "",
-     "foerst_set": "2026-11-14T01:00:14",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
-     "side": "",
-     "hvor": "under",
-     "under": "ChatGPT Wallet kan købe varer for brugeren"
-    },
-    {
      "rubrik": "Google lancerer Gemini 4 Carbon med agent-sværm",
      "dato": "",
      "foerst_set": "2026-11-10T21:56:03",
@@ -724,29 +772,29 @@ window.KILDER_STATUS = {
      "under": "Google åbner Gemini 4 Carbon for betalende brugere"
     },
     {
-     "rubrik": "Anthropic opgraderer Claude til svære tekniske opgaver",
-     "dato": "",
-     "foerst_set": "2026-11-09T19:04:48",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
-     "side": "",
-     "hvor": "under",
-     "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
-    },
-    {
-     "rubrik": "ChatGPT skriver med, mens du taler",
-     "dato": "2026-11-19T10:16:45",
-     "foerst_set": "2026-11-19T23:12:19",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1037634/openai-chatgpt-live-dictation",
-     "side": "artikel/38c66bd23a6ee655.html",
+     "rubrik": "Trump truer med skat på datacentre i udlandet",
+     "dato": "2026-11-20T13:50:19",
+     "foerst_set": "2026-11-21T01:42:50",
+     "link": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
+     "side": "artikel/b44ab066f64c7bf4.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Google lægger AI-samtaler på forsiden",
-     "dato": "2026-11-19T15:05:06",
+     "rubrik": "Signal vil holde Siri og Gemini ude",
+     "dato": "2026-11-20T07:30:47",
+     "foerst_set": "2026-11-20T17:11:55",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
+     "side": "artikel/da5d0e9421737f2d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "ChatGPT skriver med, mens du taler",
+     "dato": "2026-11-19T15:16:45",
      "foerst_set": "2026-11-19T23:12:19",
-     "link": "https://www.theverge.com/tech/1038059/google-search-homepage-ai-chats",
-     "side": "artikel/84a5dc6d5cb4b105.html",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1037634/openai-chatgpt-live-dictation",
+     "side": "artikel/38c66bd23a6ee655.html",
      "hvor": "forside",
      "under": ""
     },
@@ -830,28 +878,23 @@ window.KILDER_STATUS = {
      "side": "artikel/a5b2e1c3e893605e.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Meta-chef deler AI-video med Sam Altman",
-     "dato": "2026-11-17T21:00:55",
-     "foerst_set": "2026-11-17T23:38:27",
-     "link": "https://www.theverge.com/news/1035957/meta-alexandr-wang-sam-altman-instagram-ai-deepfake",
-     "side": "artikel/a1592a2be395aeb6.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     10
+     9
+    ],
+    [
+     "Ars Technica AI",
+     2
     ],
     [
      "Google Gemini",
      1
     ],
     [
-     "Ars Technica AI",
+     "Simon Willison AI",
      1
     ],
     [
@@ -874,7 +917,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 7,
+   "i_listen": 9,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -887,13 +930,31 @@ window.KILDER_STATUS = {
      "under": "USA vil begrænse fjernadgang til AI-chips"
     },
     {
-     "rubrik": "OpenAI-bestyrelsesmedlem frygter snarlig AI-overtagelse",
-     "dato": "",
-     "foerst_set": "2026-11-14T01:00:14.998513+00:00",
-     "link": "https://arstechnica.com/ai/2026/11/ai-is-the-most-likely-reason-youll-die-openai-board-member-warns/",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI-bestyrelsesmedlem advarer om muligt AI-overtag"
+     "rubrik": "HD Moore afslører lækager hos AI-tjenester",
+     "dato": "2026-11-20T20:59:08",
+     "foerst_set": "2026-11-21T01:42:50",
+     "link": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+     "side": "artikel/718dc2db66a106fb.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Meta genovervejer klimamål for 2030",
+     "dato": "2026-11-20T21:47:10",
+     "foerst_set": "2026-11-21T01:42:50",
+     "link": "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/",
+     "side": "artikel/5652e6a0a79ec65e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google fjerner søgeknap og fremhæver AI",
+     "dato": "2026-11-20T21:58:29",
+     "foerst_set": "2026-11-19T23:12:19",
+     "link": "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/",
+     "side": "artikel/fab35115c8894b13.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Doritos-pose udløste Omnilert-alarm og politirykning",
@@ -948,15 +1009,6 @@ window.KILDER_STATUS = {
      "side": "artikel/7d6b1aee59d2353e.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI-bestyrelsesmedlem advarer om muligt AI-overtag",
-     "dato": "2026-11-13T17:25:45",
-     "foerst_set": "2026-11-13T19:59:33",
-     "link": "https://arstechnica.com/features/2026/11/ai-is-the-most-likely-reason-youll-die-openai-board-member-warns/",
-     "side": "artikel/82a25efe6c9f3f01.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -966,7 +1018,7 @@ window.KILDER_STATUS = {
     ],
     [
      "The Verge AI",
-     1
+     2
     ]
    ]
   },
@@ -980,9 +1032,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 3,
+   "i_listen": 4,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "METR finder AI’s svage side i forskning",
+     "dato": "2026-11-20T18:15:15",
+     "foerst_set": "2026-11-21T01:42:50",
+     "link": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+     "side": "artikel/b8658038964280d2.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Osmo hævder, at AI matcher menneskers lugtesans",
      "dato": "2026-11-18T10:20:30",
@@ -1023,22 +1084,121 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 0,
-   "som_ekstra": 1,
+   "i_listen": 15,
+   "som_ekstra": 0,
    "seneste": [
     {
-     "rubrik": "OpenAI introducerer ChatGPT Wallet til AI-køb",
-     "dato": "",
-     "foerst_set": "2026-11-13T19:59:33",
-     "link": "https://openai.com/index/introducing-chatgpt-wallet",
-     "side": "",
-     "hvor": "under",
-     "under": "ChatGPT Wallet kan købe varer for brugeren"
+     "rubrik": "GPT-6.2 Astra klarer ny test af lægemiddelkemi",
+     "dato": "2026-11-20T00:00:00",
+     "foerst_set": "2026-11-21T01:42:50",
+     "link": "https://openai.com/index/introducing-medchembench",
+     "side": "artikel/3c753634dc1f4ee5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "GPT-6 Astra finder kilder og bygger præsentationer",
+     "dato": "2026-11-20T00:00:00",
+     "foerst_set": "2026-11-21T01:42:50",
+     "link": "https://openai.com/business/customer-stories/hebbia",
+     "side": "artikel/c2d364619a446974.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI gør GPT‑6.2 Astras ræsonnement sværere at udtrække",
+     "dato": "2026-11-20T10:00:00",
+     "foerst_set": "2026-11-21T01:42:50",
+     "link": "https://openai.com/index/combatting-adversarial-distillation",
+     "side": "artikel/7121ba7c91734ceb.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI lader Codex opspore hastighedsfejl",
+     "dato": "2026-11-19T08:00:00",
+     "foerst_set": "2026-11-19T23:12:19",
+     "link": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+     "side": "artikel/6ea811258a465008.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI måler flere AI-agenter i arbejde",
+     "dato": "2026-11-18T08:00:00",
+     "foerst_set": "2026-11-19T01:59:29",
+     "link": "https://openai.com/index/research-acceleration-jagged-frontier",
+     "side": "artikel/32f46a407aa3905b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Sumitomo Life bruger ChatGPT til risikoanalyse",
+     "dato": "2026-11-18T08:00:00",
+     "foerst_set": "2026-11-19T01:59:29",
+     "link": "https://openai.com/business/customer-stories/sumitomo-life",
+     "side": "artikel/c4029f8d3d08f72b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI overvåger modeller tættere efter sikkerhedsbrud",
+     "dato": "2026-11-18T06:00:00",
+     "foerst_set": "2026-11-19T01:59:29",
+     "link": "https://openai.com/index/managing-frontier-ai-risk",
+     "side": "artikel/62857bef727acad9.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Le Figaro-artikler skal kunne findes i ChatGPT",
+     "dato": "2026-11-18T00:00:00",
+     "foerst_set": "2026-11-18T17:30:51",
+     "link": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
+     "side": "artikel/a2f695ac2f9b40c7.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI lancerer GPT-6.2 Astra og Sol",
+     "dato": "2026-11-17T17:45:00",
+     "foerst_set": "2026-11-17T23:38:27",
+     "link": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+     "side": "artikel/b02ac3a3fe5a4756.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI samler salgsarbejde i ChatGPT",
+     "dato": "2026-11-17T08:00:00",
+     "foerst_set": "2026-11-17T23:38:27",
+     "link": "https://openai.com/index/introducing-chatgpt-for-sales",
+     "side": "artikel/1632816037b3f079.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Astra for Law klarer flere juraopgaver",
+     "dato": "2026-11-17T00:00:00",
+     "foerst_set": "2026-11-17T23:38:27",
+     "link": "https://openai.com/index/astra-law-6-2",
+     "side": "artikel/f2812a4ba9a1d9a4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI indgår AI-aftale med Chile",
+     "dato": "2026-11-17T00:00:00",
+     "foerst_set": "2026-11-17T23:38:27",
+     "link": "https://openai.com/index/introducing-openai-for-chile",
+     "side": "artikel/fa0dad41f9385591.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
-     "TechCrunch AI",
+     "Simon Willison AI",
      1
     ]
    ]
