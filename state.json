@@ -1155,8 +1155,18 @@
           }
         ]
       },
-      "fejl": "Kvalitetskontrollen er ikke afsluttet",
-      "naeste_trin": "kontrol"
+      "fejl": "Kvalitetskontrollen afviste brevet\n[\"Læseværdi — feltet under ‘En formue på papiret’ — feltet gentager, at aktiernes værdi kan ændre sig, og at aktieformue ikke er kontanter; det er allerede forklaret i kursafsnittet og i starten af dette afsnit. Fjern feltet eller erstat det med en særskilt, kildebelagt pointe.\"]",
+      "naeste_trin": "skrivning",
+      "kontrol": {
+        "godkendt": false,
+        "fuld_kilde": true,
+        "faktuel_troskab": true,
+        "selvstaendig": true,
+        "laesevaerdi": false,
+        "problemer": [
+          "Læseværdi — feltet under ‘En formue på papiret’ — feltet gentager, at aktiernes værdi kan ændre sig, og at aktieformue ikke er kontanter; det er allerede forklaret i kursafsnittet og i starten af dette afsnit. Fjern feltet eller erstat det med en særskilt, kildebelagt pointe."
+        ]
+      }
     }
   }
 }
