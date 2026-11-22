@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-22T16:35:53.421545+00:00",
+ "opdateret": "2026-11-22T22:00:04.972727+00:00",
  "artikler_i_alt": 119,
  "kilder": [
   {
@@ -13,17 +13,8 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 15,
    "i_listen": 5,
-   "som_ekstra": 1,
+   "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "Anthropic sætter pris på børsnotering",
-     "dato": "",
-     "foerst_set": "2026-11-19T01:59:29",
-     "link": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic sætter kursen for rekordstor børsnotering"
-    },
     {
      "rubrik": "Anthropic har afsluttet sin børsnotering",
      "dato": "2026-11-20T00:00:00",
@@ -72,11 +63,11 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "TechCrunch AI",
-     2
+     "The Verge AI",
+     1
     ],
     [
-     "The Verge AI",
+     "TechCrunch AI",
      1
     ],
     [
@@ -461,24 +452,6 @@ window.KILDER_STATUS = {
      "under": "Amazon og Google får store ejerandele i Anthropic"
     },
     {
-     "rubrik": "Anthropic-aktien stiger ved Nasdaq-debut",
-     "dato": "",
-     "foerst_set": "2026-11-19T23:12:19.344731+00:00",
-     "link": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic sætter kursen for rekordstor børsnotering"
-    },
-    {
-     "rubrik": "Anthropic vil tilpasse AI-tempoet efter sikkerhed",
-     "dato": "",
-     "foerst_set": "2026-11-19T23:12:19.344731+00:00",
-     "link": "https://techcrunch.com/2026/11/19/at-nasdaq-opening-bell-anthropic-ceo-recommits-to-pacing-ai-development/",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic sætter kursen for rekordstor børsnotering"
-    },
-    {
      "rubrik": "Meta-ansatte advarer om samtaler på afveje i Muse",
      "dato": "",
      "foerst_set": "2026-11-19T23:12:19",
@@ -531,6 +504,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
+    },
+    {
+     "rubrik": "OpenAI-forsker foreslår mål for AI-grænser",
+     "dato": "2026-11-22T21:14:07",
+     "foerst_set": "2026-11-22T22:00:04",
+     "link": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
+     "side": "artikel/772a602107cad2ee.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Signal begrænser skærmbilleder på mobilen",
@@ -630,21 +612,12 @@ window.KILDER_STATUS = {
      "side": "artikel/0f46293e3612b41e.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Nadella advarer om sårbare systemer uden rettelser",
-     "dato": "2026-11-18T23:45:00",
-     "foerst_set": "2026-11-19T01:59:29",
-     "link": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/",
-     "side": "artikel/5d67ac67da7b88b9.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     10
+     8
     ],
     [
      "Ars Technica AI",
@@ -659,11 +632,11 @@ window.KILDER_STATUS = {
      2
     ],
     [
-     "Anthropic News",
-     2
+     "Simon Willison AI",
+     1
     ],
     [
-     "Simon Willison AI",
+     "Anthropic News",
      1
     ]
    ]
@@ -679,7 +652,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 21,
-   "som_ekstra": 12,
+   "som_ekstra": 10,
    "seneste": [
     {
      "rubrik": "Anthropic-matematiker hævder at have løst Riemann-hypotesen",
@@ -716,24 +689,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Meta Muse Charm kan koste 300 dollar"
-    },
-    {
-     "rubrik": "Anthropic er begyndt at handle på Nasdaq",
-     "dato": "",
-     "foerst_set": "2026-11-19T23:12:19",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1035384/anthropic-ipo-trading-nasdaq",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic sætter kursen for rekordstor børsnotering"
-    },
-    {
-     "rubrik": "Anthropic rejser rekordbeløb ved børsnotering",
-     "dato": "",
-     "foerst_set": "2026-11-19T23:12:19",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1037459/anthropic-ipo-safe-ai-reputation-power-structure",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic sætter kursen for rekordstor børsnotering"
     },
     {
      "rubrik": "Will Wright vil gøre minder til spilverden",
@@ -901,7 +856,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     10
+     8
     ],
     [
      "Ars Technica AI",

@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-22T16:46:25.835532+00:00",
+ "genereret": "2026-11-22T22:09:24.207633+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -199,55 +199,75 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-22T16:35:53.421545+00:00",
+  "opdateret": "2026-11-22T22:00:04.972727+00:00",
   "antal": 119,
-  "med_billede": 85,
+  "med_billede": 90,
   "paa_dansk": 119,
   "kategorier": {
    "Samfund \u0026 etik": 23,
-   "Forskning": 15,
    "Lanceringer": 12,
+   "Politik \u0026 jura": 8,
+   "Forskning": 15,
    "Hverdags-AI": 35,
-   "Politik \u0026 jura": 7,
-   "Penge \u0026 marked": 27
+   "Penge \u0026 marked": 26
   },
   "kilder": {
-   "Ars Technica AI": 9,
-   "MIT Tech Review AI": 4,
    "TechCrunch AI": 33,
+   "Ars Technica AI": 9,
    "Google DeepMind": 2,
    "The Verge AI": 21,
+   "MIT Tech Review AI": 4,
    "OpenAI Blog": 26,
    "Anthropic News": 5,
    "Google Gemini": 5,
-   "Hugging Face": 6,
    "Simon Willison AI": 6,
+   "Hugging Face": 6,
    "Mistral AI": 1,
    "xAI News": 1
   },
   "udvalgte": [
    {
-    "titel": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.",
-    "rubrik": "HD Moore: Falske adgangsnøgler afslører læk i AI-tjenester",
-    "link": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
-    "side": "artikel/718dc2db66a106fb.html",
+    "titel": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+    "rubrik": "Signal begrænser skærmbilleder på mobilen",
+    "link": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+    "side": "artikel/f8ce89f0a31be533.html",
     "kategori": "Samfund \u0026 etik",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-11-20T20:59:08+00:00",
-    "billede": "data/img/e2c95ef88c12bb61.webp"
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-21T21:37:10+00:00",
+    "billede": "data/img/855bbab790977dab.webp"
    },
    {
-    "titel": "The most misunderstood graph in AI just got a major update",
-    "rubrik": "METR: AI halter på åbne forskningsopgaver",
-    "link": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
-    "side": "artikel/b8658038964280d2.html",
-    "kategori": "Forskning",
-    "kilde": "MIT Tech Review AI",
-    "dato": "2026-11-20T18:15:15+00:00",
-    "billede": "data/img/02e7e769cad712d6.webp"
+    "titel": "The UN fails to agree on rules regulating ‘killer robots’",
+    "rubrik": "FN-lande udskyder regler for autonome våben",
+    "link": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+    "side": "artikel/0a2e9e2641fc4aa3.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-21T15:03:37-05:00",
+    "billede": "data/img/3f3a61dbe2dc559c.webp"
+   },
+   {
+    "titel": "Can Anthropic afford to put safety first?",
+    "rubrik": "Anthropic på børsen: Sikkerhed møder aktionærkrav",
+    "link": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
+    "side": "artikel/3f8dc1fbea0dc261.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-21T10:00:00-05:00",
+    "billede": "data/img/262b0a598c64cf35.webp"
    }
   ],
   "seneste": [
+   {
+    "titel": "OpenAI’s chief scientist has thoughts on how to limit AI development",
+    "rubrik": "OpenAI-forsker foreslår mål for AI-grænser",
+    "link": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
+    "side": "artikel/772a602107cad2ee.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-22T21:14:07+00:00",
+    "billede": "data/img/20b42510755534d1.webp"
+   },
    {
     "titel": "The vibe-coding revolution is coming to all the gadgets",
     "rubrik": "Claude Code ændrede Gathins tv på halvanden time",
@@ -357,33 +377,25 @@ window.KOMMANDO_DATA = {
     "kilde": "Ars Technica AI",
     "dato": "2026-11-20T21:47:10+00:00",
     "billede": ""
-   },
-   {
-    "titel": "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
-    "rubrik": "Trump truer med skat på datacentre i udlandet",
-    "link": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
-    "side": "artikel/b44ab066f64c7bf4.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-20T13:50:19-05:00",
-    "billede": "data/img/d31c61f3ddbdf300.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-22T16:35:53.421545+00:00",
-  "status": "godkendt",
+  "opdateret": "2026-11-22T22:00:04.972727+00:00",
+  "status": "reserve",
   "model": "gpt-6.1-terra",
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "modelkald": 6,
-  "kildehentninger": 3,
+  "kildehentninger": 2,
   "regelbaseret_udvalg": [
    "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
    "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
-   "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/"
+   "https://openai.com/index/perplexity-and-intelligence"
   ],
   "udgivet_udvalg": [
-   "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
-   "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/"
+   "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+   "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+   "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure"
   ],
   "vaerktoejer": [
    {
@@ -395,7 +407,7 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "laes_kilde",
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
@@ -413,17 +425,13 @@ window.KOMMANDO_DATA = {
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+    "link": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
     "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-11-22T16:35:53.243121+00:00",
+  "opdateret": "2026-11-22T22:00:04.250521+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -888,7 +896,7 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-22T16:35:53.421545+00:00",
+  "opdateret": "2026-11-22T22:00:04.972727+00:00",
   "artikler_i_alt": 119,
   "kilder": [
    {
@@ -902,17 +910,8 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 15,
     "i_listen": 5,
-    "som_ekstra": 1,
+    "som_ekstra": 0,
     "seneste": [
-     {
-      "rubrik": "Anthropic sætter pris på børsnotering",
-      "dato": "",
-      "foerst_set": "2026-11-19T01:59:29",
-      "link": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
-      "side": "",
-      "hvor": "under",
-      "under": "Anthropic sætter kursen for rekordstor børsnotering"
-     },
      {
       "rubrik": "Anthropic har afsluttet sin børsnotering",
       "dato": "2026-11-20T00:00:00",
@@ -1301,24 +1300,6 @@ window.KOMMANDO_DATA = {
       "under": "Amazon og Google får store ejerandele i Anthropic"
      },
      {
-      "rubrik": "Anthropic-aktien stiger ved Nasdaq-debut",
-      "dato": "",
-      "foerst_set": "2026-11-19T23:12:19.344731+00:00",
-      "link": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/",
-      "side": "",
-      "hvor": "under",
-      "under": "Anthropic sætter kursen for rekordstor børsnotering"
-     },
-     {
-      "rubrik": "Anthropic vil tilpasse AI-tempoet efter sikkerhed",
-      "dato": "",
-      "foerst_set": "2026-11-19T23:12:19.344731+00:00",
-      "link": "https://techcrunch.com/2026/11/19/at-nasdaq-opening-bell-anthropic-ceo-recommits-to-pacing-ai-development/",
-      "side": "",
-      "hvor": "under",
-      "under": "Anthropic sætter kursen for rekordstor børsnotering"
-     },
-     {
       "rubrik": "Meta-ansatte advarer om samtaler på afveje i Muse",
       "dato": "",
       "foerst_set": "2026-11-19T23:12:19",
@@ -1373,6 +1354,15 @@ window.KOMMANDO_DATA = {
       "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
      },
      {
+      "rubrik": "OpenAI-forsker foreslår mål for AI-grænser",
+      "dato": "2026-11-22T21:14:07",
+      "foerst_set": "2026-11-22T22:00:04",
+      "link": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
+      "side": "artikel/772a602107cad2ee.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Signal begrænser skærmbilleder på mobilen",
       "dato": "2026-11-21T21:37:10",
       "foerst_set": "2026-11-21T21:50:31",
@@ -1389,6 +1379,15 @@ window.KOMMANDO_DATA = {
       "side": "artikel/6b65b8b30d4054e0.html",
       "hvor": "forside",
       "under": ""
+     },
+     {
+      "rubrik": "Instinct og andre AI-assistenter svarer på beskeder",
+      "dato": "2026-11-21T17:00:00",
+      "foerst_set": "2026-11-21T21:50:31",
+      "link": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "side": "artikel/f9419135fce595f0.html",
+      "hvor": "forside",
+      "under": ""
      }
     ]
    },
@@ -1403,7 +1402,7 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 10,
     "i_listen": 21,
-    "som_ekstra": 12,
+    "som_ekstra": 10,
     "seneste": [
      {
       "rubrik": "Anthropic-matematiker hævder at have løst Riemann-hypotesen",
@@ -1440,24 +1439,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Meta Muse Charm kan koste 300 dollar"
-     },
-     {
-      "rubrik": "Anthropic er begyndt at handle på Nasdaq",
-      "dato": "",
-      "foerst_set": "2026-11-19T23:12:19",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1035384/anthropic-ipo-trading-nasdaq",
-      "side": "",
-      "hvor": "under",
-      "under": "Anthropic sætter kursen for rekordstor børsnotering"
-     },
-     {
-      "rubrik": "Anthropic rejser rekordbeløb ved børsnotering",
-      "dato": "",
-      "foerst_set": "2026-11-19T23:12:19",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1037459/anthropic-ipo-safe-ai-reputation-power-structure",
-      "side": "",
-      "hvor": "under",
-      "under": "Anthropic sætter kursen for rekordstor børsnotering"
      },
      {
       "rubrik": "Will Wright vil gøre minder til spilverden",
@@ -1512,6 +1493,24 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
+     },
+     {
+      "rubrik": "Claude Code ændrede Gathins tv på halvanden time",
+      "dato": "2026-11-22T08:00:00",
+      "foerst_set": "2026-11-22T16:35:53",
+      "link": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera",
+      "side": "artikel/564b8081b7bd0008.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "FN-lande udskyder regler for autonome våben",
+      "dato": "2026-11-21T15:03:37",
+      "foerst_set": "2026-11-21T21:50:31",
+      "link": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+      "side": "artikel/0a2e9e2641fc4aa3.html",
+      "hvor": "forside",
+      "under": ""
      }
     ]
    },
@@ -1858,12 +1857,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-22T16:46:17.439489+00:00",
+  "opdateret": "2026-11-22T22:09:18.172043+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 34,
-  "sidevisninger_i_alt": 55,
+  "besoeg_i_alt": 36,
+  "sidevisninger_i_alt": 57,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -2013,22 +2012,22 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-11-22",
-    "besoeg": 0,
-    "visninger": 0
+    "besoeg": 10,
+    "visninger": 10
    }
   ],
   "sider": [
    {
     "sti": "/",
-    "besoeg": 34,
-    "visninger": 55
+    "besoeg": 36,
+    "visninger": 57
    }
   ],
   "artikler": [],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 33
+    "besoeg": 35
    },
    {
     "fra": "safe.duckduckgo.com",
