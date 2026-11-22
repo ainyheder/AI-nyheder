@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-21T21:50:31.854305+00:00",
- "artikler_i_alt": 115,
+ "opdateret": "2026-11-22T07:21:23.282833+00:00",
+ "artikler_i_alt": 114,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -12,18 +12,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 5,
-   "som_ekstra": 2,
+   "i_listen": 4,
+   "som_ekstra": 1,
    "seneste": [
-    {
-     "rubrik": "Anthropic har afsluttet sin børsnotering",
-     "dato": "",
-     "foerst_set": "2026-11-20T17:11:55",
-     "link": "https://www.anthropic.com/news/ipo-close",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic på børsen: Sikkerhed møder aktionærkrav"
-    },
     {
      "rubrik": "Anthropic sætter pris på børsnotering",
      "dato": "",
@@ -68,25 +59,16 @@ window.KILDER_STATUS = {
      "side": "artikel/e0a2cd4030dd26c2.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Anthropic giver Agent Skills til uafhængig fond",
-     "dato": "2026-10-22T00:00:00",
-     "foerst_set": "2026-11-06T21:24:13",
-     "link": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
-     "side": "artikel/014cb4d393dcb21a.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "The Verge AI",
+     "TechCrunch AI",
      2
     ],
     [
-     "TechCrunch AI",
-     2
+     "The Verge AI",
+     1
     ],
     [
      "Simon Willison AI",
@@ -130,7 +112,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 5,
-   "som_ekstra": 4,
+   "som_ekstra": 3,
    "seneste": [
     {
      "rubrik": "Gemini kan nu bruge computeren på Mac",
@@ -158,15 +140,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google lancerer Gemini 4 Neon til komplekse opgaver"
-    },
-    {
-     "rubrik": "Google åbner Gemini 4 Carbon for betalende",
-     "dato": "",
-     "foerst_set": "2026-11-10T21:56:03",
-     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
-     "side": "",
-     "hvor": "under",
-     "under": "Google åbner Gemini 4 Carbon for betalende brugere"
     },
     {
      "rubrik": "Google bringer Gemini til Android Go-telefoner",
@@ -217,7 +190,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google DeepMind",
-     3
+     2
     ],
     [
      "TechCrunch AI",
@@ -335,7 +308,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 6,
-   "som_ekstra": 5,
+   "som_ekstra": 4,
    "seneste": [
     {
      "rubrik": "Claude hjælper matematiker med muligt Riemann-bevis",
@@ -363,15 +336,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI lancerer GPT-6.2 Astra og Sol"
-    },
-    {
-     "rubrik": "Gemini 4 Carbon åbner for alle",
-     "dato": "",
-     "foerst_set": "2026-11-10T21:56:03",
-     "link": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
-     "side": "",
-     "hvor": "under",
-     "under": "Google åbner Gemini 4 Carbon for betalende brugere"
     },
     {
      "rubrik": "Fable 5.2 fejlede på højeste ræsonnementsniveau",
@@ -440,7 +404,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google DeepMind",
-     2
+     1
     ],
     [
      "OpenAI Blog",
@@ -466,7 +430,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 33,
+   "i_listen": 32,
    "som_ekstra": 6,
    "seneste": [
     {
@@ -706,7 +670,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 20,
-   "som_ekstra": 13,
+   "som_ekstra": 12,
    "seneste": [
     {
      "rubrik": "Anthropic-matematiker hævder at have løst Riemann-hypotesen",
@@ -808,13 +772,31 @@ window.KILDER_STATUS = {
      "under": "Apple undersøger AI-svar om sundhed med ny app"
     },
     {
-     "rubrik": "Google lancerer Gemini 4 Carbon med agent-sværm",
+     "rubrik": "Anthropic opgraderer Claude til svære tekniske opgaver",
      "dato": "",
-     "foerst_set": "2026-11-10T21:56:03",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
+     "foerst_set": "2026-11-09T19:04:48",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
      "side": "",
      "hvor": "under",
-     "under": "Google åbner Gemini 4 Carbon for betalende brugere"
+     "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
+    },
+    {
+     "rubrik": "FN-lande udskyder regler for autonome våben",
+     "dato": "2026-11-21T15:03:37",
+     "foerst_set": "2026-11-21T21:50:31",
+     "link": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+     "side": "artikel/0a2e9e2641fc4aa3.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic på børsen: Sikkerhed møder aktionærkrav",
+     "dato": "2026-11-21T10:00:00",
+     "foerst_set": "2026-11-21T21:50:31",
+     "link": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
+     "side": "artikel/3f8dc1fbea0dc261.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Trump truer med skat på datacentre i udlandet",
@@ -822,15 +804,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-21T01:42:50",
      "link": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
      "side": "artikel/b44ab066f64c7bf4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Anthropic på børsen: Sikkerhed møder aktionærkrav",
-     "dato": "2026-11-21T10:00:00",
-     "foerst_set": "2026-11-20T17:11:55",
-     "link": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
-     "side": "artikel/3f8dc1fbea0dc261.html",
      "hvor": "forside",
      "under": ""
     },
@@ -914,25 +887,12 @@ window.KILDER_STATUS = {
      "side": "artikel/5d0f14b046a2035e.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Nvidia og AMD sælger flere AI-chips",
-     "dato": "2026-11-18T15:44:02",
-     "foerst_set": "2026-11-18T17:30:51",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1036549/nvidia-amd-earnings-fall-2026-chips-pause-frontier-models",
-     "side": "artikel/ca77971be0f13878.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
      10
-    ],
-    [
-     "Anthropic News",
-     2
     ],
     [
      "Ars Technica AI",
@@ -943,7 +903,7 @@ window.KILDER_STATUS = {
      1
     ],
     [
-     "Google DeepMind",
+     "Anthropic News",
      1
     ]
    ]
@@ -1125,7 +1085,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 22,
+   "i_listen": 24,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -1210,6 +1170,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "OpenAI-essay advarer om tab af menneskelig kontrol",
+     "dato": "2026-11-18T10:00:00",
+     "foerst_set": "2026-11-19T01:59:29",
+     "link": "https://openai.com/index/the-silent-consensus",
+     "side": "artikel/4739d25187174c21.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI-modeller forbedrer AMDs chipdesign",
      "dato": "2026-11-18T00:00:00",
      "foerst_set": "2026-11-18T17:30:51",
@@ -1244,15 +1213,6 @@ window.KILDER_STATUS = {
      "side": "artikel/1632816037b3f079.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Astra for Law klarer flere juraopgaver",
-     "dato": "2026-11-17T00:00:00",
-     "foerst_set": "2026-11-17T23:38:27",
-     "link": "https://openai.com/index/astra-law-6-2",
-     "side": "artikel/f2812a4ba9a1d9a4.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -1273,10 +1233,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 15,
-   "i_listen": 3,
+   "status": "fejl",
+   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
+   "hentet": 0,
+   "i_listen": 2,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -1296,28 +1256,15 @@ window.KILDER_STATUS = {
      "side": "artikel/88e5a492fec09122.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Google åbner Gemini 4 Carbon for betalende brugere",
-     "dato": "2026-11-10T16:03:47",
-     "foerst_set": "2026-11-10T21:56:03",
-     "link": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
-     "side": "artikel/e38c92a7cefc59fe.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "Google Gemini",
-     3
-    ],
-    [
-     "Simon Willison AI",
      2
     ],
     [
-     "The Verge AI",
+     "Simon Willison AI",
      1
     ]
    ]

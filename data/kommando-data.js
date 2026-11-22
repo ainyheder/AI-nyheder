@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-21T22:02:34.608328+00:00",
+ "genereret": "2026-11-22T07:30:26.403996+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -199,29 +199,29 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-21T21:50:31.854305+00:00",
-  "antal": 115,
-  "med_billede": 73,
-  "paa_dansk": 115,
+  "opdateret": "2026-11-22T07:21:23.282833+00:00",
+  "antal": 114,
+  "med_billede": 76,
+  "paa_dansk": 114,
   "kategorier": {
-   "Samfund \u0026 etik": 21,
+   "Samfund \u0026 etik": 22,
    "Forskning": 14,
-   "Lanceringer": 14,
+   "Lanceringer": 12,
    "Hverdags-AI": 33,
-   "Penge \u0026 marked": 27,
-   "Politik \u0026 jura": 6
+   "Politik \u0026 jura": 7,
+   "Penge \u0026 marked": 26
   },
   "kilder": {
    "Ars Technica AI": 9,
    "MIT Tech Review AI": 4,
-   "Google DeepMind": 3,
-   "TechCrunch AI": 33,
+   "Google DeepMind": 2,
+   "TechCrunch AI": 32,
    "The Verge AI": 20,
-   "OpenAI Blog": 22,
+   "OpenAI Blog": 24,
    "Hugging Face": 6,
    "Google Gemini": 5,
    "Simon Willison AI": 6,
-   "Anthropic News": 5,
+   "Anthropic News": 4,
    "Mistral AI": 1,
    "xAI News": 1
   },
@@ -237,6 +237,16 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/e2c95ef88c12bb61.webp"
    },
    {
+    "titel": "The UN fails to agree on rules regulating ‘killer robots’",
+    "rubrik": "FN-lande udskyder regler for autonome våben",
+    "link": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+    "side": "artikel/0a2e9e2641fc4aa3.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-21T15:03:37-05:00",
+    "billede": "data/img/3f3a61dbe2dc559c.webp"
+   },
+   {
     "titel": "The most misunderstood graph in AI just got a major update",
     "rubrik": "METR finder AI’s svage side i forskning",
     "link": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
@@ -245,19 +255,19 @@ window.KOMMANDO_DATA = {
     "kilde": "MIT Tech Review AI",
     "dato": "2026-11-20T18:15:15+00:00",
     "billede": "data/img/02e7e769cad712d6.webp"
-   },
-   {
-    "titel": "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
-    "rubrik": "Trump truer med skat på datacentre i udlandet",
-    "link": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
-    "side": "artikel/b44ab066f64c7bf4.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-20T13:50:19-05:00",
-    "billede": "data/img/d31c61f3ddbdf300.webp"
    }
   ],
   "seneste": [
+   {
+    "titel": "The UN fails to agree on rules regulating ‘killer robots’",
+    "rubrik": "FN-lande udskyder regler for autonome våben",
+    "link": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+    "side": "artikel/0a2e9e2641fc4aa3.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-21T15:03:37-05:00",
+    "billede": "data/img/3f3a61dbe2dc559c.webp"
+   },
    {
     "titel": "Can Anthropic afford to put safety first?",
     "rubrik": "Anthropic på børsen: Sikkerhed møder aktionærkrav",
@@ -266,7 +276,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Penge \u0026 marked",
     "kilde": "The Verge AI",
     "dato": "2026-11-21T10:00:00-05:00",
-    "billede": "data/img/1f50bb1b0ad0871b.webp"
+    "billede": "data/img/262b0a598c64cf35.webp"
    },
    {
     "titel": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
@@ -319,16 +329,6 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/02e7e769cad712d6.webp"
    },
    {
-    "titel": "Meta reconsiders 2030 net-zero goal amid record emissions from AI data centers",
-    "rubrik": "Meta genovervejer klimamål for 2030",
-    "link": "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/",
-    "side": "artikel/5652e6a0a79ec65e.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-11-20T21:47:10+00:00",
-    "billede": ""
-   },
-   {
     "titel": "Google rolls out new search homepage with AI chat history and no search button",
     "rubrik": "Google fjerner søgeknap og fremhæver AI",
     "link": "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/",
@@ -336,6 +336,16 @@ window.KOMMANDO_DATA = {
     "kategori": "Hverdags-AI",
     "kilde": "Ars Technica AI",
     "dato": "2026-11-20T21:58:29+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Meta reconsiders 2030 net-zero goal amid record emissions from AI data centers",
+    "rubrik": "Meta genovervejer klimamål for 2030",
+    "link": "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/",
+    "side": "artikel/5652e6a0a79ec65e.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-11-20T21:47:10+00:00",
     "billede": ""
    },
    {
@@ -367,21 +377,11 @@ window.KOMMANDO_DATA = {
     "kilde": "OpenAI Blog",
     "dato": "2026-11-20T00:00:00+00:00",
     "billede": "data/img/1767f8c8e76236c6.webp"
-   },
-   {
-    "titel": "Combatting adversarial distillation",
-    "rubrik": "OpenAI gør GPT‑6.2 Astras ræsonnement sværere at udtrække",
-    "link": "https://openai.com/index/combatting-adversarial-distillation",
-    "side": "artikel/7121ba7c91734ceb.html",
-    "kategori": "Lanceringer",
-    "kilde": "OpenAI Blog",
-    "dato": "2026-11-20T10:00:00+00:00",
-    "billede": "data/img/52573d4dadfd1e15.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-21T21:50:31.854305+00:00",
+  "opdateret": "2026-11-22T07:21:23.282833+00:00",
   "status": "reserve",
   "model": "gpt-6.1-terra",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
@@ -394,8 +394,8 @@ window.KOMMANDO_DATA = {
   ],
   "udgivet_udvalg": [
    "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
-   "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
-   "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax"
+   "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+   "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/"
   ],
   "vaerktoejer": [
    {
@@ -435,7 +435,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-11-21T21:50:31.669169+00:00",
+  "opdateret": "2026-11-22T07:21:22.827633+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -900,8 +900,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-21T21:50:31.854305+00:00",
-  "artikler_i_alt": 115,
+  "opdateret": "2026-11-22T07:21:23.282833+00:00",
+  "artikler_i_alt": 114,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -913,18 +913,9 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 15,
-    "i_listen": 5,
-    "som_ekstra": 2,
+    "i_listen": 4,
+    "som_ekstra": 1,
     "seneste": [
-     {
-      "rubrik": "Anthropic har afsluttet sin børsnotering",
-      "dato": "",
-      "foerst_set": "2026-11-20T17:11:55",
-      "link": "https://www.anthropic.com/news/ipo-close",
-      "side": "",
-      "hvor": "under",
-      "under": "Anthropic på børsen: Sikkerhed møder aktionærkrav"
-     },
      {
       "rubrik": "Anthropic sætter pris på børsnotering",
       "dato": "",
@@ -969,15 +960,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/e0a2cd4030dd26c2.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Anthropic giver Agent Skills til uafhængig fond",
-      "dato": "2026-10-22T00:00:00",
-      "foerst_set": "2026-11-06T21:24:13",
-      "link": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
-      "side": "artikel/014cb4d393dcb21a.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1016,7 +998,7 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 12,
     "i_listen": 5,
-    "som_ekstra": 4,
+    "som_ekstra": 3,
     "seneste": [
      {
       "rubrik": "Gemini kan nu bruge computeren på Mac",
@@ -1044,15 +1026,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Google lancerer Gemini 4 Neon til komplekse opgaver"
-     },
-     {
-      "rubrik": "Google åbner Gemini 4 Carbon for betalende",
-      "dato": "",
-      "foerst_set": "2026-11-10T21:56:03",
-      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
-      "side": "",
-      "hvor": "under",
-      "under": "Google åbner Gemini 4 Carbon for betalende brugere"
      },
      {
       "rubrik": "Google bringer Gemini til Android Go-telefoner",
@@ -1205,7 +1178,7 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 10,
     "i_listen": 6,
-    "som_ekstra": 5,
+    "som_ekstra": 4,
     "seneste": [
      {
       "rubrik": "Claude hjælper matematiker med muligt Riemann-bevis",
@@ -1233,15 +1206,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "OpenAI lancerer GPT-6.2 Astra og Sol"
-     },
-     {
-      "rubrik": "Gemini 4 Carbon åbner for alle",
-      "dato": "",
-      "foerst_set": "2026-11-10T21:56:03",
-      "link": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
-      "side": "",
-      "hvor": "under",
-      "under": "Google åbner Gemini 4 Carbon for betalende brugere"
      },
      {
       "rubrik": "Fable 5.2 fejlede på højeste ræsonnementsniveau",
@@ -1318,7 +1282,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 33,
+    "i_listen": 32,
     "som_ekstra": 6,
     "seneste": [
      {
@@ -1442,7 +1406,7 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 10,
     "i_listen": 20,
-    "som_ekstra": 13,
+    "som_ekstra": 12,
     "seneste": [
      {
       "rubrik": "Anthropic-matematiker hævder at have løst Riemann-hypotesen",
@@ -1544,13 +1508,13 @@ window.KOMMANDO_DATA = {
       "under": "Apple undersøger AI-svar om sundhed med ny app"
      },
      {
-      "rubrik": "Google lancerer Gemini 4 Carbon med agent-sværm",
+      "rubrik": "Anthropic opgraderer Claude til svære tekniske opgaver",
       "dato": "",
-      "foerst_set": "2026-11-10T21:56:03",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
+      "foerst_set": "2026-11-09T19:04:48",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
       "side": "",
       "hvor": "under",
-      "under": "Google åbner Gemini 4 Carbon for betalende brugere"
+      "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
      }
     ]
    },
@@ -1720,7 +1684,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 25,
-    "i_listen": 22,
+    "i_listen": 24,
     "som_ekstra": 2,
     "seneste": [
      {
@@ -1805,6 +1769,15 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
+      "rubrik": "OpenAI-essay advarer om tab af menneskelig kontrol",
+      "dato": "2026-11-18T10:00:00",
+      "foerst_set": "2026-11-19T01:59:29",
+      "link": "https://openai.com/index/the-silent-consensus",
+      "side": "artikel/4739d25187174c21.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "OpenAI-modeller forbedrer AMDs chipdesign",
       "dato": "2026-11-18T00:00:00",
       "foerst_set": "2026-11-18T17:30:51",
@@ -1821,15 +1794,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/a2f695ac2f9b40c7.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "OpenAI lancerer GPT-6.2 Astra og Sol",
-      "dato": "2026-11-17T17:45:00",
-      "foerst_set": "2026-11-17T23:38:27",
-      "link": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
-      "side": "artikel/b02ac3a3fe5a4756.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1840,10 +1804,10 @@ window.KOMMANDO_DATA = {
     "kun_aktuel": false,
     "max": 15,
     "aktiv": true,
-    "status": "ok",
-    "fejl": "",
-    "hentet": 15,
-    "i_listen": 3,
+    "status": "fejl",
+    "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
+    "hentet": 0,
+    "i_listen": 2,
     "som_ekstra": 0,
     "seneste": [
      {
@@ -1861,15 +1825,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-11-19T01:59:29",
       "link": "https://deepmind.google/blog/introducing-gemini-4-neon/",
       "side": "artikel/88e5a492fec09122.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Google åbner Gemini 4 Carbon for betalende brugere",
-      "dato": "2026-11-10T16:03:47",
-      "foerst_set": "2026-11-10T21:56:03",
-      "link": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
-      "side": "artikel/e38c92a7cefc59fe.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1906,19 +1861,14 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-21T22:02:28.849607+00:00",
+  "opdateret": "2026-11-22T07:30:16.172462+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 31,
-  "sidevisninger_i_alt": 52,
+  "besoeg_i_alt": 33,
+  "sidevisninger_i_alt": 54,
   "ai_chat_besoeg": 0,
   "serie": [
-   {
-    "dato": "2026-10-23",
-    "besoeg": 0,
-    "visninger": 0
-   },
    {
     "dato": "2026-10-24",
     "besoeg": 0,
@@ -2061,6 +2011,11 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-11-21",
+    "besoeg": 10,
+    "visninger": 10
+   },
+   {
+    "dato": "2026-11-22",
     "besoeg": 0,
     "visninger": 0
    }
@@ -2068,15 +2023,15 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 31,
-    "visninger": 52
+    "besoeg": 33,
+    "visninger": 54
    }
   ],
   "artikler": [],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 30
+    "besoeg": 32
    },
    {
     "fra": "safe.duckduckgo.com",
