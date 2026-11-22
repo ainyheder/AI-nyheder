@@ -1,6 +1,6 @@
 {
-  "opdateret": "2026-11-22T07:21:23.282833+00:00",
-  "status": "reserve",
+  "opdateret": "2026-11-22T16:35:53.421545+00:00",
+  "status": "godkendt",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
@@ -9,9 +9,32 @@
     "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/"
   ],
   "input_fingerprint": "81e8b32cb3a88553",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "kontrolproblemer": [
-    "Kandidaten af7d30f58230f923 omtaler samme Signal-ændring som hovedhistorien. Den er ikke blandt de udvalgte eller anbefalede og bør ikke vises som en selvstændig historie ved siden af hovedhistorien."
+  "redaktionsnote": "Ingen nye modellanceringer inden for de seneste 48 timer fremgår af det tilgængelige katalog. Signal-omtalen fra 21. november beskriver en allerede omtalt ændring og løftes derfor ikke som ny hovedhistorie.",
+  "beslutninger": [
+    {
+      "id": "cc88c546d1214b65",
+      "begrundelse": "Et stort sikkerhedsforsøg viser konkrete risici, når følsomme forespørgsler passerer gennem flere AI-udbydere. Opdateringen om OpenRouter gør fundet relevant for brugere og udviklere nu.",
+      "nyt_siden_sidst": "Forskeren sendte næsten to millioner forespørgsler med sporbare lokkemidler. Den 21. november kom oplysninger om, at OpenRouter havde advaret kunder og fjernet en datalagringsetiket fra MiniMax-endepunkter.",
+      "skriveopgave": "Skriv med rubrikken 'Falske adgangsnøgler afslører læk i AI-tjenester'. Forklar i korte afsnit med konkrete mellemoverskrifter, hvordan sporbare lokkemidler og mellemmænd virker, og hvad forsøget fandt. Skeln mellem forskerens fund og oplysningerne om OpenRouters kundebesked; forklar, at nul datalagring ikke beskytter mod alle indbrud, og undgå at generalisere til alle udbydere.",
+      "kilder": [
+        "cc88c546d1214b65"
+      ],
+      "samme_historie": [],
+      "link": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+      "rubrik": "HD Moore: Falske adgangsnøgler afslører læk i AI-tjenester"
+    },
+    {
+      "id": "001e6b6e613bbaaf",
+      "begrundelse": "En uafhængig evaluering giver et konkret modspil til forestillingen om, at fremskridt i kodning automatisk betyder lige så stærkt forskningsskøn.",
+      "nyt_siden_sidst": "METR har opdateret sin måling med længere og mere åbne opgaver. I én opgave var ingen af modellernes foreslåede AI-evalueringer gode nok til, at METR ville bruge dem i sin forskning.",
+      "skriveopgave": "Skriv 'AI klarer kodeopgaver bedre end forskningsskøn' og forklar med korte mellemoverskrifter, hvad METR måler, og hvordan mennesker bedømte de nye opgaver. Forklar den målte opgavernes tidslængde uden at påstå, at AI kan klare alle job af samme varighed. Fremhæv, at få åbne opgaver gør fremtidige fremskrivninger usikre.",
+      "kilder": [
+        "001e6b6e613bbaaf"
+      ],
+      "samme_historie": [],
+      "link": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+      "rubrik": "METR: AI halter på åbne forskningsopgaver"
+    }
   ],
   "modelkald": 6,
   "kildehentninger": 3,
@@ -53,8 +76,7 @@
   ],
   "udgivet_udvalg": [
     "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
-    "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
     "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/"
   ],
-  "afventer_artikler": 64
+  "afventer_artikler": 60
 }

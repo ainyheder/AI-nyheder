@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-22T07:21:23.282833+00:00",
- "artikler_i_alt": 114,
+ "opdateret": "2026-11-22T16:35:53.421545+00:00",
+ "artikler_i_alt": 119,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -12,7 +12,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 4,
+   "i_listen": 5,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -23,6 +23,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Anthropic sætter kursen for rekordstor børsnotering"
+    },
+    {
+     "rubrik": "Anthropic har afsluttet sin børsnotering",
+     "dato": "2026-11-20T00:00:00",
+     "foerst_set": "2026-11-20T17:11:55",
+     "link": "https://www.anthropic.com/news/ipo-close",
+     "side": "artikel/462db626dd31f818.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Claude Fable 5.2 skal løse svære kodeopgaver",
@@ -403,11 +412,11 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "Google DeepMind",
+     "OpenAI Blog",
      1
     ],
     [
-     "OpenAI Blog",
+     "Google DeepMind",
      1
     ],
     [
@@ -430,7 +439,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 32,
+   "i_listen": 33,
    "som_ekstra": 6,
    "seneste": [
     {
@@ -522,6 +531,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
+    },
+    {
+     "rubrik": "Signal begrænser skærmbilleder på mobilen",
+     "dato": "2026-11-21T21:37:10",
+     "foerst_set": "2026-11-21T21:50:31",
+     "link": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+     "side": "artikel/f8ce89f0a31be533.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Shortical bruger Aki Avnis ansigt i AI-serie",
@@ -621,15 +639,6 @@ window.KILDER_STATUS = {
      "side": "artikel/5d67ac67da7b88b9.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Palmer Luckey: AI-angreb overhaler gamle forsvar",
-     "dato": "2026-11-18T21:34:13",
-     "foerst_set": "2026-11-19T01:59:29",
-     "link": "https://techcrunch.com/2026/11/18/palmer-luckey-warns-ai-powered-cyberattacks-are-outpacing-defenses-its-time-to-start-running/",
-     "side": "artikel/33520312c7befee1.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -669,7 +678,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 20,
+   "i_listen": 21,
    "som_ekstra": 12,
    "seneste": [
     {
@@ -781,6 +790,15 @@ window.KILDER_STATUS = {
      "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
     },
     {
+     "rubrik": "Claude Code ændrede Gathins tv på halvanden time",
+     "dato": "2026-11-22T08:00:00",
+     "foerst_set": "2026-11-22T16:35:53",
+     "link": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera",
+     "side": "artikel/564b8081b7bd0008.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "FN-lande udskyder regler for autonome våben",
      "dato": "2026-11-21T15:03:37",
      "foerst_set": "2026-11-21T21:50:31",
@@ -878,15 +896,6 @@ window.KILDER_STATUS = {
      "side": "artikel/39185064ade2c161.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Suno laver nu videoer til AI-sange",
-     "dato": "2026-11-18T11:16:53",
-     "foerst_set": "2026-11-18T17:30:51",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1036415/suno-visuals-ai-generated-video-images-feature",
-     "side": "artikel/5d0f14b046a2035e.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -931,7 +940,7 @@ window.KILDER_STATUS = {
      "under": "USA vil begrænse fjernadgang til AI-chips"
     },
     {
-     "rubrik": "HD Moore afslører lækager hos AI-tjenester",
+     "rubrik": "HD Moore: Falske adgangsnøgler afslører læk i AI-tjenester",
      "dato": "2026-11-20T20:59:08",
      "foerst_set": "2026-11-21T01:42:50",
      "link": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
@@ -1037,7 +1046,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
-     "rubrik": "METR finder AI’s svage side i forskning",
+     "rubrik": "METR: AI halter på åbne forskningsopgaver",
      "dato": "2026-11-20T18:15:15",
      "foerst_set": "2026-11-21T01:42:50",
      "link": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
@@ -1085,7 +1094,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 24,
+   "i_listen": 26,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -1139,6 +1148,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-19T23:12:19",
      "link": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
      "side": "artikel/6ea811258a465008.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI viser Codex’ grænser for kommandoer",
+     "dato": "2026-11-18T08:00:00",
+     "foerst_set": "2026-11-19T01:59:29",
+     "link": "https://openai.com/index/inside-the-codex-sandbox",
+     "side": "artikel/271c8d9c47fbf7cb.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1202,15 +1220,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-17T23:38:27",
      "link": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
      "side": "artikel/b02ac3a3fe5a4756.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI samler salgsarbejde i ChatGPT",
-     "dato": "2026-11-17T08:00:00",
-     "foerst_set": "2026-11-17T23:38:27",
-     "link": "https://openai.com/index/introducing-chatgpt-for-sales",
-     "side": "artikel/1632816037b3f079.html",
      "hvor": "forside",
      "under": ""
     }
