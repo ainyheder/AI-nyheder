@@ -1,39 +1,6 @@
 {
-  "opdateret": "2026-11-22T22:00:04.972727+00:00",
+  "opdateret": "2026-11-23T08:05:22.310496+00:00",
   "kladder": [
-    {
-      "titel": "Binding of Isaac developer removes AI music from Repentance Plus",
-      "link": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
-      "resume": "The Binding of Isaac: Repentance Plus has spent the last few days getting review-bombed on Steam after it was discovered that a particular segment of the game used AI music. Reddit user ShweetsStuff discovered the songs used during a Grand Theft Auto-themed section. They found several audio files with Suno metadata that pointed back to […]",
-      "dato": "2026-11-22T12:25:20-05:00",
-      "kilde": "The Verge AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-11-22T22:00:04.972727+00:00",
-      "eget_foerst_set": "2026-11-22T22:00:04.972727+00:00",
-      "rubrik": "The Binding of Isaac: Repentance Plus fjerner AI-musik",
-      "resume_da": "Spillet fik en bølge af negative Steam-anmeldelser, efter at en bruger fandt lydfiler med Suno-metadata.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Udvikleren fjerner AI-musik fra Repentance Plus efter negative anmeldelser og fund af Suno-metadata.",
-        "forbehold": "Det medsendte uddrag beskriver ikke nærmere, hvordan musikken blev fremstillet.",
-        "emne": "binding of isaac"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
     {
       "titel": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
       "link": "https://huggingface.co/blog/inkling2mini",
@@ -45,6 +12,7 @@
       "eget_foerst_set": "2026-11-21T01:42:50.990268+00:00",
       "rubrik": "Hugging Face præsenterer Inkling 2 Mini",
       "resume_da": "Den er præsenteret til lokal brug.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -61,7 +29,6 @@
         "emne": "inkling 2 mini"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -96,39 +63,6 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Perplexity and Intelligence",
-      "link": "https://openai.com/index/perplexity-and-intelligence",
-      "resume": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.",
-      "dato": "2026-11-22T00:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Forskning",
-      "foerst_set": "2026-11-22T22:00:04.972727+00:00",
-      "eget_foerst_set": "2026-11-22T22:00:04.972727+00:00",
-      "rubrik": "OpenAI beskriver perpleksitet som mål for AI-fremskridt",
-      "resume_da": "Ifølge OpenAI kan målet hjælpe udviklere med at finde en fælles måde at vurdere nye evner i AI-modeller på.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI beskriver perplexity som et muligt fælles mål for fremskridt og nye evner i AI-modeller.",
-        "forbehold": "Uddraget giver ingen metode, resultater eller begrænsninger for målet.",
-        "emne": "perplexity"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -445,13 +379,13 @@
         "nyhed": 1,
         "betydning": 1,
         "brugbarhed": 0,
-        "dokumentation": 2,
+        "dokumentation": 1,
         "dansk": 0,
         "type": "forskning",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "En Hugging Face-artikel omtaler DaisyRose-27B og effektivitet i eftertræning.",
-        "forbehold": "Der er ingen artikeltekst, resultater eller bekræftet modeludgivelse i materialet.",
+        "begrundelse": "En titel omtaler DaisyRose-27B og effektivitet i eftertræning.",
+        "forbehold": "Der er ingen artikeltekst, som dokumenterer udgivelse, metode eller resultater.",
         "emne": "daisyrose-27b"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
@@ -460,6 +394,72 @@
       "afventer": [
         "Mangler dansk overskrift",
         "Mangler dansk indledning",
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+      "link": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "resume": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
+      "dato": "2026-11-10T12:02:28+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-10T12:55:44.065731+00:00",
+      "eget_foerst_set": "2026-11-10T12:55:44.065731+00:00",
+      "rubrik": "Google DeepMind: AlphaProof Code verificerer Signals kernekryptering",
+      "resume_da": "Ifølge Google DeepMind skrev agenterne tre millioner linjer beviser i bevissproget Lean.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "gennembrud",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Ifølge Google DeepMind skrev AlphaProof Code-agenter beviser i Lean for Signals centrale kryptering.",
+        "forbehold": "Materialet beskriver ikke bevisernes afgrænsning eller uafhængig kontrol.",
+        "emne": "alphaproof code"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Opening the datasets behind our AI weather models",
+      "link": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
+      "resume": "Foundational precipitation and geostationary satellite datasets to observe the planet clearly.",
+      "dato": "2026-11-10T11:13:04+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-13T12:33:55.476940+00:00",
+      "eget_foerst_set": "2026-11-13T12:33:55.476940+00:00",
+      "rubrik": "Google DeepMind åbner datasæt bag AI-vejrmodeller",
+      "resume_da": "Datasættene indeholder oplysninger om nedbør og billeder fra geostationære satellitter.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google DeepMind åbner datasæt om nedbør og geostationære satellitbilleder bag sine AI-vejrmodeller.",
+        "forbehold": "Materialet beskriver ikke adgangsvilkår eller datasættenes omfang.",
+        "emne": "ai-vejrdata"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
     },
@@ -492,6 +492,105 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 3,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+      "link": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+      "resume": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
+      "dato": "2026-11-09T19:51:47+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-11-10T21:56:03.050309+00:00",
+      "eget_foerst_set": "2026-11-10T21:56:03.050309+00:00",
+      "rubrik": "Gemini Robotics 2.5 skal gøre robotter mere fingernemme",
+      "resume_da": "Modellen kombinerer syn, sprog og handling og skal ifølge Google DeepMind også forbedre robotters pålidelighed og sikkerhed.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Google DeepMind præsenterer Gemini Robotics 2.5, en model for syn, sprog og handling.",
+        "forbehold": "Påstandene om bedre fingerfærdighed og sikkerhed understøttes ikke af test i materialet.",
+        "emne": "gemini robotics 2.5"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Agentic cheminformatics with Google Antigravity",
+      "link": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+      "resume": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
+      "dato": "2026-11-03T17:01:49+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-04T12:26:57.700834+00:00",
+      "eget_foerst_set": "2026-11-04T12:26:57.700834+00:00",
+      "rubrik": "Google beskriver AI til lægemiddelforskning",
+      "resume_da": "Antigravity og Cheminformatics Skills kan ifølge Google søge efter kemiske forbindelser og foreslå nye, stive makrocykler: store ringformede molekyler.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google beskriver brug af Antigravity og Cheminformatics Skills til søgning efter og forslag til molekyler.",
+        "forbehold": "Materialet indeholder ingen resultater, der dokumenterer hurtigere lægemiddeludvikling.",
+        "emne": "google antigravity"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Speeding up planning decisions with AI",
+      "link": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/",
+      "resume": "Google DeepMind and UK government work together to reduce planning assessment times",
+      "dato": "2026-10-30T14:18:30+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-02T18:45:47.523033+00:00",
+      "eget_foerst_set": "2026-11-02T18:45:47.523033+00:00",
+      "rubrik": "Google og britisk regering samarbejder om planvurderinger",
+      "resume_da": "Målet er at reducere tiden til vurdering af plansager ved hjælp af AI.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google DeepMind og den britiske regering samarbejder om at forkorte vurderingen af plansager med AI.",
+        "forbehold": "Materialet oplyser ikke, om samarbejdet har reduceret sagsbehandlingstiden.",
+        "emne": "ai i plansager"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -530,6 +629,72 @@
       ]
     },
     {
+      "titel": "Genie 4: A new generation of world simulation",
+      "link": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "resume": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+      "dato": "2026-10-27T16:01:38+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-27T20:55:19.965914+00:00",
+      "eget_foerst_set": "2026-10-27T20:55:19.965914+00:00",
+      "rubrik": "Google præsenterer verdensmodellen Genie 4",
+      "resume_da": "Ifølge Google kan modellen simulere verdener i realtid med høj realisme.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Google DeepMind præsenterer Genie 4, en ny verdensmodel til simulering i realtid.",
+        "forbehold": "Påstanden om høj realisme er ikke underbygget med testresultater i materialet; adgang er ikke oplyst.",
+        "emne": "genie 4"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "We haven’t seen the last of the major tech outages",
+      "link": "https://www.theverge.com/tech/1039851/major-tech-outages",
+      "resume": "Over the last week or so, we have seen a nationwide FAA ground stop, a multi-day Outlook outage that brought entire companies to a standstill, and a banking outage at JPMorgan Chase. But the consensus is that there are more to come. Director of National Intelligence Jay Clayton told CNN: \"The American people should be […]",
+      "dato": "2026-11-22T17:48:02-05:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-23T08:05:22.310496+00:00",
+      "eget_foerst_set": "2026-11-23T08:05:22.310496+00:00",
+      "rubrik": "JPMorgan Chase var ramt af banknedbrud",
+      "resume_da": "I løbet af den seneste uges tid blev fly i USA sat på jorden, mens et Outlook-nedbrud varede flere dage.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Artiklen omtaler flere store teknologinedbrud og forventninger om flere.",
+        "forbehold": "Materialet beskriver ingen forbindelse til AI.",
+        "emne": "teknologinedbrud"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Why data centers are at the center of the Big Tech backlash",
       "link": "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/",
       "resume": "Journalist Paris Marx unpacks his new book \"Hyperscale.\"",
@@ -540,6 +705,7 @@
       "eget_foerst_set": "2026-11-22T22:00:04.972727+00:00",
       "rubrik": "Paris Marx undersøger datacentrenes rolle i techkritik",
       "resume_da": "Journalisten fortæller om sin nye bog ”Hyperscale”.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -556,7 +722,6 @@
         "emne": "datacentre"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -1908,138 +2073,6 @@
         "begrundelse": "Et nyt Datasette-kortplugin blev ifølge udvikleren hovedsageligt bygget med én AI-prompt.",
         "forbehold": "AI er en del af udviklingsprocessen, ikke pluginets hovedfunktion.",
         "emne": "datasette-maplibre"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Jensen Huang might be plotting a return and more of the latest Nvidia drama",
-      "link": "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed",
-      "resume": "The drama around Nvidia co-founder and former CEO Jensen Huang is evolving quickly. The latest edition of our Stepback newsletter should get you up to speed, but there have already been a number of new developments since this morning. That includes rumors that Jensen Huang might be trying to find a path back to CEO, […]",
-      "dato": "2026-11-15T20:43:49+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-11-15T21:12:22.625383+00:00",
-      "eget_foerst_set": "2026-11-15T21:12:22.625383+00:00",
-      "rubrik": "Rygter peger på Jensen Huang-retur til Nvidia",
-      "resume_da": "Ifølge The Verge går der rygter om, at den tidligere topchef forsøger at finde en vej tilbage til posten.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 0,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "rygte",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Der går rygter om, at Jensen Huang forsøger at vende tilbage som topchef i Nvidia.",
-        "forbehold": "En tilbagevenden er ikke bekræftet.",
-        "emne": "nvidia"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "SNL gathers all the tech tycoons for a lesson in dating and spycraft",
-      "link": "https://techcrunch.com/2026/11/15/snl-gathers-all-the-tech-tycoons-for-a-lesson-in-dating-and-spycraft/",
-      "resume": "While awkward, creepy tech executives have become a recurring theme on Saturday Night Live, this week’s episode gave the cast a chance to show off all their impressions at once.",
-      "dato": "2026-11-15T20:20:57+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-11-15T21:12:22.625383+00:00",
-      "eget_foerst_set": "2026-11-15T21:12:22.625383+00:00",
-      "rubrik": "Saturday Night Live parodierer flere techchefer",
-      "resume_da": "Ugens episode samler programmets imitationer af techledere i én sketch.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 0,
-        "brugbarhed": 0,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Saturday Night Live samler imitationer af techledere i en sketch.",
-        "forbehold": "",
-        "emne": "saturday night live"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "An overview of Jensen Huang’s messy days",
-      "link": "https://www.theverge.com/column/1033943/jensen-huang-nvidia-china-spying-scandal-resignation",
-      "resume": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on Jensen Huang's resignation and the fallout from Nvidia's leadership crisis, follow Terrence O'Brien. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How it started On October […]",
-      "dato": "2026-11-15T13:00:00+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-11-15T15:51:37.879676+00:00",
-      "eget_foerst_set": "2026-11-15T15:51:37.879676+00:00",
-      "rubrik": "The Verge gennemgår Jensen Huangs afgang fra Nvidia",
-      "resume_da": "Nyhedsbrevet omtaler også følgerne af selskabets ledelseskrise.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Et nyhedsbrev omtaler Jensen Huangs afgang og Nvidias ledelseskrise.",
-        "forbehold": "Det medsendte uddrag beskriver ikke årsagen til afgangen eller konkrete følger.",
-        "emne": "nvidia"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Where was Nvidia’s security team?",
-      "link": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
-      "resume": "Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships, including one with an executive at a company suspected of funneling chips to China, a former intelligence officer says it’s the kind of leak that runs everyday conversations, which most corporate security teams are poorly equipped to catch.",
-      "dato": "2026-11-15T00:08:07+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-11-15T00:10:10.078294+00:00",
-      "eget_foerst_set": "2026-11-15T00:10:10.078294+00:00",
-      "rubrik": "Nvidias sikkerhedschef forlod posten i august",
-      "resume_da": "Jensen Huang er siden gået af efter relationer, herunder til en chef i en virksomhed, der mistænkes for at sende chips til Kina.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "En tidligere efterretningsofficer vurderer sikkerhedsrisici efter Jensen Huangs afgang fra Nvidia.",
-        "forbehold": "Materialet dokumenterer ikke et konkret sikkerhedsbrud.",
-        "emne": "nvidia"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 1,
@@ -79082,7 +79115,7 @@
       "titel": "Apple is hiring engineers to build its own AI agent",
       "link": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
       "resume": "Apple is working on its own AI agent that can perform a range of tasks for you, including browsing the web, working across apps, writing code, and calling services. That's according to a now-removed job listing spotted by Bloomberg, which said Apple is looking for an engineer to lead the creation of an agentic AI […]",
-      "dato": "2026-11-19T17:31:41-05:00",
+      "dato": "2026-11-19T22:31:41+00:00",
       "kilde": "The Verge AI",
       "kategori": "Lanceringer",
       "foerst_set": "2026-11-19T23:12:19.344731+00:00",
@@ -81663,6 +81696,9 @@
       "detaljer": [],
       "betydning": "Udvidelsen giver udvalgte forskningsmiljøer adgang til Claude-kreditter gennem deres organisationer, men er ikke en generel åbning for alle forskere.",
       "pointer": [],
+      "billedmotiv": "A stack of Claude credit tokens bearing Claude's warm terracotta-orange, many-rayed asterisk passes from a solid research institution icon toward a microscope. The transfer represents free Claude usage credits distributed through selected research organisations. Give the starburst a large, front-facing place on the foremost token, with thick opaque forms and clearly separated outlines.",
+      "billedmotiv_instruks": "0c883943ba06f066f0e5",
+      "billede": "data/img/11657d9c7f4a07d5.webp",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -81686,9 +81722,6 @@
         "kontrolleret": "2026-11-21T13:02:53.623277+00:00"
       },
       "prio": 5,
-      "billedmotiv": "A stack of Claude credit tokens bearing Claude's warm terracotta-orange, many-rayed asterisk passes from a solid research institution icon toward a microscope. The transfer represents free Claude usage credits distributed through selected research organisations. Give the starburst a large, front-facing place on the foremost token, with thick opaque forms and clearly separated outlines.",
-      "billedmotiv_instruks": "0c883943ba06f066f0e5",
-      "billede": "data/img/11657d9c7f4a07d5.webp",
       "side": "artikel/5bcdc646a6322b91.html"
     },
     {
@@ -81718,6 +81751,9 @@
       "detaljer": [],
       "betydning": "Registreringen sætter en børsnotering i gang, men den giver endnu ikke adgang til at købe aktierne.",
       "pointer": [],
+      "billedmotiv": "An Anthropic registration document bearing Claude's warm terracotta-orange, many-rayed asterisk is partially inserted into a solid filing slot, with an unissued share certificate tucked behind it. The unfinished filing gesture conveys a planned stock offering that is not yet available to buy. Use thick, opaque forms, crisp edges and a large front-facing emblem.",
+      "billedmotiv_instruks": "ae2ca3a9d50b40d8cf08",
+      "billede": "data/img/c7f984a9b7cb2cc5.webp",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -81741,9 +81777,6 @@
         "kontrolleret": "2026-11-21T13:02:57.839704+00:00"
       },
       "prio": 6,
-      "billedmotiv": "An Anthropic registration document bearing Claude's warm terracotta-orange, many-rayed asterisk is partially inserted into a solid filing slot, with an unissued share certificate tucked behind it. The unfinished filing gesture conveys a planned stock offering that is not yet available to buy. Use thick, opaque forms, crisp edges and a large front-facing emblem.",
-      "billedmotiv_instruks": "ae2ca3a9d50b40d8cf08",
-      "billede": "data/img/c7f984a9b7cb2cc5.webp",
       "side": "artikel/e0a2cd4030dd26c2.html"
     },
     {
@@ -82798,6 +82831,39 @@
       "eget_foerst_set": "2026-11-22T22:00:04.972727+00:00",
       "rubrik": "OpenAI-forsker foreslår mål for AI-grænser",
       "resume_da": "Jakub Pachocki vil bruge modellers evne til at forudsige tekst som grundlag for fælles grænser for AI-udvikling.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Et mål for udviklingens fart",
+          "tekst": "Hvis AI-virksomheder skal sætte en fælles grænse for udviklingen, skal de først kunne måle fremskridtene. Det mener OpenAIs chefforsker, Jakub Pachocki, som foreslår at bruge målet perplexity.\n\nPerplexity måler, hvor godt en model i gennemsnit forudsiger det næste token, en lille del af tekst. En lavere værdi betyder bedre forudsigelser.\n\nPachocki argumenterer for, at andre test, som måler bestemte evner, hurtigt bliver forældede, når teknologien udvikler sig. Perplexity er derimod fortsat et nyttigt mål, mener han."
+        },
+        {
+          "overskrift": "Forslaget skal give tid til kontrol",
+          "tekst": "Pachocki forestiller sig, at virksomhederne aftaler ikke at passere en bestemt grænse, før de har nået et konkret mål for, hvor godt de kan forstå og overvåge AI-modellers adfærd.\n\nHan forbinder faldende måleværdier med nye evner. Ifølge ham kunne GPT-4 bruge ræsonnement produktivt, mens modeller ved endnu lavere værdier har vist banebrydende evner inden for blandt andet cybersikkerhed og matematik.\n\nTallene i hans indlæg omtales som tabsværdier. TechCrunchs gengivelse forklarer ikke nærmere forholdet mellem disse værdier og perplexity."
+        },
+        {
+          "overskrift": "Forslaget kommer efter debat om risiko",
+          "tekst": "Forslaget følger en debat om at bremse AI-udviklingen. Anthropic-chef Dario Amodei har foreslået fælles sikkerhedsstandarder og grænser for ukontrollerede fremskridt.\n\nPachocki foreslår et målegrundlag for sådanne grænser. Omtalen beskriver ikke en aftale mellem virksomhederne eller en fastsat grænse."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "Ca. 0,91",
+          "label": "Pachockis måleværdi for GPT-4"
+        },
+        {
+          "tal": "Under 0,8",
+          "label": "Tabsværdier, som Pachocki forbinder med nyere AI-evner"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "En fælles målemetode kunne give virksomhederne et grundlag for at aftale, hvornår de skal holde igen med udviklingen.",
+      "pointer": [],
+      "billedmotiv": "An OpenAI next-token prediction strip bears the intact black six-loop OpenAI Blossom, beside a descending measurement gauge approaching a movable stop marker. The strip consists of solid, blank text-token blocks with one candidate block hovering at the end. The adjustable stop represents a proposed limit, not an established agreement. Use thick, opaque forms and clearly separated contours.",
+      "billedmotiv_instruks": "5a7f9d8562e0aa1e286b",
+      "billede": "data/img/20b42510755534d1.webp",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -82814,46 +82880,151 @@
         "emne": "openai og regulering"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-22T22:02:02.427400+00:00"
+      },
+      "prio": 4,
+      "historie_dato": "2026-11-22T00:00:00+00:00",
+      "andre": [
+        {
+          "kilde": "OpenAI Blog",
+          "link": "https://openai.com/index/perplexity-and-intelligence",
+          "rubrik": "OpenAI-skribent foreslår fælles mål for AI",
+          "resume_da": "Et mål for, hvor godt modeller forudsiger tekst, kan ifølge skribenten hjælpe branchen med at sætte grænser for udviklingen.",
+          "dato": "2026-11-22T00:00:00+00:00",
+          "foerst_set": "2026-11-22T22:00:04.972727+00:00"
+        }
+      ],
+      "side": "artikel/772a602107cad2ee.html"
+    },
+    {
+      "titel": "Binding of Isaac developer removes AI music from Repentance Plus",
+      "link": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
+      "resume": "The Binding of Isaac: Repentance Plus has spent the last few days getting review-bombed on Steam after it was discovered that a particular segment of the game used AI music. Reddit user ShweetsStuff discovered the songs used during a Grand Theft Auto-themed section. They found several audio files with Suno metadata that pointed back to […]",
+      "dato": "2026-11-22T12:25:20-05:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-22T22:00:04.972727+00:00",
+      "eget_foerst_set": "2026-11-22T22:00:04.972727+00:00",
+      "rubrik": "Nicalis fjerner AI-musik fra Repentance Plus",
+      "resume_da": "Musikken blev opdaget i en Grand Theft Auto-parodi. Spillets skaber siger, at han ikke vidste, den var lavet med AI.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Udvikleren fjerner AI-musik fra Repentance Plus efter negative anmeldelser og fund af Suno-metadata.",
+        "forbehold": "Det medsendte uddrag beskriver ikke nærmere, hvordan musikken blev fremstillet.",
+        "emne": "binding of isaac"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Lydfiler afslørede musikkens ophav",
+          "tekst": "En bruger på Reddit fandt AI-musik i The Binding of Isaac: Repentance Plus, en version af spillet The Binding of Isaac. Musikken blev brugt i en del af spillet, der parodierede Grand Theft Auto.\n\nBrugeren, ShweetsStuff, fandt oplysninger i flere lydfiler, som pegede på numre på Sunos hjemmeside. Suno er en tjeneste til at lave musik med AI, og sporene førte dermed tilbage til en kilde for AI-genereret musik."
+        },
+        {
+          "overskrift": "Skaberen siger, han ikke vidste det",
+          "tekst": "Spillets skaber, Edmund McMillen, undskyldte på X og sagde, at han ikke anede, at parodien brugte AI-musik. Studiet Nicalis, Inc., som står bag Repentance Plus, meddelte få timer efter opdagelsen, at spillet var opdateret, og de genererede musikfiler fjernet.\n\nMcMillen har tidligere været kritisk over for AI i spiludvikling. I en TikTok-video fra 2024 kaldte han det uinspireret og kedeligt."
+        },
+        {
+          "overskrift": "Negative anmeldelser blev hængende",
+          "tekst": "Opdagelsen udløste en strøm af negative anmeldelser på Steam, hvor spil sælges og anmeldes. Da The Verge omtalte sagen, havde anmeldelserne endnu ikke rettet sig, og spillet var stadig vurderet som overvældende negativt.\n\nValve, som står bag Steam, kræver, at udviklere oplyser, hvordan og hvornår de bruger generativ AI i udviklingen. Ifølge The Verge ser Nicalis ikke ud til at have nævnt AI-musikken."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [],
+      "betydning": "Musikken er fjernet, men de negative anmeldelser var ikke forsvundet, da The Verge omtalte sagen.",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-23T08:08:42.775069+00:00"
+      },
+      "billedmotiv": "A solid video-game cartridge ejects a music note marked with a compact circuit-chip pattern, with a bold arrow pointing outward to show the AI-generated music being removed. The cartridge represents Repentance Plus; the note represents the discovered tracks. Use thick, opaque forms with sharp edges and clearly separated contours.",
+      "billedmotiv_instruks": "1c26d77de6ac7b436887",
+      "billede": "data/img/130e377f52822e33.webp",
+      "side": "artikel/cf3322b3a4602d72.html"
+    },
+    {
+      "titel": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO",
+      "link": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
+      "resume": "Three significant backers share what gave them conviction to bet billions on Anthropic.",
+      "dato": "2026-11-23T01:25:53+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-23T08:05:22.310496+00:00",
+      "eget_foerst_set": "2026-11-23T08:05:22.310496+00:00",
+      "rubrik": "Anthropic-satsning gav investorer store papirgevinst​er",
+      "resume_da": "TechCrunch fortæller, hvordan tre investorer traf deres valg før børsnoteringen, og hvad de foreløbig har fået ud af dem.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Tre investorer fortæller, hvorfor de satsede milliarder på Anthropic.",
+        "forbehold": "Materialet gengiver ikke investorernes konkrete begrundelser.",
+        "emne": "anthropic"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "kat_ai": true,
       "prio": 4,
       "sektioner": [
         {
-          "overskrift": "Et mål for udviklingens fart",
-          "tekst": "Hvis AI-virksomheder skal sætte en fælles grænse for udviklingen, skal de først kunne måle fremskridtene. Det mener OpenAIs chefforsker, Jakub Pachocki, som foreslår at bruge målet perplexity.\n\nPerplexity måler, hvor godt en model i gennemsnit forudsiger det næste token, en lille del af tekst. En lavere værdi betyder bedre forudsigelser.\n\nPachocki argumenterer for, at andre test, som måler bestemte evner, hurtigt bliver forældede, når teknologien udvikler sig. Perplexity er derimod fortsat et nyttigt mål, mener han."
+          "overskrift": "En tidlig satsning voksede kraftigt",
+          "tekst": "Anthropics børsnotering har givet nogle af selskabets tidlige investorer store gevinster på papiret. TechCrunch anslår, at investeringsselskabet Notable Capital har fået omkring 15 gange sin investering igen målt på papiret.\n\nAnthropic, der står bag AI-assistenten Claude, hentede 81,3 milliarder dollar ved børsnoteringen i november 2026. Selskabet blev her værdiansat til omkring 1.500 milliarder dollar, når alle potentielle aktier tælles med.\n\nNotable investerede i en tidligere finansieringsrunde, hvor Anthropic blev værdiansat til 61,5 milliarder dollar. En papirgevinst er ikke det samme som penge på kontoen: Den bygger på aktiernes værdi, ikke nødvendigvis på et salg."
         },
         {
-          "overskrift": "Forslaget skal give tid til kontrol",
-          "tekst": "Pachocki forestiller sig, at virksomhederne aftaler ikke at passere en bestemt grænse, før de har nået et konkret mål for, hvor godt de kan forstå og overvåge AI-modellers adfærd.\n\nHan forbinder faldende måleværdier med nye evner. Ifølge ham kunne GPT-4 bruge ræsonnement produktivt, mens modeller ved endnu lavere værdier har vist banebrydende evner inden for blandt andet cybersikkerhed og matematik.\n\nTallene i hans indlæg omtales som tabsværdier. TechCrunchs gengivelse forklarer ikke nærmere forholdet mellem disse værdier og perplexity."
+          "overskrift": "Udviklernes valg styrkede Notables tro",
+          "tekst": "Satsningen var stor for Notable: Omkring 10 procent af den amerikanske del af selskabets fond på over en milliard dollar gik til Anthropic. Flere af fondens investorer undrede sig ifølge TechCrunch over størrelsen.\n\nNotables egen analyse viste, at udviklere brugte Claude 70 procent af tiden frem for konkurrenten ChatGPT. Det var en vending fra året før. Kilden oplyser ikke, hvor mange udviklere analysen omfattede.\n\nNotable vurderede også, at samfundskritisk arbejde fortsat ville kræve amerikanske modeller med lukket kildekode, hvor den bagvedliggende kode ikke er frit tilgængelig."
         },
         {
-          "overskrift": "Forslaget kommer efter debat om risiko",
-          "tekst": "Forslaget følger en debat om at bremse AI-udviklingen. Anthropic-chef Dario Amodei har foreslået fælles sikkerhedsstandarder og grænser for ukontrollerede fremskridt.\n\nPachocki foreslår et målegrundlag for sådanne grænser. Omtalen beskriver ikke en aftale mellem virksomhederne eller en fastsat grænse."
+          "overskrift": "To senere investorer fulgte med",
+          "tekst": "Singapores statslige investeringsfond GIC investerede første gang i en runde annonceret i september 2025. Fonden havde blandt andet bemærket den tidlige interesse for Claude Code, Anthropics værktøj til programmering.\n\nGIC investerede senere i yderligere to runder. En person med kendskab til fondens økonomi siger til TechCrunch, at GIC efter børsnoteringen ejer omkring én procent af Anthropic.\n\nInvesteringsselskabet Baillie Gifford gik også ind i september 2025-runden. Selskabets Lilian Li peger på Anthropics omsætning og bruttoavance, altså hvor meget der er tilbage af omsætningen efter de direkte omkostninger."
         }
       ],
       "brief": "",
       "figurer": [],
       "noegletal": [
         {
-          "tal": "Ca. 0,91",
-          "label": "Pachockis måleværdi for GPT-4"
+          "tal": "Over 4,5 milliarder dollar",
+          "label": "GIC's samlede investering i Anthropic over tre finansieringsrunder"
         },
         {
-          "tal": "Under 0,8",
-          "label": "Tabsværdier, som Pachocki forbinder med nyere AI-evner"
+          "tal": "1,5 milliarder dollar",
+          "label": "Baillie Giffords samlede investering i Anthropic over tre finansieringsrunder"
         }
       ],
       "detaljer": [],
-      "betydning": "En fælles målemetode kunne give virksomhederne et grundlag for at aftale, hvornår de skal holde igen med udviklingen.",
+      "betydning": "Børsnoteringen har gjort det muligt at sætte en aktiemarkedsværdi på investeringerne, men papirgevinsternes endelige størrelse afhænger af, hvad investorerne sælger aktierne for.",
       "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
-        "kontrolleret": "2026-11-22T22:02:02.427400+00:00"
+        "kontrolleret": "2026-11-23T08:08:52.574949+00:00"
       },
-      "billedmotiv": "An OpenAI next-token prediction strip bears the intact black six-loop OpenAI Blossom, beside a descending measurement gauge approaching a movable stop marker. The strip consists of solid, blank text-token blocks with one candidate block hovering at the end. The adjustable stop represents a proposed limit, not an established agreement. Use thick, opaque forms and clearly separated contours.",
-      "billedmotiv_instruks": "5a7f9d8562e0aa1e286b",
-      "billede": "data/img/20b42510755534d1.webp",
-      "side": "artikel/772a602107cad2ee.html"
+      "billedmotiv": "A large share certificate bearing Anthropic's Claude mark, a warm terracotta-orange many-rayed asterisk, rises above a much smaller certificate, linked by a bold upward arrow. The enlarged paper represents the early investment's increased value after the listing, not a cash payout. Solid, opaque shapes with crisp edges and clearly separated contours.",
+      "billedmotiv_instruks": "24b9cb6ca90166fb1fdb",
+      "billede": "data/img/d2922caec6a93c76.webp",
+      "side": "artikel/ca5d392ce76c8966.html"
     }
   ]
 }

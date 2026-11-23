@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-11-22T22:00:04.972727+00:00",
+  "opdateret": "2026-11-23T08:05:22.310496+00:00",
   "status": "reserve",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
@@ -8,13 +8,13 @@
     "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
     "https://openai.com/index/perplexity-and-intelligence"
   ],
-  "input_fingerprint": "2ded199dbb81708f",
+  "input_fingerprint": "424192cf4bd7ded1",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "kontrolproblemer": [
-    "Anbefalingen om Signals begrænsning af skærmbilleder (7289e21f33e265e9) gentages i kandidatoversigten som The Verges Signal-historie (af7d30f58230f923). Begge beskriver samme ændring på Android og iOS; saml dem, så begivenheden kun vises én gang."
+    "Kandidatoversigten gentager hovedhistorien: OpenAIs »Perplexity and Intelligence« (1a10f1676d46fc01) og TechCrunch-historien (90468db0d5a9c8d3) handler om samme forslag fra Jakub Pachocki. Saml dem på én plads; OpenAIs tekst kan fortsat bruges som kilde."
   ],
   "modelkald": 6,
-  "kildehentninger": 2,
+  "kildehentninger": 3,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -25,7 +25,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -43,7 +43,11 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
+      "link": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://openai.com/index/perplexity-and-intelligence",
       "grundlag": "kildetekst"
     }
   ],
@@ -52,5 +56,5 @@
     "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
     "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure"
   ],
-  "afventer_artikler": 63
+  "afventer_artikler": 64
 }

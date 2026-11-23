@@ -1,10 +1,9 @@
 {
-  "opdateret": "2026-11-22T22:09:18.172043+00:00",
+  "opdateret": "2026-11-23T08:13:21.512349+00:00",
   "dage": 7,
   "serie_dage": 30,
   "udgivne_temaer": {
     "datoer": [
-      "2026-10-24",
       "2026-10-25",
       "2026-10-26",
       "2026-10-27",
@@ -33,13 +32,13 @@
       "2026-11-19",
       "2026-11-20",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-23"
     ],
     "serier": [
       {
         "navn": "Hverdags-AI",
         "tal": [
-          1,
           2,
           3,
           5,
@@ -68,13 +67,13 @@
           4,
           3,
           1,
-          1
+          1,
+          0
         ]
       },
       {
         "navn": "Penge & marked",
         "tal": [
-          1,
           1,
           8,
           8,
@@ -103,13 +102,13 @@
           3,
           2,
           1,
-          0
+          0,
+          1
         ]
       },
       {
         "navn": "Samfund & etik",
         "tal": [
-          0,
           2,
           2,
           2,
@@ -138,13 +137,13 @@
           2,
           4,
           2,
+          1,
           0
         ]
       },
       {
         "navn": "Lanceringer",
         "tal": [
-          1,
           0,
           2,
           3,
@@ -172,6 +171,7 @@
           3,
           2,
           1,
+          0,
           0,
           0
         ]
@@ -179,7 +179,6 @@
       {
         "navn": "Politik & jura",
         "tal": [
-          1,
           0,
           0,
           3,
@@ -208,13 +207,13 @@
           0,
           1,
           1,
-          1
+          1,
+          0
         ]
       },
       {
         "navn": "Forskning",
         "tal": [
-          1,
           0,
           1,
           2,
@@ -243,26 +242,37 @@
           1,
           4,
           0,
+          0,
           0
         ]
       }
     ]
   },
   "maaling": "ok",
-  "besoeg_i_alt": 36,
-  "sidevisninger_i_alt": 57,
+  "besoeg_i_alt": 42,
+  "sidevisninger_i_alt": 64,
   "ai_chat_besoeg": 0,
   "sider": [
     {
       "sti": "/",
-      "besoeg": 36,
-      "visninger": 57
+      "besoeg": 41,
+      "visninger": 62
+    },
+    {
+      "sti": "/om.html",
+      "besoeg": 1,
+      "visninger": 1
+    },
+    {
+      "sti": "/cookies.html",
+      "besoeg": 0,
+      "visninger": 1
     }
   ],
   "henvisere": [
     {
       "fra": "direkte",
-      "besoeg": 35
+      "besoeg": 41
     },
     {
       "fra": "safe.duckduckgo.com",
@@ -274,8 +284,8 @@
     "/": [
       {
         "fra": "direkte",
-        "besoeg": 35,
-        "visninger": 35
+        "besoeg": 40,
+        "visninger": 40
       },
       {
         "fra": "herfra selv",
@@ -287,21 +297,28 @@
         "besoeg": 1,
         "visninger": 1
       }
+    ],
+    "/om.html": [
+      {
+        "fra": "direkte",
+        "besoeg": 1,
+        "visninger": 1
+      }
+    ],
+    "/cookies.html": [
+      {
+        "fra": "herfra selv",
+        "besoeg": 0,
+        "visninger": 1
+      }
     ]
   },
   "faste_uden_besoeg": [
     "/uge.html",
     "/vaerktoejer.html",
-    "/faq.html",
-    "/om.html",
-    "/cookies.html"
+    "/faq.html"
   ],
   "serie": [
-    {
-      "dato": "2026-10-24",
-      "besoeg": 0,
-      "visninger": 0
-    },
     {
       "dato": "2026-10-25",
       "besoeg": 10,
@@ -446,6 +463,11 @@
       "dato": "2026-11-22",
       "besoeg": 10,
       "visninger": 10
+    },
+    {
+      "dato": "2026-11-23",
+      "besoeg": 0,
+      "visninger": 0
     }
   ],
   "artikler": [],

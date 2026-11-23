@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-22T22:00:04.972727+00:00",
- "artikler_i_alt": 119,
+ "opdateret": "2026-11-23T08:05:22.310496+00:00",
+ "artikler_i_alt": 117,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -112,7 +112,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 5,
-   "som_ekstra": 3,
+   "som_ekstra": 4,
    "seneste": [
     {
      "rubrik": "Gemini kan nu bruge computeren på Mac",
@@ -140,6 +140,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google lancerer Gemini 4 Neon til komplekse opgaver"
+    },
+    {
+     "rubrik": "Google åbner Gemini 4 Carbon for betalende",
+     "dato": "",
+     "foerst_set": "2026-11-10T21:56:03",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+     "side": "",
+     "hvor": "under",
+     "under": "Google åbner Gemini 4 Carbon for betalende brugere"
     },
     {
      "rubrik": "Google bringer Gemini til Android Go-telefoner",
@@ -190,7 +199,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google DeepMind",
-     2
+     3
     ],
     [
      "TechCrunch AI",
@@ -307,8 +316,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 6,
-   "som_ekstra": 4,
+   "i_listen": 4,
+   "som_ekstra": 5,
    "seneste": [
     {
      "rubrik": "Claude hjælper matematiker med muligt Riemann-bevis",
@@ -336,6 +345,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI lancerer GPT-6.2 Astra og Sol"
+    },
+    {
+     "rubrik": "Gemini 4 Carbon åbner for alle",
+     "dato": "",
+     "foerst_set": "2026-11-10T21:56:03",
+     "link": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+     "side": "",
+     "hvor": "under",
+     "under": "Google åbner Gemini 4 Carbon for betalende brugere"
     },
     {
      "rubrik": "Fable 5.2 fejlede på højeste ræsonnementsniveau",
@@ -381,33 +399,15 @@ window.KILDER_STATUS = {
      "side": "artikel/d7e5cf02c8228094.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Datasette Agent får spørgefelt på forsiden",
-     "dato": "2026-11-15T03:49:47",
-     "foerst_set": "2026-11-16T07:11:09",
-     "link": "https://simonwillison.net/2026/Nov/15/datasette-agent/",
-     "side": "artikel/00814a21a21f1de3.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Datasette kan nu kobles til lokale AI-modeller",
-     "dato": "2026-11-14T23:59:28",
-     "foerst_set": "2026-11-15T07:04:34",
-     "link": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
-     "side": "artikel/cbf5757fc7e88498.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "OpenAI Blog",
-     1
+     "Google DeepMind",
+     2
     ],
     [
-     "Google DeepMind",
+     "OpenAI Blog",
      1
     ],
     [
@@ -430,7 +430,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 33,
+   "i_listen": 34,
    "som_ekstra": 6,
    "seneste": [
     {
@@ -504,6 +504,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
+    },
+    {
+     "rubrik": "Anthropic-satsning gav investorer store papirgevinst​er",
+     "dato": "2026-11-23T01:25:53",
+     "foerst_set": "2026-11-23T08:05:22",
+     "link": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
+     "side": "artikel/ca5d392ce76c8966.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI-forsker foreslår mål for AI-grænser",
@@ -603,15 +612,6 @@ window.KILDER_STATUS = {
      "side": "artikel/fac74cc95111f0ba.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Nadella forklarer Microsofts tilbud om frivillig fratrædelse",
-     "dato": "2026-11-19T00:42:56",
-     "foerst_set": "2026-11-19T01:59:29",
-     "link": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
-     "side": "artikel/0f46293e3612b41e.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -620,15 +620,15 @@ window.KILDER_STATUS = {
      8
     ],
     [
+     "OpenAI Blog",
+     3
+    ],
+    [
      "Ars Technica AI",
      3
     ],
     [
      "Google Gemini",
-     2
-    ],
-    [
-     "OpenAI Blog",
      2
     ],
     [
@@ -652,7 +652,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 21,
-   "som_ekstra": 10,
+   "som_ekstra": 11,
    "seneste": [
     {
      "rubrik": "Anthropic-matematiker hævder at have løst Riemann-hypotesen",
@@ -736,6 +736,15 @@ window.KILDER_STATUS = {
      "under": "Apple undersøger AI-svar om sundhed med ny app"
     },
     {
+     "rubrik": "Google lancerer Gemini 4 Carbon med agent-sværm",
+     "dato": "",
+     "foerst_set": "2026-11-10T21:56:03",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
+     "side": "",
+     "hvor": "under",
+     "under": "Google åbner Gemini 4 Carbon for betalende brugere"
+    },
+    {
      "rubrik": "Anthropic opgraderer Claude til svære tekniske opgaver",
      "dato": "",
      "foerst_set": "2026-11-09T19:04:48",
@@ -743,6 +752,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
+    },
+    {
+     "rubrik": "Nicalis fjerner AI-musik fra Repentance Plus",
+     "dato": "2026-11-22T12:25:20",
+     "foerst_set": "2026-11-22T22:00:04",
+     "link": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
+     "side": "artikel/cf3322b3a4602d72.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Claude Code ændrede Gathins tv på halvanden time",
@@ -800,7 +818,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Apple søger ingeniør til ny AI-agent",
-     "dato": "2026-11-19T17:31:41",
+     "dato": "2026-11-19T22:31:41",
      "foerst_set": "2026-11-19T23:12:19",
      "link": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
      "side": "artikel/21b44fd34fd356ca.html",
@@ -842,15 +860,6 @@ window.KILDER_STATUS = {
      "side": "artikel/ee402172e0e23c3f.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Nvidia stopper leverancer af H200 til Kina",
-     "dato": "2026-11-18T13:01:05",
-     "foerst_set": "2026-11-18T17:30:51",
-     "link": "https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling",
-     "side": "artikel/39185064ade2c161.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -864,6 +873,10 @@ window.KILDER_STATUS = {
     ],
     [
      "Google Gemini",
+     1
+    ],
+    [
+     "Google DeepMind",
      1
     ],
     [
@@ -1049,9 +1062,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 26,
-   "som_ekstra": 2,
+   "i_listen": 24,
+   "som_ekstra": 3,
    "seneste": [
+    {
+     "rubrik": "OpenAI-skribent foreslår fælles mål for AI",
+     "dato": "",
+     "foerst_set": "2026-11-22T22:00:04",
+     "link": "https://openai.com/index/perplexity-and-intelligence",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI-forsker foreslår mål for AI-grænser"
+    },
     {
      "rubrik": "OpenAI åbner billedværktøj mod overgrebsmateriale",
      "dato": "",
@@ -1080,20 +1102,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "GPT-6 Astra finder kilder og bygger præsentationer",
-     "dato": "2026-11-20T00:00:00",
-     "foerst_set": "2026-11-21T01:42:50",
-     "link": "https://openai.com/business/customer-stories/hebbia",
-     "side": "artikel/c2d364619a446974.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "OpenAI gør GPT‑6.2 Astras ræsonnement sværere at udtrække",
      "dato": "2026-11-20T10:00:00",
      "foerst_set": "2026-11-21T01:42:50",
      "link": "https://openai.com/index/combatting-adversarial-distillation",
      "side": "artikel/7121ba7c91734ceb.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "GPT-6 Astra finder kilder og bygger præsentationer",
+     "dato": "2026-11-20T00:00:00",
+     "foerst_set": "2026-11-21T01:42:50",
+     "link": "https://openai.com/business/customer-stories/hebbia",
+     "side": "artikel/c2d364619a446974.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1182,7 +1204,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     2
+     3
     ],
     [
      "Simon Willison AI",
@@ -1197,10 +1219,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-   "hentet": 0,
-   "i_listen": 2,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 15,
+   "i_listen": 3,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -1220,15 +1242,28 @@ window.KILDER_STATUS = {
      "side": "artikel/88e5a492fec09122.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Google åbner Gemini 4 Carbon for betalende brugere",
+     "dato": "2026-11-10T16:03:47",
+     "foerst_set": "2026-11-10T21:56:03",
+     "link": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+     "side": "artikel/e38c92a7cefc59fe.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "Google Gemini",
-     2
+     3
     ],
     [
      "Simon Willison AI",
+     2
+    ],
+    [
+     "The Verge AI",
      1
     ]
    ]
