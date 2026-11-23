@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-23T08:05:22.310496+00:00",
- "artikler_i_alt": 117,
+ "opdateret": "2026-11-23T20:30:41.511519+00:00",
+ "artikler_i_alt": 123,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -112,8 +112,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 5,
-   "som_ekstra": 4,
+   "som_ekstra": 5,
    "seneste": [
+    {
+     "rubrik": "Google lader Search bruge personlige oplysninger",
+     "dato": "",
+     "foerst_set": "2026-11-23T20:30:41",
+     "link": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+     "side": "",
+     "hvor": "under",
+     "under": "Google Search får adgang til Wallet og Drive"
+    },
     {
      "rubrik": "Gemini kan nu bruge computeren på Mac",
      "dato": "",
@@ -198,12 +207,12 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "Google DeepMind",
+     "TechCrunch AI",
      3
     ],
     [
-     "TechCrunch AI",
-     2
+     "Google DeepMind",
+     3
     ],
     [
      "The Verge AI",
@@ -246,7 +255,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 6,
+   "i_listen": 5,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -291,15 +300,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-13T19:59:33",
      "link": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
      "side": "artikel/1f76189be1eacadc.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "IBM lærer Granite at skelne instruktioner fra data",
-     "dato": "2026-11-12T19:07:35",
-     "foerst_set": "2026-11-13T01:26:35",
-     "link": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
-     "side": "artikel/f052c6845a6ebe45.html",
      "hvor": "forside",
      "under": ""
     }
@@ -430,7 +430,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 34,
+   "i_listen": 37,
    "som_ekstra": 6,
    "seneste": [
     {
@@ -504,6 +504,33 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
+    },
+    {
+     "rubrik": "Google Search får adgang til Wallet og Drive",
+     "dato": "2026-11-23T19:14:46",
+     "foerst_set": "2026-11-23T20:30:41",
+     "link": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
+     "side": "artikel/389c89635cfdfbd7.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Amazon aftaler køb af Decarts AI-teknologi",
+     "dato": "2026-11-23T17:14:23",
+     "foerst_set": "2026-11-23T20:30:41",
+     "link": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
+     "side": "artikel/e483a880095260a7.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Sierra fordobler værdi på seks måneder",
+     "dato": "2026-11-23T14:43:03",
+     "foerst_set": "2026-11-23T20:30:41",
+     "link": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+     "side": "artikel/15da0cbca7e4582e.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Anthropic-satsning gav investorer store papirgevinst​er",
@@ -585,33 +612,6 @@ window.KILDER_STATUS = {
      "side": "artikel/6b24f4e22080386e.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Anthropic-aktier kan udløse 156 milliarder dollar",
-     "dato": "2026-11-19T19:10:45",
-     "foerst_set": "2026-11-19T23:12:19",
-     "link": "https://techcrunch.com/2026/11/19/anthropics-ipo-could-deliver-156-billion-to-charity/",
-     "side": "artikel/38cbde179199e5d6.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Microsoft blandt nedbrud: Eksperter uenige om AI",
-     "dato": "2026-11-19T21:42:31",
-     "foerst_set": "2026-11-19T23:12:19",
-     "link": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/",
-     "side": "artikel/74e8068d1097b579.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Nadella: AI-agenter kan ændre nettets reklamer",
-     "dato": "2026-11-18T22:58:11",
-     "foerst_set": "2026-11-19T01:59:29",
-     "link": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web/",
-     "side": "artikel/fac74cc95111f0ba.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -620,16 +620,16 @@ window.KILDER_STATUS = {
      8
     ],
     [
+     "Google Gemini",
+     3
+    ],
+    [
      "OpenAI Blog",
      3
     ],
     [
      "Ars Technica AI",
      3
-    ],
-    [
-     "Google Gemini",
-     2
     ],
     [
      "Simon Willison AI",
@@ -651,7 +651,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 21,
+   "i_listen": 24,
    "som_ekstra": 11,
    "seneste": [
     {
@@ -754,6 +754,33 @@ window.KILDER_STATUS = {
      "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
     },
     {
+     "rubrik": "Meta Muse kan handle hos Walmart",
+     "dato": "2026-11-23T06:00:00",
+     "foerst_set": "2026-11-23T20:30:41",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
+     "side": "artikel/c1061207c903927a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Oregon og Virginia sagsøger SpaceX over Grok",
+     "dato": "2026-11-23T13:26:47",
+     "foerst_set": "2026-11-23T20:30:41",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+     "side": "artikel/7b4f2fa9d4956562.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Nothing vil lade Ear Note skrive samtaler",
+     "dato": "2026-11-23T14:04:52",
+     "foerst_set": "2026-11-23T20:30:41",
+     "link": "https://www.theverge.com/gadgets/1040357/nothing-ear-note-earbuds-ai-recording",
+     "side": "artikel/ced394d4b6aee052.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Nicalis fjerner AI-musik fra Repentance Plus",
      "dato": "2026-11-22T12:25:20",
      "foerst_set": "2026-11-22T22:00:04",
@@ -764,7 +791,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Claude Code ændrede Gathins tv på halvanden time",
-     "dato": "2026-11-22T08:00:00",
+     "dato": "2026-11-22T13:00:00",
      "foerst_set": "2026-11-22T16:35:53",
      "link": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera",
      "side": "artikel/564b8081b7bd0008.html",
@@ -773,7 +800,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "FN-lande udskyder regler for autonome våben",
-     "dato": "2026-11-21T15:03:37",
+     "dato": "2026-11-21T20:03:37",
      "foerst_set": "2026-11-21T21:50:31",
      "link": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
      "side": "artikel/0a2e9e2641fc4aa3.html",
@@ -782,7 +809,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Anthropic på børsen: Sikkerhed møder aktionærkrav",
-     "dato": "2026-11-21T10:00:00",
+     "dato": "2026-11-21T15:00:00",
      "foerst_set": "2026-11-21T21:50:31",
      "link": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
      "side": "artikel/3f8dc1fbea0dc261.html",
@@ -791,7 +818,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Trump truer med skat på datacentre i udlandet",
-     "dato": "2026-11-20T13:50:19",
+     "dato": "2026-11-20T18:50:19",
      "foerst_set": "2026-11-21T01:42:50",
      "link": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
      "side": "artikel/b44ab066f64c7bf4.html",
@@ -800,7 +827,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Signal vil holde Siri og Gemini ude",
-     "dato": "2026-11-20T07:30:47",
+     "dato": "2026-11-20T12:30:47",
      "foerst_set": "2026-11-20T17:11:55",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
      "side": "artikel/da5d0e9421737f2d.html",
@@ -831,33 +858,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-19T13:47:54",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button",
      "side": "artikel/708518498c68a5d2.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "USA's politikere vil åbne for deepfake-søgsmål",
-     "dato": "2026-11-18T19:07:29",
-     "foerst_set": "2026-11-19T01:59:29",
-     "link": "https://www.theverge.com/policy/1036935/congress-forced-arbitration-deepfakes-defiance-act",
-     "side": "artikel/e365983d924d7b60.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Disneys Star Wars-figurer skal reagere på gæster",
-     "dato": "2026-11-18T17:50:57",
-     "foerst_set": "2026-11-19T01:59:29",
-     "link": "https://www.theverge.com/tech/1036729/disney-star-wars-anzellans-animatronic-amazon-aws-cloud-ai",
-     "side": "artikel/a2950c7055438357.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Nvidias bestyrelse afviser Huangs tilbagevenden",
-     "dato": "2026-11-18T18:34:15",
-     "foerst_set": "2026-11-19T01:59:29",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1036776/nvidia-earnings-kress-jensen-huang-petition",
-     "side": "artikel/ee402172e0e23c3f.html",
      "hvor": "forside",
      "under": ""
     }
@@ -895,7 +895,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 9,
+   "i_listen": 10,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -906,6 +906,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "USA vil begrænse fjernadgang til AI-chips"
+    },
+    {
+     "rubrik": "Asus ProArt P16 kører store AI-modeller lokalt",
+     "dato": "2026-11-23T12:00:00",
+     "foerst_set": "2026-11-23T20:30:41",
+     "link": "https://arstechnica.com/reviews/2026/11/review-the-asus-proart-p16-offers-a-glimpse-of-a-future-powered-by-local-ai/",
+     "side": "artikel/badeb7787834f761.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "HD Moore: Falske adgangsnøgler afslører læk i AI-tjenester",

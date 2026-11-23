@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-23T08:13:26.978400+00:00",
+ "genereret": "2026-11-23T20:41:52.707122+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -199,65 +199,135 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-23T08:05:22.310496+00:00",
-  "antal": 117,
-  "med_billede": 88,
-  "paa_dansk": 117,
+  "opdateret": "2026-11-23T20:30:41.511519+00:00",
+  "antal": 123,
+  "med_billede": 92,
+  "paa_dansk": 123,
   "kategorier": {
-   "Politik \u0026 jura": 7,
+   "Hverdags-AI": 37,
+   "Politik \u0026 jura": 8,
    "Samfund \u0026 etik": 24,
-   "Forskning": 13,
-   "Penge \u0026 marked": 27,
-   "Hverdags-AI": 33,
+   "Penge \u0026 marked": 29,
+   "Forskning": 12,
    "Lanceringer": 13
   },
   "kilder": {
-   "TechCrunch AI": 34,
-   "Ars Technica AI": 9,
+   "TechCrunch AI": 37,
+   "The Verge AI": 24,
+   "Ars Technica AI": 10,
    "MIT Tech Review AI": 4,
-   "The Verge AI": 21,
    "Google DeepMind": 3,
    "OpenAI Blog": 24,
    "Anthropic News": 5,
    "Simon Willison AI": 4,
    "Google Gemini": 5,
-   "Hugging Face": 6,
+   "Hugging Face": 5,
    "Mistral AI": 1,
    "xAI News": 1
   },
   "udvalgte": [
    {
-    "titel": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
-    "rubrik": "Signal begrænser skærmbilleder på mobilen",
-    "link": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
-    "side": "artikel/f8ce89f0a31be533.html",
-    "kategori": "Samfund \u0026 etik",
+    "titel": "Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses",
+    "rubrik": "Google Search får adgang til Wallet og Drive",
+    "link": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
+    "side": "artikel/389c89635cfdfbd7.html",
+    "kategori": "Hverdags-AI",
     "kilde": "TechCrunch AI",
-    "dato": "2026-11-21T21:37:10+00:00",
-    "billede": "data/img/855bbab790977dab.webp"
+    "dato": "2026-11-23T19:14:46+00:00",
+    "billede": ""
    },
    {
-    "titel": "The UN fails to agree on rules regulating ‘killer robots’",
-    "rubrik": "FN-lande udskyder regler for autonome våben",
-    "link": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
-    "side": "artikel/0a2e9e2641fc4aa3.html",
+    "titel": "Oregon and Virginia sue SpaceX over Grok’s porn deepfakes",
+    "rubrik": "Oregon og Virginia sagsøger SpaceX over Grok",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+    "side": "artikel/7b4f2fa9d4956562.html",
     "kategori": "Politik \u0026 jura",
     "kilde": "The Verge AI",
-    "dato": "2026-11-21T15:03:37-05:00",
-    "billede": "data/img/3f3a61dbe2dc559c.webp"
+    "dato": "2026-11-23T13:26:47-05:00",
+    "billede": "data/img/1cc4cbdbd6e090e0.webp"
    },
    {
-    "titel": "Can Anthropic afford to put safety first?",
-    "rubrik": "Anthropic på børsen: Sikkerhed møder aktionærkrav",
-    "link": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
-    "side": "artikel/3f8dc1fbea0dc261.html",
-    "kategori": "Penge \u0026 marked",
+    "titel": "Meta Muse can do your Black Friday shopping at Walmart",
+    "rubrik": "Meta Muse kan handle hos Walmart",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
+    "side": "artikel/c1061207c903927a.html",
+    "kategori": "Hverdags-AI",
     "kilde": "The Verge AI",
-    "dato": "2026-11-21T10:00:00-05:00",
-    "billede": "data/img/262b0a598c64cf35.webp"
+    "dato": "2026-11-23T06:00:00-05:00",
+    "billede": "data/img/d810f64df4fa6a24.webp"
    }
   ],
   "seneste": [
+   {
+    "titel": "Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses",
+    "rubrik": "Google Search får adgang til Wallet og Drive",
+    "link": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
+    "side": "artikel/389c89635cfdfbd7.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-23T19:14:46+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Meta Muse can do your Black Friday shopping at Walmart",
+    "rubrik": "Meta Muse kan handle hos Walmart",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
+    "side": "artikel/c1061207c903927a.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-23T06:00:00-05:00",
+    "billede": "data/img/d810f64df4fa6a24.webp"
+   },
+   {
+    "titel": "Oregon and Virginia sue SpaceX over Grok’s porn deepfakes",
+    "rubrik": "Oregon og Virginia sagsøger SpaceX over Grok",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+    "side": "artikel/7b4f2fa9d4956562.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-23T13:26:47-05:00",
+    "billede": "data/img/1cc4cbdbd6e090e0.webp"
+   },
+   {
+    "titel": "Nothing’s upcoming Ear Note is a pair of earbuds with AI transcription",
+    "rubrik": "Nothing vil lade Ear Note skrive samtaler",
+    "link": "https://www.theverge.com/gadgets/1040357/nothing-ear-note-earbuds-ai-recording",
+    "side": "artikel/ced394d4b6aee052.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-23T14:04:52-05:00",
+    "billede": "data/img/d1241349efd9e86f.webp"
+   },
+   {
+    "titel": "Amazon snaps up Decart’s AI optimization tech for $7.5B as it prepares to sell Trainium chips",
+    "rubrik": "Amazon aftaler køb af Decarts AI-teknologi",
+    "link": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
+    "side": "artikel/e483a880095260a7.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-23T17:14:23+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Sierra doubles valuation to $30B within six months as demand for AI in CX takes off",
+    "rubrik": "Sierra fordobler værdi på seks måneder",
+    "link": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+    "side": "artikel/15da0cbca7e4582e.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-23T14:43:03+00:00",
+    "billede": "data/img/e5e96e576caa7772.webp"
+   },
+   {
+    "titel": "Review: The Asus ProArt P16 offers a glimpse of a future powered by local AI",
+    "rubrik": "Asus ProArt P16 kører store AI-modeller lokalt",
+    "link": "https://arstechnica.com/reviews/2026/11/review-the-asus-proart-p16-offers-a-glimpse-of-a-future-powered-by-local-ai/",
+    "side": "artikel/badeb7787834f761.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-11-23T12:00:00+00:00",
+    "billede": ""
+   },
    {
     "titel": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO",
     "rubrik": "Anthropic-satsning gav investorer store papirgevinst​er",
@@ -267,16 +337,6 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-11-23T01:25:53+00:00",
     "billede": "data/img/d2922caec6a93c76.webp"
-   },
-   {
-    "titel": "OpenAI’s chief scientist has thoughts on how to limit AI development",
-    "rubrik": "OpenAI-forsker foreslår mål for AI-grænser",
-    "link": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
-    "side": "artikel/772a602107cad2ee.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-22T21:14:07+00:00",
-    "billede": "data/img/20b42510755534d1.webp"
    },
    {
     "titel": "Binding of Isaac developer removes AI music from Repentance Plus",
@@ -289,13 +349,23 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/130e377f52822e33.webp"
    },
    {
+    "titel": "OpenAI’s chief scientist has thoughts on how to limit AI development",
+    "rubrik": "OpenAI-forsker foreslår mål for AI-grænser",
+    "link": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
+    "side": "artikel/772a602107cad2ee.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-22T21:14:07+00:00",
+    "billede": "data/img/20b42510755534d1.webp"
+   },
+   {
     "titel": "The vibe-coding revolution is coming to all the gadgets",
     "rubrik": "Claude Code ændrede Gathins tv på halvanden time",
     "link": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera",
     "side": "artikel/564b8081b7bd0008.html",
     "kategori": "Hverdags-AI",
     "kilde": "The Verge AI",
-    "dato": "2026-11-22T08:00:00-05:00",
+    "dato": "2026-11-22T13:00:00+00:00",
     "billede": "data/img/833e8b03bc5a6bec.webp"
    },
    {
@@ -307,95 +377,25 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-11-21T21:37:10+00:00",
     "billede": "data/img/855bbab790977dab.webp"
-   },
-   {
-    "titel": "The UN fails to agree on rules regulating ‘killer robots’",
-    "rubrik": "FN-lande udskyder regler for autonome våben",
-    "link": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
-    "side": "artikel/0a2e9e2641fc4aa3.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-21T15:03:37-05:00",
-    "billede": "data/img/3f3a61dbe2dc559c.webp"
-   },
-   {
-    "titel": "Can Anthropic afford to put safety first?",
-    "rubrik": "Anthropic på børsen: Sikkerhed møder aktionærkrav",
-    "link": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
-    "side": "artikel/3f8dc1fbea0dc261.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-21T10:00:00-05:00",
-    "billede": "data/img/262b0a598c64cf35.webp"
-   },
-   {
-    "titel": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
-    "rubrik": "Shortical bruger Aki Avnis ansigt i AI-serie",
-    "link": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
-    "side": "artikel/6b65b8b30d4054e0.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-21T16:00:00+00:00",
-    "billede": "data/img/d3b4b9c07403e25e.webp"
-   },
-   {
-    "titel": "llm-gemini 0.38.1",
-    "rubrik": "llm-gemini får adgang til højere ræsonnementsniveau",
-    "link": "https://simonwillison.net/2026/Nov/20/llm-gemini/",
-    "side": "artikel/94beefe89615ac23.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-11-20T03:01:57+00:00",
-    "billede": "data/img/a0a5899b9f6a9aab.webp"
-   },
-   {
-    "titel": "Here are the top AI agents that can live in your text messages",
-    "rubrik": "Instinct og andre AI-assistenter svarer på beskeder",
-    "link": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
-    "side": "artikel/f9419135fce595f0.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-21T17:00:00+00:00",
-    "billede": "data/img/a5a5bca86dce5a46.webp"
-   },
-   {
-    "titel": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.",
-    "rubrik": "HD Moore: Falske adgangsnøgler afslører læk i AI-tjenester",
-    "link": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
-    "side": "artikel/718dc2db66a106fb.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-11-20T20:59:08+00:00",
-    "billede": "data/img/e2c95ef88c12bb61.webp"
-   },
-   {
-    "titel": "The most misunderstood graph in AI just got a major update",
-    "rubrik": "METR: AI halter på åbne forskningsopgaver",
-    "link": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
-    "side": "artikel/b8658038964280d2.html",
-    "kategori": "Forskning",
-    "kilde": "MIT Tech Review AI",
-    "dato": "2026-11-20T18:15:15+00:00",
-    "billede": "data/img/02e7e769cad712d6.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-23T08:05:22.310496+00:00",
+  "opdateret": "2026-11-23T20:30:41.511519+00:00",
   "status": "reserve",
   "model": "gpt-6.1-terra",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "modelkald": 6,
   "kildehentninger": 3,
   "regelbaseret_udvalg": [
-   "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
-   "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
-   "https://openai.com/index/perplexity-and-intelligence"
+   "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+   "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
+   "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit"
   ],
   "udgivet_udvalg": [
-   "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
-   "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
-   "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure"
+   "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
+   "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+   "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday"
   ],
   "vaerktoejer": [
    {
@@ -421,21 +421,21 @@ window.KOMMANDO_DATA = {
   ],
   "kildegrundlag": [
    {
-    "link": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
+    "link": "https://huggingface.co/blog/allenai/robotrack",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://openai.com/index/perplexity-and-intelligence",
-    "grundlag": "kildetekst"
+    "link": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+    "grundlag": "rss_resume"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-11-23T08:05:21.837586+00:00",
+  "opdateret": "2026-11-23T20:30:40.986673+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -900,8 +900,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-23T08:05:22.310496+00:00",
-  "artikler_i_alt": 117,
+  "opdateret": "2026-11-23T20:30:41.511519+00:00",
+  "artikler_i_alt": 123,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -998,8 +998,17 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 12,
     "i_listen": 5,
-    "som_ekstra": 4,
+    "som_ekstra": 5,
     "seneste": [
+     {
+      "rubrik": "Google lader Search bruge personlige oplysninger",
+      "dato": "",
+      "foerst_set": "2026-11-23T20:30:41",
+      "link": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+      "side": "",
+      "hvor": "under",
+      "under": "Google Search får adgang til Wallet og Drive"
+     },
      {
       "rubrik": "Gemini kan nu bruge computeren på Mac",
       "dato": "",
@@ -1117,7 +1126,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 6,
+    "i_listen": 5,
     "som_ekstra": 0,
     "seneste": [
      {
@@ -1162,15 +1171,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-11-13T19:59:33",
       "link": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
       "side": "artikel/1f76189be1eacadc.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "IBM lærer Granite at skelne instruktioner fra data",
-      "dato": "2026-11-12T19:07:35",
-      "foerst_set": "2026-11-13T01:26:35",
-      "link": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
-      "side": "artikel/f052c6845a6ebe45.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1282,7 +1282,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 34,
+    "i_listen": 37,
     "som_ekstra": 6,
     "seneste": [
      {
@@ -1358,38 +1358,38 @@ window.KOMMANDO_DATA = {
       "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
      },
      {
+      "rubrik": "Google Search får adgang til Wallet og Drive",
+      "dato": "2026-11-23T19:14:46",
+      "foerst_set": "2026-11-23T20:30:41",
+      "link": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
+      "side": "artikel/389c89635cfdfbd7.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Amazon aftaler køb af Decarts AI-teknologi",
+      "dato": "2026-11-23T17:14:23",
+      "foerst_set": "2026-11-23T20:30:41",
+      "link": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
+      "side": "artikel/e483a880095260a7.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Sierra fordobler værdi på seks måneder",
+      "dato": "2026-11-23T14:43:03",
+      "foerst_set": "2026-11-23T20:30:41",
+      "link": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+      "side": "artikel/15da0cbca7e4582e.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Anthropic-satsning gav investorer store papirgevinst​er",
       "dato": "2026-11-23T01:25:53",
       "foerst_set": "2026-11-23T08:05:22",
       "link": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
       "side": "artikel/ca5d392ce76c8966.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "OpenAI-forsker foreslår mål for AI-grænser",
-      "dato": "2026-11-22T21:14:07",
-      "foerst_set": "2026-11-22T22:00:04",
-      "link": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
-      "side": "artikel/772a602107cad2ee.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Signal begrænser skærmbilleder på mobilen",
-      "dato": "2026-11-21T21:37:10",
-      "foerst_set": "2026-11-21T21:50:31",
-      "link": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
-      "side": "artikel/f8ce89f0a31be533.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Shortical bruger Aki Avnis ansigt i AI-serie",
-      "dato": "2026-11-21T16:00:00",
-      "foerst_set": "2026-11-21T21:50:31",
-      "link": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
-      "side": "artikel/6b65b8b30d4054e0.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1405,7 +1405,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 21,
+    "i_listen": 24,
     "som_ekstra": 11,
     "seneste": [
      {
@@ -1508,11 +1508,11 @@ window.KOMMANDO_DATA = {
       "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
      },
      {
-      "rubrik": "Nicalis fjerner AI-musik fra Repentance Plus",
-      "dato": "2026-11-22T12:25:20",
-      "foerst_set": "2026-11-22T22:00:04",
-      "link": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
-      "side": "artikel/cf3322b3a4602d72.html",
+      "rubrik": "Meta Muse kan handle hos Walmart",
+      "dato": "2026-11-23T06:00:00",
+      "foerst_set": "2026-11-23T20:30:41",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
+      "side": "artikel/c1061207c903927a.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1528,7 +1528,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 9,
+    "i_listen": 10,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -1539,6 +1539,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "USA vil begrænse fjernadgang til AI-chips"
+     },
+     {
+      "rubrik": "Asus ProArt P16 kører store AI-modeller lokalt",
+      "dato": "2026-11-23T12:00:00",
+      "foerst_set": "2026-11-23T20:30:41",
+      "link": "https://arstechnica.com/reviews/2026/11/review-the-asus-proart-p16-offers-a-glimpse-of-a-future-powered-by-local-ai/",
+      "side": "artikel/badeb7787834f761.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "HD Moore: Falske adgangsnøgler afslører læk i AI-tjenester",
@@ -1870,12 +1879,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-23T08:13:21.512349+00:00",
+  "opdateret": "2026-11-23T20:41:47.581470+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 42,
-  "sidevisninger_i_alt": 64,
+  "besoeg_i_alt": 41,
+  "sidevisninger_i_alt": 63,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -2025,15 +2034,15 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-11-23",
-    "besoeg": 0,
-    "visninger": 0
+    "besoeg": 20,
+    "visninger": 20
    }
   ],
   "sider": [
    {
     "sti": "/",
-    "besoeg": 41,
-    "visninger": 62
+    "besoeg": 40,
+    "visninger": 61
    },
    {
     "sti": "/om.html",
@@ -2050,7 +2059,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 41
+    "besoeg": 40
    },
    {
     "fra": "safe.duckduckgo.com",

@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-11-23T08:13:21.512349+00:00",
+ "opdateret": "2026-11-23T20:41:47.581470+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -68,7 +68,7 @@ window.LAESERTAL = {
      3,
      1,
      1,
-     0
+     4
     ]
    },
    {
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      2,
      1,
      0,
-     1
+     3
     ]
    },
    {
@@ -142,41 +142,6 @@ window.LAESERTAL = {
     ]
    },
    {
-    "navn": "Lanceringer",
-    "tal": [
-     0,
-     2,
-     3,
-     3,
-     4,
-     1,
-     0,
-     0,
-     3,
-     1,
-     3,
-     5,
-     1,
-     0,
-     0,
-     3,
-     3,
-     2,
-     3,
-     1,
-     0,
-     0,
-     1,
-     2,
-     3,
-     2,
-     1,
-     0,
-     0,
-     0
-    ]
-   },
-   {
     "navn": "Politik & jura",
     "tal": [
      0,
@@ -208,6 +173,41 @@ window.LAESERTAL = {
      1,
      1,
      1,
+     1
+    ]
+   },
+   {
+    "navn": "Lanceringer",
+    "tal": [
+     0,
+     2,
+     3,
+     3,
+     4,
+     1,
+     0,
+     0,
+     3,
+     1,
+     3,
+     5,
+     1,
+     0,
+     0,
+     3,
+     3,
+     2,
+     3,
+     1,
+     0,
+     0,
+     1,
+     2,
+     3,
+     2,
+     1,
+     0,
+     0,
      0
     ]
    },
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 42,
- "sidevisninger_i_alt": 64,
+ "besoeg_i_alt": 41,
+ "sidevisninger_i_alt": 63,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 41,
-   "visninger": 62
+   "besoeg": 40,
+   "visninger": 61
   },
   {
    "sti": "/om.html",
@@ -272,7 +272,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 41
+   "besoeg": 40
   },
   {
    "fra": "safe.duckduckgo.com",
@@ -284,8 +284,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 40,
-    "visninger": 40
+    "besoeg": 39,
+    "visninger": 39
    },
    {
     "fra": "herfra selv",
@@ -466,8 +466,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-11-23",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 20,
+   "visninger": 20
   }
  ],
  "artikler": [],

@@ -1,17 +1,17 @@
 {
-  "opdateret": "2026-11-23T08:05:22.310496+00:00",
+  "opdateret": "2026-11-23T20:30:41.511519+00:00",
   "status": "reserve",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
-    "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
-    "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
-    "https://openai.com/index/perplexity-and-intelligence"
+    "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+    "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
+    "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit"
   ],
-  "input_fingerprint": "424192cf4bd7ded1",
+  "input_fingerprint": "9853ec57b2bb5298",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "kontrolproblemer": [
-    "Kandidatoversigten gentager hovedhistorien: OpenAIs »Perplexity and Intelligence« (1a10f1676d46fc01) og TechCrunch-historien (90468db0d5a9c8d3) handler om samme forslag fra Jakub Pachocki. Saml dem på én plads; OpenAIs tekst kan fortsat bruges som kilde."
+    "Ai2-artiklen fortæller ikke, at RoboTracker og RoboTracker-Warp er frigivet, eller hvordan modellerne kan tilgås, selv om kilden dokumenterer lanceringen og linker til modellerne. Dermed fremgår hovednyheden og adgangen ikke klart."
   ],
   "modelkald": 6,
   "kildehentninger": 3,
@@ -39,22 +39,22 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
+      "link": "https://huggingface.co/blog/allenai/robotrack",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://openai.com/index/perplexity-and-intelligence",
-      "grundlag": "kildetekst"
+      "link": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+      "grundlag": "rss_resume"
     }
   ],
   "udgivet_udvalg": [
-    "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
-    "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
-    "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure"
+    "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
+    "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+    "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday"
   ],
-  "afventer_artikler": 64
+  "afventer_artikler": 80
 }
