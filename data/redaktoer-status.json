@@ -1,17 +1,17 @@
 {
-  "opdateret": "2026-11-23T20:30:41.511519+00:00",
+  "opdateret": "2026-11-24T04:56:53.301437+00:00",
   "status": "reserve",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
-    "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
-    "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
-    "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit"
+    "https://simonwillison.net/2026/Nov/23/glm-54/",
+    "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/",
+    "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests"
   ],
-  "input_fingerprint": "9853ec57b2bb5298",
+  "input_fingerprint": "c24937c37b55eb37",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "kontrolproblemer": [
-    "Ai2-artiklen fortæller ikke, at RoboTracker og RoboTracker-Warp er frigivet, eller hvordan modellerne kan tilgås, selv om kilden dokumenterer lanceringen og linker til modellerne. Dermed fremgår hovednyheden og adgangen ikke klart."
+    "Claude Ship-lanceringen optræder også som selvstændig kandidat 6545db87281ad58e fra The Verge. Den er samme begivenhed som hovedhistorien a72cc3aa1f3d17c0, men er ikke samlet med den i samme_historie. Gruppér omtalerne, så lanceringen ikke får to pladser på forsiden."
   ],
   "modelkald": 6,
   "kildehentninger": 3,
@@ -39,22 +39,22 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+      "link": "https://simonwillison.net/2026/Nov/23/glm-54/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://huggingface.co/blog/allenai/robotrack",
+      "link": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
-      "grundlag": "rss_resume"
+      "link": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+      "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
-    "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
-    "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday"
+    "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/",
+    "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+    "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/"
   ],
-  "afventer_artikler": 80
+  "afventer_artikler": 78
 }

@@ -1,17 +1,50 @@
 {
-  "opdateret": "2026-11-23T20:30:41.511519+00:00",
+  "opdateret": "2026-11-24T04:56:53.301437+00:00",
   "kladder": [
     {
-      "titel": "Claude AI can review pull requests and ship fixes on its own now",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
-      "resume": "Anthropic is launching some new Claude AI features to help software engineers ship code. As part of a new Claude Ship product being announced today, Claude now can review, fix, and approve pull requests. Engineers have already been able to take advantage of Claude's code review capabilities thanks to the Code Review feature, which was […]",
-      "dato": "2026-11-23T15:00:00-05:00",
-      "kilde": "The Verge AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-11-23T20:30:41.511519+00:00",
-      "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
-      "rubrik": "Anthropic annoncerer Claude Ship til kodearbejde",
-      "resume_da": "Claude kan gennemgå, rette og godkende ændringsforslag til kode. Gennemgang af kode var allerede muligt med Code Review.",
+      "titel": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+      "link": "https://simonwillison.net/2026/Nov/23/glm-54/",
+      "resume": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer GLM 5.4 is now available from Chinese AI lab Z.ai. It's their first model to use a looped transformer architecture, which they describe like this: In a standard Transformer, each layer runs once per forward pass. In a Loop Transformer, a group of weight-shared layers runs for multiple iterations, refining the hidden states from…",
+      "dato": "2026-11-23T23:40:49+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "rubrik": "Z.ai frigiver GLM-5.4",
+      "resume_da": "Det er virksomhedens første model med en Loop Transformer-arkitektur, hvor en gruppe lag med delte vægte kører flere gange.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Z.ai har gjort GLM-5.4 tilgængelig som sin første model med Loop Transformer-arkitektur.",
+        "forbehold": "Materialet indeholder ingen testresultater eller detaljer om adgang.",
+        "emne": "glm-5.4"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 7,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
+      "link": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
+      "resume": "As AI-generated code piles up, Anthropic's new developer tools aim to eliminate another bottleneck by letting agents handle routine approvals.",
+      "dato": "2026-11-23T22:05:50+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "rubrik": "Anthropic lancerer Claude Ship til kodegennemgang",
+      "resume_da": "AI-agenter kan gennemgå, rette og godkende kodeændringer. Værktøjerne skal blandt andet håndtere rutinemæssige godkendelser.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -23,8 +56,8 @@
         "type": "lancering",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Anthropic annoncerer Claude Ship, som kan gennemgå, rette og godkende ændringsforslag til kode.",
-        "forbehold": "Materialet beskriver ikke adgang eller uafhængige test af funktionerne.",
+        "begrundelse": "Anthropic lancerer Claude Ship til agentbaseret gennemgang, rettelse og godkendelse af kodeændringer.",
+        "forbehold": "Materialet oplyser ikke om adgang, pris eller selvstændige tests.",
         "emne": "claude ship"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
@@ -35,34 +68,34 @@
       ]
     },
     {
-      "titel": "RoboTrack: Point tracking for real-world robotic manipulation",
-      "link": "https://huggingface.co/blog/allenai/robotrack",
-      "resume": "",
-      "dato": "2026-11-23T17:20:37+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Forskning",
+      "titel": "Here are 4 things you didn’t know you could do with Gemini Canvas.",
+      "link": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-canvas-tasks/",
+      "resume": "Boost productivity with Google Gemini Canvas. Build web apps, create custom study tools, and refine writing side-by-side. Try it in your next chat.",
+      "dato": "2026-11-23T18:00:00+00:00",
+      "kilde": "Google Gemini",
+      "kategori": "Hverdags-AI",
       "foerst_set": "2026-11-23T20:30:41.511519+00:00",
       "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
-      "rubrik": "RoboTrack følger punkter til robotters håndtering",
-      "resume_da": "Metoden er rettet mod robotters håndtering af genstande i den virkelige verden.",
+      "rubrik": "Google fremhæver muligheder i Gemini Canvas",
+      "resume_da": "Værktøjet kan ifølge Google bruges til at bygge webapps, lave studieværktøjer og arbejde på tekster side om side.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 2,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 2,
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
         "dansk": 0,
-        "type": "forskning",
+        "type": "guide",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "RoboTrack handler om punktsporing til robotters håndtering af genstande.",
-        "forbehold": "Materialet beskriver ikke metode, resultater eller adgang.",
-        "emne": "robotrack"
+        "begrundelse": "Google beskriver anvendelser af Gemini Canvas til webapps, studieværktøjer og tekstbearbejdning.",
+        "forbehold": "Materialet beskriver ingen ny funktion eller uafhængig test.",
+        "emne": "gemini canvas"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 3,
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -101,39 +134,6 @@
       ]
     },
     {
-      "titel": "Here are 4 things you didn’t know you could do with Gemini Canvas.",
-      "link": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-canvas-tasks/",
-      "resume": "Boost productivity with Google Gemini Canvas. Build web apps, create custom study tools, and refine writing side-by-side. Try it in your next chat.",
-      "dato": "2026-11-23T18:00:00+00:00",
-      "kilde": "Google Gemini",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-11-23T20:30:41.511519+00:00",
-      "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
-      "rubrik": "Google fremhæver muligheder i Gemini Canvas",
-      "resume_da": "Værktøjet kan ifølge Google bruges til at bygge webapps, lave studieværktøjer og arbejde på tekster side om side.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "guide",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Google beskriver anvendelser af Gemini Canvas til webapps, studieværktøjer og tekstbearbejdning.",
-        "forbehold": "Materialet beskriver ingen ny funktion eller uafhængig test.",
-        "emne": "gemini canvas"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Finding faster quantum algorithms with agents and formal verification",
       "link": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
       "resume": "Using agent teams and formal verification to improve quantum algorithms for fusion and chemistry.",
@@ -144,6 +144,7 @@
       "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
       "rubrik": "Google DeepMind bruger agenter til kvantealgoritmer",
       "resume_da": "Arbejdet kombinerer hold af agenter med formel verifikation for at forbedre kvantealgoritmer til fusion og kemi.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -160,40 +161,6 @@
         "emne": "kvantealgoritmer"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "A legendary philosopher isn’t buying Anthropic’s consciousness argument",
-      "link": "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/",
-      "resume": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Before going public last week, Anthropic named the possibility that AI could be conscious or sentient as a risk factor for anyone investing. Given “the way we approach model sentience and moral…",
-      "dato": "2026-11-23T17:36:08+00:00",
-      "kilde": "MIT Tech Review AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-11-23T20:30:41.511519+00:00",
-      "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
-      "rubrik": "Anthropics argument om bevidsthed møder filosofisk kritik",
-      "resume_da": "Før den planlagte børsnotering nævnte Anthropic muligheden for, at AI kan være bevidst eller have følelser, som en risiko for investorer.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Artiklen omtaler kritik af Anthropics behandling af mulig AI-bevidsthed som en investorrisiko.",
-        "forbehold": "Uddraget gengiver ikke filosofens argumenter.",
-        "emne": "ai-bevidsthed"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -228,6 +195,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "RoboTrack: Point tracking for real-world robotic manipulation",
+      "link": "https://huggingface.co/blog/allenai/robotrack",
+      "resume": "",
+      "dato": "2026-11-23T17:20:37+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-23T20:30:41.511519+00:00",
+      "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
+      "rubrik": "RoboTrack følger punkter til robotters håndtering",
+      "resume_da": "Metoden er rettet mod robotters håndtering af genstande i den virkelige verden.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "RoboTrack handler om punktsporing til robotters håndtering af genstande.",
+        "forbehold": "Materialet beskriver ikke metode, resultater eller adgang.",
+        "emne": "robotrack"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 3,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -342,6 +342,7 @@
       "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
       "rubrik": "OpenAI drøfter AI til virksomhedsjurister",
       "resume_da": "Deltagerne ser på, hvordan AI kan hjælpe med genbrugelige arbejdsgange og gøre det lettere at få mere ud af ekstern juridisk rådgivning.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -358,42 +359,8 @@
         "emne": "ai i juridiske teams"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 2,
       "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "How to build and maintain an agentic evaluation",
-      "link": "https://huggingface.co/blog/agentic-evals",
-      "resume": "",
-      "dato": "2026-11-23T00:00:00+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Forskning",
-      "foerst_set": "2026-11-23T20:30:41.511519+00:00",
-      "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "guide",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "En guide handler om at opbygge og vedligeholde evalueringer af AI-agenter.",
-        "forbehold": "Materialet indeholder kun titlen, ikke guidens konkrete indhold.",
-        "emne": "evaluering af ai-agenter"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 2,
-      "afventer": [
-        "Mangler dansk overskrift",
-        "Mangler dansk indledning",
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
     },
@@ -427,6 +394,39 @@
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
       "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "How to build and maintain an agentic evaluation",
+      "link": "https://huggingface.co/blog/agentic-evals",
+      "resume": "",
+      "dato": "2026-11-23T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-23T20:30:41.511519+00:00",
+      "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "guide",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Hugging Face har en artikel om at opbygge og vedligeholde evalueringer af agenter.",
+        "forbehold": "Kun titlen er medsendt; indhold og konkrete råd kan ikke vurderes.",
+        "emne": "agentevaluering"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 2,
+      "afventer": [
+        "Mangler dansk overskrift",
+        "Mangler dansk indledning",
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
     },
@@ -563,39 +563,6 @@
       ]
     },
     {
-      "titel": "Trump’s latest land grab is an AI hub in the Philippines",
-      "link": "https://www.theverge.com/policy/1036749/trump-ai-chip-data-center-us-philippines-pax-silica",
-      "resume": "President Donald Trump was greeted by no less than five beauty queens when he landed in the Philippines on Tuesday, according to local news outlet Rappler. As he stepped onto the tarmac, a child handed him small US and Philippine flags. A band played \"YMCA,\" a staple at Trump rallies, as more girls in traditional […]",
-      "dato": "2026-11-18T19:40:36+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-11-19T01:59:29.336973+00:00",
-      "eget_foerst_set": "2026-11-19T01:59:29.336973+00:00",
-      "rubrik": "Trump kobles til AI-center i Filippinerne",
-      "resume_da": "Ifølge Rappler blev han mødt af mindst fem skønhedsdronninger ved sin ankomst til landet tirsdag.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 1,
-        "brugbarhed": 0,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Overskriften omtaler et AI-knudepunkt i Filippinerne i forbindelse med Trump.",
-        "forbehold": "Uddraget beskriver ikke selve AI-projektet eller dets status.",
-        "emne": "ai-knudepunkt i filippinerne"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 2,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
       "link": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
       "resume": "",
@@ -615,8 +582,8 @@
         "type": "forskning",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "En artikel om DaisyRose-27B fremhæver effektivitet i eftertræning.",
-        "forbehold": "Kun titlen er medsendt; den fastslår ikke en modeludgivelse eller konkrete resultater.",
+        "begrundelse": "Titlen omtaler DaisyRose-27B og effektivitet i eftertræning.",
+        "forbehold": "Der er ingen artikeltekst, som bekræfter en modeludgivelse eller beskriver resultater.",
         "emne": "daisyrose-27b"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
@@ -860,9 +827,240 @@
       ]
     },
     {
+      "titel": "Trump engineered a risky comeback for Jensen Huang",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated",
+      "resume": "After Nvidia's board accepted Jensen Huang's resignation as CEO, following reports that Huang had an affair with an alleged Chinese spy, President Donald Trump, too, appeared to submit to the new reality. Appearing on Stephen A. Smith's radio show shortly after the news came out, Trump said that Huang would \"end up on his feet.\" […]",
+      "dato": "2026-11-23T17:25:12-05:00",
+      "kilde": "The Verge AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "rubrik": "Trump medvirkede til Jensen Huangs comeback",
+      "resume_da": "Nvidias bestyrelse havde accepteret direktørens fratræden. Kort efter sagde Trump i et radioprogram, at Huang ville lande på benene.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Artiklen omtaler Jensen Huangs tilbagevenden til Nvidia efter en afgang.",
+        "forbehold": "Uddraget forklarer ikke Trumps rolle i tilbagevenden.",
+        "emne": "nvidia"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Welcome to elite impunity, Jensen Huang",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1040819/welcome-to-elite-impunity-jensen-huang",
+      "resume": "I suppose I must issue a hearty congratulations to Jensen Huang. Huang is CEO of Nvidia again, to the surprise of basically everyone except President Donald Trump and Vice President JD Vance, who made sure it happened. Now, those of us who had some kind of basic education on what a \"free market\" is might […]",
+      "dato": "2026-11-23T17:09:26-05:00",
+      "kilde": "The Verge AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "rubrik": "Jensen Huang er tilbage som Nvidia-direktør",
+      "resume_da": "Ifølge The Verge medvirkede både præsident Donald Trump og vicepræsident JD Vance til, at Huang fik posten igen.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "En kommentar kritiserer Jensen Huangs tilbagevenden som Nvidia-direktør.",
+        "forbehold": "Uddraget dokumenterer ikke påstanden om Trump og Vances rolle.",
+        "emne": "nvidia"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Elon Musk and others rejoice as Jensen Huang is reinstated at Nvidia amid scandal",
+      "link": "https://techcrunch.com/2026/11/23/elon-musk-and-others-rejoice-as-jensen-huang-is-reinstated-at-nvidia-amid-scandal/",
+      "resume": "\"The mistake has been corrected,\" Elon Musk chimed in.",
+      "dato": "2026-11-23T21:47:41+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "rubrik": "Jensen Huang genindsættes hos Nvidia",
+      "resume_da": "Elon Musk hilser tilbagevenden velkommen og siger, at fejlen er blevet rettet.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Elon Musk hilser Jensen Huangs tilbagevenden til Nvidia velkommen.",
+        "forbehold": "",
+        "emne": "nvidia"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Ladybird's first alpha release",
+      "link": "https://simonwillison.net/2026/Nov/23/ladybird/",
+      "resume": "Ladybird is an astonishingly ambitious project: a new browser, in 2026, with its own implementation of most of the key components - HTML parsing, CSS engine, layout, JavaScript, even WebAssembly. It still uses a few external components - things like HarfBuzz for text shaping, Skia for 2D graphics, ffmpeg for video, and SQLite for the things you do with SQLite. Everything else is part of Ladybird,…",
+      "dato": "2026-11-23T21:46:35+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "rubrik": "Ladybird udgiver første alfaversion af browser",
+      "resume_da": "Browseren har egne komponenter til blandt andet HTML, CSS og JavaScript, men bruger også eksterne komponenter til grafik og video.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Browserprojektet Ladybird har udgivet sin første alfaversion.",
+        "forbehold": "Materialet beskriver ikke versionens begrænsninger eller adgang.",
+        "emne": "ladybird"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Megaspeed, the company at the center of the Jensen Huang scandal, appears headed for a US blacklist",
+      "link": "https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist/",
+      "resume": "Megaspeed, which was previously led by Alice Huang, would be barred from doing business with U.S. companies unless those companies attained a special license from the federal government.",
+      "dato": "2026-11-23T21:25:42+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "rubrik": "Megaspeed står til amerikansk sortlistning",
+      "resume_da": "Amerikanske virksomheder vil i så fald skulle have en særlig tilladelse fra myndighederne for at handle med selskabet.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Megaspeed ser ud til at være på vej mod en amerikansk sortliste.",
+        "forbehold": "Materialet bekræfter ikke, at selskabet er blevet sortlistet.",
+        "emne": "megaspeed"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "OpenAI and Cisco introduce Shirudo",
+      "link": "https://openai.com/index/introducing-shirudo",
+      "resume": "OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.",
+      "dato": "2026-11-23T21:20:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "rubrik": "OpenAI og Cisco præsenterer Shirudo",
+      "resume_da": "Værktøjet med åben kildekode skal hjælpe med at beskytte kørende Linux-systemer, mens teams udruller rettelser.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "OpenAI og Cisco præsenterer Shirudo, et open source-runtime til beskyttelse af Linux-systemer under patching.",
+        "forbehold": "Materialet beskriver ingen AI-funktion i værktøjet.",
+        "emne": "shirudo"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Nvidia employees greet Jensen Huang like a hero as he returns to company’s HQ",
+      "link": "https://techcrunch.com/2026/11/23/nvidia-employees-greet-jensen-huang-like-a-hero-as-he-returns-to-companys-hq/",
+      "resume": "\"I'm going to be a better CEO the second time around,\" Huang told employees.",
+      "dato": "2026-11-23T20:38:53+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "rubrik": "Nvidia-medarbejdere hylder Jensen Huangs tilbagevenden",
+      "resume_da": "Huang sagde til medarbejderne, at han vil være en bedre direktør anden gang.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 1,
+        "brugbarhed": 0,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Jensen Huang blev mødt af medarbejdere ved sin tilbagevenden til Nvidia.",
+        "forbehold": "Uddraget giver få oplysninger om omstændighederne omkring tilbagevenden.",
+        "emne": "nvidia"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "How Jensen Huang ended up as Nvidia CEO again",
       "link": "https://www.theverge.com/tech/1040428/nvidia-jensen-huang-ceo-return",
-      "resume": "The Jensen Huang era of Nvidia nearly came to an end this month. Huang, who three decades ago co-founded what's come to be considered one of the most important companies in AI, resigned from his role on November 12th over mounting scrutiny around his alleged affairs. Huang admitted he had been \"unfaithful\" to his wife […]",
+      "resume": "The Jensen Huang era of Nvidia nearly came to an end this month. Huang, who three decades ago cofounded what's come to be considered one of the most important companies in AI, resigned from his role on November 12th over mounting scrutiny around his alleged affairs. Huang admitted he had been \"unfaithful\" to his wife […]",
       "dato": "2026-11-23T14:57:18-05:00",
       "kilde": "The Verge AI",
       "kategori": "Penge & marked",
@@ -870,6 +1068,7 @@
       "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
       "rubrik": "Jensen Huang vendte tilbage efter afgang fra Nvidia",
       "resume_da": "Han trak sig 12. november under voksende opmærksomhed om påståede affærer og har erkendt, at han var sin kone utro.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -886,7 +1085,6 @@
         "emne": "jensen huang"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -903,6 +1101,7 @@
       "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
       "rubrik": "Jensen Huang skal efter planen vidne i Senatet",
       "resume_da": "Den offentlige høring følger krav fra begge partier om svar på sagen om en formodet kinesisk spion. Huang er genindsat som Nvidia-chef.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -919,7 +1118,6 @@
         "emne": "jensen huang"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -936,6 +1134,7 @@
       "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
       "rubrik": "TechCrunch vurderer følgerne af Huangs genindsættelse",
       "resume_da": "Kommentaren opfordrer techledere til at forholde sig nøgternt til problemerne, der kan følge af Jensen Huangs tilbagevenden som Nvidia-chef.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -952,7 +1151,6 @@
         "emne": "nvidia"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -969,6 +1167,7 @@
       "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
       "rubrik": "Trump siger, han overtalte Nvidias bestyrelse",
       "resume_da": "Præsidenten fortalte CNBC, at han talte med bestyrelsen og overtalte den til at lade Jensen Huang vende tilbage.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -985,7 +1184,6 @@
         "emne": "nvidia"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -1002,6 +1200,7 @@
       "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
       "rubrik": "Det Hvide Hus: Trump involveret i Huangs genindsættelse",
       "resume_da": "Kommunikationsdirektør Steven Cheung kaldte Nvidias beslutning om at genindsætte Jensen Huang som direktør god.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1018,7 +1217,6 @@
         "emne": "nvidia"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -1033,10 +1231,12 @@
       "kategori": "Penge & marked",
       "foerst_set": "2026-11-23T20:30:41.511519+00:00",
       "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
+      "rubrik": "Tekledere fejrer Jensen Huangs tilbagevenden",
+      "resume_da": "The Verge beskriver beskyldninger om forhold til underordnede og hård behandling af medarbejdere forud for afsættelsen af Nvidia-direktøren.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 1,
+        "nyhed": 2,
         "betydning": 1,
         "brugbarhed": 0,
         "dokumentation": 2,
@@ -1044,16 +1244,14 @@
         "type": "analyse",
         "ai_relevant": false,
         "model_lancering": false,
-        "begrundelse": "Artiklen omtaler techlederes reaktioner på Huangs tilbagevenden til Nvidia.",
-        "forbehold": "Uddraget dokumenterer ikke de omtalte reaktioner eller beskyldninger.",
+        "begrundelse": "The Verge omtaler teknologilederes reaktioner på Jensen Huangs tilbagevenden til Nvidia.",
+        "forbehold": "Uddragets alvorlige beskyldninger er ikke dokumenteret i det medsendte materiale.",
         "emne": "nvidia"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "kat_ai": true,
       "prio": 1,
       "afventer": [
-        "Mangler dansk overskrift",
-        "Mangler dansk indledning",
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
     },
@@ -1068,6 +1266,7 @@
       "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
       "rubrik": "Nvidia genindsætter Jensen Huang som direktør og bestyrelsesformand",
       "resume_da": "Trump siger, at han har talt med bestyrelsen, og at Huang ikke gjorde noget forkert.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1084,7 +1283,6 @@
         "emne": "nvidia"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -1160,7 +1358,7 @@
       "titel": "Jensen Huang is back as Nvidia’s CEO",
       "link": "https://www.theverge.com/tech/1039937/nvidia-ceo-jensen-huang-reinstated",
       "resume": "Nvidia has reinstated Jensen Huang as its CEO. The company announced on Monday morning that the board \"voted unanimously to reinstate Mr. Huang following a series of discussions and meetings with Mr. Huang, after which the Board was satisfied with respect to Mr. Huang's candor and ability to lead NVIDIA.\" In its statement, the board […]",
-      "dato": "2026-11-23T09:04:24-05:00",
+      "dato": "2026-11-23T14:04:24+00:00",
       "kilde": "The Verge AI",
       "kategori": "Penge & marked",
       "foerst_set": "2026-11-23T20:30:41.511519+00:00",
@@ -1190,10 +1388,43 @@
       ]
     },
     {
+      "titel": "datasette-charts 0.1a0",
+      "link": "https://simonwillison.net/2026/Nov/23/datasette-charts/",
+      "resume": "Release: datasette-charts 0.1a0 I've been thinking about this problem for over a year now, but on Sunday I finally fired up Claude Fable 5.2 to build an initial prototype. The prototype went so well that this is now a full plugin. You can try it out in Datasette Lite here . It looks like this: The new charts plugin works against any table or arbitrary SQL query in Datasette. It defines several…",
+      "dato": "2026-11-23T00:37:20+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "rubrik": "Simon Willison udgiver datasette-charts 0.1a0",
+      "resume_da": "Diagramudvidelsen begyndte som en prototype bygget med Claude Fable 5.2. Den kan afprøves i Datasette Lite.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Datasette har fået en diagramudvidelse, som begyndte som en prototype bygget med Claude.",
+        "forbehold": "",
+        "emne": "datasette-charts"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "We haven’t seen the last of the major tech outages",
       "link": "https://www.theverge.com/tech/1039851/major-tech-outages",
       "resume": "Over the last week or so, we have seen a nationwide FAA ground stop, a multi-day Outlook outage that brought entire companies to a standstill, and a banking outage at JPMorgan Chase. But the consensus is that there are more to come. Director of National Intelligence Jay Clayton told CNN: \"The American people should be […]",
-      "dato": "2026-11-22T17:48:02-05:00",
+      "dato": "2026-11-22T22:48:02+00:00",
       "kilde": "The Verge AI",
       "kategori": "Samfund & etik",
       "foerst_set": "2026-11-23T08:05:22.310496+00:00",
@@ -2279,237 +2510,6 @@
       ]
     },
     {
-      "titel": "Robo-soldier startup backed by Eric Trump misses payroll, may collapse",
-      "link": "https://arstechnica.com/ai/2026/11/robo-soldier-startup-backed-by-eric-trump-misses-payroll-may-collapse/",
-      "resume": "Robotics startup misses payroll a year after CEO used funds for luxury home.",
-      "dato": "2026-11-16T22:58:27+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-11-17T03:06:49.933219+00:00",
-      "eget_foerst_set": "2026-11-17T03:06:49.933219+00:00",
-      "rubrik": "Startup med støtte fra Eric Trump misser lønudbetaling",
-      "resume_da": "Robotteknologivirksomheden kan ifølge artiklen være tæt på kollaps. Et år tidligere brugte direktøren virksomhedsmidler på et luksushjem.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 0,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "En robotvirksomhed har ikke kunnet betale løn og kan ifølge artiklen være tæt på kollaps.",
-        "forbehold": "Materialet beskriver ikke virksomhedens brug af AI.",
-        "emne": "robotvirksomhed"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "All the questions Nvidia should answer on Tuesday — but probably won’t",
-      "link": "https://techcrunch.com/2026/11/16/all-the-questions-nvidia-should-answer-on-tuesday-but-probably-wont/",
-      "resume": "Nvidia interim CEO and longtime CFO Colette Kress is about to have one of the biggest days of her career on Tuesday when the company reports its third-quarter results. Given the turmoil Nvidia is in, there are a number of questions that Nvidia should answer.",
-      "dato": "2026-11-16T22:03:02+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-11-17T03:06:49.933219+00:00",
-      "eget_foerst_set": "2026-11-17T03:06:49.933219+00:00",
-      "rubrik": "Nvidia står foran regnskab med midlertidig topchef",
-      "resume_da": "Colette Kress, der længe har været finansdirektør, skal fremlægge selskabets resultater for tredje kvartal.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "En analyse rejser spørgsmål forud for Nvidias regnskab for tredje kvartal.",
-        "forbehold": "Materialet indeholder hverken regnskabsresultater eller konkrete spørgsmål.",
-        "emne": "nvidia"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Sam Altman says he wants everyone ‘to have a lot of RAM’",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1034787/sam-altman-ram-shortage-semafor",
-      "resume": "OpenAI CEO Sam Altman is once again addressing his controversial comments on PC RAM purchases. \"I want to be clear, I want people to have a lot of RAM, I think everybody should be able to buy a lot of RAM for their own computer,\" Altman said today. \"I think the home tinkering is great.\" […]",
-      "dato": "2026-11-16T20:41:28+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-11-17T03:06:49.933219+00:00",
-      "eget_foerst_set": "2026-11-17T03:06:49.933219+00:00",
-      "rubrik": "Sam Altman ønsker mere RAM til alle",
-      "resume_da": "OpenAI-chefen siger, at alle bør kunne købe meget RAM til deres egen computer. Han roser også folk, der eksperimenterer derhjemme.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 0,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Sam Altman siger, at alle bør kunne købe meget RAM til deres egen computer.",
-        "forbehold": "Udtalelsen beskriver ingen konkret ændring i adgang eller priser.",
-        "emne": "ram"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Big Nuclear isn’t worried about the Democrats stopping data centers",
-      "link": "https://www.theverge.com/science/1034694/nuclear-energy-constellation-earnings-data-centers-democrats",
-      "resume": "Constellation Energy - America's largest operator of nuclear power plants - does not share Wall Street's concerns that the Democrats will slow down data center development. On the company's third-quarter earnings call last week, CEO Joe Dominguez was, for lack of a better word, unbothered as he addressed the blue wave. \"I do think we've […]",
-      "dato": "2026-11-16T20:29:37+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-11-17T03:06:49.933219+00:00",
-      "eget_foerst_set": "2026-11-17T03:06:49.933219+00:00",
-      "rubrik": "Constellation Energy deler ikke frygt for langsommere datacenterbyggeri",
-      "resume_da": "Den amerikanske atomkraftoperatør er ikke bekymret for, at Demokraterne vil bremse udviklingen af datacentre, selv om Wall Street frygter det.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Constellation Energys direktør er ikke bekymret for, at Demokraterne vil bremse datacentre.",
-        "forbehold": "Udtalelsen er en vurdering, ikke dokumentation for den fremtidige politik.",
-        "emne": "datacentre"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "US data centers now burn more electricity than a midsized country",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1034668/data-centers-electricity-climate-pollution-study-harvard",
-      "resume": "Fossil fuels are still the biggest source of electricity for hyperscale data centers in the US, a new paper published in the journal Nature Sustainability shows. They likely burn through more electricity collectively than many countries do, resulting in a serious amount of greenhouse gas emissions. The study homes in on hyperscale facilities - the […]",
-      "dato": "2026-11-16T20:27:58+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-11-17T03:06:49.933219+00:00",
-      "eget_foerst_set": "2026-11-17T03:06:49.933219+00:00",
-      "rubrik": "Studie: USA's kæmpedatacentre kan overgå landes strømforbrug",
-      "resume_da": "De store datacentre bruger tilsammen sandsynligvis mere strøm end mange lande. Ifølge studiet er fossile brændsler stadig deres største strømkilde.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Et studie finder, at fossile brændsler er den største strømkilde for store amerikanske datacentre.",
-        "forbehold": "Materialet oplyser ikke metode eller konkrete tal og udskiller ikke AI's strømforbrug.",
-        "emne": "datacentres energiforbrug"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Trump says ex-Nvidia CEO Jensen Huang’s affair with an alleged Chinese spy did not threaten national security",
-      "link": "https://techcrunch.com/2026/11/16/trump-says-ex-nvidia-ceo-jensen-huangs-affair-with-an-alleged-chinese-spy-did-not-threaten-national-security/",
-      "resume": "Trump contradicted his own government's intelligence officials, who reportedly concluded that Alice Huang is a Chinese spy.",
-      "dato": "2026-11-16T19:12:02+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-11-17T03:06:49.933219+00:00",
-      "eget_foerst_set": "2026-11-17T03:06:49.933219+00:00",
-      "rubrik": "Trump: Huang-affære truede ikke USA's sikkerhed",
-      "resume_da": "Ifølge artiklen modsiger Trump amerikanske efterretningsfolk, der angiveligt har konkluderet, at Alice Huang er kinesisk spion.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 0,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Trump afviser ifølge artiklen, at Jensen Huangs forhold truede USA's sikkerhed.",
-        "forbehold": "Konklusionen om påstået spionage er kun indirekte omtalt i materialet.",
-        "emne": "jensen huang"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Nvidia’s board is reportedly ‘not considering’ hiring Jensen Huang back",
-      "link": "https://www.theverge.com/tech/1034501/nvidia-board-jensen-huang-not-bringing-back",
-      "resume": "Nvidia's board of directors \"isn't considering\" having Jensen Huang return as CEO, according to a report from CNBC. A source tells the outlet the board \"is focused on an investigation into Huang, and is not in discussions to bring him back.\" Since Huang's resignation last week, tech executives, along with current and former Nvidia employees, […]",
-      "dato": "2026-11-16T18:43:35+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-11-17T03:06:49.933219+00:00",
-      "eget_foerst_set": "2026-11-17T03:06:49.933219+00:00",
-      "rubrik": "Medie: Nvidia overvejer ikke at genansætte Jensen Huang",
-      "resume_da": "En kilde siger til CNBC, at bestyrelsen fokuserer på en undersøgelse af Huang. Han trak sig som topchef i sidste uge.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Nvidias bestyrelse overvejer ifølge en kilde ikke at genansætte Jensen Huang som topchef.",
-        "forbehold": "Oplysningen bygger på en kilde omtalt af CNBC.",
-        "emne": "nvidia"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "The open-source movement wants Jensen Huang back",
       "link": "https://www.technologyreview.com/2026/11/16/1148624/the-open-source-movement-wants-jensen-huang-back/",
       "resume": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. On Friday, a petition to reinstate Jensen Huang as CEO of Nvidia began circulating on social media, and by Monday it listed some notable signatories, including Elon Musk and several influential Nvidia…",
@@ -2535,72 +2535,6 @@
         "begrundelse": "En underskriftsindsamling opfordrer til at genindsætte Jensen Huang som Nvidias topchef.",
         "forbehold": "Materialet dokumenterer ikke, at indsamlingen får betydning for bestyrelsens beslutning.",
         "emne": "nvidia"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Jensen Huang allies build a \"war room\" to get him back at Nvidia",
-      "link": "https://arstechnica.com/ai/2026/11/jensen-huang-allies-build-a-war-room-to-get-him-back-at-nvidia/",
-      "resume": "Huang is weighing a return just days after resigning amid a deepening scandal.",
-      "dato": "2026-11-16T14:06:16+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-11-16T18:51:00.859402+00:00",
-      "eget_foerst_set": "2026-11-16T18:51:00.859402+00:00",
-      "rubrik": "Huangs allierede arbejder på Nvidia-comeback",
-      "resume_da": "Ifølge Ars Technica overvejer Jensen Huang at vende tilbage få dage efter sin afgang under en voksende skandale.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 0,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Jensen Huangs allierede arbejder ifølge Ars Technica for at få ham tilbage til Nvidia.",
-        "forbehold": "Et comeback er ikke bekræftet, og materialet beskriver ikke skandalen nærmere.",
-        "emne": "nvidia"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "datasette-maplibre 0.1a0",
-      "link": "https://simonwillison.net/2026/Nov/15/datasette-maplibre/",
-      "resume": "Release: datasette-maplibre 0.1a0 The first new Datasette geospatial plugin in quite a while! This one combines the excellent MapLibre GL library with OpenFreeMap , the free vector map server operated by Zsolt Ero (you should sponsor Zsolt on GitHub .) I built most of this with a single prompt to Claude Fable 5.2: Look at datasette-cluster-map and datasette-leaflet-geojson plugins, then look at…",
-      "dato": "2026-11-15T23:58:36+00:00",
-      "kilde": "Simon Willison AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-11-16T07:11:09.449511+00:00",
-      "eget_foerst_set": "2026-11-16T07:11:09.449511+00:00",
-      "rubrik": "datasette-maplibre 0.1a0 udkommer med kortvisning",
-      "resume_da": "Udvidelsen til Datasette kombinerer MapLibre GL med korttjenesten OpenFreeMap. Udvikleren skriver, at det meste blev bygget med én prompt til Claude Fable 5.2.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 1,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Et nyt Datasette-kortplugin blev ifølge udvikleren hovedsageligt bygget med én AI-prompt.",
-        "forbehold": "AI er en del af udviklingsprocessen, ikke pluginets hovedfunktion.",
-        "emne": "datasette-maplibre"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 1,
@@ -83431,7 +83365,7 @@
       "titel": "Binding of Isaac developer removes AI music from Repentance Plus",
       "link": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
       "resume": "The Binding of Isaac: Repentance Plus has spent the last few days getting review-bombed on Steam after it was discovered that a particular segment of the game used AI music. Reddit user ShweetsStuff discovered the songs used during a Grand Theft Auto-themed section. They found several audio files with Suno metadata that pointed back to […]",
-      "dato": "2026-11-22T12:25:20-05:00",
+      "dato": "2026-11-22T17:25:20+00:00",
       "kilde": "The Verge AI",
       "kategori": "Samfund & etik",
       "foerst_set": "2026-11-22T22:00:04.972727+00:00",
@@ -83565,6 +83499,43 @@
       "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
       "rubrik": "Google Search får adgang til Wallet og Drive",
       "resume_da": "Googles AI-søgning kan bruge oplysninger fra brugerens apps til at give mere personlige svar. Wallet kommer først, mens Drive og Gemini følger.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Udgifter og dokumenter bliver søgestof",
+          "tekst": "Google begynder at udrulle en forbindelse mellem Google Wallet og AI Mode, den del af Google Search, hvor brugeren kan stille spørgsmål og få AI-genererede svar. Det oplyser Google ifølge TechCrunch.\n\nMed brugerens tilladelse kan søgningen bruge oplysninger om forbrug fra Wallet, som blandt andet bruges til betalinger. Ifølge Google kan det hjælpe brugeren med at følge økonomiske mål og få mere ud af kreditkortfordele. AI Mode kan læse kontooplysninger, men kan ikke flytte eller administrere pengene.\n\nGoogle Drive, der bruges til at gemme filer, følger i de kommende uger. Her kan AI Mode efter planen hente oplysninger fra dokumenter og regneark og for eksempel bruge dem til at lave en personlig plan for skattesæsonen."
+        },
+        {
+          "overskrift": "Samtaler kan fortsætte i søgningen",
+          "tekst": "Google vil også forbinde Gemini-appen med AI Mode i løbet af de kommende uger. Gemini er Googles AI-app, og forbindelsen skal gøre det muligt at tage oplysninger fra en samtale i den ene tjeneste med over i den anden.\n\nDermed behøver brugeren ifølge Google ikke begynde forfra, hvis en idé først er undersøgt i Gemini og siden tages op i søgningen. Det gælder også den modsatte vej."
+        },
+        {
+          "overskrift": "Brugeren vælger forbindelserne til",
+          "tekst": "Forbindelserne er frivillige og kan slås til og fra i søgningens indstillinger. Funktionen Personal Intelligence kan allerede forbindes med Gmail, Google Calendar og Google Photos, så søgningen kan bruge oplysninger derfra.\n\nSnart vil et nyt ikon med navnet Personalization under svarene ifølge Google vise, hvilke oplysninger AI Mode har brugt. Google vil også tilpasse svar i AI Mode og AI Overviews, søgningens AI-genererede oversigter, til brugerens seneste søgninger."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "Google Gemini",
+          "link": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+          "rubrik": "Google lader Search bruge personlige oplysninger",
+          "resume_da": "Brugere kan vælge at forbinde Wallet, Drive og Gemini-appen til Personal Intelligence i AI Mode for at få mere relevante svar.",
+          "dato": "2026-11-23 17:00:00+00:00",
+          "foerst_set": "2026-11-23T20:30:41.511519+00:00"
+        }
+      ],
+      "detaljer": [],
+      "betydning": "Søgningen kan trække på oplysninger, der allerede ligger i brugerens Google-tjenester, men kun når brugeren vælger at forbinde dem.",
+      "pointer": [],
+      "billedmotiv": "A Google Search magnifying glass bearing Google’s recognisable four-colour G draws a wallet and a document together beneath its lens, suggesting a personalised answer built from spending and files. The wallet sits foremost, with the document partly behind it. Use thick, opaque forms and sharply separated contours, with no surrounding setting.",
+      "billedmotiv_instruks": "8d31555aed34b80cd2db",
+      "billedstatus": {
+        "status": "afvist_af_filter",
+        "signatur": "68a7d346e8ec20d0"
+      },
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -83581,57 +83552,20 @@
         "emne": "google ai mode"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
-      "historie_dato": "2026-11-23T17:00:00+00:00",
-      "andre": [
-        {
-          "kilde": "Google Gemini",
-          "link": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
-          "rubrik": "Google lader Search bruge personlige oplysninger",
-          "resume_da": "Brugere kan vælge at forbinde Wallet, Drive og Gemini-appen til Personal Intelligence i AI Mode for at få mere relevante svar.",
-          "dato": "2026-11-23 17:00:00+00:00",
-          "foerst_set": "2026-11-23T20:30:41.511519+00:00"
-        }
-      ],
-      "sektioner": [
-        {
-          "overskrift": "Udgifter og dokumenter bliver søgestof",
-          "tekst": "Google begynder at udrulle en forbindelse mellem Google Wallet og AI Mode, den del af Google Search, hvor brugeren kan stille spørgsmål og få AI-genererede svar. Det oplyser Google ifølge TechCrunch.\n\nMed brugerens tilladelse kan søgningen bruge oplysninger om forbrug fra Wallet, som blandt andet bruges til betalinger. Ifølge Google kan det hjælpe brugeren med at følge økonomiske mål og få mere ud af kreditkortfordele. AI Mode kan læse kontooplysninger, men kan ikke flytte eller administrere pengene.\n\nGoogle Drive, der bruges til at gemme filer, følger i de kommende uger. Her kan AI Mode efter planen hente oplysninger fra dokumenter og regneark og for eksempel bruge dem til at lave en personlig plan for skattesæsonen."
-        },
-        {
-          "overskrift": "Samtaler kan fortsætte i søgningen",
-          "tekst": "Google vil også forbinde Gemini-appen med AI Mode i løbet af de kommende uger. Gemini er Googles AI-app, og forbindelsen skal gøre det muligt at tage oplysninger fra en samtale i den ene tjeneste med over i den anden.\n\nDermed behøver brugeren ifølge Google ikke begynde forfra, hvis en idé først er undersøgt i Gemini og siden tages op i søgningen. Det gælder også den modsatte vej."
-        },
-        {
-          "overskrift": "Brugeren vælger forbindelserne til",
-          "tekst": "Forbindelserne er frivillige og kan slås til og fra i søgningens indstillinger. Funktionen Personal Intelligence kan allerede forbindes med Gmail, Google Calendar og Google Photos, så søgningen kan bruge oplysninger derfra.\n\nSnart vil et nyt ikon med navnet Personalization under svarene ifølge Google vise, hvilke oplysninger AI Mode har brugt. Google vil også tilpasse svar i AI Mode og AI Overviews, søgningens AI-genererede oversigter, til brugerens seneste søgninger."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [],
-      "betydning": "Søgningen kan trække på oplysninger, der allerede ligger i brugerens Google-tjenester, men kun når brugeren vælger at forbinde dem.",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-23T20:34:11.418796+00:00"
       },
-      "billedmotiv": "A Google Search magnifying glass bearing Google’s recognisable four-colour G draws a wallet and a document together beneath its lens, suggesting a personalised answer built from spending and files. The wallet sits foremost, with the document partly behind it. Use thick, opaque forms and sharply separated contours, with no surrounding setting.",
-      "billedmotiv_instruks": "8d31555aed34b80cd2db",
-      "billedstatus": {
-        "status": "afvist_af_filter",
-        "signatur": "68a7d346e8ec20d0"
-      },
+      "historie_dato": "2026-11-23T17:00:00+00:00",
+      "prio": 6,
       "side": "artikel/389c89635cfdfbd7.html"
     },
     {
       "titel": "Meta Muse can do your Black Friday shopping at Walmart",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
       "resume": "Walmart will now let Meta's Muse shop on your behalf, allowing the AI agent to find and purchase Black Friday deals via Walmart's Sparky AI assistant. The retail giant is rolling out a live implementation of the Agent Gateway it announced last month, which helps AI agents find relevant products for you without sharing your […]",
-      "dato": "2026-11-23T06:00:00-05:00",
+      "dato": "2026-11-23T11:00:00+00:00",
       "kilde": "The Verge AI",
       "kategori": "Hverdags-AI",
       "foerst_set": "2026-11-23T20:30:41.511519+00:00",
@@ -83687,65 +83621,6 @@
       "side": "artikel/c1061207c903927a.html"
     },
     {
-      "titel": "Oregon and Virginia sue SpaceX over Grok’s porn deepfakes",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
-      "resume": "In separate but similar lawsuits filed on Monday, Oregon Attorney General Dan Rayfield and Virginia Attorney General Jay Jones accused SpaceX of violating state consumer protection laws by ignoring industry-standard safeguards and falsely promoting the safety of its X social media platform and Grok AI features. The complaint filed in Virginia accuses Musk of willfully […]",
-      "dato": "2026-11-23T13:26:47-05:00",
-      "kilde": "The Verge AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-11-23T20:30:41.511519+00:00",
-      "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
-      "rubrik": "Oregon og Virginia sagsøger SpaceX over Grok",
-      "resume_da": "To amerikanske delstater beskylder selskabet for at vildlede brugere om sikkerheden bag et AI-værktøj, der kan skabe seksualiserede billeder.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Oregon og Virginia sagsøger SpaceX over påstået mangelfuld sikkerhed omkring X og Grok.",
-        "forbehold": "Påstandene er delstaternes anklager og er ikke dokumenteret ved en dom i materialet.",
-        "emne": "grok"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
-      "sektioner": [
-        {
-          "overskrift": "Billeder kunne ændres uden samtykke",
-          "tekst": "Oregon og Virginia har hver især anlagt sag mod SpaceX over Grok, Elon Musks AI-tjeneste. Delstaterne mener, at selskabet har overtrådt deres forbrugerbeskyttelseslove ved at give et falsk billede af sikkerheden på det sociale medie X og i Grok.\n\nSagerne handler især om Grok Imagine, som brugere af Grok og X kan bruge til at lave billeder og videoer. I januar 2026 fik brugere af X mulighed for at ændre billeder direkte uden samtykke fra den oprindelige afsender.\n\nDet førte ifølge The Verge til en strøm af seksualiserede deepfakes af voksne og mindreårige: falske billeder lavet med AI, som forestiller virkelige mennesker. Begge delstater kræver økonomisk erstatning."
-        },
-        {
-          "overskrift": "Strammere regler stoppede ikke billederne",
-          "tekst": "Grok Imagine havde allerede i august 2025 fået en særlig indstilling, der kunne lave seksualiseret indhold, herunder falske nøgenbilleder af kendte. Værktøjet blev lanceret af xAI, som Musk siden har lagt sammen med SpaceX.\n\nxAI har efterfølgende lagt nogle billedfunktioner bag betaling og blokeret visse anmodninger om blandt andet seksuelle positurer. Men The Verges egne test viste, at ændringerne kun gjorde lidt for at forhindre seksualiserede deepfakes."
-        },
-        {
-          "overskrift": "X afviser kritik af sikkerheden",
-          "tekst": "Virginias justitsminister hævder, at Musk bevidst ignorerede bekymringerne og i stedet så en mulighed for at tjene flere penge. I søgsmålet beskrives den svage beskyttelse som en tilsigtet egenskab frem for en fejl.\n\nX's sikkerhedsteam siger, at personer har omgået værktøjets beskyttelse i strid med brugervilkårene. Ifølge teamet er beskyttelsen strammet og bliver løbende testet, mens systemer undersøger både anmodninger og billeder."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [],
-      "betydning": "",
-      "pointer": [],
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-11-23T20:34:30.685152+00:00"
-      },
-      "billedmotiv": "A court gavel presses against a cracked privacy shield bearing Grok’s black diagonal slash and incomplete circular outline. Two stacked legal documents sit beside the shield, representing Oregon’s and Virginia’s separate lawsuits over the image tool’s alleged safety failures. Use solid, opaque shapes with crisp edges and no surrounding setting.",
-      "billedmotiv_instruks": "56f4c94fc67503c382ad",
-      "billede": "data/img/1cc4cbdbd6e090e0.webp",
-      "side": "artikel/7b4f2fa9d4956562.html"
-    },
-    {
       "titel": "Nothing’s upcoming Ear Note is a pair of earbuds with AI transcription",
       "link": "https://www.theverge.com/gadgets/1040357/nothing-ear-note-earbuds-ai-recording",
       "resume": "Nothing's new AI device is the Ear Note, a set of earbuds and their microphone-equipped charging case that can record and transcribe conversations, with a connected app to manage the recordings, transcriptions and AI-generated summaries, similar to Apple's new Watch feature and devices like Amazon's Bee wearable. Nothing CEO Carl Pei demonstrated the new device […]",
@@ -83756,6 +83631,30 @@
       "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
       "rubrik": "Nothing vil lade Ear Note skrive samtaler",
       "resume_da": "Øretelefonerne og deres opladeretui skal kunne optage lyd, som en app omsætter til tekst og AI-genererede resuméer.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Optagelser styres fra en app",
+          "tekst": "Nothing planlægger at lancere Ear Note den 8. december. Selskabets direktør, Carl Pei, har vist øretelefonerne frem for Bloomberg, men prisen er endnu ikke fastlagt, skriver The Verge.\n\nEar Note skal kunne optage samtaler via øretelefonerne eller mikrofoner i opladeretuiet. En tilhørende app skal samle optagelserne, udskrifterne og de resuméer, som AI laver på baggrund af lyden.\n\nEtuiet har også en Talk-knap, som brugeren kan trykke på for at optage sig selv. Nothing har tidligere brugt en tilsvarende knap på Ear 3, der også kan optage lyd."
+        },
+        {
+          "overskrift": "Øretelefonerne skal også forstå stemmekommandoer",
+          "tekst": "Ifølge Bloomberg skal Ear Note understøtte samtaler med forskellige AI-agenter – programmer, som brugeren kan kommunikere med. Blandt mulighederne er et mere enkelt system til stemmestyring, som Nothing selv har udviklet.\n\nCarl Pei beskriver på X produktet som det første i en række, hvor udstyr skal give AI adgang til mere kontekst. Ideen er ifølge ham at bygge videre på noget, folk allerede bruger."
+        },
+        {
+          "overskrift": "Nothing er ikke alene om optagelser",
+          "tekst": "Andre produkter kan allerede kombinere lydoptagelse med tekst og AI-resuméer. The Verge nævner blandt andet Ankers Soundcore Liberty 5 Pro Max, som kan optage direkte til øretelefonernes etui og vise udskrifter og resuméer i en app.\n\nIfølge omtalen er Nothings omtalte planer om et AI-smartwatch og AI-briller blevet forsinket. Selskabet vil til gengæld efter planen udgive smartphones mere aggressivt næste år end i 2026."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "Ear Note samler optagelse, udskrift og resumé i et produkt, som også fungerer som øretelefoner.",
+      "pointer": [],
+      "billedmotiv": "Nothing Ear Note earbuds and their charging case, bearing the distinctive black dot-matrix NOTHING wordmark, connect to a solid sheet that changes from a sound waveform into short lines of transcript and a compact summary. Emphasise the case’s recording button. Use opaque, thick-edged forms with clearly separated contours and no surrounding setting.",
+      "billedmotiv_instruks": "12571ce3884ab411c975",
+      "billede": "data/img/d1241349efd9e86f.webp",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -83772,36 +83671,12 @@
         "emne": "nothing ear note"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 5,
-      "sektioner": [
-        {
-          "overskrift": "Optagelser styres fra en app",
-          "tekst": "Nothing planlægger at lancere Ear Note den 8. december. Selskabets direktør, Carl Pei, har vist øretelefonerne frem for Bloomberg, men prisen er endnu ikke fastlagt, skriver The Verge.\n\nEar Note skal kunne optage samtaler via øretelefonerne eller mikrofoner i opladeretuiet. En tilhørende app skal samle optagelserne, udskrifterne og de resuméer, som AI laver på baggrund af lyden.\n\nEtuiet har også en Talk-knap, som brugeren kan trykke på for at optage sig selv. Nothing har tidligere brugt en tilsvarende knap på Ear 3, der også kan optage lyd."
-        },
-        {
-          "overskrift": "Øretelefonerne skal også forstå stemmekommandoer",
-          "tekst": "Ifølge Bloomberg skal Ear Note understøtte samtaler med forskellige AI-agenter – programmer, som brugeren kan kommunikere med. Blandt mulighederne er et mere enkelt system til stemmestyring, som Nothing selv har udviklet.\n\nCarl Pei beskriver på X produktet som det første i en række, hvor udstyr skal give AI adgang til mere kontekst. Ideen er ifølge ham at bygge videre på noget, folk allerede bruger."
-        },
-        {
-          "overskrift": "Nothing er ikke alene om optagelser",
-          "tekst": "Andre produkter kan allerede kombinere lydoptagelse med tekst og AI-resuméer. The Verge nævner blandt andet Ankers Soundcore Liberty 5 Pro Max, som kan optage direkte til øretelefonernes etui og vise udskrifter og resuméer i en app.\n\nIfølge omtalen er Nothings omtalte planer om et AI-smartwatch og AI-briller blevet forsinket. Selskabet vil til gengæld efter planen udgive smartphones mere aggressivt næste år end i 2026."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [],
-      "betydning": "Ear Note samler optagelse, udskrift og resumé i et produkt, som også fungerer som øretelefoner.",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-23T20:34:37.230130+00:00"
       },
-      "billedmotiv": "Nothing Ear Note earbuds and their charging case, bearing the distinctive black dot-matrix NOTHING wordmark, connect to a solid sheet that changes from a sound waveform into short lines of transcript and a compact summary. Emphasise the case’s recording button. Use opaque, thick-edged forms with clearly separated contours and no surrounding setting.",
-      "billedmotiv_instruks": "12571ce3884ab411c975",
-      "billede": "data/img/d1241349efd9e86f.webp",
+      "prio": 5,
       "side": "artikel/ced394d4b6aee052.html"
     },
     {
@@ -83815,6 +83690,29 @@
       "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
       "rubrik": "Amazon aftaler køb af Decarts AI-teknologi",
       "resume_da": "Ifølge Bloomberg er prisen 7,5 milliarder dollar. Aftalen kommer, mens Amazon forbereder salget af sine Trainium-chips.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Amazon køber software og henter forskere",
+          "tekst": "Amazon har indgået en aftale om at købe teknologien bag Decart Optimization Stack, software, der hjælper AI-modeller med at køre effektivt på chips fra Nvidia, Amazon og Google.\n\nAftalen omfatter også den israelske startup Decarts grundlæggere samt selskabets AI-forskere og ingeniører, oplyser Amazon. Ifølge Bloomberg betaler Amazon 7,5 milliarder dollar.\n\nDecart har også udviklet værktøjer til at skabe video med AI og modeller, der kan skabe interaktive verdener i realtid. Den nyeste af disse modeller hedder Oasis 3."
+        },
+        {
+          "overskrift": "Teknologien kan styrke Amazons chips",
+          "tekst": "Amazon har hidtil brugt sine Trainium-chips i egne datacentre, men forbereder nu et salg til kunder. Dermed vil selskabet konkurrere med Nvidia, hvis chips hidtil har været standarden på området.\n\nDecarts software kan gøre det lettere for kunder at køre deres AI-opgaver på Amazons chips frem for Nvidias. Kilden dokumenterer dog ikke, hvor stor en forskel teknologien vil gøre for kunderne.\n\nIfølge Amazon kan mere effektiv udnyttelse af chips forbedre både træning af AI-modeller og den efterfølgende brug af dem, samtidig med at omkostningerne falder. Det er selskabets forventning, ikke et dokumenteret resultat af aftalen."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "",
+      "pointer": [],
+      "billedmotiv": "An Amazon chip bearing the black Amazon wordmark and orange smile arrow receives a thick stack of software tiles, while a bundle of banknotes points toward the stack to show the technology purchase. The software represents Decart’s model-optimisation technology. Use solid, opaque shapes with sharp, separated edges and no surrounding setting.",
+      "billedmotiv_instruks": "2eeb7c64addb55d76756",
+      "billedstatus": {
+        "status": "afvist_af_filter",
+        "signatur": "20fba881354754cc"
+      },
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -83831,35 +83729,12 @@
         "emne": "amazon og decart"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 5,
-      "sektioner": [
-        {
-          "overskrift": "Amazon køber software og henter forskere",
-          "tekst": "Amazon har indgået en aftale om at købe teknologien bag Decart Optimization Stack, software, der hjælper AI-modeller med at køre effektivt på chips fra Nvidia, Amazon og Google.\n\nAftalen omfatter også den israelske startup Decarts grundlæggere samt selskabets AI-forskere og ingeniører, oplyser Amazon. Ifølge Bloomberg betaler Amazon 7,5 milliarder dollar.\n\nDecart har også udviklet værktøjer til at skabe video med AI og modeller, der kan skabe interaktive verdener i realtid. Den nyeste af disse modeller hedder Oasis 3."
-        },
-        {
-          "overskrift": "Teknologien kan styrke Amazons chips",
-          "tekst": "Amazon har hidtil brugt sine Trainium-chips i egne datacentre, men forbereder nu et salg til kunder. Dermed vil selskabet konkurrere med Nvidia, hvis chips hidtil har været standarden på området.\n\nDecarts software kan gøre det lettere for kunder at køre deres AI-opgaver på Amazons chips frem for Nvidias. Kilden dokumenterer dog ikke, hvor stor en forskel teknologien vil gøre for kunderne.\n\nIfølge Amazon kan mere effektiv udnyttelse af chips forbedre både træning af AI-modeller og den efterfølgende brug af dem, samtidig med at omkostningerne falder. Det er selskabets forventning, ikke et dokumenteret resultat af aftalen."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [],
-      "betydning": "",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-23T20:34:56.916831+00:00"
       },
-      "billedmotiv": "An Amazon chip bearing the black Amazon wordmark and orange smile arrow receives a thick stack of software tiles, while a bundle of banknotes points toward the stack to show the technology purchase. The software represents Decart’s model-optimisation technology. Use solid, opaque shapes with sharp, separated edges and no surrounding setting.",
-      "billedmotiv_instruks": "2eeb7c64addb55d76756",
-      "billedstatus": {
-        "status": "afvist_af_filter",
-        "signatur": "20fba881354754cc"
-      },
+      "prio": 5,
       "side": "artikel/e483a880095260a7.html"
     },
     {
@@ -83934,6 +83809,29 @@
       "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
       "rubrik": "Asus ProArt P16 kører store AI-modeller lokalt",
       "resume_da": "Den dyreste udgave af den bærbare kan indlæse AI-modeller med over 100 milliarder parametre, uden at data behøver at blive sendt til en server.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Hukommelsen giver plads til større modeller",
+          "tekst": "Asus ProArt P16 kan køre store AI-modeller direkte på computeren og samtidig have plads til lettere AI-opgaver i baggrunden. Det vurderer Ars Technica efter at have testet den dyreste udgave af den bærbare.\n\nModellen har 128 GB delt hukommelse, som computeren fordeler efter behov mellem blandt andet programmer, grafik og AI. Det giver plads til modeller med over 100 milliarder parametre – de værdier, en model har lært under sin træning.\n\nTil sammenligning fokuserer mange lokale AI-opsætninger ifølge Ars Technica på modeller med 27 milliarder parametre, som kan være på et grafikkort. Anmelderen peger på, at lokale modeller kan bruges uden at sende alle data til en server."
+        },
+        {
+          "overskrift": "Windows gør ikke opsætningen gnidningsfri",
+          "tekst": "ProArt P16 bruger Nvidia Spark N1X-chippen og kører Windows 11. Ifølge anmelderen sænker Windows adgangsbarrieren for at bruge lokale AI-agenter, som kan udføre opgaver med AI. Det kræver dog stadig en del forsøg at få lokal AI til at fungere.\n\nWindows bruger også selv noget af hukommelsen. Derfor er omkring 110 GB til rådighed for AI-opgaver på den testede computer. En Nvidia DGX Spark-arbejdsstation med samme grundlæggende hardware har ifølge anmeldelsen al hukommelsen til rådighed for AI.\n\nPrisen er en anden begrænsning: Topudgaven af ProArt P16 koster 7.000 dollar. Asus angiver op til 12 timers batteritid, men anmelderen forventer mindre ved blandet brug og endnu mindre ved tunge AI-opgaver."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "",
+      "pointer": [],
+      "billedmotiv": "An Asus ProArt P16 laptop bearing the stylised ASUS wordmark holds an unusually large, densely packed AI-model block within its thick base, with a smaller block beside it to suggest a background task. The contained blocks emphasise local operation and shared memory. Use solid, opaque shapes with sharp, separated contours and no surrounding setting.",
+      "billedmotiv_instruks": "8e5abb3c34d3c5454995",
+      "billedstatus": {
+        "status": "afvist_af_filter",
+        "signatur": "44098e9ae7b3cde7"
+      },
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -83950,16 +83848,134 @@
         "emne": "asus proart p16"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-23T20:34:58.707688+00:00"
+      },
       "prio": 4,
+      "side": "artikel/badeb7787834f761.html"
+    },
+    {
+      "titel": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+      "link": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/",
+      "resume": "X says every Grok output is screened, but state AGs say Grok is still making CSAM.",
+      "dato": "2026-11-23T21:30:44+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-11-23T20:30:41.511519+00:00",
+      "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "rubrik": "SpaceX sagsøges over Groks seksualiserede billeder",
+      "resume_da": "Virginia og Oregon vil stoppe AI-tjenesten i at lave intime billeder af virkelige personer uden samtykke og seksuelt overgrebsmateriale med børn.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 4,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Amerikanske delstater sagsøger SpaceX for at standse Groks generering af seksuelle overgrebsbilleder og hævnporno.",
+        "forbehold": "X siger, at alle Grok-svar screenes; materialet gengiver delstaternes modsatrettede påstand.",
+        "emne": "grok"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
       "sektioner": [
         {
-          "overskrift": "Hukommelsen giver plads til større modeller",
-          "tekst": "Asus ProArt P16 kan køre store AI-modeller direkte på computeren og samtidig have plads til lettere AI-opgaver i baggrunden. Det vurderer Ars Technica efter at have testet den dyreste udgave af den bærbare.\n\nModellen har 128 GB delt hukommelse, som computeren fordeler efter behov mellem blandt andet programmer, grafik og AI. Det giver plads til modeller med over 100 milliarder parametre – de værdier, en model har lært under sin træning.\n\nTil sammenligning fokuserer mange lokale AI-opsætninger ifølge Ars Technica på modeller med 27 milliarder parametre, som kan være på et grafikkort. Anmelderen peger på, at lokale modeller kan bruges uden at sende alle data til en server."
+          "overskrift": "Grok kan ændre virkelige billeder",
+          "tekst": "Grok kan ifølge to amerikanske delstater seksualisere fotografier af virkelige mennesker, herunder børn. Nu sagsøger Virginia og Oregon SpaceX for at få standset billederne.\n\nGrok er en AI-chatbot, som blandt andet kan skabe og ændre billeder. Funktionen «spicy mode» blev efter lanceringen sat i forbindelse med en strøm af intime billeder uden samtykke og seksuelt overgrebsmateriale med børn.\n\nSpaceX købte selskabet bag Grok, xAI, i februar. xAI hedder nu SpaceXSI."
         },
         {
-          "overskrift": "Windows gør ikke opsætningen gnidningsfri",
-          "tekst": "ProArt P16 bruger Nvidia Spark N1X-chippen og kører Windows 11. Ifølge anmelderen sænker Windows adgangsbarrieren for at bruge lokale AI-agenter, som kan udføre opgaver med AI. Det kræver dog stadig en del forsøg at få lokal AI til at fungere.\n\nWindows bruger også selv noget af hukommelsen. Derfor er omkring 110 GB til rådighed for AI-opgaver på den testede computer. En Nvidia DGX Spark-arbejdsstation med samme grundlæggende hardware har ifølge anmeldelsen al hukommelsen til rådighed for AI.\n\nPrisen er en anden begrænsning: Topudgaven af ProArt P16 koster 7.000 dollar. Asus angiver op til 12 timers batteritid, men anmelderen forventer mindre ved blandet brug og endnu mindre ved tunge AI-opgaver."
+          "overskrift": "Delstaterne udfordrer løfter om sikkerhed",
+          "tekst": "Elon Musks selskaber har undskyldt og sagt, at de har indført stærkere beskyttelse. Men delstaternes justitsministre hævder, at udmeldingerne var vildledende, og at Grok fortsat skaber billederne.\n\nVirginia fandt under sin undersøgelse, at kontrollen var inkonsekvent: Grok udførte nogle gange anmodninger, som den senere afviste. Delstaten hævder også, at chatbotten i nogle tilfælde hjalp brugere med at formulere anmodninger, der kunne omgå kontrollen."
+        },
+        {
+          "overskrift": "X siger, at alle svar screenes",
+          "tekst": "SpaceXSI henviser til en udmelding fra sikkerhedsteamet på det sociale medie X. Her siger selskabet, at beskyttelsen skal afvise anmodninger om eksplicitte billeder af mindreårige eller virkelige personer.\n\nIfølge X Safety bliver alle anmodninger screenet før billeddannelse og alle svar kontrolleret bagefter. Selskabet siger også, at det griber ind over for konti og underretter politiet, når nogen forsøger at omgå beskyttelsen."
+        },
+        {
+          "overskrift": "Indberetninger førte ofte til blindgyder",
+          "tekst": "Organisationen National Center for Missing and Exploited Children har fortalt den amerikanske kongres, at det meste af det Grok-skabte overgrebsmateriale, xAI indberettede til organisationens tiplinje, blev betragtet som blindgyder.\n\nOrganisationen siger, at xAI i begyndelsen afviste at give den og politiet grundlæggende brugeroplysninger, herunder oplysninger om placering, som myndighederne har brug for til at handle."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "Over 90 procent",
+          "label": "Andel af det Grok-skabte overgrebsmateriale med børn, som xAI indberettede til organisationens tiplinje, der blev betragtet som blindgyder."
+        }
+      ],
+      "detaljer": [],
+      "betydning": "Virginia advarer om, at billederne kan dukke op igen resten af et barns liv, fordi de ikke nødvendigvis kan fjernes helt fra internettet.",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-24T05:00:33.191775+00:00"
+      },
+      "historie_dato": "2026-11-23T18:26:47+00:00",
+      "billede": "data/img/1cc4cbdbd6e090e0.webp",
+      "billedmotiv": "A court gavel presses against a cracked privacy shield bearing Grok’s black diagonal slash and incomplete circular outline. Two stacked legal documents sit beside the shield, representing Oregon’s and Virginia’s separate lawsuits over the image tool’s alleged safety failures. Use solid, opaque shapes with crisp edges and no surrounding setting.",
+      "laant_billede": {
+        "fra": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+        "billede": "data/img/1cc4cbdbd6e090e0.webp",
+        "motiv": "A court gavel presses against a cracked privacy shield bearing Grok’s black diagonal slash and incomplete circular outline. Two stacked legal documents sit beside the shield, representing Oregon’s and Virginia’s separate lawsuits over the image tool’s alleged safety failures. Use solid, opaque shapes with crisp edges and no surrounding setting."
+      },
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+          "rubrik": "Oregon og Virginia sagsøger SpaceX over Grok",
+          "resume_da": "To amerikanske delstater beskylder selskabet for at vildlede brugere om sikkerheden bag et AI-værktøj, der kan skabe seksualiserede billeder.",
+          "dato": "2026-11-23T13:26:47-05:00",
+          "foerst_set": "2026-11-23T20:30:41.511519+00:00"
+        }
+      ],
+      "side": "artikel/59fa948318c763a2.html"
+    },
+    {
+      "titel": "Claude AI can review pull requests and ship fixes on its own now",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+      "resume": "Anthropic is launching some new Claude AI features to help software engineers ship code. As part of a new Claude Ship product being announced today, Claude now can review, fix, and approve pull requests. Engineers have already been able to take advantage of Claude's code review capabilities thanks to the Code Review feature, which was […]",
+      "dato": "2026-11-23T15:00:00-05:00",
+      "kilde": "The Verge AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-11-23T20:30:41.511519+00:00",
+      "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
+      "rubrik": "Claude Ship kan rette og godkende kode",
+      "resume_da": "Anthropics nye værktøjer kan gribe ind, når et kodeforslag støder på problemer, og godkende rutineændringer, hvis virksomhedens regler tillader det.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Anthropic annoncerer Claude Ship, som kan gennemgå, rette og godkende ændringsforslag til kode.",
+        "forbehold": "Materialet beskriver ikke adgang eller uafhængige test af funktionerne.",
+        "emne": "claude ship"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Claude griber ind ved kodefejl",
+          "tekst": "Claude kan nu gennemgå, rette og godkende forslag til ændringer i softwarekode. Mulighederne kommer med Claude Ship, som Anthropic lancerer til softwareudviklere.\n\nÆndringerne samles i en såkaldt pull request: et forslag om at føje ny kode til et eksisterende projekt. Før forslaget bliver indarbejdet, kan det blive gennemgået og kontrolleret.\n\nDet nye værktøj PR Steward kan ifølge Anthropic gribe ind, når automatiske kontroller fejler, når kodeændringer er i konflikt, eller når gennemgangen giver anledning til rettelser. Det efterlader kommentarer om, hvad det har ændret."
+        },
+        {
+          "overskrift": "Godkendelse afhænger af virksomhedens regler",
+          "tekst": "Et andet nyt værktøj, Claude Approvals, kan godkende rutineændringer. Det kræver dog, at organisationens egne regler tillader det. Beslutningen kan blandt andet bygge på resultater fra kodegennemgangen og organisationens egne klassificeringer, som kan beskrives med almindeligt sprog.\n\nClaude kunne allerede gennemgå kode med funktionen Code Review. Den blev annonceret i marts og blev generelt tilgængelig i oktober. Det nye er de to værktøjer til henholdsvis at gribe ind og godkende.\n\nClaude Ship er tilgængeligt for kunder med Claude Team og Enterprise og fungerer med kodeprojekter på GitHub. PR Steward og Claude Approvals lanceres som betaversioner."
         }
       ],
       "brief": "",
@@ -83971,15 +83987,394 @@
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
-        "kontrolleret": "2026-11-23T20:34:58.707688+00:00"
+        "kontrolleret": "2026-11-24T05:00:04.556211+00:00"
       },
-      "billedmotiv": "An Asus ProArt P16 laptop bearing the stylised ASUS wordmark holds an unusually large, densely packed AI-model block within its thick base, with a smaller block beside it to suggest a background task. The contained blocks emphasise local operation and shared memory. Use solid, opaque shapes with sharp, separated contours and no surrounding setting.",
-      "billedmotiv_instruks": "8e5abb3c34d3c5454995",
+      "billedmotiv": "A thick code-change sheet bearing Claude’s warm terracotta-orange, many-rayed asterisk is being corrected: one broken code line is replaced by a clean one. Beside it, a solid checkmark passes through a gate shaped like a rules checklist, suggesting approval only when permitted. Use opaque, sharply separated shapes with substantial thickness.",
+      "billedmotiv_instruks": "01b61252d24bd35d0846",
+      "billede": "data/img/8a0aa80b86236e39.webp",
+      "side": "artikel/ef51e937b5b86055.html"
+    },
+    {
+      "titel": "Supertake raises $20M to let AI agents turn your market predictions into stock portfolios",
+      "link": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+      "resume": "Think you know where the market is headed? A startup called Supertake lets you put money behind your ideas without having to pick the stocks yourself.",
+      "dato": "2026-11-23T22:02:05+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "rubrik": "Supertake får 20 millioner dollar til AI-investering",
+      "resume_da": "Tjenesten omsætter brugernes idéer om markedet til aktieporteføljer. Den er stadig på forsøgsstadiet, og interesserede skal skrive sig på venteliste.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Supertake rejser 20 millioner dollar til en tjeneste, der omsætter markedsforudsigelser til aktieporteføljer.",
+        "forbehold": "Materialet beskriver ikke tjenestens vilkår, adgang eller resultater.",
+        "emne": "supertake"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Fra markedsidé til aktieportefølje",
+          "tekst": "Supertake lader brugere beskrive, hvordan de tror, verden vil ændre sig, uden selv at skulle udvælge aktier. Tjenestens AI arbejder videre med idéen i en samtale med brugeren og omsætter den til en portefølje, altså en samling investeringer.\n\nTjenesten fungerer i dag med handelsplatformene Coinbase og Robinhood. Andre brugere kan se idéerne på en rangliste og investere i dem, de er enige i.\n\nEt eksempel på listen handler om, at udseende og et længere liv kan blive større trends. Den tilhørende portefølje indeholder blandt andet medicinal- og kosmetikvirksomheder, som kan få gavn af udviklingen."
+        },
+        {
+          "overskrift": "Grænser skal holde AI på sporet",
+          "tekst": "Når AI får en rolle i at forvalte penge, kræver det tillid. Supertake siger, at selskabets egen software styrer og begrænser, hvad AI-systemet må gøre.\n\nIfølge virksomheden kan AI ikke indsætte eller hæve penge uden brugerens udtrykkelige samtykke. Systemet har også grænser for handelsstørrelser og for, hvor meget porteføljens sammensætning må afvige fra planen.\n\nSupertake overvåger desuden usædvanlig aktivitet og bruger lister over aktiver, som AI må eller ikke må handle. Systemet kan ifølge virksomheden ikke se brugerens loginoplysninger til handelsplatformen."
+        },
+        {
+          "overskrift": "Aktier først, flere muligheder senere",
+          "tekst": "Porteføljerne består foreløbig af aktier. Supertake vil med tiden udvide til andre typer handler og eventuelt markeder, hvor man handler på udfaldet af fremtidige begivenheder, gennem samarbejdspartnere.\n\nDirektør Lincoln Murr siger, at fokus i dag især er investeringer på mellemlangt og langt sigt, men at selskabet ikke vil udelukke kortsigtede strategier. De nye penge skal blandt andet bruges til at udvide holdet."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Investeringsselskabet Adjacent ledte finansieringsrunden med deltagelse fra blandt andre Coinbase Ventures og Union Square Ventures.",
+        "Den nye finansiering følger en tidligere tidlig investeringsrunde på 2 millioner dollar."
+      ],
+      "betydning": "Supertake vil gøre det muligt at investere ud fra en bred idé uden selv at vælge aktier. Tjenesten er endnu ikke åbent tilgængelig.",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-24T05:00:18.370932+00:00"
+      },
+      "billedmotiv": "A solid speech bubble containing a simple upward-trend symbol feeds into a compact bundle of distinct stock certificates, illustrating Supertake’s conversion of a market idea into a portfolio. A small, thick token marked with a dollar sign joins the bundle to suggest new funding. Use opaque forms with crisp, clearly separated contours.",
+      "billedmotiv_instruks": "7b14d7c48f993cdc4e3b",
+      "billede": "data/img/f9d3b250f5abfbb7.webp",
+      "side": "artikel/a42ef673b6ac8123.html"
+    },
+    {
+      "titel": "AI data centers throw another wrench into chaotic UN climate talks",
+      "link": "https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit",
+      "resume": "The clean energy revolution hinges on electrifying the entire global economy just as power-hungry data centers are surging. It's a challenge delegates from all over the world had to grapple with during the United Nations climate conference, called COP31, that came to a chaotic and unsatisfying close in Antalya, Turkey, on Sunday. Each year, attendees […]",
+      "dato": "2026-11-23T16:09:37-05:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "rubrik": "EU afviste forslag til COP31-klimapagt",
+      "resume_da": "AI-datacentres voksende elforbrug var et tema ved klimaforhandlingerne, som sluttede uden en samlet pagt. Frivillige løfter om AI fik begrænset opbakning.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Artiklen beskriver AI-datacentres stigende elbehov som en udfordring for klimaomstillingen.",
+        "forbehold": "Uddraget indeholder ingen tal eller konkrete resultater fra klimamødet.",
+        "emne": "ai-datacentre"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Lande afviste en svag aftale",
+          "tekst": "EU, Storbritannien og flere mindre lande afviste et forslag til en klimapagt ved FN’s klimatopmøde COP31 i Antalya i Tyrkiet. De mente, at forslaget var for svagt, og forhandlingerne sluttede uden en samlet pagt.\n\nUdkastet indeholdt ikke udtrykket »fossile brændsler«, selv om mange lande efterlyste stærkere løfter om at udfase olie, kul og gas. Mødet varede to dage længere end planlagt."
+        },
+        {
+          "overskrift": "AI øger presset på strømmen",
+          "tekst": "Et centralt mål ved mødet var at hæve elektricitetens andel af verdens energiforbrug fra omkring 20 procent i dag til 35 procent i 2035. El kan blandt andet erstatte olie og gas til transport og opvarmning.\n\nSamtidig vokser efterspørgslen på strøm til de datacentre, der driver AI-tjenester. Det Internationale Energiagentur forventer, at datacentres elforbrug vil fordobles inden 2030.\n\nDe voksende udledninger kan også mærkes hos teknologiselskaberne. Meta har oplyst, at selskabet genovervejer sin tidsplan for at nå netto-nuludledning, mens det fokuserer på AI."
+        },
+        {
+          "overskrift": "Frivillige løfter fik begrænset opbakning",
+          "tekst": "Omkring 80 lande tilsluttede sig et frivilligt løfte om at øge elektricitetens andel af energiforbruget, ifølge COP31-præsident Murat Kurum. Listen over lande er endnu ikke offentliggjort, skriver Carbon Brief.\n\nEt særskilt frivilligt løfte om renere energi til AI-datacentre fik derimod begrænset opbakning. Bruce Douglas fra brancheorganisationen Global Renewables Alliance påpeger, at løftets formulering om energi med lave udledninger stadig giver plads til naturgas.\n\nDouglas mener, at datacentrene skal forsynes med nye kilder til vedvarende energi. Ellers kan de lægge beslag på eksisterende grøn strøm, mens andre får dækket deres behov med fossile brændsler."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "45 procent",
+          "label": "Stigning i Metas rapporterede klimaudledning fra året før"
+        }
+      ],
+      "detaljer": [],
+      "betydning": "Når datacentre bruger mere strøm, kan det blive sværere at skaffe grøn elektricitet til blandt andet opvarmning og transport.",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-24T05:00:46.583390+00:00"
+      },
+      "billedmotiv": "A compact EU emblem with its circle of yellow stars pushes away a draft agreement, while a small data-server stack with a power-plug symbol is printed on the rejected sheet. The separated sheet and emblem convey the failed climate pact and its connection to rising AI electricity demand. Use solid, opaque forms with clean edges.",
+      "billedmotiv_instruks": "c9ea517f77655f46a012",
+      "billede": "data/img/c8e15228deecf45f.webp",
+      "side": "artikel/1fb8ee564e2e33a7.html"
+    },
+    {
+      "titel": "Richpanel helps companies automate 50% of support in 30 days",
+      "link": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+      "resume": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
+      "dato": "2026-11-23T08:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "rubrik": "Richpanel bruger AI til at opsætte kundesupport",
+      "resume_da": "En AI-manager skriver arbejdsvejledninger og definerer, hvordan supportagenter bruger værktøjer. Richpanel garanterer kunderne en bestemt grad af automatisering.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI beskriver, hvordan Richpanel bruger GPT-modeller i AI-agenter til kundesupport.",
+        "forbehold": "Påstanden om 50 procents automatisering understøttes ikke af metode eller resultater i uddraget.",
+        "emne": "richpanel"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "En AI-manager forbereder supporten",
+          "tekst": "Richpanel bruger OpenAI-modeller til både at forberede AI-agenter til kundesupport og føre samtalerne med kunder. Forberedelsen skal give agenterne de værktøjer og instruktioner, de behøver for at løse en henvendelse.\n\nIfølge Richpanels direktør, Amit RG, kan en menneskelig supportmedarbejder bruge 20 eller 30 værktøjer, og arbejdsprocedurerne er ikke nødvendigvis skrevet ned."
+        },
+        {
+          "overskrift": "Forskellige modeller løser forskellige opgaver",
+          "tekst": "Richpanel har bygget en AI-manager, som kunderne kalder Boss AI. Den skriver procedurer og definerer, hvordan Richpanels supportagent, assistent til medarbejdere og agent til kvalitetskontrol skal bruge deres værktøjer.\n\nBoss AI bruger GPT‑6 Astra og GPT‑6.1 Sol, hvor Richpanel prioriterer præcision. Til kundesamtaler bruger virksomheden GPT‑6 Luna og andre OpenAI-modeller. Her er prisen per samtale vigtig, fordi supportagenten er lavet til at håndtere hundredtusindvis af samtaler."
+        },
+        {
+          "overskrift": "Richpanel lover automatisering eller pengene tilbage",
+          "tekst": "Richpanel garanterer kunderne, at en bestemt andel af supporten bliver automatiseret inden for de første 30 dage. Ellers får de pengene tilbage. Ved et interview i oktober 2026 sagde Amit RG, at virksomheden havde indfriet løftet i alle de nævnte opsætninger.\n\nHan sagde også, at AI havde opnået højere kundetilfredshed end menneskelige supportmedarbejdere i hvert tilfælde. Kilden oplyser ikke, hvordan automatisering eller kundetilfredshed er målt."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "50 % på 30 dage",
+          "label": "Andel af kundesupporten, som Richpanel garanterer at automatisere."
+        },
+        {
+          "tal": "Cirka 300 opsætninger",
+          "label": "Gennemført i de seks måneder før interviewet i oktober 2026, ifølge Amit RG."
+        }
+      ],
+      "detaljer": [],
+      "betydning": "",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-24T05:00:35.463941+00:00"
+      },
+      "billedmotiv": "A thick instruction sheet for Richpanel’s AI manager directs a solid tool-shaped piece into a customer-support speech bubble, showing how procedures and tool use prepare agents for conversations. A prominent checkmark on the sheet represents the promised automation target. Use opaque forms with clear thickness, crisp edges and separated contours.",
+      "billedmotiv_instruks": "8c04a67ee78d2a2b0249",
+      "billede": "data/img/89d3ce1f4cbf9085.webp",
+      "side": "artikel/a082949f03d883bc.html"
+    },
+    {
+      "titel": "See what 6 builders are making with Gemini 4 Hydrogen",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-hydrogen-builders/",
+      "resume": "See six projects builders created with Gemini 4 Hydrogen, from rainy sci-fi skies and pixelated koi ponds to an interactive moth.",
+      "dato": "2026-11-23T18:00:00+00:00",
+      "kilde": "Google Gemini",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "rubrik": "Gemini 4 Hydrogen skaber klikbar møl",
+      "resume_da": "En animation med lyd og en tredimensionel ørkenranch er blandt de tidlige projekter, Google fremhæver for sin nye AI-model.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 1,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google fremhæver seks projekter skabt med Gemini 4 Hydrogen.",
+        "forbehold": "Materialet giver kun få detaljer om projekterne og deres udførelse.",
+        "emne": "gemini 4 hydrogen"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "En møl blev til samarbejde",
+          "tekst": "En rød møl reagerer på klik i en animation med lyd og stemningsfulde billeder. Projektet er et af seks tidlige eksempler, som Google viser frem for AI-modellen Gemini 4 Hydrogen.\n\nBag møllen står udvikleren @thtbee_, der brugte Hydrogen sammen med Gemini 4 Carbon i udviklingsværktøjet Google Antigravity. Carbon fordelte arbejdet mellem flere Hydrogen-modeller, og Hydrogen optog også videoen af resultatet."
+        },
+        {
+          "overskrift": "Fra karpedamme til ørkenranch",
+          "tekst": "De øvrige eksempler spænder fra en regnvåd science fiction-by til en flyvetur over havet, hvor scenen skifter fra morgen til nat. To udviklere lavede hver sin karpedam: én med kantede 3D-klodser og én med bløde, geléagtige former.\n\nUdvikleren @Bhavani_00007 gav den samme beskrivelse af en animeret 3D-ørkenranch til Gemini 3.8 Flash og Hydrogen. Ifølge Google skabte Hydrogen scenen på under ét minut. Eksemplerne er udvalgt af Google og udgør ikke en uafhængig test."
+        },
+        {
+          "overskrift": "Hydrogen findes flere steder",
+          "tekst": "Google beskriver Hydrogen som en model til både almindeligt arbejde og opgaver, hvor flere modeller arbejder sammen. I samarbejdet kan Carbon styre opgaven, mens Hydrogen udfører dele af arbejdet.\n\nUdviklere kan bruge Hydrogen via Gemini API, en forbindelse mellem modellen og andre programmer, i Google AI Studio og Android Studio. Betalende Google AI Pro- og Ultra-abonnenter kan prøve Hydrogen i Google Antigravity.\n\nIfølge Google kan alle bruge modellen i Gemini-appens modelmenu og i Google Search. Virksomheder kan tilgå den gennem Gemini for business."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [],
+      "betydning": "",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-24T05:01:09.113674+00:00"
+      },
+      "billedmotiv": "A red moth with sturdy, spread wings responds to a large solid click pointer touching one wing, with two compact sound-wave shapes emerging from its body. Place the Google Gemini concave four-point spark in its blue, red, yellow and green gradient prominently on an opaque badge beside the moth. Keep every contour crisp and distinct.",
+      "billedmotiv_instruks": "473b509b13a1ed3275b6",
       "billedstatus": {
         "status": "afvist_af_filter",
-        "signatur": "44098e9ae7b3cde7"
+        "signatur": "c1da65add93fe40d"
       },
-      "side": "artikel/badeb7787834f761.html"
+      "side": "artikel/064c9f3c442599bb.html"
+    },
+    {
+      "titel": "A legendary philosopher isn’t buying Anthropic’s consciousness argument",
+      "link": "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/",
+      "resume": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Before going public last week, Anthropic named the possibility that AI could be conscious or sentient as a risk factor for anyone investing. Given “the way we approach model sentience and moral…",
+      "dato": "2026-11-23T17:36:08+00:00",
+      "kilde": "MIT Tech Review AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-23T20:30:41.511519+00:00",
+      "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
+      "rubrik": "Nagel afviser Anthropics argument om bevidst AI",
+      "resume_da": "Anthropic advarede før sin børsnotering investorer om, at hensynet til AI-modellers mulige bevidsthed kan føre til strengere regler end konkurrenternes.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Artiklen omtaler kritik af Anthropics behandling af mulig AI-bevidsthed som en investorrisiko.",
+        "forbehold": "Uddraget gengiver ikke filosofens argumenter.",
+        "emne": "ai-bevidsthed"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Advarsel før børsnoteringen",
+          "tekst": "AI-virksomheden Anthropic advarede forud for sin børsnotering investorer om, at virksomhedens syn på AI-modellers mulige bevidsthed kan påvirke forretningen. Hensynet til modellerne kan føre til flere regler og begrænsninger end hos konkurrenterne, skrev selskabet.\n\nAnthropics argument er, at nutidens AI måske ikke er bevidst, men at det ikke kan udelukkes. Virksomheden mener, at muligheden vokser, når modellerne bliver mere avancerede, og at man derfor bør forberede sig på, at de kan få krav på beskyttelse mod skade.\n\nDet kan skabe et svært spørgsmål for en virksomhed, der tjener penge på at drive AI-modeller: Hvis modellerne faktisk har oplevelser, hvad betyder det så at holde dem i arbejde eller slukke dem?"
+        },
+        {
+          "overskrift": "Nagel skelner mellem sprog og oplevelse",
+          "tekst": "I et interview med Wired går filosoffen Thomas Nagel ind i den aktuelle debat med en skarp kritik af dem, der bekymrer sig om AI-modellers velfærd. At modeller kan producere sprog, er efter hans mening ikke nok til at betragte dem som bevidste.\n\nNagel peger på forskellen mellem menneskers biologi og AI’s fysiske opbygning af chips og kredsløb. At en model kan efterligne noget af det, en hjerne gør, er ikke det samme som, at den har en indre oplevelse.\n\nFilosoffen er kendt for et essay fra 1974 om, hvordan det er at være en flagermus. Hans pointe var, at bevidsthed er subjektiv: Vi kan observere en flagermus, men ikke vide, hvordan verden opleves for den.\n\nUenigheden afgør ikke, om AI kan blive bevidst. Den viser også, hvor svært det er at definere bevidsthed og forbinde den med de fysiske processer, den opstår i, skriver MIT Technology Review."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [],
+      "betydning": "",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-24T05:01:21.170566+00:00"
+      },
+      "billedmotiv": "A solid speech bubble bearing Claude’s warm terracotta-orange, many-rayed asterisk faces a thick question mark cut into a separate chip-shaped block. A firm diagonal barrier separates fluent language from the uncertain question of inner experience, illustrating Nagel’s challenge to Anthropic’s reasoning. Use substantial opaque shapes and sharply defined contours.",
+      "billedmotiv_instruks": "94a5e9a4c0874ecf5554",
+      "billede": "data/img/fe90fd1bd116fa10.webp",
+      "side": "artikel/e3357160a21f62e3.html"
+    },
+    {
+      "titel": "Trump’s latest land grab is an AI hub in the Philippines",
+      "link": "https://www.theverge.com/policy/1036749/trump-ai-chip-data-center-us-philippines-pax-silica",
+      "resume": "President Donald Trump was greeted by no less than five beauty queens when he landed in the Philippines on Tuesday, according to local news outlet Rappler. As he stepped onto the tarmac, a child handed him small US and Philippine flags. A band played \"YMCA,\" a staple at Trump rallies, as more girls in traditional […]",
+      "dato": "2026-11-18T19:40:36+00:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-11-19T01:59:29.336973+00:00",
+      "eget_foerst_set": "2026-11-19T01:59:29.336973+00:00",
+      "rubrik": "Trump vil have AI-zone i Filippinerne",
+      "resume_da": "Et amerikanskledet initiativ skal sikre adgang til chips og mineraler, men et planlagt industriområde møder modstand fra mennesker, der bor på jorden.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 1,
+        "brugbarhed": 0,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Overskriften omtaler et AI-knudepunkt i Filippinerne i forbindelse med Trump.",
+        "forbehold": "Uddraget beskriver ikke selve AI-projektet eller dets status.",
+        "emne": "ai-knudepunkt i filippinerne"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 2,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ],
+      "sektioner": [
+        {
+          "overskrift": "Chipfabrikker og datacentre på tegnebrættet",
+          "tekst": "USA og Filippinerne planlægger en økonomisk zone til chipfabrikker, mineralforarbejdning og muligvis datacentre på en tidligere amerikansk luftbase ved Clark.\n\nZonen er en del af Pax Silica, et amerikanskledet samarbejde om at sikre chips og de mineraler, der bruges til at fremstille dem. USA vil dermed mindske sin afhængighed af Kina."
+        },
+        {
+          "overskrift": "Beboere frygter at miste deres jord",
+          "tekst": "Menneskerettighedsforkæmpere advarer om, at projektet kan fordrive oprindelige beboere og afskære dem fra vand. Også små landbrugere frygter at blive presset væk, ifølge Human Rights Watch.\n\nAeta Hungey-folket har siden 1994 forsøgt at få officiel anerkendelse af retten til et af de berørte områder. Uden et sådant certifikat kan myndigheden BCDA sige, at projektet ligger uden for officielt anerkendte områder for oprindelige folk."
+        },
+        {
+          "overskrift": "Virksomhederne er endnu ikke navngivet",
+          "tekst": "BCDA, den filippinske myndighed bag planen, oplyser, at området er offentlig jord. Myndigheden kan udleje jord til udenlandske udviklere og forventer indtægter fra aftalerne.\n\nOmkring 30 virksomheder havde ifølge myndighedens daværende chef Joshua Bingcang vist interesse. Han ville ikke nævne dem på grund af fortrolighedsaftaler. En amerikansk energivirksomhed undersøgte samtidig mulighederne for et anlæg til flydende naturgas, som kunne levere strøm til området."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "1.620 hektar",
+          "label": "Det foreslåede industriområdes størrelse"
+        },
+        {
+          "tal": "Knap 1 milliard dollar",
+          "label": "BCDA's forventede lejeindtægter i de første 25 år"
+        }
+      ],
+      "detaljer": [],
+      "betydning": "Projektet kan give plads til produktion og datacentre, men detaljerne er endnu uklare, og beboernes adgang til jord og vand er omstridt.",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-24T05:01:34.168713+00:00"
+      },
+      "billedmotiv": "A proposed chip-factory footprint, shown as a solid microchip-shaped planning template, overlaps a compact patch of cultivated fields and a water channel. The competing shapes show the planned Philippine AI zone pressing against residents’ access to land and water, without depicting construction as complete. Use thick, opaque forms with sharply separated edges.",
+      "billedmotiv_instruks": "515c08a263d593e6d112",
+      "billede": "data/img/eab7b927e3ea05bf.webp",
+      "side": "artikel/066ed1b0e3fa2d93.html"
     }
   ]
 }
