@@ -1,20 +1,17 @@
 {
-  "opdateret": "2026-11-24T04:56:53.301437+00:00",
+  "opdateret": "2026-11-24T19:41:33.958103+00:00",
   "status": "reserve",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
     "https://simonwillison.net/2026/Nov/23/glm-54/",
-    "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/",
-    "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests"
+    "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+    "https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban"
   ],
-  "input_fingerprint": "c24937c37b55eb37",
+  "input_fingerprint": "e338b300d852e63b",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "kontrolproblemer": [
-    "Claude Ship-lanceringen optræder også som selvstændig kandidat 6545db87281ad58e fra The Verge. Den er samme begivenhed som hovedhistorien a72cc3aa1f3d17c0, men er ikke samlet med den i samme_historie. Gruppér omtalerne, så lanceringen ikke får to pladser på forsiden."
-  ],
-  "modelkald": 6,
-  "kildehentninger": 3,
+  "modelkald": 5,
+  "kildehentninger": 2,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -25,7 +22,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -43,18 +40,14 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+      "link": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/",
-    "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
-    "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/"
+    "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+    "https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban",
+    "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/"
   ],
-  "afventer_artikler": 78
+  "afventer_artikler": 83
 }

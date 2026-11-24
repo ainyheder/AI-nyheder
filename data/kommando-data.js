@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-24T05:07:10.567706+00:00",
+ "genereret": "2026-11-24T19:54:52.437342+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -199,26 +199,26 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-24T04:56:53.301437+00:00",
-  "antal": 106,
-  "med_billede": 80,
-  "paa_dansk": 106,
+  "opdateret": "2026-11-24T19:41:33.958103+00:00",
+  "antal": 116,
+  "med_billede": 85,
+  "paa_dansk": 116,
   "kategorier": {
-   "Hverdags-AI": 30,
+   "Hverdags-AI": 31,
+   "Samfund \u0026 etik": 26,
    "Politik \u0026 jura": 7,
-   "Samfund \u0026 etik": 21,
-   "Penge \u0026 marked": 24,
-   "Forskning": 11,
-   "Lanceringer": 13
+   "Lanceringer": 14,
+   "Penge \u0026 marked": 27,
+   "Forskning": 11
   },
   "kilder": {
-   "TechCrunch AI": 28,
-   "Ars Technica AI": 11,
-   "The Verge AI": 22,
-   "MIT Tech Review AI": 3,
-   "OpenAI Blog": 18,
-   "Google DeepMind": 3,
+   "TechCrunch AI": 33,
+   "The Verge AI": 24,
+   "Ars Technica AI": 12,
+   "OpenAI Blog": 19,
+   "MIT Tech Review AI": 4,
    "Google Gemini": 5,
+   "Google DeepMind": 3,
    "Anthropic News": 5,
    "Simon Willison AI": 4,
    "Hugging Face": 5,
@@ -227,6 +227,26 @@ window.KOMMANDO_DATA = {
   },
   "udvalgte": [
    {
+    "titel": "Meta brings its Muse AI assistant directly into Instagram DMs",
+    "rubrik": "Meta lægger Muse ind i Instagram-beskeder",
+    "link": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+    "side": "artikel/6e7150d9caf7ae53.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-24T17:00:00+00:00",
+    "billede": "data/img/005a1cd02dcc7acc.webp"
+   },
+   {
+    "titel": "Tidal will start banning AI-generated music next month",
+    "rubrik": "Tidal vil fjerne millioner af AI-numre",
+    "link": "https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban",
+    "side": "artikel/31bde7b6ca68e4a6.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-24T12:17:09-05:00",
+    "billede": "data/img/530ce8efadb2a8e4.webp"
+   },
+   {
     "titel": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
     "rubrik": "SpaceX sagsøges over Groks seksualiserede billeder",
     "link": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/",
@@ -235,167 +255,147 @@ window.KOMMANDO_DATA = {
     "kilde": "Ars Technica AI",
     "dato": "2026-11-23T21:30:44+00:00",
     "billede": "data/img/1cc4cbdbd6e090e0.webp"
-   },
-   {
-    "titel": "Claude AI can review pull requests and ship fixes on its own now",
-    "rubrik": "Claude Ship kan rette og godkende kode",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
-    "side": "artikel/ef51e937b5b86055.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-23T15:00:00-05:00",
-    "billede": "data/img/8a0aa80b86236e39.webp"
-   },
-   {
-    "titel": "Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses",
-    "rubrik": "Google Search får adgang til Wallet og Drive",
-    "link": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
-    "side": "artikel/389c89635cfdfbd7.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-23T19:14:46+00:00",
-    "billede": ""
    }
   ],
   "seneste": [
    {
-    "titel": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
-    "rubrik": "SpaceX sagsøges over Groks seksualiserede billeder",
-    "link": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/",
-    "side": "artikel/59fa948318c763a2.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-11-23T21:30:44+00:00",
-    "billede": "data/img/1cc4cbdbd6e090e0.webp"
-   },
-   {
-    "titel": "Supertake raises $20M to let AI agents turn your market predictions into stock portfolios",
-    "rubrik": "Supertake får 20 millioner dollar til AI-investering",
-    "link": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
-    "side": "artikel/a42ef673b6ac8123.html",
-    "kategori": "Penge \u0026 marked",
+    "titel": "Meta brings its Muse AI assistant directly into Instagram DMs",
+    "rubrik": "Meta lægger Muse ind i Instagram-beskeder",
+    "link": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+    "side": "artikel/6e7150d9caf7ae53.html",
+    "kategori": "Hverdags-AI",
     "kilde": "TechCrunch AI",
-    "dato": "2026-11-23T22:02:05+00:00",
-    "billede": "data/img/f9d3b250f5abfbb7.webp"
+    "dato": "2026-11-24T17:00:00+00:00",
+    "billede": "data/img/005a1cd02dcc7acc.webp"
    },
    {
-    "titel": "AI data centers throw another wrench into chaotic UN climate talks",
-    "rubrik": "EU afviste forslag til COP31-klimapagt",
-    "link": "https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit",
-    "side": "artikel/1fb8ee564e2e33a7.html",
+    "titel": "Tidal will start banning AI-generated music next month",
+    "rubrik": "Tidal vil fjerne millioner af AI-numre",
+    "link": "https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban",
+    "side": "artikel/31bde7b6ca68e4a6.html",
     "kategori": "Samfund \u0026 etik",
     "kilde": "The Verge AI",
-    "dato": "2026-11-23T16:09:37-05:00",
-    "billede": "data/img/c8e15228deecf45f.webp"
+    "dato": "2026-11-24T12:17:09-05:00",
+    "billede": "data/img/530ce8efadb2a8e4.webp"
    },
    {
-    "titel": "Richpanel helps companies automate 50% of support in 30 days",
-    "rubrik": "Richpanel bruger AI til at opsætte kundesupport",
-    "link": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
-    "side": "artikel/a082949f03d883bc.html",
+    "titel": "The New York Times warns photographers not to update Photoshop over AI features",
+    "rubrik": "New York Times forbyder ny Photoshop-version",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+    "side": "artikel/75eb28b2757365e3.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-24T11:09:23-05:00",
+    "billede": ""
+   },
+   {
+    "titel": "Pinterest will now let parents limit the AI-generated content their teens see",
+    "rubrik": "Pinterest lader forældre begrænse AI-indhold",
+    "link": "https://techcrunch.com/2026/11/24/pinterest-will-now-let-parents-limit-the-ai-generated-content-their-teens-see/",
+    "side": "artikel/b6d56875ce7b4448.html",
     "kategori": "Hverdags-AI",
-    "kilde": "OpenAI Blog",
-    "dato": "2026-11-23T08:00:00+00:00",
-    "billede": "data/img/89d3ce1f4cbf9085.webp"
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-24T16:02:37+00:00",
+    "billede": ""
    },
    {
-    "titel": "See what 6 builders are making with Gemini 4 Hydrogen",
-    "rubrik": "Gemini 4 Hydrogen skaber klikbar møl",
-    "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-hydrogen-builders/",
-    "side": "artikel/064c9f3c442599bb.html",
+    "titel": "UK warns AI-driven cyberattacks are exposing years of weak security",
+    "rubrik": "NCSC: AI finder gamle svagheder på minutter",
+    "link": "https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/",
+    "side": "artikel/281e7b0eb8a2f22f.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-24T18:02:59+00:00",
+    "billede": "data/img/bcb6d8dfd8b552f3.webp"
+   },
+   {
+    "titel": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
+    "rubrik": "Amazon: AI-agenter fandt ukendt sikkerhedshul",
+    "link": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
+    "side": "artikel/dad9742e3b9b29ab.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-11-24T12:30:05+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Searching for distant planets with Astra",
+    "rubrik": "Codex og Astra finder mulige planeter",
+    "link": "https://openai.com/index/searching-for-distant-planets-with-astra",
+    "side": "artikel/5b23d2436c25024d.html",
+    "kategori": "Forskning",
+    "kilde": "OpenAI Blog",
+    "dato": "2026-11-24T11:00:00+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Jensen Huang deepfakes are the hot new AI slop",
+    "rubrik": "Jensen Huang danser i falske videoer",
+    "link": "https://www.theverge.com/tech/1041222/jensen-huang-nvidia-scandal-deepfakes",
+    "side": "artikel/a57e0ea43e9e87d4.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-24T11:30:00-05:00",
+    "billede": "data/img/9976d5a2ab1e5f7f.webp"
+   },
+   {
+    "titel": "Why a Crusoe investor is betting on solar and batteries to power future AI data centers",
+    "rubrik": "Crusoe-investor peger på sol til AI-datacentre",
+    "link": "https://techcrunch.com/2026/11/24/why-a-crusoe-investor-is-betting-on-solar-and-batteries-to-power-future-ai-data-centers/",
+    "side": "artikel/a5613aba9d10bf47.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-24T16:10:00+00:00",
+    "billede": "data/img/488f007737cd49ac.webp"
+   },
+   {
+    "titel": "See what 5 builders are making with Gemini 4 Neon",
+    "rubrik": "Gemini 4 Neon hjælper med interaktive 3D-projekter",
+    "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-neon-builders/",
+    "side": "artikel/ac87e6fa41861830.html",
     "kategori": "Hverdags-AI",
     "kilde": "Google Gemini",
-    "dato": "2026-11-23T18:00:00+00:00",
-    "billede": ""
+    "dato": "2026-11-24T16:00:00+00:00",
+    "billede": "data/img/d874ae11ebb1376d.webp"
    },
    {
-    "titel": "Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses",
-    "rubrik": "Google Search får adgang til Wallet og Drive",
-    "link": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
-    "side": "artikel/389c89635cfdfbd7.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-23T19:14:46+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Claude AI can review pull requests and ship fixes on its own now",
-    "rubrik": "Claude Ship kan rette og godkende kode",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
-    "side": "artikel/ef51e937b5b86055.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-23T15:00:00-05:00",
-    "billede": "data/img/8a0aa80b86236e39.webp"
-   },
-   {
-    "titel": "Meta Muse can do your Black Friday shopping at Walmart",
-    "rubrik": "Meta Muse kan handle hos Walmart",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
-    "side": "artikel/c1061207c903927a.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-23T11:00:00+00:00",
-    "billede": "data/img/d810f64df4fa6a24.webp"
-   },
-   {
-    "titel": "Nothing’s upcoming Ear Note is a pair of earbuds with AI transcription",
-    "rubrik": "Nothing vil lade Ear Note skrive samtaler",
-    "link": "https://www.theverge.com/gadgets/1040357/nothing-ear-note-earbuds-ai-recording",
-    "side": "artikel/ced394d4b6aee052.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-23T14:04:52-05:00",
-    "billede": "data/img/d1241349efd9e86f.webp"
-   },
-   {
-    "titel": "Amazon snaps up Decart’s AI optimization tech for $7.5B as it prepares to sell Trainium chips",
-    "rubrik": "Amazon aftaler køb af Decarts AI-teknologi",
-    "link": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
-    "side": "artikel/e483a880095260a7.html",
+    "titel": "Raising the stakes for enterprise networks with AI modernization",
+    "rubrik": "MIT Technology Review: AI-agenter presser virksomheders netværk",
+    "link": "https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization/",
+    "side": "artikel/ba625c17c59cc4b2.html",
     "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-23T17:14:23+00:00",
+    "kilde": "MIT Tech Review AI",
+    "dato": "2026-11-24T15:15:16+00:00",
     "billede": ""
    },
    {
-    "titel": "Sierra doubles valuation to $30B within six months as demand for AI in CX takes off",
-    "rubrik": "Sierra fordobler værdi på seks måneder",
-    "link": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
-    "side": "artikel/15da0cbca7e4582e.html",
+    "titel": "How iFood scales coding agents across 15,000 repositories",
+    "rubrik": "iFood lader GPT-5.6 Luna rette sårbar kode",
+    "link": "https://openai.com/business/customer-stories/ifood",
+    "side": "artikel/b13885c65c3dcbb9.html",
     "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-23T14:43:03+00:00",
-    "billede": "data/img/e5e96e576caa7772.webp"
-   },
-   {
-    "titel": "Review: The Asus ProArt P16 offers a glimpse of a future powered by local AI",
-    "rubrik": "Asus ProArt P16 kører store AI-modeller lokalt",
-    "link": "https://arstechnica.com/reviews/2026/11/review-the-asus-proart-p16-offers-a-glimpse-of-a-future-powered-by-local-ai/",
-    "side": "artikel/badeb7787834f761.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-11-23T12:00:00+00:00",
+    "kilde": "OpenAI Blog",
+    "dato": "2026-11-24T00:00:00+00:00",
     "billede": ""
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-24T04:56:53.301437+00:00",
+  "opdateret": "2026-11-24T19:41:33.958103+00:00",
   "status": "reserve",
   "model": "gpt-6.1-terra",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 6,
-  "kildehentninger": 3,
+  "modelkald": 5,
+  "kildehentninger": 2,
   "regelbaseret_udvalg": [
    "https://simonwillison.net/2026/Nov/23/glm-54/",
-   "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/",
-   "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests"
+   "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+   "https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban"
   ],
   "udgivet_udvalg": [
-   "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/",
-   "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
-   "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/"
+   "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+   "https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban",
+   "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/"
   ],
   "vaerktoejer": [
    {
@@ -407,7 +407,7 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "laes_kilde",
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
@@ -425,17 +425,13 @@ window.KOMMANDO_DATA = {
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+    "link": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/",
     "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-11-24T04:56:53.095743+00:00",
+  "opdateret": "2026-11-24T19:41:33.279770+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -900,8 +896,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-24T04:56:53.301437+00:00",
-  "artikler_i_alt": 106,
+  "opdateret": "2026-11-24T19:41:33.958103+00:00",
+  "artikler_i_alt": 116,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1046,6 +1042,15 @@ window.KOMMANDO_DATA = {
       "under": "Google åbner Gemini 4 Carbon for betalende brugere"
      },
      {
+      "rubrik": "Gemini 4 Neon hjælper med interaktive 3D-projekter",
+      "dato": "2026-11-24T16:00:00",
+      "foerst_set": "2026-11-24T19:41:33",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-neon-builders/",
+      "side": "artikel/ac87e6fa41861830.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Gemini 4 Hydrogen skaber klikbar møl",
       "dato": "2026-11-23T18:00:00",
       "foerst_set": "2026-11-24T04:56:53",
@@ -1078,15 +1083,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-11-17T23:38:27",
       "link": "https://blog.google/products-and-platforms/products/gemini/gemini-4-carbon-builders/",
       "side": "artikel/7c0f899f657aa953.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Gemini får 66 nye regionale stemmer",
-      "dato": "2026-11-16T18:45:00",
-      "foerst_set": "2026-11-17T03:06:49",
-      "link": "https://blog.google/innovation-and-ai/products/gemini-app/regional-voices/",
-      "side": "artikel/42b056617ad81eaa.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1282,9 +1278,27 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 28,
-    "som_ekstra": 5,
+    "i_listen": 33,
+    "som_ekstra": 6,
     "seneste": [
+     {
+      "rubrik": "Amazon køber Decart-teknologi til egne AI-chips",
+      "dato": "",
+      "foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "link": "https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race/",
+      "side": "",
+      "hvor": "under",
+      "under": "Amazon aftaler køb af Decarts AI-teknologi"
+     },
+     {
+      "rubrik": "Tidal vil fjerne millioner af AI-numre",
+      "dato": "",
+      "foerst_set": "2026-11-24T19:41:33",
+      "link": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/",
+      "side": "",
+      "hvor": "under",
+      "under": "Tidal vil fjerne millioner af AI-numre"
+     },
      {
       "rubrik": "Apple søger leder til AI-agent",
       "dato": "",
@@ -1349,47 +1363,29 @@ window.KOMMANDO_DATA = {
       "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
      },
      {
-      "rubrik": "Supertake får 20 millioner dollar til AI-investering",
-      "dato": "2026-11-23T22:02:05",
-      "foerst_set": "2026-11-24T04:56:53",
-      "link": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
-      "side": "artikel/a42ef673b6ac8123.html",
+      "rubrik": "Meta lægger Muse ind i Instagram-beskeder",
+      "dato": "2026-11-24T17:00:00",
+      "foerst_set": "2026-11-24T19:41:33",
+      "link": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+      "side": "artikel/6e7150d9caf7ae53.html",
       "hvor": "forside",
       "under": ""
      },
      {
-      "rubrik": "Google Search får adgang til Wallet og Drive",
-      "dato": "2026-11-23T19:14:46",
-      "foerst_set": "2026-11-23T20:30:41",
-      "link": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
-      "side": "artikel/389c89635cfdfbd7.html",
+      "rubrik": "Pinterest lader forældre begrænse AI-indhold",
+      "dato": "2026-11-24T16:02:37",
+      "foerst_set": "2026-11-24T19:41:33",
+      "link": "https://techcrunch.com/2026/11/24/pinterest-will-now-let-parents-limit-the-ai-generated-content-their-teens-see/",
+      "side": "artikel/b6d56875ce7b4448.html",
       "hvor": "forside",
       "under": ""
      },
      {
-      "rubrik": "Amazon aftaler køb af Decarts AI-teknologi",
-      "dato": "2026-11-23T17:14:23",
-      "foerst_set": "2026-11-23T20:30:41",
-      "link": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
-      "side": "artikel/e483a880095260a7.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Sierra fordobler værdi på seks måneder",
-      "dato": "2026-11-23T14:43:03",
-      "foerst_set": "2026-11-23T20:30:41",
-      "link": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
-      "side": "artikel/15da0cbca7e4582e.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Anthropic-satsning gav investorer store papirgevinst​er",
-      "dato": "2026-11-23T01:25:53",
-      "foerst_set": "2026-11-23T08:05:22",
-      "link": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
-      "side": "artikel/ca5d392ce76c8966.html",
+      "rubrik": "NCSC: AI finder gamle svagheder på minutter",
+      "dato": "2026-11-24T18:02:59",
+      "foerst_set": "2026-11-24T19:41:33",
+      "link": "https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/",
+      "side": "artikel/281e7b0eb8a2f22f.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1405,8 +1401,8 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 22,
-    "som_ekstra": 9,
+    "i_listen": 24,
+    "som_ekstra": 10,
     "seneste": [
      {
       "rubrik": "Oregon og Virginia sagsøger SpaceX over Grok",
@@ -1416,6 +1412,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "SpaceX sagsøges over Groks seksualiserede billeder"
+     },
+     {
+      "rubrik": "Claude Ship kan rette og godkende kode",
+      "dato": "",
+      "foerst_set": "2026-11-23T20:30:41",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+      "side": "",
+      "hvor": "under",
+      "under": "Anthropic lader Claude godkende kodeændringer"
      },
      {
       "rubrik": "Anthropic-matematiker hævder at have løst Riemann-hypotesen",
@@ -1490,29 +1495,20 @@ window.KOMMANDO_DATA = {
       "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
      },
      {
-      "rubrik": "EU afviste forslag til COP31-klimapagt",
-      "dato": "2026-11-23T16:09:37",
-      "foerst_set": "2026-11-24T04:56:53",
-      "link": "https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit",
-      "side": "artikel/1fb8ee564e2e33a7.html",
+      "rubrik": "Tidal vil fjerne millioner af AI-numre",
+      "dato": "2026-11-24T12:17:09",
+      "foerst_set": "2026-11-24T19:41:33",
+      "link": "https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban",
+      "side": "artikel/31bde7b6ca68e4a6.html",
       "hvor": "forside",
       "under": ""
      },
      {
-      "rubrik": "Claude Ship kan rette og godkende kode",
-      "dato": "2026-11-23T15:00:00",
-      "foerst_set": "2026-11-23T20:30:41",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
-      "side": "artikel/ef51e937b5b86055.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Meta Muse kan handle hos Walmart",
-      "dato": "2026-11-23T11:00:00",
-      "foerst_set": "2026-11-23T20:30:41",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
-      "side": "artikel/c1061207c903927a.html",
+      "rubrik": "New York Times forbyder ny Photoshop-version",
+      "dato": "2026-11-24T11:09:23",
+      "foerst_set": "2026-11-24T19:41:33",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+      "side": "artikel/75eb28b2757365e3.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1528,9 +1524,27 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 11,
-    "som_ekstra": 0,
+    "i_listen": 12,
+    "som_ekstra": 1,
     "seneste": [
+     {
+      "rubrik": "Tidal vil forbyde AI-genereret musik",
+      "dato": "",
+      "foerst_set": "2026-11-24T19:41:33",
+      "link": "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/",
+      "side": "",
+      "hvor": "under",
+      "under": "Tidal vil fjerne millioner af AI-numre"
+     },
+     {
+      "rubrik": "Amazon: AI-agenter fandt ukendt sikkerhedshul",
+      "dato": "2026-11-24T12:30:05",
+      "foerst_set": "2026-11-24T19:41:33",
+      "link": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
+      "side": "artikel/dad9742e3b9b29ab.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "SpaceX sagsøges over Groks seksualiserede billeder",
       "dato": "2026-11-23T21:30:44",
@@ -1620,15 +1634,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/d5650375ff4d7f40.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Grok Bot forsøgte selv at tilgå konti",
-      "dato": "2026-11-17T14:00:29",
-      "foerst_set": "2026-11-17T23:38:27",
-      "link": "https://arstechnica.com/security/2026/11/grok-bot-took-unapproved-actions-ignored-orders-to-stop-and-then-denied-it/",
-      "side": "artikel/7d6b1aee59d2353e.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1642,9 +1647,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 6,
-    "i_listen": 3,
+    "i_listen": 4,
     "som_ekstra": 0,
     "seneste": [
+     {
+      "rubrik": "MIT Technology Review: AI-agenter presser virksomheders netværk",
+      "dato": "2026-11-24T15:15:16",
+      "foerst_set": "2026-11-24T19:41:33",
+      "link": "https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization/",
+      "side": "artikel/ba625c17c59cc4b2.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "Nagel afviser Anthropics argument om bevidst AI",
       "dato": "2026-11-23T17:36:08",
@@ -1684,7 +1698,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 25,
-    "i_listen": 18,
+    "i_listen": 19,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -1695,6 +1709,24 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "OpenAI-forsker foreslår mål for AI-grænser"
+     },
+     {
+      "rubrik": "Codex og Astra finder mulige planeter",
+      "dato": "2026-11-24T11:00:00",
+      "foerst_set": "2026-11-24T19:41:33",
+      "link": "https://openai.com/index/searching-for-distant-planets-with-astra",
+      "side": "artikel/5b23d2436c25024d.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "iFood lader GPT-5.6 Luna rette sårbar kode",
+      "dato": "2026-11-24T00:00:00",
+      "foerst_set": "2026-11-24T19:41:33",
+      "link": "https://openai.com/business/customer-stories/ifood",
+      "side": "artikel/b13885c65c3dcbb9.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Richpanel bruger AI til at opsætte kundesupport",
@@ -1776,24 +1808,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/62857bef727acad9.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "OpenAI-essay advarer om tab af menneskelig kontrol",
-      "dato": "2026-11-18T10:00:00",
-      "foerst_set": "2026-11-19T01:59:29",
-      "link": "https://openai.com/index/the-silent-consensus",
-      "side": "artikel/4739d25187174c21.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "OpenAI-modeller forbedrer AMDs chipdesign",
-      "dato": "2026-11-18T00:00:00",
-      "foerst_set": "2026-11-18T17:30:51",
-      "link": "https://openai.com/index/advancing-chip-design-with-our-models",
-      "side": "artikel/6cc0bdc2d0097c3d.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1870,12 +1884,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-24T05:07:04.124270+00:00",
+  "opdateret": "2026-11-24T19:54:47.789073+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 41,
-  "sidevisninger_i_alt": 65,
+  "besoeg_i_alt": 36,
+  "sidevisninger_i_alt": 56,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -2032,8 +2046,8 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 40,
-    "visninger": 63
+    "besoeg": 35,
+    "visninger": 54
    },
    {
     "sti": "/om.html",
@@ -2050,11 +2064,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 40
-   },
-   {
-    "fra": "safe.duckduckgo.com",
-    "besoeg": 1
+    "besoeg": 36
    }
   ],
   "laeste_temaer": []

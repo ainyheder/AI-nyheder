@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-11-24T05:07:04.124270+00:00",
+ "opdateret": "2026-11-24T19:54:47.789073+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -68,7 +68,7 @@ window.LAESERTAL = {
      1,
      1,
      7,
-     0
+     3
     ]
    },
    {
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      1,
      0,
      4,
-     0
+     3
     ]
    },
    {
@@ -138,7 +138,7 @@ window.LAESERTAL = {
      2,
      1,
      2,
-     0
+     5
     ]
    },
    {
@@ -207,7 +207,7 @@ window.LAESERTAL = {
      1,
      0,
      0,
-     0,
+     1,
      0
     ]
    },
@@ -243,20 +243,20 @@ window.LAESERTAL = {
      0,
      0,
      0,
-     0
+     1
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 41,
- "sidevisninger_i_alt": 65,
+ "besoeg_i_alt": 36,
+ "sidevisninger_i_alt": 56,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 40,
-   "visninger": 63
+   "besoeg": 35,
+   "visninger": 54
   },
   {
    "sti": "/om.html",
@@ -272,11 +272,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 40
-  },
-  {
-   "fra": "safe.duckduckgo.com",
-   "besoeg": 1
+   "besoeg": 36
   }
  ],
  "ai_chats": [],
@@ -284,18 +280,13 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 39,
-    "visninger": 39
+    "besoeg": 35,
+    "visninger": 35
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 23
-   },
-   {
-    "fra": "safe.duckduckgo.com",
-    "besoeg": 1,
-    "visninger": 1
+    "visninger": 19
    }
   ],
   "/om.html": [

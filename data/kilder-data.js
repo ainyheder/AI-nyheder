@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-24T04:56:53.301437+00:00",
- "artikler_i_alt": 106,
+ "opdateret": "2026-11-24T19:41:33.958103+00:00",
+ "artikler_i_alt": 116,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -160,6 +160,15 @@ window.KILDER_STATUS = {
      "under": "Google åbner Gemini 4 Carbon for betalende brugere"
     },
     {
+     "rubrik": "Gemini 4 Neon hjælper med interaktive 3D-projekter",
+     "dato": "2026-11-24T16:00:00",
+     "foerst_set": "2026-11-24T19:41:33",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-neon-builders/",
+     "side": "artikel/ac87e6fa41861830.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Gemini 4 Hydrogen skaber klikbar møl",
      "dato": "2026-11-23T18:00:00",
      "foerst_set": "2026-11-24T04:56:53",
@@ -192,15 +201,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-17T23:38:27",
      "link": "https://blog.google/products-and-platforms/products/gemini/gemini-4-carbon-builders/",
      "side": "artikel/7c0f899f657aa953.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Gemini får 66 nye regionale stemmer",
-     "dato": "2026-11-16T18:45:00",
-     "foerst_set": "2026-11-17T03:06:49",
-     "link": "https://blog.google/innovation-and-ai/products/gemini-app/regional-voices/",
-     "side": "artikel/42b056617ad81eaa.html",
      "hvor": "forside",
      "under": ""
     }
@@ -407,11 +407,11 @@ window.KILDER_STATUS = {
      2
     ],
     [
-     "OpenAI Blog",
+     "TechCrunch AI",
      1
     ],
     [
-     "TechCrunch AI",
+     "OpenAI Blog",
      1
     ],
     [
@@ -430,9 +430,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 28,
-   "som_ekstra": 5,
+   "i_listen": 33,
+   "som_ekstra": 6,
    "seneste": [
+    {
+     "rubrik": "Amazon køber Decart-teknologi til egne AI-chips",
+     "dato": "",
+     "foerst_set": "2026-11-24T19:41:33.958103+00:00",
+     "link": "https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race/",
+     "side": "",
+     "hvor": "under",
+     "under": "Amazon aftaler køb af Decarts AI-teknologi"
+    },
+    {
+     "rubrik": "Tidal vil fjerne millioner af AI-numre",
+     "dato": "",
+     "foerst_set": "2026-11-24T19:41:33",
+     "link": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/",
+     "side": "",
+     "hvor": "under",
+     "under": "Tidal vil fjerne millioner af AI-numre"
+    },
     {
      "rubrik": "Apple søger leder til AI-agent",
      "dato": "",
@@ -497,11 +515,56 @@ window.KILDER_STATUS = {
      "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
     },
     {
+     "rubrik": "Meta lægger Muse ind i Instagram-beskeder",
+     "dato": "2026-11-24T17:00:00",
+     "foerst_set": "2026-11-24T19:41:33",
+     "link": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+     "side": "artikel/6e7150d9caf7ae53.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Pinterest lader forældre begrænse AI-indhold",
+     "dato": "2026-11-24T16:02:37",
+     "foerst_set": "2026-11-24T19:41:33",
+     "link": "https://techcrunch.com/2026/11/24/pinterest-will-now-let-parents-limit-the-ai-generated-content-their-teens-see/",
+     "side": "artikel/b6d56875ce7b4448.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "NCSC: AI finder gamle svagheder på minutter",
+     "dato": "2026-11-24T18:02:59",
+     "foerst_set": "2026-11-24T19:41:33",
+     "link": "https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/",
+     "side": "artikel/281e7b0eb8a2f22f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Crusoe-investor peger på sol til AI-datacentre",
+     "dato": "2026-11-24T16:10:00",
+     "foerst_set": "2026-11-24T19:41:33",
+     "link": "https://techcrunch.com/2026/11/24/why-a-crusoe-investor-is-betting-on-solar-and-batteries-to-power-future-ai-data-centers/",
+     "side": "artikel/a5613aba9d10bf47.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Supertake får 20 millioner dollar til AI-investering",
      "dato": "2026-11-23T22:02:05",
      "foerst_set": "2026-11-24T04:56:53",
      "link": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
      "side": "artikel/a42ef673b6ac8123.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic lader Claude godkende kodeændringer",
+     "dato": "2026-11-23T22:05:50",
+     "foerst_set": "2026-11-23T20:30:41",
+     "link": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
+     "side": "artikel/fc410e023e94d19d.html",
      "hvor": "forside",
      "under": ""
     },
@@ -558,57 +621,12 @@ window.KILDER_STATUS = {
      "side": "artikel/f8ce89f0a31be533.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Shortical bruger Aki Avnis ansigt i AI-serie",
-     "dato": "2026-11-21T16:00:00",
-     "foerst_set": "2026-11-21T21:50:31",
-     "link": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
-     "side": "artikel/6b65b8b30d4054e0.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Instinct og andre AI-assistenter svarer på beskeder",
-     "dato": "2026-11-21T17:00:00",
-     "foerst_set": "2026-11-21T21:50:31",
-     "link": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
-     "side": "artikel/f9419135fce595f0.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Claude hjalp matematiker med muligt Riemann-bevis",
-     "dato": "2026-11-20T19:32:08",
-     "foerst_set": "2026-11-20T17:11:55",
-     "link": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
-     "side": "artikel/f509e696672e0714.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Flowtica og Anker lader AI skrive mødenoter",
-     "dato": "2026-11-20T14:00:00",
-     "foerst_set": "2026-11-20T17:11:55",
-     "link": "https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter/",
-     "side": "artikel/a2263c052fc471a0.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Gemini kan nu arbejde på din Mac",
-     "dato": "2026-11-19T18:09:11",
-     "foerst_set": "2026-11-19T23:12:19",
-     "link": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
-     "side": "artikel/ffcfd7e32e09e749.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     4
+     6
     ],
     [
      "Google Gemini",
@@ -642,8 +660,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 22,
-   "som_ekstra": 9,
+   "i_listen": 24,
+   "som_ekstra": 10,
    "seneste": [
     {
      "rubrik": "Oregon og Virginia sagsøger SpaceX over Grok",
@@ -653,6 +671,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "SpaceX sagsøges over Groks seksualiserede billeder"
+    },
+    {
+     "rubrik": "Claude Ship kan rette og godkende kode",
+     "dato": "",
+     "foerst_set": "2026-11-23T20:30:41",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic lader Claude godkende kodeændringer"
     },
     {
      "rubrik": "Anthropic-matematiker hævder at have løst Riemann-hypotesen",
@@ -727,20 +754,38 @@ window.KILDER_STATUS = {
      "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
     },
     {
+     "rubrik": "Tidal vil fjerne millioner af AI-numre",
+     "dato": "2026-11-24T12:17:09",
+     "foerst_set": "2026-11-24T19:41:33",
+     "link": "https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban",
+     "side": "artikel/31bde7b6ca68e4a6.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "New York Times forbyder ny Photoshop-version",
+     "dato": "2026-11-24T11:09:23",
+     "foerst_set": "2026-11-24T19:41:33",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+     "side": "artikel/75eb28b2757365e3.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Jensen Huang danser i falske videoer",
+     "dato": "2026-11-24T11:30:00",
+     "foerst_set": "2026-11-24T19:41:33",
+     "link": "https://www.theverge.com/tech/1041222/jensen-huang-nvidia-scandal-deepfakes",
+     "side": "artikel/a57e0ea43e9e87d4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "EU afviste forslag til COP31-klimapagt",
      "dato": "2026-11-23T16:09:37",
      "foerst_set": "2026-11-24T04:56:53",
      "link": "https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit",
      "side": "artikel/1fb8ee564e2e33a7.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Claude Ship kan rette og godkende kode",
-     "dato": "2026-11-23T15:00:00",
-     "foerst_set": "2026-11-23T20:30:41",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
-     "side": "artikel/ef51e937b5b86055.html",
      "hvor": "forside",
      "under": ""
     },
@@ -755,7 +800,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Nothing vil lade Ear Note skrive samtaler",
-     "dato": "2026-11-23T14:04:52",
+     "dato": "2026-11-23T19:04:52",
      "foerst_set": "2026-11-23T20:30:41",
      "link": "https://www.theverge.com/gadgets/1040357/nothing-ear-note-earbuds-ai-recording",
      "side": "artikel/ced394d4b6aee052.html",
@@ -815,34 +860,16 @@ window.KILDER_STATUS = {
      "side": "artikel/da5d0e9421737f2d.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "ChatGPT skriver med, mens du taler",
-     "dato": "2026-11-19T15:16:45",
-     "foerst_set": "2026-11-19T23:12:19",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1037634/openai-chatgpt-live-dictation",
-     "side": "artikel/38c66bd23a6ee655.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Apple søger ingeniør til ny AI-agent",
-     "dato": "2026-11-19T22:31:41",
-     "foerst_set": "2026-11-19T23:12:19",
-     "link": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
-     "side": "artikel/21b44fd34fd356ca.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     4
+     6
     ],
     [
      "Ars Technica AI",
-     3
+     4
     ],
     [
      "Google Gemini",
@@ -868,9 +895,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 11,
-   "som_ekstra": 0,
+   "i_listen": 12,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "Tidal vil forbyde AI-genereret musik",
+     "dato": "",
+     "foerst_set": "2026-11-24T19:41:33",
+     "link": "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/",
+     "side": "",
+     "hvor": "under",
+     "under": "Tidal vil fjerne millioner af AI-numre"
+    },
+    {
+     "rubrik": "Amazon: AI-agenter fandt ukendt sikkerhedshul",
+     "dato": "2026-11-24T12:30:05",
+     "foerst_set": "2026-11-24T19:41:33",
+     "link": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
+     "side": "artikel/dad9742e3b9b29ab.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "SpaceX sagsøges over Groks seksualiserede billeder",
      "dato": "2026-11-23T21:30:44",
@@ -974,7 +1019,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     3
+     4
     ],
     [
      "TechCrunch AI",
@@ -992,9 +1037,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 3,
+   "i_listen": 4,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "MIT Technology Review: AI-agenter presser virksomheders netværk",
+     "dato": "2026-11-24T15:15:16",
+     "foerst_set": "2026-11-24T19:41:33",
+     "link": "https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization/",
+     "side": "artikel/ba625c17c59cc4b2.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Nagel afviser Anthropics argument om bevidst AI",
      "dato": "2026-11-23T17:36:08",
@@ -1035,7 +1089,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 18,
+   "i_listen": 19,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -1046,6 +1100,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI-forsker foreslår mål for AI-grænser"
+    },
+    {
+     "rubrik": "Codex og Astra finder mulige planeter",
+     "dato": "2026-11-24T11:00:00",
+     "foerst_set": "2026-11-24T19:41:33",
+     "link": "https://openai.com/index/searching-for-distant-planets-with-astra",
+     "side": "artikel/5b23d2436c25024d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "iFood lader GPT-5.6 Luna rette sårbar kode",
+     "dato": "2026-11-24T00:00:00",
+     "foerst_set": "2026-11-24T19:41:33",
+     "link": "https://openai.com/business/customer-stories/ifood",
+     "side": "artikel/b13885c65c3dcbb9.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Richpanel bruger AI til at opsætte kundesupport",
@@ -1136,33 +1208,15 @@ window.KILDER_STATUS = {
      "side": "artikel/4739d25187174c21.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI-modeller forbedrer AMDs chipdesign",
-     "dato": "2026-11-18T00:00:00",
-     "foerst_set": "2026-11-18T17:30:51",
-     "link": "https://openai.com/index/advancing-chip-design-with-our-models",
-     "side": "artikel/6cc0bdc2d0097c3d.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Le Figaro-artikler skal kunne findes i ChatGPT",
-     "dato": "2026-11-18T00:00:00",
-     "foerst_set": "2026-11-18T17:30:51",
-     "link": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
-     "side": "artikel/a2f695ac2f9b40c7.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "Simon Willison AI",
+     "TechCrunch AI",
      1
     ],
     [
-     "TechCrunch AI",
+     "Simon Willison AI",
      1
     ]
    ]

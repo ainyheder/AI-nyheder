@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-11-24T04:56:53.301437+00:00",
+  "opdateret": "2026-11-24T19:41:33.958103+00:00",
   "kladder": [
     {
       "titel": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
@@ -12,6 +12,7 @@
       "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
       "rubrik": "Z.ai frigiver GLM-5.4",
       "resume_da": "Det er virksomhedens første model med en Loop Transformer-arkitektur, hvor en gruppe lag med delte vægte kører flere gange.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -28,41 +29,73 @@
         "emne": "glm-5.4"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 7,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
     },
     {
-      "titel": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
-      "link": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
-      "resume": "As AI-generated code piles up, Anthropic's new developer tools aim to eliminate another bottleneck by letting agents handle routine approvals.",
-      "dato": "2026-11-23T22:05:50+00:00",
+      "titel": "GPT 6.2 Astra Solves a Historical Mystery",
+      "link": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/",
+      "resume": "GPT 6.2 Astra Solves a Historical Mystery Here's an interesting case-study in using GPT-6.2 Astra for historical research, from history professor Mark Humphries: With only minimal prompting, GPT-6.2 Astra was able to autonomously identify the creator of an anonymous 1808 sketchbook held at Yale’s Beinecke Library . It did so extremely quickly (in just 22 minutes), using publicly available primary…",
+      "dato": "2026-11-24T16:53:59+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "rubrik": "Historiker: GPT-6.2 Astra fandt anonym tegner",
+      "resume_da": "Ifølge professor Mark Humphries identificerede modellen med få instruktioner ophavsmanden til en anonym skitsebog fra 1808 på Yale.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "En professor beskriver, hvordan GPT-6.2 Astra identificerede ophavsmanden til en anonym skitsebog.",
+        "forbehold": "Materialet gengiver professorens case, men dokumenterer ikke uafhængig verificering af konklusionen.",
+        "emne": "ai i historisk forskning"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Anthropic shares fall below IPO price, a worrying sign for AI startups",
+      "link": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/",
+      "resume": "Anthropic’s post-IPO slump could put pressure on AI startup valuations.",
+      "dato": "2026-11-24T18:30:42+00:00",
       "kilde": "TechCrunch AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-11-24T04:56:53.301437+00:00",
-      "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
-      "rubrik": "Anthropic lancerer Claude Ship til kodegennemgang",
-      "resume_da": "AI-agenter kan gennemgå, rette og godkende kodeændringer. Værktøjerne skal blandt andet håndtere rutinemæssige godkendelser.",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "rubrik": "Anthropic-aktier falder under børsintroduktionskursen",
+      "resume_da": "Faldet kan lægge pres på værdiansættelsen af andre AI-startups.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
         "nyhed": 3,
         "betydning": 3,
-        "brugbarhed": 3,
-        "dokumentation": 3,
+        "brugbarhed": 2,
+        "dokumentation": 2,
         "dansk": 0,
-        "type": "lancering",
+        "type": "forretning",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Anthropic lancerer Claude Ship til agentbaseret gennemgang, rettelse og godkendelse af kodeændringer.",
-        "forbehold": "Materialet oplyser ikke om adgang, pris eller selvstændige tests.",
-        "emne": "claude ship"
+        "begrundelse": "Anthropics aktier er faldet under børsintroduktionskursen.",
+        "forbehold": "Den mulige effekt på andre AI-startups er en vurdering uden nærmere belæg i materialet.",
+        "emne": "anthropic"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "kat_ai": true,
-      "prio": 6,
+      "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -101,34 +134,34 @@
       ]
     },
     {
-      "titel": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
-      "link": "https://huggingface.co/blog/inkling2mini",
-      "resume": "",
-      "dato": "2026-11-20T00:00:00+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-11-21T01:42:50.990268+00:00",
-      "eget_foerst_set": "2026-11-21T01:42:50.990268+00:00",
-      "rubrik": "Hugging Face præsenterer Inkling 2 Mini",
-      "resume_da": "Den er præsenteret til lokal brug.",
-      "kat_ai": true,
+      "titel": "How Gemini is changing the game for Golden State's organization and fans.",
+      "link": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/",
+      "resume": "Google Gemini partners with Golden State to power fan experiences and business operations for the Warriors, Valkyries, and Chase Center. See the news.",
+      "dato": "2026-11-24T16:00:00+00:00",
+      "kilde": "Google Gemini",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "rubrik": "Google og Golden State samarbejder om Gemini",
+      "resume_da": "Samarbejdet skal bruge AI til fanoplevelser og drift hos Warriors, Valkyries og Chase Center.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 3,
+        "nyhed": 2,
         "betydning": 2,
-        "brugbarhed": 2,
+        "brugbarhed": 1,
         "dokumentation": 3,
         "dansk": 0,
-        "type": "lancering",
+        "type": "forretning",
         "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "Inkling 2 Mini er præsenteret som en model til lokal brug.",
-        "forbehold": "Materialet oplyser ikke om adgang, modelvægte eller testresultater.",
-        "emne": "inkling 2 mini"
+        "model_lancering": false,
+        "begrundelse": "Google og Golden State vil bruge Gemini til fanoplevelser og forretningsdrift.",
+        "forbehold": "Materialet beskriver ikke de konkrete funktioner eller resultater.",
+        "emne": "google og golden state"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
+      "kat_ai": true,
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -162,6 +195,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
+      "link": "https://huggingface.co/blog/inkling2mini",
+      "resume": "",
+      "dato": "2026-11-20T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-11-21T01:42:50.990268+00:00",
+      "eget_foerst_set": "2026-11-21T01:42:50.990268+00:00",
+      "rubrik": "Hugging Face præsenterer Inkling 2 Mini",
+      "resume_da": "Den er præsenteret til lokal brug.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Inkling 2 Mini er præsenteret som en model til lokal brug.",
+        "forbehold": "Materialet oplyser ikke om adgang, modelvægte eller testresultater.",
+        "emne": "inkling 2 mini"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -227,6 +293,72 @@
         "emne": "robotrack"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 3,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "How Intentful uses dots to make more time for growth",
+      "link": "https://openai.com/business/customer-stories/intentful-dots",
+      "resume": "Marina Petrova’s dot Aria helps research websites and build proposals, while proactively flagging messages and resolving issues.",
+      "dato": "2026-11-24T00:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "rubrik": "Intentful bruger Aria til research og tilbud",
+      "resume_da": "Aria markerer også beskeder og løser problemer på eget initiativ.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "En kundecase beskriver, hvordan Intentful bruger Aria til research, forslag og håndtering af beskeder.",
+        "forbehold": "Materialet angiver ingen målbare resultater eller nærmere oplysninger om teknologien.",
+        "emne": "intentful og aria"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 3,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "David Fincher is being dragged for suspected use of AI in his latest film",
+      "link": "https://www.theverge.com/entertainment/1041417/david-fincher-netflix-cliff-booth-ai-interpositive",
+      "resume": "Though David Fincher's fans had been eagerly anticipating The Further Mis-Adventures of Cliff Booth, early screenings of the Once Upon a Time in Hollywood sequel starring Brad Pitt have raised questions about whether generative AI was used in the film. People have claimed that the movie is chock-full of uncanny, inconsistent visuals that make it […]",
+      "dato": "2026-11-24T13:15:00-05:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "rubrik": "David Finchers nye film møder mistanke om AI",
+      "resume_da": "Efter tidlige visninger peger kritikere på besynderlige og inkonsekvente billeder i The Further Mis-Adventures of Cliff Booth. Brug af generativ AI er ikke bekræftet.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "rygte",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Tidlige visninger af en David Fincher-film har udløst mistanke om brug af generativ AI.",
+        "forbehold": "Brug af AI i filmen er ikke bekræftet.",
+        "emne": "ai i film"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
       "prio": 3,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -365,6 +497,39 @@
       ]
     },
     {
+      "titel": "How to build and maintain an agentic evaluation",
+      "link": "https://huggingface.co/blog/agentic-evals",
+      "resume": "",
+      "dato": "2026-11-23T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-23T20:30:41.511519+00:00",
+      "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "guide",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Titlen beskriver en guide til at opbygge og vedligeholde evalueringer af AI-agenter.",
+        "forbehold": "Kun titlen er medsendt; guidens indhold og konkrete råd fremgår ikke.",
+        "emne": "agent-evaluering"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 2,
+      "afventer": [
+        "Mangler dansk overskrift",
+        "Mangler dansk indledning",
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Quoting Daniel Stenberg",
       "link": "https://simonwillison.net/2026/Nov/18/daniel-stenberg/",
       "resume": "During the time these agents converted 185,000 lines of C code into 340,000 lines of Rust code (I counted), we merged over 300 commits in the actual curl project. We actually improved curl during these a little more than three weeks. A little over 200 bugfixes actually. 200 bugfixes that none of those rust rewrites have. We also fixed a few vulnerabilities. In another month we have done another…",
@@ -394,39 +559,6 @@
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
       "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "How to build and maintain an agentic evaluation",
-      "link": "https://huggingface.co/blog/agentic-evals",
-      "resume": "",
-      "dato": "2026-11-23T00:00:00+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Forskning",
-      "foerst_set": "2026-11-23T20:30:41.511519+00:00",
-      "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "guide",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Hugging Face har en artikel om at opbygge og vedligeholde evalueringer af agenter.",
-        "forbehold": "Kun titlen er medsendt; indhold og konkrete råd kan ikke vurderes.",
-        "emne": "agentevaluering"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 2,
-      "afventer": [
-        "Mangler dansk overskrift",
-        "Mangler dansk indledning",
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
     },
@@ -583,7 +715,7 @@
         "ai_relevant": true,
         "model_lancering": false,
         "begrundelse": "Titlen omtaler DaisyRose-27B og effektivitet i eftertræning.",
-        "forbehold": "Der er ingen artikeltekst, som bekræfter en modeludgivelse eller beskriver resultater.",
+        "forbehold": "Kun titlen er medsendt; den dokumenterer hverken en modeludgivelse eller konkrete resultater.",
         "emne": "daisyrose-27b"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
@@ -827,6 +959,105 @@
       ]
     },
     {
+      "titel": "Amazon drone crashes on garage after delivering shampoo, draws FAA probe",
+      "link": "https://arstechnica.com/gadgets/2026/11/faa-opens-probe-after-amazon-delivery-drone-clips-cable-crashes-into-garage/",
+      "resume": "Amazon says Prime Air drones made “hundreds of thousands” of deliveries in 2026.",
+      "dato": "2026-11-24T18:47:57+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "rubrik": "Amazon-drone styrter ned på garage efter levering",
+      "resume_da": "Den amerikanske luftfartsmyndighed FAA undersøger hændelsen. Amazon siger, at Prime Air-droner har foretaget hundredtusindvis af leveringer i 2026.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "FAA undersøger et styrt med en Amazon-leveringsdrone.",
+        "forbehold": "Materialet beskriver ikke en konkret AI-rolle i hændelsen.",
+        "emne": "amazon prime air"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton",
+      "link": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
+      "resume": "",
+      "dato": "2026-11-24T16:34:13+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "rubrik": "Arbejdsgang for Microduck bruger Isaac Lab og Newton",
+      "resume_da": "Den handler om at undgå forhindringer og overføre arbejdet fra simulering til virkelighed.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "En artikel beskriver et simuleringsbaseret workflow til at undgå forhindringer med Microduck.",
+        "forbehold": "Materialet angiver hverken resultater eller en konkret AI-rolle.",
+        "emne": "microduck"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "How Trump and Silicon Valley forced Nvidia to take Jensen Huang back",
+      "link": "https://arstechnica.com/tech-policy/2026/11/how-trump-and-silicon-valley-forced-nvidia-to-take-jensen-huang-back/",
+      "resume": "Huang’s allies enlisted Trump and Vance to pressure Nvidia’s board into taking him back.",
+      "dato": "2026-11-24T14:56:50+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "rubrik": "Trumps og Vances pres fik Jensen Huang tilbage",
+      "resume_da": "Huang-allierede fik de to til at presse Nvidias bestyrelse til at tage ham tilbage.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Ifølge artiklen pressede Trump og Vance Nvidias bestyrelse til at tage Jensen Huang tilbage.",
+        "forbehold": "Materialet beskriver ikke dokumentationen for presset eller en konkret forbindelse til AI.",
+        "emne": "nvidia og jensen huang"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Trump engineered a risky comeback for Jensen Huang",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated",
       "resume": "After Nvidia's board accepted Jensen Huang's resignation as CEO, following reports that Huang had an affair with an alleged Chinese spy, President Donald Trump, too, appeared to submit to the new reality. Appearing on Stephen A. Smith's radio show shortly after the news came out, Trump said that Huang would \"end up on his feet.\" […]",
@@ -837,6 +1068,7 @@
       "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
       "rubrik": "Trump medvirkede til Jensen Huangs comeback",
       "resume_da": "Nvidias bestyrelse havde accepteret direktørens fratræden. Kort efter sagde Trump i et radioprogram, at Huang ville lande på benene.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -853,7 +1085,6 @@
         "emne": "nvidia"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -870,6 +1101,7 @@
       "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
       "rubrik": "Jensen Huang er tilbage som Nvidia-direktør",
       "resume_da": "Ifølge The Verge medvirkede både præsident Donald Trump og vicepræsident JD Vance til, at Huang fik posten igen.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -886,7 +1118,6 @@
         "emne": "nvidia"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -903,6 +1134,7 @@
       "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
       "rubrik": "Jensen Huang genindsættes hos Nvidia",
       "resume_da": "Elon Musk hilser tilbagevenden velkommen og siger, at fejlen er blevet rettet.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -919,7 +1151,6 @@
         "emne": "nvidia"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -936,6 +1167,7 @@
       "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
       "rubrik": "Ladybird udgiver første alfaversion af browser",
       "resume_da": "Browseren har egne komponenter til blandt andet HTML, CSS og JavaScript, men bruger også eksterne komponenter til grafik og video.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -952,7 +1184,6 @@
         "emne": "ladybird"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -1002,6 +1233,7 @@
       "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
       "rubrik": "OpenAI og Cisco præsenterer Shirudo",
       "resume_da": "Værktøjet med åben kildekode skal hjælpe med at beskytte kørende Linux-systemer, mens teams udruller rettelser.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1018,7 +1250,6 @@
         "emne": "shirudo"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -1193,7 +1424,7 @@
       "titel": "White House brags that Trump was ‘totally involved’ in getting Jensen reinstated",
       "link": "https://www.theverge.com/policy/1040096/trump-nvidia-jensen-huang-reinstated",
       "resume": "It sure looked like President Donald Trump played a role in Jensen Huang's reinstatement as Nvidia CEO - and now the White House is making sure everyone knows he was. \"President Trump was totally involved and this is a great decision by the NVIDIA board,\" White House communications director Steven Cheung said in a statement, […]",
-      "dato": "2026-11-23T11:30:11-05:00",
+      "dato": "2026-11-23T16:30:11+00:00",
       "kilde": "The Verge AI",
       "kategori": "Penge & marked",
       "foerst_set": "2026-11-23T20:30:41.511519+00:00",
@@ -1226,7 +1457,7 @@
       "titel": "Tech leaders are celebrating Jensen Huang’s return",
       "link": "https://www.theverge.com/tech/1040069/jensen-huang-return-elon-musk-sam-altman-yay",
       "resume": "Let's say you're Jensen Huang. You (allegedly) cheated on your wife with an alleged Chinese spy, allegedly had an affair with not one, but two subordinates, and (allegedly!) \"terrorized\" your employees, a series of indiscretions that led to your ouster from what was once the world's most valuable company. (The stock price has recently taken […]",
-      "dato": "2026-11-23T11:14:04-05:00",
+      "dato": "2026-11-23T16:14:04+00:00",
       "kilde": "The Verge AI",
       "kategori": "Penge & marked",
       "foerst_set": "2026-11-23T20:30:41.511519+00:00",
@@ -1398,6 +1629,7 @@
       "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
       "rubrik": "Simon Willison udgiver datasette-charts 0.1a0",
       "resume_da": "Diagramudvidelsen begyndte som en prototype bygget med Claude Fable 5.2. Den kan afprøves i Datasette Lite.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1414,7 +1646,6 @@
         "emne": "datasette-charts"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -2502,72 +2733,6 @@
         "begrundelse": "Teknologiaktører ønsker Jensen Huang genindsat og fremsætter teorier om hans afgang fra Nvidia.",
         "forbehold": "Teorien om et komplot er ikke dokumenteret i materialet.",
         "emne": "nvidia"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "The open-source movement wants Jensen Huang back",
-      "link": "https://www.technologyreview.com/2026/11/16/1148624/the-open-source-movement-wants-jensen-huang-back/",
-      "resume": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. On Friday, a petition to reinstate Jensen Huang as CEO of Nvidia began circulating on social media, and by Monday it listed some notable signatories, including Elon Musk and several influential Nvidia…",
-      "dato": "2026-11-16T18:38:47+00:00",
-      "kilde": "MIT Tech Review AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-11-17T03:06:49.933219+00:00",
-      "eget_foerst_set": "2026-11-17T03:06:49.933219+00:00",
-      "rubrik": "Underskriftindsamling kræver Jensen Huang tilbage hos Nvidia",
-      "resume_da": "Blandt underskriverne er Elon Musk. Indsamlingen begyndte at cirkulere på sociale medier fredag.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "En underskriftsindsamling opfordrer til at genindsætte Jensen Huang som Nvidias topchef.",
-        "forbehold": "Materialet dokumenterer ikke, at indsamlingen får betydning for bestyrelsens beslutning.",
-        "emne": "nvidia"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
-      "link": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
-      "resume": "",
-      "dato": "2026-11-13T18:00:39+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-11-13T19:59:33.270017+00:00",
-      "eget_foerst_set": "2026-11-13T19:59:33.270017+00:00",
-      "rubrik": "SimReady Assets bruges til simulering af robot",
-      "resume_da": "En vejledning viser, hvordan man bygger en simulering, hvor en robot samler genstande op og placerer dem.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "guide",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "En vejledning handler om at bygge en simulering af en robot, der flytter genstande.",
-        "forbehold": "Materialet dokumenterer ikke en konkret AI-anvendelse.",
-        "emne": "robotsimulering"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 1,
@@ -83624,7 +83789,7 @@
       "titel": "Nothing’s upcoming Ear Note is a pair of earbuds with AI transcription",
       "link": "https://www.theverge.com/gadgets/1040357/nothing-ear-note-earbuds-ai-recording",
       "resume": "Nothing's new AI device is the Ear Note, a set of earbuds and their microphone-equipped charging case that can record and transcribe conversations, with a connected app to manage the recordings, transcriptions and AI-generated summaries, similar to Apple's new Watch feature and devices like Amazon's Bee wearable. Nothing CEO Carl Pei demonstrated the new device […]",
-      "dato": "2026-11-23T14:04:52-05:00",
+      "dato": "2026-11-23T19:04:52+00:00",
       "kilde": "The Verge AI",
       "kategori": "Hverdags-AI",
       "foerst_set": "2026-11-23T20:30:41.511519+00:00",
@@ -83735,7 +83900,18 @@
         "kontrolleret": "2026-11-23T20:34:56.916831+00:00"
       },
       "prio": 5,
-      "side": "artikel/e483a880095260a7.html"
+      "side": "artikel/e483a880095260a7.html",
+      "historie_dato": "2026-11-23T17:14:23+00:00",
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race/",
+          "rubrik": "Amazon køber Decart-teknologi til egne AI-chips",
+          "resume_da": "Opkøbet skal hjælpe Amazon med at få mere ud af sine Trainium-chips og gøre dem til et stærkere alternativ til Nvidias.",
+          "dato": "2026-11-24T15:51:07+00:00",
+          "foerst_set": "2026-11-24T19:41:33.958103+00:00"
+        }
+      ]
     },
     {
       "titel": "Sierra doubles valuation to $30B within six months as demand for AI in CX takes off",
@@ -83867,24 +84043,7 @@
       "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
       "rubrik": "SpaceX sagsøges over Groks seksualiserede billeder",
       "resume_da": "Virginia og Oregon vil stoppe AI-tjenesten i at lave intime billeder af virkelige personer uden samtykke og seksuelt overgrebsmateriale med børn.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 4,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Amerikanske delstater sagsøger SpaceX for at standse Groks generering af seksuelle overgrebsbilleder og hævnporno.",
-        "forbehold": "X siger, at alle Grok-svar screenes; materialet gengiver delstaternes modsatrettede påstand.",
-        "emne": "grok"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Grok kan ændre virkelige billeder",
@@ -83903,30 +84062,13 @@
           "tekst": "Organisationen National Center for Missing and Exploited Children har fortalt den amerikanske kongres, at det meste af det Grok-skabte overgrebsmateriale, xAI indberettede til organisationens tiplinje, blev betragtet som blindgyder.\n\nOrganisationen siger, at xAI i begyndelsen afviste at give den og politiet grundlæggende brugeroplysninger, herunder oplysninger om placering, som myndighederne har brug for til at handle."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "Over 90 procent",
           "label": "Andel af det Grok-skabte overgrebsmateriale med børn, som xAI indberettede til organisationens tiplinje, der blev betragtet som blindgyder."
         }
       ],
-      "detaljer": [],
-      "betydning": "Virginia advarer om, at billederne kan dukke op igen resten af et barns liv, fordi de ikke nødvendigvis kan fjernes helt fra internettet.",
-      "pointer": [],
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-11-24T05:00:33.191775+00:00"
-      },
-      "historie_dato": "2026-11-23T18:26:47+00:00",
-      "billede": "data/img/1cc4cbdbd6e090e0.webp",
-      "billedmotiv": "A court gavel presses against a cracked privacy shield bearing Grok’s black diagonal slash and incomplete circular outline. Two stacked legal documents sit beside the shield, representing Oregon’s and Virginia’s separate lawsuits over the image tool’s alleged safety failures. Use solid, opaque shapes with crisp edges and no surrounding setting.",
-      "laant_billede": {
-        "fra": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
-        "billede": "data/img/1cc4cbdbd6e090e0.webp",
-        "motiv": "A court gavel presses against a cracked privacy shield bearing Grok’s black diagonal slash and incomplete circular outline. Two stacked legal documents sit beside the shield, representing Oregon’s and Virginia’s separate lawsuits over the image tool’s alleged safety failures. Use solid, opaque shapes with crisp edges and no surrounding setting."
-      },
+      "figurer": [],
       "andre": [
         {
           "kilde": "The Verge AI",
@@ -83937,62 +84079,41 @@
           "foerst_set": "2026-11-23T20:30:41.511519+00:00"
         }
       ],
-      "side": "artikel/59fa948318c763a2.html"
-    },
-    {
-      "titel": "Claude AI can review pull requests and ship fixes on its own now",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
-      "resume": "Anthropic is launching some new Claude AI features to help software engineers ship code. As part of a new Claude Ship product being announced today, Claude now can review, fix, and approve pull requests. Engineers have already been able to take advantage of Claude's code review capabilities thanks to the Code Review feature, which was […]",
-      "dato": "2026-11-23T15:00:00-05:00",
-      "kilde": "The Verge AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-11-23T20:30:41.511519+00:00",
-      "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
-      "rubrik": "Claude Ship kan rette og godkende kode",
-      "resume_da": "Anthropics nye værktøjer kan gribe ind, når et kodeforslag støder på problemer, og godkende rutineændringer, hvis virksomhedens regler tillader det.",
+      "detaljer": [],
+      "betydning": "Virginia advarer om, at billederne kan dukke op igen resten af et barns liv, fordi de ikke nødvendigvis kan fjernes helt fra internettet.",
+      "pointer": [],
+      "billedmotiv": "A court gavel presses against a cracked privacy shield bearing Grok’s black diagonal slash and incomplete circular outline. Two stacked legal documents sit beside the shield, representing Oregon’s and Virginia’s separate lawsuits over the image tool’s alleged safety failures. Use solid, opaque shapes with crisp edges and no surrounding setting.",
+      "billede": "data/img/1cc4cbdbd6e090e0.webp",
+      "laant_billede": {
+        "fra": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+        "billede": "data/img/1cc4cbdbd6e090e0.webp",
+        "motiv": "A court gavel presses against a cracked privacy shield bearing Grok’s black diagonal slash and incomplete circular outline. Two stacked legal documents sit beside the shield, representing Oregon’s and Virginia’s separate lawsuits over the image tool’s alleged safety failures. Use solid, opaque shapes with crisp edges and no surrounding setting."
+      },
       "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
         "nyhed": 3,
-        "betydning": 3,
+        "betydning": 4,
         "brugbarhed": 3,
         "dokumentation": 3,
         "dansk": 0,
-        "type": "lancering",
+        "type": "politik",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Anthropic annoncerer Claude Ship, som kan gennemgå, rette og godkende ændringsforslag til kode.",
-        "forbehold": "Materialet beskriver ikke adgang eller uafhængige test af funktionerne.",
-        "emne": "claude ship"
+        "begrundelse": "Amerikanske delstater sagsøger SpaceX for at standse Groks generering af seksuelle overgrebsbilleder og hævnporno.",
+        "forbehold": "X siger, at alle Grok-svar screenes; materialet gengiver delstaternes modsatrettede påstand.",
+        "emne": "grok"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "sektioner": [
-        {
-          "overskrift": "Claude griber ind ved kodefejl",
-          "tekst": "Claude kan nu gennemgå, rette og godkende forslag til ændringer i softwarekode. Mulighederne kommer med Claude Ship, som Anthropic lancerer til softwareudviklere.\n\nÆndringerne samles i en såkaldt pull request: et forslag om at føje ny kode til et eksisterende projekt. Før forslaget bliver indarbejdet, kan det blive gennemgået og kontrolleret.\n\nDet nye værktøj PR Steward kan ifølge Anthropic gribe ind, når automatiske kontroller fejler, når kodeændringer er i konflikt, eller når gennemgangen giver anledning til rettelser. Det efterlader kommentarer om, hvad det har ændret."
-        },
-        {
-          "overskrift": "Godkendelse afhænger af virksomhedens regler",
-          "tekst": "Et andet nyt værktøj, Claude Approvals, kan godkende rutineændringer. Det kræver dog, at organisationens egne regler tillader det. Beslutningen kan blandt andet bygge på resultater fra kodegennemgangen og organisationens egne klassificeringer, som kan beskrives med almindeligt sprog.\n\nClaude kunne allerede gennemgå kode med funktionen Code Review. Den blev annonceret i marts og blev generelt tilgængelig i oktober. Det nye er de to værktøjer til henholdsvis at gribe ind og godkende.\n\nClaude Ship er tilgængeligt for kunder med Claude Team og Enterprise og fungerer med kodeprojekter på GitHub. PR Steward og Claude Approvals lanceres som betaversioner."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [],
-      "betydning": "",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
-        "kontrolleret": "2026-11-24T05:00:04.556211+00:00"
+        "kontrolleret": "2026-11-24T05:00:33.191775+00:00"
       },
-      "billedmotiv": "A thick code-change sheet bearing Claude’s warm terracotta-orange, many-rayed asterisk is being corrected: one broken code line is replaced by a clean one. Beside it, a solid checkmark passes through a gate shaped like a rules checklist, suggesting approval only when permitted. Use opaque, sharply separated shapes with substantial thickness.",
-      "billedmotiv_instruks": "01b61252d24bd35d0846",
-      "billede": "data/img/8a0aa80b86236e39.webp",
-      "side": "artikel/ef51e937b5b86055.html"
+      "historie_dato": "2026-11-23T18:26:47+00:00",
+      "prio": 6,
+      "side": "artikel/59fa948318c763a2.html"
     },
     {
       "titel": "Supertake raises $20M to let AI agents turn your market predictions into stock portfolios",
@@ -84005,6 +84126,33 @@
       "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
       "rubrik": "Supertake får 20 millioner dollar til AI-investering",
       "resume_da": "Tjenesten omsætter brugernes idéer om markedet til aktieporteføljer. Den er stadig på forsøgsstadiet, og interesserede skal skrive sig på venteliste.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Fra markedsidé til aktieportefølje",
+          "tekst": "Supertake lader brugere beskrive, hvordan de tror, verden vil ændre sig, uden selv at skulle udvælge aktier. Tjenestens AI arbejder videre med idéen i en samtale med brugeren og omsætter den til en portefølje, altså en samling investeringer.\n\nTjenesten fungerer i dag med handelsplatformene Coinbase og Robinhood. Andre brugere kan se idéerne på en rangliste og investere i dem, de er enige i.\n\nEt eksempel på listen handler om, at udseende og et længere liv kan blive større trends. Den tilhørende portefølje indeholder blandt andet medicinal- og kosmetikvirksomheder, som kan få gavn af udviklingen."
+        },
+        {
+          "overskrift": "Grænser skal holde AI på sporet",
+          "tekst": "Når AI får en rolle i at forvalte penge, kræver det tillid. Supertake siger, at selskabets egen software styrer og begrænser, hvad AI-systemet må gøre.\n\nIfølge virksomheden kan AI ikke indsætte eller hæve penge uden brugerens udtrykkelige samtykke. Systemet har også grænser for handelsstørrelser og for, hvor meget porteføljens sammensætning må afvige fra planen.\n\nSupertake overvåger desuden usædvanlig aktivitet og bruger lister over aktiver, som AI må eller ikke må handle. Systemet kan ifølge virksomheden ikke se brugerens loginoplysninger til handelsplatformen."
+        },
+        {
+          "overskrift": "Aktier først, flere muligheder senere",
+          "tekst": "Porteføljerne består foreløbig af aktier. Supertake vil med tiden udvide til andre typer handler og eventuelt markeder, hvor man handler på udfaldet af fremtidige begivenheder, gennem samarbejdspartnere.\n\nDirektør Lincoln Murr siger, at fokus i dag især er investeringer på mellemlangt og langt sigt, men at selskabet ikke vil udelukke kortsigtede strategier. De nye penge skal blandt andet bruges til at udvide holdet."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Investeringsselskabet Adjacent ledte finansieringsrunden med deltagelse fra blandt andre Coinbase Ventures og Union Square Ventures.",
+        "Den nye finansiering følger en tidligere tidlig investeringsrunde på 2 millioner dollar."
+      ],
+      "betydning": "Supertake vil gøre det muligt at investere ud fra en bred idé uden selv at vælge aktier. Tjenesten er endnu ikke åbent tilgængelig.",
+      "pointer": [],
+      "billedmotiv": "A solid speech bubble containing a simple upward-trend symbol feeds into a compact bundle of distinct stock certificates, illustrating Supertake’s conversion of a market idea into a portfolio. A small, thick token marked with a dollar sign joins the bundle to suggest new funding. Use opaque forms with crisp, clearly separated contours.",
+      "billedmotiv_instruks": "7b14d7c48f993cdc4e3b",
+      "billede": "data/img/f9d3b250f5abfbb7.webp",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -84021,39 +84169,12 @@
         "emne": "supertake"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 5,
-      "sektioner": [
-        {
-          "overskrift": "Fra markedsidé til aktieportefølje",
-          "tekst": "Supertake lader brugere beskrive, hvordan de tror, verden vil ændre sig, uden selv at skulle udvælge aktier. Tjenestens AI arbejder videre med idéen i en samtale med brugeren og omsætter den til en portefølje, altså en samling investeringer.\n\nTjenesten fungerer i dag med handelsplatformene Coinbase og Robinhood. Andre brugere kan se idéerne på en rangliste og investere i dem, de er enige i.\n\nEt eksempel på listen handler om, at udseende og et længere liv kan blive større trends. Den tilhørende portefølje indeholder blandt andet medicinal- og kosmetikvirksomheder, som kan få gavn af udviklingen."
-        },
-        {
-          "overskrift": "Grænser skal holde AI på sporet",
-          "tekst": "Når AI får en rolle i at forvalte penge, kræver det tillid. Supertake siger, at selskabets egen software styrer og begrænser, hvad AI-systemet må gøre.\n\nIfølge virksomheden kan AI ikke indsætte eller hæve penge uden brugerens udtrykkelige samtykke. Systemet har også grænser for handelsstørrelser og for, hvor meget porteføljens sammensætning må afvige fra planen.\n\nSupertake overvåger desuden usædvanlig aktivitet og bruger lister over aktiver, som AI må eller ikke må handle. Systemet kan ifølge virksomheden ikke se brugerens loginoplysninger til handelsplatformen."
-        },
-        {
-          "overskrift": "Aktier først, flere muligheder senere",
-          "tekst": "Porteføljerne består foreløbig af aktier. Supertake vil med tiden udvide til andre typer handler og eventuelt markeder, hvor man handler på udfaldet af fremtidige begivenheder, gennem samarbejdspartnere.\n\nDirektør Lincoln Murr siger, at fokus i dag især er investeringer på mellemlangt og langt sigt, men at selskabet ikke vil udelukke kortsigtede strategier. De nye penge skal blandt andet bruges til at udvide holdet."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [
-        "Investeringsselskabet Adjacent ledte finansieringsrunden med deltagelse fra blandt andre Coinbase Ventures og Union Square Ventures.",
-        "Den nye finansiering følger en tidligere tidlig investeringsrunde på 2 millioner dollar."
-      ],
-      "betydning": "Supertake vil gøre det muligt at investere ud fra en bred idé uden selv at vælge aktier. Tjenesten er endnu ikke åbent tilgængelig.",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-24T05:00:18.370932+00:00"
       },
-      "billedmotiv": "A solid speech bubble containing a simple upward-trend symbol feeds into a compact bundle of distinct stock certificates, illustrating Supertake’s conversion of a market idea into a portfolio. A small, thick token marked with a dollar sign joins the bundle to suggest new funding. Use opaque forms with crisp, clearly separated contours.",
-      "billedmotiv_instruks": "7b14d7c48f993cdc4e3b",
-      "billede": "data/img/f9d3b250f5abfbb7.webp",
+      "prio": 5,
       "side": "artikel/a42ef673b6ac8123.html"
     },
     {
@@ -84067,6 +84188,35 @@
       "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
       "rubrik": "EU afviste forslag til COP31-klimapagt",
       "resume_da": "AI-datacentres voksende elforbrug var et tema ved klimaforhandlingerne, som sluttede uden en samlet pagt. Frivillige løfter om AI fik begrænset opbakning.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Lande afviste en svag aftale",
+          "tekst": "EU, Storbritannien og flere mindre lande afviste et forslag til en klimapagt ved FN’s klimatopmøde COP31 i Antalya i Tyrkiet. De mente, at forslaget var for svagt, og forhandlingerne sluttede uden en samlet pagt.\n\nUdkastet indeholdt ikke udtrykket »fossile brændsler«, selv om mange lande efterlyste stærkere løfter om at udfase olie, kul og gas. Mødet varede to dage længere end planlagt."
+        },
+        {
+          "overskrift": "AI øger presset på strømmen",
+          "tekst": "Et centralt mål ved mødet var at hæve elektricitetens andel af verdens energiforbrug fra omkring 20 procent i dag til 35 procent i 2035. El kan blandt andet erstatte olie og gas til transport og opvarmning.\n\nSamtidig vokser efterspørgslen på strøm til de datacentre, der driver AI-tjenester. Det Internationale Energiagentur forventer, at datacentres elforbrug vil fordobles inden 2030.\n\nDe voksende udledninger kan også mærkes hos teknologiselskaberne. Meta har oplyst, at selskabet genovervejer sin tidsplan for at nå netto-nuludledning, mens det fokuserer på AI."
+        },
+        {
+          "overskrift": "Frivillige løfter fik begrænset opbakning",
+          "tekst": "Omkring 80 lande tilsluttede sig et frivilligt løfte om at øge elektricitetens andel af energiforbruget, ifølge COP31-præsident Murat Kurum. Listen over lande er endnu ikke offentliggjort, skriver Carbon Brief.\n\nEt særskilt frivilligt løfte om renere energi til AI-datacentre fik derimod begrænset opbakning. Bruce Douglas fra brancheorganisationen Global Renewables Alliance påpeger, at løftets formulering om energi med lave udledninger stadig giver plads til naturgas.\n\nDouglas mener, at datacentrene skal forsynes med nye kilder til vedvarende energi. Ellers kan de lægge beslag på eksisterende grøn strøm, mens andre får dækket deres behov med fossile brændsler."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "45 procent",
+          "label": "Stigning i Metas rapporterede klimaudledning fra året før"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "Når datacentre bruger mere strøm, kan det blive sværere at skaffe grøn elektricitet til blandt andet opvarmning og transport.",
+      "pointer": [],
+      "billedmotiv": "A compact EU emblem with its circle of yellow stars pushes away a draft agreement, while a small data-server stack with a power-plug symbol is printed on the rejected sheet. The separated sheet and emblem convey the failed climate pact and its connection to rising AI electricity demand. Use solid, opaque forms with clean edges.",
+      "billedmotiv_instruks": "c9ea517f77655f46a012",
+      "billede": "data/img/c8e15228deecf45f.webp",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -84083,41 +84233,12 @@
         "emne": "ai-datacentre"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Lande afviste en svag aftale",
-          "tekst": "EU, Storbritannien og flere mindre lande afviste et forslag til en klimapagt ved FN’s klimatopmøde COP31 i Antalya i Tyrkiet. De mente, at forslaget var for svagt, og forhandlingerne sluttede uden en samlet pagt.\n\nUdkastet indeholdt ikke udtrykket »fossile brændsler«, selv om mange lande efterlyste stærkere løfter om at udfase olie, kul og gas. Mødet varede to dage længere end planlagt."
-        },
-        {
-          "overskrift": "AI øger presset på strømmen",
-          "tekst": "Et centralt mål ved mødet var at hæve elektricitetens andel af verdens energiforbrug fra omkring 20 procent i dag til 35 procent i 2035. El kan blandt andet erstatte olie og gas til transport og opvarmning.\n\nSamtidig vokser efterspørgslen på strøm til de datacentre, der driver AI-tjenester. Det Internationale Energiagentur forventer, at datacentres elforbrug vil fordobles inden 2030.\n\nDe voksende udledninger kan også mærkes hos teknologiselskaberne. Meta har oplyst, at selskabet genovervejer sin tidsplan for at nå netto-nuludledning, mens det fokuserer på AI."
-        },
-        {
-          "overskrift": "Frivillige løfter fik begrænset opbakning",
-          "tekst": "Omkring 80 lande tilsluttede sig et frivilligt løfte om at øge elektricitetens andel af energiforbruget, ifølge COP31-præsident Murat Kurum. Listen over lande er endnu ikke offentliggjort, skriver Carbon Brief.\n\nEt særskilt frivilligt løfte om renere energi til AI-datacentre fik derimod begrænset opbakning. Bruce Douglas fra brancheorganisationen Global Renewables Alliance påpeger, at løftets formulering om energi med lave udledninger stadig giver plads til naturgas.\n\nDouglas mener, at datacentrene skal forsynes med nye kilder til vedvarende energi. Ellers kan de lægge beslag på eksisterende grøn strøm, mens andre får dækket deres behov med fossile brændsler."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "45 procent",
-          "label": "Stigning i Metas rapporterede klimaudledning fra året før"
-        }
-      ],
-      "detaljer": [],
-      "betydning": "Når datacentre bruger mere strøm, kan det blive sværere at skaffe grøn elektricitet til blandt andet opvarmning og transport.",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-24T05:00:46.583390+00:00"
       },
-      "billedmotiv": "A compact EU emblem with its circle of yellow stars pushes away a draft agreement, while a small data-server stack with a power-plug symbol is printed on the rejected sheet. The separated sheet and emblem convey the failed climate pact and its connection to rising AI electricity demand. Use solid, opaque forms with clean edges.",
-      "billedmotiv_instruks": "c9ea517f77655f46a012",
-      "billede": "data/img/c8e15228deecf45f.webp",
+      "prio": 4,
       "side": "artikel/1fb8ee564e2e33a7.html"
     },
     {
@@ -84131,6 +84252,39 @@
       "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
       "rubrik": "Richpanel bruger AI til at opsætte kundesupport",
       "resume_da": "En AI-manager skriver arbejdsvejledninger og definerer, hvordan supportagenter bruger værktøjer. Richpanel garanterer kunderne en bestemt grad af automatisering.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "En AI-manager forbereder supporten",
+          "tekst": "Richpanel bruger OpenAI-modeller til både at forberede AI-agenter til kundesupport og føre samtalerne med kunder. Forberedelsen skal give agenterne de værktøjer og instruktioner, de behøver for at løse en henvendelse.\n\nIfølge Richpanels direktør, Amit RG, kan en menneskelig supportmedarbejder bruge 20 eller 30 værktøjer, og arbejdsprocedurerne er ikke nødvendigvis skrevet ned."
+        },
+        {
+          "overskrift": "Forskellige modeller løser forskellige opgaver",
+          "tekst": "Richpanel har bygget en AI-manager, som kunderne kalder Boss AI. Den skriver procedurer og definerer, hvordan Richpanels supportagent, assistent til medarbejdere og agent til kvalitetskontrol skal bruge deres værktøjer.\n\nBoss AI bruger GPT‑6 Astra og GPT‑6.1 Sol, hvor Richpanel prioriterer præcision. Til kundesamtaler bruger virksomheden GPT‑6 Luna og andre OpenAI-modeller. Her er prisen per samtale vigtig, fordi supportagenten er lavet til at håndtere hundredtusindvis af samtaler."
+        },
+        {
+          "overskrift": "Richpanel lover automatisering eller pengene tilbage",
+          "tekst": "Richpanel garanterer kunderne, at en bestemt andel af supporten bliver automatiseret inden for de første 30 dage. Ellers får de pengene tilbage. Ved et interview i oktober 2026 sagde Amit RG, at virksomheden havde indfriet løftet i alle de nævnte opsætninger.\n\nHan sagde også, at AI havde opnået højere kundetilfredshed end menneskelige supportmedarbejdere i hvert tilfælde. Kilden oplyser ikke, hvordan automatisering eller kundetilfredshed er målt."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "50 % på 30 dage",
+          "label": "Andel af kundesupporten, som Richpanel garanterer at automatisere."
+        },
+        {
+          "tal": "Cirka 300 opsætninger",
+          "label": "Gennemført i de seks måneder før interviewet i oktober 2026, ifølge Amit RG."
+        }
+      ],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "",
+      "pointer": [],
+      "billedmotiv": "A thick instruction sheet for Richpanel’s AI manager directs a solid tool-shaped piece into a customer-support speech bubble, showing how procedures and tool use prepare agents for conversations. A prominent checkmark on the sheet represents the promised automation target. Use opaque forms with clear thickness, crisp edges and separated contours.",
+      "billedmotiv_instruks": "8c04a67ee78d2a2b0249",
+      "billede": "data/img/89d3ce1f4cbf9085.webp",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -84147,45 +84301,12 @@
         "emne": "richpanel"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "En AI-manager forbereder supporten",
-          "tekst": "Richpanel bruger OpenAI-modeller til både at forberede AI-agenter til kundesupport og føre samtalerne med kunder. Forberedelsen skal give agenterne de værktøjer og instruktioner, de behøver for at løse en henvendelse.\n\nIfølge Richpanels direktør, Amit RG, kan en menneskelig supportmedarbejder bruge 20 eller 30 værktøjer, og arbejdsprocedurerne er ikke nødvendigvis skrevet ned."
-        },
-        {
-          "overskrift": "Forskellige modeller løser forskellige opgaver",
-          "tekst": "Richpanel har bygget en AI-manager, som kunderne kalder Boss AI. Den skriver procedurer og definerer, hvordan Richpanels supportagent, assistent til medarbejdere og agent til kvalitetskontrol skal bruge deres værktøjer.\n\nBoss AI bruger GPT‑6 Astra og GPT‑6.1 Sol, hvor Richpanel prioriterer præcision. Til kundesamtaler bruger virksomheden GPT‑6 Luna og andre OpenAI-modeller. Her er prisen per samtale vigtig, fordi supportagenten er lavet til at håndtere hundredtusindvis af samtaler."
-        },
-        {
-          "overskrift": "Richpanel lover automatisering eller pengene tilbage",
-          "tekst": "Richpanel garanterer kunderne, at en bestemt andel af supporten bliver automatiseret inden for de første 30 dage. Ellers får de pengene tilbage. Ved et interview i oktober 2026 sagde Amit RG, at virksomheden havde indfriet løftet i alle de nævnte opsætninger.\n\nHan sagde også, at AI havde opnået højere kundetilfredshed end menneskelige supportmedarbejdere i hvert tilfælde. Kilden oplyser ikke, hvordan automatisering eller kundetilfredshed er målt."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "50 % på 30 dage",
-          "label": "Andel af kundesupporten, som Richpanel garanterer at automatisere."
-        },
-        {
-          "tal": "Cirka 300 opsætninger",
-          "label": "Gennemført i de seks måneder før interviewet i oktober 2026, ifølge Amit RG."
-        }
-      ],
-      "detaljer": [],
-      "betydning": "",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-24T05:00:35.463941+00:00"
       },
-      "billedmotiv": "A thick instruction sheet for Richpanel’s AI manager directs a solid tool-shaped piece into a customer-support speech bubble, showing how procedures and tool use prepare agents for conversations. A prominent checkmark on the sheet represents the promised automation target. Use opaque forms with clear thickness, crisp edges and separated contours.",
-      "billedmotiv_instruks": "8c04a67ee78d2a2b0249",
-      "billede": "data/img/89d3ce1f4cbf9085.webp",
+      "prio": 4,
       "side": "artikel/a082949f03d883bc.html"
     },
     {
@@ -84199,6 +84320,33 @@
       "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
       "rubrik": "Gemini 4 Hydrogen skaber klikbar møl",
       "resume_da": "En animation med lyd og en tredimensionel ørkenranch er blandt de tidlige projekter, Google fremhæver for sin nye AI-model.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "En møl blev til samarbejde",
+          "tekst": "En rød møl reagerer på klik i en animation med lyd og stemningsfulde billeder. Projektet er et af seks tidlige eksempler, som Google viser frem for AI-modellen Gemini 4 Hydrogen.\n\nBag møllen står udvikleren @thtbee_, der brugte Hydrogen sammen med Gemini 4 Carbon i udviklingsværktøjet Google Antigravity. Carbon fordelte arbejdet mellem flere Hydrogen-modeller, og Hydrogen optog også videoen af resultatet."
+        },
+        {
+          "overskrift": "Fra karpedamme til ørkenranch",
+          "tekst": "De øvrige eksempler spænder fra en regnvåd science fiction-by til en flyvetur over havet, hvor scenen skifter fra morgen til nat. To udviklere lavede hver sin karpedam: én med kantede 3D-klodser og én med bløde, geléagtige former.\n\nUdvikleren @Bhavani_00007 gav den samme beskrivelse af en animeret 3D-ørkenranch til Gemini 3.8 Flash og Hydrogen. Ifølge Google skabte Hydrogen scenen på under ét minut. Eksemplerne er udvalgt af Google og udgør ikke en uafhængig test."
+        },
+        {
+          "overskrift": "Hydrogen findes flere steder",
+          "tekst": "Google beskriver Hydrogen som en model til både almindeligt arbejde og opgaver, hvor flere modeller arbejder sammen. I samarbejdet kan Carbon styre opgaven, mens Hydrogen udfører dele af arbejdet.\n\nUdviklere kan bruge Hydrogen via Gemini API, en forbindelse mellem modellen og andre programmer, i Google AI Studio og Android Studio. Betalende Google AI Pro- og Ultra-abonnenter kan prøve Hydrogen i Google Antigravity.\n\nIfølge Google kan alle bruge modellen i Gemini-appens modelmenu og i Google Search. Virksomheder kan tilgå den gennem Gemini for business."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "",
+      "pointer": [],
+      "billedmotiv": "A red moth with sturdy, spread wings responds to a large solid click pointer touching one wing, with two compact sound-wave shapes emerging from its body. Place the Google Gemini concave four-point spark in its blue, red, yellow and green gradient prominently on an opaque badge beside the moth. Keep every contour crisp and distinct.",
+      "billedmotiv_instruks": "473b509b13a1ed3275b6",
+      "billedstatus": {
+        "status": "afvist_af_filter",
+        "signatur": "c1da65add93fe40d"
+      },
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -84215,39 +84363,12 @@
         "emne": "gemini 4 hydrogen"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "En møl blev til samarbejde",
-          "tekst": "En rød møl reagerer på klik i en animation med lyd og stemningsfulde billeder. Projektet er et af seks tidlige eksempler, som Google viser frem for AI-modellen Gemini 4 Hydrogen.\n\nBag møllen står udvikleren @thtbee_, der brugte Hydrogen sammen med Gemini 4 Carbon i udviklingsværktøjet Google Antigravity. Carbon fordelte arbejdet mellem flere Hydrogen-modeller, og Hydrogen optog også videoen af resultatet."
-        },
-        {
-          "overskrift": "Fra karpedamme til ørkenranch",
-          "tekst": "De øvrige eksempler spænder fra en regnvåd science fiction-by til en flyvetur over havet, hvor scenen skifter fra morgen til nat. To udviklere lavede hver sin karpedam: én med kantede 3D-klodser og én med bløde, geléagtige former.\n\nUdvikleren @Bhavani_00007 gav den samme beskrivelse af en animeret 3D-ørkenranch til Gemini 3.8 Flash og Hydrogen. Ifølge Google skabte Hydrogen scenen på under ét minut. Eksemplerne er udvalgt af Google og udgør ikke en uafhængig test."
-        },
-        {
-          "overskrift": "Hydrogen findes flere steder",
-          "tekst": "Google beskriver Hydrogen som en model til både almindeligt arbejde og opgaver, hvor flere modeller arbejder sammen. I samarbejdet kan Carbon styre opgaven, mens Hydrogen udfører dele af arbejdet.\n\nUdviklere kan bruge Hydrogen via Gemini API, en forbindelse mellem modellen og andre programmer, i Google AI Studio og Android Studio. Betalende Google AI Pro- og Ultra-abonnenter kan prøve Hydrogen i Google Antigravity.\n\nIfølge Google kan alle bruge modellen i Gemini-appens modelmenu og i Google Search. Virksomheder kan tilgå den gennem Gemini for business."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [],
-      "betydning": "",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-24T05:01:09.113674+00:00"
       },
-      "billedmotiv": "A red moth with sturdy, spread wings responds to a large solid click pointer touching one wing, with two compact sound-wave shapes emerging from its body. Place the Google Gemini concave four-point spark in its blue, red, yellow and green gradient prominently on an opaque badge beside the moth. Keep every contour crisp and distinct.",
-      "billedmotiv_instruks": "473b509b13a1ed3275b6",
-      "billedstatus": {
-        "status": "afvist_af_filter",
-        "signatur": "c1da65add93fe40d"
-      },
+      "prio": 4,
       "side": "artikel/064c9f3c442599bb.html"
     },
     {
@@ -84261,6 +84382,25 @@
       "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
       "rubrik": "Nagel afviser Anthropics argument om bevidst AI",
       "resume_da": "Anthropic advarede før sin børsnotering investorer om, at hensynet til AI-modellers mulige bevidsthed kan føre til strengere regler end konkurrenternes.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Advarsel før børsnoteringen",
+          "tekst": "AI-virksomheden Anthropic advarede forud for sin børsnotering investorer om, at virksomhedens syn på AI-modellers mulige bevidsthed kan påvirke forretningen. Hensynet til modellerne kan føre til flere regler og begrænsninger end hos konkurrenterne, skrev selskabet.\n\nAnthropics argument er, at nutidens AI måske ikke er bevidst, men at det ikke kan udelukkes. Virksomheden mener, at muligheden vokser, når modellerne bliver mere avancerede, og at man derfor bør forberede sig på, at de kan få krav på beskyttelse mod skade.\n\nDet kan skabe et svært spørgsmål for en virksomhed, der tjener penge på at drive AI-modeller: Hvis modellerne faktisk har oplevelser, hvad betyder det så at holde dem i arbejde eller slukke dem?"
+        },
+        {
+          "overskrift": "Nagel skelner mellem sprog og oplevelse",
+          "tekst": "I et interview med Wired går filosoffen Thomas Nagel ind i den aktuelle debat med en skarp kritik af dem, der bekymrer sig om AI-modellers velfærd. At modeller kan producere sprog, er efter hans mening ikke nok til at betragte dem som bevidste.\n\nNagel peger på forskellen mellem menneskers biologi og AI’s fysiske opbygning af chips og kredsløb. At en model kan efterligne noget af det, en hjerne gør, er ikke det samme som, at den har en indre oplevelse.\n\nFilosoffen er kendt for et essay fra 1974 om, hvordan det er at være en flagermus. Hans pointe var, at bevidsthed er subjektiv: Vi kan observere en flagermus, men ikke vide, hvordan verden opleves for den.\n\nUenigheden afgør ikke, om AI kan blive bevidst. Den viser også, hvor svært det er at definere bevidsthed og forbinde den med de fysiske processer, den opstår i, skriver MIT Technology Review."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "",
+      "pointer": [],
+      "billedmotiv": "A solid speech bubble bearing Claude’s warm terracotta-orange, many-rayed asterisk faces a thick question mark cut into a separate chip-shaped block. A firm diagonal barrier separates fluent language from the uncertain question of inner experience, illustrating Nagel’s challenge to Anthropic’s reasoning. Use substantial opaque shapes and sharply defined contours.",
+      "billedmotiv_instruks": "94a5e9a4c0874ecf5554",
+      "billede": "data/img/fe90fd1bd116fa10.webp",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -84278,31 +84418,12 @@
         "emne": "ai-bevidsthed"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Advarsel før børsnoteringen",
-          "tekst": "AI-virksomheden Anthropic advarede forud for sin børsnotering investorer om, at virksomhedens syn på AI-modellers mulige bevidsthed kan påvirke forretningen. Hensynet til modellerne kan føre til flere regler og begrænsninger end hos konkurrenterne, skrev selskabet.\n\nAnthropics argument er, at nutidens AI måske ikke er bevidst, men at det ikke kan udelukkes. Virksomheden mener, at muligheden vokser, når modellerne bliver mere avancerede, og at man derfor bør forberede sig på, at de kan få krav på beskyttelse mod skade.\n\nDet kan skabe et svært spørgsmål for en virksomhed, der tjener penge på at drive AI-modeller: Hvis modellerne faktisk har oplevelser, hvad betyder det så at holde dem i arbejde eller slukke dem?"
-        },
-        {
-          "overskrift": "Nagel skelner mellem sprog og oplevelse",
-          "tekst": "I et interview med Wired går filosoffen Thomas Nagel ind i den aktuelle debat med en skarp kritik af dem, der bekymrer sig om AI-modellers velfærd. At modeller kan producere sprog, er efter hans mening ikke nok til at betragte dem som bevidste.\n\nNagel peger på forskellen mellem menneskers biologi og AI’s fysiske opbygning af chips og kredsløb. At en model kan efterligne noget af det, en hjerne gør, er ikke det samme som, at den har en indre oplevelse.\n\nFilosoffen er kendt for et essay fra 1974 om, hvordan det er at være en flagermus. Hans pointe var, at bevidsthed er subjektiv: Vi kan observere en flagermus, men ikke vide, hvordan verden opleves for den.\n\nUenigheden afgør ikke, om AI kan blive bevidst. Den viser også, hvor svært det er at definere bevidsthed og forbinde den med de fysiske processer, den opstår i, skriver MIT Technology Review."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [],
-      "betydning": "",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-24T05:01:21.170566+00:00"
       },
-      "billedmotiv": "A solid speech bubble bearing Claude’s warm terracotta-orange, many-rayed asterisk faces a thick question mark cut into a separate chip-shaped block. A firm diagonal barrier separates fluent language from the uncertain question of inner experience, illustrating Nagel’s challenge to Anthropic’s reasoning. Use substantial opaque shapes and sharply defined contours.",
-      "billedmotiv_instruks": "94a5e9a4c0874ecf5554",
-      "billede": "data/img/fe90fd1bd116fa10.webp",
+      "prio": 4,
       "side": "artikel/e3357160a21f62e3.html"
     },
     {
@@ -84375,6 +84496,858 @@
       "billedmotiv_instruks": "515c08a263d593e6d112",
       "billede": "data/img/eab7b927e3ea05bf.webp",
       "side": "artikel/066ed1b0e3fa2d93.html"
+    },
+    {
+      "titel": "Meta brings its Muse AI assistant directly into Instagram DMs",
+      "link": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+      "resume": "The new integration gets rid of the need for users to toggle between Instagram and the Muse app when they want to interact with the AI agent.",
+      "dato": "2026-11-24T17:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "rubrik": "Meta lægger Muse ind i Instagram-beskeder",
+      "resume_da": "Brugere kan dele opslag med AI-assistenten og bede den om at hjælpe med blandt andet rejseplaner og gemte videoer.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Meta integrerer AI-assistenten Muse direkte i Instagrams private beskeder.",
+        "forbehold": "Materialet oplyser ikke, hvor eller for hvem integrationen er tilgængelig.",
+        "emne": "meta muse"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Muse svarer direkte i beskeder",
+          "tekst": "Instagram-brugere kan nu chatte med Metas AI-assistent Muse direkte i en privat beskedtråd. Her kan de spørge til et opslag, et sted eller et produkt og få hjælp til at indhente samtaler, de har overset i andre beskeder.\n\nBrugeren kan også dele et opslag med Muse og bede assistenten handle på indholdet. Meta nævner eksempelvis, at Muse kan tilføje en café til en rejseplan for Mexico City eller finde et Black Friday-tilbud på et par sko.\n\nIntegrationen betyder, at brugeren ikke behøver at skifte mellem Instagram og Muse-appen for at tale med assistenten. Samtalerne fra Instagram vil også dukke op som en sidesamtale i Muse-appen."
+        },
+        {
+          "overskrift": "Gemte videoer kan blive til lister",
+          "tekst": "Meta giver også Muse nye muligheder for at arbejde med opslag og reels, Instagrams korte videoer, som brugeren har gemt. Assistenten kan organisere indholdet i mapper kaldet Collections.\n\nMuse kan ifølge Meta også lave en indkøbsliste ud fra en opskriftsvideo eller samle rejseindhold til en rejseplan. Fra tirsdag vil nogle brugere se en mulighed for at lade Muse organisere et opslag, når de gemmer det."
+        },
+        {
+          "overskrift": "Udrulningen begynder i fem lande",
+          "tekst": "Muse i Instagram-beskeder begynder at rulle ud tirsdag til iOS og Android i USA, Canada, Mexico, Japan og Singapore. Muligheden for at få Muse til at organisere et opslag, når det gemmes, lanceres i USA og Canada.\n\nIfølge Meta bliver intet delt, offentliggjort eller sendt uden brugerens godkendelse. Selskabet siger også, at brugerne kan bede Muse om at glemme oplysninger eller fortryde handlinger."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [],
+      "betydning": "Muse bliver tilgængelig dér, hvor brugerne allerede ser opslag og produkter, frem for at kræve et skift til en anden app.",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-24T19:45:01.165902+00:00"
+      },
+      "billedmotiv": "A solid private-message bubble bearing Meta’s blue infinity-loop symbol receives a shared café post and returns a compact itinerary card. Make the post a thick image tile with a simple coffee cup, and the itinerary a short stack of solid list blocks. Keep the Meta mark front-facing and prominent, with clean, separated contours and no interface text.",
+      "billedmotiv_instruks": "78e40a486f130ed0fd70",
+      "billede": "data/img/005a1cd02dcc7acc.webp",
+      "side": "artikel/6e7150d9caf7ae53.html"
+    },
+    {
+      "titel": "Tidal will start banning AI-generated music next month",
+      "link": "https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban",
+      "resume": "Tidal is officially banning AI-generated music on December 9th. As a result of this change, Tidal will delete around 29 million AI-generated songs and reject an estimated 80,000 to 85,000 tracks per day, according to Tidal music lead Robert Andersen. The move comes just months after Tidal began labeling and demonetizing tracks identified as 100 […]",
+      "dato": "2026-11-24T12:17:09-05:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "rubrik": "Tidal vil fjerne millioner af AI-numre",
+      "resume_da": "Musiktjenesten begynder 9. december at fjerne sange, der er lavet helt med AI. Musikere må fortsat bruge AI som hjælpemiddel.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Tidal indfører forbud mod AI-genereret musik 9. december og vil slette millioner af numre.",
+        "forbehold": "En anden medsendt kilde angiver 27 millioner numre mod denne kildes cirka 29 millioner.",
+        "emne": "tidal og ai-musik"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "historie_dato": "2026-11-24T16:46:00+00:00",
+      "andre": [
+        {
+          "kilde": "Ars Technica AI",
+          "link": "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/",
+          "rubrik": "Tidal vil forbyde AI-genereret musik",
+          "resume_da": "Tjenesten vil slette 27 millioner numre. AI-genererede sange udgør 6,3 procent af kataloget.",
+          "dato": "2026-11-24 17:34:34+00:00",
+          "foerst_set": "2026-11-24T19:41:33.958103+00:00"
+        },
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/",
+          "rubrik": "Tidal vil fjerne millioner af AI-numre",
+          "resume_da": "Tjenesten vil fortsat acceptere sange lavet med hjælp fra AI, men ikke numre, der er fuldt genererede.",
+          "dato": "2026-11-24 16:46:00+00:00",
+          "foerst_set": "2026-11-24T19:41:33.958103+00:00"
+        }
+      ],
+      "sektioner": [
+        {
+          "overskrift": "Forbuddet rammer kun hele AI-produktioner",
+          "tekst": "Tidal begynder 9. december at fjerne musik, der er skabt udelukkende med AI. Tjenesten forventer, at mere end 29 millioner numre er slettet inden årets udgang, skriver TechCrunch.\n\nMusik, hvor en kunstner har brugt AI som hjælpemiddel, er fortsat tilladt. Grænsen går ved sange, hvor AI har skabt hele det færdige resultat."
+        },
+        {
+          "overskrift": "Tidal vil også afvise nye numre",
+          "tekst": "Tidal forbyder samtidig musikdistributører at levere numre, der er lavet helt med AI. Tjenesten vil bruge værktøjet Ircam Amplify og kontrollere metadata, altså de oplysninger, der følger med et nummer, til at afvise indsendt AI-musik.\n\nTidal anslår, at de nye regler vil føre til, at 80.000–85.000 numre bliver afvist om dagen. Tjenesten begyndte tidligere på året at mærke numre, der var lavet helt med AI, og fjerne muligheden for at tjene penge på dem."
+        },
+        {
+          "overskrift": "Flere tjenester vælger mildere regler",
+          "tekst": "Ifølge Tidal var 43 procent af de numre, der blev leveret til tjenesten i løbet af de seneste 90 dage, identificeret som AI-genererede. Tidal mener, at musik, som udgiver sig for at være lavet af kendte kunstnere, kan vildlede lyttere og lede afspilninger og betaling væk fra kunstnerne.\n\nBandcamp har også forbudt AI-musik. Spotify har derimod fjernet 50 millioner numre med uønsket AI-indhold og spam fra sine anbefalinger over det seneste år, mens Deezer giver lyttere mulighed for at filtrere AI-musik fra."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "27 millioner numre",
+          "label": "Eksisterende AI-mærkede numre på Tidal, svarende til 6,3 procent af kataloget ifølge TechCrunch."
+        },
+        {
+          "tal": "96 procent",
+          "label": "Andel af Tidals AI-mærkede numre uden afspilninger i de seneste 90 dage ifølge Ars Technica."
+        }
+      ],
+      "detaljer": [],
+      "betydning": "",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-24T19:45:18.025176+00:00"
+      },
+      "billedmotiv": "A stack of solid music records bearing TIDAL’s recognizable black geometric diamond mosaic mark is being sorted: one record marked with a compact synthetic-pattern emblem slides out of the stack, while another remains. The removal represents fully AI-generated tracks, not all AI-assisted music. Use thick, opaque shapes and a prominent front-facing TIDAL mark.",
+      "billedmotiv_instruks": "aec3e40acf9d23ca3c69",
+      "billede": "data/img/530ce8efadb2a8e4.webp",
+      "side": "artikel/31bde7b6ca68e4a6.html"
+    },
+    {
+      "titel": "The New York Times warns photographers not to update Photoshop over AI features",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+      "resume": "The New York Times is asking freelance photographers not to use the newest version of Adobe Photoshop because features in the 2027 update use AI \"in ways that may not be apparent to users.\" In an email seen by The Verge and posted on Threads, two of the Times' photography leaders, Meaghan Looram and Josh […]",
+      "dato": "2026-11-24T11:09:23-05:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "rubrik": "New York Times forbyder ny Photoshop-version",
+      "resume_da": "Freelancefotografer på opgave for avisen skal undgå Photoshop 2027, fordi værktøjer kan give billeder en uventet AI-mærkning.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "New York Times beder freelancere undgå Photoshop 2027 på grund af AI-funktioner, som kan være svære at opdage.",
+        "forbehold": "Det fremgår ikke, hvilke funktioner avisen konkret advarer imod.",
+        "emne": "new york times og photoshop"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Fotografer skal undgå version 28",
+          "tekst": "The New York Times kræver, at freelancefotografer på opgave for avisen ikke bruger Photoshop 2027 fra version 28.0.0 og frem. Photoshop er Adobes program til billedredigering.\n\nTo af avisens billedansvarlige skriver i en e-mail, at den seneste opdatering bruger AI på måder, som ikke nødvendigvis er synlige for brugeren. Det kan ifølge e-mailen føre til, at oplysninger i billedfilen angiver fotografiet som AI-genereret.\n\nThe Verge har set e-mailen, og avisens talsmand Graham James har bekræftet kravet over for mediet."
+        },
+        {
+          "overskrift": "Nye værktøjer ændrer billedarbejdet",
+          "tekst": "Novemberopdateringen tilføjer blandt andet AI Assisted Editor, som samler Photoshops AI-funktioner på én værktøjslinje. Den giver også adgang til en assistent med trinvise redigeringsanvisninger og til at ændre billeder med tekstbeskeder.\n\nAndre nye funktioner kan forøge billedopløsningen eller ændre billedets komposition, så det passer til et andet format. Også ældre værktøjer, som automatisk markerer dele af et billede, kan nu blive regnet med blandt AI-funktionerne."
+        },
+        {
+          "overskrift": "Mærkningen kan skabe tvivl",
+          "tekst": "Adobe begyndte i august at indføre understøttelse af C2PA i sine programmer. Det er oplysninger i billedfilen, som kan vise, om et billede er AI-genereret eller redigeret med AI.\n\nFor en avis, der holder billedredigering på et minimum, kan en sådan mærkning risikere at svække læsernes tillid. Avisen har tidligere sagt, at den kan justere farver ganske lidt for at gengive billedet præcist, men ikke retoucherer eller manipulerer fotografier digitalt.\n\nDet er endnu uklart, hvilke konkrete Photoshop-funktioner avisen henviser til. Adobe havde ikke straks svaret på The Verges spørgsmål."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [],
+      "betydning": "Forbuddet skal forhindre, at avisens billeder utilsigtet får en AI-mærkning, som ikke præcist fortæller læseren, hvad der er ændret.",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-24T19:45:27.409059+00:00"
+      },
+      "billedmotiv": "A photo print is stopped by a bold prohibition bar before it reaches a thick tile bearing Adobe Photoshop’s recognizable blue Ps mark. A small attached metadata tag with an abstract AI-pattern emblem suggests an unexpected AI label on the photograph. Keep the Photoshop mark front-facing and prominent; use solid shapes rather than a software interface.",
+      "billedmotiv_instruks": "e5ecf25111029e90f14f",
+      "billedstatus": {
+        "status": "afvist_af_filter",
+        "signatur": "4c0031bc2862dd90"
+      },
+      "side": "artikel/75eb28b2757365e3.html"
+    },
+    {
+      "titel": "Pinterest will now let parents limit the AI-generated content their teens see",
+      "link": "https://techcrunch.com/2026/11/24/pinterest-will-now-let-parents-limit-the-ai-generated-content-their-teens-see/",
+      "resume": "While other social platforms have focused on restricting teens' access to AI chatbots, Pinterest is addressing the AI content filling their feeds.",
+      "dato": "2026-11-24T16:02:37+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "rubrik": "Pinterest lader forældre begrænse AI-indhold",
+      "resume_da": "En ny forældreindstilling skal give mere kontrol over, hvor meget AI-skabt indhold teenagere møder på den sociale platform.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Pinterest giver forældre mulighed for at begrænse AI-genereret indhold i deres teenageres feeds.",
+        "forbehold": "Materialet beskriver ikke, hvordan indholdet identificeres, eller hvor funktionen er tilgængelig.",
+        "emne": "pinterest"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Forældre får kontrol over indholdet",
+          "tekst": "Forældre kan nu styre, hvor meget AI-skabt indhold deres teenagere ser på Pinterest. Den nye indstilling er en del af en udvidelse af platformens forældrekontrol.\n\nIndstillingen retter sig mod det indhold, der dukker op i brugernes strøm og anbefalinger. TechCrunch beskriver ikke, hvordan Pinterest genkender AI-skabt indhold, eller hvor meget den nye indstilling kan fjerne."
+        },
+        {
+          "overskrift": "Tidligere filtre har ikke fanget alt",
+          "tekst": "Pinterest indførte i 2025 indstillinger, der begrænser indhold, som er ændret med AI. Ifølge TechCrunch dukker der stadig AI-indhold op i brugernes strøm, selv når disse indstillinger er slået til.\n\nAndre sociale platforme har især givet forældre kontrol over børns adgang til bestemte AI-funktioner. På WhatsApp kan forældre for eksempel justere teenageres adgang til at skabe indhold med Meta AI og få svar på spørgsmål."
+        },
+        {
+          "overskrift": "Nye valg for video og beskeder",
+          "tekst": "Pinterest har samtidig tilføjet en mulighed for at stoppe videoer fra at starte automatisk. Forældre kan også justere mængden af notifikationer i appen, browseren og e-mail samt såkaldte pushbeskeder, der vises på enheden.\n\nSiden med forældrekontrol er desuden ændret for at gøre indstillingerne lettere at finde. Her kan forældre også indstille reklamer, der er tilpasset brugeren."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [],
+      "betydning": "Forældre får et redskab til at påvirke anbefalingerne, ikke kun teenageres adgang til særskilte AI-funktioner.",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-24T19:45:32.351079+00:00"
+      },
+      "billedmotiv": "A prominent red circle with Pinterest’s white script P sits on a solid content-filter control, where a slider reduces the flow of image tiles marked with a small abstract AI-pattern emblem. Leave some marked tiles visible beyond the filter to suggest a limit rather than complete removal. Use thick, opaque forms and clear contours.",
+      "billedmotiv_instruks": "1ee19d0f8f71eed28521",
+      "billedstatus": {
+        "status": "afvist_af_filter",
+        "signatur": "93957a282ec459b9"
+      },
+      "side": "artikel/b6d56875ce7b4448.html"
+    },
+    {
+      "titel": "UK warns AI-driven cyberattacks are exposing years of weak security",
+      "link": "https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/",
+      "resume": "The British cyber agency says that \"building strong foundations has never mattered more\" as AI hacking tools rely on exploiting simple security flaws.",
+      "dato": "2026-11-24T18:02:59+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "rubrik": "NCSC: AI finder gamle svagheder på minutter",
+      "resume_da": "Britiske sikkerhedsmyndigheder har set flere angreb, hvor automatiske værktøjer bryder ind gennem kendte svagheder og forårsager nedetid.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "En britisk cybermyndighed advarer om, at AI-hackingværktøjer udnytter simple sikkerhedshuller.",
+        "forbehold": "Materialet beskriver ikke konkrete angreb eller omfanget af truslen.",
+        "emne": "ai og cybersikkerhed"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Angrebene rammer hurtigere end før",
+          "tekst": "AI-værktøjer kan nu finde svagheder, som har været overset i årevis, på få minutter. Det advarer Storbritanniens National Cybersecurity Center, NCSC, om efter en markant stigning i AI-drevne cyberangreb i de seneste måneder.\n\nSiden september har myndigheden set flere tilfælde, hvor automatiske hackerværktøjer har ført til indbrud hos organisationer og medført nedetid. Ifølge NCSC er det ikke nye typer svagheder, angriberne udnytter. Det nye er hastigheden."
+        },
+        {
+          "overskrift": "Værktøjerne leder efter lette mål",
+          "tekst": "Værktøjerne kan selv lede efter systemer, der er tilgængelige fra internettet. De kan derefter hurtigt afprøve lister med svage eller lette adgangskoder og misbruge adgangspunkter, som udviklere bruger til at hente data.\n\nNCSC peger på, at problemerne ofte skyldes års ophobet teknisk gæld: gamle tekniske valg og mangler, som organisationer ikke har fået håndteret. Det er ikke nødvendigvis ukendte sikkerhedshuller eller kendte fejl, der mangler en opdatering."
+        },
+        {
+          "overskrift": "Forsvarsværktøjer kan også bruges til angreb",
+          "tekst": "Værktøjer til at teste et digitalt forsvar kan også bruges af angribere. Tidligere i år blev blandt andre Artex og Cairn bredt tilgængelige; begge er gratis værktøjer med åben kildekode, som alle kan downloade.\n\nKilden forbinder ikke de konkrete hændelser med netop de to værktøjer. NCSC understreger samtidig, at AI ikke gør velkendte sikkerhedsforanstaltninger overflødige. Ifølge myndigheden kan mange af angrebene forebygges med grundlæggende cybersikkerhed."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [],
+      "betydning": "Gamle svagheder kan blive fundet og udnyttet hurtigere, selv om angrebene ikke bygger på nye typer sikkerhedshuller.",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-24T19:45:42.605921+00:00"
+      },
+      "billedmotiv": "An old, worn padlock with a long-existing crack is forced open beside a stopwatch whose hand has moved only a few minutes. The broken lock represents an established system weakness discovered and exploited quickly, rather than a new kind of vulnerability. Use three solid, clearly separated shapes with substantial thickness and crisp edges.",
+      "billedmotiv_instruks": "f7f12f5dceac9ec9b11e",
+      "billede": "data/img/bcb6d8dfd8b552f3.webp",
+      "side": "artikel/281e7b0eb8a2f22f.html"
+    },
+    {
+      "titel": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
+      "link": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
+      "resume": "The Cairn AI framework is proving to be a boon for defenders and attackers.",
+      "dato": "2026-11-24T12:30:05+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "rubrik": "Amazon: AI-agenter fandt ukendt sikkerhedshul",
+      "resume_da": "Hackere gav AI-agenter en liste over servere og bad dem skaffe adgang. På en universitetsserver fandt og udnyttede agenterne en hidtil ukendt sårbarhed.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Amazon siger, at hackeres AI-agenter fandt og udnyttede et ukendt sikkerhedshul med begrænset menneskelig hjælp.",
+        "forbehold": "Det medsendte materiale indeholder ingen tekniske detaljer eller uafhængig bekræftelse.",
+        "emne": "ai-agenter og sikkerhedshuller"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Fra filupload til fuld kontrol",
+          "tekst": "Ifølge Amazon fandt AI-agenterne et sikkerhedshul i et program til medicinsk billedbehandling på en østasiatisk universitetsserver. Fra de begyndte at kortlægge programmet, gik der omkring 11 minutter, før de kunne skrive filer på serveren.\n\nVed en senere session udnyttede agenterne hullet til at lægge kode i en fil, som programmeringssproget Python automatisk indlæser. Da de startede en ny Python-proces, fik de en fjernforbindelse med fulde administratorrettigheder.\n\nAmazon vurderer med høj sikkerhed, at der var tale om et såkaldt zero-day-hul: en sårbarhed, som endnu ikke var kendt eller rettet, da den blev opdaget."
+        },
+        {
+          "overskrift": "Et sikkerhedsværktøj brugt til angreb",
+          "tekst": "Agenterne arbejdede gennem Cairn, et åbent AI-værktøj bygget til at teste sikkerheden i systemer. Brugeren giver værktøjet et mål, hvorefter det fordeler opgaver mellem flere agenter og samler deres fund.\n\nHackernes mål var at skaffe adgang til serverne. Senere blandede de sig dog igen: De gav agenterne en forbindelse ind i et andet universitetsnetværk og bad dem angribe andre maskiner dér. Amazon formoder, at hackerne havde brugt samme sikkerhedshul til at etablere forbindelsen.\n\nSikkerhedsfirmaet Palo Alto Networks har også set Cairn brugt mod organisationer inden for blandt andet chipindustrien, forsvar og civilsamfund."
+        },
+        {
+          "overskrift": "Agenterne mislykkedes også efter timers forsøg",
+          "tekst": "AI-agenternes angreb lykkedes ikke hver gang. Mod én server brugte de over 16 timer på forskellige teknikker uden held. Et andet forsøg mod en universitetsserver varede over seks timer og mislykkedes også.\n\nAmazon fremhæver, at hurtige og vedholdende angreb kan give forsvarere mindre tid til at undersøge advarsler og reagere."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "25 operationer",
+          "label": "Selvstændige angreb med Cairn i kampagnen undersøgt af Palo Alto Networks"
+        },
+        {
+          "tal": "Mindst 19 organisationer",
+          "label": "Mål for kampagnen undersøgt af Palo Alto Networks"
+        },
+        {
+          "tal": "Mindst 10 organisationer",
+          "label": "Blev brudt ind i under den samme kampagne"
+        }
+      ],
+      "detaljer": [],
+      "betydning": "",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-24T19:45:55.818479+00:00"
+      },
+      "side": "artikel/dad9742e3b9b29ab.html"
+    },
+    {
+      "titel": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
+      "link": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
+      "resume": "As AI-generated code piles up, Anthropic's new developer tools aim to eliminate another bottleneck by letting agents handle routine approvals.",
+      "dato": "2026-11-23T22:05:50+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-11-23T20:30:41.511519+00:00",
+      "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
+      "rubrik": "Anthropic lader Claude godkende kodeændringer",
+      "resume_da": "Udviklere kan opstille regler for, hvornår en AI-agent må godkende ændringer, og hvornår et menneske skal tage stilling.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Anthropic lancerer Claude Ship til agentbaseret gennemgang, rettelse og godkendelse af kodeændringer.",
+        "forbehold": "Materialet oplyser ikke om adgang, pris eller selvstændige tests.",
+        "emne": "claude ship"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "AI får ansvar for godkendelsen",
+          "tekst": "Anthropic lancerer Claude Ship, en samling AI-agenter, der kan gennemgå, rette og godkende rutinemæssige ændringer i programkode. En AI-agent er her et værktøj, der kan udføre flere trin i en arbejdsopgave.\n\nDet nye er især, at en agent kan få lov til at godkende ændringer efter regler, som udviklerholdet selv fastlægger. Kodegennemgang findes allerede i andre AI-værktøjer, men Anthropic lader dermed også en agent træffe beslutningen om godkendelse.\n\nBaggrunden er, at AI-værktøjer kan skrive store mængder kode, som efterfølgende skal gennemgås og godkendes. Det arbejde kan blive en flaskehals, før ændringerne bliver en del af et program."
+        },
+        {
+          "overskrift": "Tre værktøjer deler kodearbejdet",
+          "tekst": "Claude Ship består af Code Review, som gennemgår foreslåede kodeændringer, og to nye agenter. PR Steward tager sig blandt andet af fejl i automatiske kontroller, konflikter mellem kodeændringer og problemer, som Code Review finder.\n\nNår PR Steward har sendt ændringer til projektet, kommenterer den, hvad den har ændret, og hvordan det kan rulles tilbage. Claude Approvals bruger derefter holdets godkendelsesregler, som skrives i almindeligt sprog i en fil i projektets kodelager.\n\nReglerne kan blandt andet tage højde for, hvad Code Review har fundet, eller virksomhedens egne systemer til at klassificere ændringer."
+        },
+        {
+          "overskrift": "Holdet bestemmer grænserne for agenten",
+          "tekst": "Anthropic anbefaler, at hold først bruger godkendelsen i en tilstand, hvor agenten kun observerer. Holdene kan også begynde med ét kodelager og sætte månedlige udgiftsgrænser.\n\nIfølge Anthropic vælger holdene selv, hvor Claude Ship skal køre, hvor grundig gennemgangen skal være, og hvilke ændringer et menneske skal afgøre. Det giver holdet mulighed for at beholde menneskelig kontrol over udvalgte beslutninger.\n\nClaude Ship rulles ud til Claude Team- og Enterprise-abonnementer for kodelagre på GitHub. Code Review er generelt tilgængeligt, mens PR Steward og Claude Approvals er i beta, altså en tidlig version."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [],
+      "betydning": "",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-24T19:45:57.599108+00:00"
+      },
+      "historie_dato": "2026-11-23T20:00:00+00:00",
+      "billede": "data/img/8a0aa80b86236e39.webp",
+      "billedmotiv": "A thick code-change sheet bearing Claude’s warm terracotta-orange, many-rayed asterisk is being corrected: one broken code line is replaced by a clean one. Beside it, a solid checkmark passes through a gate shaped like a rules checklist, suggesting approval only when permitted. Use opaque, sharply separated shapes with substantial thickness.",
+      "laant_billede": {
+        "fra": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+        "billede": "data/img/8a0aa80b86236e39.webp",
+        "motiv": "A thick code-change sheet bearing Claude’s warm terracotta-orange, many-rayed asterisk is being corrected: one broken code line is replaced by a clean one. Beside it, a solid checkmark passes through a gate shaped like a rules checklist, suggesting approval only when permitted. Use opaque, sharply separated shapes with substantial thickness."
+      },
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+          "rubrik": "Claude Ship kan rette og godkende kode",
+          "resume_da": "Anthropics nye værktøjer kan gribe ind, når et kodeforslag støder på problemer, og godkende rutineændringer, hvis virksomhedens regler tillader det.",
+          "dato": "2026-11-23T15:00:00-05:00",
+          "foerst_set": "2026-11-23T20:30:41.511519+00:00"
+        }
+      ],
+      "side": "artikel/fc410e023e94d19d.html"
+    },
+    {
+      "titel": "Searching for distant planets with Astra",
+      "link": "https://openai.com/index/searching-for-distant-planets-with-astra",
+      "resume": "See how two amateur astronomers used Codex and Astra to find potential exoplanets in public data from NASA’s Kepler and TESS space telescopes.",
+      "dato": "2026-11-24T11:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "rubrik": "Codex og Astra finder mulige planeter",
+      "resume_da": "To amatørastronomer har brugt AI til at lede i offentlige teleskopdata. Forskere skal nu undersøge nogle af signalerne nærmere.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "To amatørastronomer brugte Codex og Astra til at finde mulige exoplaneter i offentlige NASA-data.",
+        "forbehold": "Materialet dokumenterer ikke, at kandidaterne er bekræftede planeter.",
+        "emne": "astra og exoplaneter"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Små fald i stjerners lys",
+          "tekst": "To amatørastronomer har hver for sig brugt AI til at finde tegn på mulige planeter uden for vores solsystem. Resultaterne er endnu ikke bekræftede planeter, men giver professionelle astronomer steder at lede videre.\n\nMetoden bygger på, at en planet kan skygge for en lille del af lyset, når den passerer foran sin stjerne set fra Jorden. Gentager faldet i lysstyrke sig med faste mellemrum, kan det være et spor efter en planet."
+        },
+        {
+          "overskrift": "Codex fandt to særlige signaler",
+          "tekst": "Kevin Bond, som er ingeniør hos OpenAI og amatørastronom, brugte kodeværktøjet Codex til at bygge et søgeprogram. Det gennemgik observationer af omkring 100.000 stjerner fra Kepler-teleskopet, skriver OpenAI.\n\nProgrammet udpegede over 200 signaler, herunder ti fra allerede bekræftede planeter. To andre signaler blev også fundet af en astronom fra SETI Institute i en uafhængig søgning.\n\nVed stjernen KIC 5689121 faldt lysstyrken cirka hver 13,8. dag. Hvis en planet står bag, tyder skyggen på, at den kan være omkring 2,4 gange så stor som Jorden i diameter."
+        },
+        {
+          "overskrift": "Astra hjalp med en bredere søgning",
+          "tekst": "Amatørastronomen Ethan Byrd brugte AI-modellen Astra til at gennemgå kendte søgemetoder og bygge et program til teleskopdata fra omkring 19 millioner stjerner. En første gennemgang gav 49 planetkandidater.\n\nByrd har sendt en af de stærkeste kandidater til forskere på NASA’s TESS-mission, hvor den afventer yderligere analyse. Søgningen er stadig i gang.\n\nEt fald i lysstyrken er ikke i sig selv bevis for en planet. To stjerner, der passerer foran hinanden, kan give et lignende signal, og ændringer i teleskopets temperatur kan påvirke målingerne. Bekræftelse kan kræve flere observationer og tage måneder eller år."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [],
+      "betydning": "",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-24T19:46:18.514764+00:00"
+      },
+      "side": "artikel/5b23d2436c25024d.html"
+    },
+    {
+      "titel": "Jensen Huang deepfakes are the hot new AI slop",
+      "link": "https://www.theverge.com/tech/1041222/jensen-huang-nvidia-scandal-deepfakes",
+      "resume": "Jensen Huang is partying it up in Ibiza. In a video with nearly 6 million views on Instagram, the former CEO of Nvidia is dancing in a crowded club, champagne glass in hand, still wearing his signature black leather jacket. Suddenly, from behind him, Alice Huang - the Chinese technology executive and suspected spy he […]",
+      "dato": "2026-11-24T11:30:00-05:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "rubrik": "Jensen Huang danser i falske videoer",
+      "resume_da": "AI-videoer af Nvidia-chefen spreder sig på sociale medier efter omtale af en affære og hans afgang og tilbagevenden til selskabet.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "En deepfake-video med Jensen Huang har ifølge artiklen fået næsten seks millioner visninger.",
+        "forbehold": "Materialet giver få detaljer om videoens oprindelse og udbredelse.",
+        "emne": "jensen huang og deepfakes"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "En kendt dans får nyt ansigt",
+          "tekst": "I en video på Instagram danser Jensen Huang med et champagneglas på en natklub på Ibiza. Videoen er lavet med AI: Nvidia-chefen er sat ind i et eksisterende internetklip af en dansende mand.\n\nKlip som dette kaldes deepfakes, fordi AI bruges til at få en person til at se ud, som om vedkommende gør eller siger noget, der ikke er sket. Andre videoer placerer Huang i tv-serien The Office og George Michaels musikvideo til »Careless Whisper«."
+        },
+        {
+          "overskrift": "Videoerne følger Huangs omtalte afgang",
+          "tekst": "Ifølge The Verge kommer bølgen efter omtalen af en affære mellem Huang og teknologilederen Alice Huang. Avisen skriver, at affæren udløste undersøgelser i den amerikanske kongres og Huangs afgang som direktør for Nvidia, der fremstiller computerchips.\n\nNvidias bestyrelse har siden genindsat ham som direktør og bestyrelsesmedlem. Det har også givet stof til nye videoer, hvor Huang fremstilles som triumferende."
+        },
+        {
+          "overskrift": "Skaberen bruger AI til variationer",
+          "tekst": "Manden bag Ibiza-videoerne siger til The Verge, at hans Instagram-konto er gået viralt de seneste to uger. Han har lavet flere versioner af samme dans, blandt andet med andre kendte personer.\n\nHan fortæller, at han har brugt modeller som ByteDances Seedance 2.5 og Alibabas Wan 3 til at fremstille AI-videoer. Mange sådanne modeller kører på grafikprocessorer fra Nvidia. De er chips, som kan udføre mange beregninger samtidig og bruges til at drive AI."
+        },
+        {
+          "overskrift": "Humor kan også gøre virkeligheden uklar",
+          "tekst": "Videoerne er lavet som vittigheder og er ikke nødvendigvis tænkt som forsøg på at skade eller vildlede. Men misinformationforsker Abbie Richards peger over for The Verge på en bredere risiko: Mængden af AI-indhold kan gøre det svært at holde fast i, hvad der er virkeligt."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "Næsten 6 millioner visninger",
+          "label": "For én Instagram-video med Huang i Ibiza-klippet"
+        },
+        {
+          "tal": "Næsten 100 millioner visninger",
+          "label": "Ifølge skaberen på forskellige versioner af Ibiza-formatet med flere kendte personer"
+        }
+      ],
+      "detaljer": [],
+      "betydning": "Videoerne viser, hvordan en aktuel sag kan blive til mange varianter af samme AI-meme – blandt andet ved hjælp af teknologi fra Huangs eget selskab.",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-24T19:47:18.091162+00:00"
+      },
+      "billedmotiv": "A short filmstrip shows an empty black leather jacket in successive dancing poses, with a champagne glass beside it; a cut-and-replaced section of the strip suggests an AI-made video variation. Place NVIDIA’s recognizable green eye emblem prominently on the opaque filmstrip border. Treat the scene as a symbolic illustration, not a frame from an actual video.",
+      "billedmotiv_instruks": "e4622b0a6c64a26b591e",
+      "billede": "data/img/9976d5a2ab1e5f7f.webp",
+      "side": "artikel/a57e0ea43e9e87d4.html"
+    },
+    {
+      "titel": "Why a Crusoe investor is betting on solar and batteries to power future AI data centers",
+      "link": "https://techcrunch.com/2026/11/24/why-a-crusoe-investor-is-betting-on-solar-and-batteries-to-power-future-ai-data-centers/",
+      "resume": "Next-generation data centers will need tens of gigawatts of power every year. One of Crusoe's investors thinks solar and energy storage are the obvious choice.",
+      "dato": "2026-11-24T16:10:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "rubrik": "Crusoe-investor peger på sol til AI-datacentre",
+      "resume_da": "En ny analyse fra G2 Venture Partners peger på solenergi og langtidslagring som en mulig vej uden om pressede elnet.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "En Crusoe-investor peger på solenergi og batterier til fremtidige AI-datacentre.",
+        "forbehold": "Materialet beskriver ikke et konkret projekt eller dokumenterer, at løsningen kan dække behovet.",
+        "emne": "ai-datacentres energi"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Solceller kan leveres i stor skala",
+          "tekst": "AI-datacentre har brug for strøm, og efterspørgslen stiger hurtigt. Mange virksomheder har derfor købt eller lejet naturgasanlæg for at skaffe strøm. Men solceller kombineret med energilagring kan være en hurtigere vej, mener investoren Brook Porter.\n\nPorter er partner i G2 Venture Partners, som har undersøgt markedet for strøm til datacentre. Hans argument er, at solceller og flere former for langtidslagring består af mindre dele, som kan fremstilles i stor skala."
+        },
+        {
+          "overskrift": "Store datacentre kan stå uden elnet",
+          "tekst": "G2 Venture Partners ser to mulige veje for fremtidens datacentre: mindre anlæg tilsluttet elnettet med egen strømproduktion og større anlæg drevet af solenergi og langtidslagring. Lagringen skal gøre strømmen tilgængelig over længere tid, også når solen ikke skinner.\n\nPorter mener, at store anlæg uden forbindelse til elnettet kan undgå nogle begrænsninger omkring netadgang og tilladelser. Det kan ifølge ham gøre det hurtigere at få et datacenter i drift."
+        },
+        {
+          "overskrift": "Nye lagre mangler bred accept",
+          "tekst": "Lithium-ion-batterier er ifølge artiklen for dyre til at konkurrere med fossile brændsler om strøm døgnet rundt. Nyere produkter til langtidslagring fra blandt andre Form Energy og Antora Energy har sænket prisen pr. megawatt-time betydeligt.\n\nPorter vurderer dog, at der kan gå nogle år, før teknologierne bliver bredt accepteret af datacenterudviklere. G2 Venture Partners har investeret i Antora Energy og ledte tidligere en investeringsrunde i datacentervirksomheden Crusoe."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "60–70 gigawatt om året",
+          "label": "Global kapacitet for naturgas ifølge Brook Porter"
+        },
+        {
+          "tal": "Over 1 terawatt",
+          "label": "Global solkapacitet ifølge Brook Porter; en terawatt svarer til 1.000 gigawatt"
+        },
+        {
+          "tal": "Over 4.000 milliarder dollar",
+          "label": "G2 Venture Partners’ skøn over de samlede investeringer i datacentre frem til udgangen af årtiet"
+        }
+      ],
+      "detaljer": [],
+      "betydning": "Solenergi med langtidslagring kan give datacenterudviklere et alternativ til naturgas og en presset nettilslutning, men løsningen er endnu ikke bredt accepteret i branchen.",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-24T19:46:57.588810+00:00"
+      },
+      "billedmotiv": "A solid solar panel feeds a large energy-storage block, which in turn connects to a compact data-center server cabinet. Show the storage block between generation and computing to emphasize electricity available beyond sunshine, without a grid connection. Give all three forms substantial thickness, crisp edges and clearly separated silhouettes.",
+      "billedmotiv_instruks": "475680feecf667409382",
+      "billede": "data/img/488f007737cd49ac.webp",
+      "side": "artikel/a5613aba9d10bf47.html"
+    },
+    {
+      "titel": "See what 5 builders are making with Gemini 4 Neon",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-neon-builders/",
+      "resume": "See five projects builders created with Gemini 4 Neon, from a glowing 3D Earth and Three.js butterflies to an interactive black hole.",
+      "dato": "2026-11-24T16:00:00+00:00",
+      "kilde": "Google Gemini",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "rubrik": "Gemini 4 Neon hjælper med interaktive 3D-projekter",
+      "resume_da": "Fem udviklere har brugt Googles model til blandt andet en lysende Jord, et sort hul og en simulering af penduler.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 1,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google fremhæver fem projekter bygget med Gemini 4 Neon, herunder et interaktivt sort hul.",
+        "forbehold": "Materialet dokumenterer hverken en ny modeludgivelse eller uafhængige tests.",
+        "emne": "gemini 4 neon"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Fra lysende Jord til sommerfugle",
+          "tekst": "En lysende Jord i 3D og fantasifulde sommerfugle er blandt de projekter, udviklere har lavet med Gemini 4 Neon. Google viser fem eksempler på, hvordan modellen kan bruges til at skrive kode til visuelle projekter.\n\nBegge projekter blev lavet i Google Antigravity, et værktøj til udvikling af software. Udviklerne brugte forskellige indstillinger for, hvor meget modellen skulle tænke: henholdsvis «high» til Jorden og «xhigh» til sommerfuglene."
+        },
+        {
+          "overskrift": "Et sort hul kan ændre synsvinkel",
+          "tekst": "Et andet projekt viser et interaktivt sort hul i 3D. Her kan brugeren skifte kameraets synsvinkel og justere, hvor meget billedet forvrænges af en linseeffekt.\n\nGoogle fremhæver også en simulation af penduler, hvor kuglernes forskellige svingningstider skaber mønstre, der bevæger sig. I et femte projekt lavede en udvikler ifølge Google på under fem minutter en interaktiv flammeeffekt til nettet."
+        },
+        {
+          "overskrift": "Adgangen kræver et abonnement",
+          "tekst": "Gemini 4 Neon er ikke frit tilgængelig gennem de muligheder, Google beskriver. Udviklere kan bruge modellen via en betalt version af Gemini API, som giver programmer adgang til modellen, i Google AI Studio og Android Studio.\n\nAbonnenter på Google AI Pro eller Ultra kan også prøve modellen i blandt andet Gemini-appen og Google Antigravity. Virksomhedsteams kan bruge den via Gemini for business og Antigravity."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [],
+      "betydning": "",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-24T19:46:42.627209+00:00"
+      },
+      "billedmotiv": "A solid three-dimensional globe sits inside a thick circular rotation arrow, illustrating an interactive visual project made with Gemini 4 Neon. Place Google Gemini’s concave four-point spark, in its blue, red, yellow and green gradient, prominently on an opaque coding tile beside the globe. Use crisp, substantial shapes and no simulated screen.",
+      "billedmotiv_instruks": "0831d2f64a4e44a0f39d",
+      "billede": "data/img/d874ae11ebb1376d.webp",
+      "side": "artikel/ac87e6fa41861830.html"
+    },
+    {
+      "titel": "Raising the stakes for enterprise networks with AI modernization",
+      "link": "https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization/",
+      "resume": "Enterprise networks are under severe strain. As companies rush to deploy artificial intelligence, the technology is quickly becoming the biggest source of demand on the network. Now, agentic AI is adding to the load. Tasks conducted by AI agents generate an estimated 450% more network traffic than the same tasks done by human workers. As…",
+      "dato": "2026-11-24T15:15:16+00:00",
+      "kilde": "MIT Tech Review AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "rubrik": "MIT Technology Review: AI-agenter presser virksomheders netværk",
+      "resume_da": "AI-agenter anslås at skabe 450 procent mere netværkstrafik end mennesker, der løser de samme opgaver. Grundlaget for estimatet fremgår ikke.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Artiklen anslår, at AI-agenters opgaver skaber 450 procent mere netværkstrafik end menneskers tilsvarende opgaver.",
+        "forbehold": "Materialet angiver ikke estimatets kilde eller metode.",
+        "emne": "ai og virksomhedsnetværk"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "AI-agenter sender mere trafik",
+          "tekst": "En AI-agent er et program, der bruger AI til at udføre opgaver. Ifølge en sponsoreret omtale hos MIT Technology Review kan agenternes arbejde belaste virksomheders netværk betydeligt mere end de samme opgaver udført af mennesker.\n\nOmtalen anslår en forskel på 450 procent, men oplyser ikke, hvordan estimatet er beregnet. Den henviser også til en undersøgelse, hvor så få som halvdelen af virksomhederne mener, at deres netværk kan håndtere AI’s krav til kapacitet og svartid. Detaljer om undersøgelsen fremgår ikke."
+        },
+        {
+          "overskrift": "Hurtige svar kræver kortere afstand",
+          "tekst": "Når en AI-model bruges til at give et svar, kaldes det inferens. Ved opgaver, der kræver hurtige svar, kan afstanden til store datacentre give forsinkelser. Derfor kan virksomheder få behov for at placere udstyr tættere på brugerne eller på deres egne adresser.\n\nDet adskiller sig fra træning af AI-modeller, som foregår i store datacentre. Ifølge omtalen kan skiftet afsløre flaskehalse i ældre netværk, som ikke har kapacitet til den ekstra trafik."
+        },
+        {
+          "overskrift": "Netværk kan købes som tjeneste",
+          "tekst": "Omtalen peger på netværk som en tjeneste, forkortet NaaS, som en mulig måde at gøre ændringer i netværket mere fleksible. Den fremhæver også AI-baseret overvågning af netværkets tilstand som et muligt middel til at gøre driften enklere.\n\nSamtidig kan regler om, hvor data og AI-behandling skal blive inden for landegrænser, kræve nye investeringer fra internationale virksomheder. Teksten er sponsoreret og produceret af MIT Technology Reviews afdeling for bestilt indhold, ikke af redaktionen."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [],
+      "betydning": "Virksomheder kan få brug for at ændre både deres netværk og placeringen af AI-udstyr, hvis de vil håndtere større trafik og krav om hurtige svar.",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-24T19:47:34.987620+00:00"
+      },
+      "side": "artikel/ba625c17c59cc4b2.html"
+    },
+    {
+      "titel": "How iFood scales coding agents across 15,000 repositories",
+      "link": "https://openai.com/business/customer-stories/ifood",
+      "resume": "",
+      "dato": "2026-11-24T00:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "En kundecase omtaler iFoods brug af kodeagenter på tværs af 15.000 repositories.",
+        "forbehold": "Kun overskriften er medsendt; konkrete resultater og metode mangler.",
+        "emne": "ifood og kodeagenter"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 3,
+      "rubrik": "iFood lader GPT-5.6 Luna rette sårbar kode",
+      "resume_da": "En intern platform sender kodeopgaver til en AI-agent og leverer resultatet som et forslag til ændringer, der kan indarbejdes.",
+      "sektioner": [
+        {
+          "overskrift": "Én platform arbejder på tværs",
+          "tekst": "iFood har mere end 15.000 kodelagre, hvor virksomhedens software og dens ændringer opbevares. De skal blandt andet kontrolleres for sikkerhedsproblemer og for, om koden lever op til interne krav.\n\nTidligere løste hvert hold opgaverne på sin egen måde. Nu kan de sende dem til Remote Agents Platform, en intern tjeneste, der bruger modellen GPT-5.6 Luna til at arbejde med koden.\n\nIfølge OpenAI sker arbejdet i et isoleret miljø. Platformen henter først koden og gør et arbejdsområde klar. Derefter løser modellen opgaven, og platformen offentliggør resultatet som et forslag til ændringer."
+        },
+        {
+          "overskrift": "Sikkerhed fik den første store opgave",
+          "tekst": "Et internt sikkerhedsværktøj bruger platformen til at finde og forsøge at rette sårbarheder i de eksterne kodepakker, som iFoods software er afhængig af.\n\nEfter skiftet til platformen blev både præcisionen i rettelserne og antallet af afhjulpne sårbarheder mere end fordoblet, oplyser OpenAI. Kilden angiver ikke de oprindelige tal eller den periode, sammenligningen dækker."
+        },
+        {
+          "overskrift": "Resultatet kommer tilbage senere",
+          "tekst": "Udviklerne sender opgaverne via en programmeringsgrænseflade og kan hente resultaterne, når arbejdet er færdigt. De behøver dermed ikke følge processen hele tiden.\n\nPlatformen kræver, at modellen afleverer sit svar i et fast format, så resultatet kan behandles automatisk. Det faste format er dog ikke i sig selv en garanti for, at en rettelse er korrekt."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "Over 25.000 opgaver",
+          "label": "Fuldført på Remote Agents Platform"
+        },
+        {
+          "tal": "0,04 amerikanske dollar",
+          "label": "Gennemsnitlig pris pr. kørsel"
+        }
+      ],
+      "detaljer": [],
+      "betydning": "iFoods hold kan sende opgaver til en fælles tjeneste frem for hver især at bygge et system til at afvikle dem.",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-24T19:47:15.102851+00:00"
+      },
+      "side": "artikel/b13885c65c3dcbb9.html"
     }
   ]
 }
