@@ -1250,8 +1250,20 @@
           }
         ]
       },
-      "fejl": "Kvalitetskontrollen er ikke afsluttet",
-      "naeste_trin": "kontrol"
+      "fejl": "Kvalitetskontrollen afviste brevet\n[\"Fakta — intro og første illustration — Udkastet kalder modellen en model fra OpenAI og viser OpenAI-mærket på scanneren. Kilden siger, at forskere arbejdede sammen med OpenAI og brugte en avanceret model, men identificerer ikke modellen som OpenAI’s. Beskriv samarbejdet uden at fastslå modellens ophav, og tilpas illustrationen.\", \"Fakta — preheader — Den lille vedligeholdelsesgruppe siges at vise, hvorfor en rettelse har lang vej til brugerne. Kilden beskriver gruppens størrelse og organisationernes installation som forskellige udfordringer, men fastslår ikke, at gruppens størrelse forsinker udbredelsen. Skil de to forhold ad.\", \"Læseværdi — sidste afsnit under 'Årtiers kode skal gennemgås' — At en model bidrog til at finde en alvorlig PHP-fejl er allerede forklaret i introen. Den efterfølgende bemærkning om, at brevet ikke beskriver fremgangsmåden, tilfører ikke forklaring. Fjern afsnittet frem for at gentage eksemplet.\"]",
+      "naeste_trin": "skrivning",
+      "kontrol": {
+        "godkendt": false,
+        "fuld_kilde": true,
+        "faktuel_troskab": false,
+        "selvstaendig": true,
+        "laesevaerdi": false,
+        "problemer": [
+          "Fakta — intro og første illustration — Udkastet kalder modellen en model fra OpenAI og viser OpenAI-mærket på scanneren. Kilden siger, at forskere arbejdede sammen med OpenAI og brugte en avanceret model, men identificerer ikke modellen som OpenAI’s. Beskriv samarbejdet uden at fastslå modellens ophav, og tilpas illustrationen.",
+          "Fakta — preheader — Den lille vedligeholdelsesgruppe siges at vise, hvorfor en rettelse har lang vej til brugerne. Kilden beskriver gruppens størrelse og organisationernes installation som forskellige udfordringer, men fastslår ikke, at gruppens størrelse forsinker udbredelsen. Skil de to forhold ad.",
+          "Læseværdi — sidste afsnit under 'Årtiers kode skal gennemgås' — At en model bidrog til at finde en alvorlig PHP-fejl er allerede forklaret i introen. Den efterfølgende bemærkning om, at brevet ikke beskriver fremgangsmåden, tilfører ikke forklaring. Fjern afsnittet frem for at gentage eksemplet."
+        ]
+      }
     }
   }
 }
