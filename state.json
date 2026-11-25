@@ -1245,8 +1245,20 @@
           }
         ]
       },
-      "fejl": "Læserytme ved Årtiers kode skal gennemgås: mere end to tekstafsnit i træk; skab en meningsfuld pause uden at gentage indhold",
-      "naeste_trin": "skrivning"
+      "fejl": "Læserytme ved Årtiers kode skal gennemgås: mere end to tekstafsnit i træk; skab en meningsfuld pause uden at gentage indhold\nKvalitetskontrollen afviste brevet\n[\"Selvstændighed — hospitalsafsnittet og afslutningen — originalen opstiller et hospital, hvis eksterne forsikringsgodkendelse går ned, og spørger, hvem der kan godkende næste skridt. Udkastet overtager samme situation og næsten samme spørgsmål — forklar beredskabskonsekvensen med en selvstændig afslutning uden at oversætte originalens retoriske spørgsmål.\", \"Læseværdi — afsnittet om rettelser og listen over tre trin — brødteksten har allerede forklaret, at en fejl skal findes, rettes og opdateringen installeres; listen gentager forløbet — fjern eller erstat gentagelsen med et visuelt greb, der tilfører konkret information, og flyt tilsvarende brødtekst ind i grebet.\", \"Læseværdi/format — blandt andet under 'Hvem får adgang først?' — fire almindelige afsnit står i træk, og andre afsnit har tre i træk — fordel relevante visuelle pauser, så der højst er to almindelige afsnit efter hinanden.\"]",
+      "naeste_trin": "skrivning",
+      "kontrol": {
+        "godkendt": false,
+        "fuld_kilde": true,
+        "faktuel_troskab": true,
+        "selvstaendig": false,
+        "laesevaerdi": false,
+        "problemer": [
+          "Selvstændighed — hospitalsafsnittet og afslutningen — originalen opstiller et hospital, hvis eksterne forsikringsgodkendelse går ned, og spørger, hvem der kan godkende næste skridt. Udkastet overtager samme situation og næsten samme spørgsmål — forklar beredskabskonsekvensen med en selvstændig afslutning uden at oversætte originalens retoriske spørgsmål.",
+          "Læseværdi — afsnittet om rettelser og listen over tre trin — brødteksten har allerede forklaret, at en fejl skal findes, rettes og opdateringen installeres; listen gentager forløbet — fjern eller erstat gentagelsen med et visuelt greb, der tilfører konkret information, og flyt tilsvarende brødtekst ind i grebet.",
+          "Læseværdi/format — blandt andet under 'Hvem får adgang først?' — fire almindelige afsnit står i træk, og andre afsnit har tre i træk — fordel relevante visuelle pauser, så der højst er to almindelige afsnit efter hinanden."
+        ]
+      }
     }
   }
 }
