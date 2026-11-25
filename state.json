@@ -1175,7 +1175,78 @@
       "dato": "2026-11-23T19:55:17+00:00",
       "forfatter": "Peter H. Diamandis",
       "status": "venter",
-      "forsog": 1
+      "forsog": 1,
+      "tidligere_udkast": {
+        "redaktionsnote": {
+          "original": {
+            "forfatter": "Peter H. Diamandis",
+            "titel": "We're Getting the Biggest Security Upgrade of Our Lifetime",
+            "dato": "2026-11-23T19:55:17+00:00",
+            "url": "https://metatrends.substack.com/p/were-getting-the-biggest-security"
+          },
+          "hovedide": "AI kan hjælpe med at finde og reparere gamle softwaresårbarheder, men sikkerhedsgevinsten afhænger af, hvem der finder dem først, og om rettelser bliver gennemført og installeret.",
+          "hvorfor_nu": "Originalen peger på en nyligt fundet kritisk fejl i PHP og på rapporterede afbrydelser, men angiver ingen samlet ny begivenhed som anledning.",
+          "laeserudbytte": "Læseren får forklaret, hvordan AI kan hjælpe små vedligeholdelsesteams, hvorfor en rettelse ikke straks beskytter alle, og hvorfor beredskab stadig er nødvendigt.",
+          "kildedaekning": "Hele læserbrevets tekst og metadata var tilgængelige i input.",
+          "disposition": [
+            {
+              "laesersporgsmaal": "Hvad fandt AI i PHP, og hvorfor er det vigtigt?",
+              "nyt_stof": "En kritisk fejl blev fundet ved hjælp af en AI-model; et andet hold rapporterede den uafhængigt, og vedligeholderne udgav rettelser."
+            },
+            {
+              "laesersporgsmaal": "Hvorfor er gammel software så vanskelig at sikre?",
+              "nyt_stof": "Årtiers kode og afhængigheder skal gennemgås, mens små teams vedligeholder programmer, mange virksomheder bruger."
+            },
+            {
+              "laesersporgsmaal": "Kan forsvarerne nå at handle først?",
+              "nyt_stof": "Originalbrevets usikre bud på et forspring for de mest avancerede modeller og dets forudsigelse om kendte sårbarheder."
+            },
+            {
+              "laesersporgsmaal": "Hvorfor er en fundet fejl ikke det samme som sikkerhed?",
+              "nyt_stof": "Installation af rettelser, Verizons mediantal og konsekvenserne af angrebet på Change Healthcare."
+            }
+          ],
+          "bevarede_pointer": [
+            "PHP-fejlen blev også rapporteret uafhængigt af et andet forskerhold.",
+            "Forspringet på fire til fem måneder og muligheden for at lappe næsten alle kendte sårbarheder inden for 24 måneder er originalbrevets vurderinger, ikke dokumenterede resultater.",
+            "Verizons tal gælder mediantiden for fuld udbedring af sårbarheder, som angribere allerede udnyttede, i udstyr der forbinder organisationer til internettet.",
+            "Hospitalsundersøgelsens knap 40 procent gælder de hospitaler, der svarede."
+          ],
+          "selvstaendige_greb": [
+            "PHP-eksemplet åbner historien og forbindes med forskellen mellem at finde, rette og installere.",
+            "Afslutningen bruger hospitalsberedskab til at vise en konkret konsekvens af afhængighed af en ekstern tjeneste."
+          ],
+          "udeladelser": [
+            "Den personlige historie om rumfart og familieeksemplet er udeladt til fordel for PHP og hospitalsundersøgelsen.",
+            "Oplysningerne om konkrete driftsafbrydelser er udeladt, fordi de ikke er nødvendige for at forklare hovedmekanismen."
+          ],
+          "rettelser": [],
+          "uafklaret": []
+        },
+        "status": "udkast",
+        "emne": "AI fandt en kritisk fejl i udbredt software",
+        "preheader": "En rettelse beskytter først, når den når frem til brugerne.",
+        "brev_markdown": "# AI fandt en kritisk fejl i udbredt software\n\nEn AI-model hjalp forskere med at finde en kritisk fejl i PHP, et programmeringssprog, der bruges til at drive hjemmesider og applikationer. Eksemplet står i [Peter Diamandis’ læserbrev](https://metatrends.substack.com/p/were-getting-the-biggest-security) og viser både et nyt redskab til sikkerhedsfolk og et gammelt problem med software.\n\nForskerne arbejdede sammen med AI-virksomheden OpenAI. Et andet forskerhold rapporterede uafhængigt den samme fejl, og folkene bag PHP udgav rettelser. Men arbejdet slutter ikke, når en rettelse er skrevet: Den skal også installeres hos dem, der bruger softwaren.\n\n## Årtiers kode skal gennemgås\n\nMeget af den software, virksomheder og offentlige tjenester bruger, er bygget oven på ældre programmer. Når et program virkede, kunne andre bygge videre på det. Dermed kan en gammel beslutning i koden få betydning for mange tjenester, som brugerne ikke umiddelbart forbinder med hinanden.\n\nDet gør sikkerhedsarbejdet omfattende. En virksomhed kan sætte sine dygtigste udviklere til at læse mange års kode igennem, men de samme mennesker skal også holde eksisterende tjenester kørende og bygge nye. At finde fejl i gammel kode konkurrerer derfor om tid og opmærksomhed.\n\nAI kan give udviklerne hjælp til den første gennemgang. En model kan undersøge kode og pege på mulige svagheder, som mennesker derefter kan arbejde videre med. Det er den mulighed, PHP-eksemplet illustrerer; brevet beskriver ikke, hvordan modellen konkret fandt netop den fejl.\n\n> En fundet sårbarhed er et sted i software, som kan misbruges. En rettelse ændrer koden, så svagheden fjernes.\n\nBehovet for hjælp bliver tydeligt hos dem, der vedligeholder udbredt software. Lederen af PHP Foundation fortalte Reuters, at hun på tidspunktet var organisationens eneste fuldtidsansatte og arbejdede sammen med 14 overvejende deltidsansatte kontraktfolk. Det er en lille gruppe i forhold til de mange virksomheder, der er afhængige af softwaren.\n\n## Hvem får adgang først?\n\nDen samme evne til at finde fejl kan være nyttig for både forsvarere og angribere. Hvis sikkerhedsfolk opdager en svaghed først, kan de forsøge at få den lukket. Hvis en angriber når først, kan fejlen udnyttes, før brugerne er beskyttet.\n\nOriginalbrevets fremtidsbud er, at de mest avancerede AI-modeller ligger cirka fire til fem måneder foran de åbent tilgængelige alternativer. Det er et skøn, ikke et dokumenteret tidsmæssigt forspring. Hvis skønnet holder, kan tidlig adgang give betroede sikkerhedsteams tid til at undersøge vigtig software og få rettelser på vej.\n\nEt andet fremtidsbud i brevet er, at AI inden for 24 måneder fra en udtalelse den 14. september vil kunne lappe næsten alle kendte sårbarheder. Det er en forudsigelse om, hvad teknologien vil kunne, ikke en konstatering af, at fejlene faktisk bliver repareret hos alle brugere.\n\nDe to forventninger i brevet kan derfor godt eksistere samtidig: Flere fund kan afsløre alvorlige problemer, mens de samme redskaber også kan hjælpe med at lukke dem. Om den enkelte svaghed bliver en fare eller en afværget hændelse, afhænger blandt andet af, hvem der finder den, og hvad der sker bagefter.\n\n## En rettelse skal helt ud til brugerne\n\nNår folkene bag et program har udgivet en rettelse, skal organisationerne, der bruger programmet, stadig tage den i brug. En opdatering på vedligeholdernes hjemmeside beskytter ikke automatisk et apotek eller en anden arbejdsplads, hvis deres systemer fortsat kører den gamle version.\n\nDet arbejde kan tage tid, især når et system er nødvendigt for den daglige drift. Originalbrevet peger på, at en udvikler også kan have brug for beslutningskraft, budget og tid til at ændre systemet. En forhastet ændring kan ifølge brevet selv føre til større afbrydelser.\n\nVerizon undersøgte kendte sårbarheder i udstyr, der forbinder organisationer til internettet. For de sårbarheder, som angribere allerede udnyttede, var mediantiden til fuld udbedring 43 dage i den seneste rapport mod 32 dage året før. Medianen betyder her, at halvdelen af tilfældene lå på hver side af den angivne tid.\n\nFor en organisation er der altså flere forskellige trin mellem fundet og beskyttelsen:\n\n- **Opdagelse:** En svaghed i koden bliver fundet.\n- **Rettelse:** De ansvarlige ændrer softwaren for at lukke svagheden.\n- **Ibrugtagning:** Brugerne får ændringen installeret i deres egne systemer.\n\n## Når et angreb rammer hospitalets samarbejdspartner\n\nSelv med bedre hjælp til at finde fejl er der brug for en plan for, hvad man gør, når et system alligevel er nede. Et hospital kan eksempelvis være afhængigt af en anden virksomheds system til at behandle forsikringsgodkendelser, før patienter får behandling.\n\nEfter angrebet på Change Healthcare i 2024 svarede knap 40 procent af hospitalerne i en undersøgelse fra den amerikanske hospitalsforening, at patienter havde haft svært ved at få behandling på grund af forsinket forsikringsbehandling. Tallet gælder de hospitaler, der deltog i undersøgelsen, ikke nødvendigvis alle hospitaler.\n\nFor hospitalsledelsen peger det på en konkret beredskabsbeslutning: Hvem kan godkende næste skridt, hvis den normale forsikringsbehandling er utilgængelig? At finde og rette softwarefejl kan mindske risikoen, men svaret på det spørgsmål skal også kunne bruges, når en samarbejdspartners system er ude af drift.",
+        "illustrationer": [
+          {
+            "placering": "intro",
+            "motiv": "A solid block of code opens to reveal one large cracked section, while an OpenAI emblem is mounted front-facing on the block. Show the intact black six-loop Blossom mark at roughly one quarter of the scene width. Make the cracked section visibly separate from the surrounding intact code, with broad, sculptural forms.",
+            "alt": "AI-illustration: En fejl åbner sig i kode."
+          },
+          {
+            "placering": "En rettelse skal helt ud til brugerne",
+            "motiv": "A large solid software patch travels from an open package into a second solid machine, fitting directly into a visible gap. The connected forms show installation rather than just discovery. Use a broad, compact three-dimensional silhouette with deep edges and only a few large details; no interface or written labels.",
+            "alt": "AI-illustration: En rettelse sættes ind i et system."
+          },
+          {
+            "placering": "Når et angreb rammer hospitalets samarbejdspartner",
+            "motiv": "A solid hospital building connects to an external service block by a broad bridge with a clearly interrupted middle section. A separate sturdy bypass joins the two sides below the break, showing an alternative route. Keep the scene compact and sculptural, with the hospital as the dominant recognizable form.",
+            "alt": "AI-illustration: Hospital med afbrudt forbindelse og alternativ vej."
+          }
+        ]
+      },
+      "fejl": "Læserytme ved Årtiers kode skal gennemgås: mere end to tekstafsnit i træk; skab en meningsfuld pause uden at gentage indhold",
+      "naeste_trin": "skrivning"
     }
   }
 }
