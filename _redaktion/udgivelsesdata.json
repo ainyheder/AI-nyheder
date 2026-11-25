@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-11-25T03:43:33.973979+00:00",
+  "opdateret": "2026-11-25T14:52:19.913653+00:00",
   "kladder": [
     {
       "titel": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
@@ -45,6 +45,7 @@
       "eget_foerst_set": "2026-11-25T03:43:33.973979+00:00",
       "rubrik": "TechCrunch beskriver AI-agenters problemer med hverdagsopgaver",
       "resume_da": "En ny test viser, at selv avancerede AI-modeller har svært ved at løse opgaver pålideligt og sikkert uden at skabe nye problemer.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -61,37 +62,36 @@
         "emne": "ai-agenter"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
     },
     {
-      "titel": "What's going on with the Riemann hypothesis?",
-      "link": "https://arstechnica.com/ai/2026/11/whats-going-on-with-the-riemann-hypothesis/",
-      "resume": "A new AI-assisted proof seems to be solid, but we're not sure what it tells us.",
-      "dato": "2026-11-24T20:34:53+00:00",
+      "titel": "AI may soon change what it means to be a theoretical physicist",
+      "link": "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/",
+      "resume": "Frontier AI is already solving problems that once took top physicists a full day.",
+      "dato": "2026-11-25T12:00:28+00:00",
       "kilde": "Ars Technica AI",
       "kategori": "Forskning",
-      "foerst_set": "2026-11-25T03:43:33.973979+00:00",
-      "eget_foerst_set": "2026-11-25T03:43:33.973979+00:00",
-      "rubrik": "Ars Technica omtaler AI-assisteret matematisk bevis",
-      "resume_da": "Det nye bevis, der vedrører Riemann-hypotesen, ser ud til at holde, men det er uklart, hvad det viser.",
+      "foerst_set": "2026-11-25T14:52:19.913653+00:00",
+      "eget_foerst_set": "2026-11-25T14:52:19.913653+00:00",
+      "rubrik": "AI løser opgaver i teoretisk fysik",
+      "resume_da": "Ifølge Ars Technica løser de mest avancerede AI-modeller allerede problemer, som tidligere tog førende fysikere en hel dag.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
+        "nyhed": 2,
+        "betydning": 3,
         "brugbarhed": 1,
         "dokumentation": 2,
         "dansk": 0,
-        "type": "forskning",
+        "type": "analyse",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Et AI-assisteret bevis med relation til Riemann-hypotesen ser ifølge artiklen ud til at holde.",
-        "forbehold": "Det fremgår ikke, hvad beviset viser, eller hvordan det er blevet vurderet.",
-        "emne": "riemann-hypotesen"
+        "begrundelse": "Ars Technica beskriver, hvordan avanceret AI kan ændre arbejdet for teoretiske fysikere.",
+        "forbehold": "Uddraget oplyser ikke metode, konkrete opgaver eller uafhængige testresultater.",
+        "emne": "ai og teoretisk fysik"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "kat_ai": true,
@@ -167,6 +167,72 @@
       ]
     },
     {
+      "titel": "AI is straining America’s open records systems",
+      "link": "https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/",
+      "resume": "In Panton, Vermont, population 660, town clerk Kyle Rowe did it all. He crafted budgets, paid vendors, handled property tax disputes, and served as the town’s zoning supervisor and presiding elections officer. During morning office hours at the town hall—a wood-frame structure built as a church in 1858—he also fielded public records requests. Recently, he…",
+      "dato": "2026-11-25T10:00:00+00:00",
+      "kilde": "MIT Tech Review AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-25T14:52:19.913653+00:00",
+      "eget_foerst_set": "2026-11-25T14:52:19.913653+00:00",
+      "rubrik": "AI belaster amerikanske systemer for aktindsigt",
+      "resume_da": "I Panton i Vermont håndterede bysekretær Kyle Rowe både aktindsigt, budgetter og valg.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 0,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Artiklen handler ifølge overskriften om AI's pres på amerikanske aktindsigtssystemer.",
+        "forbehold": "Uddraget forklarer ikke, hvordan AI skaber presset, eller hvor omfattende det er.",
+        "emne": "ai og aktindsigt"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 3,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Clay helps sales teams win with Codex and ChatGPT",
+      "link": "https://openai.com/business/customer-stories/clay-plugins-openai",
+      "resume": "ChatGPT and Codex integrations help Clay’s users research deals and turn data into go-to-market plays, with GPT-6 models handling the reasoning.",
+      "dato": "2026-11-24T00:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-11-25T03:43:33.973979+00:00",
+      "eget_foerst_set": "2026-11-25T03:43:33.973979+00:00",
+      "rubrik": "Clay kobler ChatGPT og Codex til salgsarbejde",
+      "resume_da": "Integrationerne hjælper brugere med at undersøge salgsmuligheder og omsætte data til salgsplaner. GPT-6-modeller står for ræsonnementet.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "En kundecase beskriver Clays brug af ChatGPT, Codex og GPT-6 til salgsarbejde.",
+        "forbehold": "Materialet angiver ikke, om integrationerne er nye.",
+        "emne": "clay"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 3,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
       "link": "https://huggingface.co/blog/inkling2mini",
       "resume": "",
@@ -195,39 +261,6 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Clay helps sales teams win with Codex and ChatGPT",
-      "link": "https://openai.com/business/customer-stories/clay-plugins-openai",
-      "resume": "ChatGPT and Codex integrations help Clay’s users research deals and turn data into go-to-market plays, with GPT-6 models handling the reasoning.",
-      "dato": "2026-11-24T00:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-11-25T03:43:33.973979+00:00",
-      "eget_foerst_set": "2026-11-25T03:43:33.973979+00:00",
-      "rubrik": "Clay kobler ChatGPT og Codex til salgsarbejde",
-      "resume_da": "Integrationerne hjælper brugere med at undersøge salgsmuligheder og omsætte data til salgsplaner. GPT-6-modeller står for ræsonnementet.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "En kundecase beskriver Clays brug af ChatGPT, Codex og GPT-6 til salgsarbejde.",
-        "forbehold": "Materialet angiver ikke, om integrationerne er nye.",
-        "emne": "clay"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 3,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -483,9 +516,42 @@
         "type": "guide",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Titlen peger på en guide til at bygge og vedligeholde evalueringer af AI-agenter.",
-        "forbehold": "Ingen artikeltekst er medsendt.",
-        "emne": "agentiske evalueringer"
+        "begrundelse": "Titlen lover en vejledning i at opbygge og vedligeholde evaluering af agenter.",
+        "forbehold": "Ingen artikeltekst er medsendt, så vejledningens indhold og anvendelighed kan ikke vurderes.",
+        "emne": "agent-evaluering"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 2,
+      "afventer": [
+        "Mangler dansk overskrift",
+        "Mangler dansk indledning",
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "An Indic Voice Agent with CUGA",
+      "link": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga",
+      "resume": "",
+      "dato": "2026-11-25T10:22:09+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-11-25T14:52:19.913653+00:00",
+      "eget_foerst_set": "2026-11-25T14:52:19.913653+00:00",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 0,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Titlen omtaler en stemmeagent med CUGA til indiske sprog.",
+        "forbehold": "Ingen artikeltekst er medsendt; funktioner, adgang og eventuel lancering kan ikke vurderes.",
+        "emne": "cuga-stemmeagent"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "kat_ai": true,
@@ -678,11 +744,11 @@
         "brugbarhed": 0,
         "dokumentation": 1,
         "dansk": 0,
-        "type": "andet",
+        "type": "forskning",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Titlen omtaler DaisyRose-27B og effektivitet i eftertræning.",
-        "forbehold": "Ingen artikeltekst er medsendt, og titlen bekræfter ikke en modeludgivelse.",
+        "begrundelse": "En artikel om DaisyRose-27B omtaler effektivitet i eftertræning.",
+        "forbehold": "Kun titlen er medsendt; den dokumenterer ikke en modeludgivelse eller resultater.",
         "emne": "daisyrose-27b"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
@@ -691,171 +757,6 @@
       "afventer": [
         "Mangler dansk overskrift",
         "Mangler dansk indledning",
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
-      "link": "https://deepmind.google/blog/introducing-alphaproof-code/",
-      "resume": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
-      "dato": "2026-11-10T12:02:28+00:00",
-      "kilde": "Google DeepMind",
-      "kategori": "Forskning",
-      "foerst_set": "2026-11-10T12:55:44.065731+00:00",
-      "eget_foerst_set": "2026-11-10T12:55:44.065731+00:00",
-      "rubrik": "Google DeepMind: AlphaProof Code verificerer Signals kernekryptering",
-      "resume_da": "Ifølge Google DeepMind skrev agenterne tre millioner linjer beviser i bevissproget Lean.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 4,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "gennembrud",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Ifølge Google DeepMind skrev AlphaProof Code-agenter beviser i Lean for Signals centrale kryptering.",
-        "forbehold": "Materialet beskriver ikke bevisernes afgrænsning eller uafhængig kontrol.",
-        "emne": "alphaproof code"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Opening the datasets behind our AI weather models",
-      "link": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
-      "resume": "Foundational precipitation and geostationary satellite datasets to observe the planet clearly.",
-      "dato": "2026-11-10T11:13:04+00:00",
-      "kilde": "Google DeepMind",
-      "kategori": "Forskning",
-      "foerst_set": "2026-11-13T12:33:55.476940+00:00",
-      "eget_foerst_set": "2026-11-13T12:33:55.476940+00:00",
-      "rubrik": "Google DeepMind åbner datasæt bag AI-vejrmodeller",
-      "resume_da": "Datasættene indeholder oplysninger om nedbør og billeder fra geostationære satellitter.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Google DeepMind åbner datasæt om nedbør og geostationære satellitbilleder bag sine AI-vejrmodeller.",
-        "forbehold": "Materialet beskriver ikke adgangsvilkår eller datasættenes omfang.",
-        "emne": "ai-vejrdata"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Gemini Robotics 2.5 accelerates real-world general dexterity",
-      "link": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
-      "resume": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
-      "dato": "2026-11-09T19:51:47+00:00",
-      "kilde": "Google DeepMind",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-11-10T21:56:03.050309+00:00",
-      "eget_foerst_set": "2026-11-10T21:56:03.050309+00:00",
-      "rubrik": "Gemini Robotics 2.5 skal gøre robotter mere fingernemme",
-      "resume_da": "Modellen kombinerer syn, sprog og handling og skal ifølge Google DeepMind også forbedre robotters pålidelighed og sikkerhed.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 4,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "Google DeepMind præsenterer Gemini Robotics 2.5, en model for syn, sprog og handling.",
-        "forbehold": "Påstandene om bedre fingerfærdighed og sikkerhed understøttes ikke af test i materialet.",
-        "emne": "gemini robotics 2.5"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Agentic cheminformatics with Google Antigravity",
-      "link": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
-      "resume": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
-      "dato": "2026-11-03T17:01:49+00:00",
-      "kilde": "Google DeepMind",
-      "kategori": "Forskning",
-      "foerst_set": "2026-11-04T12:26:57.700834+00:00",
-      "eget_foerst_set": "2026-11-04T12:26:57.700834+00:00",
-      "rubrik": "Google beskriver AI til lægemiddelforskning",
-      "resume_da": "Antigravity og Cheminformatics Skills kan ifølge Google søge efter kemiske forbindelser og foreslå nye, stive makrocykler: store ringformede molekyler.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Google beskriver brug af Antigravity og Cheminformatics Skills til søgning efter og forslag til molekyler.",
-        "forbehold": "Materialet indeholder ingen resultater, der dokumenterer hurtigere lægemiddeludvikling.",
-        "emne": "google antigravity"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Speeding up planning decisions with AI",
-      "link": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/",
-      "resume": "Google DeepMind and UK government work together to reduce planning assessment times",
-      "dato": "2026-10-30T14:18:30+00:00",
-      "kilde": "Google DeepMind",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-11-02T18:45:47.523033+00:00",
-      "eget_foerst_set": "2026-11-02T18:45:47.523033+00:00",
-      "rubrik": "Google og britisk regering samarbejder om planvurderinger",
-      "resume_da": "Målet er at reducere tiden til vurdering af plansager ved hjælp af AI.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Google DeepMind og den britiske regering samarbejder om at forkorte vurderingen af plansager med AI.",
-        "forbehold": "Materialet oplyser ikke, om samarbejdet har reduceret sagsbehandlingstiden.",
-        "emne": "ai i plansager"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
     },
@@ -893,34 +794,34 @@
       ]
     },
     {
-      "titel": "Genie 4: A new generation of world simulation",
-      "link": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-      "resume": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
-      "dato": "2026-10-27T16:01:38+00:00",
-      "kilde": "Google DeepMind",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-10-27T20:55:19.965914+00:00",
-      "eget_foerst_set": "2026-10-27T20:55:19.965914+00:00",
-      "rubrik": "Google præsenterer verdensmodellen Genie 4",
-      "resume_da": "Ifølge Google kan modellen simulere verdener i realtid med høj realisme.",
-      "kat_ai": true,
+      "titel": "The questions Jensen Huang and Nvidia will still have to answer about Megaspeed",
+      "link": "https://techcrunch.com/2026/11/25/the-questions-jensen-huang-and-nvidia-will-still-have-to-answer-about-megaspeed/",
+      "resume": "Huang still faces questions from Congress and his own board about his romantic relationship with an alleged chip smuggler.",
+      "dato": "2026-11-25T13:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-25T14:52:19.913653+00:00",
+      "eget_foerst_set": "2026-11-25T14:52:19.913653+00:00",
+      "rubrik": "Nvidia-chef Jensen Huang møder spørgsmål om Megaspeed",
+      "resume_da": "Kongressen og Nvidias bestyrelse har stadig spørgsmål til Huangs forhold til en person, der mistænkes for at smugle chips.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 4,
+        "nyhed": 2,
         "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 3,
+        "brugbarhed": 0,
+        "dokumentation": 2,
         "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "Google DeepMind præsenterer Genie 4, en ny verdensmodel til simulering i realtid.",
-        "forbehold": "Påstanden om høj realisme er ikke underbygget med testresultater i materialet; adgang er ikke oplyst.",
-        "emne": "genie 4"
+        "type": "analyse",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Jensen Huang står ifølge artiklen fortsat over for spørgsmål om sit forhold til en person mistænkt for chipsmugling.",
+        "forbehold": "Det medsendte materiale dokumenterer ikke en direkte forbindelse til AI.",
+        "emne": "nvidia"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
+      "kat_ai": true,
+      "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -936,6 +837,7 @@
       "eget_foerst_set": "2026-11-25T03:43:33.973979+00:00",
       "rubrik": "Sonnenfeld advarer mod Huangs tilbagevenden til Nvidia",
       "resume_da": "Yale-forskeren mener, at bestyrelsesmedlemmerne risikerer personligt ansvar i en voksende række retssager.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -952,7 +854,6 @@
         "emne": "nvidia"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -969,6 +870,7 @@
       "eget_foerst_set": "2026-11-25T03:43:33.973979+00:00",
       "rubrik": "Huang mener, afløserplan skaber unødigt hierarki",
       "resume_da": "Nvidia har netop været uden sin grundlægger i to uger.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -985,7 +887,6 @@
         "emne": "nvidia"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -1002,6 +903,7 @@
       "eget_foerst_set": "2026-11-25T03:43:33.973979+00:00",
       "rubrik": "Huang takker Det Hvide Hus og går i terapi",
       "resume_da": "Nvidias grundlægger undskyldte over for medarbejderne og sagde, at han var taknemmelig for endnu en chance som leder.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1018,7 +920,6 @@
         "emne": "nvidia"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -1035,6 +936,7 @@
       "eget_foerst_set": "2026-11-25T03:43:33.973979+00:00",
       "rubrik": "Huang afviser angiveligt Trumps rolle i genansættelse",
       "resume_da": "Ifølge flere medier sagde Nvidia-chefen til medarbejderne, at Trump ikke sikrede ham jobbet tilbage. Huang undskyldte også over for medarbejderne.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1051,7 +953,6 @@
         "emne": "nvidia"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -79777,7 +79678,34 @@
         "kontrolleret": "2026-11-19T23:18:34.256274+00:00"
       },
       "prio": 4,
-      "side": "artikel/38cbde179199e5d6.html"
+      "side": "artikel/38cbde179199e5d6.html",
+      "historie_dato": "2026-11-19T19:10:45+00:00",
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
+          "rubrik": "Anthropic på børsen: Sikkerhed møder aktionærkrav",
+          "resume_da": "Selskabet bag AI-tjenesten Claude skal som børsnoteret virksomhed håndtere både store udgifter og forventninger om voksende indtjening.",
+          "dato": "2026-11-21T15:00:00+00:00",
+          "foerst_set": "2026-11-21T21:50:31.854305+00:00"
+        },
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
+          "rubrik": "Anthropic-satsning gav investorer store papirgevinst​er",
+          "resume_da": "TechCrunch fortæller, hvordan tre investorer traf deres valg før børsnoteringen, og hvad de foreløbig har fået ud af dem.",
+          "dato": "2026-11-23T01:25:53+00:00",
+          "foerst_set": "2026-11-23T08:05:22.310496+00:00"
+        },
+        {
+          "kilde": "Anthropic News",
+          "link": "https://www.anthropic.com/news/ipo-close",
+          "rubrik": "Anthropic har afsluttet sin børsnotering",
+          "resume_da": "Aktierne handles nu på Nasdaq, mens syv teknologiselskaber samtidig har købt aktier direkte fra Anthropic.",
+          "dato": "2026-11-20T00:00:00+00:00",
+          "foerst_set": "2026-11-20T17:11:55.623291+00:00"
+        }
+      ]
     },
     {
       "titel": "ChatGPT can transcribe as you speak now with Live Dictation",
@@ -82274,75 +82202,6 @@
       "side": "artikel/014cb4d393dcb21a.html"
     },
     {
-      "titel": "Can Anthropic afford to put safety first?",
-      "link": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
-      "resume": "Today, I’m talking with Hayden Field, The Verge’s senior AI reporter, about the Anthropic IPO for the third and final episode in our series about AI in real life. The AI lab behind Claude went public on the Nasdaq last Thursday. The numbers are gigantic, but not really that important for this conversation, except to […]",
-      "dato": "2026-11-21T15:00:00+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-11-21T21:50:31.854305+00:00",
-      "eget_foerst_set": "2026-11-21T21:50:31.854305+00:00",
-      "rubrik": "Anthropic på børsen: Sikkerhed møder aktionærkrav",
-      "resume_da": "Selskabet bag AI-tjenesten Claude skal som børsnoteret virksomhed håndtere både store udgifter og forventninger om voksende indtjening.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Aktien steg på første børsdag",
-          "tekst": "Anthropic, der står bag AI-tjenesten Claude, er blevet børsnoteret på Nasdaq. Ifølge The Verge steg aktien fra introduktionsprisen på 83 dollar til 111 dollar på den første børsdag.\n\nBørsnoteringen giver investorer mulighed for at købe og sælge aktier i selskabet. Samtidig skal Anthropic nu forholde sig til aktionærer og deres forventninger til forretningen."
-        },
-        {
-          "overskrift": "Sikkerhed er også et salgsargument",
-          "tekst": "Anthropic har profileret sig på sikkerhed i udviklingen af AI. I podcasten Decoder diskuterer The Verges journalister, hvordan selskabet kan fastholde den prioritet, mens det også skal tjene flere penge.\n\nDet spørgsmål gælder ikke kun selskabets idealer. Ifølge podcasten er sikkerhed også en vigtig del af Anthropics tilbud til store kunder. Journalisterne peger på en mulig konflikt mellem den profil og ønsket om større indtjening."
-        },
-        {
-          "overskrift": "Store regninger venter forude",
-          "tekst": "Udvikling og brug af avancerede AI-modeller kræver betydelig computerkraft. The Verge anslår, at Anthropics regninger for computerkraft samlet vil nå omkring 900 milliarder dollar i de kommende år. Artiklen specificerer ikke den præcise periode eller beregningen.\n\nPodcasten nævner også, at Anthropic har en særlig virksomhedsstruktur, som skal beskytte selskabet mod markedets pres. Kilden forklarer ikke nærmere, hvordan den virker, eller om børsnoteringen allerede har ændret selskabets sikkerhedsarbejde."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "83 dollar pr. aktie",
-          "label": "Introduktionspris ved børsnoteringen"
-        },
-        {
-          "tal": "111 dollar pr. aktie",
-          "label": "Kursen nåede dette niveau på første børsdag"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [],
-      "betydning": "Anthropic skal nu balancere sit sikkerhedsløfte med aktionærernes forventninger og store fremtidige udgifter til computerkraft.",
-      "pointer": [],
-      "billedmotiv": "A solid balance scale bearing Anthropic’s distinctive warm terracotta-orange, many-rayed Claude asterisk on its central body weighs a shield against an upward-pointing stock-market arrow. The shield represents the company’s safety commitments and the arrow its new shareholders’ expectations. Keep the emblem front-facing and prominent, with thick, opaque forms and cleanly separated edges.",
-      "billedmotiv_instruks": "4f389b556543a2c31dae",
-      "billede": "data/img/262b0a598c64cf35.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "The Verge diskuterer AI-sikkerhed efter Anthropics børsnotering på Nasdaq.",
-        "forbehold": "Uddraget beskriver ikke børsnoteringens vilkår eller konkrete følger for sikkerhedsarbejdet.",
-        "emne": "anthropic"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-11-21T21:54:04.156931+00:00"
-      },
-      "historie_dato": "2026-11-21T15:00:00+00:00",
-      "prio": 6,
-      "side": "artikel/3f8dc1fbea0dc261.html"
-    },
-    {
       "titel": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
       "link": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
       "resume": "An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too.",
@@ -82520,6 +82379,14 @@
           "resume_da": "Levent Alpöge siger, at han brugte Claude til at bevise hypotesen. Beviset er endnu ikke verificeret.",
           "dato": "2026-11-20 11:34:13-05:00",
           "foerst_set": "2026-11-21T01:42:50.990268+00:00"
+        },
+        {
+          "kilde": "Ars Technica AI",
+          "link": "https://arstechnica.com/ai/2026/11/whats-going-on-with-the-riemann-hypothesis/",
+          "rubrik": "Claude har hjulpet med muligt Riemann-bevis",
+          "resume_da": "Matematikeren Levent Alpöge har annonceret et AI-assisteret bevis for en af matematikkens mest berømte hypoteser. Matematikere er stadig ved at gennemgå det.",
+          "dato": "2026-11-24T20:34:53+00:00",
+          "foerst_set": "2026-11-25T03:43:33.973979+00:00"
         }
       ],
       "detaljer": [],
@@ -83002,72 +82869,6 @@
       "side": "artikel/f8ce89f0a31be533.html"
     },
     {
-      "titel": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent private placement",
-      "link": "https://www.anthropic.com/news/ipo-close",
-      "resume": "Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public offering price.",
-      "dato": "2026-11-20T00:00:00+00:00",
-      "kilde": "Anthropic News",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-11-20T17:11:55.623291+00:00",
-      "eget_foerst_set": "2026-11-20T17:11:55.623291+00:00",
-      "rubrik": "Anthropic har afsluttet sin børsnotering",
-      "resume_da": "Aktierne handles nu på Nasdaq, mens syv teknologiselskaber samtidig har købt aktier direkte fra Anthropic.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Aktien handles under navnet ANT",
-          "tekst": "AI-selskabet Anthropic har afsluttet sin børsnotering. I alt blev 1,127 milliarder aktier solgt til 83 dollar stykket. Handlen med aktierne begyndte på Nasdaq-børsen den 19. november 2026 under symbolet ANT.\n\nLangt størstedelen af aktierne blev solgt af Anthropic selv. Eksisterende aktionærer solgte knap 23,7 millioner aktier, og deres indtægter gik ikke til selskabet.\n\nDet samlede salg omfattede også 147 millioner ekstra aktier fra Anthropic. Bankerne bag børsnoteringen havde mulighed for at købe de ekstra aktier og udnyttede hele den mulighed."
-        },
-        {
-          "overskrift": "Syv selskaber købte aktier direkte",
-          "tekst": "Samtidig solgte Anthropic godt 313 millioner aktier direkte til syv selskaber: Advanced Micro Devices, Broadcom, Google, Micron Technology, Microsoft, NVIDIA og TSMC Partners.\n\nDe direkte solgte aktier tilhører aktieklasse N, mens aktierne i børsnoteringen tilhører klasse A. Prisen var den samme: 83 dollar pr. aktie.\n\nBørsnoteringen og det direkte salg indbragte tilsammen cirka 119,5 milliarder dollar før omkostninger. Det beløb omfatter også pengene fra de eksisterende aktionærers salg, som Anthropic ikke modtog."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "93,5 milliarder dollar",
-          "label": "Samlet indtægt fra børsnoteringen før omkostninger, cirka"
-        },
-        {
-          "tal": "91,6 milliarder dollar",
-          "label": "Anthropics andel af børsnoteringen før omkostninger, cirka"
-        },
-        {
-          "tal": "26,0 milliarder dollar",
-          "label": "Samlet købspris ved det direkte salg til syv selskaber, cirka"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [],
-      "betydning": "",
-      "pointer": [],
-      "billede": "data/img/1f50bb1b0ad0871b.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Anthropic oplyser, at selskabets børsudbud og en samtidig privat aktieplacering er afsluttet.",
-        "forbehold": "Materialet oplyser ikke størrelsen på den private aktieplacering.",
-        "emne": "anthropic"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-11-22T16:38:22.730063+00:00"
-      },
-      "prio": 6,
-      "side": "artikel/462db626dd31f818.html"
-    },
-    {
       "titel": "Inside the Codex sandbox",
       "link": "https://openai.com/index/inside-the-codex-sandbox",
       "resume": "See how Codex runs commands on your machine while enforcing the filesystem and network limits you control across macOS, Linux, and Windows.",
@@ -83386,74 +83187,6 @@
       },
       "prio": 4,
       "side": "artikel/cf3322b3a4602d72.html"
-    },
-    {
-      "titel": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO",
-      "link": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
-      "resume": "Three significant backers share what gave them conviction to bet billions on Anthropic.",
-      "dato": "2026-11-23T01:25:53+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-11-23T08:05:22.310496+00:00",
-      "eget_foerst_set": "2026-11-23T08:05:22.310496+00:00",
-      "rubrik": "Anthropic-satsning gav investorer store papirgevinst​er",
-      "resume_da": "TechCrunch fortæller, hvordan tre investorer traf deres valg før børsnoteringen, og hvad de foreløbig har fået ud af dem.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "En tidlig satsning voksede kraftigt",
-          "tekst": "Anthropics børsnotering har givet nogle af selskabets tidlige investorer store gevinster på papiret. TechCrunch anslår, at investeringsselskabet Notable Capital har fået omkring 15 gange sin investering igen målt på papiret.\n\nAnthropic, der står bag AI-assistenten Claude, hentede 81,3 milliarder dollar ved børsnoteringen i november 2026. Selskabet blev her værdiansat til omkring 1.500 milliarder dollar, når alle potentielle aktier tælles med.\n\nNotable investerede i en tidligere finansieringsrunde, hvor Anthropic blev værdiansat til 61,5 milliarder dollar. En papirgevinst er ikke det samme som penge på kontoen: Den bygger på aktiernes værdi, ikke nødvendigvis på et salg."
-        },
-        {
-          "overskrift": "Udviklernes valg styrkede Notables tro",
-          "tekst": "Satsningen var stor for Notable: Omkring 10 procent af den amerikanske del af selskabets fond på over en milliard dollar gik til Anthropic. Flere af fondens investorer undrede sig ifølge TechCrunch over størrelsen.\n\nNotables egen analyse viste, at udviklere brugte Claude 70 procent af tiden frem for konkurrenten ChatGPT. Det var en vending fra året før. Kilden oplyser ikke, hvor mange udviklere analysen omfattede.\n\nNotable vurderede også, at samfundskritisk arbejde fortsat ville kræve amerikanske modeller med lukket kildekode, hvor den bagvedliggende kode ikke er frit tilgængelig."
-        },
-        {
-          "overskrift": "To senere investorer fulgte med",
-          "tekst": "Singapores statslige investeringsfond GIC investerede første gang i en runde annonceret i september 2025. Fonden havde blandt andet bemærket den tidlige interesse for Claude Code, Anthropics værktøj til programmering.\n\nGIC investerede senere i yderligere to runder. En person med kendskab til fondens økonomi siger til TechCrunch, at GIC efter børsnoteringen ejer omkring én procent af Anthropic.\n\nInvesteringsselskabet Baillie Gifford gik også ind i september 2025-runden. Selskabets Lilian Li peger på Anthropics omsætning og bruttoavance, altså hvor meget der er tilbage af omsætningen efter de direkte omkostninger."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "Over 4,5 milliarder dollar",
-          "label": "GIC's samlede investering i Anthropic over tre finansieringsrunder"
-        },
-        {
-          "tal": "1,5 milliarder dollar",
-          "label": "Baillie Giffords samlede investering i Anthropic over tre finansieringsrunder"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [],
-      "betydning": "Børsnoteringen har gjort det muligt at sætte en aktiemarkedsværdi på investeringerne, men papirgevinsternes endelige størrelse afhænger af, hvad investorerne sælger aktierne for.",
-      "pointer": [],
-      "billedmotiv": "A large share certificate bearing Anthropic's Claude mark, a warm terracotta-orange many-rayed asterisk, rises above a much smaller certificate, linked by a bold upward arrow. The enlarged paper represents the early investment's increased value after the listing, not a cash payout. Solid, opaque shapes with crisp edges and clearly separated contours.",
-      "billedmotiv_instruks": "24b9cb6ca90166fb1fdb",
-      "billede": "data/img/d2922caec6a93c76.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Tre investorer fortæller, hvorfor de satsede milliarder på Anthropic.",
-        "forbehold": "Materialet gengiver ikke investorernes konkrete begrundelser.",
-        "emne": "anthropic"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-11-23T08:08:52.574949+00:00"
-      },
-      "prio": 4,
-      "side": "artikel/ca5d392ce76c8966.html"
     },
     {
       "titel": "Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses",
@@ -83994,7 +83727,7 @@
       "titel": "AI data centers throw another wrench into chaotic UN climate talks",
       "link": "https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit",
       "resume": "The clean energy revolution hinges on electrifying the entire global economy just as power-hungry data centers are surging. It's a challenge delegates from all over the world had to grapple with during the United Nations climate conference, called COP31, that came to a chaotic and unsatisfying close in Antalya, Turkey, on Sunday. Each year, attendees […]",
-      "dato": "2026-11-23T16:09:37-05:00",
+      "dato": "2026-11-23T21:09:37+00:00",
       "kilde": "The Verge AI",
       "kategori": "Samfund & etik",
       "foerst_set": "2026-11-24T04:56:53.301437+00:00",
@@ -84619,6 +84352,9 @@
         "kontrolleret": "2026-11-24T19:45:55.818479+00:00"
       },
       "prio": 6,
+      "billedmotiv": "A server tower is breached by a thick file card bearing a medical-image cross, while an unlocked padlock hangs open at the server’s side. The card pushes through a visible opening in the casing, showing how agents exploited a previously unknown flaw in medical imaging software to gain access. Use solid, opaque shapes with crisp, distinct contours.",
+      "billedmotiv_instruks": "a5f9be0e49271ca4857c",
+      "billede": "data/img/d8a21a44ed18b5e9.webp",
       "side": "artikel/dad9742e3b9b29ab.html"
     },
     {
@@ -84749,6 +84485,9 @@
         "kontrolleret": "2026-11-24T19:46:18.514764+00:00"
       },
       "prio": 5,
+      "billedmotiv": "A star disc bearing the intact black six-loop OpenAI Blossom is partly crossed by a small dark planet-shaped disc, above a solid graph strip with two matching dips. The repeated dimming represents a possible planetary transit found through a Codex-built search, not a confirmed planet. Keep all forms thick, opaque and sharply separated, with the emblem facing forward.",
+      "billedmotiv_instruks": "d4b002598549b98f7216",
+      "billede": "data/img/e1e5521bbbf8407e.webp",
       "side": "artikel/5b23d2436c25024d.html"
     },
     {
@@ -85008,7 +84747,10 @@
         "kontrolleret": "2026-11-24T19:47:34.987620+00:00"
       },
       "prio": 4,
-      "side": "artikel/ba625c17c59cc4b2.html"
+      "side": "artikel/ba625c17c59cc4b2.html",
+      "billedmotiv": "A dense bundle of thick data blocks squeezes through a narrow network switch, with blocks piling up on one side to show AI-agent traffic straining capacity. The switch and each block are solid and opaque, with sharp, separable outlines. Make the bottleneck the central action rather than depicting a precise traffic estimate.",
+      "billedmotiv_instruks": "8e37ed8265e3ac3d1fee",
+      "billede": "data/img/f4677fb47a817b7b.webp"
     },
     {
       "titel": "How iFood scales coding agents across 15,000 repositories",
@@ -85073,6 +84815,9 @@
         "kontrolleret": "2026-11-24T19:47:15.102851+00:00"
       },
       "prio": 3,
+      "billedmotiv": "A code-file card bearing the intact black six-loop OpenAI Blossom feeds into a thick repair gate and emerges with a separate patch-shaped piece attached. The patch is visibly detachable, indicating a proposed fix to a vulnerable software dependency rather than an automatically accepted change. Use opaque, solid forms, sharp edges and a large, front-facing emblem.",
+      "billedmotiv_instruks": "c9d2a9779bed22b58828",
+      "billede": "data/img/3782a2a0036dd830.webp",
       "side": "artikel/b13885c65c3dcbb9.html"
     },
     {
@@ -85086,6 +84831,44 @@
       "eget_foerst_set": "2026-11-25T03:43:33.973979+00:00",
       "rubrik": "GPT-6.2 designer proteiner, der binder sig",
       "resume_da": "Laboratorieforsøg viste tegn på binding til fem udvalgte proteiner. Specialiserede modeller hjalp dog med at gøre forslagene klar til test.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Fra instruktion til proteinform",
+          "tekst": "GPT-6.2 har foreslået former til små proteiner, som i laboratorieforsøg viste tegn på at kunne binde sig til udvalgte mål. Resultatet kommer fra forskning udført af OpenAI sammen med forskningspartneren Onava.\n\nProteiner består af kæder af aminosyrer. Rækkefølgen af aminosyrerne er med til at bestemme, hvordan kæden folder sig, og formen har betydning for proteinets funktion.\n\nForskerne bad modellen designe små proteiner, der skulle sætte sig fast på bestemte steder på andre proteiner. GPT-6.2 skrev og brugte kode til at udforske mulige former uden at få en specialiseret biologimodel til at skabe selve designene."
+        },
+        {
+          "overskrift": "Specialiserede modeller hjalp før laboratoriet",
+          "tekst": "Til laboratorieforsøget brugte forskerne en version af GPT-6.2, som endnu ikke var frigivet. Specialiserede modeller leverede derefter aminosyresekvenser til designene og hjalp med at vælge kandidater til test.\n\nFor hvert af de fem målproteiner viste mindst ét af de fremstillede proteiner tegn på binding. I andre forsøg designede GPT-6.2 nye aminosyresekvenser til eksisterende små proteiner og antistoffer. Mange af dem bevarede også evnen til at binde sig."
+        },
+        {
+          "overskrift": "Fleksible instruktioner, men også svagheder",
+          "tekst": "Ifølge OpenAI kunne forskerne styre designene med almindelige instruktioner, blandt andet om hvor et protein skulle binde sig, og hvilken form det skulle have. De kunne skifte opgave ved at ændre instruktionen uden at træne modellen igen.\n\nI beregningsbaserede test klarede OpenAI's nyeste modeller sig på niveau med eller bedre end specialiserede modeller i de fleste opgaver. At forudsige en komplet proteinstruktur var dog fortsat en klar svaghed. Laboratorieforsøgene viser desuden binding, ikke at proteinerne er klar til en bestemt anvendelse."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [
+        {
+          "url": "https://images.ctfassets.net/kftzwdyauwt9/4u7ogWwVXuqX5GRdnZxsLM/23d72378f6fea65debd91c914f32fb54/protein-workflows-intrinsic-desktop-light.png?w=3840&amp;q=90&amp;fm=webp",
+          "tekst": "Diagram comparing a language model coordinating specialized tools with a single model handling protein tasks directly.",
+          "kilde": "OpenAI Blog"
+        },
+        {
+          "url": "https://images.ctfassets.net/kftzwdyauwt9/77JrLamL248By3sCY9fZqj/7537b78d13de9641b56233de8216a606/source_figure_1__3_.png?w=3840&amp;q=90&amp;fm=webp",
+          "tekst": "The model’s written reasoning and code show it drawing on math, physics, chemistry and biology to design a protein intended to attach to IL-7Rα. It…",
+          "kilde": "OpenAI Blog"
+        }
+      ],
+      "detaljer": [],
+      "betydning": "En model, der kan følge forskellige instruktioner om proteindesign, kan give forskere en mere fleksibel måde at udforske mulige proteinformer på.",
+      "pointer": [],
+      "billedmotiv": "A small, folded protein shape bearing the black OpenAI six-loop Blossom fits into a matching binding site on a larger protein. Their interlocking surfaces show the experimental binding reported for GPT-6.2’s designs. Make both protein forms solid and distinct, with the intact Blossom facing forward and occupying roughly a quarter of the composition’s width.",
+      "billedmotiv_instruks": "6ebacbd6d05d888d5c28",
+      "billedstatus": {
+        "status": "afvist_af_filter",
+        "signatur": "6ded031a620037f4"
+      },
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -85102,50 +84885,12 @@
         "emne": "gpt-6 og proteindesign"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
-      "sektioner": [
-        {
-          "overskrift": "Fra instruktion til proteinform",
-          "tekst": "GPT-6.2 har foreslået former til små proteiner, som i laboratorieforsøg viste tegn på at kunne binde sig til udvalgte mål. Resultatet kommer fra forskning udført af OpenAI sammen med forskningspartneren Onava.\n\nProteiner består af kæder af aminosyrer. Rækkefølgen af aminosyrerne er med til at bestemme, hvordan kæden folder sig, og formen har betydning for proteinets funktion.\n\nForskerne bad modellen designe små proteiner, der skulle sætte sig fast på bestemte steder på andre proteiner. GPT-6.2 skrev og brugte kode til at udforske mulige former uden at få en specialiseret biologimodel til at skabe selve designene."
-        },
-        {
-          "overskrift": "Specialiserede modeller hjalp før laboratoriet",
-          "tekst": "Til laboratorieforsøget brugte forskerne en version af GPT-6.2, som endnu ikke var frigivet. Specialiserede modeller leverede derefter aminosyresekvenser til designene og hjalp med at vælge kandidater til test.\n\nFor hvert af de fem målproteiner viste mindst ét af de fremstillede proteiner tegn på binding. I andre forsøg designede GPT-6.2 nye aminosyresekvenser til eksisterende små proteiner og antistoffer. Mange af dem bevarede også evnen til at binde sig."
-        },
-        {
-          "overskrift": "Fleksible instruktioner, men også svagheder",
-          "tekst": "Ifølge OpenAI kunne forskerne styre designene med almindelige instruktioner, blandt andet om hvor et protein skulle binde sig, og hvilken form det skulle have. De kunne skifte opgave ved at ændre instruktionen uden at træne modellen igen.\n\nI beregningsbaserede test klarede OpenAI's nyeste modeller sig på niveau med eller bedre end specialiserede modeller i de fleste opgaver. At forudsige en komplet proteinstruktur var dog fortsat en klar svaghed. Laboratorieforsøgene viser desuden binding, ikke at proteinerne er klar til en bestemt anvendelse."
-        }
-      ],
-      "brief": "",
-      "figurer": [
-        {
-          "url": "https://images.ctfassets.net/kftzwdyauwt9/4u7ogWwVXuqX5GRdnZxsLM/23d72378f6fea65debd91c914f32fb54/protein-workflows-intrinsic-desktop-light.png?w=3840&amp;q=90&amp;fm=webp",
-          "tekst": "Diagram comparing a language model coordinating specialized tools with a single model handling protein tasks directly.",
-          "kilde": "OpenAI Blog"
-        },
-        {
-          "url": "https://images.ctfassets.net/kftzwdyauwt9/77JrLamL248By3sCY9fZqj/7537b78d13de9641b56233de8216a606/source_figure_1__3_.png?w=3840&amp;q=90&amp;fm=webp",
-          "tekst": "The model’s written reasoning and code show it drawing on math, physics, chemistry and biology to design a protein intended to attach to IL-7Rα. It…",
-          "kilde": "OpenAI Blog"
-        }
-      ],
-      "noegletal": [],
-      "detaljer": [],
-      "betydning": "En model, der kan følge forskellige instruktioner om proteindesign, kan give forskere en mere fleksibel måde at udforske mulige proteinformer på.",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-25T03:46:46.787297+00:00"
       },
-      "billedmotiv": "A small, folded protein shape bearing the black OpenAI six-loop Blossom fits into a matching binding site on a larger protein. Their interlocking surfaces show the experimental binding reported for GPT-6.2’s designs. Make both protein forms solid and distinct, with the intact Blossom facing forward and occupying roughly a quarter of the composition’s width.",
-      "billedmotiv_instruks": "6ebacbd6d05d888d5c28",
-      "billedstatus": {
-        "status": "afvist_af_filter",
-        "signatur": "6ded031a620037f4"
-      },
+      "prio": 6,
       "side": "artikel/2fb78c77ddc3c48b.html"
     },
     {
@@ -85159,6 +84904,25 @@
       "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
       "rubrik": "Anthropic-aktien falder under introduktionskursen",
       "resume_da": "Mindre end en uge efter debuten på Nasdaq var aktien nede på 76 dollar. Investorer følger udviklingen som et muligt tegn for andre AI-virksomheder.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Aktien faldt under udbudsprisen",
+          "tekst": "Anthropics aktie var tirsdag ved middagstid nede på 76 dollar. Det er under de 83 dollar, som aktien blev udbudt til ved AI-virksomhedens børsintroduktion, hvor aktierne blev solgt til investorer.\n\nAktien var samtidig faldet næsten 12 procent fra mandagens lukkekurs. Nedgangen kom mindre end en uge efter Anthropics debut på Nasdaq-børsen, hvor aktien begyndte at handle til 111,50 dollar.\n\nEt fald under udbudsprisen bliver ofte opfattet som et negativt tegn. De banker, der står for salget ved en børsintroduktion, sætter typisk prisen lavere end den værdi, de forventer, aktien får i handlen bagefter."
+        },
+        {
+          "overskrift": "Andre AI-selskaber følger med",
+          "tekst": "Investorer og andre iagttagere følger ifølge TechCrunch Anthropics aktiekurs som et muligt pejlemærke for, hvordan investorer på børsen værdisætter AI-virksomheder.\n\nHvis aktien fortsætter med at klare sig dårligt i de kommende uger, kan det ifølge mediet lægge pres på værdiansættelserne af AI-startups, som endnu ikke er på børsen. Det kan også gøre det sværere for andre AI-virksomheder at gå på børsen.\n\nDen følge er dog ikke afgjort af tirsdagens kursfald alene. Vurderingen afhænger blandt andet af, hvordan Anthropics aktie udvikler sig i de kommende uger."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "",
+      "pointer": [],
+      "billedmotiv": "A steep, solid downward arrow carrying Anthropic’s warm terracotta-orange many-rayed Claude starburst crosses below a horizontal offer-price marker. Its tip ends visibly beneath that marker, illustrating the share price falling below its IPO price. Keep the starburst large and front-facing, with thick, opaque forms and distinct contours.",
+      "billedmotiv_instruks": "8cbb345fafe5abb8225d",
+      "billede": "data/img/3a82f9202aa7cb13.webp",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -85176,31 +84940,12 @@
         "emne": "anthropic"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "sektioner": [
-        {
-          "overskrift": "Aktien faldt under udbudsprisen",
-          "tekst": "Anthropics aktie var tirsdag ved middagstid nede på 76 dollar. Det er under de 83 dollar, som aktien blev udbudt til ved AI-virksomhedens børsintroduktion, hvor aktierne blev solgt til investorer.\n\nAktien var samtidig faldet næsten 12 procent fra mandagens lukkekurs. Nedgangen kom mindre end en uge efter Anthropics debut på Nasdaq-børsen, hvor aktien begyndte at handle til 111,50 dollar.\n\nEt fald under udbudsprisen bliver ofte opfattet som et negativt tegn. De banker, der står for salget ved en børsintroduktion, sætter typisk prisen lavere end den værdi, de forventer, aktien får i handlen bagefter."
-        },
-        {
-          "overskrift": "Andre AI-selskaber følger med",
-          "tekst": "Investorer og andre iagttagere følger ifølge TechCrunch Anthropics aktiekurs som et muligt pejlemærke for, hvordan investorer på børsen værdisætter AI-virksomheder.\n\nHvis aktien fortsætter med at klare sig dårligt i de kommende uger, kan det ifølge mediet lægge pres på værdiansættelserne af AI-startups, som endnu ikke er på børsen. Det kan også gøre det sværere for andre AI-virksomheder at gå på børsen.\n\nDen følge er dog ikke afgjort af tirsdagens kursfald alene. Vurderingen afhænger blandt andet af, hvordan Anthropics aktie udvikler sig i de kommende uger."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [],
-      "betydning": "",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-25T03:47:10.610787+00:00"
       },
-      "billedmotiv": "A steep, solid downward arrow carrying Anthropic’s warm terracotta-orange many-rayed Claude starburst crosses below a horizontal offer-price marker. Its tip ends visibly beneath that marker, illustrating the share price falling below its IPO price. Keep the starburst large and front-facing, with thick, opaque forms and distinct contours.",
-      "billedmotiv_instruks": "8cbb345fafe5abb8225d",
-      "billede": "data/img/3a82f9202aa7cb13.webp",
+      "prio": 5,
       "side": "artikel/d52b76df83c94b72.html"
     },
     {
@@ -85214,6 +84959,29 @@
       "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
       "rubrik": "GPT-6.2 Astra fandt skitsebogens ophavsmand",
       "resume_da": "Et spor i en dagbog førte modellen frem til en rejsejournal, som ifølge historieprofessor Mark Humphries bekræftede dens hypotese.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Et dagbogsspor førte til Chabot",
+          "tekst": "AI-modellen GPT-6.2 Astra identificerede ifølge historieprofessor Mark Humphries manden bag en anonym skitsebog fra 1808. Bogen opbevares på Yale-universitetets Beinecke Library.\n\nMed kun få instruktioner fandt modellen frem til vicomte de Chabot ved hjælp af offentligt tilgængelige historiske kilder og senere beskrivelser. Humphries oplyser, at arbejdet tog 22 minutter.\n\nEt afgørende spor var en dagbogsoptegnelse om et besøg af Chabot. Den var dateret fem dage før en dato, der optrådte i skitsebogen ved en nærliggende flod."
+        },
+        {
+          "overskrift": "En rejsejournal kunne bekræfte hypotesen",
+          "tekst": "Modellen foreslog, at Chabots rejsejournal kunne vise, om han havde lavet skitsebogen. Journalen findes i et papirarkiv og kan kun fås ved bestilling fra Cleveland State University.\n\nIfølge Humphries bekræftede journalen hypotesen, da den blev undersøgt. Kilden beskriver ikke, hvem der undersøgte den, eller hvilke oplysninger i journalen der bekræftede forbindelsen. Humphries vurderer desuden, at journalen i sig selv er et vigtigt fund for forskere i Canadas historie og pelshandelens historie."
+        },
+        {
+          "overskrift": "Historikeren ser også en grænse",
+          "tekst": "Humphries forventer, at systemer, som kan arbejde selvstændigt med historiske undersøgelser, kan skabe usikkerhed i faget. Men han peger også på, at historikere fortolker fortiden på ny og skriver bøger og artikler, hvor menneskelighed spiller en rolle."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "Eksemplet viser, hvordan en AI-model kan forbinde spredte kilder og pege på arkivmateriale, der kan afprøve en historisk hypotese.",
+      "pointer": [],
+      "billedmotiv": "An antique sketchbook bearing the black OpenAI six-loop Blossom sits beside a closed travel journal, joined by a solid magnifying glass. A small river drawing on the sketchbook hints at the dated clue that helped GPT-6.2 Astra propose its maker and locate a journal for checking. Use opaque forms and a large, front-facing Blossom.",
+      "billedmotiv_instruks": "340cfe7865ac920885fc",
+      "billede": "data/img/78f63b77f780d4d0.webp",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -85231,35 +84999,12 @@
         "emne": "ai i historisk forskning"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "sektioner": [
-        {
-          "overskrift": "Et dagbogsspor førte til Chabot",
-          "tekst": "AI-modellen GPT-6.2 Astra identificerede ifølge historieprofessor Mark Humphries manden bag en anonym skitsebog fra 1808. Bogen opbevares på Yale-universitetets Beinecke Library.\n\nMed kun få instruktioner fandt modellen frem til vicomte de Chabot ved hjælp af offentligt tilgængelige historiske kilder og senere beskrivelser. Humphries oplyser, at arbejdet tog 22 minutter.\n\nEt afgørende spor var en dagbogsoptegnelse om et besøg af Chabot. Den var dateret fem dage før en dato, der optrådte i skitsebogen ved en nærliggende flod."
-        },
-        {
-          "overskrift": "En rejsejournal kunne bekræfte hypotesen",
-          "tekst": "Modellen foreslog, at Chabots rejsejournal kunne vise, om han havde lavet skitsebogen. Journalen findes i et papirarkiv og kan kun fås ved bestilling fra Cleveland State University.\n\nIfølge Humphries bekræftede journalen hypotesen, da den blev undersøgt. Kilden beskriver ikke, hvem der undersøgte den, eller hvilke oplysninger i journalen der bekræftede forbindelsen. Humphries vurderer desuden, at journalen i sig selv er et vigtigt fund for forskere i Canadas historie og pelshandelens historie."
-        },
-        {
-          "overskrift": "Historikeren ser også en grænse",
-          "tekst": "Humphries forventer, at systemer, som kan arbejde selvstændigt med historiske undersøgelser, kan skabe usikkerhed i faget. Men han peger også på, at historikere fortolker fortiden på ny og skriver bøger og artikler, hvor menneskelighed spiller en rolle."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [],
-      "betydning": "Eksemplet viser, hvordan en AI-model kan forbinde spredte kilder og pege på arkivmateriale, der kan afprøve en historisk hypotese.",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-25T03:47:37.600415+00:00"
       },
-      "billedmotiv": "An antique sketchbook bearing the black OpenAI six-loop Blossom sits beside a closed travel journal, joined by a solid magnifying glass. A small river drawing on the sketchbook hints at the dated clue that helped GPT-6.2 Astra propose its maker and locate a journal for checking. Use opaque forms and a large, front-facing Blossom.",
-      "billedmotiv_instruks": "340cfe7865ac920885fc",
-      "billede": "data/img/78f63b77f780d4d0.webp",
+      "prio": 5,
       "side": "artikel/c0ca864256d1106e.html"
     },
     {
@@ -85273,24 +85018,7 @@
       "eget_foerst_set": "2026-11-25T03:43:33.973979+00:00",
       "rubrik": "Simon Willison: Claude Opus 5.5 forbedrede kedeligt spil",
       "resume_da": "AI-modellen testede og ændrede et strategispil efter en kort besked. For udvikleren er det ét af tre spring i AI's evne til at skrive programmer.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Simon Willison beskriver tre skift i sprogmodellers og kodeagenters evner på et år.",
-        "forbehold": "Uddraget beskriver ikke de tre skift eller belægget for dem.",
-        "emne": "sprogmodeller og kodeagenter"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "En besked ændrede spillet",
@@ -85309,20 +85037,37 @@
           "tekst": "Willison er endnu ikke sikker på, om Claude Fable 5.2 udgør et nyt spring eller en mindre forbedring. I hans egen erfaring har modellen hjulpet med at løse vanskelige problemer og gennemføre mange ændringer i hans software.\n\nHans foreløbige vurdering er, at modellen kan bygge software ud fra en klar beskrivelse. Det er baseret på hans egne opgaver og viser ikke, at enhver beskrevet idé kan realiseres."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [],
       "betydning": "",
       "pointer": [],
+      "billedmotiv": "A strategy game board is being revised: a bold circular arrow carries a game piece from one square to another beside a solid tile bearing Claude’s warm terracotta-orange many-rayed starburst. The scene suggests Claude Opus 5.5 repeatedly testing and adjusting an existing game. Use thick, opaque forms, with the starburst prominent and front-facing.",
+      "billedmotiv_instruks": "d1187e1321978a7f9cf3",
+      "billede": "data/img/0eb2bbf2ec6a4700.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Simon Willison beskriver tre skift i sprogmodellers og kodeagenters evner på et år.",
+        "forbehold": "Uddraget beskriver ikke de tre skift eller belægget for dem.",
+        "emne": "sprogmodeller og kodeagenter"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-25T03:47:40.720547+00:00"
       },
-      "billedmotiv": "A strategy game board is being revised: a bold circular arrow carries a game piece from one square to another beside a solid tile bearing Claude’s warm terracotta-orange many-rayed starburst. The scene suggests Claude Opus 5.5 repeatedly testing and adjusting an existing game. Use thick, opaque forms, with the starburst prominent and front-facing.",
-      "billedmotiv_instruks": "d1187e1321978a7f9cf3",
-      "billede": "data/img/0eb2bbf2ec6a4700.webp",
+      "prio": 4,
       "side": "artikel/7caad847a5890e35.html"
     },
     {
@@ -85336,6 +85081,37 @@
       "eget_foerst_set": "2026-11-25T03:43:33.973979+00:00",
       "rubrik": "Maple får millioner til privat AI-agent",
       "resume_da": "En ny computerapp kan arbejde med filer og styre browseren. Finansieringen skal bruges på en agent, der kan arbejde, mens computeren er slukket.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Ny app kan styre computeren",
+          "tekst": "Maples nye app til computeren, Maple Work, kan styre brugerens computer og browser og arbejde med filer og andre apps. Virksomheden har samtidig hentet 5,3 millioner dollar til at udvikle en AI-agent, der skal arbejde i skyen.\n\nDen planlagte agent skal kunne fortsætte sit arbejde, når brugerens computer er slukket. Maple har også en chatapp, hvor brugerne kan stille spørgsmål til forskellige AI-modeller og få svar."
+        },
+        {
+          "overskrift": "Data låses før afsendelse",
+          "tekst": "Maple forsøger at bygge sine produkter, så virksomheden ikke selv kan læse brugernes data. Ifølge direktør og medstifter Mark Suman krypteres data på brugerens enhed med en adgangskode, som kun brugeren kender.\n\nData sendes derefter til et beskyttet område på en server, hvor de dekrypteres og behandles af AI-modellen. Svaret krypteres igen, før det sendes tilbage. Suman siger, at Maple ikke har adgang til de ukrypterede data.\n\nMaple bruger åben kildekode, som andre kan undersøge. Ifølge Suman kan man også kontrollere den kode, der kører på serverne, frem for alene at stole på virksomhedens løfte."
+        },
+        {
+          "overskrift": "Andre AI-apps får udvalgte oplysninger",
+          "tekst": "I Maple Work kan brugeren forbinde tjenester som Gmail og kalenderen. Appen kan også sætte en mindre AI-agent til at arbejde i en anden AI-app, eksempelvis Claude eller Codex.\n\nTanken er, at den anden app kun får de oplysninger, den skal bruge til opgaven, frem for alle brugerens informationer. Maple planlægger desuden pilotprojekter for større virksomheder i 2027 og er i gang med sikkerhedsgennemgange."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "20–200 dollar om måneden",
+          "label": "Maples abonnementer: Pro koster 20 dollar, Max 100 dollar og Max Plus 200 dollar."
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Epic Ventures ledte investeringsrunden, hvor også Draper Associates, Planetary VC og Epoch VC deltog."
+      ],
+      "betydning": "Maples tilgang giver brugere mulighed for at kontrollere dele af beskyttelsen, men den planlagte skybaserede agent er endnu ikke lanceret.",
+      "pointer": [],
+      "billedmotiv": "A locked file passes from a compact computer toward a solid cloud containing a simple task gear, while the computer’s power button is visibly off. This conceptual scene represents Maple’s planned private cloud agent continuing work when the computer is shut down, not a released feature. Use bold, opaque shapes and clearly separated contours.",
+      "billedmotiv_instruks": "e35fb812e578529245ee",
+      "billede": "data/img/188f25c9086d6092.webp",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -85352,43 +85128,12 @@
         "emne": "maple"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Ny app kan styre computeren",
-          "tekst": "Maples nye app til computeren, Maple Work, kan styre brugerens computer og browser og arbejde med filer og andre apps. Virksomheden har samtidig hentet 5,3 millioner dollar til at udvikle en AI-agent, der skal arbejde i skyen.\n\nDen planlagte agent skal kunne fortsætte sit arbejde, når brugerens computer er slukket. Maple har også en chatapp, hvor brugerne kan stille spørgsmål til forskellige AI-modeller og få svar."
-        },
-        {
-          "overskrift": "Data låses før afsendelse",
-          "tekst": "Maple forsøger at bygge sine produkter, så virksomheden ikke selv kan læse brugernes data. Ifølge direktør og medstifter Mark Suman krypteres data på brugerens enhed med en adgangskode, som kun brugeren kender.\n\nData sendes derefter til et beskyttet område på en server, hvor de dekrypteres og behandles af AI-modellen. Svaret krypteres igen, før det sendes tilbage. Suman siger, at Maple ikke har adgang til de ukrypterede data.\n\nMaple bruger åben kildekode, som andre kan undersøge. Ifølge Suman kan man også kontrollere den kode, der kører på serverne, frem for alene at stole på virksomhedens løfte."
-        },
-        {
-          "overskrift": "Andre AI-apps får udvalgte oplysninger",
-          "tekst": "I Maple Work kan brugeren forbinde tjenester som Gmail og kalenderen. Appen kan også sætte en mindre AI-agent til at arbejde i en anden AI-app, eksempelvis Claude eller Codex.\n\nTanken er, at den anden app kun får de oplysninger, den skal bruge til opgaven, frem for alle brugerens informationer. Maple planlægger desuden pilotprojekter for større virksomheder i 2027 og er i gang med sikkerhedsgennemgange."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "20–200 dollar om måneden",
-          "label": "Maples abonnementer: Pro koster 20 dollar, Max 100 dollar og Max Plus 200 dollar."
-        }
-      ],
-      "detaljer": [
-        "Epic Ventures ledte investeringsrunden, hvor også Draper Associates, Planetary VC og Epoch VC deltog."
-      ],
-      "betydning": "Maples tilgang giver brugere mulighed for at kontrollere dele af beskyttelsen, men den planlagte skybaserede agent er endnu ikke lanceret.",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-25T03:48:01.866437+00:00"
       },
-      "billedmotiv": "A locked file passes from a compact computer toward a solid cloud containing a simple task gear, while the computer’s power button is visibly off. This conceptual scene represents Maple’s planned private cloud agent continuing work when the computer is shut down, not a released feature. Use bold, opaque shapes and clearly separated contours.",
-      "billedmotiv_instruks": "e35fb812e578529245ee",
-      "billede": "data/img/188f25c9086d6092.webp",
+      "prio": 4,
       "side": "artikel/f2826368332a3f31.html"
     },
     {
@@ -85402,6 +85147,25 @@
       "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
       "rubrik": "Google Gemini skal møde Warriors-fans på storskærmen",
       "resume_da": "En udvidet aftale bringer også Googles AI-værktøj ind i Golden States arbejde med forretning og basketball.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Fans får interaktive funktioner",
+          "tekst": "Google Gemini skal blive en del af kampoplevelsen for Golden State Warriors og Golden State Valkyries. Ifølge Google vil fans møde interaktive funktioner på videoskærme i Chase Center og på digitale kanaler, når de følger med hjemmefra.\n\nGemini er Googles AI-værktøj. Google beskriver aftalen som et udvidet partnerskab med Golden State, men fortæller ikke nærmere, hvad fans skal kunne gøre med funktionerne, eller hvornår de bliver tilgængelige.\n\nAftalen omfatter både basketballholdene og Chase Center. Valkyries vandt WNBA-mesterskabet i 2026."
+        },
+        {
+          "overskrift": "Organisationen bygger egne AI-hjælpere",
+          "tekst": "Bag kulisserne tager Golden State Gemini til erhvervsbrug i brug. Organisationen vil ifølge Google bygge tilpassede AI-agenter, altså AI-hjælpere til bestemte opgaver, som skal hjælpe medarbejdere inden for både forretning og basketball.\n\nGoogle oplyser ikke, hvilke konkrete opgaver hjælperne skal løse, eller hvilke resultater de har skabt.\n\nGoogle har været stiftende partner for Chase Center siden 2019. Golden State har tidligere brugt Googles generative AI-værktøjer i sit arbejde, men kilden siger ikke, at det var Gemini."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "",
+      "pointer": [],
+      "billedmotiv": "A basketball sits beside a bold arena-style video board displaying the concave four-point Google Gemini spark in its blue, red, yellow and green gradient. A solid interaction cursor points toward the board, suggesting the planned fan experience without specifying undisclosed features. Make the Gemini mark large and front-facing; use thick, opaque, clearly separated forms.",
+      "billedmotiv_instruks": "9d01d40c9b191ff5c37d",
+      "billede": "data/img/23a21850c96b603e.webp",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -85419,31 +85183,12 @@
         "emne": "google og golden state"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Fans får interaktive funktioner",
-          "tekst": "Google Gemini skal blive en del af kampoplevelsen for Golden State Warriors og Golden State Valkyries. Ifølge Google vil fans møde interaktive funktioner på videoskærme i Chase Center og på digitale kanaler, når de følger med hjemmefra.\n\nGemini er Googles AI-værktøj. Google beskriver aftalen som et udvidet partnerskab med Golden State, men fortæller ikke nærmere, hvad fans skal kunne gøre med funktionerne, eller hvornår de bliver tilgængelige.\n\nAftalen omfatter både basketballholdene og Chase Center. Valkyries vandt WNBA-mesterskabet i 2026."
-        },
-        {
-          "overskrift": "Organisationen bygger egne AI-hjælpere",
-          "tekst": "Bag kulisserne tager Golden State Gemini til erhvervsbrug i brug. Organisationen vil ifølge Google bygge tilpassede AI-agenter, altså AI-hjælpere til bestemte opgaver, som skal hjælpe medarbejdere inden for både forretning og basketball.\n\nGoogle oplyser ikke, hvilke konkrete opgaver hjælperne skal løse, eller hvilke resultater de har skabt.\n\nGoogle har været stiftende partner for Chase Center siden 2019. Golden State har tidligere brugt Googles generative AI-værktøjer i sit arbejde, men kilden siger ikke, at det var Gemini."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [],
-      "betydning": "",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-25T03:48:10.391420+00:00"
       },
-      "billedmotiv": "A basketball sits beside a bold arena-style video board displaying the concave four-point Google Gemini spark in its blue, red, yellow and green gradient. A solid interaction cursor points toward the board, suggesting the planned fan experience without specifying undisclosed features. Make the Gemini mark large and front-facing; use thick, opaque, clearly separated forms.",
-      "billedmotiv_instruks": "9d01d40c9b191ff5c37d",
-      "billede": "data/img/23a21850c96b603e.webp",
+      "prio": 4,
       "side": "artikel/3cb7380077d7e092.html"
     },
     {
@@ -85457,6 +85202,29 @@
       "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
       "rubrik": "Finchers nye film møder mistanke om AI",
       "resume_da": "Tidlige visninger af The Further Mis-Adventures of Cliff Booth har udløst kritik af billederne, men Netflix har hverken be- eller afkræftet brug af AI.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Tilskuere reagerer på filmens billeder",
+          "tekst": "Efter tidlige kritikervisninger af David Finchers The Further Mis-Adventures of Cliff Booth har flere tilskuere hævdet, at filmen bruger AI-skabte billeder. De peger på billeder, som efter deres mening ser unaturlige og usammenhængende ud.\n\nFilmen har Brad Pitt i hovedrollen og er en fortsættelse af Once Upon a Time in Hollywood. Ifølge The Verge var instruktøren og YouTuberen Patrick Tomasso blandt de mest markante kritikere og mente også at kunne se AI-skabt materiale i trailere.\n\nAndre kritikere har været glade for filmen og foreslået en anden forklaring: at de omdiskuterede billeder kan være dårlige CGI-effekter, altså billeder skabt eller ændret digitalt."
+        },
+        {
+          "overskrift": "Traileren giver ikke et klart svar",
+          "tekst": "En trailer viser ifølge The Verge blandt andet billeder, hvor mennesker ser ud til at sidde bagvendt i en hestevogn. Det har bidraget til mistanken, men avisen understreger, at det er svært at afgøre ud fra traileren, om AI er brugt.\n\nNetflix, som har været stærkt involveret i produktionen, har hverken bekræftet eller afkræftet, om filmen bruger AI. Mistanken er derfor ikke dokumentation for, hvordan billederne er lavet."
+        },
+        {
+          "overskrift": "Netflix har investeret i filmværktøj",
+          "tekst": "Spekulationerne kommer, efter at Netflix har købt Ben Afflecks virksomhed InterPositive. Virksomhedens AI-modeller er udviklet til at skabe materiale ud fra optagelser fra en filmproduktion, frem for at lave billeder direkte fra tekst.\n\nIfølge Netflix skal værktøjerne blandt andet gøre det lettere at ændre lys eller fjerne uønskede elementer i baggrunden. Købet dokumenterer dog ikke, at værktøjerne er brugt i Finchers film.\n\nFincher har desuden sagt til Los Angeles Times, at han ikke frygter det ukendte, da han blev spurgt om AI. Hans holdning fortæller heller ikke i sig selv, hvilke værktøjer filmen bruger."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "",
+      "pointer": [],
+      "billedmotiv": "A filmstrip contains an ambiguous horse-drawn carriage image, examined through a large solid question mark. The question mark represents the unresolved suspicion that images in Fincher’s new film were AI-generated, rather than a confirmed finding. Render the carriage as a simple silhouette within the opaque filmstrip, with thick edges and clearly separated shapes.",
+      "billedmotiv_instruks": "8685aaf4d2f72753c177",
+      "billede": "data/img/fc6df7cf9a063acf.webp",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -85474,36 +85242,344 @@
         "emne": "ai i film"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-25T03:48:26.396568+00:00"
+      },
       "prio": 3,
+      "side": "artikel/8c13239162a0ffad.html"
+    },
+    {
+      "titel": "Tidal announces ban on AI-generated music; 27 million tracks will be deleted",
+      "link": "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/",
+      "resume": "AI songs account for 6.3 percent of Tidal's catalog, but it's about to be zero.",
+      "dato": "2026-11-24T17:34:34+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "rubrik": "Tidal vil slette 27 millioner AI-numre",
+      "resume_da": "Musiktjenesten forbyder numre, der er skabt helt med AI. Kunstnere må fortsat bruge AI-værktøjer, hvis det færdige nummer også indeholder menneskelige elementer.",
+      "brief": "",
       "sektioner": [
         {
-          "overskrift": "Tilskuere reagerer på filmens billeder",
-          "tekst": "Efter tidlige kritikervisninger af David Finchers The Further Mis-Adventures of Cliff Booth har flere tilskuere hævdet, at filmen bruger AI-skabte billeder. De peger på billeder, som efter deres mening ser unaturlige og usammenhængende ud.\n\nFilmen har Brad Pitt i hovedrollen og er en fortsættelse af Once Upon a Time in Hollywood. Ifølge The Verge var instruktøren og YouTuberen Patrick Tomasso blandt de mest markante kritikere og mente også at kunne se AI-skabt materiale i trailere.\n\nAndre kritikere har været glade for filmen og foreslået en anden forklaring: at de omdiskuterede billeder kan være dårlige CGI-effekter, altså billeder skabt eller ændret digitalt."
+          "overskrift": "Forbuddet rammer en del af kataloget",
+          "tekst": "Den 9. december vil Tidal slette 27 millioner numre, som tjenesten har mærket som AI-musik. Det svarer til 6,3 procent af musikkataloget. Samtidig vil Tidal stoppe nye uploads af musik, der er skabt helt med AI.\n\nSiden juli 2026 har Tidal mærket numrene og forhindret dem i at tjene penge. Ifølge tjenesten har langt de fleste mærkede numre slet ikke været afspillet de seneste 90 dage."
         },
         {
-          "overskrift": "Traileren giver ikke et klart svar",
-          "tekst": "En trailer viser ifølge The Verge blandt andet billeder, hvor mennesker ser ud til at sidde bagvendt i en hestevogn. Det har bidraget til mistanken, men avisen understreger, at det er svært at afgøre ud fra traileren, om AI er brugt.\n\nNetflix, som har været stærkt involveret i produktionen, har hverken bekræftet eller afkræftet, om filmen bruger AI. Mistanken er derfor ikke dokumentation for, hvordan billederne er lavet."
+          "overskrift": "Tidal vil beskytte kunstnernes betaling",
+          "tekst": "Tidal begrunder forbuddet med, at AI-musik kan vildlede lyttere og lede betaling for afspilninger væk fra kunstnerne. Tjenesten peger også på personer, der forsøger at få betaling ved at udgive sig for at være andre kunstnere.\n\nTidal har allerede fjernet omkring 66.000 numre for at efterligne kunstnere. Det var også forbudt under den tidligere AI-politik."
         },
         {
-          "overskrift": "Netflix har investeret i filmværktøj",
-          "tekst": "Spekulationerne kommer, efter at Netflix har købt Ben Afflecks virksomhed InterPositive. Virksomhedens AI-modeller er udviklet til at skabe materiale ud fra optagelser fra en filmproduktion, frem for at lave billeder direkte fra tekst.\n\nIfølge Netflix skal værktøjerne blandt andet gøre det lettere at ændre lys eller fjerne uønskede elementer i baggrunden. Købet dokumenterer dog ikke, at værktøjerne er brugt i Finchers film.\n\nFincher har desuden sagt til Los Angeles Times, at han ikke frygter det ukendte, da han blev spurgt om AI. Hans holdning fortæller heller ikke i sig selv, hvilke værktøjer filmen bruger."
+          "overskrift": "Det er uklart, hvordan musikken opdages",
+          "tekst": "Tidal har ikke forklaret, hvordan tjenesten genkender AI-musik. Ifølge artiklen i Ars Technica kommer 94 procent af Tidals AI-numre fra Suno, et værktøj til at skabe musik med AI, som har indført digitale vandmærker.\n\nVandmærker er indlejrede kendetegn, der kan bruges til at identificere indhold. Men ikke alle musikværktøjer bruger dem, så de kan ikke alene afsløre al AI-musik."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "43 procent",
+          "label": "Andel af nye uploads til Tidal, der var helt AI-genererede, over de seneste 90 dage"
+        },
+        {
+          "tal": "60 procent",
+          "label": "Andel af nye uploads til Tidal, der var helt AI-genererede, den 6. november"
+        },
+        {
+          "tal": "96 procent",
+          "label": "Andel af Tidals AI-mærkede numre uden afspilninger de seneste 90 dage"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Spotify, YouTube Music, Deezer og Apple Music tillader ifølge kilden AI-musik med mærkning."
+      ],
+      "betydning": "Forbuddet fjerner en stor mængde musik fra Tidal, men det er uklart, hvor effektivt tjenesten kan opdage nye AI-numre.",
+      "pointer": [],
+      "billedmotiv": "A stack of music records bearing Tidal’s black geometric diamond-mosaic mark is being swept into a solid deletion bin, representing the removal of tracks tagged as entirely AI-generated. One contrasting record remains outside the bin, suggesting music with human elements can stay. Use thick, opaque shapes and clearly separated contours; make the Tidal mark prominent and front-facing.",
+      "billedmotiv_instruks": "43445265e5540633a327",
+      "billede": "data/img/e548301e56826d1f.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Tidal vil forbyde fuldt AI-genereret musik og slette 27 millioner numre fra sit katalog.",
+        "forbehold": "Materialet forklarer ikke, hvordan Tidal identificerer numrene.",
+        "emne": "tidal"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-25T03:46:23.159685+00:00"
+      },
+      "prio": 6,
+      "side": "artikel/fe54c6aaa8824096.html"
+    },
+    {
+      "titel": "Tidal will start banning AI-generated music next month",
+      "link": "https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban",
+      "resume": "Tidal is officially banning AI-generated music on December 9th. As a result of this change, Tidal will delete around 29 million AI-generated songs and reject an estimated 80,000 to 85,000 tracks per day, according to Tidal music lead Robert Andersen. The move comes just months after Tidal began labeling and demonetizing tracks identified as 100 […]",
+      "dato": "2026-11-24T12:17:09-05:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "rubrik": "Tidal vil fjerne AI-genereret musik",
+      "resume_da": "Musiktjenesten anslår, at 29 millioner sange skal slettes, og vil afvise nye numre, der udelukkende er skabt med AI.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Tidal vil fra 9. december forbyde AI-genereret musik og ifølge sin musikchef slette omkring 29 millioner sange.",
+        "forbehold": "Uddraget beskriver ikke, hvordan Tidal identificerer AI-genereret musik.",
+        "emne": "tidal"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Millioner af sange skal væk",
+          "tekst": "Musikstreamingtjenesten Tidal vil fra 9. december forbyde musik, der udelukkende er genereret med AI. Tjenesten forventer at slette omkring 29 millioner sange og afvise 80.000 til 85.000 nye numre om dagen.\n\nFor få måneder siden begyndte Tidal at mærke sange, som tjenesten identificerede som 100 procent AI-genererede, og fjerne muligheden for at tjene penge på dem. Nu vil Tidal altså fjerne dem helt."
+        },
+        {
+          "overskrift": "Sådan finder Tidal numrene",
+          "tekst": "Tidal vil forbyde musikdistributører at indsende AI-genererede sange. Til at finde dem bruger tjenesten Ircam Amplify, et værktøj til at opdage AI-musik, og kontrollerer oplysningerne, der følger med numrene.\n\nGrænsen går ved musik, hvor resultatet udelukkende kommer fra AI. Ifølge Tidal bliver sange ikke forbudt, blot fordi musikeren har brugt AI-værktøjer som hjælp."
+        },
+        {
+          "overskrift": "Tidal peger på store mængder",
+          "tekst": "Ifølge Tidals musikchef Robert Andersen var 43 procent af de numre, der blev leveret til tjenesten i de seneste 90 dage, AI-musik. Han siger også, at 96 procent af alle AI-genererede sange slet ikke bliver afspillet.\n\nTidal fremhæver desuden musik, der er skabt med AI for at vildlede lyttere og udgive sig for at være bestemte kunstnere. Ifølge tjenesten kan det flytte afspilninger og musikindtægter væk fra kunstnerne.\n\nAndre tjenester vælger forskellige løsninger. Spotify har fjernet 50 millioner AI- og spamnumre fra sine anbefalinger over det seneste år, mens Deezer giver brugerne mulighed for at filtrere AI-musik fra."
         }
       ],
       "brief": "",
       "figurer": [],
       "noegletal": [],
       "detaljer": [],
-      "betydning": "",
+      "betydning": "Tidal går fra at mærke og fratage identificeret AI-musik indtægter til at slette den og afvise nye indsendelser.",
       "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
-        "kontrolleret": "2026-11-25T03:48:26.396568+00:00"
+        "kontrolleret": "2026-11-25T14:56:22.969822+00:00"
       },
-      "billedmotiv": "A filmstrip contains an ambiguous horse-drawn carriage image, examined through a large solid question mark. The question mark represents the unresolved suspicion that images in Fincher’s new film were AI-generated, rather than a confirmed finding. Render the carriage as a simple silhouette within the opaque filmstrip, with thick edges and clearly separated shapes.",
-      "billedmotiv_instruks": "8685aaf4d2f72753c177",
-      "billede": "data/img/fc6df7cf9a063acf.webp",
-      "side": "artikel/8c13239162a0ffad.html"
+      "billede": "data/img/530ce8efadb2a8e4.webp",
+      "side": "artikel/31bde7b6ca68e4a6.html"
+    },
+    {
+      "titel": "Tidal to ban and remove millions of AI-generated tracks as AI slop inundates music streaming",
+      "link": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/",
+      "resume": "The company said it will still accept songs that were made with AI assistance, but not fully generated.",
+      "dato": "2026-11-24T16:46:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
+      "rubrik": "Tidal vil fjerne millioner af AI-sange",
+      "resume_da": "Musiktjenesten begynder fjernelsen 9. december. Sange, der er lavet med hjælp fra AI, vil fortsat være tilladt.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Tidal vil fjerne fuldt AI-genererede numre, men fortsat acceptere musik skabt med AI-hjælp.",
+        "forbehold": "Materialet forklarer ikke, hvordan Tidal skelner mellem de to typer.",
+        "emne": "tidal"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Over 29 millioner sange skal væk",
+          "tekst": "Tidal vil begynde at fjerne sange, der udelukkende er skabt med AI, den 9. december 2026. Ifølge musiktjenesten vil mere end 29 millioner sange være slettet fra platformen ved årets udgang.\n\nBeslutningen kommer, efter at AI-genereret musik er kommet til at fylde en stor del af de nye sange, der bliver sendt til tjenesten. Tidal siger, at musikken risikerer at skubbe andre kunstnere i baggrunden."
+        },
+        {
+          "overskrift": "AI må stadig hjælpe kunstnere",
+          "tekst": "Tidal vil fortsat acceptere musik, hvor AI har hjulpet til, men forbyder sange, der er lavet helt med AI. Forbuddet gælder også de virksomheder, som leverer musik til tjenesten på kunstnernes vegne.\n\nTidal vil afvise sange, hvis deres metadata – de oplysninger, der følger med musikken – angiver, at de er fuldt AI-genererede. Tjenesten forventer at afvise omkring 80.000–85.000 sange om dagen under de nye regler.\n\nI juni fratog Tidal allerede fuldt AI-genererede sange muligheden for at tjene penge. Det var ikke nok til at bremse strømmen af nye sange, siger Tidal Musics leder, Robert Anderson."
+        },
+        {
+          "overskrift": "De fleste AI-sange bliver ikke afspillet",
+          "tekst": "Tidal oplyser, at tjenesten har 27 millioner fuldt AI-genererede sange, svarende til 6,3 procent af sangene på platformen. Af dem er 96 procent aldrig blevet afspillet.\n\nAndre musiktjenester har valgt forskellige løsninger. Ifølge TechCrunch vil Deezer indføre et filter for AI-musik, mens Spotify og YouTube Music har valgt at mærke musikken frem for at indføre filtre eller strengere foranstaltninger."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "Over 43 %",
+          "label": "Andel af sangene uploadet til Tidal over de seneste 90 dage, som ifølge tjenesten var AI-genererede."
+        }
+      ],
+      "detaljer": [],
+      "betydning": "Tidal regner med at fjerne mere end 29 millioner sange inden årets udgang, men musik lavet med delvis AI-hjælp kan stadig findes på tjenesten.",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-25T03:46:58.837661+00:00"
+      },
+      "historie_dato": "2026-11-24T16:46:00+00:00",
+      "side": "artikel/70e4e668b4449011.html",
+      "billedmotiv": "A thick stack of music-record discs emerges from a sorting gate bearing Tidal’s recognizable black geometric diamond-cluster emblem. One disc is diverted out of the stack, while another remains inside, illustrating the removal of fully AI-generated tracks while partially AI-assisted music can stay. Use solid, opaque forms with crisp edges and a large, front-facing emblem.",
+      "billedmotiv_instruks": "407c46cec36fa8ad1e2d",
+      "billede": "data/img/f9acaf42b48a8386.webp"
+    },
+    {
+      "titel": "Amazon and Meta reportedly in talks to lift blockade on AI agent Muse",
+      "link": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
+      "resume": "Amazon and Meta are discussing a potential deal that would end a two-month-long blockade of Muse.",
+      "dato": "2026-11-25T14:10:18+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-11-25T14:52:19.913653+00:00",
+      "eget_foerst_set": "2026-11-25T14:52:19.913653+00:00",
+      "rubrik": "Amazon og Meta forhandler om Muse-adgang",
+      "resume_da": "En mulig aftale kan give Metas shoppingagent direkte adgang til Amazons butik. For to måneder siden fik brugerne fejlmeddelelser, når de forsøgte at betale.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Amazon og Meta skal ifølge TechCrunch drøfte en aftale om at ophæve blokeringen af Muse.",
+        "forbehold": "En aftale eller ophævelse af blokeringen er ikke bekræftet.",
+        "emne": "amazon og meta"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Fra fejlmeddelelse til mulige forhandlinger",
+          "tekst": "Amazon og Meta har efter flere forhandlingsrunder drøftet en aftale, der kan give Metas AI-agent Muse direkte adgang til Amazons netbutik. Det skriver Fortune ifølge TechCrunch med henvisning til personer med kendskab til forhandlingerne.\n\nMuse er en AI-agent, der kan hjælpe brugere med at handle. For to måneder siden opdagede brugere, at de ikke kunne gennemføre køb på Amazon via Muse. I stedet fik de en fejlmeddelelse ved betalingen."
+        },
+        {
+          "overskrift": "Søgeresultater og annoncer mangler afklaring",
+          "tekst": "En aftale er endnu ikke på plads. Ifølge Fortunes kilder forhandler virksomhederne stadig om, hvordan søgeresultater skal vises, og hvordan annoncer skal håndteres.\n\nDet sidste spørgsmål berører en vigtig del af Amazons forretning. Virksomheden er bekymret for, hvordan shoppingagenter fra andre virksomheder kan påvirke dens annonceforretning, skriver TechCrunch."
+        },
+        {
+          "overskrift": "Topchefer skal godkende en aftale",
+          "tekst": "Ledere er også bekymrede for, at shoppingagenter fra andre virksomheder kan svække Amazons direkte forhold til kunderne, fortæller personer med kendskab til sagen til Fortune.\n\nAmazons topchef Andy Jassy sagde i oktober, at kun få kunder købte varer gennem eksterne shoppingagenter. En eventuel aftale om Muse skal ifølge Fortune godkendes af topcheferne i både Amazon og Meta.\n\nIngen af virksomhederne havde svaret på TechCrunchs anmodninger om en kommentar."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [],
+      "betydning": "En aftale kan ændre, hvordan Muse-brugere får adgang til varer på Amazon, men vilkårene for søgeresultater og annoncer er endnu ikke afklaret.",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-25T14:56:43.208533+00:00"
+      },
+      "historie_dato": "2026-11-25T14:10:18+00:00",
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions",
+          "rubrik": "Amazon drøfter adgang for Metas Muse AI",
+          "resume_da": "Samtalerne kan føre til, at Metas indkøbsagent får adgang til Amazons markedsplads. Annoncer og produktanbefalinger er blandt stridspunkterne.",
+          "dato": "2026-11-25T09:12:33-05:00",
+          "foerst_set": "2026-11-25T14:52:19.913653+00:00"
+        }
+      ],
+      "billedmotiv": "A shopping bag bearing Meta’s blue infinity-loop symbol faces a partly opened storefront door marked with Amazon’s orange smile-arrow. A thick wedge holds the door only slightly open, suggesting the proposed access for Meta’s Muse shopping agent rather than a completed deal. Both marks face forward and remain large and distinct. Use solid, opaque forms with crisp, separable edges.",
+      "billedmotiv_instruks": "19eaceba81ea2f3bd888",
+      "billedstatus": {
+        "status": "afvist_af_filter",
+        "signatur": "b2dde0eb02d11f6b"
+      },
+      "side": "artikel/0cb60670470dc60d.html"
+    },
+    {
+      "titel": "Has vibe coding made open source the new normal for synths?",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware",
+      "resume": "The emergence of powerful vibe-coding agents and tools like Reverse Engineer Anything has caused chaos in the music gear world, leaving companies scrambling to figure out how to respond. While some, like Roland, have remained silent for now, others have embraced the modding community. In the last several weeks, as it's become clear that no […]",
+      "dato": "2026-11-25T08:00:00-05:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-25T14:52:19.913653+00:00",
+      "eget_foerst_set": "2026-11-25T14:52:19.913653+00:00",
+      "rubrik": "Akai åbner instrumenter for AI-ændringer",
+      "resume_da": "Musikproducenter giver brugere adgang til at ændre instrumenternes software, mens andre advarer om, at ændringerne kan gøre udstyret ubrugeligt.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "AI-kodeværktøjer udfordrer ifølge artiklen producenter af musikudstyr, som reagerer forskelligt på brugernes ændringer.",
+        "forbehold": "Uddraget beskriver ikke konkrete ændringer eller deres omfang.",
+        "emne": "ai og musikudstyr"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Brugerne får adgang til indmaden",
+          "tekst": "Akai og moderselskabet inMusic vil give brugere mulighed for at ændre softwaren i musikudstyr som MPC, der bruges til at lave beats og arbejde med lydoptagelser.\n\nIfølge inMusics direktør Jack O’Donnell vil selskabet stille værktøjer og oplysninger om udstyrets indre funktioner til rådighed. Virksomheden har for nylig lanceret et udviklingssæt og vil også tilbyde produkter med åben kildekode, heriblandt den varslede MPC Sample Key.\n\nÅben kildekode betyder, at andre kan se og ændre den kode, softwaren er bygget af. Akai vil samtidig forsøge at give brugerne en nulstillingsknap, så de kan eksperimentere uden at miste det, de havde."
+        },
+        {
+          "overskrift": "En lille synthesizer satte gang i udviklingen",
+          "tekst": "En del af baggrunden er AI-værktøjer, som kan hjælpe brugere med at skrive og ændre kode. Når folk bruger AI på den måde, kaldes det ofte vibe coding.\n\nM-Vaves lommeformat-synthesizer FM-1 fik hurtigt over et dusin alternative versioner af sin firmware, den software, der styrer selve enheden. M-Vave svarede igen ved at frigive firmware med åben kildekode, som udviklere kan bygge videre på.\n\nFlere producenter følger efter. Erica Synths har frigivet kildekoden til trommemaskinen LXR-02, og Polyend har åbnet koden til sine Tracker-instrumenter, som bruges til at sammensætte musik. Behringer har annonceret flere produkter med åben kildekode, men deres lanceringsdatoer er uklare."
+        },
+        {
+          "overskrift": "Ændringer kan også ødelægge udstyr",
+          "tekst": "Ikke alle producenter byder ændringerne velkommen. Elektron har forbudt links til brugerændret firmware på sine officielle fora og advarer om, at ændringer kan gøre enheder ubrugelige, forhindre fremtidige opdateringer eller påvirke garantien.\n\nErica Synths’ grundlægger Ģirts Ozoliņš er også usikker på, hvilket grundlæggende problem vibe coding løser. Han ser dog en mulighed for at afprøve flere funktioner på ét instrument frem for at købe flere enheder."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [],
+      "betydning": "Åben kode kan give brugere flere måder at ændre deres musikudstyr på, men ændringerne kan også koste stabilitet og adgang til opdateringer.",
+      "pointer": [],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-11-25T14:57:11.782370+00:00"
+      },
+      "billedmotiv": "An Akai beat-making instrument bears the recognizable red Akai wordmark on its front, while a solid panel of code-shaped blocks slides out from its side for modification. A prominent reset button sits beside the exposed panel, suggesting a way back after experimentation. Build the instrument and panel as thick, opaque shapes with clean, clearly separated contours.",
+      "billedmotiv_instruks": "e9e6190c55801c11b42e",
+      "billedstatus": {
+        "status": "afvist_af_filter",
+        "signatur": "1d5f638715da26e2"
+      },
+      "side": "artikel/62d538fd46658027.html"
     }
   ]
 }

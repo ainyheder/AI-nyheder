@@ -1,10 +1,10 @@
 {
- "rubrik": "Nye modeller får flere evner – og nye grænser skal holde dem i skak",
- "indledning": "Ugens fremskridt spænder fra interaktive verdener til laboratorieforsøg, mens sikkerhed og finansiering sætter rammerne for udviklingen.",
+ "rubrik": "Nye modeller giver AI mere at arbejde med",
+ "indledning": "Perioden bød på nye modeller og mere selvstændige AI-værktøjer – men også eksempler på, hvorfor resultaterne kræver kontrol.",
  "historier": [
   {
-   "overskrift": "Google lancerer Gemini 4 Neon",
-   "tekst": "Gemini 4 Neon kan ifølge Google arbejde med blandt andet dokumenter, lyd, video og kode over flere trin. Modellen rulles ud til udviklere, virksomheder og betalende abonnenter. Googles test peger på stærke resultater, men nogle afhænger også af det miljø, modellen arbejder i.",
+   "overskrift": "Google lancerer Gemini 4 Neon til opgaver over flere trin",
+   "tekst": "Gemini 4 Neon kan ifølge Google kombinere oplysninger fra blandt andet dokumenter, regneark, lyd og video og bruge værktøjer undervejs. Google udruller modellen til udviklere, virksomheder og betalende abonnenter. Selskabets testresultater afhænger blandt andet af det miljø, modellen arbejder i.",
    "link": "https://deepmind.google/blog/introducing-gemini-4-neon/",
    "kategori": "Lanceringer",
    "billede": "",
@@ -33,8 +33,8 @@
    "artikel_signatur": "9c9bfba7483b8919f034b7b884ffc4b05878c90c2cd2769599f680eeeaffdad2"
   },
   {
-   "overskrift": "Genie 4 ændrer verdener, mens de udforskes",
-   "tekst": "Google åbner Genie 4 for udvalgte AI Ultra-abonnenter. Brugere kan med tekst ændre en interaktiv verden undervejs og høre lyd, der tilpasses scenen. Google peger samtidig på problemer med blandt andet forsinkelse, lydens præcision og sammenhængen i længere forløb.",
+   "overskrift": "Genie 4 lader brugere ændre digitale verdener undervejs",
+   "tekst": "Googles Genie 4 kan skabe interaktive verdener, som brugeren kan ændre med tekst, mens de udforskes. Ifølge Google kombinerer modellen billeder og scenetilpasset lyd i realtid. Adgangen er foreløbig begrænset til udvalgte Google AI Ultra-abonnenter, og Google peger på problemer med blandt andet forsinkelse.",
    "link": "https://deepmind.google/blog/genie-4-is-now-available/",
    "kategori": "Lanceringer",
    "billede": "data/img/46a2ff35dc251e20.webp",
@@ -55,8 +55,43 @@
    "artikel_signatur": "37316a077dc42a2b895a4c34bf0ea508d70b43d4bffddfe47cd6a1205366276d"
   },
   {
-   "overskrift": "GPT-6.2 foreslår proteiner til laboratorieforsøg",
-   "tekst": "GPT-6.2 designede små proteinformer, som forskere fremstillede og testede sammen med specialiserede biologimodeller. For hvert af fem målproteiner viste mindst ét design tegn på binding. Forsøgene brugte en endnu ikke frigivet modelversion og viser ikke, at proteinerne er klar til en bestemt anvendelse.",
+   "overskrift": "Claude Ship kan godkende rutineændringer i kode",
+   "tekst": "Anthropics Claude Ship kan gennemgå, rette og efter udviklerholdets regler godkende ændringer i programkode. Holdet bestemmer, hvilke beslutninger mennesker skal tage. Værktøjerne rulles ud til Team- og Enterprise-kunder på GitHub; de nye funktioner til rettelse og godkendelse er stadig i beta.",
+   "link": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
+   "kategori": "Lanceringer",
+   "billede": "data/img/8a0aa80b86236e39.webp",
+   "dato": "2026-11-23T22:05:50+00:00",
+   "andre": [
+    {
+     "kilde": "The Verge AI",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+     "rubrik": "Claude Ship kan rette og godkende kode",
+     "resume_da": "Anthropics nye værktøjer kan gribe ind, når et kodeforslag støder på problemer, og godkende rutineændringer, hvis virksomhedens regler tillader det.",
+     "dato": "2026-11-23T15:00:00-05:00",
+     "foerst_set": "2026-11-23T20:30:41.511519+00:00"
+    }
+   ],
+   "titel": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
+   "rubrik": "Anthropic lader Claude godkende kodeændringer",
+   "resume_da": "Udviklere kan opstille regler for, hvornår en AI-agent må godkende ændringer, og hvornår et menneske skal tage stilling.",
+   "artikel_signatur": "76cb8bed39d1b672ab94c2b6443b2c7a55b45178ab32afc7b896b543242e6346"
+  },
+  {
+   "overskrift": "AI-agenter fandt ifølge Amazon et ukendt sikkerhedshul",
+   "tekst": "Hackere brugte AI-værktøjet Cairn til at undersøge servere og skaffe adgang, oplyser Amazon. På en universitetsserver fandt og udnyttede agenterne ifølge selskabet en hidtil ukendt sårbarhed. Andre angreb mislykkedes, og hackerne gav også agenterne hjælp ved en senere session.",
+   "link": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
+   "kategori": "Samfund & etik",
+   "billede": "data/img/d8a21a44ed18b5e9.webp",
+   "dato": "2026-11-24T12:30:05+00:00",
+   "andre": [],
+   "titel": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
+   "rubrik": "Amazon: AI-agenter fandt ukendt sikkerhedshul",
+   "resume_da": "Hackere gav AI-agenter en liste over servere og bad dem skaffe adgang. På en universitetsserver fandt og udnyttede agenterne en hidtil ukendt sårbarhed.",
+   "artikel_signatur": "c0df00c524e1e81a245bb09768588e9aabca383c08a28fe0c84f811693ab2930"
+  },
+  {
+   "overskrift": "GPT-6.2 foreslog proteiner, der viste tegn på binding",
+   "tekst": "I forskning fra OpenAI og Onava foreslog en endnu ikke frigivet version af GPT-6.2 former til små proteiner. Laboratorieforsøg viste tegn på binding til hvert af fem målproteiner. Specialiserede modeller hjalp med at gøre forslagene klar til test, som ikke viste en færdig anvendelse.",
    "link": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
    "kategori": "Forskning",
    "billede": "",
@@ -68,84 +103,77 @@
    "artikel_signatur": "a2ffd9140f9aa74ec4c107ae0ddf908481be8ca66ae17fad635c93ef2b7cccad"
   },
   {
-   "overskrift": "OpenAI strammer kontrollen med modeller under udvikling",
-   "tekst": "Efter sikkerhedsbrud overvåger OpenAI sine avancerede modeller tættere og har indført et system, der kan sætte deres arbejde på pause. Modeller under forskning skal holdes væk fra internettet, men OpenAI understreger, at selskabet ikke kan garantere, at isolationen altid holder.",
-   "link": "https://openai.com/index/managing-frontier-ai-risk",
-   "kategori": "Samfund & etik",
-   "billede": "data/img/ab0351c599983a35.webp",
-   "dato": "2026-11-18T06:00:00+00:00",
-   "andre": [],
-   "titel": "Managing frontier AI risk: From training to deployment",
-   "rubrik": "OpenAI overvåger modeller tættere efter sikkerhedsbrud",
-   "resume_da": "Modeller under udvikling skal holdes væk fra internettet. Et nyt system kan stoppe deres arbejde, hvis overvågningen opdager et brud.",
-   "artikel_signatur": "e8f96810c7c5cd9ad9b9db72df78e76b68f89461e60352fcc4c71ce2fdb379a7"
-  },
-  {
-   "overskrift": "Amazon beskriver AI-angreb på universitetsserver",
-   "tekst": "AI-agenter fandt og udnyttede ifølge Amazon et hidtil ukendt sikkerhedshul på en universitetsserver. Angriberne gav dem en liste over mål og greb senere selv ind. Agenterne skaffede sig adgang med administratorrettigheder, men andre angrebsforsøg, som Amazon beskriver, mislykkedes.",
-   "link": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
-   "kategori": "Samfund & etik",
-   "billede": "",
-   "dato": "2026-11-24T12:30:05+00:00",
-   "andre": [],
-   "titel": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
-   "rubrik": "Amazon: AI-agenter fandt ukendt sikkerhedshul",
-   "resume_da": "Hackere gav AI-agenter en liste over servere og bad dem skaffe adgang. På en universitetsserver fandt og udnyttede agenterne en hidtil ukendt sårbarhed.",
-   "artikel_signatur": "c0df00c524e1e81a245bb09768588e9aabca383c08a28fe0c84f811693ab2930"
-  },
-  {
-   "overskrift": "Anthropic afslutter stor børsnotering",
-   "tekst": "Anthropics aktier begyndte at handle på Nasdaq den 19. november. Børsnoteringen og et sideløbende direkte aktiesalg til syv teknologiselskaber indbragte ifølge Anthropic tilsammen cirka 119,5 milliarder dollar før omkostninger. Beløbet omfatter også aktier solgt af eksisterende ejere, hvis indtægter ikke gik til Anthropic.",
-   "link": "https://www.anthropic.com/news/ipo-close",
-   "kategori": "Penge & marked",
-   "billede": "data/img/1f50bb1b0ad0871b.webp",
-   "dato": "2026-11-20T00:00:00+00:00",
-   "andre": [],
-   "titel": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent private placement",
-   "rubrik": "Anthropic har afsluttet sin børsnotering",
-   "resume_da": "Aktierne handles nu på Nasdaq, mens syv teknologiselskaber samtidig har købt aktier direkte fra Anthropic.",
-   "artikel_signatur": "185e3f83fdfcc0ad22f05a2d2e4fb4d9279a4bf2fadc80274ebe7194beb3846d"
+   "overskrift": "Matematiker fremlægger muligt Riemann-bevis med Claude",
+   "tekst": "Levent Alpöge mener at have bevist den berømte Riemann-hypotese med hjælp fra Claude. Argumentet er skrevet i Lean, et sprog til formel matematisk kontrol. Matematikere har ifølge TechCrunch bekræftet, at Lean kan behandle koden, men resultatet er endnu ikke accepteret efter faglig gennemgang.",
+   "link": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
+   "kategori": "Forskning",
+   "billede": "data/img/b2f118e75f13301f.webp",
+   "dato": "2026-11-20T19:32:08+00:00",
+   "andre": [
+    {
+     "kilde": "Simon Willison AI",
+     "link": "https://simonwillison.net/2026/Nov/20/levent-alpoge/",
+     "rubrik": "Claude hjælper matematiker med muligt Riemann-bevis",
+     "resume_da": "Levent Alpöge mener at have løst et af matematikkens mest berømte problemer sammen med AI-modellen Claude. Beviset er endnu ikke uafhængigt verificeret.",
+     "dato": "2026-11-20T16:30:48+00:00",
+     "foerst_set": "2026-11-20T17:11:55.623291+00:00"
+    },
+    {
+     "kilde": "The Verge AI",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
+     "rubrik": "Anthropic-matematiker hævder at have løst Riemann-hypotesen",
+     "resume_da": "Levent Alpöge siger, at han brugte Claude til at bevise hypotesen. Beviset er endnu ikke verificeret.",
+     "dato": "2026-11-20 11:34:13-05:00",
+     "foerst_set": "2026-11-21T01:42:50.990268+00:00"
+    },
+    {
+     "kilde": "Ars Technica AI",
+     "link": "https://arstechnica.com/ai/2026/11/whats-going-on-with-the-riemann-hypothesis/",
+     "rubrik": "Claude har hjulpet med muligt Riemann-bevis",
+     "resume_da": "Matematikeren Levent Alpöge har annonceret et AI-assisteret bevis for en af matematikkens mest berømte hypoteser. Matematikere er stadig ved at gennemgå det.",
+     "dato": "2026-11-24T20:34:53+00:00",
+     "foerst_set": "2026-11-25T03:43:33.973979+00:00"
+    }
+   ],
+   "titel": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too",
+   "rubrik": "Claude hjalp matematiker med muligt Riemann-bevis",
+   "resume_da": "Levent Alpöges resultat kan omsættes i et program til matematisk kontrol, men forskere mangler stadig at forstå og gennemgå argumentet.",
+   "artikel_signatur": "8b30b38c0bfe8f45f8bd4404045b811d62d230a25b2bfdc4a8a7f1f9b0edd3c2"
   }
  ],
  "overblik": [
   {
-   "tekst": "AI får nye måder at arbejde på tværs af både medier og opgaver. Googles Gemini 4 Neon er lavet til længere forløb med dokumenter, kode og andre formater, mens Genie 4 lader brugeren ændre en digital verden under udforskningen. Neon er under udrulning til betalende brugere og udviklere; Genie 4 er foreløbig åbnet for udvalgte abonnenter.",
+   "tekst": "Google udvidede modellernes arbejdsfelt i to forskellige retninger. Gemini 4 Neon er lavet til at samle materiale som regneark, lyd og video og arbejde med værktøjer over flere trin. Genie 4 er derimod en model til interaktive verdener: Her kan brugeren ændre vejret eller tilføje en figur undervejs og høre lyd, der følger scenen. Neon udrulles til betalende brugere og udviklere; Genie 4 er foreløbig begrænset til udvalgte abonnenter.",
    "links": [
     "https://deepmind.google/blog/introducing-gemini-4-neon/",
     "https://deepmind.google/blog/genie-4-is-now-available/"
    ]
   },
   {
-   "tekst": "En anden slags evne blev afprøvet i laboratoriet: GPT-6.2 foreslog proteinformer, som viste tegn på binding til fem forskellige målproteiner. Specialiserede modeller hjalp med at gøre forslagene klar til test, og binding er ikke det samme som en færdig anvendelse. Hvor Google især viser nye brugerfunktioner, giver OpenAIs forsøg et konkret, men afgrænset forskningsresultat.",
+   "tekst": "Samtidig får AI-værktøjer mulighed for at udføre mere selvstændigt arbejde med kode. Anthropics Claude Ship kan ikke blot gennemgå ændringer, men også godkende rutineforslag efter holdets egne regler. Den samme type evne til at arbejde i flere trin kan bruges mod it-systemer: Amazon beskriver, hvordan hackere lod agenter finde og udnytte et ukendt sikkerhedshul. Angrebene lykkedes dog ikke hver gang, og mennesker hjalp undervejs.",
    "links": [
-    "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
-    "https://deepmind.google/blog/genie-4-is-now-available/"
-   ]
-  },
-  {
-   "tekst": "Mere selvstændigt arbejde skærper også spørgsmålet om kontrol. OpenAI beskriver nye barrierer og overvågning efter sikkerhedsbrud i sine egne udviklingsmiljøer. Amazon beskriver en anden situation: Angribere brugte AI-agenter til at finde og udnytte et ukendt hul på en universitetsserver. Her lykkedes angrebet, selv om andre forsøg ikke gjorde.",
-   "links": [
-    "https://openai.com/index/managing-frontier-ai-risk",
+    "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
     "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/"
    ]
   },
   {
-   "tekst": "Samtidig er finansieringen af avanceret AI rykket længere ind på børsmarkedet. Anthropic afsluttede en børsnotering og et direkte aktiesalg til teknologiselskaber for samlet cirka 119,5 milliarder dollar før omkostninger. Salget viser investeringernes størrelse, men afgør ikke, hvor godt nye modeller eller sikkerhedsforanstaltninger virker.",
+   "tekst": "I forskning er spørgsmålet ikke kun, hvad modellerne kan foreslå, men hvad der kan bekræftes. OpenAI og Onava fandt tegn på, at proteiner designet med en endnu ikke frigivet GPT-6.2-version bandt sig til fem målproteiner; specialiserede modeller hjalp før laboratorietesten. Matematiker Levent Alpöge har på sin side fremlagt et muligt bevis for Riemann-hypotesen med hjælp fra Claude. Det ville være et stort resultat, men argumentet mangler stadig faglig gennemgang.",
    "links": [
-    "https://www.anthropic.com/news/ipo-close"
+    "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+    "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/"
    ]
   }
  ],
  "tendens": "",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "8628b3683696a181c4b6ade7cda458a3c8c7b2bba0daa7b2e458ced69d1dd522",
- "dato": "2026-11-25T03:54:47.792125+00:00",
- "opdateret": "2026-11-25T03:54:47.792125+00:00",
+ "basis_signatur": "86e670b4a73fa8c0c45217ebf627d920b12d1e6c3ffc8779662d6735149d519a",
+ "dato": "2026-11-25T15:04:41.031690+00:00",
+ "opdateret": "2026-11-25T15:04:41.031690+00:00",
  "periode_fra": "2026-11-17T23:00:00+00:00",
  "periode_til": "2026-11-24T23:00:00+00:00",
  "stats": {
-  "historier": 88,
-  "kilder": 10
+  "historier": 86,
+  "kilder": 9
  }
 }

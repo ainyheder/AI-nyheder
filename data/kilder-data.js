@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-25T03:43:33.973979+00:00",
- "artikler_i_alt": 110,
+ "opdateret": "2026-11-25T14:52:19.913653+00:00",
+ "artikler_i_alt": 109,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -12,17 +12,17 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 5,
-   "som_ekstra": 0,
+   "i_listen": 4,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "Anthropic har afsluttet sin børsnotering",
-     "dato": "2026-11-20T00:00:00",
+     "dato": "",
      "foerst_set": "2026-11-20T17:11:55",
      "link": "https://www.anthropic.com/news/ipo-close",
-     "side": "artikel/462db626dd31f818.html",
-     "hvor": "forside",
-     "under": ""
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic-aktier kan udløse 156 milliarder dollar"
     },
     {
      "rubrik": "Claude Fable 5.2 skal løse svære kodeopgaver",
@@ -63,11 +63,11 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "The Verge AI",
-     1
+     "TechCrunch AI",
+     2
     ],
     [
-     "TechCrunch AI",
+     "The Verge AI",
      1
     ],
     [
@@ -112,7 +112,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 5,
-   "som_ekstra": 5,
+   "som_ekstra": 4,
    "seneste": [
     {
      "rubrik": "Google lader Search bruge personlige oplysninger",
@@ -149,15 +149,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google lancerer Gemini 4 Neon til komplekse opgaver"
-    },
-    {
-     "rubrik": "Google åbner Gemini 4 Carbon for betalende",
-     "dato": "",
-     "foerst_set": "2026-11-10T21:56:03",
-     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
-     "side": "",
-     "hvor": "under",
-     "under": "Google åbner Gemini 4 Carbon for betalende brugere"
     },
     {
      "rubrik": "Google Gemini skal møde Warriors-fans på storskærmen",
@@ -207,11 +198,11 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "Google DeepMind",
-     3
+     "TechCrunch AI",
+     2
     ],
     [
-     "TechCrunch AI",
+     "Google DeepMind",
      2
     ]
    ]
@@ -313,7 +304,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 4,
-   "som_ekstra": 5,
+   "som_ekstra": 4,
    "seneste": [
     {
      "rubrik": "Claude hjælper matematiker med muligt Riemann-bevis",
@@ -341,15 +332,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI lancerer GPT-6.2 Astra og Sol"
-    },
-    {
-     "rubrik": "Gemini 4 Carbon åbner for alle",
-     "dato": "",
-     "foerst_set": "2026-11-10T21:56:03",
-     "link": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
-     "side": "",
-     "hvor": "under",
-     "under": "Google åbner Gemini 4 Carbon for betalende brugere"
     },
     {
      "rubrik": "Fable 5.2 fejlede på højeste ræsonnementsniveau",
@@ -399,15 +381,15 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "Google DeepMind",
-     2
-    ],
-    [
      "TechCrunch AI",
      1
     ],
     [
      "OpenAI Blog",
+     1
+    ],
+    [
+     "Google DeepMind",
      1
     ],
     [
@@ -448,6 +430,15 @@ window.KILDER_STATUS = {
      "under": "Amazon aftaler køb af Decarts AI-teknologi"
     },
     {
+     "rubrik": "Anthropic-satsning gav investorer store papirgevinst​er",
+     "dato": "",
+     "foerst_set": "2026-11-23T08:05:22.310496+00:00",
+     "link": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic-aktier kan udløse 156 milliarder dollar"
+    },
+    {
      "rubrik": "Apple søger leder til AI-agent",
      "dato": "",
      "foerst_set": "2026-11-20T07:41:24",
@@ -482,6 +473,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
+    },
+    {
+     "rubrik": "Amazon og Meta forhandler om Muse-adgang",
+     "dato": "2026-11-25T14:10:18",
+     "foerst_set": "2026-11-25T14:52:19",
+     "link": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
+     "side": "artikel/0cb60670470dc60d.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Maple får millioner til privat AI-agent",
@@ -581,24 +581,23 @@ window.KILDER_STATUS = {
      "side": "artikel/e483a880095260a7.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Sierra fordobler værdi på seks måneder",
-     "dato": "2026-11-23T14:43:03",
-     "foerst_set": "2026-11-23T20:30:41",
-     "link": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
-     "side": "artikel/15da0cbca7e4582e.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     7
+     8
     ],
     [
      "Google Gemini",
+     2
+    ],
+    [
+     "Ars Technica AI",
+     2
+    ],
+    [
+     "Anthropic News",
      2
     ],
     [
@@ -607,14 +606,6 @@ window.KILDER_STATUS = {
     ],
     [
      "Simon Willison AI",
-     1
-    ],
-    [
-     "Ars Technica AI",
-     1
-    ],
-    [
-     "Anthropic News",
      1
     ]
    ]
@@ -629,17 +620,17 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 23,
+   "i_listen": 24,
    "som_ekstra": 10,
    "seneste": [
     {
-     "rubrik": "Tidal vil fjerne millioner af AI-numre",
+     "rubrik": "Amazon drøfter adgang for Metas Muse AI",
      "dato": "",
-     "foerst_set": "2026-11-24T19:41:33",
-     "link": "https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban",
+     "foerst_set": "2026-11-25T14:52:19",
+     "link": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions",
      "side": "",
      "hvor": "under",
-     "under": "Tidal vil fjerne millioner af AI-sange"
+     "under": "Amazon og Meta forhandler om Muse-adgang"
     },
     {
      "rubrik": "Oregon og Virginia sagsøger SpaceX over Grok",
@@ -658,6 +649,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Anthropic lader Claude godkende kodeændringer"
+    },
+    {
+     "rubrik": "Anthropic på børsen: Sikkerhed møder aktionærkrav",
+     "dato": "",
+     "foerst_set": "2026-11-21T21:50:31",
+     "link": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic-aktier kan udløse 156 milliarder dollar"
     },
     {
      "rubrik": "Anthropic-matematiker hævder at have løst Riemann-hypotesen",
@@ -705,15 +705,6 @@ window.KILDER_STATUS = {
      "under": "Will Wright bygger spil af dine minder"
     },
     {
-     "rubrik": "Google lancerer Gemini 4 Carbon med agent-sværm",
-     "dato": "",
-     "foerst_set": "2026-11-10T21:56:03",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
-     "side": "",
-     "hvor": "under",
-     "under": "Google åbner Gemini 4 Carbon for betalende brugere"
-    },
-    {
      "rubrik": "Anthropic opgraderer Claude til svære tekniske opgaver",
      "dato": "",
      "foerst_set": "2026-11-09T19:04:48",
@@ -721,6 +712,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
+    },
+    {
+     "rubrik": "Akai åbner instrumenter for AI-ændringer",
+     "dato": "2026-11-25T08:00:00",
+     "foerst_set": "2026-11-25T14:52:19",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware",
+     "side": "artikel/62d538fd46658027.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Tidal vil fjerne AI-genereret musik",
+     "dato": "2026-11-24T12:17:09",
+     "foerst_set": "2026-11-24T19:41:33",
+     "link": "https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban",
+     "side": "artikel/31bde7b6ca68e4a6.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "New York Times forbyder ny Photoshop-version",
@@ -751,7 +760,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "EU afviste forslag til COP31-klimapagt",
-     "dato": "2026-11-23T16:09:37",
+     "dato": "2026-11-23T21:09:37",
      "foerst_set": "2026-11-24T04:56:53",
      "link": "https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit",
      "side": "artikel/1fb8ee564e2e33a7.html",
@@ -804,15 +813,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Anthropic på børsen: Sikkerhed møder aktionærkrav",
-     "dato": "2026-11-21T15:00:00",
-     "foerst_set": "2026-11-21T21:50:31",
-     "link": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
-     "side": "artikel/3f8dc1fbea0dc261.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Trump truer med skat på datacentre i udlandet",
      "dato": "2026-11-20T18:50:19",
      "foerst_set": "2026-11-21T01:42:50",
@@ -820,29 +820,16 @@ window.KILDER_STATUS = {
      "side": "artikel/b44ab066f64c7bf4.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Signal vil holde Siri og Gemini ude",
-     "dato": "2026-11-20T12:30:47",
-     "foerst_set": "2026-11-20T17:11:55",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
-     "side": "artikel/da5d0e9421737f2d.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     7
+     8
     ],
     [
      "Ars Technica AI",
      3
-    ],
-    [
-     "Google DeepMind",
-     1
     ],
     [
      "Anthropic News",
@@ -861,8 +848,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 11,
-   "som_ekstra": 0,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "Claude har hjulpet med muligt Riemann-bevis",
+     "dato": "",
+     "foerst_set": "2026-11-25T03:43:33",
+     "link": "https://arstechnica.com/ai/2026/11/whats-going-on-with-the-riemann-hypothesis/",
+     "side": "",
+     "hvor": "under",
+     "under": "Claude hjalp matematiker med muligt Riemann-bevis"
+    },
     {
      "rubrik": "Tidal vil slette 27 millioner AI-numre",
      "dato": "2026-11-24T17:34:34",
@@ -970,7 +966,7 @@ window.KILDER_STATUS = {
     ],
     [
      "TechCrunch AI",
-     1
+     2
     ]
    ]
   },
@@ -1175,10 +1171,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 15,
-   "i_listen": 3,
+   "status": "fejl",
+   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
+   "hentet": 0,
+   "i_listen": 2,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -1198,28 +1194,15 @@ window.KILDER_STATUS = {
      "side": "artikel/88e5a492fec09122.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Google åbner Gemini 4 Carbon for betalende brugere",
-     "dato": "2026-11-10T16:03:47",
-     "foerst_set": "2026-11-10T21:56:03",
-     "link": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
-     "side": "artikel/e38c92a7cefc59fe.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "Google Gemini",
-     3
-    ],
-    [
-     "Simon Willison AI",
      2
     ],
     [
-     "The Verge AI",
+     "Simon Willison AI",
      1
     ]
    ]
