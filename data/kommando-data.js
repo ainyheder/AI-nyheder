@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-26T08:59:53.621642+00:00",
+ "genereret": "2026-11-26T21:58:45.970566+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -199,26 +199,26 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-26T08:52:24.410533+00:00",
-  "antal": 99,
-  "med_billede": 74,
-  "paa_dansk": 99,
+  "opdateret": "2026-11-26T21:52:10.722629+00:00",
+  "antal": 101,
+  "med_billede": 75,
+  "paa_dansk": 101,
   "kategorier": {
-   "Lanceringer": 14,
+   "Hverdags-AI": 24,
+   "Forskning": 18,
+   "Lanceringer": 12,
    "Politik \u0026 jura": 6,
    "Samfund \u0026 etik": 24,
-   "Hverdags-AI": 22,
-   "Penge \u0026 marked": 17,
-   "Forskning": 16
+   "Penge \u0026 marked": 17
   },
   "kilder": {
+   "TechCrunch AI": 30,
+   "Hugging Face": 5,
    "Simon Willison AI": 5,
-   "TechCrunch AI": 29,
-   "Ars Technica AI": 8,
+   "Ars Technica AI": 9,
    "The Verge AI": 18,
    "OpenAI Blog": 17,
    "Google Gemini": 5,
-   "Hugging Face": 5,
    "MIT Tech Review AI": 4,
    "Google DeepMind": 3,
    "Anthropic News": 3,
@@ -227,37 +227,57 @@ window.KOMMANDO_DATA = {
   },
   "udvalgte": [
    {
-    "titel": "Character.AI’s plan to auction off users’ private chats challenged by state AGs",
-    "rubrik": "Character.AI vil sælge private chats på auktion",
-    "link": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
-    "side": "artikel/a07adeabc9e7c59f.html",
-    "kategori": "Politik \u0026 jura",
+    "titel": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
+    "rubrik": "Nvidia åbner data og giver dokumentmodel et hastighedsløft",
+    "link": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+    "side": "artikel/1fcdbabd38e1fabd.html",
+    "kategori": "Forskning",
+    "kilde": "Hugging Face",
+    "dato": "2026-11-26T05:05:36+00:00",
+    "billede": "data/img/95d9cdb60261716a.webp"
+   },
+   {
+    "titel": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
+    "rubrik": "ChatGPT samler forbrug: Nogle kan ramme loftet før",
+    "link": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+    "side": "artikel/68617ed988fe883b.html",
+    "kategori": "Hverdags-AI",
     "kilde": "TechCrunch AI",
-    "dato": "2026-11-25T17:35:58+00:00",
-    "billede": "data/img/9b0df4f9430c1645.webp"
-   },
-   {
-    "titel": "Tidal announces ban on AI-generated music; 27 million tracks will be deleted",
-    "rubrik": "Tidal vil slette 27 millioner AI-numre",
-    "link": "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/",
-    "side": "artikel/fe54c6aaa8824096.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-11-24T17:34:34+00:00",
-    "billede": "data/img/e548301e56826d1f.webp"
-   },
-   {
-    "titel": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
-    "rubrik": "SpaceX får lov til AI-satellitter",
-    "link": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
-    "side": "artikel/4d16d40e18b4b18e.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-25T12:44:51-05:00",
-    "billede": "data/img/9650cc1985f0ac66.webp"
+    "dato": "2026-11-25T20:03:27+00:00",
+    "billede": "data/img/439868e8f933d210.webp"
    }
   ],
   "seneste": [
+   {
+    "titel": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+    "rubrik": "Nyt dashboard sammenligner llama.cpp på AMD",
+    "link": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+    "side": "artikel/bacf1389cf533ea1.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "Hugging Face",
+    "dato": "2026-11-26T11:37:17+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
+    "rubrik": "Nvidia åbner data og giver dokumentmodel et hastighedsløft",
+    "link": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+    "side": "artikel/1fcdbabd38e1fabd.html",
+    "kategori": "Forskning",
+    "kilde": "Hugging Face",
+    "dato": "2026-11-26T05:05:36+00:00",
+    "billede": "data/img/95d9cdb60261716a.webp"
+   },
+   {
+    "titel": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
+    "rubrik": "ChatGPT samler forbrug: Nogle kan ramme loftet før",
+    "link": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+    "side": "artikel/68617ed988fe883b.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-25T20:03:27+00:00",
+    "billede": "data/img/439868e8f933d210.webp"
+   },
    {
     "titel": "Character.AI’s plan to auction off users’ private chats challenged by state AGs",
     "rubrik": "Character.AI vil sælge private chats på auktion",
@@ -339,63 +359,31 @@ window.KOMMANDO_DATA = {
     "billede": ""
    },
    {
-    "titel": "Has vibe coding made open source the new normal for synths?",
-    "rubrik": "Akai åbner instrumenter for AI-ændringer",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware",
-    "side": "artikel/62d538fd46658027.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "The Verge AI",
-    "dato": "2026-11-25T08:00:00-05:00",
-    "billede": ""
-   },
-   {
-    "titel": "GPT-6 models demonstrate intrinsic protein-design capabilities",
-    "rubrik": "GPT-6.2 designer proteiner, der binder sig",
-    "link": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
-    "side": "artikel/2fb78c77ddc3c48b.html",
+    "titel": "AI may soon change what it means to be a theoretical physicist",
+    "rubrik": "GPT-6 Astra løste næsten alle fysikopgaver",
+    "link": "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/",
+    "side": "artikel/599365cac3d8f529.html",
     "kategori": "Forskning",
-    "kilde": "OpenAI Blog",
-    "dato": "2026-11-24T13:00:00+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Even the best AI agents struggle with everyday life",
-    "rubrik": "GPT-6 Astra fejler i hverdagstest",
-    "link": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/",
-    "side": "artikel/84cfd1b9e3c30cf6.html",
-    "kategori": "Forskning",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-11-24T21:33:29+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Three LLM inflection points in twelve months",
-    "rubrik": "Simon Willison: Claude Opus 5.5 forbedrede kedeligt spil",
-    "link": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
-    "side": "artikel/7caad847a5890e35.html",
-    "kategori": "Forskning",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-11-24T23:02:07+00:00",
-    "billede": "data/img/0eb2bbf2ec6a4700.webp"
+    "kilde": "Ars Technica AI",
+    "dato": "2026-11-25T12:00:28+00:00",
+    "billede": "data/img/8ae063fe812da6c9.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-26T08:52:24.410533+00:00",
-  "status": "reserve",
+  "opdateret": "2026-11-26T21:52:10.722629+00:00",
+  "status": "godkendt",
   "model": "gpt-6.1-terra",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 5,
+  "modelkald": 6,
   "kildehentninger": 3,
   "regelbaseret_udvalg": [
    "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
-   "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/",
-   "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers"
+   "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+   "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench"
   ],
   "udgivet_udvalg": [
-   "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
-   "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/",
-   "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers"
+   "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+   "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/"
   ],
   "vaerktoejer": [
    {
@@ -425,17 +413,17 @@ window.KOMMANDO_DATA = {
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+    "link": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/",
+    "link": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
     "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-11-26T08:52:24.044331+00:00",
+  "opdateret": "2026-11-26T21:52:10.234807+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -900,8 +888,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-26T08:52:24.410533+00:00",
-  "artikler_i_alt": 99,
+  "opdateret": "2026-11-26T21:52:10.722629+00:00",
+  "artikler_i_alt": 101,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1121,6 +1109,24 @@ window.KOMMANDO_DATA = {
     "som_ekstra": 0,
     "seneste": [
      {
+      "rubrik": "Nyt dashboard sammenligner llama.cpp på AMD",
+      "dato": "2026-11-26T11:37:17",
+      "foerst_set": "2026-11-26T21:52:10",
+      "link": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+      "side": "artikel/bacf1389cf533ea1.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Nvidia åbner data og giver dokumentmodel et hastighedsløft",
+      "dato": "2026-11-26T05:05:36",
+      "foerst_set": "2026-11-26T08:52:24",
+      "link": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+      "side": "artikel/1fcdbabd38e1fabd.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Hugging Face fik Inkling 2 Mini hurtigere",
       "dato": "2026-11-25T00:00:00",
       "foerst_set": "2026-11-26T00:38:08",
@@ -1144,24 +1150,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-11-19T01:59:29",
       "link": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
       "side": "artikel/5095af2e2b71cd6b.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Rumble-2-Flash skriver tale på over 40 sprog",
-      "dato": "2026-11-18T00:00:00",
-      "foerst_set": "2026-11-18T17:30:51",
-      "link": "https://huggingface.co/blog/rumble-2-flash",
-      "side": "artikel/f21a02eb186bc1fb.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Hugging Face skifter til OpenRouters udbydervalg",
-      "dato": "2026-11-16T00:00:00",
-      "foerst_set": "2026-11-16T18:51:00",
-      "link": "https://huggingface.co/blog/openrouter",
-      "side": "artikel/6d3f3bd6ff12f5c5.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1282,7 +1270,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 29,
+    "i_listen": 30,
     "som_ekstra": 3,
     "seneste": [
      {
@@ -1329,6 +1317,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
+     },
+     {
+      "rubrik": "ChatGPT samler forbrug: Nogle kan ramme loftet før",
+      "dato": "2026-11-25T20:03:27",
+      "foerst_set": "2026-11-26T00:38:08",
+      "link": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+      "side": "artikel/68617ed988fe883b.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Character.AI vil sælge private chats på auktion",
@@ -1383,15 +1380,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/f2826368332a3f31.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Meta lægger Muse ind i Instagram-beskeder",
-      "dato": "2026-11-24T17:00:00",
-      "foerst_set": "2026-11-24T19:41:33",
-      "link": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
-      "side": "artikel/6e7150d9caf7ae53.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1406,8 +1394,17 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 10,
     "i_listen": 18,
-    "som_ekstra": 10,
+    "som_ekstra": 11,
     "seneste": [
+     {
+      "rubrik": "42 statsadvokater vil standse Character.AI-datasalg",
+      "dato": "",
+      "foerst_set": "2026-11-26T21:52:10",
+      "link": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
+      "side": "",
+      "hvor": "under",
+      "under": "Character.AI vil sælge private chats på auktion"
+     },
      {
       "rubrik": "Amazon drøfter adgang for Metas Muse AI",
       "dato": "",
@@ -1506,15 +1503,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/4d16d40e18b4b18e.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Nothing viser øretelefoner, der optager samtaler",
-      "dato": "2026-11-25T11:00:59",
-      "foerst_set": "2026-11-26T00:38:08",
-      "link": "https://www.theverge.com/gadgets/1042162/nothing-ear-note-ai-earbuds-reveal",
-      "side": "artikel/0cb6d0baeb4947fe.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1528,17 +1516,26 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 8,
+    "i_listen": 9,
     "som_ekstra": 1,
     "seneste": [
      {
-      "rubrik": "Claude har hjulpet med Riemanns hypotese",
+      "rubrik": "Claude hjælper med bevis for Riemann-hypotesen",
       "dato": "",
       "foerst_set": "2026-11-25T03:43:33",
       "link": "https://arstechnica.com/ai/2026/11/whats-going-on-with-the-riemann-hypothesis/",
       "side": "",
       "hvor": "under",
       "under": "Claude hjalp matematiker med muligt Riemann-bevis"
+     },
+     {
+      "rubrik": "GPT-6 Astra løste næsten alle fysikopgaver",
+      "dato": "2026-11-25T12:00:28",
+      "foerst_set": "2026-11-25T14:52:19",
+      "link": "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/",
+      "side": "artikel/599365cac3d8f529.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Tidal vil slette 27 millioner AI-numre",
@@ -1861,12 +1858,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-26T08:59:50.582067+00:00",
+  "opdateret": "2026-11-26T21:58:42.230115+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 30,
-  "sidevisninger_i_alt": 42,
+  "besoeg_i_alt": 29,
+  "sidevisninger_i_alt": 37,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1886,13 +1883,13 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-10-31",
-    "besoeg": 10,
+    "besoeg": 0,
     "visninger": 10
    },
    {
     "dato": "2026-11-01",
     "besoeg": 0,
-    "visninger": 0
+    "visninger": 10
    },
    {
     "dato": "2026-11-02",
@@ -1902,7 +1899,7 @@ window.KOMMANDO_DATA = {
    {
     "dato": "2026-11-03",
     "besoeg": 0,
-    "visninger": 10
+    "visninger": 20
    },
    {
     "dato": "2026-11-04",
@@ -1916,13 +1913,13 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-11-06",
-    "besoeg": 20,
-    "visninger": 20
+    "besoeg": 10,
+    "visninger": 30
    },
    {
     "dato": "2026-11-07",
     "besoeg": 0,
-    "visninger": 10
+    "visninger": 0
    },
    {
     "dato": "2026-11-08",
@@ -1931,23 +1928,23 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-11-09",
-    "besoeg": 10,
-    "visninger": 20
+    "besoeg": 20,
+    "visninger": 30
    },
    {
     "dato": "2026-11-10",
     "besoeg": 0,
-    "visninger": 0
+    "visninger": 10
    },
    {
     "dato": "2026-11-11",
     "besoeg": 10,
-    "visninger": 30
+    "visninger": 10
    },
    {
     "dato": "2026-11-12",
-    "besoeg": 10,
-    "visninger": 10
+    "besoeg": 0,
+    "visninger": 0
    },
    {
     "dato": "2026-11-13",
@@ -1971,8 +1968,8 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-11-17",
-    "besoeg": 20,
-    "visninger": 20
+    "besoeg": 0,
+    "visninger": 0
    },
    {
     "dato": "2026-11-18",
@@ -1982,32 +1979,32 @@ window.KOMMANDO_DATA = {
    {
     "dato": "2026-11-19",
     "besoeg": 0,
-    "visninger": 10
+    "visninger": 0
    },
    {
     "dato": "2026-11-20",
-    "besoeg": 10,
-    "visninger": 20
+    "besoeg": 0,
+    "visninger": 0
    },
    {
     "dato": "2026-11-21",
-    "besoeg": 10,
-    "visninger": 10
+    "besoeg": 0,
+    "visninger": 0
    },
    {
     "dato": "2026-11-22",
-    "besoeg": 10,
-    "visninger": 10
+    "besoeg": 0,
+    "visninger": 0
    },
    {
     "dato": "2026-11-23",
-    "besoeg": 20,
+    "besoeg": 10,
     "visninger": 20
    },
    {
     "dato": "2026-11-24",
     "besoeg": 0,
-    "visninger": 0
+    "visninger": 10
    },
    {
     "dato": "2026-11-25",
@@ -2017,14 +2014,14 @@ window.KOMMANDO_DATA = {
    {
     "dato": "2026-11-26",
     "besoeg": 0,
-    "visninger": 0
+    "visninger": 10
    }
   ],
   "sider": [
    {
     "sti": "/",
-    "besoeg": 29,
-    "visninger": 40
+    "besoeg": 28,
+    "visninger": 35
    },
    {
     "sti": "/om.html",
@@ -2041,7 +2038,11 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 30
+    "besoeg": 28
+   },
+   {
+    "fra": "www.bing.com",
+    "besoeg": 1
    }
   ],
   "laeste_temaer": []
