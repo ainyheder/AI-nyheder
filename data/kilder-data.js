@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-26T00:38:08.849977+00:00",
+ "opdateret": "2026-11-26T08:52:24.410533+00:00",
  "artikler_i_alt": 99,
  "kilder": [
   {
@@ -603,6 +603,10 @@ window.KILDER_STATUS = {
     [
      "Simon Willison AI",
      1
+    ],
+    [
+     "Ars Technica AI",
+     1
     ]
    ]
   },
@@ -848,8 +852,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 8,
-   "som_ekstra": 0,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "Claude har hjulpet med Riemanns hypotese",
+     "dato": "",
+     "foerst_set": "2026-11-25T03:43:33",
+     "link": "https://arstechnica.com/ai/2026/11/whats-going-on-with-the-riemann-hypothesis/",
+     "side": "",
+     "hvor": "under",
+     "under": "Claude hjalp matematiker med muligt Riemann-bevis"
+    },
     {
      "rubrik": "Tidal vil slette 27 millioner AI-numre",
      "dato": "2026-11-24T17:34:34",
@@ -927,6 +940,10 @@ window.KILDER_STATUS = {
     [
      "The Verge AI",
      2
+    ],
+    [
+     "TechCrunch AI",
+     1
     ]
    ]
   },

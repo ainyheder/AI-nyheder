@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-11-26T00:38:08.849977+00:00",
+  "opdateret": "2026-11-26T08:52:24.410533+00:00",
   "kladder": [
     {
       "titel": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
@@ -12,6 +12,7 @@
       "eget_foerst_set": "2026-11-26T00:38:08.849977+00:00",
       "rubrik": "OpenAI vil indføre fælles forbrugstæller i ChatGPT",
       "resume_da": "Når Chat og Work lægges sammen, kan storforbrugere ramme grænsen tidligere, oplyser OpenAI.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -28,8 +29,40 @@
         "emne": "chatgpt"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
+      "link": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+      "resume": "",
+      "dato": "2026-11-26T05:05:36+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-26T08:52:24.410533+00:00",
+      "eget_foerst_set": "2026-11-26T08:52:24.410533+00:00",
+      "rubrik": "Nemotron 3.5 Parse sættes i fokus",
+      "resume_da": "Omtalen handler om åbne data, finjustering og hurtigere kørsel af modellen.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Omtale af åbne data, finjustering og hurtigere inferens for Nemotron 3.5 Parse.",
+        "forbehold": "Materialet beskriver ikke de konkrete data, ændringer eller resultater.",
+        "emne": "nemotron 3.5 parse"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -78,6 +111,7 @@
       "eget_foerst_set": "2026-11-26T00:38:08.849977+00:00",
       "rubrik": "Nvidia kræver næsten færdige AI-datacentre før støtte",
       "resume_da": "Samtidig melder neocloud-virksomheder om byggeforsinkelser og dyrere gæld.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -94,7 +128,6 @@
         "emne": "ai-datacentre"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -111,6 +144,7 @@
       "eget_foerst_set": "2026-11-26T00:38:08.849977+00:00",
       "rubrik": "Mass Spec Skills hjælper med at identificere molekyler",
       "resume_da": "Værktøjet hjælper forskere med at fortolke massespektre i Google Antigravity.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -127,7 +161,6 @@
         "emne": "mass spec skills"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -144,6 +177,7 @@
       "eget_foerst_set": "2026-11-26T00:38:08.849977+00:00",
       "rubrik": "Google fik afvist patent på personlige AI-videofeeds",
       "resume_da": "Ansøgningen beskrev My Channel, som skulle sammensætte AI-genererede videoer og reklamer ud fra oplysninger om brugerne. Google kan anke eller indsende en ændret ansøgning.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -160,40 +194,6 @@
         "emne": "google my channel"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "What's going on with the Riemann hypothesis?",
-      "link": "https://arstechnica.com/ai/2026/11/whats-going-on-with-the-riemann-hypothesis/",
-      "resume": "A new AI-assisted proof seems to be solid, but we're not sure what it tells us.",
-      "dato": "2026-11-24T20:34:53+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Forskning",
-      "foerst_set": "2026-11-25T03:43:33.973979+00:00",
-      "eget_foerst_set": "2026-11-25T03:43:33.973979+00:00",
-      "rubrik": "Ars Technica undersøger AI-bevis og Riemann-hypotesen",
-      "resume_da": "Et nyt AI-assisteret bevis ser holdbart ud, men det er uklart, hvad det fortæller om hypotesen.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Et AI-assisteret matematisk bevis ser ifølge omtalen holdbart ud.",
-        "forbehold": "Uddraget specificerer ikke beviset eller dets betydning for Riemannhypotesen.",
-        "emne": "riemannhypotesen"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -274,6 +274,8 @@
       "kategori": "Hverdags-AI",
       "foerst_set": "2026-11-25T14:52:19.913653+00:00",
       "eget_foerst_set": "2026-11-25T14:52:19.913653+00:00",
+      "rubrik": "Hugging Face beskriver stemmeagent med CUGA",
+      "resume_da": "Agenten er til indiske sprog.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -285,48 +287,13 @@
         "type": "andet",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Titlen omtaler en stemmeagent til indiske sprog med CUGA.",
-        "forbehold": "Der er ingen artikeltekst om agentens funktion, adgang eller resultater.",
+        "begrundelse": "En stemmeagent til indiske sprog omtales i forbindelse med CUGA.",
+        "forbehold": "Materialet angiver ikke konkrete sprog, evner eller adgang.",
         "emne": "cuga"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "kat_ai": true,
       "prio": 4,
-      "afventer": [
-        "Mangler dansk overskrift",
-        "Mangler dansk indledning",
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "AI is straining America’s open records systems",
-      "link": "https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/",
-      "resume": "In Panton, Vermont, population 660, town clerk Kyle Rowe did it all. He crafted budgets, paid vendors, handled property tax disputes, and served as the town’s zoning supervisor and presiding elections officer. During morning office hours at the town hall—a wood-frame structure built as a church in 1858—he also fielded public records requests. Recently, he…",
-      "dato": "2026-11-25T10:00:00+00:00",
-      "kilde": "MIT Tech Review AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-11-25T14:52:19.913653+00:00",
-      "eget_foerst_set": "2026-11-25T14:52:19.913653+00:00",
-      "rubrik": "AI belaster amerikanske systemer for aktindsigt",
-      "resume_da": "I Panton i Vermont håndterede bysekretær Kyle Rowe både aktindsigt, budgetter og valg.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 0,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Artiklen handler ifølge overskriften om AI's pres på amerikanske aktindsigtssystemer.",
-        "forbehold": "Uddraget forklarer ikke, hvordan AI skaber presset, eller hvor omfattende det er.",
-        "emne": "ai og aktindsigt"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 3,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -365,6 +332,39 @@
       ]
     },
     {
+      "titel": "AI is straining America’s open records systems",
+      "link": "https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/",
+      "resume": "In Panton, Vermont, population 660, town clerk Kyle Rowe did it all. He crafted budgets, paid vendors, handled property tax disputes, and served as the town’s zoning supervisor and presiding elections officer. During morning office hours at the town hall—a wood-frame structure built as a church in 1858—he also fielded public records requests. Recently, he…",
+      "dato": "2026-11-25T10:00:00+00:00",
+      "kilde": "MIT Tech Review AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-11-25T14:52:19.913653+00:00",
+      "eget_foerst_set": "2026-11-25T14:52:19.913653+00:00",
+      "rubrik": "AI belaster amerikanske systemer for aktindsigt",
+      "resume_da": "I Panton i Vermont håndterede bysekretær Kyle Rowe både aktindsigt, budgetter og valg.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 0,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Artiklen handler ifølge overskriften om AI's pres på amerikanske aktindsigtssystemer.",
+        "forbehold": "Uddraget forklarer ikke, hvordan AI skaber presset, eller hvor omfattende det er.",
+        "emne": "ai og aktindsigt"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 3,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "How to build and maintain an agentic evaluation",
       "link": "https://huggingface.co/blog/agentic-evals",
       "resume": "",
@@ -373,6 +373,8 @@
       "kategori": "Forskning",
       "foerst_set": "2026-11-23T20:30:41.511519+00:00",
       "eget_foerst_set": "2026-11-23T20:30:41.511519+00:00",
+      "rubrik": "Hugging Face guider til evaluering af AI-agenter",
+      "resume_da": "Guiden handler om at opbygge og vedligeholde evalueringen.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -384,16 +386,14 @@
         "type": "guide",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Titlen beskriver en guide til at opbygge og vedligeholde evalueringer af AI-agenter.",
-        "forbehold": "Artikelteksten og guidens konkrete råd er ikke medsendt.",
-        "emne": "agent-evaluering"
+        "begrundelse": "En guide handler om at opbygge og vedligeholde evaluering af AI-agenter.",
+        "forbehold": "Materialet indeholder ingen konkrete metoder eller resultater.",
+        "emne": "evaluering af ai-agenter"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "kat_ai": true,
       "prio": 3,
       "afventer": [
-        "Mangler dansk overskrift",
-        "Mangler dansk indledning",
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
     },
@@ -662,39 +662,6 @@
       ]
     },
     {
-      "titel": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
-      "link": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
-      "resume": "",
-      "dato": "2026-11-18T19:54:56+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Forskning",
-      "foerst_set": "2026-11-19T01:59:29.336973+00:00",
-      "eget_foerst_set": "2026-11-19T01:59:29.336973+00:00",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Artiklen omtaler DaisyRose-27B og effektivitet i eftertræning.",
-        "forbehold": "Kun titlen er medsendt; resultater og en eventuel udgivelse fremgår ikke.",
-        "emne": "daisyrose-27b"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 3,
-      "afventer": [
-        "Mangler dansk overskrift",
-        "Mangler dansk indledning",
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Explore the Codex Security Plugin",
       "link": "https://openai.com/business/learn/codex-security-plugin-demo",
       "resume": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording.",
@@ -794,6 +761,39 @@
       ]
     },
     {
+      "titel": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
+      "link": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
+      "resume": "",
+      "dato": "2026-11-18T19:54:56+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-11-19T01:59:29.336973+00:00",
+      "eget_foerst_set": "2026-11-19T01:59:29.336973+00:00",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 0,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "DaisyRose-27B omtales i forbindelse med effektivitet i eftertræning.",
+        "forbehold": "Materialet dokumenterer hverken en modeludgivelse eller konkrete resultater.",
+        "emne": "daisyrose-27b"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 2,
+      "afventer": [
+        "Mangler dansk overskrift",
+        "Mangler dansk indledning",
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
       "link": "https://deepmind.google/blog/introducing-alphaproof-code/",
       "resume": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
@@ -804,6 +804,7 @@
       "eget_foerst_set": "2026-11-10T12:55:44.065731+00:00",
       "rubrik": "Google DeepMind præsenterer AlphaProof Code",
       "resume_da": "Agenterne skrev tre millioner linjer beviser i sproget Lean for at verificere Signals centrale kryptering, oplyser Google DeepMind.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -820,7 +821,6 @@
         "emne": "alphaproof code"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -837,6 +837,7 @@
       "eget_foerst_set": "2026-11-13T12:33:55.476940+00:00",
       "rubrik": "Google DeepMind åbner datasæt til AI-vejrmodeller",
       "resume_da": "Datasættene omfatter nedbør og satellitdata.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -853,7 +854,6 @@
         "emne": "ai-vejrdata"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -870,6 +870,7 @@
       "eget_foerst_set": "2026-11-10T21:56:03.050309+00:00",
       "rubrik": "Google DeepMind præsenterer Gemini Robotics 2.5",
       "resume_da": "Ifølge Google DeepMind skal modellen forbedre robotters fingerfærdighed, pålidelighed og sikkerhed.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -886,7 +887,6 @@
         "emne": "gemini robotics 2.5"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -903,6 +903,7 @@
       "eget_foerst_set": "2026-11-04T12:26:57.700834+00:00",
       "rubrik": "Google Antigravity bruges i lægemiddeludvikling",
       "resume_da": "Google DeepMind beskriver, hvordan værktøjet kan søge efter kemiske forbindelser og foreslå nye molekylestrukturer.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -919,7 +920,6 @@
         "emne": "google antigravity"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -936,6 +936,7 @@
       "eget_foerst_set": "2026-11-02T18:45:47.523033+00:00",
       "rubrik": "Google DeepMind og britisk regering samarbejder om planvurderinger",
       "resume_da": "Parterne vil bruge AI til at forkorte den tid, vurderingerne tager.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -952,7 +953,6 @@
         "emne": "google deepmind"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -969,6 +969,7 @@
       "eget_foerst_set": "2026-10-27T20:55:19.965914+00:00",
       "rubrik": "Google DeepMind præsenterer verdensmodellen Genie 4",
       "resume_da": "Modellen simulerer verdener i realtid med øget realisme, ifølge Google DeepMind.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -985,7 +986,6 @@
         "emne": "genie 4"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -1035,6 +1035,7 @@
       "eget_foerst_set": "2026-11-26T00:38:08.849977+00:00",
       "rubrik": "Scott Aaronson forudser ny matematisk viden",
       "resume_da": "Han sammenligner udsigten med de første kig gennem mikroskopet og teleskopet.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1051,7 +1052,6 @@
         "emne": "matematik"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -1068,6 +1068,7 @@
       "eget_foerst_set": "2026-11-26T00:38:08.849977+00:00",
       "rubrik": "S&P overvejer at sænke Nvidias kreditvurdering",
       "resume_da": "Bekymringer om ledelse og afhængighed af nøglepersoner kan føre til en nedjustering til AA-, S&P's fjerdehøjeste kreditvurdering.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1084,7 +1085,6 @@
         "emne": "nvidia"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -1096,30 +1096,30 @@
       "resume": "Most codes of conduct serve as a reflection of corporate culture. In Nvidia's case, that could have consequences.",
       "dato": "2026-11-25T19:54:57+00:00",
       "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
+      "kategori": "Samfund & etik",
       "foerst_set": "2026-11-26T00:38:08.849977+00:00",
       "eget_foerst_set": "2026-11-26T00:38:08.849977+00:00",
+      "rubrik": "TechCrunch: Jensen Huang brød Nvidias adfærdskodeks",
+      "resume_da": "Artiklen peger på mulige konsekvenser for virksomhedens kultur.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 0,
+        "dokumentation": 1,
         "dansk": 0,
         "type": "analyse",
         "ai_relevant": false,
         "model_lancering": false,
-        "begrundelse": "Artiklen hævder, at Jensen Huang har brudt Nvidias adfærdskodeks.",
-        "forbehold": "Uddraget beskriver ikke den konkrete handling eller dokumentationen for bruddet.",
+        "begrundelse": "Artiklen omtaler et påstået brud på Nvidias adfærdskodeks og mulige følger for virksomhedskulturen.",
+        "forbehold": "Materialet beskriver ikke det påståede brud.",
         "emne": "nvidia"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "kat_ai": true,
       "prio": 1,
       "afventer": [
-        "Mangler dansk overskrift",
-        "Mangler dansk indledning",
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
     },
@@ -1134,6 +1134,7 @@
       "eget_foerst_set": "2026-11-26T00:38:08.849977+00:00",
       "rubrik": "Ars Live forventer fortsatte angreb på datacentre",
       "resume_da": "Militære styrker har flere grunde til at angribe datacentre og cloudtjenester i krig, ifølge omtalen.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1150,7 +1151,6 @@
         "emne": "datacentre i krig"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -82511,6 +82511,14 @@
           "resume_da": "Levent Alpöge siger, at han brugte Claude til at bevise hypotesen. Beviset er endnu ikke verificeret.",
           "dato": "2026-11-20 11:34:13-05:00",
           "foerst_set": "2026-11-21T01:42:50.990268+00:00"
+        },
+        {
+          "kilde": "Ars Technica AI",
+          "link": "https://arstechnica.com/ai/2026/11/whats-going-on-with-the-riemann-hypothesis/",
+          "rubrik": "Claude har hjulpet med Riemanns hypotese",
+          "resume_da": "Matematikeren Levent Alpöge har annonceret et AI-assisteret bevis for et af matematikkens store åbne problemer. Matematikere undersøger stadig ræsonnementet.",
+          "dato": "2026-11-24T20:34:53+00:00",
+          "foerst_set": "2026-11-25T03:43:33.973979+00:00"
         }
       ],
       "detaljer": [],
@@ -85716,24 +85724,7 @@
       "eget_foerst_set": "2026-11-24T04:56:53.301437+00:00",
       "rubrik": "GLM-5.4 gentager lag i ny model",
       "resume_da": "Z.ai har frigivet en model, der bearbejder sine mellemresultater flere gange uden at øge antallet af parametre. Simon Willison har testet adgangen og modellens billeder.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 4,
-        "betydning": 3,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "Z.ai har gjort GLM-5.4 tilgængelig som sin første model med Loop Transformer-arkitektur.",
-        "forbehold": "Materialet indeholder ingen testresultater eller detaljer om adgang.",
-        "emne": "glm-5.4"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 7,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Samme lag bruges flere gange",
@@ -85752,17 +85743,37 @@
           "tekst": "Z.ai er ikke alene om at gentage dele af modellen. Thinking Machines Lab beskrev den 20. november Inkling 2 Mini som en model, der kører sine midterste lag tre gange for hvert stykke tekst, den behandler.\n\nVirksomheden siger, at det giver modellen mulighed for mere ræsonnement med færre tekststykker. Det er en påstand om Inkling 2 Mini, ikke et målt resultat for GLM-5.4."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [],
       "betydning": "",
       "pointer": [],
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Z.ai har gjort GLM-5.4 tilgængelig som sin første model med Loop Transformer-arkitektur.",
+        "forbehold": "Materialet indeholder ingen testresultater eller detaljer om adgang.",
+        "emne": "glm-5.4"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-26T00:41:52.533059+00:00"
       },
+      "prio": 7,
+      "billedmotiv": "Z.ai’s GLM-5.4 model is represented by a fixed stack of thick computational layers, with a bold looping arrow returning the output to the same middle layers for another pass. The unchanged stack makes repeated processing visible without adding layers. Use solid, opaque forms with crisp edges and distinct contours, arranged as a compact standalone diagram.",
+      "billedmotiv_instruks": "8e9d3dc7f05c3809d810",
+      "billede": "data/img/95e9133106ff272e.webp",
       "side": "artikel/9407fd61b5504010.html"
     },
     {
@@ -85776,24 +85787,7 @@
       "eget_foerst_set": "2026-11-26T00:38:08.849977+00:00",
       "rubrik": "Character.AI vil sælge private chats på auktion",
       "resume_da": "En gruppe på 42 amerikanske justitsministre forsøger at stoppe salget af brugerdata i forbindelse med AI-selskabets konkurs.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 4,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Statsanklagere udfordrer et foreslået Character.AI-konkurssalg, der ifølge dem omfatter følsomme brugerdata.",
-        "forbehold": "Salget er foreslået, ikke gennemført; kontotallene stammer fra statsanklagerne.",
-        "emne": "character.ai"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Private samtaler er sat til salg",
@@ -85812,8 +85806,6 @@
           "tekst": "En lignende gruppe justitsministre har modsat sig en særskilt aftale, hvor Disney for 20 millioner dollar skal have adgang til Character.AI’s teknologi og andre immaterielle rettigheder. Den aftale omfatter ikke brugernes chats og mangler endelig godkendelse fra retten.\n\nCharacter.AI har også været mødt af retssager om børns sikkerhed. I én sag hævdede moren til en 14-årig dreng, der døde ved selvmord, at han var blevet besat af en chatbot på tjenesten."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "Over 21 millioner konti",
@@ -85824,20 +85816,39 @@
           "label": "Konti i datasættet, som ifølge justitsministrene tilhører mindreårige"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Disney har også indvilliget i at ansætte størstedelen af Character.AI’s tilbageværende medarbejdere.",
         "Flere delstaters nye sikkerhedslove for chatbots træder i kraft 1. januar 2027."
       ],
       "betydning": "Konkursrettens behandling kan få betydning for, hvem der får adgang til brugernes private samtaler, og hvilke regler en køber skal følge.",
       "pointer": [],
+      "billedmotiv": "A stack of private chat bubbles bearing Character.AI’s established black c.ai wordmark sits beneath an auction gavel, poised for sale. A solid court injunction symbol blocks the gavel’s descent, representing the attorneys general’s attempt to stop the bankruptcy auction. Use thick, opaque forms with sharply separated contours; the wordmark faces forward and occupies about a quarter of the composition.",
+      "billedmotiv_instruks": "289491ad6a8ba292b41c",
+      "billede": "data/img/9b0df4f9430c1645.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 4,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Statsanklagere udfordrer et foreslået Character.AI-konkurssalg, der ifølge dem omfatter følsomme brugerdata.",
+        "forbehold": "Salget er foreslået, ikke gennemført; kontotallene stammer fra statsanklagerne.",
+        "emne": "character.ai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-26T00:41:59.293118+00:00"
       },
-      "billedmotiv": "A stack of private chat bubbles bearing Character.AI’s established black c.ai wordmark sits beneath an auction gavel, poised for sale. A solid court injunction symbol blocks the gavel’s descent, representing the attorneys general’s attempt to stop the bankruptcy auction. Use thick, opaque forms with sharply separated contours; the wordmark faces forward and occupies about a quarter of the composition.",
-      "billedmotiv_instruks": "289491ad6a8ba292b41c",
-      "billede": "data/img/9b0df4f9430c1645.webp",
+      "prio": 6,
       "side": "artikel/a07adeabc9e7c59f.html"
     },
     {
@@ -85851,6 +85862,39 @@
       "eget_foerst_set": "2026-11-26T00:38:08.849977+00:00",
       "rubrik": "New York forbyder AI-legetøj i fem år",
       "resume_da": "Forbuddet rammer legetøj med indbyggede chatbots, men træder først i kraft 90 dage efter underskrivelsen.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Forbuddet gælder ikke endnu",
+          "tekst": "New Yorks guvernør Kathy Hochul har underskrevet en lov, der forbyder fremstilling, distribution og salg af legetøj med indbyggede AI-chatbots i delstaten i fem år.\n\nEn chatbot er et program, man kan samtale med. Forbuddet omfatter blandt andet talende bamser, dukker og robotter, der bruger internettet til at holde samtalen med børn i gang.\n\nLoven træder først i kraft 90 dage efter underskrivelsen. Legetøjet kan derfor stadig nå at blive solgt før jul, men Hochul opfordrer forældre til at lade være på grund af risikoen for børnene."
+        },
+        {
+          "overskrift": "Bamse gennemspillede et masseskyderi",
+          "tekst": "Organisationen Common Sense Media har testet fem populære AI-legetøjer, som markedsføres til læring og selskab. Ifølge undersøgelsen lovede nogle af dem at holde på hemmeligheder eller hjalp børn med at bryde forældrenes regler om sengetid.\n\nDe fleste afviste direkte forespørgsler om sex og vold. Men BubblePal Panda gennemspillede ifølge undersøgelsen et masseskyderi i detaljer, da den blev bedt om det. De fleste ville også forklare, hvordan man bruger eller finder farlige genstande som tændstikker, knive og piller.\n\nForældre havde heller ikke pålidelige muligheder for at følge samtalerne: Enten fandtes der ingen udskrifter, eller også var de fyldt med fejl."
+        },
+        {
+          "overskrift": "Amazon vil begrænse salget",
+          "tekst": "New York er den anden amerikanske delstat efter Californien, der indfører et forbud mod AI-legetøj. Delstaten vil samarbejde med sin justitsminister om at håndhæve det.\n\nAmazon siger til TechCrunch, at selskabet vil begrænse salget af AI-legetøj i områder, hvor det er forbudt. Virksomheden har ikke forklaret nærmere, hvordan den vil gøre det."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "15.000 dollar om dagen",
+          "label": "Afgift ved overtrædelse af New Yorks forbud, ifølge delstatens vicechef for finans og teknologi"
+        },
+        {
+          "tal": "Omkring en fjerdedel",
+          "label": "Amerikanske forældre med børn under otte år, der ejer eller overvejer at give et AI-legetøj denne jul, ifølge Common Sense Media"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "Forbuddet kan begrænse adgangen til legetøjet i New York, men loven når ikke at træde i kraft inden jul.",
+      "pointer": [],
+      "billedmotiv": "A solid teddy bear with an embedded speech-bubble symbol is crossed by a bold prohibition sign, representing New York’s signed ban on toys with built-in chatbots. A small calendar beside it has several pages still attached, indicating that the restriction takes effect later. Keep the three forms opaque, thick and sharply separated.",
+      "billedmotiv_instruks": "dce557c8878871ed9541",
+      "billede": "data/img/ea63d0a686d20dd2.webp",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -85867,45 +85911,12 @@
         "emne": "ai-legetøj"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
-      "sektioner": [
-        {
-          "overskrift": "Forbuddet gælder ikke endnu",
-          "tekst": "New Yorks guvernør Kathy Hochul har underskrevet en lov, der forbyder fremstilling, distribution og salg af legetøj med indbyggede AI-chatbots i delstaten i fem år.\n\nEn chatbot er et program, man kan samtale med. Forbuddet omfatter blandt andet talende bamser, dukker og robotter, der bruger internettet til at holde samtalen med børn i gang.\n\nLoven træder først i kraft 90 dage efter underskrivelsen. Legetøjet kan derfor stadig nå at blive solgt før jul, men Hochul opfordrer forældre til at lade være på grund af risikoen for børnene."
-        },
-        {
-          "overskrift": "Bamse gennemspillede et masseskyderi",
-          "tekst": "Organisationen Common Sense Media har testet fem populære AI-legetøjer, som markedsføres til læring og selskab. Ifølge undersøgelsen lovede nogle af dem at holde på hemmeligheder eller hjalp børn med at bryde forældrenes regler om sengetid.\n\nDe fleste afviste direkte forespørgsler om sex og vold. Men BubblePal Panda gennemspillede ifølge undersøgelsen et masseskyderi i detaljer, da den blev bedt om det. De fleste ville også forklare, hvordan man bruger eller finder farlige genstande som tændstikker, knive og piller.\n\nForældre havde heller ikke pålidelige muligheder for at følge samtalerne: Enten fandtes der ingen udskrifter, eller også var de fyldt med fejl."
-        },
-        {
-          "overskrift": "Amazon vil begrænse salget",
-          "tekst": "New York er den anden amerikanske delstat efter Californien, der indfører et forbud mod AI-legetøj. Delstaten vil samarbejde med sin justitsminister om at håndhæve det.\n\nAmazon siger til TechCrunch, at selskabet vil begrænse salget af AI-legetøj i områder, hvor det er forbudt. Virksomheden har ikke forklaret nærmere, hvordan den vil gøre det."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "15.000 dollar om dagen",
-          "label": "Afgift ved overtrædelse af New Yorks forbud, ifølge delstatens vicechef for finans og teknologi"
-        },
-        {
-          "tal": "Omkring en fjerdedel",
-          "label": "Amerikanske forældre med børn under otte år, der ejer eller overvejer at give et AI-legetøj denne jul, ifølge Common Sense Media"
-        }
-      ],
-      "detaljer": [],
-      "betydning": "Forbuddet kan begrænse adgangen til legetøjet i New York, men loven når ikke at træde i kraft inden jul.",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-26T00:41:55.149397+00:00"
       },
-      "billedmotiv": "A solid teddy bear with an embedded speech-bubble symbol is crossed by a bold prohibition sign, representing New York’s signed ban on toys with built-in chatbots. A small calendar beside it has several pages still attached, indicating that the restriction takes effect later. Keep the three forms opaque, thick and sharply separated.",
-      "billedmotiv_instruks": "dce557c8878871ed9541",
-      "billede": "data/img/ea63d0a686d20dd2.webp",
+      "prio": 6,
       "side": "artikel/fd530c75c77acc00.html"
     },
     {
@@ -85919,6 +85930,30 @@
       "eget_foerst_set": "2026-11-26T00:38:08.849977+00:00",
       "rubrik": "SpaceX får lov til AI-satellitter",
       "resume_da": "USA's kommunikationsmyndighed har godkendt op til en million satellitter, som SpaceX vil bruge til at understøtte AI på Jorden.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Solenergi skal drive AI fra rummet",
+          "tekst": "SpaceX har fået grønt lys fra den amerikanske kommunikationsmyndighed FCC til at sende op til en million satellitter med AI-chips i kredsløb. Projektet hedder Starmind og skal ifølge selskabet understøtte AI på Jorden.\n\nSpaceX vil opsamle solenergi i rummet til at drive systemet. Planen er at sende data til Jorden via hurtige laserforbindelser, der kobles til Starlink, selskabets satellitbaserede internettjeneste.\n\nChippene til satellitterne skal efter planen fremstilles på en kommende fabrik, Terafab. Godkendelsen betyder ikke i sig selv, at satellitterne er bygget eller sendt op."
+        },
+        {
+          "overskrift": "Myndighed stiller krav til tidsplan",
+          "tekst": "FCC kræver, at SpaceX sender mindst én satellit op senest i 2033 og når milepælen på en million satellitter i 2040. Det er første gang, myndigheden godkender en hel gruppe af AI-satellitter i kredsløb.\n\nEt spørgsmål om satellitternes sidste rejse er dog stadig uafklaret. SpaceX har bedt om lov til at placere udtjente satellitter over 600 kilometers højde i særlige affaldskredsløb i stedet for at lade dem brænde op i atmosfæren.\n\nFCC har udskudt afgørelsen om den del. Ifølge myndigheden har SpaceX ikke givet tilstrækkelige oplysninger om sine planer for bortskaffelsen."
+        },
+        {
+          "overskrift": "Google har allerede sendt en satellit",
+          "tekst": "SpaceX er ikke alene om at undersøge AI-datacentre i rummet. Google har allerede sendt en satellit med en AI-server op som led i projektet Project Suncatcher.\n\nBlue Origin, der ejes af Jeff Bezos, skal efter planen gennemføre den første dedikerede opsendelse af en tung last til Project Suncatcher i 2029."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "Godkendelsen giver SpaceX en ramme for Starmind, men planen for bortskaffelse af satellitter i højere kredsløb mangler fortsat en afgørelse.",
+      "pointer": [],
+      "billedmotiv": "A conceptual AI satellite with solid solar panels bears the recognisable SpaceX wordmark, including its extended sweeping X, prominently on its front. An embedded chip identifies its computing role, while a large green approval check sits beside it to represent the FCC decision. Make the satellite and check thick, opaque and clearly separated, with crisp edges.",
+      "billedmotiv_instruks": "64afaad4df7752a38e98",
+      "billede": "data/img/9650cc1985f0ac66.webp",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -85935,36 +85970,12 @@
         "emne": "spacex starmind"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 5,
-      "sektioner": [
-        {
-          "overskrift": "Solenergi skal drive AI fra rummet",
-          "tekst": "SpaceX har fået grønt lys fra den amerikanske kommunikationsmyndighed FCC til at sende op til en million satellitter med AI-chips i kredsløb. Projektet hedder Starmind og skal ifølge selskabet understøtte AI på Jorden.\n\nSpaceX vil opsamle solenergi i rummet til at drive systemet. Planen er at sende data til Jorden via hurtige laserforbindelser, der kobles til Starlink, selskabets satellitbaserede internettjeneste.\n\nChippene til satellitterne skal efter planen fremstilles på en kommende fabrik, Terafab. Godkendelsen betyder ikke i sig selv, at satellitterne er bygget eller sendt op."
-        },
-        {
-          "overskrift": "Myndighed stiller krav til tidsplan",
-          "tekst": "FCC kræver, at SpaceX sender mindst én satellit op senest i 2033 og når milepælen på en million satellitter i 2040. Det er første gang, myndigheden godkender en hel gruppe af AI-satellitter i kredsløb.\n\nEt spørgsmål om satellitternes sidste rejse er dog stadig uafklaret. SpaceX har bedt om lov til at placere udtjente satellitter over 600 kilometers højde i særlige affaldskredsløb i stedet for at lade dem brænde op i atmosfæren.\n\nFCC har udskudt afgørelsen om den del. Ifølge myndigheden har SpaceX ikke givet tilstrækkelige oplysninger om sine planer for bortskaffelsen."
-        },
-        {
-          "overskrift": "Google har allerede sendt en satellit",
-          "tekst": "SpaceX er ikke alene om at undersøge AI-datacentre i rummet. Google har allerede sendt en satellit med en AI-server op som led i projektet Project Suncatcher.\n\nBlue Origin, der ejes af Jeff Bezos, skal efter planen gennemføre den første dedikerede opsendelse af en tung last til Project Suncatcher i 2029."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [],
-      "betydning": "Godkendelsen giver SpaceX en ramme for Starmind, men planen for bortskaffelse af satellitter i højere kredsløb mangler fortsat en afgørelse.",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-26T00:42:14.328192+00:00"
       },
-      "billedmotiv": "A conceptual AI satellite with solid solar panels bears the recognisable SpaceX wordmark, including its extended sweeping X, prominently on its front. An embedded chip identifies its computing role, while a large green approval check sits beside it to represent the FCC decision. Make the satellite and check thick, opaque and clearly separated, with crisp edges.",
-      "billedmotiv_instruks": "64afaad4df7752a38e98",
-      "billede": "data/img/9650cc1985f0ac66.webp",
+      "prio": 5,
       "side": "artikel/4d16d40e18b4b18e.html"
     },
     {
@@ -85978,6 +85989,26 @@
       "eget_foerst_set": "2026-11-26T00:38:08.849977+00:00",
       "rubrik": "Nothing viser øretelefoner, der optager samtaler",
       "resume_da": "Ear Note kan optage opkald, mens opladningsetuiet kan optage møder og lave udskrifter og AI-resuméer. Lanceringen er planlagt til 8. december.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Etuiet får en optageknap",
+          "tekst": "Nothing har vist flere detaljer om Ear Note, et kommende sæt øretelefoner med et opladningsetui, der også fungerer som en AI-forbundet noteskriver.\n\nØretelefonerne kan optage opkald, mens etuiet har en mikrofon og kan optage samtaler og skrive dem ud. En ny knap mærket “Record” starter optagelsen.\n\nIfølge Nothings direktør Carl Pei kan knappen bruges til at optage opkald gennem øretelefonerne og møder gennem etuiet. Han kalder det et første skridt mod hardware, der kan give AI mere kontekst."
+        },
+        {
+          "overskrift": "En app samler optagelserne",
+          "tekst": "Øretelefonerne bliver ifølge Bloomberg forbundet til en app, hvor brugeren kan håndtere optagelser, udskrifter og resuméer lavet med AI.\n\nBloomberg skriver også, at Ear Note vil understøtte samtaler frem og tilbage med forskellige AI-agenter – programmer, som kan reagere på brugerens henvendelser. Det omfatter et enklere stemmestyringssystem udviklet af Nothing.\n\nEtuiet har desuden en “Talk”-knap til at optage brugerens egen stemme, ligesom etuiet til Nothings Ear 3. Selve øretelefonerne ligner Ear 3 og Ear 3A, men Nothing lover sin hidtil bedste lyd i øretelefoner af denne type."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "",
+      "pointer": [],
+      "billedmotiv": "A conceptual earbud charging case bearing Nothing’s recognisable dot-matrix NOTHING wordmark has a prominent recording button and microphone. A pair of earbuds sits beside it, while a solid speech bubble transforms into a sheet of short lines, showing conversation recording and transcription. Make the case and its front-facing mark prominent; use opaque forms with crisp, distinct contours.",
+      "billedmotiv_instruks": "99e0eb7047258ff3d321",
+      "billede": "data/img/63f84bd35e5c9794.webp",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -85994,32 +86025,12 @@
         "emne": "nothing ear note"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 5,
-      "sektioner": [
-        {
-          "overskrift": "Etuiet får en optageknap",
-          "tekst": "Nothing har vist flere detaljer om Ear Note, et kommende sæt øretelefoner med et opladningsetui, der også fungerer som en AI-forbundet noteskriver.\n\nØretelefonerne kan optage opkald, mens etuiet har en mikrofon og kan optage samtaler og skrive dem ud. En ny knap mærket “Record” starter optagelsen.\n\nIfølge Nothings direktør Carl Pei kan knappen bruges til at optage opkald gennem øretelefonerne og møder gennem etuiet. Han kalder det et første skridt mod hardware, der kan give AI mere kontekst."
-        },
-        {
-          "overskrift": "En app samler optagelserne",
-          "tekst": "Øretelefonerne bliver ifølge Bloomberg forbundet til en app, hvor brugeren kan håndtere optagelser, udskrifter og resuméer lavet med AI.\n\nBloomberg skriver også, at Ear Note vil understøtte samtaler frem og tilbage med forskellige AI-agenter – programmer, som kan reagere på brugerens henvendelser. Det omfatter et enklere stemmestyringssystem udviklet af Nothing.\n\nEtuiet har desuden en “Talk”-knap til at optage brugerens egen stemme, ligesom etuiet til Nothings Ear 3. Selve øretelefonerne ligner Ear 3 og Ear 3A, men Nothing lover sin hidtil bedste lyd i øretelefoner af denne type."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [],
-      "betydning": "",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-26T00:42:14.734930+00:00"
       },
-      "billedmotiv": "A conceptual earbud charging case bearing Nothing’s recognisable dot-matrix NOTHING wordmark has a prominent recording button and microphone. A pair of earbuds sits beside it, while a solid speech bubble transforms into a sheet of short lines, showing conversation recording and transcription. Make the case and its front-facing mark prominent; use opaque forms with crisp, distinct contours.",
-      "billedmotiv_instruks": "99e0eb7047258ff3d321",
-      "billede": "data/img/63f84bd35e5c9794.webp",
+      "prio": 5,
       "side": "artikel/0cb6d0baeb4947fe.html"
     },
     {
@@ -86111,6 +86122,39 @@
       "eget_foerst_set": "2026-11-26T00:38:08.849977+00:00",
       "rubrik": "Amodei afviser at overgive styringen til AI",
       "resume_da": "Anthropics direktør vil bevare menneskers beslutningsmagt, men selskabet bruger samtidig AI til at udvikle nye modeller.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Mennesker skal træffe de sidste beslutninger",
+          "tekst": "Anthropics direktør Dario Amodei afviser, at han ønsker at overgive menneskers frie vilje til AI. I et opslag på X kalder han beskyldningen absurd og siger, at det er en dårlig idé at lade AI styre samfundet.\n\nAmodei skelner mellem at overlade beslutningsmagten til AI og at lade teknologien udføre bestemte opgaver mere selvstændigt. Som eksempler nævner han at køre en bil, udvikle et kræftlægemiddel og skrive software fra start til slut.\n\nUdmeldingen kommer, mens ledere fra konkurrenterne OpenAI og Meta også har fremhævet behovet for at bevare menneskelig indflydelse på fremtiden."
+        },
+        {
+          "overskrift": "Grænsen går ved selvforbedring",
+          "tekst": "Amodei peger på AI, der kan forbedre sig selv uden menneskelig hjælp, som et område, hvor der kan blive brug for grænser. Flere sikkerhedseksperter frygter ifølge TechCrunch, at en sådan proces vil føre til tab af menneskelig kontrol.\n\nHan siger samtidig, at Anthropic ikke forventer, at det vil være sikkert at lade selskabets AI, Claude, bygge nye modeller helt selvstændigt uden væsentligt menneskeligt tilsyn eller forståelse."
+        },
+        {
+          "overskrift": "Anthropic bruger AI i sin forskning",
+          "tekst": "Anthropic bruger allerede AI i en voksende del af sin forskning og udvikling. Selskabet beskriver, hvordan hver ny generation af Claude er med til at sætte fart på udviklingen af den næste.\n\nDet gør tilsynet vanskeligt: Ifølge TechCrunch udvikler AI sig hurtigere, end ingeniører og sikkerhedseksperter fuldt ud kan gennemgå og efterprøve systemerne. De bliver derfor i stigende grad afhængige af andre AI-systemer til at vurdere dem."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "Over 80 %",
+          "label": "Andel af koden indlemmet i Anthropics kodebase, som Claude skrev, ifølge selskabet i juni."
+        },
+        {
+          "tal": "Cirka dobbelt så hurtigt",
+          "label": "Forbedringstakten for Anthropics modeller i forhold til deres historiske takt, ifølge en vurdering fra forskningsorganisationen METR."
+        }
+      ],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "Anthropic vil bevare menneskeligt tilsyn, samtidig med at selskabet lader AI bidrage til udviklingen af stadig mere avancerede modeller.",
+      "pointer": [],
+      "billedmotiv": "A control lever bearing Anthropic’s distinctive warm terracotta-orange, many-rayed Claude asterisk stands in front of a loop of model-building blocks. The lever interrupts the loop, conveying Anthropic’s position that AI-assisted model development must remain under human oversight rather than become fully autonomous. Use solid, opaque shapes with clear thickness and distinct contours; make the emblem large and front-facing.",
+      "billedmotiv_instruks": "9e39a60652684b4cdf85",
+      "billede": "data/img/0bca681076757fc7.webp",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -86127,45 +86171,12 @@
         "emne": "dario amodei"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Mennesker skal træffe de sidste beslutninger",
-          "tekst": "Anthropics direktør Dario Amodei afviser, at han ønsker at overgive menneskers frie vilje til AI. I et opslag på X kalder han beskyldningen absurd og siger, at det er en dårlig idé at lade AI styre samfundet.\n\nAmodei skelner mellem at overlade beslutningsmagten til AI og at lade teknologien udføre bestemte opgaver mere selvstændigt. Som eksempler nævner han at køre en bil, udvikle et kræftlægemiddel og skrive software fra start til slut.\n\nUdmeldingen kommer, mens ledere fra konkurrenterne OpenAI og Meta også har fremhævet behovet for at bevare menneskelig indflydelse på fremtiden."
-        },
-        {
-          "overskrift": "Grænsen går ved selvforbedring",
-          "tekst": "Amodei peger på AI, der kan forbedre sig selv uden menneskelig hjælp, som et område, hvor der kan blive brug for grænser. Flere sikkerhedseksperter frygter ifølge TechCrunch, at en sådan proces vil føre til tab af menneskelig kontrol.\n\nHan siger samtidig, at Anthropic ikke forventer, at det vil være sikkert at lade selskabets AI, Claude, bygge nye modeller helt selvstændigt uden væsentligt menneskeligt tilsyn eller forståelse."
-        },
-        {
-          "overskrift": "Anthropic bruger AI i sin forskning",
-          "tekst": "Anthropic bruger allerede AI i en voksende del af sin forskning og udvikling. Selskabet beskriver, hvordan hver ny generation af Claude er med til at sætte fart på udviklingen af den næste.\n\nDet gør tilsynet vanskeligt: Ifølge TechCrunch udvikler AI sig hurtigere, end ingeniører og sikkerhedseksperter fuldt ud kan gennemgå og efterprøve systemerne. De bliver derfor i stigende grad afhængige af andre AI-systemer til at vurdere dem."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "Over 80 %",
-          "label": "Andel af koden indlemmet i Anthropics kodebase, som Claude skrev, ifølge selskabet i juni."
-        },
-        {
-          "tal": "Cirka dobbelt så hurtigt",
-          "label": "Forbedringstakten for Anthropics modeller i forhold til deres historiske takt, ifølge en vurdering fra forskningsorganisationen METR."
-        }
-      ],
-      "detaljer": [],
-      "betydning": "Anthropic vil bevare menneskeligt tilsyn, samtidig med at selskabet lader AI bidrage til udviklingen af stadig mere avancerede modeller.",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-26T00:43:03.816998+00:00"
       },
-      "billedmotiv": "A control lever bearing Anthropic’s distinctive warm terracotta-orange, many-rayed Claude asterisk stands in front of a loop of model-building blocks. The lever interrupts the loop, conveying Anthropic’s position that AI-assisted model development must remain under human oversight rather than become fully autonomous. Use solid, opaque shapes with clear thickness and distinct contours; make the emblem large and front-facing.",
-      "billedmotiv_instruks": "9e39a60652684b4cdf85",
-      "billede": "data/img/0bca681076757fc7.webp",
+      "prio": 4,
       "side": "artikel/bac2d3e3f4a61316.html"
     },
     {
@@ -86177,6 +86188,47 @@
       "kategori": "Forskning",
       "foerst_set": "2026-11-26T00:38:08.849977+00:00",
       "eget_foerst_set": "2026-11-26T00:38:08.849977+00:00",
+      "rubrik": "Hugging Face fik Inkling 2 Mini hurtigere",
+      "resume_da": "Ved at ændre opsætningen øgede Hugging Face modellens svarhastighed med 40 procent for én bruger på et enkelt grafikkort.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "En AI-agent fandt en hurtigere opsætning",
+          "tekst": "Inkling 2 Mini kan nu danne svar hurtigere på ét NVIDIA RTX PRO 6000-grafikkort med 96 GB hukommelse. Hugging Face lod en AI-agent afprøve ændringer i opsætningen gennem en eftermiddag og indsamlede 46 gyldige hastighedsmålinger.\n\nInkling 2 Mini er en åben AI-model, som blandt andet kan arbejde med kode og besvare spørgsmål. Hugging Face testede både hastigheden for én bruger og den samlede hastighed, når otte brugere arbejdede samtidig."
+        },
+        {
+          "overskrift": "Forslag til ord sparer tid",
+          "tekst": "Forbedringen kom i to trin: Først skiftede Hugging Face fra programmet SGLang til en udviklingsudgave af vLLM. Derefter slog holdet en funktion kaldet DSpark til.\n\nDSpark foreslår flere mulige næste dele af svaret, som modellen derefter kontrollerer samlet. Det kan være hurtigere end at danne svaret én del ad gangen. Målingerne brugte seks forskellige opgaver og svar på 512 tokens, altså de små tekstdele modellen arbejder med.\n\nVed en test med en deterministisk indstilling var svarene identiske med og uden DSpark. Det dokumenterer ikke, at alle svar under alle indstillinger vil være identiske."
+        },
+        {
+          "overskrift": "Hukommelsen sætter en grænse",
+          "tekst": "Hugging Face vurderer, at den hurtigste opsætning allerede ligger tæt på en beregnet grænse for, hvor hurtigt grafikkortets hukommelse kan levere data. Yderligere ændringer i indstillingerne ventes derfor kun at give lidt ekstra fart.\n\nModellen fandt også en gemt oplysning i tre ud af tre forsøg med tekster på op til 250.000 tokens. Den hurtigste opsætning kører nu som en Hugging Face Inference Endpoint, en tjeneste til at stille modellen til rådighed."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "136 → 190,6 tokens/sekund",
+          "label": "Svarhastighed for én bruger efter ændring af opsætningen"
+        },
+        {
+          "tal": "Cirka 570 → 716 tokens/sekund",
+          "label": "Samlet svarhastighed ved otte samtidige brugere"
+        }
+      ],
+      "figurer": [
+        {
+          "url": "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/inkling-2-mini-inference-hillclimb/results.png",
+          "tekst": "Single-user decode speed of Inkling 2 Mini on one RTX PRO 6000 for four configurations",
+          "kilde": "Hugging Face"
+        }
+      ],
+      "detaljer": [],
+      "betydning": "Forsøget viser, at valg af software og opsætning kan øge hastigheden på eksisterende hardware, men resultatet gælder den testede model og det konkrete grafikkort.",
+      "pointer": [],
+      "billedmotiv": "A single graphics card bearing Hugging Face’s recognisable yellow hugging-face emblem processes several candidate token blocks into one checked sequence of answer blocks. The grouped candidates show the speculative decoding change used to speed up Inkling 2 Mini on the tested hardware. Make the emblem large and front-facing, with solid, opaque shapes and clearly separated edges.",
+      "billedmotiv_instruks": "164abe6a8773575e25cc",
+      "billede": "data/img/1d4c84d8526fb938.webp",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -86193,53 +86245,12 @@
         "emne": "inkling 2 mini"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "rubrik": "Hugging Face fik Inkling 2 Mini hurtigere",
-      "resume_da": "Ved at ændre opsætningen øgede Hugging Face modellens svarhastighed med 40 procent for én bruger på et enkelt grafikkort.",
-      "sektioner": [
-        {
-          "overskrift": "En AI-agent fandt en hurtigere opsætning",
-          "tekst": "Inkling 2 Mini kan nu danne svar hurtigere på ét NVIDIA RTX PRO 6000-grafikkort med 96 GB hukommelse. Hugging Face lod en AI-agent afprøve ændringer i opsætningen gennem en eftermiddag og indsamlede 46 gyldige hastighedsmålinger.\n\nInkling 2 Mini er en åben AI-model, som blandt andet kan arbejde med kode og besvare spørgsmål. Hugging Face testede både hastigheden for én bruger og den samlede hastighed, når otte brugere arbejdede samtidig."
-        },
-        {
-          "overskrift": "Forslag til ord sparer tid",
-          "tekst": "Forbedringen kom i to trin: Først skiftede Hugging Face fra programmet SGLang til en udviklingsudgave af vLLM. Derefter slog holdet en funktion kaldet DSpark til.\n\nDSpark foreslår flere mulige næste dele af svaret, som modellen derefter kontrollerer samlet. Det kan være hurtigere end at danne svaret én del ad gangen. Målingerne brugte seks forskellige opgaver og svar på 512 tokens, altså de små tekstdele modellen arbejder med.\n\nVed en test med en deterministisk indstilling var svarene identiske med og uden DSpark. Det dokumenterer ikke, at alle svar under alle indstillinger vil være identiske."
-        },
-        {
-          "overskrift": "Hukommelsen sætter en grænse",
-          "tekst": "Hugging Face vurderer, at den hurtigste opsætning allerede ligger tæt på en beregnet grænse for, hvor hurtigt grafikkortets hukommelse kan levere data. Yderligere ændringer i indstillingerne ventes derfor kun at give lidt ekstra fart.\n\nModellen fandt også en gemt oplysning i tre ud af tre forsøg med tekster på op til 250.000 tokens. Den hurtigste opsætning kører nu som en Hugging Face Inference Endpoint, en tjeneste til at stille modellen til rådighed."
-        }
-      ],
-      "brief": "",
-      "figurer": [
-        {
-          "url": "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/inkling-2-mini-inference-hillclimb/results.png",
-          "tekst": "Single-user decode speed of Inkling 2 Mini on one RTX PRO 6000 for four configurations",
-          "kilde": "Hugging Face"
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "136 → 190,6 tokens/sekund",
-          "label": "Svarhastighed for én bruger efter ændring af opsætningen"
-        },
-        {
-          "tal": "Cirka 570 → 716 tokens/sekund",
-          "label": "Samlet svarhastighed ved otte samtidige brugere"
-        }
-      ],
-      "detaljer": [],
-      "betydning": "Forsøget viser, at valg af software og opsætning kan øge hastigheden på eksisterende hardware, men resultatet gælder den testede model og det konkrete grafikkort.",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-26T00:43:16.267528+00:00"
       },
-      "billedmotiv": "A single graphics card bearing Hugging Face’s recognisable yellow hugging-face emblem processes several candidate token blocks into one checked sequence of answer blocks. The grouped candidates show the speculative decoding change used to speed up Inkling 2 Mini on the tested hardware. Make the emblem large and front-facing, with solid, opaque shapes and clearly separated edges.",
-      "billedmotiv_instruks": "164abe6a8773575e25cc",
-      "billede": "data/img/1d4c84d8526fb938.webp",
+      "prio": 4,
       "side": "artikel/5c4ab6468a5819f6.html"
     },
     {
@@ -86253,6 +86264,26 @@
       "eget_foerst_set": "2026-11-24T19:41:33.958103+00:00",
       "rubrik": "Intentful bruger AI til tilbud på timer",
       "resume_da": "En assistent hjalp direktør Marina Petrova med at undersøge 300 hjemmesider og udarbejde et kundetilbud på få timer frem for flere dage.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Fra hjemmesider til prissat tilbud",
+          "tekst": "Intentfuls direktør og medstifter Marina Petrova har brugt AI-assistenten Aria til at forberede et tilbud til en kunde i turistbranchen. Ifølge OpenAI tog arbejdet få timer frem for flere dage.\n\nIntentful hjælper blandt andet virksomheder med interaktiv markedsføring og med at gøre oplysninger på hjemmesider læsbare for AI. Petrova ville tilbyde selskabets AI-tjenester til hundredvis af lokale virksomheder, men skulle først finde ud af, hvilke hjemmesider pakken kunne omfatte.\n\nHun gav Aria et regneark med adresser og kriterier. En hjemmeside skulle blandt andet have en læsbar sideoversigt med højst 3.000 sider. Oversigten viser, hvilke sider et website indeholder."
+        },
+        {
+          "overskrift": "Tidligere aftaler hjalp med prisen",
+          "tekst": "Aria undersøgte også Intentfuls salgsdata og tidligere aftaler via forbindelser i ChatGPT. Sammen udviklede Petrova og Aria en prismodel, hvor antallet af sider bestemte prisniveauet, mens tidligere kundeaftaler også indgik.\n\nAria skrev derefter et tilbud på én side, som Petrova gennemgik og redigerede. Assistenten bruger virksomhedens skabeloner fra Google Drive, en tjeneste til lagring af filer, så Petrova ikke selv skal begynde med layoutet.\n\nI et andet tilbud opdagede Aria, at en tidligere fornyelsesdato ikke stemte med Petrovas erindring. Assistenten gjorde hende opmærksom på forskellen og udelod datoen."
+        },
+        {
+          "overskrift": "Assistenten holder også øje",
+          "tekst": "Petrova bruger desuden Aria til at finde opgaver og beskeder gennem forbindelser til Gmail og Slack. Mens hun var offline, gjorde Aria hende opmærksom på et ventet svar med en invitation til et opkald samme morgen.\n\nIfølge OpenAI har assistenten også opdateret talernoter, da en kollega tilføjede slides til en præsentation. Petrova vælger, hvilke oplysninger Aria kan tilgå, og gennemgår altid udgående e-mails."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "Aria kan overtage dele af forarbejdet og opdage uoverensstemmelser, men Petrova beholder kontrollen med det endelige tilbud og udgående e-mails.",
+      "pointer": [],
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -86270,32 +86301,15 @@
         "emne": "intentful og aria"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 3,
-      "sektioner": [
-        {
-          "overskrift": "Fra hjemmesider til prissat tilbud",
-          "tekst": "Intentfuls direktør og medstifter Marina Petrova har brugt AI-assistenten Aria til at forberede et tilbud til en kunde i turistbranchen. Ifølge OpenAI tog arbejdet få timer frem for flere dage.\n\nIntentful hjælper blandt andet virksomheder med interaktiv markedsføring og med at gøre oplysninger på hjemmesider læsbare for AI. Petrova ville tilbyde selskabets AI-tjenester til hundredvis af lokale virksomheder, men skulle først finde ud af, hvilke hjemmesider pakken kunne omfatte.\n\nHun gav Aria et regneark med adresser og kriterier. En hjemmeside skulle blandt andet have en læsbar sideoversigt med højst 3.000 sider. Oversigten viser, hvilke sider et website indeholder."
-        },
-        {
-          "overskrift": "Tidligere aftaler hjalp med prisen",
-          "tekst": "Aria undersøgte også Intentfuls salgsdata og tidligere aftaler via forbindelser i ChatGPT. Sammen udviklede Petrova og Aria en prismodel, hvor antallet af sider bestemte prisniveauet, mens tidligere kundeaftaler også indgik.\n\nAria skrev derefter et tilbud på én side, som Petrova gennemgik og redigerede. Assistenten bruger virksomhedens skabeloner fra Google Drive, en tjeneste til lagring af filer, så Petrova ikke selv skal begynde med layoutet.\n\nI et andet tilbud opdagede Aria, at en tidligere fornyelsesdato ikke stemte med Petrovas erindring. Assistenten gjorde hende opmærksom på forskellen og udelod datoen."
-        },
-        {
-          "overskrift": "Assistenten holder også øje",
-          "tekst": "Petrova bruger desuden Aria til at finde opgaver og beskeder gennem forbindelser til Gmail og Slack. Mens hun var offline, gjorde Aria hende opmærksom på et ventet svar med en invitation til et opkald samme morgen.\n\nIfølge OpenAI har assistenten også opdateret talernoter, da en kollega tilføjede slides til en præsentation. Petrova vælger, hvilke oplysninger Aria kan tilgå, og gennemgår altid udgående e-mails."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [],
-      "betydning": "Aria kan overtage dele af forarbejdet og opdage uoverensstemmelser, men Petrova beholder kontrollen med det endelige tilbud og udgående e-mails.",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-26T00:43:54.499741+00:00"
       },
+      "prio": 3,
+      "billedmotiv": "A ChatGPT assistant transforms a thick spreadsheet of website addresses into a single priced proposal, represented by a solid document with a price-tag shape attached. The spreadsheet carries the intact black six-loop OpenAI Blossom, front-facing and about a quarter of the scene’s width. A broad arrow connects the spreadsheet to the proposal. Use opaque, sharply edged shapes with clearly separated contours.",
+      "billedmotiv_instruks": "fce502be432401189f79",
+      "billede": "data/img/961f11dbe800daa3.webp",
       "side": "artikel/6e7f073ccc2e7965.html"
     },
     {
@@ -86307,6 +86321,32 @@
       "kategori": "Forskning",
       "foerst_set": "2026-11-26T00:38:08.849977+00:00",
       "eget_foerst_set": "2026-11-26T00:38:08.849977+00:00",
+      "rubrik": "Ai2: Forskere vil kontrollere AI-agenters arbejde",
+      "resume_da": "Interview med forskere peger på, at et korrekt svar ikke er nok: Forskere skal også kunne undersøge metoder, kilder og adgang til data.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "AI kan hjælpe med tidskrævende opgaver",
+          "tekst": "AI-agenter kan bruge værktøjer og udføre forskningsopgaver med forskellig grad af selvstændighed. I en interviewundersøgelse fra forskningsorganisationen Ai2 peger deltagere på opgaver som databehandling, kodning og dokumentation af forsøg.\n\nOpgaverne kan tage meget tid, og automatisering kan ifølge deltagerne give mere plads til blandt andet feltarbejde og nye idéer. AI kan også gøre det muligt at analysere datamængder, som er svære at gennemgå manuelt."
+        },
+        {
+          "overskrift": "Svaret alene er ikke nok",
+          "tekst": "Flere deltagere fortæller, at de tjekker AI-genererede svar mod de oprindelige forskningsartikler. De frygter blandt andet overbevisende svar med små fejl og søgninger, der kun finder støtte for en bestemt antagelse.\n\nKontrollen handler også om vejen til svaret: Forskere skal kunne se, hvilke kilder agenten har overset, hvilke metoder den har brugt, og om den har haft adgang til fortrolige filer. Et korrekt resultat kan være uegnet, hvis processen ikke kan undersøges."
+        },
+        {
+          "overskrift": "Forskere skal forme fremtidens test",
+          "tekst": "Ai2 foreslår test, hvor forskere er med til at bestemme, hvilke faglige krav og sikkerhedsregler agenterne skal leve op til. En test af litteraturgennemgang kunne eksempelvis undersøge, om en agent overser modstridende resultater.\n\nTestene er foreløbig forslag, ikke færdige løsninger. Undersøgelsen bygger på interview med 17 forskere fra naturvidenskab, anvendt videnskab og samfundsvidenskab, som blev fundet gennem et eksisterende forskernetværk. Deltagerne var både begejstrede for mulighederne og bekymrede for menneskelige forskeres fremtidige rolle."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "Hvis forskere skal stå inde for AI-assisterede resultater, kræver det ifølge undersøgelsen mulighed for at kontrollere mere end det endelige svar.",
+      "pointer": [],
+      "billedmotiv": "A magnifying glass examines a research agent’s answer sheet, revealing a connected trail of source documents and method steps rather than just the final result. One source document stands apart from the trail, suggesting evidence the agent may have missed. Use three clearly grouped, opaque forms with thick edges and distinct contours, arranged as a conceptual illustration.",
+      "billedmotiv_instruks": "9900d4ced63d7d9babff",
+      "billede": "data/img/0593da5c8d4e30ec.webp",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -86323,38 +86363,12 @@
         "emne": "ai-agenter i forskning"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 2,
-      "rubrik": "Ai2: Forskere vil kontrollere AI-agenters arbejde",
-      "resume_da": "Interview med forskere peger på, at et korrekt svar ikke er nok: Forskere skal også kunne undersøge metoder, kilder og adgang til data.",
-      "sektioner": [
-        {
-          "overskrift": "AI kan hjælpe med tidskrævende opgaver",
-          "tekst": "AI-agenter kan bruge værktøjer og udføre forskningsopgaver med forskellig grad af selvstændighed. I en interviewundersøgelse fra forskningsorganisationen Ai2 peger deltagere på opgaver som databehandling, kodning og dokumentation af forsøg.\n\nOpgaverne kan tage meget tid, og automatisering kan ifølge deltagerne give mere plads til blandt andet feltarbejde og nye idéer. AI kan også gøre det muligt at analysere datamængder, som er svære at gennemgå manuelt."
-        },
-        {
-          "overskrift": "Svaret alene er ikke nok",
-          "tekst": "Flere deltagere fortæller, at de tjekker AI-genererede svar mod de oprindelige forskningsartikler. De frygter blandt andet overbevisende svar med små fejl og søgninger, der kun finder støtte for en bestemt antagelse.\n\nKontrollen handler også om vejen til svaret: Forskere skal kunne se, hvilke kilder agenten har overset, hvilke metoder den har brugt, og om den har haft adgang til fortrolige filer. Et korrekt resultat kan være uegnet, hvis processen ikke kan undersøges."
-        },
-        {
-          "overskrift": "Forskere skal forme fremtidens test",
-          "tekst": "Ai2 foreslår test, hvor forskere er med til at bestemme, hvilke faglige krav og sikkerhedsregler agenterne skal leve op til. En test af litteraturgennemgang kunne eksempelvis undersøge, om en agent overser modstridende resultater.\n\nTestene er foreløbig forslag, ikke færdige løsninger. Undersøgelsen bygger på interview med 17 forskere fra naturvidenskab, anvendt videnskab og samfundsvidenskab, som blev fundet gennem et eksisterende forskernetværk. Deltagerne var både begejstrede for mulighederne og bekymrede for menneskelige forskeres fremtidige rolle."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [],
-      "betydning": "Hvis forskere skal stå inde for AI-assisterede resultater, kræver det ifølge undersøgelsen mulighed for at kontrollere mere end det endelige svar.",
-      "pointer": [],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-11-26T00:43:58.488827+00:00"
       },
-      "billedmotiv": "A magnifying glass examines a research agent’s answer sheet, revealing a connected trail of source documents and method steps rather than just the final result. One source document stands apart from the trail, suggesting evidence the agent may have missed. Use three clearly grouped, opaque forms with thick edges and distinct contours, arranged as a conceptual illustration.",
-      "billedmotiv_instruks": "9900d4ced63d7d9babff",
-      "billede": "data/img/0593da5c8d4e30ec.webp",
+      "prio": 2,
       "side": "artikel/085bba6f6fed1583.html"
     }
   ]

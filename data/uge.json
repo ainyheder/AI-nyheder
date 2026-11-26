@@ -1,13 +1,13 @@
 {
- "rubrik": "Nye AI-evner møder krav om kontrol og dokumentation",
- "indledning": "Perioden bød på en ny model, forsøg med AI i forskning og en assistent, der kan arbejde på computeren – men også nye spørgsmål om sikkerhed og infrastruktur.",
+ "rubrik": "AI får nye arbejdsopgaver – men resultaterne kræver kontrol",
+ "indledning": "En ny model og mere selvstændige assistenter blev fulgt af forskningsresultater og et eksempel på, hvordan AI også kan bruges til angreb.",
  "historier": [
   {
    "overskrift": "GLM-5.4 gentager lag i ny model",
-   "tekst": "Z.ai har gjort GLM-5.4 tilgængelig. Modellen gentager en gruppe lag og bearbejder dermed mellemresultater flere gange uden flere parametre. Simon Willison testede modellen via Z.ai’s programmeringsadgang, men hans billedsammenligning dokumenterer ikke, hvor godt den skriver kode.",
+   "tekst": "Z.ai har gjort GLM-5.4 tilgængelig. Modellen bearbejder mellemresultater flere gange ved at gentage en gruppe lag, uden at antallet af parametre øges. Simon Willison har afprøvet adgangen og sammenlignet billeder fra GLM-generationerne, men kilden dokumenterer ikke, hvor godt den nye model skriver kode.",
    "link": "https://simonwillison.net/2026/Nov/23/glm-54/",
    "kategori": "Lanceringer",
-   "billede": "",
+   "billede": "data/img/95e9133106ff272e.webp",
    "dato": "2026-11-23T23:40:49+00:00",
    "andre": [],
    "titel": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
@@ -16,51 +16,8 @@
    "artikel_signatur": "cdf30242e716e3d6c3f8728856e0a5a2b609506ac035f341fe63aa9b5ba3f78c"
   },
   {
-   "overskrift": "GPT-6.2 foreslog proteiner, der viste tegn på binding",
-   "tekst": "OpenAI og forskningspartneren Onava lod en endnu ikke frigivet version af GPT-6.2 foreslå former til små proteiner. Laboratorieforsøg viste tegn på binding til hvert af fem målproteiner. Specialiserede modeller hjalp med at gøre forslagene klar til test; binding er ikke det samme som en færdig anvendelse.",
-   "link": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
-   "kategori": "Forskning",
-   "billede": "",
-   "dato": "2026-11-24T13:00:00+00:00",
-   "andre": [],
-   "titel": "GPT-6 models demonstrate intrinsic protein-design capabilities",
-   "rubrik": "GPT-6.2 designer proteiner, der binder sig",
-   "resume_da": "Laboratorieforsøg viste tegn på binding til fem udvalgte proteiner. Specialiserede modeller hjalp dog med at gøre forslagene klar til test.",
-   "artikel_signatur": "a2ffd9140f9aa74ec4c107ae0ddf908481be8ca66ae17fad635c93ef2b7cccad"
-  },
-  {
-   "overskrift": "Matematiker hævder Riemann-bevis med hjælp fra Claude",
-   "tekst": "Levent Alpöge mener at have fundet et bevis for Riemann-hypotesen sammen med Claude. Han har skrevet argumentet i Lean, et sprog til formel kontrol af matematiske beviser. Uafhængige matematikere har bekræftet, at Lean kan behandle koden, men resultatet er endnu ikke accepteret.",
-   "link": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
-   "kategori": "Forskning",
-   "billede": "data/img/b2f118e75f13301f.webp",
-   "dato": "2026-11-20T19:32:08+00:00",
-   "andre": [
-    {
-     "kilde": "Simon Willison AI",
-     "link": "https://simonwillison.net/2026/Nov/20/levent-alpoge/",
-     "rubrik": "Claude hjælper matematiker med muligt Riemann-bevis",
-     "resume_da": "Levent Alpöge mener at have løst et af matematikkens mest berømte problemer sammen med AI-modellen Claude. Beviset er endnu ikke uafhængigt verificeret.",
-     "dato": "2026-11-20T16:30:48+00:00",
-     "foerst_set": "2026-11-20T17:11:55.623291+00:00"
-    },
-    {
-     "kilde": "The Verge AI",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
-     "rubrik": "Anthropic-matematiker hævder at have løst Riemann-hypotesen",
-     "resume_da": "Levent Alpöge siger, at han brugte Claude til at bevise hypotesen. Beviset er endnu ikke verificeret.",
-     "dato": "2026-11-20 11:34:13-05:00",
-     "foerst_set": "2026-11-21T01:42:50.990268+00:00"
-    }
-   ],
-   "titel": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too",
-   "rubrik": "Claude hjalp matematiker med muligt Riemann-bevis",
-   "resume_da": "Levent Alpöges resultat kan omsættes i et program til matematisk kontrol, men forskere mangler stadig at forstå og gennemgå argumentet.",
-   "artikel_signatur": "6c54876b487ba002ab4caddd4295518de6eac9d7119ecb0fa5ad146a0a36a1b6"
-  },
-  {
-   "overskrift": "Gemini kan arbejde på brugerens Mac",
-   "tekst": "Google har lanceret en funktion, som kan arbejde med lokale filer, Mac-apps og hjemmesider. Brugeren kan følge arbejdet i et vindue og sætte det på pause, stoppe det eller godkende handlinger. Funktionen er foreløbig på engelsk i USA og kræver et Google AI-abonnement.",
+   "overskrift": "Gemini kan arbejde på en Mac",
+   "tekst": "Google har lanceret en Gemini-funktion, der kan udføre opgaver på tværs af Mac-apps, lokale filer og hjemmesider. Brugeren kan følge arbejdet i et vindue og stoppe eller godkende handlinger. Funktionen er foreløbig tilgængelig på engelsk i USA og kræver et betalt Google AI-abonnement.",
    "link": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
    "kategori": "Hverdags-AI",
    "billede": "",
@@ -89,67 +46,126 @@
    "artikel_signatur": "be30189564de132cc0c08cdf49a3cc595b5bd2583b32012859535e1078ed6214"
   },
   {
-   "overskrift": "Lokkemidler afslørede læk hos AI-udbydere",
-   "tekst": "Forskeren HD Moore sendte sporbare adgangsnøgler og hemmelige links gennem AI-tjenester og fandt tegn på indbrud hos tre udbydere. Nogle lækkede beskeder var mærket med nul datalagring. Forsøget viser, at et sådant løfte ikke i sig selv beskytter mod indbrud hos en udbyder.",
-   "link": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
-   "kategori": "Samfund & etik",
-   "billede": "data/img/e2c95ef88c12bb61.webp",
-   "dato": "2026-11-20T20:59:08+00:00",
-   "andre": [],
-   "titel": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.",
-   "rubrik": "HD Moore: Falske adgangsnøgler afslører læk i AI-tjenester",
-   "resume_da": "Sporbare lokkemidler viste både indbrud hos udbydere og adgang til hemmelige links i beskeder, der skulle være beskyttet mod lagring.",
-   "artikel_signatur": "54c0bb028a7614208c7989ae524ce16f075e948e5f92a462d3e372d53c901fa9"
+   "overskrift": "Claude Ship kan godkende kodeændringer",
+   "tekst": "Anthropic lancerer Claude Ship, hvor AI-agenter kan gennemgå, rette og godkende rutinemæssige kodeændringer efter udviklernes regler. Holdet bestemmer, hvilke ændringer mennesker skal afgøre. Værktøjet rulles ud til Team- og Enterprise-kunder med GitHub-kodelagre; de to nye agenter er i en tidlig version.",
+   "link": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
+   "kategori": "Lanceringer",
+   "billede": "data/img/8a0aa80b86236e39.webp",
+   "dato": "2026-11-23T22:05:50+00:00",
+   "andre": [
+    {
+     "kilde": "The Verge AI",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+     "rubrik": "Claude Ship kan rette og godkende kode",
+     "resume_da": "Anthropics nye værktøjer kan gribe ind, når et kodeforslag støder på problemer, og godkende rutineændringer, hvis virksomhedens regler tillader det.",
+     "dato": "2026-11-23T15:00:00-05:00",
+     "foerst_set": "2026-11-23T20:30:41.511519+00:00"
+    }
+   ],
+   "titel": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
+   "rubrik": "Anthropic lader Claude godkende kodeændringer",
+   "resume_da": "Udviklere kan opstille regler for, hvornår en AI-agent må godkende ændringer, og hvornår et menneske skal tage stilling.",
+   "artikel_signatur": "76cb8bed39d1b672ab94c2b6443b2c7a55b45178ab32afc7b896b543242e6346"
   },
   {
-   "overskrift": "SpaceX får tilladelse til AI-satellitter",
-   "tekst": "Den amerikanske kommunikationsmyndighed FCC har godkendt op til en million satellitter i SpaceX-projektet Starmind. Selskabet vil bruge solenergi og laserforbindelser til at understøtte AI på Jorden. Godkendelsen betyder ikke, at satellitterne er bygget; planen for bortskaffelse i højere kredsløb afventer en afgørelse.",
-   "link": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
-   "kategori": "Penge & marked",
-   "billede": "data/img/9650cc1985f0ac66.webp",
-   "dato": "2026-11-25T12:44:51-05:00",
+   "overskrift": "Matematiker fremlægger muligt AI-assisteret bevis",
+   "tekst": "Matematikeren Levent Alpöge mener at have fundet et bevis for Riemann-hypotesen med hjælp fra Claude. Han har skrevet argumentet i Lean, et program til formel kontrol af matematiske beviser. Matematikere undersøger stadig argumentet, og resultatet er endnu ikke accepteret som et gyldigt bevis.",
+   "link": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
+   "kategori": "Forskning",
+   "billede": "data/img/b2f118e75f13301f.webp",
+   "dato": "2026-11-20T19:32:08+00:00",
+   "andre": [
+    {
+     "kilde": "Simon Willison AI",
+     "link": "https://simonwillison.net/2026/Nov/20/levent-alpoge/",
+     "rubrik": "Claude hjælper matematiker med muligt Riemann-bevis",
+     "resume_da": "Levent Alpöge mener at have løst et af matematikkens mest berømte problemer sammen med AI-modellen Claude. Beviset er endnu ikke uafhængigt verificeret.",
+     "dato": "2026-11-20T16:30:48+00:00",
+     "foerst_set": "2026-11-20T17:11:55.623291+00:00"
+    },
+    {
+     "kilde": "The Verge AI",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
+     "rubrik": "Anthropic-matematiker hævder at have løst Riemann-hypotesen",
+     "resume_da": "Levent Alpöge siger, at han brugte Claude til at bevise hypotesen. Beviset er endnu ikke verificeret.",
+     "dato": "2026-11-20 11:34:13-05:00",
+     "foerst_set": "2026-11-21T01:42:50.990268+00:00"
+    },
+    {
+     "kilde": "Ars Technica AI",
+     "link": "https://arstechnica.com/ai/2026/11/whats-going-on-with-the-riemann-hypothesis/",
+     "rubrik": "Claude har hjulpet med Riemanns hypotese",
+     "resume_da": "Matematikeren Levent Alpöge har annonceret et AI-assisteret bevis for et af matematikkens store åbne problemer. Matematikere undersøger stadig ræsonnementet.",
+     "dato": "2026-11-24T20:34:53+00:00",
+     "foerst_set": "2026-11-25T03:43:33.973979+00:00"
+    }
+   ],
+   "titel": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too",
+   "rubrik": "Claude hjalp matematiker med muligt Riemann-bevis",
+   "resume_da": "Levent Alpöges resultat kan omsættes i et program til matematisk kontrol, men forskere mangler stadig at forstå og gennemgå argumentet.",
+   "artikel_signatur": "57967fa5eb19d076c36d11441ecfc68f80b7e869ea6d32426197e82a80890ece"
+  },
+  {
+   "overskrift": "GPT-6.2 foreslår proteiner til laboratorieforsøg",
+   "tekst": "I forskning fra OpenAI og Onava foreslog GPT-6.2 former til små proteiner. Mindst ét fremstillet protein viste tegn på binding for hvert af fem målproteiner. Specialiserede modeller hjalp med sekvenser og udvælgelse til test. Bindingen viser ikke, at proteinerne er klar til en bestemt anvendelse.",
+   "link": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+   "kategori": "Forskning",
+   "billede": "",
+   "dato": "2026-11-24T13:00:00+00:00",
    "andre": [],
-   "titel": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
-   "rubrik": "SpaceX får lov til AI-satellitter",
-   "resume_da": "USA's kommunikationsmyndighed har godkendt op til en million satellitter, som SpaceX vil bruge til at understøtte AI på Jorden.",
-   "artikel_signatur": "57a723466d1c348d43d0b6abdcea7fb1856bd5f820ea7ca1d4d06f3626720ec0"
+   "titel": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+   "rubrik": "GPT-6.2 designer proteiner, der binder sig",
+   "resume_da": "Laboratorieforsøg viste tegn på binding til fem udvalgte proteiner. Specialiserede modeller hjalp dog med at gøre forslagene klar til test.",
+   "artikel_signatur": "a2ffd9140f9aa74ec4c107ae0ddf908481be8ca66ae17fad635c93ef2b7cccad"
+  },
+  {
+   "overskrift": "Amazon: AI-agenter udnyttede ukendt sikkerhedshul",
+   "tekst": "Ifølge Amazon fandt hackernes AI-agenter en hidtil ukendt sårbarhed i software på en universitetsserver og udnyttede den til at skaffe adgang. Agenterne arbejdede gennem sikkerhedsværktøjet Cairn. Mennesker gav dem mål og greb senere ind, og andre angrebsforsøg lykkedes ikke.",
+   "link": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
+   "kategori": "Samfund & etik",
+   "billede": "data/img/d8a21a44ed18b5e9.webp",
+   "dato": "2026-11-24T12:30:05+00:00",
+   "andre": [],
+   "titel": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
+   "rubrik": "Amazon: AI-agenter fandt ukendt sikkerhedshul",
+   "resume_da": "Hackere gav AI-agenter en liste over servere og bad dem skaffe adgang. På en universitetsserver fandt og udnyttede agenterne en hidtil ukendt sårbarhed.",
+   "artikel_signatur": "c0df00c524e1e81a245bb09768588e9aabca383c08a28fe0c84f811693ab2930"
   }
  ],
  "overblik": [
   {
-   "tekst": "Periodens vigtigste forandring var, at Z.ai gjorde GLM-5.4 tilgængelig med en ny måde at bearbejde information på: Modellen gentager nogle af sine lag uden at få flere parametre. Det er en konkret modelnyhed, men endnu ikke dokumentation for et spring i eksempelvis programmeringsevner. Samtidig viste OpenAI og forskningspartneren Onava en anden slags fremskridt: GPT-6.2 foreslog proteinformer, hvor fremstillede kandidater viste tegn på binding i laboratoriet. Specialiserede modeller hjalp dog med at forberede kandidaterne.",
+   "tekst": "Periodens vigtigste ændring er, at AI får flere måder at arbejde videre på en opgave. Z.ai frigav GLM-5.4, som gentager dele af modellens behandling af et svar. Det er en ny modelopbygning, men den foreliggende afprøvning fortæller endnu ikke, om den også skriver bedre kode.",
    "links": [
-    "https://simonwillison.net/2026/Nov/23/glm-54/",
-    "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities"
+    "https://simonwillison.net/2026/Nov/23/glm-54/"
    ]
   },
   {
-   "tekst": "Også i matematikken blev AI brugt til forskning: Levent Alpöge mener at have fundet et bevis for Riemann-hypotesen sammen med Claude. Her er forskellen på et muligt resultat og en accepteret opdagelse afgørende. Lean kan behandle hans kode, men matematikere mangler stadig at forstå og gennemgå argumentet. Proteinernes binding er derimod afprøvet i laboratoriet, uden at det viser, at de er klar til en bestemt anvendelse.",
+   "tekst": "Samtidig får assistenter lov til at udføre flere trin for brugeren. Gemini kan nu arbejde på en Mac, mens brugeren følger med og kan stoppe eller godkende handlinger. Claude Ship går ind i udviklernes arbejdsgang: Her kan en agent godkende rutinemæssige kodeændringer efter holdets regler. Geminis Mac-funktion er foreløbig begrænset til engelsksprogede betalende brugere i USA; Claude Ships nye agenter er i en tidlig version.",
+   "links": [
+    "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
+    "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/"
+   ]
+  },
+  {
+   "tekst": "I forskningen er kontrollen en anden. Matematikeren Levent Alpöge mener, at Claude har hjulpet ham med et bevis for Riemann-hypotesen, men matematikere mangler stadig at gennemgå argumentet. OpenAI og Onava har derimod afprøvet GPT-6.2’s proteinforslag i laboratoriet og fundet tegn på binding. Det er et konkret resultat, men ikke et færdigt produkt.",
    "links": [
     "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
     "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities"
    ]
   },
   {
-   "tekst": "For almindelige brugere flytter Google Gemini fra svar til handling på Mac: Assistenten kan arbejde på tværs af filer, apps og nettet, mens brugeren følger med. Adgangen er indtil videre begrænset til engelsksprogede abonnenter i USA. Samtidig minder HD Moores sikkerhedsforsøg om, at oplysninger sendt til AI kan passere flere virksomheder. Sporbare lokkemidler slap ud, også fra nogle beskeder mærket med nul datalagring.",
+   "tekst": "Evnen til at arbejde i flere trin kan også bruges imod andre. Amazon beskriver et angreb, hvor AI-agenter fandt og udnyttede en ukendt sårbarhed på en universitetsserver. Mennesker satte målene og greb senere ind, og andre forsøg mislykkedes. Eksemplet understreger, at mere selvstændigt AI-arbejde ikke i sig selv er det samme som hverken pålideligt eller ufarligt arbejde.",
    "links": [
-    "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
-    "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/"
-   ]
-  },
-  {
-   "tekst": "Bag tjenesterne er infrastrukturen også til debat. SpaceX har fået amerikansk tilladelse til op til en million satellitter i Starmind-projektet, som skal understøtte AI på Jorden. Det er en ramme for et planlagt system, ikke et færdigt satellitnetværk.",
-   "links": [
-    "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers"
+    "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/"
    ]
   }
  ],
- "tendens": "FCC har endnu ikke afgjort, om SpaceX må placere udtjente Starmind-satellitter fra højere kredsløb i særlige affaldskredsløb.",
+ "tendens": "Matematikernes gennemgang af Alpöges argument vil være afgørende for, om det AI-assisterede resultat faktisk holder som bevis for Riemann-hypotesen.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "536455ee82813750cf647cf66a543ab28c064f31cf932ec7d39357e9e1a64b37",
- "dato": "2026-11-26T00:50:59.200996+00:00",
- "opdateret": "2026-11-26T00:50:59.200996+00:00",
+ "basis_signatur": "7fc25532e8716cfa0a7a18c57d59f62d40ded14b895ac01ebc60b86f448334c2",
+ "dato": "2026-11-26T08:58:54.264228+00:00",
+ "opdateret": "2026-11-26T08:58:54.264228+00:00",
  "periode_fra": "2026-11-18T23:00:00+00:00",
  "periode_til": "2026-11-25T23:00:00+00:00",
  "stats": {
