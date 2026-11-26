@@ -1,16 +1,20 @@
 {
-  "opdateret": "2026-11-25T14:52:19.913653+00:00",
+  "opdateret": "2026-11-26T00:38:08.849977+00:00",
   "status": "reserve",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
-    "https://simonwillison.net/2026/Nov/23/glm-54/",
+    "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
     "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/",
-    "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/"
+    "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers"
   ],
-  "input_fingerprint": "412f05953b5a4c97",
+  "input_fingerprint": "baa4015aedcc77d5",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 5,
+  "kontrolproblemer": [
+    "Fysikartiklen siger, at hvert korrekt svar kom efter én henvendelse. Det er uklart for resultatet på 49 ud af 50, fordi modellen efter den første test også fik de menneskelige løsninger og blev bedt om at gennemgå sine fejl. Skeln mellem de to runder og undgå en udokumenteret samlet påstand om antal henvendelser.",
+    "Undersøg GLM-5.4-kandidaten før det endelige valg: Det er en konkret modellancering, som prioriteres i retningen. Den ligger inden for 48 timer, hvis udgaven laves senest 25. november kl. 23.40 UTC; kandidatens resumé alene er ikke en færdig kildekontrol."
+  ],
+  "modelkald": 6,
   "kildehentninger": 3,
   "vaerktoejer": [
     {
@@ -36,7 +40,7 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://simonwillison.net/2026/Nov/23/glm-54/",
+      "link": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
       "grundlag": "kildetekst"
     },
     {
@@ -44,14 +48,14 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/",
+      "link": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
+    "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
     "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/",
-    "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
-    "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities"
+    "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers"
   ],
-  "afventer_artikler": 74
+  "afventer_artikler": 78
 }

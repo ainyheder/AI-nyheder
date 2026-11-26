@@ -1,97 +1,23 @@
 {
- "rubrik": "Nye modeller giver AI mere at arbejde med",
- "indledning": "Perioden bød på nye modeller og mere selvstændige AI-værktøjer – men også eksempler på, hvorfor resultaterne kræver kontrol.",
+ "rubrik": "Nye AI-evner møder krav om kontrol og dokumentation",
+ "indledning": "Perioden bød på en ny model, forsøg med AI i forskning og en assistent, der kan arbejde på computeren – men også nye spørgsmål om sikkerhed og infrastruktur.",
  "historier": [
   {
-   "overskrift": "Google lancerer Gemini 4 Neon til opgaver over flere trin",
-   "tekst": "Gemini 4 Neon kan ifølge Google kombinere oplysninger fra blandt andet dokumenter, regneark, lyd og video og bruge værktøjer undervejs. Google udruller modellen til udviklere, virksomheder og betalende abonnenter. Selskabets testresultater afhænger blandt andet af det miljø, modellen arbejder i.",
-   "link": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+   "overskrift": "GLM-5.4 gentager lag i ny model",
+   "tekst": "Z.ai har gjort GLM-5.4 tilgængelig. Modellen gentager en gruppe lag og bearbejder dermed mellemresultater flere gange uden flere parametre. Simon Willison testede modellen via Z.ai’s programmeringsadgang, men hans billedsammenligning dokumenterer ikke, hvor godt den skriver kode.",
+   "link": "https://simonwillison.net/2026/Nov/23/glm-54/",
    "kategori": "Lanceringer",
    "billede": "",
-   "dato": "2026-11-18T21:35:43+00:00",
-   "andre": [
-    {
-     "kilde": "Google Gemini",
-     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
-     "rubrik": "Google lancerer Gemini 4 Neon",
-     "resume_da": "Den nye AI-model kan arbejde på tværs af kode, dokumenter og andre formater. Google ruller den ud til udviklere, virksomheder og betalende abonnenter.",
-     "dato": "2026-11-18T21:00:00+00:00",
-     "foerst_set": "2026-11-19T01:59:29.336973+00:00"
-    },
-    {
-     "kilde": "Simon Willison AI",
-     "link": "https://simonwillison.net/2026/Nov/18/llm-gemini/",
-     "rubrik": "Google placerer Gemini 4 Neon mellem modeller",
-     "resume_da": "Simon Willisons sammenligning af pelikanmotiver peger på et resultat mellem Hydrogen og Carbon. Men den aktuelle prisrækkefølge fortæller en anden historie.",
-     "dato": "2026-11-18T23:59:20+00:00",
-     "foerst_set": "2026-11-19T13:47:54.248644+00:00"
-    }
-   ],
-   "titel": "Introducing Gemini 4 Neon",
-   "rubrik": "Google lancerer Gemini 4 Neon til komplekse opgaver",
-   "resume_da": "Den nye model kan arbejde med dokumenter, regneark og kode på tværs af flere trin. Google udruller den i blandt andet Gemini-appen.",
-   "artikel_signatur": "9c9bfba7483b8919f034b7b884ffc4b05878c90c2cd2769599f680eeeaffdad2"
-  },
-  {
-   "overskrift": "Genie 4 lader brugere ændre digitale verdener undervejs",
-   "tekst": "Googles Genie 4 kan skabe interaktive verdener, som brugeren kan ændre med tekst, mens de udforskes. Ifølge Google kombinerer modellen billeder og scenetilpasset lyd i realtid. Adgangen er foreløbig begrænset til udvalgte Google AI Ultra-abonnenter, og Google peger på problemer med blandt andet forsinkelse.",
-   "link": "https://deepmind.google/blog/genie-4-is-now-available/",
-   "kategori": "Lanceringer",
-   "billede": "data/img/46a2ff35dc251e20.webp",
-   "dato": "2026-11-18T18:13:42+00:00",
-   "andre": [
-    {
-     "kilde": "Google Gemini",
-     "link": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
-     "rubrik": "Googles Genie 4 ændrer verdener undervejs",
-     "resume_da": "Med tekst kan brugere ændre vejret, tilføje personer og høre lyd i en digital verden, mens de udforsker den.",
-     "dato": "2026-11-18T18:00:00+00:00",
-     "foerst_set": "2026-11-19T01:59:29.336973+00:00"
-    }
-   ],
-   "titel": "Genie 4 is now available",
-   "rubrik": "Genie 4 ændrer digitale verdener undervejs",
-   "resume_da": "Google åbner den nye model for udvalgte Google AI Ultra-abonnenter. Brugere kan skrive sig til ændringer, mens de udforsker en verden i browseren.",
-   "artikel_signatur": "37316a077dc42a2b895a4c34bf0ea508d70b43d4bffddfe47cd6a1205366276d"
-  },
-  {
-   "overskrift": "Claude Ship kan godkende rutineændringer i kode",
-   "tekst": "Anthropics Claude Ship kan gennemgå, rette og efter udviklerholdets regler godkende ændringer i programkode. Holdet bestemmer, hvilke beslutninger mennesker skal tage. Værktøjerne rulles ud til Team- og Enterprise-kunder på GitHub; de nye funktioner til rettelse og godkendelse er stadig i beta.",
-   "link": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
-   "kategori": "Lanceringer",
-   "billede": "data/img/8a0aa80b86236e39.webp",
-   "dato": "2026-11-23T22:05:50+00:00",
-   "andre": [
-    {
-     "kilde": "The Verge AI",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
-     "rubrik": "Claude Ship kan rette og godkende kode",
-     "resume_da": "Anthropics nye værktøjer kan gribe ind, når et kodeforslag støder på problemer, og godkende rutineændringer, hvis virksomhedens regler tillader det.",
-     "dato": "2026-11-23T15:00:00-05:00",
-     "foerst_set": "2026-11-23T20:30:41.511519+00:00"
-    }
-   ],
-   "titel": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
-   "rubrik": "Anthropic lader Claude godkende kodeændringer",
-   "resume_da": "Udviklere kan opstille regler for, hvornår en AI-agent må godkende ændringer, og hvornår et menneske skal tage stilling.",
-   "artikel_signatur": "76cb8bed39d1b672ab94c2b6443b2c7a55b45178ab32afc7b896b543242e6346"
-  },
-  {
-   "overskrift": "AI-agenter fandt ifølge Amazon et ukendt sikkerhedshul",
-   "tekst": "Hackere brugte AI-værktøjet Cairn til at undersøge servere og skaffe adgang, oplyser Amazon. På en universitetsserver fandt og udnyttede agenterne ifølge selskabet en hidtil ukendt sårbarhed. Andre angreb mislykkedes, og hackerne gav også agenterne hjælp ved en senere session.",
-   "link": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
-   "kategori": "Samfund & etik",
-   "billede": "data/img/d8a21a44ed18b5e9.webp",
-   "dato": "2026-11-24T12:30:05+00:00",
+   "dato": "2026-11-23T23:40:49+00:00",
    "andre": [],
-   "titel": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
-   "rubrik": "Amazon: AI-agenter fandt ukendt sikkerhedshul",
-   "resume_da": "Hackere gav AI-agenter en liste over servere og bad dem skaffe adgang. På en universitetsserver fandt og udnyttede agenterne en hidtil ukendt sårbarhed.",
-   "artikel_signatur": "c0df00c524e1e81a245bb09768588e9aabca383c08a28fe0c84f811693ab2930"
+   "titel": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+   "rubrik": "GLM-5.4 gentager lag i ny model",
+   "resume_da": "Z.ai har frigivet en model, der bearbejder sine mellemresultater flere gange uden at øge antallet af parametre. Simon Willison har testet adgangen og modellens billeder.",
+   "artikel_signatur": "cdf30242e716e3d6c3f8728856e0a5a2b609506ac035f341fe63aa9b5ba3f78c"
   },
   {
    "overskrift": "GPT-6.2 foreslog proteiner, der viste tegn på binding",
-   "tekst": "I forskning fra OpenAI og Onava foreslog en endnu ikke frigivet version af GPT-6.2 former til små proteiner. Laboratorieforsøg viste tegn på binding til hvert af fem målproteiner. Specialiserede modeller hjalp med at gøre forslagene klar til test, som ikke viste en færdig anvendelse.",
+   "tekst": "OpenAI og forskningspartneren Onava lod en endnu ikke frigivet version af GPT-6.2 foreslå former til små proteiner. Laboratorieforsøg viste tegn på binding til hvert af fem målproteiner. Specialiserede modeller hjalp med at gøre forslagene klar til test; binding er ikke det samme som en færdig anvendelse.",
    "link": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
    "kategori": "Forskning",
    "billede": "",
@@ -103,8 +29,8 @@
    "artikel_signatur": "a2ffd9140f9aa74ec4c107ae0ddf908481be8ca66ae17fad635c93ef2b7cccad"
   },
   {
-   "overskrift": "Matematiker fremlægger muligt Riemann-bevis med Claude",
-   "tekst": "Levent Alpöge mener at have bevist den berømte Riemann-hypotese med hjælp fra Claude. Argumentet er skrevet i Lean, et sprog til formel matematisk kontrol. Matematikere har ifølge TechCrunch bekræftet, at Lean kan behandle koden, men resultatet er endnu ikke accepteret efter faglig gennemgang.",
+   "overskrift": "Matematiker hævder Riemann-bevis med hjælp fra Claude",
+   "tekst": "Levent Alpöge mener at have fundet et bevis for Riemann-hypotesen sammen med Claude. Han har skrevet argumentet i Lean, et sprog til formel kontrol af matematiske beviser. Uafhængige matematikere har bekræftet, at Lean kan behandle koden, men resultatet er endnu ikke accepteret.",
    "link": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
    "kategori": "Forskning",
    "billede": "data/img/b2f118e75f13301f.webp",
@@ -125,55 +51,109 @@
      "resume_da": "Levent Alpöge siger, at han brugte Claude til at bevise hypotesen. Beviset er endnu ikke verificeret.",
      "dato": "2026-11-20 11:34:13-05:00",
      "foerst_set": "2026-11-21T01:42:50.990268+00:00"
-    },
-    {
-     "kilde": "Ars Technica AI",
-     "link": "https://arstechnica.com/ai/2026/11/whats-going-on-with-the-riemann-hypothesis/",
-     "rubrik": "Claude har hjulpet med muligt Riemann-bevis",
-     "resume_da": "Matematikeren Levent Alpöge har annonceret et AI-assisteret bevis for en af matematikkens mest berømte hypoteser. Matematikere er stadig ved at gennemgå det.",
-     "dato": "2026-11-24T20:34:53+00:00",
-     "foerst_set": "2026-11-25T03:43:33.973979+00:00"
     }
    ],
    "titel": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too",
    "rubrik": "Claude hjalp matematiker med muligt Riemann-bevis",
    "resume_da": "Levent Alpöges resultat kan omsættes i et program til matematisk kontrol, men forskere mangler stadig at forstå og gennemgå argumentet.",
-   "artikel_signatur": "8b30b38c0bfe8f45f8bd4404045b811d62d230a25b2bfdc4a8a7f1f9b0edd3c2"
+   "artikel_signatur": "6c54876b487ba002ab4caddd4295518de6eac9d7119ecb0fa5ad146a0a36a1b6"
+  },
+  {
+   "overskrift": "Gemini kan arbejde på brugerens Mac",
+   "tekst": "Google har lanceret en funktion, som kan arbejde med lokale filer, Mac-apps og hjemmesider. Brugeren kan følge arbejdet i et vindue og sætte det på pause, stoppe det eller godkende handlinger. Funktionen er foreløbig på engelsk i USA og kræver et Google AI-abonnement.",
+   "link": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
+   "kategori": "Hverdags-AI",
+   "billede": "",
+   "dato": "2026-11-19T18:09:11+00:00",
+   "andre": [
+    {
+     "kilde": "The Verge AI",
+     "link": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use",
+     "rubrik": "Gemini kan nu bruge apps på Mac",
+     "resume_da": "Googles AI-app kan klikke, skrive og udfylde formularer på tværs af filer, programmer og nettet. Funktionen rulles foreløbig ud på engelsk i USA.",
+     "dato": "2026-11-19T13:21:13-05:00",
+     "foerst_set": "2026-11-19T23:12:19.344731+00:00"
+    },
+    {
+     "kilde": "Google Gemini",
+     "link": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/",
+     "rubrik": "Gemini kan nu bruge computeren på Mac",
+     "resume_da": "Funktionen i Gemini-appen skal hjælpe med gentagne opgaver.",
+     "dato": "2026-11-19 17:00:00+00:00",
+     "foerst_set": "2026-11-19T23:12:19.344731+00:00"
+    }
+   ],
+   "titel": "Google gives Gemini the ability to use your Mac for you",
+   "rubrik": "Gemini kan nu arbejde på din Mac",
+   "resume_da": "Googles AI kan bruge Mac-apps og hjemmesider på brugerens vegne, mens brugeren følger arbejdet i et livevindue.",
+   "artikel_signatur": "be30189564de132cc0c08cdf49a3cc595b5bd2583b32012859535e1078ed6214"
+  },
+  {
+   "overskrift": "Lokkemidler afslørede læk hos AI-udbydere",
+   "tekst": "Forskeren HD Moore sendte sporbare adgangsnøgler og hemmelige links gennem AI-tjenester og fandt tegn på indbrud hos tre udbydere. Nogle lækkede beskeder var mærket med nul datalagring. Forsøget viser, at et sådant løfte ikke i sig selv beskytter mod indbrud hos en udbyder.",
+   "link": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+   "kategori": "Samfund & etik",
+   "billede": "data/img/e2c95ef88c12bb61.webp",
+   "dato": "2026-11-20T20:59:08+00:00",
+   "andre": [],
+   "titel": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.",
+   "rubrik": "HD Moore: Falske adgangsnøgler afslører læk i AI-tjenester",
+   "resume_da": "Sporbare lokkemidler viste både indbrud hos udbydere og adgang til hemmelige links i beskeder, der skulle være beskyttet mod lagring.",
+   "artikel_signatur": "54c0bb028a7614208c7989ae524ce16f075e948e5f92a462d3e372d53c901fa9"
+  },
+  {
+   "overskrift": "SpaceX får tilladelse til AI-satellitter",
+   "tekst": "Den amerikanske kommunikationsmyndighed FCC har godkendt op til en million satellitter i SpaceX-projektet Starmind. Selskabet vil bruge solenergi og laserforbindelser til at understøtte AI på Jorden. Godkendelsen betyder ikke, at satellitterne er bygget; planen for bortskaffelse i højere kredsløb afventer en afgørelse.",
+   "link": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+   "kategori": "Penge & marked",
+   "billede": "data/img/9650cc1985f0ac66.webp",
+   "dato": "2026-11-25T12:44:51-05:00",
+   "andre": [],
+   "titel": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
+   "rubrik": "SpaceX får lov til AI-satellitter",
+   "resume_da": "USA's kommunikationsmyndighed har godkendt op til en million satellitter, som SpaceX vil bruge til at understøtte AI på Jorden.",
+   "artikel_signatur": "57a723466d1c348d43d0b6abdcea7fb1856bd5f820ea7ca1d4d06f3626720ec0"
   }
  ],
  "overblik": [
   {
-   "tekst": "Google udvidede modellernes arbejdsfelt i to forskellige retninger. Gemini 4 Neon er lavet til at samle materiale som regneark, lyd og video og arbejde med værktøjer over flere trin. Genie 4 er derimod en model til interaktive verdener: Her kan brugeren ændre vejret eller tilføje en figur undervejs og høre lyd, der følger scenen. Neon udrulles til betalende brugere og udviklere; Genie 4 er foreløbig begrænset til udvalgte abonnenter.",
+   "tekst": "Periodens vigtigste forandring var, at Z.ai gjorde GLM-5.4 tilgængelig med en ny måde at bearbejde information på: Modellen gentager nogle af sine lag uden at få flere parametre. Det er en konkret modelnyhed, men endnu ikke dokumentation for et spring i eksempelvis programmeringsevner. Samtidig viste OpenAI og forskningspartneren Onava en anden slags fremskridt: GPT-6.2 foreslog proteinformer, hvor fremstillede kandidater viste tegn på binding i laboratoriet. Specialiserede modeller hjalp dog med at forberede kandidaterne.",
    "links": [
-    "https://deepmind.google/blog/introducing-gemini-4-neon/",
-    "https://deepmind.google/blog/genie-4-is-now-available/"
+    "https://simonwillison.net/2026/Nov/23/glm-54/",
+    "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities"
    ]
   },
   {
-   "tekst": "Samtidig får AI-værktøjer mulighed for at udføre mere selvstændigt arbejde med kode. Anthropics Claude Ship kan ikke blot gennemgå ændringer, men også godkende rutineforslag efter holdets egne regler. Den samme type evne til at arbejde i flere trin kan bruges mod it-systemer: Amazon beskriver, hvordan hackere lod agenter finde og udnytte et ukendt sikkerhedshul. Angrebene lykkedes dog ikke hver gang, og mennesker hjalp undervejs.",
+   "tekst": "Også i matematikken blev AI brugt til forskning: Levent Alpöge mener at have fundet et bevis for Riemann-hypotesen sammen med Claude. Her er forskellen på et muligt resultat og en accepteret opdagelse afgørende. Lean kan behandle hans kode, men matematikere mangler stadig at forstå og gennemgå argumentet. Proteinernes binding er derimod afprøvet i laboratoriet, uden at det viser, at de er klar til en bestemt anvendelse.",
    "links": [
-    "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
-    "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/"
+    "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
+    "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities"
    ]
   },
   {
-   "tekst": "I forskning er spørgsmålet ikke kun, hvad modellerne kan foreslå, men hvad der kan bekræftes. OpenAI og Onava fandt tegn på, at proteiner designet med en endnu ikke frigivet GPT-6.2-version bandt sig til fem målproteiner; specialiserede modeller hjalp før laboratorietesten. Matematiker Levent Alpöge har på sin side fremlagt et muligt bevis for Riemann-hypotesen med hjælp fra Claude. Det ville være et stort resultat, men argumentet mangler stadig faglig gennemgang.",
+   "tekst": "For almindelige brugere flytter Google Gemini fra svar til handling på Mac: Assistenten kan arbejde på tværs af filer, apps og nettet, mens brugeren følger med. Adgangen er indtil videre begrænset til engelsksprogede abonnenter i USA. Samtidig minder HD Moores sikkerhedsforsøg om, at oplysninger sendt til AI kan passere flere virksomheder. Sporbare lokkemidler slap ud, også fra nogle beskeder mærket med nul datalagring.",
    "links": [
-    "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
-    "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/"
+    "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
+    "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/"
+   ]
+  },
+  {
+   "tekst": "Bag tjenesterne er infrastrukturen også til debat. SpaceX har fået amerikansk tilladelse til op til en million satellitter i Starmind-projektet, som skal understøtte AI på Jorden. Det er en ramme for et planlagt system, ikke et færdigt satellitnetværk.",
+   "links": [
+    "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers"
    ]
   }
  ],
- "tendens": "",
+ "tendens": "FCC har endnu ikke afgjort, om SpaceX må placere udtjente Starmind-satellitter fra højere kredsløb i særlige affaldskredsløb.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "86e670b4a73fa8c0c45217ebf627d920b12d1e6c3ffc8779662d6735149d519a",
- "dato": "2026-11-25T15:04:41.031690+00:00",
- "opdateret": "2026-11-25T15:04:41.031690+00:00",
- "periode_fra": "2026-11-17T23:00:00+00:00",
- "periode_til": "2026-11-24T23:00:00+00:00",
+ "basis_signatur": "536455ee82813750cf647cf66a543ab28c064f31cf932ec7d39357e9e1a64b37",
+ "dato": "2026-11-26T00:50:59.200996+00:00",
+ "opdateret": "2026-11-26T00:50:59.200996+00:00",
+ "periode_fra": "2026-11-18T23:00:00+00:00",
+ "periode_til": "2026-11-25T23:00:00+00:00",
  "stats": {
-  "historier": 86,
-  "kilder": 9
+  "historier": 69,
+  "kilder": 8
  }
 }
