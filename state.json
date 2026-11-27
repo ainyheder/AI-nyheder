@@ -1351,8 +1351,20 @@
           }
         ]
       },
-      "fejl": "Læserytme ved Et ja med beskyttelse mod tab: mere end to tekstafsnit i træk; skab en meningsfuld pause uden at gentage indhold",
-      "naeste_trin": "skrivning"
+      "fejl": "Læserytme ved Et ja med beskyttelse mod tab: mere end to tekstafsnit i træk; skab en meningsfuld pause uden at gentage indhold\nKvalitetskontrollen afviste brevet\n[\"Fakta — intro — Udkastet siger, at aftalen skulle give investorerne dobbelt tilbage ved et salg. Kilden beskriver en fortrinsret på 2x, ikke en ubetinget garanti for udbetaling. Ret introen til at beskrive fortrinsretten, som listen senere gør.\", \"Læseværdi — Hotmail og Netflix samt AI-afsnittet — Der står henholdsvis fem og tre almindelige afsnit i træk. Bryd forløbene med relevante visuelle pauser eller omorganisér stoffet, så der højst står to almindelige afsnit i træk.\", \"Læseværdi — illustrationen ved 'AI kan undersøge gammel kode' — En lup over kode viser generel inspektion, men ikke AI’s rolle eller pointen om sikkerhedsrettelser. Tilføj en enkel, fysisk forbundet AI-markør og vis forbindelsen mellem kode og sikkerhedsrettelse.\"]",
+      "naeste_trin": "skrivning",
+      "kontrol": {
+        "godkendt": false,
+        "fuld_kilde": true,
+        "faktuel_troskab": false,
+        "selvstaendig": true,
+        "laesevaerdi": false,
+        "problemer": [
+          "Fakta — intro — Udkastet siger, at aftalen skulle give investorerne dobbelt tilbage ved et salg. Kilden beskriver en fortrinsret på 2x, ikke en ubetinget garanti for udbetaling. Ret introen til at beskrive fortrinsretten, som listen senere gør.",
+          "Læseværdi — Hotmail og Netflix samt AI-afsnittet — Der står henholdsvis fem og tre almindelige afsnit i træk. Bryd forløbene med relevante visuelle pauser eller omorganisér stoffet, så der højst står to almindelige afsnit i træk.",
+          "Læseværdi — illustrationen ved 'AI kan undersøge gammel kode' — En lup over kode viser generel inspektion, men ikke AI’s rolle eller pointen om sikkerhedsrettelser. Tilføj en enkel, fysisk forbundet AI-markør og vis forbindelsen mellem kode og sikkerhedsrettelse."
+        ]
+      }
     }
   }
 }
