@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-11-27T09:06:32.534691+00:00",
+ "genereret": "2026-11-27T21:39:39.970922+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -199,24 +199,24 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-11-27T08:59:49.463463+00:00",
-  "antal": 92,
+  "opdateret": "2026-11-27T21:36:02.999120+00:00",
+  "antal": 93,
   "med_billede": 73,
-  "paa_dansk": 92,
+  "paa_dansk": 93,
   "kategorier": {
-   "Hverdags-AI": 21,
-   "Forskning": 18,
+   "Penge \u0026 marked": 15,
+   "Hverdags-AI": 22,
    "Lanceringer": 10,
    "Politik \u0026 jura": 6,
-   "Penge \u0026 marked": 15,
-   "Samfund \u0026 etik": 22
+   "Samfund \u0026 etik": 22,
+   "Forskning": 18
   },
   "kilder": {
-   "Hugging Face": 5,
-   "Ars Technica AI": 8,
-   "Simon Willison AI": 5,
    "TechCrunch AI": 25,
-   "The Verge AI": 15,
+   "The Verge AI": 16,
+   "Simon Willison AI": 5,
+   "Ars Technica AI": 8,
+   "Hugging Face": 5,
    "OpenAI Blog": 17,
    "Google Gemini": 5,
    "MIT Tech Review AI": 5,
@@ -227,46 +227,56 @@ window.KOMMANDO_DATA = {
   },
   "udvalgte": [
    {
-    "titel": "AI may soon change what it means to be a theoretical physicist",
-    "rubrik": "GPT-6 Astra fandt fejl i fysikernes svar",
-    "link": "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/",
-    "side": "artikel/599365cac3d8f529.html",
-    "kategori": "Forskning",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-11-25T12:00:28+00:00",
-    "billede": "data/img/8ae063fe812da6c9.webp"
-   },
-   {
-    "titel": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
-    "rubrik": "Nyt værktøj måler AI-hastighed på AMD-hardware",
-    "link": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
-    "side": "artikel/bacf1389cf533ea1.html",
+    "titel": "Android’s DIY widgets are a bit of vibe-coding fun",
+    "rubrik": "Androids AI bygger widgets – men busplanen driller",
+    "link": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
+    "side": "artikel/87888e32631326be.html",
     "kategori": "Hverdags-AI",
-    "kilde": "Hugging Face",
-    "dato": "2026-11-26T11:37:17+00:00",
-    "billede": "data/img/3b2cacaa8861af9c.webp"
-   }
-  ],
-  "seneste": [
-   {
-    "titel": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
-    "rubrik": "Nyt værktøj måler AI-hastighed på AMD-hardware",
-    "link": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
-    "side": "artikel/bacf1389cf533ea1.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "Hugging Face",
-    "dato": "2026-11-26T11:37:17+00:00",
-    "billede": "data/img/3b2cacaa8861af9c.webp"
+    "kilde": "The Verge AI",
+    "dato": "2026-11-27T09:00:00-05:00",
+    "billede": ""
    },
    {
     "titel": "Nvidia hits pause on chip shipments to Southeast Asia",
-    "rubrik": "Nvidia beder partnere pause serverleverancer",
+    "rubrik": "Nvidia beder partnere pause serverleverancer til fire lande",
     "link": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
     "side": "artikel/4c9ff179b519e288.html",
     "kategori": "Penge \u0026 marked",
     "kilde": "TechCrunch AI",
     "dato": "2026-11-26T20:03:54+00:00",
     "billede": "data/img/e13a9ea58dbd4989.webp"
+   }
+  ],
+  "seneste": [
+   {
+    "titel": "Android’s DIY widgets are a bit of vibe-coding fun",
+    "rubrik": "Androids AI bygger widgets – men busplanen driller",
+    "link": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
+    "side": "artikel/87888e32631326be.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "The Verge AI",
+    "dato": "2026-11-27T09:00:00-05:00",
+    "billede": ""
+   },
+   {
+    "titel": "Nvidia hits pause on chip shipments to Southeast Asia",
+    "rubrik": "Nvidia beder partnere pause serverleverancer til fire lande",
+    "link": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+    "side": "artikel/4c9ff179b519e288.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-11-26T20:03:54+00:00",
+    "billede": "data/img/e13a9ea58dbd4989.webp"
+   },
+   {
+    "titel": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+    "rubrik": "Nyt værktøj måler AI-hastighed på AMD-hardware",
+    "link": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+    "side": "artikel/bacf1389cf533ea1.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "Hugging Face",
+    "dato": "2026-11-26T11:37:17+00:00",
+    "billede": "data/img/3b2cacaa8861af9c.webp"
    },
    {
     "titel": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
@@ -357,33 +367,23 @@ window.KOMMANDO_DATA = {
     "kilde": "Hugging Face",
     "dato": "2026-11-25T18:52:55+00:00",
     "billede": "data/img/0593da5c8d4e30ec.webp"
-   },
-   {
-    "titel": "AI may soon change what it means to be a theoretical physicist",
-    "rubrik": "GPT-6 Astra fandt fejl i fysikernes svar",
-    "link": "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/",
-    "side": "artikel/599365cac3d8f529.html",
-    "kategori": "Forskning",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-11-25T12:00:28+00:00",
-    "billede": "data/img/8ae063fe812da6c9.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-11-27T08:59:49.463463+00:00",
+  "opdateret": "2026-11-27T21:36:02.999120+00:00",
   "status": "godkendt",
   "model": "gpt-6.1-terra",
   "modelkald": 6,
-  "kildehentninger": 2,
+  "kildehentninger": 3,
   "regelbaseret_udvalg": [
-   "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
-   "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
-   "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench"
+   "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+   "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+   "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent"
   ],
   "udgivet_udvalg": [
-   "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/",
-   "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench"
+   "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
+   "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/"
   ],
   "vaerktoejer": [
    {
@@ -395,7 +395,7 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
+    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
@@ -409,17 +409,21 @@ window.KOMMANDO_DATA = {
   ],
   "kildegrundlag": [
    {
-    "link": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+    "link": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/",
+    "link": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence/",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
     "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-11-27T08:59:49.145417+00:00",
+  "opdateret": "2026-11-27T21:36:02.635327+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -884,8 +888,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-11-27T08:59:49.463463+00:00",
-  "artikler_i_alt": 92,
+  "opdateret": "2026-11-27T21:36:02.999120+00:00",
+  "artikler_i_alt": 93,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1270,7 +1274,7 @@ window.KOMMANDO_DATA = {
       "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
      },
      {
-      "rubrik": "Nvidia beder partnere pause serverleverancer",
+      "rubrik": "Nvidia beder partnere pause serverleverancer til fire lande",
       "dato": "2026-11-26T20:03:54",
       "foerst_set": "2026-11-26T21:52:10",
       "link": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
@@ -1362,7 +1366,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 15,
+    "i_listen": 16,
     "som_ekstra": 8,
     "seneste": [
      {
@@ -1438,6 +1442,15 @@ window.KOMMANDO_DATA = {
       "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
      },
      {
+      "rubrik": "Androids AI bygger widgets – men busplanen driller",
+      "dato": "2026-11-27T09:00:00",
+      "foerst_set": "2026-11-27T21:36:02",
+      "link": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
+      "side": "artikel/87888e32631326be.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "SpaceX får lov til AI-satellitter",
       "dato": "2026-11-25T12:44:51",
       "foerst_set": "2026-11-26T00:38:08",
@@ -1463,15 +1476,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/62d538fd46658027.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Tidal vil fjerne AI-genereret musik",
-      "dato": "2026-11-24T12:17:09",
-      "foerst_set": "2026-11-24T19:41:33",
-      "link": "https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban",
-      "side": "artikel/31bde7b6ca68e4a6.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1489,7 +1493,7 @@ window.KOMMANDO_DATA = {
     "som_ekstra": 1,
     "seneste": [
      {
-      "rubrik": "Claude bidrog til bevis for Riemann-hypotesen",
+      "rubrik": "Claude hjælper med bevis for Riemann-hypotesen",
       "dato": "",
       "foerst_set": "2026-11-25T03:43:33",
       "link": "https://arstechnica.com/ai/2026/11/whats-going-on-with-the-riemann-hypothesis/",
@@ -1827,7 +1831,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-11-27T09:06:28.974104+00:00",
+  "opdateret": "2026-11-27T21:39:36.800606+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",

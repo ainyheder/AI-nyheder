@@ -1,10 +1,10 @@
 {
- "rubrik": "AI får mere ansvar – og møder nye prøver",
- "indledning": "Nye værktøjer kan arbejde mere selvstændigt, mens forskning og sikkerhedssager viser, hvor svært det er at kontrollere resultaterne.",
+ "rubrik": "Nye AI-evner møder grænser for kontrol og regnekraft",
+ "indledning": "Ugens udvikling spænder fra en ny model og mere selvstændig kodebehandling til forskningsresultater, cyberangreb og begrænsede chipleverancer.",
  "historier": [
   {
-   "overskrift": "GLM-5.4 gentager lag i ny model",
-   "tekst": "Z.ai har gjort GLM-5.4 tilgængelig. Modellen gentager en gruppe lag og bearbejder dermed mellemresultater flere gange. Ifølge selskabet giver metoden et dybere netværk uden flere parametre. Simon Willison har afprøvet adgangen, men hans omtale dokumenterer ikke modellens evner til programmering.",
+   "overskrift": "GLM-5.4 gentager lag for at bearbejde svar",
+   "tekst": "Z.ai har gjort GLM-5.4 tilgængelig. Modellen gentager en gruppe af sine lag og arbejder videre på mellemresultaterne. Ifølge virksomheden giver det et dybere netværk uden flere parametre. Simon Willison har prøvet modellen, men hans billedsammenligning dokumenterer ikke dens evner til programmering.",
    "link": "https://simonwillison.net/2026/Nov/23/glm-54/",
    "kategori": "Lanceringer",
    "billede": "data/img/95e9133106ff272e.webp",
@@ -17,7 +17,7 @@
   },
   {
    "overskrift": "Claude Ship kan godkende kodeændringer",
-   "tekst": "Anthropic lancerer Claude Ship, hvor AI-agenter kan gennemgå og rette kode og, hvis udviklerholdets regler tillader det, godkende ændringer. Code Review er generelt tilgængeligt, mens de to nye agenter er i beta. Udrulningen gælder Team- og Enterprise-kunder med kodelagre på GitHub.",
+   "tekst": "Anthropic lancerer Claude Ship, hvor AI-agenter kan gennemgå, rette og godkende kodeændringer efter regler fastlagt af udviklerholdet. Holdet bestemmer, hvilke beslutninger der kræver et menneske. De nye agenter PR Steward og Claude Approvals er i en tidlig testversion.",
    "link": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
    "kategori": "Lanceringer",
    "billede": "data/img/8a0aa80b86236e39.webp",
@@ -38,8 +38,21 @@
    "artikel_signatur": "76cb8bed39d1b672ab94c2b6443b2c7a55b45178ab32afc7b896b543242e6346"
   },
   {
-   "overskrift": "Claude bidrog til muligt Riemann-bevis",
-   "tekst": "Matematikeren Levent Alpöge mener med hjælp fra Claude at have bevist Riemann-hypotesen, et berømt uløst matematisk problem. Han har skrevet argumentet i Lean, som kan kontrollere matematiske beviser formelt. Matematikere mangler stadig at forstå og gennemgå argumentet; resultatet er endnu ikke accepteret.",
+   "overskrift": "GPT-6.2 foreslog proteiner med tegn på binding",
+   "tekst": "I forskning fra OpenAI og Onava foreslog en endnu ikke frigivet version af GPT-6.2 former til små proteiner. Laboratorieforsøg viste tegn på binding til alle fem udvalgte målproteiner. Specialiserede modeller hjalp med at gøre forslagene klar til test; binding er ikke en færdig anvendelse.",
+   "link": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+   "kategori": "Forskning",
+   "billede": "",
+   "dato": "2026-11-24T13:00:00+00:00",
+   "andre": [],
+   "titel": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+   "rubrik": "GPT-6.2 designer proteiner, der binder sig",
+   "resume_da": "Laboratorieforsøg viste tegn på binding til fem udvalgte proteiner. Specialiserede modeller hjalp dog med at gøre forslagene klar til test.",
+   "artikel_signatur": "a2ffd9140f9aa74ec4c107ae0ddf908481be8ca66ae17fad635c93ef2b7cccad"
+  },
+  {
+   "overskrift": "Matematiker fremlægger muligt Riemann-bevis med Claude",
+   "tekst": "Levent Alpöge mener at have fundet et bevis for Riemann-hypotesen med hjælp fra Claude. Argumentet er skrevet i Lean, et sprog til formel kontrol af matematiske beviser. Uafhængige matematikere har bekræftet, at Lean kan behandle koden, men argumentet mangler stadig gennemgang og forståelse.",
    "link": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
    "kategori": "Forskning",
    "billede": "data/img/b2f118e75f13301f.webp",
@@ -64,8 +77,8 @@
     {
      "kilde": "Ars Technica AI",
      "link": "https://arstechnica.com/ai/2026/11/whats-going-on-with-the-riemann-hypothesis/",
-     "rubrik": "Claude bidrog til bevis for Riemann-hypotesen",
-     "resume_da": "Ifølge Ars Technica er beviset verificeret med sproget Lean. Matematikere er stadig i gang med at forstå ideerne bag det.",
+     "rubrik": "Claude hjælper med bevis for Riemann-hypotesen",
+     "resume_da": "Matematikeren Levent Alpöge har annonceret et AI-assisteret bevis. Den formelle version er ifølge Ars Technica kontrolleret, men matematikere arbejder stadig på at forstå tankegangen.",
      "dato": "2026-11-24T20:34:53+00:00",
      "foerst_set": "2026-11-25T03:43:33.973979+00:00"
     }
@@ -73,24 +86,11 @@
    "titel": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too",
    "rubrik": "Claude hjalp matematiker med muligt Riemann-bevis",
    "resume_da": "Levent Alpöges resultat kan omsættes i et program til matematisk kontrol, men forskere mangler stadig at forstå og gennemgå argumentet.",
-   "artikel_signatur": "b6217bb35a323fde7600d421197c4e39d039c7f1bcbf2d845bf09d7cf78b9190"
+   "artikel_signatur": "cb59b28b8b283947c3d6f4b2ceb9a9f3674ce0b708000eef23090ad7d8a43fb8"
   },
   {
-   "overskrift": "GPT-6.2 foreslog proteindesign til laboratorieforsøg",
-   "tekst": "OpenAI og forskningspartneren Onava brugte en endnu ikke frigivet version af GPT-6.2 til at foreslå former for små proteiner. Mindst ét fremstillet protein viste tegn på binding for hvert af fem målproteiner. Specialiserede modeller hjalp med at gøre forslagene klar til test.",
-   "link": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
-   "kategori": "Forskning",
-   "billede": "",
-   "dato": "2026-11-24T13:00:00+00:00",
-   "andre": [],
-   "titel": "GPT-6 models demonstrate intrinsic protein-design capabilities",
-   "rubrik": "GPT-6.2 designer proteiner, der binder sig",
-   "resume_da": "Laboratorieforsøg viste tegn på binding til fem udvalgte proteiner. Specialiserede modeller hjalp dog med at gøre forslagene klar til test.",
-   "artikel_signatur": "a2ffd9140f9aa74ec4c107ae0ddf908481be8ca66ae17fad635c93ef2b7cccad"
-  },
-  {
-   "overskrift": "Amazon: AI-agenter udnyttede ukendt sikkerhedshul",
-   "tekst": "Ifølge Amazon fandt AI-agenter et hidtil ukendt sikkerhedshul på en universitetsserver og udnyttede det til at skaffe adgang. Hackerne brugte det åbne sikkerhedsværktøj Cairn og greb også selv ind undervejs. Andre angrebsforsøg med agenterne mislykkedes, selv efter flere timers arbejde.",
+   "overskrift": "Amazon: Hackere brugte AI til at finde ukendt sikkerhedshul",
+   "tekst": "Ifølge Amazon fandt hackernes AI-agenter en hidtil ukendt sårbarhed på en universitetsserver og udnyttede den til at få administratoradgang. Agenterne brugte sikkerhedsværktøjet Cairn og arbejdede med begrænset menneskelig hjælp. Andre angrebsforsøg med værktøjet mislykkedes, selv efter mange timers arbejde.",
    "link": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
    "kategori": "Samfund & etik",
    "billede": "data/img/d8a21a44ed18b5e9.webp",
@@ -102,57 +102,48 @@
    "artikel_signatur": "c0df00c524e1e81a245bb09768588e9aabca383c08a28fe0c84f811693ab2930"
   },
   {
-   "overskrift": "Delstater vil stoppe salg af Character.AI-chats",
-   "tekst": "En gruppe på 42 amerikanske delstatsjustitsministre forsøger at stoppe en planlagt auktion over private Character.AI-samtaler under selskabets konkursbehandling. De hævder, at en køber ikke vil være bundet af selskabets privatlivspolitik. Det er uklart, hvem der står bag den kendte budgiver.",
-   "link": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
-   "kategori": "Politik & jura",
-   "billede": "data/img/9b0df4f9430c1645.webp",
-   "dato": "2026-11-25T17:35:58+00:00",
-   "andre": [
-    {
-     "kilde": "The Verge AI",
-     "link": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
-     "rubrik": "42 statsadvokater vil standse Character.AI-datasalg",
-     "resume_da": "De anklager selskabet for at planlægge en auktion over private chats fra mere end 21 millioner amerikanske konti under konkursbehandlingen.",
-     "dato": "2026-11-26 04:54:40-05:00",
-     "foerst_set": "2026-11-26T21:52:10.722629+00:00"
-    }
-   ],
-   "titel": "Character.AI’s plan to auction off users’ private chats challenged by state AGs",
-   "rubrik": "Character.AI vil sælge private chats på auktion",
-   "resume_da": "En gruppe på 42 amerikanske justitsministre forsøger at stoppe salget af brugerdata i forbindelse med AI-selskabets konkurs.",
-   "artikel_signatur": "665fbb60ece69fe63c1e6483d9aaab3a1e50d97b9eaab48ab26369dc03fcb128"
+   "overskrift": "Nvidia pauser serverleverancer til fire lande",
+   "tekst": "Nvidia har bedt partnere sætte serverleverancer til Malaysia, Singapore, Thailand og Indonesien på pause, mens selskabet undersøger overholdelsen af amerikanske eksportkrav. Kinesiske virksomheder har brugt Nvidia-chips via datacentre i landene. Pausens varighed og omfang er endnu uklare.",
+   "link": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+   "kategori": "Penge & marked",
+   "billede": "data/img/e13a9ea58dbd4989.webp",
+   "dato": "2026-11-26T20:03:54+00:00",
+   "andre": [],
+   "titel": "Nvidia hits pause on chip shipments to Southeast Asia",
+   "rubrik": "Nvidia beder partnere pause serverleverancer til fire lande",
+   "resume_da": "Pausen rammer Malaysia, Singapore, Thailand og Indonesien. Nvidia vil undersøge, om regionale partnere overholder amerikanske eksportkrav.",
+   "artikel_signatur": "4d89de5fe8b10089b09623c079868cd713ef10e89c2660245c1b78d8809a1fb9"
   }
  ],
  "overblik": [
   {
-   "tekst": "AI får mere selvstændigt arbejde: Med Claude Ship kan en agent ikke blot gennemgå og rette kode, men også godkende ændringer efter udviklerholdets egne regler. Godkendelsen er dog stadig i beta. Samtidig har Z.ai frigivet GLM-5.4, der gentager dele af sin behandling. Selskabet siger, at det gør netværket dybere uden flere parametre; den tilgængelige afprøvning viser endnu ikke, hvor god modellen er til kode.",
+   "tekst": "AI får både nye måder at bearbejde opgaver på og større råderum til at handle. Z.ai’s GLM-5.4 gentager dele af modellen for at arbejde videre på mellemresultater; selskabet siger, at det giver et dybere netværk uden flere parametre. Anthropic går et andet sted hen i arbejdsgangen: Claude Ship kan ikke blot gennemgå kode, men også godkende rutineændringer efter holdets egne regler. De nye agenter er dog stadig i en tidlig testversion.",
    "links": [
-    "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
-    "https://simonwillison.net/2026/Nov/23/glm-54/"
+    "https://simonwillison.net/2026/Nov/23/glm-54/",
+    "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/"
    ]
   },
   {
-   "tekst": "I forskningen er spørgsmålet ikke kun, om AI kan foreslå et resultat, men hvordan det kan efterprøves. Matematikeren Levent Alpöge mener, at Claude har hjulpet ham med et bevis for Riemann-hypotesen. Argumentet er skrevet i et sprog til formel kontrol, men matematikere mangler stadig at gennemgå det. I et andet forsøg viste proteiner foreslået med GPT-6.2 tegn på binding i laboratoriet. Her hjalp specialiserede modeller med forberedelsen, og binding er ikke det samme som en færdig anvendelse.",
+   "tekst": "Forskningen viser samtidig, hvorfor resultaterne skal vurderes forskelligt. I OpenAI og Onavas forsøg foreslog GPT-6.2 proteinformer, som efter hjælp fra specialiserede modeller viste tegn på binding i laboratoriet. Det er ikke det samme som et færdigt lægemiddel. Matematikeren Levent Alpöge mener på sin side at have fundet et bevis for Riemann-hypotesen med Claude. Koden kan behandles af et formelt kontrolværktøj, men matematikere mangler stadig at forstå og gennemgå argumentet.",
    "links": [
-    "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
-    "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities"
+    "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+    "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/"
    ]
   },
   {
-   "tekst": "Mere handlekraft giver også nye sikkerhedsspørgsmål. Amazon beskriver hackere, der brugte AI-agenter til at finde og udnytte et ukendt hul på en server, selv om andre forsøg mislykkedes. Character.AI-sagen handler om en anden risiko: Hvem får adgang til de private samtaler, når en tjeneste går konkurs? Delstatsjustitsministre forsøger at standse salget, men auktionens udfald er endnu ikke afgjort.",
+   "tekst": "Større selvstændighed har også en sikkerhedsside: Ifølge Amazon brugte hackere AI-agenter til at finde og udnytte et ukendt sikkerhedshul, selv om andre forsøg mislykkedes. Samtidig er adgangen til regnekraft under pres af eksportregler. Nvidia har bedt partnere pause serverleverancer til fire sydøstasiatiske lande under en kontrol af reglernes overholdelse; hvor omfattende pausen bliver, er endnu uklart.",
    "links": [
     "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
-    "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/"
+    "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/"
    ]
   }
  ],
- "tendens": "",
+ "tendens": "Alpöges mulige Riemann-bevis mangler fortsat en gennemgang, der kan forklare argumentet og afklare, om matematikmiljøet accepterer resultatet.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "8922ae1fd7115535cb4d07ea34884b3d4152c0ff492debbac29bd01979d5856f",
- "dato": "2026-11-27T09:05:52.618847+00:00",
- "opdateret": "2026-11-27T09:05:52.618847+00:00",
+ "basis_signatur": "e20da6063e9f2667d02826037f0907a21329364513e6f40d7ef73cac8b2d19f8",
+ "dato": "2026-11-27T21:39:12.920101+00:00",
+ "opdateret": "2026-11-27T21:39:12.920101+00:00",
  "periode_fra": "2026-11-19T23:00:00+00:00",
  "periode_til": "2026-11-26T23:00:00+00:00",
  "stats": {

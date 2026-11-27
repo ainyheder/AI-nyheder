@@ -1,43 +1,44 @@
 {
-  "opdateret": "2026-11-27T08:59:49.463463+00:00",
+  "opdateret": "2026-11-27T21:36:02.999120+00:00",
   "status": "godkendt",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
-    "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
-    "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
-    "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench"
+    "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+    "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+    "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent"
   ],
-  "input_fingerprint": "dfdc2cdcc39240b5",
-  "redaktionsnote": "Ingen ny modellancering inden for 48 timer er dokumenteret i de læste kilder. Nvidias dataopdatering og ChatGPTs forbrugsgrænser var allerede på gårsdagens forside; øvrige kandidater afventer læsbare kilder.",
+  "input_fingerprint": "6ecf8d35592e1bdc",
+  "redaktionsnote": "Ingen ny modellancering inden for 48 timer er dokumenteret i det gennemgåede katalog. Android-historien er en ny test af en tidligere annonceret funktion, ikke en ny lancering; Nvidias leveringspause bygger på en andenhåndsmeddelelse.",
   "beslutninger": [
     {
-      "id": "5f071a5fc3a63b13",
-      "begrundelse": "En test af upublicerede fysikopgaver viser en konkret og overraskende AI-evne, som er mere interessant end endnu en produktudtalelse. Ars Technica bygger på interviews med forskerne, men testen dækker afgrænsede beregninger, ikke al forskning.",
-      "nyt_siden_sidst": "Ars Technica fortæller nu, at GPT-6 Astra ifølge forskerne løste 49 af 50 teoretiske fysikopgaver, efter at modellen også fandt fejl i nogle af deres egne svar. Artiklen oplyser ikke præcis, hvornår den endelige test blev gennemført.",
-      "skriveopgave": "Rubrik: 'AI fandt fejl i fysikernes svar – og løste 49 af 50 opgaver'. Forklar med korte afsnit og sigende mellemoverskrifter, hvorfor upublicerede opgaver blev brugt, og hvordan fejlene i de menneskelige svar blev opdaget. Giv plads til testens begrænsninger: veldefinerede beregninger er ikke det samme som åbne forskningsspørgsmål. Angiv gennemsnitsprisen på under 3 dollar pr. korrekt svar som forskernes oplysning, ikke en generel pris.",
+      "id": "1d140bb3b26b0663",
+      "begrundelse": "The Verges nye praktiske test viser både en konkret AI-mulighed på Android og en vigtig begrænsning: En ønsket widget med busankomster i realtid virkede ikke efter hensigten.",
+      "nyt_siden_sidst": "Funktionen blev annonceret i foråret og er begyndt at blive udrullet i beta på Pixel-telefoner tidligere på måneden. Det nye er The Verges afprøvning, ikke en ny lancering.",
+      "skriveopgave": "Rubrik: »Androids AI bygger widgets – men busplanen driller«. Forklar kort, at en widget er et lille felt på hjemmeskærmen, og beskriv testens vejr- og buseksempler under sigende mellemoverskrifter. Skeln Googles produktløfter fra journalistens test, og angiv beta og begrænset udrulning; dansk adgang er uafklaret.",
       "kilder": [
-        "5f071a5fc3a63b13"
+        "1d140bb3b26b0663",
+        "c5b9668d7cd8f055"
       ],
       "samme_historie": [],
-      "link": "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/",
-      "rubrik": "GPT-6 Astra fandt fejl i fysikernes svar"
+      "link": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
+      "rubrik": "Androids AI bygger widgets – men busplanen driller"
     },
     {
-      "id": "a734da9d3a1d8760",
-      "begrundelse": "Et nyt offentligt værktøj gør det lettere at undersøge hastigheden for AI-modeller på egen AMD-hardware. Det er en brugbar ny mulighed for udviklere, selv om det ikke er en modellancering.",
-      "nyt_siden_sidst": "llama.cpp-projektet har lanceret et dashboard med offentlige målinger og data for to AMD-enheder. Brugere kan sammenligne modeller, softwareversioner og forskellige måder at komprimere modeller på.",
-      "skriveopgave": "Rubrik: 'Nyt værktøj viser, hvor hurtigt AI kører på AMD-hardware'. Forklar kort lokal kørsel, måling i tokens pr. sekund og modelkomprimering ved første brug. Beskriv de to understøttede enheder og forskellen på behandling af input og generering af tekst under korte mellemoverskrifter. Gør klart, at standardtestene er referencearbejdsbelastninger, ikke en garanti for samme hastighed i enhver brugssituation, og at AMD har leveret testinfrastruktur.",
+      "id": "979e22972f743c14",
+      "begrundelse": "En rapporteret leveringspause til fire lande kan påvirke adgangen til AI-servere og illustrerer, hvordan eksportregler også rammer infrastrukturen uden for Kina.",
+      "nyt_siden_sidst": "Ifølge Wall Street Journal har Nvidia bedt produktionspartnere sætte serverleverancer til Malaysia, Singapore, Thailand og Indonesien på pause, mens selskabet undersøger overholdelsen af amerikanske eksportkrav.",
+      "skriveopgave": "Rubrik: »Nvidia beder om pause i AI-serverleverancer til fire lande«. Forklar kort forbindelsen til fjernadgang til regnekraft og amerikanske eksportkrav i korte afsnit med konkrete mellemoverskrifter. Tilskriv oplysningerne Wall Street Journal via TechCrunch, og gør klart, at pausens varighed og omfang er uafklaret.",
       "kilder": [
-        "a734da9d3a1d8760"
+        "979e22972f743c14"
       ],
       "samme_historie": [],
-      "link": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
-      "rubrik": "Nyt værktøj måler AI-hastighed på AMD-hardware"
+      "link": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+      "rubrik": "Nvidia beder partnere pause serverleverancer til fire lande"
     }
   ],
   "modelkald": 6,
-  "kildehentninger": 2,
+  "kildehentninger": 3,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -48,7 +49,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -62,17 +63,21 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+      "link": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/",
+      "link": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/",
-    "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench"
+    "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
+    "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/"
   ],
-  "afventer_artikler": 71
+  "afventer_artikler": 70
 }
