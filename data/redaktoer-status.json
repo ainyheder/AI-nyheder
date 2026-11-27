@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-11-26T21:52:10.722629+00:00",
+  "opdateret": "2026-11-27T08:59:49.463463+00:00",
   "status": "godkendt",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
@@ -8,36 +8,36 @@
     "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
     "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench"
   ],
-  "input_fingerprint": "3a98dbb1ddb27b42",
-  "redaktionsnote": "Ingen ny modellancering fra de seneste 48 timer er dokumenteret i de læste kilder. AMD-oversigten er et separat værktøj til at sammenligne lokal modelkørsel og anbefales uden at blive gjort til en hovedhistorie.",
+  "input_fingerprint": "dfdc2cdcc39240b5",
+  "redaktionsnote": "Ingen ny modellancering inden for 48 timer er dokumenteret i de læste kilder. Nvidias dataopdatering og ChatGPTs forbrugsgrænser var allerede på gårsdagens forside; øvrige kandidater afventer læsbare kilder.",
   "beslutninger": [
     {
-      "id": "3d2697b636d74b83",
-      "begrundelse": "Nvidia åbner data og værktøjer, som kan gøre en eksisterende dokumentmodel lettere at tilpasse og hurtigere at køre. Det er en konkret ny mulighed for udviklere, ikke en ny modellancering.",
-      "nyt_siden_sidst": "Nvidia frigiver tre syntetiske datasæt og en opskrift på finjustering samt DFlash2 til hurtigere kørsel af Nemotron 3.5 Parse. Selve modellen var allerede udgivet.",
-      "skriveopgave": "Rubrik: »Nvidia åbner data og giver dokumentmodel et hastighedsløft«. Forklar, hvordan modellen læser tabeller og diagrammer, og hvordan kunstigt fremstillede træningsdata kan bruges til at tilpasse den. Brug korte mellemoverskrifter og forklar tekniske ord; angiv, at hastighedstallene er Nvidias egne målinger på H200 og afhænger af belastningen.",
+      "id": "5f071a5fc3a63b13",
+      "begrundelse": "En test af upublicerede fysikopgaver viser en konkret og overraskende AI-evne, som er mere interessant end endnu en produktudtalelse. Ars Technica bygger på interviews med forskerne, men testen dækker afgrænsede beregninger, ikke al forskning.",
+      "nyt_siden_sidst": "Ars Technica fortæller nu, at GPT-6 Astra ifølge forskerne løste 49 af 50 teoretiske fysikopgaver, efter at modellen også fandt fejl i nogle af deres egne svar. Artiklen oplyser ikke præcis, hvornår den endelige test blev gennemført.",
+      "skriveopgave": "Rubrik: 'AI fandt fejl i fysikernes svar – og løste 49 af 50 opgaver'. Forklar med korte afsnit og sigende mellemoverskrifter, hvorfor upublicerede opgaver blev brugt, og hvordan fejlene i de menneskelige svar blev opdaget. Giv plads til testens begrænsninger: veldefinerede beregninger er ikke det samme som åbne forskningsspørgsmål. Angiv gennemsnitsprisen på under 3 dollar pr. korrekt svar som forskernes oplysning, ikke en generel pris.",
       "kilder": [
-        "3d2697b636d74b83"
+        "5f071a5fc3a63b13"
       ],
       "samme_historie": [],
-      "link": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
-      "rubrik": "Nvidia åbner data og giver dokumentmodel et hastighedsløft"
+      "link": "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/",
+      "rubrik": "GPT-6 Astra fandt fejl i fysikernes svar"
     },
     {
-      "id": "fb19c642f1b75584",
-      "begrundelse": "En fælles forbrugsgrænse ændrer, hvor meget nogle betalende ChatGPT-brugere kan få ud af avancerede modeller. Det er en konkret adgangsændring med betydning for storforbrugere.",
-      "nyt_siden_sidst": "OpenAI er begyndt at samle Chat og Work hos en lille gruppe Pro-abonnenter. Selskabet siger, at de mest intensive brugere kan ramme grænsen tidligere, og planlægger bredere udrulning i december.",
-      "skriveopgave": "Rubrik: »ChatGPT samler forbruget: Nogle brugere kan ramme loftet før«. Forklar med korte mellemoverskrifter den fælles tæller, den begrænsede udrulning og at Instant ifølge OpenAI fortsat er uden for loftet. Skeln mellem abonnenternes bekymringer og selskabets vurdering; præcise grænser og dansk adgang er uafklarede.",
+      "id": "a734da9d3a1d8760",
+      "begrundelse": "Et nyt offentligt værktøj gør det lettere at undersøge hastigheden for AI-modeller på egen AMD-hardware. Det er en brugbar ny mulighed for udviklere, selv om det ikke er en modellancering.",
+      "nyt_siden_sidst": "llama.cpp-projektet har lanceret et dashboard med offentlige målinger og data for to AMD-enheder. Brugere kan sammenligne modeller, softwareversioner og forskellige måder at komprimere modeller på.",
+      "skriveopgave": "Rubrik: 'Nyt værktøj viser, hvor hurtigt AI kører på AMD-hardware'. Forklar kort lokal kørsel, måling i tokens pr. sekund og modelkomprimering ved første brug. Beskriv de to understøttede enheder og forskellen på behandling af input og generering af tekst under korte mellemoverskrifter. Gør klart, at standardtestene er referencearbejdsbelastninger, ikke en garanti for samme hastighed i enhver brugssituation, og at AMD har leveret testinfrastruktur.",
       "kilder": [
-        "fb19c642f1b75584"
+        "a734da9d3a1d8760"
       ],
       "samme_historie": [],
-      "link": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
-      "rubrik": "ChatGPT samler forbrug: Nogle kan ramme loftet før"
+      "link": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+      "rubrik": "Nyt værktøj måler AI-hastighed på AMD-hardware"
     }
   ],
   "modelkald": 6,
-  "kildehentninger": 3,
+  "kildehentninger": 2,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -48,7 +48,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -62,21 +62,17 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
-      "grundlag": "kildetekst"
-    },
-    {
       "link": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+      "link": "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
-    "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/"
+    "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/",
+    "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench"
   ],
-  "afventer_artikler": 78
+  "afventer_artikler": 71
 }

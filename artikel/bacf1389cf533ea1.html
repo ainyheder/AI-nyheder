@@ -3,22 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI-nyheder.com · Nyt dashboard sammenligner llama.cpp på AMD</title>
-<meta name="description" content="Et offentligt dashboard gør det muligt at følge, hvor hurtigt AI-modeller arbejder lokalt på udvalgt AMD-hardware.">
+<title>AI-nyheder.com · Nyt værktøj måler AI-hastighed på AMD-hardware</title>
+<meta name="description" content="Et offentligt dashboard gør det muligt at sammenligne, hvor hurtigt AI-modeller behandler input og skriver tekst på to Radeon-enheder.">
 <link rel="canonical" href="https://ainyheder.com/artikel/bacf1389cf533ea1.html">
 <meta name="theme-color" content="#0c0e12">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="AI-nyheder">
-<meta property="og:title" content="Nyt dashboard sammenligner llama.cpp på AMD">
-<meta property="og:description" content="Et offentligt dashboard gør det muligt at følge, hvor hurtigt AI-modeller arbejder lokalt på udvalgt AMD-hardware.">
+<meta property="og:title" content="Nyt værktøj måler AI-hastighed på AMD-hardware">
+<meta property="og:description" content="Et offentligt dashboard gør det muligt at sammenligne, hvor hurtigt AI-modeller behandler input og skriver tekst på to Radeon-enheder.">
 <meta property="og:url" content="https://ainyheder.com/artikel/bacf1389cf533ea1.html">
-<meta property="og:image" content="https://ainyheder.com/assets/og.png">
+<meta property="og:image" content="https://ainyheder.com/data/img/3b2cacaa8861af9c.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/fonts/skrifter.css?v=2">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Nyt dashboard sammenligner llama.cpp på AMD", "description": "Et offentligt dashboard gør det muligt at følge, hvor hurtigt AI-modeller arbejder lokalt på udvalgt AMD-hardware.", "url": "https://ainyheder.com/artikel/bacf1389cf533ea1.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/bacf1389cf533ea1.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "datePublished": "2026-11-26T11:37:17+00:00", "articleSection": "Hverdags-AI", "isBasedOn": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Nyt værktøj måler AI-hastighed på AMD-hardware", "description": "Et offentligt dashboard gør det muligt at sammenligne, hvor hurtigt AI-modeller behandler input og skriver tekst på to Radeon-enheder.", "url": "https://ainyheder.com/artikel/bacf1389cf533ea1.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/bacf1389cf533ea1.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "image": "https://ainyheder.com/data/img/3b2cacaa8861af9c.jpg", "datePublished": "2026-11-26T11:37:17+00:00", "articleSection": "Hverdags-AI", "isBasedOn": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench"}</script>
 <style>
 :root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
   --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }
@@ -57,20 +57,20 @@ footer a { color:var(--accent); }
 <main id="artikeltekst" tabindex="-1">
 <a class="article-back" href="/">← Tilbage til nyhederne</a>
 <div class="kicker">Hverdags-AI · Hugging Face · 26.11.2026 · 2 min. læsning</div>
-<h1>Nyt dashboard sammenligner llama.cpp på AMD</h1>
-<div class="article-intro"><p class="manchet">Et offentligt dashboard gør det muligt at følge, hvor hurtigt AI-modeller arbejder lokalt på udvalgt AMD-hardware.</p></div>
-<section class="article-section"><h2><span class="section-index" aria-hidden="true">01</span>Vælg model og AMD-hardware</h2>
-<p>Et nyt dashboard på Hugging Face viser målinger af, hvor hurtigt AI-modeller behandler input og genererer tekst med llama.cpp, et program til at køre modeller lokalt.</p><p>Brugeren kan vælge hardware, model og version af llama.cpp og sammenligne resultater over tid. De aktuelle hardwarevalg er Radeon 8060S og Radeon AI Pro R9700S.</p></section>
-<dl class="article-metrics"><div><dt>PP512-testen måler behandling af input uden tekstgenerering.</dt><dd>512 tokens</dd></div><div><dt>TG128-testen måler tekstgenerering uden forudgående kontekst.</dt><dd>128 tokens</dd></div><div><dt>Hver testopsætning køres ti gange; dashboardet viser gennemsnitlig hastighed.</dt><dd>10 gentagelser</dd></div></dl><section class="article-section"><h2><span class="section-index" aria-hidden="true">02</span>To hastigheder viser forskellige opgaver</h2>
-<p>Dashboardet måler både behandling af input og generering af tekst. Resultaterne vises i tokens per sekund. Et token er en del af tekst, som en model behandler ad gangen.</p><p>De to standardtest begynder uden forudgående kontekst. En anden visning viser, hvordan hastigheden for tekstgenerering ændrer sig, når konteksten vokser. Det giver mulighed for at undersøge mere end ét arbejdsgrundlag.</p></section>
-<section class="article-section"><h2><span class="section-index" aria-hidden="true">03</span>Åbne data gør målingerne efterprøvelige</h2>
-<p>Testene kører efter planen hver uge på færdigbyggede versioner af llama.cpp. De gentages både med og uden Flash Attention, en metode til at gøre modellens behandling mere effektiv.</p><p>Brugeren kan også sammenligne kvantiseringer: versioner af en model, hvor tallene er gemt med forskellig præcision. Resultaterne og testforløbet er offentlige, så andre kan undersøge dataene eller sammenligne dem med egne målinger.</p><p>Modeludvalget ændrer sig og omfatter blandt andet Qwen, Gemma og gpt-oss. AMD har ifølge artiklen stillet testinfrastruktur til rådighed og hjulpet med at kontrollere opsætningen.</p></section>
+<h1>Nyt værktøj måler AI-hastighed på AMD-hardware</h1>
+<div class="article-intro"><img class="top" src="/data/img/3b2cacaa8861af9c.webp" alt="A solid benchmark chart compares two Radeon chips, with AMD’s black angular arrow emblem prominently displayed beside them. Each chip has two separate horizontal bars: one paired w"><p class="manchet">Et offentligt dashboard gør det muligt at sammenligne, hvor hurtigt AI-modeller behandler input og skriver tekst på to Radeon-enheder.</p></div>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">01</span>Modellerne kører på egne enheder</h2>
+<p>Et nyt dashboard på Hugging Face viser, hvor hurtigt AI-modeller kan køre lokalt på udvalgt AMD-hardware. Lokal kørsel betyder, at modellen arbejder på brugerens egen enhed frem for på en ekstern server.</p><p>Dashboardet måler hastigheden i tokens pr. sekund. Tokens er de tekstdele, en model læser og skriver; et token kan være et helt ord eller en del af et ord.</p><p>Man kan vælge mellem Radeon 8060S og Radeon AI Pro R9700S samt forskellige modeller og versioner af llama.cpp, et program til lokal kørsel af AI-modeller.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">02</span>Input og svar måles hver for sig</h2>
+<p>Den ene standardtest måler, hvor hurtigt modellen behandler 512 inputtokens uden at skrive et svar. Den anden måler, hvor hurtigt den genererer 128 tokens uden forudgående samtaleindhold.</p><p>Begge er referenceopgaver, ikke en garanti for samme hastighed i enhver brugssituation. En særskilt visning viser, hvordan hastigheden ved tekstgenerering ændrer sig, når mængden af forudgående indhold vokser.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">03</span>Komprimering kan sammenlignes åbent</h2>
+<p>Dashboardet lader også brugeren sammenligne modelkomprimering. Her gemmes modellens tal med lavere præcision, så modellen fylder mindre. Blandt de tilgængelige formater er Q4_K_M og Q8_0; der findes også formater med højere præcision.</p><p>Testene er planlagt til at køre ugentligt. Hver konfiguration gentages ti gange, og resultaterne viser gennemsnitshastigheden. Både testforløb og resultater er offentlige, så andre kan undersøge dem eller sammenligne med egne målinger.</p><p>AMD har leveret testinfrastrukturen og hjulpet med at kontrollere opsætningen.</p></section>
 
 
-<div class="boks" style="border-left-color:#2e9e5b;"><strong>Derfor er det interessant</strong>Dashboardet giver et fælles grundlag for at følge ændringer i lokal AI-hastighed, men viser testmålinger frem for en generel garanti for ydelsen.</div>
+
 <p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://huggingface.co/blog/ggml-org/llamacpp-amd-bench" rel="noopener">Hugging Face →</a></p>
 <a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
-<p class="note">Genfortalt i egne ord af AI-nyheder.com · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>
+<p class="note">Genfortalt i egne ord af AI-nyheder.com · AI-genereret illustration · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>
 </main>
 <footer>© 2026 AI-nyheder · <a href="/om.html">Om os</a> · <a href="/vaerktoejer.html">Værktøjer</a></footer>
 <!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->

@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-11-26T21:52:10.722629+00:00",
- "artikler_i_alt": 101,
+ "opdateret": "2026-11-27T08:59:49.463463+00:00",
+ "artikler_i_alt": 92,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -12,33 +12,15 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 3,
-   "som_ekstra": 1,
+   "i_listen": 2,
+   "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "Anthropic har afsluttet sin børsnotering",
-     "dato": "",
-     "foerst_set": "2026-11-20T17:11:55",
-     "link": "https://www.anthropic.com/news/ipo-close",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic-aktier kan udløse 156 milliarder dollar"
-    },
     {
      "rubrik": "Claude Fable 5.2 skal løse svære kodeopgaver",
      "dato": "2026-11-09T00:00:00",
      "foerst_set": "2026-11-09T19:04:48",
      "link": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
      "side": "artikel/456a529aa2a3e101.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Anthropic giver amerikanske myndigheder rabat på Claude",
-     "dato": "2026-10-27T00:00:00",
-     "foerst_set": "2026-11-06T21:24:13",
-     "link": "https://www.anthropic.com/news/expanding-partnership-gsa",
-     "side": "artikel/c6996b4346a3f164.html",
      "hvor": "forside",
      "under": ""
     },
@@ -54,11 +36,11 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "TechCrunch AI",
-     2
+     "The Verge AI",
+     1
     ],
     [
-     "The Verge AI",
+     "TechCrunch AI",
      1
     ],
     [
@@ -103,7 +85,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 5,
-   "som_ekstra": 5,
+   "som_ekstra": 4,
    "seneste": [
     {
      "rubrik": "Google lader Search bruge personlige oplysninger",
@@ -113,15 +95,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google Search får adgang til Wallet og Drive"
-    },
-    {
-     "rubrik": "Gemini kan nu bruge computeren på Mac",
-     "dato": "",
-     "foerst_set": "2026-11-19T23:12:19",
-     "link": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini kan nu arbejde på din Mac"
     },
     {
      "rubrik": "Googles Genie 4 ændrer verdener undervejs",
@@ -203,7 +176,7 @@ window.KILDER_STATUS = {
     ],
     [
      "TechCrunch AI",
-     2
+     1
     ]
    ]
   },
@@ -246,7 +219,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
-     "rubrik": "Nyt dashboard sammenligner llama.cpp på AMD",
+     "rubrik": "Nyt værktøj måler AI-hastighed på AMD-hardware",
      "dato": "2026-11-26T11:37:17",
      "foerst_set": "2026-11-26T21:52:10",
      "link": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
@@ -403,11 +376,11 @@ window.KILDER_STATUS = {
      2
     ],
     [
-     "TechCrunch AI",
+     "OpenAI Blog",
      1
     ],
     [
-     "OpenAI Blog",
+     "TechCrunch AI",
      1
     ],
     [
@@ -426,8 +399,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 30,
-   "som_ekstra": 3,
+   "i_listen": 25,
+   "som_ekstra": 2,
    "seneste": [
     {
      "rubrik": "Walmart sælger Black Friday-tilbud gennem Meta-agent",
@@ -448,24 +421,6 @@ window.KILDER_STATUS = {
      "under": "Amazon aftaler køb af Decarts AI-teknologi"
     },
     {
-     "rubrik": "Anthropic-satsning gav investorer store papirgevinst​er",
-     "dato": "",
-     "foerst_set": "2026-11-23T08:05:22.310496+00:00",
-     "link": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic-aktier kan udløse 156 milliarder dollar"
-    },
-    {
-     "rubrik": "Apple søger leder til AI-agent",
-     "dato": "",
-     "foerst_set": "2026-11-20T07:41:24",
-     "link": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
-     "side": "",
-     "hvor": "under",
-     "under": "Apple søger ingeniør til ny AI-agent"
-    },
-    {
      "rubrik": "Anthropic lancerer Mythos 5.2 og Fable 5.2",
      "dato": "",
      "foerst_set": "2026-11-10T02:53:29",
@@ -475,11 +430,11 @@ window.KILDER_STATUS = {
      "under": "Claude Fable 5.2 skal løse svære kodeopgaver"
     },
     {
-     "rubrik": "ChatGPT samler forbrug: Nogle kan ramme loftet før",
-     "dato": "2026-11-25T20:03:27",
-     "foerst_set": "2026-11-26T00:38:08",
-     "link": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
-     "side": "artikel/68617ed988fe883b.html",
+     "rubrik": "Nvidia beder partnere pause serverleverancer",
+     "dato": "2026-11-26T20:03:54",
+     "foerst_set": "2026-11-26T21:52:10",
+     "link": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+     "side": "artikel/4c9ff179b519e288.html",
      "hvor": "forside",
      "under": ""
     },
@@ -489,6 +444,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-11-26T00:38:08",
      "link": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
      "side": "artikel/a07adeabc9e7c59f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "ChatGPT samler forbrug: Nogle kan ramme loftet før",
+     "dato": "2026-11-25T20:03:27",
+     "foerst_set": "2026-11-26T00:38:08",
+     "link": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+     "side": "artikel/68617ed988fe883b.html",
      "hvor": "forside",
      "under": ""
     },
@@ -572,29 +536,16 @@ window.KILDER_STATUS = {
      "side": "artikel/281e7b0eb8a2f22f.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Anthropic-aktien falder under introduktionskursen",
-     "dato": "2026-11-24T18:30:42",
-     "foerst_set": "2026-11-24T19:41:33",
-     "link": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/",
-     "side": "artikel/d52b76df83c94b72.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     9
+     5
     ],
     [
      "Google Gemini",
-     2
-    ],
-    [
-     "Anthropic News",
-     2
+     1
     ],
     [
      "OpenAI Blog",
@@ -606,6 +557,10 @@ window.KILDER_STATUS = {
     ],
     [
      "Ars Technica AI",
+     1
+    ],
+    [
+     "Anthropic News",
      1
     ]
    ]
@@ -620,8 +575,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 18,
-   "som_ekstra": 11,
+   "i_listen": 15,
+   "som_ekstra": 8,
    "seneste": [
     {
      "rubrik": "42 statsadvokater vil standse Character.AI-datasalg",
@@ -660,15 +615,6 @@ window.KILDER_STATUS = {
      "under": "Anthropic lader Claude godkende kodeændringer"
     },
     {
-     "rubrik": "Anthropic på børsen: Sikkerhed møder aktionærkrav",
-     "dato": "",
-     "foerst_set": "2026-11-21T21:50:31",
-     "link": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic-aktier kan udløse 156 milliarder dollar"
-    },
-    {
      "rubrik": "Anthropic-matematiker hævder at have løst Riemann-hypotesen",
      "dato": "",
      "foerst_set": "2026-11-21T01:42:50",
@@ -678,15 +624,6 @@ window.KILDER_STATUS = {
      "under": "Claude hjalp matematiker med muligt Riemann-bevis"
     },
     {
-     "rubrik": "Gemini kan nu bruge apps på Mac",
-     "dato": "",
-     "foerst_set": "2026-11-19T23:12:19",
-     "link": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini kan nu arbejde på din Mac"
-    },
-    {
      "rubrik": "Google lægger AI-samtaler på forsiden",
      "dato": "",
      "foerst_set": "2026-11-19T23:12:19",
@@ -694,15 +631,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google fjerner søgeknap og fremhæver AI"
-    },
-    {
-     "rubrik": "Meta kan tage 300 dollar for Muse Charm",
-     "dato": "",
-     "foerst_set": "2026-11-19T23:12:19",
-     "link": "https://www.theverge.com/tech/1038087/meta-muse-charm-ai-price",
-     "side": "",
-     "hvor": "under",
-     "under": "Meta Muse Charm kan koste 300 dollar"
     },
     {
      "rubrik": "Google lancerer Gemini 4 Carbon med agent-sværm",
@@ -834,7 +762,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     9
+     5
     ],
     [
      "Ars Technica AI",
@@ -860,11 +788,11 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 9,
+   "i_listen": 8,
    "som_ekstra": 1,
    "seneste": [
     {
-     "rubrik": "Claude hjælper med bevis for Riemann-hypotesen",
+     "rubrik": "Claude bidrog til bevis for Riemann-hypotesen",
      "dato": "",
      "foerst_set": "2026-11-25T03:43:33",
      "link": "https://arstechnica.com/ai/2026/11/whats-going-on-with-the-riemann-hypothesis/",
@@ -873,7 +801,7 @@ window.KILDER_STATUS = {
      "under": "Claude hjalp matematiker med muligt Riemann-bevis"
     },
     {
-     "rubrik": "GPT-6 Astra løste næsten alle fysikopgaver",
+     "rubrik": "GPT-6 Astra fandt fejl i fysikernes svar",
      "dato": "2026-11-25T12:00:28",
      "foerst_set": "2026-11-25T14:52:19",
      "link": "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/",
@@ -943,15 +871,6 @@ window.KILDER_STATUS = {
      "side": "artikel/fab35115c8894b13.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Doritos-pose udløste Omnilert-alarm og politirykning",
-     "dato": "2026-11-19T20:19:28",
-     "foerst_set": "2026-11-19T23:12:19",
-     "link": "https://arstechnica.com/tech-policy/2026/11/traumatized-teens-sue-school-cops-after-doritos-bag-triggers-ai-gun-alert/",
-     "side": "artikel/4feac83240203b8c.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -975,9 +894,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 4,
+   "i_listen": 5,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "ChatGPT og firmaer presser amerikansk aktindsigt",
+     "dato": "2026-11-25T10:00:00",
+     "foerst_set": "2026-11-25T14:52:19",
+     "link": "https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/",
+     "side": "artikel/20ed3c7d1f7fda5e.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "MIT Technology Review: AI-agenter presser virksomheders netværk",
      "dato": "2026-11-24T15:15:16",

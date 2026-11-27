@@ -1,10 +1,10 @@
 {
- "rubrik": "AI får mere at gøre – og mere at holde styr på",
- "indledning": "En ny model og mere selvstændige assistenter præger perioden, mens forskning, cyberangreb og private chats rejser forskellige spørgsmål om kontrol.",
+ "rubrik": "AI får mere ansvar – og møder nye prøver",
+ "indledning": "Nye værktøjer kan arbejde mere selvstændigt, mens forskning og sikkerhedssager viser, hvor svært det er at kontrollere resultaterne.",
  "historier": [
   {
-   "overskrift": "Z.ai frigiver GLM-5.4 med gentagne modellag",
-   "tekst": "GLM-5.4 er Z.ai’s første model, der gentager en gruppe lag for at arbejde videre på mellemresultater. Ifølge virksomheden giver det et dybere netværk uden flere parametre. Simon Willison har prøvet adgangen og sammenlignet billeder, men ikke dokumenteret modellens programmeringsevner.",
+   "overskrift": "GLM-5.4 gentager lag i ny model",
+   "tekst": "Z.ai har gjort GLM-5.4 tilgængelig. Modellen gentager en gruppe lag og bearbejder dermed mellemresultater flere gange. Ifølge selskabet giver metoden et dybere netværk uden flere parametre. Simon Willison har afprøvet adgangen, men hans omtale dokumenterer ikke modellens evner til programmering.",
    "link": "https://simonwillison.net/2026/Nov/23/glm-54/",
    "kategori": "Lanceringer",
    "billede": "data/img/95e9133106ff272e.webp",
@@ -16,38 +16,8 @@
    "artikel_signatur": "cdf30242e716e3d6c3f8728856e0a5a2b609506ac035f341fe63aa9b5ba3f78c"
   },
   {
-   "overskrift": "Gemini kan udføre opgaver på en Mac",
-   "tekst": "Google har lanceret en funktion, der kan arbejde på tværs af Mac-apps, lokale filer og hjemmesider. Brugeren kan følge arbejdet og godkende handlinger. Funktionen er foreløbig på engelsk i USA og kræver Gemini-appen til Mac samt et kvalificerende Google AI-abonnement.",
-   "link": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
-   "kategori": "Hverdags-AI",
-   "billede": "",
-   "dato": "2026-11-19T18:09:11+00:00",
-   "andre": [
-    {
-     "kilde": "The Verge AI",
-     "link": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use",
-     "rubrik": "Gemini kan nu bruge apps på Mac",
-     "resume_da": "Googles AI-app kan klikke, skrive og udfylde formularer på tværs af filer, programmer og nettet. Funktionen rulles foreløbig ud på engelsk i USA.",
-     "dato": "2026-11-19T13:21:13-05:00",
-     "foerst_set": "2026-11-19T23:12:19.344731+00:00"
-    },
-    {
-     "kilde": "Google Gemini",
-     "link": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/",
-     "rubrik": "Gemini kan nu bruge computeren på Mac",
-     "resume_da": "Funktionen i Gemini-appen skal hjælpe med gentagne opgaver.",
-     "dato": "2026-11-19 17:00:00+00:00",
-     "foerst_set": "2026-11-19T23:12:19.344731+00:00"
-    }
-   ],
-   "titel": "Google gives Gemini the ability to use your Mac for you",
-   "rubrik": "Gemini kan nu arbejde på din Mac",
-   "resume_da": "Googles AI kan bruge Mac-apps og hjemmesider på brugerens vegne, mens brugeren følger arbejdet i et livevindue.",
-   "artikel_signatur": "be30189564de132cc0c08cdf49a3cc595b5bd2583b32012859535e1078ed6214"
-  },
-  {
-   "overskrift": "Claude Ship kan godkende kode efter holdets regler",
-   "tekst": "Anthropics Claude Ship kan gennemgå og rette kodeændringer og lade en AI-agent godkende rutineændringer efter udviklerholdets regler. Holdet bestemmer, hvornår mennesker skal tage stilling. Kodegennemgangen er generelt tilgængelig, mens de to nye agenter er i en tidlig version.",
+   "overskrift": "Claude Ship kan godkende kodeændringer",
+   "tekst": "Anthropic lancerer Claude Ship, hvor AI-agenter kan gennemgå og rette kode og, hvis udviklerholdets regler tillader det, godkende ændringer. Code Review er generelt tilgængeligt, mens de to nye agenter er i beta. Udrulningen gælder Team- og Enterprise-kunder med kodelagre på GitHub.",
    "link": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
    "kategori": "Lanceringer",
    "billede": "data/img/8a0aa80b86236e39.webp",
@@ -68,8 +38,8 @@
    "artikel_signatur": "76cb8bed39d1b672ab94c2b6443b2c7a55b45178ab32afc7b896b543242e6346"
   },
   {
-   "overskrift": "Claude hjælper med muligt bevis for Riemann-hypotesen",
-   "tekst": "Matematikeren Levent Alpöge mener at have fundet et bevis for det berømte problem med hjælp fra Claude. Han har skrevet argumentet i Lean, som kan kontrollere matematiske beviser. Koden kan ifølge flere matematikere behandles, men resultatet er endnu ikke accepteret af matematikmiljøet.",
+   "overskrift": "Claude bidrog til muligt Riemann-bevis",
+   "tekst": "Matematikeren Levent Alpöge mener med hjælp fra Claude at have bevist Riemann-hypotesen, et berømt uløst matematisk problem. Han har skrevet argumentet i Lean, som kan kontrollere matematiske beviser formelt. Matematikere mangler stadig at forstå og gennemgå argumentet; resultatet er endnu ikke accepteret.",
    "link": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
    "kategori": "Forskning",
    "billede": "data/img/b2f118e75f13301f.webp",
@@ -94,8 +64,8 @@
     {
      "kilde": "Ars Technica AI",
      "link": "https://arstechnica.com/ai/2026/11/whats-going-on-with-the-riemann-hypothesis/",
-     "rubrik": "Claude hjælper med bevis for Riemann-hypotesen",
-     "resume_da": "Matematikeren Levent Alpöge har annonceret et AI-assisteret bevis. Matematikere er stadig ved at undersøge, hvilke nye indsigter det kan give.",
+     "rubrik": "Claude bidrog til bevis for Riemann-hypotesen",
+     "resume_da": "Ifølge Ars Technica er beviset verificeret med sproget Lean. Matematikere er stadig i gang med at forstå ideerne bag det.",
      "dato": "2026-11-24T20:34:53+00:00",
      "foerst_set": "2026-11-25T03:43:33.973979+00:00"
     }
@@ -103,11 +73,24 @@
    "titel": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too",
    "rubrik": "Claude hjalp matematiker med muligt Riemann-bevis",
    "resume_da": "Levent Alpöges resultat kan omsættes i et program til matematisk kontrol, men forskere mangler stadig at forstå og gennemgå argumentet.",
-   "artikel_signatur": "274a857e18db32c44e73c9213ea9f3b81040381a27349701fe97aa285e871e67"
+   "artikel_signatur": "b6217bb35a323fde7600d421197c4e39d039c7f1bcbf2d845bf09d7cf78b9190"
   },
   {
-   "overskrift": "Amazon: AI-agenter fandt og udnyttede ukendt sikkerhedshul",
-   "tekst": "Ifølge Amazon fandt hackernes AI-agenter et hidtil ukendt hul i et program på en universitetsserver og brugte det til at skaffe adgang. Agenterne arbejdede via sikkerhedsværktøjet Cairn. Andre angrebsforsøg mislykkedes, og hackerne gav også nye instruktioner undervejs.",
+   "overskrift": "GPT-6.2 foreslog proteindesign til laboratorieforsøg",
+   "tekst": "OpenAI og forskningspartneren Onava brugte en endnu ikke frigivet version af GPT-6.2 til at foreslå former for små proteiner. Mindst ét fremstillet protein viste tegn på binding for hvert af fem målproteiner. Specialiserede modeller hjalp med at gøre forslagene klar til test.",
+   "link": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+   "kategori": "Forskning",
+   "billede": "",
+   "dato": "2026-11-24T13:00:00+00:00",
+   "andre": [],
+   "titel": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+   "rubrik": "GPT-6.2 designer proteiner, der binder sig",
+   "resume_da": "Laboratorieforsøg viste tegn på binding til fem udvalgte proteiner. Specialiserede modeller hjalp dog med at gøre forslagene klar til test.",
+   "artikel_signatur": "a2ffd9140f9aa74ec4c107ae0ddf908481be8ca66ae17fad635c93ef2b7cccad"
+  },
+  {
+   "overskrift": "Amazon: AI-agenter udnyttede ukendt sikkerhedshul",
+   "tekst": "Ifølge Amazon fandt AI-agenter et hidtil ukendt sikkerhedshul på en universitetsserver og udnyttede det til at skaffe adgang. Hackerne brugte det åbne sikkerhedsværktøj Cairn og greb også selv ind undervejs. Andre angrebsforsøg med agenterne mislykkedes, selv efter flere timers arbejde.",
    "link": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
    "kategori": "Samfund & etik",
    "billede": "data/img/d8a21a44ed18b5e9.webp",
@@ -120,7 +103,7 @@
   },
   {
    "overskrift": "Delstater vil stoppe salg af Character.AI-chats",
-   "tekst": "Character.AI planlægger at sælge private chats på auktion som led i sin konkursbehandling. Justitsministre fra 42 amerikanske delstater forsøger at standse salget. De hævder, at en køber ikke vil være bundet af tjenestens privatlivspolitik og kan videresælge dataene.",
+   "tekst": "En gruppe på 42 amerikanske delstatsjustitsministre forsøger at stoppe en planlagt auktion over private Character.AI-samtaler under selskabets konkursbehandling. De hævder, at en køber ikke vil være bundet af selskabets privatlivspolitik. Det er uklart, hvem der står bag den kendte budgiver.",
    "link": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
    "kategori": "Politik & jura",
    "billede": "data/img/9b0df4f9430c1645.webp",
@@ -143,21 +126,21 @@
  ],
  "overblik": [
   {
-   "tekst": "AI får flere opgaver, der rækker ud over at svare i en chat. Googles Gemini kan nu arbejde i apps og filer på en Mac, mens Anthropics Claude Ship kan få lov at godkende kodeændringer efter regler sat af et udviklerhold. Begge giver plads til menneskelig kontrol, men adgangen er forskellig: Mac-funktionen er foreløbig begrænset til engelsksprogede brugere i USA, mens Claude Ships nye agenter er i en tidlig version.\n\nSamtidig har Z.ai frigivet GLM-5.4, der gentager dele af modellens behandling for at arbejde videre på mellemresultater. Det er en ændring i, hvordan modellen er bygget; den foreliggende omtale viser ikke, om den er bedre til at programmere.",
+   "tekst": "AI får mere selvstændigt arbejde: Med Claude Ship kan en agent ikke blot gennemgå og rette kode, men også godkende ændringer efter udviklerholdets egne regler. Godkendelsen er dog stadig i beta. Samtidig har Z.ai frigivet GLM-5.4, der gentager dele af sin behandling. Selskabet siger, at det gør netværket dybere uden flere parametre; den tilgængelige afprøvning viser endnu ikke, hvor god modellen er til kode.",
    "links": [
-    "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
     "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
     "https://simonwillison.net/2026/Nov/23/glm-54/"
    ]
   },
   {
-   "tekst": "Behovet for efterprøvning gælder også forskning. Matematikeren Levent Alpöge mener, at han med Claude har bevist Riemann-hypotesen. Hans argument er skrevet til formel kontrol i programmet Lean, men matematikerne mangler stadig at forstå og gennemgå det. Et behandlet program er derfor endnu ikke det samme som en accepteret løsning på problemet.",
+   "tekst": "I forskningen er spørgsmålet ikke kun, om AI kan foreslå et resultat, men hvordan det kan efterprøves. Matematikeren Levent Alpöge mener, at Claude har hjulpet ham med et bevis for Riemann-hypotesen. Argumentet er skrevet i et sprog til formel kontrol, men matematikere mangler stadig at gennemgå det. I et andet forsøg viste proteiner foreslået med GPT-6.2 tegn på binding i laboratoriet. Her hjalp specialiserede modeller med forberedelsen, og binding er ikke det samme som en færdig anvendelse.",
    "links": [
-    "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/"
+    "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
+    "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities"
    ]
   },
   {
-   "tekst": "Mere selvstændige værktøjer kan også bruges til angreb: Ifølge Amazon fandt hackernes AI-agenter et ukendt sikkerhedshul på en universitetsserver og skaffede adgang. Et andet spørgsmål om kontrol handler om data, der allerede er afleveret. Under Character.AI’s konkurs forsøger 42 amerikanske delstatsjustitsministre at standse en planlagt auktion over private chats. Her er det endnu uafklaret, hvem der kan få adgang til samtalerne, og hvilke regler en køber vil skulle følge.",
+   "tekst": "Mere handlekraft giver også nye sikkerhedsspørgsmål. Amazon beskriver hackere, der brugte AI-agenter til at finde og udnytte et ukendt hul på en server, selv om andre forsøg mislykkedes. Character.AI-sagen handler om en anden risiko: Hvem får adgang til de private samtaler, når en tjeneste går konkurs? Delstatsjustitsministre forsøger at standse salget, men auktionens udfald er endnu ikke afgjort.",
    "links": [
     "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
     "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/"
@@ -167,13 +150,13 @@
  "tendens": "",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "59f376893602b187f17a7558759954715ff030190e9bfecc13cd643077d9f8fb",
- "dato": "2026-11-26T21:58:14.055957+00:00",
- "opdateret": "2026-11-26T21:58:14.055957+00:00",
- "periode_fra": "2026-11-18T23:00:00+00:00",
- "periode_til": "2026-11-25T23:00:00+00:00",
+ "basis_signatur": "8922ae1fd7115535cb4d07ea34884b3d4152c0ff492debbac29bd01979d5856f",
+ "dato": "2026-11-27T09:05:52.618847+00:00",
+ "opdateret": "2026-11-27T09:05:52.618847+00:00",
+ "periode_fra": "2026-11-19T23:00:00+00:00",
+ "periode_til": "2026-11-26T23:00:00+00:00",
  "stats": {
-  "historier": 71,
+  "historier": 64,
   "kilder": 8
  }
 }
