@@ -1,44 +1,31 @@
 {
-  "opdateret": "2026-11-27T21:36:02.999120+00:00",
+  "opdateret": "2026-11-28T08:21:55.176259+00:00",
   "status": "godkendt",
   "model": "gpt-6.1-terra",
   "reasoning_effort": "medium",
   "regelbaseret_udvalg": [
     "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
     "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
-    "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent"
+    "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini"
   ],
-  "input_fingerprint": "6ecf8d35592e1bdc",
-  "redaktionsnote": "Ingen ny modellancering inden for 48 timer er dokumenteret i det gennemgåede katalog. Android-historien er en ny test af en tidligere annonceret funktion, ikke en ny lancering; Nvidias leveringspause bygger på en andenhåndsmeddelelse.",
+  "input_fingerprint": "114d12ef3f38353d",
+  "redaktionsnote": "Ingen dokumenteret ny modellancering blandt de undersøgte seneste kandidater. Android-testen var hovedhistorie på den seneste forside og genvælges ikke uden nyt.",
   "beslutninger": [
     {
-      "id": "1d140bb3b26b0663",
-      "begrundelse": "The Verges nye praktiske test viser både en konkret AI-mulighed på Android og en vigtig begrænsning: En ønsket widget med busankomster i realtid virkede ikke efter hensigten.",
-      "nyt_siden_sidst": "Funktionen blev annonceret i foråret og er begyndt at blive udrullet i beta på Pixel-telefoner tidligere på måneden. Det nye er The Verges afprøvning, ikke en ny lancering.",
-      "skriveopgave": "Rubrik: »Androids AI bygger widgets – men busplanen driller«. Forklar kort, at en widget er et lille felt på hjemmeskærmen, og beskriv testens vejr- og buseksempler under sigende mellemoverskrifter. Skeln Googles produktløfter fra journalistens test, og angiv beta og begrænset udrulning; dansk adgang er uafklaret.",
+      "id": "c2bd7953104652e4",
+      "begrundelse": "Hugging Faces forsøg viser en konkret ny anvendelse af videomodellen LTX-2.5 på Amazons Trainium3-chips. Eksemplet viser både, hvordan klip med lyd kan sættes sammen, og hvad der kræves for at få modellen til at køre.",
+      "nyt_siden_sidst": "Hugging Face beskriver nu en opsætning, der genererer et ti sekunder langt klip med lyd på 22–23 sekunder, når modellerne er indlæst. LTX-2.5 er en eksisterende model, ikke en ny lancering.",
+      "skriveopgave": "Rubrik: »Hugging Face laver video og lyd på Amazons AI-chips«. Forklar let, hvordan scener kædes sammen, og hvad forsøget krævede; brug korte afsnit med meningsfulde mellemoverskrifter. Angiv opløsning, tid efter indlæsning og hardware, og forklar tekniske ord. Gør klart, at resultatet er Hugging Faces eget forsøg på en stor maskine, og at sammenligningen med LTX’ API bygger på LTX’ egne tal med forskellige betingelser.",
       "kilder": [
-        "1d140bb3b26b0663",
-        "c5b9668d7cd8f055"
+        "c2bd7953104652e4"
       ],
       "samme_historie": [],
-      "link": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
-      "rubrik": "Androids AI bygger widgets – men busplanen driller"
-    },
-    {
-      "id": "979e22972f743c14",
-      "begrundelse": "En rapporteret leveringspause til fire lande kan påvirke adgangen til AI-servere og illustrerer, hvordan eksportregler også rammer infrastrukturen uden for Kina.",
-      "nyt_siden_sidst": "Ifølge Wall Street Journal har Nvidia bedt produktionspartnere sætte serverleverancer til Malaysia, Singapore, Thailand og Indonesien på pause, mens selskabet undersøger overholdelsen af amerikanske eksportkrav.",
-      "skriveopgave": "Rubrik: »Nvidia beder om pause i AI-serverleverancer til fire lande«. Forklar kort forbindelsen til fjernadgang til regnekraft og amerikanske eksportkrav i korte afsnit med konkrete mellemoverskrifter. Tilskriv oplysningerne Wall Street Journal via TechCrunch, og gør klart, at pausens varighed og omfang er uafklaret.",
-      "kilder": [
-        "979e22972f743c14"
-      ],
-      "samme_historie": [],
-      "link": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
-      "rubrik": "Nvidia beder partnere pause serverleverancer til fire lande"
+      "link": "https://huggingface.co/blog/video-trainium3",
+      "rubrik": "Hugging Face laver video og lyd på Trainium3"
     }
   ],
   "modelkald": 6,
-  "kildehentninger": 3,
+  "kildehentninger": 2,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -49,7 +36,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -63,21 +50,16 @@
   ],
   "kildegrundlag": [
     {
+      "link": "https://huggingface.co/blog/video-trainium3",
+      "grundlag": "kildetekst"
+    },
+    {
       "link": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
-    "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/"
+    "https://huggingface.co/blog/video-trainium3"
   ],
-  "afventer_artikler": 70
+  "afventer_artikler": 59
 }

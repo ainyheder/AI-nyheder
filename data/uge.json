@@ -1,10 +1,10 @@
 {
- "rubrik": "Nye AI-evner møder grænser for kontrol og regnekraft",
- "indledning": "Ugens udvikling spænder fra en ny model og mere selvstændig kodebehandling til forskningsresultater, cyberangreb og begrænsede chipleverancer.",
+ "rubrik": "Nye AI-evner møder spørgsmål om kontrol og infrastruktur",
+ "indledning": "Perioden bød på en ny model, mere selvstændige kodeagenter og konkrete spørgsmål om sikkerhed, private data og regnekraft.",
  "historier": [
   {
-   "overskrift": "GLM-5.4 gentager lag for at bearbejde svar",
-   "tekst": "Z.ai har gjort GLM-5.4 tilgængelig. Modellen gentager en gruppe af sine lag og arbejder videre på mellemresultaterne. Ifølge virksomheden giver det et dybere netværk uden flere parametre. Simon Willison har prøvet modellen, men hans billedsammenligning dokumenterer ikke dens evner til programmering.",
+   "overskrift": "Z.ai frigiver GLM-5.4 med gentagne modellag",
+   "tekst": "GLM-5.4 lader en gruppe af modellens lag bearbejde mellemresultater flere gange. Ifølge Z.ai giver det et dybere netværk uden flere parametre. Simon Willison afprøvede modellen via et særligt abonnement og sammenlignede dens billeder med tidligere generationers, men testede ikke dens evner til programmering.",
    "link": "https://simonwillison.net/2026/Nov/23/glm-54/",
    "kategori": "Lanceringer",
    "billede": "data/img/95e9133106ff272e.webp",
@@ -16,8 +16,21 @@
    "artikel_signatur": "cdf30242e716e3d6c3f8728856e0a5a2b609506ac035f341fe63aa9b5ba3f78c"
   },
   {
-   "overskrift": "Claude Ship kan godkende kodeændringer",
-   "tekst": "Anthropic lancerer Claude Ship, hvor AI-agenter kan gennemgå, rette og godkende kodeændringer efter regler fastlagt af udviklerholdet. Holdet bestemmer, hvilke beslutninger der kræver et menneske. De nye agenter PR Steward og Claude Approvals er i en tidlig testversion.",
+   "overskrift": "GPT-6.2 foreslår proteindesign til laboratorieforsøg",
+   "tekst": "OpenAI og forskningspartneren Onava brugte en endnu ikke frigivet version af GPT-6.2 til at foreslå proteinformer. For hvert af fem målproteiner viste mindst ét fremstillet protein tegn på binding. Specialiserede modeller hjalp med aminosyresekvenser og udvælgelse; bindingen viser ikke, at proteinerne er klar til brug.",
+   "link": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+   "kategori": "Forskning",
+   "billede": "",
+   "dato": "2026-11-24T13:00:00+00:00",
+   "andre": [],
+   "titel": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+   "rubrik": "GPT-6.2 designer proteiner, der binder sig",
+   "resume_da": "Laboratorieforsøg viste tegn på binding til fem udvalgte proteiner. Specialiserede modeller hjalp dog med at gøre forslagene klar til test.",
+   "artikel_signatur": "a2ffd9140f9aa74ec4c107ae0ddf908481be8ca66ae17fad635c93ef2b7cccad"
+  },
+  {
+   "overskrift": "Claude Ship kan godkende rutineændringer i kode",
+   "tekst": "Anthropics Claude Ship kan gennemgå og rette kode og, efter regler fastlagt af udviklerholdet, godkende ændringer. Værktøjerne rulles ud til Team- og Enterprise-kunder med GitHub-kodelagre. Kodegennemgangen er generelt tilgængelig, mens de nye agenter til rettelser og godkendelse er i en tidlig testversion.",
    "link": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
    "kategori": "Lanceringer",
    "billede": "data/img/8a0aa80b86236e39.webp",
@@ -38,59 +51,8 @@
    "artikel_signatur": "76cb8bed39d1b672ab94c2b6443b2c7a55b45178ab32afc7b896b543242e6346"
   },
   {
-   "overskrift": "GPT-6.2 foreslog proteiner med tegn på binding",
-   "tekst": "I forskning fra OpenAI og Onava foreslog en endnu ikke frigivet version af GPT-6.2 former til små proteiner. Laboratorieforsøg viste tegn på binding til alle fem udvalgte målproteiner. Specialiserede modeller hjalp med at gøre forslagene klar til test; binding er ikke en færdig anvendelse.",
-   "link": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
-   "kategori": "Forskning",
-   "billede": "",
-   "dato": "2026-11-24T13:00:00+00:00",
-   "andre": [],
-   "titel": "GPT-6 models demonstrate intrinsic protein-design capabilities",
-   "rubrik": "GPT-6.2 designer proteiner, der binder sig",
-   "resume_da": "Laboratorieforsøg viste tegn på binding til fem udvalgte proteiner. Specialiserede modeller hjalp dog med at gøre forslagene klar til test.",
-   "artikel_signatur": "a2ffd9140f9aa74ec4c107ae0ddf908481be8ca66ae17fad635c93ef2b7cccad"
-  },
-  {
-   "overskrift": "Matematiker fremlægger muligt Riemann-bevis med Claude",
-   "tekst": "Levent Alpöge mener at have fundet et bevis for Riemann-hypotesen med hjælp fra Claude. Argumentet er skrevet i Lean, et sprog til formel kontrol af matematiske beviser. Uafhængige matematikere har bekræftet, at Lean kan behandle koden, men argumentet mangler stadig gennemgang og forståelse.",
-   "link": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
-   "kategori": "Forskning",
-   "billede": "data/img/b2f118e75f13301f.webp",
-   "dato": "2026-11-20T19:32:08+00:00",
-   "andre": [
-    {
-     "kilde": "Simon Willison AI",
-     "link": "https://simonwillison.net/2026/Nov/20/levent-alpoge/",
-     "rubrik": "Claude hjælper matematiker med muligt Riemann-bevis",
-     "resume_da": "Levent Alpöge mener at have løst et af matematikkens mest berømte problemer sammen med AI-modellen Claude. Beviset er endnu ikke uafhængigt verificeret.",
-     "dato": "2026-11-20T16:30:48+00:00",
-     "foerst_set": "2026-11-20T17:11:55.623291+00:00"
-    },
-    {
-     "kilde": "The Verge AI",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
-     "rubrik": "Anthropic-matematiker hævder at have løst Riemann-hypotesen",
-     "resume_da": "Levent Alpöge siger, at han brugte Claude til at bevise hypotesen. Beviset er endnu ikke verificeret.",
-     "dato": "2026-11-20 11:34:13-05:00",
-     "foerst_set": "2026-11-21T01:42:50.990268+00:00"
-    },
-    {
-     "kilde": "Ars Technica AI",
-     "link": "https://arstechnica.com/ai/2026/11/whats-going-on-with-the-riemann-hypothesis/",
-     "rubrik": "Claude hjælper med bevis for Riemann-hypotesen",
-     "resume_da": "Matematikeren Levent Alpöge har annonceret et AI-assisteret bevis. Den formelle version er ifølge Ars Technica kontrolleret, men matematikere arbejder stadig på at forstå tankegangen.",
-     "dato": "2026-11-24T20:34:53+00:00",
-     "foerst_set": "2026-11-25T03:43:33.973979+00:00"
-    }
-   ],
-   "titel": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too",
-   "rubrik": "Claude hjalp matematiker med muligt Riemann-bevis",
-   "resume_da": "Levent Alpöges resultat kan omsættes i et program til matematisk kontrol, men forskere mangler stadig at forstå og gennemgå argumentet.",
-   "artikel_signatur": "cb59b28b8b283947c3d6f4b2ceb9a9f3674ce0b708000eef23090ad7d8a43fb8"
-  },
-  {
-   "overskrift": "Amazon: Hackere brugte AI til at finde ukendt sikkerhedshul",
-   "tekst": "Ifølge Amazon fandt hackernes AI-agenter en hidtil ukendt sårbarhed på en universitetsserver og udnyttede den til at få administratoradgang. Agenterne brugte sikkerhedsværktøjet Cairn og arbejdede med begrænset menneskelig hjælp. Andre angrebsforsøg med værktøjet mislykkedes, selv efter mange timers arbejde.",
+   "overskrift": "Amazon: AI-agenter udnyttede ukendt sikkerhedshul",
+   "tekst": "Ifølge Amazon fandt og udnyttede hackernes AI-agenter en hidtil ukendt sårbarhed på en universitetsserver. Agenterne arbejdede gennem sikkerhedsværktøjet Cairn og opnåede senere administratorrettigheder. Mennesker gav dem mål og blandede sig undervejs, og andre angrebsforsøg med agenterne mislykkedes.",
    "link": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
    "kategori": "Samfund & etik",
    "billede": "data/img/d8a21a44ed18b5e9.webp",
@@ -102,52 +64,74 @@
    "artikel_signatur": "c0df00c524e1e81a245bb09768588e9aabca383c08a28fe0c84f811693ab2930"
   },
   {
-   "overskrift": "Nvidia pauser serverleverancer til fire lande",
-   "tekst": "Nvidia har bedt partnere sætte serverleverancer til Malaysia, Singapore, Thailand og Indonesien på pause, mens selskabet undersøger overholdelsen af amerikanske eksportkrav. Kinesiske virksomheder har brugt Nvidia-chips via datacentre i landene. Pausens varighed og omfang er endnu uklare.",
-   "link": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+   "overskrift": "42 delstater vil standse salg af Character.AI-chats",
+   "tekst": "En gruppe amerikanske delstatsjustitsministre forsøger at standse en planlagt auktion over private samtaler fra Character.AI under selskabets konkursbehandling. De hævder, at en køber ikke vil være bundet af selskabets privatlivspolitik. Det er uklart, hvem der står bag den kendte budgiver, og hvad samtalerne skal bruges til.",
+   "link": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
+   "kategori": "Politik & jura",
+   "billede": "data/img/9b0df4f9430c1645.webp",
+   "dato": "2026-11-25T17:35:58+00:00",
+   "andre": [
+    {
+     "kilde": "The Verge AI",
+     "link": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
+     "rubrik": "42 statsadvokater vil standse Character.AI-datasalg",
+     "resume_da": "De anklager selskabet for at planlægge en auktion over private chats fra mere end 21 millioner amerikanske konti under konkursbehandlingen.",
+     "dato": "2026-11-26 04:54:40-05:00",
+     "foerst_set": "2026-11-26T21:52:10.722629+00:00"
+    }
+   ],
+   "titel": "Character.AI’s plan to auction off users’ private chats challenged by state AGs",
+   "rubrik": "Character.AI vil sælge private chats på auktion",
+   "resume_da": "En gruppe på 42 amerikanske justitsministre forsøger at stoppe salget af brugerdata i forbindelse med AI-selskabets konkurs.",
+   "artikel_signatur": "665fbb60ece69fe63c1e6483d9aaab3a1e50d97b9eaab48ab26369dc03fcb128"
+  },
+  {
+   "overskrift": "SpaceX får FCC-godkendelse til AI-satellitter",
+   "tekst": "Den amerikanske kommunikationsmyndighed FCC har godkendt SpaceX’ plan om op til en million satellitter med AI-chips. Projektet Starmind skal ifølge selskabet understøtte AI på Jorden. Godkendelsen betyder ikke, at satellitterne er bygget eller opsendt, og planen for bortskaffelse af nogle af dem er endnu ikke afgjort.",
+   "link": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
    "kategori": "Penge & marked",
-   "billede": "data/img/e13a9ea58dbd4989.webp",
-   "dato": "2026-11-26T20:03:54+00:00",
+   "billede": "data/img/9650cc1985f0ac66.webp",
+   "dato": "2026-11-25T12:44:51-05:00",
    "andre": [],
-   "titel": "Nvidia hits pause on chip shipments to Southeast Asia",
-   "rubrik": "Nvidia beder partnere pause serverleverancer til fire lande",
-   "resume_da": "Pausen rammer Malaysia, Singapore, Thailand og Indonesien. Nvidia vil undersøge, om regionale partnere overholder amerikanske eksportkrav.",
-   "artikel_signatur": "4d89de5fe8b10089b09623c079868cd713ef10e89c2660245c1b78d8809a1fb9"
+   "titel": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
+   "rubrik": "SpaceX får lov til AI-satellitter",
+   "resume_da": "USA's kommunikationsmyndighed har godkendt op til en million satellitter, som SpaceX vil bruge til at understøtte AI på Jorden.",
+   "artikel_signatur": "57a723466d1c348d43d0b6abdcea7fb1856bd5f820ea7ca1d4d06f3626720ec0"
   }
  ],
  "overblik": [
   {
-   "tekst": "AI får både nye måder at bearbejde opgaver på og større råderum til at handle. Z.ai’s GLM-5.4 gentager dele af modellen for at arbejde videre på mellemresultater; selskabet siger, at det giver et dybere netværk uden flere parametre. Anthropic går et andet sted hen i arbejdsgangen: Claude Ship kan ikke blot gennemgå kode, men også godkende rutineændringer efter holdets egne regler. De nye agenter er dog stadig i en tidlig testversion.",
+   "tekst": "Periodens tydeligste tekniske nyhed er GLM-5.4, hvor Z.ai genbruger dele af modellen i flere gennemløb frem for at tilføje flere parametre. Det er en ny model, men den tilgængelige afprøvning dokumenterer ikke, hvor godt den skriver kode. I forskning fra OpenAI og Onava viste en endnu ikke frigivet GPT-6.2-version en anden evne: Den foreslog proteinformer, hvor fremstillede kandidater viste tegn på binding. Her hjalp specialiserede modeller også til, og resultatet er ikke et færdigt produkt.",
    "links": [
     "https://simonwillison.net/2026/Nov/23/glm-54/",
-    "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/"
+    "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities"
    ]
   },
   {
-   "tekst": "Forskningen viser samtidig, hvorfor resultaterne skal vurderes forskelligt. I OpenAI og Onavas forsøg foreslog GPT-6.2 proteinformer, som efter hjælp fra specialiserede modeller viste tegn på binding i laboratoriet. Det er ikke det samme som et færdigt lægemiddel. Matematikeren Levent Alpöge mener på sin side at have fundet et bevis for Riemann-hypotesen med Claude. Koden kan behandles af et formelt kontrolværktøj, men matematikere mangler stadig at forstå og gennemgå argumentet.",
+   "tekst": "AI får samtidig større råderum i softwarearbejde. Anthropic lader med Claude Ship udviklerhold opstille regler for, hvornår en agent må godkende kode. En anden hændelse viser, at agenter også kan bruges til indbrud: Ifølge Amazon fandt hackernes agenter et ukendt sikkerhedshul på en universitetsserver. Det var ikke en fuldt selvstændig operation, og andre forsøg slog fejl, men eksemplet viser, hvorfor kontrollen med agenters handlinger er vigtig.",
    "links": [
-    "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
-    "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/"
+    "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
+    "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/"
    ]
   },
   {
-   "tekst": "Større selvstændighed har også en sikkerhedsside: Ifølge Amazon brugte hackere AI-agenter til at finde og udnytte et ukendt sikkerhedshul, selv om andre forsøg mislykkedes. Samtidig er adgangen til regnekraft under pres af eksportregler. Nvidia har bedt partnere pause serverleverancer til fire sydøstasiatiske lande under en kontrol af reglernes overholdelse; hvor omfattende pausen bliver, er endnu uklart.",
+   "tekst": "Kontrol handler også om de oplysninger og den infrastruktur, AI-tjenester bygger på. I Character.AI’s konkurs forsøger 42 delstatsjustitsministre at forhindre en auktion over private chats; hvem der eventuelt får adgang, er endnu uafklaret. Samtidig har SpaceX fået amerikansk tilladelse til et helt andet infrastrukturprojekt: op til en million satellitter med AI-chips. Godkendelsen er en ramme for planen, ikke bevis for, at satellitterne bliver bygget.",
    "links": [
-    "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
-    "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/"
+    "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
+    "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers"
    ]
   }
  ],
- "tendens": "Alpöges mulige Riemann-bevis mangler fortsat en gennemgang, der kan forklare argumentet og afklare, om matematikmiljøet accepterer resultatet.",
+ "tendens": "FCC mangler at afgøre, om SpaceX må placere udtjente satellitter over 600 kilometers højde i særlige affaldskredsløb. Myndigheden mener endnu ikke, at selskabets oplysninger om bortskaffelse er tilstrækkelige.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "e20da6063e9f2667d02826037f0907a21329364513e6f40d7ef73cac8b2d19f8",
- "dato": "2026-11-27T21:39:12.920101+00:00",
- "opdateret": "2026-11-27T21:39:12.920101+00:00",
- "periode_fra": "2026-11-19T23:00:00+00:00",
- "periode_til": "2026-11-26T23:00:00+00:00",
+ "basis_signatur": "f3c3058115e1a342a7d5a60db67ab23e3c6d0730c1bb150cefc52c5a926d8b58",
+ "dato": "2026-11-28T08:24:53.127576+00:00",
+ "opdateret": "2026-11-28T08:24:53.127576+00:00",
+ "periode_fra": "2026-11-20T23:00:00+00:00",
+ "periode_til": "2026-11-27T23:00:00+00:00",
  "stats": {
-  "historier": 64,
+  "historier": 54,
   "kilder": 8
  }
 }
